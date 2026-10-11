@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/image-manifest.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "inputSignature": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "rosterSignature": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "build": {
+      "type": "object"
+    },
+    "attribution": {
+      "type": "string",
+      "minLength": 1
+    },
+    "catalog": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "const": "images/catalog.json"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8388608
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "name",
+        "bytes",
+        "sha256"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "generatedAt",
+    "inputSignature",
+    "rosterSignature",
+    "build",
+    "attribution",
+    "catalog"
+  ],
+  "additionalProperties": false
+}

@@ -14,7 +14,8 @@ export async function checkPackage() {
             { cwd: root, encoding: 'utf8', windowsHide: true, maxBuffer: 4 * 1024 * 1024 }));
         const [packed] = Array.isArray(packOutput) ? packOutput : Object.values(packOutput);
         if (!packed || !Array.isArray(packed.files)) throw new Error('npm pack did not return an artifact inventory.');
-        if (packed.files.some(file => /^(evidence|\.3esmit|data\/hero-knowledge|data\/heroes|tests|node_modules)\//.test(file.path))) throw new Error('Development data leaked into the runtime package.');
+        if (packed.files.some(file => /^(evidence|\.3esmit|data\/hero-knowledge|tests|node_modules)\//.test(file.path)
+            || /^data\/(heroes|abilities|items)\//.test(file.path) && !/^data\/(heroes|abilities|items)\/[^/]+\/images\/(?:abilities\/)?[^/]+\.png$/.test(file.path))) throw new Error('Development data leaked into the runtime package.');
         execFileSync('tar', ['-xzf', path.join(temporary, packed.filename), '-C', temporary], { windowsHide: true, stdio: 'pipe' });
         const extracted = path.join(temporary, 'package');
         execFileSync(process.execPath, [npmCli, 'install', '--omit=dev', '--omit=optional', '--ignore-scripts', '--no-audit', '--no-fund', '--package-lock=false'],
@@ -28,8 +29,14 @@ export async function checkPackage() {
         await fs.copyFile(path.join(root, 'tests/population/no-network.mjs'), path.join(temporary, 'no-network.mjs'));
         const populationResult = JSON.parse(execFileSync(process.execPath, ['--import', pathToFileURL(path.join(temporary, 'no-network.mjs')).href, 'docs/examples/population-fixture.mjs'],
             { cwd: extracted, encoding: 'utf8', windowsHide: true, maxBuffer: 1024 * 1024 }));
+        const imageFixtureResult = JSON.parse(execFileSync(process.execPath, ['--import', pathToFileURL(path.join(temporary, 'no-network.mjs')).href, 'docs/examples/images-fixture.mjs'],
+            { cwd: extracted, encoding: 'utf8', windowsHide: true, maxBuffer: 1024 * 1024 }));
         const nodeSmoke = `import { loadKnowledgePackage } from '@reino-doce/dota-knowledge/node';
 import manifest from '@reino-doce/dota-knowledge/runtime/manifest.json' with { type: 'json' };
+import { loadImagePackage, validateImageDirectory } from '@reino-doce/dota-knowledge/node/images';
+const images = await loadImagePackage();
+if (images.image('hero', '1', 'profile').state !== 'available' || !(await images.loadBytes(images.image('hero', '1').id)).length) throw new Error('Extracted Node image failure.');
+await validateImageDirectory('data');
 const store = await loadKnowledgePackage();
 if (manifest.schemaVersion !== 2 || store.hero('1').key !== 'antimage') throw new Error('Extracted Node exports failed.');
 store.retire();
@@ -42,7 +49,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 import { webcrypto } from 'node:crypto';
 const root = process.cwd();
-const context = vm.createContext({ TextDecoder, TextEncoder, Uint8Array, structuredClone, crypto: webcrypto, performance });
+const context = vm.createContext({ TextDecoder, TextEncoder, Uint8Array, URL, structuredClone, crypto: webcrypto, performance });
 const modules = new Map();
 async function moduleFor(filename) {
  if (!filename.startsWith(path.join(root, 'src') + path.sep)) throw new Error('Browser entry imports outside src.');
@@ -59,11 +66,19 @@ const manifest = JSON.parse(await fs.readFile('data/runtime/manifest.json'));
 const store = await entry.namespace.loadKnowledgeStore({ manifest, readArtifact: row => fs.readFile(path.join(root, 'data/runtime', row.name)) });
 if (store.hero('1').sourceKey !== 'npc_dota_hero_antimage' || !(await store.loadHeroEvidence('1')).reviewBindings.length) throw new Error('Browser profile/guide failure.');
 if (!(await store.loadObservations({ kind: 'matchup', heroId: '1' })).length) throw new Error('Browser observation failure.');
-store.retire(); console.log(JSON.stringify({ state: 'passed', modules: modules.size }));`;
+store.retire();
+const imagesEntry = await moduleFor(path.join(root, 'src/images.mjs')); await imagesEntry.evaluate();
+let imageReads = 0;
+const images = await imagesEntry.namespace.loadImageCatalog({ manifest: JSON.parse(await fs.readFile('data/images/manifest.json')),
+ readArtifact: row => { if (row.kind === 'image') imageReads++; return fs.readFile(path.join(root, 'data', row.name)); } });
+if (imageReads !== 0 || images.image('hero', '127').state !== 'unavailable') throw new Error('Browser image laziness/absence failure.');
+await images.loadBytes(images.image('hero', '1').id);
+if (imageReads !== 1 || !imagesEntry.namespace.resolveImageUrl(images.image('hero', '1'), 'https://example.test/data/').includes('/heroes/antimage/')) throw new Error('Browser image resolution failure.');
+console.log(JSON.stringify({ state: 'passed', modules: modules.size, imageReads }));`;
         const browserResult = JSON.parse(execFileSync(process.execPath, ['--experimental-vm-modules', '--input-type=module', '-e', browserSmoke],
             { cwd: extracted, encoding: 'utf8', windowsHide: true, maxBuffer: 1024 * 1024, stdio: ['ignore', 'pipe', 'pipe'] }));
         return { files: packed.entryCount, compressedBytes: packed.size, unpackedBytes: packed.unpackedSize, node: nodeResult,
-            browserEntry: browserResult, population: populationResult, dependenciesInstalledInExtraction: 'production-only' };
+            browserEntry: browserResult, population: populationResult, imageFixture: imageFixtureResult, dependenciesInstalledInExtraction: 'production-only' };
     }
     finally {
         if (path.dirname(await fs.realpath(temporary)) !== await fs.realpath(os.tmpdir()) || !path.basename(temporary).startsWith('knowledge-package-')) throw new Error('Unsafe package cleanup.');

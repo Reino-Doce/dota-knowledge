@@ -44,7 +44,7 @@ Known, decoded, unknown, unsupported, not-applicable, and conflicted values have
 
 `data/` is the canonical current dataset, using schema **2** and compiler **3**. `heroes/<key>/` holds plain profiles, abilities, ordered mechanics, guides and population records. `heroes/index.json` supplies ID/key/engine/provider crosswalks; `heroes/aliases.json` preserves all normalized alias candidates. Shared mechanics, sources and review records live under `mechanics/`, `observations/` and `reviews/`. Indexes point to records instead of repeating their payloads.
 
-Profiles select current native attributes, attack range, complexity and ordered roles. Missing scalars are `null` with an explanation in `coverage.fields`. Historical profiles, official comparisons and acquisition bindings remain available in observations and review records. Image descriptors have schemas and types; this dataset makes no new image availability claims.
+Profiles select current native attributes, attack range, complexity and ordered roles. Missing scalars are `null` with an explanation in `coverage.fields`. Historical profiles, official comparisons and acquisition bindings remain available in observations and review records. A separate image catalog supplies base hero portraits/icons, ability artwork and current playable item icons, with explicit reasons for unavailable artwork.
 
 Runtime consumers load the indexed core and fetch hero-keyed guides and observation shards on request. The package ships `data/runtime/`; its existing `./runtime/manifest.json` export resolves to the new location. Runtime loaders accept v2 only. Original acquisitions and the verified v1 preservation archive remain in ignored `evidence/`.
 
@@ -53,6 +53,8 @@ The manifest separates game build, verified patch label, extractor, decoder, rev
 ## Data workflow
 
 Population acquisition has a typed, independent `./node/population` entry. `population:refresh` saves evidence and completed scopes; `population:apply` publishes selected scopes offline, then prunes superseded ordinary evidence. Clients, credentials and calibration features are caller supplied. See [population collection and publication](docs/population.md) for recipes, adapters, optional browser sessions, recovery and an executable fixture example.
+
+Images have browser-safe `./images` and Node `./node/images` entries. Catalog loading leaves pixels lazy; URLs and filesystem roots remain caller-controlled. `images:refresh` captures artwork and `images:apply` publishes it offline. See [image access, acquisition and coverage](docs/images.md).
 
 Ordinary compilation reads canonical records offline without Picker or original acquisitions:
 

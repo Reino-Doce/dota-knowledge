@@ -151,7 +151,7 @@ async function recoverLocked(target, root, lock, lockName, { validate, interrupt
 }
 
 /** One exclusive staging root; caller must identify exactly the superseded generated files. */
-export async function publishDataset({ target, build, validate, ownedFiles, replace = false, interruptAt }) {
+export async function publishDataset({ target, build, validate, ownedFiles, expectedFiles, replace = false, interruptAt }) {
     target = path.resolve(target);
     const root = stagingRoot(target);
     const operationId = randomUUID();
@@ -178,6 +178,12 @@ export async function publishDataset({ target, build, validate, ownedFiles, repl
         if (hadTarget) {
             journal.previousFiles = await inventory(target);
             if (journal.previousFiles.length && !replace) throw new Error('Output exists; explicit replacement is required.');
+        }
+        if (expectedFiles) {
+            const current = new Map(journal.previousFiles.map(row => [row.name, row]));
+            if (expectedFiles.some(row => current.get(row.name)?.sha256 !== row.sha256 || current.get(row.name)?.bytes !== row.bytes)) {
+                throw new Error('Concurrent changes since canonical input was read; retry with the current dataset.');
+            }
         }
         await journalWrite(root, journal);
         await fs.mkdir(stage);

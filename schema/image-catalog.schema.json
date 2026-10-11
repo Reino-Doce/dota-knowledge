@@ -1,0 +1,277 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/image-catalog.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "entities": {
+      "type": "object",
+      "properties": {
+        "heroes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "key": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$"
+              },
+              "engineId": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "key",
+              "engineId"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "abilities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "heroId": {
+                "type": "string",
+                "pattern": "^[1-9][0-9]*$"
+              },
+              "engineId": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "heroId",
+              "engineId"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "key": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$"
+              },
+              "engineId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "acquisition": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "key",
+              "engineId",
+              "acquisition"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "heroes",
+        "abilities",
+        "items"
+      ],
+      "additionalProperties": false
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "path": {
+            "type": "string",
+            "maxLength": 240,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*(?:/[A-Za-z0-9][A-Za-z0-9._-]*)*$"
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 9007199254740991
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 9007199254740991
+          },
+          "mediaType": {
+            "enum": [
+              "image/png",
+              "image/jpeg",
+              "image/webp",
+              "image/avif"
+            ]
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 9007199254740991
+          },
+          "sha256": {
+            "$ref": "core.schema.json#/$defs/hash"
+          }
+        },
+        "required": [
+          "id",
+          "path",
+          "width",
+          "height",
+          "mediaType",
+          "bytes",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "entityKind": {
+                "enum": [
+                  "hero",
+                  "ability",
+                  "item"
+                ]
+              },
+              "entityId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "variant": {
+                "enum": [
+                  "profile",
+                  "icon"
+                ]
+              },
+              "state": {
+                "const": "available"
+              },
+              "assetId": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "entityKind",
+              "entityId",
+              "variant",
+              "state",
+              "assetId"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "entityKind": {
+                "enum": [
+                  "hero",
+                  "ability",
+                  "item"
+                ]
+              },
+              "entityId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "variant": {
+                "enum": [
+                  "profile",
+                  "icon"
+                ]
+              },
+              "state": {
+                "const": "unavailable"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "entityKind",
+              "entityId",
+              "variant",
+              "state",
+              "reason"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    "exclusions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "engineId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "engineId",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "entities",
+    "assets",
+    "images",
+    "exclusions"
+  ],
+  "additionalProperties": false
+}

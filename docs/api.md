@@ -1,5 +1,8 @@
 # Public API
 
+Image catalog queries and lazy byte access are documented in [the image API guide](images.md).
+Use `./images` in browsers and `./node/images` for filesystem loading and explicit acquisition.
+
 ## Main entry
 
 `loadKnowledgeStore({ manifest, readArtifact, guideCacheSize?, guideCacheMaxBytes? })` validates the supplied runtime manifest and core before returning a `KnowledgeStore`. `readArtifact` receives a descriptor tagged as `core`, `guide`, or `observations`; it returns the exact encoded artifact bytes. The store verifies byte bounds, SHA-256, schema version, references, source bindings, and core identity before exposing a record.
@@ -24,7 +27,7 @@ Historical profiles contribute aliases but never replace current native scalar f
 
 Static abilities, shared activations, effects and conditions have separate records. Their acquisition references and review metadata are in `reviews/bindings.json`, with explicit `{ subjectId, field, value }` entries. `field` is a JSON pointer to the removed field in that subject; nested conflict values retain their position. Lazy `HeroEvidence.reviewBindings` exposes the corresponding runtime attribution, and `profileHistory` retains native selection evidence and official comparisons. `claim(id)` and `source(id)` remain available; full claim details load with the guide. Separation never promotes a review or resolves a conflict.
 
-`ImageDescriptor` defines available assets with a safe relative path, identity, positive dimensions/byte length, media type and SHA-256. Unavailable descriptors contain a reason and no asset metadata. This phase supplies contracts only; it adds no images or image lookup API.
+`ImageDescriptor` defines available assets with a safe relative path, identity, positive dimensions/byte length, media type and SHA-256. Unavailable descriptors contain a reason and no asset metadata. The separate [image catalog](images.md) supplies hero, ability and item lookups and lazy bytes without adding image reads to the knowledge loader.
 
 ### Observations and evidence
 

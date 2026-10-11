@@ -16,18 +16,19 @@ async function guardedDirectory(directory) {
 }
 
 /** Dedicated, caller-owned evidence tree. Session directories must be elsewhere. */
-export async function createFileStorage(root) {
+export async function createFileStorage(root, { format = 'dota-population-1' } = {}) {
+    if (!['dota-population-1', 'dota-images-1'].includes(format)) throw new Error('Unknown evidence storage format.');
     root = path.resolve(root);
     await guardedDirectory(root);
     const marker = path.join(root, 'owner.json');
     try {
         const saved = JSON.parse(await regularBytes(root, 'owner.json'));
-        if (saved.format !== 'dota-population-1') throw new Error('Evidence root belongs to another workflow.');
+        if (saved.format !== format) throw new Error('Evidence root belongs to another workflow.');
     }
     catch (error) {
         if (error.code !== 'ENOENT') throw error;
         if ((await fs.readdir(root)).length) throw new Error('Evidence root must be empty or already owned.');
-        await fs.writeFile(marker, jsonBytes({ format: 'dota-population-1' }), { flag: 'wx' });
+        await fs.writeFile(marker, jsonBytes({ format }), { flag: 'wx' });
     }
     const api = {
         root,

@@ -249,6 +249,7 @@ export async function applyPopulation({ dataset, storage, runId, selected, clock
             normalized: Object.fromEntries(scopes.map(entry => [entry.spec.key, entry.normalized.sha256])) };
         await storage.write('publication.json', journal);
         const result = await publishDataset({ target: dataset, replace: true,
+            expectedFiles: [graph.inputManifest, ...graph.metadata.sourceFiles],
             ownedFiles: ['manifest.json', ...graph.metadata.sourceFiles.map(row => row.name)],
             build: output => writeCanonical(output, graph), validate: validateDataset, interruptAt });
         await finishPublication(storage, dataset, journal);

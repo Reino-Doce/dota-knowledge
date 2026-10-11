@@ -33,7 +33,16 @@
     "./node/population": {
       "types": "./src/node/population.d.ts",
       "import": "./src/node/population.mjs"
-    }
+    },
+    "./images": {
+      "types": "./src/images.d.ts",
+      "import": "./src/images.mjs"
+    },
+    "./node/images": {
+      "types": "./src/node/images.d.ts",
+      "import": "./src/node/images.mjs"
+    },
+    "./images/manifest.json": "./data/images/manifest.json"
   },
   "files": [
     "src",
@@ -43,7 +52,11 @@
     "scripts",
     "README.md",
     "LICENSE",
-    "NOTICE.md"
+    "NOTICE.md",
+    "data/images",
+    "data/heroes/*/images",
+    "data/abilities/*/images",
+    "data/items/*/images"
   ],
   "scripts": {
     "test": "node --import ./tests/population/no-network.mjs --test tests/*.test.mjs tests/population/*.test.mjs",
@@ -61,7 +74,10 @@
     "package:verify": "node scripts/check-package.mjs",
     "population:refresh": "node scripts/population/cli.mjs refresh",
     "population:apply": "node scripts/population/cli.mjs apply",
-    "population:recover": "node scripts/population/cli.mjs recover"
+    "population:recover": "node scripts/population/cli.mjs recover",
+    "images:refresh": "node scripts/images/cli.mjs refresh",
+    "images:apply": "node scripts/images/cli.mjs apply",
+    "images:recover": "node scripts/images/cli.mjs recover"
   },
   "devDependencies": {
     "@types/node": "24.10.1",
@@ -69,12 +85,15 @@
   },
   "dependencies": {
     "ajv": "8.17.1",
-    "ajv-formats": "3.0.1"
+    "ajv-formats": "3.0.1",
+    "pngjs": "7.0.0"
   },
   "peerDependencies": {
     "electron": ">=35"
   },
   "peerDependenciesMeta": {
-    "electron": { "optional": true }
+    "electron": {
+      "optional": true
+    }
   }
 }

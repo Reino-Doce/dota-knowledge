@@ -4,6 +4,9 @@ import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 import { readCanonical, readJson, validateRuntime } from '../../src/node/canonical.mjs';
 import { verifyReplacements } from '../population/reconciliation.mjs';
+import { validateImageDirectory } from '../../src/node/image-files.mjs';
+import { isImageFile } from '../../src/image-contracts.mjs';
+import { rosterSignature, validateImageRoster } from '../images/inventory.mjs';
 
 let validators;
 export async function schemaValidators() {
@@ -18,6 +21,15 @@ export async function schemaValidators() {
 }
 export async function validateDataset(root) {
     const graph = await readCanonical(root);
+    if ([...graph.extras.keys()].some(isImageFile)) {
+        const images = await validateImageDirectory(root);
+        validateImageRoster(images.catalog, graph.entities);
+        if (images.manifest.rosterSignature !== rosterSignature(graph.entities)
+            || ['clientVersion', 'sourceRevision'].some(key => images.manifest.build[key] !== graph.metadata.build[key])) throw new Error('Image catalog belongs to different canonical identities/build.');
+        const owned = new Set(['images/manifest.json', 'images/catalog.json', ...images.catalog.assets.map(row => row.path)]);
+        const listed = graph.metadata.sourceFiles.filter(row => isImageFile(row.name));
+        if (listed.length !== owned.size || listed.some(row => !owned.has(row.name))) throw new Error('Image artifacts differ from canonical manifest.');
+    }
     const preserved = verifyReplacements(graph);
     const historical = graph.extras.get('reviews/reconciliation/index.json');
     if (historical) {
@@ -31,6 +43,10 @@ export async function validateDataset(root) {
         const validator = schemas.get(name);
         if (!validator || !validator(value)) throw new Error('Schema mismatch ' + label + ': ' + JSON.stringify(validator?.errors?.slice(0, 4)));
     };
+    if (graph.extras.has('images/manifest.json')) {
+        validate('image-manifest', await readJson(root, 'images/manifest.json'), 'Image manifest');
+        validate('image-catalog', await readJson(root, 'images/catalog.json'), 'Image catalog');
+    }
     for (const [name, schema] of [['manifest.json', 'canonical-manifest'], ['heroes/index.json', 'hero-index'], ['heroes/aliases.json', 'aliases'],
         ['observations/index.json', 'observations-index'], ['observations/sources.json', 'source-registry'], ['mechanics/reference.json', 'mechanics-reference'],
         ['reviews/claims.json', 'claim-index'], ['reviews/bindings.json', 'review-bindings'], ['reviews/profiles.json', 'profile-history'],

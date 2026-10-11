@@ -4,7 +4,7 @@ import type { AbilityRecord, ActivationRecord, ClaimRecord, ConditionRecord, Eff
 export type { AbilityRecord, ActivationRecord, ClaimRecord, ConditionRecord, DecodedValue, EffectRecord, HeroEvidence, HeroId, HeroRecord,
     ConflictedValue, KnownValue, MechanicRuleRecord, ModifierRecord, NotApplicableValue, ObservationFilter, ObservationRecord,
     SourceRecord, StableId, TypedValue, UnitRecord, UnknownValue, UnsupportedValue, UpgradeRecord, ValueConflict,
-    ValueRepresentation, EvidenceRef, ValueRecord, NativeRole, ProfileFieldStatus, ReviewBinding, ImageIdentity, ImageDescriptor } from './records.js';
+    ValueRepresentation, EvidenceRef, ValueRecord, NativeRole, ProfileFieldStatus, ReviewBinding, ImageIdentity, ImageDescriptor, ItemId } from './records.js';
 export interface KnowledgeEntity { readonly id: StableId | HeroId; readonly [field: string]: unknown }
 export interface ArtifactDescriptor {
     readonly name: string;

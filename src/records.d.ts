@@ -1,5 +1,6 @@
 /** Public decimal identity from the game; never convert it to a JS number. */
 export type HeroId = string & { readonly __heroId: unique symbol };
+export type ItemId = string & { readonly __itemId: unique symbol };
 /** Stable semantic identity persisted across compiler runs. */
 export type StableId = string & { readonly __stableId: unique symbol };
 export type ValueRepresentation = 'literal' | 'rankCurve' | 'formula' | 'structured';
@@ -172,7 +173,7 @@ export interface ReviewBinding {
 export interface ImageIdentity {
     readonly id: StableId;
     readonly entityKind: 'hero' | 'ability' | 'item';
-    readonly entityId: StableId | HeroId;
+    readonly entityId: StableId | HeroId | ItemId;
     readonly variant: string;
 }
 export type ImageDescriptor = ImageIdentity & ({

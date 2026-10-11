@@ -3,6 +3,7 @@ import path from 'node:path';
 import { hash, semanticHash, stable } from '../canonical-model.mjs';
 import { SCHEMA_VERSION, COMPILER_VERSION, safePath, normalizeAlias, validateProfile, subjectHeroIds } from '../record-contracts.mjs';
 import { loadKnowledgeDirectory } from '../node.mjs';
+import { isImageFile } from '../image-contracts.mjs';
 
 export const jsonBytes = value => Buffer.from(JSON.stringify(value, null, 2) + '\n');
 export function within(root, name) {
@@ -114,6 +115,8 @@ function validateGraph(graph) {
 }
 
 export async function readCanonical(root, { verify = true } = {}) {
+    const manifestBytes = await regularBytes(root, 'manifest.json');
+    const inputManifest = { name: 'manifest.json', bytes: manifestBytes.length, sha256: hash(manifestBytes) };
     const metadata = verify ? await verifyManifest(root) : await readJson(root, 'manifest.json');
     if (metadata.schemaVersion !== 2) throw new Error('Canonical compilation requires schema version 2.');
     const index = await readJson(root, 'heroes/index.json');
@@ -145,9 +148,9 @@ export async function readCanonical(root, { verify = true } = {}) {
     for (const [name, rows] of files) if (rows.some((_, offset) => !used.has(name + '#' + offset))) throw new Error('Unindexed observation: ' + name);
     const extras = new Map();
     for (const descriptor of metadata.sourceFiles ?? []) {
-        if (descriptor.name.startsWith('reviews/reconciliation/')) extras.set(descriptor.name, await regularBytes(root, descriptor.name));
+        if (descriptor.name.startsWith('reviews/reconciliation/') || isImageFile(descriptor.name)) extras.set(descriptor.name, await regularBytes(root, descriptor.name));
     }
-    return validateGraph({ metadata, entities, sources: await readJson(root, 'observations/sources.json'),
+    return validateGraph({ inputManifest, metadata, entities, sources: await readJson(root, 'observations/sources.json'),
         claims: (await readJson(root, 'reviews/claims.json')).claims,
         bindings: (await readJson(root, 'reviews/bindings.json')).bindings,
         history: (await readJson(root, 'reviews/profiles.json')).profiles,
