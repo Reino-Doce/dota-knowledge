@@ -8,14 +8,11 @@ const slug = value => String(value).toLowerCase().replace(/^npc_dota_hero_/, '')
 const picker = 'yarikleto/dotabuff-picker';
 const d2 = 'baltrietis-dot/d2picker-2.0';
 const source = (id, repo, resource, kind, rows, semantics) => Object.freeze({ id, repo, resource, kind, rows, semantics,
-    reuse: repo === 'dotafix/dotafix.github.io' ? 'Repository GPL-3.0; third-party statistical data rights remain source-dependent.'
-        : repo === picker ? 'Code MIT; NOTICE excludes third-party datasets. Dataset redistribution rights unverified.'
+    reuse: repo === picker ? 'Code MIT; NOTICE excludes third-party datasets. Dataset redistribution rights unverified.'
             : 'No repository license found at initial research; dataset redistribution rights unverified.',
 });
 
 export const EXTERNAL_SOURCES = Object.freeze([
-    source('dotafix-data', 'dotafix/dotafix.github.io', 'assets/data.json', 'historical-draft-reference', '$heroes',
-        'Full reference hero profiles and rank-specific matchup, synergy, lane, duration and item observations. Commit age bounds freshness; collection windows unknown.'),
     source('picker-matchups', picker, 'public/data/matchups.json', 'observed-matchups', 'matchups',
         'A versus B: [disadvantage percentage points, win rate percent, games]. Positive disadvantage is adverse to A. Cohort dates/patch unknown.'),
     source('picker-positions', picker, 'public/data/positions.json', 'observed-positions', 'heroes',
@@ -85,7 +82,7 @@ export async function collectExternalSources(selected, { fetchImpl = fetch, now 
             }
             const revision = await commits.get(descriptor.repo);
             const url = `https://raw.githubusercontent.com/${descriptor.repo}/${revision.commit}/${descriptor.resource}`;
-            const bytes = await fetchPublicBytes(url, { fetchImpl, maxBytes: descriptor.id === 'dotafix-data' ? 20 * 1024 * 1024 : 12 * 1024 * 1024 });
+            const bytes = await fetchPublicBytes(url, { fetchImpl });
             const payload = JSON.parse(bytes.toString('utf8'));
             validateExternalPayload(descriptor, payload);
             results.push({ ...descriptor, ...revision, url, retrievedAt: now(), status: 'available',
@@ -102,7 +99,6 @@ export async function collectExternalSources(selected, { fetchImpl = fetch, now 
 
 function rowsFor(descriptor, payload) {
     if (!descriptor.rows) return [];
-    if (descriptor.rows === '$heroes') return payload.heroes.map((row, index) => ({ key: String(row.id), row, pointer: `/heroes/${index}` }));
     if (descriptor.rows === '$array') return payload.map((row, index) => ({ key: String(row.id), row, pointer: `/${index}` }));
     const records = descriptor.rows.startsWith('$') ? payload : payload[descriptor.rows];
     return Object.entries(records).filter(([key]) => descriptor.rows !== '$numeric' || /^[1-9]\d*$/.test(key))
@@ -118,26 +114,13 @@ export function validateExternalPayload(descriptor, payload) {
     const tuple = (value, length) => Array.isArray(value) && value.length === length && value.every(Number.isFinite);
     if (descriptor.rows === '$array' ? !Array.isArray(payload) : !object(payload)) fail();
     if (descriptor.rows === '$array' && payload.some(row => !object(row))) fail();
-    if (descriptor.rows === '$heroes' && (!Array.isArray(payload.heroes) || payload.heroes.some(row => !object(row)) || !Array.isArray(payload.items))) fail();
     if (descriptor.rows && !descriptor.rows.startsWith('$') && !object(payload[descriptor.rows])) fail();
     const rows = rowsFor(descriptor, payload);
     if (descriptor.rows && (!rows.length || rows.length > 512)) fail();
     if (new Set(rows.map(row => row.key)).size !== rows.length) fail();
     for (const { key, row } of rows) {
         if (!key || key.length > 128 || row === null || typeof row !== 'object') fail();
-        if (['$array', '$heroes'].includes(descriptor.rows) && (!Number.isSafeInteger(row.id) || row.id <= 0)) fail();
-        if (descriptor.id === 'dotafix-data') {
-            if (typeof row.iName !== 'string' || typeof row.dName !== 'string' || !Array.isArray(row.roles)
-                || row.roles.some(role => !object(role) || typeof role.role !== 'string' || !count(role.level) || role.level > 3)) fail();
-            for (const [band, stats] of Object.entries(row).filter(([key]) => /^rank(?:All|[1-9])$/.test(key))) {
-                if (!band || !object(stats) || !percent(stats.wr) || stats.m !== undefined && !count(stats.m)) fail();
-                for (const key of ['ens', 'tms']) {
-                    if (!Array.isArray(stats[key]) || stats[key].length > 512 || stats[key].some(pair => !object(pair)
-                        || !count(pair.id) || pair.id < 1 || !percent(pair.wr) || !Number.isFinite(pair.adv) || !percent(pair.pr))) fail();
-                }
-            }
-            if (!object(row.rankAll)) fail();
-        }
+        if (descriptor.rows === '$array' && (!Number.isSafeInteger(row.id) || row.id <= 0)) fail();
         if (descriptor.id === 'aegis-matchups' && (!object(row) || Object.values(row).some(value => !Number.isFinite(value) || value < 0 || value > 1))) fail();
         if (descriptor.id === 'd2-matchups' && (!Array.isArray(row) || row.some(pair => !object(pair) || !Number.isSafeInteger(pair.hero_id)
             || !Number.isSafeInteger(pair.games_played) || !Number.isSafeInteger(pair.wins) || pair.wins < 0 || pair.games_played < pair.wins))) fail();
@@ -189,10 +172,6 @@ function identityResolver(heroes) {
 /** Values remain in their source units; useful typed observations never become native fields. */
 function normalizeRow(id, row, resolve) {
     const matchup = (key, value) => ({ opponentId: resolve(key), sourceOpponentKey: key, ...value });
-    if (id === 'dotafix-data') return { referenceProfile: { id: row.id, engineKey: row.iName, name: row.dName,
-        aliases: row.alt, primaryAttribute: row.prim, complexity: row.complex, roles: row.roles, attackRange: row.range, flags: row.flags,
-        ranks: Object.fromEntries(Object.entries(row).filter(([key]) => /^rank(?:All|[1-9])$/.test(key))) },
-    interpretation: 'Historical source classifications and statistical observations; not verified engine mechanics or current meta.' };
     if (id === 'picker-matchups') return { matchups: Object.entries(row).map(([key, value]) =>
         matchup(key, { disadvantagePercentagePoints: value[0], winRatePercent: value[1], games: value[2] })) };
     if (id === 'd2-matchups') return { matchups: row.map(value => matchup(String(value.hero_id), {
@@ -237,9 +216,7 @@ export function buildExternalEvidence(snapshots, catalog) {
         }
         const rows = validateExternalPayload(snapshot, payload);
         const excludedKeys = new Set(['heroes', 'matchups', 'against', 'synergies', 'timings']);
-        entry.metadata = snapshot.rows?.startsWith('$') ? (snapshot.id === 'dotafix-data'
-            ? { snapshotCommittedAt: snapshot.commitDate ?? null, items: payload.items, freshnessBasis: 'historical-commit-bound' }
-            : snapshot.id === 'dota-counters' ? { meta: payload.meta ?? null, roles_meta: payload.roles_meta ?? null } : {})
+        entry.metadata = snapshot.rows?.startsWith('$') ? (snapshot.id === 'dota-counters' ? { meta: payload.meta ?? null, roles_meta: payload.roles_meta ?? null } : {})
             : Object.fromEntries(Object.entries(payload).filter(([key]) => !excludedKeys.has(key)));
         if (snapshot.id === 'picker-matchups' && Array.isArray(payload.heroes)) entry.metadata.heroProfiles = payload.heroes;
         const reported = value => value === undefined || value === null ? { state: 'unknown' } : { state: 'reported', value };
@@ -253,8 +230,7 @@ export function buildExternalEvidence(snapshots, catalog) {
         entry.unresolvedIdentities = [];
         for (const { key, row, pointer: sourcePointer } of rows) {
             const heroId = resolve(key);
-            if (!heroId || ((snapshot.rows === '$array' || snapshot.id === 'dota-counters') && row.name && resolve(row.name) !== heroId)
-                || snapshot.id === 'dotafix-data' && resolve(row.iName) !== heroId) {
+            if (!heroId || ((snapshot.rows === '$array' || snapshot.id === 'dota-counters') && row.name && resolve(row.name) !== heroId)) {
                 entry.unresolvedIdentities.push({ key, pointer: sourcePointer, reason: heroId ? 'identity-name-conflict' : 'not-in-native-roster-or-ambiguous' });
                 continue;
             }

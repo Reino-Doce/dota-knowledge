@@ -1,5 +1,5 @@
 import type { HeroRecord, HeroEvidence, ImageDescriptor, ImageIdentity, KnowledgeManifest,
-    KnowledgeStore, NativeRole, ReviewBinding } from '@reino-doce/dota-knowledge';
+    KnowledgeStore, NativeRole, ReviewBinding, PreservationReference } from '@reino-doce/dota-knowledge';
 import { loadKnowledgePackage } from '@reino-doce/dota-knowledge/node';
 
 async function profilesAndReviews(store: KnowledgeStore) {
@@ -13,6 +13,14 @@ async function profilesAndReviews(store: KnowledgeStore) {
     // @ts-expect-error Alias queries require text.
     store.heroesByAlias(1);
     void [keyed, candidates];
+    const preservation: PreservationReference | undefined = store.source('source:historical:example')?.preservation;
+    if (preservation) {
+        const kind: 'archived-json' = preservation.kind;
+        const pointer: string = preservation.pointer;
+        // @ts-expect-error Preservation descriptors are immutable.
+        preservation.sha256 = 'changed';
+        void [kind, pointer];
+    }
     if (hero) {
         const attribute: 0 | 1 | 2 | 3 | null = hero.primaryAttribute;
         const range: number | null = hero.attackRange;

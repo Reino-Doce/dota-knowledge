@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { createPopulationObservations } from '../src/legacy-import.mjs';
+import { createPopulationObservations } from '../src/bundle-import.mjs';
 
 test('population counts remain exact decimal strings and cohorts stay separate', () => {
     const population = {

@@ -72,8 +72,8 @@ npm run compare -- --base <git-revision>
 npm run package:verify
 ```
 
-Legacy import and explicit source recovery are described in [the data workflow guide](docs/data-workflow.md). Native VPK files and Picker Git snapshots are retained only after their recorded SHA-256 matches. Missing originals remain explicit in `reviews/reconciliation/index.json`. Recovery and acquisition are separate operations from compilation.
+Offline bundle import and explicit source recovery are described in [the data workflow guide](docs/data-workflow.md). Native VPK files and Picker Git snapshots are retained only after their recorded SHA-256 matches. Missing originals remain explicit in `reviews/reconciliation/index.json`. Recovery and acquisition are separate operations from compilation.
 
 Run `npm test`, `npm run typecheck`, `npm run schema:check`, and `npm run package:verify` before packaging. Comparison reports gameplay, observations, review decisions, structure, naming and metadata separately, including deleted identities. Package verification extracts the archive and checks its Node exports, browser entry and every lazy reference without development dependencies.
 
-`npm run audit:consolidation` captures the current v2 records and performance offline. The original v1 Phase A capture is reproducible from its verified archive and saved tooling. See [the capture workflow](docs/data-workflow.md#capture-a-consolidation-baseline) for both formats.
+`npm run audit:consolidation` captures the current v2 records and performance offline. Historical captures remain in verified archives with their original tooling. See [the capture workflow](docs/data-workflow.md#capture-a-consolidation-baseline).

@@ -73,7 +73,7 @@ export function makeProfile(hero, guide, observations = [], extraAliases = []) {
     return profile;
 }
 
-/** Both legacy bundle import and layout migration enter this single record graph. */
+/** Bundle imports and historical layout readers share this record graph. */
 export function normalizeLegacyRecords({ metadata, heroes, sources, claims, observations, guides, reference }, { crosswalk = [], aliases = [] } = {}) {
     const byObservation = new Map();
     let occurrences = 0;
@@ -146,7 +146,7 @@ export function normalizeLegacyRecords({ metadata, heroes, sources, claims, obse
             uniqueObservations: byObservation.size }, extras: new Map() };
 }
 
-export function graphFromLegacyImport(result) {
+export function graphFromBundleImport(result) {
     return normalizeLegacyRecords({ metadata: { ...result.canonical.metadata, runtimeObservations: result.core.observations },
         heroes: result.canonical.heroes, sources: result.core.sources, claims: result.canonical.claims,
         observations: [...result.core.observations, ...[...result.statisticFiles.values()].flat()],

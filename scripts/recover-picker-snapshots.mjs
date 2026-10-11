@@ -41,12 +41,9 @@ async function writeOnce(filename, bytes) {
 }
 
 async function recoverPickerSnapshots({ dataset = defaultDataset, repository = defaultRepository, output = defaultOutput } = {}) {
-    const reconciliation = JSON.parse(await fs.readFile(path.join(dataset, 'reviews', 'reconciliation', 'index.json'), 'utf8'));
-    const evidenceManifestPath = path.resolve(packageRoot, ...reconciliation.evidenceManifest.split('/'));
-    const evidenceRoot = path.dirname(evidenceManifestPath);
-    const external = JSON.parse(await fs.readFile(path.join(evidenceRoot, 'external', 'draft_evidence.json'), 'utf8'));
-    const sources = (external.sources ?? []).filter(source => source.repo === 'yarikleto/dotabuff-picker')
-        .map(source => ({ id: `source:${source.id}`, repo: source.repo, revision: source.commit,
+    const registry = JSON.parse(await fs.readFile(path.join(dataset, 'observations', 'sources.json'), 'utf8'));
+    const sources = registry.filter(source => source.repo === 'yarikleto/dotabuff-picker')
+        .map(source => ({ id: source.id, repo: source.repo, revision: source.commit,
             resource: safeRelative(source.resource), sha256: source.sha256 }))
         .sort((left, right) => left.id.localeCompare(right.id));
     if (sources.length !== 6) throw new Error(`Expected the six selected Picker snapshots, found ${sources.length}.`);

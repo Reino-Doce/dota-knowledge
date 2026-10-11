@@ -6,6 +6,8 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { parseArgs } from 'node:util';
 import { readCanonical } from '../src/node/canonical.mjs';
 import { readLegacyLayout } from './consolidation/legacy-layout.mjs';
+import { verifiedIdentityMapping, reconcileValue, historicalInputSignature } from './consolidation/identity-reconciliation.mjs';
+import { verifyReplacements } from './population/reconciliation.mjs';
 
 const packageRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const defaultDataset = path.join(packageRoot, 'data');
@@ -109,6 +111,36 @@ export function compareGraphs(before, after) {
         changeCount: changes.length, changes };
 }
 
+export async function compareWithIdentities(before, after, { repository = packageRoot } = {}) {
+    const raw = compareGraphs(before, after);
+    const mapping = await verifiedIdentityMapping(after, repository, verifyReplacements(after));
+    if (!mapping.entries.length) return { ...raw, identityChanges: [] };
+    const aligned = { ...before };
+    for (const field of ['entities', 'sources', 'observations', 'claims', 'bindings', 'history', 'metadata']) aligned[field] = reconcileValue(before[field], mapping);
+    aligned.guides = new Map([...before.guides].map(([key, value]) => [key, reconcileValue(value, mapping)]));
+    aligned.runtimeProjection = new Map([...before.runtimeProjection].map(([id, value]) => [mapping.ids.get(id) ?? id, value]));
+    const reconciled = compareGraphs(aligned, after);
+    const previousIdentities = new Set([...before.sources, ...before.observations].map(record => createHash('sha256').update(record.id).digest('hex')));
+    const identityChanges = mapping.entries.filter(row => previousIdentities.has(row.oldIdentitySha256));
+    const expectedSignature = identityChanges.length || reconciled.changes.some(row => row.identity === 'dataset' && row.pointer === '/inputSignature')
+        ? historicalInputSignature(after) : null;
+    const unexplained = reconciled.changes.filter(row => {
+        if (row.category !== 'metadata' || row.identity !== 'dataset') return true;
+        if (row.pointer === '/inputSignature') return row.before !== mapping.generation.before.inputSignature
+            || row.after !== expectedSignature;
+        const field = row.pointer.slice(1);
+        return !['createdAt', 'generatedAt'].includes(field) || row.before !== mapping.generation.before[field] || row.after !== mapping.generation.after[field];
+    });
+    if (identityChanges.length) for (const [field, expected] of Object.entries({ ...mapping.generation.after, inputSignature: expectedSignature })) {
+        if (after.metadata[field] !== expected && !unexplained.some(row => row.identity === 'dataset' && row.pointer === '/' + field)) {
+            unexplained.push({ category: 'metadata', identity: 'dataset', pointer: '/' + field,
+                before: before.metadata[field], after: after.metadata[field], reason: 'Historical transition requires the verified generation and recomputed signature.' });
+        }
+    }
+    return { ...reconciled, equivalent: unexplained.length === 0, raw,
+        identityChanges, unexplained };
+}
+
 async function compareCurrent({ base, dataset = defaultDataset } = {}) {
     if (typeof base !== 'string' || !base.trim()) throw new Error('Pass --base <git-revision>.');
     const ref = git(packageRoot, ['rev-parse', '--verify', base + '^{commit}']).trim();
@@ -142,7 +174,7 @@ async function compareCurrent({ base, dataset = defaultDataset } = {}) {
     const manifest = JSON.parse(await fs.readFile(path.join(current, 'manifest.json')));
     const after = manifest.schemaVersion === 1 ? await readLegacyLayout(current, { retainMaps: false }) : await readCanonical(current, { verify: false });
     after.layoutVersion = manifest.schemaVersion;
-    return { ...compareGraphs(before, after), base: ref, dataset: path.relative(packageRoot, current).split(path.sep).join('/') };
+    return { ...await compareWithIdentities(before, after), base: ref, dataset: path.relative(packageRoot, current).split(path.sep).join('/') };
 }
 
 function usage() {

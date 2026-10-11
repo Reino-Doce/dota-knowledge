@@ -107,6 +107,14 @@ export interface ModifierRecord { readonly id: StableId; readonly effectIds: rea
 export interface MechanicRuleRecord { readonly id: StableId; readonly effectIds: readonly StableId[]; readonly [field: string]: unknown }
 export interface UnitRecord { readonly id: StableId; readonly heroIds: readonly HeroId[]; readonly [field: string]: unknown }
 export interface UpgradeRecord { readonly id: StableId; readonly [field: string]: unknown }
+/** Hash-bound original metadata in persistent evidence; runtime loading does not read it. */
+export interface PreservationReference {
+    readonly kind: 'archived-json';
+    readonly path: string;
+    readonly bytes: number;
+    readonly sha256: string;
+    readonly pointer: string;
+}
 export interface SourceRecord {
     readonly id: StableId;
     readonly sha256?: string | null;
@@ -117,6 +125,7 @@ export interface SourceRecord {
     readonly revision?: string | number | null;
     readonly license?: string | null;
     readonly attribution?: string | null;
+    readonly preservation?: PreservationReference;
     readonly [field: string]: unknown;
 }
 export interface ClaimRecord {

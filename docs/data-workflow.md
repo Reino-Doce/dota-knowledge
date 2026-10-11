@@ -18,19 +18,35 @@ lookups. See [lookup contracts and the runnable example](api.md#hero-keys-and-al
 
 ## Import selected source bundles
 
-`npm run import:legacy -- --mechanics <directory> --evidence <directory> --output data --version <label> --replace` imports the selected mechanics and external-evidence bundles. It stores the exact selected bytes under the ignored `evidence/legacy-inputs/<input-signature>/` tree, checks their source manifests, and feeds the same normalized record graph and serializer as layout migration. It emits field reconciliation under `reviews/reconciliation/` and validates canonical records, the core and lazy artifacts.
+`npm run import:bundle -- --mechanics <directory> --evidence <directory> --output data --version <label> --replace` imports selected offline mechanics and external-evidence bundles. It checks manifest-listed bytes and stores exact inputs under ignored `evidence/bundle-inputs/<input-signature>/`. It uses the canonical serializer and guarded publisher, including schema and runtime validation. See the [executable offline fixture](examples/bundle-fixture.mjs).
 
-The compiler preserves the previous generation time when the semantic input signature is unchanged. It never changes source retrieval times, claims a missing acquisition, or promotes an unreviewed interpretation. A changed input receives a new signature and must pass source, review, reference, and schema checks.
+The mechanics directory supplies `hero_mechanics_manifest.json`, `hero_mechanics.json`, `hero_mechanics_annotations.json` and `hero_mechanics_browser.json`. The evidence directory supplies `draft_evidence_manifest.json`, `draft_evidence.json` and every manifest-listed hero guide. Existing supported population records, claims and provider inputs retain their validation and source units.
 
-## Migrate a v1 layout and recover publication
+Historical profiles use an explicit per-hero array:
 
-`npm run migrate:canonical -- --audit <completed-phase-a-directory>` migrates `data/hero-knowledge/` into `data/`. It requires the verified preservation baseline at revision `1684ee640b3d80310ebc0aa5841235917981e0ae`. `--from-archive` instead restores that exact baseline into an isolated directory and can reproduce the migration after the old active tree is retired. Neither route acquires providers or changes the Phase A capture.
+```json
+{
+  "historicalProfiles": [
+    { "sourceId": "source:archive-input", "sourceRecord": { "name": "Historical name", "ranks": {} } }
+  ]
+}
+```
 
-The Phase B overlay at `reviews/reconciliation/phase-b-fields.jsonl.gz` maps old fields to canonical records, review bindings or retained archive members. Every original mapped subtree is hashed; nested attribution can be reconstructed, and arrays are compared in order. `phase-b.json` records the archive hash, merge counts and empty semantic-ID rename list. The old acquisition reconciliation maps remain unchanged, including their historical paths.
+The corresponding evidence source has `id: "archive-input"`, a historical `kind`, its original response `sha256`, and `rawFile` pointing to a response listed in the evidence manifest. The importer verifies those bytes. Source identity becomes `source:historical:<sha256>`; profile identity becomes `observation:<hero-id>:historical-profile:<sha256>`, with `originalField: "historicalProfile"`. The wrapper accepts only `sourceId` and `sourceRecord`; profile fields are `id`, `engineKey`, `name`, `aliases`, `primaryAttribute`, `complexity`, `roles`, `attackRange`, `flags` and `ranks`. Unsupported historical fields, unrecognized fields ending in `Profile`, and identity collisions fail the import. Other provider extension fields remain exact `provider-record:<field>` observations. Values and ordered nested rank records remain exact; current native profiles remain authoritative.
 
-Publication owns one sibling `.<output-name>-staging/` directory containing an exclusive lock, journal, staged tree and rollback tree. It verifies the complete stage before promotion. Concurrent target edits abort publication; unrelated files are carried forward. Recovery verifies the promoted manifest or restores the previous tree while preserving unrelated edits made during an interruption. Recovery itself is exclusive and can resume another interrupted recovery.
+`--generated-at <date>` injects a generation clock. `--previous <manifest>` selects the previous canonical manifest (by default the destination manifest). An unchanged input signature preserves its generation time. `--replace` authorizes replacement of manifest-owned output files; unrelated files survive. Source retrieval, observation and commit clocks are never refreshed by import.
 
-After an interrupted operation, use `npm run compile -- --output <directory> --recover` or `npm run migrate:canonical -- --output <directory> --recover`. A live owner's lock prevents recovery. Cleanup is limited to the owned staging operation. The baseline archive and all acquisition evidence stay outside it.
+## Historical preservation and publication recovery
+
+Historical sources expose a typed `preservation` reference to verified archived metadata, retaining original source hashes, clocks, cohort uncertainty and historical item definitions. The reference contains `kind: "archived-json"`, an evidence-relative `path`, byte length, SHA-256 and JSON `pointer`. Runtime loaders do not open evidence archives.
+
+Reconciliation-index version 2 refers to the immutable original index and field maps through archive descriptors. `reviews/reconciliation/identities.json` publishes old-identity digests, new IDs, before/after record digests and an archive descriptor. Exact old/new identities remain in migration evidence. Development verification resolves original pointers and claim targets through verified mappings. Missing archives, altered bytes, reused identities, missing mappings and unexplained historical deletions fail verification. Ordinary compilation validates the current ledger and remains independent of ignored evidence.
+
+The original Phase B overlay at `reviews/reconciliation/phase-b-fields.jsonl.gz` remains unchanged. Its read-only preservation adapter applies only authorized identity/provenance transformations and verified before/after generation clocks when comparing old subtrees. The ledger's generation reference binds the original signature and migration clock; comparison checks the recomputed migration signature even when a stale original header would otherwise produce no difference. Later population publications retain their own generation clocks. Original Phase A-E evidence and the pre-retirement source/tooling archive remain available for historical reproduction. One-time migration writers and validators have been retired from maintained commands.
+
+Publication uses a sibling `.<output-name>-staging/` directory with an exclusive lock, journal, staged tree and rollback tree. It verifies the stage before promotion and rejects concurrent target edits. Recovery can resume interrupted rollback and preserves unrelated work.
+
+After interruption, run `npm run compile -- --output <directory> --recover`. A live owner's lock prevents recovery. Cleanup belongs to the guarded publisher's owned operation; persistent evidence is outside that operation.
 
 ## Recover original source bytes
 
@@ -40,51 +56,18 @@ The package's ignored `evidence/` directory is persistent development storage. T
 
 ## Capture a consolidation baseline
 
-On schema v2, `npm run audit:consolidation` validates the current tree and writes a fresh `evidence/consolidation/canonical-<timestamp>/` capture. It records file hashes, hero/alias indexes, entity/claim/observation identities and semantic digests, and repeats the Phase A performance workload. It requires neither Picker nor ignored original evidence. Existing captures are never overwritten; `--skip-measurement` records that performance was not measured.
+`npm run audit:consolidation` validates and captures current canonical data offline under a new `evidence/consolidation/canonical-<timestamp>/` directory. It records file hashes, hero/alias indexes, entity/claim/observation digests and current identity mappings. Existing captures are never overwritten. `--output <new-directory>` selects another evidence location; `--skip-measurement` explicitly records that performance was not measured.
 
-The original Phase A workflow below remains reproducible using the baseline archive and its saved tooling:
-
-```sh
-npm run audit:consolidation -- --legacy-archive <completed-phase-a-directory> --picker <picker-checkout>
-```
-
-This restores the committed revision, verifies every blob, restores saved audit tooling and copies only hash-verified retained evidence into an isolated checkout before running the original capture. Picker's selected bytes also come from the saved Phase A inputs; the supplied local checkout supplies its pinned Git revision without network access. To capture a still-active v1 layout directly, run:
-
-```sh
-npm run audit:consolidation -- --picker <picker-checkout>
-```
-
-For a v1 capture, the default Picker path is the sibling `dotabuff-picker` checkout. This offline command creates a new `evidence/consolidation/phase-a-<timestamp>-<revision>/` directory. `--output <new-directory>` selects a destination outside the source checkouts or under library `evidence/consolidation/`; existing captures are never overwritten. `--base <revision>` selects the committed recovery baseline (default `HEAD`, v1 capture only). It never changes either checkout or runs a collector.
-
-The capture verifies manifest hashes, runs the existing focused store/population/diff tests and full original-evidence schema check, and restores a Git archive into an owned temporary directory. Every restored file must match its committed blob, and the focused tests run from that isolated tree. Git line-ending conversion is disabled for archive creation. Current dataset bytes that differ from the selected commit are retained separately; uncommitted work is not reset or staged.
-
-Start with `index.json`; it is written only after the complete capture succeeds. The audit is divided into:
-
-| Artifact | Purpose |
-| --- | --- |
-| `files.json`, `heroes.json`, `identities.json` | Byte hashes/sizes, old/new paths, decimal IDs, engine keys and provider slugs; explicit rename list (initially empty) |
-| `fields.jsonl.gz`, `coverage.json` | Exact old JSON pointers, destination files, subtree digests and exhaustive leaf coverage, including ordered arrays and empty containers |
-| `observations.jsonl.gz`, `cohorts.json` | Observation identities/occurrences, clocks, counts, direction, cohorts and historical-rank keys |
-| `reviews.jsonl.gz`, `profile-candidates.jsonl.gz`, `aliases.json` | Detailed review decisions/bindings, static candidates and alias collisions; candidates do not resolve conflicts |
-| `picker.json`, `inputs/picker/` | Script/test/fixture classifications, dependencies, exact selected outputs/portraits, attribution and explicit gaps |
-| `evidence.json` | Existing immutable acquisitions and field reconciliation maps, including all original source pointers |
-| `baseline.tar.gz`, `recovery.json` | Committed recovery archive and file-by-file restoration evidence |
-| `performance.json` | Dedicated-process load/query samples, peak RSS and retained heap after loading beyond the guide cache capacity |
-
-A field mapping covers the entire subtree rooted at its pointer. An array's order and every nested value contribute to its digest. Original acquisition bytes stay in their existing evidence locations; the audit references and hashes them. The baseline archive supplies unchanged library bytes, and `inputs/library/` holds any selected uncommitted dataset bytes. Newly captured Picker bytes are immutable audit inputs, separate from the older Picker snapshots already referenced by library observations. Source generation and acquisition dates are not refreshed.
-
-Destinations describe the future layout. The audit does not implement migration, select conflicting static values, rename stable IDs, or prove collector parity. Historical ranks/builds remain statistics; calibration metadata has a separate population record destination, while app model policy stays in Picker. Unknown scripts, fields, hero identities, artifact mismatches and concurrent selected-input edits fail the capture. Picker caches/session storage, rank medals and app screenshots are outside this selected input set.
-
-Performance uses five sequential store loads, 200 warmed representative query batches, and lazy loading of 17 heroes with an eight-guide cache. The first load is process-cold; the OS filesystem cache is uncontrolled. Compare repeated measurements on the same host before applying the plan's regression thresholds. `--skip-measurement` is available for inventory-only reruns and is explicitly reported as unmeasured. Portrait checks establish PNG signature, dimensions and hashes; full decoding and hero/icon/ability/item coverage belong to the image phase.
+The performance workload uses five sequential loads, 200 warmed query batches and 17 lazy heroes with an eight-guide cache. The first load is process-cold; filesystem cache state is uncontrolled. Compare paired dedicated-process samples on the same host. The saved historical tooling and archives own earlier capture formats.
 
 ## Validation and review
 
-`npm run schema:check` validates every JSON schema and the canonical/runtime data. It resolves every field reconciliation pointer against the exact retained source bytes, checks field occurrence totals, verifies recovered hashes, and confirms historical claim targets resolve to canonical claim or observation IDs.
+`npm run schema:check` validates canonical/runtime schemas, archive digests, original reconciliation pointers, occurrence totals, recovered hashes and historical targets. It requires persistent development evidence. `npm run schema:check:package` checks packaged runtime artifacts without that evidence.
 
-`npm run compare -- --base <git-revision>` uses separate v1/v2 adapters and compares the union of both identity sets, so deletions are visible. Gameplay, observation payloads/projections and review decisions determine equivalence; structure, naming and metadata are reported separately. Effect order, historical cohorts and exact decimal counts are significant. A layout-only migration has no gameplay, observation-value or review-decision changes.
+`npm run compare -- --base <git-revision>` retains raw differences and reports verified identity changes separately. The read-only v1/v2 adapters compare the union of identities, preserving deletions, effect order, cohorts, counts and review states. Only exact ledger-backed transformations can reconcile renamed records; unrelated payload/provenance changes fail equivalence.
 
-Run `npm test`, `npm run typecheck`, `npm run schema:check`, and `npm run package:verify` before producing an archive. `schema:check:package` checks runtime artifacts without original evidence. `package:verify` extracts the actual npm archive, installs only declared production dependencies, resolves public exports and every lazy reference, fully decodes published images, and exercises the browser module graph with browser globals and no Node imports. Fixture collector/apply examples run with network access blocked. `pack:check` remains available for a dry-run inventory. Git preserves generated JSON and compressed bytes without text conversion.
+Run `npm test`, `npm run typecheck`, `npm run schema:check` and `npm run package:verify` before packaging. Package verification extracts the actual archive, installs declared production dependencies from the offline cache, checks Node/browser exports and every lazy reference, decodes images and runs bundle/population/image fixture examples with network blocked. `npm run pack:check` provides the package inventory.
 
-`node scripts/consolidation/verify-phase-b.mjs --audit <completed-phase-a-directory>` verifies field preservation, semantic equivalence, baseline restoration, the first nested-source cutover and two identical canonical compilations. It alternates three isolated runs of the original archived reader and current reader using the Phase A workload, records retained heap and latency, and flags latency increases above 10% or any retained-memory increase for investigation. It also rechecks original acquisition hashes. Results go to a new `evidence/consolidation/phase-b-validation-<timestamp>/` directory.
+`node scripts/consolidation/reference-scan.mjs --policy <archived-policy.json>` scans active filenames and file contents, including decompressed audit maps. The policy supplies terms, roots and any exact hash-bound, individually explained archival or legal exceptions. `npm run package:verify -- --reference-policy <archived-policy.json>` also scans the extracted package. Original evidence and required notices remain intact; terms are never hidden by encoding.
 
-Ordinary builds do not acquire remote sources. Acquisition tools should accept injected clients and credentials and must not read application settings.
+Ordinary compilation and tests perform no acquisition. Acquisition tools use explicit inputs and injected clients and credentials.

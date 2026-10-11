@@ -3,9 +3,10 @@ import path from 'node:path';
 import os from 'node:os';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { scanReferences } from './consolidation/reference-scan.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
-export async function checkPackage() {
+export async function checkPackage({ referencePolicy } = {}) {
     const temporary = await fs.mkdtemp(path.join(os.tmpdir(), 'knowledge-package-'));
     try {
         const npmCli = process.env.npm_execpath;
@@ -18,7 +19,9 @@ export async function checkPackage() {
             || /^data\/(heroes|abilities|items)\//.test(file.path) && !/^data\/(heroes|abilities|items)\/[^/]+\/images\/(?:abilities\/)?[^/]+\.png$/.test(file.path))) throw new Error('Development data leaked into the runtime package.');
         execFileSync('tar', ['-xzf', path.join(temporary, packed.filename), '-C', temporary], { windowsHide: true, stdio: 'pipe' });
         const extracted = path.join(temporary, 'package');
-        execFileSync(process.execPath, [npmCli, 'install', '--omit=dev', '--omit=optional', '--ignore-scripts', '--no-audit', '--no-fund', '--package-lock=false'],
+        const references = referencePolicy ? await scanReferences({ root: extracted, policy: referencePolicy, roots: ['.'] }) : null;
+        if (references && references.state !== 'passed') throw new Error('Extracted package reference scan failed: ' + JSON.stringify(references.hits));
+        execFileSync(process.execPath, [npmCli, 'install', '--offline', '--omit=dev', '--omit=optional', '--ignore-scripts', '--no-audit', '--no-fund', '--package-lock=false'],
             { cwd: extracted, windowsHide: true, stdio: 'pipe', maxBuffer: 1024 * 1024 });
         for (const name of ['electron', 'typescript', 'jsdom']) {
             try { await fs.access(path.join(extracted, 'node_modules', name)); }
@@ -32,6 +35,8 @@ export async function checkPackage() {
         const imageFixtureResult = JSON.parse(execFileSync(process.execPath, ['--import', pathToFileURL(path.join(temporary, 'no-network.mjs')).href, 'docs/examples/images-fixture.mjs'],
             { cwd: extracted, encoding: 'utf8', windowsHide: true, maxBuffer: 1024 * 1024 }));
         const heroLookupResult = JSON.parse(execFileSync(process.execPath, ['--import', pathToFileURL(path.join(temporary, 'no-network.mjs')).href, 'docs/examples/hero-lookups.mjs'],
+            { cwd: extracted, encoding: 'utf8', windowsHide: true, maxBuffer: 1024 * 1024 }));
+        const bundleResult = JSON.parse(execFileSync(process.execPath, ['--import', pathToFileURL(path.join(temporary, 'no-network.mjs')).href, 'docs/examples/bundle-fixture.mjs'],
             { cwd: extracted, encoding: 'utf8', windowsHide: true, maxBuffer: 1024 * 1024 }));
         const nodeSmoke = `import { loadKnowledgePackage } from '@reino-doce/dota-knowledge/node';
 import manifest from '@reino-doce/dota-knowledge/runtime/manifest.json' with { type: 'json' };
@@ -86,11 +91,16 @@ console.log(JSON.stringify({ state: 'passed', modules: modules.size, imageReads,
             { cwd: extracted, encoding: 'utf8', windowsHide: true, maxBuffer: 1024 * 1024, stdio: ['ignore', 'pipe', 'pipe'] }));
         return { files: packed.entryCount, compressedBytes: packed.size, unpackedBytes: packed.unpackedSize, node: nodeResult,
             browserEntry: browserResult, population: populationResult, imageFixture: imageFixtureResult,
-            heroLookups: heroLookupResult, dependenciesInstalledInExtraction: 'production-only' };
+            heroLookups: heroLookupResult, bundle: bundleResult, references, dependenciesInstalledInExtraction: 'production-only, offline cache' };
     }
     finally {
         if (path.dirname(await fs.realpath(temporary)) !== await fs.realpath(os.tmpdir()) || !path.basename(temporary).startsWith('knowledge-package-')) throw new Error('Unsafe package cleanup.');
         await fs.rm(temporary, { recursive: true });
     }
 }
-if (process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url) process.stdout.write(JSON.stringify(await checkPackage(), null, 2) + '\n');
+if (process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url) {
+    const { parseArgs } = await import('node:util');
+    const { values } = parseArgs({ options: { 'reference-policy': { type: 'string' } }, strict: true });
+    const referencePolicy = values['reference-policy'] ? JSON.parse(await fs.readFile(values['reference-policy'])) : undefined;
+    process.stdout.write(JSON.stringify(await checkPackage({ referencePolicy }), null, 2) + '\n');
+}

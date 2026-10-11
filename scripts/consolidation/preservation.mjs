@@ -3,6 +3,8 @@ import { readJson, regularBytes, readCanonical } from '../../src/node/canonical.
 import { semanticHash, hash } from '../../src/canonical-model.mjs';
 import { leafCount } from './io.mjs';
 import { readLedger, verifyReplacements } from '../population/reconciliation.mjs';
+import { verifiedIdentityMapping, reconcileValue } from './identity-reconciliation.mjs';
+import { fileURLToPath } from 'node:url';
 
 function pointer(value, location = '') {
     if (location === '') return value;
@@ -24,9 +26,9 @@ function assertSubset(before, after, location) {
     else if (before !== after) throw new Error('Reconciliation value differs: ' + location);
 }
 
-export async function verifyOverlay({ baseline, dataset, audit }) {
+export async function verifyOverlay({ baseline, dataset, audit, repository = fileURLToPath(new URL('../..', import.meta.url)) }) {
     const graph = await readCanonical(dataset);
-    verifyReplacements(graph);
+    const mapping = await verifiedIdentityMapping(graph, repository, verifyReplacements(graph));
     const archives = new Map();
     for (const artifact of readLedger(graph).artifacts) if (!archives.has(artifact.file)) archives.set(artifact.file, artifact.archive);
     const rows = gunzipSync(await regularBytes(dataset, 'reviews/reconciliation/phase-b-fields.jsonl.gz')).toString('utf8').trim().split('\n');
@@ -67,7 +69,11 @@ export async function verifyOverlay({ baseline, dataset, audit }) {
                 parent[binding.pointer.slice(last + 1).replaceAll('~1', '/').replaceAll('~0', '~')] = pointer(await target(binding.target.file), binding.target.pointer);
             }
         }
-        assertSubset(original, selected, row.file + '#' + row.pointer);
+        const generationField = destination.file === 'runtime/manifest.json' && ['/createdAt', '/generatedAt'].includes(destination.pointer)
+            ? destination.pointer.slice(1) : null;
+        const expected = generationField && mapping.generation && original === mapping.generation.before[generationField]
+            ? mapping.generation.after[generationField] : reconcileValue(original, mapping);
+        assertSubset(expected, selected, row.file + '#' + row.pointer);
         canonical += 1;
     }
     const coverage = await readJson(audit, 'coverage.json');

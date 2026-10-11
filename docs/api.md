@@ -57,6 +57,15 @@ Static abilities, shared activations, effects and conditions have separate recor
 
 ### Observations and evidence
 
+Historical profiles use `source:historical:<original-response-sha256>` and
+`observation:<hero-id>:historical-profile:<original-response-sha256>` identities.
+Their `originalField` is `historicalProfile`. Source hashes, original clocks,
+cohort uncertainty and historical item definitions remain intact.
+`SourceRecord.preservation?: PreservationReference` identifies verified original
+metadata with `{ kind: 'archived-json', path, bytes, sha256, pointer }`.
+This is a development evidence reference; knowledge and image loaders perform
+no archive reads. See [preservation verification](data-workflow.md#historical-preservation-and-publication-recovery).
+
 `observations(filter?)` returns records present in the compact core. `loadObservations(filter?)` loads any indexed lazy observation shards needed by the filter, deduplicates concurrent reads, and returns matching rows. The filter supports exact `heroId`, `otherHeroId`, `allyHeroId`, `opponentHeroId`, `kind`, `sourceId`, and `cohortId` values. It does not rank, weight, or choose between observations.
 
 `getHeroEvidence(id)` returns an already cached guide or `undefined`. `loadHeroEvidence(id)` verifies and loads the requested guide. Guide reads are coalesced by core hash and hero ID. The default cache holds at most eight heroes and 32 MiB of encoded content; individual artifact limits still apply. A failed read is not cached. `clearEvidenceCache()` removes cached details. `retire()` invalidates the store and rejects outstanding work so callers can replace a dataset safely.

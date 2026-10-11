@@ -7,6 +7,7 @@ import { verifyReplacements } from '../population/reconciliation.mjs';
 import { validateImageDirectory } from '../../src/node/image-files.mjs';
 import { isImageFile } from '../../src/image-contracts.mjs';
 import { rosterSignature, validateImageRoster } from '../images/inventory.mjs';
+import { verifyIdentityLedger } from './identity-reconciliation.mjs';
 
 let validators;
 export async function schemaValidators() {
@@ -31,6 +32,7 @@ export async function validateDataset(root) {
         if (listed.length !== owned.size || listed.some(row => !owned.has(row.name))) throw new Error('Image artifacts differ from canonical manifest.');
     }
     const preserved = verifyReplacements(graph);
+    verifyIdentityLedger(graph, preserved);
     const historical = graph.extras.get('reviews/reconciliation/index.json');
     if (historical) {
         const ids = new Set([...graph.claims, ...graph.observations].map(row => row.id));
@@ -43,6 +45,9 @@ export async function validateDataset(root) {
         const validator = schemas.get(name);
         if (!validator || !validator(value)) throw new Error('Schema mismatch ' + label + ': ' + JSON.stringify(validator?.errors?.slice(0, 4)));
     };
+    if (historical) validate('reconciliation-index', JSON.parse(historical), 'Reconciliation index');
+    if (graph.extras.has('reviews/reconciliation/identities.json')) validate('identity-ledger',
+        JSON.parse(graph.extras.get('reviews/reconciliation/identities.json')), 'Historical identity ledger');
     if (graph.extras.has('images/manifest.json')) {
         validate('image-manifest', await readJson(root, 'images/manifest.json'), 'Image manifest');
         validate('image-catalog', await readJson(root, 'images/catalog.json'), 'Image catalog');

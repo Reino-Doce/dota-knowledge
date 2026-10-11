@@ -3,7 +3,7 @@ import type { AbilityRecord, ActivationRecord, ClaimRecord, ConditionRecord, Eff
     UpgradeRecord, ValueRecord } from './records.js';
 export type { AbilityRecord, ActivationRecord, ClaimRecord, ConditionRecord, DecodedValue, EffectRecord, HeroEvidence, HeroId, HeroRecord,
     ConflictedValue, KnownValue, MechanicRuleRecord, ModifierRecord, NotApplicableValue, ObservationFilter, ObservationRecord,
-    SourceRecord, StableId, TypedValue, UnitRecord, UnknownValue, UnsupportedValue, UpgradeRecord, ValueConflict,
+    SourceRecord, PreservationReference, StableId, TypedValue, UnitRecord, UnknownValue, UnsupportedValue, UpgradeRecord, ValueConflict,
     ValueRepresentation, EvidenceRef, ValueRecord, NativeRole, ProfileFieldStatus, ReviewBinding, ImageIdentity, ImageDescriptor, ItemId } from './records.js';
 export interface KnowledgeEntity { readonly id: StableId | HeroId; readonly [field: string]: unknown }
 export interface ArtifactDescriptor {

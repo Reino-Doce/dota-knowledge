@@ -8,6 +8,7 @@ import { sha256Hex } from '../src/sha256.mjs';
 import { validateDataset } from './consolidation/validation.mjs';
 import { readCanonical } from '../src/node/canonical.mjs';
 import { verifyReplacements } from './population/reconciliation.mjs';
+import { historicalIndex, verifiedIdentityMapping, readPreservedJson } from './consolidation/identity-reconciliation.mjs';
 
 const packageRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
@@ -43,8 +44,13 @@ validate(schemaId('claim-index'), await readJson(path.join(datasetRoot, 'reviews
 validate(schemaId('observations-index'), await readJson(path.join(datasetRoot, 'observations', 'index.json')), 'Observation index');
 validate(schemaId('mechanics-reference'), await readJson(path.join(datasetRoot, 'mechanics', 'reference.json')), 'Mechanics reference');
 const reconciliationPath = path.join(datasetRoot, 'reviews', 'reconciliation', 'index.json');
-const reconciliation = await readJson(reconciliationPath);
-validate(schemaId('reconciliation-index'), reconciliation, 'Reconciliation inventory');
+const activeReconciliation = await readJson(reconciliationPath);
+validate(schemaId('reconciliation-index'), activeReconciliation, 'Reconciliation inventory');
+const graph = await readCanonical(datasetRoot);
+const preservedReplacements = verifyReplacements(graph);
+const identityMapping = await verifiedIdentityMapping(graph, packageRoot, preservedReplacements);
+const { index: reconciliation, maps: archivedMaps } = await historicalIndex(graph, packageRoot);
+for (const source of graph.sources) if (source.preservation && !skipOriginalEvidence) await readPreservedJson(packageRoot, source.preservation);
 function resolveWithin(root, name) {
     if (typeof name !== 'string' || !name || name.includes('\\') || path.isAbsolute(name)
         || name.split('/').some(part => !part || part === '.' || part === '..')) {
@@ -65,6 +71,7 @@ if (evidenceManifest && evidenceManifest.inputSignature !== reconciliation.input
 const evidenceByName = new Map(evidenceManifest?.files.map(file => [file.name, file]) ?? []);
 const evidenceDirectory = path.posix.dirname(reconciliation.evidenceManifest);
 const sourceFilesByName = new Map(sourceManifest.sourceFiles.map(file => [file.name, file]));
+for (const row of activeReconciliation.archivedFieldMaps ?? []) sourceFilesByName.set(row.name, row.preservation);
 const claimIds = new Set((await readJson(path.join(datasetRoot, 'reviews', 'claims.json'))).claims.map(claim => claim.id));
 const observationIds = new Set((await readJson(path.join(datasetRoot, 'observations', 'index.json'))).entries.map(row => row.id));
 const sourceRegistry = new Map((await readJson(path.join(datasetRoot, 'observations', 'sources.json'))).map(source => [source.id, source]));
@@ -120,7 +127,7 @@ let reconciledFieldCount = 0;
 let reconciledFieldPathCount = 0;
 for (const bundle of reconciliation.sourceBundles) {
     const fieldPath = resolveWithin(datasetRoot, bundle.fieldFile);
-    const fieldBytes = await fs.readFile(fieldPath);
+    const fieldBytes = archivedMaps.get(bundle.fieldFile) ?? await fs.readFile(fieldPath);
     const decodedFieldBytes = bundle.fieldFile.endsWith('.gz')
         ? gunzipSync(fieldBytes, { maxOutputLength: 128 * 1024 * 1024 }) : fieldBytes;
     const fields = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(decodedFieldBytes));
@@ -180,9 +187,9 @@ for (const [heroId, descriptor] of Object.entries(runtimeManifest.guides)) {
 for (const shard of runtimeManifest.observationShards) {
     validate(schemaId('observation-shard'), await readJson(path.join(datasetRoot, 'runtime', ...shard.name.split('/'))), `Observation shard ${shard.name}`);
 }
-const preservedReplacements = verifyReplacements(await readCanonical(datasetRoot));
 for (const claim of reconciliation.uniqueClaims) {
-    for (const targetId of claim.targetClaimIds) {
+    for (const originalId of claim.targetClaimIds) {
+        const targetId = identityMapping.ids.get(originalId) ?? originalId;
         if (!claimIds.has(targetId) && !observationIds.has(targetId) && !preservedReplacements.has(targetId)) {
             throw new Error(`Historical claim ${claim.claimHash} targets unknown canonical identity ${targetId}.`);
         }

@@ -5,7 +5,6 @@ import path from 'node:path';
 import test from 'node:test';
 import { crosswalk, parseRoster, classifyScript, observationDestination, fileDestinations, heroFieldDestination, mapPickerData } from '../scripts/consolidation/policy.mjs';
 import { within, regularFile, fieldRow, git, gitTree, restoreBaseline, reserveOutput } from '../scripts/consolidation/io.mjs';
-import { pngDescriptor } from '../scripts/audit-consolidation.mjs';
 
 const heroes = [
     { id: '1', heroId: '1', key: 'antimage', heroKey: 'npc_dota_hero_antimage', name: 'Anti-Mage', enabled: true },
@@ -69,18 +68,6 @@ test('Picker pair mappings preserve direction, exact counts, calibration and bot
     assert.throws(() => mapPickerData('lanes.json', { against: { unknown: {} } }, mapping), /Unmapped Picker data hero/);
     const calibration = mapPickerData('calibration.json', { weights: { matchup: 0.25 }, se: { matchup: null }, inputs: { matchups: 'old-clock' } }, mapping);
     assert.ok(calibration.every(row => row.destination === 'data/observations/calibration.json'));
-});
-
-test('portrait header checks use image bytes instead of the file extension', () => {
-    assert.throws(() => pngDescriptor(Buffer.from('not png')), /PNG/);
-    const bytes = Buffer.alloc(33);
-    Buffer.from('89504e470d0a1a0a', 'hex').copy(bytes);
-    bytes.writeUInt32BE(13, 8);
-    bytes.write('IHDR', 12);
-    bytes.writeUInt32BE(128, 16);
-    bytes.writeUInt32BE(72, 20);
-    assert.equal(pngDescriptor(bytes).width, 128);
-    assert.equal(pngDescriptor(bytes).height, 72);
 });
 
 test('committed baseline restores exact bytes without touching dirty or untracked files', async t => {

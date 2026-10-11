@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/preservation-reference.schema.json",
+  "title": "Verified archived JSON reference",
+  "type": "object",
+  "required": [
+    "kind",
+    "path",
+    "bytes",
+    "sha256",
+    "pointer"
+  ],
+  "properties": {
+    "kind": {
+      "const": "archived-json"
+    },
+    "path": {
+      "type": "string",
+      "maxLength": 240,
+      "pattern": "^evidence/(?:[a-zA-Z0-9][a-zA-Z0-9._-]*/)*[a-zA-Z0-9][a-zA-Z0-9._-]*$"
+    },
+    "bytes": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "sha256": {
+      "$ref": "core.schema.json#/$defs/hash"
+    },
+    "pointer": {
+      "type": "string",
+      "pattern": "^(?:/(?:[^~]|~[01])*)*$"
+    }
+  },
+  "additionalProperties": false
+}

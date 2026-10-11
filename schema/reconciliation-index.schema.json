@@ -1,66 +1,436 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/reconciliation-index.schema.json",
-  "title": "Source reconciliation inventory",
-  "description": "Maps every selected legacy input field and unique historical claim to retained source bytes, canonical records, or an explicit unavailable-source record.",
-  "type": "object",
-  "required": ["schemaVersion", "inputSignature", "evidenceManifest", "sourceBundles", "uniqueClaims", "recoveredNativeSources", "unavailableOriginals", "pickerSnapshots", "coverage"],
-  "properties": {
-    "schemaVersion": { "const": 1 },
-    "inputSignature": { "$ref": "core.schema.json#/$defs/hash" },
-    "evidenceManifest": { "type": "string", "minLength": 1 },
-    "sourceBundles": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/sourceBundle" } },
-    "uniqueClaims": { "type": "array", "items": { "$ref": "#/$defs/uniqueClaim" } },
-    "recoveredNativeSources": { "type": "array", "items": { "$ref": "#/$defs/recoveredNativeSource" } },
-    "unavailableOriginals": { "type": "array", "items": { "$ref": "#/$defs/unavailableOriginal" } },
-    "pickerSnapshots": { "type": "array", "items": { "$ref": "#/$defs/pickerSnapshot" } },
-    "coverage": { "type": "object", "required": ["selectedFieldPaths", "selectedBundleFields", "reconciledClaims", "recoveredNativeSourceBytes"], "properties": {
-      "selectedFieldPaths": { "type": "integer", "minimum": 0 },
-      "selectedBundleFields": { "type": "integer", "minimum": 0 },
-      "reconciledClaims": { "type": "integer", "minimum": 0 },
-      "recoveredNativeSourceBytes": { "type": "integer", "minimum": 0 }
-    }, "additionalProperties": false }
-  },
+  "title": "Current or archive-backed source reconciliation",
+  "oneOf": [
+    {
+      "title": "Source reconciliation inventory",
+      "description": "Maps every selected legacy input field and unique historical claim to retained source bytes, canonical records, or an explicit unavailable-source record.",
+      "type": "object",
+      "required": [
+        "schemaVersion",
+        "inputSignature",
+        "evidenceManifest",
+        "sourceBundles",
+        "uniqueClaims",
+        "recoveredNativeSources",
+        "unavailableOriginals",
+        "pickerSnapshots",
+        "coverage"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "inputSignature": {
+          "$ref": "core.schema.json#/$defs/hash"
+        },
+        "evidenceManifest": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceBundles": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/sourceBundle"
+          }
+        },
+        "uniqueClaims": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/uniqueClaim"
+          }
+        },
+        "recoveredNativeSources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/recoveredNativeSource"
+          }
+        },
+        "unavailableOriginals": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/unavailableOriginal"
+          }
+        },
+        "pickerSnapshots": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pickerSnapshot"
+          }
+        },
+        "coverage": {
+          "type": "object",
+          "required": [
+            "selectedFieldPaths",
+            "selectedBundleFields",
+            "reconciledClaims",
+            "recoveredNativeSourceBytes"
+          ],
+          "properties": {
+            "selectedFieldPaths": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "selectedBundleFields": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "reconciledClaims": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "recoveredNativeSourceBytes": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "required": [
+        "schemaVersion",
+        "inputSignature",
+        "archivedIndex",
+        "archivedFieldMaps",
+        "identityLedger",
+        "identityCoverage",
+        "coverage"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 2
+        },
+        "inputSignature": {
+          "$ref": "core.schema.json#/$defs/hash"
+        },
+        "archivedIndex": {
+          "$ref": "preservation-reference.schema.json"
+        },
+        "archivedFieldMaps": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "preservation"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "pattern": "^reviews/reconciliation/fields/[^/]+[.]json[.]gz$"
+              },
+              "preservation": {
+                "$ref": "preservation-reference.schema.json"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "identityLedger": {
+          "const": "reviews/reconciliation/identities.json"
+        },
+        "identityCoverage": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "core.schema.json#/$defs/hash"
+          }
+        },
+        "coverage": {
+          "type": "object",
+          "required": [
+            "selectedFieldPaths",
+            "selectedBundleFields",
+            "reconciledClaims",
+            "recoveredNativeSourceBytes"
+          ],
+          "properties": {
+            "selectedFieldPaths": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "selectedBundleFields": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "reconciledClaims": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "recoveredNativeSourceBytes": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  ],
   "$defs": {
-    "sourceBundle": { "type": "object", "required": ["id", "evidenceFile", "fieldFile", "fieldCount", "fieldOccurrences", "canonicalTargets"], "properties": {
-      "id": { "type": "string", "minLength": 1 },
-      "evidenceFile": { "type": "string", "minLength": 1 },
-      "fieldFile": { "type": "string", "minLength": 1 },
-      "fieldCount": { "type": "integer", "minimum": 0 },
-      "fieldOccurrences": { "type": "integer", "minimum": 0 },
-      "canonicalTargets": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
-    }, "additionalProperties": false },
-    "uniqueClaim": { "type": "object", "required": ["claimHash", "category", "status", "sourceOccurrences", "targetClaimIds"], "properties": {
-      "claimHash": { "$ref": "core.schema.json#/$defs/hash" },
-      "category": { "type": "string", "minLength": 1 },
-      "status": { "type": "string", "minLength": 1 },
-      "sourceOccurrences": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["identity", "sourcePath"], "properties": {
-        "identity": { "type": "string", "minLength": 1 }, "sourcePath": { "type": "string", "minLength": 1 }
-      }, "additionalProperties": false } },
-      "targetClaimIds": { "$ref": "core.schema.json#/$defs/idList" }
-    }, "additionalProperties": false },
-    "unavailableOriginal": { "type": "object", "required": ["sourceId", "resource", "recordedSha256", "state", "reason"], "properties": {
-      "sourceId": { "type": "string", "minLength": 1 }, "resource": { "type": "string", "minLength": 1 },
-      "recordedSha256": { "anyOf": [{ "$ref": "core.schema.json#/$defs/hash" }, { "type": "null" }] },
-      "state": { "const": "original-bytes-unavailable" }, "reason": { "type": "string", "minLength": 1 }
-    }, "additionalProperties": false },
-    "recoveredNativeSource": { "type": "object", "required": ["sourceId", "resource", "sha256", "bytes", "evidenceFile", "recoveredAt", "state"], "properties": {
-      "sourceId": { "type": "string", "minLength": 1 }, "resource": { "type": "string", "minLength": 1 },
-      "sha256": { "$ref": "core.schema.json#/$defs/hash" }, "bytes": { "type": "integer", "minimum": 1 },
-      "evidenceFile": { "type": "string", "minLength": 1 }, "recoveredAt": { "type": "string", "format": "date-time" },
-      "state": { "const": "recovered-hash-verified" }
-    }, "additionalProperties": false },
-    "pickerSnapshot": { "type": "object", "required": ["sourceId", "repo", "revision", "resource", "recordedSha256", "retrievedAt", "state", "bytes", "evidenceFile", "reason"], "properties": {
-      "sourceId": { "type": "string", "minLength": 1 }, "repo": { "type": ["string", "null"] },
-      "revision": { "type": ["string", "null"] },
-      "resource": { "type": ["string", "null"] },
-      "recordedSha256": { "anyOf": [{ "$ref": "core.schema.json#/$defs/hash" }, { "type": "null" }] },
-      "retrievedAt": { "anyOf": [{ "$ref": "core.schema.json#/$defs/timestamp" }, { "type": "null" }] },
-      "state": { "enum": ["recovered-hash-verified", "original-bytes-unavailable"] },
-      "bytes": { "type": ["integer", "null"], "minimum": 1 },
-      "evidenceFile": { "type": ["string", "null"] },
-      "reason": { "type": ["string", "null"] }
-    }, "additionalProperties": false }
-  },
-  "additionalProperties": false
+    "sourceBundle": {
+      "type": "object",
+      "required": [
+        "id",
+        "evidenceFile",
+        "fieldFile",
+        "fieldCount",
+        "fieldOccurrences",
+        "canonicalTargets"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidenceFile": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fieldFile": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fieldCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "fieldOccurrences": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "canonicalTargets": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "uniqueClaim": {
+      "type": "object",
+      "required": [
+        "claimHash",
+        "category",
+        "status",
+        "sourceOccurrences",
+        "targetClaimIds"
+      ],
+      "properties": {
+        "claimHash": {
+          "$ref": "core.schema.json#/$defs/hash"
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceOccurrences": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "identity",
+              "sourcePath"
+            ],
+            "properties": {
+              "identity": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourcePath": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "targetClaimIds": {
+          "$ref": "core.schema.json#/$defs/idList"
+        }
+      },
+      "additionalProperties": false
+    },
+    "unavailableOriginal": {
+      "type": "object",
+      "required": [
+        "sourceId",
+        "resource",
+        "recordedSha256",
+        "state",
+        "reason"
+      ],
+      "properties": {
+        "sourceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "resource": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recordedSha256": {
+          "anyOf": [
+            {
+              "$ref": "core.schema.json#/$defs/hash"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "state": {
+          "const": "original-bytes-unavailable"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "recoveredNativeSource": {
+      "type": "object",
+      "required": [
+        "sourceId",
+        "resource",
+        "sha256",
+        "bytes",
+        "evidenceFile",
+        "recoveredAt",
+        "state"
+      ],
+      "properties": {
+        "sourceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "resource": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "core.schema.json#/$defs/hash"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "evidenceFile": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recoveredAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "state": {
+          "const": "recovered-hash-verified"
+        }
+      },
+      "additionalProperties": false
+    },
+    "pickerSnapshot": {
+      "type": "object",
+      "required": [
+        "sourceId",
+        "repo",
+        "revision",
+        "resource",
+        "recordedSha256",
+        "retrievedAt",
+        "state",
+        "bytes",
+        "evidenceFile",
+        "reason"
+      ],
+      "properties": {
+        "sourceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "revision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "resource": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "recordedSha256": {
+          "anyOf": [
+            {
+              "$ref": "core.schema.json#/$defs/hash"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "retrievedAt": {
+          "anyOf": [
+            {
+              "$ref": "core.schema.json#/$defs/timestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "state": {
+          "enum": [
+            "recovered-hash-verified",
+            "original-bytes-unavailable"
+          ]
+        },
+        "bytes": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "evidenceFile": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  }
 }
