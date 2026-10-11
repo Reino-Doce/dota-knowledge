@@ -1,0 +1,2234 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "sniper_shrapnel:slow:movement",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_shrapnel",
+      "type": "slow",
+      "subtype": "movement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_shrapnel:slow:movement:range",
+          "ownerId": "effect:sniper_shrapnel:slow:movement",
+          "field": "range",
+          "state": "known",
+          "value": 1800
+        },
+        "duration": {
+          "id": "value:effect:sniper_shrapnel:slow:movement:duration",
+          "ownerId": "effect:sniper_shrapnel:slow:movement",
+          "field": "duration",
+          "state": "known",
+          "value": 2
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_shrapnel:slow:movement:magnitude",
+          "ownerId": "effect:sniper_shrapnel:slow:movement",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -12,
+            -18,
+            -24,
+            -30
+          ]
+        },
+        "mana": {
+          "id": "value:effect:sniper_shrapnel:slow:movement:mana",
+          "ownerId": "effect:sniper_shrapnel:slow:movement",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_shrapnel:slow:movement:cooldown",
+          "ownerId": "effect:sniper_shrapnel:slow:movement",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0
+        },
+        "delay": {
+          "id": "value:effect:sniper_shrapnel:slow:movement:delay",
+          "ownerId": "effect:sniper_shrapnel:slow:movement",
+          "field": "delay",
+          "state": "known",
+          "value": 1.2
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "none"
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_shrapnel"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sniper_shrapnel:slow:movement",
+      "legacyEffectId": "sniper_shrapnel:slow:movement",
+      "order": 0,
+      "legacyAbilityId": "sniper_shrapnel",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sniper_shrapnel:slow:movement:range",
+        "value:effect:sniper_shrapnel:slow:movement:duration",
+        "value:effect:sniper_shrapnel:slow:movement:magnitude",
+        "value:effect:sniper_shrapnel:slow:movement:mana",
+        "value:effect:sniper_shrapnel:slow:movement:cooldown",
+        "value:effect:sniper_shrapnel:slow:movement:delay"
+      ],
+      "activationId": "activation:35:sniper_shrapnel"
+    },
+    {
+      "effectId": "sniper_shrapnel:damage:damage-per-tick",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_shrapnel",
+      "type": "damage",
+      "subtype": "damage-per-tick",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_shrapnel:damage:damage-per-tick:range",
+          "ownerId": "effect:sniper_shrapnel:damage:damage-per-tick",
+          "field": "range",
+          "state": "known",
+          "value": 1800
+        },
+        "duration": {
+          "id": "value:effect:sniper_shrapnel:damage:damage-per-tick:duration",
+          "ownerId": "effect:sniper_shrapnel:damage:damage-per-tick",
+          "field": "duration",
+          "state": "known",
+          "value": 10
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_shrapnel:damage:damage-per-tick:magnitude",
+          "ownerId": "effect:sniper_shrapnel:damage:damage-per-tick",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            30,
+            45,
+            60,
+            75
+          ]
+        },
+        "mana": {
+          "id": "value:effect:sniper_shrapnel:damage:damage-per-tick:mana",
+          "ownerId": "effect:sniper_shrapnel:damage:damage-per-tick",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_shrapnel:damage:damage-per-tick:cooldown",
+          "ownerId": "effect:sniper_shrapnel:damage:damage-per-tick",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0
+        },
+        "delay": {
+          "id": "value:effect:sniper_shrapnel:damage:damage-per-tick:delay",
+          "ownerId": "effect:sniper_shrapnel:damage:damage-per-tick",
+          "field": "delay",
+          "state": "known",
+          "value": 1.2
+        },
+        "damageType": {
+          "id": "value:effect:sniper_shrapnel:damage:damage-per-tick:damageType",
+          "ownerId": "effect:sniper_shrapnel:damage:damage-per-tick",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_shrapnel"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sniper_shrapnel:damage:damage-per-tick",
+      "legacyEffectId": "sniper_shrapnel:damage:damage-per-tick",
+      "order": 1,
+      "legacyAbilityId": "sniper_shrapnel",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sniper_shrapnel:damage:damage-per-tick:range",
+        "value:effect:sniper_shrapnel:damage:damage-per-tick:duration",
+        "value:effect:sniper_shrapnel:damage:damage-per-tick:magnitude",
+        "value:effect:sniper_shrapnel:damage:damage-per-tick:mana",
+        "value:effect:sniper_shrapnel:damage:damage-per-tick:cooldown",
+        "value:effect:sniper_shrapnel:damage:damage-per-tick:delay",
+        "value:effect:sniper_shrapnel:damage:damage-per-tick:damageType"
+      ],
+      "activationId": "activation:35:sniper_shrapnel"
+    },
+    {
+      "effectId": "sniper_shrapnel:vision:target-area",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_shrapnel",
+      "type": "vision",
+      "subtype": "target-area",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_shrapnel:vision:target-area:range",
+          "ownerId": "effect:sniper_shrapnel:vision:target-area",
+          "field": "range",
+          "state": "known",
+          "value": 1800
+        },
+        "duration": {
+          "id": "value:effect:sniper_shrapnel:vision:target-area:duration",
+          "ownerId": "effect:sniper_shrapnel:vision:target-area",
+          "field": "duration",
+          "state": "known",
+          "value": 10
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_shrapnel:vision:target-area:magnitude",
+          "ownerId": "effect:sniper_shrapnel:vision:target-area",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            400,
+            425,
+            450,
+            475
+          ]
+        },
+        "mana": {
+          "id": "value:effect:sniper_shrapnel:vision:target-area:mana",
+          "ownerId": "effect:sniper_shrapnel:vision:target-area",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_shrapnel:vision:target-area:cooldown",
+          "ownerId": "effect:sniper_shrapnel:vision:target-area",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0
+        },
+        "delay": {
+          "id": "value:effect:sniper_shrapnel:vision:target-area:delay",
+          "ownerId": "effect:sniper_shrapnel:vision:target-area",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_shrapnel"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sniper_shrapnel:vision:target-area",
+      "legacyEffectId": "sniper_shrapnel:vision:target-area",
+      "order": 2,
+      "legacyAbilityId": "sniper_shrapnel",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sniper_shrapnel:vision:target-area:range",
+        "value:effect:sniper_shrapnel:vision:target-area:duration",
+        "value:effect:sniper_shrapnel:vision:target-area:magnitude",
+        "value:effect:sniper_shrapnel:vision:target-area:mana",
+        "value:effect:sniper_shrapnel:vision:target-area:cooldown",
+        "value:effect:sniper_shrapnel:vision:target-area:delay"
+      ],
+      "activationId": "activation:35:sniper_shrapnel"
+    },
+    {
+      "effectId": "sniper_headshot:damage:proc-bonus",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_headshot",
+      "type": "damage",
+      "subtype": "proc-bonus",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_headshot:damage:proc-bonus:range",
+          "ownerId": "effect:sniper_headshot:damage:proc-bonus",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sniper_headshot:damage:proc-bonus:duration",
+          "ownerId": "effect:sniper_headshot:damage:proc-bonus",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_headshot:damage:proc-bonus:magnitude",
+          "ownerId": "effect:sniper_headshot:damage:proc-bonus",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            20,
+            50,
+            80,
+            110
+          ]
+        },
+        "mana": {
+          "id": "value:effect:sniper_headshot:damage:proc-bonus:mana",
+          "ownerId": "effect:sniper_headshot:damage:proc-bonus",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_headshot:damage:proc-bonus:cooldown",
+          "ownerId": "effect:sniper_headshot:damage:proc-bonus",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:sniper_headshot:damage:proc-bonus:delay",
+          "ownerId": "effect:sniper_headshot:damage:proc-bonus",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:sniper_headshot:damage:proc-bonus:damageType",
+          "ownerId": "effect:sniper_headshot:damage:proc-bonus",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "headshotTriggered"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_headshot"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:sniper_headshot:damage:proc-bonus",
+      "legacyEffectId": "sniper_headshot:damage:proc-bonus",
+      "order": 3,
+      "legacyAbilityId": "sniper_headshot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:sniper_headshot:damage:proc-bonus:0"
+      ],
+      "valueIds": [
+        "value:effect:sniper_headshot:damage:proc-bonus:range",
+        "value:effect:sniper_headshot:damage:proc-bonus:duration",
+        "value:effect:sniper_headshot:damage:proc-bonus:magnitude",
+        "value:effect:sniper_headshot:damage:proc-bonus:mana",
+        "value:effect:sniper_headshot:damage:proc-bonus:cooldown",
+        "value:effect:sniper_headshot:damage:proc-bonus:delay",
+        "value:effect:sniper_headshot:damage:proc-bonus:damageType"
+      ],
+      "activationId": "activation:35:sniper_headshot"
+    },
+    {
+      "effectId": "sniper_headshot:displacement:proc-knockback",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_headshot",
+      "type": "displacement",
+      "subtype": "proc-knockback",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_headshot:displacement:proc-knockback:range",
+          "ownerId": "effect:sniper_headshot:displacement:proc-knockback",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sniper_headshot:displacement:proc-knockback:duration",
+          "ownerId": "effect:sniper_headshot:displacement:proc-knockback",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_headshot:displacement:proc-knockback:magnitude",
+          "ownerId": "effect:sniper_headshot:displacement:proc-knockback",
+          "field": "magnitude",
+          "state": "known",
+          "value": 50
+        },
+        "mana": {
+          "id": "value:effect:sniper_headshot:displacement:proc-knockback:mana",
+          "ownerId": "effect:sniper_headshot:displacement:proc-knockback",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_headshot:displacement:proc-knockback:cooldown",
+          "ownerId": "effect:sniper_headshot:displacement:proc-knockback",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:sniper_headshot:displacement:proc-knockback:delay",
+          "ownerId": "effect:sniper_headshot:displacement:proc-knockback",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "headshotTriggered"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_headshot"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:sniper_headshot:displacement:proc-knockback",
+      "legacyEffectId": "sniper_headshot:displacement:proc-knockback",
+      "order": 4,
+      "legacyAbilityId": "sniper_headshot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:sniper_headshot:displacement:proc-knockback:0"
+      ],
+      "valueIds": [
+        "value:effect:sniper_headshot:displacement:proc-knockback:range",
+        "value:effect:sniper_headshot:displacement:proc-knockback:duration",
+        "value:effect:sniper_headshot:displacement:proc-knockback:magnitude",
+        "value:effect:sniper_headshot:displacement:proc-knockback:mana",
+        "value:effect:sniper_headshot:displacement:proc-knockback:cooldown",
+        "value:effect:sniper_headshot:displacement:proc-knockback:delay"
+      ],
+      "activationId": "activation:35:sniper_headshot"
+    },
+    {
+      "effectId": "sniper_headshot:slow:proc-movement-and-attack",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_headshot",
+      "type": "slow",
+      "subtype": "proc-movement-and-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_headshot:slow:proc-movement-and-attack:range",
+          "ownerId": "effect:sniper_headshot:slow:proc-movement-and-attack",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sniper_headshot:slow:proc-movement-and-attack:duration",
+          "ownerId": "effect:sniper_headshot:slow:proc-movement-and-attack",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            0.2,
+            0.3,
+            0.4,
+            0.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_headshot:slow:proc-movement-and-attack:magnitude",
+          "ownerId": "effect:sniper_headshot:slow:proc-movement-and-attack",
+          "field": "magnitude",
+          "state": "known",
+          "value": -100
+        },
+        "mana": {
+          "id": "value:effect:sniper_headshot:slow:proc-movement-and-attack:mana",
+          "ownerId": "effect:sniper_headshot:slow:proc-movement-and-attack",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_headshot:slow:proc-movement-and-attack:cooldown",
+          "ownerId": "effect:sniper_headshot:slow:proc-movement-and-attack",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:sniper_headshot:slow:proc-movement-and-attack:delay",
+          "ownerId": "effect:sniper_headshot:slow:proc-movement-and-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "headshotTriggered"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_headshot"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:sniper_headshot:slow:proc-movement-and-attack",
+      "legacyEffectId": "sniper_headshot:slow:proc-movement-and-attack",
+      "order": 5,
+      "legacyAbilityId": "sniper_headshot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:sniper_headshot:slow:proc-movement-and-attack:0"
+      ],
+      "valueIds": [
+        "value:effect:sniper_headshot:slow:proc-movement-and-attack:range",
+        "value:effect:sniper_headshot:slow:proc-movement-and-attack:duration",
+        "value:effect:sniper_headshot:slow:proc-movement-and-attack:magnitude",
+        "value:effect:sniper_headshot:slow:proc-movement-and-attack:mana",
+        "value:effect:sniper_headshot:slow:proc-movement-and-attack:cooldown",
+        "value:effect:sniper_headshot:slow:proc-movement-and-attack:delay"
+      ],
+      "activationId": "activation:35:sniper_headshot"
+    },
+    {
+      "effectId": "sniper_take_aim:modifier:passive-attack-range",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_take_aim",
+      "type": "modifier",
+      "subtype": "passive-attack-range",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_take_aim:modifier:passive-attack-range:range",
+          "ownerId": "effect:sniper_take_aim:modifier:passive-attack-range",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sniper_take_aim:modifier:passive-attack-range:duration",
+          "ownerId": "effect:sniper_take_aim:modifier:passive-attack-range",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_take_aim:modifier:passive-attack-range:magnitude",
+          "ownerId": "effect:sniper_take_aim:modifier:passive-attack-range",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            160,
+            240,
+            320,
+            400
+          ]
+        },
+        "mana": {
+          "id": "value:effect:sniper_take_aim:modifier:passive-attack-range:mana",
+          "ownerId": "effect:sniper_take_aim:modifier:passive-attack-range",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_take_aim:modifier:passive-attack-range:cooldown",
+          "ownerId": "effect:sniper_take_aim:modifier:passive-attack-range",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:sniper_take_aim:modifier:passive-attack-range:delay",
+          "ownerId": "effect:sniper_take_aim:modifier:passive-attack-range",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_take_aim:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:sniper_take_aim:modifier:passive-attack-range",
+      "legacyEffectId": "sniper_take_aim:modifier:passive-attack-range",
+      "order": 6,
+      "legacyAbilityId": "sniper_take_aim",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sniper_take_aim:modifier:passive-attack-range:range",
+        "value:effect:sniper_take_aim:modifier:passive-attack-range:duration",
+        "value:effect:sniper_take_aim:modifier:passive-attack-range:magnitude",
+        "value:effect:sniper_take_aim:modifier:passive-attack-range:mana",
+        "value:effect:sniper_take_aim:modifier:passive-attack-range:cooldown",
+        "value:effect:sniper_take_aim:modifier:passive-attack-range:delay"
+      ],
+      "activationId": "activation:35:sniper_take_aim"
+    },
+    {
+      "effectId": "sniper_take_aim:modifier:active-headshot-and-range",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_take_aim",
+      "type": "modifier",
+      "subtype": "active-headshot-and-range",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_take_aim:modifier:active-headshot-and-range:range",
+          "ownerId": "effect:sniper_take_aim:modifier:active-headshot-and-range",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sniper_take_aim:modifier:active-headshot-and-range:duration",
+          "ownerId": "effect:sniper_take_aim:modifier:active-headshot-and-range",
+          "field": "duration",
+          "state": "known",
+          "value": 3
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_take_aim:modifier:active-headshot-and-range:magnitude",
+          "ownerId": "effect:sniper_take_aim:modifier:active-headshot-and-range",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            75,
+            150,
+            225,
+            300
+          ]
+        },
+        "mana": {
+          "id": "value:effect:sniper_take_aim:modifier:active-headshot-and-range:mana",
+          "ownerId": "effect:sniper_take_aim:modifier:active-headshot-and-range",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_take_aim:modifier:active-headshot-and-range:cooldown",
+          "ownerId": "effect:sniper_take_aim:modifier:active-headshot-and-range",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            18,
+            16,
+            14
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sniper_take_aim:modifier:active-headshot-and-range:delay",
+          "ownerId": "effect:sniper_take_aim:modifier:active-headshot-and-range",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "no-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_take_aim"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sniper_take_aim:modifier:active-headshot-and-range",
+      "legacyEffectId": "sniper_take_aim:modifier:active-headshot-and-range",
+      "order": 7,
+      "legacyAbilityId": "sniper_take_aim",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sniper_take_aim:modifier:active-headshot-and-range:range",
+        "value:effect:sniper_take_aim:modifier:active-headshot-and-range:duration",
+        "value:effect:sniper_take_aim:modifier:active-headshot-and-range:magnitude",
+        "value:effect:sniper_take_aim:modifier:active-headshot-and-range:mana",
+        "value:effect:sniper_take_aim:modifier:active-headshot-and-range:cooldown",
+        "value:effect:sniper_take_aim:modifier:active-headshot-and-range:delay"
+      ],
+      "activationId": "activation:35:sniper_take_aim"
+    },
+    {
+      "effectId": "sniper_concussive_grenade:damage:explosion",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_concussive_grenade",
+      "type": "damage",
+      "subtype": "explosion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_concussive_grenade:damage:explosion:range",
+          "ownerId": "effect:sniper_concussive_grenade:damage:explosion",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:sniper_concussive_grenade:damage:explosion:duration",
+          "ownerId": "effect:sniper_concussive_grenade:damage:explosion",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_concussive_grenade:damage:explosion:magnitude",
+          "ownerId": "effect:sniper_concussive_grenade:damage:explosion",
+          "field": "magnitude",
+          "state": "known",
+          "value": 200
+        },
+        "mana": {
+          "id": "value:effect:sniper_concussive_grenade:damage:explosion:mana",
+          "ownerId": "effect:sniper_concussive_grenade:damage:explosion",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_concussive_grenade:damage:explosion:cooldown",
+          "ownerId": "effect:sniper_concussive_grenade:damage:explosion",
+          "field": "cooldown",
+          "state": "known",
+          "value": 10
+        },
+        "delay": {
+          "id": "value:effect:sniper_concussive_grenade:damage:explosion:delay",
+          "ownerId": "effect:sniper_concussive_grenade:damage:explosion",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:sniper_concussive_grenade:damage:explosion:damageType",
+          "ownerId": "effect:sniper_concussive_grenade:damage:explosion",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_concussive_grenade"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sniper_concussive_grenade:damage:explosion",
+      "legacyEffectId": "sniper_concussive_grenade:damage:explosion",
+      "order": 8,
+      "legacyAbilityId": "sniper_concussive_grenade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sniper_concussive_grenade:damage:explosion:range",
+        "value:effect:sniper_concussive_grenade:damage:explosion:duration",
+        "value:effect:sniper_concussive_grenade:damage:explosion:magnitude",
+        "value:effect:sniper_concussive_grenade:damage:explosion:mana",
+        "value:effect:sniper_concussive_grenade:damage:explosion:cooldown",
+        "value:effect:sniper_concussive_grenade:damage:explosion:delay",
+        "value:effect:sniper_concussive_grenade:damage:explosion:damageType"
+      ],
+      "activationId": "activation:35:sniper_concussive_grenade"
+    },
+    {
+      "effectId": "sniper_concussive_grenade:displacement:enemy-knockback",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_concussive_grenade",
+      "type": "displacement",
+      "subtype": "enemy-knockback",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_concussive_grenade:displacement:enemy-knockback:range",
+          "ownerId": "effect:sniper_concussive_grenade:displacement:enemy-knockback",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:sniper_concussive_grenade:displacement:enemy-knockback:duration",
+          "ownerId": "effect:sniper_concussive_grenade:displacement:enemy-knockback",
+          "field": "duration",
+          "state": "known",
+          "value": 0.4
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_concussive_grenade:displacement:enemy-knockback:magnitude",
+          "ownerId": "effect:sniper_concussive_grenade:displacement:enemy-knockback",
+          "field": "magnitude",
+          "state": "known",
+          "value": 475
+        },
+        "mana": {
+          "id": "value:effect:sniper_concussive_grenade:displacement:enemy-knockback:mana",
+          "ownerId": "effect:sniper_concussive_grenade:displacement:enemy-knockback",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_concussive_grenade:displacement:enemy-knockback:cooldown",
+          "ownerId": "effect:sniper_concussive_grenade:displacement:enemy-knockback",
+          "field": "cooldown",
+          "state": "known",
+          "value": 10
+        },
+        "delay": {
+          "id": "value:effect:sniper_concussive_grenade:displacement:enemy-knockback:delay",
+          "ownerId": "effect:sniper_concussive_grenade:displacement:enemy-knockback",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_concussive_grenade"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sniper_concussive_grenade:displacement:enemy-knockback",
+      "legacyEffectId": "sniper_concussive_grenade:displacement:enemy-knockback",
+      "order": 9,
+      "legacyAbilityId": "sniper_concussive_grenade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sniper_concussive_grenade:displacement:enemy-knockback:range",
+        "value:effect:sniper_concussive_grenade:displacement:enemy-knockback:duration",
+        "value:effect:sniper_concussive_grenade:displacement:enemy-knockback:magnitude",
+        "value:effect:sniper_concussive_grenade:displacement:enemy-knockback:mana",
+        "value:effect:sniper_concussive_grenade:displacement:enemy-knockback:cooldown",
+        "value:effect:sniper_concussive_grenade:displacement:enemy-knockback:delay"
+      ],
+      "activationId": "activation:35:sniper_concussive_grenade"
+    },
+    {
+      "effectId": "sniper_concussive_grenade:control:disarm",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_concussive_grenade",
+      "type": "control",
+      "subtype": "disarm",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_concussive_grenade:control:disarm:range",
+          "ownerId": "effect:sniper_concussive_grenade:control:disarm",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:sniper_concussive_grenade:control:disarm:duration",
+          "ownerId": "effect:sniper_concussive_grenade:control:disarm",
+          "field": "duration",
+          "state": "known",
+          "value": 3
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_concussive_grenade:control:disarm:magnitude",
+          "ownerId": "effect:sniper_concussive_grenade:control:disarm",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sniper_concussive_grenade:control:disarm:mana",
+          "ownerId": "effect:sniper_concussive_grenade:control:disarm",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_concussive_grenade:control:disarm:cooldown",
+          "ownerId": "effect:sniper_concussive_grenade:control:disarm",
+          "field": "cooldown",
+          "state": "known",
+          "value": 10
+        },
+        "delay": {
+          "id": "value:effect:sniper_concussive_grenade:control:disarm:delay",
+          "ownerId": "effect:sniper_concussive_grenade:control:disarm",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "attacking"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_concussive_grenade"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sniper_concussive_grenade:control:disarm",
+      "legacyEffectId": "sniper_concussive_grenade:control:disarm",
+      "order": 10,
+      "legacyAbilityId": "sniper_concussive_grenade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sniper_concussive_grenade:control:disarm:range",
+        "value:effect:sniper_concussive_grenade:control:disarm:duration",
+        "value:effect:sniper_concussive_grenade:control:disarm:magnitude",
+        "value:effect:sniper_concussive_grenade:control:disarm:mana",
+        "value:effect:sniper_concussive_grenade:control:disarm:cooldown",
+        "value:effect:sniper_concussive_grenade:control:disarm:delay"
+      ],
+      "activationId": "activation:35:sniper_concussive_grenade"
+    },
+    {
+      "effectId": "sniper_concussive_grenade:slow:movement",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_concussive_grenade",
+      "type": "slow",
+      "subtype": "movement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_concussive_grenade:slow:movement:range",
+          "ownerId": "effect:sniper_concussive_grenade:slow:movement",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:sniper_concussive_grenade:slow:movement:duration",
+          "ownerId": "effect:sniper_concussive_grenade:slow:movement",
+          "field": "duration",
+          "state": "known",
+          "value": 3
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_concussive_grenade:slow:movement:magnitude",
+          "ownerId": "effect:sniper_concussive_grenade:slow:movement",
+          "field": "magnitude",
+          "state": "known",
+          "value": 50
+        },
+        "mana": {
+          "id": "value:effect:sniper_concussive_grenade:slow:movement:mana",
+          "ownerId": "effect:sniper_concussive_grenade:slow:movement",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_concussive_grenade:slow:movement:cooldown",
+          "ownerId": "effect:sniper_concussive_grenade:slow:movement",
+          "field": "cooldown",
+          "state": "known",
+          "value": 10
+        },
+        "delay": {
+          "id": "value:effect:sniper_concussive_grenade:slow:movement:delay",
+          "ownerId": "effect:sniper_concussive_grenade:slow:movement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_concussive_grenade"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sniper_concussive_grenade:slow:movement",
+      "legacyEffectId": "sniper_concussive_grenade:slow:movement",
+      "order": 11,
+      "legacyAbilityId": "sniper_concussive_grenade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sniper_concussive_grenade:slow:movement:range",
+        "value:effect:sniper_concussive_grenade:slow:movement:duration",
+        "value:effect:sniper_concussive_grenade:slow:movement:magnitude",
+        "value:effect:sniper_concussive_grenade:slow:movement:mana",
+        "value:effect:sniper_concussive_grenade:slow:movement:cooldown",
+        "value:effect:sniper_concussive_grenade:slow:movement:delay"
+      ],
+      "activationId": "activation:35:sniper_concussive_grenade"
+    },
+    {
+      "effectId": "sniper_concussive_grenade:mobility:self-knockback",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_concussive_grenade",
+      "type": "mobility",
+      "subtype": "self-knockback",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_concussive_grenade:mobility:self-knockback:range",
+          "ownerId": "effect:sniper_concussive_grenade:mobility:self-knockback",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sniper_concussive_grenade:mobility:self-knockback:duration",
+          "ownerId": "effect:sniper_concussive_grenade:mobility:self-knockback",
+          "field": "duration",
+          "state": "known",
+          "value": 0.4
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_concussive_grenade:mobility:self-knockback:magnitude",
+          "ownerId": "effect:sniper_concussive_grenade:mobility:self-knockback",
+          "field": "magnitude",
+          "state": "known",
+          "value": 475
+        },
+        "mana": {
+          "id": "value:effect:sniper_concussive_grenade:mobility:self-knockback:mana",
+          "ownerId": "effect:sniper_concussive_grenade:mobility:self-knockback",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_concussive_grenade:mobility:self-knockback:cooldown",
+          "ownerId": "effect:sniper_concussive_grenade:mobility:self-knockback",
+          "field": "cooldown",
+          "state": "known",
+          "value": 10
+        },
+        "delay": {
+          "id": "value:effect:sniper_concussive_grenade:mobility:self-knockback:delay",
+          "ownerId": "effect:sniper_concussive_grenade:mobility:self-knockback",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "sniperInsideGrenadeRadius"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_concussive_grenade"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sniper_concussive_grenade:mobility:self-knockback",
+      "legacyEffectId": "sniper_concussive_grenade:mobility:self-knockback",
+      "order": 12,
+      "legacyAbilityId": "sniper_concussive_grenade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:sniper_concussive_grenade:mobility:self-knockback:0"
+      ],
+      "valueIds": [
+        "value:effect:sniper_concussive_grenade:mobility:self-knockback:range",
+        "value:effect:sniper_concussive_grenade:mobility:self-knockback:duration",
+        "value:effect:sniper_concussive_grenade:mobility:self-knockback:magnitude",
+        "value:effect:sniper_concussive_grenade:mobility:self-knockback:mana",
+        "value:effect:sniper_concussive_grenade:mobility:self-knockback:cooldown",
+        "value:effect:sniper_concussive_grenade:mobility:self-knockback:delay"
+      ],
+      "activationId": "activation:35:sniper_concussive_grenade"
+    },
+    {
+      "effectId": "sniper_keen_scope:modifier:distance-scaled-attack-damage",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_keen_scope",
+      "type": "modifier",
+      "subtype": "distance-scaled-attack-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_keen_scope:modifier:distance-scaled-attack-damage:range",
+          "ownerId": "effect:sniper_keen_scope:modifier:distance-scaled-attack-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sniper_keen_scope:modifier:distance-scaled-attack-damage:duration",
+          "ownerId": "effect:sniper_keen_scope:modifier:distance-scaled-attack-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_keen_scope:modifier:distance-scaled-attack-damage:magnitude",
+          "ownerId": "effect:sniper_keen_scope:modifier:distance-scaled-attack-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sniper_keen_scope:modifier:distance-scaled-attack-damage:mana",
+          "ownerId": "effect:sniper_keen_scope:modifier:distance-scaled-attack-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_keen_scope:modifier:distance-scaled-attack-damage:cooldown",
+          "ownerId": "effect:sniper_keen_scope:modifier:distance-scaled-attack-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:sniper_keen_scope:modifier:distance-scaled-attack-damage:delay",
+          "ownerId": "effect:sniper_keen_scope:modifier:distance-scaled-attack-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_keen_scope:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:sniper_keen_scope:modifier:distance-scaled-attack-damage",
+      "legacyEffectId": "sniper_keen_scope:modifier:distance-scaled-attack-damage",
+      "order": 13,
+      "legacyAbilityId": "sniper_keen_scope",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sniper_keen_scope:modifier:distance-scaled-attack-damage:range",
+        "value:effect:sniper_keen_scope:modifier:distance-scaled-attack-damage:duration",
+        "value:effect:sniper_keen_scope:modifier:distance-scaled-attack-damage:magnitude",
+        "value:effect:sniper_keen_scope:modifier:distance-scaled-attack-damage:mana",
+        "value:effect:sniper_keen_scope:modifier:distance-scaled-attack-damage:cooldown",
+        "value:effect:sniper_keen_scope:modifier:distance-scaled-attack-damage:delay"
+      ],
+      "activationId": "activation:35:sniper_keen_scope"
+    },
+    {
+      "effectId": "sniper_assassinate:damage:declared-bonus-damage",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_assassinate",
+      "type": "damage",
+      "subtype": "declared-bonus-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_assassinate:damage:declared-bonus-damage:range",
+          "ownerId": "effect:sniper_assassinate:damage:declared-bonus-damage",
+          "field": "range",
+          "state": "known",
+          "value": 3000
+        },
+        "duration": {
+          "id": "value:effect:sniper_assassinate:damage:declared-bonus-damage:duration",
+          "ownerId": "effect:sniper_assassinate:damage:declared-bonus-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_assassinate:damage:declared-bonus-damage:magnitude",
+          "ownerId": "effect:sniper_assassinate:damage:declared-bonus-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            300,
+            400,
+            500
+          ]
+        },
+        "mana": {
+          "id": "value:effect:sniper_assassinate:damage:declared-bonus-damage:mana",
+          "ownerId": "effect:sniper_assassinate:damage:declared-bonus-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 175
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_assassinate:damage:declared-bonus-damage:cooldown",
+          "ownerId": "effect:sniper_assassinate:damage:declared-bonus-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            15,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sniper_assassinate:damage:declared-bonus-damage:delay",
+          "ownerId": "effect:sniper_assassinate:damage:declared-bonus-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:sniper_assassinate:damage:declared-bonus-damage:damageType",
+          "ownerId": "effect:sniper_assassinate:damage:declared-bonus-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_assassinate"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sniper_assassinate:damage:declared-bonus-damage",
+      "legacyEffectId": "sniper_assassinate:damage:declared-bonus-damage",
+      "order": 14,
+      "legacyAbilityId": "sniper_assassinate",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sniper_assassinate:damage:declared-bonus-damage:range",
+        "value:effect:sniper_assassinate:damage:declared-bonus-damage:duration",
+        "value:effect:sniper_assassinate:damage:declared-bonus-damage:magnitude",
+        "value:effect:sniper_assassinate:damage:declared-bonus-damage:mana",
+        "value:effect:sniper_assassinate:damage:declared-bonus-damage:cooldown",
+        "value:effect:sniper_assassinate:damage:declared-bonus-damage:delay",
+        "value:effect:sniper_assassinate:damage:declared-bonus-damage:damageType"
+      ],
+      "activationId": "activation:35:sniper_assassinate"
+    },
+    {
+      "effectId": "sniper_assassinate:control:mini-stun",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_assassinate",
+      "type": "control",
+      "subtype": "mini-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_assassinate:control:mini-stun:range",
+          "ownerId": "effect:sniper_assassinate:control:mini-stun",
+          "field": "range",
+          "state": "known",
+          "value": 3000
+        },
+        "duration": {
+          "id": "value:effect:sniper_assassinate:control:mini-stun:duration",
+          "ownerId": "effect:sniper_assassinate:control:mini-stun",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_assassinate:control:mini-stun:magnitude",
+          "ownerId": "effect:sniper_assassinate:control:mini-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sniper_assassinate:control:mini-stun:mana",
+          "ownerId": "effect:sniper_assassinate:control:mini-stun",
+          "field": "mana",
+          "state": "known",
+          "value": 175
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_assassinate:control:mini-stun:cooldown",
+          "ownerId": "effect:sniper_assassinate:control:mini-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            15,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sniper_assassinate:control:mini-stun:delay",
+          "ownerId": "effect:sniper_assassinate:control:mini-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_assassinate"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sniper_assassinate:control:mini-stun",
+      "legacyEffectId": "sniper_assassinate:control:mini-stun",
+      "order": 15,
+      "legacyAbilityId": "sniper_assassinate",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sniper_assassinate:control:mini-stun:range",
+        "value:effect:sniper_assassinate:control:mini-stun:duration",
+        "value:effect:sniper_assassinate:control:mini-stun:magnitude",
+        "value:effect:sniper_assassinate:control:mini-stun:mana",
+        "value:effect:sniper_assassinate:control:mini-stun:cooldown",
+        "value:effect:sniper_assassinate:control:mini-stun:delay"
+      ],
+      "activationId": "activation:35:sniper_assassinate"
+    },
+    {
+      "effectId": "sniper_assassinate:control:scepter-stun",
+      "heroId": "35",
+      "abilityId": "ability:35:sniper_assassinate",
+      "type": "control",
+      "subtype": "scepter-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sniper_assassinate:control:scepter-stun:range",
+          "ownerId": "effect:sniper_assassinate:control:scepter-stun",
+          "field": "range",
+          "state": "known",
+          "value": 3000
+        },
+        "duration": {
+          "id": "value:effect:sniper_assassinate:control:scepter-stun:duration",
+          "ownerId": "effect:sniper_assassinate:control:scepter-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            0.8,
+            1,
+            1.2
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:sniper_assassinate:control:scepter-stun:magnitude",
+          "ownerId": "effect:sniper_assassinate:control:scepter-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sniper_assassinate:control:scepter-stun:mana",
+          "ownerId": "effect:sniper_assassinate:control:scepter-stun",
+          "field": "mana",
+          "state": "known",
+          "value": 175
+        },
+        "cooldown": {
+          "id": "value:effect:sniper_assassinate:control:scepter-stun:cooldown",
+          "ownerId": "effect:sniper_assassinate:control:scepter-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            15,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sniper_assassinate:control:scepter-stun:delay",
+          "ownerId": "effect:sniper_assassinate:control:scepter-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "sniper_assassinate",
+        "replaces": [
+          "sniper_assassinate:control:mini-stun"
+        ]
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sniper_assassinate:control:scepter-stun",
+      "legacyEffectId": "sniper_assassinate:control:scepter-stun",
+      "order": 16,
+      "legacyAbilityId": "sniper_assassinate",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sniper_assassinate:control:scepter-stun:range",
+        "value:effect:sniper_assassinate:control:scepter-stun:duration",
+        "value:effect:sniper_assassinate:control:scepter-stun:magnitude",
+        "value:effect:sniper_assassinate:control:scepter-stun:mana",
+        "value:effect:sniper_assassinate:control:scepter-stun:cooldown",
+        "value:effect:sniper_assassinate:control:scepter-stun:delay"
+      ],
+      "activationId": "activation:35:sniper_assassinate"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:sniper_headshot:damage:proc-bonus:0",
+      "ownerId": "effect:sniper_headshot:damage:proc-bonus",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "headshotTriggered"
+      }
+    },
+    {
+      "id": "condition:sniper_headshot:displacement:proc-knockback:0",
+      "ownerId": "effect:sniper_headshot:displacement:proc-knockback",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "headshotTriggered"
+      }
+    },
+    {
+      "id": "condition:sniper_headshot:slow:proc-movement-and-attack:0",
+      "ownerId": "effect:sniper_headshot:slow:proc-movement-and-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "headshotTriggered"
+      }
+    },
+    {
+      "id": "condition:sniper_concussive_grenade:mobility:self-knockback:0",
+      "ownerId": "effect:sniper_concussive_grenade:mobility:self-knockback",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "sniperInsideGrenadeRadius"
+      }
+    }
+  ]
+}

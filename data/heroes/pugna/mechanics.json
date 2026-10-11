@@ -1,0 +1,1605 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "pugna_nether_blast:damage:delayed-explosion",
+      "heroId": "45",
+      "abilityId": "ability:45:pugna_nether_blast",
+      "type": "damage",
+      "subtype": "delayed-explosion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pugna_nether_blast:damage:delayed-explosion:range",
+          "ownerId": "effect:pugna_nether_blast:damage:delayed-explosion",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:pugna_nether_blast:damage:delayed-explosion:duration",
+          "ownerId": "effect:pugna_nether_blast:damage:delayed-explosion",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:pugna_nether_blast:damage:delayed-explosion:magnitude",
+          "ownerId": "effect:pugna_nether_blast:damage:delayed-explosion",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            95,
+            170,
+            245,
+            320
+          ]
+        },
+        "mana": {
+          "id": "value:effect:pugna_nether_blast:damage:delayed-explosion:mana",
+          "ownerId": "effect:pugna_nether_blast:damage:delayed-explosion",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            115,
+            130,
+            145
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:pugna_nether_blast:damage:delayed-explosion:cooldown",
+          "ownerId": "effect:pugna_nether_blast:damage:delayed-explosion",
+          "field": "cooldown",
+          "state": "known",
+          "value": 5
+        },
+        "delay": {
+          "id": "value:effect:pugna_nether_blast:damage:delayed-explosion:delay",
+          "ownerId": "effect:pugna_nether_blast:damage:delayed-explosion",
+          "field": "delay",
+          "state": "known",
+          "value": 0.8
+        },
+        "damageType": {
+          "id": "value:effect:pugna_nether_blast:damage:delayed-explosion:damageType",
+          "ownerId": "effect:pugna_nether_blast:damage:delayed-explosion",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "pugna_nether_blast"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pugna_nether_blast:damage:delayed-explosion",
+      "legacyEffectId": "pugna_nether_blast:damage:delayed-explosion",
+      "order": 0,
+      "legacyAbilityId": "pugna_nether_blast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:pugna_nether_blast:damage:delayed-explosion:range",
+        "value:effect:pugna_nether_blast:damage:delayed-explosion:duration",
+        "value:effect:pugna_nether_blast:damage:delayed-explosion:magnitude",
+        "value:effect:pugna_nether_blast:damage:delayed-explosion:mana",
+        "value:effect:pugna_nether_blast:damage:delayed-explosion:cooldown",
+        "value:effect:pugna_nether_blast:damage:delayed-explosion:delay",
+        "value:effect:pugna_nether_blast:damage:delayed-explosion:damageType"
+      ],
+      "activationId": "activation:45:pugna_nether_blast"
+    },
+    {
+      "effectId": "pugna_decrepify:control:enemy-disarm",
+      "heroId": "45",
+      "abilityId": "ability:45:pugna_decrepify",
+      "type": "control",
+      "subtype": "enemy-disarm",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pugna_decrepify:control:enemy-disarm:range",
+          "ownerId": "effect:pugna_decrepify:control:enemy-disarm",
+          "field": "range",
+          "state": "known",
+          "value": [
+            550,
+            600,
+            650,
+            700
+          ]
+        },
+        "duration": {
+          "id": "value:effect:pugna_decrepify:control:enemy-disarm:duration",
+          "ownerId": "effect:pugna_decrepify:control:enemy-disarm",
+          "field": "duration",
+          "state": "known",
+          "value": 3.5
+        },
+        "magnitude": {
+          "id": "value:effect:pugna_decrepify:control:enemy-disarm:magnitude",
+          "ownerId": "effect:pugna_decrepify:control:enemy-disarm",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:pugna_decrepify:control:enemy-disarm:mana",
+          "ownerId": "effect:pugna_decrepify:control:enemy-disarm",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:pugna_decrepify:control:enemy-disarm:cooldown",
+          "ownerId": "effect:pugna_decrepify:control:enemy-disarm",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            13,
+            10,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:pugna_decrepify:control:enemy-disarm:delay",
+          "ownerId": "effect:pugna_decrepify:control:enemy-disarm",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "attacking"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "pugna_decrepify"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pugna_decrepify:control:enemy-disarm",
+      "legacyEffectId": "pugna_decrepify:control:enemy-disarm",
+      "order": 1,
+      "legacyAbilityId": "pugna_decrepify",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:pugna_decrepify:control:enemy-disarm:range",
+        "value:effect:pugna_decrepify:control:enemy-disarm:duration",
+        "value:effect:pugna_decrepify:control:enemy-disarm:magnitude",
+        "value:effect:pugna_decrepify:control:enemy-disarm:mana",
+        "value:effect:pugna_decrepify:control:enemy-disarm:cooldown",
+        "value:effect:pugna_decrepify:control:enemy-disarm:delay"
+      ],
+      "activationId": "activation:45:pugna_decrepify"
+    },
+    {
+      "effectId": "pugna_decrepify:slow:enemy-movement",
+      "heroId": "45",
+      "abilityId": "ability:45:pugna_decrepify",
+      "type": "slow",
+      "subtype": "enemy-movement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pugna_decrepify:slow:enemy-movement:range",
+          "ownerId": "effect:pugna_decrepify:slow:enemy-movement",
+          "field": "range",
+          "state": "known",
+          "value": [
+            550,
+            600,
+            650,
+            700
+          ]
+        },
+        "duration": {
+          "id": "value:effect:pugna_decrepify:slow:enemy-movement:duration",
+          "ownerId": "effect:pugna_decrepify:slow:enemy-movement",
+          "field": "duration",
+          "state": "known",
+          "value": 3.5
+        },
+        "magnitude": {
+          "id": "value:effect:pugna_decrepify:slow:enemy-movement:magnitude",
+          "ownerId": "effect:pugna_decrepify:slow:enemy-movement",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -45,
+            -50,
+            -55,
+            -60
+          ]
+        },
+        "mana": {
+          "id": "value:effect:pugna_decrepify:slow:enemy-movement:mana",
+          "ownerId": "effect:pugna_decrepify:slow:enemy-movement",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:pugna_decrepify:slow:enemy-movement:cooldown",
+          "ownerId": "effect:pugna_decrepify:slow:enemy-movement",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            13,
+            10,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:pugna_decrepify:slow:enemy-movement:delay",
+          "ownerId": "effect:pugna_decrepify:slow:enemy-movement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "pugna_decrepify"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pugna_decrepify:slow:enemy-movement",
+      "legacyEffectId": "pugna_decrepify:slow:enemy-movement",
+      "order": 2,
+      "legacyAbilityId": "pugna_decrepify",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:pugna_decrepify:slow:enemy-movement:range",
+        "value:effect:pugna_decrepify:slow:enemy-movement:duration",
+        "value:effect:pugna_decrepify:slow:enemy-movement:magnitude",
+        "value:effect:pugna_decrepify:slow:enemy-movement:mana",
+        "value:effect:pugna_decrepify:slow:enemy-movement:cooldown",
+        "value:effect:pugna_decrepify:slow:enemy-movement:delay"
+      ],
+      "activationId": "activation:45:pugna_decrepify"
+    },
+    {
+      "effectId": "pugna_decrepify:save:allied-physical-protection",
+      "heroId": "45",
+      "abilityId": "ability:45:pugna_decrepify",
+      "type": "save",
+      "subtype": "allied-physical-protection",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pugna_decrepify:save:allied-physical-protection:range",
+          "ownerId": "effect:pugna_decrepify:save:allied-physical-protection",
+          "field": "range",
+          "state": "known",
+          "value": [
+            550,
+            600,
+            650,
+            700
+          ]
+        },
+        "duration": {
+          "id": "value:effect:pugna_decrepify:save:allied-physical-protection:duration",
+          "ownerId": "effect:pugna_decrepify:save:allied-physical-protection",
+          "field": "duration",
+          "state": "known",
+          "value": 3.5
+        },
+        "magnitude": {
+          "id": "value:effect:pugna_decrepify:save:allied-physical-protection:magnitude",
+          "ownerId": "effect:pugna_decrepify:save:allied-physical-protection",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:pugna_decrepify:save:allied-physical-protection:mana",
+          "ownerId": "effect:pugna_decrepify:save:allied-physical-protection",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:pugna_decrepify:save:allied-physical-protection:cooldown",
+          "ownerId": "effect:pugna_decrepify:save:allied-physical-protection",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            13,
+            10,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:pugna_decrepify:save:allied-physical-protection:delay",
+          "ownerId": "effect:pugna_decrepify:save:allied-physical-protection",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "physical"
+          ]
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "pugna_decrepify"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pugna_decrepify:save:allied-physical-protection",
+      "legacyEffectId": "pugna_decrepify:save:allied-physical-protection",
+      "order": 3,
+      "legacyAbilityId": "pugna_decrepify",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:pugna_decrepify:save:allied-physical-protection:range",
+        "value:effect:pugna_decrepify:save:allied-physical-protection:duration",
+        "value:effect:pugna_decrepify:save:allied-physical-protection:magnitude",
+        "value:effect:pugna_decrepify:save:allied-physical-protection:mana",
+        "value:effect:pugna_decrepify:save:allied-physical-protection:cooldown",
+        "value:effect:pugna_decrepify:save:allied-physical-protection:delay"
+      ],
+      "activationId": "activation:45:pugna_decrepify"
+    },
+    {
+      "effectId": "pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability",
+      "heroId": "45",
+      "abilityId": "ability:45:pugna_decrepify",
+      "type": "modifier",
+      "subtype": "alignment-dependent-restoration-and-magic-vulnerability",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally",
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability:range",
+          "ownerId": "effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability",
+          "field": "range",
+          "state": "known",
+          "value": [
+            550,
+            600,
+            650,
+            700
+          ]
+        },
+        "duration": {
+          "id": "value:effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability:duration",
+          "ownerId": "effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability",
+          "field": "duration",
+          "state": "known",
+          "value": 3.5
+        },
+        "magnitude": {
+          "id": "value:effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability:magnitude",
+          "ownerId": "effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability:mana",
+          "ownerId": "effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability:cooldown",
+          "ownerId": "effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            13,
+            10,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability:delay",
+          "ownerId": "effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "pugna_decrepify"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability",
+      "legacyEffectId": "pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability",
+      "order": 4,
+      "legacyAbilityId": "pugna_decrepify",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability:range",
+        "value:effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability:duration",
+        "value:effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability:magnitude",
+        "value:effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability:mana",
+        "value:effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability:cooldown",
+        "value:effect:pugna_decrepify:modifier:alignment-dependent-restoration-and-magic-vulnerability:delay"
+      ],
+      "activationId": "activation:45:pugna_decrepify"
+    },
+    {
+      "effectId": "pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation",
+      "heroId": "45",
+      "abilityId": "ability:45:pugna_nether_ward",
+      "type": "modifier",
+      "subtype": "enemy-cast-mana-scaled-retaliation",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation:range",
+          "ownerId": "effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation",
+          "field": "range",
+          "state": "known",
+          "value": 175
+        },
+        "duration": {
+          "id": "value:effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation:duration",
+          "ownerId": "effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            21,
+            24,
+            27,
+            30
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation:magnitude",
+          "ownerId": "effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation:mana",
+          "ownerId": "effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation:cooldown",
+          "ownerId": "effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation",
+          "field": "cooldown",
+          "state": "known",
+          "value": 40
+        },
+        "delay": {
+          "id": "value:effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation:delay",
+          "ownerId": "effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "pugna_nether_ward"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation",
+      "legacyEffectId": "pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation",
+      "order": 5,
+      "legacyAbilityId": "pugna_nether_ward",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation:range",
+        "value:effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation:duration",
+        "value:effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation:magnitude",
+        "value:effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation:mana",
+        "value:effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation:cooldown",
+        "value:effect:pugna_nether_ward:modifier:enemy-cast-mana-scaled-retaliation:delay"
+      ],
+      "activationId": "activation:45:pugna_nether_ward"
+    },
+    {
+      "effectId": "pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification",
+      "heroId": "45",
+      "abilityId": "ability:45:pugna_oblivion_savant",
+      "type": "modifier",
+      "subtype": "channel-casting-and-tower-scaled-amplification",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification:range",
+          "ownerId": "effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification:duration",
+          "ownerId": "effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification:magnitude",
+          "ownerId": "effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification:mana",
+          "ownerId": "effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification:cooldown",
+          "ownerId": "effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification:delay",
+          "ownerId": "effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "pugna_oblivion_savant:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification",
+      "legacyEffectId": "pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification",
+      "order": 6,
+      "legacyAbilityId": "pugna_oblivion_savant",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification:range",
+        "value:effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification:duration",
+        "value:effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification:magnitude",
+        "value:effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification:mana",
+        "value:effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification:cooldown",
+        "value:effect:pugna_oblivion_savant:modifier:channel-casting-and-tower-scaled-amplification:delay"
+      ],
+      "activationId": "activation:45:pugna_oblivion_savant"
+    },
+    {
+      "effectId": "pugna_life_drain:damage:enemy-channel-drain",
+      "heroId": "45",
+      "abilityId": "ability:45:pugna_life_drain",
+      "type": "damage",
+      "subtype": "enemy-channel-drain",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pugna_life_drain:damage:enemy-channel-drain:range",
+          "ownerId": "effect:pugna_life_drain:damage:enemy-channel-drain",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:pugna_life_drain:damage:enemy-channel-drain:duration",
+          "ownerId": "effect:pugna_life_drain:damage:enemy-channel-drain",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:pugna_life_drain:damage:enemy-channel-drain:magnitude",
+          "ownerId": "effect:pugna_life_drain:damage:enemy-channel-drain",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            150,
+            250,
+            350
+          ]
+        },
+        "mana": {
+          "id": "value:effect:pugna_life_drain:damage:enemy-channel-drain:mana",
+          "ownerId": "effect:pugna_life_drain:damage:enemy-channel-drain",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            115,
+            160,
+            205
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:pugna_life_drain:damage:enemy-channel-drain:cooldown",
+          "ownerId": "effect:pugna_life_drain:damage:enemy-channel-drain",
+          "field": "cooldown",
+          "state": "known",
+          "value": 7
+        },
+        "delay": {
+          "id": "value:effect:pugna_life_drain:damage:enemy-channel-drain:delay",
+          "ownerId": "effect:pugna_life_drain:damage:enemy-channel-drain",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:pugna_life_drain:damage:enemy-channel-drain:damageType",
+          "ownerId": "effect:pugna_life_drain:damage:enemy-channel-drain",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "none"
+        }
+      },
+      "relationships": {
+        "resourceId": "pugna_life_drain"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pugna_life_drain:damage:enemy-channel-drain",
+      "legacyEffectId": "pugna_life_drain:damage:enemy-channel-drain",
+      "order": 7,
+      "legacyAbilityId": "pugna_life_drain",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:pugna_life_drain:damage:enemy-channel-drain:range",
+        "value:effect:pugna_life_drain:damage:enemy-channel-drain:duration",
+        "value:effect:pugna_life_drain:damage:enemy-channel-drain:magnitude",
+        "value:effect:pugna_life_drain:damage:enemy-channel-drain:mana",
+        "value:effect:pugna_life_drain:damage:enemy-channel-drain:cooldown",
+        "value:effect:pugna_life_drain:damage:enemy-channel-drain:delay",
+        "value:effect:pugna_life_drain:damage:enemy-channel-drain:damageType"
+      ],
+      "activationId": "activation:45:pugna_life_drain"
+    },
+    {
+      "effectId": "pugna_life_drain:heal:allied-channel-transfer",
+      "heroId": "45",
+      "abilityId": "ability:45:pugna_life_drain",
+      "type": "heal",
+      "subtype": "allied-channel-transfer",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pugna_life_drain:heal:allied-channel-transfer:range",
+          "ownerId": "effect:pugna_life_drain:heal:allied-channel-transfer",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:pugna_life_drain:heal:allied-channel-transfer:duration",
+          "ownerId": "effect:pugna_life_drain:heal:allied-channel-transfer",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:pugna_life_drain:heal:allied-channel-transfer:magnitude",
+          "ownerId": "effect:pugna_life_drain:heal:allied-channel-transfer",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            150,
+            250,
+            350
+          ]
+        },
+        "mana": {
+          "id": "value:effect:pugna_life_drain:heal:allied-channel-transfer:mana",
+          "ownerId": "effect:pugna_life_drain:heal:allied-channel-transfer",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            115,
+            160,
+            205
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:pugna_life_drain:heal:allied-channel-transfer:cooldown",
+          "ownerId": "effect:pugna_life_drain:heal:allied-channel-transfer",
+          "field": "cooldown",
+          "state": "known",
+          "value": 7
+        },
+        "delay": {
+          "id": "value:effect:pugna_life_drain:heal:allied-channel-transfer:delay",
+          "ownerId": "effect:pugna_life_drain:heal:allied-channel-transfer",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "pugnaHealthCanFundTransfer"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "pugna_life_drain"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pugna_life_drain:heal:allied-channel-transfer",
+      "legacyEffectId": "pugna_life_drain:heal:allied-channel-transfer",
+      "order": 8,
+      "legacyAbilityId": "pugna_life_drain",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:pugna_life_drain:heal:allied-channel-transfer:0"
+      ],
+      "valueIds": [
+        "value:effect:pugna_life_drain:heal:allied-channel-transfer:range",
+        "value:effect:pugna_life_drain:heal:allied-channel-transfer:duration",
+        "value:effect:pugna_life_drain:heal:allied-channel-transfer:magnitude",
+        "value:effect:pugna_life_drain:heal:allied-channel-transfer:mana",
+        "value:effect:pugna_life_drain:heal:allied-channel-transfer:cooldown",
+        "value:effect:pugna_life_drain:heal:allied-channel-transfer:delay"
+      ],
+      "activationId": "activation:45:pugna_life_drain"
+    },
+    {
+      "effectId": "pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision",
+      "heroId": "45",
+      "abilityId": "ability:45:pugna_life_drain",
+      "type": "modifier",
+      "subtype": "enemy-drain-self-restoration-and-vision",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision:range",
+          "ownerId": "effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision:duration",
+          "ownerId": "effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision:magnitude",
+          "ownerId": "effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision:mana",
+          "ownerId": "effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            115,
+            160,
+            205
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision:cooldown",
+          "ownerId": "effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision",
+          "field": "cooldown",
+          "state": "known",
+          "value": 7
+        },
+        "delay": {
+          "id": "value:effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision:delay",
+          "ownerId": "effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "pugna_life_drain"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision",
+      "legacyEffectId": "pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision",
+      "order": 9,
+      "legacyAbilityId": "pugna_life_drain",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision:range",
+        "value:effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision:duration",
+        "value:effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision:magnitude",
+        "value:effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision:mana",
+        "value:effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision:cooldown",
+        "value:effect:pugna_life_drain:modifier:enemy-drain-self-restoration-and-vision:delay"
+      ],
+      "activationId": "activation:45:pugna_life_drain"
+    },
+    {
+      "effectId": "pugna_life_drain:modifier:shard-ward-refraction",
+      "heroId": "45",
+      "abilityId": "ability:45:pugna_life_drain",
+      "type": "modifier",
+      "subtype": "shard-ward-refraction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pugna_life_drain:modifier:shard-ward-refraction:range",
+          "ownerId": "effect:pugna_life_drain:modifier:shard-ward-refraction",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:pugna_life_drain:modifier:shard-ward-refraction:duration",
+          "ownerId": "effect:pugna_life_drain:modifier:shard-ward-refraction",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:pugna_life_drain:modifier:shard-ward-refraction:magnitude",
+          "ownerId": "effect:pugna_life_drain:modifier:shard-ward-refraction",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:pugna_life_drain:modifier:shard-ward-refraction:mana",
+          "ownerId": "effect:pugna_life_drain:modifier:shard-ward-refraction",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            115,
+            160,
+            205
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:pugna_life_drain:modifier:shard-ward-refraction:cooldown",
+          "ownerId": "effect:pugna_life_drain:modifier:shard-ward-refraction",
+          "field": "cooldown",
+          "state": "known",
+          "value": 7
+        },
+        "delay": {
+          "id": "value:effect:pugna_life_drain:modifier:shard-ward-refraction:delay",
+          "ownerId": "effect:pugna_life_drain:modifier:shard-ward-refraction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "netherWardChannelTarget"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "pugna_life_drain"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pugna_life_drain:modifier:shard-ward-refraction",
+      "legacyEffectId": "pugna_life_drain:modifier:shard-ward-refraction",
+      "order": 10,
+      "legacyAbilityId": "pugna_life_drain",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:pugna_life_drain:modifier:shard-ward-refraction:0"
+      ],
+      "valueIds": [
+        "value:effect:pugna_life_drain:modifier:shard-ward-refraction:range",
+        "value:effect:pugna_life_drain:modifier:shard-ward-refraction:duration",
+        "value:effect:pugna_life_drain:modifier:shard-ward-refraction:magnitude",
+        "value:effect:pugna_life_drain:modifier:shard-ward-refraction:mana",
+        "value:effect:pugna_life_drain:modifier:shard-ward-refraction:cooldown",
+        "value:effect:pugna_life_drain:modifier:shard-ward-refraction:delay"
+      ],
+      "activationId": "activation:45:pugna_life_drain"
+    },
+    {
+      "effectId": "pugna_life_drain:modifier:scepter-spell-amplification-transfer",
+      "heroId": "45",
+      "abilityId": "ability:45:pugna_life_drain",
+      "type": "modifier",
+      "subtype": "scepter-spell-amplification-transfer",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer:range",
+          "ownerId": "effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer:duration",
+          "ownerId": "effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer:magnitude",
+          "ownerId": "effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer:mana",
+          "ownerId": "effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            115,
+            160,
+            205
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer:cooldown",
+          "ownerId": "effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer",
+          "field": "cooldown",
+          "state": "known",
+          "value": 7
+        },
+        "delay": {
+          "id": "value:effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer:delay",
+          "ownerId": "effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "pugna_life_drain"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer",
+      "legacyEffectId": "pugna_life_drain:modifier:scepter-spell-amplification-transfer",
+      "order": 11,
+      "legacyAbilityId": "pugna_life_drain",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer:range",
+        "value:effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer:duration",
+        "value:effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer:magnitude",
+        "value:effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer:mana",
+        "value:effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer:cooldown",
+        "value:effect:pugna_life_drain:modifier:scepter-spell-amplification-transfer:delay"
+      ],
+      "activationId": "activation:45:pugna_life_drain"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:pugna_life_drain:heal:allied-channel-transfer:0",
+      "ownerId": "effect:pugna_life_drain:heal:allied-channel-transfer",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "pugnaHealthCanFundTransfer"
+      }
+    },
+    {
+      "id": "condition:pugna_life_drain:modifier:shard-ward-refraction:0",
+      "ownerId": "effect:pugna_life_drain:modifier:shard-ward-refraction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "netherWardChannelTarget"
+      }
+    }
+  ]
+}

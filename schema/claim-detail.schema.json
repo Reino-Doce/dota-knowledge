@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/claim-detail.schema.json",
+  "title": "Source-qualified claim and human review decision",
+  "description": "One assertion bound to evidence, revision and compatibility. A compiled interpretation never becomes reviewed because it was recompiled.",
+  "type": "object",
+  "required": ["id", "status", "sourceIds"],
+  "properties": {
+    "id": { "$ref": "core.schema.json#/$defs/id" }, "heroId": { "$ref": "core.schema.json#/$defs/heroId" },
+    "subjectId": { "$ref": "core.schema.json#/$defs/id" }, "kind": { "type": "string", "minLength": 1 },
+    "status": { "enum": ["reviewed", "proposed", "disputed", "rejected", "unknown"] },
+    "sourceIds": { "$ref": "core.schema.json#/$defs/idList" },
+    "sourceRefs": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/sourceRef" } },
+    "review": { "oneOf": [{ "$ref": "core.schema.json#/$defs/reviewDecision" }, { "type": "null" }] },
+    "compatibility": { "$ref": "core.schema.json#/$defs/sourceCompatibility" },
+    "detailsRef": { "type": "string" }, "sourceRecord": { "$ref": "core.schema.json#/$defs/jsonValue" },
+    "claim": { "$ref": "core.schema.json#/$defs/jsonValue" }
+  },
+  "$defs": {
+    "sourceRef": {
+      "type": "object", "required": ["sourceId", "resource", "path"],
+      "properties": {
+        "sourceId": { "$ref": "core.schema.json#/$defs/id" }, "resource": { "type": "string", "minLength": 1 },
+        "path": { "type": "string" }, "sha256": { "oneOf": [{ "$ref": "core.schema.json#/$defs/hash" }, { "type": "null" }] }
+      },
+      "additionalProperties": true
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "status": { "const": "reviewed" } }, "required": ["status"] },
+      "then": {
+        "required": ["review", "compatibility"],
+        "properties": {
+          "review": { "type": "object", "properties": { "status": { "const": "reviewed" } }, "required": ["status"] },
+          "compatibility": {
+            "type": "object",
+            "properties": {
+              "sourceState": { "const": "bound" }, "nativeSourceHash": { "$ref": "core.schema.json#/$defs/hash" },
+              "annotationVersion": { "type": "string", "minLength": 1 }, "build": { "$ref": "core.schema.json#/$defs/buildIdentity" },
+              "reviewDecisionRevision": { "type": "string" }
+            },
+            "required": ["sourceState", "nativeSourceHash", "annotationVersion"]
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": true
+}

@@ -1,0 +1,2228 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "huskar_inner_fire:damage:inner-fire-damage",
+      "heroId": "59",
+      "abilityId": "ability:59:huskar_inner_fire",
+      "type": "damage",
+      "subtype": "inner-fire-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:huskar_inner_fire:damage:inner-fire-damage:range",
+          "ownerId": "effect:huskar_inner_fire:damage:inner-fire-damage",
+          "field": "range",
+          "state": "known",
+          "value": 500
+        },
+        "duration": {
+          "id": "value:effect:huskar_inner_fire:damage:inner-fire-damage:duration",
+          "ownerId": "effect:huskar_inner_fire:damage:inner-fire-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:huskar_inner_fire:damage:inner-fire-damage:magnitude",
+          "ownerId": "effect:huskar_inner_fire:damage:inner-fire-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            110,
+            180,
+            250,
+            320
+          ]
+        },
+        "mana": {
+          "id": "value:effect:huskar_inner_fire:damage:inner-fire-damage:mana",
+          "ownerId": "effect:huskar_inner_fire:damage:inner-fire-damage",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:huskar_inner_fire:damage:inner-fire-damage:cooldown",
+          "ownerId": "effect:huskar_inner_fire:damage:inner-fire-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            17,
+            15,
+            13,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:huskar_inner_fire:damage:inner-fire-damage:delay",
+          "ownerId": "effect:huskar_inner_fire:damage:inner-fire-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:huskar_inner_fire:damage:inner-fire-damage:damageType",
+          "ownerId": "effect:huskar_inner_fire:damage:inner-fire-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "huskarHealthCostAffordable"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "huskar_inner_fire"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:huskar_inner_fire:damage:inner-fire-damage",
+      "legacyEffectId": "huskar_inner_fire:damage:inner-fire-damage",
+      "order": 0,
+      "legacyAbilityId": "huskar_inner_fire",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:huskar_inner_fire:damage:inner-fire-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:huskar_inner_fire:damage:inner-fire-damage:range",
+        "value:effect:huskar_inner_fire:damage:inner-fire-damage:duration",
+        "value:effect:huskar_inner_fire:damage:inner-fire-damage:magnitude",
+        "value:effect:huskar_inner_fire:damage:inner-fire-damage:mana",
+        "value:effect:huskar_inner_fire:damage:inner-fire-damage:cooldown",
+        "value:effect:huskar_inner_fire:damage:inner-fire-damage:delay",
+        "value:effect:huskar_inner_fire:damage:inner-fire-damage:damageType"
+      ],
+      "activationId": "activation:59:huskar_inner_fire"
+    },
+    {
+      "effectId": "huskar_inner_fire:control:inner-fire-silence",
+      "heroId": "59",
+      "abilityId": "ability:59:huskar_inner_fire",
+      "type": "control",
+      "subtype": "inner-fire-silence",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:huskar_inner_fire:control:inner-fire-silence:range",
+          "ownerId": "effect:huskar_inner_fire:control:inner-fire-silence",
+          "field": "range",
+          "state": "known",
+          "value": 500
+        },
+        "duration": {
+          "id": "value:effect:huskar_inner_fire:control:inner-fire-silence:duration",
+          "ownerId": "effect:huskar_inner_fire:control:inner-fire-silence",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.5,
+            2,
+            2.5,
+            3
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:huskar_inner_fire:control:inner-fire-silence:magnitude",
+          "ownerId": "effect:huskar_inner_fire:control:inner-fire-silence",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:huskar_inner_fire:control:inner-fire-silence:mana",
+          "ownerId": "effect:huskar_inner_fire:control:inner-fire-silence",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:huskar_inner_fire:control:inner-fire-silence:cooldown",
+          "ownerId": "effect:huskar_inner_fire:control:inner-fire-silence",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            17,
+            15,
+            13,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:huskar_inner_fire:control:inner-fire-silence:delay",
+          "ownerId": "effect:huskar_inner_fire:control:inner-fire-silence",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "huskarHealthCostAffordable"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "casting"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "huskar_inner_fire"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:huskar_inner_fire:control:inner-fire-silence",
+      "legacyEffectId": "huskar_inner_fire:control:inner-fire-silence",
+      "order": 1,
+      "legacyAbilityId": "huskar_inner_fire",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:huskar_inner_fire:control:inner-fire-silence:0"
+      ],
+      "valueIds": [
+        "value:effect:huskar_inner_fire:control:inner-fire-silence:range",
+        "value:effect:huskar_inner_fire:control:inner-fire-silence:duration",
+        "value:effect:huskar_inner_fire:control:inner-fire-silence:magnitude",
+        "value:effect:huskar_inner_fire:control:inner-fire-silence:mana",
+        "value:effect:huskar_inner_fire:control:inner-fire-silence:cooldown",
+        "value:effect:huskar_inner_fire:control:inner-fire-silence:delay"
+      ],
+      "activationId": "activation:59:huskar_inner_fire"
+    },
+    {
+      "effectId": "huskar_inner_fire:displacement:radial-knockback",
+      "heroId": "59",
+      "abilityId": "ability:59:huskar_inner_fire",
+      "type": "displacement",
+      "subtype": "radial-knockback",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:huskar_inner_fire:displacement:radial-knockback:range",
+          "ownerId": "effect:huskar_inner_fire:displacement:radial-knockback",
+          "field": "range",
+          "state": "known",
+          "value": 500
+        },
+        "duration": {
+          "id": "value:effect:huskar_inner_fire:displacement:radial-knockback:duration",
+          "ownerId": "effect:huskar_inner_fire:displacement:radial-knockback",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:huskar_inner_fire:displacement:radial-knockback:magnitude",
+          "ownerId": "effect:huskar_inner_fire:displacement:radial-knockback",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:huskar_inner_fire:displacement:radial-knockback:mana",
+          "ownerId": "effect:huskar_inner_fire:displacement:radial-knockback",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:huskar_inner_fire:displacement:radial-knockback:cooldown",
+          "ownerId": "effect:huskar_inner_fire:displacement:radial-knockback",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            17,
+            15,
+            13,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:huskar_inner_fire:displacement:radial-knockback:delay",
+          "ownerId": "effect:huskar_inner_fire:displacement:radial-knockback",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "huskarHealthCostAffordable"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "huskar_inner_fire"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:huskar_inner_fire:displacement:radial-knockback",
+      "legacyEffectId": "huskar_inner_fire:displacement:radial-knockback",
+      "order": 2,
+      "legacyAbilityId": "huskar_inner_fire",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:huskar_inner_fire:displacement:radial-knockback:0"
+      ],
+      "valueIds": [
+        "value:effect:huskar_inner_fire:displacement:radial-knockback:range",
+        "value:effect:huskar_inner_fire:displacement:radial-knockback:duration",
+        "value:effect:huskar_inner_fire:displacement:radial-knockback:magnitude",
+        "value:effect:huskar_inner_fire:displacement:radial-knockback:mana",
+        "value:effect:huskar_inner_fire:displacement:radial-knockback:cooldown",
+        "value:effect:huskar_inner_fire:displacement:radial-knockback:delay"
+      ],
+      "activationId": "activation:59:huskar_inner_fire"
+    },
+    {
+      "effectId": "huskar_burning_spear:damage:health-cost-stacking-burn",
+      "heroId": "59",
+      "abilityId": "ability:59:huskar_burning_spear",
+      "type": "damage",
+      "subtype": "health-cost-stacking-burn",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:huskar_burning_spear:damage:health-cost-stacking-burn:range",
+          "ownerId": "effect:huskar_burning_spear:damage:health-cost-stacking-burn",
+          "field": "range",
+          "state": "known",
+          "value": 450
+        },
+        "duration": {
+          "id": "value:effect:huskar_burning_spear:damage:health-cost-stacking-burn:duration",
+          "ownerId": "effect:huskar_burning_spear:damage:health-cost-stacking-burn",
+          "field": "duration",
+          "state": "known",
+          "value": 9
+        },
+        "magnitude": {
+          "id": "value:effect:huskar_burning_spear:damage:health-cost-stacking-burn:magnitude",
+          "ownerId": "effect:huskar_burning_spear:damage:health-cost-stacking-burn",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:huskar_burning_spear:damage:health-cost-stacking-burn:mana",
+          "ownerId": "effect:huskar_burning_spear:damage:health-cost-stacking-burn",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:huskar_burning_spear:damage:health-cost-stacking-burn:cooldown",
+          "ownerId": "effect:huskar_burning_spear:damage:health-cost-stacking-burn",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "delay": {
+          "id": "value:effect:huskar_burning_spear:damage:health-cost-stacking-burn:delay",
+          "ownerId": "effect:huskar_burning_spear:damage:health-cost-stacking-burn",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:huskar_burning_spear:damage:health-cost-stacking-burn:damageType",
+          "ownerId": "effect:huskar_burning_spear:damage:health-cost-stacking-burn",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "huskarHealthCostAffordable",
+          "burningSpearAttackLanded"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "huskar_burning_spear"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:huskar_burning_spear:damage:health-cost-stacking-burn",
+      "legacyEffectId": "huskar_burning_spear:damage:health-cost-stacking-burn",
+      "order": 3,
+      "legacyAbilityId": "huskar_burning_spear",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:huskar_burning_spear:damage:health-cost-stacking-burn:0",
+        "condition:huskar_burning_spear:damage:health-cost-stacking-burn:1"
+      ],
+      "valueIds": [
+        "value:effect:huskar_burning_spear:damage:health-cost-stacking-burn:range",
+        "value:effect:huskar_burning_spear:damage:health-cost-stacking-burn:duration",
+        "value:effect:huskar_burning_spear:damage:health-cost-stacking-burn:magnitude",
+        "value:effect:huskar_burning_spear:damage:health-cost-stacking-burn:mana",
+        "value:effect:huskar_burning_spear:damage:health-cost-stacking-burn:cooldown",
+        "value:effect:huskar_burning_spear:damage:health-cost-stacking-burn:delay",
+        "value:effect:huskar_burning_spear:damage:health-cost-stacking-burn:damageType"
+      ],
+      "activationId": "activation:59:huskar_burning_spear"
+    },
+    {
+      "effectId": "huskar_berserkers_blood:passive:missing-health-strength-based-bonuses",
+      "heroId": "59",
+      "abilityId": "ability:59:huskar_berserkers_blood",
+      "type": "passive",
+      "subtype": "missing-health-strength-based-bonuses",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses:range",
+          "ownerId": "effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses:duration",
+          "ownerId": "effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses:magnitude",
+          "ownerId": "effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses:mana",
+          "ownerId": "effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses:cooldown",
+          "ownerId": "effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses:delay",
+          "ownerId": "effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "huskarMissingHealth"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "huskar_berserkers_blood:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses",
+      "legacyEffectId": "huskar_berserkers_blood:passive:missing-health-strength-based-bonuses",
+      "order": 4,
+      "legacyAbilityId": "huskar_berserkers_blood",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses:0"
+      ],
+      "valueIds": [
+        "value:effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses:range",
+        "value:effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses:duration",
+        "value:effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses:magnitude",
+        "value:effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses:mana",
+        "value:effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses:cooldown",
+        "value:effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses:delay"
+      ],
+      "activationId": "activation:59:huskar_berserkers_blood"
+    },
+    {
+      "effectId": "huskar_berserkers_blood:heal:missing-health-strength-regeneration",
+      "heroId": "59",
+      "abilityId": "ability:59:huskar_berserkers_blood",
+      "type": "heal",
+      "subtype": "missing-health-strength-regeneration",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration:range",
+          "ownerId": "effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration:duration",
+          "ownerId": "effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration:magnitude",
+          "ownerId": "effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration:mana",
+          "ownerId": "effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration:cooldown",
+          "ownerId": "effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration:delay",
+          "ownerId": "effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "huskarMissingHealth"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "regeneration"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "huskar_berserkers_blood:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration",
+      "legacyEffectId": "huskar_berserkers_blood:heal:missing-health-strength-regeneration",
+      "order": 5,
+      "legacyAbilityId": "huskar_berserkers_blood",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:huskar_berserkers_blood:heal:missing-health-strength-regeneration:0"
+      ],
+      "valueIds": [
+        "value:effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration:range",
+        "value:effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration:duration",
+        "value:effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration:magnitude",
+        "value:effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration:mana",
+        "value:effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration:cooldown",
+        "value:effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration:delay"
+      ],
+      "activationId": "activation:59:huskar_berserkers_blood"
+    },
+    {
+      "effectId": "huskar_berserkers_blood:dispel:shard-health-cost-self-dispel",
+      "heroId": "59",
+      "abilityId": "ability:59:huskar_berserkers_blood",
+      "type": "dispel",
+      "subtype": "shard-health-cost-self-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel:range",
+          "ownerId": "effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel:duration",
+          "ownerId": "effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel:magnitude",
+          "ownerId": "effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel:mana",
+          "ownerId": "effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel:cooldown",
+          "ownerId": "effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "The retained declaration requires additional expression or branch context."
+        },
+        "delay": {
+          "id": "value:effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel:delay",
+          "ownerId": "effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "huskarCauterizeHealthCostAffordable"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "basic"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "self-debuffs"
+        }
+      },
+      "relationships": {
+        "resourceId": "huskar_berserkers_blood"
+      },
+      "vulnerability": {
+        "breakable": null,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel",
+      "legacyEffectId": "huskar_berserkers_blood:dispel:shard-health-cost-self-dispel",
+      "order": 6,
+      "legacyAbilityId": "huskar_berserkers_blood",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel:0"
+      ],
+      "valueIds": [
+        "value:effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel:range",
+        "value:effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel:duration",
+        "value:effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel:magnitude",
+        "value:effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel:mana",
+        "value:effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel:cooldown",
+        "value:effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel:delay"
+      ],
+      "activationId": "activation:59:huskar_berserkers_blood"
+    },
+    {
+      "effectId": "huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery",
+      "heroId": "59",
+      "abilityId": "ability:59:huskar_berserkers_blood",
+      "type": "heal",
+      "subtype": "shard-delayed-cauterize-recovery",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery:range",
+          "ownerId": "effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery:duration",
+          "ownerId": "effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery:magnitude",
+          "ownerId": "effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery:mana",
+          "ownerId": "effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery:cooldown",
+          "ownerId": "effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "The retained declaration requires additional expression or branch context."
+        },
+        "delay": {
+          "id": "value:effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery:delay",
+          "ownerId": "effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "The retained declaration requires additional expression or branch context."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "huskarCauterizeHealthCostAffordable",
+          "huskarSurvivesCauterizeDelay"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "huskar_berserkers_blood"
+      },
+      "vulnerability": {
+        "breakable": null,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery",
+      "legacyEffectId": "huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery",
+      "order": 7,
+      "legacyAbilityId": "huskar_berserkers_blood",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery:0",
+        "condition:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery:1"
+      ],
+      "valueIds": [
+        "value:effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery:range",
+        "value:effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery:duration",
+        "value:effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery:magnitude",
+        "value:effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery:mana",
+        "value:effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery:cooldown",
+        "value:effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery:delay"
+      ],
+      "activationId": "activation:59:huskar_berserkers_blood"
+    },
+    {
+      "effectId": "huskar_blood_magic:modifier:mana-free-health-resource-conversion",
+      "heroId": "59",
+      "abilityId": "ability:59:huskar_blood_magic",
+      "type": "modifier",
+      "subtype": "mana-free-health-resource-conversion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion:range",
+          "ownerId": "effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion:duration",
+          "ownerId": "effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion:magnitude",
+          "ownerId": "effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion:mana",
+          "ownerId": "effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion:cooldown",
+          "ownerId": "effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion:delay",
+          "ownerId": "effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "huskar_blood_magic:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion",
+      "legacyEffectId": "huskar_blood_magic:modifier:mana-free-health-resource-conversion",
+      "order": 8,
+      "legacyAbilityId": "huskar_blood_magic",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion:range",
+        "value:effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion:duration",
+        "value:effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion:magnitude",
+        "value:effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion:mana",
+        "value:effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion:cooldown",
+        "value:effect:huskar_blood_magic:modifier:mana-free-health-resource-conversion:delay"
+      ],
+      "activationId": "activation:59:huskar_blood_magic"
+    },
+    {
+      "effectId": "huskar_life_break:mobility:targeted-health-cost-leap",
+      "heroId": "59",
+      "abilityId": "ability:59:huskar_life_break",
+      "type": "mobility",
+      "subtype": "targeted-health-cost-leap",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:huskar_life_break:mobility:targeted-health-cost-leap:range",
+          "ownerId": "effect:huskar_life_break:mobility:targeted-health-cost-leap",
+          "field": "range",
+          "state": "known",
+          "value": 550
+        },
+        "duration": {
+          "id": "value:effect:huskar_life_break:mobility:targeted-health-cost-leap:duration",
+          "ownerId": "effect:huskar_life_break:mobility:targeted-health-cost-leap",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:huskar_life_break:mobility:targeted-health-cost-leap:magnitude",
+          "ownerId": "effect:huskar_life_break:mobility:targeted-health-cost-leap",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:huskar_life_break:mobility:targeted-health-cost-leap:mana",
+          "ownerId": "effect:huskar_life_break:mobility:targeted-health-cost-leap",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:huskar_life_break:mobility:targeted-health-cost-leap:cooldown",
+          "ownerId": "effect:huskar_life_break:mobility:targeted-health-cost-leap",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:huskar_life_break:mobility:targeted-health-cost-leap:delay",
+          "ownerId": "effect:huskar_life_break:mobility:targeted-health-cost-leap",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "huskarLifeBreakHealthCostAffordable"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "huskar_life_break"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:huskar_life_break:mobility:targeted-health-cost-leap",
+      "legacyEffectId": "huskar_life_break:mobility:targeted-health-cost-leap",
+      "order": 9,
+      "legacyAbilityId": "huskar_life_break",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:huskar_life_break:mobility:targeted-health-cost-leap:0"
+      ],
+      "valueIds": [
+        "value:effect:huskar_life_break:mobility:targeted-health-cost-leap:range",
+        "value:effect:huskar_life_break:mobility:targeted-health-cost-leap:duration",
+        "value:effect:huskar_life_break:mobility:targeted-health-cost-leap:magnitude",
+        "value:effect:huskar_life_break:mobility:targeted-health-cost-leap:mana",
+        "value:effect:huskar_life_break:mobility:targeted-health-cost-leap:cooldown",
+        "value:effect:huskar_life_break:mobility:targeted-health-cost-leap:delay"
+      ],
+      "activationId": "activation:59:huskar_life_break"
+    },
+    {
+      "effectId": "huskar_life_break:damage:target-current-health-damage",
+      "heroId": "59",
+      "abilityId": "ability:59:huskar_life_break",
+      "type": "damage",
+      "subtype": "target-current-health-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:huskar_life_break:damage:target-current-health-damage:range",
+          "ownerId": "effect:huskar_life_break:damage:target-current-health-damage",
+          "field": "range",
+          "state": "known",
+          "value": 550
+        },
+        "duration": {
+          "id": "value:effect:huskar_life_break:damage:target-current-health-damage:duration",
+          "ownerId": "effect:huskar_life_break:damage:target-current-health-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:huskar_life_break:damage:target-current-health-damage:magnitude",
+          "ownerId": "effect:huskar_life_break:damage:target-current-health-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:huskar_life_break:damage:target-current-health-damage:mana",
+          "ownerId": "effect:huskar_life_break:damage:target-current-health-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:huskar_life_break:damage:target-current-health-damage:cooldown",
+          "ownerId": "effect:huskar_life_break:damage:target-current-health-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:huskar_life_break:damage:target-current-health-damage:delay",
+          "ownerId": "effect:huskar_life_break:damage:target-current-health-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:huskar_life_break:damage:target-current-health-damage:damageType",
+          "ownerId": "effect:huskar_life_break:damage:target-current-health-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "huskarLifeBreakHealthCostAffordable",
+          "lifeBreakReachesEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "huskar_life_break"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:huskar_life_break:damage:target-current-health-damage",
+      "legacyEffectId": "huskar_life_break:damage:target-current-health-damage",
+      "order": 10,
+      "legacyAbilityId": "huskar_life_break",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:huskar_life_break:damage:target-current-health-damage:0",
+        "condition:huskar_life_break:damage:target-current-health-damage:1"
+      ],
+      "valueIds": [
+        "value:effect:huskar_life_break:damage:target-current-health-damage:range",
+        "value:effect:huskar_life_break:damage:target-current-health-damage:duration",
+        "value:effect:huskar_life_break:damage:target-current-health-damage:magnitude",
+        "value:effect:huskar_life_break:damage:target-current-health-damage:mana",
+        "value:effect:huskar_life_break:damage:target-current-health-damage:cooldown",
+        "value:effect:huskar_life_break:damage:target-current-health-damage:delay",
+        "value:effect:huskar_life_break:damage:target-current-health-damage:damageType"
+      ],
+      "activationId": "activation:59:huskar_life_break"
+    },
+    {
+      "effectId": "huskar_life_break:slow:life-break-movement-and-attack-slow",
+      "heroId": "59",
+      "abilityId": "ability:59:huskar_life_break",
+      "type": "slow",
+      "subtype": "life-break-movement-and-attack-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:huskar_life_break:slow:life-break-movement-and-attack-slow:range",
+          "ownerId": "effect:huskar_life_break:slow:life-break-movement-and-attack-slow",
+          "field": "range",
+          "state": "known",
+          "value": 550
+        },
+        "duration": {
+          "id": "value:effect:huskar_life_break:slow:life-break-movement-and-attack-slow:duration",
+          "ownerId": "effect:huskar_life_break:slow:life-break-movement-and-attack-slow",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3,
+            4,
+            5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:huskar_life_break:slow:life-break-movement-and-attack-slow:magnitude",
+          "ownerId": "effect:huskar_life_break:slow:life-break-movement-and-attack-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -60,
+            -60,
+            -60
+          ]
+        },
+        "mana": {
+          "id": "value:effect:huskar_life_break:slow:life-break-movement-and-attack-slow:mana",
+          "ownerId": "effect:huskar_life_break:slow:life-break-movement-and-attack-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:huskar_life_break:slow:life-break-movement-and-attack-slow:cooldown",
+          "ownerId": "effect:huskar_life_break:slow:life-break-movement-and-attack-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:huskar_life_break:slow:life-break-movement-and-attack-slow:delay",
+          "ownerId": "effect:huskar_life_break:slow:life-break-movement-and-attack-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "huskarLifeBreakHealthCostAffordable",
+          "lifeBreakReachesEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "huskar_life_break"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:huskar_life_break:slow:life-break-movement-and-attack-slow",
+      "legacyEffectId": "huskar_life_break:slow:life-break-movement-and-attack-slow",
+      "order": 11,
+      "legacyAbilityId": "huskar_life_break",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:huskar_life_break:slow:life-break-movement-and-attack-slow:0",
+        "condition:huskar_life_break:slow:life-break-movement-and-attack-slow:1"
+      ],
+      "valueIds": [
+        "value:effect:huskar_life_break:slow:life-break-movement-and-attack-slow:range",
+        "value:effect:huskar_life_break:slow:life-break-movement-and-attack-slow:duration",
+        "value:effect:huskar_life_break:slow:life-break-movement-and-attack-slow:magnitude",
+        "value:effect:huskar_life_break:slow:life-break-movement-and-attack-slow:mana",
+        "value:effect:huskar_life_break:slow:life-break-movement-and-attack-slow:cooldown",
+        "value:effect:huskar_life_break:slow:life-break-movement-and-attack-slow:delay"
+      ],
+      "activationId": "activation:59:huskar_life_break"
+    },
+    {
+      "effectId": "huskar_life_break:dispel:life-break-basic-self-dispel",
+      "heroId": "59",
+      "abilityId": "ability:59:huskar_life_break",
+      "type": "dispel",
+      "subtype": "life-break-basic-self-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:huskar_life_break:dispel:life-break-basic-self-dispel:range",
+          "ownerId": "effect:huskar_life_break:dispel:life-break-basic-self-dispel",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:huskar_life_break:dispel:life-break-basic-self-dispel:duration",
+          "ownerId": "effect:huskar_life_break:dispel:life-break-basic-self-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:huskar_life_break:dispel:life-break-basic-self-dispel:magnitude",
+          "ownerId": "effect:huskar_life_break:dispel:life-break-basic-self-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:huskar_life_break:dispel:life-break-basic-self-dispel:mana",
+          "ownerId": "effect:huskar_life_break:dispel:life-break-basic-self-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:huskar_life_break:dispel:life-break-basic-self-dispel:cooldown",
+          "ownerId": "effect:huskar_life_break:dispel:life-break-basic-self-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:huskar_life_break:dispel:life-break-basic-self-dispel:delay",
+          "ownerId": "effect:huskar_life_break:dispel:life-break-basic-self-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "huskarLifeBreakHealthCostAffordable"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "basic"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "self-debuffs"
+        }
+      },
+      "relationships": {
+        "resourceId": "huskar_life_break"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:huskar_life_break:dispel:life-break-basic-self-dispel",
+      "legacyEffectId": "huskar_life_break:dispel:life-break-basic-self-dispel",
+      "order": 12,
+      "legacyAbilityId": "huskar_life_break",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:huskar_life_break:dispel:life-break-basic-self-dispel:0"
+      ],
+      "valueIds": [
+        "value:effect:huskar_life_break:dispel:life-break-basic-self-dispel:range",
+        "value:effect:huskar_life_break:dispel:life-break-basic-self-dispel:duration",
+        "value:effect:huskar_life_break:dispel:life-break-basic-self-dispel:magnitude",
+        "value:effect:huskar_life_break:dispel:life-break-basic-self-dispel:mana",
+        "value:effect:huskar_life_break:dispel:life-break-basic-self-dispel:cooldown",
+        "value:effect:huskar_life_break:dispel:life-break-basic-self-dispel:delay"
+      ],
+      "activationId": "activation:59:huskar_life_break"
+    },
+    {
+      "effectId": "huskar_life_break:save:leap-only-debuff-immunity",
+      "heroId": "59",
+      "abilityId": "ability:59:huskar_life_break",
+      "type": "save",
+      "subtype": "leap-only-debuff-immunity",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:huskar_life_break:save:leap-only-debuff-immunity:range",
+          "ownerId": "effect:huskar_life_break:save:leap-only-debuff-immunity",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:huskar_life_break:save:leap-only-debuff-immunity:duration",
+          "ownerId": "effect:huskar_life_break:save:leap-only-debuff-immunity",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:huskar_life_break:save:leap-only-debuff-immunity:magnitude",
+          "ownerId": "effect:huskar_life_break:save:leap-only-debuff-immunity",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:huskar_life_break:save:leap-only-debuff-immunity:mana",
+          "ownerId": "effect:huskar_life_break:save:leap-only-debuff-immunity",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:huskar_life_break:save:leap-only-debuff-immunity:cooldown",
+          "ownerId": "effect:huskar_life_break:save:leap-only-debuff-immunity",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:huskar_life_break:save:leap-only-debuff-immunity:delay",
+          "ownerId": "effect:huskar_life_break:save:leap-only-debuff-immunity",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "lifeBreakChargeActive"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "grantsDebuffImmunity": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "huskar_life_break:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:huskar_life_break:save:leap-only-debuff-immunity",
+      "legacyEffectId": "huskar_life_break:save:leap-only-debuff-immunity",
+      "order": 13,
+      "legacyAbilityId": "huskar_life_break",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:huskar_life_break:save:leap-only-debuff-immunity:0"
+      ],
+      "valueIds": [
+        "value:effect:huskar_life_break:save:leap-only-debuff-immunity:range",
+        "value:effect:huskar_life_break:save:leap-only-debuff-immunity:duration",
+        "value:effect:huskar_life_break:save:leap-only-debuff-immunity:magnitude",
+        "value:effect:huskar_life_break:save:leap-only-debuff-immunity:mana",
+        "value:effect:huskar_life_break:save:leap-only-debuff-immunity:cooldown",
+        "value:effect:huskar_life_break:save:leap-only-debuff-immunity:delay"
+      ],
+      "activationId": "activation:59:huskar_life_break"
+    },
+    {
+      "effectId": "huskar_life_break:control:scepter-target-taunt",
+      "heroId": "59",
+      "abilityId": "ability:59:huskar_life_break",
+      "type": "control",
+      "subtype": "scepter-target-taunt",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:huskar_life_break:control:scepter-target-taunt:range",
+          "ownerId": "effect:huskar_life_break:control:scepter-target-taunt",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:huskar_life_break:control:scepter-target-taunt:duration",
+          "ownerId": "effect:huskar_life_break:control:scepter-target-taunt",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:huskar_life_break:control:scepter-target-taunt:magnitude",
+          "ownerId": "effect:huskar_life_break:control:scepter-target-taunt",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:huskar_life_break:control:scepter-target-taunt:mana",
+          "ownerId": "effect:huskar_life_break:control:scepter-target-taunt",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:huskar_life_break:control:scepter-target-taunt:cooldown",
+          "ownerId": "effect:huskar_life_break:control:scepter-target-taunt",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:huskar_life_break:control:scepter-target-taunt:delay",
+          "ownerId": "effect:huskar_life_break:control:scepter-target-taunt",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "huskarLifeBreakHealthCostAffordable",
+          "lifeBreakReachesEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "huskar_life_break"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:huskar_life_break:control:scepter-target-taunt",
+      "legacyEffectId": "huskar_life_break:control:scepter-target-taunt",
+      "order": 14,
+      "legacyAbilityId": "huskar_life_break",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:huskar_life_break:control:scepter-target-taunt:0",
+        "condition:huskar_life_break:control:scepter-target-taunt:1"
+      ],
+      "valueIds": [
+        "value:effect:huskar_life_break:control:scepter-target-taunt:range",
+        "value:effect:huskar_life_break:control:scepter-target-taunt:duration",
+        "value:effect:huskar_life_break:control:scepter-target-taunt:magnitude",
+        "value:effect:huskar_life_break:control:scepter-target-taunt:mana",
+        "value:effect:huskar_life_break:control:scepter-target-taunt:cooldown",
+        "value:effect:huskar_life_break:control:scepter-target-taunt:delay"
+      ],
+      "activationId": "activation:59:huskar_life_break"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:huskar_inner_fire:damage:inner-fire-damage:0",
+      "ownerId": "effect:huskar_inner_fire:damage:inner-fire-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "huskarHealthCostAffordable"
+      }
+    },
+    {
+      "id": "condition:huskar_inner_fire:control:inner-fire-silence:0",
+      "ownerId": "effect:huskar_inner_fire:control:inner-fire-silence",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "huskarHealthCostAffordable"
+      }
+    },
+    {
+      "id": "condition:huskar_inner_fire:displacement:radial-knockback:0",
+      "ownerId": "effect:huskar_inner_fire:displacement:radial-knockback",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "huskarHealthCostAffordable"
+      }
+    },
+    {
+      "id": "condition:huskar_burning_spear:damage:health-cost-stacking-burn:0",
+      "ownerId": "effect:huskar_burning_spear:damage:health-cost-stacking-burn",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "huskarHealthCostAffordable"
+      }
+    },
+    {
+      "id": "condition:huskar_burning_spear:damage:health-cost-stacking-burn:1",
+      "ownerId": "effect:huskar_burning_spear:damage:health-cost-stacking-burn",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "burningSpearAttackLanded"
+      }
+    },
+    {
+      "id": "condition:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses:0",
+      "ownerId": "effect:huskar_berserkers_blood:passive:missing-health-strength-based-bonuses",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "huskarMissingHealth"
+      }
+    },
+    {
+      "id": "condition:huskar_berserkers_blood:heal:missing-health-strength-regeneration:0",
+      "ownerId": "effect:huskar_berserkers_blood:heal:missing-health-strength-regeneration",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "huskarMissingHealth"
+      }
+    },
+    {
+      "id": "condition:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel:0",
+      "ownerId": "effect:huskar_berserkers_blood:dispel:shard-health-cost-self-dispel",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "huskarCauterizeHealthCostAffordable"
+      }
+    },
+    {
+      "id": "condition:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery:0",
+      "ownerId": "effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "huskarCauterizeHealthCostAffordable"
+      }
+    },
+    {
+      "id": "condition:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery:1",
+      "ownerId": "effect:huskar_berserkers_blood:heal:shard-delayed-cauterize-recovery",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "huskarSurvivesCauterizeDelay"
+      }
+    },
+    {
+      "id": "condition:huskar_life_break:mobility:targeted-health-cost-leap:0",
+      "ownerId": "effect:huskar_life_break:mobility:targeted-health-cost-leap",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "huskarLifeBreakHealthCostAffordable"
+      }
+    },
+    {
+      "id": "condition:huskar_life_break:damage:target-current-health-damage:0",
+      "ownerId": "effect:huskar_life_break:damage:target-current-health-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "huskarLifeBreakHealthCostAffordable"
+      }
+    },
+    {
+      "id": "condition:huskar_life_break:damage:target-current-health-damage:1",
+      "ownerId": "effect:huskar_life_break:damage:target-current-health-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "lifeBreakReachesEnemy"
+      }
+    },
+    {
+      "id": "condition:huskar_life_break:slow:life-break-movement-and-attack-slow:0",
+      "ownerId": "effect:huskar_life_break:slow:life-break-movement-and-attack-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "huskarLifeBreakHealthCostAffordable"
+      }
+    },
+    {
+      "id": "condition:huskar_life_break:slow:life-break-movement-and-attack-slow:1",
+      "ownerId": "effect:huskar_life_break:slow:life-break-movement-and-attack-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "lifeBreakReachesEnemy"
+      }
+    },
+    {
+      "id": "condition:huskar_life_break:dispel:life-break-basic-self-dispel:0",
+      "ownerId": "effect:huskar_life_break:dispel:life-break-basic-self-dispel",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "huskarLifeBreakHealthCostAffordable"
+      }
+    },
+    {
+      "id": "condition:huskar_life_break:save:leap-only-debuff-immunity:0",
+      "ownerId": "effect:huskar_life_break:save:leap-only-debuff-immunity",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "lifeBreakChargeActive"
+      }
+    },
+    {
+      "id": "condition:huskar_life_break:control:scepter-target-taunt:0",
+      "ownerId": "effect:huskar_life_break:control:scepter-target-taunt",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "huskarLifeBreakHealthCostAffordable"
+      }
+    },
+    {
+      "id": "condition:huskar_life_break:control:scepter-target-taunt:1",
+      "ownerId": "effect:huskar_life_break:control:scepter-target-taunt",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "lifeBreakReachesEnemy"
+      }
+    }
+  ]
+}

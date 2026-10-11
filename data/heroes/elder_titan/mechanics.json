@@ -1,0 +1,2421 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "elder_titan_echo_stomp:control:completed-stomp-conditional-sleep",
+      "heroId": "103",
+      "abilityId": "ability:103:elder_titan_echo_stomp",
+      "type": "control",
+      "subtype": "completed-stomp-conditional-sleep",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:range",
+          "ownerId": "effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep",
+          "field": "range",
+          "state": "known",
+          "value": 475
+        },
+        "duration": {
+          "id": "value:effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:duration",
+          "ownerId": "effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2,
+            2.8,
+            3.6,
+            4.4
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:magnitude",
+          "ownerId": "effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:mana",
+          "ownerId": "effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:cooldown",
+          "ownerId": "effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            13,
+            12,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:delay",
+          "ownerId": "effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "echoStompChannelCompleted",
+          "enemyInsideTitanStomp",
+          "stompWakeDamageThresholdNotReached"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "elder_titan_echo_stomp"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep",
+      "legacyEffectId": "elder_titan_echo_stomp:control:completed-stomp-conditional-sleep",
+      "order": 0,
+      "legacyAbilityId": "elder_titan_echo_stomp",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:0",
+        "condition:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:1",
+        "condition:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:2"
+      ],
+      "valueIds": [
+        "value:effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:range",
+        "value:effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:duration",
+        "value:effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:magnitude",
+        "value:effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:mana",
+        "value:effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:cooldown",
+        "value:effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:delay"
+      ],
+      "activationId": "activation:103:elder_titan_echo_stomp"
+    },
+    {
+      "effectId": "elder_titan_echo_stomp:damage:titan-stomp-physical-impact",
+      "heroId": "103",
+      "abilityId": "ability:103:elder_titan_echo_stomp",
+      "type": "damage",
+      "subtype": "titan-stomp-physical-impact",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:range",
+          "ownerId": "effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact",
+          "field": "range",
+          "state": "known",
+          "value": 475
+        },
+        "duration": {
+          "id": "value:effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:duration",
+          "ownerId": "effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:magnitude",
+          "ownerId": "effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            65,
+            110,
+            155,
+            200
+          ]
+        },
+        "mana": {
+          "id": "value:effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:mana",
+          "ownerId": "effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:cooldown",
+          "ownerId": "effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            13,
+            12,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:delay",
+          "ownerId": "effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:damageType",
+          "ownerId": "effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "echoStompChannelCompleted",
+          "enemyInsideTitanStomp"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "elder_titan_echo_stomp"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact",
+      "legacyEffectId": "elder_titan_echo_stomp:damage:titan-stomp-physical-impact",
+      "order": 1,
+      "legacyAbilityId": "elder_titan_echo_stomp",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:0",
+        "condition:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:1"
+      ],
+      "valueIds": [
+        "value:effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:range",
+        "value:effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:duration",
+        "value:effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:magnitude",
+        "value:effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:mana",
+        "value:effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:cooldown",
+        "value:effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:delay",
+        "value:effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:damageType"
+      ],
+      "activationId": "activation:103:elder_titan_echo_stomp"
+    },
+    {
+      "effectId": "elder_titan_echo_stomp:damage:spirit-stomp-magical-impact",
+      "heroId": "103",
+      "abilityId": "ability:103:elder_titan_echo_stomp",
+      "type": "damage",
+      "subtype": "spirit-stomp-magical-impact",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:range",
+          "ownerId": "effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:duration",
+          "ownerId": "effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:magnitude",
+          "ownerId": "effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            65,
+            110,
+            155,
+            200
+          ]
+        },
+        "mana": {
+          "id": "value:effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:mana",
+          "ownerId": "effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:cooldown",
+          "ownerId": "effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            13,
+            12,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:delay",
+          "ownerId": "effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:damageType",
+          "ownerId": "effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "elder_titan_ancestral_spirit"
+        ],
+        "upgrades": [],
+        "requiresContext": [
+          "echoStompChannelCompleted",
+          "astralSpiritStompsNearEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "elder_titan_echo_stomp"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact",
+      "legacyEffectId": "elder_titan_echo_stomp:damage:spirit-stomp-magical-impact",
+      "order": 2,
+      "legacyAbilityId": "elder_titan_echo_stomp",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:0",
+        "condition:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:1"
+      ],
+      "valueIds": [
+        "value:effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:range",
+        "value:effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:duration",
+        "value:effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:magnitude",
+        "value:effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:mana",
+        "value:effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:cooldown",
+        "value:effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:delay",
+        "value:effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:damageType"
+      ],
+      "activationId": "activation:103:elder_titan_echo_stomp"
+    },
+    {
+      "effectId": "elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep",
+      "heroId": "103",
+      "abilityId": "ability:103:elder_titan_echo_stomp",
+      "type": "control",
+      "subtype": "spirit-stomp-conditional-sleep",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:range",
+          "ownerId": "effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:duration",
+          "ownerId": "effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2,
+            2.8,
+            3.6,
+            4.4
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:magnitude",
+          "ownerId": "effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:mana",
+          "ownerId": "effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:cooldown",
+          "ownerId": "effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            13,
+            12,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:delay",
+          "ownerId": "effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "elder_titan_ancestral_spirit"
+        ],
+        "upgrades": [],
+        "requiresContext": [
+          "echoStompChannelCompleted",
+          "astralSpiritStompsNearEnemy",
+          "stompWakeDamageThresholdNotReached"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "elder_titan_echo_stomp"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep",
+      "legacyEffectId": "elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep",
+      "order": 3,
+      "legacyAbilityId": "elder_titan_echo_stomp",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:0",
+        "condition:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:1",
+        "condition:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:2"
+      ],
+      "valueIds": [
+        "value:effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:range",
+        "value:effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:duration",
+        "value:effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:magnitude",
+        "value:effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:mana",
+        "value:effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:cooldown",
+        "value:effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:delay"
+      ],
+      "activationId": "activation:103:elder_titan_echo_stomp"
+    },
+    {
+      "effectId": "elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap",
+      "heroId": "103",
+      "abilityId": "ability:103:elder_titan_echo_stomp",
+      "type": "mobility",
+      "subtype": "shard-completed-stomp-spirit-swap",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:range",
+          "ownerId": "effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:duration",
+          "ownerId": "effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:magnitude",
+          "ownerId": "effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:mana",
+          "ownerId": "effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:cooldown",
+          "ownerId": "effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            13,
+            12,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:delay",
+          "ownerId": "effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "elder_titan_ancestral_spirit"
+        ],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "echoStompChannelCompleted",
+          "echoStompSwapAltCastSelected",
+          "astralSpiritAvailable"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "elder_titan_echo_stomp"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap",
+      "legacyEffectId": "elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap",
+      "order": 4,
+      "legacyAbilityId": "elder_titan_echo_stomp",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:0",
+        "condition:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:1",
+        "condition:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:2"
+      ],
+      "valueIds": [
+        "value:effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:range",
+        "value:effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:duration",
+        "value:effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:magnitude",
+        "value:effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:mana",
+        "value:effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:cooldown",
+        "value:effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:delay"
+      ],
+      "activationId": "activation:103:elder_titan_echo_stomp"
+    },
+    {
+      "effectId": "elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement",
+      "heroId": "103",
+      "abilityId": "ability:103:elder_titan_ancestral_spirit",
+      "type": "modifier",
+      "subtype": "paid-astral-spirit-placement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement:range",
+          "ownerId": "effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement",
+          "field": "range",
+          "state": "known",
+          "value": 1200
+        },
+        "duration": {
+          "id": "value:effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement:duration",
+          "ownerId": "effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement",
+          "field": "duration",
+          "state": "known",
+          "value": 10
+        },
+        "magnitude": {
+          "id": "value:effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement:magnitude",
+          "ownerId": "effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement:mana",
+          "ownerId": "effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement:cooldown",
+          "ownerId": "effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            23,
+            21,
+            19,
+            17
+          ]
+        },
+        "delay": {
+          "id": "value:effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement:delay",
+          "ownerId": "effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "elder_titan_ancestral_spirit"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement",
+      "legacyEffectId": "elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement",
+      "order": 5,
+      "legacyAbilityId": "elder_titan_ancestral_spirit",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement:range",
+        "value:effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement:duration",
+        "value:effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement:magnitude",
+        "value:effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement:mana",
+        "value:effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement:cooldown",
+        "value:effect:elder_titan_ancestral_spirit:modifier:paid-astral-spirit-placement:delay"
+      ],
+      "activationId": "activation:103:elder_titan_ancestral_spirit"
+    },
+    {
+      "effectId": "elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage",
+      "heroId": "103",
+      "abilityId": "ability:103:elder_titan_ancestral_spirit",
+      "type": "damage",
+      "subtype": "astral-spirit-contact-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:range",
+          "ownerId": "effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:duration",
+          "ownerId": "effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:magnitude",
+          "ownerId": "effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": 50
+        },
+        "mana": {
+          "id": "value:effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:mana",
+          "ownerId": "effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:cooldown",
+          "ownerId": "effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:delay",
+          "ownerId": "effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:damageType",
+          "ownerId": "effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "astralSpiritEstablished",
+          "astralSpiritPassesEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "elder_titan_ancestral_spirit:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage",
+      "legacyEffectId": "elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage",
+      "order": 6,
+      "legacyAbilityId": "elder_titan_ancestral_spirit",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:0",
+        "condition:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:1"
+      ],
+      "valueIds": [
+        "value:effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:range",
+        "value:effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:duration",
+        "value:effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:magnitude",
+        "value:effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:mana",
+        "value:effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:cooldown",
+        "value:effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:delay",
+        "value:effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:damageType"
+      ],
+      "activationId": "activation:103:elder_titan_ancestral_spirit"
+    },
+    {
+      "effectId": "elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses",
+      "heroId": "103",
+      "abilityId": "ability:103:elder_titan_ancestral_spirit",
+      "type": "modifier",
+      "subtype": "returned-spirit-contact-bonuses",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses:range",
+          "ownerId": "effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses:duration",
+          "ownerId": "effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses",
+          "field": "duration",
+          "state": "known",
+          "value": 10
+        },
+        "magnitude": {
+          "id": "value:effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses:magnitude",
+          "ownerId": "effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses:mana",
+          "ownerId": "effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses:cooldown",
+          "ownerId": "effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses:delay",
+          "ownerId": "effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "astralSpiritReturnedWithContactCounts"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "elder_titan_ancestral_spirit:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses",
+      "legacyEffectId": "elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses",
+      "order": 7,
+      "legacyAbilityId": "elder_titan_ancestral_spirit",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses:0"
+      ],
+      "valueIds": [
+        "value:effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses:range",
+        "value:effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses:duration",
+        "value:effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses:magnitude",
+        "value:effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses:mana",
+        "value:effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses:cooldown",
+        "value:effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses:delay"
+      ],
+      "activationId": "activation:103:elder_titan_ancestral_spirit"
+    },
+    {
+      "effectId": "elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity",
+      "heroId": "103",
+      "abilityId": "ability:103:elder_titan_ancestral_spirit",
+      "type": "save",
+      "subtype": "scepter-returned-spirit-debuff-immunity",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity:range",
+          "ownerId": "effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity:duration",
+          "ownerId": "effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity:magnitude",
+          "ownerId": "effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity:mana",
+          "ownerId": "effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity:cooldown",
+          "ownerId": "effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity:delay",
+          "ownerId": "effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "astralSpiritReturnedAfterHeroContact"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "grantsDebuffImmunity": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "elder_titan_ancestral_spirit:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity",
+      "legacyEffectId": "elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity",
+      "order": 8,
+      "legacyAbilityId": "elder_titan_ancestral_spirit",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity:0"
+      ],
+      "valueIds": [
+        "value:effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity:range",
+        "value:effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity:duration",
+        "value:effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity:magnitude",
+        "value:effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity:mana",
+        "value:effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity:cooldown",
+        "value:effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity:delay"
+      ],
+      "activationId": "activation:103:elder_titan_ancestral_spirit"
+    },
+    {
+      "effectId": "elder_titan_natural_order:modifier:hero-centered-base-armor-reduction",
+      "heroId": "103",
+      "abilityId": "ability:103:elder_titan_natural_order",
+      "type": "modifier",
+      "subtype": "hero-centered-base-armor-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction:range",
+          "ownerId": "effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction",
+          "field": "range",
+          "state": "known",
+          "value": 375
+        },
+        "duration": {
+          "id": "value:effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction:duration",
+          "ownerId": "effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction:magnitude",
+          "ownerId": "effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            40,
+            60,
+            80,
+            100
+          ]
+        },
+        "mana": {
+          "id": "value:effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction:mana",
+          "ownerId": "effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction:cooldown",
+          "ownerId": "effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction:delay",
+          "ownerId": "effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideTitanNaturalOrder"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "elder_titan_natural_order:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction",
+      "legacyEffectId": "elder_titan_natural_order:modifier:hero-centered-base-armor-reduction",
+      "order": 9,
+      "legacyAbilityId": "elder_titan_natural_order",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction:0"
+      ],
+      "valueIds": [
+        "value:effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction:range",
+        "value:effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction:duration",
+        "value:effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction:magnitude",
+        "value:effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction:mana",
+        "value:effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction:cooldown",
+        "value:effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction:delay"
+      ],
+      "activationId": "activation:103:elder_titan_natural_order"
+    },
+    {
+      "effectId": "elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance",
+      "heroId": "103",
+      "abilityId": "ability:103:elder_titan_natural_order",
+      "type": "modifier",
+      "subtype": "spirit-or-hero-centered-base-magic-resistance",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance:range",
+          "ownerId": "effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance:duration",
+          "ownerId": "effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance:magnitude",
+          "ownerId": "effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            40,
+            60,
+            80,
+            100
+          ]
+        },
+        "mana": {
+          "id": "value:effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance:mana",
+          "ownerId": "effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance:cooldown",
+          "ownerId": "effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance:delay",
+          "ownerId": "effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideApplicableNaturalOrderMagicAura"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "elder_titan_natural_order:passive"
+      },
+      "vulnerability": {
+        "breakable": null
+      },
+      "exceptions": [],
+      "id": "effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance",
+      "legacyEffectId": "elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance",
+      "order": 10,
+      "legacyAbilityId": "elder_titan_natural_order",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance:0"
+      ],
+      "valueIds": [
+        "value:effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance:range",
+        "value:effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance:duration",
+        "value:effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance:magnitude",
+        "value:effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance:mana",
+        "value:effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance:cooldown",
+        "value:effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance:delay"
+      ],
+      "activationId": "activation:103:elder_titan_natural_order"
+    },
+    {
+      "effectId": "elder_titan_momentum:modifier:bonus-speed-dependent-armor",
+      "heroId": "103",
+      "abilityId": "ability:103:elder_titan_momentum",
+      "type": "modifier",
+      "subtype": "bonus-speed-dependent-armor",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor:range",
+          "ownerId": "effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor:duration",
+          "ownerId": "effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor:magnitude",
+          "ownerId": "effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor:mana",
+          "ownerId": "effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor:cooldown",
+          "ownerId": "effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor:delay",
+          "ownerId": "effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "elder_titan_momentum:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor",
+      "legacyEffectId": "elder_titan_momentum:modifier:bonus-speed-dependent-armor",
+      "order": 11,
+      "legacyAbilityId": "elder_titan_momentum",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor:range",
+        "value:effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor:duration",
+        "value:effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor:magnitude",
+        "value:effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor:mana",
+        "value:effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor:cooldown",
+        "value:effect:elder_titan_momentum:modifier:bonus-speed-dependent-armor:delay"
+      ],
+      "activationId": "activation:103:elder_titan_momentum"
+    },
+    {
+      "effectId": "elder_titan_earth_splitter:damage:splitter-physical-max-health-component",
+      "heroId": "103",
+      "abilityId": "ability:103:elder_titan_earth_splitter",
+      "type": "damage",
+      "subtype": "splitter-physical-max-health-component",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component:range",
+          "ownerId": "effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component",
+          "field": "range",
+          "state": "known",
+          "value": 2400
+        },
+        "duration": {
+          "id": "value:effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component:duration",
+          "ownerId": "effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component:magnitude",
+          "ownerId": "effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component:mana",
+          "ownerId": "effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            175,
+            225
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component:cooldown",
+          "ownerId": "effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            100,
+            95,
+            90
+          ]
+        },
+        "delay": {
+          "id": "value:effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component:delay",
+          "ownerId": "effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component:damageType",
+          "ownerId": "effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideEarthSplitterAtImplosion"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "elder_titan_earth_splitter"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component",
+      "legacyEffectId": "elder_titan_earth_splitter:damage:splitter-physical-max-health-component",
+      "order": 12,
+      "legacyAbilityId": "elder_titan_earth_splitter",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:elder_titan_earth_splitter:damage:splitter-physical-max-health-component:0"
+      ],
+      "valueIds": [
+        "value:effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component:range",
+        "value:effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component:duration",
+        "value:effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component:magnitude",
+        "value:effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component:mana",
+        "value:effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component:cooldown",
+        "value:effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component:delay",
+        "value:effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component:damageType"
+      ],
+      "activationId": "activation:103:elder_titan_earth_splitter"
+    },
+    {
+      "effectId": "elder_titan_earth_splitter:damage:splitter-magical-max-health-component",
+      "heroId": "103",
+      "abilityId": "ability:103:elder_titan_earth_splitter",
+      "type": "damage",
+      "subtype": "splitter-magical-max-health-component",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component:range",
+          "ownerId": "effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component",
+          "field": "range",
+          "state": "known",
+          "value": 2400
+        },
+        "duration": {
+          "id": "value:effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component:duration",
+          "ownerId": "effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component:magnitude",
+          "ownerId": "effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component:mana",
+          "ownerId": "effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            175,
+            225
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component:cooldown",
+          "ownerId": "effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            100,
+            95,
+            90
+          ]
+        },
+        "delay": {
+          "id": "value:effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component:delay",
+          "ownerId": "effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component:damageType",
+          "ownerId": "effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideEarthSplitterAtImplosion"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "elder_titan_earth_splitter"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component",
+      "legacyEffectId": "elder_titan_earth_splitter:damage:splitter-magical-max-health-component",
+      "order": 13,
+      "legacyAbilityId": "elder_titan_earth_splitter",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:elder_titan_earth_splitter:damage:splitter-magical-max-health-component:0"
+      ],
+      "valueIds": [
+        "value:effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component:range",
+        "value:effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component:duration",
+        "value:effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component:magnitude",
+        "value:effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component:mana",
+        "value:effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component:cooldown",
+        "value:effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component:delay",
+        "value:effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component:damageType"
+      ],
+      "activationId": "activation:103:elder_titan_earth_splitter"
+    },
+    {
+      "effectId": "elder_titan_earth_splitter:slow:splitter-implosion-slow",
+      "heroId": "103",
+      "abilityId": "ability:103:elder_titan_earth_splitter",
+      "type": "slow",
+      "subtype": "splitter-implosion-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:elder_titan_earth_splitter:slow:splitter-implosion-slow:range",
+          "ownerId": "effect:elder_titan_earth_splitter:slow:splitter-implosion-slow",
+          "field": "range",
+          "state": "known",
+          "value": 2400
+        },
+        "duration": {
+          "id": "value:effect:elder_titan_earth_splitter:slow:splitter-implosion-slow:duration",
+          "ownerId": "effect:elder_titan_earth_splitter:slow:splitter-implosion-slow",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3,
+            4,
+            5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:elder_titan_earth_splitter:slow:splitter-implosion-slow:magnitude",
+          "ownerId": "effect:elder_titan_earth_splitter:slow:splitter-implosion-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            40,
+            45,
+            50
+          ]
+        },
+        "mana": {
+          "id": "value:effect:elder_titan_earth_splitter:slow:splitter-implosion-slow:mana",
+          "ownerId": "effect:elder_titan_earth_splitter:slow:splitter-implosion-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            175,
+            225
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:elder_titan_earth_splitter:slow:splitter-implosion-slow:cooldown",
+          "ownerId": "effect:elder_titan_earth_splitter:slow:splitter-implosion-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            100,
+            95,
+            90
+          ]
+        },
+        "delay": {
+          "id": "value:effect:elder_titan_earth_splitter:slow:splitter-implosion-slow:delay",
+          "ownerId": "effect:elder_titan_earth_splitter:slow:splitter-implosion-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideEarthSplitterAtImplosion"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "elder_titan_earth_splitter"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:elder_titan_earth_splitter:slow:splitter-implosion-slow",
+      "legacyEffectId": "elder_titan_earth_splitter:slow:splitter-implosion-slow",
+      "order": 14,
+      "legacyAbilityId": "elder_titan_earth_splitter",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:elder_titan_earth_splitter:slow:splitter-implosion-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:elder_titan_earth_splitter:slow:splitter-implosion-slow:range",
+        "value:effect:elder_titan_earth_splitter:slow:splitter-implosion-slow:duration",
+        "value:effect:elder_titan_earth_splitter:slow:splitter-implosion-slow:magnitude",
+        "value:effect:elder_titan_earth_splitter:slow:splitter-implosion-slow:mana",
+        "value:effect:elder_titan_earth_splitter:slow:splitter-implosion-slow:cooldown",
+        "value:effect:elder_titan_earth_splitter:slow:splitter-implosion-slow:delay"
+      ],
+      "activationId": "activation:103:elder_titan_earth_splitter"
+    },
+    {
+      "effectId": "elder_titan_earth_splitter:vision:splitter-line-ordinary-vision",
+      "heroId": "103",
+      "abilityId": "ability:103:elder_titan_earth_splitter",
+      "type": "vision",
+      "subtype": "splitter-line-ordinary-vision",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision:range",
+          "ownerId": "effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision:duration",
+          "ownerId": "effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision:magnitude",
+          "ownerId": "effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision:mana",
+          "ownerId": "effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            175,
+            225
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision:cooldown",
+          "ownerId": "effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            100,
+            95,
+            90
+          ]
+        },
+        "delay": {
+          "id": "value:effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision:delay",
+          "ownerId": "effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "elder_titan_earth_splitter"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision",
+      "legacyEffectId": "elder_titan_earth_splitter:vision:splitter-line-ordinary-vision",
+      "order": 15,
+      "legacyAbilityId": "elder_titan_earth_splitter",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision:range",
+        "value:effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision:duration",
+        "value:effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision:magnitude",
+        "value:effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision:mana",
+        "value:effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision:cooldown",
+        "value:effect:elder_titan_earth_splitter:vision:splitter-line-ordinary-vision:delay"
+      ],
+      "activationId": "activation:103:elder_titan_earth_splitter"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:0",
+      "ownerId": "effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "echoStompChannelCompleted"
+      }
+    },
+    {
+      "id": "condition:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:1",
+      "ownerId": "effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideTitanStomp"
+      }
+    },
+    {
+      "id": "condition:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep:2",
+      "ownerId": "effect:elder_titan_echo_stomp:control:completed-stomp-conditional-sleep",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "stompWakeDamageThresholdNotReached"
+      }
+    },
+    {
+      "id": "condition:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:0",
+      "ownerId": "effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "echoStompChannelCompleted"
+      }
+    },
+    {
+      "id": "condition:elder_titan_echo_stomp:damage:titan-stomp-physical-impact:1",
+      "ownerId": "effect:elder_titan_echo_stomp:damage:titan-stomp-physical-impact",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideTitanStomp"
+      }
+    },
+    {
+      "id": "condition:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:0",
+      "ownerId": "effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "echoStompChannelCompleted"
+      }
+    },
+    {
+      "id": "condition:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact:1",
+      "ownerId": "effect:elder_titan_echo_stomp:damage:spirit-stomp-magical-impact",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "astralSpiritStompsNearEnemy"
+      }
+    },
+    {
+      "id": "condition:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:0",
+      "ownerId": "effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "echoStompChannelCompleted"
+      }
+    },
+    {
+      "id": "condition:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:1",
+      "ownerId": "effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "astralSpiritStompsNearEnemy"
+      }
+    },
+    {
+      "id": "condition:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep:2",
+      "ownerId": "effect:elder_titan_echo_stomp:control:spirit-stomp-conditional-sleep",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "stompWakeDamageThresholdNotReached"
+      }
+    },
+    {
+      "id": "condition:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:0",
+      "ownerId": "effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "echoStompChannelCompleted"
+      }
+    },
+    {
+      "id": "condition:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:1",
+      "ownerId": "effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "echoStompSwapAltCastSelected"
+      }
+    },
+    {
+      "id": "condition:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap:2",
+      "ownerId": "effect:elder_titan_echo_stomp:mobility:shard-completed-stomp-spirit-swap",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "astralSpiritAvailable"
+      }
+    },
+    {
+      "id": "condition:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:0",
+      "ownerId": "effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "astralSpiritEstablished"
+      }
+    },
+    {
+      "id": "condition:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage:1",
+      "ownerId": "effect:elder_titan_ancestral_spirit:damage:astral-spirit-contact-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "astralSpiritPassesEnemy"
+      }
+    },
+    {
+      "id": "condition:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses:0",
+      "ownerId": "effect:elder_titan_ancestral_spirit:modifier:returned-spirit-contact-bonuses",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "astralSpiritReturnedWithContactCounts"
+      }
+    },
+    {
+      "id": "condition:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity:0",
+      "ownerId": "effect:elder_titan_ancestral_spirit:save:scepter-returned-spirit-debuff-immunity",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "astralSpiritReturnedAfterHeroContact"
+      }
+    },
+    {
+      "id": "condition:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction:0",
+      "ownerId": "effect:elder_titan_natural_order:modifier:hero-centered-base-armor-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideTitanNaturalOrder"
+      }
+    },
+    {
+      "id": "condition:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance:0",
+      "ownerId": "effect:elder_titan_natural_order:modifier:spirit-or-hero-centered-base-magic-resistance",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideApplicableNaturalOrderMagicAura"
+      }
+    },
+    {
+      "id": "condition:elder_titan_earth_splitter:damage:splitter-physical-max-health-component:0",
+      "ownerId": "effect:elder_titan_earth_splitter:damage:splitter-physical-max-health-component",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideEarthSplitterAtImplosion"
+      }
+    },
+    {
+      "id": "condition:elder_titan_earth_splitter:damage:splitter-magical-max-health-component:0",
+      "ownerId": "effect:elder_titan_earth_splitter:damage:splitter-magical-max-health-component",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideEarthSplitterAtImplosion"
+      }
+    },
+    {
+      "id": "condition:elder_titan_earth_splitter:slow:splitter-implosion-slow:0",
+      "ownerId": "effect:elder_titan_earth_splitter:slow:splitter-implosion-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideEarthSplitterAtImplosion"
+      }
+    }
+  ]
+}

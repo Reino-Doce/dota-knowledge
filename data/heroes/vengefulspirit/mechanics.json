@@ -1,0 +1,2253 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "vengefulspirit_nether_swap:hero-position-swap",
+      "heroId": "20",
+      "abilityId": "ability:20:vengefulspirit_nether_swap",
+      "type": "displacement",
+      "subtype": "hero-position-swap",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:vengefulspirit_nether_swap:hero-position-swap:range",
+          "ownerId": "effect:vengefulspirit_nether_swap:hero-position-swap",
+          "field": "range",
+          "state": "known",
+          "value": [
+            850,
+            975,
+            1100
+          ]
+        },
+        "duration": {
+          "id": "value:effect:vengefulspirit_nether_swap:hero-position-swap:duration",
+          "ownerId": "effect:vengefulspirit_nether_swap:hero-position-swap",
+          "field": "duration",
+          "state": "known",
+          "value": 0
+        },
+        "magnitude": {
+          "id": "value:effect:vengefulspirit_nether_swap:hero-position-swap:magnitude",
+          "ownerId": "effect:vengefulspirit_nether_swap:hero-position-swap",
+          "field": "magnitude",
+          "state": "known",
+          "value": 1
+        },
+        "mana": {
+          "id": "value:effect:vengefulspirit_nether_swap:hero-position-swap:mana",
+          "ownerId": "effect:vengefulspirit_nether_swap:hero-position-swap",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            150,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:vengefulspirit_nether_swap:hero-position-swap:cooldown",
+          "ownerId": "effect:vengefulspirit_nether_swap:hero-position-swap",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            46,
+            38,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:vengefulspirit_nether_swap:hero-position-swap:delay",
+          "ownerId": "effect:vengefulspirit_nether_swap:hero-position-swap",
+          "field": "delay",
+          "state": "known",
+          "value": 0.4
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "vengefulspirit_nether_swap"
+      },
+      "vulnerability": {},
+      "exceptions": [
+        "requires-targetable-hero",
+        "also-moves-caster"
+      ],
+      "id": "effect:vengefulspirit_nether_swap:hero-position-swap",
+      "legacyEffectId": "vengefulspirit_nether_swap:hero-position-swap",
+      "order": 0,
+      "legacyAbilityId": "vengefulspirit_nether_swap",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:vengefulspirit_nether_swap:hero-position-swap:range",
+        "value:effect:vengefulspirit_nether_swap:hero-position-swap:duration",
+        "value:effect:vengefulspirit_nether_swap:hero-position-swap:magnitude",
+        "value:effect:vengefulspirit_nether_swap:hero-position-swap:mana",
+        "value:effect:vengefulspirit_nether_swap:hero-position-swap:cooldown",
+        "value:effect:vengefulspirit_nether_swap:hero-position-swap:delay"
+      ],
+      "activationId": "activation:20:vengefulspirit_nether_swap"
+    },
+    {
+      "effectId": "vengefulspirit_magic_missile:damage:missile-primary-magical-damage",
+      "heroId": "20",
+      "abilityId": "ability:20:vengefulspirit_magic_missile",
+      "type": "damage",
+      "subtype": "missile-primary-magical-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage:range",
+          "ownerId": "effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage",
+          "field": "range",
+          "state": "known",
+          "value": 650
+        },
+        "duration": {
+          "id": "value:effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage:duration",
+          "ownerId": "effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage:magnitude",
+          "ownerId": "effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            100,
+            180,
+            260,
+            340
+          ]
+        },
+        "mana": {
+          "id": "value:effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage:mana",
+          "ownerId": "effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            95,
+            100,
+            105
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage:cooldown",
+          "ownerId": "effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            13,
+            12,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage:delay",
+          "ownerId": "effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage:damageType",
+          "ownerId": "effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "vengeMissileReachesPrimaryTarget"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "vengefulspirit_magic_missile"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage",
+      "legacyEffectId": "vengefulspirit_magic_missile:damage:missile-primary-magical-damage",
+      "order": 1,
+      "legacyAbilityId": "vengefulspirit_magic_missile",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:vengefulspirit_magic_missile:damage:missile-primary-magical-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage:range",
+        "value:effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage:duration",
+        "value:effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage:magnitude",
+        "value:effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage:mana",
+        "value:effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage:cooldown",
+        "value:effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage:delay",
+        "value:effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage:damageType"
+      ],
+      "activationId": "activation:20:vengefulspirit_magic_missile"
+    },
+    {
+      "effectId": "vengefulspirit_magic_missile:control:missile-primary-stun",
+      "heroId": "20",
+      "abilityId": "ability:20:vengefulspirit_magic_missile",
+      "type": "control",
+      "subtype": "missile-primary-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:vengefulspirit_magic_missile:control:missile-primary-stun:range",
+          "ownerId": "effect:vengefulspirit_magic_missile:control:missile-primary-stun",
+          "field": "range",
+          "state": "known",
+          "value": 650
+        },
+        "duration": {
+          "id": "value:effect:vengefulspirit_magic_missile:control:missile-primary-stun:duration",
+          "ownerId": "effect:vengefulspirit_magic_missile:control:missile-primary-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.2,
+            1.4,
+            1.6,
+            1.8
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:vengefulspirit_magic_missile:control:missile-primary-stun:magnitude",
+          "ownerId": "effect:vengefulspirit_magic_missile:control:missile-primary-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:vengefulspirit_magic_missile:control:missile-primary-stun:mana",
+          "ownerId": "effect:vengefulspirit_magic_missile:control:missile-primary-stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            95,
+            100,
+            105
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:vengefulspirit_magic_missile:control:missile-primary-stun:cooldown",
+          "ownerId": "effect:vengefulspirit_magic_missile:control:missile-primary-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            13,
+            12,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:vengefulspirit_magic_missile:control:missile-primary-stun:delay",
+          "ownerId": "effect:vengefulspirit_magic_missile:control:missile-primary-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "vengeMissileReachesPrimaryTarget"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "vengefulspirit_magic_missile"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:vengefulspirit_magic_missile:control:missile-primary-stun",
+      "legacyEffectId": "vengefulspirit_magic_missile:control:missile-primary-stun",
+      "order": 2,
+      "legacyAbilityId": "vengefulspirit_magic_missile",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:vengefulspirit_magic_missile:control:missile-primary-stun:0"
+      ],
+      "valueIds": [
+        "value:effect:vengefulspirit_magic_missile:control:missile-primary-stun:range",
+        "value:effect:vengefulspirit_magic_missile:control:missile-primary-stun:duration",
+        "value:effect:vengefulspirit_magic_missile:control:missile-primary-stun:magnitude",
+        "value:effect:vengefulspirit_magic_missile:control:missile-primary-stun:mana",
+        "value:effect:vengefulspirit_magic_missile:control:missile-primary-stun:cooldown",
+        "value:effect:vengefulspirit_magic_missile:control:missile-primary-stun:delay"
+      ],
+      "activationId": "activation:20:vengefulspirit_magic_missile"
+    },
+    {
+      "effectId": "vengefulspirit_magic_missile:modifier:shard-single-secondary-missile",
+      "heroId": "20",
+      "abilityId": "ability:20:vengefulspirit_magic_missile",
+      "type": "modifier",
+      "subtype": "shard-single-secondary-missile",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile:range",
+          "ownerId": "effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile:duration",
+          "ownerId": "effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile:magnitude",
+          "ownerId": "effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile:mana",
+          "ownerId": "effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile:cooldown",
+          "ownerId": "effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile:delay",
+          "ownerId": "effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "vengeMissileReachesPrimaryTarget",
+          "eligibleMissileBounceTargetExists"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "vengefulspirit_magic_missile:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile",
+      "legacyEffectId": "vengefulspirit_magic_missile:modifier:shard-single-secondary-missile",
+      "order": 3,
+      "legacyAbilityId": "vengefulspirit_magic_missile",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile:0",
+        "condition:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile:1"
+      ],
+      "valueIds": [
+        "value:effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile:range",
+        "value:effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile:duration",
+        "value:effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile:magnitude",
+        "value:effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile:mana",
+        "value:effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile:cooldown",
+        "value:effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile:delay"
+      ],
+      "activationId": "activation:20:vengefulspirit_magic_missile"
+    },
+    {
+      "effectId": "vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage",
+      "heroId": "20",
+      "abilityId": "ability:20:vengefulspirit_wave_of_terror",
+      "type": "damage",
+      "subtype": "wave-contact-magical-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage:range",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage",
+          "field": "range",
+          "state": "known",
+          "value": 1400
+        },
+        "duration": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage:duration",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage:magnitude",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            60,
+            80,
+            100,
+            120
+          ]
+        },
+        "mana": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage:mana",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 40
+        },
+        "cooldown": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage:cooldown",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage:delay",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage:damageType",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "vengeWaveHitsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "vengefulspirit_wave_of_terror"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage",
+      "legacyEffectId": "vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage",
+      "order": 4,
+      "legacyAbilityId": "vengefulspirit_wave_of_terror",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage:range",
+        "value:effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage:duration",
+        "value:effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage:magnitude",
+        "value:effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage:mana",
+        "value:effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage:cooldown",
+        "value:effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage:delay",
+        "value:effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage:damageType"
+      ],
+      "activationId": "activation:20:vengefulspirit_wave_of_terror"
+    },
+    {
+      "effectId": "vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction",
+      "heroId": "20",
+      "abilityId": "ability:20:vengefulspirit_wave_of_terror",
+      "type": "modifier",
+      "subtype": "wave-signed-armor-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction:range",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction",
+          "field": "range",
+          "state": "known",
+          "value": 1400
+        },
+        "duration": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction:duration",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction",
+          "field": "duration",
+          "state": "known",
+          "value": 8
+        },
+        "magnitude": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction:magnitude",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -3,
+            -4,
+            -5,
+            -6
+          ]
+        },
+        "mana": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction:mana",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 40
+        },
+        "cooldown": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction:cooldown",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction:delay",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "vengeWaveHitsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "vengefulspirit_wave_of_terror"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction",
+      "legacyEffectId": "vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction",
+      "order": 5,
+      "legacyAbilityId": "vengefulspirit_wave_of_terror",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction:0"
+      ],
+      "valueIds": [
+        "value:effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction:range",
+        "value:effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction:duration",
+        "value:effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction:magnitude",
+        "value:effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction:mana",
+        "value:effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction:cooldown",
+        "value:effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction:delay"
+      ],
+      "activationId": "activation:20:vengefulspirit_wave_of_terror"
+    },
+    {
+      "effectId": "vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction",
+      "heroId": "20",
+      "abilityId": "ability:20:vengefulspirit_wave_of_terror",
+      "type": "modifier",
+      "subtype": "wave-total-attack-damage-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction:range",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction",
+          "field": "range",
+          "state": "known",
+          "value": 1400
+        },
+        "duration": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction:duration",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction",
+          "field": "duration",
+          "state": "known",
+          "value": 8
+        },
+        "magnitude": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction:magnitude",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            10,
+            15,
+            20,
+            25
+          ]
+        },
+        "mana": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction:mana",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 40
+        },
+        "cooldown": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction:cooldown",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction:delay",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "vengeWaveHitsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "vengefulspirit_wave_of_terror"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction",
+      "legacyEffectId": "vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction",
+      "order": 6,
+      "legacyAbilityId": "vengefulspirit_wave_of_terror",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction:0"
+      ],
+      "valueIds": [
+        "value:effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction:range",
+        "value:effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction:duration",
+        "value:effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction:magnitude",
+        "value:effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction:mana",
+        "value:effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction:cooldown",
+        "value:effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction:delay"
+      ],
+      "activationId": "activation:20:vengefulspirit_wave_of_terror"
+    },
+    {
+      "effectId": "vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision",
+      "heroId": "20",
+      "abilityId": "ability:20:vengefulspirit_wave_of_terror",
+      "type": "vision",
+      "subtype": "wave-path-ordinary-vision",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision:range",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision:duration",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision:magnitude",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision:mana",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision",
+          "field": "mana",
+          "state": "known",
+          "value": 40
+        },
+        "cooldown": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision:cooldown",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision:delay",
+          "ownerId": "effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "vengefulspirit_wave_of_terror"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision",
+      "legacyEffectId": "vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision",
+      "order": 7,
+      "legacyAbilityId": "vengefulspirit_wave_of_terror",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision:range",
+        "value:effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision:duration",
+        "value:effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision:magnitude",
+        "value:effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision:mana",
+        "value:effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision:cooldown",
+        "value:effect:vengefulspirit_wave_of_terror:vision:wave-path-ordinary-vision:delay"
+      ],
+      "activationId": "activation:20:vengefulspirit_wave_of_terror"
+    },
+    {
+      "effectId": "vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura",
+      "heroId": "20",
+      "abilityId": "ability:20:vengefulspirit_command_aura",
+      "type": "modifier",
+      "subtype": "nearby-allied-base-attack-damage-aura",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura:range",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura",
+          "field": "range",
+          "state": "known",
+          "value": 1200
+        },
+        "duration": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura:duration",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura:magnitude",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            10,
+            15,
+            20,
+            25
+          ]
+        },
+        "mana": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura:mana",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura:cooldown",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura:delay",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "allyInsideVengeanceAura"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "vengefulspirit_command_aura:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura",
+      "legacyEffectId": "vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura",
+      "order": 8,
+      "legacyAbilityId": "vengefulspirit_command_aura",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura:0"
+      ],
+      "valueIds": [
+        "value:effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura:range",
+        "value:effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura:duration",
+        "value:effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura:magnitude",
+        "value:effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura:mana",
+        "value:effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura:cooldown",
+        "value:effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura:delay"
+      ],
+      "activationId": "activation:20:vengefulspirit_command_aura"
+    },
+    {
+      "effectId": "vengefulspirit_command_aura:modifier:self-extra-aura-multiplier",
+      "heroId": "20",
+      "abilityId": "ability:20:vengefulspirit_command_aura",
+      "type": "modifier",
+      "subtype": "self-extra-aura-multiplier",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier:range",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier:duration",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier:magnitude",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier:mana",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier:cooldown",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier:delay",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "vengefulspirit_command_aura:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier",
+      "legacyEffectId": "vengefulspirit_command_aura:modifier:self-extra-aura-multiplier",
+      "order": 9,
+      "legacyAbilityId": "vengefulspirit_command_aura",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier:range",
+        "value:effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier:duration",
+        "value:effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier:magnitude",
+        "value:effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier:mana",
+        "value:effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier:cooldown",
+        "value:effect:vengefulspirit_command_aura:modifier:self-extra-aura-multiplier:delay"
+      ],
+      "activationId": "activation:20:vengefulspirit_command_aura"
+    },
+    {
+      "effectId": "vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement",
+      "heroId": "20",
+      "abilityId": "ability:20:vengefulspirit_command_aura",
+      "type": "modifier",
+      "subtype": "scepter-death-strong-illusion-and-replacement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement:range",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement:duration",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement:magnitude",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement:mana",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement:cooldown",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement:delay",
+          "ownerId": "effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "vengeDiedWithScepter"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "vengefulspirit_command_aura:passive"
+      },
+      "vulnerability": {
+        "breakable": null
+      },
+      "exceptions": [],
+      "id": "effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement",
+      "legacyEffectId": "vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement",
+      "order": 10,
+      "legacyAbilityId": "vengefulspirit_command_aura",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement:0"
+      ],
+      "valueIds": [
+        "value:effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement:range",
+        "value:effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement:duration",
+        "value:effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement:magnitude",
+        "value:effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement:mana",
+        "value:effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement:cooldown",
+        "value:effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement:delay"
+      ],
+      "activationId": "activation:20:vengefulspirit_command_aura"
+    },
+    {
+      "effectId": "vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification",
+      "heroId": "20",
+      "abilityId": "ability:20:vengefulspirit_retribution",
+      "type": "modifier",
+      "subtype": "dual-ranged-melee-benefit-classification",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification:range",
+          "ownerId": "effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification:duration",
+          "ownerId": "effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification:magnitude",
+          "ownerId": "effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification:mana",
+          "ownerId": "effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification:cooldown",
+          "ownerId": "effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification:delay",
+          "ownerId": "effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "vengefulspirit_retribution:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification",
+      "legacyEffectId": "vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification",
+      "order": 11,
+      "legacyAbilityId": "vengefulspirit_retribution",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification:range",
+        "value:effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification:duration",
+        "value:effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification:magnitude",
+        "value:effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification:mana",
+        "value:effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification:cooldown",
+        "value:effect:vengefulspirit_retribution:modifier:dual-ranged-melee-benefit-classification:delay"
+      ],
+      "activationId": "activation:20:vengefulspirit_retribution"
+    },
+    {
+      "effectId": "vengefulspirit_retribution:modifier:killer-specific-revenge-damage",
+      "heroId": "20",
+      "abilityId": "ability:20:vengefulspirit_retribution",
+      "type": "modifier",
+      "subtype": "killer-specific-revenge-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage:range",
+          "ownerId": "effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage:duration",
+          "ownerId": "effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage:magnitude",
+          "ownerId": "effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": 20
+        },
+        "mana": {
+          "id": "value:effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage:mana",
+          "ownerId": "effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage:cooldown",
+          "ownerId": "effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage:delay",
+          "ownerId": "effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "vengeTargetIsCurrentSurvivingKiller"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "vengefulspirit_retribution:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage",
+      "legacyEffectId": "vengefulspirit_retribution:modifier:killer-specific-revenge-damage",
+      "order": 12,
+      "legacyAbilityId": "vengefulspirit_retribution",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:vengefulspirit_retribution:modifier:killer-specific-revenge-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage:range",
+        "value:effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage:duration",
+        "value:effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage:magnitude",
+        "value:effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage:mana",
+        "value:effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage:cooldown",
+        "value:effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage:delay"
+      ],
+      "activationId": "activation:20:vengefulspirit_retribution"
+    },
+    {
+      "effectId": "vengefulspirit_nether_swap:damage:enemy-swap-magical-damage",
+      "heroId": "20",
+      "abilityId": "ability:20:vengefulspirit_nether_swap",
+      "type": "damage",
+      "subtype": "enemy-swap-magical-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage:range",
+          "ownerId": "effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage",
+          "field": "range",
+          "state": "known",
+          "value": [
+            850,
+            975,
+            1100
+          ]
+        },
+        "duration": {
+          "id": "value:effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage:duration",
+          "ownerId": "effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage:magnitude",
+          "ownerId": "effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            150,
+            300,
+            450
+          ]
+        },
+        "mana": {
+          "id": "value:effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage:mana",
+          "ownerId": "effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            150,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage:cooldown",
+          "ownerId": "effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            46,
+            38,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage:delay",
+          "ownerId": "effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage:damageType",
+          "ownerId": "effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "vengefulspirit_nether_swap"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage",
+      "legacyEffectId": "vengefulspirit_nether_swap:damage:enemy-swap-magical-damage",
+      "order": 13,
+      "legacyAbilityId": "vengefulspirit_nether_swap",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage:range",
+        "value:effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage:duration",
+        "value:effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage:magnitude",
+        "value:effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage:mana",
+        "value:effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage:cooldown",
+        "value:effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage:delay",
+        "value:effect:vengefulspirit_nether_swap:damage:enemy-swap-magical-damage:damageType"
+      ],
+      "activationId": "activation:20:vengefulspirit_nether_swap"
+    },
+    {
+      "effectId": "vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier",
+      "heroId": "20",
+      "abilityId": "ability:20:vengefulspirit_nether_swap",
+      "type": "save",
+      "subtype": "swap-granted-self-or-ally-barrier",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier:range",
+          "ownerId": "effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier:duration",
+          "ownerId": "effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier:magnitude",
+          "ownerId": "effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier:mana",
+          "ownerId": "effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier:cooldown",
+          "ownerId": "effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier:delay",
+          "ownerId": "effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "vengeSwapBarrierGrantedToRecipient"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "vengefulspirit_nether_swap:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier",
+      "legacyEffectId": "vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier",
+      "order": 14,
+      "legacyAbilityId": "vengefulspirit_nether_swap",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier:0"
+      ],
+      "valueIds": [
+        "value:effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier:range",
+        "value:effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier:duration",
+        "value:effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier:magnitude",
+        "value:effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier:mana",
+        "value:effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier:cooldown",
+        "value:effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier:delay"
+      ],
+      "activationId": "activation:20:vengefulspirit_nether_swap"
+    },
+    {
+      "effectId": "vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement",
+      "heroId": "20",
+      "abilityId": "ability:20:vengefulspirit_command_aura",
+      "type": "illusion",
+      "subtype": "scepter-death-strong-illusion-and-replacement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement:range",
+          "ownerId": "effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement:duration",
+          "ownerId": "effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement:magnitude",
+          "ownerId": "effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement:mana",
+          "ownerId": "effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement:cooldown",
+          "ownerId": "effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement:delay",
+          "ownerId": "effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "vengeDiedWithScepter"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "vengefulspirit_command_aura:passive",
+        "replaces": [
+          "vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement"
+        ]
+      },
+      "vulnerability": {
+        "breakable": null
+      },
+      "exceptions": [],
+      "mechanicsFacets": [
+        "illusions"
+      ],
+      "id": "effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement",
+      "legacyEffectId": "vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement",
+      "order": 15,
+      "legacyAbilityId": "vengefulspirit_command_aura",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement:0"
+      ],
+      "valueIds": [
+        "value:effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement:range",
+        "value:effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement:duration",
+        "value:effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement:magnitude",
+        "value:effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement:mana",
+        "value:effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement:cooldown",
+        "value:effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement:delay"
+      ],
+      "activationId": "activation:20:vengefulspirit_command_aura"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:vengefulspirit_magic_missile:damage:missile-primary-magical-damage:0",
+      "ownerId": "effect:vengefulspirit_magic_missile:damage:missile-primary-magical-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "vengeMissileReachesPrimaryTarget"
+      }
+    },
+    {
+      "id": "condition:vengefulspirit_magic_missile:control:missile-primary-stun:0",
+      "ownerId": "effect:vengefulspirit_magic_missile:control:missile-primary-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "vengeMissileReachesPrimaryTarget"
+      }
+    },
+    {
+      "id": "condition:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile:0",
+      "ownerId": "effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "vengeMissileReachesPrimaryTarget"
+      }
+    },
+    {
+      "id": "condition:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile:1",
+      "ownerId": "effect:vengefulspirit_magic_missile:modifier:shard-single-secondary-missile",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "eligibleMissileBounceTargetExists"
+      }
+    },
+    {
+      "id": "condition:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage:0",
+      "ownerId": "effect:vengefulspirit_wave_of_terror:damage:wave-contact-magical-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "vengeWaveHitsEnemy"
+      }
+    },
+    {
+      "id": "condition:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction:0",
+      "ownerId": "effect:vengefulspirit_wave_of_terror:modifier:wave-signed-armor-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "vengeWaveHitsEnemy"
+      }
+    },
+    {
+      "id": "condition:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction:0",
+      "ownerId": "effect:vengefulspirit_wave_of_terror:modifier:wave-total-attack-damage-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "vengeWaveHitsEnemy"
+      }
+    },
+    {
+      "id": "condition:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura:0",
+      "ownerId": "effect:vengefulspirit_command_aura:modifier:nearby-allied-base-attack-damage-aura",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyInsideVengeanceAura"
+      }
+    },
+    {
+      "id": "condition:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement:0",
+      "ownerId": "effect:vengefulspirit_command_aura:modifier:scepter-death-strong-illusion-and-replacement",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "vengeDiedWithScepter"
+      }
+    },
+    {
+      "id": "condition:vengefulspirit_retribution:modifier:killer-specific-revenge-damage:0",
+      "ownerId": "effect:vengefulspirit_retribution:modifier:killer-specific-revenge-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "vengeTargetIsCurrentSurvivingKiller"
+      }
+    },
+    {
+      "id": "condition:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier:0",
+      "ownerId": "effect:vengefulspirit_nether_swap:save:swap-granted-self-or-ally-barrier",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "vengeSwapBarrierGrantedToRecipient"
+      }
+    },
+    {
+      "id": "condition:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement:0",
+      "ownerId": "effect:vengefulspirit_command_aura:illusion:scepter-death-strong-illusion-and-replacement",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "vengeDiedWithScepter"
+      }
+    }
+  ]
+}

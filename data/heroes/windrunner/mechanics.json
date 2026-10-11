@@ -1,0 +1,1540 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "windrunner_shackleshot:control:latched-shackle",
+      "heroId": "21",
+      "abilityId": "ability:21:windrunner_shackleshot",
+      "type": "control",
+      "subtype": "latched-shackle",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 2
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:windrunner_shackleshot:control:latched-shackle:range",
+          "ownerId": "effect:windrunner_shackleshot:control:latched-shackle",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:windrunner_shackleshot:control:latched-shackle:duration",
+          "ownerId": "effect:windrunner_shackleshot:control:latched-shackle",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.75,
+            2.25,
+            2.75,
+            3.25
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:windrunner_shackleshot:control:latched-shackle:magnitude",
+          "ownerId": "effect:windrunner_shackleshot:control:latched-shackle",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:windrunner_shackleshot:control:latched-shackle:mana",
+          "ownerId": "effect:windrunner_shackleshot:control:latched-shackle",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:windrunner_shackleshot:control:latched-shackle:cooldown",
+          "ownerId": "effect:windrunner_shackleshot:control:latched-shackle",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:windrunner_shackleshot:control:latched-shackle:delay",
+          "ownerId": "effect:windrunner_shackleshot:control:latched-shackle",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "shackleLatchFound"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "windrunner_shackleshot"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:windrunner_shackleshot:control:latched-shackle",
+      "legacyEffectId": "windrunner_shackleshot:control:latched-shackle",
+      "order": 0,
+      "legacyAbilityId": "windrunner_shackleshot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:windrunner_shackleshot:control:latched-shackle:0"
+      ],
+      "valueIds": [
+        "value:effect:windrunner_shackleshot:control:latched-shackle:range",
+        "value:effect:windrunner_shackleshot:control:latched-shackle:duration",
+        "value:effect:windrunner_shackleshot:control:latched-shackle:magnitude",
+        "value:effect:windrunner_shackleshot:control:latched-shackle:mana",
+        "value:effect:windrunner_shackleshot:control:latched-shackle:cooldown",
+        "value:effect:windrunner_shackleshot:control:latched-shackle:delay"
+      ],
+      "activationId": "activation:21:windrunner_shackleshot"
+    },
+    {
+      "effectId": "windrunner_shackleshot:control:failed-latch-stun",
+      "heroId": "21",
+      "abilityId": "ability:21:windrunner_shackleshot",
+      "type": "control",
+      "subtype": "failed-latch-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:windrunner_shackleshot:control:failed-latch-stun:range",
+          "ownerId": "effect:windrunner_shackleshot:control:failed-latch-stun",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:windrunner_shackleshot:control:failed-latch-stun:duration",
+          "ownerId": "effect:windrunner_shackleshot:control:failed-latch-stun",
+          "field": "duration",
+          "state": "known",
+          "value": 0.6
+        },
+        "magnitude": {
+          "id": "value:effect:windrunner_shackleshot:control:failed-latch-stun:magnitude",
+          "ownerId": "effect:windrunner_shackleshot:control:failed-latch-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:windrunner_shackleshot:control:failed-latch-stun:mana",
+          "ownerId": "effect:windrunner_shackleshot:control:failed-latch-stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:windrunner_shackleshot:control:failed-latch-stun:cooldown",
+          "ownerId": "effect:windrunner_shackleshot:control:failed-latch-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:windrunner_shackleshot:control:failed-latch-stun:delay",
+          "ownerId": "effect:windrunner_shackleshot:control:failed-latch-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "shackleLatchMissing"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "windrunner_shackleshot"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:windrunner_shackleshot:control:failed-latch-stun",
+      "legacyEffectId": "windrunner_shackleshot:control:failed-latch-stun",
+      "order": 1,
+      "legacyAbilityId": "windrunner_shackleshot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:windrunner_shackleshot:control:failed-latch-stun:0"
+      ],
+      "valueIds": [
+        "value:effect:windrunner_shackleshot:control:failed-latch-stun:range",
+        "value:effect:windrunner_shackleshot:control:failed-latch-stun:duration",
+        "value:effect:windrunner_shackleshot:control:failed-latch-stun:magnitude",
+        "value:effect:windrunner_shackleshot:control:failed-latch-stun:mana",
+        "value:effect:windrunner_shackleshot:control:failed-latch-stun:cooldown",
+        "value:effect:windrunner_shackleshot:control:failed-latch-stun:delay"
+      ],
+      "activationId": "activation:21:windrunner_shackleshot"
+    },
+    {
+      "effectId": "windrunner_powershot:damage:fully-charged-first-hit",
+      "heroId": "21",
+      "abilityId": "ability:21:windrunner_powershot",
+      "type": "damage",
+      "subtype": "fully-charged-first-hit",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:windrunner_powershot:damage:fully-charged-first-hit:range",
+          "ownerId": "effect:windrunner_powershot:damage:fully-charged-first-hit",
+          "field": "range",
+          "state": "known",
+          "value": 3000
+        },
+        "duration": {
+          "id": "value:effect:windrunner_powershot:damage:fully-charged-first-hit:duration",
+          "ownerId": "effect:windrunner_powershot:damage:fully-charged-first-hit",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:windrunner_powershot:damage:fully-charged-first-hit:magnitude",
+          "ownerId": "effect:windrunner_powershot:damage:fully-charged-first-hit",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            170,
+            270,
+            370,
+            470
+          ]
+        },
+        "mana": {
+          "id": "value:effect:windrunner_powershot:damage:fully-charged-first-hit:mana",
+          "ownerId": "effect:windrunner_powershot:damage:fully-charged-first-hit",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:windrunner_powershot:damage:fully-charged-first-hit:cooldown",
+          "ownerId": "effect:windrunner_powershot:damage:fully-charged-first-hit",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            12,
+            11,
+            10,
+            9
+          ]
+        },
+        "delay": {
+          "id": "value:effect:windrunner_powershot:damage:fully-charged-first-hit:delay",
+          "ownerId": "effect:windrunner_powershot:damage:fully-charged-first-hit",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:windrunner_powershot:damage:fully-charged-first-hit:damageType",
+          "ownerId": "effect:windrunner_powershot:damage:fully-charged-first-hit",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "powershotFullyCharged",
+          "powershotFirstTarget"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "windrunner_powershot"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:windrunner_powershot:damage:fully-charged-first-hit",
+      "legacyEffectId": "windrunner_powershot:damage:fully-charged-first-hit",
+      "order": 2,
+      "legacyAbilityId": "windrunner_powershot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:windrunner_powershot:damage:fully-charged-first-hit:0",
+        "condition:windrunner_powershot:damage:fully-charged-first-hit:1"
+      ],
+      "valueIds": [
+        "value:effect:windrunner_powershot:damage:fully-charged-first-hit:range",
+        "value:effect:windrunner_powershot:damage:fully-charged-first-hit:duration",
+        "value:effect:windrunner_powershot:damage:fully-charged-first-hit:magnitude",
+        "value:effect:windrunner_powershot:damage:fully-charged-first-hit:mana",
+        "value:effect:windrunner_powershot:damage:fully-charged-first-hit:cooldown",
+        "value:effect:windrunner_powershot:damage:fully-charged-first-hit:delay",
+        "value:effect:windrunner_powershot:damage:fully-charged-first-hit:damageType"
+      ],
+      "activationId": "activation:21:windrunner_powershot"
+    },
+    {
+      "effectId": "windrunner_powershot:slow:first-hit-movement-slow",
+      "heroId": "21",
+      "abilityId": "ability:21:windrunner_powershot",
+      "type": "slow",
+      "subtype": "first-hit-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:windrunner_powershot:slow:first-hit-movement-slow:range",
+          "ownerId": "effect:windrunner_powershot:slow:first-hit-movement-slow",
+          "field": "range",
+          "state": "known",
+          "value": 3000
+        },
+        "duration": {
+          "id": "value:effect:windrunner_powershot:slow:first-hit-movement-slow:duration",
+          "ownerId": "effect:windrunner_powershot:slow:first-hit-movement-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 3
+        },
+        "magnitude": {
+          "id": "value:effect:windrunner_powershot:slow:first-hit-movement-slow:magnitude",
+          "ownerId": "effect:windrunner_powershot:slow:first-hit-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            22,
+            28,
+            34,
+            40
+          ]
+        },
+        "mana": {
+          "id": "value:effect:windrunner_powershot:slow:first-hit-movement-slow:mana",
+          "ownerId": "effect:windrunner_powershot:slow:first-hit-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:windrunner_powershot:slow:first-hit-movement-slow:cooldown",
+          "ownerId": "effect:windrunner_powershot:slow:first-hit-movement-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            12,
+            11,
+            10,
+            9
+          ]
+        },
+        "delay": {
+          "id": "value:effect:windrunner_powershot:slow:first-hit-movement-slow:delay",
+          "ownerId": "effect:windrunner_powershot:slow:first-hit-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "powershotFullyCharged",
+          "powershotFirstTarget"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "windrunner_powershot"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:windrunner_powershot:slow:first-hit-movement-slow",
+      "legacyEffectId": "windrunner_powershot:slow:first-hit-movement-slow",
+      "order": 3,
+      "legacyAbilityId": "windrunner_powershot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:windrunner_powershot:slow:first-hit-movement-slow:0",
+        "condition:windrunner_powershot:slow:first-hit-movement-slow:1"
+      ],
+      "valueIds": [
+        "value:effect:windrunner_powershot:slow:first-hit-movement-slow:range",
+        "value:effect:windrunner_powershot:slow:first-hit-movement-slow:duration",
+        "value:effect:windrunner_powershot:slow:first-hit-movement-slow:magnitude",
+        "value:effect:windrunner_powershot:slow:first-hit-movement-slow:mana",
+        "value:effect:windrunner_powershot:slow:first-hit-movement-slow:cooldown",
+        "value:effect:windrunner_powershot:slow:first-hit-movement-slow:delay"
+      ],
+      "activationId": "activation:21:windrunner_powershot"
+    },
+    {
+      "effectId": "windrunner_windrun:mobility:windrun-speed",
+      "heroId": "21",
+      "abilityId": "ability:21:windrunner_windrun",
+      "type": "mobility",
+      "subtype": "windrun-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:windrunner_windrun:mobility:windrun-speed:range",
+          "ownerId": "effect:windrunner_windrun:mobility:windrun-speed",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:windrunner_windrun:mobility:windrun-speed:duration",
+          "ownerId": "effect:windrunner_windrun:mobility:windrun-speed",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:windrunner_windrun:mobility:windrun-speed:magnitude",
+          "ownerId": "effect:windrunner_windrun:mobility:windrun-speed",
+          "field": "magnitude",
+          "state": "known",
+          "value": 50
+        },
+        "mana": {
+          "id": "value:effect:windrunner_windrun:mobility:windrun-speed:mana",
+          "ownerId": "effect:windrunner_windrun:mobility:windrun-speed",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:windrunner_windrun:mobility:windrun-speed:cooldown",
+          "ownerId": "effect:windrunner_windrun:mobility:windrun-speed",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            13,
+            12,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:windrunner_windrun:mobility:windrun-speed:delay",
+          "ownerId": "effect:windrunner_windrun:mobility:windrun-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "windrunner_windrun"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:windrunner_windrun:mobility:windrun-speed",
+      "legacyEffectId": "windrunner_windrun:mobility:windrun-speed",
+      "order": 4,
+      "legacyAbilityId": "windrunner_windrun",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:windrunner_windrun:mobility:windrun-speed:range",
+        "value:effect:windrunner_windrun:mobility:windrun-speed:duration",
+        "value:effect:windrunner_windrun:mobility:windrun-speed:magnitude",
+        "value:effect:windrunner_windrun:mobility:windrun-speed:mana",
+        "value:effect:windrunner_windrun:mobility:windrun-speed:cooldown",
+        "value:effect:windrunner_windrun:mobility:windrun-speed:delay"
+      ],
+      "activationId": "activation:21:windrunner_windrun"
+    },
+    {
+      "effectId": "windrunner_windrun:modifier:attack-evasion",
+      "heroId": "21",
+      "abilityId": "ability:21:windrunner_windrun",
+      "type": "modifier",
+      "subtype": "attack-evasion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:windrunner_windrun:modifier:attack-evasion:range",
+          "ownerId": "effect:windrunner_windrun:modifier:attack-evasion",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:windrunner_windrun:modifier:attack-evasion:duration",
+          "ownerId": "effect:windrunner_windrun:modifier:attack-evasion",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:windrunner_windrun:modifier:attack-evasion:magnitude",
+          "ownerId": "effect:windrunner_windrun:modifier:attack-evasion",
+          "field": "magnitude",
+          "state": "known",
+          "value": 100
+        },
+        "mana": {
+          "id": "value:effect:windrunner_windrun:modifier:attack-evasion:mana",
+          "ownerId": "effect:windrunner_windrun:modifier:attack-evasion",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:windrunner_windrun:modifier:attack-evasion:cooldown",
+          "ownerId": "effect:windrunner_windrun:modifier:attack-evasion",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            13,
+            12,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:windrunner_windrun:modifier:attack-evasion:delay",
+          "ownerId": "effect:windrunner_windrun:modifier:attack-evasion",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "windrunner_windrun"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:windrunner_windrun:modifier:attack-evasion",
+      "legacyEffectId": "windrunner_windrun:modifier:attack-evasion",
+      "order": 5,
+      "legacyAbilityId": "windrunner_windrun",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:windrunner_windrun:modifier:attack-evasion:range",
+        "value:effect:windrunner_windrun:modifier:attack-evasion:duration",
+        "value:effect:windrunner_windrun:modifier:attack-evasion:magnitude",
+        "value:effect:windrunner_windrun:modifier:attack-evasion:mana",
+        "value:effect:windrunner_windrun:modifier:attack-evasion:cooldown",
+        "value:effect:windrunner_windrun:modifier:attack-evasion:delay"
+      ],
+      "activationId": "activation:21:windrunner_windrun"
+    },
+    {
+      "effectId": "windrunner_gale_force:displacement:shard-vector-wind",
+      "heroId": "21",
+      "abilityId": "ability:21:windrunner_gale_force",
+      "type": "displacement",
+      "subtype": "shard-vector-wind",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:windrunner_gale_force:displacement:shard-vector-wind:range",
+          "ownerId": "effect:windrunner_gale_force:displacement:shard-vector-wind",
+          "field": "range",
+          "state": "known",
+          "value": 1200
+        },
+        "duration": {
+          "id": "value:effect:windrunner_gale_force:displacement:shard-vector-wind:duration",
+          "ownerId": "effect:windrunner_gale_force:displacement:shard-vector-wind",
+          "field": "duration",
+          "state": "known",
+          "value": 3
+        },
+        "magnitude": {
+          "id": "value:effect:windrunner_gale_force:displacement:shard-vector-wind:magnitude",
+          "ownerId": "effect:windrunner_gale_force:displacement:shard-vector-wind",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:windrunner_gale_force:displacement:shard-vector-wind:mana",
+          "ownerId": "effect:windrunner_gale_force:displacement:shard-vector-wind",
+          "field": "mana",
+          "state": "known",
+          "value": 125
+        },
+        "cooldown": {
+          "id": "value:effect:windrunner_gale_force:displacement:shard-vector-wind:cooldown",
+          "ownerId": "effect:windrunner_gale_force:displacement:shard-vector-wind",
+          "field": "cooldown",
+          "state": "known",
+          "value": 25
+        },
+        "delay": {
+          "id": "value:effect:windrunner_gale_force:displacement:shard-vector-wind:delay",
+          "ownerId": "effect:windrunner_gale_force:displacement:shard-vector-wind",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "windrunner_gale_force"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:windrunner_gale_force:displacement:shard-vector-wind",
+      "legacyEffectId": "windrunner_gale_force:displacement:shard-vector-wind",
+      "order": 6,
+      "legacyAbilityId": "windrunner_gale_force",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:windrunner_gale_force:displacement:shard-vector-wind:range",
+        "value:effect:windrunner_gale_force:displacement:shard-vector-wind:duration",
+        "value:effect:windrunner_gale_force:displacement:shard-vector-wind:magnitude",
+        "value:effect:windrunner_gale_force:displacement:shard-vector-wind:mana",
+        "value:effect:windrunner_gale_force:displacement:shard-vector-wind:cooldown",
+        "value:effect:windrunner_gale_force:displacement:shard-vector-wind:delay"
+      ],
+      "activationId": "activation:21:windrunner_gale_force"
+    },
+    {
+      "effectId": "windrunner_focusfire:modifier:focused-target-attack-speed",
+      "heroId": "21",
+      "abilityId": "ability:21:windrunner_focusfire",
+      "type": "modifier",
+      "subtype": "focused-target-attack-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:windrunner_focusfire:modifier:focused-target-attack-speed:range",
+          "ownerId": "effect:windrunner_focusfire:modifier:focused-target-attack-speed",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:windrunner_focusfire:modifier:focused-target-attack-speed:duration",
+          "ownerId": "effect:windrunner_focusfire:modifier:focused-target-attack-speed",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            20,
+            20,
+            20
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:windrunner_focusfire:modifier:focused-target-attack-speed:magnitude",
+          "ownerId": "effect:windrunner_focusfire:modifier:focused-target-attack-speed",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:windrunner_focusfire:modifier:focused-target-attack-speed:mana",
+          "ownerId": "effect:windrunner_focusfire:modifier:focused-target-attack-speed",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            75,
+            100,
+            125
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:windrunner_focusfire:modifier:focused-target-attack-speed:cooldown",
+          "ownerId": "effect:windrunner_focusfire:modifier:focused-target-attack-speed",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            50,
+            40,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:windrunner_focusfire:modifier:focused-target-attack-speed:delay",
+          "ownerId": "effect:windrunner_focusfire:modifier:focused-target-attack-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "windrunner_focusfire"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:windrunner_focusfire:modifier:focused-target-attack-speed",
+      "legacyEffectId": "windrunner_focusfire:modifier:focused-target-attack-speed",
+      "order": 7,
+      "legacyAbilityId": "windrunner_focusfire",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:windrunner_focusfire:modifier:focused-target-attack-speed:range",
+        "value:effect:windrunner_focusfire:modifier:focused-target-attack-speed:duration",
+        "value:effect:windrunner_focusfire:modifier:focused-target-attack-speed:magnitude",
+        "value:effect:windrunner_focusfire:modifier:focused-target-attack-speed:mana",
+        "value:effect:windrunner_focusfire:modifier:focused-target-attack-speed:cooldown",
+        "value:effect:windrunner_focusfire:modifier:focused-target-attack-speed:delay"
+      ],
+      "activationId": "activation:21:windrunner_focusfire"
+    },
+    {
+      "effectId": "windrunner_tailwind:passive:maximum-movement-speed",
+      "heroId": "21",
+      "abilityId": "ability:21:windrunner_tailwind",
+      "type": "passive",
+      "subtype": "maximum-movement-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:windrunner_tailwind:passive:maximum-movement-speed:range",
+          "ownerId": "effect:windrunner_tailwind:passive:maximum-movement-speed",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:windrunner_tailwind:passive:maximum-movement-speed:duration",
+          "ownerId": "effect:windrunner_tailwind:passive:maximum-movement-speed",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:windrunner_tailwind:passive:maximum-movement-speed:magnitude",
+          "ownerId": "effect:windrunner_tailwind:passive:maximum-movement-speed",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:windrunner_tailwind:passive:maximum-movement-speed:mana",
+          "ownerId": "effect:windrunner_tailwind:passive:maximum-movement-speed",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:windrunner_tailwind:passive:maximum-movement-speed:cooldown",
+          "ownerId": "effect:windrunner_tailwind:passive:maximum-movement-speed",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:windrunner_tailwind:passive:maximum-movement-speed:delay",
+          "ownerId": "effect:windrunner_tailwind:passive:maximum-movement-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "windrunner_tailwind"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:windrunner_tailwind:passive:maximum-movement-speed",
+      "legacyEffectId": "windrunner_tailwind:passive:maximum-movement-speed",
+      "order": 8,
+      "legacyAbilityId": "windrunner_tailwind",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:windrunner_tailwind:passive:maximum-movement-speed:range",
+        "value:effect:windrunner_tailwind:passive:maximum-movement-speed:duration",
+        "value:effect:windrunner_tailwind:passive:maximum-movement-speed:magnitude",
+        "value:effect:windrunner_tailwind:passive:maximum-movement-speed:mana",
+        "value:effect:windrunner_tailwind:passive:maximum-movement-speed:cooldown",
+        "value:effect:windrunner_tailwind:passive:maximum-movement-speed:delay"
+      ],
+      "activationId": "activation:21:windrunner_tailwind"
+    },
+    {
+      "effectId": "windrunner_tailwind:mobility:ability-cast-tailwind-stack",
+      "heroId": "21",
+      "abilityId": "ability:21:windrunner_tailwind",
+      "type": "mobility",
+      "subtype": "ability-cast-tailwind-stack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack:range",
+          "ownerId": "effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack:duration",
+          "ownerId": "effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack",
+          "field": "duration",
+          "state": "known",
+          "value": 2.5
+        },
+        "magnitude": {
+          "id": "value:effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack:magnitude",
+          "ownerId": "effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack:mana",
+          "ownerId": "effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack:cooldown",
+          "ownerId": "effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack:delay",
+          "ownerId": "effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "tailwindAbilityCastStackActive"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "windrunner_tailwind"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack",
+      "legacyEffectId": "windrunner_tailwind:mobility:ability-cast-tailwind-stack",
+      "order": 9,
+      "legacyAbilityId": "windrunner_tailwind",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:windrunner_tailwind:mobility:ability-cast-tailwind-stack:0"
+      ],
+      "valueIds": [
+        "value:effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack:range",
+        "value:effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack:duration",
+        "value:effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack:magnitude",
+        "value:effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack:mana",
+        "value:effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack:cooldown",
+        "value:effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack:delay"
+      ],
+      "activationId": "activation:21:windrunner_tailwind"
+    },
+    {
+      "effectId": "windrunner_tailwind:modifier:scepter-attack-trigger-and-duration",
+      "heroId": "21",
+      "abilityId": "ability:21:windrunner_tailwind",
+      "type": "modifier",
+      "subtype": "scepter-attack-trigger-and-duration",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration:range",
+          "ownerId": "effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration:duration",
+          "ownerId": "effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration:magnitude",
+          "ownerId": "effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration:mana",
+          "ownerId": "effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration:cooldown",
+          "ownerId": "effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration:delay",
+          "ownerId": "effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "windrunner_tailwind"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration",
+      "legacyEffectId": "windrunner_tailwind:modifier:scepter-attack-trigger-and-duration",
+      "order": 10,
+      "legacyAbilityId": "windrunner_tailwind",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration:range",
+        "value:effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration:duration",
+        "value:effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration:magnitude",
+        "value:effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration:mana",
+        "value:effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration:cooldown",
+        "value:effect:windrunner_tailwind:modifier:scepter-attack-trigger-and-duration:delay"
+      ],
+      "activationId": "activation:21:windrunner_tailwind"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:windrunner_shackleshot:control:latched-shackle:0",
+      "ownerId": "effect:windrunner_shackleshot:control:latched-shackle",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "shackleLatchFound"
+      }
+    },
+    {
+      "id": "condition:windrunner_shackleshot:control:failed-latch-stun:0",
+      "ownerId": "effect:windrunner_shackleshot:control:failed-latch-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "shackleLatchMissing"
+      }
+    },
+    {
+      "id": "condition:windrunner_powershot:damage:fully-charged-first-hit:0",
+      "ownerId": "effect:windrunner_powershot:damage:fully-charged-first-hit",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "powershotFullyCharged"
+      }
+    },
+    {
+      "id": "condition:windrunner_powershot:damage:fully-charged-first-hit:1",
+      "ownerId": "effect:windrunner_powershot:damage:fully-charged-first-hit",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "powershotFirstTarget"
+      }
+    },
+    {
+      "id": "condition:windrunner_powershot:slow:first-hit-movement-slow:0",
+      "ownerId": "effect:windrunner_powershot:slow:first-hit-movement-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "powershotFullyCharged"
+      }
+    },
+    {
+      "id": "condition:windrunner_powershot:slow:first-hit-movement-slow:1",
+      "ownerId": "effect:windrunner_powershot:slow:first-hit-movement-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "powershotFirstTarget"
+      }
+    },
+    {
+      "id": "condition:windrunner_tailwind:mobility:ability-cast-tailwind-stack:0",
+      "ownerId": "effect:windrunner_tailwind:mobility:ability-cast-tailwind-stack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "tailwindAbilityCastStackActive"
+      }
+    }
+  ]
+}

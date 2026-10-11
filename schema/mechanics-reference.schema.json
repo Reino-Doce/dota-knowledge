@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/mechanics-reference.schema.json",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "entities"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "entities": {
+      "type": "object",
+      "required": [
+        "modifiers",
+        "rules",
+        "units",
+        "upgrades"
+      ],
+      "properties": {
+        "modifiers": {
+          "type": "array",
+          "items": {
+            "$ref": "core.schema.json#/$defs/modifier"
+          }
+        },
+        "rules": {
+          "type": "array",
+          "items": {
+            "$ref": "core.schema.json#/$defs/rule"
+          }
+        },
+        "units": {
+          "type": "array",
+          "items": {
+            "$ref": "core.schema.json#/$defs/unit"
+          }
+        },
+        "upgrades": {
+          "type": "array",
+          "items": {
+            "$ref": "core.schema.json#/$defs/upgrade"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

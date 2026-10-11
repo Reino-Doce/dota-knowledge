@@ -1,0 +1,2200 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus",
+      "heroId": "135",
+      "abilityId": "ability:135:dawnbreaker_fire_wreath",
+      "type": "damage",
+      "subtype": "starbreaker-single-attack-bonus",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:range",
+          "ownerId": "effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:duration",
+          "ownerId": "effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:magnitude",
+          "ownerId": "effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            25,
+            40,
+            55,
+            70
+          ]
+        },
+        "mana": {
+          "id": "value:effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:mana",
+          "ownerId": "effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus",
+          "field": "mana",
+          "state": "known",
+          "value": 110
+        },
+        "cooldown": {
+          "id": "value:effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:cooldown",
+          "ownerId": "effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            17,
+            15,
+            13,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:delay",
+          "ownerId": "effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:damageType",
+          "ownerId": "effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "dawnbreakerHammerAvailable",
+          "starbreakerAttackHits"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dawnbreaker_fire_wreath"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus",
+      "legacyEffectId": "dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus",
+      "order": 0,
+      "legacyAbilityId": "dawnbreaker_fire_wreath",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:0",
+        "condition:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:1"
+      ],
+      "valueIds": [
+        "value:effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:range",
+        "value:effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:duration",
+        "value:effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:magnitude",
+        "value:effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:mana",
+        "value:effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:cooldown",
+        "value:effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:delay",
+        "value:effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:damageType"
+      ],
+      "activationId": "activation:135:dawnbreaker_fire_wreath"
+    },
+    {
+      "effectId": "dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun",
+      "heroId": "135",
+      "abilityId": "ability:135:dawnbreaker_fire_wreath",
+      "type": "control",
+      "subtype": "starbreaker-final-smash-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun:range",
+          "ownerId": "effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun:duration",
+          "ownerId": "effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            0.6,
+            0.8,
+            1,
+            1.2
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun:magnitude",
+          "ownerId": "effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun:mana",
+          "ownerId": "effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun",
+          "field": "mana",
+          "state": "known",
+          "value": 110
+        },
+        "cooldown": {
+          "id": "value:effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun:cooldown",
+          "ownerId": "effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            17,
+            15,
+            13,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun:delay",
+          "ownerId": "effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "dawnbreakerHammerAvailable",
+          "starbreakerFinalSmashHits"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "dawnbreaker_fire_wreath"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun",
+      "legacyEffectId": "dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun",
+      "order": 1,
+      "legacyAbilityId": "dawnbreaker_fire_wreath",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun:0",
+        "condition:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun:1"
+      ],
+      "valueIds": [
+        "value:effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun:range",
+        "value:effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun:duration",
+        "value:effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun:magnitude",
+        "value:effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun:mana",
+        "value:effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun:cooldown",
+        "value:effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun:delay"
+      ],
+      "activationId": "activation:135:dawnbreaker_fire_wreath"
+    },
+    {
+      "effectId": "dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity",
+      "heroId": "135",
+      "abilityId": "ability:135:dawnbreaker_fire_wreath",
+      "type": "save",
+      "subtype": "shard-starbreaker-debuff-immunity",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity:range",
+          "ownerId": "effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity:duration",
+          "ownerId": "effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity:magnitude",
+          "ownerId": "effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity:mana",
+          "ownerId": "effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity:cooldown",
+          "ownerId": "effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity:delay",
+          "ownerId": "effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "starbreakerComboActive"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "grantsDebuffImmunity": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "dawnbreaker_fire_wreath:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity",
+      "legacyEffectId": "dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity",
+      "order": 2,
+      "legacyAbilityId": "dawnbreaker_fire_wreath",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity:0"
+      ],
+      "valueIds": [
+        "value:effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity:range",
+        "value:effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity:duration",
+        "value:effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity:magnitude",
+        "value:effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity:mana",
+        "value:effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity:cooldown",
+        "value:effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity:delay"
+      ],
+      "activationId": "activation:135:dawnbreaker_fire_wreath"
+    },
+    {
+      "effectId": "dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit",
+      "heroId": "135",
+      "abilityId": "ability:135:dawnbreaker_celestial_hammer",
+      "type": "damage",
+      "subtype": "celestial-hammer-single-pass-hit",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit:range",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit",
+          "field": "range",
+          "state": "known",
+          "value": [
+            700,
+            900,
+            1100,
+            1300
+          ]
+        },
+        "duration": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit:duration",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit:magnitude",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            50,
+            80,
+            110,
+            140
+          ]
+        },
+        "mana": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit:mana",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit:cooldown",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit:delay",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit:damageType",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "celestialHammerHits"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dawnbreaker_celestial_hammer"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit",
+      "legacyEffectId": "dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit",
+      "order": 3,
+      "legacyAbilityId": "dawnbreaker_celestial_hammer",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit:0"
+      ],
+      "valueIds": [
+        "value:effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit:range",
+        "value:effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit:duration",
+        "value:effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit:magnitude",
+        "value:effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit:mana",
+        "value:effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit:cooldown",
+        "value:effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit:delay",
+        "value:effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit:damageType"
+      ],
+      "activationId": "activation:135:dawnbreaker_celestial_hammer"
+    },
+    {
+      "effectId": "dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate",
+      "heroId": "135",
+      "abilityId": "ability:135:dawnbreaker_celestial_hammer",
+      "type": "damage",
+      "subtype": "celestial-fire-trail-damage-rate",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate:range",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate:duration",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate:magnitude",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            20,
+            30,
+            40,
+            50
+          ]
+        },
+        "mana": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate:mana",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate:cooldown",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate:delay",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate:damageType",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideCelestialFireTrail"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dawnbreaker_celestial_hammer"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate",
+      "legacyEffectId": "dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate",
+      "order": 4,
+      "legacyAbilityId": "dawnbreaker_celestial_hammer",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate:0"
+      ],
+      "valueIds": [
+        "value:effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate:range",
+        "value:effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate:duration",
+        "value:effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate:magnitude",
+        "value:effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate:mana",
+        "value:effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate:cooldown",
+        "value:effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate:delay",
+        "value:effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate:damageType"
+      ],
+      "activationId": "activation:135:dawnbreaker_celestial_hammer"
+    },
+    {
+      "effectId": "dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow",
+      "heroId": "135",
+      "abilityId": "ability:135:dawnbreaker_celestial_hammer",
+      "type": "slow",
+      "subtype": "celestial-fire-trail-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow:range",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow:duration",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow:magnitude",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            24,
+            28,
+            32,
+            36
+          ]
+        },
+        "mana": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow:mana",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow:cooldown",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow:delay",
+          "ownerId": "effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideCelestialFireTrail"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "dawnbreaker_celestial_hammer"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow",
+      "legacyEffectId": "dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow",
+      "order": 5,
+      "legacyAbilityId": "dawnbreaker_celestial_hammer",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow:range",
+        "value:effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow:duration",
+        "value:effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow:magnitude",
+        "value:effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow:mana",
+        "value:effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow:cooldown",
+        "value:effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow:delay"
+      ],
+      "activationId": "activation:135:dawnbreaker_celestial_hammer"
+    },
+    {
+      "effectId": "dawnbreaker_converge:mobility:converge-existing-hammer",
+      "heroId": "135",
+      "abilityId": "ability:135:dawnbreaker_converge",
+      "type": "mobility",
+      "subtype": "converge-existing-hammer",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dawnbreaker_converge:mobility:converge-existing-hammer:range",
+          "ownerId": "effect:dawnbreaker_converge:mobility:converge-existing-hammer",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dawnbreaker_converge:mobility:converge-existing-hammer:duration",
+          "ownerId": "effect:dawnbreaker_converge:mobility:converge-existing-hammer",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dawnbreaker_converge:mobility:converge-existing-hammer:magnitude",
+          "ownerId": "effect:dawnbreaker_converge:mobility:converge-existing-hammer",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dawnbreaker_converge:mobility:converge-existing-hammer:mana",
+          "ownerId": "effect:dawnbreaker_converge:mobility:converge-existing-hammer",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dawnbreaker_converge:mobility:converge-existing-hammer:cooldown",
+          "ownerId": "effect:dawnbreaker_converge:mobility:converge-existing-hammer",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0.25
+        },
+        "delay": {
+          "id": "value:effect:dawnbreaker_converge:mobility:converge-existing-hammer:delay",
+          "ownerId": "effect:dawnbreaker_converge:mobility:converge-existing-hammer",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "celestialHammerDeployed"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dawnbreaker_converge"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dawnbreaker_converge:mobility:converge-existing-hammer",
+      "legacyEffectId": "dawnbreaker_converge:mobility:converge-existing-hammer",
+      "order": 6,
+      "legacyAbilityId": "dawnbreaker_converge",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dawnbreaker_converge:mobility:converge-existing-hammer:0"
+      ],
+      "valueIds": [
+        "value:effect:dawnbreaker_converge:mobility:converge-existing-hammer:range",
+        "value:effect:dawnbreaker_converge:mobility:converge-existing-hammer:duration",
+        "value:effect:dawnbreaker_converge:mobility:converge-existing-hammer:magnitude",
+        "value:effect:dawnbreaker_converge:mobility:converge-existing-hammer:mana",
+        "value:effect:dawnbreaker_converge:mobility:converge-existing-hammer:cooldown",
+        "value:effect:dawnbreaker_converge:mobility:converge-existing-hammer:delay"
+      ],
+      "activationId": "activation:135:dawnbreaker_converge"
+    },
+    {
+      "effectId": "dawnbreaker_luminosity:passive:luminosity-new-attack-counter",
+      "heroId": "135",
+      "abilityId": "ability:135:dawnbreaker_luminosity",
+      "type": "passive",
+      "subtype": "luminosity-new-attack-counter",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter:range",
+          "ownerId": "effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter:duration",
+          "ownerId": "effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter:magnitude",
+          "ownerId": "effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter",
+          "field": "magnitude",
+          "state": "known",
+          "value": 3
+        },
+        "mana": {
+          "id": "value:effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter:mana",
+          "ownerId": "effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter:cooldown",
+          "ownerId": "effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter:delay",
+          "ownerId": "effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "luminosityEligibleAttackHits"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dawnbreaker_luminosity:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter",
+      "legacyEffectId": "dawnbreaker_luminosity:passive:luminosity-new-attack-counter",
+      "order": 7,
+      "legacyAbilityId": "dawnbreaker_luminosity",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dawnbreaker_luminosity:passive:luminosity-new-attack-counter:0"
+      ],
+      "valueIds": [
+        "value:effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter:range",
+        "value:effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter:duration",
+        "value:effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter:magnitude",
+        "value:effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter:mana",
+        "value:effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter:cooldown",
+        "value:effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter:delay"
+      ],
+      "activationId": "activation:135:dawnbreaker_luminosity"
+    },
+    {
+      "effectId": "dawnbreaker_luminosity:heal:luminosity-damage-derived-healing",
+      "heroId": "135",
+      "abilityId": "ability:135:dawnbreaker_luminosity",
+      "type": "heal",
+      "subtype": "luminosity-damage-derived-healing",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing:range",
+          "ownerId": "effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing:duration",
+          "ownerId": "effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing:magnitude",
+          "ownerId": "effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing:mana",
+          "ownerId": "effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing:cooldown",
+          "ownerId": "effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing:delay",
+          "ownerId": "effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "luminosityProcReady",
+          "luminosityAttackDealsDamage"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "dawnbreaker_luminosity:passive"
+      },
+      "vulnerability": {
+        "breakable": null
+      },
+      "exceptions": [],
+      "id": "effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing",
+      "legacyEffectId": "dawnbreaker_luminosity:heal:luminosity-damage-derived-healing",
+      "order": 8,
+      "legacyAbilityId": "dawnbreaker_luminosity",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing:0",
+        "condition:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing:1"
+      ],
+      "valueIds": [
+        "value:effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing:range",
+        "value:effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing:duration",
+        "value:effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing:magnitude",
+        "value:effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing:mana",
+        "value:effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing:cooldown",
+        "value:effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing:delay"
+      ],
+      "activationId": "activation:135:dawnbreaker_luminosity"
+    },
+    {
+      "effectId": "dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling",
+      "heroId": "135",
+      "abilityId": "ability:135:dawnbreaker_break_of_dawn",
+      "type": "modifier",
+      "subtype": "daytime-damage-and-vision-scaling",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling:range",
+          "ownerId": "effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling:duration",
+          "ownerId": "effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling:magnitude",
+          "ownerId": "effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling:mana",
+          "ownerId": "effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling:cooldown",
+          "ownerId": "effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling:delay",
+          "ownerId": "effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "daylightActive"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dawnbreaker_break_of_dawn:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling",
+      "legacyEffectId": "dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling",
+      "order": 9,
+      "legacyAbilityId": "dawnbreaker_break_of_dawn",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling:0"
+      ],
+      "valueIds": [
+        "value:effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling:range",
+        "value:effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling:duration",
+        "value:effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling:magnitude",
+        "value:effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling:mana",
+        "value:effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling:cooldown",
+        "value:effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling:delay"
+      ],
+      "activationId": "activation:135:dawnbreaker_break_of_dawn"
+    },
+    {
+      "effectId": "dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse",
+      "heroId": "135",
+      "abilityId": "ability:135:dawnbreaker_solar_guardian",
+      "type": "heal",
+      "subtype": "solar-guardian-single-healing-pulse",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:range",
+          "ownerId": "effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:duration",
+          "ownerId": "effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:magnitude",
+          "ownerId": "effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            45,
+            70,
+            95
+          ]
+        },
+        "mana": {
+          "id": "value:effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:mana",
+          "ownerId": "effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            200,
+            250
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:cooldown",
+          "ownerId": "effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            110,
+            100,
+            90
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:delay",
+          "ownerId": "effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "guardianValidAlliedLanding",
+          "channelMaintained",
+          "allyInsideGuardianArea"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": true
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "dawnbreaker_solar_guardian"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse",
+      "legacyEffectId": "dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse",
+      "order": 10,
+      "legacyAbilityId": "dawnbreaker_solar_guardian",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:0",
+        "condition:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:1",
+        "condition:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:2"
+      ],
+      "valueIds": [
+        "value:effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:range",
+        "value:effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:duration",
+        "value:effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:magnitude",
+        "value:effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:mana",
+        "value:effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:cooldown",
+        "value:effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:delay"
+      ],
+      "activationId": "activation:135:dawnbreaker_solar_guardian"
+    },
+    {
+      "effectId": "dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse",
+      "heroId": "135",
+      "abilityId": "ability:135:dawnbreaker_solar_guardian",
+      "type": "damage",
+      "subtype": "solar-guardian-single-damage-pulse",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:range",
+          "ownerId": "effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:duration",
+          "ownerId": "effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:magnitude",
+          "ownerId": "effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            30,
+            50,
+            70
+          ]
+        },
+        "mana": {
+          "id": "value:effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:mana",
+          "ownerId": "effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            200,
+            250
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:cooldown",
+          "ownerId": "effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            110,
+            100,
+            90
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:delay",
+          "ownerId": "effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:damageType",
+          "ownerId": "effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "guardianValidAlliedLanding",
+          "channelMaintained",
+          "enemyInsideGuardianArea"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": true
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dawnbreaker_solar_guardian"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse",
+      "legacyEffectId": "dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse",
+      "order": 11,
+      "legacyAbilityId": "dawnbreaker_solar_guardian",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:0",
+        "condition:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:1",
+        "condition:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:2"
+      ],
+      "valueIds": [
+        "value:effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:range",
+        "value:effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:duration",
+        "value:effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:magnitude",
+        "value:effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:mana",
+        "value:effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:cooldown",
+        "value:effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:delay",
+        "value:effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:damageType"
+      ],
+      "activationId": "activation:135:dawnbreaker_solar_guardian"
+    },
+    {
+      "effectId": "dawnbreaker_solar_guardian:control:solar-guardian-landing-stun",
+      "heroId": "135",
+      "abilityId": "ability:135:dawnbreaker_solar_guardian",
+      "type": "control",
+      "subtype": "solar-guardian-landing-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:range",
+          "ownerId": "effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:duration",
+          "ownerId": "effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.2,
+            1.4,
+            1.6
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:magnitude",
+          "ownerId": "effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:mana",
+          "ownerId": "effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            200,
+            250
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:cooldown",
+          "ownerId": "effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            110,
+            100,
+            90
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:delay",
+          "ownerId": "effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "guardianValidAlliedLanding",
+          "channelCompleted",
+          "enemyAtGuardianLanding"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": true
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "dawnbreaker_solar_guardian"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun",
+      "legacyEffectId": "dawnbreaker_solar_guardian:control:solar-guardian-landing-stun",
+      "order": 12,
+      "legacyAbilityId": "dawnbreaker_solar_guardian",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:0",
+        "condition:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:1",
+        "condition:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:2"
+      ],
+      "valueIds": [
+        "value:effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:range",
+        "value:effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:duration",
+        "value:effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:magnitude",
+        "value:effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:mana",
+        "value:effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:cooldown",
+        "value:effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:delay"
+      ],
+      "activationId": "activation:135:dawnbreaker_solar_guardian"
+    },
+    {
+      "effectId": "dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura",
+      "heroId": "135",
+      "abilityId": "ability:135:dawnbreaker_solar_guardian",
+      "type": "modifier",
+      "subtype": "scepter-post-landing-guardian-aura",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura:range",
+          "ownerId": "effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura:duration",
+          "ownerId": "effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura:magnitude",
+          "ownerId": "effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura:mana",
+          "ownerId": "effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura:cooldown",
+          "ownerId": "effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura:delay",
+          "ownerId": "effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "guardianLandingCompleted"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dawnbreaker_solar_guardian:passive"
+      },
+      "vulnerability": {
+        "channel": true
+      },
+      "exceptions": [],
+      "id": "effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura",
+      "legacyEffectId": "dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura",
+      "order": 13,
+      "legacyAbilityId": "dawnbreaker_solar_guardian",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura:0"
+      ],
+      "valueIds": [
+        "value:effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura:range",
+        "value:effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura:duration",
+        "value:effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura:magnitude",
+        "value:effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura:mana",
+        "value:effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura:cooldown",
+        "value:effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura:delay"
+      ],
+      "activationId": "activation:135:dawnbreaker_solar_guardian"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:0",
+      "ownerId": "effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "dawnbreakerHammerAvailable"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus:1",
+      "ownerId": "effect:dawnbreaker_fire_wreath:damage:starbreaker-single-attack-bonus",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "starbreakerAttackHits"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun:0",
+      "ownerId": "effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "dawnbreakerHammerAvailable"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun:1",
+      "ownerId": "effect:dawnbreaker_fire_wreath:control:starbreaker-final-smash-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "starbreakerFinalSmashHits"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity:0",
+      "ownerId": "effect:dawnbreaker_fire_wreath:save:shard-starbreaker-debuff-immunity",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "starbreakerComboActive"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit:0",
+      "ownerId": "effect:dawnbreaker_celestial_hammer:damage:celestial-hammer-single-pass-hit",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "celestialHammerHits"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate:0",
+      "ownerId": "effect:dawnbreaker_celestial_hammer:damage:celestial-fire-trail-damage-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideCelestialFireTrail"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow:0",
+      "ownerId": "effect:dawnbreaker_celestial_hammer:slow:celestial-fire-trail-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideCelestialFireTrail"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_converge:mobility:converge-existing-hammer:0",
+      "ownerId": "effect:dawnbreaker_converge:mobility:converge-existing-hammer",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "celestialHammerDeployed"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_luminosity:passive:luminosity-new-attack-counter:0",
+      "ownerId": "effect:dawnbreaker_luminosity:passive:luminosity-new-attack-counter",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "luminosityEligibleAttackHits"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing:0",
+      "ownerId": "effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "luminosityProcReady"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing:1",
+      "ownerId": "effect:dawnbreaker_luminosity:heal:luminosity-damage-derived-healing",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "luminosityAttackDealsDamage"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling:0",
+      "ownerId": "effect:dawnbreaker_break_of_dawn:modifier:daytime-damage-and-vision-scaling",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "daylightActive"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:0",
+      "ownerId": "effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "guardianValidAlliedLanding"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:1",
+      "ownerId": "effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "channelMaintained"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse:2",
+      "ownerId": "effect:dawnbreaker_solar_guardian:heal:solar-guardian-single-healing-pulse",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyInsideGuardianArea"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:0",
+      "ownerId": "effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "guardianValidAlliedLanding"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:1",
+      "ownerId": "effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "channelMaintained"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse:2",
+      "ownerId": "effect:dawnbreaker_solar_guardian:damage:solar-guardian-single-damage-pulse",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideGuardianArea"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:0",
+      "ownerId": "effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "guardianValidAlliedLanding"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:1",
+      "ownerId": "effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "channelCompleted"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun:2",
+      "ownerId": "effect:dawnbreaker_solar_guardian:control:solar-guardian-landing-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyAtGuardianLanding"
+      }
+    },
+    {
+      "id": "condition:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura:0",
+      "ownerId": "effect:dawnbreaker_solar_guardian:modifier:scepter-post-landing-guardian-aura",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "guardianLandingCompleted"
+      }
+    }
+  ]
+}

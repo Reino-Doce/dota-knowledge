@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/image-descriptor.schema.json",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "id",
+        "entityKind",
+        "entityId",
+        "variant",
+        "state",
+        "path",
+        "width",
+        "height",
+        "mediaType",
+        "bytes",
+        "sha256"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "entityKind": {
+          "enum": [
+            "hero",
+            "ability",
+            "item"
+          ]
+        },
+        "entityId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "variant": {
+          "type": "string",
+          "minLength": 1
+        },
+        "state": {
+          "const": "available"
+        },
+        "path": {
+          "type": "string",
+          "maxLength": 240,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*(?:/[A-Za-z0-9][A-Za-z0-9._-]*)*$"
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "mediaType": {
+          "enum": [
+            "image/png",
+            "image/jpeg",
+            "image/webp",
+            "image/avif"
+          ]
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "sha256": {
+          "$ref": "core.schema.json#/$defs/hash"
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "required": [
+        "id",
+        "entityKind",
+        "entityId",
+        "variant",
+        "state",
+        "reason"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "entityKind": {
+          "enum": [
+            "hero",
+            "ability",
+            "item"
+          ]
+        },
+        "entityId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "variant": {
+          "type": "string",
+          "minLength": 1
+        },
+        "state": {
+          "const": "unavailable"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    }
+  ]
+}

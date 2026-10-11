@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/canonical-manifest.schema.json",
+  "title": "Canonical knowledge source manifest",
+  "description": "Generation metadata plus a reconciliation inventory of canonical source and compiled artifacts.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "version",
+    "createdAt",
+    "generatedAt",
+    "build",
+    "patchLabel",
+    "compilerVersion",
+    "sourceIdentities",
+    "inputSignature",
+    "sourceFiles"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "version": {
+      "$ref": "core.schema.json#/$defs/version"
+    },
+    "createdAt": {
+      "$ref": "core.schema.json#/$defs/timestamp"
+    },
+    "generatedAt": {
+      "$ref": "core.schema.json#/$defs/timestamp"
+    },
+    "build": {
+      "$ref": "core.schema.json#/$defs/buildIdentity"
+    },
+    "patchLabel": {
+      "$ref": "core.schema.json#/$defs/stateValue"
+    },
+    "extractorVersion": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "decoderVersion": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reviewVersion": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "compilerVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceIdentities": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "sourceCompatibility": {
+      "type": "object"
+    },
+    "coverage": {
+      "type": "object"
+    },
+    "inputSignature": {
+      "$ref": "core.schema.json#/$defs/hash"
+    },
+    "sourceFiles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/sourceFile"
+      }
+    }
+  },
+  "$defs": {
+    "sourceFile": {
+      "type": "object",
+      "required": [
+        "name",
+        "bytes",
+        "sha256"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sha256": {
+          "$ref": "core.schema.json#/$defs/hash"
+        },
+        "heroId": {
+          "$ref": "core.schema.json#/$defs/heroId"
+        },
+        "heroIds": {
+          "$ref": "core.schema.json#/$defs/heroIdList"
+        },
+        "otherHeroIds": {
+          "$ref": "core.schema.json#/$defs/heroIdList"
+        },
+        "allyHeroIds": {
+          "$ref": "core.schema.json#/$defs/heroIdList"
+        },
+        "opponentHeroIds": {
+          "$ref": "core.schema.json#/$defs/heroIdList"
+        },
+        "cohortIds": {
+          "$ref": "core.schema.json#/$defs/idList"
+        },
+        "kinds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sourceIds": {
+          "$ref": "core.schema.json#/$defs/idList"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}

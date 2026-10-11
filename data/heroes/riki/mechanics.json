@@ -1,0 +1,1537 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "riki_smoke_screen:control:smoke-silence",
+      "heroId": "32",
+      "abilityId": "ability:32:riki_smoke_screen",
+      "type": "control",
+      "subtype": "smoke-silence",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:riki_smoke_screen:control:smoke-silence:range",
+          "ownerId": "effect:riki_smoke_screen:control:smoke-silence",
+          "field": "range",
+          "state": "known",
+          "value": 550
+        },
+        "duration": {
+          "id": "value:effect:riki_smoke_screen:control:smoke-silence:duration",
+          "ownerId": "effect:riki_smoke_screen:control:smoke-silence",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:riki_smoke_screen:control:smoke-silence:magnitude",
+          "ownerId": "effect:riki_smoke_screen:control:smoke-silence",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:riki_smoke_screen:control:smoke-silence:mana",
+          "ownerId": "effect:riki_smoke_screen:control:smoke-silence",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:riki_smoke_screen:control:smoke-silence:cooldown",
+          "ownerId": "effect:riki_smoke_screen:control:smoke-silence",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            15,
+            14,
+            13,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:riki_smoke_screen:control:smoke-silence:delay",
+          "ownerId": "effect:riki_smoke_screen:control:smoke-silence",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyRemainsInsideSmokeScreen"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "casting"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "riki_smoke_screen"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:riki_smoke_screen:control:smoke-silence",
+      "legacyEffectId": "riki_smoke_screen:control:smoke-silence",
+      "order": 0,
+      "legacyAbilityId": "riki_smoke_screen",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:riki_smoke_screen:control:smoke-silence:0"
+      ],
+      "valueIds": [
+        "value:effect:riki_smoke_screen:control:smoke-silence:range",
+        "value:effect:riki_smoke_screen:control:smoke-silence:duration",
+        "value:effect:riki_smoke_screen:control:smoke-silence:magnitude",
+        "value:effect:riki_smoke_screen:control:smoke-silence:mana",
+        "value:effect:riki_smoke_screen:control:smoke-silence:cooldown",
+        "value:effect:riki_smoke_screen:control:smoke-silence:delay"
+      ],
+      "activationId": "activation:32:riki_smoke_screen"
+    },
+    {
+      "effectId": "riki_smoke_screen:modifier:smoke-attack-miss-chance",
+      "heroId": "32",
+      "abilityId": "ability:32:riki_smoke_screen",
+      "type": "modifier",
+      "subtype": "smoke-attack-miss-chance",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:riki_smoke_screen:modifier:smoke-attack-miss-chance:range",
+          "ownerId": "effect:riki_smoke_screen:modifier:smoke-attack-miss-chance",
+          "field": "range",
+          "state": "known",
+          "value": 550
+        },
+        "duration": {
+          "id": "value:effect:riki_smoke_screen:modifier:smoke-attack-miss-chance:duration",
+          "ownerId": "effect:riki_smoke_screen:modifier:smoke-attack-miss-chance",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:riki_smoke_screen:modifier:smoke-attack-miss-chance:magnitude",
+          "ownerId": "effect:riki_smoke_screen:modifier:smoke-attack-miss-chance",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            40,
+            50,
+            60,
+            70
+          ]
+        },
+        "mana": {
+          "id": "value:effect:riki_smoke_screen:modifier:smoke-attack-miss-chance:mana",
+          "ownerId": "effect:riki_smoke_screen:modifier:smoke-attack-miss-chance",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:riki_smoke_screen:modifier:smoke-attack-miss-chance:cooldown",
+          "ownerId": "effect:riki_smoke_screen:modifier:smoke-attack-miss-chance",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            15,
+            14,
+            13,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:riki_smoke_screen:modifier:smoke-attack-miss-chance:delay",
+          "ownerId": "effect:riki_smoke_screen:modifier:smoke-attack-miss-chance",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyRemainsInsideSmokeScreen"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "riki_smoke_screen"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:riki_smoke_screen:modifier:smoke-attack-miss-chance",
+      "legacyEffectId": "riki_smoke_screen:modifier:smoke-attack-miss-chance",
+      "order": 1,
+      "legacyAbilityId": "riki_smoke_screen",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:riki_smoke_screen:modifier:smoke-attack-miss-chance:0"
+      ],
+      "valueIds": [
+        "value:effect:riki_smoke_screen:modifier:smoke-attack-miss-chance:range",
+        "value:effect:riki_smoke_screen:modifier:smoke-attack-miss-chance:duration",
+        "value:effect:riki_smoke_screen:modifier:smoke-attack-miss-chance:magnitude",
+        "value:effect:riki_smoke_screen:modifier:smoke-attack-miss-chance:mana",
+        "value:effect:riki_smoke_screen:modifier:smoke-attack-miss-chance:cooldown",
+        "value:effect:riki_smoke_screen:modifier:smoke-attack-miss-chance:delay"
+      ],
+      "activationId": "activation:32:riki_smoke_screen"
+    },
+    {
+      "effectId": "riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor",
+      "heroId": "32",
+      "abilityId": "ability:32:riki_smoke_screen",
+      "type": "modifier",
+      "subtype": "shard-allied-targeting-denial-and-armor",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor:range",
+          "ownerId": "effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor:duration",
+          "ownerId": "effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor:magnitude",
+          "ownerId": "effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor:mana",
+          "ownerId": "effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor:cooldown",
+          "ownerId": "effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            15,
+            14,
+            13,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor:delay",
+          "ownerId": "effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "riki_smoke_screen"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor",
+      "legacyEffectId": "riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor",
+      "order": 2,
+      "legacyAbilityId": "riki_smoke_screen",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor:range",
+        "value:effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor:duration",
+        "value:effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor:magnitude",
+        "value:effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor:mana",
+        "value:effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor:cooldown",
+        "value:effect:riki_smoke_screen:modifier:shard-allied-targeting-denial-and-armor:delay"
+      ],
+      "activationId": "activation:32:riki_smoke_screen"
+    },
+    {
+      "effectId": "riki_blink_strike:mobility:unit-targeted-blink",
+      "heroId": "32",
+      "abilityId": "ability:32:riki_blink_strike",
+      "type": "mobility",
+      "subtype": "unit-targeted-blink",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:riki_blink_strike:mobility:unit-targeted-blink:range",
+          "ownerId": "effect:riki_blink_strike:mobility:unit-targeted-blink",
+          "field": "range",
+          "state": "known",
+          "value": [
+            600,
+            700,
+            800,
+            900
+          ]
+        },
+        "duration": {
+          "id": "value:effect:riki_blink_strike:mobility:unit-targeted-blink:duration",
+          "ownerId": "effect:riki_blink_strike:mobility:unit-targeted-blink",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:riki_blink_strike:mobility:unit-targeted-blink:magnitude",
+          "ownerId": "effect:riki_blink_strike:mobility:unit-targeted-blink",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:riki_blink_strike:mobility:unit-targeted-blink:mana",
+          "ownerId": "effect:riki_blink_strike:mobility:unit-targeted-blink",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            50,
+            55,
+            60,
+            65
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:riki_blink_strike:mobility:unit-targeted-blink:cooldown",
+          "ownerId": "effect:riki_blink_strike:mobility:unit-targeted-blink",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            13,
+            10,
+            7,
+            4
+          ]
+        },
+        "delay": {
+          "id": "value:effect:riki_blink_strike:mobility:unit-targeted-blink:delay",
+          "ownerId": "effect:riki_blink_strike:mobility:unit-targeted-blink",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "blinkStrikeTargetAvailable"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "riki_blink_strike"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:riki_blink_strike:mobility:unit-targeted-blink",
+      "legacyEffectId": "riki_blink_strike:mobility:unit-targeted-blink",
+      "order": 3,
+      "legacyAbilityId": "riki_blink_strike",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:riki_blink_strike:mobility:unit-targeted-blink:0"
+      ],
+      "valueIds": [
+        "value:effect:riki_blink_strike:mobility:unit-targeted-blink:range",
+        "value:effect:riki_blink_strike:mobility:unit-targeted-blink:duration",
+        "value:effect:riki_blink_strike:mobility:unit-targeted-blink:magnitude",
+        "value:effect:riki_blink_strike:mobility:unit-targeted-blink:mana",
+        "value:effect:riki_blink_strike:mobility:unit-targeted-blink:cooldown",
+        "value:effect:riki_blink_strike:mobility:unit-targeted-blink:delay"
+      ],
+      "activationId": "activation:32:riki_blink_strike"
+    },
+    {
+      "effectId": "riki_blink_strike:damage:enemy-blink-attack",
+      "heroId": "32",
+      "abilityId": "ability:32:riki_blink_strike",
+      "type": "damage",
+      "subtype": "enemy-blink-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:riki_blink_strike:damage:enemy-blink-attack:range",
+          "ownerId": "effect:riki_blink_strike:damage:enemy-blink-attack",
+          "field": "range",
+          "state": "known",
+          "value": [
+            600,
+            700,
+            800,
+            900
+          ]
+        },
+        "duration": {
+          "id": "value:effect:riki_blink_strike:damage:enemy-blink-attack:duration",
+          "ownerId": "effect:riki_blink_strike:damage:enemy-blink-attack",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:riki_blink_strike:damage:enemy-blink-attack:magnitude",
+          "ownerId": "effect:riki_blink_strike:damage:enemy-blink-attack",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:riki_blink_strike:damage:enemy-blink-attack:mana",
+          "ownerId": "effect:riki_blink_strike:damage:enemy-blink-attack",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            50,
+            55,
+            60,
+            65
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:riki_blink_strike:damage:enemy-blink-attack:cooldown",
+          "ownerId": "effect:riki_blink_strike:damage:enemy-blink-attack",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            13,
+            10,
+            7,
+            4
+          ]
+        },
+        "delay": {
+          "id": "value:effect:riki_blink_strike:damage:enemy-blink-attack:delay",
+          "ownerId": "effect:riki_blink_strike:damage:enemy-blink-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:riki_blink_strike:damage:enemy-blink-attack:damageType",
+          "ownerId": "effect:riki_blink_strike:damage:enemy-blink-attack",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "riki_blink_strike"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:riki_blink_strike:damage:enemy-blink-attack",
+      "legacyEffectId": "riki_blink_strike:damage:enemy-blink-attack",
+      "order": 4,
+      "legacyAbilityId": "riki_blink_strike",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:riki_blink_strike:damage:enemy-blink-attack:range",
+        "value:effect:riki_blink_strike:damage:enemy-blink-attack:duration",
+        "value:effect:riki_blink_strike:damage:enemy-blink-attack:magnitude",
+        "value:effect:riki_blink_strike:damage:enemy-blink-attack:mana",
+        "value:effect:riki_blink_strike:damage:enemy-blink-attack:cooldown",
+        "value:effect:riki_blink_strike:damage:enemy-blink-attack:delay",
+        "value:effect:riki_blink_strike:damage:enemy-blink-attack:damageType"
+      ],
+      "activationId": "activation:32:riki_blink_strike"
+    },
+    {
+      "effectId": "riki_blink_strike:slow:enemy-blink-slow",
+      "heroId": "32",
+      "abilityId": "ability:32:riki_blink_strike",
+      "type": "slow",
+      "subtype": "enemy-blink-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:riki_blink_strike:slow:enemy-blink-slow:range",
+          "ownerId": "effect:riki_blink_strike:slow:enemy-blink-slow",
+          "field": "range",
+          "state": "known",
+          "value": [
+            600,
+            700,
+            800,
+            900
+          ]
+        },
+        "duration": {
+          "id": "value:effect:riki_blink_strike:slow:enemy-blink-slow:duration",
+          "ownerId": "effect:riki_blink_strike:slow:enemy-blink-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 0.75
+        },
+        "magnitude": {
+          "id": "value:effect:riki_blink_strike:slow:enemy-blink-slow:magnitude",
+          "ownerId": "effect:riki_blink_strike:slow:enemy-blink-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": 100
+        },
+        "mana": {
+          "id": "value:effect:riki_blink_strike:slow:enemy-blink-slow:mana",
+          "ownerId": "effect:riki_blink_strike:slow:enemy-blink-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            50,
+            55,
+            60,
+            65
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:riki_blink_strike:slow:enemy-blink-slow:cooldown",
+          "ownerId": "effect:riki_blink_strike:slow:enemy-blink-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            13,
+            10,
+            7,
+            4
+          ]
+        },
+        "delay": {
+          "id": "value:effect:riki_blink_strike:slow:enemy-blink-slow:delay",
+          "ownerId": "effect:riki_blink_strike:slow:enemy-blink-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "riki_blink_strike"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:riki_blink_strike:slow:enemy-blink-slow",
+      "legacyEffectId": "riki_blink_strike:slow:enemy-blink-slow",
+      "order": 5,
+      "legacyAbilityId": "riki_blink_strike",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:riki_blink_strike:slow:enemy-blink-slow:range",
+        "value:effect:riki_blink_strike:slow:enemy-blink-slow:duration",
+        "value:effect:riki_blink_strike:slow:enemy-blink-slow:magnitude",
+        "value:effect:riki_blink_strike:slow:enemy-blink-slow:mana",
+        "value:effect:riki_blink_strike:slow:enemy-blink-slow:cooldown",
+        "value:effect:riki_blink_strike:slow:enemy-blink-slow:delay"
+      ],
+      "activationId": "activation:32:riki_blink_strike"
+    },
+    {
+      "effectId": "riki_tricks_of_the_trade:damage:phased-back-attacks",
+      "heroId": "32",
+      "abilityId": "ability:32:riki_tricks_of_the_trade",
+      "type": "damage",
+      "subtype": "phased-back-attacks",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:riki_tricks_of_the_trade:damage:phased-back-attacks:range",
+          "ownerId": "effect:riki_tricks_of_the_trade:damage:phased-back-attacks",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:riki_tricks_of_the_trade:damage:phased-back-attacks:duration",
+          "ownerId": "effect:riki_tricks_of_the_trade:damage:phased-back-attacks",
+          "field": "duration",
+          "state": "known",
+          "value": 2
+        },
+        "magnitude": {
+          "id": "value:effect:riki_tricks_of_the_trade:damage:phased-back-attacks:magnitude",
+          "ownerId": "effect:riki_tricks_of_the_trade:damage:phased-back-attacks",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:riki_tricks_of_the_trade:damage:phased-back-attacks:mana",
+          "ownerId": "effect:riki_tricks_of_the_trade:damage:phased-back-attacks",
+          "field": "mana",
+          "state": "known",
+          "value": 65
+        },
+        "cooldown": {
+          "id": "value:effect:riki_tricks_of_the_trade:damage:phased-back-attacks:cooldown",
+          "ownerId": "effect:riki_tricks_of_the_trade:damage:phased-back-attacks",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            21,
+            18,
+            15,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:riki_tricks_of_the_trade:damage:phased-back-attacks:delay",
+          "ownerId": "effect:riki_tricks_of_the_trade:damage:phased-back-attacks",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:riki_tricks_of_the_trade:damage:phased-back-attacks:damageType",
+          "ownerId": "effect:riki_tricks_of_the_trade:damage:phased-back-attacks",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "tricksEnemyInArea",
+          "channelMaintained"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "riki_tricks_of_the_trade"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:riki_tricks_of_the_trade:damage:phased-back-attacks",
+      "legacyEffectId": "riki_tricks_of_the_trade:damage:phased-back-attacks",
+      "order": 6,
+      "legacyAbilityId": "riki_tricks_of_the_trade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:riki_tricks_of_the_trade:damage:phased-back-attacks:0",
+        "condition:riki_tricks_of_the_trade:damage:phased-back-attacks:1"
+      ],
+      "valueIds": [
+        "value:effect:riki_tricks_of_the_trade:damage:phased-back-attacks:range",
+        "value:effect:riki_tricks_of_the_trade:damage:phased-back-attacks:duration",
+        "value:effect:riki_tricks_of_the_trade:damage:phased-back-attacks:magnitude",
+        "value:effect:riki_tricks_of_the_trade:damage:phased-back-attacks:mana",
+        "value:effect:riki_tricks_of_the_trade:damage:phased-back-attacks:cooldown",
+        "value:effect:riki_tricks_of_the_trade:damage:phased-back-attacks:delay",
+        "value:effect:riki_tricks_of_the_trade:damage:phased-back-attacks:damageType"
+      ],
+      "activationId": "activation:32:riki_tricks_of_the_trade"
+    },
+    {
+      "effectId": "riki_tricks_of_the_trade:modifier:phase-out-state",
+      "heroId": "32",
+      "abilityId": "ability:32:riki_tricks_of_the_trade",
+      "type": "modifier",
+      "subtype": "phase-out-state",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:riki_tricks_of_the_trade:modifier:phase-out-state:range",
+          "ownerId": "effect:riki_tricks_of_the_trade:modifier:phase-out-state",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:riki_tricks_of_the_trade:modifier:phase-out-state:duration",
+          "ownerId": "effect:riki_tricks_of_the_trade:modifier:phase-out-state",
+          "field": "duration",
+          "state": "known",
+          "value": 2
+        },
+        "magnitude": {
+          "id": "value:effect:riki_tricks_of_the_trade:modifier:phase-out-state:magnitude",
+          "ownerId": "effect:riki_tricks_of_the_trade:modifier:phase-out-state",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:riki_tricks_of_the_trade:modifier:phase-out-state:mana",
+          "ownerId": "effect:riki_tricks_of_the_trade:modifier:phase-out-state",
+          "field": "mana",
+          "state": "known",
+          "value": 65
+        },
+        "cooldown": {
+          "id": "value:effect:riki_tricks_of_the_trade:modifier:phase-out-state:cooldown",
+          "ownerId": "effect:riki_tricks_of_the_trade:modifier:phase-out-state",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            21,
+            18,
+            15,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:riki_tricks_of_the_trade:modifier:phase-out-state:delay",
+          "ownerId": "effect:riki_tricks_of_the_trade:modifier:phase-out-state",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "riki_tricks_of_the_trade"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:riki_tricks_of_the_trade:modifier:phase-out-state",
+      "legacyEffectId": "riki_tricks_of_the_trade:modifier:phase-out-state",
+      "order": 7,
+      "legacyAbilityId": "riki_tricks_of_the_trade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:riki_tricks_of_the_trade:modifier:phase-out-state:range",
+        "value:effect:riki_tricks_of_the_trade:modifier:phase-out-state:duration",
+        "value:effect:riki_tricks_of_the_trade:modifier:phase-out-state:magnitude",
+        "value:effect:riki_tricks_of_the_trade:modifier:phase-out-state:mana",
+        "value:effect:riki_tricks_of_the_trade:modifier:phase-out-state:cooldown",
+        "value:effect:riki_tricks_of_the_trade:modifier:phase-out-state:delay"
+      ],
+      "activationId": "activation:32:riki_tricks_of_the_trade"
+    },
+    {
+      "effectId": "riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier",
+      "heroId": "32",
+      "abilityId": "ability:32:riki_tricks_of_the_trade",
+      "type": "modifier",
+      "subtype": "scepter-allied-unit-carrier",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier:range",
+          "ownerId": "effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier:duration",
+          "ownerId": "effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier:magnitude",
+          "ownerId": "effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier:mana",
+          "ownerId": "effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier",
+          "field": "mana",
+          "state": "known",
+          "value": 65
+        },
+        "cooldown": {
+          "id": "value:effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier:cooldown",
+          "ownerId": "effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            21,
+            18,
+            15,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier:delay",
+          "ownerId": "effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "riki_tricks_of_the_trade"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier",
+      "legacyEffectId": "riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier",
+      "order": 8,
+      "legacyAbilityId": "riki_tricks_of_the_trade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier:range",
+        "value:effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier:duration",
+        "value:effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier:magnitude",
+        "value:effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier:mana",
+        "value:effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier:cooldown",
+        "value:effect:riki_tricks_of_the_trade:modifier:scepter-allied-unit-carrier:delay"
+      ],
+      "activationId": "activation:32:riki_tricks_of_the_trade"
+    },
+    {
+      "effectId": "riki_innate_backstab:passive:agility-scaled-rear-attack",
+      "heroId": "32",
+      "abilityId": "ability:32:riki_innate_backstab",
+      "type": "passive",
+      "subtype": "agility-scaled-rear-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:riki_innate_backstab:passive:agility-scaled-rear-attack:range",
+          "ownerId": "effect:riki_innate_backstab:passive:agility-scaled-rear-attack",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:riki_innate_backstab:passive:agility-scaled-rear-attack:duration",
+          "ownerId": "effect:riki_innate_backstab:passive:agility-scaled-rear-attack",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:riki_innate_backstab:passive:agility-scaled-rear-attack:magnitude",
+          "ownerId": "effect:riki_innate_backstab:passive:agility-scaled-rear-attack",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:riki_innate_backstab:passive:agility-scaled-rear-attack:mana",
+          "ownerId": "effect:riki_innate_backstab:passive:agility-scaled-rear-attack",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:riki_innate_backstab:passive:agility-scaled-rear-attack:cooldown",
+          "ownerId": "effect:riki_innate_backstab:passive:agility-scaled-rear-attack",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:riki_innate_backstab:passive:agility-scaled-rear-attack:delay",
+          "ownerId": "effect:riki_innate_backstab:passive:agility-scaled-rear-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:riki_innate_backstab:passive:agility-scaled-rear-attack:damageType",
+          "ownerId": "effect:riki_innate_backstab:passive:agility-scaled-rear-attack",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "rikiAttacksEnemyFromBehind"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "riki_innate_backstab"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:riki_innate_backstab:passive:agility-scaled-rear-attack",
+      "legacyEffectId": "riki_innate_backstab:passive:agility-scaled-rear-attack",
+      "order": 9,
+      "legacyAbilityId": "riki_innate_backstab",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:riki_innate_backstab:passive:agility-scaled-rear-attack:0"
+      ],
+      "valueIds": [
+        "value:effect:riki_innate_backstab:passive:agility-scaled-rear-attack:range",
+        "value:effect:riki_innate_backstab:passive:agility-scaled-rear-attack:duration",
+        "value:effect:riki_innate_backstab:passive:agility-scaled-rear-attack:magnitude",
+        "value:effect:riki_innate_backstab:passive:agility-scaled-rear-attack:mana",
+        "value:effect:riki_innate_backstab:passive:agility-scaled-rear-attack:cooldown",
+        "value:effect:riki_innate_backstab:passive:agility-scaled-rear-attack:delay",
+        "value:effect:riki_innate_backstab:passive:agility-scaled-rear-attack:damageType"
+      ],
+      "activationId": "activation:32:riki_innate_backstab"
+    },
+    {
+      "effectId": "riki_backstab:invisibility:cloak-after-fade",
+      "heroId": "32",
+      "abilityId": "ability:32:riki_backstab",
+      "type": "invisibility",
+      "subtype": "cloak-after-fade",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:riki_backstab:invisibility:cloak-after-fade:range",
+          "ownerId": "effect:riki_backstab:invisibility:cloak-after-fade",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:riki_backstab:invisibility:cloak-after-fade:duration",
+          "ownerId": "effect:riki_backstab:invisibility:cloak-after-fade",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:riki_backstab:invisibility:cloak-after-fade:magnitude",
+          "ownerId": "effect:riki_backstab:invisibility:cloak-after-fade",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:riki_backstab:invisibility:cloak-after-fade:mana",
+          "ownerId": "effect:riki_backstab:invisibility:cloak-after-fade",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:riki_backstab:invisibility:cloak-after-fade:cooldown",
+          "ownerId": "effect:riki_backstab:invisibility:cloak-after-fade",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:riki_backstab:invisibility:cloak-after-fade:delay",
+          "ownerId": "effect:riki_backstab:invisibility:cloak-after-fade",
+          "field": "delay",
+          "state": "known",
+          "value": [
+            4,
+            3,
+            2
+          ]
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "rikiFadeCompleted"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "riki_backstab"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:riki_backstab:invisibility:cloak-after-fade",
+      "legacyEffectId": "riki_backstab:invisibility:cloak-after-fade",
+      "order": 10,
+      "legacyAbilityId": "riki_backstab",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:riki_backstab:invisibility:cloak-after-fade:0"
+      ],
+      "valueIds": [
+        "value:effect:riki_backstab:invisibility:cloak-after-fade:range",
+        "value:effect:riki_backstab:invisibility:cloak-after-fade:duration",
+        "value:effect:riki_backstab:invisibility:cloak-after-fade:magnitude",
+        "value:effect:riki_backstab:invisibility:cloak-after-fade:mana",
+        "value:effect:riki_backstab:invisibility:cloak-after-fade:cooldown",
+        "value:effect:riki_backstab:invisibility:cloak-after-fade:delay"
+      ],
+      "activationId": "activation:32:riki_backstab"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:riki_smoke_screen:control:smoke-silence:0",
+      "ownerId": "effect:riki_smoke_screen:control:smoke-silence",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyRemainsInsideSmokeScreen"
+      }
+    },
+    {
+      "id": "condition:riki_smoke_screen:modifier:smoke-attack-miss-chance:0",
+      "ownerId": "effect:riki_smoke_screen:modifier:smoke-attack-miss-chance",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyRemainsInsideSmokeScreen"
+      }
+    },
+    {
+      "id": "condition:riki_blink_strike:mobility:unit-targeted-blink:0",
+      "ownerId": "effect:riki_blink_strike:mobility:unit-targeted-blink",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "blinkStrikeTargetAvailable"
+      }
+    },
+    {
+      "id": "condition:riki_tricks_of_the_trade:damage:phased-back-attacks:0",
+      "ownerId": "effect:riki_tricks_of_the_trade:damage:phased-back-attacks",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "tricksEnemyInArea"
+      }
+    },
+    {
+      "id": "condition:riki_tricks_of_the_trade:damage:phased-back-attacks:1",
+      "ownerId": "effect:riki_tricks_of_the_trade:damage:phased-back-attacks",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "channelMaintained"
+      }
+    },
+    {
+      "id": "condition:riki_innate_backstab:passive:agility-scaled-rear-attack:0",
+      "ownerId": "effect:riki_innate_backstab:passive:agility-scaled-rear-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "rikiAttacksEnemyFromBehind"
+      }
+    },
+    {
+      "id": "condition:riki_backstab:invisibility:cloak-after-fade:0",
+      "ownerId": "effect:riki_backstab:invisibility:cloak-after-fade",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "rikiFadeCompleted"
+      }
+    }
+  ]
+}

@@ -1,0 +1,3093 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "ringmaster_tame_the_beasts:damage:fully-charged-whip-damage",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_tame_the_beasts",
+      "type": "damage",
+      "subtype": "fully-charged-whip-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:range",
+          "ownerId": "effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:duration",
+          "ownerId": "effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:magnitude",
+          "ownerId": "effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            180,
+            280,
+            380,
+            480
+          ]
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:mana",
+          "ownerId": "effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            105,
+            120,
+            135
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:cooldown",
+          "ownerId": "effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:delay",
+          "ownerId": "effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:damageType",
+          "ownerId": "effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "whipFullyCharged",
+          "enemyInsideWhipRelease"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_tame_the_beasts"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage",
+      "legacyEffectId": "ringmaster_tame_the_beasts:damage:fully-charged-whip-damage",
+      "order": 0,
+      "legacyAbilityId": "ringmaster_tame_the_beasts",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:0",
+        "condition:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:1"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:range",
+        "value:effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:duration",
+        "value:effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:magnitude",
+        "value:effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:mana",
+        "value:effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:cooldown",
+        "value:effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:delay",
+        "value:effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:damageType"
+      ],
+      "activationId": "activation:131:ringmaster_tame_the_beasts"
+    },
+    {
+      "effectId": "ringmaster_tame_the_beasts:control:fully-charged-whip-fear",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_tame_the_beasts",
+      "type": "control",
+      "subtype": "fully-charged-whip-fear",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear:range",
+          "ownerId": "effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear:duration",
+          "ownerId": "effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            0.6,
+            0.8,
+            1,
+            1.2
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear:magnitude",
+          "ownerId": "effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear:mana",
+          "ownerId": "effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            105,
+            120,
+            135
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear:cooldown",
+          "ownerId": "effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear:delay",
+          "ownerId": "effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "whipFullyCharged",
+          "enemyInsideWhipRelease"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_tame_the_beasts"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear",
+      "legacyEffectId": "ringmaster_tame_the_beasts:control:fully-charged-whip-fear",
+      "order": 1,
+      "legacyAbilityId": "ringmaster_tame_the_beasts",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_tame_the_beasts:control:fully-charged-whip-fear:0",
+        "condition:ringmaster_tame_the_beasts:control:fully-charged-whip-fear:1"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear:range",
+        "value:effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear:duration",
+        "value:effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear:magnitude",
+        "value:effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear:mana",
+        "value:effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear:cooldown",
+        "value:effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear:delay"
+      ],
+      "activationId": "activation:131:ringmaster_tame_the_beasts"
+    },
+    {
+      "effectId": "ringmaster_the_box:save:escape-box-ally-untargetability",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_the_box",
+      "type": "save",
+      "subtype": "escape-box-ally-untargetability",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_the_box:save:escape-box-ally-untargetability:range",
+          "ownerId": "effect:ringmaster_the_box:save:escape-box-ally-untargetability",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_the_box:save:escape-box-ally-untargetability:duration",
+          "ownerId": "effect:ringmaster_the_box:save:escape-box-ally-untargetability",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2,
+            2.4,
+            2.8,
+            3.2
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_the_box:save:escape-box-ally-untargetability:magnitude",
+          "ownerId": "effect:ringmaster_the_box:save:escape-box-ally-untargetability",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_the_box:save:escape-box-ally-untargetability:mana",
+          "ownerId": "effect:ringmaster_the_box:save:escape-box-ally-untargetability",
+          "field": "mana",
+          "state": "known",
+          "value": 120
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_the_box:save:escape-box-ally-untargetability:cooldown",
+          "ownerId": "effect:ringmaster_the_box:save:escape-box-ally-untargetability",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            38,
+            32,
+            26,
+            20
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_the_box:save:escape-box-ally-untargetability:delay",
+          "ownerId": "effect:ringmaster_the_box:save:escape-box-ally-untargetability",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_the_box"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ringmaster_the_box:save:escape-box-ally-untargetability",
+      "legacyEffectId": "ringmaster_the_box:save:escape-box-ally-untargetability",
+      "order": 2,
+      "legacyAbilityId": "ringmaster_the_box",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ringmaster_the_box:save:escape-box-ally-untargetability:range",
+        "value:effect:ringmaster_the_box:save:escape-box-ally-untargetability:duration",
+        "value:effect:ringmaster_the_box:save:escape-box-ally-untargetability:magnitude",
+        "value:effect:ringmaster_the_box:save:escape-box-ally-untargetability:mana",
+        "value:effect:ringmaster_the_box:save:escape-box-ally-untargetability:cooldown",
+        "value:effect:ringmaster_the_box:save:escape-box-ally-untargetability:delay"
+      ],
+      "activationId": "activation:131:ringmaster_the_box"
+    },
+    {
+      "effectId": "ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_the_box",
+      "type": "modifier",
+      "subtype": "scepter-box-expiry-burst-and-daggers",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers:range",
+          "ownerId": "effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers:duration",
+          "ownerId": "effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers:magnitude",
+          "ownerId": "effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers:mana",
+          "ownerId": "effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers:cooldown",
+          "ownerId": "effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers:delay",
+          "ownerId": "effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "escapeBoxEnds"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_the_box:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers",
+      "legacyEffectId": "ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers",
+      "order": 3,
+      "legacyAbilityId": "ringmaster_the_box",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers:0"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers:range",
+        "value:effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers:duration",
+        "value:effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers:magnitude",
+        "value:effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers:mana",
+        "value:effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers:cooldown",
+        "value:effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers:delay"
+      ],
+      "activationId": "activation:131:ringmaster_the_box"
+    },
+    {
+      "effectId": "ringmaster_impalement:damage:impalement-initial-hit",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_impalement",
+      "type": "damage",
+      "subtype": "impalement-initial-hit",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_impalement:damage:impalement-initial-hit:range",
+          "ownerId": "effect:ringmaster_impalement:damage:impalement-initial-hit",
+          "field": "range",
+          "state": "known",
+          "value": 2400
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_impalement:damage:impalement-initial-hit:duration",
+          "ownerId": "effect:ringmaster_impalement:damage:impalement-initial-hit",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_impalement:damage:impalement-initial-hit:magnitude",
+          "ownerId": "effect:ringmaster_impalement:damage:impalement-initial-hit",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            20,
+            35,
+            50,
+            65
+          ]
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_impalement:damage:impalement-initial-hit:mana",
+          "ownerId": "effect:ringmaster_impalement:damage:impalement-initial-hit",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_impalement:damage:impalement-initial-hit:cooldown",
+          "ownerId": "effect:ringmaster_impalement:damage:impalement-initial-hit",
+          "field": "cooldown",
+          "state": "known",
+          "value": 1
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_impalement:damage:impalement-initial-hit:delay",
+          "ownerId": "effect:ringmaster_impalement:damage:impalement-initial-hit",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ringmaster_impalement:damage:impalement-initial-hit:damageType",
+          "ownerId": "effect:ringmaster_impalement:damage:impalement-initial-hit",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "impalementChargeAvailable",
+          "impalementProjectileHits"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_impalement"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ringmaster_impalement:damage:impalement-initial-hit",
+      "legacyEffectId": "ringmaster_impalement:damage:impalement-initial-hit",
+      "order": 4,
+      "legacyAbilityId": "ringmaster_impalement",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_impalement:damage:impalement-initial-hit:0",
+        "condition:ringmaster_impalement:damage:impalement-initial-hit:1"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_impalement:damage:impalement-initial-hit:range",
+        "value:effect:ringmaster_impalement:damage:impalement-initial-hit:duration",
+        "value:effect:ringmaster_impalement:damage:impalement-initial-hit:magnitude",
+        "value:effect:ringmaster_impalement:damage:impalement-initial-hit:mana",
+        "value:effect:ringmaster_impalement:damage:impalement-initial-hit:cooldown",
+        "value:effect:ringmaster_impalement:damage:impalement-initial-hit:delay",
+        "value:effect:ringmaster_impalement:damage:impalement-initial-hit:damageType"
+      ],
+      "activationId": "activation:131:ringmaster_impalement"
+    },
+    {
+      "effectId": "ringmaster_impalement:damage:impalement-max-health-bleed",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_impalement",
+      "type": "damage",
+      "subtype": "impalement-max-health-bleed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_impalement:damage:impalement-max-health-bleed:range",
+          "ownerId": "effect:ringmaster_impalement:damage:impalement-max-health-bleed",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_impalement:damage:impalement-max-health-bleed:duration",
+          "ownerId": "effect:ringmaster_impalement:damage:impalement-max-health-bleed",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_impalement:damage:impalement-max-health-bleed:magnitude",
+          "ownerId": "effect:ringmaster_impalement:damage:impalement-max-health-bleed",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_impalement:damage:impalement-max-health-bleed:mana",
+          "ownerId": "effect:ringmaster_impalement:damage:impalement-max-health-bleed",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_impalement:damage:impalement-max-health-bleed:cooldown",
+          "ownerId": "effect:ringmaster_impalement:damage:impalement-max-health-bleed",
+          "field": "cooldown",
+          "state": "known",
+          "value": 1
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_impalement:damage:impalement-max-health-bleed:delay",
+          "ownerId": "effect:ringmaster_impalement:damage:impalement-max-health-bleed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ringmaster_impalement:damage:impalement-max-health-bleed:damageType",
+          "ownerId": "effect:ringmaster_impalement:damage:impalement-max-health-bleed",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "impalementChargeAvailable",
+          "impalementProjectileHits"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_impalement"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ringmaster_impalement:damage:impalement-max-health-bleed",
+      "legacyEffectId": "ringmaster_impalement:damage:impalement-max-health-bleed",
+      "order": 5,
+      "legacyAbilityId": "ringmaster_impalement",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_impalement:damage:impalement-max-health-bleed:0",
+        "condition:ringmaster_impalement:damage:impalement-max-health-bleed:1"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_impalement:damage:impalement-max-health-bleed:range",
+        "value:effect:ringmaster_impalement:damage:impalement-max-health-bleed:duration",
+        "value:effect:ringmaster_impalement:damage:impalement-max-health-bleed:magnitude",
+        "value:effect:ringmaster_impalement:damage:impalement-max-health-bleed:mana",
+        "value:effect:ringmaster_impalement:damage:impalement-max-health-bleed:cooldown",
+        "value:effect:ringmaster_impalement:damage:impalement-max-health-bleed:delay",
+        "value:effect:ringmaster_impalement:damage:impalement-max-health-bleed:damageType"
+      ],
+      "activationId": "activation:131:ringmaster_impalement"
+    },
+    {
+      "effectId": "ringmaster_impalement:slow:impalement-impact-slow",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_impalement",
+      "type": "slow",
+      "subtype": "impalement-impact-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_impalement:slow:impalement-impact-slow:range",
+          "ownerId": "effect:ringmaster_impalement:slow:impalement-impact-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_impalement:slow:impalement-impact-slow:duration",
+          "ownerId": "effect:ringmaster_impalement:slow:impalement-impact-slow",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            0.5,
+            0.6,
+            0.7,
+            0.8
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_impalement:slow:impalement-impact-slow:magnitude",
+          "ownerId": "effect:ringmaster_impalement:slow:impalement-impact-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": 100
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_impalement:slow:impalement-impact-slow:mana",
+          "ownerId": "effect:ringmaster_impalement:slow:impalement-impact-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_impalement:slow:impalement-impact-slow:cooldown",
+          "ownerId": "effect:ringmaster_impalement:slow:impalement-impact-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": 1
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_impalement:slow:impalement-impact-slow:delay",
+          "ownerId": "effect:ringmaster_impalement:slow:impalement-impact-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "impalementChargeAvailable",
+          "impalementProjectileHits"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_impalement"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ringmaster_impalement:slow:impalement-impact-slow",
+      "legacyEffectId": "ringmaster_impalement:slow:impalement-impact-slow",
+      "order": 6,
+      "legacyAbilityId": "ringmaster_impalement",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_impalement:slow:impalement-impact-slow:0",
+        "condition:ringmaster_impalement:slow:impalement-impact-slow:1"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_impalement:slow:impalement-impact-slow:range",
+        "value:effect:ringmaster_impalement:slow:impalement-impact-slow:duration",
+        "value:effect:ringmaster_impalement:slow:impalement-impact-slow:magnitude",
+        "value:effect:ringmaster_impalement:slow:impalement-impact-slow:mana",
+        "value:effect:ringmaster_impalement:slow:impalement-impact-slow:cooldown",
+        "value:effect:ringmaster_impalement:slow:impalement-impact-slow:delay"
+      ],
+      "activationId": "activation:131:ringmaster_impalement"
+    },
+    {
+      "effectId": "ringmaster_spotlight:modifier:shard-spotlight-paid-placement",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_spotlight",
+      "type": "modifier",
+      "subtype": "shard-spotlight-paid-placement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement:range",
+          "ownerId": "effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement",
+          "field": "range",
+          "state": "known",
+          "value": 1500
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement:duration",
+          "ownerId": "effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement",
+          "field": "duration",
+          "state": "known",
+          "value": 8
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement:magnitude",
+          "ownerId": "effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement:mana",
+          "ownerId": "effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement:cooldown",
+          "ownerId": "effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement",
+          "field": "cooldown",
+          "state": "known",
+          "value": 30
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement:delay",
+          "ownerId": "effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_spotlight"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement",
+      "legacyEffectId": "ringmaster_spotlight:modifier:shard-spotlight-paid-placement",
+      "order": 7,
+      "legacyAbilityId": "ringmaster_spotlight",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement:range",
+        "value:effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement:duration",
+        "value:effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement:magnitude",
+        "value:effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement:mana",
+        "value:effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement:cooldown",
+        "value:effect:ringmaster_spotlight:modifier:shard-spotlight-paid-placement:delay"
+      ],
+      "activationId": "activation:131:ringmaster_spotlight"
+    },
+    {
+      "effectId": "ringmaster_spotlight:detection:shard-spotlight-beam-true-sight",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_spotlight",
+      "type": "detection",
+      "subtype": "shard-spotlight-beam-true-sight",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight:range",
+          "ownerId": "effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight:duration",
+          "ownerId": "effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight:magnitude",
+          "ownerId": "effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight:mana",
+          "ownerId": "effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight:cooldown",
+          "ownerId": "effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight:delay",
+          "ownerId": "effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "spotlightEstablished",
+          "enemyInsideSpotlightBeam"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "revealsInvisibility": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_spotlight:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight",
+      "legacyEffectId": "ringmaster_spotlight:detection:shard-spotlight-beam-true-sight",
+      "order": 8,
+      "legacyAbilityId": "ringmaster_spotlight",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight:0",
+        "condition:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight:1"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight:range",
+        "value:effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight:duration",
+        "value:effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight:magnitude",
+        "value:effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight:mana",
+        "value:effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight:cooldown",
+        "value:effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight:delay"
+      ],
+      "activationId": "activation:131:ringmaster_spotlight"
+    },
+    {
+      "effectId": "ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_spotlight",
+      "type": "modifier",
+      "subtype": "shard-spotlight-blind-and-illusion-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage:range",
+          "ownerId": "effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage:duration",
+          "ownerId": "effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage:magnitude",
+          "ownerId": "effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage:mana",
+          "ownerId": "effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage:cooldown",
+          "ownerId": "effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage:delay",
+          "ownerId": "effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "spotlightEstablished",
+          "enemyInsideSpotlightBeam"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_spotlight:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "mechanicsFacets": [
+        "illusions"
+      ],
+      "id": "effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage",
+      "legacyEffectId": "ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage",
+      "order": 9,
+      "legacyAbilityId": "ringmaster_spotlight",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage:0",
+        "condition:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage:1"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage:range",
+        "value:effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage:duration",
+        "value:effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage:magnitude",
+        "value:effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage:mana",
+        "value:effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage:cooldown",
+        "value:effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage:delay"
+      ],
+      "activationId": "activation:131:ringmaster_spotlight"
+    },
+    {
+      "effectId": "ringmaster_wheel:control:wheel-facing-threshold-mesmerize",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_wheel",
+      "type": "control",
+      "subtype": "wheel-facing-threshold-mesmerize",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize:range",
+          "ownerId": "effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize:duration",
+          "ownerId": "effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2.5,
+            2.75,
+            3
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize:magnitude",
+          "ownerId": "effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize:mana",
+          "ownerId": "effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            225,
+            300
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize:cooldown",
+          "ownerId": "effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            90,
+            80,
+            70
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize:delay",
+          "ownerId": "effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyFacesActiveWheelLongEnough"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "none"
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_wheel"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize",
+      "legacyEffectId": "ringmaster_wheel:control:wheel-facing-threshold-mesmerize",
+      "order": 10,
+      "legacyAbilityId": "ringmaster_wheel",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_wheel:control:wheel-facing-threshold-mesmerize:0"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize:range",
+        "value:effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize:duration",
+        "value:effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize:magnitude",
+        "value:effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize:mana",
+        "value:effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize:cooldown",
+        "value:effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize:delay"
+      ],
+      "activationId": "activation:131:ringmaster_wheel"
+    },
+    {
+      "effectId": "ringmaster_wheel:damage:wheel-expiry-explosion",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_wheel",
+      "type": "damage",
+      "subtype": "wheel-expiry-explosion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_wheel:damage:wheel-expiry-explosion:range",
+          "ownerId": "effect:ringmaster_wheel:damage:wheel-expiry-explosion",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_wheel:damage:wheel-expiry-explosion:duration",
+          "ownerId": "effect:ringmaster_wheel:damage:wheel-expiry-explosion",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_wheel:damage:wheel-expiry-explosion:magnitude",
+          "ownerId": "effect:ringmaster_wheel:damage:wheel-expiry-explosion",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            300,
+            450,
+            600
+          ]
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_wheel:damage:wheel-expiry-explosion:mana",
+          "ownerId": "effect:ringmaster_wheel:damage:wheel-expiry-explosion",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            225,
+            300
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_wheel:damage:wheel-expiry-explosion:cooldown",
+          "ownerId": "effect:ringmaster_wheel:damage:wheel-expiry-explosion",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            90,
+            80,
+            70
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_wheel:damage:wheel-expiry-explosion:delay",
+          "ownerId": "effect:ringmaster_wheel:damage:wheel-expiry-explosion",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ringmaster_wheel:damage:wheel-expiry-explosion:damageType",
+          "ownerId": "effect:ringmaster_wheel:damage:wheel-expiry-explosion",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "wheelExplosionOccurs",
+          "enemyInsideWheelExplosion"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_wheel"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ringmaster_wheel:damage:wheel-expiry-explosion",
+      "legacyEffectId": "ringmaster_wheel:damage:wheel-expiry-explosion",
+      "order": 11,
+      "legacyAbilityId": "ringmaster_wheel",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_wheel:damage:wheel-expiry-explosion:0",
+        "condition:ringmaster_wheel:damage:wheel-expiry-explosion:1"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_wheel:damage:wheel-expiry-explosion:range",
+        "value:effect:ringmaster_wheel:damage:wheel-expiry-explosion:duration",
+        "value:effect:ringmaster_wheel:damage:wheel-expiry-explosion:magnitude",
+        "value:effect:ringmaster_wheel:damage:wheel-expiry-explosion:mana",
+        "value:effect:ringmaster_wheel:damage:wheel-expiry-explosion:cooldown",
+        "value:effect:ringmaster_wheel:damage:wheel-expiry-explosion:delay",
+        "value:effect:ringmaster_wheel:damage:wheel-expiry-explosion:damageType"
+      ],
+      "activationId": "activation:131:ringmaster_wheel"
+    },
+    {
+      "effectId": "ringmaster_wheel:slow:active-wheel-area-slow",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_wheel",
+      "type": "slow",
+      "subtype": "active-wheel-area-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_wheel:slow:active-wheel-area-slow:range",
+          "ownerId": "effect:ringmaster_wheel:slow:active-wheel-area-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_wheel:slow:active-wheel-area-slow:duration",
+          "ownerId": "effect:ringmaster_wheel:slow:active-wheel-area-slow",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_wheel:slow:active-wheel-area-slow:magnitude",
+          "ownerId": "effect:ringmaster_wheel:slow:active-wheel-area-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": -50
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_wheel:slow:active-wheel-area-slow:mana",
+          "ownerId": "effect:ringmaster_wheel:slow:active-wheel-area-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            225,
+            300
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_wheel:slow:active-wheel-area-slow:cooldown",
+          "ownerId": "effect:ringmaster_wheel:slow:active-wheel-area-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            90,
+            80,
+            70
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_wheel:slow:active-wheel-area-slow:delay",
+          "ownerId": "effect:ringmaster_wheel:slow:active-wheel-area-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideActiveWheelArea"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_wheel"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ringmaster_wheel:slow:active-wheel-area-slow",
+      "legacyEffectId": "ringmaster_wheel:slow:active-wheel-area-slow",
+      "order": 12,
+      "legacyAbilityId": "ringmaster_wheel",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_wheel:slow:active-wheel-area-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_wheel:slow:active-wheel-area-slow:range",
+        "value:effect:ringmaster_wheel:slow:active-wheel-area-slow:duration",
+        "value:effect:ringmaster_wheel:slow:active-wheel-area-slow:magnitude",
+        "value:effect:ringmaster_wheel:slow:active-wheel-area-slow:mana",
+        "value:effect:ringmaster_wheel:slow:active-wheel-area-slow:cooldown",
+        "value:effect:ringmaster_wheel:slow:active-wheel-area-slow:delay"
+      ],
+      "activationId": "activation:131:ringmaster_wheel"
+    },
+    {
+      "effectId": "ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_dark_carnival_souvenirs",
+      "type": "passive",
+      "subtype": "souvenir-acquisition-and-inventory",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory:range",
+          "ownerId": "effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory:duration",
+          "ownerId": "effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory:magnitude",
+          "ownerId": "effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory:mana",
+          "ownerId": "effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory:cooldown",
+          "ownerId": "effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory:delay",
+          "ownerId": "effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_dark_carnival_souvenirs:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory",
+      "legacyEffectId": "ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory",
+      "order": 13,
+      "legacyAbilityId": "ringmaster_dark_carnival_souvenirs",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory:range",
+        "value:effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory:duration",
+        "value:effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory:magnitude",
+        "value:effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory:mana",
+        "value:effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory:cooldown",
+        "value:effect:ringmaster_dark_carnival_souvenirs:passive:souvenir-acquisition-and-inventory:delay"
+      ],
+      "activationId": "activation:131:ringmaster_dark_carnival_souvenirs"
+    },
+    {
+      "effectId": "ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_funhouse_mirror",
+      "type": "modifier",
+      "subtype": "owned-mirror-souvenir-illusion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:range",
+          "ownerId": "effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:duration",
+          "ownerId": "effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion",
+          "field": "duration",
+          "state": "known",
+          "value": 18
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:magnitude",
+          "ownerId": "effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:mana",
+          "ownerId": "effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:cooldown",
+          "ownerId": "effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion",
+          "field": "cooldown",
+          "state": "known",
+          "value": 3
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:delay",
+          "ownerId": "effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "mirrorSouvenirChargeAvailable",
+          "ownerNotMuted",
+          "sharedSouvenirCooldownReady"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_funhouse_mirror"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion",
+      "legacyEffectId": "ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion",
+      "order": 14,
+      "legacyAbilityId": "ringmaster_funhouse_mirror",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:0",
+        "condition:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:1",
+        "condition:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:2"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:range",
+        "value:effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:duration",
+        "value:effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:magnitude",
+        "value:effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:mana",
+        "value:effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:cooldown",
+        "value:effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:delay"
+      ],
+      "activationId": "activation:131:ringmaster_funhouse_mirror"
+    },
+    {
+      "effectId": "ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_strongman_tonic",
+      "type": "modifier",
+      "subtype": "owned-tonic-temporary-strength",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:range",
+          "ownerId": "effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength",
+          "field": "range",
+          "state": "known",
+          "value": 750
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:duration",
+          "ownerId": "effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength",
+          "field": "duration",
+          "state": "known",
+          "value": 8
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:magnitude",
+          "ownerId": "effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:mana",
+          "ownerId": "effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:cooldown",
+          "ownerId": "effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength",
+          "field": "cooldown",
+          "state": "known",
+          "value": 3
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:delay",
+          "ownerId": "effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "tonicSouvenirChargeAvailable",
+          "ownerNotMuted",
+          "sharedSouvenirCooldownReady"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_strongman_tonic"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength",
+      "legacyEffectId": "ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength",
+      "order": 15,
+      "legacyAbilityId": "ringmaster_strongman_tonic",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:0",
+        "condition:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:1",
+        "condition:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:2"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:range",
+        "value:effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:duration",
+        "value:effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:magnitude",
+        "value:effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:mana",
+        "value:effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:cooldown",
+        "value:effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:delay"
+      ],
+      "activationId": "activation:131:ringmaster_strongman_tonic"
+    },
+    {
+      "effectId": "ringmaster_whoopee_cushion:mobility:owned-cushion-leap",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_whoopee_cushion",
+      "type": "mobility",
+      "subtype": "owned-cushion-leap",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:range",
+          "ownerId": "effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap",
+          "field": "range",
+          "state": "known",
+          "value": 400
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:duration",
+          "ownerId": "effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:magnitude",
+          "ownerId": "effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:mana",
+          "ownerId": "effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:cooldown",
+          "ownerId": "effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap",
+          "field": "cooldown",
+          "state": "known",
+          "value": 3
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:delay",
+          "ownerId": "effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "cushionSouvenirChargeAvailable",
+          "ownerNotMuted",
+          "sharedSouvenirCooldownReady"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_whoopee_cushion"
+      },
+      "vulnerability": {
+        "rootDisabled": true
+      },
+      "exceptions": [],
+      "id": "effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap",
+      "legacyEffectId": "ringmaster_whoopee_cushion:mobility:owned-cushion-leap",
+      "order": 16,
+      "legacyAbilityId": "ringmaster_whoopee_cushion",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:0",
+        "condition:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:1",
+        "condition:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:2"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:range",
+        "value:effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:duration",
+        "value:effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:magnitude",
+        "value:effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:mana",
+        "value:effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:cooldown",
+        "value:effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:delay"
+      ],
+      "activationId": "activation:131:ringmaster_whoopee_cushion"
+    },
+    {
+      "effectId": "ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_whoopee_cushion",
+      "type": "slow",
+      "subtype": "owned-cushion-cloud-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:range",
+          "ownerId": "effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:duration",
+          "ownerId": "effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:magnitude",
+          "ownerId": "effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:mana",
+          "ownerId": "effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:cooldown",
+          "ownerId": "effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": 3
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:delay",
+          "ownerId": "effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "cushionSouvenirChargeAvailable",
+          "ownerNotMuted",
+          "sharedSouvenirCooldownReady",
+          "enemyInsideCushionCloud"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_whoopee_cushion"
+      },
+      "vulnerability": {
+        "rootDisabled": true
+      },
+      "exceptions": [],
+      "id": "effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow",
+      "legacyEffectId": "ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow",
+      "order": 17,
+      "legacyAbilityId": "ringmaster_whoopee_cushion",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:0",
+        "condition:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:1",
+        "condition:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:2",
+        "condition:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:3"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:range",
+        "value:effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:duration",
+        "value:effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:magnitude",
+        "value:effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:mana",
+        "value:effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:cooldown",
+        "value:effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:delay"
+      ],
+      "activationId": "activation:131:ringmaster_whoopee_cushion"
+    },
+    {
+      "effectId": "ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_summon_unicycle",
+      "type": "modifier",
+      "subtype": "owned-unicycle-souvenir-state",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:range",
+          "ownerId": "effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:duration",
+          "ownerId": "effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state",
+          "field": "duration",
+          "state": "known",
+          "value": 10
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:magnitude",
+          "ownerId": "effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:mana",
+          "ownerId": "effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:cooldown",
+          "ownerId": "effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state",
+          "field": "cooldown",
+          "state": "known",
+          "value": 3
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:delay",
+          "ownerId": "effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "unicycleSouvenirChargeAvailable",
+          "ownerNotMuted",
+          "sharedSouvenirCooldownReady"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_summon_unicycle"
+      },
+      "vulnerability": {
+        "rootDisabled": true
+      },
+      "exceptions": [],
+      "id": "effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state",
+      "legacyEffectId": "ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state",
+      "order": 18,
+      "legacyAbilityId": "ringmaster_summon_unicycle",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:0",
+        "condition:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:1",
+        "condition:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:2"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:range",
+        "value:effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:duration",
+        "value:effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:magnitude",
+        "value:effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:mana",
+        "value:effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:cooldown",
+        "value:effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:delay"
+      ],
+      "activationId": "activation:131:ringmaster_summon_unicycle"
+    },
+    {
+      "effectId": "ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion",
+      "heroId": "131",
+      "abilityId": "ability:131:ringmaster_funhouse_mirror",
+      "type": "illusion",
+      "subtype": "owned-mirror-souvenir-illusion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:range",
+          "ownerId": "effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:duration",
+          "ownerId": "effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion",
+          "field": "duration",
+          "state": "known",
+          "value": 18
+        },
+        "magnitude": {
+          "id": "value:effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:magnitude",
+          "ownerId": "effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:mana",
+          "ownerId": "effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:cooldown",
+          "ownerId": "effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion",
+          "field": "cooldown",
+          "state": "known",
+          "value": 3
+        },
+        "delay": {
+          "id": "value:effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:delay",
+          "ownerId": "effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "mirrorSouvenirChargeAvailable",
+          "ownerNotMuted",
+          "sharedSouvenirCooldownReady"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ringmaster_funhouse_mirror",
+        "replaces": [
+          "ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion"
+        ]
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "mechanicsFacets": [
+        "illusions"
+      ],
+      "id": "effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion",
+      "legacyEffectId": "ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion",
+      "order": 19,
+      "legacyAbilityId": "ringmaster_funhouse_mirror",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:0",
+        "condition:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:1",
+        "condition:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:2"
+      ],
+      "valueIds": [
+        "value:effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:range",
+        "value:effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:duration",
+        "value:effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:magnitude",
+        "value:effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:mana",
+        "value:effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:cooldown",
+        "value:effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:delay"
+      ],
+      "activationId": "activation:131:ringmaster_funhouse_mirror"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:0",
+      "ownerId": "effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "whipFullyCharged"
+      }
+    },
+    {
+      "id": "condition:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage:1",
+      "ownerId": "effect:ringmaster_tame_the_beasts:damage:fully-charged-whip-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideWhipRelease"
+      }
+    },
+    {
+      "id": "condition:ringmaster_tame_the_beasts:control:fully-charged-whip-fear:0",
+      "ownerId": "effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "whipFullyCharged"
+      }
+    },
+    {
+      "id": "condition:ringmaster_tame_the_beasts:control:fully-charged-whip-fear:1",
+      "ownerId": "effect:ringmaster_tame_the_beasts:control:fully-charged-whip-fear",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideWhipRelease"
+      }
+    },
+    {
+      "id": "condition:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers:0",
+      "ownerId": "effect:ringmaster_the_box:modifier:scepter-box-expiry-burst-and-daggers",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "escapeBoxEnds"
+      }
+    },
+    {
+      "id": "condition:ringmaster_impalement:damage:impalement-initial-hit:0",
+      "ownerId": "effect:ringmaster_impalement:damage:impalement-initial-hit",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "impalementChargeAvailable"
+      }
+    },
+    {
+      "id": "condition:ringmaster_impalement:damage:impalement-initial-hit:1",
+      "ownerId": "effect:ringmaster_impalement:damage:impalement-initial-hit",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "impalementProjectileHits"
+      }
+    },
+    {
+      "id": "condition:ringmaster_impalement:damage:impalement-max-health-bleed:0",
+      "ownerId": "effect:ringmaster_impalement:damage:impalement-max-health-bleed",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "impalementChargeAvailable"
+      }
+    },
+    {
+      "id": "condition:ringmaster_impalement:damage:impalement-max-health-bleed:1",
+      "ownerId": "effect:ringmaster_impalement:damage:impalement-max-health-bleed",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "impalementProjectileHits"
+      }
+    },
+    {
+      "id": "condition:ringmaster_impalement:slow:impalement-impact-slow:0",
+      "ownerId": "effect:ringmaster_impalement:slow:impalement-impact-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "impalementChargeAvailable"
+      }
+    },
+    {
+      "id": "condition:ringmaster_impalement:slow:impalement-impact-slow:1",
+      "ownerId": "effect:ringmaster_impalement:slow:impalement-impact-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "impalementProjectileHits"
+      }
+    },
+    {
+      "id": "condition:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight:0",
+      "ownerId": "effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "spotlightEstablished"
+      }
+    },
+    {
+      "id": "condition:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight:1",
+      "ownerId": "effect:ringmaster_spotlight:detection:shard-spotlight-beam-true-sight",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideSpotlightBeam"
+      }
+    },
+    {
+      "id": "condition:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage:0",
+      "ownerId": "effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "spotlightEstablished"
+      }
+    },
+    {
+      "id": "condition:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage:1",
+      "ownerId": "effect:ringmaster_spotlight:modifier:shard-spotlight-blind-and-illusion-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideSpotlightBeam"
+      }
+    },
+    {
+      "id": "condition:ringmaster_wheel:control:wheel-facing-threshold-mesmerize:0",
+      "ownerId": "effect:ringmaster_wheel:control:wheel-facing-threshold-mesmerize",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyFacesActiveWheelLongEnough"
+      }
+    },
+    {
+      "id": "condition:ringmaster_wheel:damage:wheel-expiry-explosion:0",
+      "ownerId": "effect:ringmaster_wheel:damage:wheel-expiry-explosion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "wheelExplosionOccurs"
+      }
+    },
+    {
+      "id": "condition:ringmaster_wheel:damage:wheel-expiry-explosion:1",
+      "ownerId": "effect:ringmaster_wheel:damage:wheel-expiry-explosion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideWheelExplosion"
+      }
+    },
+    {
+      "id": "condition:ringmaster_wheel:slow:active-wheel-area-slow:0",
+      "ownerId": "effect:ringmaster_wheel:slow:active-wheel-area-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideActiveWheelArea"
+      }
+    },
+    {
+      "id": "condition:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:0",
+      "ownerId": "effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "mirrorSouvenirChargeAvailable"
+      }
+    },
+    {
+      "id": "condition:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:1",
+      "ownerId": "effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ownerNotMuted"
+      }
+    },
+    {
+      "id": "condition:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion:2",
+      "ownerId": "effect:ringmaster_funhouse_mirror:modifier:owned-mirror-souvenir-illusion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "sharedSouvenirCooldownReady"
+      }
+    },
+    {
+      "id": "condition:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:0",
+      "ownerId": "effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "tonicSouvenirChargeAvailable"
+      }
+    },
+    {
+      "id": "condition:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:1",
+      "ownerId": "effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ownerNotMuted"
+      }
+    },
+    {
+      "id": "condition:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength:2",
+      "ownerId": "effect:ringmaster_strongman_tonic:modifier:owned-tonic-temporary-strength",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "sharedSouvenirCooldownReady"
+      }
+    },
+    {
+      "id": "condition:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:0",
+      "ownerId": "effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "cushionSouvenirChargeAvailable"
+      }
+    },
+    {
+      "id": "condition:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:1",
+      "ownerId": "effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ownerNotMuted"
+      }
+    },
+    {
+      "id": "condition:ringmaster_whoopee_cushion:mobility:owned-cushion-leap:2",
+      "ownerId": "effect:ringmaster_whoopee_cushion:mobility:owned-cushion-leap",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "sharedSouvenirCooldownReady"
+      }
+    },
+    {
+      "id": "condition:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:0",
+      "ownerId": "effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "cushionSouvenirChargeAvailable"
+      }
+    },
+    {
+      "id": "condition:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:1",
+      "ownerId": "effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ownerNotMuted"
+      }
+    },
+    {
+      "id": "condition:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:2",
+      "ownerId": "effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "sharedSouvenirCooldownReady"
+      }
+    },
+    {
+      "id": "condition:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow:3",
+      "ownerId": "effect:ringmaster_whoopee_cushion:slow:owned-cushion-cloud-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideCushionCloud"
+      }
+    },
+    {
+      "id": "condition:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:0",
+      "ownerId": "effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "unicycleSouvenirChargeAvailable"
+      }
+    },
+    {
+      "id": "condition:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:1",
+      "ownerId": "effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ownerNotMuted"
+      }
+    },
+    {
+      "id": "condition:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state:2",
+      "ownerId": "effect:ringmaster_summon_unicycle:modifier:owned-unicycle-souvenir-state",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "sharedSouvenirCooldownReady"
+      }
+    },
+    {
+      "id": "condition:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:0",
+      "ownerId": "effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "mirrorSouvenirChargeAvailable"
+      }
+    },
+    {
+      "id": "condition:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:1",
+      "ownerId": "effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ownerNotMuted"
+      }
+    },
+    {
+      "id": "condition:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion:2",
+      "ownerId": "effect:ringmaster_funhouse_mirror:illusion:owned-mirror-souvenir-illusion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "sharedSouvenirCooldownReady"
+      }
+    }
+  ]
+}

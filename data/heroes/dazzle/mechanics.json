@@ -1,0 +1,3034 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "dazzle_shallow_grave:death-prevention",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_shallow_grave",
+      "type": "save",
+      "subtype": "death-prevention",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_shallow_grave:death-prevention:range",
+          "ownerId": "effect:dazzle_shallow_grave:death-prevention",
+          "field": "range",
+          "state": "known",
+          "value": 900
+        },
+        "duration": {
+          "id": "value:effect:dazzle_shallow_grave:death-prevention:duration",
+          "ownerId": "effect:dazzle_shallow_grave:death-prevention",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            4,
+            4.5,
+            5,
+            5.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_shallow_grave:death-prevention:magnitude",
+          "ownerId": "effect:dazzle_shallow_grave:death-prevention",
+          "field": "magnitude",
+          "state": "known",
+          "value": 1
+        },
+        "mana": {
+          "id": "value:effect:dazzle_shallow_grave:death-prevention:mana",
+          "ownerId": "effect:dazzle_shallow_grave:death-prevention",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_shallow_grave:death-prevention:cooldown",
+          "ownerId": "effect:dazzle_shallow_grave:death-prevention",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            26,
+            22,
+            18
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dazzle_shallow_grave:death-prevention:delay",
+          "ownerId": "effect:dazzle_shallow_grave:death-prevention",
+          "field": "delay",
+          "state": "known",
+          "value": 0.3
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Effect-specific engine exception unverified"
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "physical",
+            "magical",
+            "pure"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_shallow_grave"
+      },
+      "vulnerability": {},
+      "exceptions": [
+        "axe_culling_blade",
+        "timing-before-lethal-damage"
+      ],
+      "id": "effect:dazzle_shallow_grave:death-prevention",
+      "legacyEffectId": "dazzle_shallow_grave:death-prevention",
+      "order": 0,
+      "legacyAbilityId": "dazzle_shallow_grave",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:dazzle_shallow_grave:death-prevention:range",
+        "value:effect:dazzle_shallow_grave:death-prevention:duration",
+        "value:effect:dazzle_shallow_grave:death-prevention:magnitude",
+        "value:effect:dazzle_shallow_grave:death-prevention:mana",
+        "value:effect:dazzle_shallow_grave:death-prevention:cooldown",
+        "value:effect:dazzle_shallow_grave:death-prevention:delay"
+      ],
+      "activationId": "activation:50:dazzle_shallow_grave"
+    },
+    {
+      "effectId": "dazzle_shadow_wave:health-healing",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_shadow_wave",
+      "type": "heal",
+      "subtype": "health-healing",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally",
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_shadow_wave:health-healing:range",
+          "ownerId": "effect:dazzle_shadow_wave:health-healing",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:dazzle_shadow_wave:health-healing:duration",
+          "ownerId": "effect:dazzle_shadow_wave:health-healing",
+          "field": "duration",
+          "state": "known",
+          "value": 0
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_shadow_wave:health-healing:magnitude",
+          "ownerId": "effect:dazzle_shadow_wave:health-healing",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            85,
+            105,
+            125,
+            145
+          ]
+        },
+        "mana": {
+          "id": "value:effect:dazzle_shadow_wave:health-healing:mana",
+          "ownerId": "effect:dazzle_shadow_wave:health-healing",
+          "field": "mana",
+          "state": "known",
+          "value": 90
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_shadow_wave:health-healing:cooldown",
+          "ownerId": "effect:dazzle_shadow_wave:health-healing",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            10,
+            9,
+            8,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dazzle_shadow_wave:health-healing:delay",
+          "ownerId": "effect:dazzle_shadow_wave:health-healing",
+          "field": "delay",
+          "state": "known",
+          "value": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ]
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Effect-specific engine exception unverified"
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_shadow_wave"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dazzle_shadow_wave:health-healing",
+      "legacyEffectId": "dazzle_shadow_wave:health-healing",
+      "order": 1,
+      "legacyAbilityId": "dazzle_shadow_wave",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:dazzle_shadow_wave:health-healing:range",
+        "value:effect:dazzle_shadow_wave:health-healing:duration",
+        "value:effect:dazzle_shadow_wave:health-healing:magnitude",
+        "value:effect:dazzle_shadow_wave:health-healing:mana",
+        "value:effect:dazzle_shadow_wave:health-healing:cooldown",
+        "value:effect:dazzle_shadow_wave:health-healing:delay"
+      ],
+      "activationId": "activation:50:dazzle_shadow_wave"
+    },
+    {
+      "effectId": "dazzle_poison_touch:modifier:poison-touch-paid-cone-selection",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_poison_touch",
+      "type": "modifier",
+      "subtype": "poison-touch-paid-cone-selection",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection:range",
+          "ownerId": "effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection",
+          "field": "range",
+          "state": "known",
+          "value": [
+            500,
+            600,
+            700,
+            800
+          ]
+        },
+        "duration": {
+          "id": "value:effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection:duration",
+          "ownerId": "effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection:magnitude",
+          "ownerId": "effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection:mana",
+          "ownerId": "effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            130,
+            135,
+            140
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection:cooldown",
+          "ownerId": "effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            21,
+            18,
+            15
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection:delay",
+          "ownerId": "effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_poison_touch"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection",
+      "legacyEffectId": "dazzle_poison_touch:modifier:poison-touch-paid-cone-selection",
+      "order": 2,
+      "legacyAbilityId": "dazzle_poison_touch",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection:range",
+        "value:effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection:duration",
+        "value:effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection:magnitude",
+        "value:effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection:mana",
+        "value:effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection:cooldown",
+        "value:effect:dazzle_poison_touch:modifier:poison-touch-paid-cone-selection:delay"
+      ],
+      "activationId": "activation:50:dazzle_poison_touch"
+    },
+    {
+      "effectId": "dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_poison_touch",
+      "type": "damage",
+      "subtype": "poison-touch-established-physical-damage-rate",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate:range",
+          "ownerId": "effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate:duration",
+          "ownerId": "effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate:magnitude",
+          "ownerId": "effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            16,
+            28,
+            40,
+            52
+          ]
+        },
+        "mana": {
+          "id": "value:effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate:mana",
+          "ownerId": "effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate:cooldown",
+          "ownerId": "effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate:delay",
+          "ownerId": "effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate:damageType",
+          "ownerId": "effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "poisonTouchDebuffEstablished"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_poison_touch:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate",
+      "legacyEffectId": "dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate",
+      "order": 3,
+      "legacyAbilityId": "dazzle_poison_touch",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate:0"
+      ],
+      "valueIds": [
+        "value:effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate:range",
+        "value:effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate:duration",
+        "value:effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate:magnitude",
+        "value:effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate:mana",
+        "value:effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate:cooldown",
+        "value:effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate:delay",
+        "value:effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate:damageType"
+      ],
+      "activationId": "activation:50:dazzle_poison_touch"
+    },
+    {
+      "effectId": "dazzle_poison_touch:slow:poison-touch-established-base-slow",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_poison_touch",
+      "type": "slow",
+      "subtype": "poison-touch-established-base-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_poison_touch:slow:poison-touch-established-base-slow:range",
+          "ownerId": "effect:dazzle_poison_touch:slow:poison-touch-established-base-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dazzle_poison_touch:slow:poison-touch-established-base-slow:duration",
+          "ownerId": "effect:dazzle_poison_touch:slow:poison-touch-established-base-slow",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_poison_touch:slow:poison-touch-established-base-slow:magnitude",
+          "ownerId": "effect:dazzle_poison_touch:slow:poison-touch-established-base-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -13,
+            -16,
+            -19,
+            -22
+          ]
+        },
+        "mana": {
+          "id": "value:effect:dazzle_poison_touch:slow:poison-touch-established-base-slow:mana",
+          "ownerId": "effect:dazzle_poison_touch:slow:poison-touch-established-base-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_poison_touch:slow:poison-touch-established-base-slow:cooldown",
+          "ownerId": "effect:dazzle_poison_touch:slow:poison-touch-established-base-slow",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dazzle_poison_touch:slow:poison-touch-established-base-slow:delay",
+          "ownerId": "effect:dazzle_poison_touch:slow:poison-touch-established-base-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "poisonTouchDebuffEstablished"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_poison_touch:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dazzle_poison_touch:slow:poison-touch-established-base-slow",
+      "legacyEffectId": "dazzle_poison_touch:slow:poison-touch-established-base-slow",
+      "order": 4,
+      "legacyAbilityId": "dazzle_poison_touch",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dazzle_poison_touch:slow:poison-touch-established-base-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:dazzle_poison_touch:slow:poison-touch-established-base-slow:range",
+        "value:effect:dazzle_poison_touch:slow:poison-touch-established-base-slow:duration",
+        "value:effect:dazzle_poison_touch:slow:poison-touch-established-base-slow:magnitude",
+        "value:effect:dazzle_poison_touch:slow:poison-touch-established-base-slow:mana",
+        "value:effect:dazzle_poison_touch:slow:poison-touch-established-base-slow:cooldown",
+        "value:effect:dazzle_poison_touch:slow:poison-touch-established-base-slow:delay"
+      ],
+      "activationId": "activation:50:dazzle_poison_touch"
+    },
+    {
+      "effectId": "dazzle_poison_touch:modifier:poison-touch-own-attack-refresh",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_poison_touch",
+      "type": "modifier",
+      "subtype": "poison-touch-own-attack-refresh",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh:range",
+          "ownerId": "effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh:duration",
+          "ownerId": "effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh:magnitude",
+          "ownerId": "effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh:mana",
+          "ownerId": "effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh:cooldown",
+          "ownerId": "effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh:delay",
+          "ownerId": "effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "poisonTouchDebuffEstablished",
+          "dazzleAttackHitsPoisonedEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_poison_touch:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh",
+      "legacyEffectId": "dazzle_poison_touch:modifier:poison-touch-own-attack-refresh",
+      "order": 5,
+      "legacyAbilityId": "dazzle_poison_touch",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh:0",
+        "condition:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh:1"
+      ],
+      "valueIds": [
+        "value:effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh:range",
+        "value:effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh:duration",
+        "value:effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh:magnitude",
+        "value:effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh:mana",
+        "value:effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh:cooldown",
+        "value:effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh:delay"
+      ],
+      "activationId": "activation:50:dazzle_poison_touch"
+    },
+    {
+      "effectId": "dazzle_shallow_grave:save:reviewed-grave-health-floor",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_shallow_grave",
+      "type": "save",
+      "subtype": "reviewed-grave-health-floor",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_shallow_grave:save:reviewed-grave-health-floor:range",
+          "ownerId": "effect:dazzle_shallow_grave:save:reviewed-grave-health-floor",
+          "field": "range",
+          "state": "known",
+          "value": 900
+        },
+        "duration": {
+          "id": "value:effect:dazzle_shallow_grave:save:reviewed-grave-health-floor:duration",
+          "ownerId": "effect:dazzle_shallow_grave:save:reviewed-grave-health-floor",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            4,
+            4.5,
+            5,
+            5.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_shallow_grave:save:reviewed-grave-health-floor:magnitude",
+          "ownerId": "effect:dazzle_shallow_grave:save:reviewed-grave-health-floor",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dazzle_shallow_grave:save:reviewed-grave-health-floor:mana",
+          "ownerId": "effect:dazzle_shallow_grave:save:reviewed-grave-health-floor",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_shallow_grave:save:reviewed-grave-health-floor:cooldown",
+          "ownerId": "effect:dazzle_shallow_grave:save:reviewed-grave-health-floor",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            26,
+            22,
+            18
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dazzle_shallow_grave:save:reviewed-grave-health-floor:delay",
+          "ownerId": "effect:dazzle_shallow_grave:save:reviewed-grave-health-floor",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "none"
+        },
+        "preventsDeath": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_shallow_grave",
+        "replaces": [
+          "dazzle_shallow_grave:death-prevention"
+        ]
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dazzle_shallow_grave:save:reviewed-grave-health-floor",
+      "legacyEffectId": "dazzle_shallow_grave:save:reviewed-grave-health-floor",
+      "order": 6,
+      "legacyAbilityId": "dazzle_shallow_grave",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:dazzle_shallow_grave:save:reviewed-grave-health-floor:range",
+        "value:effect:dazzle_shallow_grave:save:reviewed-grave-health-floor:duration",
+        "value:effect:dazzle_shallow_grave:save:reviewed-grave-health-floor:magnitude",
+        "value:effect:dazzle_shallow_grave:save:reviewed-grave-health-floor:mana",
+        "value:effect:dazzle_shallow_grave:save:reviewed-grave-health-floor:cooldown",
+        "value:effect:dazzle_shallow_grave:save:reviewed-grave-health-floor:delay"
+      ],
+      "activationId": "activation:50:dazzle_shallow_grave"
+    },
+    {
+      "effectId": "dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_shallow_grave",
+      "type": "modifier",
+      "subtype": "grave-missing-health-heal-amplification",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification:range",
+          "ownerId": "effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification",
+          "field": "range",
+          "state": "known",
+          "value": 900
+        },
+        "duration": {
+          "id": "value:effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification:duration",
+          "ownerId": "effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            4,
+            4.5,
+            5,
+            5.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification:magnitude",
+          "ownerId": "effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification:mana",
+          "ownerId": "effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification:cooldown",
+          "ownerId": "effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            26,
+            22,
+            18
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification:delay",
+          "ownerId": "effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_shallow_grave"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification",
+      "legacyEffectId": "dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification",
+      "order": 7,
+      "legacyAbilityId": "dazzle_shallow_grave",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification:range",
+        "value:effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification:duration",
+        "value:effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification:magnitude",
+        "value:effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification:mana",
+        "value:effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification:cooldown",
+        "value:effect:dazzle_shallow_grave:modifier:grave-missing-health-heal-amplification:delay"
+      ],
+      "activationId": "activation:50:dazzle_shallow_grave"
+    },
+    {
+      "effectId": "dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_shadow_wave",
+      "type": "damage",
+      "subtype": "shadow-wave-single-allied-bounce-splash",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:range",
+          "ownerId": "effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:duration",
+          "ownerId": "effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:magnitude",
+          "ownerId": "effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            85,
+            105,
+            125,
+            145
+          ]
+        },
+        "mana": {
+          "id": "value:effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:mana",
+          "ownerId": "effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:cooldown",
+          "ownerId": "effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:delay",
+          "ownerId": "effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:damageType",
+          "ownerId": "effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "shadowWaveAllyBounceOccurs",
+          "enemyNearWaveRecipient"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_shadow_wave:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash",
+      "legacyEffectId": "dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash",
+      "order": 8,
+      "legacyAbilityId": "dazzle_shadow_wave",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:0",
+        "condition:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:1"
+      ],
+      "valueIds": [
+        "value:effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:range",
+        "value:effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:duration",
+        "value:effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:magnitude",
+        "value:effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:mana",
+        "value:effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:cooldown",
+        "value:effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:delay",
+        "value:effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:damageType"
+      ],
+      "activationId": "activation:50:dazzle_shadow_wave"
+    },
+    {
+      "effectId": "dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_shadow_wave",
+      "type": "damage",
+      "subtype": "scepter-shadow-wave-enemy-bounce",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce:range",
+          "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce:duration",
+          "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce:magnitude",
+          "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            85,
+            105,
+            125,
+            145
+          ]
+        },
+        "mana": {
+          "id": "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce:mana",
+          "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce:cooldown",
+          "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce:delay",
+          "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce:damageType",
+          "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "shadowWaveEnemyBounceOccurs"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_shadow_wave:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce",
+      "legacyEffectId": "dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce",
+      "order": 9,
+      "legacyAbilityId": "dazzle_shadow_wave",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce:0"
+      ],
+      "valueIds": [
+        "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce:range",
+        "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce:duration",
+        "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce:magnitude",
+        "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce:mana",
+        "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce:cooldown",
+        "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce:delay",
+        "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce:damageType"
+      ],
+      "activationId": "activation:50:dazzle_shadow_wave"
+    },
+    {
+      "effectId": "dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_shadow_wave",
+      "type": "damage",
+      "subtype": "scepter-shadow-wave-bounce-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:range",
+          "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:duration",
+          "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:magnitude",
+          "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:mana",
+          "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:cooldown",
+          "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:delay",
+          "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:damageType",
+          "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "shadowWaveEnemyBounceOccurs",
+          "shadowWaveBonusAttackHits"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_shadow_wave:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack",
+      "legacyEffectId": "dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack",
+      "order": 10,
+      "legacyAbilityId": "dazzle_shadow_wave",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:0",
+        "condition:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:1"
+      ],
+      "valueIds": [
+        "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:range",
+        "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:duration",
+        "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:magnitude",
+        "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:mana",
+        "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:cooldown",
+        "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:delay",
+        "value:effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:damageType"
+      ],
+      "activationId": "activation:50:dazzle_shadow_wave"
+    },
+    {
+      "effectId": "dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_shadow_wave",
+      "type": "heal",
+      "subtype": "scepter-shadow-wave-enemy-bounce-ally-heal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal:range",
+          "ownerId": "effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal:duration",
+          "ownerId": "effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal:magnitude",
+          "ownerId": "effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal:mana",
+          "ownerId": "effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal:cooldown",
+          "ownerId": "effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal:delay",
+          "ownerId": "effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "shadowWaveEnemyBounceOccurs",
+          "allyNearWaveEnemyRecipient"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_shadow_wave:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal",
+      "legacyEffectId": "dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal",
+      "order": 11,
+      "legacyAbilityId": "dazzle_shadow_wave",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal:0",
+        "condition:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal:1"
+      ],
+      "valueIds": [
+        "value:effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal:range",
+        "value:effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal:duration",
+        "value:effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal:magnitude",
+        "value:effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal:mana",
+        "value:effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal:cooldown",
+        "value:effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal:delay"
+      ],
+      "activationId": "activation:50:dazzle_shadow_wave"
+    },
+    {
+      "effectId": "dazzle_innate_weave:modifier:weave-single-allied-armor-instance",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_innate_weave",
+      "type": "modifier",
+      "subtype": "weave-single-allied-armor-instance",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance:range",
+          "ownerId": "effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance:duration",
+          "ownerId": "effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance:magnitude",
+          "ownerId": "effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance",
+          "field": "magnitude",
+          "state": "known",
+          "value": 1
+        },
+        "mana": {
+          "id": "value:effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance:mana",
+          "ownerId": "effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance:cooldown",
+          "ownerId": "effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance:delay",
+          "ownerId": "effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "dazzleAbilityAffectsAlly"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_innate_weave:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance",
+      "legacyEffectId": "dazzle_innate_weave:modifier:weave-single-allied-armor-instance",
+      "order": 12,
+      "legacyAbilityId": "dazzle_innate_weave",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dazzle_innate_weave:modifier:weave-single-allied-armor-instance:0"
+      ],
+      "valueIds": [
+        "value:effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance:range",
+        "value:effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance:duration",
+        "value:effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance:magnitude",
+        "value:effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance:mana",
+        "value:effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance:cooldown",
+        "value:effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance:delay"
+      ],
+      "activationId": "activation:50:dazzle_innate_weave"
+    },
+    {
+      "effectId": "dazzle_innate_weave:modifier:weave-single-enemy-armor-instance",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_innate_weave",
+      "type": "modifier",
+      "subtype": "weave-single-enemy-armor-instance",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance:range",
+          "ownerId": "effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance:duration",
+          "ownerId": "effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance:magnitude",
+          "ownerId": "effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance",
+          "field": "magnitude",
+          "state": "known",
+          "value": 1
+        },
+        "mana": {
+          "id": "value:effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance:mana",
+          "ownerId": "effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance:cooldown",
+          "ownerId": "effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance:delay",
+          "ownerId": "effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "dazzleAbilityAffectsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_innate_weave:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance",
+      "legacyEffectId": "dazzle_innate_weave:modifier:weave-single-enemy-armor-instance",
+      "order": 13,
+      "legacyAbilityId": "dazzle_innate_weave",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance:0"
+      ],
+      "valueIds": [
+        "value:effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance:range",
+        "value:effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance:duration",
+        "value:effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance:magnitude",
+        "value:effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance:mana",
+        "value:effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance:cooldown",
+        "value:effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance:delay"
+      ],
+      "activationId": "activation:50:dazzle_innate_weave"
+    },
+    {
+      "effectId": "dazzle_innate_weave:heal:shard-weave-application-stack-healing",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_innate_weave",
+      "type": "heal",
+      "subtype": "shard-weave-application-stack-healing",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing:range",
+          "ownerId": "effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing:duration",
+          "ownerId": "effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing:magnitude",
+          "ownerId": "effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing:mana",
+          "ownerId": "effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing:cooldown",
+          "ownerId": "effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing:delay",
+          "ownerId": "effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "weaveAppliedToAlly"
+        ],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_innate_weave:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing",
+      "legacyEffectId": "dazzle_innate_weave:heal:shard-weave-application-stack-healing",
+      "order": 14,
+      "legacyAbilityId": "dazzle_innate_weave",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dazzle_innate_weave:heal:shard-weave-application-stack-healing:0"
+      ],
+      "valueIds": [
+        "value:effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing:range",
+        "value:effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing:duration",
+        "value:effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing:magnitude",
+        "value:effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing:mana",
+        "value:effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing:cooldown",
+        "value:effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing:delay"
+      ],
+      "activationId": "activation:50:dazzle_innate_weave"
+    },
+    {
+      "effectId": "dazzle_nothl_projection:modifier:paid-nothl-spirit-projection",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_nothl_projection",
+      "type": "modifier",
+      "subtype": "paid-nothl-spirit-projection",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection:range",
+          "ownerId": "effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection",
+          "field": "range",
+          "state": "known",
+          "value": 450
+        },
+        "duration": {
+          "id": "value:effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection:duration",
+          "ownerId": "effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection",
+          "field": "duration",
+          "state": "known",
+          "value": 12
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection:magnitude",
+          "ownerId": "effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection:mana",
+          "ownerId": "effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            150,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection:cooldown",
+          "ownerId": "effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            70,
+            60,
+            50
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection:delay",
+          "ownerId": "effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_nothl_projection"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection",
+      "legacyEffectId": "dazzle_nothl_projection:modifier:paid-nothl-spirit-projection",
+      "order": 15,
+      "legacyAbilityId": "dazzle_nothl_projection",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection:range",
+        "value:effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection:duration",
+        "value:effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection:magnitude",
+        "value:effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection:mana",
+        "value:effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection:cooldown",
+        "value:effect:dazzle_nothl_projection:modifier:paid-nothl-spirit-projection:delay"
+      ],
+      "activationId": "activation:50:dazzle_nothl_projection"
+    },
+    {
+      "effectId": "dazzle_nothl_projection:save:nothl-spirit-only-invulnerability",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_nothl_projection",
+      "type": "save",
+      "subtype": "nothl-spirit-only-invulnerability",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability:range",
+          "ownerId": "effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability:duration",
+          "ownerId": "effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability:magnitude",
+          "ownerId": "effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability:mana",
+          "ownerId": "effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability:cooldown",
+          "ownerId": "effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability:delay",
+          "ownerId": "effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "nothlSpiritEstablished"
+        ],
+        "form": "nothl-spirit"
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "physical",
+            "magical",
+            "pure"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_nothl_projection:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability",
+      "legacyEffectId": "dazzle_nothl_projection:save:nothl-spirit-only-invulnerability",
+      "order": 16,
+      "legacyAbilityId": "dazzle_nothl_projection",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability:0"
+      ],
+      "valueIds": [
+        "value:effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability:range",
+        "value:effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability:duration",
+        "value:effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability:magnitude",
+        "value:effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability:mana",
+        "value:effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability:cooldown",
+        "value:effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability:delay"
+      ],
+      "activationId": "activation:50:dazzle_nothl_projection"
+    },
+    {
+      "effectId": "dazzle_nothl_projection:control:nothl-poison-touch-hex",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_nothl_projection",
+      "type": "control",
+      "subtype": "nothl-poison-touch-hex",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_nothl_projection:control:nothl-poison-touch-hex:range",
+          "ownerId": "effect:dazzle_nothl_projection:control:nothl-poison-touch-hex",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dazzle_nothl_projection:control:nothl-poison-touch-hex:duration",
+          "ownerId": "effect:dazzle_nothl_projection:control:nothl-poison-touch-hex",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.4,
+            1.6,
+            1.8
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_nothl_projection:control:nothl-poison-touch-hex:magnitude",
+          "ownerId": "effect:dazzle_nothl_projection:control:nothl-poison-touch-hex",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dazzle_nothl_projection:control:nothl-poison-touch-hex:mana",
+          "ownerId": "effect:dazzle_nothl_projection:control:nothl-poison-touch-hex",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_nothl_projection:control:nothl-poison-touch-hex:cooldown",
+          "ownerId": "effect:dazzle_nothl_projection:control:nothl-poison-touch-hex",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dazzle_nothl_projection:control:nothl-poison-touch-hex:delay",
+          "ownerId": "effect:dazzle_nothl_projection:control:nothl-poison-touch-hex",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "dazzle_poison_touch"
+        ],
+        "upgrades": [],
+        "requiresContext": [
+          "nothlSpiritEstablished",
+          "nothlPoisonTouchHitsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "attacking",
+            "casting",
+            "items",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_nothl_projection:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dazzle_nothl_projection:control:nothl-poison-touch-hex",
+      "legacyEffectId": "dazzle_nothl_projection:control:nothl-poison-touch-hex",
+      "order": 17,
+      "legacyAbilityId": "dazzle_nothl_projection",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dazzle_nothl_projection:control:nothl-poison-touch-hex:0",
+        "condition:dazzle_nothl_projection:control:nothl-poison-touch-hex:1"
+      ],
+      "valueIds": [
+        "value:effect:dazzle_nothl_projection:control:nothl-poison-touch-hex:range",
+        "value:effect:dazzle_nothl_projection:control:nothl-poison-touch-hex:duration",
+        "value:effect:dazzle_nothl_projection:control:nothl-poison-touch-hex:magnitude",
+        "value:effect:dazzle_nothl_projection:control:nothl-poison-touch-hex:mana",
+        "value:effect:dazzle_nothl_projection:control:nothl-poison-touch-hex:cooldown",
+        "value:effect:dazzle_nothl_projection:control:nothl-poison-touch-hex:delay"
+      ],
+      "activationId": "activation:50:dazzle_nothl_projection"
+    },
+    {
+      "effectId": "dazzle_nothl_projection:heal:nothl-grave-expiration-heal",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_nothl_projection",
+      "type": "heal",
+      "subtype": "nothl-grave-expiration-heal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal:range",
+          "ownerId": "effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal:duration",
+          "ownerId": "effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal:magnitude",
+          "ownerId": "effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            225,
+            300,
+            375
+          ]
+        },
+        "mana": {
+          "id": "value:effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal:mana",
+          "ownerId": "effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal:cooldown",
+          "ownerId": "effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal:delay",
+          "ownerId": "effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "dazzle_shallow_grave"
+        ],
+        "upgrades": [],
+        "requiresContext": [
+          "nothlEmpoweredGraveExpires"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_nothl_projection:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal",
+      "legacyEffectId": "dazzle_nothl_projection:heal:nothl-grave-expiration-heal",
+      "order": 18,
+      "legacyAbilityId": "dazzle_nothl_projection",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dazzle_nothl_projection:heal:nothl-grave-expiration-heal:0"
+      ],
+      "valueIds": [
+        "value:effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal:range",
+        "value:effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal:duration",
+        "value:effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal:magnitude",
+        "value:effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal:mana",
+        "value:effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal:cooldown",
+        "value:effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal:delay"
+      ],
+      "activationId": "activation:50:dazzle_nothl_projection"
+    },
+    {
+      "effectId": "dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_nothl_projection",
+      "type": "modifier",
+      "subtype": "nothl-shadow-wave-cooldown-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction:range",
+          "ownerId": "effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction:duration",
+          "ownerId": "effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction:magnitude",
+          "ownerId": "effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            30,
+            40,
+            50
+          ]
+        },
+        "mana": {
+          "id": "value:effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction:mana",
+          "ownerId": "effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction:cooldown",
+          "ownerId": "effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction:delay",
+          "ownerId": "effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "dazzle_shadow_wave"
+        ],
+        "upgrades": [],
+        "requiresContext": [
+          "nothlSpiritEstablished"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_nothl_projection:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction",
+      "legacyEffectId": "dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction",
+      "order": 19,
+      "legacyAbilityId": "dazzle_nothl_projection",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction:0"
+      ],
+      "valueIds": [
+        "value:effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction:range",
+        "value:effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction:duration",
+        "value:effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction:magnitude",
+        "value:effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction:mana",
+        "value:effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction:cooldown",
+        "value:effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction:delay"
+      ],
+      "activationId": "activation:50:dazzle_nothl_projection"
+    },
+    {
+      "effectId": "dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint",
+      "heroId": "50",
+      "abilityId": "ability:50:dazzle_nothl_projection_end",
+      "type": "modifier",
+      "subtype": "existing-nothl-return-endpoint",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint:range",
+          "ownerId": "effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint:duration",
+          "ownerId": "effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint:magnitude",
+          "ownerId": "effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint:mana",
+          "ownerId": "effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint:cooldown",
+          "ownerId": "effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0
+        },
+        "delay": {
+          "id": "value:effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint:delay",
+          "ownerId": "effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "dazzle_nothl_projection"
+        ],
+        "upgrades": [],
+        "requiresContext": [
+          "nothlSpiritEstablished",
+          "nothlMinimumDurationElapsed"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dazzle_nothl_projection_end"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint",
+      "legacyEffectId": "dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint",
+      "order": 20,
+      "legacyAbilityId": "dazzle_nothl_projection_end",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint:0",
+        "condition:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint:1"
+      ],
+      "valueIds": [
+        "value:effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint:range",
+        "value:effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint:duration",
+        "value:effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint:magnitude",
+        "value:effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint:mana",
+        "value:effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint:cooldown",
+        "value:effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint:delay"
+      ],
+      "activationId": "activation:50:dazzle_nothl_projection_end"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate:0",
+      "ownerId": "effect:dazzle_poison_touch:damage:poison-touch-established-physical-damage-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "poisonTouchDebuffEstablished"
+      }
+    },
+    {
+      "id": "condition:dazzle_poison_touch:slow:poison-touch-established-base-slow:0",
+      "ownerId": "effect:dazzle_poison_touch:slow:poison-touch-established-base-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "poisonTouchDebuffEstablished"
+      }
+    },
+    {
+      "id": "condition:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh:0",
+      "ownerId": "effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "poisonTouchDebuffEstablished"
+      }
+    },
+    {
+      "id": "condition:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh:1",
+      "ownerId": "effect:dazzle_poison_touch:modifier:poison-touch-own-attack-refresh",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "dazzleAttackHitsPoisonedEnemy"
+      }
+    },
+    {
+      "id": "condition:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:0",
+      "ownerId": "effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "shadowWaveAllyBounceOccurs"
+      }
+    },
+    {
+      "id": "condition:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash:1",
+      "ownerId": "effect:dazzle_shadow_wave:damage:shadow-wave-single-allied-bounce-splash",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyNearWaveRecipient"
+      }
+    },
+    {
+      "id": "condition:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce:0",
+      "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-enemy-bounce",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "shadowWaveEnemyBounceOccurs"
+      }
+    },
+    {
+      "id": "condition:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:0",
+      "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "shadowWaveEnemyBounceOccurs"
+      }
+    },
+    {
+      "id": "condition:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack:1",
+      "ownerId": "effect:dazzle_shadow_wave:damage:scepter-shadow-wave-bounce-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "shadowWaveBonusAttackHits"
+      }
+    },
+    {
+      "id": "condition:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal:0",
+      "ownerId": "effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "shadowWaveEnemyBounceOccurs"
+      }
+    },
+    {
+      "id": "condition:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal:1",
+      "ownerId": "effect:dazzle_shadow_wave:heal:scepter-shadow-wave-enemy-bounce-ally-heal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyNearWaveEnemyRecipient"
+      }
+    },
+    {
+      "id": "condition:dazzle_innate_weave:modifier:weave-single-allied-armor-instance:0",
+      "ownerId": "effect:dazzle_innate_weave:modifier:weave-single-allied-armor-instance",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "dazzleAbilityAffectsAlly"
+      }
+    },
+    {
+      "id": "condition:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance:0",
+      "ownerId": "effect:dazzle_innate_weave:modifier:weave-single-enemy-armor-instance",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "dazzleAbilityAffectsEnemy"
+      }
+    },
+    {
+      "id": "condition:dazzle_innate_weave:heal:shard-weave-application-stack-healing:0",
+      "ownerId": "effect:dazzle_innate_weave:heal:shard-weave-application-stack-healing",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "weaveAppliedToAlly"
+      }
+    },
+    {
+      "id": "condition:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability:0",
+      "ownerId": "effect:dazzle_nothl_projection:save:nothl-spirit-only-invulnerability",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "nothlSpiritEstablished"
+      }
+    },
+    {
+      "id": "condition:dazzle_nothl_projection:control:nothl-poison-touch-hex:0",
+      "ownerId": "effect:dazzle_nothl_projection:control:nothl-poison-touch-hex",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "nothlSpiritEstablished"
+      }
+    },
+    {
+      "id": "condition:dazzle_nothl_projection:control:nothl-poison-touch-hex:1",
+      "ownerId": "effect:dazzle_nothl_projection:control:nothl-poison-touch-hex",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "nothlPoisonTouchHitsEnemy"
+      }
+    },
+    {
+      "id": "condition:dazzle_nothl_projection:heal:nothl-grave-expiration-heal:0",
+      "ownerId": "effect:dazzle_nothl_projection:heal:nothl-grave-expiration-heal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "nothlEmpoweredGraveExpires"
+      }
+    },
+    {
+      "id": "condition:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction:0",
+      "ownerId": "effect:dazzle_nothl_projection:modifier:nothl-shadow-wave-cooldown-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "nothlSpiritEstablished"
+      }
+    },
+    {
+      "id": "condition:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint:0",
+      "ownerId": "effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "nothlSpiritEstablished"
+      }
+    },
+    {
+      "id": "condition:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint:1",
+      "ownerId": "effect:dazzle_nothl_projection_end:modifier:existing-nothl-return-endpoint",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "nothlMinimumDurationElapsed"
+      }
+    }
+  ]
+}

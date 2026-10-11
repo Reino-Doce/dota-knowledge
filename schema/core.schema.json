@@ -1,0 +1,1339 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/core.schema.json",
+  "title": "Dota 2 compiled knowledge core",
+  "description": "One indexed runtime table set. IDs remain stable semantic identities; table positions are not identities.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "version",
+    "generatedAt",
+    "build",
+    "patchLabel",
+    "sourceIdentities",
+    "compilerVersion",
+    "entities",
+    "sources",
+    "claims",
+    "observations",
+    "reviewBindings"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "version": {
+      "$ref": "#/$defs/version"
+    },
+    "createdAt": {
+      "$ref": "#/$defs/timestamp"
+    },
+    "generatedAt": {
+      "$ref": "#/$defs/timestamp"
+    },
+    "build": {
+      "$ref": "#/$defs/buildIdentity"
+    },
+    "patchLabel": {
+      "$ref": "#/$defs/stateValue"
+    },
+    "extractorVersion": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "decoderVersion": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reviewVersion": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "compilerVersion": {
+      "const": "dota-knowledge-compiler-3"
+    },
+    "sourceIdentities": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "sourceCompatibility": {
+      "type": "object"
+    },
+    "coverage": {
+      "type": "object"
+    },
+    "entities": {
+      "type": "object",
+      "required": [
+        "heroes",
+        "abilities",
+        "activations",
+        "effects",
+        "modifiers",
+        "rules",
+        "conditions",
+        "units",
+        "upgrades"
+      ],
+      "properties": {
+        "heroes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/hero"
+          }
+        },
+        "abilities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ability"
+          }
+        },
+        "activations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/activation"
+          }
+        },
+        "effects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/effect"
+          }
+        },
+        "modifiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/modifier"
+          }
+        },
+        "rules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/rule"
+          }
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          }
+        },
+        "units": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/unit"
+          }
+        },
+        "upgrades": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/upgrade"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/claimSummary"
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/observation"
+      }
+    },
+    "reviewBindings": {
+      "type": "array",
+      "items": {
+        "$ref": "review-bindings.schema.json#/$defs/binding"
+      }
+    }
+  },
+  "$defs": {
+    "version": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9.-]{0,63}$"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "heroId": {
+      "type": "string",
+      "pattern": "^[1-9][0-9]{0,5}$"
+    },
+    "hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "decimalCount": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)$",
+      "description": "Exact non-negative integer count. Kept as decimal text to avoid precision loss."
+    },
+    "idList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/id"
+      }
+    },
+    "heroIdList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/heroId"
+      }
+    },
+    "jsonValue": {
+      "oneOf": [
+        {
+          "type": [
+            "string",
+            "number",
+            "boolean",
+            "null"
+          ]
+        },
+        {
+          "type": "array",
+          "maxItems": 512,
+          "items": {
+            "$ref": "#/$defs/jsonValue"
+          }
+        },
+        {
+          "type": "object",
+          "maxProperties": 512,
+          "additionalProperties": {
+            "$ref": "#/$defs/jsonValue"
+          }
+        }
+      ]
+    },
+    "buildIdentity": {
+      "type": "object",
+      "properties": {
+        "clientVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "serverVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sourceRevision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "publicPatchLabel": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "stateValue": {
+      "type": "object",
+      "required": [
+        "state"
+      ],
+      "properties": {
+        "state": {
+          "enum": [
+            "known",
+            "decoded",
+            "unknown",
+            "unsupported",
+            "notApplicable",
+            "conflicted"
+          ]
+        },
+        "value": {
+          "$ref": "#/$defs/jsonValue"
+        },
+        "raw": {
+          "$ref": "#/$defs/jsonValue"
+        },
+        "decoded": {
+          "$ref": "#/$defs/jsonValue"
+        },
+        "kind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unitId": {
+          "$ref": "#/$defs/id"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "conflicts": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 64,
+          "items": {
+            "$ref": "#/$defs/conflict"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "state": {
+                "const": "known"
+              }
+            },
+            "required": [
+              "state"
+            ]
+          },
+          "then": {
+            "required": [
+              "value"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "state": {
+                "const": "decoded"
+              }
+            },
+            "required": [
+              "state"
+            ]
+          },
+          "then": {
+            "required": [
+              "kind"
+            ],
+            "anyOf": [
+              {
+                "required": [
+                  "raw"
+                ]
+              },
+              {
+                "required": [
+                  "decoded"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "state": {
+                "enum": [
+                  "unknown",
+                  "unsupported",
+                  "notApplicable"
+                ]
+              }
+            },
+            "required": [
+              "state"
+            ]
+          },
+          "then": {
+            "required": [
+              "reason"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "state": {
+                "const": "conflicted"
+              }
+            },
+            "required": [
+              "state"
+            ]
+          },
+          "then": {
+            "required": [
+              "conflicts"
+            ]
+          }
+        }
+      ],
+      "additionalProperties": true
+    },
+    "conflict": {
+      "type": "object",
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "value": {
+          "$ref": "#/$defs/jsonValue"
+        },
+        "claimId": {
+          "$ref": "#/$defs/id"
+        },
+        "sourceId": {
+          "$ref": "#/$defs/id"
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "typedValue": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/stateValue"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "ownerId": {
+              "$ref": "#/$defs/id"
+            },
+            "field": {
+              "type": "string",
+              "minLength": 1
+            },
+            "representation": {
+              "enum": [
+                "literal",
+                "rankCurve",
+                "formula",
+                "structured"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "canonicalTypedValue": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/typedValue"
+        },
+        {
+          "type": "object",
+          "required": [
+            "id",
+            "ownerId",
+            "field"
+          ]
+        }
+      ]
+    },
+    "hero": {
+      "$ref": "hero.schema.json"
+    },
+    "ability": {
+      "type": "object",
+      "required": [
+        "id",
+        "heroId",
+        "engineId",
+        "activationId",
+        "order",
+        "state"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "heroId": {
+          "$ref": "#/$defs/heroId"
+        },
+        "engineId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "activationId": {
+          "$ref": "#/$defs/id"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "state": {
+          "enum": [
+            "known",
+            "unknown",
+            "unsupported"
+          ]
+        },
+        "owner": {
+          "type": "string"
+        },
+        "declarationRef": {
+          "$ref": "#/$defs/evidenceRef"
+        }
+      },
+      "additionalProperties": true
+    },
+    "activation": {
+      "type": "object",
+      "required": [
+        "id",
+        "heroId",
+        "abilityIds",
+        "valueIds",
+        "manaCost",
+        "cooldown",
+        "charges"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "heroId": {
+          "$ref": "#/$defs/heroId"
+        },
+        "abilityIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "valueIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "manaCost": {
+          "$ref": "#/$defs/typedValue"
+        },
+        "cooldown": {
+          "$ref": "#/$defs/typedValue"
+        },
+        "charges": {
+          "$ref": "#/$defs/typedValue"
+        },
+        "trigger": {
+          "$ref": "#/$defs/stateValue"
+        },
+        "cost": {
+          "$ref": "#/$defs/jsonValue"
+        }
+      },
+      "additionalProperties": true
+    },
+    "effect": {
+      "type": "object",
+      "required": [
+        "id",
+        "legacyEffectId",
+        "heroId",
+        "abilityId",
+        "order",
+        "type",
+        "subtype",
+        "values",
+        "activationId",
+        "valueIds",
+        "conditionIds",
+        "modifierIds",
+        "ruleIds"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "legacyEffectId": {
+          "$ref": "#/$defs/id"
+        },
+        "heroId": {
+          "$ref": "#/$defs/heroId"
+        },
+        "abilityId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "legacyAbilityId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "activationId": {
+          "$ref": "#/$defs/id"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subtype": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trigger": {
+          "$ref": "#/$defs/stateValue"
+        },
+        "recipient": {
+          "$ref": "#/$defs/jsonValue"
+        },
+        "targets": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/stateValue"
+          }
+        },
+        "values": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/typedValue"
+          }
+        },
+        "availability": {
+          "$ref": "#/$defs/availability"
+        },
+        "delivery": {
+          "$ref": "#/$defs/delivery"
+        },
+        "interactions": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/stateValue"
+          }
+        },
+        "relationships": {
+          "$ref": "#/$defs/relationships"
+        },
+        "vulnerability": {
+          "$ref": "#/$defs/jsonValue"
+        },
+        "exceptions": {
+          "type": "array",
+          "maxItems": 256,
+          "items": {
+            "$ref": "#/$defs/jsonValue"
+          }
+        },
+        "mechanicsFacets": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "valueIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "conditionIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "modifierIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "ruleIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "upgradeIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "declarationReview": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": true
+    },
+    "availability": {
+      "type": "object",
+      "properties": {
+        "minLevel": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "maxLevel": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "requiresAbilityIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "upgrades": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "requiresContext": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "facets": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "talents": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "delivery": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string"
+        },
+        "requiresCasting": {
+          "type": "boolean"
+        },
+        "requiresSetup": {
+          "type": "boolean"
+        },
+        "burst": {
+          "type": "boolean"
+        },
+        "global": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    },
+    "relationships": {
+      "type": "object",
+      "properties": {
+        "modifierIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "ruleIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "unitIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "upgradeIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "resourceId": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "modifier": {
+      "type": "object",
+      "required": [
+        "id",
+        "effectIds"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "effectIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "properties": {
+          "type": "object"
+        },
+        "duration": {
+          "$ref": "#/$defs/typedValue"
+        },
+        "stacking": {
+          "type": "object"
+        },
+        "application": {
+          "type": "object"
+        },
+        "removal": {
+          "type": "object"
+        },
+        "dispel": {
+          "$ref": "#/$defs/stateValue"
+        }
+      },
+      "additionalProperties": true
+    },
+    "rule": {
+      "type": "object",
+      "required": [
+        "id",
+        "effectIds"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "effectIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "scope": {
+          "$ref": "#/$defs/jsonValue"
+        },
+        "precedence": {
+          "$ref": "#/$defs/jsonValue"
+        },
+        "exceptions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/jsonValue"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "condition": {
+      "type": "object",
+      "required": [
+        "id",
+        "ownerId",
+        "kind",
+        "predicate"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "ownerId": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "predicate": {
+          "$ref": "#/$defs/predicate"
+        },
+        "conditionIds": {
+          "type": "array",
+          "maxItems": 64,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "predicate": {
+      "type": "object",
+      "maxProperties": 32,
+      "properties": {
+        "state": {
+          "enum": [
+            "known",
+            "decoded",
+            "unknown",
+            "unsupported",
+            "notApplicable",
+            "conflicted"
+          ]
+        },
+        "operator": {
+          "enum": [
+            "requires",
+            "equals",
+            "notEquals",
+            "greaterThan",
+            "greaterThanOrEqual",
+            "lessThan",
+            "lessThanOrEqual",
+            "all",
+            "any",
+            "not",
+            "in",
+            "present"
+          ]
+        },
+        "field": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "value": {
+          "$ref": "#/$defs/jsonValue"
+        },
+        "args": {
+          "type": "array",
+          "maxItems": 16,
+          "items": {
+            "$ref": "#/$defs/predicate"
+          }
+        },
+        "arg": {
+          "$ref": "#/$defs/predicate"
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "unit": {
+      "type": "object",
+      "required": [
+        "id",
+        "heroIds"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "heroIds": {
+          "$ref": "#/$defs/heroIdList"
+        },
+        "unitKey": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "sourceResource": {
+          "type": "string"
+        },
+        "raw": {
+          "$ref": "#/$defs/jsonValue"
+        }
+      },
+      "additionalProperties": true
+    },
+    "upgrade": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "key": {
+          "type": "string"
+        },
+        "sourceKind": {
+          "type": "string"
+        },
+        "abilityIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "effectIds": {
+          "$ref": "#/$defs/idList"
+        }
+      },
+      "additionalProperties": true
+    },
+    "evidenceRef": {
+      "type": "object",
+      "required": [
+        "sourceId",
+        "resource",
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "sourceId": {
+          "$ref": "#/$defs/id"
+        },
+        "resource": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "$ref": "#/$defs/hash"
+        }
+      },
+      "additionalProperties": true
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "sourceKind": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "resource": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri-reference"
+        },
+        "sha256": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/hash"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "revision": {
+          "type": [
+            "string",
+            "number",
+            "null"
+          ]
+        },
+        "commit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retrievedAt": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/timestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observedAt": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/timestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "editedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "publishedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "license": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "attribution": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidenceAvailability": {
+          "type": "string"
+        },
+        "cohort": {
+          "type": "object"
+        },
+        "recordMetadata": {
+          "type": "object"
+        },
+        "rawSource": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": true
+    },
+    "sourceCompatibility": {
+      "type": "object",
+      "properties": {
+        "build": {
+          "$ref": "#/$defs/buildIdentity"
+        },
+        "nativeSourceHash": {
+          "$ref": "#/$defs/hash"
+        },
+        "annotationVersion": {
+          "type": "string"
+        },
+        "sourceState": {
+          "enum": [
+            "bound",
+            "mismatch",
+            "unknown"
+          ]
+        },
+        "reviewDecisionRevision": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "sourceRef": {
+      "type": "object",
+      "required": [
+        "sourceId",
+        "resource",
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "sourceId": {
+          "$ref": "#/$defs/id"
+        },
+        "resource": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "$ref": "#/$defs/hash"
+        }
+      },
+      "additionalProperties": true
+    },
+    "reviewDecision": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "reviewed",
+            "proposed",
+            "disputed",
+            "rejected",
+            "unknown"
+          ]
+        },
+        "version": {
+          "type": "string"
+        },
+        "evidenceKind": {
+          "type": "string"
+        },
+        "engineVerification": {
+          "type": "string"
+        },
+        "complete": {
+          "type": "boolean"
+        },
+        "references": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "supplementalDocumentation": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/jsonValue"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "claimSummary": {
+      "type": "object",
+      "required": [
+        "id",
+        "status",
+        "detailsRef"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "subjectId": {
+          "$ref": "#/$defs/id"
+        },
+        "heroId": {
+          "$ref": "#/$defs/heroId"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "reviewed",
+            "proposed",
+            "disputed",
+            "rejected",
+            "unknown"
+          ]
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/idList"
+        },
+        "detailsRef": {
+          "type": "string"
+        },
+        "review": {
+          "$ref": "#/$defs/reviewDecision"
+        },
+        "compatibility": {
+          "$ref": "#/$defs/sourceCompatibility"
+        }
+      },
+      "additionalProperties": true
+    },
+    "observation": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "heroId": {
+          "$ref": "#/$defs/heroId"
+        },
+        "otherHeroId": {
+          "$ref": "#/$defs/heroId"
+        },
+        "allyHeroId": {
+          "$ref": "#/$defs/heroId"
+        },
+        "opponentHeroId": {
+          "$ref": "#/$defs/heroId"
+        },
+        "sourceId": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cohortId": {
+          "$ref": "#/$defs/id"
+        },
+        "window": {
+          "$ref": "#/$defs/jsonValue"
+        },
+        "observedAt": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/timestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "winCount": {
+          "$ref": "#/$defs/decimalCount"
+        },
+        "lossCount": {
+          "$ref": "#/$defs/decimalCount"
+        },
+        "matchCount": {
+          "$ref": "#/$defs/decimalCount"
+        },
+        "sampleCount": {
+          "$ref": "#/$defs/decimalCount"
+        },
+        "count": {
+          "$ref": "#/$defs/decimalCount"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "direction": {
+          "type": "string"
+        },
+        "sourceRecord": {
+          "$ref": "#/$defs/jsonValue"
+        },
+        "claimId": {
+          "$ref": "#/$defs/id"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

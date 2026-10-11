@@ -1,0 +1,1465 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "lone_druid_entangle:control:five-stack-entangling-root",
+      "heroId": "80",
+      "abilityId": "ability:80:lone_druid_entangle",
+      "type": "control",
+      "subtype": "five-stack-entangling-root",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lone_druid_entangle:control:five-stack-entangling-root:range",
+          "ownerId": "effect:lone_druid_entangle:control:five-stack-entangling-root",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:lone_druid_entangle:control:five-stack-entangling-root:duration",
+          "ownerId": "effect:lone_druid_entangle:control:five-stack-entangling-root",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.2,
+            1.6,
+            2,
+            2.4
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:lone_druid_entangle:control:five-stack-entangling-root:magnitude",
+          "ownerId": "effect:lone_druid_entangle:control:five-stack-entangling-root",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lone_druid_entangle:control:five-stack-entangling-root:mana",
+          "ownerId": "effect:lone_druid_entangle:control:five-stack-entangling-root",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:lone_druid_entangle:control:five-stack-entangling-root:cooldown",
+          "ownerId": "effect:lone_druid_entangle:control:five-stack-entangling-root",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:lone_druid_entangle:control:five-stack-entangling-root:delay",
+          "ownerId": "effect:lone_druid_entangle:control:five-stack-entangling-root",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "loneDruidEntangleThresholdReached"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "lone_druid_entangle:passive"
+      },
+      "vulnerability": {
+        "breakable": null
+      },
+      "exceptions": [],
+      "id": "effect:lone_druid_entangle:control:five-stack-entangling-root",
+      "legacyEffectId": "lone_druid_entangle:control:five-stack-entangling-root",
+      "order": 0,
+      "legacyAbilityId": "lone_druid_entangle",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:lone_druid_entangle:control:five-stack-entangling-root:0"
+      ],
+      "valueIds": [
+        "value:effect:lone_druid_entangle:control:five-stack-entangling-root:range",
+        "value:effect:lone_druid_entangle:control:five-stack-entangling-root:duration",
+        "value:effect:lone_druid_entangle:control:five-stack-entangling-root:magnitude",
+        "value:effect:lone_druid_entangle:control:five-stack-entangling-root:mana",
+        "value:effect:lone_druid_entangle:control:five-stack-entangling-root:cooldown",
+        "value:effect:lone_druid_entangle:control:five-stack-entangling-root:delay"
+      ],
+      "activationId": "activation:80:lone_druid_entangle"
+    },
+    {
+      "effectId": "lone_druid_entangle:damage:entangle-root-damage-rate",
+      "heroId": "80",
+      "abilityId": "ability:80:lone_druid_entangle",
+      "type": "damage",
+      "subtype": "entangle-root-damage-rate",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lone_druid_entangle:damage:entangle-root-damage-rate:range",
+          "ownerId": "effect:lone_druid_entangle:damage:entangle-root-damage-rate",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:lone_druid_entangle:damage:entangle-root-damage-rate:duration",
+          "ownerId": "effect:lone_druid_entangle:damage:entangle-root-damage-rate",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.2,
+            1.6,
+            2,
+            2.4
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:lone_druid_entangle:damage:entangle-root-damage-rate:magnitude",
+          "ownerId": "effect:lone_druid_entangle:damage:entangle-root-damage-rate",
+          "field": "magnitude",
+          "state": "known",
+          "value": 90
+        },
+        "mana": {
+          "id": "value:effect:lone_druid_entangle:damage:entangle-root-damage-rate:mana",
+          "ownerId": "effect:lone_druid_entangle:damage:entangle-root-damage-rate",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:lone_druid_entangle:damage:entangle-root-damage-rate:cooldown",
+          "ownerId": "effect:lone_druid_entangle:damage:entangle-root-damage-rate",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:lone_druid_entangle:damage:entangle-root-damage-rate:delay",
+          "ownerId": "effect:lone_druid_entangle:damage:entangle-root-damage-rate",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:lone_druid_entangle:damage:entangle-root-damage-rate:damageType",
+          "ownerId": "effect:lone_druid_entangle:damage:entangle-root-damage-rate",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "loneDruidEntangleThresholdReached"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lone_druid_entangle:passive"
+      },
+      "vulnerability": {
+        "breakable": null
+      },
+      "exceptions": [],
+      "id": "effect:lone_druid_entangle:damage:entangle-root-damage-rate",
+      "legacyEffectId": "lone_druid_entangle:damage:entangle-root-damage-rate",
+      "order": 1,
+      "legacyAbilityId": "lone_druid_entangle",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:lone_druid_entangle:damage:entangle-root-damage-rate:0"
+      ],
+      "valueIds": [
+        "value:effect:lone_druid_entangle:damage:entangle-root-damage-rate:range",
+        "value:effect:lone_druid_entangle:damage:entangle-root-damage-rate:duration",
+        "value:effect:lone_druid_entangle:damage:entangle-root-damage-rate:magnitude",
+        "value:effect:lone_druid_entangle:damage:entangle-root-damage-rate:mana",
+        "value:effect:lone_druid_entangle:damage:entangle-root-damage-rate:cooldown",
+        "value:effect:lone_druid_entangle:damage:entangle-root-damage-rate:delay",
+        "value:effect:lone_druid_entangle:damage:entangle-root-damage-rate:damageType"
+      ],
+      "activationId": "activation:80:lone_druid_entangle"
+    },
+    {
+      "effectId": "lone_druid_entangle:detection:entangle-reveals-rooted-target",
+      "heroId": "80",
+      "abilityId": "ability:80:lone_druid_entangle",
+      "type": "detection",
+      "subtype": "entangle-reveals-rooted-target",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lone_druid_entangle:detection:entangle-reveals-rooted-target:range",
+          "ownerId": "effect:lone_druid_entangle:detection:entangle-reveals-rooted-target",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:lone_druid_entangle:detection:entangle-reveals-rooted-target:duration",
+          "ownerId": "effect:lone_druid_entangle:detection:entangle-reveals-rooted-target",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.2,
+            1.6,
+            2,
+            2.4
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:lone_druid_entangle:detection:entangle-reveals-rooted-target:magnitude",
+          "ownerId": "effect:lone_druid_entangle:detection:entangle-reveals-rooted-target",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lone_druid_entangle:detection:entangle-reveals-rooted-target:mana",
+          "ownerId": "effect:lone_druid_entangle:detection:entangle-reveals-rooted-target",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:lone_druid_entangle:detection:entangle-reveals-rooted-target:cooldown",
+          "ownerId": "effect:lone_druid_entangle:detection:entangle-reveals-rooted-target",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:lone_druid_entangle:detection:entangle-reveals-rooted-target:delay",
+          "ownerId": "effect:lone_druid_entangle:detection:entangle-reveals-rooted-target",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "loneDruidEntangleThresholdReached"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lone_druid_entangle:passive"
+      },
+      "vulnerability": {
+        "breakable": null
+      },
+      "exceptions": [],
+      "id": "effect:lone_druid_entangle:detection:entangle-reveals-rooted-target",
+      "legacyEffectId": "lone_druid_entangle:detection:entangle-reveals-rooted-target",
+      "order": 2,
+      "legacyAbilityId": "lone_druid_entangle",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:lone_druid_entangle:detection:entangle-reveals-rooted-target:0"
+      ],
+      "valueIds": [
+        "value:effect:lone_druid_entangle:detection:entangle-reveals-rooted-target:range",
+        "value:effect:lone_druid_entangle:detection:entangle-reveals-rooted-target:duration",
+        "value:effect:lone_druid_entangle:detection:entangle-reveals-rooted-target:magnitude",
+        "value:effect:lone_druid_entangle:detection:entangle-reveals-rooted-target:mana",
+        "value:effect:lone_druid_entangle:detection:entangle-reveals-rooted-target:cooldown",
+        "value:effect:lone_druid_entangle:detection:entangle-reveals-rooted-target:delay"
+      ],
+      "activationId": "activation:80:lone_druid_entangle"
+    },
+    {
+      "effectId": "lone_druid_entangle:modifier:scepter-direct-root-and-radius",
+      "heroId": "80",
+      "abilityId": "ability:80:lone_druid_entangle",
+      "type": "modifier",
+      "subtype": "scepter-direct-root-and-radius",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius:range",
+          "ownerId": "effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius:duration",
+          "ownerId": "effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius:magnitude",
+          "ownerId": "effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius:mana",
+          "ownerId": "effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius:cooldown",
+          "ownerId": "effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius:delay",
+          "ownerId": "effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lone_druid_entangle:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius",
+      "legacyEffectId": "lone_druid_entangle:modifier:scepter-direct-root-and-radius",
+      "order": 3,
+      "legacyAbilityId": "lone_druid_entangle",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius:range",
+        "value:effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius:duration",
+        "value:effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius:magnitude",
+        "value:effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius:mana",
+        "value:effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius:cooldown",
+        "value:effect:lone_druid_entangle:modifier:scepter-direct-root-and-radius:delay"
+      ],
+      "activationId": "activation:80:lone_druid_entangle"
+    },
+    {
+      "effectId": "lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal",
+      "heroId": "80",
+      "abilityId": "ability:80:lone_druid_spirit_link",
+      "type": "heal",
+      "subtype": "bear-druid-shared-attack-lifesteal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal:range",
+          "ownerId": "effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal:duration",
+          "ownerId": "effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal:magnitude",
+          "ownerId": "effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal:mana",
+          "ownerId": "effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal:cooldown",
+          "ownerId": "effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal:delay",
+          "ownerId": "effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "spiritLinkPartnerAttackDealtDamage"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "lifesteal"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "lone_druid_spirit_link:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal",
+      "legacyEffectId": "lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal",
+      "order": 4,
+      "legacyAbilityId": "lone_druid_spirit_link",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal:0"
+      ],
+      "valueIds": [
+        "value:effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal:range",
+        "value:effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal:duration",
+        "value:effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal:magnitude",
+        "value:effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal:mana",
+        "value:effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal:cooldown",
+        "value:effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal:delay"
+      ],
+      "activationId": "activation:80:lone_druid_spirit_link"
+    },
+    {
+      "effectId": "lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus",
+      "heroId": "80",
+      "abilityId": "ability:80:lone_druid_spirit_link",
+      "type": "modifier",
+      "subtype": "druid-and-bear-movement-bonus",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus:range",
+          "ownerId": "effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus:duration",
+          "ownerId": "effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus:magnitude",
+          "ownerId": "effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        "mana": {
+          "id": "value:effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus:mana",
+          "ownerId": "effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus:cooldown",
+          "ownerId": "effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus:delay",
+          "ownerId": "effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lone_druid_spirit_link:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus",
+      "legacyEffectId": "lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus",
+      "order": 5,
+      "legacyAbilityId": "lone_druid_spirit_link",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus:range",
+        "value:effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus:duration",
+        "value:effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus:magnitude",
+        "value:effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus:mana",
+        "value:effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus:cooldown",
+        "value:effect:lone_druid_spirit_link:modifier:druid-and-bear-movement-bonus:delay"
+      ],
+      "activationId": "activation:80:lone_druid_spirit_link"
+    },
+    {
+      "effectId": "lone_druid_savage_roar:control:roar-forced-retreat",
+      "heroId": "80",
+      "abilityId": "ability:80:lone_druid_savage_roar",
+      "type": "control",
+      "subtype": "roar-forced-retreat",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lone_druid_savage_roar:control:roar-forced-retreat:range",
+          "ownerId": "effect:lone_druid_savage_roar:control:roar-forced-retreat",
+          "field": "range",
+          "state": "known",
+          "value": 350
+        },
+        "duration": {
+          "id": "value:effect:lone_druid_savage_roar:control:roar-forced-retreat:duration",
+          "ownerId": "effect:lone_druid_savage_roar:control:roar-forced-retreat",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.1,
+            1.4,
+            1.7,
+            2
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:lone_druid_savage_roar:control:roar-forced-retreat:magnitude",
+          "ownerId": "effect:lone_druid_savage_roar:control:roar-forced-retreat",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lone_druid_savage_roar:control:roar-forced-retreat:mana",
+          "ownerId": "effect:lone_druid_savage_roar:control:roar-forced-retreat",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:lone_druid_savage_roar:control:roar-forced-retreat:cooldown",
+          "ownerId": "effect:lone_druid_savage_roar:control:roar-forced-retreat",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            29,
+            26,
+            23,
+            20
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lone_druid_savage_roar:control:roar-forced-retreat:delay",
+          "ownerId": "effect:lone_druid_savage_roar:control:roar-forced-retreat",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "lone_druid_savage_roar"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lone_druid_savage_roar:control:roar-forced-retreat",
+      "legacyEffectId": "lone_druid_savage_roar:control:roar-forced-retreat",
+      "order": 6,
+      "legacyAbilityId": "lone_druid_savage_roar",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lone_druid_savage_roar:control:roar-forced-retreat:range",
+        "value:effect:lone_druid_savage_roar:control:roar-forced-retreat:duration",
+        "value:effect:lone_druid_savage_roar:control:roar-forced-retreat:magnitude",
+        "value:effect:lone_druid_savage_roar:control:roar-forced-retreat:mana",
+        "value:effect:lone_druid_savage_roar:control:roar-forced-retreat:cooldown",
+        "value:effect:lone_druid_savage_roar:control:roar-forced-retreat:delay"
+      ],
+      "activationId": "activation:80:lone_druid_savage_roar"
+    },
+    {
+      "effectId": "lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel",
+      "heroId": "80",
+      "abilityId": "ability:80:lone_druid_savage_roar",
+      "type": "dispel",
+      "subtype": "shard-roar-allied-basic-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel:range",
+          "ownerId": "effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel:duration",
+          "ownerId": "effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel:magnitude",
+          "ownerId": "effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel:mana",
+          "ownerId": "effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel:cooldown",
+          "ownerId": "effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            29,
+            26,
+            23,
+            20
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel:delay",
+          "ownerId": "effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "basic"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "ally-debuffs"
+        }
+      },
+      "relationships": {
+        "resourceId": "lone_druid_savage_roar"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel",
+      "legacyEffectId": "lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel",
+      "order": 7,
+      "legacyAbilityId": "lone_druid_savage_roar",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel:range",
+        "value:effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel:duration",
+        "value:effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel:magnitude",
+        "value:effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel:mana",
+        "value:effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel:cooldown",
+        "value:effect:lone_druid_savage_roar:dispel:shard-roar-allied-basic-dispel:delay"
+      ],
+      "activationId": "activation:80:lone_druid_savage_roar"
+    },
+    {
+      "effectId": "lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff",
+      "heroId": "80",
+      "abilityId": "ability:80:lone_druid_savage_roar",
+      "type": "modifier",
+      "subtype": "shard-roar-allied-speed-buff",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff:range",
+          "ownerId": "effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff:duration",
+          "ownerId": "effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff:magnitude",
+          "ownerId": "effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff:mana",
+          "ownerId": "effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff:cooldown",
+          "ownerId": "effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff:delay",
+          "ownerId": "effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lone_druid_savage_roar:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff",
+      "legacyEffectId": "lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff",
+      "order": 8,
+      "legacyAbilityId": "lone_druid_savage_roar",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff:range",
+        "value:effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff:duration",
+        "value:effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff:magnitude",
+        "value:effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff:mana",
+        "value:effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff:cooldown",
+        "value:effect:lone_druid_savage_roar:modifier:shard-roar-allied-speed-buff:delay"
+      ],
+      "activationId": "activation:80:lone_druid_savage_roar"
+    },
+    {
+      "effectId": "lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership",
+      "heroId": "80",
+      "abilityId": "ability:80:lone_druid_spirit_bear",
+      "type": "modifier",
+      "subtype": "independent-spirit-bear-and-item-ownership",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership:range",
+          "ownerId": "effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership:duration",
+          "ownerId": "effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership:magnitude",
+          "ownerId": "effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership:mana",
+          "ownerId": "effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership:cooldown",
+          "ownerId": "effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership",
+          "field": "cooldown",
+          "state": "known",
+          "value": 120
+        },
+        "delay": {
+          "id": "value:effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership:delay",
+          "ownerId": "effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lone_druid_spirit_bear"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership",
+      "legacyEffectId": "lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership",
+      "order": 9,
+      "legacyAbilityId": "lone_druid_spirit_bear",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership:range",
+        "value:effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership:duration",
+        "value:effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership:magnitude",
+        "value:effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership:mana",
+        "value:effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership:cooldown",
+        "value:effect:lone_druid_spirit_bear:modifier:independent-spirit-bear-and-item-ownership:delay"
+      ],
+      "activationId": "activation:80:lone_druid_spirit_bear"
+    },
+    {
+      "effectId": "lone_druid_true_form:modifier:true-form-health-armor-and-attack",
+      "heroId": "80",
+      "abilityId": "ability:80:lone_druid_true_form",
+      "type": "modifier",
+      "subtype": "true-form-health-armor-and-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack:range",
+          "ownerId": "effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack:duration",
+          "ownerId": "effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack",
+          "field": "duration",
+          "state": "known",
+          "value": 25
+        },
+        "magnitude": {
+          "id": "value:effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack:magnitude",
+          "ownerId": "effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack:mana",
+          "ownerId": "effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack:cooldown",
+          "ownerId": "effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            60,
+            55,
+            50
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack:delay",
+          "ownerId": "effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lone_druid_true_form"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack",
+      "legacyEffectId": "lone_druid_true_form:modifier:true-form-health-armor-and-attack",
+      "order": 10,
+      "legacyAbilityId": "lone_druid_true_form",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack:range",
+        "value:effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack:duration",
+        "value:effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack:magnitude",
+        "value:effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack:mana",
+        "value:effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack:cooldown",
+        "value:effect:lone_druid_true_form:modifier:true-form-health-armor-and-attack:delay"
+      ],
+      "activationId": "activation:80:lone_druid_true_form"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:lone_druid_entangle:control:five-stack-entangling-root:0",
+      "ownerId": "effect:lone_druid_entangle:control:five-stack-entangling-root",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "loneDruidEntangleThresholdReached"
+      }
+    },
+    {
+      "id": "condition:lone_druid_entangle:damage:entangle-root-damage-rate:0",
+      "ownerId": "effect:lone_druid_entangle:damage:entangle-root-damage-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "loneDruidEntangleThresholdReached"
+      }
+    },
+    {
+      "id": "condition:lone_druid_entangle:detection:entangle-reveals-rooted-target:0",
+      "ownerId": "effect:lone_druid_entangle:detection:entangle-reveals-rooted-target",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "loneDruidEntangleThresholdReached"
+      }
+    },
+    {
+      "id": "condition:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal:0",
+      "ownerId": "effect:lone_druid_spirit_link:heal:bear-druid-shared-attack-lifesteal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "spiritLinkPartnerAttackDealtDamage"
+      }
+    }
+  ]
+}

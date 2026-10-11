@@ -1,0 +1,2237 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "axe_berserkers_call:taunt",
+      "heroId": "2",
+      "abilityId": "ability:2:axe_berserkers_call",
+      "type": "control",
+      "subtype": "taunt",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:axe_berserkers_call:taunt:range",
+          "ownerId": "effect:axe_berserkers_call:taunt",
+          "field": "range",
+          "state": "known",
+          "value": 315
+        },
+        "duration": {
+          "id": "value:effect:axe_berserkers_call:taunt:duration",
+          "ownerId": "effect:axe_berserkers_call:taunt",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2.1,
+            2.4,
+            2.7,
+            3
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:axe_berserkers_call:taunt:magnitude",
+          "ownerId": "effect:axe_berserkers_call:taunt",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "Declaration absent"
+        },
+        "mana": {
+          "id": "value:effect:axe_berserkers_call:taunt:mana",
+          "ownerId": "effect:axe_berserkers_call:taunt",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:axe_berserkers_call:taunt:cooldown",
+          "ownerId": "effect:axe_berserkers_call:taunt",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:axe_berserkers_call:taunt:delay",
+          "ownerId": "effect:axe_berserkers_call:taunt",
+          "field": "delay",
+          "state": "known",
+          "value": 0.3
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "casting",
+            "channel"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "axe_berserkers_call"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:axe_berserkers_call:taunt",
+      "legacyEffectId": "axe_berserkers_call:taunt",
+      "order": 0,
+      "legacyAbilityId": "axe_berserkers_call",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:axe_berserkers_call:taunt:range",
+        "value:effect:axe_berserkers_call:taunt:duration",
+        "value:effect:axe_berserkers_call:taunt:magnitude",
+        "value:effect:axe_berserkers_call:taunt:mana",
+        "value:effect:axe_berserkers_call:taunt:cooldown",
+        "value:effect:axe_berserkers_call:taunt:delay"
+      ],
+      "activationId": "activation:2:axe_berserkers_call"
+    },
+    {
+      "effectId": "axe_counter_helix:attack-triggered-damage",
+      "heroId": "2",
+      "abilityId": "ability:2:axe_counter_helix",
+      "type": "passive",
+      "subtype": "attack-triggered-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:axe_counter_helix:attack-triggered-damage:range",
+          "ownerId": "effect:axe_counter_helix:attack-triggered-damage",
+          "field": "range",
+          "state": "known",
+          "value": 275
+        },
+        "duration": {
+          "id": "value:effect:axe_counter_helix:attack-triggered-damage:duration",
+          "ownerId": "effect:axe_counter_helix:attack-triggered-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "Declaration absent"
+        },
+        "magnitude": {
+          "id": "value:effect:axe_counter_helix:attack-triggered-damage:magnitude",
+          "ownerId": "effect:axe_counter_helix:attack-triggered-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        "mana": {
+          "id": "value:effect:axe_counter_helix:attack-triggered-damage:mana",
+          "ownerId": "effect:axe_counter_helix:attack-triggered-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:axe_counter_helix:attack-triggered-damage:cooldown",
+          "ownerId": "effect:axe_counter_helix:attack-triggered-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0.3
+        },
+        "delay": {
+          "id": "value:effect:axe_counter_helix:attack-triggered-damage:delay",
+          "ownerId": "effect:axe_counter_helix:attack-triggered-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "Declaration absent"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Effect-specific engine exception unverified"
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        }
+      },
+      "relationships": {
+        "resourceId": "axe_counter_helix"
+      },
+      "vulnerability": {
+        "breakable": true,
+        "requiresEnemyAttacks": true
+      },
+      "exceptions": [],
+      "id": "effect:axe_counter_helix:attack-triggered-damage",
+      "legacyEffectId": "axe_counter_helix:attack-triggered-damage",
+      "order": 1,
+      "legacyAbilityId": "axe_counter_helix",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:axe_counter_helix:attack-triggered-damage:range",
+        "value:effect:axe_counter_helix:attack-triggered-damage:duration",
+        "value:effect:axe_counter_helix:attack-triggered-damage:magnitude",
+        "value:effect:axe_counter_helix:attack-triggered-damage:mana",
+        "value:effect:axe_counter_helix:attack-triggered-damage:cooldown",
+        "value:effect:axe_counter_helix:attack-triggered-damage:delay"
+      ],
+      "activationId": "activation:2:axe_counter_helix"
+    },
+    {
+      "effectId": "axe_berserkers_call:modifier:call-self-bonus-armor",
+      "heroId": "2",
+      "abilityId": "ability:2:axe_berserkers_call",
+      "type": "modifier",
+      "subtype": "call-self-bonus-armor",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:axe_berserkers_call:modifier:call-self-bonus-armor:range",
+          "ownerId": "effect:axe_berserkers_call:modifier:call-self-bonus-armor",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:axe_berserkers_call:modifier:call-self-bonus-armor:duration",
+          "ownerId": "effect:axe_berserkers_call:modifier:call-self-bonus-armor",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2.1,
+            2.4,
+            2.7,
+            3
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:axe_berserkers_call:modifier:call-self-bonus-armor:magnitude",
+          "ownerId": "effect:axe_berserkers_call:modifier:call-self-bonus-armor",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "mana": {
+          "id": "value:effect:axe_berserkers_call:modifier:call-self-bonus-armor:mana",
+          "ownerId": "effect:axe_berserkers_call:modifier:call-self-bonus-armor",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:axe_berserkers_call:modifier:call-self-bonus-armor:cooldown",
+          "ownerId": "effect:axe_berserkers_call:modifier:call-self-bonus-armor",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:axe_berserkers_call:modifier:call-self-bonus-armor:delay",
+          "ownerId": "effect:axe_berserkers_call:modifier:call-self-bonus-armor",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "axe_berserkers_call"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:axe_berserkers_call:modifier:call-self-bonus-armor",
+      "legacyEffectId": "axe_berserkers_call:modifier:call-self-bonus-armor",
+      "order": 2,
+      "legacyAbilityId": "axe_berserkers_call",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:axe_berserkers_call:modifier:call-self-bonus-armor:range",
+        "value:effect:axe_berserkers_call:modifier:call-self-bonus-armor:duration",
+        "value:effect:axe_berserkers_call:modifier:call-self-bonus-armor:magnitude",
+        "value:effect:axe_berserkers_call:modifier:call-self-bonus-armor:mana",
+        "value:effect:axe_berserkers_call:modifier:call-self-bonus-armor:cooldown",
+        "value:effect:axe_berserkers_call:modifier:call-self-bonus-armor:delay"
+      ],
+      "activationId": "activation:2:axe_berserkers_call"
+    },
+    {
+      "effectId": "axe_berserkers_call:modifier:shard-call-dependent-hunger",
+      "heroId": "2",
+      "abilityId": "ability:2:axe_berserkers_call",
+      "type": "modifier",
+      "subtype": "shard-call-dependent-hunger",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:axe_berserkers_call:modifier:shard-call-dependent-hunger:range",
+          "ownerId": "effect:axe_berserkers_call:modifier:shard-call-dependent-hunger",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:axe_berserkers_call:modifier:shard-call-dependent-hunger:duration",
+          "ownerId": "effect:axe_berserkers_call:modifier:shard-call-dependent-hunger",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:axe_berserkers_call:modifier:shard-call-dependent-hunger:magnitude",
+          "ownerId": "effect:axe_berserkers_call:modifier:shard-call-dependent-hunger",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:axe_berserkers_call:modifier:shard-call-dependent-hunger:mana",
+          "ownerId": "effect:axe_berserkers_call:modifier:shard-call-dependent-hunger",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:axe_berserkers_call:modifier:shard-call-dependent-hunger:cooldown",
+          "ownerId": "effect:axe_berserkers_call:modifier:shard-call-dependent-hunger",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:axe_berserkers_call:modifier:shard-call-dependent-hunger:delay",
+          "ownerId": "effect:axe_berserkers_call:modifier:shard-call-dependent-hunger",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "axe_battle_hunger"
+        ],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "enemyAffectedByBerserkersCall"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "axe_berserkers_call:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:axe_berserkers_call:modifier:shard-call-dependent-hunger",
+      "legacyEffectId": "axe_berserkers_call:modifier:shard-call-dependent-hunger",
+      "order": 3,
+      "legacyAbilityId": "axe_berserkers_call",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:axe_berserkers_call:modifier:shard-call-dependent-hunger:0"
+      ],
+      "valueIds": [
+        "value:effect:axe_berserkers_call:modifier:shard-call-dependent-hunger:range",
+        "value:effect:axe_berserkers_call:modifier:shard-call-dependent-hunger:duration",
+        "value:effect:axe_berserkers_call:modifier:shard-call-dependent-hunger:magnitude",
+        "value:effect:axe_berserkers_call:modifier:shard-call-dependent-hunger:mana",
+        "value:effect:axe_berserkers_call:modifier:shard-call-dependent-hunger:cooldown",
+        "value:effect:axe_berserkers_call:modifier:shard-call-dependent-hunger:delay"
+      ],
+      "activationId": "activation:2:axe_berserkers_call"
+    },
+    {
+      "effectId": "axe_battle_hunger:damage:hunger-until-kill-periodic-damage",
+      "heroId": "2",
+      "abilityId": "ability:2:axe_battle_hunger",
+      "type": "damage",
+      "subtype": "hunger-until-kill-periodic-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage:range",
+          "ownerId": "effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage",
+          "field": "range",
+          "state": "known",
+          "value": [
+            600,
+            700,
+            800,
+            900
+          ]
+        },
+        "duration": {
+          "id": "value:effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage:duration",
+          "ownerId": "effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage:magnitude",
+          "ownerId": "effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage:mana",
+          "ownerId": "effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            50,
+            60,
+            70,
+            80
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage:cooldown",
+          "ownerId": "effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            15,
+            10,
+            5
+          ]
+        },
+        "delay": {
+          "id": "value:effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage:delay",
+          "ownerId": "effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage:damageType",
+          "ownerId": "effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "pure"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "axe_battle_hunger"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage",
+      "legacyEffectId": "axe_battle_hunger:damage:hunger-until-kill-periodic-damage",
+      "order": 4,
+      "legacyAbilityId": "axe_battle_hunger",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage:range",
+        "value:effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage:duration",
+        "value:effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage:magnitude",
+        "value:effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage:mana",
+        "value:effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage:cooldown",
+        "value:effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage:delay",
+        "value:effect:axe_battle_hunger:damage:hunger-until-kill-periodic-damage:damageType"
+      ],
+      "activationId": "activation:2:axe_battle_hunger"
+    },
+    {
+      "effectId": "axe_battle_hunger:slow:hunger-facing-away-movement-slow",
+      "heroId": "2",
+      "abilityId": "ability:2:axe_battle_hunger",
+      "type": "slow",
+      "subtype": "hunger-facing-away-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow:range",
+          "ownerId": "effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow",
+          "field": "range",
+          "state": "known",
+          "value": [
+            600,
+            700,
+            800,
+            900
+          ]
+        },
+        "duration": {
+          "id": "value:effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow:duration",
+          "ownerId": "effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow:magnitude",
+          "ownerId": "effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            18,
+            22,
+            26,
+            30
+          ]
+        },
+        "mana": {
+          "id": "value:effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow:mana",
+          "ownerId": "effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            50,
+            60,
+            70,
+            80
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow:cooldown",
+          "ownerId": "effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            15,
+            10,
+            5
+          ]
+        },
+        "delay": {
+          "id": "value:effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow:delay",
+          "ownerId": "effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "hungerTargetFacingAwayFromAxe"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "axe_battle_hunger"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow",
+      "legacyEffectId": "axe_battle_hunger:slow:hunger-facing-away-movement-slow",
+      "order": 5,
+      "legacyAbilityId": "axe_battle_hunger",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:axe_battle_hunger:slow:hunger-facing-away-movement-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow:range",
+        "value:effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow:duration",
+        "value:effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow:magnitude",
+        "value:effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow:mana",
+        "value:effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow:cooldown",
+        "value:effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow:delay"
+      ],
+      "activationId": "activation:2:axe_battle_hunger"
+    },
+    {
+      "effectId": "axe_battle_hunger:modifier:shard-independent-hunger-stacks",
+      "heroId": "2",
+      "abilityId": "ability:2:axe_battle_hunger",
+      "type": "modifier",
+      "subtype": "shard-independent-hunger-stacks",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks:range",
+          "ownerId": "effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks:duration",
+          "ownerId": "effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks:magnitude",
+          "ownerId": "effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks:mana",
+          "ownerId": "effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            50,
+            60,
+            70,
+            80
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks:cooldown",
+          "ownerId": "effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            15,
+            10,
+            5
+          ]
+        },
+        "delay": {
+          "id": "value:effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks:delay",
+          "ownerId": "effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "axe_battle_hunger"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks",
+      "legacyEffectId": "axe_battle_hunger:modifier:shard-independent-hunger-stacks",
+      "order": 6,
+      "legacyAbilityId": "axe_battle_hunger",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks:range",
+        "value:effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks:duration",
+        "value:effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks:magnitude",
+        "value:effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks:mana",
+        "value:effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks:cooldown",
+        "value:effect:axe_battle_hunger:modifier:shard-independent-hunger-stacks:delay"
+      ],
+      "activationId": "activation:2:axe_battle_hunger"
+    },
+    {
+      "effectId": "axe_counter_helix:damage:threshold-helix-pure-damage",
+      "heroId": "2",
+      "abilityId": "ability:2:axe_counter_helix",
+      "type": "damage",
+      "subtype": "threshold-helix-pure-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:axe_counter_helix:damage:threshold-helix-pure-damage:range",
+          "ownerId": "effect:axe_counter_helix:damage:threshold-helix-pure-damage",
+          "field": "range",
+          "state": "known",
+          "value": 275
+        },
+        "duration": {
+          "id": "value:effect:axe_counter_helix:damage:threshold-helix-pure-damage:duration",
+          "ownerId": "effect:axe_counter_helix:damage:threshold-helix-pure-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:axe_counter_helix:damage:threshold-helix-pure-damage:magnitude",
+          "ownerId": "effect:axe_counter_helix:damage:threshold-helix-pure-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        "mana": {
+          "id": "value:effect:axe_counter_helix:damage:threshold-helix-pure-damage:mana",
+          "ownerId": "effect:axe_counter_helix:damage:threshold-helix-pure-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:axe_counter_helix:damage:threshold-helix-pure-damage:cooldown",
+          "ownerId": "effect:axe_counter_helix:damage:threshold-helix-pure-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0.3
+        },
+        "delay": {
+          "id": "value:effect:axe_counter_helix:damage:threshold-helix-pure-damage:delay",
+          "ownerId": "effect:axe_counter_helix:damage:threshold-helix-pure-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:axe_counter_helix:damage:threshold-helix-pure-damage:damageType",
+          "ownerId": "effect:axe_counter_helix:damage:threshold-helix-pure-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "pure"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "axeHelixAttackThresholdReached"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "axe_counter_helix",
+        "replaces": [
+          "axe_counter_helix:attack-triggered-damage"
+        ]
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:axe_counter_helix:damage:threshold-helix-pure-damage",
+      "legacyEffectId": "axe_counter_helix:damage:threshold-helix-pure-damage",
+      "order": 7,
+      "legacyAbilityId": "axe_counter_helix",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:axe_counter_helix:damage:threshold-helix-pure-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:axe_counter_helix:damage:threshold-helix-pure-damage:range",
+        "value:effect:axe_counter_helix:damage:threshold-helix-pure-damage:duration",
+        "value:effect:axe_counter_helix:damage:threshold-helix-pure-damage:magnitude",
+        "value:effect:axe_counter_helix:damage:threshold-helix-pure-damage:mana",
+        "value:effect:axe_counter_helix:damage:threshold-helix-pure-damage:cooldown",
+        "value:effect:axe_counter_helix:damage:threshold-helix-pure-damage:delay",
+        "value:effect:axe_counter_helix:damage:threshold-helix-pure-damage:damageType"
+      ],
+      "activationId": "activation:2:axe_counter_helix"
+    },
+    {
+      "effectId": "axe_counter_helix:modifier:scepter-helix-counter-and-cooldown",
+      "heroId": "2",
+      "abilityId": "ability:2:axe_counter_helix",
+      "type": "modifier",
+      "subtype": "scepter-helix-counter-and-cooldown",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown:range",
+          "ownerId": "effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown:duration",
+          "ownerId": "effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown:magnitude",
+          "ownerId": "effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown:mana",
+          "ownerId": "effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown:cooldown",
+          "ownerId": "effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown:delay",
+          "ownerId": "effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "axe_counter_helix:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown",
+      "legacyEffectId": "axe_counter_helix:modifier:scepter-helix-counter-and-cooldown",
+      "order": 8,
+      "legacyAbilityId": "axe_counter_helix",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown:range",
+        "value:effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown:duration",
+        "value:effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown:magnitude",
+        "value:effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown:mana",
+        "value:effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown:cooldown",
+        "value:effect:axe_counter_helix:modifier:scepter-helix-counter-and-cooldown:delay"
+      ],
+      "activationId": "activation:2:axe_counter_helix"
+    },
+    {
+      "effectId": "axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction",
+      "heroId": "2",
+      "abilityId": "ability:2:axe_counter_helix",
+      "type": "modifier",
+      "subtype": "scepter-hit-enemy-damage-to-axe-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction:range",
+          "ownerId": "effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction:duration",
+          "ownerId": "effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction:magnitude",
+          "ownerId": "effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction:mana",
+          "ownerId": "effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction:cooldown",
+          "ownerId": "effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction:delay",
+          "ownerId": "effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "scepterHelixHitsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "axe_counter_helix:passive"
+      },
+      "vulnerability": {
+        "breakable": null
+      },
+      "exceptions": [],
+      "id": "effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction",
+      "legacyEffectId": "axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction",
+      "order": 9,
+      "legacyAbilityId": "axe_counter_helix",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction:0"
+      ],
+      "valueIds": [
+        "value:effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction:range",
+        "value:effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction:duration",
+        "value:effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction:magnitude",
+        "value:effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction:mana",
+        "value:effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction:cooldown",
+        "value:effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction:delay"
+      ],
+      "activationId": "activation:2:axe_counter_helix"
+    },
+    {
+      "effectId": "axe_culling_blade:damage:culling-base-pure-strike",
+      "heroId": "2",
+      "abilityId": "ability:2:axe_culling_blade",
+      "type": "damage",
+      "subtype": "culling-base-pure-strike",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:axe_culling_blade:damage:culling-base-pure-strike:range",
+          "ownerId": "effect:axe_culling_blade:damage:culling-base-pure-strike",
+          "field": "range",
+          "state": "known",
+          "value": 175
+        },
+        "duration": {
+          "id": "value:effect:axe_culling_blade:damage:culling-base-pure-strike:duration",
+          "ownerId": "effect:axe_culling_blade:damage:culling-base-pure-strike",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:axe_culling_blade:damage:culling-base-pure-strike:magnitude",
+          "ownerId": "effect:axe_culling_blade:damage:culling-base-pure-strike",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            275,
+            375,
+            475
+          ]
+        },
+        "mana": {
+          "id": "value:effect:axe_culling_blade:damage:culling-base-pure-strike:mana",
+          "ownerId": "effect:axe_culling_blade:damage:culling-base-pure-strike",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:axe_culling_blade:damage:culling-base-pure-strike:cooldown",
+          "ownerId": "effect:axe_culling_blade:damage:culling-base-pure-strike",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            80,
+            75,
+            70
+          ]
+        },
+        "delay": {
+          "id": "value:effect:axe_culling_blade:damage:culling-base-pure-strike:delay",
+          "ownerId": "effect:axe_culling_blade:damage:culling-base-pure-strike",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:axe_culling_blade:damage:culling-base-pure-strike:damageType",
+          "ownerId": "effect:axe_culling_blade:damage:culling-base-pure-strike",
+          "field": "damageType",
+          "state": "known",
+          "value": "pure"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "axe_culling_blade"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:axe_culling_blade:damage:culling-base-pure-strike",
+      "legacyEffectId": "axe_culling_blade:damage:culling-base-pure-strike",
+      "order": 10,
+      "legacyAbilityId": "axe_culling_blade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:axe_culling_blade:damage:culling-base-pure-strike:range",
+        "value:effect:axe_culling_blade:damage:culling-base-pure-strike:duration",
+        "value:effect:axe_culling_blade:damage:culling-base-pure-strike:magnitude",
+        "value:effect:axe_culling_blade:damage:culling-base-pure-strike:mana",
+        "value:effect:axe_culling_blade:damage:culling-base-pure-strike:cooldown",
+        "value:effect:axe_culling_blade:damage:culling-base-pure-strike:delay",
+        "value:effect:axe_culling_blade:damage:culling-base-pure-strike:damageType"
+      ],
+      "activationId": "activation:2:axe_culling_blade"
+    },
+    {
+      "effectId": "axe_culling_blade:modifier:culling-conditional-instant-kill",
+      "heroId": "2",
+      "abilityId": "ability:2:axe_culling_blade",
+      "type": "modifier",
+      "subtype": "culling-conditional-instant-kill",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:axe_culling_blade:modifier:culling-conditional-instant-kill:range",
+          "ownerId": "effect:axe_culling_blade:modifier:culling-conditional-instant-kill",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:axe_culling_blade:modifier:culling-conditional-instant-kill:duration",
+          "ownerId": "effect:axe_culling_blade:modifier:culling-conditional-instant-kill",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:axe_culling_blade:modifier:culling-conditional-instant-kill:magnitude",
+          "ownerId": "effect:axe_culling_blade:modifier:culling-conditional-instant-kill",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:axe_culling_blade:modifier:culling-conditional-instant-kill:mana",
+          "ownerId": "effect:axe_culling_blade:modifier:culling-conditional-instant-kill",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:axe_culling_blade:modifier:culling-conditional-instant-kill:cooldown",
+          "ownerId": "effect:axe_culling_blade:modifier:culling-conditional-instant-kill",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            80,
+            75,
+            70
+          ]
+        },
+        "delay": {
+          "id": "value:effect:axe_culling_blade:modifier:culling-conditional-instant-kill:delay",
+          "ownerId": "effect:axe_culling_blade:modifier:culling-conditional-instant-kill",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "cullingTargetWithinCurrentKillThreshold"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "axe_culling_blade"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:axe_culling_blade:modifier:culling-conditional-instant-kill",
+      "legacyEffectId": "axe_culling_blade:modifier:culling-conditional-instant-kill",
+      "order": 11,
+      "legacyAbilityId": "axe_culling_blade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:axe_culling_blade:modifier:culling-conditional-instant-kill:0"
+      ],
+      "valueIds": [
+        "value:effect:axe_culling_blade:modifier:culling-conditional-instant-kill:range",
+        "value:effect:axe_culling_blade:modifier:culling-conditional-instant-kill:duration",
+        "value:effect:axe_culling_blade:modifier:culling-conditional-instant-kill:magnitude",
+        "value:effect:axe_culling_blade:modifier:culling-conditional-instant-kill:mana",
+        "value:effect:axe_culling_blade:modifier:culling-conditional-instant-kill:cooldown",
+        "value:effect:axe_culling_blade:modifier:culling-conditional-instant-kill:delay"
+      ],
+      "activationId": "activation:2:axe_culling_blade"
+    },
+    {
+      "effectId": "axe_culling_blade:mobility:successful-culling-allied-movement",
+      "heroId": "2",
+      "abilityId": "ability:2:axe_culling_blade",
+      "type": "mobility",
+      "subtype": "successful-culling-allied-movement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:axe_culling_blade:mobility:successful-culling-allied-movement:range",
+          "ownerId": "effect:axe_culling_blade:mobility:successful-culling-allied-movement",
+          "field": "range",
+          "state": "known",
+          "value": 900
+        },
+        "duration": {
+          "id": "value:effect:axe_culling_blade:mobility:successful-culling-allied-movement:duration",
+          "ownerId": "effect:axe_culling_blade:mobility:successful-culling-allied-movement",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:axe_culling_blade:mobility:successful-culling-allied-movement:magnitude",
+          "ownerId": "effect:axe_culling_blade:mobility:successful-culling-allied-movement",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            20,
+            25,
+            30
+          ]
+        },
+        "mana": {
+          "id": "value:effect:axe_culling_blade:mobility:successful-culling-allied-movement:mana",
+          "ownerId": "effect:axe_culling_blade:mobility:successful-culling-allied-movement",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:axe_culling_blade:mobility:successful-culling-allied-movement:cooldown",
+          "ownerId": "effect:axe_culling_blade:mobility:successful-culling-allied-movement",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:axe_culling_blade:mobility:successful-culling-allied-movement:delay",
+          "ownerId": "effect:axe_culling_blade:mobility:successful-culling-allied-movement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "axeKilledEnemyHeroWithCullingBlade",
+          "allyInsideCullingRewardRadius"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "axe_culling_blade:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:axe_culling_blade:mobility:successful-culling-allied-movement",
+      "legacyEffectId": "axe_culling_blade:mobility:successful-culling-allied-movement",
+      "order": 12,
+      "legacyAbilityId": "axe_culling_blade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:axe_culling_blade:mobility:successful-culling-allied-movement:0",
+        "condition:axe_culling_blade:mobility:successful-culling-allied-movement:1"
+      ],
+      "valueIds": [
+        "value:effect:axe_culling_blade:mobility:successful-culling-allied-movement:range",
+        "value:effect:axe_culling_blade:mobility:successful-culling-allied-movement:duration",
+        "value:effect:axe_culling_blade:mobility:successful-culling-allied-movement:magnitude",
+        "value:effect:axe_culling_blade:mobility:successful-culling-allied-movement:mana",
+        "value:effect:axe_culling_blade:mobility:successful-culling-allied-movement:cooldown",
+        "value:effect:axe_culling_blade:mobility:successful-culling-allied-movement:delay"
+      ],
+      "activationId": "activation:2:axe_culling_blade"
+    },
+    {
+      "effectId": "axe_culling_blade:modifier:successful-culling-allied-armor",
+      "heroId": "2",
+      "abilityId": "ability:2:axe_culling_blade",
+      "type": "modifier",
+      "subtype": "successful-culling-allied-armor",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:axe_culling_blade:modifier:successful-culling-allied-armor:range",
+          "ownerId": "effect:axe_culling_blade:modifier:successful-culling-allied-armor",
+          "field": "range",
+          "state": "known",
+          "value": 900
+        },
+        "duration": {
+          "id": "value:effect:axe_culling_blade:modifier:successful-culling-allied-armor:duration",
+          "ownerId": "effect:axe_culling_blade:modifier:successful-culling-allied-armor",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:axe_culling_blade:modifier:successful-culling-allied-armor:magnitude",
+          "ownerId": "effect:axe_culling_blade:modifier:successful-culling-allied-armor",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            10,
+            15,
+            20
+          ]
+        },
+        "mana": {
+          "id": "value:effect:axe_culling_blade:modifier:successful-culling-allied-armor:mana",
+          "ownerId": "effect:axe_culling_blade:modifier:successful-culling-allied-armor",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:axe_culling_blade:modifier:successful-culling-allied-armor:cooldown",
+          "ownerId": "effect:axe_culling_blade:modifier:successful-culling-allied-armor",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:axe_culling_blade:modifier:successful-culling-allied-armor:delay",
+          "ownerId": "effect:axe_culling_blade:modifier:successful-culling-allied-armor",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "axeKilledEnemyHeroWithCullingBlade",
+          "allyInsideCullingRewardRadius"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "axe_culling_blade:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:axe_culling_blade:modifier:successful-culling-allied-armor",
+      "legacyEffectId": "axe_culling_blade:modifier:successful-culling-allied-armor",
+      "order": 13,
+      "legacyAbilityId": "axe_culling_blade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:axe_culling_blade:modifier:successful-culling-allied-armor:0",
+        "condition:axe_culling_blade:modifier:successful-culling-allied-armor:1"
+      ],
+      "valueIds": [
+        "value:effect:axe_culling_blade:modifier:successful-culling-allied-armor:range",
+        "value:effect:axe_culling_blade:modifier:successful-culling-allied-armor:duration",
+        "value:effect:axe_culling_blade:modifier:successful-culling-allied-armor:magnitude",
+        "value:effect:axe_culling_blade:modifier:successful-culling-allied-armor:mana",
+        "value:effect:axe_culling_blade:modifier:successful-culling-allied-armor:cooldown",
+        "value:effect:axe_culling_blade:modifier:successful-culling-allied-armor:delay"
+      ],
+      "activationId": "activation:2:axe_culling_blade"
+    },
+    {
+      "effectId": "axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset",
+      "heroId": "2",
+      "abilityId": "ability:2:axe_culling_blade",
+      "type": "modifier",
+      "subtype": "successful-culling-permanent-armor-and-reset",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset:range",
+          "ownerId": "effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset:duration",
+          "ownerId": "effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset:magnitude",
+          "ownerId": "effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset:mana",
+          "ownerId": "effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset:cooldown",
+          "ownerId": "effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset:delay",
+          "ownerId": "effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "axeKilledEnemyHeroWithCullingBlade"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "axe_culling_blade:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset",
+      "legacyEffectId": "axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset",
+      "order": 14,
+      "legacyAbilityId": "axe_culling_blade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset:0"
+      ],
+      "valueIds": [
+        "value:effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset:range",
+        "value:effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset:duration",
+        "value:effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset:magnitude",
+        "value:effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset:mana",
+        "value:effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset:cooldown",
+        "value:effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset:delay"
+      ],
+      "activationId": "activation:2:axe_culling_blade"
+    },
+    {
+      "effectId": "axe_one_man_army:modifier:isolated-armor-derived-strength",
+      "heroId": "2",
+      "abilityId": "ability:2:axe_one_man_army",
+      "type": "modifier",
+      "subtype": "isolated-armor-derived-strength",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:axe_one_man_army:modifier:isolated-armor-derived-strength:range",
+          "ownerId": "effect:axe_one_man_army:modifier:isolated-armor-derived-strength",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:axe_one_man_army:modifier:isolated-armor-derived-strength:duration",
+          "ownerId": "effect:axe_one_man_army:modifier:isolated-armor-derived-strength",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:axe_one_man_army:modifier:isolated-armor-derived-strength:magnitude",
+          "ownerId": "effect:axe_one_man_army:modifier:isolated-armor-derived-strength",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:axe_one_man_army:modifier:isolated-armor-derived-strength:mana",
+          "ownerId": "effect:axe_one_man_army:modifier:isolated-armor-derived-strength",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:axe_one_man_army:modifier:isolated-armor-derived-strength:cooldown",
+          "ownerId": "effect:axe_one_man_army:modifier:isolated-armor-derived-strength",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:axe_one_man_army:modifier:isolated-armor-derived-strength:delay",
+          "ownerId": "effect:axe_one_man_army:modifier:isolated-armor-derived-strength",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "axeHasNoNearbyAlliedHeroes"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "axe_one_man_army:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:axe_one_man_army:modifier:isolated-armor-derived-strength",
+      "legacyEffectId": "axe_one_man_army:modifier:isolated-armor-derived-strength",
+      "order": 15,
+      "legacyAbilityId": "axe_one_man_army",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:axe_one_man_army:modifier:isolated-armor-derived-strength:0"
+      ],
+      "valueIds": [
+        "value:effect:axe_one_man_army:modifier:isolated-armor-derived-strength:range",
+        "value:effect:axe_one_man_army:modifier:isolated-armor-derived-strength:duration",
+        "value:effect:axe_one_man_army:modifier:isolated-armor-derived-strength:magnitude",
+        "value:effect:axe_one_man_army:modifier:isolated-armor-derived-strength:mana",
+        "value:effect:axe_one_man_army:modifier:isolated-armor-derived-strength:cooldown",
+        "value:effect:axe_one_man_army:modifier:isolated-armor-derived-strength:delay"
+      ],
+      "activationId": "activation:2:axe_one_man_army"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:axe_berserkers_call:modifier:shard-call-dependent-hunger:0",
+      "ownerId": "effect:axe_berserkers_call:modifier:shard-call-dependent-hunger",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyAffectedByBerserkersCall"
+      }
+    },
+    {
+      "id": "condition:axe_battle_hunger:slow:hunger-facing-away-movement-slow:0",
+      "ownerId": "effect:axe_battle_hunger:slow:hunger-facing-away-movement-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "hungerTargetFacingAwayFromAxe"
+      }
+    },
+    {
+      "id": "condition:axe_counter_helix:damage:threshold-helix-pure-damage:0",
+      "ownerId": "effect:axe_counter_helix:damage:threshold-helix-pure-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "axeHelixAttackThresholdReached"
+      }
+    },
+    {
+      "id": "condition:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction:0",
+      "ownerId": "effect:axe_counter_helix:modifier:scepter-hit-enemy-damage-to-axe-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "scepterHelixHitsEnemy"
+      }
+    },
+    {
+      "id": "condition:axe_culling_blade:modifier:culling-conditional-instant-kill:0",
+      "ownerId": "effect:axe_culling_blade:modifier:culling-conditional-instant-kill",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "cullingTargetWithinCurrentKillThreshold"
+      }
+    },
+    {
+      "id": "condition:axe_culling_blade:mobility:successful-culling-allied-movement:0",
+      "ownerId": "effect:axe_culling_blade:mobility:successful-culling-allied-movement",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "axeKilledEnemyHeroWithCullingBlade"
+      }
+    },
+    {
+      "id": "condition:axe_culling_blade:mobility:successful-culling-allied-movement:1",
+      "ownerId": "effect:axe_culling_blade:mobility:successful-culling-allied-movement",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyInsideCullingRewardRadius"
+      }
+    },
+    {
+      "id": "condition:axe_culling_blade:modifier:successful-culling-allied-armor:0",
+      "ownerId": "effect:axe_culling_blade:modifier:successful-culling-allied-armor",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "axeKilledEnemyHeroWithCullingBlade"
+      }
+    },
+    {
+      "id": "condition:axe_culling_blade:modifier:successful-culling-allied-armor:1",
+      "ownerId": "effect:axe_culling_blade:modifier:successful-culling-allied-armor",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyInsideCullingRewardRadius"
+      }
+    },
+    {
+      "id": "condition:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset:0",
+      "ownerId": "effect:axe_culling_blade:modifier:successful-culling-permanent-armor-and-reset",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "axeKilledEnemyHeroWithCullingBlade"
+      }
+    },
+    {
+      "id": "condition:axe_one_man_army:modifier:isolated-armor-derived-strength:0",
+      "ownerId": "effect:axe_one_man_army:modifier:isolated-armor-derived-strength",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "axeHasNoNearbyAlliedHeroes"
+      }
+    }
+  ]
+}

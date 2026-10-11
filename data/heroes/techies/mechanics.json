@@ -1,0 +1,2956 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "techies_sticky_bomb:slow:stuck-bomb-initial-slow",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_sticky_bomb",
+      "type": "slow",
+      "subtype": "stuck-bomb-initial-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow:range",
+          "ownerId": "effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow",
+          "field": "range",
+          "state": "known",
+          "value": 1000
+        },
+        "duration": {
+          "id": "value:effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow:duration",
+          "ownerId": "effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow:magnitude",
+          "ownerId": "effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            25,
+            35,
+            45,
+            55
+          ]
+        },
+        "mana": {
+          "id": "value:effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow:mana",
+          "ownerId": "effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            115,
+            130,
+            145
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow:cooldown",
+          "ownerId": "effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            13,
+            10,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow:delay",
+          "ownerId": "effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "stickyBombAttachedToEnemyHero"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_sticky_bomb"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow",
+      "legacyEffectId": "techies_sticky_bomb:slow:stuck-bomb-initial-slow",
+      "order": 0,
+      "legacyAbilityId": "techies_sticky_bomb",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:techies_sticky_bomb:slow:stuck-bomb-initial-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow:range",
+        "value:effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow:duration",
+        "value:effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow:magnitude",
+        "value:effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow:mana",
+        "value:effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow:cooldown",
+        "value:effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow:delay"
+      ],
+      "activationId": "activation:105:techies_sticky_bomb"
+    },
+    {
+      "effectId": "techies_sticky_bomb:damage:sticky-bomb-explosion",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_sticky_bomb",
+      "type": "damage",
+      "subtype": "sticky-bomb-explosion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_sticky_bomb:damage:sticky-bomb-explosion:range",
+          "ownerId": "effect:techies_sticky_bomb:damage:sticky-bomb-explosion",
+          "field": "range",
+          "state": "known",
+          "value": 1000
+        },
+        "duration": {
+          "id": "value:effect:techies_sticky_bomb:damage:sticky-bomb-explosion:duration",
+          "ownerId": "effect:techies_sticky_bomb:damage:sticky-bomb-explosion",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:techies_sticky_bomb:damage:sticky-bomb-explosion:magnitude",
+          "ownerId": "effect:techies_sticky_bomb:damage:sticky-bomb-explosion",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            95,
+            170,
+            245,
+            320
+          ]
+        },
+        "mana": {
+          "id": "value:effect:techies_sticky_bomb:damage:sticky-bomb-explosion:mana",
+          "ownerId": "effect:techies_sticky_bomb:damage:sticky-bomb-explosion",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            115,
+            130,
+            145
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:techies_sticky_bomb:damage:sticky-bomb-explosion:cooldown",
+          "ownerId": "effect:techies_sticky_bomb:damage:sticky-bomb-explosion",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            13,
+            10,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:techies_sticky_bomb:damage:sticky-bomb-explosion:delay",
+          "ownerId": "effect:techies_sticky_bomb:damage:sticky-bomb-explosion",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:techies_sticky_bomb:damage:sticky-bomb-explosion:damageType",
+          "ownerId": "effect:techies_sticky_bomb:damage:sticky-bomb-explosion",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideStickyBombAtDetonation"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_sticky_bomb"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:techies_sticky_bomb:damage:sticky-bomb-explosion",
+      "legacyEffectId": "techies_sticky_bomb:damage:sticky-bomb-explosion",
+      "order": 1,
+      "legacyAbilityId": "techies_sticky_bomb",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:techies_sticky_bomb:damage:sticky-bomb-explosion:0"
+      ],
+      "valueIds": [
+        "value:effect:techies_sticky_bomb:damage:sticky-bomb-explosion:range",
+        "value:effect:techies_sticky_bomb:damage:sticky-bomb-explosion:duration",
+        "value:effect:techies_sticky_bomb:damage:sticky-bomb-explosion:magnitude",
+        "value:effect:techies_sticky_bomb:damage:sticky-bomb-explosion:mana",
+        "value:effect:techies_sticky_bomb:damage:sticky-bomb-explosion:cooldown",
+        "value:effect:techies_sticky_bomb:damage:sticky-bomb-explosion:delay",
+        "value:effect:techies_sticky_bomb:damage:sticky-bomb-explosion:damageType"
+      ],
+      "activationId": "activation:105:techies_sticky_bomb"
+    },
+    {
+      "effectId": "techies_sticky_bomb:slow:sticky-explosion-secondary-slow",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_sticky_bomb",
+      "type": "slow",
+      "subtype": "sticky-explosion-secondary-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow:range",
+          "ownerId": "effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow",
+          "field": "range",
+          "state": "known",
+          "value": 1000
+        },
+        "duration": {
+          "id": "value:effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow:duration",
+          "ownerId": "effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 3
+        },
+        "magnitude": {
+          "id": "value:effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow:magnitude",
+          "ownerId": "effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            15,
+            25,
+            35,
+            45
+          ]
+        },
+        "mana": {
+          "id": "value:effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow:mana",
+          "ownerId": "effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            115,
+            130,
+            145
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow:cooldown",
+          "ownerId": "effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            13,
+            10,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow:delay",
+          "ownerId": "effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideStickyBombAtDetonation"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_sticky_bomb"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow",
+      "legacyEffectId": "techies_sticky_bomb:slow:sticky-explosion-secondary-slow",
+      "order": 2,
+      "legacyAbilityId": "techies_sticky_bomb",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:techies_sticky_bomb:slow:sticky-explosion-secondary-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow:range",
+        "value:effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow:duration",
+        "value:effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow:magnitude",
+        "value:effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow:mana",
+        "value:effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow:cooldown",
+        "value:effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow:delay"
+      ],
+      "activationId": "activation:105:techies_sticky_bomb"
+    },
+    {
+      "effectId": "techies_reactive_tazer:mobility:tazer-friendly-speed",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_reactive_tazer",
+      "type": "mobility",
+      "subtype": "tazer-friendly-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_reactive_tazer:mobility:tazer-friendly-speed:range",
+          "ownerId": "effect:techies_reactive_tazer:mobility:tazer-friendly-speed",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:techies_reactive_tazer:mobility:tazer-friendly-speed:duration",
+          "ownerId": "effect:techies_reactive_tazer:mobility:tazer-friendly-speed",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:techies_reactive_tazer:mobility:tazer-friendly-speed:magnitude",
+          "ownerId": "effect:techies_reactive_tazer:mobility:tazer-friendly-speed",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            18,
+            22,
+            26,
+            30
+          ]
+        },
+        "mana": {
+          "id": "value:effect:techies_reactive_tazer:mobility:tazer-friendly-speed:mana",
+          "ownerId": "effect:techies_reactive_tazer:mobility:tazer-friendly-speed",
+          "field": "mana",
+          "state": "known",
+          "value": 60
+        },
+        "cooldown": {
+          "id": "value:effect:techies_reactive_tazer:mobility:tazer-friendly-speed:cooldown",
+          "ownerId": "effect:techies_reactive_tazer:mobility:tazer-friendly-speed",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            26,
+            22,
+            18,
+            14
+          ]
+        },
+        "delay": {
+          "id": "value:effect:techies_reactive_tazer:mobility:tazer-friendly-speed:delay",
+          "ownerId": "effect:techies_reactive_tazer:mobility:tazer-friendly-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_reactive_tazer"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:techies_reactive_tazer:mobility:tazer-friendly-speed",
+      "legacyEffectId": "techies_reactive_tazer:mobility:tazer-friendly-speed",
+      "order": 3,
+      "legacyAbilityId": "techies_reactive_tazer",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:techies_reactive_tazer:mobility:tazer-friendly-speed:range",
+        "value:effect:techies_reactive_tazer:mobility:tazer-friendly-speed:duration",
+        "value:effect:techies_reactive_tazer:mobility:tazer-friendly-speed:magnitude",
+        "value:effect:techies_reactive_tazer:mobility:tazer-friendly-speed:mana",
+        "value:effect:techies_reactive_tazer:mobility:tazer-friendly-speed:cooldown",
+        "value:effect:techies_reactive_tazer:mobility:tazer-friendly-speed:delay"
+      ],
+      "activationId": "activation:105:techies_reactive_tazer"
+    },
+    {
+      "effectId": "techies_reactive_tazer:control:tazer-attacker-disarm",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_reactive_tazer",
+      "type": "control",
+      "subtype": "tazer-attacker-disarm",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_reactive_tazer:control:tazer-attacker-disarm:range",
+          "ownerId": "effect:techies_reactive_tazer:control:tazer-attacker-disarm",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:techies_reactive_tazer:control:tazer-attacker-disarm:duration",
+          "ownerId": "effect:techies_reactive_tazer:control:tazer-attacker-disarm",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2.25,
+            2.5,
+            2.75,
+            3
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:techies_reactive_tazer:control:tazer-attacker-disarm:magnitude",
+          "ownerId": "effect:techies_reactive_tazer:control:tazer-attacker-disarm",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:techies_reactive_tazer:control:tazer-attacker-disarm:mana",
+          "ownerId": "effect:techies_reactive_tazer:control:tazer-attacker-disarm",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:techies_reactive_tazer:control:tazer-attacker-disarm:cooldown",
+          "ownerId": "effect:techies_reactive_tazer:control:tazer-attacker-disarm",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:techies_reactive_tazer:control:tazer-attacker-disarm:delay",
+          "ownerId": "effect:techies_reactive_tazer:control:tazer-attacker-disarm",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyAttackedEstablishedTazerRecipient"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "attacking"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_reactive_tazer:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:techies_reactive_tazer:control:tazer-attacker-disarm",
+      "legacyEffectId": "techies_reactive_tazer:control:tazer-attacker-disarm",
+      "order": 4,
+      "legacyAbilityId": "techies_reactive_tazer",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:techies_reactive_tazer:control:tazer-attacker-disarm:0"
+      ],
+      "valueIds": [
+        "value:effect:techies_reactive_tazer:control:tazer-attacker-disarm:range",
+        "value:effect:techies_reactive_tazer:control:tazer-attacker-disarm:duration",
+        "value:effect:techies_reactive_tazer:control:tazer-attacker-disarm:magnitude",
+        "value:effect:techies_reactive_tazer:control:tazer-attacker-disarm:mana",
+        "value:effect:techies_reactive_tazer:control:tazer-attacker-disarm:cooldown",
+        "value:effect:techies_reactive_tazer:control:tazer-attacker-disarm:delay"
+      ],
+      "activationId": "activation:105:techies_reactive_tazer"
+    },
+    {
+      "effectId": "techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_reactive_tazer",
+      "type": "dispel",
+      "subtype": "tazer-attacker-basic-buff-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel:range",
+          "ownerId": "effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel:duration",
+          "ownerId": "effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel:magnitude",
+          "ownerId": "effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel:mana",
+          "ownerId": "effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel:cooldown",
+          "ownerId": "effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel:delay",
+          "ownerId": "effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyAttackedEstablishedTazerRecipient"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "basic"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "enemy-buffs"
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_reactive_tazer:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel",
+      "legacyEffectId": "techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel",
+      "order": 5,
+      "legacyAbilityId": "techies_reactive_tazer",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel:0"
+      ],
+      "valueIds": [
+        "value:effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel:range",
+        "value:effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel:duration",
+        "value:effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel:magnitude",
+        "value:effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel:mana",
+        "value:effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel:cooldown",
+        "value:effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel:delay"
+      ],
+      "activationId": "activation:105:techies_reactive_tazer"
+    },
+    {
+      "effectId": "techies_reactive_tazer:damage:tazer-attacker-retaliation-damage",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_reactive_tazer",
+      "type": "damage",
+      "subtype": "tazer-attacker-retaliation-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage:range",
+          "ownerId": "effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage:duration",
+          "ownerId": "effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage:magnitude",
+          "ownerId": "effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            60,
+            110,
+            160,
+            210
+          ]
+        },
+        "mana": {
+          "id": "value:effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage:mana",
+          "ownerId": "effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage:cooldown",
+          "ownerId": "effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage:delay",
+          "ownerId": "effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage:damageType",
+          "ownerId": "effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyAttackedEstablishedTazerRecipient"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_reactive_tazer:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage",
+      "legacyEffectId": "techies_reactive_tazer:damage:tazer-attacker-retaliation-damage",
+      "order": 6,
+      "legacyAbilityId": "techies_reactive_tazer",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage:range",
+        "value:effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage:duration",
+        "value:effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage:magnitude",
+        "value:effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage:mana",
+        "value:effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage:cooldown",
+        "value:effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage:delay",
+        "value:effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage:damageType"
+      ],
+      "activationId": "activation:105:techies_reactive_tazer"
+    },
+    {
+      "effectId": "techies_reactive_tazer:control:tazer-detonation-disarm",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_reactive_tazer",
+      "type": "control",
+      "subtype": "tazer-detonation-disarm",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_reactive_tazer:control:tazer-detonation-disarm:range",
+          "ownerId": "effect:techies_reactive_tazer:control:tazer-detonation-disarm",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:techies_reactive_tazer:control:tazer-detonation-disarm:duration",
+          "ownerId": "effect:techies_reactive_tazer:control:tazer-detonation-disarm",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2.25,
+            2.5,
+            2.75,
+            3
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:techies_reactive_tazer:control:tazer-detonation-disarm:magnitude",
+          "ownerId": "effect:techies_reactive_tazer:control:tazer-detonation-disarm",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:techies_reactive_tazer:control:tazer-detonation-disarm:mana",
+          "ownerId": "effect:techies_reactive_tazer:control:tazer-detonation-disarm",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:techies_reactive_tazer:control:tazer-detonation-disarm:cooldown",
+          "ownerId": "effect:techies_reactive_tazer:control:tazer-detonation-disarm",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:techies_reactive_tazer:control:tazer-detonation-disarm:delay",
+          "ownerId": "effect:techies_reactive_tazer:control:tazer-detonation-disarm",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "tazerDetonates",
+          "enemyInsideTazerRecipientExplosion"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "attacking"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_reactive_tazer:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:techies_reactive_tazer:control:tazer-detonation-disarm",
+      "legacyEffectId": "techies_reactive_tazer:control:tazer-detonation-disarm",
+      "order": 7,
+      "legacyAbilityId": "techies_reactive_tazer",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:techies_reactive_tazer:control:tazer-detonation-disarm:0",
+        "condition:techies_reactive_tazer:control:tazer-detonation-disarm:1"
+      ],
+      "valueIds": [
+        "value:effect:techies_reactive_tazer:control:tazer-detonation-disarm:range",
+        "value:effect:techies_reactive_tazer:control:tazer-detonation-disarm:duration",
+        "value:effect:techies_reactive_tazer:control:tazer-detonation-disarm:magnitude",
+        "value:effect:techies_reactive_tazer:control:tazer-detonation-disarm:mana",
+        "value:effect:techies_reactive_tazer:control:tazer-detonation-disarm:cooldown",
+        "value:effect:techies_reactive_tazer:control:tazer-detonation-disarm:delay"
+      ],
+      "activationId": "activation:105:techies_reactive_tazer"
+    },
+    {
+      "effectId": "techies_reactive_tazer:damage:tazer-detonation-damage",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_reactive_tazer",
+      "type": "damage",
+      "subtype": "tazer-detonation-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_reactive_tazer:damage:tazer-detonation-damage:range",
+          "ownerId": "effect:techies_reactive_tazer:damage:tazer-detonation-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:techies_reactive_tazer:damage:tazer-detonation-damage:duration",
+          "ownerId": "effect:techies_reactive_tazer:damage:tazer-detonation-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:techies_reactive_tazer:damage:tazer-detonation-damage:magnitude",
+          "ownerId": "effect:techies_reactive_tazer:damage:tazer-detonation-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            60,
+            110,
+            160,
+            210
+          ]
+        },
+        "mana": {
+          "id": "value:effect:techies_reactive_tazer:damage:tazer-detonation-damage:mana",
+          "ownerId": "effect:techies_reactive_tazer:damage:tazer-detonation-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:techies_reactive_tazer:damage:tazer-detonation-damage:cooldown",
+          "ownerId": "effect:techies_reactive_tazer:damage:tazer-detonation-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:techies_reactive_tazer:damage:tazer-detonation-damage:delay",
+          "ownerId": "effect:techies_reactive_tazer:damage:tazer-detonation-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:techies_reactive_tazer:damage:tazer-detonation-damage:damageType",
+          "ownerId": "effect:techies_reactive_tazer:damage:tazer-detonation-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "tazerDetonates",
+          "enemyInsideTazerRecipientExplosion"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_reactive_tazer:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:techies_reactive_tazer:damage:tazer-detonation-damage",
+      "legacyEffectId": "techies_reactive_tazer:damage:tazer-detonation-damage",
+      "order": 8,
+      "legacyAbilityId": "techies_reactive_tazer",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:techies_reactive_tazer:damage:tazer-detonation-damage:0",
+        "condition:techies_reactive_tazer:damage:tazer-detonation-damage:1"
+      ],
+      "valueIds": [
+        "value:effect:techies_reactive_tazer:damage:tazer-detonation-damage:range",
+        "value:effect:techies_reactive_tazer:damage:tazer-detonation-damage:duration",
+        "value:effect:techies_reactive_tazer:damage:tazer-detonation-damage:magnitude",
+        "value:effect:techies_reactive_tazer:damage:tazer-detonation-damage:mana",
+        "value:effect:techies_reactive_tazer:damage:tazer-detonation-damage:cooldown",
+        "value:effect:techies_reactive_tazer:damage:tazer-detonation-damage:delay",
+        "value:effect:techies_reactive_tazer:damage:tazer-detonation-damage:damageType"
+      ],
+      "activationId": "activation:105:techies_reactive_tazer"
+    },
+    {
+      "effectId": "techies_suicide:mobility:health-cost-blast-off-jump",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_suicide",
+      "type": "mobility",
+      "subtype": "health-cost-blast-off-jump",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_suicide:mobility:health-cost-blast-off-jump:range",
+          "ownerId": "effect:techies_suicide:mobility:health-cost-blast-off-jump",
+          "field": "range",
+          "state": "known",
+          "value": 1000
+        },
+        "duration": {
+          "id": "value:effect:techies_suicide:mobility:health-cost-blast-off-jump:duration",
+          "ownerId": "effect:techies_suicide:mobility:health-cost-blast-off-jump",
+          "field": "duration",
+          "state": "known",
+          "value": 0.75
+        },
+        "magnitude": {
+          "id": "value:effect:techies_suicide:mobility:health-cost-blast-off-jump:magnitude",
+          "ownerId": "effect:techies_suicide:mobility:health-cost-blast-off-jump",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:techies_suicide:mobility:health-cost-blast-off-jump:mana",
+          "ownerId": "effect:techies_suicide:mobility:health-cost-blast-off-jump",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150,
+            175
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:techies_suicide:mobility:health-cost-blast-off-jump:cooldown",
+          "ownerId": "effect:techies_suicide:mobility:health-cost-blast-off-jump",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            35,
+            30,
+            25
+          ]
+        },
+        "delay": {
+          "id": "value:effect:techies_suicide:mobility:health-cost-blast-off-jump:delay",
+          "ownerId": "effect:techies_suicide:mobility:health-cost-blast-off-jump",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "blastOffSelfHealthCostAccounted"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_suicide"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:techies_suicide:mobility:health-cost-blast-off-jump",
+      "legacyEffectId": "techies_suicide:mobility:health-cost-blast-off-jump",
+      "order": 9,
+      "legacyAbilityId": "techies_suicide",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:techies_suicide:mobility:health-cost-blast-off-jump:0"
+      ],
+      "valueIds": [
+        "value:effect:techies_suicide:mobility:health-cost-blast-off-jump:range",
+        "value:effect:techies_suicide:mobility:health-cost-blast-off-jump:duration",
+        "value:effect:techies_suicide:mobility:health-cost-blast-off-jump:magnitude",
+        "value:effect:techies_suicide:mobility:health-cost-blast-off-jump:mana",
+        "value:effect:techies_suicide:mobility:health-cost-blast-off-jump:cooldown",
+        "value:effect:techies_suicide:mobility:health-cost-blast-off-jump:delay"
+      ],
+      "activationId": "activation:105:techies_suicide"
+    },
+    {
+      "effectId": "techies_suicide:damage:blast-off-landing-damage",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_suicide",
+      "type": "damage",
+      "subtype": "blast-off-landing-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_suicide:damage:blast-off-landing-damage:range",
+          "ownerId": "effect:techies_suicide:damage:blast-off-landing-damage",
+          "field": "range",
+          "state": "known",
+          "value": 1000
+        },
+        "duration": {
+          "id": "value:effect:techies_suicide:damage:blast-off-landing-damage:duration",
+          "ownerId": "effect:techies_suicide:damage:blast-off-landing-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:techies_suicide:damage:blast-off-landing-damage:magnitude",
+          "ownerId": "effect:techies_suicide:damage:blast-off-landing-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            200,
+            300,
+            400,
+            500
+          ]
+        },
+        "mana": {
+          "id": "value:effect:techies_suicide:damage:blast-off-landing-damage:mana",
+          "ownerId": "effect:techies_suicide:damage:blast-off-landing-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150,
+            175
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:techies_suicide:damage:blast-off-landing-damage:cooldown",
+          "ownerId": "effect:techies_suicide:damage:blast-off-landing-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            35,
+            30,
+            25
+          ]
+        },
+        "delay": {
+          "id": "value:effect:techies_suicide:damage:blast-off-landing-damage:delay",
+          "ownerId": "effect:techies_suicide:damage:blast-off-landing-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:techies_suicide:damage:blast-off-landing-damage:damageType",
+          "ownerId": "effect:techies_suicide:damage:blast-off-landing-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "blastOffSelfHealthCostAccounted",
+          "enemyInsideBlastOffLanding"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_suicide"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:techies_suicide:damage:blast-off-landing-damage",
+      "legacyEffectId": "techies_suicide:damage:blast-off-landing-damage",
+      "order": 10,
+      "legacyAbilityId": "techies_suicide",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:techies_suicide:damage:blast-off-landing-damage:0",
+        "condition:techies_suicide:damage:blast-off-landing-damage:1"
+      ],
+      "valueIds": [
+        "value:effect:techies_suicide:damage:blast-off-landing-damage:range",
+        "value:effect:techies_suicide:damage:blast-off-landing-damage:duration",
+        "value:effect:techies_suicide:damage:blast-off-landing-damage:magnitude",
+        "value:effect:techies_suicide:damage:blast-off-landing-damage:mana",
+        "value:effect:techies_suicide:damage:blast-off-landing-damage:cooldown",
+        "value:effect:techies_suicide:damage:blast-off-landing-damage:delay",
+        "value:effect:techies_suicide:damage:blast-off-landing-damage:damageType"
+      ],
+      "activationId": "activation:105:techies_suicide"
+    },
+    {
+      "effectId": "techies_suicide:control:blast-off-landing-stun",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_suicide",
+      "type": "control",
+      "subtype": "blast-off-landing-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_suicide:control:blast-off-landing-stun:range",
+          "ownerId": "effect:techies_suicide:control:blast-off-landing-stun",
+          "field": "range",
+          "state": "known",
+          "value": 1000
+        },
+        "duration": {
+          "id": "value:effect:techies_suicide:control:blast-off-landing-stun:duration",
+          "ownerId": "effect:techies_suicide:control:blast-off-landing-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            0.8,
+            1,
+            1.2,
+            1.4
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:techies_suicide:control:blast-off-landing-stun:magnitude",
+          "ownerId": "effect:techies_suicide:control:blast-off-landing-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:techies_suicide:control:blast-off-landing-stun:mana",
+          "ownerId": "effect:techies_suicide:control:blast-off-landing-stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150,
+            175
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:techies_suicide:control:blast-off-landing-stun:cooldown",
+          "ownerId": "effect:techies_suicide:control:blast-off-landing-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            35,
+            30,
+            25
+          ]
+        },
+        "delay": {
+          "id": "value:effect:techies_suicide:control:blast-off-landing-stun:delay",
+          "ownerId": "effect:techies_suicide:control:blast-off-landing-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "blastOffSelfHealthCostAccounted",
+          "enemyInsideBlastOffLanding"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_suicide"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:techies_suicide:control:blast-off-landing-stun",
+      "legacyEffectId": "techies_suicide:control:blast-off-landing-stun",
+      "order": 11,
+      "legacyAbilityId": "techies_suicide",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:techies_suicide:control:blast-off-landing-stun:0",
+        "condition:techies_suicide:control:blast-off-landing-stun:1"
+      ],
+      "valueIds": [
+        "value:effect:techies_suicide:control:blast-off-landing-stun:range",
+        "value:effect:techies_suicide:control:blast-off-landing-stun:duration",
+        "value:effect:techies_suicide:control:blast-off-landing-stun:magnitude",
+        "value:effect:techies_suicide:control:blast-off-landing-stun:mana",
+        "value:effect:techies_suicide:control:blast-off-landing-stun:cooldown",
+        "value:effect:techies_suicide:control:blast-off-landing-stun:delay"
+      ],
+      "activationId": "activation:105:techies_suicide"
+    },
+    {
+      "effectId": "techies_mutually_assured_destruction:modifier:mana-pool-regeneration",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_mutually_assured_destruction",
+      "type": "modifier",
+      "subtype": "mana-pool-regeneration",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration:range",
+          "ownerId": "effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration:duration",
+          "ownerId": "effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration:magnitude",
+          "ownerId": "effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration:mana",
+          "ownerId": "effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration:cooldown",
+          "ownerId": "effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration:delay",
+          "ownerId": "effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_mutually_assured_destruction:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration",
+      "legacyEffectId": "techies_mutually_assured_destruction:modifier:mana-pool-regeneration",
+      "order": 12,
+      "legacyAbilityId": "techies_mutually_assured_destruction",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration:range",
+        "value:effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration:duration",
+        "value:effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration:magnitude",
+        "value:effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration:mana",
+        "value:effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration:cooldown",
+        "value:effect:techies_mutually_assured_destruction:modifier:mana-pool-regeneration:delay"
+      ],
+      "activationId": "activation:105:techies_mutually_assured_destruction"
+    },
+    {
+      "effectId": "techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_mutually_assured_destruction",
+      "type": "damage",
+      "subtype": "death-barrel-mana-scaled-explosion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:range",
+          "ownerId": "effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:duration",
+          "ownerId": "effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:magnitude",
+          "ownerId": "effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:mana",
+          "ownerId": "effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:cooldown",
+          "ownerId": "effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:delay",
+          "ownerId": "effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion",
+          "field": "delay",
+          "state": "known",
+          "value": 1.5
+        },
+        "damageType": {
+          "id": "value:effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:damageType",
+          "ownerId": "effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "techiesDiedAndBarrelRemains",
+          "enemyInsideMadDeathExplosion"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_mutually_assured_destruction:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion",
+      "legacyEffectId": "techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion",
+      "order": 13,
+      "legacyAbilityId": "techies_mutually_assured_destruction",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:0",
+        "condition:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:1"
+      ],
+      "valueIds": [
+        "value:effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:range",
+        "value:effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:duration",
+        "value:effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:magnitude",
+        "value:effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:mana",
+        "value:effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:cooldown",
+        "value:effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:delay",
+        "value:effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:damageType"
+      ],
+      "activationId": "activation:105:techies_mutually_assured_destruction"
+    },
+    {
+      "effectId": "techies_mutually_assured_destruction:modifier:shard-single-planted-mad",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_mutually_assured_destruction",
+      "type": "modifier",
+      "subtype": "shard-single-planted-mad",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad:range",
+          "ownerId": "effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad",
+          "field": "range",
+          "state": "known",
+          "value": 450
+        },
+        "duration": {
+          "id": "value:effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad:duration",
+          "ownerId": "effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad:magnitude",
+          "ownerId": "effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad:mana",
+          "ownerId": "effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad:cooldown",
+          "ownerId": "effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "The retained declaration requires additional expression or branch context."
+        },
+        "delay": {
+          "id": "value:effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad:delay",
+          "ownerId": "effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_mutually_assured_destruction"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad",
+      "legacyEffectId": "techies_mutually_assured_destruction:modifier:shard-single-planted-mad",
+      "order": 14,
+      "legacyAbilityId": "techies_mutually_assured_destruction",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad:range",
+        "value:effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad:duration",
+        "value:effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad:magnitude",
+        "value:effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad:mana",
+        "value:effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad:cooldown",
+        "value:effect:techies_mutually_assured_destruction:modifier:shard-single-planted-mad:delay"
+      ],
+      "activationId": "activation:105:techies_mutually_assured_destruction"
+    },
+    {
+      "effectId": "techies_minefield_sign:modifier:scepter-mine-protection-and-amplification",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_minefield_sign",
+      "type": "modifier",
+      "subtype": "scepter-mine-protection-and-amplification",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification:range",
+          "ownerId": "effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification",
+          "field": "range",
+          "state": "known",
+          "value": 10
+        },
+        "duration": {
+          "id": "value:effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification:duration",
+          "ownerId": "effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification",
+          "field": "duration",
+          "state": "known",
+          "value": 240
+        },
+        "magnitude": {
+          "id": "value:effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification:magnitude",
+          "ownerId": "effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification:mana",
+          "ownerId": "effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification:cooldown",
+          "ownerId": "effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification",
+          "field": "cooldown",
+          "state": "known",
+          "value": 60
+        },
+        "delay": {
+          "id": "value:effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification:delay",
+          "ownerId": "effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_minefield_sign"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification",
+      "legacyEffectId": "techies_minefield_sign:modifier:scepter-mine-protection-and-amplification",
+      "order": 15,
+      "legacyAbilityId": "techies_minefield_sign",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification:range",
+        "value:effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification:duration",
+        "value:effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification:magnitude",
+        "value:effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification:mana",
+        "value:effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification:cooldown",
+        "value:effect:techies_minefield_sign:modifier:scepter-mine-protection-and-amplification:delay"
+      ],
+      "activationId": "activation:105:techies_minefield_sign"
+    },
+    {
+      "effectId": "techies_minefield_sign:modifier:scepter-triggered-movement-minefield",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_minefield_sign",
+      "type": "modifier",
+      "subtype": "scepter-triggered-movement-minefield",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield:range",
+          "ownerId": "effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield:duration",
+          "ownerId": "effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield",
+          "field": "duration",
+          "state": "known",
+          "value": 10
+        },
+        "magnitude": {
+          "id": "value:effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield:magnitude",
+          "ownerId": "effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield:mana",
+          "ownerId": "effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield:cooldown",
+          "ownerId": "effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield:delay",
+          "ownerId": "effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "enemyTriggeredMinefieldSign",
+          "enemyMovesInsideActiveMinefield"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_minefield_sign:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield",
+      "legacyEffectId": "techies_minefield_sign:modifier:scepter-triggered-movement-minefield",
+      "order": 16,
+      "legacyAbilityId": "techies_minefield_sign",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:techies_minefield_sign:modifier:scepter-triggered-movement-minefield:0",
+        "condition:techies_minefield_sign:modifier:scepter-triggered-movement-minefield:1"
+      ],
+      "valueIds": [
+        "value:effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield:range",
+        "value:effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield:duration",
+        "value:effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield:magnitude",
+        "value:effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield:mana",
+        "value:effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield:cooldown",
+        "value:effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield:delay"
+      ],
+      "activationId": "activation:105:techies_minefield_sign"
+    },
+    {
+      "effectId": "techies_land_mines:modifier:charged-proximity-mine-placement",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_land_mines",
+      "type": "modifier",
+      "subtype": "charged-proximity-mine-placement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_land_mines:modifier:charged-proximity-mine-placement:range",
+          "ownerId": "effect:techies_land_mines:modifier:charged-proximity-mine-placement",
+          "field": "range",
+          "state": "known",
+          "value": 450
+        },
+        "duration": {
+          "id": "value:effect:techies_land_mines:modifier:charged-proximity-mine-placement:duration",
+          "ownerId": "effect:techies_land_mines:modifier:charged-proximity-mine-placement",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:techies_land_mines:modifier:charged-proximity-mine-placement:magnitude",
+          "ownerId": "effect:techies_land_mines:modifier:charged-proximity-mine-placement",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:techies_land_mines:modifier:charged-proximity-mine-placement:mana",
+          "ownerId": "effect:techies_land_mines:modifier:charged-proximity-mine-placement",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            110,
+            140,
+            170
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:techies_land_mines:modifier:charged-proximity-mine-placement:cooldown",
+          "ownerId": "effect:techies_land_mines:modifier:charged-proximity-mine-placement",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0
+        },
+        "delay": {
+          "id": "value:effect:techies_land_mines:modifier:charged-proximity-mine-placement:delay",
+          "ownerId": "effect:techies_land_mines:modifier:charged-proximity-mine-placement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "proximityMineChargeAvailable",
+          "minePlacementSpacingSatisfied"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_land_mines"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:techies_land_mines:modifier:charged-proximity-mine-placement",
+      "legacyEffectId": "techies_land_mines:modifier:charged-proximity-mine-placement",
+      "order": 17,
+      "legacyAbilityId": "techies_land_mines",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:techies_land_mines:modifier:charged-proximity-mine-placement:0",
+        "condition:techies_land_mines:modifier:charged-proximity-mine-placement:1"
+      ],
+      "valueIds": [
+        "value:effect:techies_land_mines:modifier:charged-proximity-mine-placement:range",
+        "value:effect:techies_land_mines:modifier:charged-proximity-mine-placement:duration",
+        "value:effect:techies_land_mines:modifier:charged-proximity-mine-placement:magnitude",
+        "value:effect:techies_land_mines:modifier:charged-proximity-mine-placement:mana",
+        "value:effect:techies_land_mines:modifier:charged-proximity-mine-placement:cooldown",
+        "value:effect:techies_land_mines:modifier:charged-proximity-mine-placement:delay"
+      ],
+      "activationId": "activation:105:techies_land_mines"
+    },
+    {
+      "effectId": "techies_land_mines:damage:triggered-proximity-mine-distance-damage",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_land_mines",
+      "type": "damage",
+      "subtype": "triggered-proximity-mine-distance-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage:range",
+          "ownerId": "effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage:duration",
+          "ownerId": "effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage:magnitude",
+          "ownerId": "effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage:mana",
+          "ownerId": "effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage:cooldown",
+          "ownerId": "effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage:delay",
+          "ownerId": "effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage:damageType",
+          "ownerId": "effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "armedProximityMineSurvived",
+          "enemyStayedInsideProximityThreshold"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_land_mines:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage",
+      "legacyEffectId": "techies_land_mines:damage:triggered-proximity-mine-distance-damage",
+      "order": 18,
+      "legacyAbilityId": "techies_land_mines",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:techies_land_mines:damage:triggered-proximity-mine-distance-damage:0",
+        "condition:techies_land_mines:damage:triggered-proximity-mine-distance-damage:1"
+      ],
+      "valueIds": [
+        "value:effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage:range",
+        "value:effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage:duration",
+        "value:effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage:magnitude",
+        "value:effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage:mana",
+        "value:effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage:cooldown",
+        "value:effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage:delay",
+        "value:effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage:damageType"
+      ],
+      "activationId": "activation:105:techies_land_mines"
+    },
+    {
+      "effectId": "techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction",
+      "heroId": "105",
+      "abilityId": "ability:105:techies_land_mines",
+      "type": "modifier",
+      "subtype": "proximity-explosion-magic-resistance-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction:range",
+          "ownerId": "effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction:duration",
+          "ownerId": "effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction:magnitude",
+          "ownerId": "effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            15,
+            20,
+            25
+          ]
+        },
+        "mana": {
+          "id": "value:effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction:mana",
+          "ownerId": "effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction:cooldown",
+          "ownerId": "effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction:delay",
+          "ownerId": "effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyHitByProximityMine"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "techies_land_mines:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction",
+      "legacyEffectId": "techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction",
+      "order": 19,
+      "legacyAbilityId": "techies_land_mines",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction:0"
+      ],
+      "valueIds": [
+        "value:effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction:range",
+        "value:effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction:duration",
+        "value:effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction:magnitude",
+        "value:effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction:mana",
+        "value:effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction:cooldown",
+        "value:effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction:delay"
+      ],
+      "activationId": "activation:105:techies_land_mines"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:techies_sticky_bomb:slow:stuck-bomb-initial-slow:0",
+      "ownerId": "effect:techies_sticky_bomb:slow:stuck-bomb-initial-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "stickyBombAttachedToEnemyHero"
+      }
+    },
+    {
+      "id": "condition:techies_sticky_bomb:damage:sticky-bomb-explosion:0",
+      "ownerId": "effect:techies_sticky_bomb:damage:sticky-bomb-explosion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideStickyBombAtDetonation"
+      }
+    },
+    {
+      "id": "condition:techies_sticky_bomb:slow:sticky-explosion-secondary-slow:0",
+      "ownerId": "effect:techies_sticky_bomb:slow:sticky-explosion-secondary-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideStickyBombAtDetonation"
+      }
+    },
+    {
+      "id": "condition:techies_reactive_tazer:control:tazer-attacker-disarm:0",
+      "ownerId": "effect:techies_reactive_tazer:control:tazer-attacker-disarm",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyAttackedEstablishedTazerRecipient"
+      }
+    },
+    {
+      "id": "condition:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel:0",
+      "ownerId": "effect:techies_reactive_tazer:dispel:tazer-attacker-basic-buff-dispel",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyAttackedEstablishedTazerRecipient"
+      }
+    },
+    {
+      "id": "condition:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage:0",
+      "ownerId": "effect:techies_reactive_tazer:damage:tazer-attacker-retaliation-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyAttackedEstablishedTazerRecipient"
+      }
+    },
+    {
+      "id": "condition:techies_reactive_tazer:control:tazer-detonation-disarm:0",
+      "ownerId": "effect:techies_reactive_tazer:control:tazer-detonation-disarm",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "tazerDetonates"
+      }
+    },
+    {
+      "id": "condition:techies_reactive_tazer:control:tazer-detonation-disarm:1",
+      "ownerId": "effect:techies_reactive_tazer:control:tazer-detonation-disarm",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideTazerRecipientExplosion"
+      }
+    },
+    {
+      "id": "condition:techies_reactive_tazer:damage:tazer-detonation-damage:0",
+      "ownerId": "effect:techies_reactive_tazer:damage:tazer-detonation-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "tazerDetonates"
+      }
+    },
+    {
+      "id": "condition:techies_reactive_tazer:damage:tazer-detonation-damage:1",
+      "ownerId": "effect:techies_reactive_tazer:damage:tazer-detonation-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideTazerRecipientExplosion"
+      }
+    },
+    {
+      "id": "condition:techies_suicide:mobility:health-cost-blast-off-jump:0",
+      "ownerId": "effect:techies_suicide:mobility:health-cost-blast-off-jump",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "blastOffSelfHealthCostAccounted"
+      }
+    },
+    {
+      "id": "condition:techies_suicide:damage:blast-off-landing-damage:0",
+      "ownerId": "effect:techies_suicide:damage:blast-off-landing-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "blastOffSelfHealthCostAccounted"
+      }
+    },
+    {
+      "id": "condition:techies_suicide:damage:blast-off-landing-damage:1",
+      "ownerId": "effect:techies_suicide:damage:blast-off-landing-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideBlastOffLanding"
+      }
+    },
+    {
+      "id": "condition:techies_suicide:control:blast-off-landing-stun:0",
+      "ownerId": "effect:techies_suicide:control:blast-off-landing-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "blastOffSelfHealthCostAccounted"
+      }
+    },
+    {
+      "id": "condition:techies_suicide:control:blast-off-landing-stun:1",
+      "ownerId": "effect:techies_suicide:control:blast-off-landing-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideBlastOffLanding"
+      }
+    },
+    {
+      "id": "condition:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:0",
+      "ownerId": "effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "techiesDiedAndBarrelRemains"
+      }
+    },
+    {
+      "id": "condition:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion:1",
+      "ownerId": "effect:techies_mutually_assured_destruction:damage:death-barrel-mana-scaled-explosion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideMadDeathExplosion"
+      }
+    },
+    {
+      "id": "condition:techies_minefield_sign:modifier:scepter-triggered-movement-minefield:0",
+      "ownerId": "effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyTriggeredMinefieldSign"
+      }
+    },
+    {
+      "id": "condition:techies_minefield_sign:modifier:scepter-triggered-movement-minefield:1",
+      "ownerId": "effect:techies_minefield_sign:modifier:scepter-triggered-movement-minefield",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyMovesInsideActiveMinefield"
+      }
+    },
+    {
+      "id": "condition:techies_land_mines:modifier:charged-proximity-mine-placement:0",
+      "ownerId": "effect:techies_land_mines:modifier:charged-proximity-mine-placement",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "proximityMineChargeAvailable"
+      }
+    },
+    {
+      "id": "condition:techies_land_mines:modifier:charged-proximity-mine-placement:1",
+      "ownerId": "effect:techies_land_mines:modifier:charged-proximity-mine-placement",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "minePlacementSpacingSatisfied"
+      }
+    },
+    {
+      "id": "condition:techies_land_mines:damage:triggered-proximity-mine-distance-damage:0",
+      "ownerId": "effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "armedProximityMineSurvived"
+      }
+    },
+    {
+      "id": "condition:techies_land_mines:damage:triggered-proximity-mine-distance-damage:1",
+      "ownerId": "effect:techies_land_mines:damage:triggered-proximity-mine-distance-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyStayedInsideProximityThreshold"
+      }
+    },
+    {
+      "id": "condition:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction:0",
+      "ownerId": "effect:techies_land_mines:modifier:proximity-explosion-magic-resistance-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyHitByProximityMine"
+      }
+    }
+  ]
+}

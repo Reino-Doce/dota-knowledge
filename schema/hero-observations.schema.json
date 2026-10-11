@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/hero-observations.schema.json",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "observations"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "$ref": "core.schema.json#/$defs/observation"
+      }
+    }
+  },
+  "additionalProperties": false
+}

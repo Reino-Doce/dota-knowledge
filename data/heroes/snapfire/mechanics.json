@@ -1,0 +1,2350 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "snapfire_scatterblast:damage:scatterblast-base-cone-damage",
+      "heroId": "128",
+      "abilityId": "ability:128:snapfire_scatterblast",
+      "type": "damage",
+      "subtype": "scatterblast-base-cone-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage:range",
+          "ownerId": "effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage:duration",
+          "ownerId": "effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage:magnitude",
+          "ownerId": "effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            100,
+            160,
+            220,
+            280
+          ]
+        },
+        "mana": {
+          "id": "value:effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage:mana",
+          "ownerId": "effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            85,
+            90,
+            95,
+            100
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage:cooldown",
+          "ownerId": "effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            17,
+            14,
+            11,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage:delay",
+          "ownerId": "effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage:damageType",
+          "ownerId": "effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideScatterblastCone"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "snapfire_scatterblast"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage",
+      "legacyEffectId": "snapfire_scatterblast:damage:scatterblast-base-cone-damage",
+      "order": 0,
+      "legacyAbilityId": "snapfire_scatterblast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:snapfire_scatterblast:damage:scatterblast-base-cone-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage:range",
+        "value:effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage:duration",
+        "value:effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage:magnitude",
+        "value:effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage:mana",
+        "value:effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage:cooldown",
+        "value:effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage:delay",
+        "value:effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage:damageType"
+      ],
+      "activationId": "activation:128:snapfire_scatterblast"
+    },
+    {
+      "effectId": "snapfire_scatterblast:slow:scatterblast-movement-slow",
+      "heroId": "128",
+      "abilityId": "ability:128:snapfire_scatterblast",
+      "type": "slow",
+      "subtype": "scatterblast-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:snapfire_scatterblast:slow:scatterblast-movement-slow:range",
+          "ownerId": "effect:snapfire_scatterblast:slow:scatterblast-movement-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:snapfire_scatterblast:slow:scatterblast-movement-slow:duration",
+          "ownerId": "effect:snapfire_scatterblast:slow:scatterblast-movement-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 1
+        },
+        "magnitude": {
+          "id": "value:effect:snapfire_scatterblast:slow:scatterblast-movement-slow:magnitude",
+          "ownerId": "effect:snapfire_scatterblast:slow:scatterblast-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": 100
+        },
+        "mana": {
+          "id": "value:effect:snapfire_scatterblast:slow:scatterblast-movement-slow:mana",
+          "ownerId": "effect:snapfire_scatterblast:slow:scatterblast-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            85,
+            90,
+            95,
+            100
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:snapfire_scatterblast:slow:scatterblast-movement-slow:cooldown",
+          "ownerId": "effect:snapfire_scatterblast:slow:scatterblast-movement-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            17,
+            14,
+            11,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:snapfire_scatterblast:slow:scatterblast-movement-slow:delay",
+          "ownerId": "effect:snapfire_scatterblast:slow:scatterblast-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideScatterblastCone"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "snapfire_scatterblast"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:snapfire_scatterblast:slow:scatterblast-movement-slow",
+      "legacyEffectId": "snapfire_scatterblast:slow:scatterblast-movement-slow",
+      "order": 1,
+      "legacyAbilityId": "snapfire_scatterblast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:snapfire_scatterblast:slow:scatterblast-movement-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:snapfire_scatterblast:slow:scatterblast-movement-slow:range",
+        "value:effect:snapfire_scatterblast:slow:scatterblast-movement-slow:duration",
+        "value:effect:snapfire_scatterblast:slow:scatterblast-movement-slow:magnitude",
+        "value:effect:snapfire_scatterblast:slow:scatterblast-movement-slow:mana",
+        "value:effect:snapfire_scatterblast:slow:scatterblast-movement-slow:cooldown",
+        "value:effect:snapfire_scatterblast:slow:scatterblast-movement-slow:delay"
+      ],
+      "activationId": "activation:128:snapfire_scatterblast"
+    },
+    {
+      "effectId": "snapfire_firesnap_cookie:mobility:cookie-ally-hop",
+      "heroId": "128",
+      "abilityId": "ability:128:snapfire_firesnap_cookie",
+      "type": "mobility",
+      "subtype": "cookie-ally-hop",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop:range",
+          "ownerId": "effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop",
+          "field": "range",
+          "state": "known",
+          "value": 650
+        },
+        "duration": {
+          "id": "value:effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop:duration",
+          "ownerId": "effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop:magnitude",
+          "ownerId": "effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop:mana",
+          "ownerId": "effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop",
+          "field": "mana",
+          "state": "known",
+          "value": 105
+        },
+        "cooldown": {
+          "id": "value:effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop:cooldown",
+          "ownerId": "effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            17,
+            16,
+            15
+          ]
+        },
+        "delay": {
+          "id": "value:effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop:delay",
+          "ownerId": "effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "snapfire_firesnap_cookie"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop",
+      "legacyEffectId": "snapfire_firesnap_cookie:mobility:cookie-ally-hop",
+      "order": 2,
+      "legacyAbilityId": "snapfire_firesnap_cookie",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop:range",
+        "value:effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop:duration",
+        "value:effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop:magnitude",
+        "value:effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop:mana",
+        "value:effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop:cooldown",
+        "value:effect:snapfire_firesnap_cookie:mobility:cookie-ally-hop:delay"
+      ],
+      "activationId": "activation:128:snapfire_firesnap_cookie"
+    },
+    {
+      "effectId": "snapfire_firesnap_cookie:control:cookie-landing-stun",
+      "heroId": "128",
+      "abilityId": "ability:128:snapfire_firesnap_cookie",
+      "type": "control",
+      "subtype": "cookie-landing-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:snapfire_firesnap_cookie:control:cookie-landing-stun:range",
+          "ownerId": "effect:snapfire_firesnap_cookie:control:cookie-landing-stun",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:snapfire_firesnap_cookie:control:cookie-landing-stun:duration",
+          "ownerId": "effect:snapfire_firesnap_cookie:control:cookie-landing-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1,
+            1.4,
+            1.8,
+            2.2
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:snapfire_firesnap_cookie:control:cookie-landing-stun:magnitude",
+          "ownerId": "effect:snapfire_firesnap_cookie:control:cookie-landing-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:snapfire_firesnap_cookie:control:cookie-landing-stun:mana",
+          "ownerId": "effect:snapfire_firesnap_cookie:control:cookie-landing-stun",
+          "field": "mana",
+          "state": "known",
+          "value": 105
+        },
+        "cooldown": {
+          "id": "value:effect:snapfire_firesnap_cookie:control:cookie-landing-stun:cooldown",
+          "ownerId": "effect:snapfire_firesnap_cookie:control:cookie-landing-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            17,
+            16,
+            15
+          ]
+        },
+        "delay": {
+          "id": "value:effect:snapfire_firesnap_cookie:control:cookie-landing-stun:delay",
+          "ownerId": "effect:snapfire_firesnap_cookie:control:cookie-landing-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyAtCookieLanding"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "snapfire_firesnap_cookie"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:snapfire_firesnap_cookie:control:cookie-landing-stun",
+      "legacyEffectId": "snapfire_firesnap_cookie:control:cookie-landing-stun",
+      "order": 3,
+      "legacyAbilityId": "snapfire_firesnap_cookie",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:snapfire_firesnap_cookie:control:cookie-landing-stun:0"
+      ],
+      "valueIds": [
+        "value:effect:snapfire_firesnap_cookie:control:cookie-landing-stun:range",
+        "value:effect:snapfire_firesnap_cookie:control:cookie-landing-stun:duration",
+        "value:effect:snapfire_firesnap_cookie:control:cookie-landing-stun:magnitude",
+        "value:effect:snapfire_firesnap_cookie:control:cookie-landing-stun:mana",
+        "value:effect:snapfire_firesnap_cookie:control:cookie-landing-stun:cooldown",
+        "value:effect:snapfire_firesnap_cookie:control:cookie-landing-stun:delay"
+      ],
+      "activationId": "activation:128:snapfire_firesnap_cookie"
+    },
+    {
+      "effectId": "snapfire_firesnap_cookie:damage:cookie-landing-damage",
+      "heroId": "128",
+      "abilityId": "ability:128:snapfire_firesnap_cookie",
+      "type": "damage",
+      "subtype": "cookie-landing-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:snapfire_firesnap_cookie:damage:cookie-landing-damage:range",
+          "ownerId": "effect:snapfire_firesnap_cookie:damage:cookie-landing-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:snapfire_firesnap_cookie:damage:cookie-landing-damage:duration",
+          "ownerId": "effect:snapfire_firesnap_cookie:damage:cookie-landing-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:snapfire_firesnap_cookie:damage:cookie-landing-damage:magnitude",
+          "ownerId": "effect:snapfire_firesnap_cookie:damage:cookie-landing-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            60,
+            130,
+            200,
+            270
+          ]
+        },
+        "mana": {
+          "id": "value:effect:snapfire_firesnap_cookie:damage:cookie-landing-damage:mana",
+          "ownerId": "effect:snapfire_firesnap_cookie:damage:cookie-landing-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 105
+        },
+        "cooldown": {
+          "id": "value:effect:snapfire_firesnap_cookie:damage:cookie-landing-damage:cooldown",
+          "ownerId": "effect:snapfire_firesnap_cookie:damage:cookie-landing-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            17,
+            16,
+            15
+          ]
+        },
+        "delay": {
+          "id": "value:effect:snapfire_firesnap_cookie:damage:cookie-landing-damage:delay",
+          "ownerId": "effect:snapfire_firesnap_cookie:damage:cookie-landing-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:snapfire_firesnap_cookie:damage:cookie-landing-damage:damageType",
+          "ownerId": "effect:snapfire_firesnap_cookie:damage:cookie-landing-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyAtCookieLanding"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "snapfire_firesnap_cookie"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:snapfire_firesnap_cookie:damage:cookie-landing-damage",
+      "legacyEffectId": "snapfire_firesnap_cookie:damage:cookie-landing-damage",
+      "order": 4,
+      "legacyAbilityId": "snapfire_firesnap_cookie",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:snapfire_firesnap_cookie:damage:cookie-landing-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:snapfire_firesnap_cookie:damage:cookie-landing-damage:range",
+        "value:effect:snapfire_firesnap_cookie:damage:cookie-landing-damage:duration",
+        "value:effect:snapfire_firesnap_cookie:damage:cookie-landing-damage:magnitude",
+        "value:effect:snapfire_firesnap_cookie:damage:cookie-landing-damage:mana",
+        "value:effect:snapfire_firesnap_cookie:damage:cookie-landing-damage:cooldown",
+        "value:effect:snapfire_firesnap_cookie:damage:cookie-landing-damage:delay",
+        "value:effect:snapfire_firesnap_cookie:damage:cookie-landing-damage:damageType"
+      ],
+      "activationId": "activation:128:snapfire_firesnap_cookie"
+    },
+    {
+      "effectId": "snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing",
+      "heroId": "128",
+      "abilityId": "ability:128:snapfire_firesnap_cookie",
+      "type": "heal",
+      "subtype": "shard-cookie-recipient-healing",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing:range",
+          "ownerId": "effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing:duration",
+          "ownerId": "effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing:magnitude",
+          "ownerId": "effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing:mana",
+          "ownerId": "effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing",
+          "field": "mana",
+          "state": "known",
+          "value": 105
+        },
+        "cooldown": {
+          "id": "value:effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing:cooldown",
+          "ownerId": "effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            17,
+            16,
+            15
+          ]
+        },
+        "delay": {
+          "id": "value:effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing:delay",
+          "ownerId": "effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "snapfire_firesnap_cookie"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing",
+      "legacyEffectId": "snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing",
+      "order": 5,
+      "legacyAbilityId": "snapfire_firesnap_cookie",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing:range",
+        "value:effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing:duration",
+        "value:effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing:magnitude",
+        "value:effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing:mana",
+        "value:effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing:cooldown",
+        "value:effect:snapfire_firesnap_cookie:heal:shard-cookie-recipient-healing:delay"
+      ],
+      "activationId": "activation:128:snapfire_firesnap_cookie"
+    },
+    {
+      "effectId": "snapfire_lil_shredder:modifier:shredder-attack-buff",
+      "heroId": "128",
+      "abilityId": "ability:128:snapfire_lil_shredder",
+      "type": "modifier",
+      "subtype": "shredder-attack-buff",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:snapfire_lil_shredder:modifier:shredder-attack-buff:range",
+          "ownerId": "effect:snapfire_lil_shredder:modifier:shredder-attack-buff",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:snapfire_lil_shredder:modifier:shredder-attack-buff:duration",
+          "ownerId": "effect:snapfire_lil_shredder:modifier:shredder-attack-buff",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:snapfire_lil_shredder:modifier:shredder-attack-buff:magnitude",
+          "ownerId": "effect:snapfire_lil_shredder:modifier:shredder-attack-buff",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:snapfire_lil_shredder:modifier:shredder-attack-buff:mana",
+          "ownerId": "effect:snapfire_lil_shredder:modifier:shredder-attack-buff",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:snapfire_lil_shredder:modifier:shredder-attack-buff:cooldown",
+          "ownerId": "effect:snapfire_lil_shredder:modifier:shredder-attack-buff",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            20,
+            16,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:snapfire_lil_shredder:modifier:shredder-attack-buff:delay",
+          "ownerId": "effect:snapfire_lil_shredder:modifier:shredder-attack-buff",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "snapfire_lil_shredder"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:snapfire_lil_shredder:modifier:shredder-attack-buff",
+      "legacyEffectId": "snapfire_lil_shredder:modifier:shredder-attack-buff",
+      "order": 6,
+      "legacyAbilityId": "snapfire_lil_shredder",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:snapfire_lil_shredder:modifier:shredder-attack-buff:range",
+        "value:effect:snapfire_lil_shredder:modifier:shredder-attack-buff:duration",
+        "value:effect:snapfire_lil_shredder:modifier:shredder-attack-buff:magnitude",
+        "value:effect:snapfire_lil_shredder:modifier:shredder-attack-buff:mana",
+        "value:effect:snapfire_lil_shredder:modifier:shredder-attack-buff:cooldown",
+        "value:effect:snapfire_lil_shredder:modifier:shredder-attack-buff:delay"
+      ],
+      "activationId": "activation:128:snapfire_lil_shredder"
+    },
+    {
+      "effectId": "snapfire_lil_shredder:damage:shredder-base-attack-component",
+      "heroId": "128",
+      "abilityId": "ability:128:snapfire_lil_shredder",
+      "type": "damage",
+      "subtype": "shredder-base-attack-component",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:snapfire_lil_shredder:damage:shredder-base-attack-component:range",
+          "ownerId": "effect:snapfire_lil_shredder:damage:shredder-base-attack-component",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:snapfire_lil_shredder:damage:shredder-base-attack-component:duration",
+          "ownerId": "effect:snapfire_lil_shredder:damage:shredder-base-attack-component",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:snapfire_lil_shredder:damage:shredder-base-attack-component:magnitude",
+          "ownerId": "effect:snapfire_lil_shredder:damage:shredder-base-attack-component",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            20,
+            35,
+            50,
+            65
+          ]
+        },
+        "mana": {
+          "id": "value:effect:snapfire_lil_shredder:damage:shredder-base-attack-component:mana",
+          "ownerId": "effect:snapfire_lil_shredder:damage:shredder-base-attack-component",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:snapfire_lil_shredder:damage:shredder-base-attack-component:cooldown",
+          "ownerId": "effect:snapfire_lil_shredder:damage:shredder-base-attack-component",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:snapfire_lil_shredder:damage:shredder-base-attack-component:delay",
+          "ownerId": "effect:snapfire_lil_shredder:damage:shredder-base-attack-component",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:snapfire_lil_shredder:damage:shredder-base-attack-component:damageType",
+          "ownerId": "effect:snapfire_lil_shredder:damage:shredder-base-attack-component",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "shredderBuffActive",
+          "shredderAttackHits"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "snapfire_lil_shredder:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:snapfire_lil_shredder:damage:shredder-base-attack-component",
+      "legacyEffectId": "snapfire_lil_shredder:damage:shredder-base-attack-component",
+      "order": 7,
+      "legacyAbilityId": "snapfire_lil_shredder",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:snapfire_lil_shredder:damage:shredder-base-attack-component:0",
+        "condition:snapfire_lil_shredder:damage:shredder-base-attack-component:1"
+      ],
+      "valueIds": [
+        "value:effect:snapfire_lil_shredder:damage:shredder-base-attack-component:range",
+        "value:effect:snapfire_lil_shredder:damage:shredder-base-attack-component:duration",
+        "value:effect:snapfire_lil_shredder:damage:shredder-base-attack-component:magnitude",
+        "value:effect:snapfire_lil_shredder:damage:shredder-base-attack-component:mana",
+        "value:effect:snapfire_lil_shredder:damage:shredder-base-attack-component:cooldown",
+        "value:effect:snapfire_lil_shredder:damage:shredder-base-attack-component:delay",
+        "value:effect:snapfire_lil_shredder:damage:shredder-base-attack-component:damageType"
+      ],
+      "activationId": "activation:128:snapfire_lil_shredder"
+    },
+    {
+      "effectId": "snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction",
+      "heroId": "128",
+      "abilityId": "ability:128:snapfire_lil_shredder",
+      "type": "modifier",
+      "subtype": "shredder-per-hit-armor-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction:range",
+          "ownerId": "effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction:duration",
+          "ownerId": "effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction",
+          "field": "duration",
+          "state": "known",
+          "value": 5
+        },
+        "magnitude": {
+          "id": "value:effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction:magnitude",
+          "ownerId": "effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": 0.5
+        },
+        "mana": {
+          "id": "value:effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction:mana",
+          "ownerId": "effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction:cooldown",
+          "ownerId": "effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction:delay",
+          "ownerId": "effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "shredderBuffActive",
+          "shredderAttackHits"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "snapfire_lil_shredder:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction",
+      "legacyEffectId": "snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction",
+      "order": 8,
+      "legacyAbilityId": "snapfire_lil_shredder",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction:0",
+        "condition:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction:1"
+      ],
+      "valueIds": [
+        "value:effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction:range",
+        "value:effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction:duration",
+        "value:effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction:magnitude",
+        "value:effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction:mana",
+        "value:effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction:cooldown",
+        "value:effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction:delay"
+      ],
+      "activationId": "activation:128:snapfire_lil_shredder"
+    },
+    {
+      "effectId": "snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game",
+      "heroId": "128",
+      "abilityId": "ability:128:snapfire_gobble_up",
+      "type": "save",
+      "subtype": "scepter-gobbled-ally-out-of-game",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game:range",
+          "ownerId": "effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game",
+          "field": "range",
+          "state": "known",
+          "value": 150
+        },
+        "duration": {
+          "id": "value:effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game:duration",
+          "ownerId": "effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game",
+          "field": "duration",
+          "state": "known",
+          "value": 3
+        },
+        "magnitude": {
+          "id": "value:effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game:magnitude",
+          "ownerId": "effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game:mana",
+          "ownerId": "effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game",
+          "field": "mana",
+          "state": "known",
+          "value": 120
+        },
+        "cooldown": {
+          "id": "value:effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game:cooldown",
+          "ownerId": "effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game",
+          "field": "cooldown",
+          "state": "known",
+          "value": 40
+        },
+        "delay": {
+          "id": "value:effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game:delay",
+          "ownerId": "effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "physical",
+            "magical",
+            "pure"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "snapfire_gobble_up"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game",
+      "legacyEffectId": "snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game",
+      "order": 9,
+      "legacyAbilityId": "snapfire_gobble_up",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game:range",
+        "value:effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game:duration",
+        "value:effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game:magnitude",
+        "value:effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game:mana",
+        "value:effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game:cooldown",
+        "value:effect:snapfire_gobble_up:save:scepter-gobbled-ally-out-of-game:delay"
+      ],
+      "activationId": "activation:128:snapfire_gobble_up"
+    },
+    {
+      "effectId": "snapfire_spit_creep:control:scepter-spit-landing-stun",
+      "heroId": "128",
+      "abilityId": "ability:128:snapfire_spit_creep",
+      "type": "control",
+      "subtype": "scepter-spit-landing-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:snapfire_spit_creep:control:scepter-spit-landing-stun:range",
+          "ownerId": "effect:snapfire_spit_creep:control:scepter-spit-landing-stun",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:snapfire_spit_creep:control:scepter-spit-landing-stun:duration",
+          "ownerId": "effect:snapfire_spit_creep:control:scepter-spit-landing-stun",
+          "field": "duration",
+          "state": "known",
+          "value": 1.2
+        },
+        "magnitude": {
+          "id": "value:effect:snapfire_spit_creep:control:scepter-spit-landing-stun:magnitude",
+          "ownerId": "effect:snapfire_spit_creep:control:scepter-spit-landing-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:snapfire_spit_creep:control:scepter-spit-landing-stun:mana",
+          "ownerId": "effect:snapfire_spit_creep:control:scepter-spit-landing-stun",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:snapfire_spit_creep:control:scepter-spit-landing-stun:cooldown",
+          "ownerId": "effect:snapfire_spit_creep:control:scepter-spit-landing-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0
+        },
+        "delay": {
+          "id": "value:effect:snapfire_spit_creep:control:scepter-spit-landing-stun:delay",
+          "ownerId": "effect:snapfire_spit_creep:control:scepter-spit-landing-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "unitInMortimerBelly",
+          "enemyAtSpitLanding"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "snapfire_spit_creep"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:snapfire_spit_creep:control:scepter-spit-landing-stun",
+      "legacyEffectId": "snapfire_spit_creep:control:scepter-spit-landing-stun",
+      "order": 10,
+      "legacyAbilityId": "snapfire_spit_creep",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:snapfire_spit_creep:control:scepter-spit-landing-stun:0",
+        "condition:snapfire_spit_creep:control:scepter-spit-landing-stun:1"
+      ],
+      "valueIds": [
+        "value:effect:snapfire_spit_creep:control:scepter-spit-landing-stun:range",
+        "value:effect:snapfire_spit_creep:control:scepter-spit-landing-stun:duration",
+        "value:effect:snapfire_spit_creep:control:scepter-spit-landing-stun:magnitude",
+        "value:effect:snapfire_spit_creep:control:scepter-spit-landing-stun:mana",
+        "value:effect:snapfire_spit_creep:control:scepter-spit-landing-stun:cooldown",
+        "value:effect:snapfire_spit_creep:control:scepter-spit-landing-stun:delay"
+      ],
+      "activationId": "activation:128:snapfire_spit_creep"
+    },
+    {
+      "effectId": "snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects",
+      "heroId": "128",
+      "abilityId": "ability:128:snapfire_spit_creep",
+      "type": "modifier",
+      "subtype": "scepter-spit-mortimer-derived-effects",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects:range",
+          "ownerId": "effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects:duration",
+          "ownerId": "effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects:magnitude",
+          "ownerId": "effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects:mana",
+          "ownerId": "effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects:cooldown",
+          "ownerId": "effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects:delay",
+          "ownerId": "effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "snapfire_mortimer_kisses"
+        ],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "unitInMortimerBelly"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "snapfire_spit_creep:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects",
+      "legacyEffectId": "snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects",
+      "order": 11,
+      "legacyAbilityId": "snapfire_spit_creep",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects:0"
+      ],
+      "valueIds": [
+        "value:effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects:range",
+        "value:effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects:duration",
+        "value:effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects:magnitude",
+        "value:effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects:mana",
+        "value:effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects:cooldown",
+        "value:effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects:delay"
+      ],
+      "activationId": "activation:128:snapfire_spit_creep"
+    },
+    {
+      "effectId": "snapfire_mortimer_kisses:damage:mortimer-single-glob-impact",
+      "heroId": "128",
+      "abilityId": "ability:128:snapfire_mortimer_kisses",
+      "type": "damage",
+      "subtype": "mortimer-single-glob-impact",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:range",
+          "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:duration",
+          "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:magnitude",
+          "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            170,
+            250,
+            330
+          ]
+        },
+        "mana": {
+          "id": "value:effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:mana",
+          "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            150,
+            175
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:cooldown",
+          "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            120,
+            110,
+            100
+          ]
+        },
+        "delay": {
+          "id": "value:effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:delay",
+          "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:damageType",
+          "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "kissesBarrageContinues",
+          "targetWithinKissesLobLimits",
+          "mortimerGlobHits"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "snapfire_mortimer_kisses"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact",
+      "legacyEffectId": "snapfire_mortimer_kisses:damage:mortimer-single-glob-impact",
+      "order": 12,
+      "legacyAbilityId": "snapfire_mortimer_kisses",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:0",
+        "condition:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:1",
+        "condition:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:2"
+      ],
+      "valueIds": [
+        "value:effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:range",
+        "value:effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:duration",
+        "value:effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:magnitude",
+        "value:effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:mana",
+        "value:effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:cooldown",
+        "value:effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:delay",
+        "value:effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:damageType"
+      ],
+      "activationId": "activation:128:snapfire_mortimer_kisses"
+    },
+    {
+      "effectId": "snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate",
+      "heroId": "128",
+      "abilityId": "ability:128:snapfire_mortimer_kisses",
+      "type": "damage",
+      "subtype": "mortimer-pool-damage-rate",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate:range",
+          "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate:duration",
+          "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate:magnitude",
+          "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            60,
+            80,
+            100
+          ]
+        },
+        "mana": {
+          "id": "value:effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate:mana",
+          "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            150,
+            175
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate:cooldown",
+          "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            120,
+            110,
+            100
+          ]
+        },
+        "delay": {
+          "id": "value:effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate:delay",
+          "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate:damageType",
+          "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideMortimerFirePool"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "snapfire_mortimer_kisses"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate",
+      "legacyEffectId": "snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate",
+      "order": 13,
+      "legacyAbilityId": "snapfire_mortimer_kisses",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate:0"
+      ],
+      "valueIds": [
+        "value:effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate:range",
+        "value:effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate:duration",
+        "value:effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate:magnitude",
+        "value:effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate:mana",
+        "value:effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate:cooldown",
+        "value:effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate:delay",
+        "value:effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate:damageType"
+      ],
+      "activationId": "activation:128:snapfire_mortimer_kisses"
+    },
+    {
+      "effectId": "snapfire_mortimer_kisses:slow:mortimer-pool-slow",
+      "heroId": "128",
+      "abilityId": "ability:128:snapfire_mortimer_kisses",
+      "type": "slow",
+      "subtype": "mortimer-pool-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow:range",
+          "ownerId": "effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow:duration",
+          "ownerId": "effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow:magnitude",
+          "ownerId": "effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            15,
+            20,
+            25
+          ]
+        },
+        "mana": {
+          "id": "value:effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow:mana",
+          "ownerId": "effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            150,
+            175
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow:cooldown",
+          "ownerId": "effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            120,
+            110,
+            100
+          ]
+        },
+        "delay": {
+          "id": "value:effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow:delay",
+          "ownerId": "effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideMortimerFirePool"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "snapfire_mortimer_kisses"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow",
+      "legacyEffectId": "snapfire_mortimer_kisses:slow:mortimer-pool-slow",
+      "order": 14,
+      "legacyAbilityId": "snapfire_mortimer_kisses",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:snapfire_mortimer_kisses:slow:mortimer-pool-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow:range",
+        "value:effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow:duration",
+        "value:effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow:magnitude",
+        "value:effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow:mana",
+        "value:effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow:cooldown",
+        "value:effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow:delay"
+      ],
+      "activationId": "activation:128:snapfire_mortimer_kisses"
+    },
+    {
+      "effectId": "snapfire_boomstick:modifier:boomstick-distance-dependent-amplification",
+      "heroId": "128",
+      "abilityId": "ability:128:snapfire_boomstick",
+      "type": "modifier",
+      "subtype": "boomstick-distance-dependent-amplification",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification:range",
+          "ownerId": "effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification:duration",
+          "ownerId": "effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification:magnitude",
+          "ownerId": "effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification:mana",
+          "ownerId": "effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification:cooldown",
+          "ownerId": "effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification:delay",
+          "ownerId": "effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "snapfire_boomstick:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification",
+      "legacyEffectId": "snapfire_boomstick:modifier:boomstick-distance-dependent-amplification",
+      "order": 15,
+      "legacyAbilityId": "snapfire_boomstick",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification:range",
+        "value:effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification:duration",
+        "value:effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification:magnitude",
+        "value:effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification:mana",
+        "value:effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification:cooldown",
+        "value:effect:snapfire_boomstick:modifier:boomstick-distance-dependent-amplification:delay"
+      ],
+      "activationId": "activation:128:snapfire_boomstick"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:snapfire_scatterblast:damage:scatterblast-base-cone-damage:0",
+      "ownerId": "effect:snapfire_scatterblast:damage:scatterblast-base-cone-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideScatterblastCone"
+      }
+    },
+    {
+      "id": "condition:snapfire_scatterblast:slow:scatterblast-movement-slow:0",
+      "ownerId": "effect:snapfire_scatterblast:slow:scatterblast-movement-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideScatterblastCone"
+      }
+    },
+    {
+      "id": "condition:snapfire_firesnap_cookie:control:cookie-landing-stun:0",
+      "ownerId": "effect:snapfire_firesnap_cookie:control:cookie-landing-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyAtCookieLanding"
+      }
+    },
+    {
+      "id": "condition:snapfire_firesnap_cookie:damage:cookie-landing-damage:0",
+      "ownerId": "effect:snapfire_firesnap_cookie:damage:cookie-landing-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyAtCookieLanding"
+      }
+    },
+    {
+      "id": "condition:snapfire_lil_shredder:damage:shredder-base-attack-component:0",
+      "ownerId": "effect:snapfire_lil_shredder:damage:shredder-base-attack-component",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "shredderBuffActive"
+      }
+    },
+    {
+      "id": "condition:snapfire_lil_shredder:damage:shredder-base-attack-component:1",
+      "ownerId": "effect:snapfire_lil_shredder:damage:shredder-base-attack-component",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "shredderAttackHits"
+      }
+    },
+    {
+      "id": "condition:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction:0",
+      "ownerId": "effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "shredderBuffActive"
+      }
+    },
+    {
+      "id": "condition:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction:1",
+      "ownerId": "effect:snapfire_lil_shredder:modifier:shredder-per-hit-armor-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "shredderAttackHits"
+      }
+    },
+    {
+      "id": "condition:snapfire_spit_creep:control:scepter-spit-landing-stun:0",
+      "ownerId": "effect:snapfire_spit_creep:control:scepter-spit-landing-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "unitInMortimerBelly"
+      }
+    },
+    {
+      "id": "condition:snapfire_spit_creep:control:scepter-spit-landing-stun:1",
+      "ownerId": "effect:snapfire_spit_creep:control:scepter-spit-landing-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyAtSpitLanding"
+      }
+    },
+    {
+      "id": "condition:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects:0",
+      "ownerId": "effect:snapfire_spit_creep:modifier:scepter-spit-mortimer-derived-effects",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "unitInMortimerBelly"
+      }
+    },
+    {
+      "id": "condition:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:0",
+      "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kissesBarrageContinues"
+      }
+    },
+    {
+      "id": "condition:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:1",
+      "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "targetWithinKissesLobLimits"
+      }
+    },
+    {
+      "id": "condition:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact:2",
+      "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-single-glob-impact",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "mortimerGlobHits"
+      }
+    },
+    {
+      "id": "condition:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate:0",
+      "ownerId": "effect:snapfire_mortimer_kisses:damage:mortimer-pool-damage-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideMortimerFirePool"
+      }
+    },
+    {
+      "id": "condition:snapfire_mortimer_kisses:slow:mortimer-pool-slow:0",
+      "ownerId": "effect:snapfire_mortimer_kisses:slow:mortimer-pool-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideMortimerFirePool"
+      }
+    }
+  ]
+}

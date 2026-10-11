@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/observation-shard.schema.json",
+  "title": "Lazy observation shard",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "version",
+    "coreSha256",
+    "observations"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9.-]{0,63}$"
+    },
+    "coreSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "$ref": "core.schema.json#/$defs/observation"
+      }
+    }
+  },
+  "additionalProperties": false
+}

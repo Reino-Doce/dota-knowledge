@@ -1,0 +1,1525 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "lich_frost_nova:damage:frost-blast-primary-component",
+      "heroId": "31",
+      "abilityId": "ability:31:lich_frost_nova",
+      "type": "damage",
+      "subtype": "frost-blast-primary-component",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lich_frost_nova:damage:frost-blast-primary-component:range",
+          "ownerId": "effect:lich_frost_nova:damage:frost-blast-primary-component",
+          "field": "range",
+          "state": "known",
+          "value": [
+            575,
+            600,
+            625,
+            650
+          ]
+        },
+        "duration": {
+          "id": "value:effect:lich_frost_nova:damage:frost-blast-primary-component:duration",
+          "ownerId": "effect:lich_frost_nova:damage:frost-blast-primary-component",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lich_frost_nova:damage:frost-blast-primary-component:magnitude",
+          "ownerId": "effect:lich_frost_nova:damage:frost-blast-primary-component",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            40,
+            80,
+            120,
+            160
+          ]
+        },
+        "mana": {
+          "id": "value:effect:lich_frost_nova:damage:frost-blast-primary-component:mana",
+          "ownerId": "effect:lich_frost_nova:damage:frost-blast-primary-component",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            110,
+            120,
+            130,
+            140
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:lich_frost_nova:damage:frost-blast-primary-component:cooldown",
+          "ownerId": "effect:lich_frost_nova:damage:frost-blast-primary-component",
+          "field": "cooldown",
+          "state": "known",
+          "value": 7
+        },
+        "delay": {
+          "id": "value:effect:lich_frost_nova:damage:frost-blast-primary-component:delay",
+          "ownerId": "effect:lich_frost_nova:damage:frost-blast-primary-component",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:lich_frost_nova:damage:frost-blast-primary-component:damageType",
+          "ownerId": "effect:lich_frost_nova:damage:frost-blast-primary-component",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lich_frost_nova"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lich_frost_nova:damage:frost-blast-primary-component",
+      "legacyEffectId": "lich_frost_nova:damage:frost-blast-primary-component",
+      "order": 0,
+      "legacyAbilityId": "lich_frost_nova",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lich_frost_nova:damage:frost-blast-primary-component:range",
+        "value:effect:lich_frost_nova:damage:frost-blast-primary-component:duration",
+        "value:effect:lich_frost_nova:damage:frost-blast-primary-component:magnitude",
+        "value:effect:lich_frost_nova:damage:frost-blast-primary-component:mana",
+        "value:effect:lich_frost_nova:damage:frost-blast-primary-component:cooldown",
+        "value:effect:lich_frost_nova:damage:frost-blast-primary-component:delay",
+        "value:effect:lich_frost_nova:damage:frost-blast-primary-component:damageType"
+      ],
+      "activationId": "activation:31:lich_frost_nova"
+    },
+    {
+      "effectId": "lich_frost_nova:damage:frost-blast-area-component",
+      "heroId": "31",
+      "abilityId": "ability:31:lich_frost_nova",
+      "type": "damage",
+      "subtype": "frost-blast-area-component",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lich_frost_nova:damage:frost-blast-area-component:range",
+          "ownerId": "effect:lich_frost_nova:damage:frost-blast-area-component",
+          "field": "range",
+          "state": "known",
+          "value": [
+            575,
+            600,
+            625,
+            650
+          ]
+        },
+        "duration": {
+          "id": "value:effect:lich_frost_nova:damage:frost-blast-area-component:duration",
+          "ownerId": "effect:lich_frost_nova:damage:frost-blast-area-component",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lich_frost_nova:damage:frost-blast-area-component:magnitude",
+          "ownerId": "effect:lich_frost_nova:damage:frost-blast-area-component",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            80,
+            120,
+            160,
+            200
+          ]
+        },
+        "mana": {
+          "id": "value:effect:lich_frost_nova:damage:frost-blast-area-component:mana",
+          "ownerId": "effect:lich_frost_nova:damage:frost-blast-area-component",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            110,
+            120,
+            130,
+            140
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:lich_frost_nova:damage:frost-blast-area-component:cooldown",
+          "ownerId": "effect:lich_frost_nova:damage:frost-blast-area-component",
+          "field": "cooldown",
+          "state": "known",
+          "value": 7
+        },
+        "delay": {
+          "id": "value:effect:lich_frost_nova:damage:frost-blast-area-component:delay",
+          "ownerId": "effect:lich_frost_nova:damage:frost-blast-area-component",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:lich_frost_nova:damage:frost-blast-area-component:damageType",
+          "ownerId": "effect:lich_frost_nova:damage:frost-blast-area-component",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lich_frost_nova"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lich_frost_nova:damage:frost-blast-area-component",
+      "legacyEffectId": "lich_frost_nova:damage:frost-blast-area-component",
+      "order": 1,
+      "legacyAbilityId": "lich_frost_nova",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lich_frost_nova:damage:frost-blast-area-component:range",
+        "value:effect:lich_frost_nova:damage:frost-blast-area-component:duration",
+        "value:effect:lich_frost_nova:damage:frost-blast-area-component:magnitude",
+        "value:effect:lich_frost_nova:damage:frost-blast-area-component:mana",
+        "value:effect:lich_frost_nova:damage:frost-blast-area-component:cooldown",
+        "value:effect:lich_frost_nova:damage:frost-blast-area-component:delay",
+        "value:effect:lich_frost_nova:damage:frost-blast-area-component:damageType"
+      ],
+      "activationId": "activation:31:lich_frost_nova"
+    },
+    {
+      "effectId": "lich_frost_nova:slow:frost-blast-movement-slow",
+      "heroId": "31",
+      "abilityId": "ability:31:lich_frost_nova",
+      "type": "slow",
+      "subtype": "frost-blast-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lich_frost_nova:slow:frost-blast-movement-slow:range",
+          "ownerId": "effect:lich_frost_nova:slow:frost-blast-movement-slow",
+          "field": "range",
+          "state": "known",
+          "value": [
+            575,
+            600,
+            625,
+            650
+          ]
+        },
+        "duration": {
+          "id": "value:effect:lich_frost_nova:slow:frost-blast-movement-slow:duration",
+          "ownerId": "effect:lich_frost_nova:slow:frost-blast-movement-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:lich_frost_nova:slow:frost-blast-movement-slow:magnitude",
+          "ownerId": "effect:lich_frost_nova:slow:frost-blast-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": -25
+        },
+        "mana": {
+          "id": "value:effect:lich_frost_nova:slow:frost-blast-movement-slow:mana",
+          "ownerId": "effect:lich_frost_nova:slow:frost-blast-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            110,
+            120,
+            130,
+            140
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:lich_frost_nova:slow:frost-blast-movement-slow:cooldown",
+          "ownerId": "effect:lich_frost_nova:slow:frost-blast-movement-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": 7
+        },
+        "delay": {
+          "id": "value:effect:lich_frost_nova:slow:frost-blast-movement-slow:delay",
+          "ownerId": "effect:lich_frost_nova:slow:frost-blast-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "lich_frost_nova"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lich_frost_nova:slow:frost-blast-movement-slow",
+      "legacyEffectId": "lich_frost_nova:slow:frost-blast-movement-slow",
+      "order": 2,
+      "legacyAbilityId": "lich_frost_nova",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lich_frost_nova:slow:frost-blast-movement-slow:range",
+        "value:effect:lich_frost_nova:slow:frost-blast-movement-slow:duration",
+        "value:effect:lich_frost_nova:slow:frost-blast-movement-slow:magnitude",
+        "value:effect:lich_frost_nova:slow:frost-blast-movement-slow:mana",
+        "value:effect:lich_frost_nova:slow:frost-blast-movement-slow:cooldown",
+        "value:effect:lich_frost_nova:slow:frost-blast-movement-slow:delay"
+      ],
+      "activationId": "activation:31:lich_frost_nova"
+    },
+    {
+      "effectId": "lich_frost_shield:modifier:allied-attack-damage-reduction",
+      "heroId": "31",
+      "abilityId": "ability:31:lich_frost_shield",
+      "type": "modifier",
+      "subtype": "allied-attack-damage-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lich_frost_shield:modifier:allied-attack-damage-reduction:range",
+          "ownerId": "effect:lich_frost_shield:modifier:allied-attack-damage-reduction",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:lich_frost_shield:modifier:allied-attack-damage-reduction:duration",
+          "ownerId": "effect:lich_frost_shield:modifier:allied-attack-damage-reduction",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:lich_frost_shield:modifier:allied-attack-damage-reduction:magnitude",
+          "ownerId": "effect:lich_frost_shield:modifier:allied-attack-damage-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            45,
+            50,
+            55,
+            60
+          ]
+        },
+        "mana": {
+          "id": "value:effect:lich_frost_shield:modifier:allied-attack-damage-reduction:mana",
+          "ownerId": "effect:lich_frost_shield:modifier:allied-attack-damage-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:lich_frost_shield:modifier:allied-attack-damage-reduction:cooldown",
+          "ownerId": "effect:lich_frost_shield:modifier:allied-attack-damage-reduction",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            25,
+            20,
+            15
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lich_frost_shield:modifier:allied-attack-damage-reduction:delay",
+          "ownerId": "effect:lich_frost_shield:modifier:allied-attack-damage-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "lich_frost_shield"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lich_frost_shield:modifier:allied-attack-damage-reduction",
+      "legacyEffectId": "lich_frost_shield:modifier:allied-attack-damage-reduction",
+      "order": 3,
+      "legacyAbilityId": "lich_frost_shield",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lich_frost_shield:modifier:allied-attack-damage-reduction:range",
+        "value:effect:lich_frost_shield:modifier:allied-attack-damage-reduction:duration",
+        "value:effect:lich_frost_shield:modifier:allied-attack-damage-reduction:magnitude",
+        "value:effect:lich_frost_shield:modifier:allied-attack-damage-reduction:mana",
+        "value:effect:lich_frost_shield:modifier:allied-attack-damage-reduction:cooldown",
+        "value:effect:lich_frost_shield:modifier:allied-attack-damage-reduction:delay"
+      ],
+      "activationId": "activation:31:lich_frost_shield"
+    },
+    {
+      "effectId": "lich_frost_shield:slow:shield-pulse-movement-slow",
+      "heroId": "31",
+      "abilityId": "ability:31:lich_frost_shield",
+      "type": "slow",
+      "subtype": "shield-pulse-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lich_frost_shield:slow:shield-pulse-movement-slow:range",
+          "ownerId": "effect:lich_frost_shield:slow:shield-pulse-movement-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:lich_frost_shield:slow:shield-pulse-movement-slow:duration",
+          "ownerId": "effect:lich_frost_shield:slow:shield-pulse-movement-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 0.5
+        },
+        "magnitude": {
+          "id": "value:effect:lich_frost_shield:slow:shield-pulse-movement-slow:magnitude",
+          "ownerId": "effect:lich_frost_shield:slow:shield-pulse-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            20,
+            25,
+            30,
+            35
+          ]
+        },
+        "mana": {
+          "id": "value:effect:lich_frost_shield:slow:shield-pulse-movement-slow:mana",
+          "ownerId": "effect:lich_frost_shield:slow:shield-pulse-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:lich_frost_shield:slow:shield-pulse-movement-slow:cooldown",
+          "ownerId": "effect:lich_frost_shield:slow:shield-pulse-movement-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            25,
+            20,
+            15
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lich_frost_shield:slow:shield-pulse-movement-slow:delay",
+          "ownerId": "effect:lich_frost_shield:slow:shield-pulse-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideFrostShieldPulse"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lich_frost_shield"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lich_frost_shield:slow:shield-pulse-movement-slow",
+      "legacyEffectId": "lich_frost_shield:slow:shield-pulse-movement-slow",
+      "order": 4,
+      "legacyAbilityId": "lich_frost_shield",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:lich_frost_shield:slow:shield-pulse-movement-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:lich_frost_shield:slow:shield-pulse-movement-slow:range",
+        "value:effect:lich_frost_shield:slow:shield-pulse-movement-slow:duration",
+        "value:effect:lich_frost_shield:slow:shield-pulse-movement-slow:magnitude",
+        "value:effect:lich_frost_shield:slow:shield-pulse-movement-slow:mana",
+        "value:effect:lich_frost_shield:slow:shield-pulse-movement-slow:cooldown",
+        "value:effect:lich_frost_shield:slow:shield-pulse-movement-slow:delay"
+      ],
+      "activationId": "activation:31:lich_frost_shield"
+    },
+    {
+      "effectId": "lich_sinister_gaze:displacement:channelled-gaze-pull",
+      "heroId": "31",
+      "abilityId": "ability:31:lich_sinister_gaze",
+      "type": "displacement",
+      "subtype": "channelled-gaze-pull",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lich_sinister_gaze:displacement:channelled-gaze-pull:range",
+          "ownerId": "effect:lich_sinister_gaze:displacement:channelled-gaze-pull",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:lich_sinister_gaze:displacement:channelled-gaze-pull:duration",
+          "ownerId": "effect:lich_sinister_gaze:displacement:channelled-gaze-pull",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.1,
+            1.4,
+            1.7,
+            2
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:lich_sinister_gaze:displacement:channelled-gaze-pull:magnitude",
+          "ownerId": "effect:lich_sinister_gaze:displacement:channelled-gaze-pull",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lich_sinister_gaze:displacement:channelled-gaze-pull:mana",
+          "ownerId": "effect:lich_sinister_gaze:displacement:channelled-gaze-pull",
+          "field": "mana",
+          "state": "known",
+          "value": 25
+        },
+        "cooldown": {
+          "id": "value:effect:lich_sinister_gaze:displacement:channelled-gaze-pull:cooldown",
+          "ownerId": "effect:lich_sinister_gaze:displacement:channelled-gaze-pull",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            22,
+            20,
+            18
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lich_sinister_gaze:displacement:channelled-gaze-pull:delay",
+          "ownerId": "effect:lich_sinister_gaze:displacement:channelled-gaze-pull",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "channelMaintained"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "lich_sinister_gaze"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lich_sinister_gaze:displacement:channelled-gaze-pull",
+      "legacyEffectId": "lich_sinister_gaze:displacement:channelled-gaze-pull",
+      "order": 5,
+      "legacyAbilityId": "lich_sinister_gaze",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:lich_sinister_gaze:displacement:channelled-gaze-pull:0"
+      ],
+      "valueIds": [
+        "value:effect:lich_sinister_gaze:displacement:channelled-gaze-pull:range",
+        "value:effect:lich_sinister_gaze:displacement:channelled-gaze-pull:duration",
+        "value:effect:lich_sinister_gaze:displacement:channelled-gaze-pull:magnitude",
+        "value:effect:lich_sinister_gaze:displacement:channelled-gaze-pull:mana",
+        "value:effect:lich_sinister_gaze:displacement:channelled-gaze-pull:cooldown",
+        "value:effect:lich_sinister_gaze:displacement:channelled-gaze-pull:delay"
+      ],
+      "activationId": "activation:31:lich_sinister_gaze"
+    },
+    {
+      "effectId": "lich_sinister_gaze:modifier:scepter-area-gaze",
+      "heroId": "31",
+      "abilityId": "ability:31:lich_sinister_gaze",
+      "type": "modifier",
+      "subtype": "scepter-area-gaze",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lich_sinister_gaze:modifier:scepter-area-gaze:range",
+          "ownerId": "effect:lich_sinister_gaze:modifier:scepter-area-gaze",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:lich_sinister_gaze:modifier:scepter-area-gaze:duration",
+          "ownerId": "effect:lich_sinister_gaze:modifier:scepter-area-gaze",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lich_sinister_gaze:modifier:scepter-area-gaze:magnitude",
+          "ownerId": "effect:lich_sinister_gaze:modifier:scepter-area-gaze",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lich_sinister_gaze:modifier:scepter-area-gaze:mana",
+          "ownerId": "effect:lich_sinister_gaze:modifier:scepter-area-gaze",
+          "field": "mana",
+          "state": "known",
+          "value": 25
+        },
+        "cooldown": {
+          "id": "value:effect:lich_sinister_gaze:modifier:scepter-area-gaze:cooldown",
+          "ownerId": "effect:lich_sinister_gaze:modifier:scepter-area-gaze",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            22,
+            20,
+            18
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lich_sinister_gaze:modifier:scepter-area-gaze:delay",
+          "ownerId": "effect:lich_sinister_gaze:modifier:scepter-area-gaze",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lich_sinister_gaze"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lich_sinister_gaze:modifier:scepter-area-gaze",
+      "legacyEffectId": "lich_sinister_gaze:modifier:scepter-area-gaze",
+      "order": 6,
+      "legacyAbilityId": "lich_sinister_gaze",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lich_sinister_gaze:modifier:scepter-area-gaze:range",
+        "value:effect:lich_sinister_gaze:modifier:scepter-area-gaze:duration",
+        "value:effect:lich_sinister_gaze:modifier:scepter-area-gaze:magnitude",
+        "value:effect:lich_sinister_gaze:modifier:scepter-area-gaze:mana",
+        "value:effect:lich_sinister_gaze:modifier:scepter-area-gaze:cooldown",
+        "value:effect:lich_sinister_gaze:modifier:scepter-area-gaze:delay"
+      ],
+      "activationId": "activation:31:lich_sinister_gaze"
+    },
+    {
+      "effectId": "lich_ice_spire:slow:shard-spire-aura-slow",
+      "heroId": "31",
+      "abilityId": "ability:31:lich_ice_spire",
+      "type": "slow",
+      "subtype": "shard-spire-aura-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lich_ice_spire:slow:shard-spire-aura-slow:range",
+          "ownerId": "effect:lich_ice_spire:slow:shard-spire-aura-slow",
+          "field": "range",
+          "state": "known",
+          "value": 750
+        },
+        "duration": {
+          "id": "value:effect:lich_ice_spire:slow:shard-spire-aura-slow:duration",
+          "ownerId": "effect:lich_ice_spire:slow:shard-spire-aura-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 0.5
+        },
+        "magnitude": {
+          "id": "value:effect:lich_ice_spire:slow:shard-spire-aura-slow:magnitude",
+          "ownerId": "effect:lich_ice_spire:slow:shard-spire-aura-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": -25
+        },
+        "mana": {
+          "id": "value:effect:lich_ice_spire:slow:shard-spire-aura-slow:mana",
+          "ownerId": "effect:lich_ice_spire:slow:shard-spire-aura-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 150
+        },
+        "cooldown": {
+          "id": "value:effect:lich_ice_spire:slow:shard-spire-aura-slow:cooldown",
+          "ownerId": "effect:lich_ice_spire:slow:shard-spire-aura-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": 25
+        },
+        "delay": {
+          "id": "value:effect:lich_ice_spire:slow:shard-spire-aura-slow:delay",
+          "ownerId": "effect:lich_ice_spire:slow:shard-spire-aura-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lich_ice_spire"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lich_ice_spire:slow:shard-spire-aura-slow",
+      "legacyEffectId": "lich_ice_spire:slow:shard-spire-aura-slow",
+      "order": 7,
+      "legacyAbilityId": "lich_ice_spire",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lich_ice_spire:slow:shard-spire-aura-slow:range",
+        "value:effect:lich_ice_spire:slow:shard-spire-aura-slow:duration",
+        "value:effect:lich_ice_spire:slow:shard-spire-aura-slow:magnitude",
+        "value:effect:lich_ice_spire:slow:shard-spire-aura-slow:mana",
+        "value:effect:lich_ice_spire:slow:shard-spire-aura-slow:cooldown",
+        "value:effect:lich_ice_spire:slow:shard-spire-aura-slow:delay"
+      ],
+      "activationId": "activation:31:lich_ice_spire"
+    },
+    {
+      "effectId": "lich_death_charge:modifier:creep-sacrifice-mana-and-experience",
+      "heroId": "31",
+      "abilityId": "ability:31:lich_death_charge",
+      "type": "modifier",
+      "subtype": "creep-sacrifice-mana-and-experience",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience:range",
+          "ownerId": "effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience:duration",
+          "ownerId": "effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience:magnitude",
+          "ownerId": "effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience:mana",
+          "ownerId": "effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience:cooldown",
+          "ownerId": "effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0
+        },
+        "delay": {
+          "id": "value:effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience:delay",
+          "ownerId": "effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "lichSacrificeChargeAvailable",
+          "eligibleAlliedCreepAvailable"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lich_death_charge"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience",
+      "legacyEffectId": "lich_death_charge:modifier:creep-sacrifice-mana-and-experience",
+      "order": 8,
+      "legacyAbilityId": "lich_death_charge",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:lich_death_charge:modifier:creep-sacrifice-mana-and-experience:0",
+        "condition:lich_death_charge:modifier:creep-sacrifice-mana-and-experience:1"
+      ],
+      "valueIds": [
+        "value:effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience:range",
+        "value:effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience:duration",
+        "value:effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience:magnitude",
+        "value:effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience:mana",
+        "value:effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience:cooldown",
+        "value:effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience:delay"
+      ],
+      "activationId": "activation:31:lich_death_charge"
+    },
+    {
+      "effectId": "lich_chain_frost:damage:chain-frost-first-hit",
+      "heroId": "31",
+      "abilityId": "ability:31:lich_chain_frost",
+      "type": "damage",
+      "subtype": "chain-frost-first-hit",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lich_chain_frost:damage:chain-frost-first-hit:range",
+          "ownerId": "effect:lich_chain_frost:damage:chain-frost-first-hit",
+          "field": "range",
+          "state": "known",
+          "value": 750
+        },
+        "duration": {
+          "id": "value:effect:lich_chain_frost:damage:chain-frost-first-hit:duration",
+          "ownerId": "effect:lich_chain_frost:damage:chain-frost-first-hit",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lich_chain_frost:damage:chain-frost-first-hit:magnitude",
+          "ownerId": "effect:lich_chain_frost:damage:chain-frost-first-hit",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            250,
+            400,
+            550
+          ]
+        },
+        "mana": {
+          "id": "value:effect:lich_chain_frost:damage:chain-frost-first-hit:mana",
+          "ownerId": "effect:lich_chain_frost:damage:chain-frost-first-hit",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            180,
+            300,
+            420
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:lich_chain_frost:damage:chain-frost-first-hit:cooldown",
+          "ownerId": "effect:lich_chain_frost:damage:chain-frost-first-hit",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            100,
+            80,
+            60
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lich_chain_frost:damage:chain-frost-first-hit:delay",
+          "ownerId": "effect:lich_chain_frost:damage:chain-frost-first-hit",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:lich_chain_frost:damage:chain-frost-first-hit:damageType",
+          "ownerId": "effect:lich_chain_frost:damage:chain-frost-first-hit",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lich_chain_frost"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lich_chain_frost:damage:chain-frost-first-hit",
+      "legacyEffectId": "lich_chain_frost:damage:chain-frost-first-hit",
+      "order": 9,
+      "legacyAbilityId": "lich_chain_frost",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lich_chain_frost:damage:chain-frost-first-hit:range",
+        "value:effect:lich_chain_frost:damage:chain-frost-first-hit:duration",
+        "value:effect:lich_chain_frost:damage:chain-frost-first-hit:magnitude",
+        "value:effect:lich_chain_frost:damage:chain-frost-first-hit:mana",
+        "value:effect:lich_chain_frost:damage:chain-frost-first-hit:cooldown",
+        "value:effect:lich_chain_frost:damage:chain-frost-first-hit:delay",
+        "value:effect:lich_chain_frost:damage:chain-frost-first-hit:damageType"
+      ],
+      "activationId": "activation:31:lich_chain_frost"
+    },
+    {
+      "effectId": "lich_chain_frost:slow:chain-frost-hit-slow",
+      "heroId": "31",
+      "abilityId": "ability:31:lich_chain_frost",
+      "type": "slow",
+      "subtype": "chain-frost-hit-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lich_chain_frost:slow:chain-frost-hit-slow:range",
+          "ownerId": "effect:lich_chain_frost:slow:chain-frost-hit-slow",
+          "field": "range",
+          "state": "known",
+          "value": 750
+        },
+        "duration": {
+          "id": "value:effect:lich_chain_frost:slow:chain-frost-hit-slow:duration",
+          "ownerId": "effect:lich_chain_frost:slow:chain-frost-hit-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 2.5
+        },
+        "magnitude": {
+          "id": "value:effect:lich_chain_frost:slow:chain-frost-hit-slow:magnitude",
+          "ownerId": "effect:lich_chain_frost:slow:chain-frost-hit-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": -65
+        },
+        "mana": {
+          "id": "value:effect:lich_chain_frost:slow:chain-frost-hit-slow:mana",
+          "ownerId": "effect:lich_chain_frost:slow:chain-frost-hit-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            180,
+            300,
+            420
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:lich_chain_frost:slow:chain-frost-hit-slow:cooldown",
+          "ownerId": "effect:lich_chain_frost:slow:chain-frost-hit-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            100,
+            80,
+            60
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lich_chain_frost:slow:chain-frost-hit-slow:delay",
+          "ownerId": "effect:lich_chain_frost:slow:chain-frost-hit-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "lich_chain_frost"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lich_chain_frost:slow:chain-frost-hit-slow",
+      "legacyEffectId": "lich_chain_frost:slow:chain-frost-hit-slow",
+      "order": 10,
+      "legacyAbilityId": "lich_chain_frost",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lich_chain_frost:slow:chain-frost-hit-slow:range",
+        "value:effect:lich_chain_frost:slow:chain-frost-hit-slow:duration",
+        "value:effect:lich_chain_frost:slow:chain-frost-hit-slow:magnitude",
+        "value:effect:lich_chain_frost:slow:chain-frost-hit-slow:mana",
+        "value:effect:lich_chain_frost:slow:chain-frost-hit-slow:cooldown",
+        "value:effect:lich_chain_frost:slow:chain-frost-hit-slow:delay"
+      ],
+      "activationId": "activation:31:lich_chain_frost"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:lich_frost_shield:slow:shield-pulse-movement-slow:0",
+      "ownerId": "effect:lich_frost_shield:slow:shield-pulse-movement-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideFrostShieldPulse"
+      }
+    },
+    {
+      "id": "condition:lich_sinister_gaze:displacement:channelled-gaze-pull:0",
+      "ownerId": "effect:lich_sinister_gaze:displacement:channelled-gaze-pull",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "channelMaintained"
+      }
+    },
+    {
+      "id": "condition:lich_death_charge:modifier:creep-sacrifice-mana-and-experience:0",
+      "ownerId": "effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "lichSacrificeChargeAvailable"
+      }
+    },
+    {
+      "id": "condition:lich_death_charge:modifier:creep-sacrifice-mana-and-experience:1",
+      "ownerId": "effect:lich_death_charge:modifier:creep-sacrifice-mana-and-experience",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "eligibleAlliedCreepAvailable"
+      }
+    }
+  ]
+}

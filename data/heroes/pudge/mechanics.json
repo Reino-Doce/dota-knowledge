@@ -1,0 +1,1964 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "pudge_meat_hook:damage:first-enemy-hit",
+      "heroId": "14",
+      "abilityId": "ability:14:pudge_meat_hook",
+      "type": "damage",
+      "subtype": "first-enemy-hit",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pudge_meat_hook:damage:first-enemy-hit:range",
+          "ownerId": "effect:pudge_meat_hook:damage:first-enemy-hit",
+          "field": "range",
+          "state": "known",
+          "value": 1300
+        },
+        "duration": {
+          "id": "value:effect:pudge_meat_hook:damage:first-enemy-hit:duration",
+          "ownerId": "effect:pudge_meat_hook:damage:first-enemy-hit",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:pudge_meat_hook:damage:first-enemy-hit:magnitude",
+          "ownerId": "effect:pudge_meat_hook:damage:first-enemy-hit",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            150,
+            220,
+            290,
+            360
+          ]
+        },
+        "mana": {
+          "id": "value:effect:pudge_meat_hook:damage:first-enemy-hit:mana",
+          "ownerId": "effect:pudge_meat_hook:damage:first-enemy-hit",
+          "field": "mana",
+          "state": "known",
+          "value": 120
+        },
+        "cooldown": {
+          "id": "value:effect:pudge_meat_hook:damage:first-enemy-hit:cooldown",
+          "ownerId": "effect:pudge_meat_hook:damage:first-enemy-hit",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:pudge_meat_hook:damage:first-enemy-hit:delay",
+          "ownerId": "effect:pudge_meat_hook:damage:first-enemy-hit",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:pudge_meat_hook:damage:first-enemy-hit:damageType",
+          "ownerId": "effect:pudge_meat_hook:damage:first-enemy-hit",
+          "field": "damageType",
+          "state": "known",
+          "value": "pure"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "hookFirstCollisionIsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "projectile",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "pudge_meat_hook"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pudge_meat_hook:damage:first-enemy-hit",
+      "legacyEffectId": "pudge_meat_hook:damage:first-enemy-hit",
+      "order": 0,
+      "legacyAbilityId": "pudge_meat_hook",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:pudge_meat_hook:damage:first-enemy-hit:0"
+      ],
+      "valueIds": [
+        "value:effect:pudge_meat_hook:damage:first-enemy-hit:range",
+        "value:effect:pudge_meat_hook:damage:first-enemy-hit:duration",
+        "value:effect:pudge_meat_hook:damage:first-enemy-hit:magnitude",
+        "value:effect:pudge_meat_hook:damage:first-enemy-hit:mana",
+        "value:effect:pudge_meat_hook:damage:first-enemy-hit:cooldown",
+        "value:effect:pudge_meat_hook:damage:first-enemy-hit:delay",
+        "value:effect:pudge_meat_hook:damage:first-enemy-hit:damageType"
+      ],
+      "activationId": "activation:14:pudge_meat_hook"
+    },
+    {
+      "effectId": "pudge_meat_hook:displacement:enemy-pull",
+      "heroId": "14",
+      "abilityId": "ability:14:pudge_meat_hook",
+      "type": "displacement",
+      "subtype": "enemy-pull",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pudge_meat_hook:displacement:enemy-pull:range",
+          "ownerId": "effect:pudge_meat_hook:displacement:enemy-pull",
+          "field": "range",
+          "state": "known",
+          "value": 1300
+        },
+        "duration": {
+          "id": "value:effect:pudge_meat_hook:displacement:enemy-pull:duration",
+          "ownerId": "effect:pudge_meat_hook:displacement:enemy-pull",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:pudge_meat_hook:displacement:enemy-pull:magnitude",
+          "ownerId": "effect:pudge_meat_hook:displacement:enemy-pull",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:pudge_meat_hook:displacement:enemy-pull:mana",
+          "ownerId": "effect:pudge_meat_hook:displacement:enemy-pull",
+          "field": "mana",
+          "state": "known",
+          "value": 120
+        },
+        "cooldown": {
+          "id": "value:effect:pudge_meat_hook:displacement:enemy-pull:cooldown",
+          "ownerId": "effect:pudge_meat_hook:displacement:enemy-pull",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:pudge_meat_hook:displacement:enemy-pull:delay",
+          "ownerId": "effect:pudge_meat_hook:displacement:enemy-pull",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "hookFirstCollisionIsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "projectile",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "pudge_meat_hook"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pudge_meat_hook:displacement:enemy-pull",
+      "legacyEffectId": "pudge_meat_hook:displacement:enemy-pull",
+      "order": 1,
+      "legacyAbilityId": "pudge_meat_hook",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:pudge_meat_hook:displacement:enemy-pull:0"
+      ],
+      "valueIds": [
+        "value:effect:pudge_meat_hook:displacement:enemy-pull:range",
+        "value:effect:pudge_meat_hook:displacement:enemy-pull:duration",
+        "value:effect:pudge_meat_hook:displacement:enemy-pull:magnitude",
+        "value:effect:pudge_meat_hook:displacement:enemy-pull:mana",
+        "value:effect:pudge_meat_hook:displacement:enemy-pull:cooldown",
+        "value:effect:pudge_meat_hook:displacement:enemy-pull:delay"
+      ],
+      "activationId": "activation:14:pudge_meat_hook"
+    },
+    {
+      "effectId": "pudge_meat_hook:save:ally-reposition",
+      "heroId": "14",
+      "abilityId": "ability:14:pudge_meat_hook",
+      "type": "save",
+      "subtype": "ally-reposition",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pudge_meat_hook:save:ally-reposition:range",
+          "ownerId": "effect:pudge_meat_hook:save:ally-reposition",
+          "field": "range",
+          "state": "known",
+          "value": 1300
+        },
+        "duration": {
+          "id": "value:effect:pudge_meat_hook:save:ally-reposition:duration",
+          "ownerId": "effect:pudge_meat_hook:save:ally-reposition",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:pudge_meat_hook:save:ally-reposition:magnitude",
+          "ownerId": "effect:pudge_meat_hook:save:ally-reposition",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:pudge_meat_hook:save:ally-reposition:mana",
+          "ownerId": "effect:pudge_meat_hook:save:ally-reposition",
+          "field": "mana",
+          "state": "known",
+          "value": 120
+        },
+        "cooldown": {
+          "id": "value:effect:pudge_meat_hook:save:ally-reposition:cooldown",
+          "ownerId": "effect:pudge_meat_hook:save:ally-reposition",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:pudge_meat_hook:save:ally-reposition:delay",
+          "ownerId": "effect:pudge_meat_hook:save:ally-reposition",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "hookFirstCollisionIsAlly",
+          "allyHookDestinationSafer"
+        ]
+      },
+      "delivery": {
+        "kind": "projectile",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "pudge_meat_hook"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pudge_meat_hook:save:ally-reposition",
+      "legacyEffectId": "pudge_meat_hook:save:ally-reposition",
+      "order": 2,
+      "legacyAbilityId": "pudge_meat_hook",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:pudge_meat_hook:save:ally-reposition:0",
+        "condition:pudge_meat_hook:save:ally-reposition:1"
+      ],
+      "valueIds": [
+        "value:effect:pudge_meat_hook:save:ally-reposition:range",
+        "value:effect:pudge_meat_hook:save:ally-reposition:duration",
+        "value:effect:pudge_meat_hook:save:ally-reposition:magnitude",
+        "value:effect:pudge_meat_hook:save:ally-reposition:mana",
+        "value:effect:pudge_meat_hook:save:ally-reposition:cooldown",
+        "value:effect:pudge_meat_hook:save:ally-reposition:delay"
+      ],
+      "activationId": "activation:14:pudge_meat_hook"
+    },
+    {
+      "effectId": "pudge_meat_hook:modifier:shard-branch",
+      "heroId": "14",
+      "abilityId": "ability:14:pudge_meat_hook",
+      "type": "modifier",
+      "subtype": "shard-branch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pudge_meat_hook:modifier:shard-branch:range",
+          "ownerId": "effect:pudge_meat_hook:modifier:shard-branch",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:pudge_meat_hook:modifier:shard-branch:duration",
+          "ownerId": "effect:pudge_meat_hook:modifier:shard-branch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:pudge_meat_hook:modifier:shard-branch:magnitude",
+          "ownerId": "effect:pudge_meat_hook:modifier:shard-branch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:pudge_meat_hook:modifier:shard-branch:mana",
+          "ownerId": "effect:pudge_meat_hook:modifier:shard-branch",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:pudge_meat_hook:modifier:shard-branch:cooldown",
+          "ownerId": "effect:pudge_meat_hook:modifier:shard-branch",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:pudge_meat_hook:modifier:shard-branch:delay",
+          "ownerId": "effect:pudge_meat_hook:modifier:shard-branch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "pudge_meat_hook:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:pudge_meat_hook:modifier:shard-branch",
+      "legacyEffectId": "pudge_meat_hook:modifier:shard-branch",
+      "order": 3,
+      "legacyAbilityId": "pudge_meat_hook",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:pudge_meat_hook:modifier:shard-branch:range",
+        "value:effect:pudge_meat_hook:modifier:shard-branch:duration",
+        "value:effect:pudge_meat_hook:modifier:shard-branch:magnitude",
+        "value:effect:pudge_meat_hook:modifier:shard-branch:mana",
+        "value:effect:pudge_meat_hook:modifier:shard-branch:cooldown",
+        "value:effect:pudge_meat_hook:modifier:shard-branch:delay"
+      ],
+      "activationId": "activation:14:pudge_meat_hook"
+    },
+    {
+      "effectId": "pudge_rot:damage:enemy-damage-over-time",
+      "heroId": "14",
+      "abilityId": "ability:14:pudge_rot",
+      "type": "damage",
+      "subtype": "enemy-damage-over-time",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pudge_rot:damage:enemy-damage-over-time:range",
+          "ownerId": "effect:pudge_rot:damage:enemy-damage-over-time",
+          "field": "range",
+          "state": "known",
+          "value": 250
+        },
+        "duration": {
+          "id": "value:effect:pudge_rot:damage:enemy-damage-over-time:duration",
+          "ownerId": "effect:pudge_rot:damage:enemy-damage-over-time",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:pudge_rot:damage:enemy-damage-over-time:magnitude",
+          "ownerId": "effect:pudge_rot:damage:enemy-damage-over-time",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            30,
+            60,
+            90,
+            120
+          ]
+        },
+        "mana": {
+          "id": "value:effect:pudge_rot:damage:enemy-damage-over-time:mana",
+          "ownerId": "effect:pudge_rot:damage:enemy-damage-over-time",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:pudge_rot:damage:enemy-damage-over-time:cooldown",
+          "ownerId": "effect:pudge_rot:damage:enemy-damage-over-time",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:pudge_rot:damage:enemy-damage-over-time:delay",
+          "ownerId": "effect:pudge_rot:damage:enemy-damage-over-time",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:pudge_rot:damage:enemy-damage-over-time:damageType",
+          "ownerId": "effect:pudge_rot:damage:enemy-damage-over-time",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "rotActive",
+          "targetWithinRot"
+        ]
+      },
+      "delivery": {
+        "kind": "aura",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "pudge_rot:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:pudge_rot:damage:enemy-damage-over-time",
+      "legacyEffectId": "pudge_rot:damage:enemy-damage-over-time",
+      "order": 4,
+      "legacyAbilityId": "pudge_rot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:pudge_rot:damage:enemy-damage-over-time:0",
+        "condition:pudge_rot:damage:enemy-damage-over-time:1"
+      ],
+      "valueIds": [
+        "value:effect:pudge_rot:damage:enemy-damage-over-time:range",
+        "value:effect:pudge_rot:damage:enemy-damage-over-time:duration",
+        "value:effect:pudge_rot:damage:enemy-damage-over-time:magnitude",
+        "value:effect:pudge_rot:damage:enemy-damage-over-time:mana",
+        "value:effect:pudge_rot:damage:enemy-damage-over-time:cooldown",
+        "value:effect:pudge_rot:damage:enemy-damage-over-time:delay",
+        "value:effect:pudge_rot:damage:enemy-damage-over-time:damageType"
+      ],
+      "activationId": "activation:14:pudge_rot"
+    },
+    {
+      "effectId": "pudge_rot:slow:movement-aura",
+      "heroId": "14",
+      "abilityId": "ability:14:pudge_rot",
+      "type": "slow",
+      "subtype": "movement-aura",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pudge_rot:slow:movement-aura:range",
+          "ownerId": "effect:pudge_rot:slow:movement-aura",
+          "field": "range",
+          "state": "known",
+          "value": 250
+        },
+        "duration": {
+          "id": "value:effect:pudge_rot:slow:movement-aura:duration",
+          "ownerId": "effect:pudge_rot:slow:movement-aura",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:pudge_rot:slow:movement-aura:magnitude",
+          "ownerId": "effect:pudge_rot:slow:movement-aura",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -14,
+            -20,
+            -26,
+            -32
+          ]
+        },
+        "mana": {
+          "id": "value:effect:pudge_rot:slow:movement-aura:mana",
+          "ownerId": "effect:pudge_rot:slow:movement-aura",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:pudge_rot:slow:movement-aura:cooldown",
+          "ownerId": "effect:pudge_rot:slow:movement-aura",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:pudge_rot:slow:movement-aura:delay",
+          "ownerId": "effect:pudge_rot:slow:movement-aura",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "rotActive",
+          "targetWithinRot"
+        ]
+      },
+      "delivery": {
+        "kind": "aura",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "pudge_rot:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:pudge_rot:slow:movement-aura",
+      "legacyEffectId": "pudge_rot:slow:movement-aura",
+      "order": 5,
+      "legacyAbilityId": "pudge_rot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:pudge_rot:slow:movement-aura:0",
+        "condition:pudge_rot:slow:movement-aura:1"
+      ],
+      "valueIds": [
+        "value:effect:pudge_rot:slow:movement-aura:range",
+        "value:effect:pudge_rot:slow:movement-aura:duration",
+        "value:effect:pudge_rot:slow:movement-aura:magnitude",
+        "value:effect:pudge_rot:slow:movement-aura:mana",
+        "value:effect:pudge_rot:slow:movement-aura:cooldown",
+        "value:effect:pudge_rot:slow:movement-aura:delay"
+      ],
+      "activationId": "activation:14:pudge_rot"
+    },
+    {
+      "effectId": "pudge_rot:anti-heal:scepter-health-restoration-reduction",
+      "heroId": "14",
+      "abilityId": "ability:14:pudge_rot",
+      "type": "anti-heal",
+      "subtype": "scepter-health-restoration-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pudge_rot:anti-heal:scepter-health-restoration-reduction:range",
+          "ownerId": "effect:pudge_rot:anti-heal:scepter-health-restoration-reduction",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:pudge_rot:anti-heal:scepter-health-restoration-reduction:duration",
+          "ownerId": "effect:pudge_rot:anti-heal:scepter-health-restoration-reduction",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:pudge_rot:anti-heal:scepter-health-restoration-reduction:magnitude",
+          "ownerId": "effect:pudge_rot:anti-heal:scepter-health-restoration-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": 20
+        },
+        "mana": {
+          "id": "value:effect:pudge_rot:anti-heal:scepter-health-restoration-reduction:mana",
+          "ownerId": "effect:pudge_rot:anti-heal:scepter-health-restoration-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:pudge_rot:anti-heal:scepter-health-restoration-reduction:cooldown",
+          "ownerId": "effect:pudge_rot:anti-heal:scepter-health-restoration-reduction",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:pudge_rot:anti-heal:scepter-health-restoration-reduction:delay",
+          "ownerId": "effect:pudge_rot:anti-heal:scepter-health-restoration-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "rotActive",
+          "targetWithinRot"
+        ]
+      },
+      "delivery": {
+        "kind": "aura",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing",
+            "regeneration",
+            "lifesteal",
+            "spell-lifesteal"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "pudge_rot:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:pudge_rot:anti-heal:scepter-health-restoration-reduction",
+      "legacyEffectId": "pudge_rot:anti-heal:scepter-health-restoration-reduction",
+      "order": 6,
+      "legacyAbilityId": "pudge_rot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:pudge_rot:anti-heal:scepter-health-restoration-reduction:0",
+        "condition:pudge_rot:anti-heal:scepter-health-restoration-reduction:1"
+      ],
+      "valueIds": [
+        "value:effect:pudge_rot:anti-heal:scepter-health-restoration-reduction:range",
+        "value:effect:pudge_rot:anti-heal:scepter-health-restoration-reduction:duration",
+        "value:effect:pudge_rot:anti-heal:scepter-health-restoration-reduction:magnitude",
+        "value:effect:pudge_rot:anti-heal:scepter-health-restoration-reduction:mana",
+        "value:effect:pudge_rot:anti-heal:scepter-health-restoration-reduction:cooldown",
+        "value:effect:pudge_rot:anti-heal:scepter-health-restoration-reduction:delay"
+      ],
+      "activationId": "activation:14:pudge_rot"
+    },
+    {
+      "effectId": "pudge_flesh_heap:save:self-instance-damage-block",
+      "heroId": "14",
+      "abilityId": "ability:14:pudge_flesh_heap",
+      "type": "save",
+      "subtype": "self-instance-damage-block",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pudge_flesh_heap:save:self-instance-damage-block:range",
+          "ownerId": "effect:pudge_flesh_heap:save:self-instance-damage-block",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:pudge_flesh_heap:save:self-instance-damage-block:duration",
+          "ownerId": "effect:pudge_flesh_heap:save:self-instance-damage-block",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:pudge_flesh_heap:save:self-instance-damage-block:magnitude",
+          "ownerId": "effect:pudge_flesh_heap:save:self-instance-damage-block",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            8,
+            14,
+            20,
+            26
+          ]
+        },
+        "mana": {
+          "id": "value:effect:pudge_flesh_heap:save:self-instance-damage-block:mana",
+          "ownerId": "effect:pudge_flesh_heap:save:self-instance-damage-block",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            65,
+            70,
+            75,
+            80
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:pudge_flesh_heap:save:self-instance-damage-block:cooldown",
+          "ownerId": "effect:pudge_flesh_heap:save:self-instance-damage-block",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            19,
+            18,
+            17
+          ]
+        },
+        "delay": {
+          "id": "value:effect:pudge_flesh_heap:save:self-instance-damage-block:delay",
+          "ownerId": "effect:pudge_flesh_heap:save:self-instance-damage-block",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "no-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "physical",
+            "magical",
+            "pure"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "pudge_flesh_heap"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pudge_flesh_heap:save:self-instance-damage-block",
+      "legacyEffectId": "pudge_flesh_heap:save:self-instance-damage-block",
+      "order": 7,
+      "legacyAbilityId": "pudge_flesh_heap",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:pudge_flesh_heap:save:self-instance-damage-block:range",
+        "value:effect:pudge_flesh_heap:save:self-instance-damage-block:duration",
+        "value:effect:pudge_flesh_heap:save:self-instance-damage-block:magnitude",
+        "value:effect:pudge_flesh_heap:save:self-instance-damage-block:mana",
+        "value:effect:pudge_flesh_heap:save:self-instance-damage-block:cooldown",
+        "value:effect:pudge_flesh_heap:save:self-instance-damage-block:delay"
+      ],
+      "activationId": "activation:14:pudge_flesh_heap"
+    },
+    {
+      "effectId": "pudge_innate_graft_flesh:passive:permanent-strength-stack",
+      "heroId": "14",
+      "abilityId": "ability:14:pudge_innate_graft_flesh",
+      "type": "passive",
+      "subtype": "permanent-strength-stack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pudge_innate_graft_flesh:passive:permanent-strength-stack:range",
+          "ownerId": "effect:pudge_innate_graft_flesh:passive:permanent-strength-stack",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:pudge_innate_graft_flesh:passive:permanent-strength-stack:duration",
+          "ownerId": "effect:pudge_innate_graft_flesh:passive:permanent-strength-stack",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:pudge_innate_graft_flesh:passive:permanent-strength-stack:magnitude",
+          "ownerId": "effect:pudge_innate_graft_flesh:passive:permanent-strength-stack",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:pudge_innate_graft_flesh:passive:permanent-strength-stack:mana",
+          "ownerId": "effect:pudge_innate_graft_flesh:passive:permanent-strength-stack",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:pudge_innate_graft_flesh:passive:permanent-strength-stack:cooldown",
+          "ownerId": "effect:pudge_innate_graft_flesh:passive:permanent-strength-stack",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:pudge_innate_graft_flesh:passive:permanent-strength-stack:delay",
+          "ownerId": "effect:pudge_innate_graft_flesh:passive:permanent-strength-stack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "pudgeQualifyingHeroDeath"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "pudge_innate_graft_flesh"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:pudge_innate_graft_flesh:passive:permanent-strength-stack",
+      "legacyEffectId": "pudge_innate_graft_flesh:passive:permanent-strength-stack",
+      "order": 8,
+      "legacyAbilityId": "pudge_innate_graft_flesh",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:pudge_innate_graft_flesh:passive:permanent-strength-stack:0"
+      ],
+      "valueIds": [
+        "value:effect:pudge_innate_graft_flesh:passive:permanent-strength-stack:range",
+        "value:effect:pudge_innate_graft_flesh:passive:permanent-strength-stack:duration",
+        "value:effect:pudge_innate_graft_flesh:passive:permanent-strength-stack:magnitude",
+        "value:effect:pudge_innate_graft_flesh:passive:permanent-strength-stack:mana",
+        "value:effect:pudge_innate_graft_flesh:passive:permanent-strength-stack:cooldown",
+        "value:effect:pudge_innate_graft_flesh:passive:permanent-strength-stack:delay"
+      ],
+      "activationId": "activation:14:pudge_innate_graft_flesh"
+    },
+    {
+      "effectId": "pudge_dismember:control:channeled-disable",
+      "heroId": "14",
+      "abilityId": "ability:14:pudge_dismember",
+      "type": "control",
+      "subtype": "channeled-disable",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pudge_dismember:control:channeled-disable:range",
+          "ownerId": "effect:pudge_dismember:control:channeled-disable",
+          "field": "range",
+          "state": "known",
+          "value": 200
+        },
+        "duration": {
+          "id": "value:effect:pudge_dismember:control:channeled-disable:duration",
+          "ownerId": "effect:pudge_dismember:control:channeled-disable",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2.75,
+            2.75,
+            2.75
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:pudge_dismember:control:channeled-disable:magnitude",
+          "ownerId": "effect:pudge_dismember:control:channeled-disable",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:pudge_dismember:control:channeled-disable:mana",
+          "ownerId": "effect:pudge_dismember:control:channeled-disable",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            130,
+            170
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:pudge_dismember:control:channeled-disable:cooldown",
+          "ownerId": "effect:pudge_dismember:control:channeled-disable",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            25,
+            20
+          ]
+        },
+        "delay": {
+          "id": "value:effect:pudge_dismember:control:channeled-disable:delay",
+          "ownerId": "effect:pudge_dismember:control:channeled-disable",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "channelMaintained"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "pudge_dismember"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pudge_dismember:control:channeled-disable",
+      "legacyEffectId": "pudge_dismember:control:channeled-disable",
+      "order": 9,
+      "legacyAbilityId": "pudge_dismember",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:pudge_dismember:control:channeled-disable:0"
+      ],
+      "valueIds": [
+        "value:effect:pudge_dismember:control:channeled-disable:range",
+        "value:effect:pudge_dismember:control:channeled-disable:duration",
+        "value:effect:pudge_dismember:control:channeled-disable:magnitude",
+        "value:effect:pudge_dismember:control:channeled-disable:mana",
+        "value:effect:pudge_dismember:control:channeled-disable:cooldown",
+        "value:effect:pudge_dismember:control:channeled-disable:delay"
+      ],
+      "activationId": "activation:14:pudge_dismember"
+    },
+    {
+      "effectId": "pudge_dismember:damage:channeled-strength-scaled",
+      "heroId": "14",
+      "abilityId": "ability:14:pudge_dismember",
+      "type": "damage",
+      "subtype": "channeled-strength-scaled",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pudge_dismember:damage:channeled-strength-scaled:range",
+          "ownerId": "effect:pudge_dismember:damage:channeled-strength-scaled",
+          "field": "range",
+          "state": "known",
+          "value": 200
+        },
+        "duration": {
+          "id": "value:effect:pudge_dismember:damage:channeled-strength-scaled:duration",
+          "ownerId": "effect:pudge_dismember:damage:channeled-strength-scaled",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2.75,
+            2.75,
+            2.75
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:pudge_dismember:damage:channeled-strength-scaled:magnitude",
+          "ownerId": "effect:pudge_dismember:damage:channeled-strength-scaled",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:pudge_dismember:damage:channeled-strength-scaled:mana",
+          "ownerId": "effect:pudge_dismember:damage:channeled-strength-scaled",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            130,
+            170
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:pudge_dismember:damage:channeled-strength-scaled:cooldown",
+          "ownerId": "effect:pudge_dismember:damage:channeled-strength-scaled",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            25,
+            20
+          ]
+        },
+        "delay": {
+          "id": "value:effect:pudge_dismember:damage:channeled-strength-scaled:delay",
+          "ownerId": "effect:pudge_dismember:damage:channeled-strength-scaled",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:pudge_dismember:damage:channeled-strength-scaled:damageType",
+          "ownerId": "effect:pudge_dismember:damage:channeled-strength-scaled",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "channelMaintained"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "pudge_dismember"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pudge_dismember:damage:channeled-strength-scaled",
+      "legacyEffectId": "pudge_dismember:damage:channeled-strength-scaled",
+      "order": 10,
+      "legacyAbilityId": "pudge_dismember",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:pudge_dismember:damage:channeled-strength-scaled:0"
+      ],
+      "valueIds": [
+        "value:effect:pudge_dismember:damage:channeled-strength-scaled:range",
+        "value:effect:pudge_dismember:damage:channeled-strength-scaled:duration",
+        "value:effect:pudge_dismember:damage:channeled-strength-scaled:magnitude",
+        "value:effect:pudge_dismember:damage:channeled-strength-scaled:mana",
+        "value:effect:pudge_dismember:damage:channeled-strength-scaled:cooldown",
+        "value:effect:pudge_dismember:damage:channeled-strength-scaled:delay",
+        "value:effect:pudge_dismember:damage:channeled-strength-scaled:damageType"
+      ],
+      "activationId": "activation:14:pudge_dismember"
+    },
+    {
+      "effectId": "pudge_dismember:heal:self-damage-linked-recovery",
+      "heroId": "14",
+      "abilityId": "ability:14:pudge_dismember",
+      "type": "heal",
+      "subtype": "self-damage-linked-recovery",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pudge_dismember:heal:self-damage-linked-recovery:range",
+          "ownerId": "effect:pudge_dismember:heal:self-damage-linked-recovery",
+          "field": "range",
+          "state": "known",
+          "value": 200
+        },
+        "duration": {
+          "id": "value:effect:pudge_dismember:heal:self-damage-linked-recovery:duration",
+          "ownerId": "effect:pudge_dismember:heal:self-damage-linked-recovery",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2.75,
+            2.75,
+            2.75
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:pudge_dismember:heal:self-damage-linked-recovery:magnitude",
+          "ownerId": "effect:pudge_dismember:heal:self-damage-linked-recovery",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:pudge_dismember:heal:self-damage-linked-recovery:mana",
+          "ownerId": "effect:pudge_dismember:heal:self-damage-linked-recovery",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            130,
+            170
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:pudge_dismember:heal:self-damage-linked-recovery:cooldown",
+          "ownerId": "effect:pudge_dismember:heal:self-damage-linked-recovery",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            25,
+            20
+          ]
+        },
+        "delay": {
+          "id": "value:effect:pudge_dismember:heal:self-damage-linked-recovery:delay",
+          "ownerId": "effect:pudge_dismember:heal:self-damage-linked-recovery",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "channelMaintained",
+          "dismemberDealsDamage"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "pudge_dismember"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pudge_dismember:heal:self-damage-linked-recovery",
+      "legacyEffectId": "pudge_dismember:heal:self-damage-linked-recovery",
+      "order": 11,
+      "legacyAbilityId": "pudge_dismember",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:pudge_dismember:heal:self-damage-linked-recovery:0",
+        "condition:pudge_dismember:heal:self-damage-linked-recovery:1"
+      ],
+      "valueIds": [
+        "value:effect:pudge_dismember:heal:self-damage-linked-recovery:range",
+        "value:effect:pudge_dismember:heal:self-damage-linked-recovery:duration",
+        "value:effect:pudge_dismember:heal:self-damage-linked-recovery:magnitude",
+        "value:effect:pudge_dismember:heal:self-damage-linked-recovery:mana",
+        "value:effect:pudge_dismember:heal:self-damage-linked-recovery:cooldown",
+        "value:effect:pudge_dismember:heal:self-damage-linked-recovery:delay"
+      ],
+      "activationId": "activation:14:pudge_dismember"
+    },
+    {
+      "effectId": "pudge_dismember:displacement:channeled-short-pull",
+      "heroId": "14",
+      "abilityId": "ability:14:pudge_dismember",
+      "type": "displacement",
+      "subtype": "channeled-short-pull",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:pudge_dismember:displacement:channeled-short-pull:range",
+          "ownerId": "effect:pudge_dismember:displacement:channeled-short-pull",
+          "field": "range",
+          "state": "known",
+          "value": 200
+        },
+        "duration": {
+          "id": "value:effect:pudge_dismember:displacement:channeled-short-pull:duration",
+          "ownerId": "effect:pudge_dismember:displacement:channeled-short-pull",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2.75,
+            2.75,
+            2.75
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:pudge_dismember:displacement:channeled-short-pull:magnitude",
+          "ownerId": "effect:pudge_dismember:displacement:channeled-short-pull",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:pudge_dismember:displacement:channeled-short-pull:mana",
+          "ownerId": "effect:pudge_dismember:displacement:channeled-short-pull",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            130,
+            170
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:pudge_dismember:displacement:channeled-short-pull:cooldown",
+          "ownerId": "effect:pudge_dismember:displacement:channeled-short-pull",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            25,
+            20
+          ]
+        },
+        "delay": {
+          "id": "value:effect:pudge_dismember:displacement:channeled-short-pull:delay",
+          "ownerId": "effect:pudge_dismember:displacement:channeled-short-pull",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "channelMaintained",
+          "dismemberTargetOutsidePullLimit"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "pudge_dismember"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:pudge_dismember:displacement:channeled-short-pull",
+      "legacyEffectId": "pudge_dismember:displacement:channeled-short-pull",
+      "order": 12,
+      "legacyAbilityId": "pudge_dismember",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:pudge_dismember:displacement:channeled-short-pull:0",
+        "condition:pudge_dismember:displacement:channeled-short-pull:1"
+      ],
+      "valueIds": [
+        "value:effect:pudge_dismember:displacement:channeled-short-pull:range",
+        "value:effect:pudge_dismember:displacement:channeled-short-pull:duration",
+        "value:effect:pudge_dismember:displacement:channeled-short-pull:magnitude",
+        "value:effect:pudge_dismember:displacement:channeled-short-pull:mana",
+        "value:effect:pudge_dismember:displacement:channeled-short-pull:cooldown",
+        "value:effect:pudge_dismember:displacement:channeled-short-pull:delay"
+      ],
+      "activationId": "activation:14:pudge_dismember"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:pudge_meat_hook:damage:first-enemy-hit:0",
+      "ownerId": "effect:pudge_meat_hook:damage:first-enemy-hit",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "hookFirstCollisionIsEnemy"
+      }
+    },
+    {
+      "id": "condition:pudge_meat_hook:displacement:enemy-pull:0",
+      "ownerId": "effect:pudge_meat_hook:displacement:enemy-pull",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "hookFirstCollisionIsEnemy"
+      }
+    },
+    {
+      "id": "condition:pudge_meat_hook:save:ally-reposition:0",
+      "ownerId": "effect:pudge_meat_hook:save:ally-reposition",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "hookFirstCollisionIsAlly"
+      }
+    },
+    {
+      "id": "condition:pudge_meat_hook:save:ally-reposition:1",
+      "ownerId": "effect:pudge_meat_hook:save:ally-reposition",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyHookDestinationSafer"
+      }
+    },
+    {
+      "id": "condition:pudge_rot:damage:enemy-damage-over-time:0",
+      "ownerId": "effect:pudge_rot:damage:enemy-damage-over-time",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "rotActive"
+      }
+    },
+    {
+      "id": "condition:pudge_rot:damage:enemy-damage-over-time:1",
+      "ownerId": "effect:pudge_rot:damage:enemy-damage-over-time",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "targetWithinRot"
+      }
+    },
+    {
+      "id": "condition:pudge_rot:slow:movement-aura:0",
+      "ownerId": "effect:pudge_rot:slow:movement-aura",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "rotActive"
+      }
+    },
+    {
+      "id": "condition:pudge_rot:slow:movement-aura:1",
+      "ownerId": "effect:pudge_rot:slow:movement-aura",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "targetWithinRot"
+      }
+    },
+    {
+      "id": "condition:pudge_rot:anti-heal:scepter-health-restoration-reduction:0",
+      "ownerId": "effect:pudge_rot:anti-heal:scepter-health-restoration-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "rotActive"
+      }
+    },
+    {
+      "id": "condition:pudge_rot:anti-heal:scepter-health-restoration-reduction:1",
+      "ownerId": "effect:pudge_rot:anti-heal:scepter-health-restoration-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "targetWithinRot"
+      }
+    },
+    {
+      "id": "condition:pudge_innate_graft_flesh:passive:permanent-strength-stack:0",
+      "ownerId": "effect:pudge_innate_graft_flesh:passive:permanent-strength-stack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "pudgeQualifyingHeroDeath"
+      }
+    },
+    {
+      "id": "condition:pudge_dismember:control:channeled-disable:0",
+      "ownerId": "effect:pudge_dismember:control:channeled-disable",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "channelMaintained"
+      }
+    },
+    {
+      "id": "condition:pudge_dismember:damage:channeled-strength-scaled:0",
+      "ownerId": "effect:pudge_dismember:damage:channeled-strength-scaled",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "channelMaintained"
+      }
+    },
+    {
+      "id": "condition:pudge_dismember:heal:self-damage-linked-recovery:0",
+      "ownerId": "effect:pudge_dismember:heal:self-damage-linked-recovery",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "channelMaintained"
+      }
+    },
+    {
+      "id": "condition:pudge_dismember:heal:self-damage-linked-recovery:1",
+      "ownerId": "effect:pudge_dismember:heal:self-damage-linked-recovery",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "dismemberDealsDamage"
+      }
+    },
+    {
+      "id": "condition:pudge_dismember:displacement:channeled-short-pull:0",
+      "ownerId": "effect:pudge_dismember:displacement:channeled-short-pull",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "channelMaintained"
+      }
+    },
+    {
+      "id": "condition:pudge_dismember:displacement:channeled-short-pull:1",
+      "ownerId": "effect:pudge_dismember:displacement:channeled-short-pull",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "dismemberTargetOutsidePullLimit"
+      }
+    }
+  ]
+}

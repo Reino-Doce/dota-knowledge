@@ -1,0 +1,2135 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "wisp_tether:mobility:linked-friendly-speed",
+      "heroId": "91",
+      "abilityId": "ability:91:wisp_tether",
+      "type": "mobility",
+      "subtype": "linked-friendly-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:wisp_tether:mobility:linked-friendly-speed:range",
+          "ownerId": "effect:wisp_tether:mobility:linked-friendly-speed",
+          "field": "range",
+          "state": "known",
+          "value": 1600
+        },
+        "duration": {
+          "id": "value:effect:wisp_tether:mobility:linked-friendly-speed:duration",
+          "ownerId": "effect:wisp_tether:mobility:linked-friendly-speed",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:wisp_tether:mobility:linked-friendly-speed:magnitude",
+          "ownerId": "effect:wisp_tether:mobility:linked-friendly-speed",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            6,
+            8,
+            10,
+            12
+          ]
+        },
+        "mana": {
+          "id": "value:effect:wisp_tether:mobility:linked-friendly-speed:mana",
+          "ownerId": "effect:wisp_tether:mobility:linked-friendly-speed",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            40,
+            40,
+            40,
+            40
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:wisp_tether:mobility:linked-friendly-speed:cooldown",
+          "ownerId": "effect:wisp_tether:mobility:linked-friendly-speed",
+          "field": "cooldown",
+          "state": "known",
+          "value": 12
+        },
+        "delay": {
+          "id": "value:effect:wisp_tether:mobility:linked-friendly-speed:delay",
+          "ownerId": "effect:wisp_tether:mobility:linked-friendly-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "ioTetherLinked"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "wisp_tether"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:wisp_tether:mobility:linked-friendly-speed",
+      "legacyEffectId": "wisp_tether:mobility:linked-friendly-speed",
+      "order": 0,
+      "legacyAbilityId": "wisp_tether",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:wisp_tether:mobility:linked-friendly-speed:0"
+      ],
+      "valueIds": [
+        "value:effect:wisp_tether:mobility:linked-friendly-speed:range",
+        "value:effect:wisp_tether:mobility:linked-friendly-speed:duration",
+        "value:effect:wisp_tether:mobility:linked-friendly-speed:magnitude",
+        "value:effect:wisp_tether:mobility:linked-friendly-speed:mana",
+        "value:effect:wisp_tether:mobility:linked-friendly-speed:cooldown",
+        "value:effect:wisp_tether:mobility:linked-friendly-speed:delay"
+      ],
+      "activationId": "activation:91:wisp_tether"
+    },
+    {
+      "effectId": "wisp_tether:mobility:distant-ally-latch",
+      "heroId": "91",
+      "abilityId": "ability:91:wisp_tether",
+      "type": "mobility",
+      "subtype": "distant-ally-latch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:wisp_tether:mobility:distant-ally-latch:range",
+          "ownerId": "effect:wisp_tether:mobility:distant-ally-latch",
+          "field": "range",
+          "state": "known",
+          "value": 1600
+        },
+        "duration": {
+          "id": "value:effect:wisp_tether:mobility:distant-ally-latch:duration",
+          "ownerId": "effect:wisp_tether:mobility:distant-ally-latch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:wisp_tether:mobility:distant-ally-latch:magnitude",
+          "ownerId": "effect:wisp_tether:mobility:distant-ally-latch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:wisp_tether:mobility:distant-ally-latch:mana",
+          "ownerId": "effect:wisp_tether:mobility:distant-ally-latch",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            40,
+            40,
+            40,
+            40
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:wisp_tether:mobility:distant-ally-latch:cooldown",
+          "ownerId": "effect:wisp_tether:mobility:distant-ally-latch",
+          "field": "cooldown",
+          "state": "known",
+          "value": 12
+        },
+        "delay": {
+          "id": "value:effect:wisp_tether:mobility:distant-ally-latch:delay",
+          "ownerId": "effect:wisp_tether:mobility:distant-ally-latch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "ioTetherTargetBeyondLatchDistance"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "wisp_tether"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:wisp_tether:mobility:distant-ally-latch",
+      "legacyEffectId": "wisp_tether:mobility:distant-ally-latch",
+      "order": 1,
+      "legacyAbilityId": "wisp_tether",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:wisp_tether:mobility:distant-ally-latch:0"
+      ],
+      "valueIds": [
+        "value:effect:wisp_tether:mobility:distant-ally-latch:range",
+        "value:effect:wisp_tether:mobility:distant-ally-latch:duration",
+        "value:effect:wisp_tether:mobility:distant-ally-latch:magnitude",
+        "value:effect:wisp_tether:mobility:distant-ally-latch:mana",
+        "value:effect:wisp_tether:mobility:distant-ally-latch:cooldown",
+        "value:effect:wisp_tether:mobility:distant-ally-latch:delay"
+      ],
+      "activationId": "activation:91:wisp_tether"
+    },
+    {
+      "effectId": "wisp_tether:heal:linked-health-restoration-transfer",
+      "heroId": "91",
+      "abilityId": "ability:91:wisp_tether",
+      "type": "heal",
+      "subtype": "linked-health-restoration-transfer",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:wisp_tether:heal:linked-health-restoration-transfer:range",
+          "ownerId": "effect:wisp_tether:heal:linked-health-restoration-transfer",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:wisp_tether:heal:linked-health-restoration-transfer:duration",
+          "ownerId": "effect:wisp_tether:heal:linked-health-restoration-transfer",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:wisp_tether:heal:linked-health-restoration-transfer:magnitude",
+          "ownerId": "effect:wisp_tether:heal:linked-health-restoration-transfer",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:wisp_tether:heal:linked-health-restoration-transfer:mana",
+          "ownerId": "effect:wisp_tether:heal:linked-health-restoration-transfer",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:wisp_tether:heal:linked-health-restoration-transfer:cooldown",
+          "ownerId": "effect:wisp_tether:heal:linked-health-restoration-transfer",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:wisp_tether:heal:linked-health-restoration-transfer:delay",
+          "ownerId": "effect:wisp_tether:heal:linked-health-restoration-transfer",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "ioTetherLinked",
+          "ioHealthRestorationReceived"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "wisp_tether:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:wisp_tether:heal:linked-health-restoration-transfer",
+      "legacyEffectId": "wisp_tether:heal:linked-health-restoration-transfer",
+      "order": 2,
+      "legacyAbilityId": "wisp_tether",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:wisp_tether:heal:linked-health-restoration-transfer:0",
+        "condition:wisp_tether:heal:linked-health-restoration-transfer:1"
+      ],
+      "valueIds": [
+        "value:effect:wisp_tether:heal:linked-health-restoration-transfer:range",
+        "value:effect:wisp_tether:heal:linked-health-restoration-transfer:duration",
+        "value:effect:wisp_tether:heal:linked-health-restoration-transfer:magnitude",
+        "value:effect:wisp_tether:heal:linked-health-restoration-transfer:mana",
+        "value:effect:wisp_tether:heal:linked-health-restoration-transfer:cooldown",
+        "value:effect:wisp_tether:heal:linked-health-restoration-transfer:delay"
+      ],
+      "activationId": "activation:91:wisp_tether"
+    },
+    {
+      "effectId": "wisp_tether:slow:enemy-crossing-tether-slow",
+      "heroId": "91",
+      "abilityId": "ability:91:wisp_tether",
+      "type": "slow",
+      "subtype": "enemy-crossing-tether-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:wisp_tether:slow:enemy-crossing-tether-slow:range",
+          "ownerId": "effect:wisp_tether:slow:enemy-crossing-tether-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:wisp_tether:slow:enemy-crossing-tether-slow:duration",
+          "ownerId": "effect:wisp_tether:slow:enemy-crossing-tether-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 0.2
+        },
+        "magnitude": {
+          "id": "value:effect:wisp_tether:slow:enemy-crossing-tether-slow:magnitude",
+          "ownerId": "effect:wisp_tether:slow:enemy-crossing-tether-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            15,
+            30,
+            45,
+            60
+          ]
+        },
+        "mana": {
+          "id": "value:effect:wisp_tether:slow:enemy-crossing-tether-slow:mana",
+          "ownerId": "effect:wisp_tether:slow:enemy-crossing-tether-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:wisp_tether:slow:enemy-crossing-tether-slow:cooldown",
+          "ownerId": "effect:wisp_tether:slow:enemy-crossing-tether-slow",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:wisp_tether:slow:enemy-crossing-tether-slow:delay",
+          "ownerId": "effect:wisp_tether:slow:enemy-crossing-tether-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "ioTetherLinked",
+          "enemyTouchesTether"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "wisp_tether:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:wisp_tether:slow:enemy-crossing-tether-slow",
+      "legacyEffectId": "wisp_tether:slow:enemy-crossing-tether-slow",
+      "order": 3,
+      "legacyAbilityId": "wisp_tether",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:wisp_tether:slow:enemy-crossing-tether-slow:0",
+        "condition:wisp_tether:slow:enemy-crossing-tether-slow:1"
+      ],
+      "valueIds": [
+        "value:effect:wisp_tether:slow:enemy-crossing-tether-slow:range",
+        "value:effect:wisp_tether:slow:enemy-crossing-tether-slow:duration",
+        "value:effect:wisp_tether:slow:enemy-crossing-tether-slow:magnitude",
+        "value:effect:wisp_tether:slow:enemy-crossing-tether-slow:mana",
+        "value:effect:wisp_tether:slow:enemy-crossing-tether-slow:cooldown",
+        "value:effect:wisp_tether:slow:enemy-crossing-tether-slow:delay"
+      ],
+      "activationId": "activation:91:wisp_tether"
+    },
+    {
+      "effectId": "wisp_tether:modifier:shard-contact-damage",
+      "heroId": "91",
+      "abilityId": "ability:91:wisp_tether",
+      "type": "modifier",
+      "subtype": "shard-contact-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:wisp_tether:modifier:shard-contact-damage:range",
+          "ownerId": "effect:wisp_tether:modifier:shard-contact-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:wisp_tether:modifier:shard-contact-damage:duration",
+          "ownerId": "effect:wisp_tether:modifier:shard-contact-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:wisp_tether:modifier:shard-contact-damage:magnitude",
+          "ownerId": "effect:wisp_tether:modifier:shard-contact-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:wisp_tether:modifier:shard-contact-damage:mana",
+          "ownerId": "effect:wisp_tether:modifier:shard-contact-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:wisp_tether:modifier:shard-contact-damage:cooldown",
+          "ownerId": "effect:wisp_tether:modifier:shard-contact-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:wisp_tether:modifier:shard-contact-damage:delay",
+          "ownerId": "effect:wisp_tether:modifier:shard-contact-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "ioTetherLinked",
+          "enemyTouchesTether"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "wisp_tether:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:wisp_tether:modifier:shard-contact-damage",
+      "legacyEffectId": "wisp_tether:modifier:shard-contact-damage",
+      "order": 4,
+      "legacyAbilityId": "wisp_tether",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:wisp_tether:modifier:shard-contact-damage:0",
+        "condition:wisp_tether:modifier:shard-contact-damage:1"
+      ],
+      "valueIds": [
+        "value:effect:wisp_tether:modifier:shard-contact-damage:range",
+        "value:effect:wisp_tether:modifier:shard-contact-damage:duration",
+        "value:effect:wisp_tether:modifier:shard-contact-damage:magnitude",
+        "value:effect:wisp_tether:modifier:shard-contact-damage:mana",
+        "value:effect:wisp_tether:modifier:shard-contact-damage:cooldown",
+        "value:effect:wisp_tether:modifier:shard-contact-damage:delay"
+      ],
+      "activationId": "activation:91:wisp_tether"
+    },
+    {
+      "effectId": "wisp_tether:heal:shard-contact-damage-self-heal",
+      "heroId": "91",
+      "abilityId": "ability:91:wisp_tether",
+      "type": "heal",
+      "subtype": "shard-contact-damage-self-heal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:wisp_tether:heal:shard-contact-damage-self-heal:range",
+          "ownerId": "effect:wisp_tether:heal:shard-contact-damage-self-heal",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:wisp_tether:heal:shard-contact-damage-self-heal:duration",
+          "ownerId": "effect:wisp_tether:heal:shard-contact-damage-self-heal",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:wisp_tether:heal:shard-contact-damage-self-heal:magnitude",
+          "ownerId": "effect:wisp_tether:heal:shard-contact-damage-self-heal",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:wisp_tether:heal:shard-contact-damage-self-heal:mana",
+          "ownerId": "effect:wisp_tether:heal:shard-contact-damage-self-heal",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:wisp_tether:heal:shard-contact-damage-self-heal:cooldown",
+          "ownerId": "effect:wisp_tether:heal:shard-contact-damage-self-heal",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:wisp_tether:heal:shard-contact-damage-self-heal:delay",
+          "ownerId": "effect:wisp_tether:heal:shard-contact-damage-self-heal",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "ioTetherLinked",
+          "ioTetherActuallyDamagedEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "wisp_tether:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:wisp_tether:heal:shard-contact-damage-self-heal",
+      "legacyEffectId": "wisp_tether:heal:shard-contact-damage-self-heal",
+      "order": 5,
+      "legacyAbilityId": "wisp_tether",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:wisp_tether:heal:shard-contact-damage-self-heal:0",
+        "condition:wisp_tether:heal:shard-contact-damage-self-heal:1"
+      ],
+      "valueIds": [
+        "value:effect:wisp_tether:heal:shard-contact-damage-self-heal:range",
+        "value:effect:wisp_tether:heal:shard-contact-damage-self-heal:duration",
+        "value:effect:wisp_tether:heal:shard-contact-damage-self-heal:magnitude",
+        "value:effect:wisp_tether:heal:shard-contact-damage-self-heal:mana",
+        "value:effect:wisp_tether:heal:shard-contact-damage-self-heal:cooldown",
+        "value:effect:wisp_tether:heal:shard-contact-damage-self-heal:delay"
+      ],
+      "activationId": "activation:91:wisp_tether"
+    },
+    {
+      "effectId": "wisp_spirits:damage:one-spirit-hero-explosion",
+      "heroId": "91",
+      "abilityId": "ability:91:wisp_spirits",
+      "type": "damage",
+      "subtype": "one-spirit-hero-explosion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:wisp_spirits:damage:one-spirit-hero-explosion:range",
+          "ownerId": "effect:wisp_spirits:damage:one-spirit-hero-explosion",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:wisp_spirits:damage:one-spirit-hero-explosion:duration",
+          "ownerId": "effect:wisp_spirits:damage:one-spirit-hero-explosion",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:wisp_spirits:damage:one-spirit-hero-explosion:magnitude",
+          "ownerId": "effect:wisp_spirits:damage:one-spirit-hero-explosion",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            30,
+            50,
+            70,
+            90
+          ]
+        },
+        "mana": {
+          "id": "value:effect:wisp_spirits:damage:one-spirit-hero-explosion:mana",
+          "ownerId": "effect:wisp_spirits:damage:one-spirit-hero-explosion",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:wisp_spirits:damage:one-spirit-hero-explosion:cooldown",
+          "ownerId": "effect:wisp_spirits:damage:one-spirit-hero-explosion",
+          "field": "cooldown",
+          "state": "known",
+          "value": 15
+        },
+        "delay": {
+          "id": "value:effect:wisp_spirits:damage:one-spirit-hero-explosion:delay",
+          "ownerId": "effect:wisp_spirits:damage:one-spirit-hero-explosion",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:wisp_spirits:damage:one-spirit-hero-explosion:damageType",
+          "ownerId": "effect:wisp_spirits:damage:one-spirit-hero-explosion",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "ioSpiritExplodesNearEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "wisp_spirits"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:wisp_spirits:damage:one-spirit-hero-explosion",
+      "legacyEffectId": "wisp_spirits:damage:one-spirit-hero-explosion",
+      "order": 6,
+      "legacyAbilityId": "wisp_spirits",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:wisp_spirits:damage:one-spirit-hero-explosion:0"
+      ],
+      "valueIds": [
+        "value:effect:wisp_spirits:damage:one-spirit-hero-explosion:range",
+        "value:effect:wisp_spirits:damage:one-spirit-hero-explosion:duration",
+        "value:effect:wisp_spirits:damage:one-spirit-hero-explosion:magnitude",
+        "value:effect:wisp_spirits:damage:one-spirit-hero-explosion:mana",
+        "value:effect:wisp_spirits:damage:one-spirit-hero-explosion:cooldown",
+        "value:effect:wisp_spirits:damage:one-spirit-hero-explosion:delay",
+        "value:effect:wisp_spirits:damage:one-spirit-hero-explosion:damageType"
+      ],
+      "activationId": "activation:91:wisp_spirits"
+    },
+    {
+      "effectId": "wisp_spirits:modifier:scepter-continuous-spirit-spawn",
+      "heroId": "91",
+      "abilityId": "ability:91:wisp_spirits",
+      "type": "modifier",
+      "subtype": "scepter-continuous-spirit-spawn",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn:range",
+          "ownerId": "effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn:duration",
+          "ownerId": "effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn:magnitude",
+          "ownerId": "effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn:mana",
+          "ownerId": "effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn:cooldown",
+          "ownerId": "effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn:delay",
+          "ownerId": "effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "wisp_spirits:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn",
+      "legacyEffectId": "wisp_spirits:modifier:scepter-continuous-spirit-spawn",
+      "order": 7,
+      "legacyAbilityId": "wisp_spirits",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn:range",
+        "value:effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn:duration",
+        "value:effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn:magnitude",
+        "value:effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn:mana",
+        "value:effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn:cooldown",
+        "value:effect:wisp_spirits:modifier:scepter-continuous-spirit-spawn:delay"
+      ],
+      "activationId": "activation:91:wisp_spirits"
+    },
+    {
+      "effectId": "wisp_spirits:slow:scepter-spirit-collision-slow",
+      "heroId": "91",
+      "abilityId": "ability:91:wisp_spirits",
+      "type": "slow",
+      "subtype": "scepter-spirit-collision-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:wisp_spirits:slow:scepter-spirit-collision-slow:range",
+          "ownerId": "effect:wisp_spirits:slow:scepter-spirit-collision-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:wisp_spirits:slow:scepter-spirit-collision-slow:duration",
+          "ownerId": "effect:wisp_spirits:slow:scepter-spirit-collision-slow",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:wisp_spirits:slow:scepter-spirit-collision-slow:magnitude",
+          "ownerId": "effect:wisp_spirits:slow:scepter-spirit-collision-slow",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:wisp_spirits:slow:scepter-spirit-collision-slow:mana",
+          "ownerId": "effect:wisp_spirits:slow:scepter-spirit-collision-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:wisp_spirits:slow:scepter-spirit-collision-slow:cooldown",
+          "ownerId": "effect:wisp_spirits:slow:scepter-spirit-collision-slow",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:wisp_spirits:slow:scepter-spirit-collision-slow:delay",
+          "ownerId": "effect:wisp_spirits:slow:scepter-spirit-collision-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "ioSpiritCollidesWithHero"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "wisp_spirits:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:wisp_spirits:slow:scepter-spirit-collision-slow",
+      "legacyEffectId": "wisp_spirits:slow:scepter-spirit-collision-slow",
+      "order": 8,
+      "legacyAbilityId": "wisp_spirits",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:wisp_spirits:slow:scepter-spirit-collision-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:wisp_spirits:slow:scepter-spirit-collision-slow:range",
+        "value:effect:wisp_spirits:slow:scepter-spirit-collision-slow:duration",
+        "value:effect:wisp_spirits:slow:scepter-spirit-collision-slow:magnitude",
+        "value:effect:wisp_spirits:slow:scepter-spirit-collision-slow:mana",
+        "value:effect:wisp_spirits:slow:scepter-spirit-collision-slow:cooldown",
+        "value:effect:wisp_spirits:slow:scepter-spirit-collision-slow:delay"
+      ],
+      "activationId": "activation:91:wisp_spirits"
+    },
+    {
+      "effectId": "wisp_overcharge:modifier:self-overcharge-combat-bonuses",
+      "heroId": "91",
+      "abilityId": "ability:91:wisp_overcharge",
+      "type": "modifier",
+      "subtype": "self-overcharge-combat-bonuses",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses:range",
+          "ownerId": "effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses:duration",
+          "ownerId": "effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses",
+          "field": "duration",
+          "state": "known",
+          "value": 8
+        },
+        "magnitude": {
+          "id": "value:effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses:magnitude",
+          "ownerId": "effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses:mana",
+          "ownerId": "effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            40,
+            60,
+            80,
+            100
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses:cooldown",
+          "ownerId": "effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            25,
+            22,
+            19,
+            16
+          ]
+        },
+        "delay": {
+          "id": "value:effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses:delay",
+          "ownerId": "effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "wisp_overcharge"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses",
+      "legacyEffectId": "wisp_overcharge:modifier:self-overcharge-combat-bonuses",
+      "order": 9,
+      "legacyAbilityId": "wisp_overcharge",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses:range",
+        "value:effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses:duration",
+        "value:effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses:magnitude",
+        "value:effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses:mana",
+        "value:effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses:cooldown",
+        "value:effect:wisp_overcharge:modifier:self-overcharge-combat-bonuses:delay"
+      ],
+      "activationId": "activation:91:wisp_overcharge"
+    },
+    {
+      "effectId": "wisp_overcharge:heal:self-overcharge-regeneration",
+      "heroId": "91",
+      "abilityId": "ability:91:wisp_overcharge",
+      "type": "heal",
+      "subtype": "self-overcharge-regeneration",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:wisp_overcharge:heal:self-overcharge-regeneration:range",
+          "ownerId": "effect:wisp_overcharge:heal:self-overcharge-regeneration",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:wisp_overcharge:heal:self-overcharge-regeneration:duration",
+          "ownerId": "effect:wisp_overcharge:heal:self-overcharge-regeneration",
+          "field": "duration",
+          "state": "known",
+          "value": 8
+        },
+        "magnitude": {
+          "id": "value:effect:wisp_overcharge:heal:self-overcharge-regeneration:magnitude",
+          "ownerId": "effect:wisp_overcharge:heal:self-overcharge-regeneration",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:wisp_overcharge:heal:self-overcharge-regeneration:mana",
+          "ownerId": "effect:wisp_overcharge:heal:self-overcharge-regeneration",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            40,
+            60,
+            80,
+            100
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:wisp_overcharge:heal:self-overcharge-regeneration:cooldown",
+          "ownerId": "effect:wisp_overcharge:heal:self-overcharge-regeneration",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            25,
+            22,
+            19,
+            16
+          ]
+        },
+        "delay": {
+          "id": "value:effect:wisp_overcharge:heal:self-overcharge-regeneration:delay",
+          "ownerId": "effect:wisp_overcharge:heal:self-overcharge-regeneration",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "regeneration"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "wisp_overcharge"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:wisp_overcharge:heal:self-overcharge-regeneration",
+      "legacyEffectId": "wisp_overcharge:heal:self-overcharge-regeneration",
+      "order": 10,
+      "legacyAbilityId": "wisp_overcharge",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:wisp_overcharge:heal:self-overcharge-regeneration:range",
+        "value:effect:wisp_overcharge:heal:self-overcharge-regeneration:duration",
+        "value:effect:wisp_overcharge:heal:self-overcharge-regeneration:magnitude",
+        "value:effect:wisp_overcharge:heal:self-overcharge-regeneration:mana",
+        "value:effect:wisp_overcharge:heal:self-overcharge-regeneration:cooldown",
+        "value:effect:wisp_overcharge:heal:self-overcharge-regeneration:delay"
+      ],
+      "activationId": "activation:91:wisp_overcharge"
+    },
+    {
+      "effectId": "wisp_overcharge:modifier:tethered-overcharge-combat-bonuses",
+      "heroId": "91",
+      "abilityId": "ability:91:wisp_overcharge",
+      "type": "modifier",
+      "subtype": "tethered-overcharge-combat-bonuses",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses:range",
+          "ownerId": "effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses:duration",
+          "ownerId": "effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses",
+          "field": "duration",
+          "state": "known",
+          "value": 8
+        },
+        "magnitude": {
+          "id": "value:effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses:magnitude",
+          "ownerId": "effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses:mana",
+          "ownerId": "effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            40,
+            60,
+            80,
+            100
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses:cooldown",
+          "ownerId": "effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            25,
+            22,
+            19,
+            16
+          ]
+        },
+        "delay": {
+          "id": "value:effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses:delay",
+          "ownerId": "effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "wisp_tether"
+        ],
+        "upgrades": [],
+        "requiresContext": [
+          "ioTetherLinked"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "wisp_overcharge"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses",
+      "legacyEffectId": "wisp_overcharge:modifier:tethered-overcharge-combat-bonuses",
+      "order": 11,
+      "legacyAbilityId": "wisp_overcharge",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses:0"
+      ],
+      "valueIds": [
+        "value:effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses:range",
+        "value:effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses:duration",
+        "value:effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses:magnitude",
+        "value:effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses:mana",
+        "value:effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses:cooldown",
+        "value:effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses:delay"
+      ],
+      "activationId": "activation:91:wisp_overcharge"
+    },
+    {
+      "effectId": "wisp_relocate:mobility:delayed-global-io-relocation",
+      "heroId": "91",
+      "abilityId": "ability:91:wisp_relocate",
+      "type": "mobility",
+      "subtype": "delayed-global-io-relocation",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:wisp_relocate:mobility:delayed-global-io-relocation:range",
+          "ownerId": "effect:wisp_relocate:mobility:delayed-global-io-relocation",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:wisp_relocate:mobility:delayed-global-io-relocation:duration",
+          "ownerId": "effect:wisp_relocate:mobility:delayed-global-io-relocation",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            12,
+            12,
+            12
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:wisp_relocate:mobility:delayed-global-io-relocation:magnitude",
+          "ownerId": "effect:wisp_relocate:mobility:delayed-global-io-relocation",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:wisp_relocate:mobility:delayed-global-io-relocation:mana",
+          "ownerId": "effect:wisp_relocate:mobility:delayed-global-io-relocation",
+          "field": "mana",
+          "state": "known",
+          "value": 175
+        },
+        "cooldown": {
+          "id": "value:effect:wisp_relocate:mobility:delayed-global-io-relocation:cooldown",
+          "ownerId": "effect:wisp_relocate:mobility:delayed-global-io-relocation",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            90,
+            80,
+            70
+          ]
+        },
+        "delay": {
+          "id": "value:effect:wisp_relocate:mobility:delayed-global-io-relocation:delay",
+          "ownerId": "effect:wisp_relocate:mobility:delayed-global-io-relocation",
+          "field": "delay",
+          "state": "known",
+          "value": [
+            3.5,
+            3.25,
+            3
+          ]
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "ioRelocateDelaySurvived"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": true
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "wisp_relocate"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:wisp_relocate:mobility:delayed-global-io-relocation",
+      "legacyEffectId": "wisp_relocate:mobility:delayed-global-io-relocation",
+      "order": 12,
+      "legacyAbilityId": "wisp_relocate",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:wisp_relocate:mobility:delayed-global-io-relocation:0"
+      ],
+      "valueIds": [
+        "value:effect:wisp_relocate:mobility:delayed-global-io-relocation:range",
+        "value:effect:wisp_relocate:mobility:delayed-global-io-relocation:duration",
+        "value:effect:wisp_relocate:mobility:delayed-global-io-relocation:magnitude",
+        "value:effect:wisp_relocate:mobility:delayed-global-io-relocation:mana",
+        "value:effect:wisp_relocate:mobility:delayed-global-io-relocation:cooldown",
+        "value:effect:wisp_relocate:mobility:delayed-global-io-relocation:delay"
+      ],
+      "activationId": "activation:91:wisp_relocate"
+    },
+    {
+      "effectId": "wisp_relocate:mobility:delayed-global-tethered-ally-relocation",
+      "heroId": "91",
+      "abilityId": "ability:91:wisp_relocate",
+      "type": "mobility",
+      "subtype": "delayed-global-tethered-ally-relocation",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation:range",
+          "ownerId": "effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation:duration",
+          "ownerId": "effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            12,
+            12,
+            12
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation:magnitude",
+          "ownerId": "effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation:mana",
+          "ownerId": "effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation",
+          "field": "mana",
+          "state": "known",
+          "value": 175
+        },
+        "cooldown": {
+          "id": "value:effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation:cooldown",
+          "ownerId": "effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            90,
+            80,
+            70
+          ]
+        },
+        "delay": {
+          "id": "value:effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation:delay",
+          "ownerId": "effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation",
+          "field": "delay",
+          "state": "known",
+          "value": [
+            3.5,
+            3.25,
+            3
+          ]
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "wisp_tether"
+        ],
+        "upgrades": [],
+        "requiresContext": [
+          "ioRelocateDelaySurvived",
+          "ioTetherLinked"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": true
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "wisp_relocate"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation",
+      "legacyEffectId": "wisp_relocate:mobility:delayed-global-tethered-ally-relocation",
+      "order": 13,
+      "legacyAbilityId": "wisp_relocate",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:wisp_relocate:mobility:delayed-global-tethered-ally-relocation:0",
+        "condition:wisp_relocate:mobility:delayed-global-tethered-ally-relocation:1"
+      ],
+      "valueIds": [
+        "value:effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation:range",
+        "value:effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation:duration",
+        "value:effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation:magnitude",
+        "value:effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation:mana",
+        "value:effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation:cooldown",
+        "value:effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation:delay"
+      ],
+      "activationId": "activation:91:wisp_relocate"
+    },
+    {
+      "effectId": "wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification",
+      "heroId": "91",
+      "abilityId": "ability:91:wisp_equilibrium",
+      "type": "passive",
+      "subtype": "health-dependent-output-and-restoration-amplification",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification:range",
+          "ownerId": "effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification:duration",
+          "ownerId": "effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification:magnitude",
+          "ownerId": "effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification:mana",
+          "ownerId": "effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification:cooldown",
+          "ownerId": "effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification:delay",
+          "ownerId": "effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "wisp_equilibrium:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification",
+      "legacyEffectId": "wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification",
+      "order": 14,
+      "legacyAbilityId": "wisp_equilibrium",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification:range",
+        "value:effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification:duration",
+        "value:effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification:magnitude",
+        "value:effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification:mana",
+        "value:effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification:cooldown",
+        "value:effect:wisp_equilibrium:passive:health-dependent-output-and-restoration-amplification:delay"
+      ],
+      "activationId": "activation:91:wisp_equilibrium"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:wisp_tether:mobility:linked-friendly-speed:0",
+      "ownerId": "effect:wisp_tether:mobility:linked-friendly-speed",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ioTetherLinked"
+      }
+    },
+    {
+      "id": "condition:wisp_tether:mobility:distant-ally-latch:0",
+      "ownerId": "effect:wisp_tether:mobility:distant-ally-latch",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ioTetherTargetBeyondLatchDistance"
+      }
+    },
+    {
+      "id": "condition:wisp_tether:heal:linked-health-restoration-transfer:0",
+      "ownerId": "effect:wisp_tether:heal:linked-health-restoration-transfer",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ioTetherLinked"
+      }
+    },
+    {
+      "id": "condition:wisp_tether:heal:linked-health-restoration-transfer:1",
+      "ownerId": "effect:wisp_tether:heal:linked-health-restoration-transfer",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ioHealthRestorationReceived"
+      }
+    },
+    {
+      "id": "condition:wisp_tether:slow:enemy-crossing-tether-slow:0",
+      "ownerId": "effect:wisp_tether:slow:enemy-crossing-tether-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ioTetherLinked"
+      }
+    },
+    {
+      "id": "condition:wisp_tether:slow:enemy-crossing-tether-slow:1",
+      "ownerId": "effect:wisp_tether:slow:enemy-crossing-tether-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyTouchesTether"
+      }
+    },
+    {
+      "id": "condition:wisp_tether:modifier:shard-contact-damage:0",
+      "ownerId": "effect:wisp_tether:modifier:shard-contact-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ioTetherLinked"
+      }
+    },
+    {
+      "id": "condition:wisp_tether:modifier:shard-contact-damage:1",
+      "ownerId": "effect:wisp_tether:modifier:shard-contact-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyTouchesTether"
+      }
+    },
+    {
+      "id": "condition:wisp_tether:heal:shard-contact-damage-self-heal:0",
+      "ownerId": "effect:wisp_tether:heal:shard-contact-damage-self-heal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ioTetherLinked"
+      }
+    },
+    {
+      "id": "condition:wisp_tether:heal:shard-contact-damage-self-heal:1",
+      "ownerId": "effect:wisp_tether:heal:shard-contact-damage-self-heal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ioTetherActuallyDamagedEnemy"
+      }
+    },
+    {
+      "id": "condition:wisp_spirits:damage:one-spirit-hero-explosion:0",
+      "ownerId": "effect:wisp_spirits:damage:one-spirit-hero-explosion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ioSpiritExplodesNearEnemy"
+      }
+    },
+    {
+      "id": "condition:wisp_spirits:slow:scepter-spirit-collision-slow:0",
+      "ownerId": "effect:wisp_spirits:slow:scepter-spirit-collision-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ioSpiritCollidesWithHero"
+      }
+    },
+    {
+      "id": "condition:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses:0",
+      "ownerId": "effect:wisp_overcharge:modifier:tethered-overcharge-combat-bonuses",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ioTetherLinked"
+      }
+    },
+    {
+      "id": "condition:wisp_relocate:mobility:delayed-global-io-relocation:0",
+      "ownerId": "effect:wisp_relocate:mobility:delayed-global-io-relocation",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ioRelocateDelaySurvived"
+      }
+    },
+    {
+      "id": "condition:wisp_relocate:mobility:delayed-global-tethered-ally-relocation:0",
+      "ownerId": "effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ioRelocateDelaySurvived"
+      }
+    },
+    {
+      "id": "condition:wisp_relocate:mobility:delayed-global-tethered-ally-relocation:1",
+      "ownerId": "effect:wisp_relocate:mobility:delayed-global-tethered-ally-relocation",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ioTetherLinked"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1336 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "gyrocopter_rocket_barrage:damage:one-visible-target-rocket",
+      "heroId": "72",
+      "abilityId": "ability:72:gyrocopter_rocket_barrage",
+      "type": "damage",
+      "subtype": "one-visible-target-rocket",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket:range",
+          "ownerId": "effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket",
+          "field": "range",
+          "state": "known",
+          "value": 400
+        },
+        "duration": {
+          "id": "value:effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket:duration",
+          "ownerId": "effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket:magnitude",
+          "ownerId": "effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            8,
+            14,
+            20,
+            26
+          ]
+        },
+        "mana": {
+          "id": "value:effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket:mana",
+          "ownerId": "effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket:cooldown",
+          "ownerId": "effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            7,
+            6.5,
+            6,
+            5.5
+          ]
+        },
+        "delay": {
+          "id": "value:effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket:delay",
+          "ownerId": "effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket:damageType",
+          "ownerId": "effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "barrageRocketHitsVisibleEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "gyrocopter_rocket_barrage"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket",
+      "legacyEffectId": "gyrocopter_rocket_barrage:damage:one-visible-target-rocket",
+      "order": 0,
+      "legacyAbilityId": "gyrocopter_rocket_barrage",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:gyrocopter_rocket_barrage:damage:one-visible-target-rocket:0"
+      ],
+      "valueIds": [
+        "value:effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket:range",
+        "value:effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket:duration",
+        "value:effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket:magnitude",
+        "value:effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket:mana",
+        "value:effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket:cooldown",
+        "value:effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket:delay",
+        "value:effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket:damageType"
+      ],
+      "activationId": "activation:72:gyrocopter_rocket_barrage"
+    },
+    {
+      "effectId": "gyrocopter_homing_missile:control:surviving-missile-impact-stun",
+      "heroId": "72",
+      "abilityId": "ability:72:gyrocopter_homing_missile",
+      "type": "control",
+      "subtype": "surviving-missile-impact-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun:range",
+          "ownerId": "effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun",
+          "field": "range",
+          "state": "known",
+          "value": 1050
+        },
+        "duration": {
+          "id": "value:effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun:duration",
+          "ownerId": "effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.3,
+            1.7,
+            2.1,
+            2.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun:magnitude",
+          "ownerId": "effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun:mana",
+          "ownerId": "effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun",
+          "field": "mana",
+          "state": "known",
+          "value": 120
+        },
+        "cooldown": {
+          "id": "value:effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun:cooldown",
+          "ownerId": "effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            26,
+            21,
+            16,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun:delay",
+          "ownerId": "effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "homingMissileSurvivesAndImpacts"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "gyrocopter_homing_missile"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun",
+      "legacyEffectId": "gyrocopter_homing_missile:control:surviving-missile-impact-stun",
+      "order": 1,
+      "legacyAbilityId": "gyrocopter_homing_missile",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:gyrocopter_homing_missile:control:surviving-missile-impact-stun:0"
+      ],
+      "valueIds": [
+        "value:effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun:range",
+        "value:effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun:duration",
+        "value:effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun:magnitude",
+        "value:effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun:mana",
+        "value:effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun:cooldown",
+        "value:effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun:delay"
+      ],
+      "activationId": "activation:72:gyrocopter_homing_missile"
+    },
+    {
+      "effectId": "gyrocopter_homing_missile:damage:surviving-missile-impact-damage",
+      "heroId": "72",
+      "abilityId": "ability:72:gyrocopter_homing_missile",
+      "type": "damage",
+      "subtype": "surviving-missile-impact-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage:range",
+          "ownerId": "effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage",
+          "field": "range",
+          "state": "known",
+          "value": 1050
+        },
+        "duration": {
+          "id": "value:effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage:duration",
+          "ownerId": "effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage:magnitude",
+          "ownerId": "effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            90,
+            180,
+            270,
+            360
+          ]
+        },
+        "mana": {
+          "id": "value:effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage:mana",
+          "ownerId": "effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 120
+        },
+        "cooldown": {
+          "id": "value:effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage:cooldown",
+          "ownerId": "effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            26,
+            21,
+            16,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage:delay",
+          "ownerId": "effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage:damageType",
+          "ownerId": "effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "homingMissileSurvivesAndImpacts"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "gyrocopter_homing_missile"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage",
+      "legacyEffectId": "gyrocopter_homing_missile:damage:surviving-missile-impact-damage",
+      "order": 2,
+      "legacyAbilityId": "gyrocopter_homing_missile",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:gyrocopter_homing_missile:damage:surviving-missile-impact-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage:range",
+        "value:effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage:duration",
+        "value:effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage:magnitude",
+        "value:effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage:mana",
+        "value:effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage:cooldown",
+        "value:effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage:delay",
+        "value:effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage:damageType"
+      ],
+      "activationId": "activation:72:gyrocopter_homing_missile"
+    },
+    {
+      "effectId": "gyrocopter_homing_missile:modifier:shard-missile-carried-barrage",
+      "heroId": "72",
+      "abilityId": "ability:72:gyrocopter_homing_missile",
+      "type": "modifier",
+      "subtype": "shard-missile-carried-barrage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage:range",
+          "ownerId": "effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage:duration",
+          "ownerId": "effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage:magnitude",
+          "ownerId": "effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage:mana",
+          "ownerId": "effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage:cooldown",
+          "ownerId": "effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage:delay",
+          "ownerId": "effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "gyrocopter_rocket_barrage"
+        ],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "homingMissileExistsAfterShardDelay"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "gyrocopter_homing_missile:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage",
+      "legacyEffectId": "gyrocopter_homing_missile:modifier:shard-missile-carried-barrage",
+      "order": 3,
+      "legacyAbilityId": "gyrocopter_homing_missile",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage:0"
+      ],
+      "valueIds": [
+        "value:effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage:range",
+        "value:effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage:duration",
+        "value:effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage:magnitude",
+        "value:effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage:mana",
+        "value:effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage:cooldown",
+        "value:effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage:delay"
+      ],
+      "activationId": "activation:72:gyrocopter_homing_missile"
+    },
+    {
+      "effectId": "gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks",
+      "heroId": "72",
+      "abilityId": "ability:72:gyrocopter_flak_cannon",
+      "type": "damage",
+      "subtype": "limited-secondary-flak-attacks",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks:range",
+          "ownerId": "effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks",
+          "field": "range",
+          "state": "known",
+          "value": 1250
+        },
+        "duration": {
+          "id": "value:effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks:duration",
+          "ownerId": "effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks",
+          "field": "duration",
+          "state": "known",
+          "value": 12
+        },
+        "magnitude": {
+          "id": "value:effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks:magnitude",
+          "ownerId": "effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks:mana",
+          "ownerId": "effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            50,
+            60,
+            70,
+            80
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks:cooldown",
+          "ownerId": "effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks",
+          "field": "cooldown",
+          "state": "known",
+          "value": 25
+        },
+        "delay": {
+          "id": "value:effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks:delay",
+          "ownerId": "effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks:damageType",
+          "ownerId": "effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "gyrocopterFlakAttackMadeWithCharge"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "gyrocopter_flak_cannon"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks",
+      "legacyEffectId": "gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks",
+      "order": 4,
+      "legacyAbilityId": "gyrocopter_flak_cannon",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks:0"
+      ],
+      "valueIds": [
+        "value:effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks:range",
+        "value:effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks:duration",
+        "value:effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks:magnitude",
+        "value:effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks:mana",
+        "value:effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks:cooldown",
+        "value:effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks:delay",
+        "value:effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks:damageType"
+      ],
+      "activationId": "activation:72:gyrocopter_flak_cannon"
+    },
+    {
+      "effectId": "gyrocopter_afterburner:mobility:recent-damage-movement-stacks",
+      "heroId": "72",
+      "abilityId": "ability:72:gyrocopter_afterburner",
+      "type": "mobility",
+      "subtype": "recent-damage-movement-stacks",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks:range",
+          "ownerId": "effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks:duration",
+          "ownerId": "effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks:magnitude",
+          "ownerId": "effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks:mana",
+          "ownerId": "effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks:cooldown",
+          "ownerId": "effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks:delay",
+          "ownerId": "effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "gyrocopterOwnDamageTriggeredAfterburner"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "gyrocopter_afterburner:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks",
+      "legacyEffectId": "gyrocopter_afterburner:mobility:recent-damage-movement-stacks",
+      "order": 5,
+      "legacyAbilityId": "gyrocopter_afterburner",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:gyrocopter_afterburner:mobility:recent-damage-movement-stacks:0"
+      ],
+      "valueIds": [
+        "value:effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks:range",
+        "value:effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks:duration",
+        "value:effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks:magnitude",
+        "value:effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks:mana",
+        "value:effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks:cooldown",
+        "value:effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks:delay"
+      ],
+      "activationId": "activation:72:gyrocopter_afterburner"
+    },
+    {
+      "effectId": "gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack",
+      "heroId": "72",
+      "abilityId": "ability:72:gyrocopter_side_gunner_spawn_ability",
+      "type": "damage",
+      "subtype": "scepter-periodic-side-gunner-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack:range",
+          "ownerId": "effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack:duration",
+          "ownerId": "effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack:magnitude",
+          "ownerId": "effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack:mana",
+          "ownerId": "effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack:cooldown",
+          "ownerId": "effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack:delay",
+          "ownerId": "effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack:damageType",
+          "ownerId": "effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "eligibleSideGunnerTargetAvailable"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "gyrocopter_side_gunner_spawn_ability:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack",
+      "legacyEffectId": "gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack",
+      "order": 6,
+      "legacyAbilityId": "gyrocopter_side_gunner_spawn_ability",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack:0"
+      ],
+      "valueIds": [
+        "value:effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack:range",
+        "value:effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack:duration",
+        "value:effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack:magnitude",
+        "value:effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack:mana",
+        "value:effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack:cooldown",
+        "value:effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack:delay",
+        "value:effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack:damageType"
+      ],
+      "activationId": "activation:72:gyrocopter_side_gunner_spawn_ability"
+    },
+    {
+      "effectId": "gyrocopter_call_down:damage:one-call-down-strike",
+      "heroId": "72",
+      "abilityId": "ability:72:gyrocopter_call_down",
+      "type": "damage",
+      "subtype": "one-call-down-strike",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:gyrocopter_call_down:damage:one-call-down-strike:range",
+          "ownerId": "effect:gyrocopter_call_down:damage:one-call-down-strike",
+          "field": "range",
+          "state": "known",
+          "value": 1000
+        },
+        "duration": {
+          "id": "value:effect:gyrocopter_call_down:damage:one-call-down-strike:duration",
+          "ownerId": "effect:gyrocopter_call_down:damage:one-call-down-strike",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:gyrocopter_call_down:damage:one-call-down-strike:magnitude",
+          "ownerId": "effect:gyrocopter_call_down:damage:one-call-down-strike",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            200,
+            350,
+            500
+          ]
+        },
+        "mana": {
+          "id": "value:effect:gyrocopter_call_down:damage:one-call-down-strike:mana",
+          "ownerId": "effect:gyrocopter_call_down:damage:one-call-down-strike",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            200,
+            250
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:gyrocopter_call_down:damage:one-call-down-strike:cooldown",
+          "ownerId": "effect:gyrocopter_call_down:damage:one-call-down-strike",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            75,
+            65,
+            55
+          ]
+        },
+        "delay": {
+          "id": "value:effect:gyrocopter_call_down:damage:one-call-down-strike:delay",
+          "ownerId": "effect:gyrocopter_call_down:damage:one-call-down-strike",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:gyrocopter_call_down:damage:one-call-down-strike:damageType",
+          "ownerId": "effect:gyrocopter_call_down:damage:one-call-down-strike",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideCallDownStrike"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "gyrocopter_call_down"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:gyrocopter_call_down:damage:one-call-down-strike",
+      "legacyEffectId": "gyrocopter_call_down:damage:one-call-down-strike",
+      "order": 7,
+      "legacyAbilityId": "gyrocopter_call_down",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:gyrocopter_call_down:damage:one-call-down-strike:0"
+      ],
+      "valueIds": [
+        "value:effect:gyrocopter_call_down:damage:one-call-down-strike:range",
+        "value:effect:gyrocopter_call_down:damage:one-call-down-strike:duration",
+        "value:effect:gyrocopter_call_down:damage:one-call-down-strike:magnitude",
+        "value:effect:gyrocopter_call_down:damage:one-call-down-strike:mana",
+        "value:effect:gyrocopter_call_down:damage:one-call-down-strike:cooldown",
+        "value:effect:gyrocopter_call_down:damage:one-call-down-strike:delay",
+        "value:effect:gyrocopter_call_down:damage:one-call-down-strike:damageType"
+      ],
+      "activationId": "activation:72:gyrocopter_call_down"
+    },
+    {
+      "effectId": "gyrocopter_call_down:slow:call-down-strike-slow",
+      "heroId": "72",
+      "abilityId": "ability:72:gyrocopter_call_down",
+      "type": "slow",
+      "subtype": "call-down-strike-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:gyrocopter_call_down:slow:call-down-strike-slow:range",
+          "ownerId": "effect:gyrocopter_call_down:slow:call-down-strike-slow",
+          "field": "range",
+          "state": "known",
+          "value": 1000
+        },
+        "duration": {
+          "id": "value:effect:gyrocopter_call_down:slow:call-down-strike-slow:duration",
+          "ownerId": "effect:gyrocopter_call_down:slow:call-down-strike-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:gyrocopter_call_down:slow:call-down-strike-slow:magnitude",
+          "ownerId": "effect:gyrocopter_call_down:slow:call-down-strike-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": 60
+        },
+        "mana": {
+          "id": "value:effect:gyrocopter_call_down:slow:call-down-strike-slow:mana",
+          "ownerId": "effect:gyrocopter_call_down:slow:call-down-strike-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            200,
+            250
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:gyrocopter_call_down:slow:call-down-strike-slow:cooldown",
+          "ownerId": "effect:gyrocopter_call_down:slow:call-down-strike-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            75,
+            65,
+            55
+          ]
+        },
+        "delay": {
+          "id": "value:effect:gyrocopter_call_down:slow:call-down-strike-slow:delay",
+          "ownerId": "effect:gyrocopter_call_down:slow:call-down-strike-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideCallDownStrike"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "gyrocopter_call_down"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:gyrocopter_call_down:slow:call-down-strike-slow",
+      "legacyEffectId": "gyrocopter_call_down:slow:call-down-strike-slow",
+      "order": 8,
+      "legacyAbilityId": "gyrocopter_call_down",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:gyrocopter_call_down:slow:call-down-strike-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:gyrocopter_call_down:slow:call-down-strike-slow:range",
+        "value:effect:gyrocopter_call_down:slow:call-down-strike-slow:duration",
+        "value:effect:gyrocopter_call_down:slow:call-down-strike-slow:magnitude",
+        "value:effect:gyrocopter_call_down:slow:call-down-strike-slow:mana",
+        "value:effect:gyrocopter_call_down:slow:call-down-strike-slow:cooldown",
+        "value:effect:gyrocopter_call_down:slow:call-down-strike-slow:delay"
+      ],
+      "activationId": "activation:72:gyrocopter_call_down"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:gyrocopter_rocket_barrage:damage:one-visible-target-rocket:0",
+      "ownerId": "effect:gyrocopter_rocket_barrage:damage:one-visible-target-rocket",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "barrageRocketHitsVisibleEnemy"
+      }
+    },
+    {
+      "id": "condition:gyrocopter_homing_missile:control:surviving-missile-impact-stun:0",
+      "ownerId": "effect:gyrocopter_homing_missile:control:surviving-missile-impact-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "homingMissileSurvivesAndImpacts"
+      }
+    },
+    {
+      "id": "condition:gyrocopter_homing_missile:damage:surviving-missile-impact-damage:0",
+      "ownerId": "effect:gyrocopter_homing_missile:damage:surviving-missile-impact-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "homingMissileSurvivesAndImpacts"
+      }
+    },
+    {
+      "id": "condition:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage:0",
+      "ownerId": "effect:gyrocopter_homing_missile:modifier:shard-missile-carried-barrage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "homingMissileExistsAfterShardDelay"
+      }
+    },
+    {
+      "id": "condition:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks:0",
+      "ownerId": "effect:gyrocopter_flak_cannon:damage:limited-secondary-flak-attacks",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "gyrocopterFlakAttackMadeWithCharge"
+      }
+    },
+    {
+      "id": "condition:gyrocopter_afterburner:mobility:recent-damage-movement-stacks:0",
+      "ownerId": "effect:gyrocopter_afterburner:mobility:recent-damage-movement-stacks",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "gyrocopterOwnDamageTriggeredAfterburner"
+      }
+    },
+    {
+      "id": "condition:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack:0",
+      "ownerId": "effect:gyrocopter_side_gunner_spawn_ability:damage:scepter-periodic-side-gunner-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "eligibleSideGunnerTargetAvailable"
+      }
+    },
+    {
+      "id": "condition:gyrocopter_call_down:damage:one-call-down-strike:0",
+      "ownerId": "effect:gyrocopter_call_down:damage:one-call-down-strike",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideCallDownStrike"
+      }
+    },
+    {
+      "id": "condition:gyrocopter_call_down:slow:call-down-strike-slow:0",
+      "ownerId": "effect:gyrocopter_call_down:slow:call-down-strike-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideCallDownStrike"
+      }
+    }
+  ]
+}

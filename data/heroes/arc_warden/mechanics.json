@@ -1,0 +1,1999 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "arc_warden_flux:damage:isolated-flux-periodic-damage",
+      "heroId": "113",
+      "abilityId": "ability:113:arc_warden_flux",
+      "type": "damage",
+      "subtype": "isolated-flux-periodic-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:arc_warden_flux:damage:isolated-flux-periodic-damage:range",
+          "ownerId": "effect:arc_warden_flux:damage:isolated-flux-periodic-damage",
+          "field": "range",
+          "state": "known",
+          "value": [
+            625,
+            700,
+            775,
+            850
+          ]
+        },
+        "duration": {
+          "id": "value:effect:arc_warden_flux:damage:isolated-flux-periodic-damage:duration",
+          "ownerId": "effect:arc_warden_flux:damage:isolated-flux-periodic-damage",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:arc_warden_flux:damage:isolated-flux-periodic-damage:magnitude",
+          "ownerId": "effect:arc_warden_flux:damage:isolated-flux-periodic-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:arc_warden_flux:damage:isolated-flux-periodic-damage:mana",
+          "ownerId": "effect:arc_warden_flux:damage:isolated-flux-periodic-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:arc_warden_flux:damage:isolated-flux-periodic-damage:cooldown",
+          "ownerId": "effect:arc_warden_flux:damage:isolated-flux-periodic-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": 16
+        },
+        "delay": {
+          "id": "value:effect:arc_warden_flux:damage:isolated-flux-periodic-damage:delay",
+          "ownerId": "effect:arc_warden_flux:damage:isolated-flux-periodic-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:arc_warden_flux:damage:isolated-flux-periodic-damage:damageType",
+          "ownerId": "effect:arc_warden_flux:damage:isolated-flux-periodic-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "fluxTargetHasNoNearbyAlliedUnit"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "arc_warden_flux"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:arc_warden_flux:damage:isolated-flux-periodic-damage",
+      "legacyEffectId": "arc_warden_flux:damage:isolated-flux-periodic-damage",
+      "order": 0,
+      "legacyAbilityId": "arc_warden_flux",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:arc_warden_flux:damage:isolated-flux-periodic-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:arc_warden_flux:damage:isolated-flux-periodic-damage:range",
+        "value:effect:arc_warden_flux:damage:isolated-flux-periodic-damage:duration",
+        "value:effect:arc_warden_flux:damage:isolated-flux-periodic-damage:magnitude",
+        "value:effect:arc_warden_flux:damage:isolated-flux-periodic-damage:mana",
+        "value:effect:arc_warden_flux:damage:isolated-flux-periodic-damage:cooldown",
+        "value:effect:arc_warden_flux:damage:isolated-flux-periodic-damage:delay",
+        "value:effect:arc_warden_flux:damage:isolated-flux-periodic-damage:damageType"
+      ],
+      "activationId": "activation:113:arc_warden_flux"
+    },
+    {
+      "effectId": "arc_warden_flux:slow:flux-movement-slow",
+      "heroId": "113",
+      "abilityId": "ability:113:arc_warden_flux",
+      "type": "slow",
+      "subtype": "flux-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:arc_warden_flux:slow:flux-movement-slow:range",
+          "ownerId": "effect:arc_warden_flux:slow:flux-movement-slow",
+          "field": "range",
+          "state": "known",
+          "value": [
+            625,
+            700,
+            775,
+            850
+          ]
+        },
+        "duration": {
+          "id": "value:effect:arc_warden_flux:slow:flux-movement-slow:duration",
+          "ownerId": "effect:arc_warden_flux:slow:flux-movement-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:arc_warden_flux:slow:flux-movement-slow:magnitude",
+          "ownerId": "effect:arc_warden_flux:slow:flux-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            20,
+            25,
+            30,
+            35
+          ]
+        },
+        "mana": {
+          "id": "value:effect:arc_warden_flux:slow:flux-movement-slow:mana",
+          "ownerId": "effect:arc_warden_flux:slow:flux-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:arc_warden_flux:slow:flux-movement-slow:cooldown",
+          "ownerId": "effect:arc_warden_flux:slow:flux-movement-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": 16
+        },
+        "delay": {
+          "id": "value:effect:arc_warden_flux:slow:flux-movement-slow:delay",
+          "ownerId": "effect:arc_warden_flux:slow:flux-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "arc_warden_flux"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:arc_warden_flux:slow:flux-movement-slow",
+      "legacyEffectId": "arc_warden_flux:slow:flux-movement-slow",
+      "order": 1,
+      "legacyAbilityId": "arc_warden_flux",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:arc_warden_flux:slow:flux-movement-slow:range",
+        "value:effect:arc_warden_flux:slow:flux-movement-slow:duration",
+        "value:effect:arc_warden_flux:slow:flux-movement-slow:magnitude",
+        "value:effect:arc_warden_flux:slow:flux-movement-slow:mana",
+        "value:effect:arc_warden_flux:slow:flux-movement-slow:cooldown",
+        "value:effect:arc_warden_flux:slow:flux-movement-slow:delay"
+      ],
+      "activationId": "activation:113:arc_warden_flux"
+    },
+    {
+      "effectId": "arc_warden_flux:control:scepter-isolated-flux-silence",
+      "heroId": "113",
+      "abilityId": "ability:113:arc_warden_flux",
+      "type": "control",
+      "subtype": "scepter-isolated-flux-silence",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:arc_warden_flux:control:scepter-isolated-flux-silence:range",
+          "ownerId": "effect:arc_warden_flux:control:scepter-isolated-flux-silence",
+          "field": "range",
+          "state": "known",
+          "value": [
+            625,
+            700,
+            775,
+            850
+          ]
+        },
+        "duration": {
+          "id": "value:effect:arc_warden_flux:control:scepter-isolated-flux-silence:duration",
+          "ownerId": "effect:arc_warden_flux:control:scepter-isolated-flux-silence",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:arc_warden_flux:control:scepter-isolated-flux-silence:magnitude",
+          "ownerId": "effect:arc_warden_flux:control:scepter-isolated-flux-silence",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:arc_warden_flux:control:scepter-isolated-flux-silence:mana",
+          "ownerId": "effect:arc_warden_flux:control:scepter-isolated-flux-silence",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:arc_warden_flux:control:scepter-isolated-flux-silence:cooldown",
+          "ownerId": "effect:arc_warden_flux:control:scepter-isolated-flux-silence",
+          "field": "cooldown",
+          "state": "known",
+          "value": 16
+        },
+        "delay": {
+          "id": "value:effect:arc_warden_flux:control:scepter-isolated-flux-silence:delay",
+          "ownerId": "effect:arc_warden_flux:control:scepter-isolated-flux-silence",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "fluxTargetHasNoNearbyAlliedUnit"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "arc_warden_flux"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:arc_warden_flux:control:scepter-isolated-flux-silence",
+      "legacyEffectId": "arc_warden_flux:control:scepter-isolated-flux-silence",
+      "order": 2,
+      "legacyAbilityId": "arc_warden_flux",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:arc_warden_flux:control:scepter-isolated-flux-silence:0"
+      ],
+      "valueIds": [
+        "value:effect:arc_warden_flux:control:scepter-isolated-flux-silence:range",
+        "value:effect:arc_warden_flux:control:scepter-isolated-flux-silence:duration",
+        "value:effect:arc_warden_flux:control:scepter-isolated-flux-silence:magnitude",
+        "value:effect:arc_warden_flux:control:scepter-isolated-flux-silence:mana",
+        "value:effect:arc_warden_flux:control:scepter-isolated-flux-silence:cooldown",
+        "value:effect:arc_warden_flux:control:scepter-isolated-flux-silence:delay"
+      ],
+      "activationId": "activation:113:arc_warden_flux"
+    },
+    {
+      "effectId": "arc_warden_flux:modifier:scepter-flux-damage-and-duration",
+      "heroId": "113",
+      "abilityId": "ability:113:arc_warden_flux",
+      "type": "modifier",
+      "subtype": "scepter-flux-damage-and-duration",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration:range",
+          "ownerId": "effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration:duration",
+          "ownerId": "effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration:magnitude",
+          "ownerId": "effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration:mana",
+          "ownerId": "effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration:cooldown",
+          "ownerId": "effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration",
+          "field": "cooldown",
+          "state": "known",
+          "value": 16
+        },
+        "delay": {
+          "id": "value:effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration:delay",
+          "ownerId": "effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "arc_warden_flux"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration",
+      "legacyEffectId": "arc_warden_flux:modifier:scepter-flux-damage-and-duration",
+      "order": 3,
+      "legacyAbilityId": "arc_warden_flux",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration:range",
+        "value:effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration:duration",
+        "value:effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration:magnitude",
+        "value:effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration:mana",
+        "value:effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration:cooldown",
+        "value:effect:arc_warden_flux:modifier:scepter-flux-damage-and-duration:delay"
+      ],
+      "activationId": "activation:113:arc_warden_flux"
+    },
+    {
+      "effectId": "arc_warden_magnetic_field:modifier:field-allied-attack-speed",
+      "heroId": "113",
+      "abilityId": "ability:113:arc_warden_magnetic_field",
+      "type": "modifier",
+      "subtype": "field-allied-attack-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed:range",
+          "ownerId": "effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed",
+          "field": "range",
+          "state": "known",
+          "value": 900
+        },
+        "duration": {
+          "id": "value:effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed:duration",
+          "ownerId": "effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed:magnitude",
+          "ownerId": "effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            30,
+            60,
+            90,
+            120
+          ]
+        },
+        "mana": {
+          "id": "value:effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed:mana",
+          "ownerId": "effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            60,
+            70,
+            80,
+            90
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed:cooldown",
+          "ownerId": "effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            19,
+            18,
+            17
+          ]
+        },
+        "delay": {
+          "id": "value:effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed:delay",
+          "ownerId": "effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "allyInsideMagneticField"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "arc_warden_magnetic_field"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed",
+      "legacyEffectId": "arc_warden_magnetic_field:modifier:field-allied-attack-speed",
+      "order": 4,
+      "legacyAbilityId": "arc_warden_magnetic_field",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:arc_warden_magnetic_field:modifier:field-allied-attack-speed:0"
+      ],
+      "valueIds": [
+        "value:effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed:range",
+        "value:effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed:duration",
+        "value:effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed:magnitude",
+        "value:effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed:mana",
+        "value:effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed:cooldown",
+        "value:effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed:delay"
+      ],
+      "activationId": "activation:113:arc_warden_magnetic_field"
+    },
+    {
+      "effectId": "arc_warden_magnetic_field:save:field-outside-attacker-evasion",
+      "heroId": "113",
+      "abilityId": "ability:113:arc_warden_magnetic_field",
+      "type": "save",
+      "subtype": "field-outside-attacker-evasion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion:range",
+          "ownerId": "effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion",
+          "field": "range",
+          "state": "known",
+          "value": 900
+        },
+        "duration": {
+          "id": "value:effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion:duration",
+          "ownerId": "effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion:magnitude",
+          "ownerId": "effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion:mana",
+          "ownerId": "effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            60,
+            70,
+            80,
+            90
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion:cooldown",
+          "ownerId": "effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            19,
+            18,
+            17
+          ]
+        },
+        "delay": {
+          "id": "value:effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion:delay",
+          "ownerId": "effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "allyInsideMagneticField",
+          "attackerOutsideMagneticField"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "arc_warden_magnetic_field"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion",
+      "legacyEffectId": "arc_warden_magnetic_field:save:field-outside-attacker-evasion",
+      "order": 5,
+      "legacyAbilityId": "arc_warden_magnetic_field",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:arc_warden_magnetic_field:save:field-outside-attacker-evasion:0",
+        "condition:arc_warden_magnetic_field:save:field-outside-attacker-evasion:1"
+      ],
+      "valueIds": [
+        "value:effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion:range",
+        "value:effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion:duration",
+        "value:effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion:magnitude",
+        "value:effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion:mana",
+        "value:effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion:cooldown",
+        "value:effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion:delay"
+      ],
+      "activationId": "activation:113:arc_warden_magnetic_field"
+    },
+    {
+      "effectId": "arc_warden_magnetic_field:modifier:field-rune-pull-and-activation",
+      "heroId": "113",
+      "abilityId": "ability:113:arc_warden_magnetic_field",
+      "type": "modifier",
+      "subtype": "field-rune-pull-and-activation",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation:range",
+          "ownerId": "effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation",
+          "field": "range",
+          "state": "known",
+          "value": [
+            800,
+            1200,
+            1600,
+            2000
+          ]
+        },
+        "duration": {
+          "id": "value:effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation:duration",
+          "ownerId": "effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation:magnitude",
+          "ownerId": "effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation:mana",
+          "ownerId": "effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            60,
+            70,
+            80,
+            90
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation:cooldown",
+          "ownerId": "effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            19,
+            18,
+            17
+          ]
+        },
+        "delay": {
+          "id": "value:effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation:delay",
+          "ownerId": "effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "runeInsideFieldPullRegion"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "arc_warden_magnetic_field"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation",
+      "legacyEffectId": "arc_warden_magnetic_field:modifier:field-rune-pull-and-activation",
+      "order": 6,
+      "legacyAbilityId": "arc_warden_magnetic_field",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation:0"
+      ],
+      "valueIds": [
+        "value:effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation:range",
+        "value:effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation:duration",
+        "value:effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation:magnitude",
+        "value:effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation:mana",
+        "value:effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation:cooldown",
+        "value:effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation:delay"
+      ],
+      "activationId": "activation:113:arc_warden_magnetic_field"
+    },
+    {
+      "effectId": "arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement",
+      "heroId": "113",
+      "abilityId": "ability:113:arc_warden_spark_wraith",
+      "type": "modifier",
+      "subtype": "delayed-spark-wraith-placement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement:range",
+          "ownerId": "effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement",
+          "field": "range",
+          "state": "known",
+          "value": 2000
+        },
+        "duration": {
+          "id": "value:effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement:duration",
+          "ownerId": "effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement",
+          "field": "duration",
+          "state": "known",
+          "value": 16
+        },
+        "magnitude": {
+          "id": "value:effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement:magnitude",
+          "ownerId": "effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement:mana",
+          "ownerId": "effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement:cooldown",
+          "ownerId": "effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "delay": {
+          "id": "value:effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement:delay",
+          "ownerId": "effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement",
+          "field": "delay",
+          "state": "known",
+          "value": 1.5
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "arc_warden_spark_wraith"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement",
+      "legacyEffectId": "arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement",
+      "order": 7,
+      "legacyAbilityId": "arc_warden_spark_wraith",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement:range",
+        "value:effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement:duration",
+        "value:effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement:magnitude",
+        "value:effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement:mana",
+        "value:effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement:cooldown",
+        "value:effect:arc_warden_spark_wraith:modifier:delayed-spark-wraith-placement:delay"
+      ],
+      "activationId": "activation:113:arc_warden_spark_wraith"
+    },
+    {
+      "effectId": "arc_warden_spark_wraith:damage:established-wraith-contact-damage",
+      "heroId": "113",
+      "abilityId": "ability:113:arc_warden_spark_wraith",
+      "type": "damage",
+      "subtype": "established-wraith-contact-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage:range",
+          "ownerId": "effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage:duration",
+          "ownerId": "effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage:magnitude",
+          "ownerId": "effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            100,
+            170,
+            240,
+            310
+          ]
+        },
+        "mana": {
+          "id": "value:effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage:mana",
+          "ownerId": "effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage:cooldown",
+          "ownerId": "effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage:delay",
+          "ownerId": "effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage:damageType",
+          "ownerId": "effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "sparkWraithArmed",
+          "sparkWraithProjectileHitsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "arc_warden_spark_wraith:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage",
+      "legacyEffectId": "arc_warden_spark_wraith:damage:established-wraith-contact-damage",
+      "order": 8,
+      "legacyAbilityId": "arc_warden_spark_wraith",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:arc_warden_spark_wraith:damage:established-wraith-contact-damage:0",
+        "condition:arc_warden_spark_wraith:damage:established-wraith-contact-damage:1"
+      ],
+      "valueIds": [
+        "value:effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage:range",
+        "value:effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage:duration",
+        "value:effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage:magnitude",
+        "value:effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage:mana",
+        "value:effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage:cooldown",
+        "value:effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage:delay",
+        "value:effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage:damageType"
+      ],
+      "activationId": "activation:113:arc_warden_spark_wraith"
+    },
+    {
+      "effectId": "arc_warden_spark_wraith:slow:established-wraith-movement-slow",
+      "heroId": "113",
+      "abilityId": "ability:113:arc_warden_spark_wraith",
+      "type": "slow",
+      "subtype": "established-wraith-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow:range",
+          "ownerId": "effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow:duration",
+          "ownerId": "effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            0.7,
+            0.8,
+            0.9,
+            1
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow:magnitude",
+          "ownerId": "effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": 100
+        },
+        "mana": {
+          "id": "value:effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow:mana",
+          "ownerId": "effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow:cooldown",
+          "ownerId": "effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow:delay",
+          "ownerId": "effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "sparkWraithArmed",
+          "sparkWraithProjectileHitsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "arc_warden_spark_wraith:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow",
+      "legacyEffectId": "arc_warden_spark_wraith:slow:established-wraith-movement-slow",
+      "order": 9,
+      "legacyAbilityId": "arc_warden_spark_wraith",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:arc_warden_spark_wraith:slow:established-wraith-movement-slow:0",
+        "condition:arc_warden_spark_wraith:slow:established-wraith-movement-slow:1"
+      ],
+      "valueIds": [
+        "value:effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow:range",
+        "value:effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow:duration",
+        "value:effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow:magnitude",
+        "value:effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow:mana",
+        "value:effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow:cooldown",
+        "value:effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow:delay"
+      ],
+      "activationId": "activation:113:arc_warden_spark_wraith"
+    },
+    {
+      "effectId": "arc_warden_spark_wraith:vision:established-wraith-area-vision",
+      "heroId": "113",
+      "abilityId": "ability:113:arc_warden_spark_wraith",
+      "type": "vision",
+      "subtype": "established-wraith-area-vision",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:arc_warden_spark_wraith:vision:established-wraith-area-vision:range",
+          "ownerId": "effect:arc_warden_spark_wraith:vision:established-wraith-area-vision",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:arc_warden_spark_wraith:vision:established-wraith-area-vision:duration",
+          "ownerId": "effect:arc_warden_spark_wraith:vision:established-wraith-area-vision",
+          "field": "duration",
+          "state": "known",
+          "value": 3.34
+        },
+        "magnitude": {
+          "id": "value:effect:arc_warden_spark_wraith:vision:established-wraith-area-vision:magnitude",
+          "ownerId": "effect:arc_warden_spark_wraith:vision:established-wraith-area-vision",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:arc_warden_spark_wraith:vision:established-wraith-area-vision:mana",
+          "ownerId": "effect:arc_warden_spark_wraith:vision:established-wraith-area-vision",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:arc_warden_spark_wraith:vision:established-wraith-area-vision:cooldown",
+          "ownerId": "effect:arc_warden_spark_wraith:vision:established-wraith-area-vision",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:arc_warden_spark_wraith:vision:established-wraith-area-vision:delay",
+          "ownerId": "effect:arc_warden_spark_wraith:vision:established-wraith-area-vision",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "sparkWraithExists"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "arc_warden_spark_wraith:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:arc_warden_spark_wraith:vision:established-wraith-area-vision",
+      "legacyEffectId": "arc_warden_spark_wraith:vision:established-wraith-area-vision",
+      "order": 10,
+      "legacyAbilityId": "arc_warden_spark_wraith",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:arc_warden_spark_wraith:vision:established-wraith-area-vision:0"
+      ],
+      "valueIds": [
+        "value:effect:arc_warden_spark_wraith:vision:established-wraith-area-vision:range",
+        "value:effect:arc_warden_spark_wraith:vision:established-wraith-area-vision:duration",
+        "value:effect:arc_warden_spark_wraith:vision:established-wraith-area-vision:magnitude",
+        "value:effect:arc_warden_spark_wraith:vision:established-wraith-area-vision:mana",
+        "value:effect:arc_warden_spark_wraith:vision:established-wraith-area-vision:cooldown",
+        "value:effect:arc_warden_spark_wraith:vision:established-wraith-area-vision:delay"
+      ],
+      "activationId": "activation:113:arc_warden_spark_wraith"
+    },
+    {
+      "effectId": "arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks",
+      "heroId": "113",
+      "abilityId": "ability:113:arc_warden_runic_infusion",
+      "type": "modifier",
+      "subtype": "permanent-power-rune-attribute-stacks",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks:range",
+          "ownerId": "effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks:duration",
+          "ownerId": "effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks:magnitude",
+          "ownerId": "effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks:mana",
+          "ownerId": "effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks:cooldown",
+          "ownerId": "effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks:delay",
+          "ownerId": "effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "arcOrDoubleActivatedPowerRune"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "arc_warden_runic_infusion:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks",
+      "legacyEffectId": "arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks",
+      "order": 11,
+      "legacyAbilityId": "arc_warden_runic_infusion",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks:0"
+      ],
+      "valueIds": [
+        "value:effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks:range",
+        "value:effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks:duration",
+        "value:effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks:magnitude",
+        "value:effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks:mana",
+        "value:effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks:cooldown",
+        "value:effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks:delay"
+      ],
+      "activationId": "activation:113:arc_warden_runic_infusion"
+    },
+    {
+      "effectId": "arc_warden_tempest_double:modifier:independently-resourced-tempest-copy",
+      "heroId": "113",
+      "abilityId": "ability:113:arc_warden_tempest_double",
+      "type": "modifier",
+      "subtype": "independently-resourced-tempest-copy",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy:range",
+          "ownerId": "effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy:duration",
+          "ownerId": "effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            18,
+            21,
+            24
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy:magnitude",
+          "ownerId": "effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy:mana",
+          "ownerId": "effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy:cooldown",
+          "ownerId": "effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            60,
+            55,
+            50
+          ]
+        },
+        "delay": {
+          "id": "value:effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy:delay",
+          "ownerId": "effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "arc_warden_tempest_double"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy",
+      "legacyEffectId": "arc_warden_tempest_double:modifier:independently-resourced-tempest-copy",
+      "order": 12,
+      "legacyAbilityId": "arc_warden_tempest_double",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy:range",
+        "value:effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy:duration",
+        "value:effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy:magnitude",
+        "value:effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy:mana",
+        "value:effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy:cooldown",
+        "value:effect:arc_warden_tempest_double:modifier:independently-resourced-tempest-copy:delay"
+      ],
+      "activationId": "activation:113:arc_warden_tempest_double"
+    },
+    {
+      "effectId": "arc_warden_tempest_double:modifier:shard-double-rune-bonuses",
+      "heroId": "113",
+      "abilityId": "ability:113:arc_warden_tempest_double",
+      "type": "modifier",
+      "subtype": "shard-double-rune-bonuses",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses:range",
+          "ownerId": "effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses:duration",
+          "ownerId": "effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses:magnitude",
+          "ownerId": "effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses:mana",
+          "ownerId": "effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses:cooldown",
+          "ownerId": "effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            60,
+            55,
+            50
+          ]
+        },
+        "delay": {
+          "id": "value:effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses:delay",
+          "ownerId": "effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "tempestDoubleCreated"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "arc_warden_tempest_double"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses",
+      "legacyEffectId": "arc_warden_tempest_double:modifier:shard-double-rune-bonuses",
+      "order": 13,
+      "legacyAbilityId": "arc_warden_tempest_double",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:arc_warden_tempest_double:modifier:shard-double-rune-bonuses:0"
+      ],
+      "valueIds": [
+        "value:effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses:range",
+        "value:effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses:duration",
+        "value:effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses:magnitude",
+        "value:effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses:mana",
+        "value:effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses:cooldown",
+        "value:effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses:delay"
+      ],
+      "activationId": "activation:113:arc_warden_tempest_double"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:arc_warden_flux:damage:isolated-flux-periodic-damage:0",
+      "ownerId": "effect:arc_warden_flux:damage:isolated-flux-periodic-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "fluxTargetHasNoNearbyAlliedUnit"
+      }
+    },
+    {
+      "id": "condition:arc_warden_flux:control:scepter-isolated-flux-silence:0",
+      "ownerId": "effect:arc_warden_flux:control:scepter-isolated-flux-silence",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "fluxTargetHasNoNearbyAlliedUnit"
+      }
+    },
+    {
+      "id": "condition:arc_warden_magnetic_field:modifier:field-allied-attack-speed:0",
+      "ownerId": "effect:arc_warden_magnetic_field:modifier:field-allied-attack-speed",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyInsideMagneticField"
+      }
+    },
+    {
+      "id": "condition:arc_warden_magnetic_field:save:field-outside-attacker-evasion:0",
+      "ownerId": "effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyInsideMagneticField"
+      }
+    },
+    {
+      "id": "condition:arc_warden_magnetic_field:save:field-outside-attacker-evasion:1",
+      "ownerId": "effect:arc_warden_magnetic_field:save:field-outside-attacker-evasion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "attackerOutsideMagneticField"
+      }
+    },
+    {
+      "id": "condition:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation:0",
+      "ownerId": "effect:arc_warden_magnetic_field:modifier:field-rune-pull-and-activation",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "runeInsideFieldPullRegion"
+      }
+    },
+    {
+      "id": "condition:arc_warden_spark_wraith:damage:established-wraith-contact-damage:0",
+      "ownerId": "effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "sparkWraithArmed"
+      }
+    },
+    {
+      "id": "condition:arc_warden_spark_wraith:damage:established-wraith-contact-damage:1",
+      "ownerId": "effect:arc_warden_spark_wraith:damage:established-wraith-contact-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "sparkWraithProjectileHitsEnemy"
+      }
+    },
+    {
+      "id": "condition:arc_warden_spark_wraith:slow:established-wraith-movement-slow:0",
+      "ownerId": "effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "sparkWraithArmed"
+      }
+    },
+    {
+      "id": "condition:arc_warden_spark_wraith:slow:established-wraith-movement-slow:1",
+      "ownerId": "effect:arc_warden_spark_wraith:slow:established-wraith-movement-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "sparkWraithProjectileHitsEnemy"
+      }
+    },
+    {
+      "id": "condition:arc_warden_spark_wraith:vision:established-wraith-area-vision:0",
+      "ownerId": "effect:arc_warden_spark_wraith:vision:established-wraith-area-vision",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "sparkWraithExists"
+      }
+    },
+    {
+      "id": "condition:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks:0",
+      "ownerId": "effect:arc_warden_runic_infusion:modifier:permanent-power-rune-attribute-stacks",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "arcOrDoubleActivatedPowerRune"
+      }
+    },
+    {
+      "id": "condition:arc_warden_tempest_double:modifier:shard-double-rune-bonuses:0",
+      "ownerId": "effect:arc_warden_tempest_double:modifier:shard-double-rune-bonuses",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "tempestDoubleCreated"
+      }
+    }
+  ]
+}

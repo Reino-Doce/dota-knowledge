@@ -1,0 +1,2572 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "crystal_maiden_frostbite:root",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_frostbite",
+      "type": "control",
+      "subtype": "root",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_frostbite:root:range",
+          "ownerId": "effect:crystal_maiden_frostbite:root",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_frostbite:root:duration",
+          "ownerId": "effect:crystal_maiden_frostbite:root",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.5,
+            2,
+            2.5,
+            3
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_frostbite:root:magnitude",
+          "ownerId": "effect:crystal_maiden_frostbite:root",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "Declaration absent"
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_frostbite:root:mana",
+          "ownerId": "effect:crystal_maiden_frostbite:root",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            135,
+            145,
+            155
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_frostbite:root:cooldown",
+          "ownerId": "effect:crystal_maiden_frostbite:root",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            9,
+            8,
+            7,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_frostbite:root:delay",
+          "ownerId": "effect:crystal_maiden_frostbite:root",
+          "field": "delay",
+          "state": "known",
+          "value": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ]
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacks"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_frostbite"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:crystal_maiden_frostbite:root",
+      "legacyEffectId": "crystal_maiden_frostbite:root",
+      "order": 0,
+      "legacyAbilityId": "crystal_maiden_frostbite",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:crystal_maiden_frostbite:root:range",
+        "value:effect:crystal_maiden_frostbite:root:duration",
+        "value:effect:crystal_maiden_frostbite:root:magnitude",
+        "value:effect:crystal_maiden_frostbite:root:mana",
+        "value:effect:crystal_maiden_frostbite:root:cooldown",
+        "value:effect:crystal_maiden_frostbite:root:delay"
+      ],
+      "activationId": "activation:5:crystal_maiden_frostbite"
+    },
+    {
+      "effectId": "crystal_maiden_crystal_nova:magical-burst",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_crystal_nova",
+      "type": "damage",
+      "subtype": "magical-burst",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_crystal_nova:magical-burst:range",
+          "ownerId": "effect:crystal_maiden_crystal_nova:magical-burst",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_crystal_nova:magical-burst:duration",
+          "ownerId": "effect:crystal_maiden_crystal_nova:magical-burst",
+          "field": "duration",
+          "state": "known",
+          "value": 0
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_crystal_nova:magical-burst:magnitude",
+          "ownerId": "effect:crystal_maiden_crystal_nova:magical-burst",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            110,
+            160,
+            210,
+            260
+          ]
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_crystal_nova:magical-burst:mana",
+          "ownerId": "effect:crystal_maiden_crystal_nova:magical-burst",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            115,
+            135,
+            155,
+            175
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_crystal_nova:magical-burst:cooldown",
+          "ownerId": "effect:crystal_maiden_crystal_nova:magical-burst",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            11,
+            10,
+            9,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_crystal_nova:magical-burst:delay",
+          "ownerId": "effect:crystal_maiden_crystal_nova:magical-burst",
+          "field": "delay",
+          "state": "known",
+          "value": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ]
+        },
+        "damageType": {
+          "id": "value:effect:crystal_maiden_crystal_nova:magical-burst:damageType",
+          "ownerId": "effect:crystal_maiden_crystal_nova:magical-burst",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_crystal_nova"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:crystal_maiden_crystal_nova:magical-burst",
+      "legacyEffectId": "crystal_maiden_crystal_nova:magical-burst",
+      "order": 1,
+      "legacyAbilityId": "crystal_maiden_crystal_nova",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:crystal_maiden_crystal_nova:magical-burst:range",
+        "value:effect:crystal_maiden_crystal_nova:magical-burst:duration",
+        "value:effect:crystal_maiden_crystal_nova:magical-burst:magnitude",
+        "value:effect:crystal_maiden_crystal_nova:magical-burst:mana",
+        "value:effect:crystal_maiden_crystal_nova:magical-burst:cooldown",
+        "value:effect:crystal_maiden_crystal_nova:magical-burst:delay",
+        "value:effect:crystal_maiden_crystal_nova:magical-burst:damageType"
+      ],
+      "activationId": "activation:5:crystal_maiden_crystal_nova"
+    },
+    {
+      "effectId": "crystal_maiden_crystal_nova:movement-slow",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_crystal_nova",
+      "type": "slow",
+      "subtype": "movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_crystal_nova:movement-slow:range",
+          "ownerId": "effect:crystal_maiden_crystal_nova:movement-slow",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_crystal_nova:movement-slow:duration",
+          "ownerId": "effect:crystal_maiden_crystal_nova:movement-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_crystal_nova:movement-slow:magnitude",
+          "ownerId": "effect:crystal_maiden_crystal_nova:movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -20,
+            -30,
+            -40,
+            -50
+          ]
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_crystal_nova:movement-slow:mana",
+          "ownerId": "effect:crystal_maiden_crystal_nova:movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            115,
+            135,
+            155,
+            175
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_crystal_nova:movement-slow:cooldown",
+          "ownerId": "effect:crystal_maiden_crystal_nova:movement-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            11,
+            10,
+            9,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_crystal_nova:movement-slow:delay",
+          "ownerId": "effect:crystal_maiden_crystal_nova:movement-slow",
+          "field": "delay",
+          "state": "known",
+          "value": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ]
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_crystal_nova"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:crystal_maiden_crystal_nova:movement-slow",
+      "legacyEffectId": "crystal_maiden_crystal_nova:movement-slow",
+      "order": 2,
+      "legacyAbilityId": "crystal_maiden_crystal_nova",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:crystal_maiden_crystal_nova:movement-slow:range",
+        "value:effect:crystal_maiden_crystal_nova:movement-slow:duration",
+        "value:effect:crystal_maiden_crystal_nova:movement-slow:magnitude",
+        "value:effect:crystal_maiden_crystal_nova:movement-slow:mana",
+        "value:effect:crystal_maiden_crystal_nova:movement-slow:cooldown",
+        "value:effect:crystal_maiden_crystal_nova:movement-slow:delay"
+      ],
+      "activationId": "activation:5:crystal_maiden_crystal_nova"
+    },
+    {
+      "effectId": "crystal_maiden_crystal_nova:ordinary-vision",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_crystal_nova",
+      "type": "vision",
+      "subtype": "ordinary-vision",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_crystal_nova:ordinary-vision:range",
+          "ownerId": "effect:crystal_maiden_crystal_nova:ordinary-vision",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_crystal_nova:ordinary-vision:duration",
+          "ownerId": "effect:crystal_maiden_crystal_nova:ordinary-vision",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_crystal_nova:ordinary-vision:magnitude",
+          "ownerId": "effect:crystal_maiden_crystal_nova:ordinary-vision",
+          "field": "magnitude",
+          "state": "known",
+          "value": 425
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_crystal_nova:ordinary-vision:mana",
+          "ownerId": "effect:crystal_maiden_crystal_nova:ordinary-vision",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            115,
+            135,
+            155,
+            175
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_crystal_nova:ordinary-vision:cooldown",
+          "ownerId": "effect:crystal_maiden_crystal_nova:ordinary-vision",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            11,
+            10,
+            9,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_crystal_nova:ordinary-vision:delay",
+          "ownerId": "effect:crystal_maiden_crystal_nova:ordinary-vision",
+          "field": "delay",
+          "state": "known",
+          "value": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ]
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Effect-specific engine exception unverified"
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_crystal_nova"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:crystal_maiden_crystal_nova:ordinary-vision",
+      "legacyEffectId": "crystal_maiden_crystal_nova:ordinary-vision",
+      "order": 3,
+      "legacyAbilityId": "crystal_maiden_crystal_nova",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:crystal_maiden_crystal_nova:ordinary-vision:range",
+        "value:effect:crystal_maiden_crystal_nova:ordinary-vision:duration",
+        "value:effect:crystal_maiden_crystal_nova:ordinary-vision:magnitude",
+        "value:effect:crystal_maiden_crystal_nova:ordinary-vision:mana",
+        "value:effect:crystal_maiden_crystal_nova:ordinary-vision:cooldown",
+        "value:effect:crystal_maiden_crystal_nova:ordinary-vision:delay"
+      ],
+      "activationId": "activation:5:crystal_maiden_crystal_nova"
+    },
+    {
+      "effectId": "crystal_maiden_freezing_field:channeled-area-damage",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_freezing_field",
+      "type": "damage",
+      "subtype": "channeled-area-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_freezing_field:channeled-area-damage:range",
+          "ownerId": "effect:crystal_maiden_freezing_field:channeled-area-damage",
+          "field": "range",
+          "state": "known",
+          "value": 810
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_freezing_field:channeled-area-damage:duration",
+          "ownerId": "effect:crystal_maiden_freezing_field:channeled-area-damage",
+          "field": "duration",
+          "state": "known",
+          "value": 10
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_freezing_field:channeled-area-damage:magnitude",
+          "ownerId": "effect:crystal_maiden_freezing_field:channeled-area-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            110,
+            180,
+            250
+          ]
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_freezing_field:channeled-area-damage:mana",
+          "ownerId": "effect:crystal_maiden_freezing_field:channeled-area-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            200,
+            400,
+            600
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_freezing_field:channeled-area-damage:cooldown",
+          "ownerId": "effect:crystal_maiden_freezing_field:channeled-area-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            100,
+            95,
+            90
+          ]
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_freezing_field:channeled-area-damage:delay",
+          "ownerId": "effect:crystal_maiden_freezing_field:channeled-area-damage",
+          "field": "delay",
+          "state": "known",
+          "value": 0
+        },
+        "damageType": {
+          "id": "value:effect:crystal_maiden_freezing_field:channeled-area-damage:damageType",
+          "ownerId": "effect:crystal_maiden_freezing_field:channeled-area-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_freezing_field"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:crystal_maiden_freezing_field:channeled-area-damage",
+      "legacyEffectId": "crystal_maiden_freezing_field:channeled-area-damage",
+      "order": 4,
+      "legacyAbilityId": "crystal_maiden_freezing_field",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:crystal_maiden_freezing_field:channeled-area-damage:range",
+        "value:effect:crystal_maiden_freezing_field:channeled-area-damage:duration",
+        "value:effect:crystal_maiden_freezing_field:channeled-area-damage:magnitude",
+        "value:effect:crystal_maiden_freezing_field:channeled-area-damage:mana",
+        "value:effect:crystal_maiden_freezing_field:channeled-area-damage:cooldown",
+        "value:effect:crystal_maiden_freezing_field:channeled-area-damage:delay",
+        "value:effect:crystal_maiden_freezing_field:channeled-area-damage:damageType"
+      ],
+      "activationId": "activation:5:crystal_maiden_freezing_field"
+    },
+    {
+      "effectId": "crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_crystal_nova",
+      "type": "modifier",
+      "subtype": "nova-attack-speed-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction:range",
+          "ownerId": "effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction:duration",
+          "ownerId": "effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction:magnitude",
+          "ownerId": "effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -30,
+            -45,
+            -60,
+            -75
+          ]
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction:mana",
+          "ownerId": "effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            115,
+            135,
+            155,
+            175
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction:cooldown",
+          "ownerId": "effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            11,
+            10,
+            9,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction:delay",
+          "ownerId": "effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_crystal_nova"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction",
+      "legacyEffectId": "crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction",
+      "order": 5,
+      "legacyAbilityId": "crystal_maiden_crystal_nova",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction:range",
+        "value:effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction:duration",
+        "value:effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction:magnitude",
+        "value:effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction:mana",
+        "value:effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction:cooldown",
+        "value:effect:crystal_maiden_crystal_nova:modifier:nova-attack-speed-reduction:delay"
+      ],
+      "activationId": "activation:5:crystal_maiden_crystal_nova"
+    },
+    {
+      "effectId": "crystal_maiden_frostbite:control:source-root-and-attack-disable",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_frostbite",
+      "type": "control",
+      "subtype": "source-root-and-attack-disable",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_frostbite:control:source-root-and-attack-disable:range",
+          "ownerId": "effect:crystal_maiden_frostbite:control:source-root-and-attack-disable",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_frostbite:control:source-root-and-attack-disable:duration",
+          "ownerId": "effect:crystal_maiden_frostbite:control:source-root-and-attack-disable",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.5,
+            2,
+            2.5,
+            3
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_frostbite:control:source-root-and-attack-disable:magnitude",
+          "ownerId": "effect:crystal_maiden_frostbite:control:source-root-and-attack-disable",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_frostbite:control:source-root-and-attack-disable:mana",
+          "ownerId": "effect:crystal_maiden_frostbite:control:source-root-and-attack-disable",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            135,
+            145,
+            155
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_frostbite:control:source-root-and-attack-disable:cooldown",
+          "ownerId": "effect:crystal_maiden_frostbite:control:source-root-and-attack-disable",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            9,
+            8,
+            7,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_frostbite:control:source-root-and-attack-disable:delay",
+          "ownerId": "effect:crystal_maiden_frostbite:control:source-root-and-attack-disable",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_frostbite",
+        "replaces": [
+          "crystal_maiden_frostbite:root"
+        ]
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:crystal_maiden_frostbite:control:source-root-and-attack-disable",
+      "legacyEffectId": "crystal_maiden_frostbite:control:source-root-and-attack-disable",
+      "order": 6,
+      "legacyAbilityId": "crystal_maiden_frostbite",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:crystal_maiden_frostbite:control:source-root-and-attack-disable:range",
+        "value:effect:crystal_maiden_frostbite:control:source-root-and-attack-disable:duration",
+        "value:effect:crystal_maiden_frostbite:control:source-root-and-attack-disable:magnitude",
+        "value:effect:crystal_maiden_frostbite:control:source-root-and-attack-disable:mana",
+        "value:effect:crystal_maiden_frostbite:control:source-root-and-attack-disable:cooldown",
+        "value:effect:crystal_maiden_frostbite:control:source-root-and-attack-disable:delay"
+      ],
+      "activationId": "activation:5:crystal_maiden_frostbite"
+    },
+    {
+      "effectId": "crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_frostbite",
+      "type": "damage",
+      "subtype": "frostbite-hero-periodic-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage:range",
+          "ownerId": "effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage:duration",
+          "ownerId": "effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage:magnitude",
+          "ownerId": "effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage:mana",
+          "ownerId": "effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            135,
+            145,
+            155
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage:cooldown",
+          "ownerId": "effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            9,
+            8,
+            7,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage:delay",
+          "ownerId": "effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage:damageType",
+          "ownerId": "effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_frostbite"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage",
+      "legacyEffectId": "crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage",
+      "order": 7,
+      "legacyAbilityId": "crystal_maiden_frostbite",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage:range",
+        "value:effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage:duration",
+        "value:effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage:magnitude",
+        "value:effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage:mana",
+        "value:effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage:cooldown",
+        "value:effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage:delay",
+        "value:effect:crystal_maiden_frostbite:damage:frostbite-hero-periodic-damage:damageType"
+      ],
+      "activationId": "activation:5:crystal_maiden_frostbite"
+    },
+    {
+      "effectId": "crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_brilliance_aura",
+      "type": "modifier",
+      "subtype": "global-friendly-mana-regeneration",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration:range",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration:duration",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration:magnitude",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            0.4,
+            0.6,
+            0.8,
+            1
+          ]
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration:mana",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration:cooldown",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration:delay",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": true,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_brilliance_aura:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration",
+      "legacyEffectId": "crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration",
+      "order": 8,
+      "legacyAbilityId": "crystal_maiden_brilliance_aura",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration:range",
+        "value:effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration:duration",
+        "value:effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration:magnitude",
+        "value:effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration:mana",
+        "value:effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration:cooldown",
+        "value:effect:crystal_maiden_brilliance_aura:modifier:global-friendly-mana-regeneration:delay"
+      ],
+      "activationId": "activation:5:crystal_maiden_brilliance_aura"
+    },
+    {
+      "effectId": "crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_brilliance_aura",
+      "type": "modifier",
+      "subtype": "nearby-friendly-mana-regeneration",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration:range",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration",
+          "field": "range",
+          "state": "known",
+          "value": 1200
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration:duration",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration:magnitude",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            1.2,
+            1.8,
+            2.4,
+            3
+          ]
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration:mana",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration:cooldown",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration:delay",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "allyInsideArcaneAuraProximity"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_brilliance_aura:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration",
+      "legacyEffectId": "crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration",
+      "order": 9,
+      "legacyAbilityId": "crystal_maiden_brilliance_aura",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration:0"
+      ],
+      "valueIds": [
+        "value:effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration:range",
+        "value:effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration:duration",
+        "value:effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration:magnitude",
+        "value:effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration:mana",
+        "value:effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration:cooldown",
+        "value:effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration:delay"
+      ],
+      "activationId": "activation:5:crystal_maiden_brilliance_aura"
+    },
+    {
+      "effectId": "crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_brilliance_aura",
+      "type": "modifier",
+      "subtype": "self-mana-regeneration-amplification",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification:range",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification:duration",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification:magnitude",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification:mana",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification:cooldown",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification:delay",
+          "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_brilliance_aura:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification",
+      "legacyEffectId": "crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification",
+      "order": 10,
+      "legacyAbilityId": "crystal_maiden_brilliance_aura",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification:range",
+        "value:effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification:duration",
+        "value:effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification:magnitude",
+        "value:effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification:mana",
+        "value:effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification:cooldown",
+        "value:effect:crystal_maiden_brilliance_aura:modifier:self-mana-regeneration-amplification:delay"
+      ],
+      "activationId": "activation:5:crystal_maiden_brilliance_aura"
+    },
+    {
+      "effectId": "crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_crystal_clone",
+      "type": "mobility",
+      "subtype": "shard-directional-clone-slide",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide:range",
+          "ownerId": "effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide",
+          "field": "range",
+          "state": "known",
+          "value": 275
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide:duration",
+          "ownerId": "effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide",
+          "field": "duration",
+          "state": "known",
+          "value": 0.3
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide:magnitude",
+          "ownerId": "effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide:mana",
+          "ownerId": "effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide",
+          "field": "mana",
+          "state": "known",
+          "value": 150
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide:cooldown",
+          "ownerId": "effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide",
+          "field": "cooldown",
+          "state": "known",
+          "value": 12
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide:delay",
+          "ownerId": "effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_crystal_clone"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide",
+      "legacyEffectId": "crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide",
+      "order": 11,
+      "legacyAbilityId": "crystal_maiden_crystal_clone",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide:range",
+        "value:effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide:duration",
+        "value:effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide:magnitude",
+        "value:effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide:mana",
+        "value:effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide:cooldown",
+        "value:effect:crystal_maiden_crystal_clone:mobility:shard-directional-clone-slide:delay"
+      ],
+      "activationId": "activation:5:crystal_maiden_crystal_clone"
+    },
+    {
+      "effectId": "crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_crystal_clone",
+      "type": "modifier",
+      "subtype": "shard-clone-disjoint-and-dependent-frostbite",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite:range",
+          "ownerId": "effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite:duration",
+          "ownerId": "effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite",
+          "field": "duration",
+          "state": "known",
+          "value": 5
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite:magnitude",
+          "ownerId": "effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite:mana",
+          "ownerId": "effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite",
+          "field": "mana",
+          "state": "known",
+          "value": 150
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite:cooldown",
+          "ownerId": "effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite",
+          "field": "cooldown",
+          "state": "known",
+          "value": 12
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite:delay",
+          "ownerId": "effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "crystal_maiden_frostbite"
+        ],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_crystal_clone"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite",
+      "legacyEffectId": "crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite",
+      "order": 12,
+      "legacyAbilityId": "crystal_maiden_crystal_clone",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite:range",
+        "value:effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite:duration",
+        "value:effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite:magnitude",
+        "value:effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite:mana",
+        "value:effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite:cooldown",
+        "value:effect:crystal_maiden_crystal_clone:modifier:shard-clone-disjoint-and-dependent-frostbite:delay"
+      ],
+      "activationId": "activation:5:crystal_maiden_crystal_clone"
+    },
+    {
+      "effectId": "crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_glacial_guard",
+      "type": "modifier",
+      "subtype": "spent-mana-physical-barrier-generation",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation:range",
+          "ownerId": "effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation:duration",
+          "ownerId": "effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation",
+          "field": "duration",
+          "state": "known",
+          "value": 8
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation:magnitude",
+          "ownerId": "effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation:mana",
+          "ownerId": "effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation:cooldown",
+          "ownerId": "effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation:delay",
+          "ownerId": "effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "maidenSpentManaOnAbility"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_glacial_guard:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation",
+      "legacyEffectId": "crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation",
+      "order": 13,
+      "legacyAbilityId": "crystal_maiden_glacial_guard",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation:0"
+      ],
+      "valueIds": [
+        "value:effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation:range",
+        "value:effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation:duration",
+        "value:effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation:magnitude",
+        "value:effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation:mana",
+        "value:effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation:cooldown",
+        "value:effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation:delay"
+      ],
+      "activationId": "activation:5:crystal_maiden_glacial_guard"
+    },
+    {
+      "effectId": "crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_glacial_guard",
+      "type": "save",
+      "subtype": "remaining-glacial-physical-barrier",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier:range",
+          "ownerId": "effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier:duration",
+          "ownerId": "effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier:magnitude",
+          "ownerId": "effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier:mana",
+          "ownerId": "effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier:cooldown",
+          "ownerId": "effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier:delay",
+          "ownerId": "effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "maidenPhysicalBarrierRemains"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_glacial_guard:passive"
+      },
+      "vulnerability": {
+        "breakable": null
+      },
+      "exceptions": [],
+      "id": "effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier",
+      "legacyEffectId": "crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier",
+      "order": 14,
+      "legacyAbilityId": "crystal_maiden_glacial_guard",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier:0"
+      ],
+      "valueIds": [
+        "value:effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier:range",
+        "value:effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier:duration",
+        "value:effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier:magnitude",
+        "value:effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier:mana",
+        "value:effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier:cooldown",
+        "value:effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier:delay"
+      ],
+      "activationId": "activation:5:crystal_maiden_glacial_guard"
+    },
+    {
+      "effectId": "crystal_maiden_freezing_field:slow:field-aura-movement-slow",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_freezing_field",
+      "type": "slow",
+      "subtype": "field-aura-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow:range",
+          "ownerId": "effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow",
+          "field": "range",
+          "state": "known",
+          "value": 810
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow:duration",
+          "ownerId": "effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 1
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow:magnitude",
+          "ownerId": "effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": -40
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow:mana",
+          "ownerId": "effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow:cooldown",
+          "ownerId": "effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow:delay",
+          "ownerId": "effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideActiveFreezingField"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_freezing_field:passive"
+      },
+      "vulnerability": {
+        "channel": true
+      },
+      "exceptions": [],
+      "id": "effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow",
+      "legacyEffectId": "crystal_maiden_freezing_field:slow:field-aura-movement-slow",
+      "order": 15,
+      "legacyAbilityId": "crystal_maiden_freezing_field",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:crystal_maiden_freezing_field:slow:field-aura-movement-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow:range",
+        "value:effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow:duration",
+        "value:effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow:magnitude",
+        "value:effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow:mana",
+        "value:effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow:cooldown",
+        "value:effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow:delay"
+      ],
+      "activationId": "activation:5:crystal_maiden_freezing_field"
+    },
+    {
+      "effectId": "crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_freezing_field",
+      "type": "modifier",
+      "subtype": "field-aura-attack-speed-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction:range",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction",
+          "field": "range",
+          "state": "known",
+          "value": 810
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction:duration",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction",
+          "field": "duration",
+          "state": "known",
+          "value": 1
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction:magnitude",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -80,
+            -120,
+            -160
+          ]
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction:mana",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction:cooldown",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction:delay",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideActiveFreezingField"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_freezing_field:passive"
+      },
+      "vulnerability": {
+        "channel": true
+      },
+      "exceptions": [],
+      "id": "effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction",
+      "legacyEffectId": "crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction",
+      "order": 16,
+      "legacyAbilityId": "crystal_maiden_freezing_field",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction:0"
+      ],
+      "valueIds": [
+        "value:effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction:range",
+        "value:effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction:duration",
+        "value:effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction:magnitude",
+        "value:effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction:mana",
+        "value:effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction:cooldown",
+        "value:effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction:delay"
+      ],
+      "activationId": "activation:5:crystal_maiden_freezing_field"
+    },
+    {
+      "effectId": "crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_freezing_field",
+      "type": "modifier",
+      "subtype": "scepter-mobile-interruptible-field",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field:range",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field:duration",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field:magnitude",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field:mana",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            200,
+            400,
+            600
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field:cooldown",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            100,
+            95,
+            90
+          ]
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field:delay",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_freezing_field"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field",
+      "legacyEffectId": "crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field",
+      "order": 17,
+      "legacyAbilityId": "crystal_maiden_freezing_field",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field:range",
+        "value:effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field:duration",
+        "value:effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field:magnitude",
+        "value:effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field:mana",
+        "value:effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field:cooldown",
+        "value:effect:crystal_maiden_freezing_field:modifier:scepter-mobile-interruptible-field:delay"
+      ],
+      "activationId": "activation:5:crystal_maiden_freezing_field"
+    },
+    {
+      "effectId": "crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite",
+      "heroId": "5",
+      "abilityId": "ability:5:crystal_maiden_freezing_field",
+      "type": "modifier",
+      "subtype": "scepter-exposure-dependent-frostbite",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite:range",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite:duration",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite:magnitude",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite:mana",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite:cooldown",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite:delay",
+          "ownerId": "effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "crystal_maiden_frostbite"
+        ],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "enemyStayedInsideScepterFieldPastFrostbiteDelay"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "crystal_maiden_freezing_field:passive"
+      },
+      "vulnerability": {
+        "channel": true
+      },
+      "exceptions": [],
+      "id": "effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite",
+      "legacyEffectId": "crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite",
+      "order": 18,
+      "legacyAbilityId": "crystal_maiden_freezing_field",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite:0"
+      ],
+      "valueIds": [
+        "value:effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite:range",
+        "value:effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite:duration",
+        "value:effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite:magnitude",
+        "value:effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite:mana",
+        "value:effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite:cooldown",
+        "value:effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite:delay"
+      ],
+      "activationId": "activation:5:crystal_maiden_freezing_field"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration:0",
+      "ownerId": "effect:crystal_maiden_brilliance_aura:modifier:nearby-friendly-mana-regeneration",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyInsideArcaneAuraProximity"
+      }
+    },
+    {
+      "id": "condition:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation:0",
+      "ownerId": "effect:crystal_maiden_glacial_guard:modifier:spent-mana-physical-barrier-generation",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "maidenSpentManaOnAbility"
+      }
+    },
+    {
+      "id": "condition:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier:0",
+      "ownerId": "effect:crystal_maiden_glacial_guard:save:remaining-glacial-physical-barrier",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "maidenPhysicalBarrierRemains"
+      }
+    },
+    {
+      "id": "condition:crystal_maiden_freezing_field:slow:field-aura-movement-slow:0",
+      "ownerId": "effect:crystal_maiden_freezing_field:slow:field-aura-movement-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideActiveFreezingField"
+      }
+    },
+    {
+      "id": "condition:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction:0",
+      "ownerId": "effect:crystal_maiden_freezing_field:modifier:field-aura-attack-speed-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideActiveFreezingField"
+      }
+    },
+    {
+      "id": "condition:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite:0",
+      "ownerId": "effect:crystal_maiden_freezing_field:modifier:scepter-exposure-dependent-frostbite",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyStayedInsideScepterFieldPastFrostbiteDelay"
+      }
+    }
+  ]
+}

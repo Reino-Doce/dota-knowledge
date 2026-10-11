@@ -1,0 +1,1388 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "razor_plasma_field:damage:distance-scaled-wave-minimum",
+      "heroId": "15",
+      "abilityId": "ability:15:razor_plasma_field",
+      "type": "damage",
+      "subtype": "distance-scaled-wave-minimum",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:razor_plasma_field:damage:distance-scaled-wave-minimum:range",
+          "ownerId": "effect:razor_plasma_field:damage:distance-scaled-wave-minimum",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:razor_plasma_field:damage:distance-scaled-wave-minimum:duration",
+          "ownerId": "effect:razor_plasma_field:damage:distance-scaled-wave-minimum",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:razor_plasma_field:damage:distance-scaled-wave-minimum:magnitude",
+          "ownerId": "effect:razor_plasma_field:damage:distance-scaled-wave-minimum",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            35,
+            40,
+            45,
+            50
+          ]
+        },
+        "mana": {
+          "id": "value:effect:razor_plasma_field:damage:distance-scaled-wave-minimum:mana",
+          "ownerId": "effect:razor_plasma_field:damage:distance-scaled-wave-minimum",
+          "field": "mana",
+          "state": "known",
+          "value": 125
+        },
+        "cooldown": {
+          "id": "value:effect:razor_plasma_field:damage:distance-scaled-wave-minimum:cooldown",
+          "ownerId": "effect:razor_plasma_field:damage:distance-scaled-wave-minimum",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            13,
+            12,
+            11,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:razor_plasma_field:damage:distance-scaled-wave-minimum:delay",
+          "ownerId": "effect:razor_plasma_field:damage:distance-scaled-wave-minimum",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:razor_plasma_field:damage:distance-scaled-wave-minimum:damageType",
+          "ownerId": "effect:razor_plasma_field:damage:distance-scaled-wave-minimum",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "plasmaWaveHitsTarget"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "razor_plasma_field"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:razor_plasma_field:damage:distance-scaled-wave-minimum",
+      "legacyEffectId": "razor_plasma_field:damage:distance-scaled-wave-minimum",
+      "order": 0,
+      "legacyAbilityId": "razor_plasma_field",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:razor_plasma_field:damage:distance-scaled-wave-minimum:0"
+      ],
+      "valueIds": [
+        "value:effect:razor_plasma_field:damage:distance-scaled-wave-minimum:range",
+        "value:effect:razor_plasma_field:damage:distance-scaled-wave-minimum:duration",
+        "value:effect:razor_plasma_field:damage:distance-scaled-wave-minimum:magnitude",
+        "value:effect:razor_plasma_field:damage:distance-scaled-wave-minimum:mana",
+        "value:effect:razor_plasma_field:damage:distance-scaled-wave-minimum:cooldown",
+        "value:effect:razor_plasma_field:damage:distance-scaled-wave-minimum:delay",
+        "value:effect:razor_plasma_field:damage:distance-scaled-wave-minimum:damageType"
+      ],
+      "activationId": "activation:15:razor_plasma_field"
+    },
+    {
+      "effectId": "razor_plasma_field:slow:distance-scaled-movement-minimum",
+      "heroId": "15",
+      "abilityId": "ability:15:razor_plasma_field",
+      "type": "slow",
+      "subtype": "distance-scaled-movement-minimum",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:razor_plasma_field:slow:distance-scaled-movement-minimum:range",
+          "ownerId": "effect:razor_plasma_field:slow:distance-scaled-movement-minimum",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:razor_plasma_field:slow:distance-scaled-movement-minimum:duration",
+          "ownerId": "effect:razor_plasma_field:slow:distance-scaled-movement-minimum",
+          "field": "duration",
+          "state": "known",
+          "value": 1.5
+        },
+        "magnitude": {
+          "id": "value:effect:razor_plasma_field:slow:distance-scaled-movement-minimum:magnitude",
+          "ownerId": "effect:razor_plasma_field:slow:distance-scaled-movement-minimum",
+          "field": "magnitude",
+          "state": "known",
+          "value": 5
+        },
+        "mana": {
+          "id": "value:effect:razor_plasma_field:slow:distance-scaled-movement-minimum:mana",
+          "ownerId": "effect:razor_plasma_field:slow:distance-scaled-movement-minimum",
+          "field": "mana",
+          "state": "known",
+          "value": 125
+        },
+        "cooldown": {
+          "id": "value:effect:razor_plasma_field:slow:distance-scaled-movement-minimum:cooldown",
+          "ownerId": "effect:razor_plasma_field:slow:distance-scaled-movement-minimum",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            13,
+            12,
+            11,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:razor_plasma_field:slow:distance-scaled-movement-minimum:delay",
+          "ownerId": "effect:razor_plasma_field:slow:distance-scaled-movement-minimum",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "plasmaWaveHitsTarget"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "razor_plasma_field"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:razor_plasma_field:slow:distance-scaled-movement-minimum",
+      "legacyEffectId": "razor_plasma_field:slow:distance-scaled-movement-minimum",
+      "order": 1,
+      "legacyAbilityId": "razor_plasma_field",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:razor_plasma_field:slow:distance-scaled-movement-minimum:0"
+      ],
+      "valueIds": [
+        "value:effect:razor_plasma_field:slow:distance-scaled-movement-minimum:range",
+        "value:effect:razor_plasma_field:slow:distance-scaled-movement-minimum:duration",
+        "value:effect:razor_plasma_field:slow:distance-scaled-movement-minimum:magnitude",
+        "value:effect:razor_plasma_field:slow:distance-scaled-movement-minimum:mana",
+        "value:effect:razor_plasma_field:slow:distance-scaled-movement-minimum:cooldown",
+        "value:effect:razor_plasma_field:slow:distance-scaled-movement-minimum:delay"
+      ],
+      "activationId": "activation:15:razor_plasma_field"
+    },
+    {
+      "effectId": "razor_static_link:modifier:attack-damage-steal",
+      "heroId": "15",
+      "abilityId": "ability:15:razor_static_link",
+      "type": "modifier",
+      "subtype": "attack-damage-steal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:razor_static_link:modifier:attack-damage-steal:range",
+          "ownerId": "effect:razor_static_link:modifier:attack-damage-steal",
+          "field": "range",
+          "state": "known",
+          "value": 550
+        },
+        "duration": {
+          "id": "value:effect:razor_static_link:modifier:attack-damage-steal:duration",
+          "ownerId": "effect:razor_static_link:modifier:attack-damage-steal",
+          "field": "duration",
+          "state": "known",
+          "value": 10
+        },
+        "magnitude": {
+          "id": "value:effect:razor_static_link:modifier:attack-damage-steal:magnitude",
+          "ownerId": "effect:razor_static_link:modifier:attack-damage-steal",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:razor_static_link:modifier:attack-damage-steal:mana",
+          "ownerId": "effect:razor_static_link:modifier:attack-damage-steal",
+          "field": "mana",
+          "state": "known",
+          "value": 65
+        },
+        "cooldown": {
+          "id": "value:effect:razor_static_link:modifier:attack-damage-steal:cooldown",
+          "ownerId": "effect:razor_static_link:modifier:attack-damage-steal",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            44,
+            36,
+            28,
+            20
+          ]
+        },
+        "delay": {
+          "id": "value:effect:razor_static_link:modifier:attack-damage-steal:delay",
+          "ownerId": "effect:razor_static_link:modifier:attack-damage-steal",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "none"
+        }
+      },
+      "relationships": {
+        "resourceId": "razor_static_link"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:razor_static_link:modifier:attack-damage-steal",
+      "legacyEffectId": "razor_static_link:modifier:attack-damage-steal",
+      "order": 2,
+      "legacyAbilityId": "razor_static_link",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:razor_static_link:modifier:attack-damage-steal:range",
+        "value:effect:razor_static_link:modifier:attack-damage-steal:duration",
+        "value:effect:razor_static_link:modifier:attack-damage-steal:magnitude",
+        "value:effect:razor_static_link:modifier:attack-damage-steal:mana",
+        "value:effect:razor_static_link:modifier:attack-damage-steal:cooldown",
+        "value:effect:razor_static_link:modifier:attack-damage-steal:delay"
+      ],
+      "activationId": "activation:15:razor_static_link"
+    },
+    {
+      "effectId": "razor_storm_surge:damage:retaliation-lightning",
+      "heroId": "15",
+      "abilityId": "ability:15:razor_storm_surge",
+      "type": "damage",
+      "subtype": "retaliation-lightning",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:razor_storm_surge:damage:retaliation-lightning:range",
+          "ownerId": "effect:razor_storm_surge:damage:retaliation-lightning",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:razor_storm_surge:damage:retaliation-lightning:duration",
+          "ownerId": "effect:razor_storm_surge:damage:retaliation-lightning",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:razor_storm_surge:damage:retaliation-lightning:magnitude",
+          "ownerId": "effect:razor_storm_surge:damage:retaliation-lightning",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            50,
+            90,
+            130,
+            170
+          ]
+        },
+        "mana": {
+          "id": "value:effect:razor_storm_surge:damage:retaliation-lightning:mana",
+          "ownerId": "effect:razor_storm_surge:damage:retaliation-lightning",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:razor_storm_surge:damage:retaliation-lightning:cooldown",
+          "ownerId": "effect:razor_storm_surge:damage:retaliation-lightning",
+          "field": "cooldown",
+          "state": "known",
+          "value": 2.5
+        },
+        "delay": {
+          "id": "value:effect:razor_storm_surge:damage:retaliation-lightning:delay",
+          "ownerId": "effect:razor_storm_surge:damage:retaliation-lightning",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:razor_storm_surge:damage:retaliation-lightning:damageType",
+          "ownerId": "effect:razor_storm_surge:damage:retaliation-lightning",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "stormSurgeRetaliationTriggered"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "razor_storm_surge"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:razor_storm_surge:damage:retaliation-lightning",
+      "legacyEffectId": "razor_storm_surge:damage:retaliation-lightning",
+      "order": 3,
+      "legacyAbilityId": "razor_storm_surge",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:razor_storm_surge:damage:retaliation-lightning:0"
+      ],
+      "valueIds": [
+        "value:effect:razor_storm_surge:damage:retaliation-lightning:range",
+        "value:effect:razor_storm_surge:damage:retaliation-lightning:duration",
+        "value:effect:razor_storm_surge:damage:retaliation-lightning:magnitude",
+        "value:effect:razor_storm_surge:damage:retaliation-lightning:mana",
+        "value:effect:razor_storm_surge:damage:retaliation-lightning:cooldown",
+        "value:effect:razor_storm_surge:damage:retaliation-lightning:delay",
+        "value:effect:razor_storm_surge:damage:retaliation-lightning:damageType"
+      ],
+      "activationId": "activation:15:razor_storm_surge"
+    },
+    {
+      "effectId": "razor_storm_surge:slow:retaliation-slow",
+      "heroId": "15",
+      "abilityId": "ability:15:razor_storm_surge",
+      "type": "slow",
+      "subtype": "retaliation-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:razor_storm_surge:slow:retaliation-slow:range",
+          "ownerId": "effect:razor_storm_surge:slow:retaliation-slow",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:razor_storm_surge:slow:retaliation-slow:duration",
+          "ownerId": "effect:razor_storm_surge:slow:retaliation-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 1
+        },
+        "magnitude": {
+          "id": "value:effect:razor_storm_surge:slow:retaliation-slow:magnitude",
+          "ownerId": "effect:razor_storm_surge:slow:retaliation-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        "mana": {
+          "id": "value:effect:razor_storm_surge:slow:retaliation-slow:mana",
+          "ownerId": "effect:razor_storm_surge:slow:retaliation-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:razor_storm_surge:slow:retaliation-slow:cooldown",
+          "ownerId": "effect:razor_storm_surge:slow:retaliation-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": 2.5
+        },
+        "delay": {
+          "id": "value:effect:razor_storm_surge:slow:retaliation-slow:delay",
+          "ownerId": "effect:razor_storm_surge:slow:retaliation-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "stormSurgeRetaliationTriggered"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "razor_storm_surge"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:razor_storm_surge:slow:retaliation-slow",
+      "legacyEffectId": "razor_storm_surge:slow:retaliation-slow",
+      "order": 4,
+      "legacyAbilityId": "razor_storm_surge",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:razor_storm_surge:slow:retaliation-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:razor_storm_surge:slow:retaliation-slow:range",
+        "value:effect:razor_storm_surge:slow:retaliation-slow:duration",
+        "value:effect:razor_storm_surge:slow:retaliation-slow:magnitude",
+        "value:effect:razor_storm_surge:slow:retaliation-slow:mana",
+        "value:effect:razor_storm_surge:slow:retaliation-slow:cooldown",
+        "value:effect:razor_storm_surge:slow:retaliation-slow:delay"
+      ],
+      "activationId": "activation:15:razor_storm_surge"
+    },
+    {
+      "effectId": "razor_storm_surge:modifier:shard-branch",
+      "heroId": "15",
+      "abilityId": "ability:15:razor_storm_surge",
+      "type": "modifier",
+      "subtype": "shard-branch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:razor_storm_surge:modifier:shard-branch:range",
+          "ownerId": "effect:razor_storm_surge:modifier:shard-branch",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:razor_storm_surge:modifier:shard-branch:duration",
+          "ownerId": "effect:razor_storm_surge:modifier:shard-branch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:razor_storm_surge:modifier:shard-branch:magnitude",
+          "ownerId": "effect:razor_storm_surge:modifier:shard-branch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:razor_storm_surge:modifier:shard-branch:mana",
+          "ownerId": "effect:razor_storm_surge:modifier:shard-branch",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:razor_storm_surge:modifier:shard-branch:cooldown",
+          "ownerId": "effect:razor_storm_surge:modifier:shard-branch",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:razor_storm_surge:modifier:shard-branch:delay",
+          "ownerId": "effect:razor_storm_surge:modifier:shard-branch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "razor_eye_of_the_storm"
+        ],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "eyeOfTheStormActive"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "razor_storm_surge:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:razor_storm_surge:modifier:shard-branch",
+      "legacyEffectId": "razor_storm_surge:modifier:shard-branch",
+      "order": 5,
+      "legacyAbilityId": "razor_storm_surge",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:razor_storm_surge:modifier:shard-branch:0"
+      ],
+      "valueIds": [
+        "value:effect:razor_storm_surge:modifier:shard-branch:range",
+        "value:effect:razor_storm_surge:modifier:shard-branch:duration",
+        "value:effect:razor_storm_surge:modifier:shard-branch:magnitude",
+        "value:effect:razor_storm_surge:modifier:shard-branch:mana",
+        "value:effect:razor_storm_surge:modifier:shard-branch:cooldown",
+        "value:effect:razor_storm_surge:modifier:shard-branch:delay"
+      ],
+      "activationId": "activation:15:razor_storm_surge"
+    },
+    {
+      "effectId": "razor_unstable_current:mobility:level-scaled-movement-speed",
+      "heroId": "15",
+      "abilityId": "ability:15:razor_unstable_current",
+      "type": "mobility",
+      "subtype": "level-scaled-movement-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:razor_unstable_current:mobility:level-scaled-movement-speed:range",
+          "ownerId": "effect:razor_unstable_current:mobility:level-scaled-movement-speed",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:razor_unstable_current:mobility:level-scaled-movement-speed:duration",
+          "ownerId": "effect:razor_unstable_current:mobility:level-scaled-movement-speed",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:razor_unstable_current:mobility:level-scaled-movement-speed:magnitude",
+          "ownerId": "effect:razor_unstable_current:mobility:level-scaled-movement-speed",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:razor_unstable_current:mobility:level-scaled-movement-speed:mana",
+          "ownerId": "effect:razor_unstable_current:mobility:level-scaled-movement-speed",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:razor_unstable_current:mobility:level-scaled-movement-speed:cooldown",
+          "ownerId": "effect:razor_unstable_current:mobility:level-scaled-movement-speed",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:razor_unstable_current:mobility:level-scaled-movement-speed:delay",
+          "ownerId": "effect:razor_unstable_current:mobility:level-scaled-movement-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "razor_unstable_current"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:razor_unstable_current:mobility:level-scaled-movement-speed",
+      "legacyEffectId": "razor_unstable_current:mobility:level-scaled-movement-speed",
+      "order": 6,
+      "legacyAbilityId": "razor_unstable_current",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:razor_unstable_current:mobility:level-scaled-movement-speed:range",
+        "value:effect:razor_unstable_current:mobility:level-scaled-movement-speed:duration",
+        "value:effect:razor_unstable_current:mobility:level-scaled-movement-speed:magnitude",
+        "value:effect:razor_unstable_current:mobility:level-scaled-movement-speed:mana",
+        "value:effect:razor_unstable_current:mobility:level-scaled-movement-speed:cooldown",
+        "value:effect:razor_unstable_current:mobility:level-scaled-movement-speed:delay"
+      ],
+      "activationId": "activation:15:razor_unstable_current"
+    },
+    {
+      "effectId": "razor_eye_of_the_storm:damage:selected-target-strike",
+      "heroId": "15",
+      "abilityId": "ability:15:razor_eye_of_the_storm",
+      "type": "damage",
+      "subtype": "selected-target-strike",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:razor_eye_of_the_storm:damage:selected-target-strike:range",
+          "ownerId": "effect:razor_eye_of_the_storm:damage:selected-target-strike",
+          "field": "range",
+          "state": "known",
+          "value": 500
+        },
+        "duration": {
+          "id": "value:effect:razor_eye_of_the_storm:damage:selected-target-strike:duration",
+          "ownerId": "effect:razor_eye_of_the_storm:damage:selected-target-strike",
+          "field": "duration",
+          "state": "known",
+          "value": 30
+        },
+        "magnitude": {
+          "id": "value:effect:razor_eye_of_the_storm:damage:selected-target-strike:magnitude",
+          "ownerId": "effect:razor_eye_of_the_storm:damage:selected-target-strike",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            60,
+            75,
+            90
+          ]
+        },
+        "mana": {
+          "id": "value:effect:razor_eye_of_the_storm:damage:selected-target-strike:mana",
+          "ownerId": "effect:razor_eye_of_the_storm:damage:selected-target-strike",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            150,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:razor_eye_of_the_storm:damage:selected-target-strike:cooldown",
+          "ownerId": "effect:razor_eye_of_the_storm:damage:selected-target-strike",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            80,
+            70,
+            60
+          ]
+        },
+        "delay": {
+          "id": "value:effect:razor_eye_of_the_storm:damage:selected-target-strike:delay",
+          "ownerId": "effect:razor_eye_of_the_storm:damage:selected-target-strike",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:razor_eye_of_the_storm:damage:selected-target-strike:damageType",
+          "ownerId": "effect:razor_eye_of_the_storm:damage:selected-target-strike",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "eyeOfTheStormSelectsTarget"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "razor_eye_of_the_storm"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:razor_eye_of_the_storm:damage:selected-target-strike",
+      "legacyEffectId": "razor_eye_of_the_storm:damage:selected-target-strike",
+      "order": 7,
+      "legacyAbilityId": "razor_eye_of_the_storm",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:razor_eye_of_the_storm:damage:selected-target-strike:0"
+      ],
+      "valueIds": [
+        "value:effect:razor_eye_of_the_storm:damage:selected-target-strike:range",
+        "value:effect:razor_eye_of_the_storm:damage:selected-target-strike:duration",
+        "value:effect:razor_eye_of_the_storm:damage:selected-target-strike:magnitude",
+        "value:effect:razor_eye_of_the_storm:damage:selected-target-strike:mana",
+        "value:effect:razor_eye_of_the_storm:damage:selected-target-strike:cooldown",
+        "value:effect:razor_eye_of_the_storm:damage:selected-target-strike:delay",
+        "value:effect:razor_eye_of_the_storm:damage:selected-target-strike:damageType"
+      ],
+      "activationId": "activation:15:razor_eye_of_the_storm"
+    },
+    {
+      "effectId": "razor_eye_of_the_storm:modifier:stacking-armor-reduction",
+      "heroId": "15",
+      "abilityId": "ability:15:razor_eye_of_the_storm",
+      "type": "modifier",
+      "subtype": "stacking-armor-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction:range",
+          "ownerId": "effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction",
+          "field": "range",
+          "state": "known",
+          "value": 500
+        },
+        "duration": {
+          "id": "value:effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction:duration",
+          "ownerId": "effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction",
+          "field": "duration",
+          "state": "known",
+          "value": 30
+        },
+        "magnitude": {
+          "id": "value:effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction:magnitude",
+          "ownerId": "effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": 1
+        },
+        "mana": {
+          "id": "value:effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction:mana",
+          "ownerId": "effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            150,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction:cooldown",
+          "ownerId": "effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            80,
+            70,
+            60
+          ]
+        },
+        "delay": {
+          "id": "value:effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction:delay",
+          "ownerId": "effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "eyeOfTheStormSelectsTarget"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "razor_eye_of_the_storm"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction",
+      "legacyEffectId": "razor_eye_of_the_storm:modifier:stacking-armor-reduction",
+      "order": 8,
+      "legacyAbilityId": "razor_eye_of_the_storm",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:razor_eye_of_the_storm:modifier:stacking-armor-reduction:0"
+      ],
+      "valueIds": [
+        "value:effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction:range",
+        "value:effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction:duration",
+        "value:effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction:magnitude",
+        "value:effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction:mana",
+        "value:effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction:cooldown",
+        "value:effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction:delay"
+      ],
+      "activationId": "activation:15:razor_eye_of_the_storm"
+    },
+    {
+      "effectId": "razor_eye_of_the_storm:modifier:scepter-branch",
+      "heroId": "15",
+      "abilityId": "ability:15:razor_eye_of_the_storm",
+      "type": "modifier",
+      "subtype": "scepter-branch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:razor_eye_of_the_storm:modifier:scepter-branch:range",
+          "ownerId": "effect:razor_eye_of_the_storm:modifier:scepter-branch",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:razor_eye_of_the_storm:modifier:scepter-branch:duration",
+          "ownerId": "effect:razor_eye_of_the_storm:modifier:scepter-branch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:razor_eye_of_the_storm:modifier:scepter-branch:magnitude",
+          "ownerId": "effect:razor_eye_of_the_storm:modifier:scepter-branch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:razor_eye_of_the_storm:modifier:scepter-branch:mana",
+          "ownerId": "effect:razor_eye_of_the_storm:modifier:scepter-branch",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:razor_eye_of_the_storm:modifier:scepter-branch:cooldown",
+          "ownerId": "effect:razor_eye_of_the_storm:modifier:scepter-branch",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:razor_eye_of_the_storm:modifier:scepter-branch:delay",
+          "ownerId": "effect:razor_eye_of_the_storm:modifier:scepter-branch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "razor_eye_of_the_storm:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:razor_eye_of_the_storm:modifier:scepter-branch",
+      "legacyEffectId": "razor_eye_of_the_storm:modifier:scepter-branch",
+      "order": 9,
+      "legacyAbilityId": "razor_eye_of_the_storm",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:razor_eye_of_the_storm:modifier:scepter-branch:range",
+        "value:effect:razor_eye_of_the_storm:modifier:scepter-branch:duration",
+        "value:effect:razor_eye_of_the_storm:modifier:scepter-branch:magnitude",
+        "value:effect:razor_eye_of_the_storm:modifier:scepter-branch:mana",
+        "value:effect:razor_eye_of_the_storm:modifier:scepter-branch:cooldown",
+        "value:effect:razor_eye_of_the_storm:modifier:scepter-branch:delay"
+      ],
+      "activationId": "activation:15:razor_eye_of_the_storm"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:razor_plasma_field:damage:distance-scaled-wave-minimum:0",
+      "ownerId": "effect:razor_plasma_field:damage:distance-scaled-wave-minimum",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "plasmaWaveHitsTarget"
+      }
+    },
+    {
+      "id": "condition:razor_plasma_field:slow:distance-scaled-movement-minimum:0",
+      "ownerId": "effect:razor_plasma_field:slow:distance-scaled-movement-minimum",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "plasmaWaveHitsTarget"
+      }
+    },
+    {
+      "id": "condition:razor_storm_surge:damage:retaliation-lightning:0",
+      "ownerId": "effect:razor_storm_surge:damage:retaliation-lightning",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "stormSurgeRetaliationTriggered"
+      }
+    },
+    {
+      "id": "condition:razor_storm_surge:slow:retaliation-slow:0",
+      "ownerId": "effect:razor_storm_surge:slow:retaliation-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "stormSurgeRetaliationTriggered"
+      }
+    },
+    {
+      "id": "condition:razor_storm_surge:modifier:shard-branch:0",
+      "ownerId": "effect:razor_storm_surge:modifier:shard-branch",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "eyeOfTheStormActive"
+      }
+    },
+    {
+      "id": "condition:razor_eye_of_the_storm:damage:selected-target-strike:0",
+      "ownerId": "effect:razor_eye_of_the_storm:damage:selected-target-strike",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "eyeOfTheStormSelectsTarget"
+      }
+    },
+    {
+      "id": "condition:razor_eye_of_the_storm:modifier:stacking-armor-reduction:0",
+      "ownerId": "effect:razor_eye_of_the_storm:modifier:stacking-armor-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "eyeOfTheStormSelectsTarget"
+      }
+    }
+  ]
+}

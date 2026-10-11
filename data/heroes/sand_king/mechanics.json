@@ -1,0 +1,1654 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "sandking_burrowstrike:control:stun",
+      "heroId": "16",
+      "abilityId": "ability:16:sandking_burrowstrike",
+      "type": "control",
+      "subtype": "stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sandking_burrowstrike:control:stun:range",
+          "ownerId": "effect:sandking_burrowstrike:control:stun",
+          "field": "range",
+          "state": "known",
+          "value": [
+            550,
+            625,
+            700,
+            775
+          ]
+        },
+        "duration": {
+          "id": "value:effect:sandking_burrowstrike:control:stun:duration",
+          "ownerId": "effect:sandking_burrowstrike:control:stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.2,
+            1.4,
+            1.6,
+            1.8
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:sandking_burrowstrike:control:stun:magnitude",
+          "ownerId": "effect:sandking_burrowstrike:control:stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sandking_burrowstrike:control:stun:mana",
+          "ownerId": "effect:sandking_burrowstrike:control:stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:sandking_burrowstrike:control:stun:cooldown",
+          "ownerId": "effect:sandking_burrowstrike:control:stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            13,
+            12,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sandking_burrowstrike:control:stun:delay",
+          "ownerId": "effect:sandking_burrowstrike:control:stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "known",
+          "value": false
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "sandking_burrowstrike"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sandking_burrowstrike:control:stun",
+      "legacyEffectId": "sandking_burrowstrike:control:stun",
+      "order": 0,
+      "legacyAbilityId": "sandking_burrowstrike",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sandking_burrowstrike:control:stun:range",
+        "value:effect:sandking_burrowstrike:control:stun:duration",
+        "value:effect:sandking_burrowstrike:control:stun:magnitude",
+        "value:effect:sandking_burrowstrike:control:stun:mana",
+        "value:effect:sandking_burrowstrike:control:stun:cooldown",
+        "value:effect:sandking_burrowstrike:control:stun:delay"
+      ],
+      "activationId": "activation:16:sandking_burrowstrike"
+    },
+    {
+      "effectId": "sandking_burrowstrike:damage:burrow-damage",
+      "heroId": "16",
+      "abilityId": "ability:16:sandking_burrowstrike",
+      "type": "damage",
+      "subtype": "burrow-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sandking_burrowstrike:damage:burrow-damage:range",
+          "ownerId": "effect:sandking_burrowstrike:damage:burrow-damage",
+          "field": "range",
+          "state": "known",
+          "value": [
+            550,
+            625,
+            700,
+            775
+          ]
+        },
+        "duration": {
+          "id": "value:effect:sandking_burrowstrike:damage:burrow-damage:duration",
+          "ownerId": "effect:sandking_burrowstrike:damage:burrow-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sandking_burrowstrike:damage:burrow-damage:magnitude",
+          "ownerId": "effect:sandking_burrowstrike:damage:burrow-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            80,
+            150,
+            220,
+            290
+          ]
+        },
+        "mana": {
+          "id": "value:effect:sandking_burrowstrike:damage:burrow-damage:mana",
+          "ownerId": "effect:sandking_burrowstrike:damage:burrow-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:sandking_burrowstrike:damage:burrow-damage:cooldown",
+          "ownerId": "effect:sandking_burrowstrike:damage:burrow-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            13,
+            12,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sandking_burrowstrike:damage:burrow-damage:delay",
+          "ownerId": "effect:sandking_burrowstrike:damage:burrow-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:sandking_burrowstrike:damage:burrow-damage:damageType",
+          "ownerId": "effect:sandking_burrowstrike:damage:burrow-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sandking_burrowstrike"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sandking_burrowstrike:damage:burrow-damage",
+      "legacyEffectId": "sandking_burrowstrike:damage:burrow-damage",
+      "order": 1,
+      "legacyAbilityId": "sandking_burrowstrike",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sandking_burrowstrike:damage:burrow-damage:range",
+        "value:effect:sandking_burrowstrike:damage:burrow-damage:duration",
+        "value:effect:sandking_burrowstrike:damage:burrow-damage:magnitude",
+        "value:effect:sandking_burrowstrike:damage:burrow-damage:mana",
+        "value:effect:sandking_burrowstrike:damage:burrow-damage:cooldown",
+        "value:effect:sandking_burrowstrike:damage:burrow-damage:delay",
+        "value:effect:sandking_burrowstrike:damage:burrow-damage:damageType"
+      ],
+      "activationId": "activation:16:sandking_burrowstrike"
+    },
+    {
+      "effectId": "sandking_burrowstrike:mobility:burrow-travel",
+      "heroId": "16",
+      "abilityId": "ability:16:sandking_burrowstrike",
+      "type": "mobility",
+      "subtype": "burrow-travel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sandking_burrowstrike:mobility:burrow-travel:range",
+          "ownerId": "effect:sandking_burrowstrike:mobility:burrow-travel",
+          "field": "range",
+          "state": "known",
+          "value": [
+            550,
+            625,
+            700,
+            775
+          ]
+        },
+        "duration": {
+          "id": "value:effect:sandking_burrowstrike:mobility:burrow-travel:duration",
+          "ownerId": "effect:sandking_burrowstrike:mobility:burrow-travel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sandking_burrowstrike:mobility:burrow-travel:magnitude",
+          "ownerId": "effect:sandking_burrowstrike:mobility:burrow-travel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sandking_burrowstrike:mobility:burrow-travel:mana",
+          "ownerId": "effect:sandking_burrowstrike:mobility:burrow-travel",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:sandking_burrowstrike:mobility:burrow-travel:cooldown",
+          "ownerId": "effect:sandking_burrowstrike:mobility:burrow-travel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            13,
+            12,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sandking_burrowstrike:mobility:burrow-travel:delay",
+          "ownerId": "effect:sandking_burrowstrike:mobility:burrow-travel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sandking_burrowstrike"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sandking_burrowstrike:mobility:burrow-travel",
+      "legacyEffectId": "sandking_burrowstrike:mobility:burrow-travel",
+      "order": 2,
+      "legacyAbilityId": "sandking_burrowstrike",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sandking_burrowstrike:mobility:burrow-travel:range",
+        "value:effect:sandking_burrowstrike:mobility:burrow-travel:duration",
+        "value:effect:sandking_burrowstrike:mobility:burrow-travel:magnitude",
+        "value:effect:sandking_burrowstrike:mobility:burrow-travel:mana",
+        "value:effect:sandking_burrowstrike:mobility:burrow-travel:cooldown",
+        "value:effect:sandking_burrowstrike:mobility:burrow-travel:delay"
+      ],
+      "activationId": "activation:16:sandking_burrowstrike"
+    },
+    {
+      "effectId": "sandking_sand_storm:damage:sandstorm-periodic-damage",
+      "heroId": "16",
+      "abilityId": "ability:16:sandking_sand_storm",
+      "type": "damage",
+      "subtype": "sandstorm-periodic-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sandking_sand_storm:damage:sandstorm-periodic-damage:range",
+          "ownerId": "effect:sandking_sand_storm:damage:sandstorm-periodic-damage",
+          "field": "range",
+          "state": "known",
+          "value": [
+            475,
+            550,
+            625,
+            700
+          ]
+        },
+        "duration": {
+          "id": "value:effect:sandking_sand_storm:damage:sandstorm-periodic-damage:duration",
+          "ownerId": "effect:sandking_sand_storm:damage:sandstorm-periodic-damage",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            16,
+            20,
+            24,
+            28
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:sandking_sand_storm:damage:sandstorm-periodic-damage:magnitude",
+          "ownerId": "effect:sandking_sand_storm:damage:sandstorm-periodic-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sandking_sand_storm:damage:sandstorm-periodic-damage:mana",
+          "ownerId": "effect:sandking_sand_storm:damage:sandstorm-periodic-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 85
+        },
+        "cooldown": {
+          "id": "value:effect:sandking_sand_storm:damage:sandstorm-periodic-damage:cooldown",
+          "ownerId": "effect:sandking_sand_storm:damage:sandstorm-periodic-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            34,
+            28,
+            22
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sandking_sand_storm:damage:sandstorm-periodic-damage:delay",
+          "ownerId": "effect:sandking_sand_storm:damage:sandstorm-periodic-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:sandking_sand_storm:damage:sandstorm-periodic-damage:damageType",
+          "ownerId": "effect:sandking_sand_storm:damage:sandstorm-periodic-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sandking_sand_storm"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sandking_sand_storm:damage:sandstorm-periodic-damage",
+      "legacyEffectId": "sandking_sand_storm:damage:sandstorm-periodic-damage",
+      "order": 3,
+      "legacyAbilityId": "sandking_sand_storm",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sandking_sand_storm:damage:sandstorm-periodic-damage:range",
+        "value:effect:sandking_sand_storm:damage:sandstorm-periodic-damage:duration",
+        "value:effect:sandking_sand_storm:damage:sandstorm-periodic-damage:magnitude",
+        "value:effect:sandking_sand_storm:damage:sandstorm-periodic-damage:mana",
+        "value:effect:sandking_sand_storm:damage:sandstorm-periodic-damage:cooldown",
+        "value:effect:sandking_sand_storm:damage:sandstorm-periodic-damage:delay",
+        "value:effect:sandking_sand_storm:damage:sandstorm-periodic-damage:damageType"
+      ],
+      "activationId": "activation:16:sandking_sand_storm"
+    },
+    {
+      "effectId": "sandking_sand_storm:invisibility:inside-sandstorm",
+      "heroId": "16",
+      "abilityId": "ability:16:sandking_sand_storm",
+      "type": "invisibility",
+      "subtype": "inside-sandstorm",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sandking_sand_storm:invisibility:inside-sandstorm:range",
+          "ownerId": "effect:sandking_sand_storm:invisibility:inside-sandstorm",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sandking_sand_storm:invisibility:inside-sandstorm:duration",
+          "ownerId": "effect:sandking_sand_storm:invisibility:inside-sandstorm",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            16,
+            20,
+            24,
+            28
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:sandking_sand_storm:invisibility:inside-sandstorm:magnitude",
+          "ownerId": "effect:sandking_sand_storm:invisibility:inside-sandstorm",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sandking_sand_storm:invisibility:inside-sandstorm:mana",
+          "ownerId": "effect:sandking_sand_storm:invisibility:inside-sandstorm",
+          "field": "mana",
+          "state": "known",
+          "value": 85
+        },
+        "cooldown": {
+          "id": "value:effect:sandking_sand_storm:invisibility:inside-sandstorm:cooldown",
+          "ownerId": "effect:sandking_sand_storm:invisibility:inside-sandstorm",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            34,
+            28,
+            22
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sandking_sand_storm:invisibility:inside-sandstorm:delay",
+          "ownerId": "effect:sandking_sand_storm:invisibility:inside-sandstorm",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "insideSandStorm"
+        ]
+      },
+      "delivery": {
+        "kind": "self",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sandking_sand_storm"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sandking_sand_storm:invisibility:inside-sandstorm",
+      "legacyEffectId": "sandking_sand_storm:invisibility:inside-sandstorm",
+      "order": 4,
+      "legacyAbilityId": "sandking_sand_storm",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:sandking_sand_storm:invisibility:inside-sandstorm:0"
+      ],
+      "valueIds": [
+        "value:effect:sandking_sand_storm:invisibility:inside-sandstorm:range",
+        "value:effect:sandking_sand_storm:invisibility:inside-sandstorm:duration",
+        "value:effect:sandking_sand_storm:invisibility:inside-sandstorm:magnitude",
+        "value:effect:sandking_sand_storm:invisibility:inside-sandstorm:mana",
+        "value:effect:sandking_sand_storm:invisibility:inside-sandstorm:cooldown",
+        "value:effect:sandking_sand_storm:invisibility:inside-sandstorm:delay"
+      ],
+      "activationId": "activation:16:sandking_sand_storm"
+    },
+    {
+      "effectId": "sandking_scorpion_strike:damage:stinger-attack",
+      "heroId": "16",
+      "abilityId": "ability:16:sandking_scorpion_strike",
+      "type": "damage",
+      "subtype": "stinger-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sandking_scorpion_strike:damage:stinger-attack:range",
+          "ownerId": "effect:sandking_scorpion_strike:damage:stinger-attack",
+          "field": "range",
+          "state": "known",
+          "value": 200
+        },
+        "duration": {
+          "id": "value:effect:sandking_scorpion_strike:damage:stinger-attack:duration",
+          "ownerId": "effect:sandking_scorpion_strike:damage:stinger-attack",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sandking_scorpion_strike:damage:stinger-attack:magnitude",
+          "ownerId": "effect:sandking_scorpion_strike:damage:stinger-attack",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sandking_scorpion_strike:damage:stinger-attack:mana",
+          "ownerId": "effect:sandking_scorpion_strike:damage:stinger-attack",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            35,
+            40,
+            45,
+            50
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:sandking_scorpion_strike:damage:stinger-attack:cooldown",
+          "ownerId": "effect:sandking_scorpion_strike:damage:stinger-attack",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            15,
+            12,
+            9,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sandking_scorpion_strike:damage:stinger-attack:delay",
+          "ownerId": "effect:sandking_scorpion_strike:damage:stinger-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:sandking_scorpion_strike:damage:stinger-attack:damageType",
+          "ownerId": "effect:sandking_scorpion_strike:damage:stinger-attack",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sandking_scorpion_strike"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sandking_scorpion_strike:damage:stinger-attack",
+      "legacyEffectId": "sandking_scorpion_strike:damage:stinger-attack",
+      "order": 5,
+      "legacyAbilityId": "sandking_scorpion_strike",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sandking_scorpion_strike:damage:stinger-attack:range",
+        "value:effect:sandking_scorpion_strike:damage:stinger-attack:duration",
+        "value:effect:sandking_scorpion_strike:damage:stinger-attack:magnitude",
+        "value:effect:sandking_scorpion_strike:damage:stinger-attack:mana",
+        "value:effect:sandking_scorpion_strike:damage:stinger-attack:cooldown",
+        "value:effect:sandking_scorpion_strike:damage:stinger-attack:delay",
+        "value:effect:sandking_scorpion_strike:damage:stinger-attack:damageType"
+      ],
+      "activationId": "activation:16:sandking_scorpion_strike"
+    },
+    {
+      "effectId": "sandking_scorpion_strike:slow:stinger-movement-slow",
+      "heroId": "16",
+      "abilityId": "ability:16:sandking_scorpion_strike",
+      "type": "slow",
+      "subtype": "stinger-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sandking_scorpion_strike:slow:stinger-movement-slow:range",
+          "ownerId": "effect:sandking_scorpion_strike:slow:stinger-movement-slow",
+          "field": "range",
+          "state": "known",
+          "value": 200
+        },
+        "duration": {
+          "id": "value:effect:sandking_scorpion_strike:slow:stinger-movement-slow:duration",
+          "ownerId": "effect:sandking_scorpion_strike:slow:stinger-movement-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 5
+        },
+        "magnitude": {
+          "id": "value:effect:sandking_scorpion_strike:slow:stinger-movement-slow:magnitude",
+          "ownerId": "effect:sandking_scorpion_strike:slow:stinger-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            10,
+            12,
+            14,
+            16
+          ]
+        },
+        "mana": {
+          "id": "value:effect:sandking_scorpion_strike:slow:stinger-movement-slow:mana",
+          "ownerId": "effect:sandking_scorpion_strike:slow:stinger-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            35,
+            40,
+            45,
+            50
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:sandking_scorpion_strike:slow:stinger-movement-slow:cooldown",
+          "ownerId": "effect:sandking_scorpion_strike:slow:stinger-movement-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            15,
+            12,
+            9,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sandking_scorpion_strike:slow:stinger-movement-slow:delay",
+          "ownerId": "effect:sandking_scorpion_strike:slow:stinger-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sandking_scorpion_strike"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sandking_scorpion_strike:slow:stinger-movement-slow",
+      "legacyEffectId": "sandking_scorpion_strike:slow:stinger-movement-slow",
+      "order": 6,
+      "legacyAbilityId": "sandking_scorpion_strike",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sandking_scorpion_strike:slow:stinger-movement-slow:range",
+        "value:effect:sandking_scorpion_strike:slow:stinger-movement-slow:duration",
+        "value:effect:sandking_scorpion_strike:slow:stinger-movement-slow:magnitude",
+        "value:effect:sandking_scorpion_strike:slow:stinger-movement-slow:mana",
+        "value:effect:sandking_scorpion_strike:slow:stinger-movement-slow:cooldown",
+        "value:effect:sandking_scorpion_strike:slow:stinger-movement-slow:delay"
+      ],
+      "activationId": "activation:16:sandking_scorpion_strike"
+    },
+    {
+      "effectId": "sandking_caustic_finale:passive:poisoned-unit-death-explosion",
+      "heroId": "16",
+      "abilityId": "ability:16:sandking_caustic_finale",
+      "type": "passive",
+      "subtype": "poisoned-unit-death-explosion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion:range",
+          "ownerId": "effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion:duration",
+          "ownerId": "effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion",
+          "field": "duration",
+          "state": "known",
+          "value": 4.5
+        },
+        "magnitude": {
+          "id": "value:effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion:magnitude",
+          "ownerId": "effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion:mana",
+          "ownerId": "effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion:cooldown",
+          "ownerId": "effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion:delay",
+          "ownerId": "effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion:damageType",
+          "ownerId": "effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "causticPoisonedUnitDies"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "sandking_caustic_finale"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion",
+      "legacyEffectId": "sandking_caustic_finale:passive:poisoned-unit-death-explosion",
+      "order": 7,
+      "legacyAbilityId": "sandking_caustic_finale",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:sandking_caustic_finale:passive:poisoned-unit-death-explosion:0"
+      ],
+      "valueIds": [
+        "value:effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion:range",
+        "value:effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion:duration",
+        "value:effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion:magnitude",
+        "value:effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion:mana",
+        "value:effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion:cooldown",
+        "value:effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion:delay",
+        "value:effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion:damageType"
+      ],
+      "activationId": "activation:16:sandking_caustic_finale"
+    },
+    {
+      "effectId": "sandking_epicenter:damage:epicenter-pulses",
+      "heroId": "16",
+      "abilityId": "ability:16:sandking_epicenter",
+      "type": "damage",
+      "subtype": "epicenter-pulses",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sandking_epicenter:damage:epicenter-pulses:range",
+          "ownerId": "effect:sandking_epicenter:damage:epicenter-pulses",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sandking_epicenter:damage:epicenter-pulses:duration",
+          "ownerId": "effect:sandking_epicenter:damage:epicenter-pulses",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:sandking_epicenter:damage:epicenter-pulses:magnitude",
+          "ownerId": "effect:sandking_epicenter:damage:epicenter-pulses",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sandking_epicenter:damage:epicenter-pulses:mana",
+          "ownerId": "effect:sandking_epicenter:damage:epicenter-pulses",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            225,
+            300
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:sandking_epicenter:damage:epicenter-pulses:cooldown",
+          "ownerId": "effect:sandking_epicenter:damage:epicenter-pulses",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            120,
+            110,
+            100
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sandking_epicenter:damage:epicenter-pulses:delay",
+          "ownerId": "effect:sandking_epicenter:damage:epicenter-pulses",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:sandking_epicenter:damage:epicenter-pulses:damageType",
+          "ownerId": "effect:sandking_epicenter:damage:epicenter-pulses",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sandking_epicenter"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sandking_epicenter:damage:epicenter-pulses",
+      "legacyEffectId": "sandking_epicenter:damage:epicenter-pulses",
+      "order": 8,
+      "legacyAbilityId": "sandking_epicenter",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sandking_epicenter:damage:epicenter-pulses:range",
+        "value:effect:sandking_epicenter:damage:epicenter-pulses:duration",
+        "value:effect:sandking_epicenter:damage:epicenter-pulses:magnitude",
+        "value:effect:sandking_epicenter:damage:epicenter-pulses:mana",
+        "value:effect:sandking_epicenter:damage:epicenter-pulses:cooldown",
+        "value:effect:sandking_epicenter:damage:epicenter-pulses:delay",
+        "value:effect:sandking_epicenter:damage:epicenter-pulses:damageType"
+      ],
+      "activationId": "activation:16:sandking_epicenter"
+    },
+    {
+      "effectId": "sandking_epicenter:slow:epicenter-movement-slow",
+      "heroId": "16",
+      "abilityId": "ability:16:sandking_epicenter",
+      "type": "slow",
+      "subtype": "epicenter-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sandking_epicenter:slow:epicenter-movement-slow:range",
+          "ownerId": "effect:sandking_epicenter:slow:epicenter-movement-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sandking_epicenter:slow:epicenter-movement-slow:duration",
+          "ownerId": "effect:sandking_epicenter:slow:epicenter-movement-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 3
+        },
+        "magnitude": {
+          "id": "value:effect:sandking_epicenter:slow:epicenter-movement-slow:magnitude",
+          "ownerId": "effect:sandking_epicenter:slow:epicenter-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -30,
+            -40,
+            -50
+          ]
+        },
+        "mana": {
+          "id": "value:effect:sandking_epicenter:slow:epicenter-movement-slow:mana",
+          "ownerId": "effect:sandking_epicenter:slow:epicenter-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            225,
+            300
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:sandking_epicenter:slow:epicenter-movement-slow:cooldown",
+          "ownerId": "effect:sandking_epicenter:slow:epicenter-movement-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            120,
+            110,
+            100
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sandking_epicenter:slow:epicenter-movement-slow:delay",
+          "ownerId": "effect:sandking_epicenter:slow:epicenter-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sandking_epicenter"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sandking_epicenter:slow:epicenter-movement-slow",
+      "legacyEffectId": "sandking_epicenter:slow:epicenter-movement-slow",
+      "order": 9,
+      "legacyAbilityId": "sandking_epicenter",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sandking_epicenter:slow:epicenter-movement-slow:range",
+        "value:effect:sandking_epicenter:slow:epicenter-movement-slow:duration",
+        "value:effect:sandking_epicenter:slow:epicenter-movement-slow:magnitude",
+        "value:effect:sandking_epicenter:slow:epicenter-movement-slow:mana",
+        "value:effect:sandking_epicenter:slow:epicenter-movement-slow:cooldown",
+        "value:effect:sandking_epicenter:slow:epicenter-movement-slow:delay"
+      ],
+      "activationId": "activation:16:sandking_epicenter"
+    },
+    {
+      "effectId": "sandking_epicenter:modifier:shard-passive-pulses",
+      "heroId": "16",
+      "abilityId": "ability:16:sandking_epicenter",
+      "type": "modifier",
+      "subtype": "shard-passive-pulses",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sandking_epicenter:modifier:shard-passive-pulses:range",
+          "ownerId": "effect:sandking_epicenter:modifier:shard-passive-pulses",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sandking_epicenter:modifier:shard-passive-pulses:duration",
+          "ownerId": "effect:sandking_epicenter:modifier:shard-passive-pulses",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sandking_epicenter:modifier:shard-passive-pulses:magnitude",
+          "ownerId": "effect:sandking_epicenter:modifier:shard-passive-pulses",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sandking_epicenter:modifier:shard-passive-pulses:mana",
+          "ownerId": "effect:sandking_epicenter:modifier:shard-passive-pulses",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:sandking_epicenter:modifier:shard-passive-pulses:cooldown",
+          "ownerId": "effect:sandking_epicenter:modifier:shard-passive-pulses",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:sandking_epicenter:modifier:shard-passive-pulses:delay",
+          "ownerId": "effect:sandking_epicenter:modifier:shard-passive-pulses",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sandking_epicenter:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:sandking_epicenter:modifier:shard-passive-pulses",
+      "legacyEffectId": "sandking_epicenter:modifier:shard-passive-pulses",
+      "order": 10,
+      "legacyAbilityId": "sandking_epicenter",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sandking_epicenter:modifier:shard-passive-pulses:range",
+        "value:effect:sandking_epicenter:modifier:shard-passive-pulses:duration",
+        "value:effect:sandking_epicenter:modifier:shard-passive-pulses:magnitude",
+        "value:effect:sandking_epicenter:modifier:shard-passive-pulses:mana",
+        "value:effect:sandking_epicenter:modifier:shard-passive-pulses:cooldown",
+        "value:effect:sandking_epicenter:modifier:shard-passive-pulses:delay"
+      ],
+      "activationId": "activation:16:sandking_epicenter"
+    },
+    {
+      "effectId": "sandking_epicenter:modifier:scepter-stinger-explosions",
+      "heroId": "16",
+      "abilityId": "ability:16:sandking_epicenter",
+      "type": "modifier",
+      "subtype": "scepter-stinger-explosions",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sandking_epicenter:modifier:scepter-stinger-explosions:range",
+          "ownerId": "effect:sandking_epicenter:modifier:scepter-stinger-explosions",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sandking_epicenter:modifier:scepter-stinger-explosions:duration",
+          "ownerId": "effect:sandking_epicenter:modifier:scepter-stinger-explosions",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sandking_epicenter:modifier:scepter-stinger-explosions:magnitude",
+          "ownerId": "effect:sandking_epicenter:modifier:scepter-stinger-explosions",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sandking_epicenter:modifier:scepter-stinger-explosions:mana",
+          "ownerId": "effect:sandking_epicenter:modifier:scepter-stinger-explosions",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            225,
+            300
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:sandking_epicenter:modifier:scepter-stinger-explosions:cooldown",
+          "ownerId": "effect:sandking_epicenter:modifier:scepter-stinger-explosions",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            120,
+            110,
+            100
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sandking_epicenter:modifier:scepter-stinger-explosions:delay",
+          "ownerId": "effect:sandking_epicenter:modifier:scepter-stinger-explosions",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "sandking_scorpion_strike"
+        ],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sandking_epicenter"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sandking_epicenter:modifier:scepter-stinger-explosions",
+      "legacyEffectId": "sandking_epicenter:modifier:scepter-stinger-explosions",
+      "order": 11,
+      "legacyAbilityId": "sandking_epicenter",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sandking_epicenter:modifier:scepter-stinger-explosions:range",
+        "value:effect:sandking_epicenter:modifier:scepter-stinger-explosions:duration",
+        "value:effect:sandking_epicenter:modifier:scepter-stinger-explosions:magnitude",
+        "value:effect:sandking_epicenter:modifier:scepter-stinger-explosions:mana",
+        "value:effect:sandking_epicenter:modifier:scepter-stinger-explosions:cooldown",
+        "value:effect:sandking_epicenter:modifier:scepter-stinger-explosions:delay"
+      ],
+      "activationId": "activation:16:sandking_epicenter"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:sandking_sand_storm:invisibility:inside-sandstorm:0",
+      "ownerId": "effect:sandking_sand_storm:invisibility:inside-sandstorm",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "insideSandStorm"
+      }
+    },
+    {
+      "id": "condition:sandking_caustic_finale:passive:poisoned-unit-death-explosion:0",
+      "ownerId": "effect:sandking_caustic_finale:passive:poisoned-unit-death-explosion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "causticPoisonedUnitDies"
+      }
+    }
+  ]
+}

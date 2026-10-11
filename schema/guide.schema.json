@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/guide.schema.json",
+  "title": "Lazy per-hero evidence guide",
+  "description": "Full descriptions, native declarations, external claims, provider history and review explanation, loaded separately from the compact evaluator core.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "version",
+    "createdAt",
+    "heroId",
+    "coreSha256",
+    "sourceIdentities",
+    "claims",
+    "reviewBindings"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "version": {
+      "$ref": "core.schema.json#/$defs/version"
+    },
+    "createdAt": {
+      "$ref": "core.schema.json#/$defs/timestamp"
+    },
+    "heroId": {
+      "$ref": "core.schema.json#/$defs/heroId"
+    },
+    "coreSha256": {
+      "$ref": "core.schema.json#/$defs/hash"
+    },
+    "sourceIdentities": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "claim-detail.schema.json"
+      }
+    },
+    "native": {
+      "$ref": "core.schema.json#/$defs/jsonValue"
+    },
+    "consolidated": {
+      "anyOf": [
+        {
+          "$ref": "core.schema.json#/$defs/jsonValue"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "liquipedia": {
+      "anyOf": [
+        {
+          "$ref": "core.schema.json#/$defs/jsonValue"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "liquipediaSource": {
+      "anyOf": [
+        {
+          "$ref": "core.schema.json#/$defs/jsonValue"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "officialHero": {
+      "anyOf": [
+        {
+          "$ref": "core.schema.json#/$defs/jsonValue"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "officialDataset": {
+      "anyOf": [
+        {
+          "$ref": "core.schema.json#/$defs/jsonValue"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "externalClaims": {
+      "$ref": "core.schema.json#/$defs/jsonValue"
+    },
+    "statObservationIds": {
+      "$ref": "core.schema.json#/$defs/idList"
+    },
+    "reviewBindings": {
+      "type": "array",
+      "items": {
+        "$ref": "review-bindings.schema.json#/$defs/binding"
+      }
+    }
+  },
+  "additionalProperties": true
+}

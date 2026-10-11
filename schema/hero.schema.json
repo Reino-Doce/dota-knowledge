@@ -1,0 +1,295 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/hero.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "key",
+    "sourceKey",
+    "name",
+    "aliases",
+    "primaryAttribute",
+    "attackRange",
+    "complexity",
+    "roles",
+    "enabled",
+    "cmEnabled",
+    "abilityIds",
+    "effectIds",
+    "coverage"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "core.schema.json#/$defs/heroId"
+    },
+    "key": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$"
+    },
+    "sourceKey": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "primaryAttribute": {
+      "enum": [
+        null,
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "attackRange": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "complexity": {
+      "enum": [
+        null,
+        1,
+        2,
+        3
+      ]
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "role",
+          "level"
+        ],
+        "properties": {
+          "role": {
+            "enum": [
+              "carry",
+              "support",
+              "nuker",
+              "disabler",
+              "jungler",
+              "durable",
+              "escape",
+              "pusher",
+              "initiator"
+            ]
+          },
+          "level": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 3
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "cmEnabled": {
+      "type": "boolean"
+    },
+    "abilityIds": {
+      "$ref": "core.schema.json#/$defs/idList"
+    },
+    "effectIds": {
+      "$ref": "core.schema.json#/$defs/idList"
+    },
+    "coverage": {
+      "type": "object",
+      "required": [
+        "fields"
+      ],
+      "properties": {
+        "fields": {
+          "type": "object",
+          "required": [
+            "primaryAttribute",
+            "attackRange",
+            "complexity",
+            "roles"
+          ],
+          "properties": {
+            "primaryAttribute": {
+              "type": "object",
+              "required": [
+                "state"
+              ],
+              "properties": {
+                "state": {
+                  "enum": [
+                    "known",
+                    "unknown",
+                    "unsupported",
+                    "notApplicable",
+                    "conflicted"
+                  ]
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "state": {
+                        "not": {
+                          "const": "known"
+                        }
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "reason"
+                    ]
+                  }
+                }
+              ],
+              "additionalProperties": false
+            },
+            "attackRange": {
+              "type": "object",
+              "required": [
+                "state"
+              ],
+              "properties": {
+                "state": {
+                  "enum": [
+                    "known",
+                    "unknown",
+                    "unsupported",
+                    "notApplicable",
+                    "conflicted"
+                  ]
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "state": {
+                        "not": {
+                          "const": "known"
+                        }
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "reason"
+                    ]
+                  }
+                }
+              ],
+              "additionalProperties": false
+            },
+            "complexity": {
+              "type": "object",
+              "required": [
+                "state"
+              ],
+              "properties": {
+                "state": {
+                  "enum": [
+                    "known",
+                    "unknown",
+                    "unsupported",
+                    "notApplicable",
+                    "conflicted"
+                  ]
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "state": {
+                        "not": {
+                          "const": "known"
+                        }
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "reason"
+                    ]
+                  }
+                }
+              ],
+              "additionalProperties": false
+            },
+            "roles": {
+              "type": "object",
+              "required": [
+                "state"
+              ],
+              "properties": {
+                "state": {
+                  "enum": [
+                    "known",
+                    "unknown",
+                    "unsupported",
+                    "notApplicable",
+                    "conflicted"
+                  ]
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "state": {
+                        "not": {
+                          "const": "known"
+                        }
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "reason"
+                    ]
+                  }
+                }
+              ],
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

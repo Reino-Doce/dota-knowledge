@@ -1,0 +1,1791 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "kunkka_torrent:control:torrent-stun",
+      "heroId": "23",
+      "abilityId": "ability:23:kunkka_torrent",
+      "type": "control",
+      "subtype": "torrent-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kunkka_torrent:control:torrent-stun:range",
+          "ownerId": "effect:kunkka_torrent:control:torrent-stun",
+          "field": "range",
+          "state": "known",
+          "value": 1300
+        },
+        "duration": {
+          "id": "value:effect:kunkka_torrent:control:torrent-stun:duration",
+          "ownerId": "effect:kunkka_torrent:control:torrent-stun",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "The retained declaration requires additional expression or branch context."
+        },
+        "magnitude": {
+          "id": "value:effect:kunkka_torrent:control:torrent-stun:magnitude",
+          "ownerId": "effect:kunkka_torrent:control:torrent-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kunkka_torrent:control:torrent-stun:mana",
+          "ownerId": "effect:kunkka_torrent:control:torrent-stun",
+          "field": "mana",
+          "state": "known",
+          "value": 90
+        },
+        "cooldown": {
+          "id": "value:effect:kunkka_torrent:control:torrent-stun:cooldown",
+          "ownerId": "effect:kunkka_torrent:control:torrent-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kunkka_torrent:control:torrent-stun:delay",
+          "ownerId": "effect:kunkka_torrent:control:torrent-stun",
+          "field": "delay",
+          "state": "known",
+          "value": [
+            1.6,
+            1.6,
+            1.6,
+            1.6
+          ]
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "kunkka_torrent"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kunkka_torrent:control:torrent-stun",
+      "legacyEffectId": "kunkka_torrent:control:torrent-stun",
+      "order": 0,
+      "legacyAbilityId": "kunkka_torrent",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:kunkka_torrent:control:torrent-stun:range",
+        "value:effect:kunkka_torrent:control:torrent-stun:duration",
+        "value:effect:kunkka_torrent:control:torrent-stun:magnitude",
+        "value:effect:kunkka_torrent:control:torrent-stun:mana",
+        "value:effect:kunkka_torrent:control:torrent-stun:cooldown",
+        "value:effect:kunkka_torrent:control:torrent-stun:delay"
+      ],
+      "activationId": "activation:23:kunkka_torrent"
+    },
+    {
+      "effectId": "kunkka_torrent:damage:torrent-total-damage",
+      "heroId": "23",
+      "abilityId": "ability:23:kunkka_torrent",
+      "type": "damage",
+      "subtype": "torrent-total-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kunkka_torrent:damage:torrent-total-damage:range",
+          "ownerId": "effect:kunkka_torrent:damage:torrent-total-damage",
+          "field": "range",
+          "state": "known",
+          "value": 1300
+        },
+        "duration": {
+          "id": "value:effect:kunkka_torrent:damage:torrent-total-damage:duration",
+          "ownerId": "effect:kunkka_torrent:damage:torrent-total-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kunkka_torrent:damage:torrent-total-damage:magnitude",
+          "ownerId": "effect:kunkka_torrent:damage:torrent-total-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            110,
+            180,
+            250,
+            320
+          ]
+        },
+        "mana": {
+          "id": "value:effect:kunkka_torrent:damage:torrent-total-damage:mana",
+          "ownerId": "effect:kunkka_torrent:damage:torrent-total-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 90
+        },
+        "cooldown": {
+          "id": "value:effect:kunkka_torrent:damage:torrent-total-damage:cooldown",
+          "ownerId": "effect:kunkka_torrent:damage:torrent-total-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kunkka_torrent:damage:torrent-total-damage:delay",
+          "ownerId": "effect:kunkka_torrent:damage:torrent-total-damage",
+          "field": "delay",
+          "state": "known",
+          "value": [
+            1.6,
+            1.6,
+            1.6,
+            1.6
+          ]
+        },
+        "damageType": {
+          "id": "value:effect:kunkka_torrent:damage:torrent-total-damage:damageType",
+          "ownerId": "effect:kunkka_torrent:damage:torrent-total-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kunkka_torrent"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kunkka_torrent:damage:torrent-total-damage",
+      "legacyEffectId": "kunkka_torrent:damage:torrent-total-damage",
+      "order": 1,
+      "legacyAbilityId": "kunkka_torrent",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:kunkka_torrent:damage:torrent-total-damage:range",
+        "value:effect:kunkka_torrent:damage:torrent-total-damage:duration",
+        "value:effect:kunkka_torrent:damage:torrent-total-damage:magnitude",
+        "value:effect:kunkka_torrent:damage:torrent-total-damage:mana",
+        "value:effect:kunkka_torrent:damage:torrent-total-damage:cooldown",
+        "value:effect:kunkka_torrent:damage:torrent-total-damage:delay",
+        "value:effect:kunkka_torrent:damage:torrent-total-damage:damageType"
+      ],
+      "activationId": "activation:23:kunkka_torrent"
+    },
+    {
+      "effectId": "kunkka_torrent:slow:torrent-movement-slow",
+      "heroId": "23",
+      "abilityId": "ability:23:kunkka_torrent",
+      "type": "slow",
+      "subtype": "torrent-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kunkka_torrent:slow:torrent-movement-slow:range",
+          "ownerId": "effect:kunkka_torrent:slow:torrent-movement-slow",
+          "field": "range",
+          "state": "known",
+          "value": 1300
+        },
+        "duration": {
+          "id": "value:effect:kunkka_torrent:slow:torrent-movement-slow:duration",
+          "ownerId": "effect:kunkka_torrent:slow:torrent-movement-slow",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:kunkka_torrent:slow:torrent-movement-slow:magnitude",
+          "ownerId": "effect:kunkka_torrent:slow:torrent-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": -40
+        },
+        "mana": {
+          "id": "value:effect:kunkka_torrent:slow:torrent-movement-slow:mana",
+          "ownerId": "effect:kunkka_torrent:slow:torrent-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 90
+        },
+        "cooldown": {
+          "id": "value:effect:kunkka_torrent:slow:torrent-movement-slow:cooldown",
+          "ownerId": "effect:kunkka_torrent:slow:torrent-movement-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kunkka_torrent:slow:torrent-movement-slow:delay",
+          "ownerId": "effect:kunkka_torrent:slow:torrent-movement-slow",
+          "field": "delay",
+          "state": "known",
+          "value": [
+            1.6,
+            1.6,
+            1.6,
+            1.6
+          ]
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "kunkka_torrent"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kunkka_torrent:slow:torrent-movement-slow",
+      "legacyEffectId": "kunkka_torrent:slow:torrent-movement-slow",
+      "order": 2,
+      "legacyAbilityId": "kunkka_torrent",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:kunkka_torrent:slow:torrent-movement-slow:range",
+        "value:effect:kunkka_torrent:slow:torrent-movement-slow:duration",
+        "value:effect:kunkka_torrent:slow:torrent-movement-slow:magnitude",
+        "value:effect:kunkka_torrent:slow:torrent-movement-slow:mana",
+        "value:effect:kunkka_torrent:slow:torrent-movement-slow:cooldown",
+        "value:effect:kunkka_torrent:slow:torrent-movement-slow:delay"
+      ],
+      "activationId": "activation:23:kunkka_torrent"
+    },
+    {
+      "effectId": "kunkka_tidebringer:passive:charged-attack-cleave",
+      "heroId": "23",
+      "abilityId": "ability:23:kunkka_tidebringer",
+      "type": "passive",
+      "subtype": "charged-attack-cleave",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kunkka_tidebringer:passive:charged-attack-cleave:range",
+          "ownerId": "effect:kunkka_tidebringer:passive:charged-attack-cleave",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kunkka_tidebringer:passive:charged-attack-cleave:duration",
+          "ownerId": "effect:kunkka_tidebringer:passive:charged-attack-cleave",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kunkka_tidebringer:passive:charged-attack-cleave:magnitude",
+          "ownerId": "effect:kunkka_tidebringer:passive:charged-attack-cleave",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kunkka_tidebringer:passive:charged-attack-cleave:mana",
+          "ownerId": "effect:kunkka_tidebringer:passive:charged-attack-cleave",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:kunkka_tidebringer:passive:charged-attack-cleave:cooldown",
+          "ownerId": "effect:kunkka_tidebringer:passive:charged-attack-cleave",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            13,
+            10,
+            7,
+            4
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kunkka_tidebringer:passive:charged-attack-cleave:delay",
+          "ownerId": "effect:kunkka_tidebringer:passive:charged-attack-cleave",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:kunkka_tidebringer:passive:charged-attack-cleave:damageType",
+          "ownerId": "effect:kunkka_tidebringer:passive:charged-attack-cleave",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "tidebringerAttackConnects"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kunkka_tidebringer"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:kunkka_tidebringer:passive:charged-attack-cleave",
+      "legacyEffectId": "kunkka_tidebringer:passive:charged-attack-cleave",
+      "order": 3,
+      "legacyAbilityId": "kunkka_tidebringer",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kunkka_tidebringer:passive:charged-attack-cleave:0"
+      ],
+      "valueIds": [
+        "value:effect:kunkka_tidebringer:passive:charged-attack-cleave:range",
+        "value:effect:kunkka_tidebringer:passive:charged-attack-cleave:duration",
+        "value:effect:kunkka_tidebringer:passive:charged-attack-cleave:magnitude",
+        "value:effect:kunkka_tidebringer:passive:charged-attack-cleave:mana",
+        "value:effect:kunkka_tidebringer:passive:charged-attack-cleave:cooldown",
+        "value:effect:kunkka_tidebringer:passive:charged-attack-cleave:delay",
+        "value:effect:kunkka_tidebringer:passive:charged-attack-cleave:damageType"
+      ],
+      "activationId": "activation:23:kunkka_tidebringer"
+    },
+    {
+      "effectId": "kunkka_x_marks_the_spot:displacement:marked-enemy-return",
+      "heroId": "23",
+      "abilityId": "ability:23:kunkka_x_marks_the_spot",
+      "type": "displacement",
+      "subtype": "marked-enemy-return",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return:range",
+          "ownerId": "effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return",
+          "field": "range",
+          "state": "known",
+          "value": [
+            550,
+            700,
+            850,
+            1000
+          ]
+        },
+        "duration": {
+          "id": "value:effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return:duration",
+          "ownerId": "effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return:magnitude",
+          "ownerId": "effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return:mana",
+          "ownerId": "effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return:cooldown",
+          "ownerId": "effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            20,
+            16,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return:delay",
+          "ownerId": "effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "xMarkedEnemyReturnTriggered"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kunkka_x_marks_the_spot"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return",
+      "legacyEffectId": "kunkka_x_marks_the_spot:displacement:marked-enemy-return",
+      "order": 4,
+      "legacyAbilityId": "kunkka_x_marks_the_spot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kunkka_x_marks_the_spot:displacement:marked-enemy-return:0"
+      ],
+      "valueIds": [
+        "value:effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return:range",
+        "value:effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return:duration",
+        "value:effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return:magnitude",
+        "value:effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return:mana",
+        "value:effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return:cooldown",
+        "value:effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return:delay"
+      ],
+      "activationId": "activation:23:kunkka_x_marks_the_spot"
+    },
+    {
+      "effectId": "kunkka_x_marks_the_spot:displacement:marked-friendly-return",
+      "heroId": "23",
+      "abilityId": "ability:23:kunkka_x_marks_the_spot",
+      "type": "displacement",
+      "subtype": "marked-friendly-return",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return:range",
+          "ownerId": "effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return",
+          "field": "range",
+          "state": "known",
+          "value": [
+            550,
+            700,
+            850,
+            1000
+          ]
+        },
+        "duration": {
+          "id": "value:effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return:duration",
+          "ownerId": "effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return:magnitude",
+          "ownerId": "effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return:mana",
+          "ownerId": "effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return:cooldown",
+          "ownerId": "effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            20,
+            16,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return:delay",
+          "ownerId": "effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "xMarkedFriendlyReturnTriggered"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kunkka_x_marks_the_spot"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return",
+      "legacyEffectId": "kunkka_x_marks_the_spot:displacement:marked-friendly-return",
+      "order": 5,
+      "legacyAbilityId": "kunkka_x_marks_the_spot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kunkka_x_marks_the_spot:displacement:marked-friendly-return:0"
+      ],
+      "valueIds": [
+        "value:effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return:range",
+        "value:effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return:duration",
+        "value:effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return:magnitude",
+        "value:effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return:mana",
+        "value:effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return:cooldown",
+        "value:effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return:delay"
+      ],
+      "activationId": "activation:23:kunkka_x_marks_the_spot"
+    },
+    {
+      "effectId": "kunkka_admirals_rum:passive:threshold-triggered-damage-deferral",
+      "heroId": "23",
+      "abilityId": "ability:23:kunkka_admirals_rum",
+      "type": "passive",
+      "subtype": "threshold-triggered-damage-deferral",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral:range",
+          "ownerId": "effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral:duration",
+          "ownerId": "effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral",
+          "field": "duration",
+          "state": "known",
+          "value": 5
+        },
+        "magnitude": {
+          "id": "value:effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral:magnitude",
+          "ownerId": "effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral:mana",
+          "ownerId": "effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral:cooldown",
+          "ownerId": "effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "The retained declaration requires additional expression or branch context."
+        },
+        "delay": {
+          "id": "value:effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral:delay",
+          "ownerId": "effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "admiralsRumDamageThresholdTriggered"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kunkka_admirals_rum"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral",
+      "legacyEffectId": "kunkka_admirals_rum:passive:threshold-triggered-damage-deferral",
+      "order": 6,
+      "legacyAbilityId": "kunkka_admirals_rum",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral:0"
+      ],
+      "valueIds": [
+        "value:effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral:range",
+        "value:effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral:duration",
+        "value:effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral:magnitude",
+        "value:effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral:mana",
+        "value:effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral:cooldown",
+        "value:effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral:delay"
+      ],
+      "activationId": "activation:23:kunkka_admirals_rum"
+    },
+    {
+      "effectId": "kunkka_tidal_wave:damage:shard-wave-damage",
+      "heroId": "23",
+      "abilityId": "ability:23:kunkka_tidal_wave",
+      "type": "damage",
+      "subtype": "shard-wave-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kunkka_tidal_wave:damage:shard-wave-damage:range",
+          "ownerId": "effect:kunkka_tidal_wave:damage:shard-wave-damage",
+          "field": "range",
+          "state": "known",
+          "value": 1050
+        },
+        "duration": {
+          "id": "value:effect:kunkka_tidal_wave:damage:shard-wave-damage:duration",
+          "ownerId": "effect:kunkka_tidal_wave:damage:shard-wave-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kunkka_tidal_wave:damage:shard-wave-damage:magnitude",
+          "ownerId": "effect:kunkka_tidal_wave:damage:shard-wave-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": 180
+        },
+        "mana": {
+          "id": "value:effect:kunkka_tidal_wave:damage:shard-wave-damage:mana",
+          "ownerId": "effect:kunkka_tidal_wave:damage:shard-wave-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:kunkka_tidal_wave:damage:shard-wave-damage:cooldown",
+          "ownerId": "effect:kunkka_tidal_wave:damage:shard-wave-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": 12
+        },
+        "delay": {
+          "id": "value:effect:kunkka_tidal_wave:damage:shard-wave-damage:delay",
+          "ownerId": "effect:kunkka_tidal_wave:damage:shard-wave-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:kunkka_tidal_wave:damage:shard-wave-damage:damageType",
+          "ownerId": "effect:kunkka_tidal_wave:damage:shard-wave-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kunkka_tidal_wave"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kunkka_tidal_wave:damage:shard-wave-damage",
+      "legacyEffectId": "kunkka_tidal_wave:damage:shard-wave-damage",
+      "order": 7,
+      "legacyAbilityId": "kunkka_tidal_wave",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:kunkka_tidal_wave:damage:shard-wave-damage:range",
+        "value:effect:kunkka_tidal_wave:damage:shard-wave-damage:duration",
+        "value:effect:kunkka_tidal_wave:damage:shard-wave-damage:magnitude",
+        "value:effect:kunkka_tidal_wave:damage:shard-wave-damage:mana",
+        "value:effect:kunkka_tidal_wave:damage:shard-wave-damage:cooldown",
+        "value:effect:kunkka_tidal_wave:damage:shard-wave-damage:delay",
+        "value:effect:kunkka_tidal_wave:damage:shard-wave-damage:damageType"
+      ],
+      "activationId": "activation:23:kunkka_tidal_wave"
+    },
+    {
+      "effectId": "kunkka_tidal_wave:displacement:shard-wave-drag",
+      "heroId": "23",
+      "abilityId": "ability:23:kunkka_tidal_wave",
+      "type": "displacement",
+      "subtype": "shard-wave-drag",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kunkka_tidal_wave:displacement:shard-wave-drag:range",
+          "ownerId": "effect:kunkka_tidal_wave:displacement:shard-wave-drag",
+          "field": "range",
+          "state": "known",
+          "value": 1050
+        },
+        "duration": {
+          "id": "value:effect:kunkka_tidal_wave:displacement:shard-wave-drag:duration",
+          "ownerId": "effect:kunkka_tidal_wave:displacement:shard-wave-drag",
+          "field": "duration",
+          "state": "known",
+          "value": 1
+        },
+        "magnitude": {
+          "id": "value:effect:kunkka_tidal_wave:displacement:shard-wave-drag:magnitude",
+          "ownerId": "effect:kunkka_tidal_wave:displacement:shard-wave-drag",
+          "field": "magnitude",
+          "state": "known",
+          "value": 600
+        },
+        "mana": {
+          "id": "value:effect:kunkka_tidal_wave:displacement:shard-wave-drag:mana",
+          "ownerId": "effect:kunkka_tidal_wave:displacement:shard-wave-drag",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:kunkka_tidal_wave:displacement:shard-wave-drag:cooldown",
+          "ownerId": "effect:kunkka_tidal_wave:displacement:shard-wave-drag",
+          "field": "cooldown",
+          "state": "known",
+          "value": 12
+        },
+        "delay": {
+          "id": "value:effect:kunkka_tidal_wave:displacement:shard-wave-drag:delay",
+          "ownerId": "effect:kunkka_tidal_wave:displacement:shard-wave-drag",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kunkka_tidal_wave"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kunkka_tidal_wave:displacement:shard-wave-drag",
+      "legacyEffectId": "kunkka_tidal_wave:displacement:shard-wave-drag",
+      "order": 8,
+      "legacyAbilityId": "kunkka_tidal_wave",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:kunkka_tidal_wave:displacement:shard-wave-drag:range",
+        "value:effect:kunkka_tidal_wave:displacement:shard-wave-drag:duration",
+        "value:effect:kunkka_tidal_wave:displacement:shard-wave-drag:magnitude",
+        "value:effect:kunkka_tidal_wave:displacement:shard-wave-drag:mana",
+        "value:effect:kunkka_tidal_wave:displacement:shard-wave-drag:cooldown",
+        "value:effect:kunkka_tidal_wave:displacement:shard-wave-drag:delay"
+      ],
+      "activationId": "activation:23:kunkka_tidal_wave"
+    },
+    {
+      "effectId": "kunkka_ghostship:damage:shipwreck-damage",
+      "heroId": "23",
+      "abilityId": "ability:23:kunkka_ghostship",
+      "type": "damage",
+      "subtype": "shipwreck-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kunkka_ghostship:damage:shipwreck-damage:range",
+          "ownerId": "effect:kunkka_ghostship:damage:shipwreck-damage",
+          "field": "range",
+          "state": "known",
+          "value": 1000
+        },
+        "duration": {
+          "id": "value:effect:kunkka_ghostship:damage:shipwreck-damage:duration",
+          "ownerId": "effect:kunkka_ghostship:damage:shipwreck-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kunkka_ghostship:damage:shipwreck-damage:magnitude",
+          "ownerId": "effect:kunkka_ghostship:damage:shipwreck-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            350,
+            475,
+            600
+          ]
+        },
+        "mana": {
+          "id": "value:effect:kunkka_ghostship:damage:shipwreck-damage:mana",
+          "ownerId": "effect:kunkka_ghostship:damage:shipwreck-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            175,
+            225
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kunkka_ghostship:damage:shipwreck-damage:cooldown",
+          "ownerId": "effect:kunkka_ghostship:damage:shipwreck-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            90,
+            80,
+            70
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kunkka_ghostship:damage:shipwreck-damage:delay",
+          "ownerId": "effect:kunkka_ghostship:damage:shipwreck-damage",
+          "field": "delay",
+          "state": "known",
+          "value": 3.1
+        },
+        "damageType": {
+          "id": "value:effect:kunkka_ghostship:damage:shipwreck-damage:damageType",
+          "ownerId": "effect:kunkka_ghostship:damage:shipwreck-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kunkka_ghostship"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kunkka_ghostship:damage:shipwreck-damage",
+      "legacyEffectId": "kunkka_ghostship:damage:shipwreck-damage",
+      "order": 9,
+      "legacyAbilityId": "kunkka_ghostship",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:kunkka_ghostship:damage:shipwreck-damage:range",
+        "value:effect:kunkka_ghostship:damage:shipwreck-damage:duration",
+        "value:effect:kunkka_ghostship:damage:shipwreck-damage:magnitude",
+        "value:effect:kunkka_ghostship:damage:shipwreck-damage:mana",
+        "value:effect:kunkka_ghostship:damage:shipwreck-damage:cooldown",
+        "value:effect:kunkka_ghostship:damage:shipwreck-damage:delay",
+        "value:effect:kunkka_ghostship:damage:shipwreck-damage:damageType"
+      ],
+      "activationId": "activation:23:kunkka_ghostship"
+    },
+    {
+      "effectId": "kunkka_ghostship:control:shipwreck-stun",
+      "heroId": "23",
+      "abilityId": "ability:23:kunkka_ghostship",
+      "type": "control",
+      "subtype": "shipwreck-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kunkka_ghostship:control:shipwreck-stun:range",
+          "ownerId": "effect:kunkka_ghostship:control:shipwreck-stun",
+          "field": "range",
+          "state": "known",
+          "value": 1000
+        },
+        "duration": {
+          "id": "value:effect:kunkka_ghostship:control:shipwreck-stun:duration",
+          "ownerId": "effect:kunkka_ghostship:control:shipwreck-stun",
+          "field": "duration",
+          "state": "known",
+          "value": 1.2
+        },
+        "magnitude": {
+          "id": "value:effect:kunkka_ghostship:control:shipwreck-stun:magnitude",
+          "ownerId": "effect:kunkka_ghostship:control:shipwreck-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kunkka_ghostship:control:shipwreck-stun:mana",
+          "ownerId": "effect:kunkka_ghostship:control:shipwreck-stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            175,
+            225
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kunkka_ghostship:control:shipwreck-stun:cooldown",
+          "ownerId": "effect:kunkka_ghostship:control:shipwreck-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            90,
+            80,
+            70
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kunkka_ghostship:control:shipwreck-stun:delay",
+          "ownerId": "effect:kunkka_ghostship:control:shipwreck-stun",
+          "field": "delay",
+          "state": "known",
+          "value": 3.1
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "kunkka_ghostship"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kunkka_ghostship:control:shipwreck-stun",
+      "legacyEffectId": "kunkka_ghostship:control:shipwreck-stun",
+      "order": 10,
+      "legacyAbilityId": "kunkka_ghostship",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:kunkka_ghostship:control:shipwreck-stun:range",
+        "value:effect:kunkka_ghostship:control:shipwreck-stun:duration",
+        "value:effect:kunkka_ghostship:control:shipwreck-stun:magnitude",
+        "value:effect:kunkka_ghostship:control:shipwreck-stun:mana",
+        "value:effect:kunkka_ghostship:control:shipwreck-stun:cooldown",
+        "value:effect:kunkka_ghostship:control:shipwreck-stun:delay"
+      ],
+      "activationId": "activation:23:kunkka_ghostship"
+    },
+    {
+      "effectId": "kunkka_ghostship:modifier:allied-ship-rum",
+      "heroId": "23",
+      "abilityId": "ability:23:kunkka_ghostship",
+      "type": "modifier",
+      "subtype": "allied-ship-rum",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kunkka_ghostship:modifier:allied-ship-rum:range",
+          "ownerId": "effect:kunkka_ghostship:modifier:allied-ship-rum",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kunkka_ghostship:modifier:allied-ship-rum:duration",
+          "ownerId": "effect:kunkka_ghostship:modifier:allied-ship-rum",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kunkka_ghostship:modifier:allied-ship-rum:magnitude",
+          "ownerId": "effect:kunkka_ghostship:modifier:allied-ship-rum",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kunkka_ghostship:modifier:allied-ship-rum:mana",
+          "ownerId": "effect:kunkka_ghostship:modifier:allied-ship-rum",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            175,
+            225
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kunkka_ghostship:modifier:allied-ship-rum:cooldown",
+          "ownerId": "effect:kunkka_ghostship:modifier:allied-ship-rum",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            90,
+            80,
+            70
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kunkka_ghostship:modifier:allied-ship-rum:delay",
+          "ownerId": "effect:kunkka_ghostship:modifier:allied-ship-rum",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "allyTouchedGhostship"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kunkka_ghostship"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kunkka_ghostship:modifier:allied-ship-rum",
+      "legacyEffectId": "kunkka_ghostship:modifier:allied-ship-rum",
+      "order": 11,
+      "legacyAbilityId": "kunkka_ghostship",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kunkka_ghostship:modifier:allied-ship-rum:0"
+      ],
+      "valueIds": [
+        "value:effect:kunkka_ghostship:modifier:allied-ship-rum:range",
+        "value:effect:kunkka_ghostship:modifier:allied-ship-rum:duration",
+        "value:effect:kunkka_ghostship:modifier:allied-ship-rum:magnitude",
+        "value:effect:kunkka_ghostship:modifier:allied-ship-rum:mana",
+        "value:effect:kunkka_ghostship:modifier:allied-ship-rum:cooldown",
+        "value:effect:kunkka_ghostship:modifier:allied-ship-rum:delay"
+      ],
+      "activationId": "activation:23:kunkka_ghostship"
+    },
+    {
+      "effectId": "kunkka_ghostship:modifier:scepter-fleet-cannonballs",
+      "heroId": "23",
+      "abilityId": "ability:23:kunkka_ghostship",
+      "type": "modifier",
+      "subtype": "scepter-fleet-cannonballs",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs:range",
+          "ownerId": "effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs:duration",
+          "ownerId": "effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs:magnitude",
+          "ownerId": "effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs:mana",
+          "ownerId": "effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            175,
+            225
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs:cooldown",
+          "ownerId": "effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            90,
+            80,
+            70
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs:delay",
+          "ownerId": "effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kunkka_ghostship"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs",
+      "legacyEffectId": "kunkka_ghostship:modifier:scepter-fleet-cannonballs",
+      "order": 12,
+      "legacyAbilityId": "kunkka_ghostship",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs:range",
+        "value:effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs:duration",
+        "value:effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs:magnitude",
+        "value:effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs:mana",
+        "value:effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs:cooldown",
+        "value:effect:kunkka_ghostship:modifier:scepter-fleet-cannonballs:delay"
+      ],
+      "activationId": "activation:23:kunkka_ghostship"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:kunkka_tidebringer:passive:charged-attack-cleave:0",
+      "ownerId": "effect:kunkka_tidebringer:passive:charged-attack-cleave",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "tidebringerAttackConnects"
+      }
+    },
+    {
+      "id": "condition:kunkka_x_marks_the_spot:displacement:marked-enemy-return:0",
+      "ownerId": "effect:kunkka_x_marks_the_spot:displacement:marked-enemy-return",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "xMarkedEnemyReturnTriggered"
+      }
+    },
+    {
+      "id": "condition:kunkka_x_marks_the_spot:displacement:marked-friendly-return:0",
+      "ownerId": "effect:kunkka_x_marks_the_spot:displacement:marked-friendly-return",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "xMarkedFriendlyReturnTriggered"
+      }
+    },
+    {
+      "id": "condition:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral:0",
+      "ownerId": "effect:kunkka_admirals_rum:passive:threshold-triggered-damage-deferral",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "admiralsRumDamageThresholdTriggered"
+      }
+    },
+    {
+      "id": "condition:kunkka_ghostship:modifier:allied-ship-rum:0",
+      "ownerId": "effect:kunkka_ghostship:modifier:allied-ship-rum",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyTouchedGhostship"
+      }
+    }
+  ]
+}

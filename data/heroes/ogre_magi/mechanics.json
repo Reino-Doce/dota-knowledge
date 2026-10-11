@@ -1,0 +1,1655 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "ogre_magi_fireblast:control:fireblast-stun",
+      "heroId": "84",
+      "abilityId": "ability:84:ogre_magi_fireblast",
+      "type": "control",
+      "subtype": "fireblast-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ogre_magi_fireblast:control:fireblast-stun:range",
+          "ownerId": "effect:ogre_magi_fireblast:control:fireblast-stun",
+          "field": "range",
+          "state": "known",
+          "value": 525
+        },
+        "duration": {
+          "id": "value:effect:ogre_magi_fireblast:control:fireblast-stun:duration",
+          "ownerId": "effect:ogre_magi_fireblast:control:fireblast-stun",
+          "field": "duration",
+          "state": "known",
+          "value": 1.2
+        },
+        "magnitude": {
+          "id": "value:effect:ogre_magi_fireblast:control:fireblast-stun:magnitude",
+          "ownerId": "effect:ogre_magi_fireblast:control:fireblast-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ogre_magi_fireblast:control:fireblast-stun:mana",
+          "ownerId": "effect:ogre_magi_fireblast:control:fireblast-stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            70,
+            85,
+            100,
+            115
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ogre_magi_fireblast:control:fireblast-stun:cooldown",
+          "ownerId": "effect:ogre_magi_fireblast:control:fireblast-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            11,
+            10,
+            9,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ogre_magi_fireblast:control:fireblast-stun:delay",
+          "ownerId": "effect:ogre_magi_fireblast:control:fireblast-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "ogre_magi_fireblast"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ogre_magi_fireblast:control:fireblast-stun",
+      "legacyEffectId": "ogre_magi_fireblast:control:fireblast-stun",
+      "order": 0,
+      "legacyAbilityId": "ogre_magi_fireblast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ogre_magi_fireblast:control:fireblast-stun:range",
+        "value:effect:ogre_magi_fireblast:control:fireblast-stun:duration",
+        "value:effect:ogre_magi_fireblast:control:fireblast-stun:magnitude",
+        "value:effect:ogre_magi_fireblast:control:fireblast-stun:mana",
+        "value:effect:ogre_magi_fireblast:control:fireblast-stun:cooldown",
+        "value:effect:ogre_magi_fireblast:control:fireblast-stun:delay"
+      ],
+      "activationId": "activation:84:ogre_magi_fireblast"
+    },
+    {
+      "effectId": "ogre_magi_fireblast:damage:fireblast-single-impact",
+      "heroId": "84",
+      "abilityId": "ability:84:ogre_magi_fireblast",
+      "type": "damage",
+      "subtype": "fireblast-single-impact",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ogre_magi_fireblast:damage:fireblast-single-impact:range",
+          "ownerId": "effect:ogre_magi_fireblast:damage:fireblast-single-impact",
+          "field": "range",
+          "state": "known",
+          "value": 525
+        },
+        "duration": {
+          "id": "value:effect:ogre_magi_fireblast:damage:fireblast-single-impact:duration",
+          "ownerId": "effect:ogre_magi_fireblast:damage:fireblast-single-impact",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ogre_magi_fireblast:damage:fireblast-single-impact:magnitude",
+          "ownerId": "effect:ogre_magi_fireblast:damage:fireblast-single-impact",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            70,
+            130,
+            190,
+            250
+          ]
+        },
+        "mana": {
+          "id": "value:effect:ogre_magi_fireblast:damage:fireblast-single-impact:mana",
+          "ownerId": "effect:ogre_magi_fireblast:damage:fireblast-single-impact",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            70,
+            85,
+            100,
+            115
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ogre_magi_fireblast:damage:fireblast-single-impact:cooldown",
+          "ownerId": "effect:ogre_magi_fireblast:damage:fireblast-single-impact",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            11,
+            10,
+            9,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ogre_magi_fireblast:damage:fireblast-single-impact:delay",
+          "ownerId": "effect:ogre_magi_fireblast:damage:fireblast-single-impact",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ogre_magi_fireblast:damage:fireblast-single-impact:damageType",
+          "ownerId": "effect:ogre_magi_fireblast:damage:fireblast-single-impact",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ogre_magi_fireblast"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ogre_magi_fireblast:damage:fireblast-single-impact",
+      "legacyEffectId": "ogre_magi_fireblast:damage:fireblast-single-impact",
+      "order": 1,
+      "legacyAbilityId": "ogre_magi_fireblast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ogre_magi_fireblast:damage:fireblast-single-impact:range",
+        "value:effect:ogre_magi_fireblast:damage:fireblast-single-impact:duration",
+        "value:effect:ogre_magi_fireblast:damage:fireblast-single-impact:magnitude",
+        "value:effect:ogre_magi_fireblast:damage:fireblast-single-impact:mana",
+        "value:effect:ogre_magi_fireblast:damage:fireblast-single-impact:cooldown",
+        "value:effect:ogre_magi_fireblast:damage:fireblast-single-impact:delay",
+        "value:effect:ogre_magi_fireblast:damage:fireblast-single-impact:damageType"
+      ],
+      "activationId": "activation:84:ogre_magi_fireblast"
+    },
+    {
+      "effectId": "ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed",
+      "heroId": "84",
+      "abilityId": "ability:84:ogre_magi_fireblast",
+      "type": "modifier",
+      "subtype": "scepter-fireblast-cooldown-and-cast-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed:range",
+          "ownerId": "effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed:duration",
+          "ownerId": "effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed:magnitude",
+          "ownerId": "effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed:mana",
+          "ownerId": "effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed:cooldown",
+          "ownerId": "effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed:delay",
+          "ownerId": "effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ogre_magi_fireblast:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed",
+      "legacyEffectId": "ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed",
+      "order": 2,
+      "legacyAbilityId": "ogre_magi_fireblast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed:range",
+        "value:effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed:duration",
+        "value:effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed:magnitude",
+        "value:effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed:mana",
+        "value:effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed:cooldown",
+        "value:effect:ogre_magi_fireblast:modifier:scepter-fireblast-cooldown-and-cast-speed:delay"
+      ],
+      "activationId": "activation:84:ogre_magi_fireblast"
+    },
+    {
+      "effectId": "ogre_magi_ignite:damage:ignite-burn-rate",
+      "heroId": "84",
+      "abilityId": "ability:84:ogre_magi_ignite",
+      "type": "damage",
+      "subtype": "ignite-burn-rate",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ogre_magi_ignite:damage:ignite-burn-rate:range",
+          "ownerId": "effect:ogre_magi_ignite:damage:ignite-burn-rate",
+          "field": "range",
+          "state": "known",
+          "value": [
+            700,
+            800,
+            900,
+            1000
+          ]
+        },
+        "duration": {
+          "id": "value:effect:ogre_magi_ignite:damage:ignite-burn-rate:duration",
+          "ownerId": "effect:ogre_magi_ignite:damage:ignite-burn-rate",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:ogre_magi_ignite:damage:ignite-burn-rate:magnitude",
+          "ownerId": "effect:ogre_magi_ignite:damage:ignite-burn-rate",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            20,
+            30,
+            40,
+            50
+          ]
+        },
+        "mana": {
+          "id": "value:effect:ogre_magi_ignite:damage:ignite-burn-rate:mana",
+          "ownerId": "effect:ogre_magi_ignite:damage:ignite-burn-rate",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ogre_magi_ignite:damage:ignite-burn-rate:cooldown",
+          "ownerId": "effect:ogre_magi_ignite:damage:ignite-burn-rate",
+          "field": "cooldown",
+          "state": "known",
+          "value": 17
+        },
+        "delay": {
+          "id": "value:effect:ogre_magi_ignite:damage:ignite-burn-rate:delay",
+          "ownerId": "effect:ogre_magi_ignite:damage:ignite-burn-rate",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ogre_magi_ignite:damage:ignite-burn-rate:damageType",
+          "ownerId": "effect:ogre_magi_ignite:damage:ignite-burn-rate",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ogre_magi_ignite"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ogre_magi_ignite:damage:ignite-burn-rate",
+      "legacyEffectId": "ogre_magi_ignite:damage:ignite-burn-rate",
+      "order": 3,
+      "legacyAbilityId": "ogre_magi_ignite",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ogre_magi_ignite:damage:ignite-burn-rate:range",
+        "value:effect:ogre_magi_ignite:damage:ignite-burn-rate:duration",
+        "value:effect:ogre_magi_ignite:damage:ignite-burn-rate:magnitude",
+        "value:effect:ogre_magi_ignite:damage:ignite-burn-rate:mana",
+        "value:effect:ogre_magi_ignite:damage:ignite-burn-rate:cooldown",
+        "value:effect:ogre_magi_ignite:damage:ignite-burn-rate:delay",
+        "value:effect:ogre_magi_ignite:damage:ignite-burn-rate:damageType"
+      ],
+      "activationId": "activation:84:ogre_magi_ignite"
+    },
+    {
+      "effectId": "ogre_magi_ignite:slow:ignite-movement-slow",
+      "heroId": "84",
+      "abilityId": "ability:84:ogre_magi_ignite",
+      "type": "slow",
+      "subtype": "ignite-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ogre_magi_ignite:slow:ignite-movement-slow:range",
+          "ownerId": "effect:ogre_magi_ignite:slow:ignite-movement-slow",
+          "field": "range",
+          "state": "known",
+          "value": [
+            700,
+            800,
+            900,
+            1000
+          ]
+        },
+        "duration": {
+          "id": "value:effect:ogre_magi_ignite:slow:ignite-movement-slow:duration",
+          "ownerId": "effect:ogre_magi_ignite:slow:ignite-movement-slow",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:ogre_magi_ignite:slow:ignite-movement-slow:magnitude",
+          "ownerId": "effect:ogre_magi_ignite:slow:ignite-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": -25
+        },
+        "mana": {
+          "id": "value:effect:ogre_magi_ignite:slow:ignite-movement-slow:mana",
+          "ownerId": "effect:ogre_magi_ignite:slow:ignite-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ogre_magi_ignite:slow:ignite-movement-slow:cooldown",
+          "ownerId": "effect:ogre_magi_ignite:slow:ignite-movement-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": 17
+        },
+        "delay": {
+          "id": "value:effect:ogre_magi_ignite:slow:ignite-movement-slow:delay",
+          "ownerId": "effect:ogre_magi_ignite:slow:ignite-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "ogre_magi_ignite"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ogre_magi_ignite:slow:ignite-movement-slow",
+      "legacyEffectId": "ogre_magi_ignite:slow:ignite-movement-slow",
+      "order": 4,
+      "legacyAbilityId": "ogre_magi_ignite",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ogre_magi_ignite:slow:ignite-movement-slow:range",
+        "value:effect:ogre_magi_ignite:slow:ignite-movement-slow:duration",
+        "value:effect:ogre_magi_ignite:slow:ignite-movement-slow:magnitude",
+        "value:effect:ogre_magi_ignite:slow:ignite-movement-slow:mana",
+        "value:effect:ogre_magi_ignite:slow:ignite-movement-slow:cooldown",
+        "value:effect:ogre_magi_ignite:slow:ignite-movement-slow:delay"
+      ],
+      "activationId": "activation:84:ogre_magi_ignite"
+    },
+    {
+      "effectId": "ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement",
+      "heroId": "84",
+      "abilityId": "ability:84:ogre_magi_bloodlust",
+      "type": "modifier",
+      "subtype": "bloodlust-allied-attack-and-movement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement:range",
+          "ownerId": "effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement",
+          "field": "range",
+          "state": "known",
+          "value": 650
+        },
+        "duration": {
+          "id": "value:effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement:duration",
+          "ownerId": "effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement",
+          "field": "duration",
+          "state": "known",
+          "value": 30
+        },
+        "magnitude": {
+          "id": "value:effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement:magnitude",
+          "ownerId": "effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement:mana",
+          "ownerId": "effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            40,
+            50,
+            60,
+            70
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement:cooldown",
+          "ownerId": "effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            18,
+            16,
+            14
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement:delay",
+          "ownerId": "effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ogre_magi_bloodlust"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement",
+      "legacyEffectId": "ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement",
+      "order": 5,
+      "legacyAbilityId": "ogre_magi_bloodlust",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement:range",
+        "value:effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement:duration",
+        "value:effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement:magnitude",
+        "value:effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement:mana",
+        "value:effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement:cooldown",
+        "value:effect:ogre_magi_bloodlust:modifier:bloodlust-allied-attack-and-movement:delay"
+      ],
+      "activationId": "activation:84:ogre_magi_bloodlust"
+    },
+    {
+      "effectId": "ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun",
+      "heroId": "84",
+      "abilityId": "ability:84:ogre_magi_unrefined_fireblast",
+      "type": "control",
+      "subtype": "scepter-unrefined-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun:range",
+          "ownerId": "effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun",
+          "field": "range",
+          "state": "known",
+          "value": 525
+        },
+        "duration": {
+          "id": "value:effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun:duration",
+          "ownerId": "effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun",
+          "field": "duration",
+          "state": "known",
+          "value": 1.2
+        },
+        "magnitude": {
+          "id": "value:effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun:magnitude",
+          "ownerId": "effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun:mana",
+          "ownerId": "effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "The retained declaration requires additional expression or branch context."
+        },
+        "cooldown": {
+          "id": "value:effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun:cooldown",
+          "ownerId": "effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": 7
+        },
+        "delay": {
+          "id": "value:effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun:delay",
+          "ownerId": "effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "unrefinedCurrentManaCostAffordable"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "ogre_magi_unrefined_fireblast"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun",
+      "legacyEffectId": "ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun",
+      "order": 6,
+      "legacyAbilityId": "ogre_magi_unrefined_fireblast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun:0"
+      ],
+      "valueIds": [
+        "value:effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun:range",
+        "value:effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun:duration",
+        "value:effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun:magnitude",
+        "value:effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun:mana",
+        "value:effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun:cooldown",
+        "value:effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun:delay"
+      ],
+      "activationId": "activation:84:ogre_magi_unrefined_fireblast"
+    },
+    {
+      "effectId": "ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage",
+      "heroId": "84",
+      "abilityId": "ability:84:ogre_magi_unrefined_fireblast",
+      "type": "damage",
+      "subtype": "scepter-unrefined-strength-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage:range",
+          "ownerId": "effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage",
+          "field": "range",
+          "state": "known",
+          "value": 525
+        },
+        "duration": {
+          "id": "value:effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage:duration",
+          "ownerId": "effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage:magnitude",
+          "ownerId": "effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage:mana",
+          "ownerId": "effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "The retained declaration requires additional expression or branch context."
+        },
+        "cooldown": {
+          "id": "value:effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage:cooldown",
+          "ownerId": "effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": 7
+        },
+        "delay": {
+          "id": "value:effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage:delay",
+          "ownerId": "effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage:damageType",
+          "ownerId": "effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "unrefinedCurrentManaCostAffordable"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ogre_magi_unrefined_fireblast"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage",
+      "legacyEffectId": "ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage",
+      "order": 7,
+      "legacyAbilityId": "ogre_magi_unrefined_fireblast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage:range",
+        "value:effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage:duration",
+        "value:effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage:magnitude",
+        "value:effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage:mana",
+        "value:effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage:cooldown",
+        "value:effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage:delay",
+        "value:effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage:damageType"
+      ],
+      "activationId": "activation:84:ogre_magi_unrefined_fireblast"
+    },
+    {
+      "effectId": "ogre_magi_smash:save:shard-fireshield-enemy-attack-protection",
+      "heroId": "84",
+      "abilityId": "ability:84:ogre_magi_smash",
+      "type": "save",
+      "subtype": "shard-fireshield-enemy-attack-protection",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection:range",
+          "ownerId": "effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection:duration",
+          "ownerId": "effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection",
+          "field": "duration",
+          "state": "known",
+          "value": 25
+        },
+        "magnitude": {
+          "id": "value:effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection:magnitude",
+          "ownerId": "effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection:mana",
+          "ownerId": "effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection:cooldown",
+          "ownerId": "effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection",
+          "field": "cooldown",
+          "state": "known",
+          "value": 15
+        },
+        "delay": {
+          "id": "value:effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection:delay",
+          "ownerId": "effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "incomingEnemyHeroAttack",
+          "fireshieldChargesRemain"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ogre_magi_smash"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection",
+      "legacyEffectId": "ogre_magi_smash:save:shard-fireshield-enemy-attack-protection",
+      "order": 8,
+      "legacyAbilityId": "ogre_magi_smash",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection:0",
+        "condition:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection:1"
+      ],
+      "valueIds": [
+        "value:effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection:range",
+        "value:effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection:duration",
+        "value:effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection:magnitude",
+        "value:effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection:mana",
+        "value:effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection:cooldown",
+        "value:effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection:delay"
+      ],
+      "activationId": "activation:84:ogre_magi_smash"
+    },
+    {
+      "effectId": "ogre_magi_smash:damage:shard-fireshield-retaliation",
+      "heroId": "84",
+      "abilityId": "ability:84:ogre_magi_smash",
+      "type": "damage",
+      "subtype": "shard-fireshield-retaliation",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ogre_magi_smash:damage:shard-fireshield-retaliation:range",
+          "ownerId": "effect:ogre_magi_smash:damage:shard-fireshield-retaliation",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ogre_magi_smash:damage:shard-fireshield-retaliation:duration",
+          "ownerId": "effect:ogre_magi_smash:damage:shard-fireshield-retaliation",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ogre_magi_smash:damage:shard-fireshield-retaliation:magnitude",
+          "ownerId": "effect:ogre_magi_smash:damage:shard-fireshield-retaliation",
+          "field": "magnitude",
+          "state": "known",
+          "value": 160
+        },
+        "mana": {
+          "id": "value:effect:ogre_magi_smash:damage:shard-fireshield-retaliation:mana",
+          "ownerId": "effect:ogre_magi_smash:damage:shard-fireshield-retaliation",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ogre_magi_smash:damage:shard-fireshield-retaliation:cooldown",
+          "ownerId": "effect:ogre_magi_smash:damage:shard-fireshield-retaliation",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ogre_magi_smash:damage:shard-fireshield-retaliation:delay",
+          "ownerId": "effect:ogre_magi_smash:damage:shard-fireshield-retaliation",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ogre_magi_smash:damage:shard-fireshield-retaliation:damageType",
+          "ownerId": "effect:ogre_magi_smash:damage:shard-fireshield-retaliation",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "fireshieldEnemyAttackTriggersRetaliation"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ogre_magi_smash:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ogre_magi_smash:damage:shard-fireshield-retaliation",
+      "legacyEffectId": "ogre_magi_smash:damage:shard-fireshield-retaliation",
+      "order": 9,
+      "legacyAbilityId": "ogre_magi_smash",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ogre_magi_smash:damage:shard-fireshield-retaliation:0"
+      ],
+      "valueIds": [
+        "value:effect:ogre_magi_smash:damage:shard-fireshield-retaliation:range",
+        "value:effect:ogre_magi_smash:damage:shard-fireshield-retaliation:duration",
+        "value:effect:ogre_magi_smash:damage:shard-fireshield-retaliation:magnitude",
+        "value:effect:ogre_magi_smash:damage:shard-fireshield-retaliation:mana",
+        "value:effect:ogre_magi_smash:damage:shard-fireshield-retaliation:cooldown",
+        "value:effect:ogre_magi_smash:damage:shard-fireshield-retaliation:delay",
+        "value:effect:ogre_magi_smash:damage:shard-fireshield-retaliation:damageType"
+      ],
+      "activationId": "activation:84:ogre_magi_smash"
+    },
+    {
+      "effectId": "ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling",
+      "heroId": "84",
+      "abilityId": "ability:84:ogre_magi_dumb_luck",
+      "type": "modifier",
+      "subtype": "zero-intelligence-strength-mana-scaling",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling:range",
+          "ownerId": "effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling:duration",
+          "ownerId": "effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling:magnitude",
+          "ownerId": "effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling:mana",
+          "ownerId": "effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling:cooldown",
+          "ownerId": "effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling:delay",
+          "ownerId": "effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ogre_magi_dumb_luck:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling",
+      "legacyEffectId": "ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling",
+      "order": 10,
+      "legacyAbilityId": "ogre_magi_dumb_luck",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling:range",
+        "value:effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling:duration",
+        "value:effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling:magnitude",
+        "value:effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling:mana",
+        "value:effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling:cooldown",
+        "value:effect:ogre_magi_dumb_luck:modifier:zero-intelligence-strength-mana-scaling:delay"
+      ],
+      "activationId": "activation:84:ogre_magi_dumb_luck"
+    },
+    {
+      "effectId": "ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast",
+      "heroId": "84",
+      "abilityId": "ability:84:ogre_magi_multicast",
+      "type": "modifier",
+      "subtype": "probabilistic-targeted-spell-and-item-multicast",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast:range",
+          "ownerId": "effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast:duration",
+          "ownerId": "effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast:magnitude",
+          "ownerId": "effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast:mana",
+          "ownerId": "effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast:cooldown",
+          "ownerId": "effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast:delay",
+          "ownerId": "effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ogre_magi_multicast:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast",
+      "legacyEffectId": "ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast",
+      "order": 11,
+      "legacyAbilityId": "ogre_magi_multicast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast:range",
+        "value:effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast:duration",
+        "value:effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast:magnitude",
+        "value:effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast:mana",
+        "value:effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast:cooldown",
+        "value:effect:ogre_magi_multicast:modifier:probabilistic-targeted-spell-and-item-multicast:delay"
+      ],
+      "activationId": "activation:84:ogre_magi_multicast"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun:0",
+      "ownerId": "effect:ogre_magi_unrefined_fireblast:control:scepter-unrefined-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "unrefinedCurrentManaCostAffordable"
+      }
+    },
+    {
+      "id": "condition:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage:0",
+      "ownerId": "effect:ogre_magi_unrefined_fireblast:damage:scepter-unrefined-strength-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "unrefinedCurrentManaCostAffordable"
+      }
+    },
+    {
+      "id": "condition:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection:0",
+      "ownerId": "effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "incomingEnemyHeroAttack"
+      }
+    },
+    {
+      "id": "condition:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection:1",
+      "ownerId": "effect:ogre_magi_smash:save:shard-fireshield-enemy-attack-protection",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "fireshieldChargesRemain"
+      }
+    },
+    {
+      "id": "condition:ogre_magi_smash:damage:shard-fireshield-retaliation:0",
+      "ownerId": "effect:ogre_magi_smash:damage:shard-fireshield-retaliation",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "fireshieldEnemyAttackTriggersRetaliation"
+      }
+    }
+  ]
+}

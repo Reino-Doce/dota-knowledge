@@ -1,0 +1,1989 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "slark_dark_pact:damage:delayed-pulse-damage",
+      "heroId": "93",
+      "abilityId": "ability:93:slark_dark_pact",
+      "type": "damage",
+      "subtype": "delayed-pulse-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slark_dark_pact:damage:delayed-pulse-damage:range",
+          "ownerId": "effect:slark_dark_pact:damage:delayed-pulse-damage",
+          "field": "range",
+          "state": "known",
+          "value": 325
+        },
+        "duration": {
+          "id": "value:effect:slark_dark_pact:damage:delayed-pulse-damage:duration",
+          "ownerId": "effect:slark_dark_pact:damage:delayed-pulse-damage",
+          "field": "duration",
+          "state": "known",
+          "value": 1
+        },
+        "magnitude": {
+          "id": "value:effect:slark_dark_pact:damage:delayed-pulse-damage:magnitude",
+          "ownerId": "effect:slark_dark_pact:damage:delayed-pulse-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            75,
+            150,
+            225,
+            300
+          ]
+        },
+        "mana": {
+          "id": "value:effect:slark_dark_pact:damage:delayed-pulse-damage:mana",
+          "ownerId": "effect:slark_dark_pact:damage:delayed-pulse-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 65
+        },
+        "cooldown": {
+          "id": "value:effect:slark_dark_pact:damage:delayed-pulse-damage:cooldown",
+          "ownerId": "effect:slark_dark_pact:damage:delayed-pulse-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            9,
+            8,
+            7,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:slark_dark_pact:damage:delayed-pulse-damage:delay",
+          "ownerId": "effect:slark_dark_pact:damage:delayed-pulse-damage",
+          "field": "delay",
+          "state": "known",
+          "value": 1.5
+        },
+        "damageType": {
+          "id": "value:effect:slark_dark_pact:damage:delayed-pulse-damage:damageType",
+          "ownerId": "effect:slark_dark_pact:damage:delayed-pulse-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "darkPactPulsesSurvive"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slark_dark_pact"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:slark_dark_pact:damage:delayed-pulse-damage",
+      "legacyEffectId": "slark_dark_pact:damage:delayed-pulse-damage",
+      "order": 0,
+      "legacyAbilityId": "slark_dark_pact",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slark_dark_pact:damage:delayed-pulse-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:slark_dark_pact:damage:delayed-pulse-damage:range",
+        "value:effect:slark_dark_pact:damage:delayed-pulse-damage:duration",
+        "value:effect:slark_dark_pact:damage:delayed-pulse-damage:magnitude",
+        "value:effect:slark_dark_pact:damage:delayed-pulse-damage:mana",
+        "value:effect:slark_dark_pact:damage:delayed-pulse-damage:cooldown",
+        "value:effect:slark_dark_pact:damage:delayed-pulse-damage:delay",
+        "value:effect:slark_dark_pact:damage:delayed-pulse-damage:damageType"
+      ],
+      "activationId": "activation:93:slark_dark_pact"
+    },
+    {
+      "effectId": "slark_dark_pact:dispel:delayed-repeated-strong-self-dispel",
+      "heroId": "93",
+      "abilityId": "ability:93:slark_dark_pact",
+      "type": "dispel",
+      "subtype": "delayed-repeated-strong-self-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel:range",
+          "ownerId": "effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel:duration",
+          "ownerId": "effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel",
+          "field": "duration",
+          "state": "known",
+          "value": 1
+        },
+        "magnitude": {
+          "id": "value:effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel:magnitude",
+          "ownerId": "effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel:mana",
+          "ownerId": "effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": 65
+        },
+        "cooldown": {
+          "id": "value:effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel:cooldown",
+          "ownerId": "effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            9,
+            8,
+            7,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel:delay",
+          "ownerId": "effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel",
+          "field": "delay",
+          "state": "known",
+          "value": 1.5
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "darkPactPulsesSurvive"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "strong"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "self-debuffs"
+        }
+      },
+      "relationships": {
+        "resourceId": "slark_dark_pact"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel",
+      "legacyEffectId": "slark_dark_pact:dispel:delayed-repeated-strong-self-dispel",
+      "order": 1,
+      "legacyAbilityId": "slark_dark_pact",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel:0"
+      ],
+      "valueIds": [
+        "value:effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel:range",
+        "value:effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel:duration",
+        "value:effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel:magnitude",
+        "value:effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel:mana",
+        "value:effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel:cooldown",
+        "value:effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel:delay"
+      ],
+      "activationId": "activation:93:slark_dark_pact"
+    },
+    {
+      "effectId": "slark_pounce:mobility:forward-tree-clearing-leap",
+      "heroId": "93",
+      "abilityId": "ability:93:slark_pounce",
+      "type": "mobility",
+      "subtype": "forward-tree-clearing-leap",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slark_pounce:mobility:forward-tree-clearing-leap:range",
+          "ownerId": "effect:slark_pounce:mobility:forward-tree-clearing-leap",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:slark_pounce:mobility:forward-tree-clearing-leap:duration",
+          "ownerId": "effect:slark_pounce:mobility:forward-tree-clearing-leap",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slark_pounce:mobility:forward-tree-clearing-leap:magnitude",
+          "ownerId": "effect:slark_pounce:mobility:forward-tree-clearing-leap",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slark_pounce:mobility:forward-tree-clearing-leap:mana",
+          "ownerId": "effect:slark_pounce:mobility:forward-tree-clearing-leap",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:slark_pounce:mobility:forward-tree-clearing-leap:cooldown",
+          "ownerId": "effect:slark_pounce:mobility:forward-tree-clearing-leap",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            20,
+            16,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:slark_pounce:mobility:forward-tree-clearing-leap:delay",
+          "ownerId": "effect:slark_pounce:mobility:forward-tree-clearing-leap",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slark_pounce"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:slark_pounce:mobility:forward-tree-clearing-leap",
+      "legacyEffectId": "slark_pounce:mobility:forward-tree-clearing-leap",
+      "order": 2,
+      "legacyAbilityId": "slark_pounce",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:slark_pounce:mobility:forward-tree-clearing-leap:range",
+        "value:effect:slark_pounce:mobility:forward-tree-clearing-leap:duration",
+        "value:effect:slark_pounce:mobility:forward-tree-clearing-leap:magnitude",
+        "value:effect:slark_pounce:mobility:forward-tree-clearing-leap:mana",
+        "value:effect:slark_pounce:mobility:forward-tree-clearing-leap:cooldown",
+        "value:effect:slark_pounce:mobility:forward-tree-clearing-leap:delay"
+      ],
+      "activationId": "activation:93:slark_pounce"
+    },
+    {
+      "effectId": "slark_pounce:modifier:connected-target-leash-and-essence-stacks",
+      "heroId": "93",
+      "abilityId": "ability:93:slark_pounce",
+      "type": "modifier",
+      "subtype": "connected-target-leash-and-essence-stacks",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks:range",
+          "ownerId": "effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks:duration",
+          "ownerId": "effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2.5,
+            2.75,
+            3,
+            3.25
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks:magnitude",
+          "ownerId": "effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks:mana",
+          "ownerId": "effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks:cooldown",
+          "ownerId": "effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            20,
+            16,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks:delay",
+          "ownerId": "effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "pounceConnectsEnemyHero"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slark_pounce"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks",
+      "legacyEffectId": "slark_pounce:modifier:connected-target-leash-and-essence-stacks",
+      "order": 3,
+      "legacyAbilityId": "slark_pounce",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slark_pounce:modifier:connected-target-leash-and-essence-stacks:0"
+      ],
+      "valueIds": [
+        "value:effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks:range",
+        "value:effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks:duration",
+        "value:effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks:magnitude",
+        "value:effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks:mana",
+        "value:effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks:cooldown",
+        "value:effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks:delay"
+      ],
+      "activationId": "activation:93:slark_pounce"
+    },
+    {
+      "effectId": "slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade",
+      "heroId": "93",
+      "abilityId": "ability:93:slark_pounce",
+      "type": "modifier",
+      "subtype": "scepter-pounce-charge-and-range-upgrade",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade:range",
+          "ownerId": "effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade:duration",
+          "ownerId": "effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade:magnitude",
+          "ownerId": "effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade:mana",
+          "ownerId": "effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade:cooldown",
+          "ownerId": "effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            20,
+            16,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade:delay",
+          "ownerId": "effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slark_pounce"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade",
+      "legacyEffectId": "slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade",
+      "order": 4,
+      "legacyAbilityId": "slark_pounce",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade:range",
+        "value:effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade:duration",
+        "value:effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade:magnitude",
+        "value:effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade:mana",
+        "value:effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade:cooldown",
+        "value:effect:slark_pounce:modifier:scepter-pounce-charge-and-range-upgrade:delay"
+      ],
+      "activationId": "activation:93:slark_pounce"
+    },
+    {
+      "effectId": "slark_saltwater_shiv:slow:stacking-shiv-speed-steal",
+      "heroId": "93",
+      "abilityId": "ability:93:slark_saltwater_shiv",
+      "type": "slow",
+      "subtype": "stacking-shiv-speed-steal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal:range",
+          "ownerId": "effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal",
+          "field": "range",
+          "state": "known",
+          "value": 150
+        },
+        "duration": {
+          "id": "value:effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal:duration",
+          "ownerId": "effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal",
+          "field": "duration",
+          "state": "known",
+          "value": 12
+        },
+        "magnitude": {
+          "id": "value:effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal:magnitude",
+          "ownerId": "effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            4,
+            8,
+            12,
+            16
+          ]
+        },
+        "mana": {
+          "id": "value:effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal:mana",
+          "ownerId": "effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal:cooldown",
+          "ownerId": "effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            12,
+            10.5,
+            9,
+            7.5
+          ]
+        },
+        "delay": {
+          "id": "value:effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal:delay",
+          "ownerId": "effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "saltwaterShivAttackHits"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "slark_saltwater_shiv"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal",
+      "legacyEffectId": "slark_saltwater_shiv:slow:stacking-shiv-speed-steal",
+      "order": 5,
+      "legacyAbilityId": "slark_saltwater_shiv",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slark_saltwater_shiv:slow:stacking-shiv-speed-steal:0"
+      ],
+      "valueIds": [
+        "value:effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal:range",
+        "value:effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal:duration",
+        "value:effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal:magnitude",
+        "value:effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal:mana",
+        "value:effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal:cooldown",
+        "value:effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal:delay"
+      ],
+      "activationId": "activation:93:slark_saltwater_shiv"
+    },
+    {
+      "effectId": "slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal",
+      "heroId": "93",
+      "abilityId": "ability:93:slark_saltwater_shiv",
+      "type": "modifier",
+      "subtype": "shiv-restoration-and-regeneration-steal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal:range",
+          "ownerId": "effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal",
+          "field": "range",
+          "state": "known",
+          "value": 150
+        },
+        "duration": {
+          "id": "value:effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal:duration",
+          "ownerId": "effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal",
+          "field": "duration",
+          "state": "known",
+          "value": 12
+        },
+        "magnitude": {
+          "id": "value:effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal:magnitude",
+          "ownerId": "effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal:mana",
+          "ownerId": "effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal:cooldown",
+          "ownerId": "effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            12,
+            10.5,
+            9,
+            7.5
+          ]
+        },
+        "delay": {
+          "id": "value:effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal:delay",
+          "ownerId": "effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "saltwaterShivAttackHits"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing",
+            "regeneration"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "slark_saltwater_shiv"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal",
+      "legacyEffectId": "slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal",
+      "order": 6,
+      "legacyAbilityId": "slark_saltwater_shiv",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal:0"
+      ],
+      "valueIds": [
+        "value:effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal:range",
+        "value:effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal:duration",
+        "value:effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal:magnitude",
+        "value:effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal:mana",
+        "value:effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal:cooldown",
+        "value:effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal:delay"
+      ],
+      "activationId": "activation:93:slark_saltwater_shiv"
+    },
+    {
+      "effectId": "slark_depth_shroud:save:shard-allied-shadow-concealment",
+      "heroId": "93",
+      "abilityId": "ability:93:slark_depth_shroud",
+      "type": "save",
+      "subtype": "shard-allied-shadow-concealment",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slark_depth_shroud:save:shard-allied-shadow-concealment:range",
+          "ownerId": "effect:slark_depth_shroud:save:shard-allied-shadow-concealment",
+          "field": "range",
+          "state": "known",
+          "value": 400
+        },
+        "duration": {
+          "id": "value:effect:slark_depth_shroud:save:shard-allied-shadow-concealment:duration",
+          "ownerId": "effect:slark_depth_shroud:save:shard-allied-shadow-concealment",
+          "field": "duration",
+          "state": "known",
+          "value": 2
+        },
+        "magnitude": {
+          "id": "value:effect:slark_depth_shroud:save:shard-allied-shadow-concealment:magnitude",
+          "ownerId": "effect:slark_depth_shroud:save:shard-allied-shadow-concealment",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slark_depth_shroud:save:shard-allied-shadow-concealment:mana",
+          "ownerId": "effect:slark_depth_shroud:save:shard-allied-shadow-concealment",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:slark_depth_shroud:save:shard-allied-shadow-concealment:cooldown",
+          "ownerId": "effect:slark_depth_shroud:save:shard-allied-shadow-concealment",
+          "field": "cooldown",
+          "state": "known",
+          "value": 75
+        },
+        "delay": {
+          "id": "value:effect:slark_depth_shroud:save:shard-allied-shadow-concealment:delay",
+          "ownerId": "effect:slark_depth_shroud:save:shard-allied-shadow-concealment",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "slark_shadow_dance"
+        ],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "allyInsideDepthShroud"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slark_depth_shroud"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:slark_depth_shroud:save:shard-allied-shadow-concealment",
+      "legacyEffectId": "slark_depth_shroud:save:shard-allied-shadow-concealment",
+      "order": 7,
+      "legacyAbilityId": "slark_depth_shroud",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slark_depth_shroud:save:shard-allied-shadow-concealment:0"
+      ],
+      "valueIds": [
+        "value:effect:slark_depth_shroud:save:shard-allied-shadow-concealment:range",
+        "value:effect:slark_depth_shroud:save:shard-allied-shadow-concealment:duration",
+        "value:effect:slark_depth_shroud:save:shard-allied-shadow-concealment:magnitude",
+        "value:effect:slark_depth_shroud:save:shard-allied-shadow-concealment:mana",
+        "value:effect:slark_depth_shroud:save:shard-allied-shadow-concealment:cooldown",
+        "value:effect:slark_depth_shroud:save:shard-allied-shadow-concealment:delay"
+      ],
+      "activationId": "activation:93:slark_depth_shroud"
+    },
+    {
+      "effectId": "slark_essence_shift:passive:new-temporary-attribute-steal",
+      "heroId": "93",
+      "abilityId": "ability:93:slark_essence_shift",
+      "type": "passive",
+      "subtype": "new-temporary-attribute-steal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slark_essence_shift:passive:new-temporary-attribute-steal:range",
+          "ownerId": "effect:slark_essence_shift:passive:new-temporary-attribute-steal",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slark_essence_shift:passive:new-temporary-attribute-steal:duration",
+          "ownerId": "effect:slark_essence_shift:passive:new-temporary-attribute-steal",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slark_essence_shift:passive:new-temporary-attribute-steal:magnitude",
+          "ownerId": "effect:slark_essence_shift:passive:new-temporary-attribute-steal",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slark_essence_shift:passive:new-temporary-attribute-steal:mana",
+          "ownerId": "effect:slark_essence_shift:passive:new-temporary-attribute-steal",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:slark_essence_shift:passive:new-temporary-attribute-steal:cooldown",
+          "ownerId": "effect:slark_essence_shift:passive:new-temporary-attribute-steal",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:slark_essence_shift:passive:new-temporary-attribute-steal:delay",
+          "ownerId": "effect:slark_essence_shift:passive:new-temporary-attribute-steal",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "slarkAttackHitsEnemyHero"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slark_essence_shift:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:slark_essence_shift:passive:new-temporary-attribute-steal",
+      "legacyEffectId": "slark_essence_shift:passive:new-temporary-attribute-steal",
+      "order": 8,
+      "legacyAbilityId": "slark_essence_shift",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slark_essence_shift:passive:new-temporary-attribute-steal:0"
+      ],
+      "valueIds": [
+        "value:effect:slark_essence_shift:passive:new-temporary-attribute-steal:range",
+        "value:effect:slark_essence_shift:passive:new-temporary-attribute-steal:duration",
+        "value:effect:slark_essence_shift:passive:new-temporary-attribute-steal:magnitude",
+        "value:effect:slark_essence_shift:passive:new-temporary-attribute-steal:mana",
+        "value:effect:slark_essence_shift:passive:new-temporary-attribute-steal:cooldown",
+        "value:effect:slark_essence_shift:passive:new-temporary-attribute-steal:delay"
+      ],
+      "activationId": "activation:93:slark_essence_shift"
+    },
+    {
+      "effectId": "slark_essence_shift:modifier:existing-essence-shift-stacks",
+      "heroId": "93",
+      "abilityId": "ability:93:slark_essence_shift",
+      "type": "modifier",
+      "subtype": "existing-essence-shift-stacks",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slark_essence_shift:modifier:existing-essence-shift-stacks:range",
+          "ownerId": "effect:slark_essence_shift:modifier:existing-essence-shift-stacks",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slark_essence_shift:modifier:existing-essence-shift-stacks:duration",
+          "ownerId": "effect:slark_essence_shift:modifier:existing-essence-shift-stacks",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slark_essence_shift:modifier:existing-essence-shift-stacks:magnitude",
+          "ownerId": "effect:slark_essence_shift:modifier:existing-essence-shift-stacks",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slark_essence_shift:modifier:existing-essence-shift-stacks:mana",
+          "ownerId": "effect:slark_essence_shift:modifier:existing-essence-shift-stacks",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:slark_essence_shift:modifier:existing-essence-shift-stacks:cooldown",
+          "ownerId": "effect:slark_essence_shift:modifier:existing-essence-shift-stacks",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:slark_essence_shift:modifier:existing-essence-shift-stacks:delay",
+          "ownerId": "effect:slark_essence_shift:modifier:existing-essence-shift-stacks",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "slarkExistingEssenceStacks"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slark_essence_shift:passive"
+      },
+      "vulnerability": {
+        "breakable": false
+      },
+      "exceptions": [],
+      "id": "effect:slark_essence_shift:modifier:existing-essence-shift-stacks",
+      "legacyEffectId": "slark_essence_shift:modifier:existing-essence-shift-stacks",
+      "order": 9,
+      "legacyAbilityId": "slark_essence_shift",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slark_essence_shift:modifier:existing-essence-shift-stacks:0"
+      ],
+      "valueIds": [
+        "value:effect:slark_essence_shift:modifier:existing-essence-shift-stacks:range",
+        "value:effect:slark_essence_shift:modifier:existing-essence-shift-stacks:duration",
+        "value:effect:slark_essence_shift:modifier:existing-essence-shift-stacks:magnitude",
+        "value:effect:slark_essence_shift:modifier:existing-essence-shift-stacks:mana",
+        "value:effect:slark_essence_shift:modifier:existing-essence-shift-stacks:cooldown",
+        "value:effect:slark_essence_shift:modifier:existing-essence-shift-stacks:delay"
+      ],
+      "activationId": "activation:93:slark_essence_shift"
+    },
+    {
+      "effectId": "slark_essence_shift:modifier:permanent-nearby-death-agility",
+      "heroId": "93",
+      "abilityId": "ability:93:slark_essence_shift",
+      "type": "modifier",
+      "subtype": "permanent-nearby-death-agility",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slark_essence_shift:modifier:permanent-nearby-death-agility:range",
+          "ownerId": "effect:slark_essence_shift:modifier:permanent-nearby-death-agility",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slark_essence_shift:modifier:permanent-nearby-death-agility:duration",
+          "ownerId": "effect:slark_essence_shift:modifier:permanent-nearby-death-agility",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slark_essence_shift:modifier:permanent-nearby-death-agility:magnitude",
+          "ownerId": "effect:slark_essence_shift:modifier:permanent-nearby-death-agility",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slark_essence_shift:modifier:permanent-nearby-death-agility:mana",
+          "ownerId": "effect:slark_essence_shift:modifier:permanent-nearby-death-agility",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:slark_essence_shift:modifier:permanent-nearby-death-agility:cooldown",
+          "ownerId": "effect:slark_essence_shift:modifier:permanent-nearby-death-agility",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:slark_essence_shift:modifier:permanent-nearby-death-agility:delay",
+          "ownerId": "effect:slark_essence_shift:modifier:permanent-nearby-death-agility",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "essenceShiftAffectedEnemyDiesNearby"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slark_essence_shift:passive"
+      },
+      "vulnerability": {
+        "breakable": false
+      },
+      "exceptions": [],
+      "id": "effect:slark_essence_shift:modifier:permanent-nearby-death-agility",
+      "legacyEffectId": "slark_essence_shift:modifier:permanent-nearby-death-agility",
+      "order": 10,
+      "legacyAbilityId": "slark_essence_shift",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slark_essence_shift:modifier:permanent-nearby-death-agility:0"
+      ],
+      "valueIds": [
+        "value:effect:slark_essence_shift:modifier:permanent-nearby-death-agility:range",
+        "value:effect:slark_essence_shift:modifier:permanent-nearby-death-agility:duration",
+        "value:effect:slark_essence_shift:modifier:permanent-nearby-death-agility:magnitude",
+        "value:effect:slark_essence_shift:modifier:permanent-nearby-death-agility:mana",
+        "value:effect:slark_essence_shift:modifier:permanent-nearby-death-agility:cooldown",
+        "value:effect:slark_essence_shift:modifier:permanent-nearby-death-agility:delay"
+      ],
+      "activationId": "activation:93:slark_essence_shift"
+    },
+    {
+      "effectId": "slark_shadow_dance:save:active-undetectable-shadow-cloud",
+      "heroId": "93",
+      "abilityId": "ability:93:slark_shadow_dance",
+      "type": "save",
+      "subtype": "active-undetectable-shadow-cloud",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slark_shadow_dance:save:active-undetectable-shadow-cloud:range",
+          "ownerId": "effect:slark_shadow_dance:save:active-undetectable-shadow-cloud",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slark_shadow_dance:save:active-undetectable-shadow-cloud:duration",
+          "ownerId": "effect:slark_shadow_dance:save:active-undetectable-shadow-cloud",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            4,
+            4.25,
+            4.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:slark_shadow_dance:save:active-undetectable-shadow-cloud:magnitude",
+          "ownerId": "effect:slark_shadow_dance:save:active-undetectable-shadow-cloud",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slark_shadow_dance:save:active-undetectable-shadow-cloud:mana",
+          "ownerId": "effect:slark_shadow_dance:save:active-undetectable-shadow-cloud",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:slark_shadow_dance:save:active-undetectable-shadow-cloud:cooldown",
+          "ownerId": "effect:slark_shadow_dance:save:active-undetectable-shadow-cloud",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            50,
+            40,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:slark_shadow_dance:save:active-undetectable-shadow-cloud:delay",
+          "ownerId": "effect:slark_shadow_dance:save:active-undetectable-shadow-cloud",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slark_shadow_dance"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:slark_shadow_dance:save:active-undetectable-shadow-cloud",
+      "legacyEffectId": "slark_shadow_dance:save:active-undetectable-shadow-cloud",
+      "order": 11,
+      "legacyAbilityId": "slark_shadow_dance",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:slark_shadow_dance:save:active-undetectable-shadow-cloud:range",
+        "value:effect:slark_shadow_dance:save:active-undetectable-shadow-cloud:duration",
+        "value:effect:slark_shadow_dance:save:active-undetectable-shadow-cloud:magnitude",
+        "value:effect:slark_shadow_dance:save:active-undetectable-shadow-cloud:mana",
+        "value:effect:slark_shadow_dance:save:active-undetectable-shadow-cloud:cooldown",
+        "value:effect:slark_shadow_dance:save:active-undetectable-shadow-cloud:delay"
+      ],
+      "activationId": "activation:93:slark_shadow_dance"
+    },
+    {
+      "effectId": "slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration",
+      "heroId": "93",
+      "abilityId": "ability:93:slark_shadow_dance",
+      "type": "heal",
+      "subtype": "unseen-and-neutral-ready-regeneration",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration:range",
+          "ownerId": "effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration:duration",
+          "ownerId": "effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration:magnitude",
+          "ownerId": "effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            60,
+            90,
+            120
+          ]
+        },
+        "mana": {
+          "id": "value:effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration:mana",
+          "ownerId": "effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration:cooldown",
+          "ownerId": "effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration:delay",
+          "ownerId": "effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "slarkUnseenByEnemyTeam",
+          "slarkNeutralDamagePenaltyExpired"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "regeneration"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "slark_shadow_dance:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration",
+      "legacyEffectId": "slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration",
+      "order": 12,
+      "legacyAbilityId": "slark_shadow_dance",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration:0",
+        "condition:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration:1"
+      ],
+      "valueIds": [
+        "value:effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration:range",
+        "value:effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration:duration",
+        "value:effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration:magnitude",
+        "value:effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration:mana",
+        "value:effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration:cooldown",
+        "value:effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration:delay"
+      ],
+      "activationId": "activation:93:slark_shadow_dance"
+    },
+    {
+      "effectId": "slark_shadow_dance:mobility:unseen-passive-speed",
+      "heroId": "93",
+      "abilityId": "ability:93:slark_shadow_dance",
+      "type": "mobility",
+      "subtype": "unseen-passive-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slark_shadow_dance:mobility:unseen-passive-speed:range",
+          "ownerId": "effect:slark_shadow_dance:mobility:unseen-passive-speed",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slark_shadow_dance:mobility:unseen-passive-speed:duration",
+          "ownerId": "effect:slark_shadow_dance:mobility:unseen-passive-speed",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slark_shadow_dance:mobility:unseen-passive-speed:magnitude",
+          "ownerId": "effect:slark_shadow_dance:mobility:unseen-passive-speed",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            20,
+            30,
+            40
+          ]
+        },
+        "mana": {
+          "id": "value:effect:slark_shadow_dance:mobility:unseen-passive-speed:mana",
+          "ownerId": "effect:slark_shadow_dance:mobility:unseen-passive-speed",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:slark_shadow_dance:mobility:unseen-passive-speed:cooldown",
+          "ownerId": "effect:slark_shadow_dance:mobility:unseen-passive-speed",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:slark_shadow_dance:mobility:unseen-passive-speed:delay",
+          "ownerId": "effect:slark_shadow_dance:mobility:unseen-passive-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "slarkUnseenByEnemyTeam",
+          "slarkNeutralDamagePenaltyExpired"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slark_shadow_dance:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:slark_shadow_dance:mobility:unseen-passive-speed",
+      "legacyEffectId": "slark_shadow_dance:mobility:unseen-passive-speed",
+      "order": 13,
+      "legacyAbilityId": "slark_shadow_dance",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slark_shadow_dance:mobility:unseen-passive-speed:0",
+        "condition:slark_shadow_dance:mobility:unseen-passive-speed:1"
+      ],
+      "valueIds": [
+        "value:effect:slark_shadow_dance:mobility:unseen-passive-speed:range",
+        "value:effect:slark_shadow_dance:mobility:unseen-passive-speed:duration",
+        "value:effect:slark_shadow_dance:mobility:unseen-passive-speed:magnitude",
+        "value:effect:slark_shadow_dance:mobility:unseen-passive-speed:mana",
+        "value:effect:slark_shadow_dance:mobility:unseen-passive-speed:cooldown",
+        "value:effect:slark_shadow_dance:mobility:unseen-passive-speed:delay"
+      ],
+      "activationId": "activation:93:slark_shadow_dance"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:slark_dark_pact:damage:delayed-pulse-damage:0",
+      "ownerId": "effect:slark_dark_pact:damage:delayed-pulse-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "darkPactPulsesSurvive"
+      }
+    },
+    {
+      "id": "condition:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel:0",
+      "ownerId": "effect:slark_dark_pact:dispel:delayed-repeated-strong-self-dispel",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "darkPactPulsesSurvive"
+      }
+    },
+    {
+      "id": "condition:slark_pounce:modifier:connected-target-leash-and-essence-stacks:0",
+      "ownerId": "effect:slark_pounce:modifier:connected-target-leash-and-essence-stacks",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "pounceConnectsEnemyHero"
+      }
+    },
+    {
+      "id": "condition:slark_saltwater_shiv:slow:stacking-shiv-speed-steal:0",
+      "ownerId": "effect:slark_saltwater_shiv:slow:stacking-shiv-speed-steal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "saltwaterShivAttackHits"
+      }
+    },
+    {
+      "id": "condition:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal:0",
+      "ownerId": "effect:slark_saltwater_shiv:modifier:shiv-restoration-and-regeneration-steal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "saltwaterShivAttackHits"
+      }
+    },
+    {
+      "id": "condition:slark_depth_shroud:save:shard-allied-shadow-concealment:0",
+      "ownerId": "effect:slark_depth_shroud:save:shard-allied-shadow-concealment",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyInsideDepthShroud"
+      }
+    },
+    {
+      "id": "condition:slark_essence_shift:passive:new-temporary-attribute-steal:0",
+      "ownerId": "effect:slark_essence_shift:passive:new-temporary-attribute-steal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "slarkAttackHitsEnemyHero"
+      }
+    },
+    {
+      "id": "condition:slark_essence_shift:modifier:existing-essence-shift-stacks:0",
+      "ownerId": "effect:slark_essence_shift:modifier:existing-essence-shift-stacks",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "slarkExistingEssenceStacks"
+      }
+    },
+    {
+      "id": "condition:slark_essence_shift:modifier:permanent-nearby-death-agility:0",
+      "ownerId": "effect:slark_essence_shift:modifier:permanent-nearby-death-agility",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "essenceShiftAffectedEnemyDiesNearby"
+      }
+    },
+    {
+      "id": "condition:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration:0",
+      "ownerId": "effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "slarkUnseenByEnemyTeam"
+      }
+    },
+    {
+      "id": "condition:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration:1",
+      "ownerId": "effect:slark_shadow_dance:heal:unseen-and-neutral-ready-regeneration",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "slarkNeutralDamagePenaltyExpired"
+      }
+    },
+    {
+      "id": "condition:slark_shadow_dance:mobility:unseen-passive-speed:0",
+      "ownerId": "effect:slark_shadow_dance:mobility:unseen-passive-speed",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "slarkUnseenByEnemyTeam"
+      }
+    },
+    {
+      "id": "condition:slark_shadow_dance:mobility:unseen-passive-speed:1",
+      "ownerId": "effect:slark_shadow_dance:mobility:unseen-passive-speed",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "slarkNeutralDamagePenaltyExpired"
+      }
+    }
+  ]
+}

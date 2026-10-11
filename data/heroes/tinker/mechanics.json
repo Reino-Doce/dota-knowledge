@@ -1,0 +1,2195 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "tinker_laser:damage:laser-hit",
+      "heroId": "34",
+      "abilityId": "ability:34:tinker_laser",
+      "type": "damage",
+      "subtype": "laser-hit",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tinker_laser:damage:laser-hit:range",
+          "ownerId": "effect:tinker_laser:damage:laser-hit",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:tinker_laser:damage:laser-hit:duration",
+          "ownerId": "effect:tinker_laser:damage:laser-hit",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:tinker_laser:damage:laser-hit:magnitude",
+          "ownerId": "effect:tinker_laser:damage:laser-hit",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            75,
+            150,
+            225,
+            300
+          ]
+        },
+        "mana": {
+          "id": "value:effect:tinker_laser:damage:laser-hit:mana",
+          "ownerId": "effect:tinker_laser:damage:laser-hit",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            95,
+            105,
+            115,
+            125
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:tinker_laser:damage:laser-hit:cooldown",
+          "ownerId": "effect:tinker_laser:damage:laser-hit",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            19,
+            18,
+            17,
+            16
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tinker_laser:damage:laser-hit:delay",
+          "ownerId": "effect:tinker_laser:damage:laser-hit",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:tinker_laser:damage:laser-hit:damageType",
+          "ownerId": "effect:tinker_laser:damage:laser-hit",
+          "field": "damageType",
+          "state": "known",
+          "value": "pure"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tinker_laser"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tinker_laser:damage:laser-hit",
+      "legacyEffectId": "tinker_laser:damage:laser-hit",
+      "order": 0,
+      "legacyAbilityId": "tinker_laser",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:tinker_laser:damage:laser-hit:range",
+        "value:effect:tinker_laser:damage:laser-hit:duration",
+        "value:effect:tinker_laser:damage:laser-hit:magnitude",
+        "value:effect:tinker_laser:damage:laser-hit:mana",
+        "value:effect:tinker_laser:damage:laser-hit:cooldown",
+        "value:effect:tinker_laser:damage:laser-hit:delay",
+        "value:effect:tinker_laser:damage:laser-hit:damageType"
+      ],
+      "activationId": "activation:34:tinker_laser"
+    },
+    {
+      "effectId": "tinker_laser:modifier:blind",
+      "heroId": "34",
+      "abilityId": "ability:34:tinker_laser",
+      "type": "modifier",
+      "subtype": "blind",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tinker_laser:modifier:blind:range",
+          "ownerId": "effect:tinker_laser:modifier:blind",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:tinker_laser:modifier:blind:duration",
+          "ownerId": "effect:tinker_laser:modifier:blind",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3,
+            3.5,
+            4,
+            4.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:tinker_laser:modifier:blind:magnitude",
+          "ownerId": "effect:tinker_laser:modifier:blind",
+          "field": "magnitude",
+          "state": "known",
+          "value": 100
+        },
+        "mana": {
+          "id": "value:effect:tinker_laser:modifier:blind:mana",
+          "ownerId": "effect:tinker_laser:modifier:blind",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            95,
+            105,
+            115,
+            125
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:tinker_laser:modifier:blind:cooldown",
+          "ownerId": "effect:tinker_laser:modifier:blind",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            19,
+            18,
+            17,
+            16
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tinker_laser:modifier:blind:delay",
+          "ownerId": "effect:tinker_laser:modifier:blind",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "tinker_laser"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tinker_laser:modifier:blind",
+      "legacyEffectId": "tinker_laser:modifier:blind",
+      "order": 1,
+      "legacyAbilityId": "tinker_laser",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:tinker_laser:modifier:blind:range",
+        "value:effect:tinker_laser:modifier:blind:duration",
+        "value:effect:tinker_laser:modifier:blind:magnitude",
+        "value:effect:tinker_laser:modifier:blind:mana",
+        "value:effect:tinker_laser:modifier:blind:cooldown",
+        "value:effect:tinker_laser:modifier:blind:delay"
+      ],
+      "activationId": "activation:34:tinker_laser"
+    },
+    {
+      "effectId": "tinker_laser:modifier:shrink-current-and-maximum-health",
+      "heroId": "34",
+      "abilityId": "ability:34:tinker_laser",
+      "type": "modifier",
+      "subtype": "shrink-current-and-maximum-health",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tinker_laser:modifier:shrink-current-and-maximum-health:range",
+          "ownerId": "effect:tinker_laser:modifier:shrink-current-and-maximum-health",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:tinker_laser:modifier:shrink-current-and-maximum-health:duration",
+          "ownerId": "effect:tinker_laser:modifier:shrink-current-and-maximum-health",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:tinker_laser:modifier:shrink-current-and-maximum-health:magnitude",
+          "ownerId": "effect:tinker_laser:modifier:shrink-current-and-maximum-health",
+          "field": "magnitude",
+          "state": "known",
+          "value": 13
+        },
+        "mana": {
+          "id": "value:effect:tinker_laser:modifier:shrink-current-and-maximum-health:mana",
+          "ownerId": "effect:tinker_laser:modifier:shrink-current-and-maximum-health",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            95,
+            105,
+            115,
+            125
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:tinker_laser:modifier:shrink-current-and-maximum-health:cooldown",
+          "ownerId": "effect:tinker_laser:modifier:shrink-current-and-maximum-health",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            19,
+            18,
+            17,
+            16
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tinker_laser:modifier:shrink-current-and-maximum-health:delay",
+          "ownerId": "effect:tinker_laser:modifier:shrink-current-and-maximum-health",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tinker_laser"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tinker_laser:modifier:shrink-current-and-maximum-health",
+      "legacyEffectId": "tinker_laser:modifier:shrink-current-and-maximum-health",
+      "order": 2,
+      "legacyAbilityId": "tinker_laser",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:tinker_laser:modifier:shrink-current-and-maximum-health:range",
+        "value:effect:tinker_laser:modifier:shrink-current-and-maximum-health:duration",
+        "value:effect:tinker_laser:modifier:shrink-current-and-maximum-health:magnitude",
+        "value:effect:tinker_laser:modifier:shrink-current-and-maximum-health:mana",
+        "value:effect:tinker_laser:modifier:shrink-current-and-maximum-health:cooldown",
+        "value:effect:tinker_laser:modifier:shrink-current-and-maximum-health:delay"
+      ],
+      "activationId": "activation:34:tinker_laser"
+    },
+    {
+      "effectId": "tinker_march_of_the_machines:damage:robot-contact",
+      "heroId": "34",
+      "abilityId": "ability:34:tinker_march_of_the_machines",
+      "type": "damage",
+      "subtype": "robot-contact",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tinker_march_of_the_machines:damage:robot-contact:range",
+          "ownerId": "effect:tinker_march_of_the_machines:damage:robot-contact",
+          "field": "range",
+          "state": "known",
+          "value": 300
+        },
+        "duration": {
+          "id": "value:effect:tinker_march_of_the_machines:damage:robot-contact:duration",
+          "ownerId": "effect:tinker_march_of_the_machines:damage:robot-contact",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:tinker_march_of_the_machines:damage:robot-contact:magnitude",
+          "ownerId": "effect:tinker_march_of_the_machines:damage:robot-contact",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            13,
+            22,
+            31,
+            40
+          ]
+        },
+        "mana": {
+          "id": "value:effect:tinker_march_of_the_machines:damage:robot-contact:mana",
+          "ownerId": "effect:tinker_march_of_the_machines:damage:robot-contact",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:tinker_march_of_the_machines:damage:robot-contact:cooldown",
+          "ownerId": "effect:tinker_march_of_the_machines:damage:robot-contact",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            35,
+            33,
+            31,
+            29
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tinker_march_of_the_machines:damage:robot-contact:delay",
+          "ownerId": "effect:tinker_march_of_the_machines:damage:robot-contact",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:tinker_march_of_the_machines:damage:robot-contact:damageType",
+          "ownerId": "effect:tinker_march_of_the_machines:damage:robot-contact",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "robotHitsTarget"
+        ]
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tinker_march_of_the_machines"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tinker_march_of_the_machines:damage:robot-contact",
+      "legacyEffectId": "tinker_march_of_the_machines:damage:robot-contact",
+      "order": 3,
+      "legacyAbilityId": "tinker_march_of_the_machines",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tinker_march_of_the_machines:damage:robot-contact:0"
+      ],
+      "valueIds": [
+        "value:effect:tinker_march_of_the_machines:damage:robot-contact:range",
+        "value:effect:tinker_march_of_the_machines:damage:robot-contact:duration",
+        "value:effect:tinker_march_of_the_machines:damage:robot-contact:magnitude",
+        "value:effect:tinker_march_of_the_machines:damage:robot-contact:mana",
+        "value:effect:tinker_march_of_the_machines:damage:robot-contact:cooldown",
+        "value:effect:tinker_march_of_the_machines:damage:robot-contact:delay",
+        "value:effect:tinker_march_of_the_machines:damage:robot-contact:damageType"
+      ],
+      "activationId": "activation:34:tinker_march_of_the_machines"
+    },
+    {
+      "effectId": "tinker_march_of_the_machines:heal:scepter-heal-over-time",
+      "heroId": "34",
+      "abilityId": "ability:34:tinker_march_of_the_machines",
+      "type": "heal",
+      "subtype": "scepter-heal-over-time",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tinker_march_of_the_machines:heal:scepter-heal-over-time:range",
+          "ownerId": "effect:tinker_march_of_the_machines:heal:scepter-heal-over-time",
+          "field": "range",
+          "state": "known",
+          "value": 300
+        },
+        "duration": {
+          "id": "value:effect:tinker_march_of_the_machines:heal:scepter-heal-over-time:duration",
+          "ownerId": "effect:tinker_march_of_the_machines:heal:scepter-heal-over-time",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:tinker_march_of_the_machines:heal:scepter-heal-over-time:magnitude",
+          "ownerId": "effect:tinker_march_of_the_machines:heal:scepter-heal-over-time",
+          "field": "magnitude",
+          "state": "known",
+          "value": 35
+        },
+        "mana": {
+          "id": "value:effect:tinker_march_of_the_machines:heal:scepter-heal-over-time:mana",
+          "ownerId": "effect:tinker_march_of_the_machines:heal:scepter-heal-over-time",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:tinker_march_of_the_machines:heal:scepter-heal-over-time:cooldown",
+          "ownerId": "effect:tinker_march_of_the_machines:heal:scepter-heal-over-time",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            35,
+            33,
+            31,
+            29
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tinker_march_of_the_machines:heal:scepter-heal-over-time:delay",
+          "ownerId": "effect:tinker_march_of_the_machines:heal:scepter-heal-over-time",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "robotPassesAlly"
+        ]
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "tinker_march_of_the_machines"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tinker_march_of_the_machines:heal:scepter-heal-over-time",
+      "legacyEffectId": "tinker_march_of_the_machines:heal:scepter-heal-over-time",
+      "order": 4,
+      "legacyAbilityId": "tinker_march_of_the_machines",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tinker_march_of_the_machines:heal:scepter-heal-over-time:0"
+      ],
+      "valueIds": [
+        "value:effect:tinker_march_of_the_machines:heal:scepter-heal-over-time:range",
+        "value:effect:tinker_march_of_the_machines:heal:scepter-heal-over-time:duration",
+        "value:effect:tinker_march_of_the_machines:heal:scepter-heal-over-time:magnitude",
+        "value:effect:tinker_march_of_the_machines:heal:scepter-heal-over-time:mana",
+        "value:effect:tinker_march_of_the_machines:heal:scepter-heal-over-time:cooldown",
+        "value:effect:tinker_march_of_the_machines:heal:scepter-heal-over-time:delay"
+      ],
+      "activationId": "activation:34:tinker_march_of_the_machines"
+    },
+    {
+      "effectId": "tinker_deploy_turrets:damage:landing-impact",
+      "heroId": "34",
+      "abilityId": "ability:34:tinker_deploy_turrets",
+      "type": "damage",
+      "subtype": "landing-impact",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tinker_deploy_turrets:damage:landing-impact:range",
+          "ownerId": "effect:tinker_deploy_turrets:damage:landing-impact",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:tinker_deploy_turrets:damage:landing-impact:duration",
+          "ownerId": "effect:tinker_deploy_turrets:damage:landing-impact",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:tinker_deploy_turrets:damage:landing-impact:magnitude",
+          "ownerId": "effect:tinker_deploy_turrets:damage:landing-impact",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            40,
+            80,
+            120,
+            160
+          ]
+        },
+        "mana": {
+          "id": "value:effect:tinker_deploy_turrets:damage:landing-impact:mana",
+          "ownerId": "effect:tinker_deploy_turrets:damage:landing-impact",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:tinker_deploy_turrets:damage:landing-impact:cooldown",
+          "ownerId": "effect:tinker_deploy_turrets:damage:landing-impact",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            22,
+            20,
+            18
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tinker_deploy_turrets:damage:landing-impact:delay",
+          "ownerId": "effect:tinker_deploy_turrets:damage:landing-impact",
+          "field": "delay",
+          "state": "known",
+          "value": 0.5
+        },
+        "damageType": {
+          "id": "value:effect:tinker_deploy_turrets:damage:landing-impact:damageType",
+          "ownerId": "effect:tinker_deploy_turrets:damage:landing-impact",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tinker_deploy_turrets"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tinker_deploy_turrets:damage:landing-impact",
+      "legacyEffectId": "tinker_deploy_turrets:damage:landing-impact",
+      "order": 5,
+      "legacyAbilityId": "tinker_deploy_turrets",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:tinker_deploy_turrets:damage:landing-impact:range",
+        "value:effect:tinker_deploy_turrets:damage:landing-impact:duration",
+        "value:effect:tinker_deploy_turrets:damage:landing-impact:magnitude",
+        "value:effect:tinker_deploy_turrets:damage:landing-impact:mana",
+        "value:effect:tinker_deploy_turrets:damage:landing-impact:cooldown",
+        "value:effect:tinker_deploy_turrets:damage:landing-impact:delay",
+        "value:effect:tinker_deploy_turrets:damage:landing-impact:damageType"
+      ],
+      "activationId": "activation:34:tinker_deploy_turrets"
+    },
+    {
+      "effectId": "tinker_deploy_turrets:displacement:landing-knockback",
+      "heroId": "34",
+      "abilityId": "ability:34:tinker_deploy_turrets",
+      "type": "displacement",
+      "subtype": "landing-knockback",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tinker_deploy_turrets:displacement:landing-knockback:range",
+          "ownerId": "effect:tinker_deploy_turrets:displacement:landing-knockback",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:tinker_deploy_turrets:displacement:landing-knockback:duration",
+          "ownerId": "effect:tinker_deploy_turrets:displacement:landing-knockback",
+          "field": "duration",
+          "state": "known",
+          "value": 0.1
+        },
+        "magnitude": {
+          "id": "value:effect:tinker_deploy_turrets:displacement:landing-knockback:magnitude",
+          "ownerId": "effect:tinker_deploy_turrets:displacement:landing-knockback",
+          "field": "magnitude",
+          "state": "known",
+          "value": 100
+        },
+        "mana": {
+          "id": "value:effect:tinker_deploy_turrets:displacement:landing-knockback:mana",
+          "ownerId": "effect:tinker_deploy_turrets:displacement:landing-knockback",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:tinker_deploy_turrets:displacement:landing-knockback:cooldown",
+          "ownerId": "effect:tinker_deploy_turrets:displacement:landing-knockback",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            22,
+            20,
+            18
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tinker_deploy_turrets:displacement:landing-knockback:delay",
+          "ownerId": "effect:tinker_deploy_turrets:displacement:landing-knockback",
+          "field": "delay",
+          "state": "known",
+          "value": 0.5
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tinker_deploy_turrets"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tinker_deploy_turrets:displacement:landing-knockback",
+      "legacyEffectId": "tinker_deploy_turrets:displacement:landing-knockback",
+      "order": 6,
+      "legacyAbilityId": "tinker_deploy_turrets",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:tinker_deploy_turrets:displacement:landing-knockback:range",
+        "value:effect:tinker_deploy_turrets:displacement:landing-knockback:duration",
+        "value:effect:tinker_deploy_turrets:displacement:landing-knockback:magnitude",
+        "value:effect:tinker_deploy_turrets:displacement:landing-knockback:mana",
+        "value:effect:tinker_deploy_turrets:displacement:landing-knockback:cooldown",
+        "value:effect:tinker_deploy_turrets:displacement:landing-knockback:delay"
+      ],
+      "activationId": "activation:34:tinker_deploy_turrets"
+    },
+    {
+      "effectId": "tinker_deploy_turrets:mobility:self-impact-push",
+      "heroId": "34",
+      "abilityId": "ability:34:tinker_deploy_turrets",
+      "type": "mobility",
+      "subtype": "self-impact-push",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tinker_deploy_turrets:mobility:self-impact-push:range",
+          "ownerId": "effect:tinker_deploy_turrets:mobility:self-impact-push",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:tinker_deploy_turrets:mobility:self-impact-push:duration",
+          "ownerId": "effect:tinker_deploy_turrets:mobility:self-impact-push",
+          "field": "duration",
+          "state": "known",
+          "value": 0.3
+        },
+        "magnitude": {
+          "id": "value:effect:tinker_deploy_turrets:mobility:self-impact-push:magnitude",
+          "ownerId": "effect:tinker_deploy_turrets:mobility:self-impact-push",
+          "field": "magnitude",
+          "state": "known",
+          "value": 400
+        },
+        "mana": {
+          "id": "value:effect:tinker_deploy_turrets:mobility:self-impact-push:mana",
+          "ownerId": "effect:tinker_deploy_turrets:mobility:self-impact-push",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:tinker_deploy_turrets:mobility:self-impact-push:cooldown",
+          "ownerId": "effect:tinker_deploy_turrets:mobility:self-impact-push",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            22,
+            20,
+            18
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tinker_deploy_turrets:mobility:self-impact-push:delay",
+          "ownerId": "effect:tinker_deploy_turrets:mobility:self-impact-push",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "tinkerInsideTurretImpact"
+        ]
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tinker_deploy_turrets"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tinker_deploy_turrets:mobility:self-impact-push",
+      "legacyEffectId": "tinker_deploy_turrets:mobility:self-impact-push",
+      "order": 7,
+      "legacyAbilityId": "tinker_deploy_turrets",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tinker_deploy_turrets:mobility:self-impact-push:0"
+      ],
+      "valueIds": [
+        "value:effect:tinker_deploy_turrets:mobility:self-impact-push:range",
+        "value:effect:tinker_deploy_turrets:mobility:self-impact-push:duration",
+        "value:effect:tinker_deploy_turrets:mobility:self-impact-push:magnitude",
+        "value:effect:tinker_deploy_turrets:mobility:self-impact-push:mana",
+        "value:effect:tinker_deploy_turrets:mobility:self-impact-push:cooldown",
+        "value:effect:tinker_deploy_turrets:mobility:self-impact-push:delay"
+      ],
+      "activationId": "activation:34:tinker_deploy_turrets"
+    },
+    {
+      "effectId": "tinker_deploy_turrets:modifier:turret-missiles",
+      "heroId": "34",
+      "abilityId": "ability:34:tinker_deploy_turrets",
+      "type": "modifier",
+      "subtype": "turret-missiles",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tinker_deploy_turrets:modifier:turret-missiles:range",
+          "ownerId": "effect:tinker_deploy_turrets:modifier:turret-missiles",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:tinker_deploy_turrets:modifier:turret-missiles:duration",
+          "ownerId": "effect:tinker_deploy_turrets:modifier:turret-missiles",
+          "field": "duration",
+          "state": "known",
+          "value": 4.5
+        },
+        "magnitude": {
+          "id": "value:effect:tinker_deploy_turrets:modifier:turret-missiles:magnitude",
+          "ownerId": "effect:tinker_deploy_turrets:modifier:turret-missiles",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        "mana": {
+          "id": "value:effect:tinker_deploy_turrets:modifier:turret-missiles:mana",
+          "ownerId": "effect:tinker_deploy_turrets:modifier:turret-missiles",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:tinker_deploy_turrets:modifier:turret-missiles:cooldown",
+          "ownerId": "effect:tinker_deploy_turrets:modifier:turret-missiles",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            22,
+            20,
+            18
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tinker_deploy_turrets:modifier:turret-missiles:delay",
+          "ownerId": "effect:tinker_deploy_turrets:modifier:turret-missiles",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tinker_deploy_turrets"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tinker_deploy_turrets:modifier:turret-missiles",
+      "legacyEffectId": "tinker_deploy_turrets:modifier:turret-missiles",
+      "order": 8,
+      "legacyAbilityId": "tinker_deploy_turrets",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:tinker_deploy_turrets:modifier:turret-missiles:range",
+        "value:effect:tinker_deploy_turrets:modifier:turret-missiles:duration",
+        "value:effect:tinker_deploy_turrets:modifier:turret-missiles:magnitude",
+        "value:effect:tinker_deploy_turrets:modifier:turret-missiles:mana",
+        "value:effect:tinker_deploy_turrets:modifier:turret-missiles:cooldown",
+        "value:effect:tinker_deploy_turrets:modifier:turret-missiles:delay"
+      ],
+      "activationId": "activation:34:tinker_deploy_turrets"
+    },
+    {
+      "effectId": "tinker_warp_grenade:damage:flare-hit",
+      "heroId": "34",
+      "abilityId": "ability:34:tinker_warp_grenade",
+      "type": "damage",
+      "subtype": "flare-hit",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tinker_warp_grenade:damage:flare-hit:range",
+          "ownerId": "effect:tinker_warp_grenade:damage:flare-hit",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:tinker_warp_grenade:damage:flare-hit:duration",
+          "ownerId": "effect:tinker_warp_grenade:damage:flare-hit",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:tinker_warp_grenade:damage:flare-hit:magnitude",
+          "ownerId": "effect:tinker_warp_grenade:damage:flare-hit",
+          "field": "magnitude",
+          "state": "known",
+          "value": 150
+        },
+        "mana": {
+          "id": "value:effect:tinker_warp_grenade:damage:flare-hit:mana",
+          "ownerId": "effect:tinker_warp_grenade:damage:flare-hit",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:tinker_warp_grenade:damage:flare-hit:cooldown",
+          "ownerId": "effect:tinker_warp_grenade:damage:flare-hit",
+          "field": "cooldown",
+          "state": "known",
+          "value": 15
+        },
+        "delay": {
+          "id": "value:effect:tinker_warp_grenade:damage:flare-hit:delay",
+          "ownerId": "effect:tinker_warp_grenade:damage:flare-hit",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:tinker_warp_grenade:damage:flare-hit:damageType",
+          "ownerId": "effect:tinker_warp_grenade:damage:flare-hit",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tinker_warp_grenade"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tinker_warp_grenade:damage:flare-hit",
+      "legacyEffectId": "tinker_warp_grenade:damage:flare-hit",
+      "order": 9,
+      "legacyAbilityId": "tinker_warp_grenade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:tinker_warp_grenade:damage:flare-hit:range",
+        "value:effect:tinker_warp_grenade:damage:flare-hit:duration",
+        "value:effect:tinker_warp_grenade:damage:flare-hit:magnitude",
+        "value:effect:tinker_warp_grenade:damage:flare-hit:mana",
+        "value:effect:tinker_warp_grenade:damage:flare-hit:cooldown",
+        "value:effect:tinker_warp_grenade:damage:flare-hit:delay",
+        "value:effect:tinker_warp_grenade:damage:flare-hit:damageType"
+      ],
+      "activationId": "activation:34:tinker_warp_grenade"
+    },
+    {
+      "effectId": "tinker_warp_grenade:control:root",
+      "heroId": "34",
+      "abilityId": "ability:34:tinker_warp_grenade",
+      "type": "control",
+      "subtype": "root",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tinker_warp_grenade:control:root:range",
+          "ownerId": "effect:tinker_warp_grenade:control:root",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:tinker_warp_grenade:control:root:duration",
+          "ownerId": "effect:tinker_warp_grenade:control:root",
+          "field": "duration",
+          "state": "known",
+          "value": 2
+        },
+        "magnitude": {
+          "id": "value:effect:tinker_warp_grenade:control:root:magnitude",
+          "ownerId": "effect:tinker_warp_grenade:control:root",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:tinker_warp_grenade:control:root:mana",
+          "ownerId": "effect:tinker_warp_grenade:control:root",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:tinker_warp_grenade:control:root:cooldown",
+          "ownerId": "effect:tinker_warp_grenade:control:root",
+          "field": "cooldown",
+          "state": "known",
+          "value": 15
+        },
+        "delay": {
+          "id": "value:effect:tinker_warp_grenade:control:root:delay",
+          "ownerId": "effect:tinker_warp_grenade:control:root",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "tinker_warp_grenade"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tinker_warp_grenade:control:root",
+      "legacyEffectId": "tinker_warp_grenade:control:root",
+      "order": 10,
+      "legacyAbilityId": "tinker_warp_grenade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:tinker_warp_grenade:control:root:range",
+        "value:effect:tinker_warp_grenade:control:root:duration",
+        "value:effect:tinker_warp_grenade:control:root:magnitude",
+        "value:effect:tinker_warp_grenade:control:root:mana",
+        "value:effect:tinker_warp_grenade:control:root:cooldown",
+        "value:effect:tinker_warp_grenade:control:root:delay"
+      ],
+      "activationId": "activation:34:tinker_warp_grenade"
+    },
+    {
+      "effectId": "tinker_warp_grenade:displacement:distance-dependent-teleport",
+      "heroId": "34",
+      "abilityId": "ability:34:tinker_warp_grenade",
+      "type": "displacement",
+      "subtype": "distance-dependent-teleport",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tinker_warp_grenade:displacement:distance-dependent-teleport:range",
+          "ownerId": "effect:tinker_warp_grenade:displacement:distance-dependent-teleport",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:tinker_warp_grenade:displacement:distance-dependent-teleport:duration",
+          "ownerId": "effect:tinker_warp_grenade:displacement:distance-dependent-teleport",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:tinker_warp_grenade:displacement:distance-dependent-teleport:magnitude",
+          "ownerId": "effect:tinker_warp_grenade:displacement:distance-dependent-teleport",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:tinker_warp_grenade:displacement:distance-dependent-teleport:mana",
+          "ownerId": "effect:tinker_warp_grenade:displacement:distance-dependent-teleport",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:tinker_warp_grenade:displacement:distance-dependent-teleport:cooldown",
+          "ownerId": "effect:tinker_warp_grenade:displacement:distance-dependent-teleport",
+          "field": "cooldown",
+          "state": "known",
+          "value": 15
+        },
+        "delay": {
+          "id": "value:effect:tinker_warp_grenade:displacement:distance-dependent-teleport:delay",
+          "ownerId": "effect:tinker_warp_grenade:displacement:distance-dependent-teleport",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tinker_warp_grenade"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tinker_warp_grenade:displacement:distance-dependent-teleport",
+      "legacyEffectId": "tinker_warp_grenade:displacement:distance-dependent-teleport",
+      "order": 11,
+      "legacyAbilityId": "tinker_warp_grenade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:tinker_warp_grenade:displacement:distance-dependent-teleport:range",
+        "value:effect:tinker_warp_grenade:displacement:distance-dependent-teleport:duration",
+        "value:effect:tinker_warp_grenade:displacement:distance-dependent-teleport:magnitude",
+        "value:effect:tinker_warp_grenade:displacement:distance-dependent-teleport:mana",
+        "value:effect:tinker_warp_grenade:displacement:distance-dependent-teleport:cooldown",
+        "value:effect:tinker_warp_grenade:displacement:distance-dependent-teleport:delay"
+      ],
+      "activationId": "activation:34:tinker_warp_grenade"
+    },
+    {
+      "effectId": "tinker_warp_grenade:modifier:cast-and-attack-range-reduction",
+      "heroId": "34",
+      "abilityId": "ability:34:tinker_warp_grenade",
+      "type": "modifier",
+      "subtype": "cast-and-attack-range-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction:range",
+          "ownerId": "effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction:duration",
+          "ownerId": "effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction",
+          "field": "duration",
+          "state": "known",
+          "value": 2
+        },
+        "magnitude": {
+          "id": "value:effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction:magnitude",
+          "ownerId": "effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": 40
+        },
+        "mana": {
+          "id": "value:effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction:mana",
+          "ownerId": "effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction:cooldown",
+          "ownerId": "effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction",
+          "field": "cooldown",
+          "state": "known",
+          "value": 15
+        },
+        "delay": {
+          "id": "value:effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction:delay",
+          "ownerId": "effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "tinker_warp_grenade"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction",
+      "legacyEffectId": "tinker_warp_grenade:modifier:cast-and-attack-range-reduction",
+      "order": 12,
+      "legacyAbilityId": "tinker_warp_grenade",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction:range",
+        "value:effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction:duration",
+        "value:effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction:magnitude",
+        "value:effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction:mana",
+        "value:effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction:cooldown",
+        "value:effect:tinker_warp_grenade:modifier:cast-and-attack-range-reduction:delay"
+      ],
+      "activationId": "activation:34:tinker_warp_grenade"
+    },
+    {
+      "effectId": "tinker_keen_teleport:mobility:channeled-friendly-teleport",
+      "heroId": "34",
+      "abilityId": "ability:34:tinker_keen_teleport",
+      "type": "mobility",
+      "subtype": "channeled-friendly-teleport",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tinker_keen_teleport:mobility:channeled-friendly-teleport:range",
+          "ownerId": "effect:tinker_keen_teleport:mobility:channeled-friendly-teleport",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:tinker_keen_teleport:mobility:channeled-friendly-teleport:duration",
+          "ownerId": "effect:tinker_keen_teleport:mobility:channeled-friendly-teleport",
+          "field": "duration",
+          "state": "known",
+          "value": 3
+        },
+        "magnitude": {
+          "id": "value:effect:tinker_keen_teleport:mobility:channeled-friendly-teleport:magnitude",
+          "ownerId": "effect:tinker_keen_teleport:mobility:channeled-friendly-teleport",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:tinker_keen_teleport:mobility:channeled-friendly-teleport:mana",
+          "ownerId": "effect:tinker_keen_teleport:mobility:channeled-friendly-teleport",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:tinker_keen_teleport:mobility:channeled-friendly-teleport:cooldown",
+          "ownerId": "effect:tinker_keen_teleport:mobility:channeled-friendly-teleport",
+          "field": "cooldown",
+          "state": "known",
+          "value": 50
+        },
+        "delay": {
+          "id": "value:effect:tinker_keen_teleport:mobility:channeled-friendly-teleport:delay",
+          "ownerId": "effect:tinker_keen_teleport:mobility:channeled-friendly-teleport",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "tinker_rearm"
+        ],
+        "upgrades": [],
+        "requiresContext": [
+          "channelCompleted",
+          "validTeleportDestination"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tinker_keen_teleport"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tinker_keen_teleport:mobility:channeled-friendly-teleport",
+      "legacyEffectId": "tinker_keen_teleport:mobility:channeled-friendly-teleport",
+      "order": 13,
+      "legacyAbilityId": "tinker_keen_teleport",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tinker_keen_teleport:mobility:channeled-friendly-teleport:0",
+        "condition:tinker_keen_teleport:mobility:channeled-friendly-teleport:1"
+      ],
+      "valueIds": [
+        "value:effect:tinker_keen_teleport:mobility:channeled-friendly-teleport:range",
+        "value:effect:tinker_keen_teleport:mobility:channeled-friendly-teleport:duration",
+        "value:effect:tinker_keen_teleport:mobility:channeled-friendly-teleport:magnitude",
+        "value:effect:tinker_keen_teleport:mobility:channeled-friendly-teleport:mana",
+        "value:effect:tinker_keen_teleport:mobility:channeled-friendly-teleport:cooldown",
+        "value:effect:tinker_keen_teleport:mobility:channeled-friendly-teleport:delay"
+      ],
+      "activationId": "activation:34:tinker_keen_teleport"
+    },
+    {
+      "effectId": "tinker_rearm:modifier:ability-cooldown-reset",
+      "heroId": "34",
+      "abilityId": "ability:34:tinker_rearm",
+      "type": "modifier",
+      "subtype": "ability-cooldown-reset",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tinker_rearm:modifier:ability-cooldown-reset:range",
+          "ownerId": "effect:tinker_rearm:modifier:ability-cooldown-reset",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:tinker_rearm:modifier:ability-cooldown-reset:duration",
+          "ownerId": "effect:tinker_rearm:modifier:ability-cooldown-reset",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2.75,
+            2,
+            1.25
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:tinker_rearm:modifier:ability-cooldown-reset:magnitude",
+          "ownerId": "effect:tinker_rearm:modifier:ability-cooldown-reset",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:tinker_rearm:modifier:ability-cooldown-reset:mana",
+          "ownerId": "effect:tinker_rearm:modifier:ability-cooldown-reset",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            150,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:tinker_rearm:modifier:ability-cooldown-reset:cooldown",
+          "ownerId": "effect:tinker_rearm:modifier:ability-cooldown-reset",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            5.5,
+            5,
+            4.5
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tinker_rearm:modifier:ability-cooldown-reset:delay",
+          "ownerId": "effect:tinker_rearm:modifier:ability-cooldown-reset",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "channelCompleted"
+        ]
+      },
+      "delivery": {
+        "kind": "no-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tinker_rearm"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tinker_rearm:modifier:ability-cooldown-reset",
+      "legacyEffectId": "tinker_rearm:modifier:ability-cooldown-reset",
+      "order": 14,
+      "legacyAbilityId": "tinker_rearm",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tinker_rearm:modifier:ability-cooldown-reset:0"
+      ],
+      "valueIds": [
+        "value:effect:tinker_rearm:modifier:ability-cooldown-reset:range",
+        "value:effect:tinker_rearm:modifier:ability-cooldown-reset:duration",
+        "value:effect:tinker_rearm:modifier:ability-cooldown-reset:magnitude",
+        "value:effect:tinker_rearm:modifier:ability-cooldown-reset:mana",
+        "value:effect:tinker_rearm:modifier:ability-cooldown-reset:cooldown",
+        "value:effect:tinker_rearm:modifier:ability-cooldown-reset:delay"
+      ],
+      "activationId": "activation:34:tinker_rearm"
+    },
+    {
+      "effectId": "tinker_eureka:modifier:intelligence-item-cooldown-reduction",
+      "heroId": "34",
+      "abilityId": "ability:34:tinker_eureka",
+      "type": "modifier",
+      "subtype": "intelligence-item-cooldown-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction:range",
+          "ownerId": "effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction:duration",
+          "ownerId": "effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction:magnitude",
+          "ownerId": "effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction:mana",
+          "ownerId": "effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction:cooldown",
+          "ownerId": "effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction:delay",
+          "ownerId": "effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tinker_eureka:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction",
+      "legacyEffectId": "tinker_eureka:modifier:intelligence-item-cooldown-reduction",
+      "order": 15,
+      "legacyAbilityId": "tinker_eureka",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction:range",
+        "value:effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction:duration",
+        "value:effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction:magnitude",
+        "value:effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction:mana",
+        "value:effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction:cooldown",
+        "value:effect:tinker_eureka:modifier:intelligence-item-cooldown-reduction:delay"
+      ],
+      "activationId": "activation:34:tinker_eureka"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:tinker_march_of_the_machines:damage:robot-contact:0",
+      "ownerId": "effect:tinker_march_of_the_machines:damage:robot-contact",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "robotHitsTarget"
+      }
+    },
+    {
+      "id": "condition:tinker_march_of_the_machines:heal:scepter-heal-over-time:0",
+      "ownerId": "effect:tinker_march_of_the_machines:heal:scepter-heal-over-time",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "robotPassesAlly"
+      }
+    },
+    {
+      "id": "condition:tinker_deploy_turrets:mobility:self-impact-push:0",
+      "ownerId": "effect:tinker_deploy_turrets:mobility:self-impact-push",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "tinkerInsideTurretImpact"
+      }
+    },
+    {
+      "id": "condition:tinker_keen_teleport:mobility:channeled-friendly-teleport:0",
+      "ownerId": "effect:tinker_keen_teleport:mobility:channeled-friendly-teleport",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "channelCompleted"
+      }
+    },
+    {
+      "id": "condition:tinker_keen_teleport:mobility:channeled-friendly-teleport:1",
+      "ownerId": "effect:tinker_keen_teleport:mobility:channeled-friendly-teleport",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "validTeleportDestination"
+      }
+    },
+    {
+      "id": "condition:tinker_rearm:modifier:ability-cooldown-reset:0",
+      "ownerId": "effect:tinker_rearm:modifier:ability-cooldown-reset",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "channelCompleted"
+      }
+    }
+  ]
+}

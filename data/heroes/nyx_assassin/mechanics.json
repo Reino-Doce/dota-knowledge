@@ -1,0 +1,2164 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "nyx_assassin_impale:control:line-impale-stun",
+      "heroId": "88",
+      "abilityId": "ability:88:nyx_assassin_impale",
+      "type": "control",
+      "subtype": "line-impale-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:nyx_assassin_impale:control:line-impale-stun:range",
+          "ownerId": "effect:nyx_assassin_impale:control:line-impale-stun",
+          "field": "range",
+          "state": "known",
+          "value": 750
+        },
+        "duration": {
+          "id": "value:effect:nyx_assassin_impale:control:line-impale-stun:duration",
+          "ownerId": "effect:nyx_assassin_impale:control:line-impale-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.1,
+            1.4,
+            1.7,
+            2
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:nyx_assassin_impale:control:line-impale-stun:magnitude",
+          "ownerId": "effect:nyx_assassin_impale:control:line-impale-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:nyx_assassin_impale:control:line-impale-stun:mana",
+          "ownerId": "effect:nyx_assassin_impale:control:line-impale-stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:nyx_assassin_impale:control:line-impale-stun:cooldown",
+          "ownerId": "effect:nyx_assassin_impale:control:line-impale-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            17,
+            15,
+            13,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:nyx_assassin_impale:control:line-impale-stun:delay",
+          "ownerId": "effect:nyx_assassin_impale:control:line-impale-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "impaleHitsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "known",
+          "value": false
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "nyx_assassin_impale"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:nyx_assassin_impale:control:line-impale-stun",
+      "legacyEffectId": "nyx_assassin_impale:control:line-impale-stun",
+      "order": 0,
+      "legacyAbilityId": "nyx_assassin_impale",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:nyx_assassin_impale:control:line-impale-stun:0"
+      ],
+      "valueIds": [
+        "value:effect:nyx_assassin_impale:control:line-impale-stun:range",
+        "value:effect:nyx_assassin_impale:control:line-impale-stun:duration",
+        "value:effect:nyx_assassin_impale:control:line-impale-stun:magnitude",
+        "value:effect:nyx_assassin_impale:control:line-impale-stun:mana",
+        "value:effect:nyx_assassin_impale:control:line-impale-stun:cooldown",
+        "value:effect:nyx_assassin_impale:control:line-impale-stun:delay"
+      ],
+      "activationId": "activation:88:nyx_assassin_impale"
+    },
+    {
+      "effectId": "nyx_assassin_impale:damage:line-impale-damage",
+      "heroId": "88",
+      "abilityId": "ability:88:nyx_assassin_impale",
+      "type": "damage",
+      "subtype": "line-impale-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:nyx_assassin_impale:damage:line-impale-damage:range",
+          "ownerId": "effect:nyx_assassin_impale:damage:line-impale-damage",
+          "field": "range",
+          "state": "known",
+          "value": 750
+        },
+        "duration": {
+          "id": "value:effect:nyx_assassin_impale:damage:line-impale-damage:duration",
+          "ownerId": "effect:nyx_assassin_impale:damage:line-impale-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:nyx_assassin_impale:damage:line-impale-damage:magnitude",
+          "ownerId": "effect:nyx_assassin_impale:damage:line-impale-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            100,
+            160,
+            220,
+            280
+          ]
+        },
+        "mana": {
+          "id": "value:effect:nyx_assassin_impale:damage:line-impale-damage:mana",
+          "ownerId": "effect:nyx_assassin_impale:damage:line-impale-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:nyx_assassin_impale:damage:line-impale-damage:cooldown",
+          "ownerId": "effect:nyx_assassin_impale:damage:line-impale-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            17,
+            15,
+            13,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:nyx_assassin_impale:damage:line-impale-damage:delay",
+          "ownerId": "effect:nyx_assassin_impale:damage:line-impale-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:nyx_assassin_impale:damage:line-impale-damage:damageType",
+          "ownerId": "effect:nyx_assassin_impale:damage:line-impale-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "impaleHitsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "known",
+          "value": false
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "nyx_assassin_impale"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:nyx_assassin_impale:damage:line-impale-damage",
+      "legacyEffectId": "nyx_assassin_impale:damage:line-impale-damage",
+      "order": 1,
+      "legacyAbilityId": "nyx_assassin_impale",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:nyx_assassin_impale:damage:line-impale-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:nyx_assassin_impale:damage:line-impale-damage:range",
+        "value:effect:nyx_assassin_impale:damage:line-impale-damage:duration",
+        "value:effect:nyx_assassin_impale:damage:line-impale-damage:magnitude",
+        "value:effect:nyx_assassin_impale:damage:line-impale-damage:mana",
+        "value:effect:nyx_assassin_impale:damage:line-impale-damage:cooldown",
+        "value:effect:nyx_assassin_impale:damage:line-impale-damage:delay",
+        "value:effect:nyx_assassin_impale:damage:line-impale-damage:damageType"
+      ],
+      "activationId": "activation:88:nyx_assassin_impale"
+    },
+    {
+      "effectId": "nyx_assassin_jolt:damage:mana-and-recent-damage-flare",
+      "heroId": "88",
+      "abilityId": "ability:88:nyx_assassin_jolt",
+      "type": "damage",
+      "subtype": "mana-and-recent-damage-flare",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare:range",
+          "ownerId": "effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare:duration",
+          "ownerId": "effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare:magnitude",
+          "ownerId": "effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare:mana",
+          "ownerId": "effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            105,
+            110,
+            115
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare:cooldown",
+          "ownerId": "effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            11,
+            9.5,
+            8,
+            6.5
+          ]
+        },
+        "delay": {
+          "id": "value:effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare:delay",
+          "ownerId": "effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare:damageType",
+          "ownerId": "effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "nyx_assassin_jolt"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare",
+      "legacyEffectId": "nyx_assassin_jolt:damage:mana-and-recent-damage-flare",
+      "order": 2,
+      "legacyAbilityId": "nyx_assassin_jolt",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare:range",
+        "value:effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare:duration",
+        "value:effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare:magnitude",
+        "value:effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare:mana",
+        "value:effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare:cooldown",
+        "value:effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare:delay",
+        "value:effect:nyx_assassin_jolt:damage:mana-and-recent-damage-flare:damageType"
+      ],
+      "activationId": "activation:88:nyx_assassin_jolt"
+    },
+    {
+      "effectId": "nyx_assassin_jolt:modifier:mind-flare-mana-burn",
+      "heroId": "88",
+      "abilityId": "ability:88:nyx_assassin_jolt",
+      "type": "modifier",
+      "subtype": "mind-flare-mana-burn",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn:range",
+          "ownerId": "effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn:duration",
+          "ownerId": "effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn:magnitude",
+          "ownerId": "effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn:mana",
+          "ownerId": "effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            105,
+            110,
+            115
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn:cooldown",
+          "ownerId": "effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            11,
+            9.5,
+            8,
+            6.5
+          ]
+        },
+        "delay": {
+          "id": "value:effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn:delay",
+          "ownerId": "effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "nyx_assassin_jolt"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn",
+      "legacyEffectId": "nyx_assassin_jolt:modifier:mind-flare-mana-burn",
+      "order": 3,
+      "legacyAbilityId": "nyx_assassin_jolt",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn:range",
+        "value:effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn:duration",
+        "value:effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn:magnitude",
+        "value:effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn:mana",
+        "value:effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn:cooldown",
+        "value:effect:nyx_assassin_jolt:modifier:mind-flare-mana-burn:delay"
+      ],
+      "activationId": "activation:88:nyx_assassin_jolt"
+    },
+    {
+      "effectId": "nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation",
+      "heroId": "88",
+      "abilityId": "ability:88:nyx_assassin_spiked_carapace",
+      "type": "save",
+      "subtype": "one-hit-per-source-damage-negation",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation:range",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation:duration",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation",
+          "field": "duration",
+          "state": "known",
+          "value": 2
+        },
+        "magnitude": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation:magnitude",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation:mana",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            40,
+            40,
+            40,
+            40
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation:cooldown",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            16,
+            12,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation:delay",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "carapacePlayerSourceDamageReceived"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "nyx_assassin_spiked_carapace"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation",
+      "legacyEffectId": "nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation",
+      "order": 4,
+      "legacyAbilityId": "nyx_assassin_spiked_carapace",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation:0"
+      ],
+      "valueIds": [
+        "value:effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation:range",
+        "value:effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation:duration",
+        "value:effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation:magnitude",
+        "value:effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation:mana",
+        "value:effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation:cooldown",
+        "value:effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation:delay"
+      ],
+      "activationId": "activation:88:nyx_assassin_spiked_carapace"
+    },
+    {
+      "effectId": "nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun",
+      "heroId": "88",
+      "abilityId": "ability:88:nyx_assassin_spiked_carapace",
+      "type": "control",
+      "subtype": "qualifying-source-carapace-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun:range",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun:duration",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            0.7,
+            1,
+            1.3,
+            1.6
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun:magnitude",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun:mana",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            40,
+            40,
+            40,
+            40
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun:cooldown",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            16,
+            12,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun:delay",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "carapacePlayerSourceDamageReceived"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "nyx_assassin_spiked_carapace"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun",
+      "legacyEffectId": "nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun",
+      "order": 5,
+      "legacyAbilityId": "nyx_assassin_spiked_carapace",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun:0"
+      ],
+      "valueIds": [
+        "value:effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun:range",
+        "value:effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun:duration",
+        "value:effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun:magnitude",
+        "value:effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun:mana",
+        "value:effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun:cooldown",
+        "value:effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun:delay"
+      ],
+      "activationId": "activation:88:nyx_assassin_spiked_carapace"
+    },
+    {
+      "effectId": "nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage",
+      "heroId": "88",
+      "abilityId": "ability:88:nyx_assassin_spiked_carapace",
+      "type": "modifier",
+      "subtype": "same-type-reflected-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage:range",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage:duration",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage:magnitude",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": 140
+        },
+        "mana": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage:mana",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            40,
+            40,
+            40,
+            40
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage:cooldown",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            16,
+            12,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage:delay",
+          "ownerId": "effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "carapacePlayerSourceDamageReceived"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "nyx_assassin_spiked_carapace"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage",
+      "legacyEffectId": "nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage",
+      "order": 6,
+      "legacyAbilityId": "nyx_assassin_spiked_carapace",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage:range",
+        "value:effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage:duration",
+        "value:effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage:magnitude",
+        "value:effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage:mana",
+        "value:effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage:cooldown",
+        "value:effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage:delay"
+      ],
+      "activationId": "activation:88:nyx_assassin_spiked_carapace"
+    },
+    {
+      "effectId": "nyx_assassin_burrow:modifier:scepter-stationary-defensive-form",
+      "heroId": "88",
+      "abilityId": "ability:88:nyx_assassin_burrow",
+      "type": "modifier",
+      "subtype": "scepter-stationary-defensive-form",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form:range",
+          "ownerId": "effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form:duration",
+          "ownerId": "effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form:magnitude",
+          "ownerId": "effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form:mana",
+          "ownerId": "effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form:cooldown",
+          "ownerId": "effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form:delay",
+          "ownerId": "effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "nyxBurrowed"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "nyx_assassin_burrow:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form",
+      "legacyEffectId": "nyx_assassin_burrow:modifier:scepter-stationary-defensive-form",
+      "order": 7,
+      "legacyAbilityId": "nyx_assassin_burrow",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form:0"
+      ],
+      "valueIds": [
+        "value:effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form:range",
+        "value:effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form:duration",
+        "value:effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form:magnitude",
+        "value:effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form:mana",
+        "value:effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form:cooldown",
+        "value:effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form:delay"
+      ],
+      "activationId": "activation:88:nyx_assassin_burrow"
+    },
+    {
+      "effectId": "nyx_assassin_burrow:invisibility:scepter-burrow-invisibility",
+      "heroId": "88",
+      "abilityId": "ability:88:nyx_assassin_burrow",
+      "type": "invisibility",
+      "subtype": "scepter-burrow-invisibility",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility:range",
+          "ownerId": "effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility:duration",
+          "ownerId": "effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility:magnitude",
+          "ownerId": "effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility:mana",
+          "ownerId": "effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility:cooldown",
+          "ownerId": "effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility:delay",
+          "ownerId": "effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "nyxBurrowed"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "nyx_assassin_burrow:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility",
+      "legacyEffectId": "nyx_assassin_burrow:invisibility:scepter-burrow-invisibility",
+      "order": 8,
+      "legacyAbilityId": "nyx_assassin_burrow",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility:0"
+      ],
+      "valueIds": [
+        "value:effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility:range",
+        "value:effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility:duration",
+        "value:effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility:magnitude",
+        "value:effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility:mana",
+        "value:effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility:cooldown",
+        "value:effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility:delay"
+      ],
+      "activationId": "activation:88:nyx_assassin_burrow"
+    },
+    {
+      "effectId": "nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain",
+      "heroId": "88",
+      "abilityId": "ability:88:nyx_assassin_neuro_sting",
+      "type": "passive",
+      "subtype": "damage-dependent-mana-drain",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain:range",
+          "ownerId": "effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain:duration",
+          "ownerId": "effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain:magnitude",
+          "ownerId": "effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain",
+          "field": "magnitude",
+          "state": "known",
+          "value": 12
+        },
+        "mana": {
+          "id": "value:effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain:mana",
+          "ownerId": "effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain:cooldown",
+          "ownerId": "effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain:delay",
+          "ownerId": "effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "nyxDealsEnemyDamage"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "nyx_assassin_neuro_sting:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain",
+      "legacyEffectId": "nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain",
+      "order": 9,
+      "legacyAbilityId": "nyx_assassin_neuro_sting",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain:0"
+      ],
+      "valueIds": [
+        "value:effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain:range",
+        "value:effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain:duration",
+        "value:effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain:magnitude",
+        "value:effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain:mana",
+        "value:effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain:cooldown",
+        "value:effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain:delay"
+      ],
+      "activationId": "activation:88:nyx_assassin_neuro_sting"
+    },
+    {
+      "effectId": "nyx_assassin_vendetta:invisibility:vendetta-invisibility",
+      "heroId": "88",
+      "abilityId": "ability:88:nyx_assassin_vendetta",
+      "type": "invisibility",
+      "subtype": "vendetta-invisibility",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility:range",
+          "ownerId": "effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility:duration",
+          "ownerId": "effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            45,
+            50,
+            55
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility:magnitude",
+          "ownerId": "effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility:mana",
+          "ownerId": "effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            180,
+            240,
+            300
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility:cooldown",
+          "ownerId": "effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            80,
+            70,
+            60
+          ]
+        },
+        "delay": {
+          "id": "value:effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility:delay",
+          "ownerId": "effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility",
+          "field": "delay",
+          "state": "known",
+          "value": 0
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "nyx_assassin_vendetta"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility",
+      "legacyEffectId": "nyx_assassin_vendetta:invisibility:vendetta-invisibility",
+      "order": 10,
+      "legacyAbilityId": "nyx_assassin_vendetta",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility:range",
+        "value:effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility:duration",
+        "value:effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility:magnitude",
+        "value:effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility:mana",
+        "value:effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility:cooldown",
+        "value:effect:nyx_assassin_vendetta:invisibility:vendetta-invisibility:delay"
+      ],
+      "activationId": "activation:88:nyx_assassin_vendetta"
+    },
+    {
+      "effectId": "nyx_assassin_vendetta:mobility:vendetta-movement-speed",
+      "heroId": "88",
+      "abilityId": "ability:88:nyx_assassin_vendetta",
+      "type": "mobility",
+      "subtype": "vendetta-movement-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed:range",
+          "ownerId": "effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed:duration",
+          "ownerId": "effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            45,
+            50,
+            55
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed:magnitude",
+          "ownerId": "effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            16,
+            18,
+            20
+          ]
+        },
+        "mana": {
+          "id": "value:effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed:mana",
+          "ownerId": "effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            180,
+            240,
+            300
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed:cooldown",
+          "ownerId": "effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            80,
+            70,
+            60
+          ]
+        },
+        "delay": {
+          "id": "value:effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed:delay",
+          "ownerId": "effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "nyx_assassin_vendetta"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed",
+      "legacyEffectId": "nyx_assassin_vendetta:mobility:vendetta-movement-speed",
+      "order": 11,
+      "legacyAbilityId": "nyx_assassin_vendetta",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed:range",
+        "value:effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed:duration",
+        "value:effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed:magnitude",
+        "value:effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed:mana",
+        "value:effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed:cooldown",
+        "value:effect:nyx_assassin_vendetta:mobility:vendetta-movement-speed:delay"
+      ],
+      "activationId": "activation:88:nyx_assassin_vendetta"
+    },
+    {
+      "effectId": "nyx_assassin_vendetta:damage:vendetta-opening-attack",
+      "heroId": "88",
+      "abilityId": "ability:88:nyx_assassin_vendetta",
+      "type": "damage",
+      "subtype": "vendetta-opening-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:nyx_assassin_vendetta:damage:vendetta-opening-attack:range",
+          "ownerId": "effect:nyx_assassin_vendetta:damage:vendetta-opening-attack",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:nyx_assassin_vendetta:damage:vendetta-opening-attack:duration",
+          "ownerId": "effect:nyx_assassin_vendetta:damage:vendetta-opening-attack",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:nyx_assassin_vendetta:damage:vendetta-opening-attack:magnitude",
+          "ownerId": "effect:nyx_assassin_vendetta:damage:vendetta-opening-attack",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            300,
+            400,
+            500
+          ]
+        },
+        "mana": {
+          "id": "value:effect:nyx_assassin_vendetta:damage:vendetta-opening-attack:mana",
+          "ownerId": "effect:nyx_assassin_vendetta:damage:vendetta-opening-attack",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:nyx_assassin_vendetta:damage:vendetta-opening-attack:cooldown",
+          "ownerId": "effect:nyx_assassin_vendetta:damage:vendetta-opening-attack",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:nyx_assassin_vendetta:damage:vendetta-opening-attack:delay",
+          "ownerId": "effect:nyx_assassin_vendetta:damage:vendetta-opening-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:nyx_assassin_vendetta:damage:vendetta-opening-attack:damageType",
+          "ownerId": "effect:nyx_assassin_vendetta:damage:vendetta-opening-attack",
+          "field": "damageType",
+          "state": "known",
+          "value": "pure"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "vendettaAttackBuffEstablished",
+          "vendettaOpeningAttackHits"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "nyx_assassin_vendetta:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:nyx_assassin_vendetta:damage:vendetta-opening-attack",
+      "legacyEffectId": "nyx_assassin_vendetta:damage:vendetta-opening-attack",
+      "order": 12,
+      "legacyAbilityId": "nyx_assassin_vendetta",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:nyx_assassin_vendetta:damage:vendetta-opening-attack:0",
+        "condition:nyx_assassin_vendetta:damage:vendetta-opening-attack:1"
+      ],
+      "valueIds": [
+        "value:effect:nyx_assassin_vendetta:damage:vendetta-opening-attack:range",
+        "value:effect:nyx_assassin_vendetta:damage:vendetta-opening-attack:duration",
+        "value:effect:nyx_assassin_vendetta:damage:vendetta-opening-attack:magnitude",
+        "value:effect:nyx_assassin_vendetta:damage:vendetta-opening-attack:mana",
+        "value:effect:nyx_assassin_vendetta:damage:vendetta-opening-attack:cooldown",
+        "value:effect:nyx_assassin_vendetta:damage:vendetta-opening-attack:delay",
+        "value:effect:nyx_assassin_vendetta:damage:vendetta-opening-attack:damageType"
+      ],
+      "activationId": "activation:88:nyx_assassin_vendetta"
+    },
+    {
+      "effectId": "nyx_assassin_vendetta:break:vendetta-opening-break",
+      "heroId": "88",
+      "abilityId": "ability:88:nyx_assassin_vendetta",
+      "type": "break",
+      "subtype": "vendetta-opening-break",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:nyx_assassin_vendetta:break:vendetta-opening-break:range",
+          "ownerId": "effect:nyx_assassin_vendetta:break:vendetta-opening-break",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:nyx_assassin_vendetta:break:vendetta-opening-break:duration",
+          "ownerId": "effect:nyx_assassin_vendetta:break:vendetta-opening-break",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:nyx_assassin_vendetta:break:vendetta-opening-break:magnitude",
+          "ownerId": "effect:nyx_assassin_vendetta:break:vendetta-opening-break",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:nyx_assassin_vendetta:break:vendetta-opening-break:mana",
+          "ownerId": "effect:nyx_assassin_vendetta:break:vendetta-opening-break",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:nyx_assassin_vendetta:break:vendetta-opening-break:cooldown",
+          "ownerId": "effect:nyx_assassin_vendetta:break:vendetta-opening-break",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:nyx_assassin_vendetta:break:vendetta-opening-break:delay",
+          "ownerId": "effect:nyx_assassin_vendetta:break:vendetta-opening-break",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "vendettaAttackBuffEstablished",
+          "vendettaOpeningAttackHits"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "nyx_assassin_vendetta:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:nyx_assassin_vendetta:break:vendetta-opening-break",
+      "legacyEffectId": "nyx_assassin_vendetta:break:vendetta-opening-break",
+      "order": 13,
+      "legacyAbilityId": "nyx_assassin_vendetta",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:nyx_assassin_vendetta:break:vendetta-opening-break:0",
+        "condition:nyx_assassin_vendetta:break:vendetta-opening-break:1"
+      ],
+      "valueIds": [
+        "value:effect:nyx_assassin_vendetta:break:vendetta-opening-break:range",
+        "value:effect:nyx_assassin_vendetta:break:vendetta-opening-break:duration",
+        "value:effect:nyx_assassin_vendetta:break:vendetta-opening-break:magnitude",
+        "value:effect:nyx_assassin_vendetta:break:vendetta-opening-break:mana",
+        "value:effect:nyx_assassin_vendetta:break:vendetta-opening-break:cooldown",
+        "value:effect:nyx_assassin_vendetta:break:vendetta-opening-break:delay"
+      ],
+      "activationId": "activation:88:nyx_assassin_vendetta"
+    },
+    {
+      "effectId": "nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing",
+      "heroId": "88",
+      "abilityId": "ability:88:nyx_assassin_vendetta",
+      "type": "mobility",
+      "subtype": "shard-initial-haste-and-free-pathing",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing:range",
+          "ownerId": "effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing:duration",
+          "ownerId": "effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing:magnitude",
+          "ownerId": "effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing:mana",
+          "ownerId": "effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            180,
+            240,
+            300
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing:cooldown",
+          "ownerId": "effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            80,
+            70,
+            60
+          ]
+        },
+        "delay": {
+          "id": "value:effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing:delay",
+          "ownerId": "effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "vendettaShardInitialWindowActive"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "nyx_assassin_vendetta"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing",
+      "legacyEffectId": "nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing",
+      "order": 14,
+      "legacyAbilityId": "nyx_assassin_vendetta",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing:0"
+      ],
+      "valueIds": [
+        "value:effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing:range",
+        "value:effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing:duration",
+        "value:effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing:magnitude",
+        "value:effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing:mana",
+        "value:effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing:cooldown",
+        "value:effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing:delay"
+      ],
+      "activationId": "activation:88:nyx_assassin_vendetta"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:nyx_assassin_impale:control:line-impale-stun:0",
+      "ownerId": "effect:nyx_assassin_impale:control:line-impale-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "impaleHitsEnemy"
+      }
+    },
+    {
+      "id": "condition:nyx_assassin_impale:damage:line-impale-damage:0",
+      "ownerId": "effect:nyx_assassin_impale:damage:line-impale-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "impaleHitsEnemy"
+      }
+    },
+    {
+      "id": "condition:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation:0",
+      "ownerId": "effect:nyx_assassin_spiked_carapace:save:one-hit-per-source-damage-negation",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "carapacePlayerSourceDamageReceived"
+      }
+    },
+    {
+      "id": "condition:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun:0",
+      "ownerId": "effect:nyx_assassin_spiked_carapace:control:qualifying-source-carapace-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "carapacePlayerSourceDamageReceived"
+      }
+    },
+    {
+      "id": "condition:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage:0",
+      "ownerId": "effect:nyx_assassin_spiked_carapace:modifier:same-type-reflected-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "carapacePlayerSourceDamageReceived"
+      }
+    },
+    {
+      "id": "condition:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form:0",
+      "ownerId": "effect:nyx_assassin_burrow:modifier:scepter-stationary-defensive-form",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "nyxBurrowed"
+      }
+    },
+    {
+      "id": "condition:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility:0",
+      "ownerId": "effect:nyx_assassin_burrow:invisibility:scepter-burrow-invisibility",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "nyxBurrowed"
+      }
+    },
+    {
+      "id": "condition:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain:0",
+      "ownerId": "effect:nyx_assassin_neuro_sting:passive:damage-dependent-mana-drain",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "nyxDealsEnemyDamage"
+      }
+    },
+    {
+      "id": "condition:nyx_assassin_vendetta:damage:vendetta-opening-attack:0",
+      "ownerId": "effect:nyx_assassin_vendetta:damage:vendetta-opening-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "vendettaAttackBuffEstablished"
+      }
+    },
+    {
+      "id": "condition:nyx_assassin_vendetta:damage:vendetta-opening-attack:1",
+      "ownerId": "effect:nyx_assassin_vendetta:damage:vendetta-opening-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "vendettaOpeningAttackHits"
+      }
+    },
+    {
+      "id": "condition:nyx_assassin_vendetta:break:vendetta-opening-break:0",
+      "ownerId": "effect:nyx_assassin_vendetta:break:vendetta-opening-break",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "vendettaAttackBuffEstablished"
+      }
+    },
+    {
+      "id": "condition:nyx_assassin_vendetta:break:vendetta-opening-break:1",
+      "ownerId": "effect:nyx_assassin_vendetta:break:vendetta-opening-break",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "vendettaOpeningAttackHits"
+      }
+    },
+    {
+      "id": "condition:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing:0",
+      "ownerId": "effect:nyx_assassin_vendetta:mobility:shard-initial-haste-and-free-pathing",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "vendettaShardInitialWindowActive"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1650 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "mirana_starfall:damage:primary-area",
+      "heroId": "9",
+      "abilityId": "ability:9:mirana_starfall",
+      "type": "damage",
+      "subtype": "primary-area",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:mirana_starfall:damage:primary-area:range",
+          "ownerId": "effect:mirana_starfall:damage:primary-area",
+          "field": "range",
+          "state": "known",
+          "value": 675
+        },
+        "duration": {
+          "id": "value:effect:mirana_starfall:damage:primary-area:duration",
+          "ownerId": "effect:mirana_starfall:damage:primary-area",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:mirana_starfall:damage:primary-area:magnitude",
+          "ownerId": "effect:mirana_starfall:damage:primary-area",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            75,
+            150,
+            225,
+            300
+          ]
+        },
+        "mana": {
+          "id": "value:effect:mirana_starfall:damage:primary-area:mana",
+          "ownerId": "effect:mirana_starfall:damage:primary-area",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:mirana_starfall:damage:primary-area:cooldown",
+          "ownerId": "effect:mirana_starfall:damage:primary-area",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            12,
+            12,
+            12,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:mirana_starfall:damage:primary-area:delay",
+          "ownerId": "effect:mirana_starfall:damage:primary-area",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:mirana_starfall:damage:primary-area:damageType",
+          "ownerId": "effect:mirana_starfall:damage:primary-area",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "starstormTargetVisible"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "known",
+          "value": false
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "mirana_starfall"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:mirana_starfall:damage:primary-area",
+      "legacyEffectId": "mirana_starfall:damage:primary-area",
+      "order": 0,
+      "legacyAbilityId": "mirana_starfall",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:mirana_starfall:damage:primary-area:0"
+      ],
+      "valueIds": [
+        "value:effect:mirana_starfall:damage:primary-area:range",
+        "value:effect:mirana_starfall:damage:primary-area:duration",
+        "value:effect:mirana_starfall:damage:primary-area:magnitude",
+        "value:effect:mirana_starfall:damage:primary-area:mana",
+        "value:effect:mirana_starfall:damage:primary-area:cooldown",
+        "value:effect:mirana_starfall:damage:primary-area:delay",
+        "value:effect:mirana_starfall:damage:primary-area:damageType"
+      ],
+      "activationId": "activation:9:mirana_starfall"
+    },
+    {
+      "effectId": "mirana_starfall:modifier:closest-target-second-meteor",
+      "heroId": "9",
+      "abilityId": "ability:9:mirana_starfall",
+      "type": "modifier",
+      "subtype": "closest-target-second-meteor",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:mirana_starfall:modifier:closest-target-second-meteor:range",
+          "ownerId": "effect:mirana_starfall:modifier:closest-target-second-meteor",
+          "field": "range",
+          "state": "known",
+          "value": 675
+        },
+        "duration": {
+          "id": "value:effect:mirana_starfall:modifier:closest-target-second-meteor:duration",
+          "ownerId": "effect:mirana_starfall:modifier:closest-target-second-meteor",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:mirana_starfall:modifier:closest-target-second-meteor:magnitude",
+          "ownerId": "effect:mirana_starfall:modifier:closest-target-second-meteor",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:mirana_starfall:modifier:closest-target-second-meteor:mana",
+          "ownerId": "effect:mirana_starfall:modifier:closest-target-second-meteor",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:mirana_starfall:modifier:closest-target-second-meteor:cooldown",
+          "ownerId": "effect:mirana_starfall:modifier:closest-target-second-meteor",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            12,
+            12,
+            12,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:mirana_starfall:modifier:closest-target-second-meteor:delay",
+          "ownerId": "effect:mirana_starfall:modifier:closest-target-second-meteor",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "closestStarstormTargetAvailable"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "mirana_starfall"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:mirana_starfall:modifier:closest-target-second-meteor",
+      "legacyEffectId": "mirana_starfall:modifier:closest-target-second-meteor",
+      "order": 1,
+      "legacyAbilityId": "mirana_starfall",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:mirana_starfall:modifier:closest-target-second-meteor:0"
+      ],
+      "valueIds": [
+        "value:effect:mirana_starfall:modifier:closest-target-second-meteor:range",
+        "value:effect:mirana_starfall:modifier:closest-target-second-meteor:duration",
+        "value:effect:mirana_starfall:modifier:closest-target-second-meteor:magnitude",
+        "value:effect:mirana_starfall:modifier:closest-target-second-meteor:mana",
+        "value:effect:mirana_starfall:modifier:closest-target-second-meteor:cooldown",
+        "value:effect:mirana_starfall:modifier:closest-target-second-meteor:delay"
+      ],
+      "activationId": "activation:9:mirana_starfall"
+    },
+    {
+      "effectId": "mirana_arrow:control:first-hit-stun-minimum",
+      "heroId": "9",
+      "abilityId": "ability:9:mirana_arrow",
+      "type": "control",
+      "subtype": "first-hit-stun-minimum",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:mirana_arrow:control:first-hit-stun-minimum:range",
+          "ownerId": "effect:mirana_arrow:control:first-hit-stun-minimum",
+          "field": "range",
+          "state": "known",
+          "value": 3000
+        },
+        "duration": {
+          "id": "value:effect:mirana_arrow:control:first-hit-stun-minimum:duration",
+          "ownerId": "effect:mirana_arrow:control:first-hit-stun-minimum",
+          "field": "duration",
+          "state": "known",
+          "value": 0.01
+        },
+        "magnitude": {
+          "id": "value:effect:mirana_arrow:control:first-hit-stun-minimum:magnitude",
+          "ownerId": "effect:mirana_arrow:control:first-hit-stun-minimum",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:mirana_arrow:control:first-hit-stun-minimum:mana",
+          "ownerId": "effect:mirana_arrow:control:first-hit-stun-minimum",
+          "field": "mana",
+          "state": "known",
+          "value": 90
+        },
+        "cooldown": {
+          "id": "value:effect:mirana_arrow:control:first-hit-stun-minimum:cooldown",
+          "ownerId": "effect:mirana_arrow:control:first-hit-stun-minimum",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            19,
+            18,
+            17,
+            16
+          ]
+        },
+        "delay": {
+          "id": "value:effect:mirana_arrow:control:first-hit-stun-minimum:delay",
+          "ownerId": "effect:mirana_arrow:control:first-hit-stun-minimum",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "arrowFirstCollisionIsTarget"
+        ]
+      },
+      "delivery": {
+        "kind": "projectile",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "mirana_arrow"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:mirana_arrow:control:first-hit-stun-minimum",
+      "legacyEffectId": "mirana_arrow:control:first-hit-stun-minimum",
+      "order": 2,
+      "legacyAbilityId": "mirana_arrow",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:mirana_arrow:control:first-hit-stun-minimum:0"
+      ],
+      "valueIds": [
+        "value:effect:mirana_arrow:control:first-hit-stun-minimum:range",
+        "value:effect:mirana_arrow:control:first-hit-stun-minimum:duration",
+        "value:effect:mirana_arrow:control:first-hit-stun-minimum:magnitude",
+        "value:effect:mirana_arrow:control:first-hit-stun-minimum:mana",
+        "value:effect:mirana_arrow:control:first-hit-stun-minimum:cooldown",
+        "value:effect:mirana_arrow:control:first-hit-stun-minimum:delay"
+      ],
+      "activationId": "activation:9:mirana_arrow"
+    },
+    {
+      "effectId": "mirana_arrow:damage:first-hit-base",
+      "heroId": "9",
+      "abilityId": "ability:9:mirana_arrow",
+      "type": "damage",
+      "subtype": "first-hit-base",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:mirana_arrow:damage:first-hit-base:range",
+          "ownerId": "effect:mirana_arrow:damage:first-hit-base",
+          "field": "range",
+          "state": "known",
+          "value": 3000
+        },
+        "duration": {
+          "id": "value:effect:mirana_arrow:damage:first-hit-base:duration",
+          "ownerId": "effect:mirana_arrow:damage:first-hit-base",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:mirana_arrow:damage:first-hit-base:magnitude",
+          "ownerId": "effect:mirana_arrow:damage:first-hit-base",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            60,
+            160,
+            260,
+            360
+          ]
+        },
+        "mana": {
+          "id": "value:effect:mirana_arrow:damage:first-hit-base:mana",
+          "ownerId": "effect:mirana_arrow:damage:first-hit-base",
+          "field": "mana",
+          "state": "known",
+          "value": 90
+        },
+        "cooldown": {
+          "id": "value:effect:mirana_arrow:damage:first-hit-base:cooldown",
+          "ownerId": "effect:mirana_arrow:damage:first-hit-base",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            19,
+            18,
+            17,
+            16
+          ]
+        },
+        "delay": {
+          "id": "value:effect:mirana_arrow:damage:first-hit-base:delay",
+          "ownerId": "effect:mirana_arrow:damage:first-hit-base",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:mirana_arrow:damage:first-hit-base:damageType",
+          "ownerId": "effect:mirana_arrow:damage:first-hit-base",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "arrowFirstCollisionIsTarget"
+        ]
+      },
+      "delivery": {
+        "kind": "projectile",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "mirana_arrow"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:mirana_arrow:damage:first-hit-base",
+      "legacyEffectId": "mirana_arrow:damage:first-hit-base",
+      "order": 3,
+      "legacyAbilityId": "mirana_arrow",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:mirana_arrow:damage:first-hit-base:0"
+      ],
+      "valueIds": [
+        "value:effect:mirana_arrow:damage:first-hit-base:range",
+        "value:effect:mirana_arrow:damage:first-hit-base:duration",
+        "value:effect:mirana_arrow:damage:first-hit-base:magnitude",
+        "value:effect:mirana_arrow:damage:first-hit-base:mana",
+        "value:effect:mirana_arrow:damage:first-hit-base:cooldown",
+        "value:effect:mirana_arrow:damage:first-hit-base:delay",
+        "value:effect:mirana_arrow:damage:first-hit-base:damageType"
+      ],
+      "activationId": "activation:9:mirana_arrow"
+    },
+    {
+      "effectId": "mirana_arrow:modifier:scepter-branch",
+      "heroId": "9",
+      "abilityId": "ability:9:mirana_arrow",
+      "type": "modifier",
+      "subtype": "scepter-branch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:mirana_arrow:modifier:scepter-branch:range",
+          "ownerId": "effect:mirana_arrow:modifier:scepter-branch",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:mirana_arrow:modifier:scepter-branch:duration",
+          "ownerId": "effect:mirana_arrow:modifier:scepter-branch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:mirana_arrow:modifier:scepter-branch:magnitude",
+          "ownerId": "effect:mirana_arrow:modifier:scepter-branch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:mirana_arrow:modifier:scepter-branch:mana",
+          "ownerId": "effect:mirana_arrow:modifier:scepter-branch",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:mirana_arrow:modifier:scepter-branch:cooldown",
+          "ownerId": "effect:mirana_arrow:modifier:scepter-branch",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:mirana_arrow:modifier:scepter-branch:delay",
+          "ownerId": "effect:mirana_arrow:modifier:scepter-branch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "mirana_starfall"
+        ],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "mirana_arrow:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:mirana_arrow:modifier:scepter-branch",
+      "legacyEffectId": "mirana_arrow:modifier:scepter-branch",
+      "order": 4,
+      "legacyAbilityId": "mirana_arrow",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:mirana_arrow:modifier:scepter-branch:range",
+        "value:effect:mirana_arrow:modifier:scepter-branch:duration",
+        "value:effect:mirana_arrow:modifier:scepter-branch:magnitude",
+        "value:effect:mirana_arrow:modifier:scepter-branch:mana",
+        "value:effect:mirana_arrow:modifier:scepter-branch:cooldown",
+        "value:effect:mirana_arrow:modifier:scepter-branch:delay"
+      ],
+      "activationId": "activation:9:mirana_arrow"
+    },
+    {
+      "effectId": "mirana_leap:mobility:leap",
+      "heroId": "9",
+      "abilityId": "ability:9:mirana_leap",
+      "type": "mobility",
+      "subtype": "leap",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:mirana_leap:mobility:leap:range",
+          "ownerId": "effect:mirana_leap:mobility:leap",
+          "field": "range",
+          "state": "known",
+          "value": 650
+        },
+        "duration": {
+          "id": "value:effect:mirana_leap:mobility:leap:duration",
+          "ownerId": "effect:mirana_leap:mobility:leap",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:mirana_leap:mobility:leap:magnitude",
+          "ownerId": "effect:mirana_leap:mobility:leap",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:mirana_leap:mobility:leap:mana",
+          "ownerId": "effect:mirana_leap:mobility:leap",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:mirana_leap:mobility:leap:cooldown",
+          "ownerId": "effect:mirana_leap:mobility:leap",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0
+        },
+        "delay": {
+          "id": "value:effect:mirana_leap:mobility:leap:delay",
+          "ownerId": "effect:mirana_leap:mobility:leap",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "no-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "mirana_leap"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:mirana_leap:mobility:leap",
+      "legacyEffectId": "mirana_leap:mobility:leap",
+      "order": 5,
+      "legacyAbilityId": "mirana_leap",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:mirana_leap:mobility:leap:range",
+        "value:effect:mirana_leap:mobility:leap:duration",
+        "value:effect:mirana_leap:mobility:leap:magnitude",
+        "value:effect:mirana_leap:mobility:leap:mana",
+        "value:effect:mirana_leap:mobility:leap:cooldown",
+        "value:effect:mirana_leap:mobility:leap:delay"
+      ],
+      "activationId": "activation:9:mirana_leap"
+    },
+    {
+      "effectId": "mirana_leap:mobility:post-leap-movement-speed",
+      "heroId": "9",
+      "abilityId": "ability:9:mirana_leap",
+      "type": "mobility",
+      "subtype": "post-leap-movement-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:mirana_leap:mobility:post-leap-movement-speed:range",
+          "ownerId": "effect:mirana_leap:mobility:post-leap-movement-speed",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:mirana_leap:mobility:post-leap-movement-speed:duration",
+          "ownerId": "effect:mirana_leap:mobility:post-leap-movement-speed",
+          "field": "duration",
+          "state": "known",
+          "value": 5
+        },
+        "magnitude": {
+          "id": "value:effect:mirana_leap:mobility:post-leap-movement-speed:magnitude",
+          "ownerId": "effect:mirana_leap:mobility:post-leap-movement-speed",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            6,
+            12,
+            18,
+            24
+          ]
+        },
+        "mana": {
+          "id": "value:effect:mirana_leap:mobility:post-leap-movement-speed:mana",
+          "ownerId": "effect:mirana_leap:mobility:post-leap-movement-speed",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:mirana_leap:mobility:post-leap-movement-speed:cooldown",
+          "ownerId": "effect:mirana_leap:mobility:post-leap-movement-speed",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0
+        },
+        "delay": {
+          "id": "value:effect:mirana_leap:mobility:post-leap-movement-speed:delay",
+          "ownerId": "effect:mirana_leap:mobility:post-leap-movement-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "no-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "mirana_leap"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:mirana_leap:mobility:post-leap-movement-speed",
+      "legacyEffectId": "mirana_leap:mobility:post-leap-movement-speed",
+      "order": 6,
+      "legacyAbilityId": "mirana_leap",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:mirana_leap:mobility:post-leap-movement-speed:range",
+        "value:effect:mirana_leap:mobility:post-leap-movement-speed:duration",
+        "value:effect:mirana_leap:mobility:post-leap-movement-speed:magnitude",
+        "value:effect:mirana_leap:mobility:post-leap-movement-speed:mana",
+        "value:effect:mirana_leap:mobility:post-leap-movement-speed:cooldown",
+        "value:effect:mirana_leap:mobility:post-leap-movement-speed:delay"
+      ],
+      "activationId": "activation:9:mirana_leap"
+    },
+    {
+      "effectId": "mirana_leap:modifier:shard-branch",
+      "heroId": "9",
+      "abilityId": "ability:9:mirana_leap",
+      "type": "modifier",
+      "subtype": "shard-branch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:mirana_leap:modifier:shard-branch:range",
+          "ownerId": "effect:mirana_leap:modifier:shard-branch",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:mirana_leap:modifier:shard-branch:duration",
+          "ownerId": "effect:mirana_leap:modifier:shard-branch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:mirana_leap:modifier:shard-branch:magnitude",
+          "ownerId": "effect:mirana_leap:modifier:shard-branch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:mirana_leap:modifier:shard-branch:mana",
+          "ownerId": "effect:mirana_leap:modifier:shard-branch",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:mirana_leap:modifier:shard-branch:cooldown",
+          "ownerId": "effect:mirana_leap:modifier:shard-branch",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:mirana_leap:modifier:shard-branch:delay",
+          "ownerId": "effect:mirana_leap:modifier:shard-branch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "mirana_leap:passive"
+      },
+      "vulnerability": {
+        "rootDisabled": true
+      },
+      "exceptions": [],
+      "id": "effect:mirana_leap:modifier:shard-branch",
+      "legacyEffectId": "mirana_leap:modifier:shard-branch",
+      "order": 7,
+      "legacyAbilityId": "mirana_leap",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:mirana_leap:modifier:shard-branch:range",
+        "value:effect:mirana_leap:modifier:shard-branch:duration",
+        "value:effect:mirana_leap:modifier:shard-branch:magnitude",
+        "value:effect:mirana_leap:modifier:shard-branch:mana",
+        "value:effect:mirana_leap:modifier:shard-branch:cooldown",
+        "value:effect:mirana_leap:modifier:shard-branch:delay"
+      ],
+      "activationId": "activation:9:mirana_leap"
+    },
+    {
+      "effectId": "mirana_celestial_quiver:passive:charged-magic-attack",
+      "heroId": "9",
+      "abilityId": "ability:9:mirana_celestial_quiver",
+      "type": "passive",
+      "subtype": "charged-magic-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:mirana_celestial_quiver:passive:charged-magic-attack:range",
+          "ownerId": "effect:mirana_celestial_quiver:passive:charged-magic-attack",
+          "field": "range",
+          "state": "known",
+          "value": 630
+        },
+        "duration": {
+          "id": "value:effect:mirana_celestial_quiver:passive:charged-magic-attack:duration",
+          "ownerId": "effect:mirana_celestial_quiver:passive:charged-magic-attack",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:mirana_celestial_quiver:passive:charged-magic-attack:magnitude",
+          "ownerId": "effect:mirana_celestial_quiver:passive:charged-magic-attack",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:mirana_celestial_quiver:passive:charged-magic-attack:mana",
+          "ownerId": "effect:mirana_celestial_quiver:passive:charged-magic-attack",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:mirana_celestial_quiver:passive:charged-magic-attack:cooldown",
+          "ownerId": "effect:mirana_celestial_quiver:passive:charged-magic-attack",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:mirana_celestial_quiver:passive:charged-magic-attack:delay",
+          "ownerId": "effect:mirana_celestial_quiver:passive:charged-magic-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:mirana_celestial_quiver:passive:charged-magic-attack:damageType",
+          "ownerId": "effect:mirana_celestial_quiver:passive:charged-magic-attack",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "celestialQuiverChargeAvailable",
+          "attackConnects"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "mirana_celestial_quiver:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:mirana_celestial_quiver:passive:charged-magic-attack",
+      "legacyEffectId": "mirana_celestial_quiver:passive:charged-magic-attack",
+      "order": 8,
+      "legacyAbilityId": "mirana_celestial_quiver",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:mirana_celestial_quiver:passive:charged-magic-attack:0",
+        "condition:mirana_celestial_quiver:passive:charged-magic-attack:1"
+      ],
+      "valueIds": [
+        "value:effect:mirana_celestial_quiver:passive:charged-magic-attack:range",
+        "value:effect:mirana_celestial_quiver:passive:charged-magic-attack:duration",
+        "value:effect:mirana_celestial_quiver:passive:charged-magic-attack:magnitude",
+        "value:effect:mirana_celestial_quiver:passive:charged-magic-attack:mana",
+        "value:effect:mirana_celestial_quiver:passive:charged-magic-attack:cooldown",
+        "value:effect:mirana_celestial_quiver:passive:charged-magic-attack:delay",
+        "value:effect:mirana_celestial_quiver:passive:charged-magic-attack:damageType"
+      ],
+      "activationId": "activation:9:mirana_celestial_quiver"
+    },
+    {
+      "effectId": "mirana_celestial_quiver:modifier:shard-branch",
+      "heroId": "9",
+      "abilityId": "ability:9:mirana_celestial_quiver",
+      "type": "modifier",
+      "subtype": "shard-branch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:mirana_celestial_quiver:modifier:shard-branch:range",
+          "ownerId": "effect:mirana_celestial_quiver:modifier:shard-branch",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:mirana_celestial_quiver:modifier:shard-branch:duration",
+          "ownerId": "effect:mirana_celestial_quiver:modifier:shard-branch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:mirana_celestial_quiver:modifier:shard-branch:magnitude",
+          "ownerId": "effect:mirana_celestial_quiver:modifier:shard-branch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:mirana_celestial_quiver:modifier:shard-branch:mana",
+          "ownerId": "effect:mirana_celestial_quiver:modifier:shard-branch",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:mirana_celestial_quiver:modifier:shard-branch:cooldown",
+          "ownerId": "effect:mirana_celestial_quiver:modifier:shard-branch",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:mirana_celestial_quiver:modifier:shard-branch:delay",
+          "ownerId": "effect:mirana_celestial_quiver:modifier:shard-branch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "innate": true,
+        "requiresContext": [
+          "leapBuffActive"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "mirana_celestial_quiver:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:mirana_celestial_quiver:modifier:shard-branch",
+      "legacyEffectId": "mirana_celestial_quiver:modifier:shard-branch",
+      "order": 9,
+      "legacyAbilityId": "mirana_celestial_quiver",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:mirana_celestial_quiver:modifier:shard-branch:0"
+      ],
+      "valueIds": [
+        "value:effect:mirana_celestial_quiver:modifier:shard-branch:range",
+        "value:effect:mirana_celestial_quiver:modifier:shard-branch:duration",
+        "value:effect:mirana_celestial_quiver:modifier:shard-branch:magnitude",
+        "value:effect:mirana_celestial_quiver:modifier:shard-branch:mana",
+        "value:effect:mirana_celestial_quiver:modifier:shard-branch:cooldown",
+        "value:effect:mirana_celestial_quiver:modifier:shard-branch:delay"
+      ],
+      "activationId": "activation:9:mirana_celestial_quiver"
+    },
+    {
+      "effectId": "mirana_invis:invisibility:team-moonlight-shadow",
+      "heroId": "9",
+      "abilityId": "ability:9:mirana_invis",
+      "type": "invisibility",
+      "subtype": "team-moonlight-shadow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally",
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:mirana_invis:invisibility:team-moonlight-shadow:range",
+          "ownerId": "effect:mirana_invis:invisibility:team-moonlight-shadow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:mirana_invis:invisibility:team-moonlight-shadow:duration",
+          "ownerId": "effect:mirana_invis:invisibility:team-moonlight-shadow",
+          "field": "duration",
+          "state": "known",
+          "value": 18
+        },
+        "magnitude": {
+          "id": "value:effect:mirana_invis:invisibility:team-moonlight-shadow:magnitude",
+          "ownerId": "effect:mirana_invis:invisibility:team-moonlight-shadow",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:mirana_invis:invisibility:team-moonlight-shadow:mana",
+          "ownerId": "effect:mirana_invis:invisibility:team-moonlight-shadow",
+          "field": "mana",
+          "state": "known",
+          "value": 125
+        },
+        "cooldown": {
+          "id": "value:effect:mirana_invis:invisibility:team-moonlight-shadow:cooldown",
+          "ownerId": "effect:mirana_invis:invisibility:team-moonlight-shadow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            120,
+            110,
+            100
+          ]
+        },
+        "delay": {
+          "id": "value:effect:mirana_invis:invisibility:team-moonlight-shadow:delay",
+          "ownerId": "effect:mirana_invis:invisibility:team-moonlight-shadow",
+          "field": "delay",
+          "state": "known",
+          "value": [
+            2.5,
+            2,
+            1.5
+          ]
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "no-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": true
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "mirana_invis"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:mirana_invis:invisibility:team-moonlight-shadow",
+      "legacyEffectId": "mirana_invis:invisibility:team-moonlight-shadow",
+      "order": 10,
+      "legacyAbilityId": "mirana_invis",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:mirana_invis:invisibility:team-moonlight-shadow:range",
+        "value:effect:mirana_invis:invisibility:team-moonlight-shadow:duration",
+        "value:effect:mirana_invis:invisibility:team-moonlight-shadow:magnitude",
+        "value:effect:mirana_invis:invisibility:team-moonlight-shadow:mana",
+        "value:effect:mirana_invis:invisibility:team-moonlight-shadow:cooldown",
+        "value:effect:mirana_invis:invisibility:team-moonlight-shadow:delay"
+      ],
+      "activationId": "activation:9:mirana_invis"
+    },
+    {
+      "effectId": "mirana_invis:mobility:team-movement-speed",
+      "heroId": "9",
+      "abilityId": "ability:9:mirana_invis",
+      "type": "mobility",
+      "subtype": "team-movement-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally",
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:mirana_invis:mobility:team-movement-speed:range",
+          "ownerId": "effect:mirana_invis:mobility:team-movement-speed",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:mirana_invis:mobility:team-movement-speed:duration",
+          "ownerId": "effect:mirana_invis:mobility:team-movement-speed",
+          "field": "duration",
+          "state": "known",
+          "value": 18
+        },
+        "magnitude": {
+          "id": "value:effect:mirana_invis:mobility:team-movement-speed:magnitude",
+          "ownerId": "effect:mirana_invis:mobility:team-movement-speed",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            9,
+            12,
+            15
+          ]
+        },
+        "mana": {
+          "id": "value:effect:mirana_invis:mobility:team-movement-speed:mana",
+          "ownerId": "effect:mirana_invis:mobility:team-movement-speed",
+          "field": "mana",
+          "state": "known",
+          "value": 125
+        },
+        "cooldown": {
+          "id": "value:effect:mirana_invis:mobility:team-movement-speed:cooldown",
+          "ownerId": "effect:mirana_invis:mobility:team-movement-speed",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            120,
+            110,
+            100
+          ]
+        },
+        "delay": {
+          "id": "value:effect:mirana_invis:mobility:team-movement-speed:delay",
+          "ownerId": "effect:mirana_invis:mobility:team-movement-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "no-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": true
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "mirana_invis"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:mirana_invis:mobility:team-movement-speed",
+      "legacyEffectId": "mirana_invis:mobility:team-movement-speed",
+      "order": 11,
+      "legacyAbilityId": "mirana_invis",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:mirana_invis:mobility:team-movement-speed:range",
+        "value:effect:mirana_invis:mobility:team-movement-speed:duration",
+        "value:effect:mirana_invis:mobility:team-movement-speed:magnitude",
+        "value:effect:mirana_invis:mobility:team-movement-speed:mana",
+        "value:effect:mirana_invis:mobility:team-movement-speed:cooldown",
+        "value:effect:mirana_invis:mobility:team-movement-speed:delay"
+      ],
+      "activationId": "activation:9:mirana_invis"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:mirana_starfall:damage:primary-area:0",
+      "ownerId": "effect:mirana_starfall:damage:primary-area",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "starstormTargetVisible"
+      }
+    },
+    {
+      "id": "condition:mirana_starfall:modifier:closest-target-second-meteor:0",
+      "ownerId": "effect:mirana_starfall:modifier:closest-target-second-meteor",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "closestStarstormTargetAvailable"
+      }
+    },
+    {
+      "id": "condition:mirana_arrow:control:first-hit-stun-minimum:0",
+      "ownerId": "effect:mirana_arrow:control:first-hit-stun-minimum",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "arrowFirstCollisionIsTarget"
+      }
+    },
+    {
+      "id": "condition:mirana_arrow:damage:first-hit-base:0",
+      "ownerId": "effect:mirana_arrow:damage:first-hit-base",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "arrowFirstCollisionIsTarget"
+      }
+    },
+    {
+      "id": "condition:mirana_celestial_quiver:passive:charged-magic-attack:0",
+      "ownerId": "effect:mirana_celestial_quiver:passive:charged-magic-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "celestialQuiverChargeAvailable"
+      }
+    },
+    {
+      "id": "condition:mirana_celestial_quiver:passive:charged-magic-attack:1",
+      "ownerId": "effect:mirana_celestial_quiver:passive:charged-magic-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "attackConnects"
+      }
+    },
+    {
+      "id": "condition:mirana_celestial_quiver:modifier:shard-branch:0",
+      "ownerId": "effect:mirana_celestial_quiver:modifier:shard-branch",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "leapBuffActive"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/aliases.schema.json",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "normalization",
+    "entries"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "normalization": {
+      "type": "string",
+      "minLength": 1
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "alias",
+          "keys"
+        ],
+        "properties": {
+          "alias": {
+            "type": "string",
+            "minLength": 1
+          },
+          "keys": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

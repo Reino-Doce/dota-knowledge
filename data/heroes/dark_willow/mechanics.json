@@ -1,0 +1,1629 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "dark_willow_bramble_maze:control:bramble-contact-root",
+      "heroId": "119",
+      "abilityId": "ability:119:dark_willow_bramble_maze",
+      "type": "control",
+      "subtype": "bramble-contact-root",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dark_willow_bramble_maze:control:bramble-contact-root:range",
+          "ownerId": "effect:dark_willow_bramble_maze:control:bramble-contact-root",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dark_willow_bramble_maze:control:bramble-contact-root:duration",
+          "ownerId": "effect:dark_willow_bramble_maze:control:bramble-contact-root",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1,
+            1.5,
+            2,
+            2.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:dark_willow_bramble_maze:control:bramble-contact-root:magnitude",
+          "ownerId": "effect:dark_willow_bramble_maze:control:bramble-contact-root",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dark_willow_bramble_maze:control:bramble-contact-root:mana",
+          "ownerId": "effect:dark_willow_bramble_maze:control:bramble-contact-root",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:dark_willow_bramble_maze:control:bramble-contact-root:cooldown",
+          "ownerId": "effect:dark_willow_bramble_maze:control:bramble-contact-root",
+          "field": "cooldown",
+          "state": "known",
+          "value": 22
+        },
+        "delay": {
+          "id": "value:effect:dark_willow_bramble_maze:control:bramble-contact-root:delay",
+          "ownerId": "effect:dark_willow_bramble_maze:control:bramble-contact-root",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyTouchesBramble"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": false
+        }
+      },
+      "relationships": {
+        "resourceId": "dark_willow_bramble_maze"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dark_willow_bramble_maze:control:bramble-contact-root",
+      "legacyEffectId": "dark_willow_bramble_maze:control:bramble-contact-root",
+      "order": 0,
+      "legacyAbilityId": "dark_willow_bramble_maze",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dark_willow_bramble_maze:control:bramble-contact-root:0"
+      ],
+      "valueIds": [
+        "value:effect:dark_willow_bramble_maze:control:bramble-contact-root:range",
+        "value:effect:dark_willow_bramble_maze:control:bramble-contact-root:duration",
+        "value:effect:dark_willow_bramble_maze:control:bramble-contact-root:magnitude",
+        "value:effect:dark_willow_bramble_maze:control:bramble-contact-root:mana",
+        "value:effect:dark_willow_bramble_maze:control:bramble-contact-root:cooldown",
+        "value:effect:dark_willow_bramble_maze:control:bramble-contact-root:delay"
+      ],
+      "activationId": "activation:119:dark_willow_bramble_maze"
+    },
+    {
+      "effectId": "dark_willow_bramble_maze:damage:bramble-contact-damage-tick",
+      "heroId": "119",
+      "abilityId": "ability:119:dark_willow_bramble_maze",
+      "type": "damage",
+      "subtype": "bramble-contact-damage-tick",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick:range",
+          "ownerId": "effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick:duration",
+          "ownerId": "effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick:magnitude",
+          "ownerId": "effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            50,
+            55,
+            60,
+            65
+          ]
+        },
+        "mana": {
+          "id": "value:effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick:mana",
+          "ownerId": "effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick:cooldown",
+          "ownerId": "effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick",
+          "field": "cooldown",
+          "state": "known",
+          "value": 22
+        },
+        "delay": {
+          "id": "value:effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick:delay",
+          "ownerId": "effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick:damageType",
+          "ownerId": "effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyTouchesBramble"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dark_willow_bramble_maze"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick",
+      "legacyEffectId": "dark_willow_bramble_maze:damage:bramble-contact-damage-tick",
+      "order": 1,
+      "legacyAbilityId": "dark_willow_bramble_maze",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dark_willow_bramble_maze:damage:bramble-contact-damage-tick:0"
+      ],
+      "valueIds": [
+        "value:effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick:range",
+        "value:effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick:duration",
+        "value:effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick:magnitude",
+        "value:effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick:mana",
+        "value:effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick:cooldown",
+        "value:effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick:delay",
+        "value:effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick:damageType"
+      ],
+      "activationId": "activation:119:dark_willow_bramble_maze"
+    },
+    {
+      "effectId": "dark_willow_shadow_realm:save:shadow-realm-untargetability",
+      "heroId": "119",
+      "abilityId": "ability:119:dark_willow_shadow_realm",
+      "type": "save",
+      "subtype": "shadow-realm-untargetability",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dark_willow_shadow_realm:save:shadow-realm-untargetability:range",
+          "ownerId": "effect:dark_willow_shadow_realm:save:shadow-realm-untargetability",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dark_willow_shadow_realm:save:shadow-realm-untargetability:duration",
+          "ownerId": "effect:dark_willow_shadow_realm:save:shadow-realm-untargetability",
+          "field": "duration",
+          "state": "known",
+          "value": 5
+        },
+        "magnitude": {
+          "id": "value:effect:dark_willow_shadow_realm:save:shadow-realm-untargetability:magnitude",
+          "ownerId": "effect:dark_willow_shadow_realm:save:shadow-realm-untargetability",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dark_willow_shadow_realm:save:shadow-realm-untargetability:mana",
+          "ownerId": "effect:dark_willow_shadow_realm:save:shadow-realm-untargetability",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:dark_willow_shadow_realm:save:shadow-realm-untargetability:cooldown",
+          "ownerId": "effect:dark_willow_shadow_realm:save:shadow-realm-untargetability",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            21,
+            19,
+            17,
+            15
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dark_willow_shadow_realm:save:shadow-realm-untargetability:delay",
+          "ownerId": "effect:dark_willow_shadow_realm:save:shadow-realm-untargetability",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dark_willow_shadow_realm"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dark_willow_shadow_realm:save:shadow-realm-untargetability",
+      "legacyEffectId": "dark_willow_shadow_realm:save:shadow-realm-untargetability",
+      "order": 2,
+      "legacyAbilityId": "dark_willow_shadow_realm",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:dark_willow_shadow_realm:save:shadow-realm-untargetability:range",
+        "value:effect:dark_willow_shadow_realm:save:shadow-realm-untargetability:duration",
+        "value:effect:dark_willow_shadow_realm:save:shadow-realm-untargetability:magnitude",
+        "value:effect:dark_willow_shadow_realm:save:shadow-realm-untargetability:mana",
+        "value:effect:dark_willow_shadow_realm:save:shadow-realm-untargetability:cooldown",
+        "value:effect:dark_willow_shadow_realm:save:shadow-realm-untargetability:delay"
+      ],
+      "activationId": "activation:119:dark_willow_shadow_realm"
+    },
+    {
+      "effectId": "dark_willow_shadow_realm:damage:charged-shadow-realm-attack",
+      "heroId": "119",
+      "abilityId": "ability:119:dark_willow_shadow_realm",
+      "type": "damage",
+      "subtype": "charged-shadow-realm-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:range",
+          "ownerId": "effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:duration",
+          "ownerId": "effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:magnitude",
+          "ownerId": "effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            120,
+            200,
+            280,
+            360
+          ]
+        },
+        "mana": {
+          "id": "value:effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:mana",
+          "ownerId": "effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:cooldown",
+          "ownerId": "effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:delay",
+          "ownerId": "effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:damageType",
+          "ownerId": "effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "shadowRealmFullyCharged",
+          "shadowRealmAttackHits"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dark_willow_shadow_realm:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack",
+      "legacyEffectId": "dark_willow_shadow_realm:damage:charged-shadow-realm-attack",
+      "order": 3,
+      "legacyAbilityId": "dark_willow_shadow_realm",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:0",
+        "condition:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:1"
+      ],
+      "valueIds": [
+        "value:effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:range",
+        "value:effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:duration",
+        "value:effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:magnitude",
+        "value:effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:mana",
+        "value:effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:cooldown",
+        "value:effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:delay",
+        "value:effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:damageType"
+      ],
+      "activationId": "activation:119:dark_willow_shadow_realm"
+    },
+    {
+      "effectId": "dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks",
+      "heroId": "119",
+      "abilityId": "ability:119:dark_willow_shadow_realm",
+      "type": "modifier",
+      "subtype": "scepter-shadow-realm-repeated-attacks",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks:range",
+          "ownerId": "effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks:duration",
+          "ownerId": "effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks:magnitude",
+          "ownerId": "effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks:mana",
+          "ownerId": "effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks:cooldown",
+          "ownerId": "effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks:delay",
+          "ownerId": "effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "shadowRealmActive"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dark_willow_shadow_realm:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks",
+      "legacyEffectId": "dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks",
+      "order": 4,
+      "legacyAbilityId": "dark_willow_shadow_realm",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks:0"
+      ],
+      "valueIds": [
+        "value:effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks:range",
+        "value:effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks:duration",
+        "value:effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks:magnitude",
+        "value:effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks:mana",
+        "value:effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks:cooldown",
+        "value:effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks:delay"
+      ],
+      "activationId": "activation:119:dark_willow_shadow_realm"
+    },
+    {
+      "effectId": "dark_willow_cursed_crown:modifier:crown-paid-countdown-placement",
+      "heroId": "119",
+      "abilityId": "ability:119:dark_willow_cursed_crown",
+      "type": "modifier",
+      "subtype": "crown-paid-countdown-placement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement:range",
+          "ownerId": "effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement:duration",
+          "ownerId": "effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement:magnitude",
+          "ownerId": "effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement:mana",
+          "ownerId": "effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement:cooldown",
+          "ownerId": "effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            17,
+            15,
+            13,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement:delay",
+          "ownerId": "effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement",
+          "field": "delay",
+          "state": "known",
+          "value": 4
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "dark_willow_cursed_crown"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement",
+      "legacyEffectId": "dark_willow_cursed_crown:modifier:crown-paid-countdown-placement",
+      "order": 5,
+      "legacyAbilityId": "dark_willow_cursed_crown",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement:range",
+        "value:effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement:duration",
+        "value:effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement:magnitude",
+        "value:effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement:mana",
+        "value:effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement:cooldown",
+        "value:effect:dark_willow_cursed_crown:modifier:crown-paid-countdown-placement:delay"
+      ],
+      "activationId": "activation:119:dark_willow_cursed_crown"
+    },
+    {
+      "effectId": "dark_willow_cursed_crown:control:surviving-crown-delayed-stun",
+      "heroId": "119",
+      "abilityId": "ability:119:dark_willow_cursed_crown",
+      "type": "control",
+      "subtype": "surviving-crown-delayed-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun:range",
+          "ownerId": "effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun:duration",
+          "ownerId": "effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.5,
+            1.8,
+            2.1,
+            2.4
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun:magnitude",
+          "ownerId": "effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun:mana",
+          "ownerId": "effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun:cooldown",
+          "ownerId": "effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun:delay",
+          "ownerId": "effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "crownCounterCompletes",
+          "enemyInsideCrownBurst"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "dark_willow_cursed_crown:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun",
+      "legacyEffectId": "dark_willow_cursed_crown:control:surviving-crown-delayed-stun",
+      "order": 6,
+      "legacyAbilityId": "dark_willow_cursed_crown",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dark_willow_cursed_crown:control:surviving-crown-delayed-stun:0",
+        "condition:dark_willow_cursed_crown:control:surviving-crown-delayed-stun:1"
+      ],
+      "valueIds": [
+        "value:effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun:range",
+        "value:effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun:duration",
+        "value:effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun:magnitude",
+        "value:effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun:mana",
+        "value:effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun:cooldown",
+        "value:effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun:delay"
+      ],
+      "activationId": "activation:119:dark_willow_cursed_crown"
+    },
+    {
+      "effectId": "dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles",
+      "heroId": "119",
+      "abilityId": "ability:119:dark_willow_cursed_crown",
+      "type": "modifier",
+      "subtype": "shard-crown-expiry-brambles",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles:range",
+          "ownerId": "effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles:duration",
+          "ownerId": "effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles:magnitude",
+          "ownerId": "effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles:mana",
+          "ownerId": "effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles:cooldown",
+          "ownerId": "effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles:delay",
+          "ownerId": "effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "crownCounterEnds"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dark_willow_cursed_crown:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles",
+      "legacyEffectId": "dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles",
+      "order": 7,
+      "legacyAbilityId": "dark_willow_cursed_crown",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles:0"
+      ],
+      "valueIds": [
+        "value:effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles:range",
+        "value:effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles:duration",
+        "value:effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles:magnitude",
+        "value:effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles:mana",
+        "value:effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles:cooldown",
+        "value:effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles:delay"
+      ],
+      "activationId": "activation:119:dark_willow_cursed_crown"
+    },
+    {
+      "effectId": "dark_willow_bedlam:damage:bedlam-single-wisp-hit",
+      "heroId": "119",
+      "abilityId": "ability:119:dark_willow_bedlam",
+      "type": "damage",
+      "subtype": "bedlam-single-wisp-hit",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit:range",
+          "ownerId": "effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit:duration",
+          "ownerId": "effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit:magnitude",
+          "ownerId": "effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            70,
+            120,
+            170
+          ]
+        },
+        "mana": {
+          "id": "value:effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit:mana",
+          "ownerId": "effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            150,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit:cooldown",
+          "ownerId": "effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit",
+          "field": "cooldown",
+          "state": "known",
+          "value": 30
+        },
+        "delay": {
+          "id": "value:effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit:delay",
+          "ownerId": "effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit:damageType",
+          "ownerId": "effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "terrorizeInactive",
+          "bedlamWispHitsTarget"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dark_willow_bedlam"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit",
+      "legacyEffectId": "dark_willow_bedlam:damage:bedlam-single-wisp-hit",
+      "order": 8,
+      "legacyAbilityId": "dark_willow_bedlam",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dark_willow_bedlam:damage:bedlam-single-wisp-hit:0",
+        "condition:dark_willow_bedlam:damage:bedlam-single-wisp-hit:1"
+      ],
+      "valueIds": [
+        "value:effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit:range",
+        "value:effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit:duration",
+        "value:effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit:magnitude",
+        "value:effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit:mana",
+        "value:effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit:cooldown",
+        "value:effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit:delay",
+        "value:effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit:damageType"
+      ],
+      "activationId": "activation:119:dark_willow_bedlam"
+    },
+    {
+      "effectId": "dark_willow_pixie_dust:modifier:pixie-regeneration-amplification",
+      "heroId": "119",
+      "abilityId": "ability:119:dark_willow_pixie_dust",
+      "type": "modifier",
+      "subtype": "pixie-regeneration-amplification",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification:range",
+          "ownerId": "effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification:duration",
+          "ownerId": "effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification:magnitude",
+          "ownerId": "effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification:mana",
+          "ownerId": "effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification:cooldown",
+          "ownerId": "effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification:delay",
+          "ownerId": "effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "dark_willow_pixie_dust:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification",
+      "legacyEffectId": "dark_willow_pixie_dust:modifier:pixie-regeneration-amplification",
+      "order": 9,
+      "legacyAbilityId": "dark_willow_pixie_dust",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification:range",
+        "value:effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification:duration",
+        "value:effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification:magnitude",
+        "value:effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification:mana",
+        "value:effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification:cooldown",
+        "value:effect:dark_willow_pixie_dust:modifier:pixie-regeneration-amplification:delay"
+      ],
+      "activationId": "activation:119:dark_willow_pixie_dust"
+    },
+    {
+      "effectId": "dark_willow_terrorize:control:terrorize-fear",
+      "heroId": "119",
+      "abilityId": "ability:119:dark_willow_terrorize",
+      "type": "control",
+      "subtype": "terrorize-fear",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:dark_willow_terrorize:control:terrorize-fear:range",
+          "ownerId": "effect:dark_willow_terrorize:control:terrorize-fear",
+          "field": "range",
+          "state": "known",
+          "value": 1200
+        },
+        "duration": {
+          "id": "value:effect:dark_willow_terrorize:control:terrorize-fear:duration",
+          "ownerId": "effect:dark_willow_terrorize:control:terrorize-fear",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2.8,
+            3,
+            3.2
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:dark_willow_terrorize:control:terrorize-fear:magnitude",
+          "ownerId": "effect:dark_willow_terrorize:control:terrorize-fear",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:dark_willow_terrorize:control:terrorize-fear:mana",
+          "ownerId": "effect:dark_willow_terrorize:control:terrorize-fear",
+          "field": "mana",
+          "state": "known",
+          "value": 150
+        },
+        "cooldown": {
+          "id": "value:effect:dark_willow_terrorize:control:terrorize-fear:cooldown",
+          "ownerId": "effect:dark_willow_terrorize:control:terrorize-fear",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            100,
+            90,
+            80
+          ]
+        },
+        "delay": {
+          "id": "value:effect:dark_willow_terrorize:control:terrorize-fear:delay",
+          "ownerId": "effect:dark_willow_terrorize:control:terrorize-fear",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "bedlamInactive",
+          "terrorizeProjectileArrives"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "dark_willow_terrorize"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:dark_willow_terrorize:control:terrorize-fear",
+      "legacyEffectId": "dark_willow_terrorize:control:terrorize-fear",
+      "order": 10,
+      "legacyAbilityId": "dark_willow_terrorize",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:dark_willow_terrorize:control:terrorize-fear:0",
+        "condition:dark_willow_terrorize:control:terrorize-fear:1"
+      ],
+      "valueIds": [
+        "value:effect:dark_willow_terrorize:control:terrorize-fear:range",
+        "value:effect:dark_willow_terrorize:control:terrorize-fear:duration",
+        "value:effect:dark_willow_terrorize:control:terrorize-fear:magnitude",
+        "value:effect:dark_willow_terrorize:control:terrorize-fear:mana",
+        "value:effect:dark_willow_terrorize:control:terrorize-fear:cooldown",
+        "value:effect:dark_willow_terrorize:control:terrorize-fear:delay"
+      ],
+      "activationId": "activation:119:dark_willow_terrorize"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:dark_willow_bramble_maze:control:bramble-contact-root:0",
+      "ownerId": "effect:dark_willow_bramble_maze:control:bramble-contact-root",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyTouchesBramble"
+      }
+    },
+    {
+      "id": "condition:dark_willow_bramble_maze:damage:bramble-contact-damage-tick:0",
+      "ownerId": "effect:dark_willow_bramble_maze:damage:bramble-contact-damage-tick",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyTouchesBramble"
+      }
+    },
+    {
+      "id": "condition:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:0",
+      "ownerId": "effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "shadowRealmFullyCharged"
+      }
+    },
+    {
+      "id": "condition:dark_willow_shadow_realm:damage:charged-shadow-realm-attack:1",
+      "ownerId": "effect:dark_willow_shadow_realm:damage:charged-shadow-realm-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "shadowRealmAttackHits"
+      }
+    },
+    {
+      "id": "condition:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks:0",
+      "ownerId": "effect:dark_willow_shadow_realm:modifier:scepter-shadow-realm-repeated-attacks",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "shadowRealmActive"
+      }
+    },
+    {
+      "id": "condition:dark_willow_cursed_crown:control:surviving-crown-delayed-stun:0",
+      "ownerId": "effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "crownCounterCompletes"
+      }
+    },
+    {
+      "id": "condition:dark_willow_cursed_crown:control:surviving-crown-delayed-stun:1",
+      "ownerId": "effect:dark_willow_cursed_crown:control:surviving-crown-delayed-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideCrownBurst"
+      }
+    },
+    {
+      "id": "condition:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles:0",
+      "ownerId": "effect:dark_willow_cursed_crown:modifier:shard-crown-expiry-brambles",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "crownCounterEnds"
+      }
+    },
+    {
+      "id": "condition:dark_willow_bedlam:damage:bedlam-single-wisp-hit:0",
+      "ownerId": "effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "terrorizeInactive"
+      }
+    },
+    {
+      "id": "condition:dark_willow_bedlam:damage:bedlam-single-wisp-hit:1",
+      "ownerId": "effect:dark_willow_bedlam:damage:bedlam-single-wisp-hit",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "bedlamWispHitsTarget"
+      }
+    },
+    {
+      "id": "condition:dark_willow_terrorize:control:terrorize-fear:0",
+      "ownerId": "effect:dark_willow_terrorize:control:terrorize-fear",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "bedlamInactive"
+      }
+    },
+    {
+      "id": "condition:dark_willow_terrorize:control:terrorize-fear:1",
+      "ownerId": "effect:dark_willow_terrorize:control:terrorize-fear",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "terrorizeProjectileArrives"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1294 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "enigma_malefice:control:repeated-malefice-stun",
+      "heroId": "33",
+      "abilityId": "ability:33:enigma_malefice",
+      "type": "control",
+      "subtype": "repeated-malefice-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enigma_malefice:control:repeated-malefice-stun:range",
+          "ownerId": "effect:enigma_malefice:control:repeated-malefice-stun",
+          "field": "range",
+          "state": "known",
+          "value": [
+            450,
+            500,
+            550,
+            600
+          ]
+        },
+        "duration": {
+          "id": "value:effect:enigma_malefice:control:repeated-malefice-stun:duration",
+          "ownerId": "effect:enigma_malefice:control:repeated-malefice-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            0.3,
+            0.5,
+            0.7,
+            0.9
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:enigma_malefice:control:repeated-malefice-stun:magnitude",
+          "ownerId": "effect:enigma_malefice:control:repeated-malefice-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enigma_malefice:control:repeated-malefice-stun:mana",
+          "ownerId": "effect:enigma_malefice:control:repeated-malefice-stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:enigma_malefice:control:repeated-malefice-stun:cooldown",
+          "ownerId": "effect:enigma_malefice:control:repeated-malefice-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            18,
+            16,
+            14
+          ]
+        },
+        "delay": {
+          "id": "value:effect:enigma_malefice:control:repeated-malefice-stun:delay",
+          "ownerId": "effect:enigma_malefice:control:repeated-malefice-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "enigma_malefice"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enigma_malefice:control:repeated-malefice-stun",
+      "legacyEffectId": "enigma_malefice:control:repeated-malefice-stun",
+      "order": 0,
+      "legacyAbilityId": "enigma_malefice",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:enigma_malefice:control:repeated-malefice-stun:range",
+        "value:effect:enigma_malefice:control:repeated-malefice-stun:duration",
+        "value:effect:enigma_malefice:control:repeated-malefice-stun:magnitude",
+        "value:effect:enigma_malefice:control:repeated-malefice-stun:mana",
+        "value:effect:enigma_malefice:control:repeated-malefice-stun:cooldown",
+        "value:effect:enigma_malefice:control:repeated-malefice-stun:delay"
+      ],
+      "activationId": "activation:33:enigma_malefice"
+    },
+    {
+      "effectId": "enigma_malefice:damage:malefice-instance-damage",
+      "heroId": "33",
+      "abilityId": "ability:33:enigma_malefice",
+      "type": "damage",
+      "subtype": "malefice-instance-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enigma_malefice:damage:malefice-instance-damage:range",
+          "ownerId": "effect:enigma_malefice:damage:malefice-instance-damage",
+          "field": "range",
+          "state": "known",
+          "value": [
+            450,
+            500,
+            550,
+            600
+          ]
+        },
+        "duration": {
+          "id": "value:effect:enigma_malefice:damage:malefice-instance-damage:duration",
+          "ownerId": "effect:enigma_malefice:damage:malefice-instance-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:enigma_malefice:damage:malefice-instance-damage:magnitude",
+          "ownerId": "effect:enigma_malefice:damage:malefice-instance-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            55,
+            70,
+            85,
+            100
+          ]
+        },
+        "mana": {
+          "id": "value:effect:enigma_malefice:damage:malefice-instance-damage:mana",
+          "ownerId": "effect:enigma_malefice:damage:malefice-instance-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:enigma_malefice:damage:malefice-instance-damage:cooldown",
+          "ownerId": "effect:enigma_malefice:damage:malefice-instance-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            18,
+            16,
+            14
+          ]
+        },
+        "delay": {
+          "id": "value:effect:enigma_malefice:damage:malefice-instance-damage:delay",
+          "ownerId": "effect:enigma_malefice:damage:malefice-instance-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:enigma_malefice:damage:malefice-instance-damage:damageType",
+          "ownerId": "effect:enigma_malefice:damage:malefice-instance-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "enigma_malefice"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enigma_malefice:damage:malefice-instance-damage",
+      "legacyEffectId": "enigma_malefice:damage:malefice-instance-damage",
+      "order": 1,
+      "legacyAbilityId": "enigma_malefice",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:enigma_malefice:damage:malefice-instance-damage:range",
+        "value:effect:enigma_malefice:damage:malefice-instance-damage:duration",
+        "value:effect:enigma_malefice:damage:malefice-instance-damage:magnitude",
+        "value:effect:enigma_malefice:damage:malefice-instance-damage:mana",
+        "value:effect:enigma_malefice:damage:malefice-instance-damage:cooldown",
+        "value:effect:enigma_malefice:damage:malefice-instance-damage:delay",
+        "value:effect:enigma_malefice:damage:malefice-instance-damage:damageType"
+      ],
+      "activationId": "activation:33:enigma_malefice"
+    },
+    {
+      "effectId": "enigma_malefice:modifier:shard-stun-extension-and-eidolons",
+      "heroId": "33",
+      "abilityId": "ability:33:enigma_malefice",
+      "type": "modifier",
+      "subtype": "shard-stun-extension-and-eidolons",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons:range",
+          "ownerId": "effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons:duration",
+          "ownerId": "effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons:magnitude",
+          "ownerId": "effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons:mana",
+          "ownerId": "effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons:cooldown",
+          "ownerId": "effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            18,
+            16,
+            14
+          ]
+        },
+        "delay": {
+          "id": "value:effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons:delay",
+          "ownerId": "effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "enigma_malefice"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons",
+      "legacyEffectId": "enigma_malefice:modifier:shard-stun-extension-and-eidolons",
+      "order": 2,
+      "legacyAbilityId": "enigma_malefice",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons:range",
+        "value:effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons:duration",
+        "value:effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons:magnitude",
+        "value:effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons:mana",
+        "value:effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons:cooldown",
+        "value:effect:enigma_malefice:modifier:shard-stun-extension-and-eidolons:delay"
+      ],
+      "activationId": "activation:33:enigma_malefice"
+    },
+    {
+      "effectId": "enigma_demonic_conversion:modifier:health-cost-eidolon-summons",
+      "heroId": "33",
+      "abilityId": "ability:33:enigma_demonic_conversion",
+      "type": "modifier",
+      "subtype": "health-cost-eidolon-summons",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons:range",
+          "ownerId": "effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons",
+          "field": "range",
+          "state": "known",
+          "value": 400
+        },
+        "duration": {
+          "id": "value:effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons:duration",
+          "ownerId": "effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons",
+          "field": "duration",
+          "state": "known",
+          "value": 40
+        },
+        "magnitude": {
+          "id": "value:effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons:magnitude",
+          "ownerId": "effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons:mana",
+          "ownerId": "effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons:cooldown",
+          "ownerId": "effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            45,
+            40,
+            35,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons:delay",
+          "ownerId": "effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enigmaSummonHealthBudgetVerified"
+        ]
+      },
+      "delivery": {
+        "kind": "summon",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "enigma_demonic_conversion"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons",
+      "legacyEffectId": "enigma_demonic_conversion:modifier:health-cost-eidolon-summons",
+      "order": 3,
+      "legacyAbilityId": "enigma_demonic_conversion",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:enigma_demonic_conversion:modifier:health-cost-eidolon-summons:0"
+      ],
+      "valueIds": [
+        "value:effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons:range",
+        "value:effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons:duration",
+        "value:effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons:magnitude",
+        "value:effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons:mana",
+        "value:effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons:cooldown",
+        "value:effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons:delay"
+      ],
+      "activationId": "activation:33:enigma_demonic_conversion"
+    },
+    {
+      "effectId": "enigma_midnight_pulse:damage:current-health-area-damage",
+      "heroId": "33",
+      "abilityId": "ability:33:enigma_midnight_pulse",
+      "type": "damage",
+      "subtype": "current-health-area-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enigma_midnight_pulse:damage:current-health-area-damage:range",
+          "ownerId": "effect:enigma_midnight_pulse:damage:current-health-area-damage",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:enigma_midnight_pulse:damage:current-health-area-damage:duration",
+          "ownerId": "effect:enigma_midnight_pulse:damage:current-health-area-damage",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:enigma_midnight_pulse:damage:current-health-area-damage:magnitude",
+          "ownerId": "effect:enigma_midnight_pulse:damage:current-health-area-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enigma_midnight_pulse:damage:current-health-area-damage:mana",
+          "ownerId": "effect:enigma_midnight_pulse:damage:current-health-area-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            65,
+            90,
+            115,
+            140
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:enigma_midnight_pulse:damage:current-health-area-damage:cooldown",
+          "ownerId": "effect:enigma_midnight_pulse:damage:current-health-area-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            35,
+            30,
+            25
+          ]
+        },
+        "delay": {
+          "id": "value:effect:enigma_midnight_pulse:damage:current-health-area-damage:delay",
+          "ownerId": "effect:enigma_midnight_pulse:damage:current-health-area-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:enigma_midnight_pulse:damage:current-health-area-damage:damageType",
+          "ownerId": "effect:enigma_midnight_pulse:damage:current-health-area-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "enigma_midnight_pulse"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enigma_midnight_pulse:damage:current-health-area-damage",
+      "legacyEffectId": "enigma_midnight_pulse:damage:current-health-area-damage",
+      "order": 4,
+      "legacyAbilityId": "enigma_midnight_pulse",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:enigma_midnight_pulse:damage:current-health-area-damage:range",
+        "value:effect:enigma_midnight_pulse:damage:current-health-area-damage:duration",
+        "value:effect:enigma_midnight_pulse:damage:current-health-area-damage:magnitude",
+        "value:effect:enigma_midnight_pulse:damage:current-health-area-damage:mana",
+        "value:effect:enigma_midnight_pulse:damage:current-health-area-damage:cooldown",
+        "value:effect:enigma_midnight_pulse:damage:current-health-area-damage:delay",
+        "value:effect:enigma_midnight_pulse:damage:current-health-area-damage:damageType"
+      ],
+      "activationId": "activation:33:enigma_midnight_pulse"
+    },
+    {
+      "effectId": "enigma_event_horizon:slow:moving-away-aura-slow",
+      "heroId": "33",
+      "abilityId": "ability:33:enigma_event_horizon",
+      "type": "slow",
+      "subtype": "moving-away-aura-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enigma_event_horizon:slow:moving-away-aura-slow:range",
+          "ownerId": "effect:enigma_event_horizon:slow:moving-away-aura-slow",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:enigma_event_horizon:slow:moving-away-aura-slow:duration",
+          "ownerId": "effect:enigma_event_horizon:slow:moving-away-aura-slow",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:enigma_event_horizon:slow:moving-away-aura-slow:magnitude",
+          "ownerId": "effect:enigma_event_horizon:slow:moving-away-aura-slow",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enigma_event_horizon:slow:moving-away-aura-slow:mana",
+          "ownerId": "effect:enigma_event_horizon:slow:moving-away-aura-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:enigma_event_horizon:slow:moving-away-aura-slow:cooldown",
+          "ownerId": "effect:enigma_event_horizon:slow:moving-away-aura-slow",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:enigma_event_horizon:slow:moving-away-aura-slow:delay",
+          "ownerId": "effect:enigma_event_horizon:slow:moving-away-aura-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "enemyMovingAwayFromEnigma"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "enigma_event_horizon"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:enigma_event_horizon:slow:moving-away-aura-slow",
+      "legacyEffectId": "enigma_event_horizon:slow:moving-away-aura-slow",
+      "order": 5,
+      "legacyAbilityId": "enigma_event_horizon",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:enigma_event_horizon:slow:moving-away-aura-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:enigma_event_horizon:slow:moving-away-aura-slow:range",
+        "value:effect:enigma_event_horizon:slow:moving-away-aura-slow:duration",
+        "value:effect:enigma_event_horizon:slow:moving-away-aura-slow:magnitude",
+        "value:effect:enigma_event_horizon:slow:moving-away-aura-slow:mana",
+        "value:effect:enigma_event_horizon:slow:moving-away-aura-slow:cooldown",
+        "value:effect:enigma_event_horizon:slow:moving-away-aura-slow:delay"
+      ],
+      "activationId": "activation:33:enigma_event_horizon"
+    },
+    {
+      "effectId": "enigma_black_hole:control:channelled-black-hole-disable",
+      "heroId": "33",
+      "abilityId": "ability:33:enigma_black_hole",
+      "type": "control",
+      "subtype": "channelled-black-hole-disable",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enigma_black_hole:control:channelled-black-hole-disable:range",
+          "ownerId": "effect:enigma_black_hole:control:channelled-black-hole-disable",
+          "field": "range",
+          "state": "known",
+          "value": 275
+        },
+        "duration": {
+          "id": "value:effect:enigma_black_hole:control:channelled-black-hole-disable:duration",
+          "ownerId": "effect:enigma_black_hole:control:channelled-black-hole-disable",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:enigma_black_hole:control:channelled-black-hole-disable:magnitude",
+          "ownerId": "effect:enigma_black_hole:control:channelled-black-hole-disable",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enigma_black_hole:control:channelled-black-hole-disable:mana",
+          "ownerId": "effect:enigma_black_hole:control:channelled-black-hole-disable",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            300,
+            400,
+            500
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:enigma_black_hole:control:channelled-black-hole-disable:cooldown",
+          "ownerId": "effect:enigma_black_hole:control:channelled-black-hole-disable",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            180,
+            170,
+            160
+          ]
+        },
+        "delay": {
+          "id": "value:effect:enigma_black_hole:control:channelled-black-hole-disable:delay",
+          "ownerId": "effect:enigma_black_hole:control:channelled-black-hole-disable",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "channelMaintained"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "enigma_black_hole"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enigma_black_hole:control:channelled-black-hole-disable",
+      "legacyEffectId": "enigma_black_hole:control:channelled-black-hole-disable",
+      "order": 6,
+      "legacyAbilityId": "enigma_black_hole",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:enigma_black_hole:control:channelled-black-hole-disable:0"
+      ],
+      "valueIds": [
+        "value:effect:enigma_black_hole:control:channelled-black-hole-disable:range",
+        "value:effect:enigma_black_hole:control:channelled-black-hole-disable:duration",
+        "value:effect:enigma_black_hole:control:channelled-black-hole-disable:magnitude",
+        "value:effect:enigma_black_hole:control:channelled-black-hole-disable:mana",
+        "value:effect:enigma_black_hole:control:channelled-black-hole-disable:cooldown",
+        "value:effect:enigma_black_hole:control:channelled-black-hole-disable:delay"
+      ],
+      "activationId": "activation:33:enigma_black_hole"
+    },
+    {
+      "effectId": "enigma_black_hole:damage:channelled-pure-damage",
+      "heroId": "33",
+      "abilityId": "ability:33:enigma_black_hole",
+      "type": "damage",
+      "subtype": "channelled-pure-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enigma_black_hole:damage:channelled-pure-damage:range",
+          "ownerId": "effect:enigma_black_hole:damage:channelled-pure-damage",
+          "field": "range",
+          "state": "known",
+          "value": 275
+        },
+        "duration": {
+          "id": "value:effect:enigma_black_hole:damage:channelled-pure-damage:duration",
+          "ownerId": "effect:enigma_black_hole:damage:channelled-pure-damage",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:enigma_black_hole:damage:channelled-pure-damage:magnitude",
+          "ownerId": "effect:enigma_black_hole:damage:channelled-pure-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enigma_black_hole:damage:channelled-pure-damage:mana",
+          "ownerId": "effect:enigma_black_hole:damage:channelled-pure-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            300,
+            400,
+            500
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:enigma_black_hole:damage:channelled-pure-damage:cooldown",
+          "ownerId": "effect:enigma_black_hole:damage:channelled-pure-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            180,
+            170,
+            160
+          ]
+        },
+        "delay": {
+          "id": "value:effect:enigma_black_hole:damage:channelled-pure-damage:delay",
+          "ownerId": "effect:enigma_black_hole:damage:channelled-pure-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:enigma_black_hole:damage:channelled-pure-damage:damageType",
+          "ownerId": "effect:enigma_black_hole:damage:channelled-pure-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "pure"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "channelMaintained"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "enigma_black_hole"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enigma_black_hole:damage:channelled-pure-damage",
+      "legacyEffectId": "enigma_black_hole:damage:channelled-pure-damage",
+      "order": 7,
+      "legacyAbilityId": "enigma_black_hole",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:enigma_black_hole:damage:channelled-pure-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:enigma_black_hole:damage:channelled-pure-damage:range",
+        "value:effect:enigma_black_hole:damage:channelled-pure-damage:duration",
+        "value:effect:enigma_black_hole:damage:channelled-pure-damage:magnitude",
+        "value:effect:enigma_black_hole:damage:channelled-pure-damage:mana",
+        "value:effect:enigma_black_hole:damage:channelled-pure-damage:cooldown",
+        "value:effect:enigma_black_hole:damage:channelled-pure-damage:delay",
+        "value:effect:enigma_black_hole:damage:channelled-pure-damage:damageType"
+      ],
+      "activationId": "activation:33:enigma_black_hole"
+    },
+    {
+      "effectId": "enigma_black_hole:displacement:scepter-noninterrupting-outer-pull",
+      "heroId": "33",
+      "abilityId": "ability:33:enigma_black_hole",
+      "type": "displacement",
+      "subtype": "scepter-noninterrupting-outer-pull",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull:range",
+          "ownerId": "effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull:duration",
+          "ownerId": "effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull:magnitude",
+          "ownerId": "effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull:mana",
+          "ownerId": "effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            300,
+            400,
+            500
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull:cooldown",
+          "ownerId": "effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            180,
+            170,
+            160
+          ]
+        },
+        "delay": {
+          "id": "value:effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull:delay",
+          "ownerId": "effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": false
+        }
+      },
+      "relationships": {
+        "resourceId": "enigma_black_hole"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull",
+      "legacyEffectId": "enigma_black_hole:displacement:scepter-noninterrupting-outer-pull",
+      "order": 8,
+      "legacyAbilityId": "enigma_black_hole",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull:range",
+        "value:effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull:duration",
+        "value:effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull:magnitude",
+        "value:effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull:mana",
+        "value:effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull:cooldown",
+        "value:effect:enigma_black_hole:displacement:scepter-noninterrupting-outer-pull:delay"
+      ],
+      "activationId": "activation:33:enigma_black_hole"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:enigma_demonic_conversion:modifier:health-cost-eidolon-summons:0",
+      "ownerId": "effect:enigma_demonic_conversion:modifier:health-cost-eidolon-summons",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enigmaSummonHealthBudgetVerified"
+      }
+    },
+    {
+      "id": "condition:enigma_event_horizon:slow:moving-away-aura-slow:0",
+      "ownerId": "effect:enigma_event_horizon:slow:moving-away-aura-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyMovingAwayFromEnigma"
+      }
+    },
+    {
+      "id": "condition:enigma_black_hole:control:channelled-black-hole-disable:0",
+      "ownerId": "effect:enigma_black_hole:control:channelled-black-hole-disable",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "channelMaintained"
+      }
+    },
+    {
+      "id": "condition:enigma_black_hole:damage:channelled-pure-damage:0",
+      "ownerId": "effect:enigma_black_hole:damage:channelled-pure-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "channelMaintained"
+      }
+    }
+  ]
+}

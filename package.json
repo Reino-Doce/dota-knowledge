@@ -1,0 +1,80 @@
+{
+  "name": "@reino-doce/dota-knowledge",
+  "version": "0.1.0",
+  "description": "Source-preserving Dota 2 mechanics knowledge and match statistics.",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": ">=24.21.0 <25",
+    "npm": ">=12.1.0"
+  },
+  "packageManager": "npm@12.1.0",
+  "main": "./src/index.mjs",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.mjs"
+    },
+    "./node": {
+      "types": "./src/node.d.ts",
+      "import": "./src/node.mjs"
+    },
+    "./node/game-files": {
+      "types": "./src/node/game-files.d.ts",
+      "import": "./src/node/game-files.mjs"
+    },
+    "./node/provider-acquisition": {
+      "types": "./src/node/provider-acquisition.d.ts",
+      "import": "./src/node/provider-acquisition.mjs"
+    },
+    "./runtime/manifest.json": "./data/runtime/manifest.json",
+    "./package.json": "./package.json",
+    "./node/population": {
+      "types": "./src/node/population.d.ts",
+      "import": "./src/node/population.mjs"
+    }
+  },
+  "files": [
+    "src",
+    "schema",
+    "docs",
+    "data/runtime",
+    "scripts",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "scripts": {
+    "test": "node --import ./tests/population/no-network.mjs --test tests/*.test.mjs tests/population/*.test.mjs",
+    "typecheck": "node scripts/check-types.mjs",
+    "schema:check": "node scripts/check-schemas.mjs",
+    "schema:check:package": "node scripts/check-runtime.mjs",
+    "import:legacy": "node scripts/import-legacy-dataset.mjs",
+    "recover:native": "node scripts/recover-installed-native.mjs",
+    "recover:picker": "node scripts/recover-picker-snapshots.mjs",
+    "compare": "node scripts/compare-current.mjs",
+    "audit:consolidation": "node scripts/audit-consolidation.mjs",
+    "pack:check": "npm pack --dry-run --ignore-scripts",
+    "compile": "node scripts/compile-canonical.mjs",
+    "migrate:canonical": "node scripts/migrate-canonical.mjs",
+    "package:verify": "node scripts/check-package.mjs",
+    "population:refresh": "node scripts/population/cli.mjs refresh",
+    "population:apply": "node scripts/population/cli.mjs apply",
+    "population:recover": "node scripts/population/cli.mjs recover"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "typescript": "5.9.3"
+  },
+  "dependencies": {
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1"
+  },
+  "peerDependencies": {
+    "electron": ">=35"
+  },
+  "peerDependenciesMeta": {
+    "electron": { "optional": true }
+  }
+}

@@ -1,0 +1,1408 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "antimage_mana_break:passive:attack-mana-burn",
+      "heroId": "1",
+      "abilityId": "ability:1:antimage_mana_break",
+      "type": "passive",
+      "subtype": "attack-mana-burn",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:antimage_mana_break:passive:attack-mana-burn:range",
+          "ownerId": "effect:antimage_mana_break:passive:attack-mana-burn",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:antimage_mana_break:passive:attack-mana-burn:duration",
+          "ownerId": "effect:antimage_mana_break:passive:attack-mana-burn",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:antimage_mana_break:passive:attack-mana-burn:magnitude",
+          "ownerId": "effect:antimage_mana_break:passive:attack-mana-burn",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:antimage_mana_break:passive:attack-mana-burn:mana",
+          "ownerId": "effect:antimage_mana_break:passive:attack-mana-burn",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:antimage_mana_break:passive:attack-mana-burn:cooldown",
+          "ownerId": "effect:antimage_mana_break:passive:attack-mana-burn",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:antimage_mana_break:passive:attack-mana-burn:delay",
+          "ownerId": "effect:antimage_mana_break:passive:attack-mana-burn",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:antimage_mana_break:passive:attack-mana-burn:damageType",
+          "ownerId": "effect:antimage_mana_break:passive:attack-mana-burn",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "attackConnects",
+          "targetHasMana"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "antimage_mana_break"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "mechanicsFacets": [
+        "illusions"
+      ],
+      "id": "effect:antimage_mana_break:passive:attack-mana-burn",
+      "legacyEffectId": "antimage_mana_break:passive:attack-mana-burn",
+      "order": 0,
+      "legacyAbilityId": "antimage_mana_break",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:antimage_mana_break:passive:attack-mana-burn:0",
+        "condition:antimage_mana_break:passive:attack-mana-burn:1"
+      ],
+      "valueIds": [
+        "value:effect:antimage_mana_break:passive:attack-mana-burn:range",
+        "value:effect:antimage_mana_break:passive:attack-mana-burn:duration",
+        "value:effect:antimage_mana_break:passive:attack-mana-burn:magnitude",
+        "value:effect:antimage_mana_break:passive:attack-mana-burn:mana",
+        "value:effect:antimage_mana_break:passive:attack-mana-burn:cooldown",
+        "value:effect:antimage_mana_break:passive:attack-mana-burn:delay",
+        "value:effect:antimage_mana_break:passive:attack-mana-burn:damageType"
+      ],
+      "activationId": "activation:1:antimage_mana_break"
+    },
+    {
+      "effectId": "antimage_mana_break:modifier:scepter-branch",
+      "heroId": "1",
+      "abilityId": "ability:1:antimage_mana_break",
+      "type": "modifier",
+      "subtype": "scepter-branch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:antimage_mana_break:modifier:scepter-branch:range",
+          "ownerId": "effect:antimage_mana_break:modifier:scepter-branch",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:antimage_mana_break:modifier:scepter-branch:duration",
+          "ownerId": "effect:antimage_mana_break:modifier:scepter-branch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:antimage_mana_break:modifier:scepter-branch:magnitude",
+          "ownerId": "effect:antimage_mana_break:modifier:scepter-branch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:antimage_mana_break:modifier:scepter-branch:mana",
+          "ownerId": "effect:antimage_mana_break:modifier:scepter-branch",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:antimage_mana_break:modifier:scepter-branch:cooldown",
+          "ownerId": "effect:antimage_mana_break:modifier:scepter-branch",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:antimage_mana_break:modifier:scepter-branch:delay",
+          "ownerId": "effect:antimage_mana_break:modifier:scepter-branch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "antimage_mana_break:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:antimage_mana_break:modifier:scepter-branch",
+      "legacyEffectId": "antimage_mana_break:modifier:scepter-branch",
+      "order": 1,
+      "legacyAbilityId": "antimage_mana_break",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:antimage_mana_break:modifier:scepter-branch:range",
+        "value:effect:antimage_mana_break:modifier:scepter-branch:duration",
+        "value:effect:antimage_mana_break:modifier:scepter-branch:magnitude",
+        "value:effect:antimage_mana_break:modifier:scepter-branch:mana",
+        "value:effect:antimage_mana_break:modifier:scepter-branch:cooldown",
+        "value:effect:antimage_mana_break:modifier:scepter-branch:delay"
+      ],
+      "activationId": "activation:1:antimage_mana_break"
+    },
+    {
+      "effectId": "antimage_blink:mobility:blink",
+      "heroId": "1",
+      "abilityId": "ability:1:antimage_blink",
+      "type": "mobility",
+      "subtype": "blink",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:antimage_blink:mobility:blink:range",
+          "ownerId": "effect:antimage_blink:mobility:blink",
+          "field": "range",
+          "state": "known",
+          "value": [
+            875,
+            950,
+            1025,
+            1100
+          ]
+        },
+        "duration": {
+          "id": "value:effect:antimage_blink:mobility:blink:duration",
+          "ownerId": "effect:antimage_blink:mobility:blink",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:antimage_blink:mobility:blink:magnitude",
+          "ownerId": "effect:antimage_blink:mobility:blink",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:antimage_blink:mobility:blink:mana",
+          "ownerId": "effect:antimage_blink:mobility:blink",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            60,
+            55,
+            50,
+            45
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:antimage_blink:mobility:blink:cooldown",
+          "ownerId": "effect:antimage_blink:mobility:blink",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            10.5,
+            9,
+            7.5,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:antimage_blink:mobility:blink:delay",
+          "ownerId": "effect:antimage_blink:mobility:blink",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "antimage_blink"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:antimage_blink:mobility:blink",
+      "legacyEffectId": "antimage_blink:mobility:blink",
+      "order": 2,
+      "legacyAbilityId": "antimage_blink",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:antimage_blink:mobility:blink:range",
+        "value:effect:antimage_blink:mobility:blink:duration",
+        "value:effect:antimage_blink:mobility:blink:magnitude",
+        "value:effect:antimage_blink:mobility:blink:mana",
+        "value:effect:antimage_blink:mobility:blink:cooldown",
+        "value:effect:antimage_blink:mobility:blink:delay"
+      ],
+      "activationId": "activation:1:antimage_blink"
+    },
+    {
+      "effectId": "antimage_blink:modifier:scepter-branch",
+      "heroId": "1",
+      "abilityId": "ability:1:antimage_blink",
+      "type": "modifier",
+      "subtype": "scepter-branch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:antimage_blink:modifier:scepter-branch:range",
+          "ownerId": "effect:antimage_blink:modifier:scepter-branch",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:antimage_blink:modifier:scepter-branch:duration",
+          "ownerId": "effect:antimage_blink:modifier:scepter-branch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:antimage_blink:modifier:scepter-branch:magnitude",
+          "ownerId": "effect:antimage_blink:modifier:scepter-branch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:antimage_blink:modifier:scepter-branch:mana",
+          "ownerId": "effect:antimage_blink:modifier:scepter-branch",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:antimage_blink:modifier:scepter-branch:cooldown",
+          "ownerId": "effect:antimage_blink:modifier:scepter-branch",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:antimage_blink:modifier:scepter-branch:delay",
+          "ownerId": "effect:antimage_blink:modifier:scepter-branch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "blinkEmpoweredAttackConnects"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "none"
+        }
+      },
+      "relationships": {
+        "resourceId": "antimage_blink:passive"
+      },
+      "vulnerability": {
+        "rootDisabled": true
+      },
+      "exceptions": [],
+      "id": "effect:antimage_blink:modifier:scepter-branch",
+      "legacyEffectId": "antimage_blink:modifier:scepter-branch",
+      "order": 3,
+      "legacyAbilityId": "antimage_blink",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:antimage_blink:modifier:scepter-branch:0"
+      ],
+      "valueIds": [
+        "value:effect:antimage_blink:modifier:scepter-branch:range",
+        "value:effect:antimage_blink:modifier:scepter-branch:duration",
+        "value:effect:antimage_blink:modifier:scepter-branch:magnitude",
+        "value:effect:antimage_blink:modifier:scepter-branch:mana",
+        "value:effect:antimage_blink:modifier:scepter-branch:cooldown",
+        "value:effect:antimage_blink:modifier:scepter-branch:delay"
+      ],
+      "activationId": "activation:1:antimage_blink"
+    },
+    {
+      "effectId": "antimage_counterspell:passive:magic-resistance",
+      "heroId": "1",
+      "abilityId": "ability:1:antimage_counterspell",
+      "type": "passive",
+      "subtype": "magic-resistance",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:antimage_counterspell:passive:magic-resistance:range",
+          "ownerId": "effect:antimage_counterspell:passive:magic-resistance",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:antimage_counterspell:passive:magic-resistance:duration",
+          "ownerId": "effect:antimage_counterspell:passive:magic-resistance",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:antimage_counterspell:passive:magic-resistance:magnitude",
+          "ownerId": "effect:antimage_counterspell:passive:magic-resistance",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            14,
+            21,
+            28,
+            35
+          ]
+        },
+        "mana": {
+          "id": "value:effect:antimage_counterspell:passive:magic-resistance:mana",
+          "ownerId": "effect:antimage_counterspell:passive:magic-resistance",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:antimage_counterspell:passive:magic-resistance:cooldown",
+          "ownerId": "effect:antimage_counterspell:passive:magic-resistance",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:antimage_counterspell:passive:magic-resistance:delay",
+          "ownerId": "effect:antimage_counterspell:passive:magic-resistance",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "antimage_counterspell:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:antimage_counterspell:passive:magic-resistance",
+      "legacyEffectId": "antimage_counterspell:passive:magic-resistance",
+      "order": 4,
+      "legacyAbilityId": "antimage_counterspell",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:antimage_counterspell:passive:magic-resistance:range",
+        "value:effect:antimage_counterspell:passive:magic-resistance:duration",
+        "value:effect:antimage_counterspell:passive:magic-resistance:magnitude",
+        "value:effect:antimage_counterspell:passive:magic-resistance:mana",
+        "value:effect:antimage_counterspell:passive:magic-resistance:cooldown",
+        "value:effect:antimage_counterspell:passive:magic-resistance:delay"
+      ],
+      "activationId": "activation:1:antimage_counterspell"
+    },
+    {
+      "effectId": "antimage_counterspell:save:self-targeted-spell-block-reflect",
+      "heroId": "1",
+      "abilityId": "ability:1:antimage_counterspell",
+      "type": "save",
+      "subtype": "self-targeted-spell-block-reflect",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:antimage_counterspell:save:self-targeted-spell-block-reflect:range",
+          "ownerId": "effect:antimage_counterspell:save:self-targeted-spell-block-reflect",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:antimage_counterspell:save:self-targeted-spell-block-reflect:duration",
+          "ownerId": "effect:antimage_counterspell:save:self-targeted-spell-block-reflect",
+          "field": "duration",
+          "state": "known",
+          "value": 1.3
+        },
+        "magnitude": {
+          "id": "value:effect:antimage_counterspell:save:self-targeted-spell-block-reflect:magnitude",
+          "ownerId": "effect:antimage_counterspell:save:self-targeted-spell-block-reflect",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:antimage_counterspell:save:self-targeted-spell-block-reflect:mana",
+          "ownerId": "effect:antimage_counterspell:save:self-targeted-spell-block-reflect",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:antimage_counterspell:save:self-targeted-spell-block-reflect:cooldown",
+          "ownerId": "effect:antimage_counterspell:save:self-targeted-spell-block-reflect",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            15,
+            11,
+            7,
+            3
+          ]
+        },
+        "delay": {
+          "id": "value:effect:antimage_counterspell:save:self-targeted-spell-block-reflect:delay",
+          "ownerId": "effect:antimage_counterspell:save:self-targeted-spell-block-reflect",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "incomingReflectableUnitTargetSpell"
+        ]
+      },
+      "delivery": {
+        "kind": "no-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "antimage_counterspell"
+      },
+      "vulnerability": {
+        "breakable": null,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:antimage_counterspell:save:self-targeted-spell-block-reflect",
+      "legacyEffectId": "antimage_counterspell:save:self-targeted-spell-block-reflect",
+      "order": 5,
+      "legacyAbilityId": "antimage_counterspell",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:antimage_counterspell:save:self-targeted-spell-block-reflect:0"
+      ],
+      "valueIds": [
+        "value:effect:antimage_counterspell:save:self-targeted-spell-block-reflect:range",
+        "value:effect:antimage_counterspell:save:self-targeted-spell-block-reflect:duration",
+        "value:effect:antimage_counterspell:save:self-targeted-spell-block-reflect:magnitude",
+        "value:effect:antimage_counterspell:save:self-targeted-spell-block-reflect:mana",
+        "value:effect:antimage_counterspell:save:self-targeted-spell-block-reflect:cooldown",
+        "value:effect:antimage_counterspell:save:self-targeted-spell-block-reflect:delay"
+      ],
+      "activationId": "activation:1:antimage_counterspell"
+    },
+    {
+      "effectId": "antimage_counterspell:modifier:shard-branch",
+      "heroId": "1",
+      "abilityId": "ability:1:antimage_counterspell",
+      "type": "modifier",
+      "subtype": "shard-branch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:antimage_counterspell:modifier:shard-branch:range",
+          "ownerId": "effect:antimage_counterspell:modifier:shard-branch",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:antimage_counterspell:modifier:shard-branch:duration",
+          "ownerId": "effect:antimage_counterspell:modifier:shard-branch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:antimage_counterspell:modifier:shard-branch:magnitude",
+          "ownerId": "effect:antimage_counterspell:modifier:shard-branch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:antimage_counterspell:modifier:shard-branch:mana",
+          "ownerId": "effect:antimage_counterspell:modifier:shard-branch",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:antimage_counterspell:modifier:shard-branch:cooldown",
+          "ownerId": "effect:antimage_counterspell:modifier:shard-branch",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:antimage_counterspell:modifier:shard-branch:delay",
+          "ownerId": "effect:antimage_counterspell:modifier:shard-branch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "counterspellReflectedSpell"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "antimage_counterspell:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:antimage_counterspell:modifier:shard-branch",
+      "legacyEffectId": "antimage_counterspell:modifier:shard-branch",
+      "order": 6,
+      "legacyAbilityId": "antimage_counterspell",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:antimage_counterspell:modifier:shard-branch:0"
+      ],
+      "valueIds": [
+        "value:effect:antimage_counterspell:modifier:shard-branch:range",
+        "value:effect:antimage_counterspell:modifier:shard-branch:duration",
+        "value:effect:antimage_counterspell:modifier:shard-branch:magnitude",
+        "value:effect:antimage_counterspell:modifier:shard-branch:mana",
+        "value:effect:antimage_counterspell:modifier:shard-branch:cooldown",
+        "value:effect:antimage_counterspell:modifier:shard-branch:delay"
+      ],
+      "activationId": "activation:1:antimage_counterspell"
+    },
+    {
+      "effectId": "antimage_persectur:slow:missing-mana-attack",
+      "heroId": "1",
+      "abilityId": "ability:1:antimage_persectur",
+      "type": "slow",
+      "subtype": "missing-mana-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:antimage_persectur:slow:missing-mana-attack:range",
+          "ownerId": "effect:antimage_persectur:slow:missing-mana-attack",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:antimage_persectur:slow:missing-mana-attack:duration",
+          "ownerId": "effect:antimage_persectur:slow:missing-mana-attack",
+          "field": "duration",
+          "state": "known",
+          "value": 0.75
+        },
+        "magnitude": {
+          "id": "value:effect:antimage_persectur:slow:missing-mana-attack:magnitude",
+          "ownerId": "effect:antimage_persectur:slow:missing-mana-attack",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:antimage_persectur:slow:missing-mana-attack:mana",
+          "ownerId": "effect:antimage_persectur:slow:missing-mana-attack",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:antimage_persectur:slow:missing-mana-attack:cooldown",
+          "ownerId": "effect:antimage_persectur:slow:missing-mana-attack",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:antimage_persectur:slow:missing-mana-attack:delay",
+          "ownerId": "effect:antimage_persectur:slow:missing-mana-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "attackConnects",
+          "targetManaAtOrBelowSixtyPercent"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "antimage_persectur"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "mechanicsFacets": [
+        "illusions"
+      ],
+      "id": "effect:antimage_persectur:slow:missing-mana-attack",
+      "legacyEffectId": "antimage_persectur:slow:missing-mana-attack",
+      "order": 7,
+      "legacyAbilityId": "antimage_persectur",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:antimage_persectur:slow:missing-mana-attack:0",
+        "condition:antimage_persectur:slow:missing-mana-attack:1"
+      ],
+      "valueIds": [
+        "value:effect:antimage_persectur:slow:missing-mana-attack:range",
+        "value:effect:antimage_persectur:slow:missing-mana-attack:duration",
+        "value:effect:antimage_persectur:slow:missing-mana-attack:magnitude",
+        "value:effect:antimage_persectur:slow:missing-mana-attack:mana",
+        "value:effect:antimage_persectur:slow:missing-mana-attack:cooldown",
+        "value:effect:antimage_persectur:slow:missing-mana-attack:delay"
+      ],
+      "activationId": "activation:1:antimage_persectur"
+    },
+    {
+      "effectId": "antimage_mana_void:control:primary-target-ministun",
+      "heroId": "1",
+      "abilityId": "ability:1:antimage_mana_void",
+      "type": "control",
+      "subtype": "primary-target-ministun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:antimage_mana_void:control:primary-target-ministun:range",
+          "ownerId": "effect:antimage_mana_void:control:primary-target-ministun",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:antimage_mana_void:control:primary-target-ministun:duration",
+          "ownerId": "effect:antimage_mana_void:control:primary-target-ministun",
+          "field": "duration",
+          "state": "known",
+          "value": 0.3
+        },
+        "magnitude": {
+          "id": "value:effect:antimage_mana_void:control:primary-target-ministun:magnitude",
+          "ownerId": "effect:antimage_mana_void:control:primary-target-ministun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:antimage_mana_void:control:primary-target-ministun:mana",
+          "ownerId": "effect:antimage_mana_void:control:primary-target-ministun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            150,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:antimage_mana_void:control:primary-target-ministun:cooldown",
+          "ownerId": "effect:antimage_mana_void:control:primary-target-ministun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            100,
+            85,
+            70
+          ]
+        },
+        "delay": {
+          "id": "value:effect:antimage_mana_void:control:primary-target-ministun:delay",
+          "ownerId": "effect:antimage_mana_void:control:primary-target-ministun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "antimage_mana_void"
+      },
+      "vulnerability": {
+        "breakable": null,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:antimage_mana_void:control:primary-target-ministun",
+      "legacyEffectId": "antimage_mana_void:control:primary-target-ministun",
+      "order": 8,
+      "legacyAbilityId": "antimage_mana_void",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:antimage_mana_void:control:primary-target-ministun:range",
+        "value:effect:antimage_mana_void:control:primary-target-ministun:duration",
+        "value:effect:antimage_mana_void:control:primary-target-ministun:magnitude",
+        "value:effect:antimage_mana_void:control:primary-target-ministun:mana",
+        "value:effect:antimage_mana_void:control:primary-target-ministun:cooldown",
+        "value:effect:antimage_mana_void:control:primary-target-ministun:delay"
+      ],
+      "activationId": "activation:1:antimage_mana_void"
+    },
+    {
+      "effectId": "antimage_mana_void:damage:missing-mana-area",
+      "heroId": "1",
+      "abilityId": "ability:1:antimage_mana_void",
+      "type": "damage",
+      "subtype": "missing-mana-area",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:antimage_mana_void:damage:missing-mana-area:range",
+          "ownerId": "effect:antimage_mana_void:damage:missing-mana-area",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:antimage_mana_void:damage:missing-mana-area:duration",
+          "ownerId": "effect:antimage_mana_void:damage:missing-mana-area",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:antimage_mana_void:damage:missing-mana-area:magnitude",
+          "ownerId": "effect:antimage_mana_void:damage:missing-mana-area",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:antimage_mana_void:damage:missing-mana-area:mana",
+          "ownerId": "effect:antimage_mana_void:damage:missing-mana-area",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            150,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:antimage_mana_void:damage:missing-mana-area:cooldown",
+          "ownerId": "effect:antimage_mana_void:damage:missing-mana-area",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            100,
+            85,
+            70
+          ]
+        },
+        "delay": {
+          "id": "value:effect:antimage_mana_void:damage:missing-mana-area:delay",
+          "ownerId": "effect:antimage_mana_void:damage:missing-mana-area",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:antimage_mana_void:damage:missing-mana-area:damageType",
+          "ownerId": "effect:antimage_mana_void:damage:missing-mana-area",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "targetMissingMana"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "antimage_mana_void"
+      },
+      "vulnerability": {
+        "breakable": null,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:antimage_mana_void:damage:missing-mana-area",
+      "legacyEffectId": "antimage_mana_void:damage:missing-mana-area",
+      "order": 9,
+      "legacyAbilityId": "antimage_mana_void",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:antimage_mana_void:damage:missing-mana-area:0"
+      ],
+      "valueIds": [
+        "value:effect:antimage_mana_void:damage:missing-mana-area:range",
+        "value:effect:antimage_mana_void:damage:missing-mana-area:duration",
+        "value:effect:antimage_mana_void:damage:missing-mana-area:magnitude",
+        "value:effect:antimage_mana_void:damage:missing-mana-area:mana",
+        "value:effect:antimage_mana_void:damage:missing-mana-area:cooldown",
+        "value:effect:antimage_mana_void:damage:missing-mana-area:delay",
+        "value:effect:antimage_mana_void:damage:missing-mana-area:damageType"
+      ],
+      "activationId": "activation:1:antimage_mana_void"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:antimage_mana_break:passive:attack-mana-burn:0",
+      "ownerId": "effect:antimage_mana_break:passive:attack-mana-burn",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "attackConnects"
+      }
+    },
+    {
+      "id": "condition:antimage_mana_break:passive:attack-mana-burn:1",
+      "ownerId": "effect:antimage_mana_break:passive:attack-mana-burn",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "targetHasMana"
+      }
+    },
+    {
+      "id": "condition:antimage_blink:modifier:scepter-branch:0",
+      "ownerId": "effect:antimage_blink:modifier:scepter-branch",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "blinkEmpoweredAttackConnects"
+      }
+    },
+    {
+      "id": "condition:antimage_counterspell:save:self-targeted-spell-block-reflect:0",
+      "ownerId": "effect:antimage_counterspell:save:self-targeted-spell-block-reflect",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "incomingReflectableUnitTargetSpell"
+      }
+    },
+    {
+      "id": "condition:antimage_counterspell:modifier:shard-branch:0",
+      "ownerId": "effect:antimage_counterspell:modifier:shard-branch",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "counterspellReflectedSpell"
+      }
+    },
+    {
+      "id": "condition:antimage_persectur:slow:missing-mana-attack:0",
+      "ownerId": "effect:antimage_persectur:slow:missing-mana-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "attackConnects"
+      }
+    },
+    {
+      "id": "condition:antimage_persectur:slow:missing-mana-attack:1",
+      "ownerId": "effect:antimage_persectur:slow:missing-mana-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "targetManaAtOrBelowSixtyPercent"
+      }
+    },
+    {
+      "id": "condition:antimage_mana_void:damage:missing-mana-area:0",
+      "ownerId": "effect:antimage_mana_void:damage:missing-mana-area",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "targetMissingMana"
+      }
+    }
+  ]
+}

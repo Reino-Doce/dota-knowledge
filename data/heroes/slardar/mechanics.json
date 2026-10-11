@@ -1,0 +1,2443 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "slardar_amplify_damage:true-sight-target",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_amplify_damage",
+      "type": "detection",
+      "subtype": "true-sight-target",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_amplify_damage:true-sight-target:range",
+          "ownerId": "effect:slardar_amplify_damage:true-sight-target",
+          "field": "range",
+          "state": "known",
+          "value": 900
+        },
+        "duration": {
+          "id": "value:effect:slardar_amplify_damage:true-sight-target:duration",
+          "ownerId": "effect:slardar_amplify_damage:true-sight-target",
+          "field": "duration",
+          "state": "known",
+          "value": 18
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_amplify_damage:true-sight-target:magnitude",
+          "ownerId": "effect:slardar_amplify_damage:true-sight-target",
+          "field": "magnitude",
+          "state": "known",
+          "value": 1
+        },
+        "mana": {
+          "id": "value:effect:slardar_amplify_damage:true-sight-target:mana",
+          "ownerId": "effect:slardar_amplify_damage:true-sight-target",
+          "field": "mana",
+          "state": "known",
+          "value": 25
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_amplify_damage:true-sight-target:cooldown",
+          "ownerId": "effect:slardar_amplify_damage:true-sight-target",
+          "field": "cooldown",
+          "state": "known",
+          "value": 5
+        },
+        "delay": {
+          "id": "value:effect:slardar_amplify_damage:true-sight-target:delay",
+          "ownerId": "effect:slardar_amplify_damage:true-sight-target",
+          "field": "delay",
+          "state": "known",
+          "value": 0.3
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_amplify_damage"
+      },
+      "vulnerability": {},
+      "exceptions": [
+        "requires-targetable-unit",
+        "does-not-automatically-detect-an-unknown-hidden-target"
+      ],
+      "id": "effect:slardar_amplify_damage:true-sight-target",
+      "legacyEffectId": "slardar_amplify_damage:true-sight-target",
+      "order": 0,
+      "legacyAbilityId": "slardar_amplify_damage",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:slardar_amplify_damage:true-sight-target:range",
+        "value:effect:slardar_amplify_damage:true-sight-target:duration",
+        "value:effect:slardar_amplify_damage:true-sight-target:magnitude",
+        "value:effect:slardar_amplify_damage:true-sight-target:mana",
+        "value:effect:slardar_amplify_damage:true-sight-target:cooldown",
+        "value:effect:slardar_amplify_damage:true-sight-target:delay"
+      ],
+      "activationId": "activation:28:slardar_amplify_damage"
+    },
+    {
+      "effectId": "slardar_sprint:mobility:phased-guardian-sprint",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_sprint",
+      "type": "mobility",
+      "subtype": "phased-guardian-sprint",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_sprint:mobility:phased-guardian-sprint:range",
+          "ownerId": "effect:slardar_sprint:mobility:phased-guardian-sprint",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slardar_sprint:mobility:phased-guardian-sprint:duration",
+          "ownerId": "effect:slardar_sprint:mobility:phased-guardian-sprint",
+          "field": "duration",
+          "state": "known",
+          "value": 10
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_sprint:mobility:phased-guardian-sprint:magnitude",
+          "ownerId": "effect:slardar_sprint:mobility:phased-guardian-sprint",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            10,
+            18,
+            26,
+            34
+          ]
+        },
+        "mana": {
+          "id": "value:effect:slardar_sprint:mobility:phased-guardian-sprint:mana",
+          "ownerId": "effect:slardar_sprint:mobility:phased-guardian-sprint",
+          "field": "mana",
+          "state": "known",
+          "value": 25
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_sprint:mobility:phased-guardian-sprint:cooldown",
+          "ownerId": "effect:slardar_sprint:mobility:phased-guardian-sprint",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            33,
+            28,
+            23,
+            18
+          ]
+        },
+        "delay": {
+          "id": "value:effect:slardar_sprint:mobility:phased-guardian-sprint:delay",
+          "ownerId": "effect:slardar_sprint:mobility:phased-guardian-sprint",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_sprint"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:slardar_sprint:mobility:phased-guardian-sprint",
+      "legacyEffectId": "slardar_sprint:mobility:phased-guardian-sprint",
+      "order": 1,
+      "legacyAbilityId": "slardar_sprint",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:slardar_sprint:mobility:phased-guardian-sprint:range",
+        "value:effect:slardar_sprint:mobility:phased-guardian-sprint:duration",
+        "value:effect:slardar_sprint:mobility:phased-guardian-sprint:magnitude",
+        "value:effect:slardar_sprint:mobility:phased-guardian-sprint:mana",
+        "value:effect:slardar_sprint:mobility:phased-guardian-sprint:cooldown",
+        "value:effect:slardar_sprint:mobility:phased-guardian-sprint:delay"
+      ],
+      "activationId": "activation:28:slardar_sprint"
+    },
+    {
+      "effectId": "slardar_sprint:modifier:frontloaded-fading-slow-resistance",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_sprint",
+      "type": "modifier",
+      "subtype": "frontloaded-fading-slow-resistance",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance:range",
+          "ownerId": "effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance:duration",
+          "ownerId": "effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance:magnitude",
+          "ownerId": "effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance:mana",
+          "ownerId": "effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance:cooldown",
+          "ownerId": "effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance:delay",
+          "ownerId": "effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "guardianSprintActive"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_sprint:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance",
+      "legacyEffectId": "slardar_sprint:modifier:frontloaded-fading-slow-resistance",
+      "order": 2,
+      "legacyAbilityId": "slardar_sprint",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slardar_sprint:modifier:frontloaded-fading-slow-resistance:0"
+      ],
+      "valueIds": [
+        "value:effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance:range",
+        "value:effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance:duration",
+        "value:effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance:magnitude",
+        "value:effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance:mana",
+        "value:effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance:cooldown",
+        "value:effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance:delay"
+      ],
+      "activationId": "activation:28:slardar_sprint"
+    },
+    {
+      "effectId": "slardar_slithereen_crush:damage:crush-local-physical-impact",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_slithereen_crush",
+      "type": "damage",
+      "subtype": "crush-local-physical-impact",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_slithereen_crush:damage:crush-local-physical-impact:range",
+          "ownerId": "effect:slardar_slithereen_crush:damage:crush-local-physical-impact",
+          "field": "range",
+          "state": "known",
+          "value": 325
+        },
+        "duration": {
+          "id": "value:effect:slardar_slithereen_crush:damage:crush-local-physical-impact:duration",
+          "ownerId": "effect:slardar_slithereen_crush:damage:crush-local-physical-impact",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_slithereen_crush:damage:crush-local-physical-impact:magnitude",
+          "ownerId": "effect:slardar_slithereen_crush:damage:crush-local-physical-impact",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            60,
+            140,
+            220,
+            300
+          ]
+        },
+        "mana": {
+          "id": "value:effect:slardar_slithereen_crush:damage:crush-local-physical-impact:mana",
+          "ownerId": "effect:slardar_slithereen_crush:damage:crush-local-physical-impact",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_slithereen_crush:damage:crush-local-physical-impact:cooldown",
+          "ownerId": "effect:slardar_slithereen_crush:damage:crush-local-physical-impact",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            8.5,
+            8,
+            7.5,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:slardar_slithereen_crush:damage:crush-local-physical-impact:delay",
+          "ownerId": "effect:slardar_slithereen_crush:damage:crush-local-physical-impact",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:slardar_slithereen_crush:damage:crush-local-physical-impact:damageType",
+          "ownerId": "effect:slardar_slithereen_crush:damage:crush-local-physical-impact",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_slithereen_crush"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:slardar_slithereen_crush:damage:crush-local-physical-impact",
+      "legacyEffectId": "slardar_slithereen_crush:damage:crush-local-physical-impact",
+      "order": 3,
+      "legacyAbilityId": "slardar_slithereen_crush",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:slardar_slithereen_crush:damage:crush-local-physical-impact:range",
+        "value:effect:slardar_slithereen_crush:damage:crush-local-physical-impact:duration",
+        "value:effect:slardar_slithereen_crush:damage:crush-local-physical-impact:magnitude",
+        "value:effect:slardar_slithereen_crush:damage:crush-local-physical-impact:mana",
+        "value:effect:slardar_slithereen_crush:damage:crush-local-physical-impact:cooldown",
+        "value:effect:slardar_slithereen_crush:damage:crush-local-physical-impact:delay",
+        "value:effect:slardar_slithereen_crush:damage:crush-local-physical-impact:damageType"
+      ],
+      "activationId": "activation:28:slardar_slithereen_crush"
+    },
+    {
+      "effectId": "slardar_slithereen_crush:control:crush-local-stun",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_slithereen_crush",
+      "type": "control",
+      "subtype": "crush-local-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_slithereen_crush:control:crush-local-stun:range",
+          "ownerId": "effect:slardar_slithereen_crush:control:crush-local-stun",
+          "field": "range",
+          "state": "known",
+          "value": 325
+        },
+        "duration": {
+          "id": "value:effect:slardar_slithereen_crush:control:crush-local-stun:duration",
+          "ownerId": "effect:slardar_slithereen_crush:control:crush-local-stun",
+          "field": "duration",
+          "state": "known",
+          "value": 0.8
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_slithereen_crush:control:crush-local-stun:magnitude",
+          "ownerId": "effect:slardar_slithereen_crush:control:crush-local-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slardar_slithereen_crush:control:crush-local-stun:mana",
+          "ownerId": "effect:slardar_slithereen_crush:control:crush-local-stun",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_slithereen_crush:control:crush-local-stun:cooldown",
+          "ownerId": "effect:slardar_slithereen_crush:control:crush-local-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            8.5,
+            8,
+            7.5,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:slardar_slithereen_crush:control:crush-local-stun:delay",
+          "ownerId": "effect:slardar_slithereen_crush:control:crush-local-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_slithereen_crush"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:slardar_slithereen_crush:control:crush-local-stun",
+      "legacyEffectId": "slardar_slithereen_crush:control:crush-local-stun",
+      "order": 4,
+      "legacyAbilityId": "slardar_slithereen_crush",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:slardar_slithereen_crush:control:crush-local-stun:range",
+        "value:effect:slardar_slithereen_crush:control:crush-local-stun:duration",
+        "value:effect:slardar_slithereen_crush:control:crush-local-stun:magnitude",
+        "value:effect:slardar_slithereen_crush:control:crush-local-stun:mana",
+        "value:effect:slardar_slithereen_crush:control:crush-local-stun:cooldown",
+        "value:effect:slardar_slithereen_crush:control:crush-local-stun:delay"
+      ],
+      "activationId": "activation:28:slardar_slithereen_crush"
+    },
+    {
+      "effectId": "slardar_slithereen_crush:slow:crush-post-stun-movement-slow",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_slithereen_crush",
+      "type": "slow",
+      "subtype": "crush-post-stun-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow:range",
+          "ownerId": "effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow:duration",
+          "ownerId": "effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow:magnitude",
+          "ownerId": "effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -20,
+            -25,
+            -30,
+            -35
+          ]
+        },
+        "mana": {
+          "id": "value:effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow:mana",
+          "ownerId": "effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow:cooldown",
+          "ownerId": "effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow:delay",
+          "ownerId": "effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "crushVictimPastInitialStun"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_slithereen_crush:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow",
+      "legacyEffectId": "slardar_slithereen_crush:slow:crush-post-stun-movement-slow",
+      "order": 5,
+      "legacyAbilityId": "slardar_slithereen_crush",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slardar_slithereen_crush:slow:crush-post-stun-movement-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow:range",
+        "value:effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow:duration",
+        "value:effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow:magnitude",
+        "value:effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow:mana",
+        "value:effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow:cooldown",
+        "value:effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow:delay"
+      ],
+      "activationId": "activation:28:slardar_slithereen_crush"
+    },
+    {
+      "effectId": "slardar_slithereen_crush:modifier:crush-attack-speed-reduction",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_slithereen_crush",
+      "type": "modifier",
+      "subtype": "crush-attack-speed-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction:range",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction:duration",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction:magnitude",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -20,
+            -25,
+            -30,
+            -35
+          ]
+        },
+        "mana": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction:mana",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction:cooldown",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction:delay",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "crushVictimPastInitialStun"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_slithereen_crush:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction",
+      "legacyEffectId": "slardar_slithereen_crush:modifier:crush-attack-speed-reduction",
+      "order": 6,
+      "legacyAbilityId": "slardar_slithereen_crush",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slardar_slithereen_crush:modifier:crush-attack-speed-reduction:0"
+      ],
+      "valueIds": [
+        "value:effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction:range",
+        "value:effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction:duration",
+        "value:effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction:magnitude",
+        "value:effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction:mana",
+        "value:effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction:cooldown",
+        "value:effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction:delay"
+      ],
+      "activationId": "activation:28:slardar_slithereen_crush"
+    },
+    {
+      "effectId": "slardar_slithereen_crush:modifier:crush-water-puddle",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_slithereen_crush",
+      "type": "modifier",
+      "subtype": "crush-water-puddle",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:crush-water-puddle:range",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:crush-water-puddle",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:crush-water-puddle:duration",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:crush-water-puddle",
+          "field": "duration",
+          "state": "known",
+          "value": 7
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:crush-water-puddle:magnitude",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:crush-water-puddle",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:crush-water-puddle:mana",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:crush-water-puddle",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:crush-water-puddle:cooldown",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:crush-water-puddle",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            8.5,
+            8,
+            7.5,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:crush-water-puddle:delay",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:crush-water-puddle",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_slithereen_crush"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:slardar_slithereen_crush:modifier:crush-water-puddle",
+      "legacyEffectId": "slardar_slithereen_crush:modifier:crush-water-puddle",
+      "order": 7,
+      "legacyAbilityId": "slardar_slithereen_crush",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:slardar_slithereen_crush:modifier:crush-water-puddle:range",
+        "value:effect:slardar_slithereen_crush:modifier:crush-water-puddle:duration",
+        "value:effect:slardar_slithereen_crush:modifier:crush-water-puddle:magnitude",
+        "value:effect:slardar_slithereen_crush:modifier:crush-water-puddle:mana",
+        "value:effect:slardar_slithereen_crush:modifier:crush-water-puddle:cooldown",
+        "value:effect:slardar_slithereen_crush:modifier:crush-water-puddle:delay"
+      ],
+      "activationId": "activation:28:slardar_slithereen_crush"
+    },
+    {
+      "effectId": "slardar_slithereen_crush:modifier:shard-crush-dependent-haze",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_slithereen_crush",
+      "type": "modifier",
+      "subtype": "shard-crush-dependent-haze",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze:range",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze:duration",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze",
+          "field": "duration",
+          "state": "known",
+          "value": 5
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze:magnitude",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze:mana",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze:cooldown",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze:delay",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "slardar_amplify_damage"
+        ],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "enemyHitBySlithereenCrush"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_slithereen_crush:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze",
+      "legacyEffectId": "slardar_slithereen_crush:modifier:shard-crush-dependent-haze",
+      "order": 8,
+      "legacyAbilityId": "slardar_slithereen_crush",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slardar_slithereen_crush:modifier:shard-crush-dependent-haze:0"
+      ],
+      "valueIds": [
+        "value:effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze:range",
+        "value:effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze:duration",
+        "value:effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze:magnitude",
+        "value:effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze:mana",
+        "value:effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze:cooldown",
+        "value:effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze:delay"
+      ],
+      "activationId": "activation:28:slardar_slithereen_crush"
+    },
+    {
+      "effectId": "slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_slithereen_crush",
+      "type": "modifier",
+      "subtype": "scepter-expanded-crush-puddle",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle:range",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle:duration",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle:magnitude",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle:mana",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle:cooldown",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            8.5,
+            8,
+            7.5,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle:delay",
+          "ownerId": "effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_slithereen_crush"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle",
+      "legacyEffectId": "slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle",
+      "order": 9,
+      "legacyAbilityId": "slardar_slithereen_crush",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle:range",
+        "value:effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle:duration",
+        "value:effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle:magnitude",
+        "value:effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle:mana",
+        "value:effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle:cooldown",
+        "value:effect:slardar_slithereen_crush:modifier:scepter-expanded-crush-puddle:delay"
+      ],
+      "activationId": "activation:28:slardar_slithereen_crush"
+    },
+    {
+      "effectId": "slardar_bash:damage:ready-bash-landed-attack-damage",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_bash",
+      "type": "damage",
+      "subtype": "ready-bash-landed-attack-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_bash:damage:ready-bash-landed-attack-damage:range",
+          "ownerId": "effect:slardar_bash:damage:ready-bash-landed-attack-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slardar_bash:damage:ready-bash-landed-attack-damage:duration",
+          "ownerId": "effect:slardar_bash:damage:ready-bash-landed-attack-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_bash:damage:ready-bash-landed-attack-damage:magnitude",
+          "ownerId": "effect:slardar_bash:damage:ready-bash-landed-attack-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            35,
+            90,
+            145,
+            200
+          ]
+        },
+        "mana": {
+          "id": "value:effect:slardar_bash:damage:ready-bash-landed-attack-damage:mana",
+          "ownerId": "effect:slardar_bash:damage:ready-bash-landed-attack-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_bash:damage:ready-bash-landed-attack-damage:cooldown",
+          "ownerId": "effect:slardar_bash:damage:ready-bash-landed-attack-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:slardar_bash:damage:ready-bash-landed-attack-damage:delay",
+          "ownerId": "effect:slardar_bash:damage:ready-bash-landed-attack-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:slardar_bash:damage:ready-bash-landed-attack-damage:damageType",
+          "ownerId": "effect:slardar_bash:damage:ready-bash-landed-attack-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "slardarBashReadyAndAttackLands"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_bash:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:slardar_bash:damage:ready-bash-landed-attack-damage",
+      "legacyEffectId": "slardar_bash:damage:ready-bash-landed-attack-damage",
+      "order": 10,
+      "legacyAbilityId": "slardar_bash",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slardar_bash:damage:ready-bash-landed-attack-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:slardar_bash:damage:ready-bash-landed-attack-damage:range",
+        "value:effect:slardar_bash:damage:ready-bash-landed-attack-damage:duration",
+        "value:effect:slardar_bash:damage:ready-bash-landed-attack-damage:magnitude",
+        "value:effect:slardar_bash:damage:ready-bash-landed-attack-damage:mana",
+        "value:effect:slardar_bash:damage:ready-bash-landed-attack-damage:cooldown",
+        "value:effect:slardar_bash:damage:ready-bash-landed-attack-damage:delay",
+        "value:effect:slardar_bash:damage:ready-bash-landed-attack-damage:damageType"
+      ],
+      "activationId": "activation:28:slardar_bash"
+    },
+    {
+      "effectId": "slardar_bash:control:ready-bash-landed-attack-stun",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_bash",
+      "type": "control",
+      "subtype": "ready-bash-landed-attack-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_bash:control:ready-bash-landed-attack-stun:range",
+          "ownerId": "effect:slardar_bash:control:ready-bash-landed-attack-stun",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slardar_bash:control:ready-bash-landed-attack-stun:duration",
+          "ownerId": "effect:slardar_bash:control:ready-bash-landed-attack-stun",
+          "field": "duration",
+          "state": "known",
+          "value": 1
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_bash:control:ready-bash-landed-attack-stun:magnitude",
+          "ownerId": "effect:slardar_bash:control:ready-bash-landed-attack-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slardar_bash:control:ready-bash-landed-attack-stun:mana",
+          "ownerId": "effect:slardar_bash:control:ready-bash-landed-attack-stun",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_bash:control:ready-bash-landed-attack-stun:cooldown",
+          "ownerId": "effect:slardar_bash:control:ready-bash-landed-attack-stun",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:slardar_bash:control:ready-bash-landed-attack-stun:delay",
+          "ownerId": "effect:slardar_bash:control:ready-bash-landed-attack-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "slardarBashReadyAndAttackLands"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_bash:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:slardar_bash:control:ready-bash-landed-attack-stun",
+      "legacyEffectId": "slardar_bash:control:ready-bash-landed-attack-stun",
+      "order": 11,
+      "legacyAbilityId": "slardar_bash",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slardar_bash:control:ready-bash-landed-attack-stun:0"
+      ],
+      "valueIds": [
+        "value:effect:slardar_bash:control:ready-bash-landed-attack-stun:range",
+        "value:effect:slardar_bash:control:ready-bash-landed-attack-stun:duration",
+        "value:effect:slardar_bash:control:ready-bash-landed-attack-stun:magnitude",
+        "value:effect:slardar_bash:control:ready-bash-landed-attack-stun:mana",
+        "value:effect:slardar_bash:control:ready-bash-landed-attack-stun:cooldown",
+        "value:effect:slardar_bash:control:ready-bash-landed-attack-stun:delay"
+      ],
+      "activationId": "activation:28:slardar_bash"
+    },
+    {
+      "effectId": "slardar_seaborn_sentinel:mobility:water-dependent-movement-speed",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_seaborn_sentinel",
+      "type": "mobility",
+      "subtype": "water-dependent-movement-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed:range",
+          "ownerId": "effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed:duration",
+          "ownerId": "effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed:magnitude",
+          "ownerId": "effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed",
+          "field": "magnitude",
+          "state": "known",
+          "value": 18
+        },
+        "mana": {
+          "id": "value:effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed:mana",
+          "ownerId": "effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed:cooldown",
+          "ownerId": "effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed:delay",
+          "ownerId": "effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "slardarInsidePuddleTrailOrRiver"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_seaborn_sentinel:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed",
+      "legacyEffectId": "slardar_seaborn_sentinel:mobility:water-dependent-movement-speed",
+      "order": 12,
+      "legacyAbilityId": "slardar_seaborn_sentinel",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed:0"
+      ],
+      "valueIds": [
+        "value:effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed:range",
+        "value:effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed:duration",
+        "value:effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed:magnitude",
+        "value:effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed:mana",
+        "value:effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed:cooldown",
+        "value:effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed:delay"
+      ],
+      "activationId": "activation:28:slardar_seaborn_sentinel"
+    },
+    {
+      "effectId": "slardar_seaborn_sentinel:heal:water-dependent-health-regeneration",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_seaborn_sentinel",
+      "type": "heal",
+      "subtype": "water-dependent-health-regeneration",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration:range",
+          "ownerId": "effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration:duration",
+          "ownerId": "effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration:magnitude",
+          "ownerId": "effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration:mana",
+          "ownerId": "effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration:cooldown",
+          "ownerId": "effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration:delay",
+          "ownerId": "effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "slardarInsidePuddleTrailOrRiver"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "regeneration"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_seaborn_sentinel:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration",
+      "legacyEffectId": "slardar_seaborn_sentinel:heal:water-dependent-health-regeneration",
+      "order": 13,
+      "legacyAbilityId": "slardar_seaborn_sentinel",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration:0"
+      ],
+      "valueIds": [
+        "value:effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration:range",
+        "value:effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration:duration",
+        "value:effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration:magnitude",
+        "value:effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration:mana",
+        "value:effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration:cooldown",
+        "value:effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration:delay"
+      ],
+      "activationId": "activation:28:slardar_seaborn_sentinel"
+    },
+    {
+      "effectId": "slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_seaborn_sentinel",
+      "type": "modifier",
+      "subtype": "water-dependent-armor-and-attack-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage:range",
+          "ownerId": "effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage:duration",
+          "ownerId": "effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage:magnitude",
+          "ownerId": "effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage:mana",
+          "ownerId": "effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage:cooldown",
+          "ownerId": "effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage:delay",
+          "ownerId": "effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "slardarInsidePuddleTrailOrRiver"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_seaborn_sentinel:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage",
+      "legacyEffectId": "slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage",
+      "order": 14,
+      "legacyAbilityId": "slardar_seaborn_sentinel",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage:range",
+        "value:effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage:duration",
+        "value:effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage:magnitude",
+        "value:effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage:mana",
+        "value:effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage:cooldown",
+        "value:effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage:delay"
+      ],
+      "activationId": "activation:28:slardar_seaborn_sentinel"
+    },
+    {
+      "effectId": "slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_seaborn_sentinel",
+      "type": "modifier",
+      "subtype": "scepter-water-regeneration-armor-status-resistance",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance:range",
+          "ownerId": "effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance:duration",
+          "ownerId": "effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance:magnitude",
+          "ownerId": "effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance:mana",
+          "ownerId": "effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance:cooldown",
+          "ownerId": "effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance:delay",
+          "ownerId": "effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "innate": true,
+        "requiresContext": [
+          "slardarInsidePuddleTrailOrRiver"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_seaborn_sentinel:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance",
+      "legacyEffectId": "slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance",
+      "order": 15,
+      "legacyAbilityId": "slardar_seaborn_sentinel",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance:0"
+      ],
+      "valueIds": [
+        "value:effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance:range",
+        "value:effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance:duration",
+        "value:effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance:magnitude",
+        "value:effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance:mana",
+        "value:effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance:cooldown",
+        "value:effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance:delay"
+      ],
+      "activationId": "activation:28:slardar_seaborn_sentinel"
+    },
+    {
+      "effectId": "slardar_amplify_damage:modifier:haze-signed-armor-reduction",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_amplify_damage",
+      "type": "modifier",
+      "subtype": "haze-signed-armor-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction:range",
+          "ownerId": "effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction",
+          "field": "range",
+          "state": "known",
+          "value": 900
+        },
+        "duration": {
+          "id": "value:effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction:duration",
+          "ownerId": "effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction",
+          "field": "duration",
+          "state": "known",
+          "value": 18
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction:magnitude",
+          "ownerId": "effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -8,
+            -14,
+            -20
+          ]
+        },
+        "mana": {
+          "id": "value:effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction:mana",
+          "ownerId": "effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 25
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction:cooldown",
+          "ownerId": "effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction",
+          "field": "cooldown",
+          "state": "known",
+          "value": 5
+        },
+        "delay": {
+          "id": "value:effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction:delay",
+          "ownerId": "effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_amplify_damage"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction",
+      "legacyEffectId": "slardar_amplify_damage:modifier:haze-signed-armor-reduction",
+      "order": 16,
+      "legacyAbilityId": "slardar_amplify_damage",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction:range",
+        "value:effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction:duration",
+        "value:effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction:magnitude",
+        "value:effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction:mana",
+        "value:effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction:cooldown",
+        "value:effect:slardar_amplify_damage:modifier:haze-signed-armor-reduction:delay"
+      ],
+      "activationId": "activation:28:slardar_amplify_damage"
+    },
+    {
+      "effectId": "slardar_amplify_damage:modifier:haze-target-water-trail",
+      "heroId": "28",
+      "abilityId": "ability:28:slardar_amplify_damage",
+      "type": "modifier",
+      "subtype": "haze-target-water-trail",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:slardar_amplify_damage:modifier:haze-target-water-trail:range",
+          "ownerId": "effect:slardar_amplify_damage:modifier:haze-target-water-trail",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:slardar_amplify_damage:modifier:haze-target-water-trail:duration",
+          "ownerId": "effect:slardar_amplify_damage:modifier:haze-target-water-trail",
+          "field": "duration",
+          "state": "known",
+          "value": 7
+        },
+        "magnitude": {
+          "id": "value:effect:slardar_amplify_damage:modifier:haze-target-water-trail:magnitude",
+          "ownerId": "effect:slardar_amplify_damage:modifier:haze-target-water-trail",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:slardar_amplify_damage:modifier:haze-target-water-trail:mana",
+          "ownerId": "effect:slardar_amplify_damage:modifier:haze-target-water-trail",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:slardar_amplify_damage:modifier:haze-target-water-trail:cooldown",
+          "ownerId": "effect:slardar_amplify_damage:modifier:haze-target-water-trail",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:slardar_amplify_damage:modifier:haze-target-water-trail:delay",
+          "ownerId": "effect:slardar_amplify_damage:modifier:haze-target-water-trail",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "corrosiveHazeTargetLeavesWaterTrail"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "slardar_amplify_damage:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:slardar_amplify_damage:modifier:haze-target-water-trail",
+      "legacyEffectId": "slardar_amplify_damage:modifier:haze-target-water-trail",
+      "order": 17,
+      "legacyAbilityId": "slardar_amplify_damage",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:slardar_amplify_damage:modifier:haze-target-water-trail:0"
+      ],
+      "valueIds": [
+        "value:effect:slardar_amplify_damage:modifier:haze-target-water-trail:range",
+        "value:effect:slardar_amplify_damage:modifier:haze-target-water-trail:duration",
+        "value:effect:slardar_amplify_damage:modifier:haze-target-water-trail:magnitude",
+        "value:effect:slardar_amplify_damage:modifier:haze-target-water-trail:mana",
+        "value:effect:slardar_amplify_damage:modifier:haze-target-water-trail:cooldown",
+        "value:effect:slardar_amplify_damage:modifier:haze-target-water-trail:delay"
+      ],
+      "activationId": "activation:28:slardar_amplify_damage"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:slardar_sprint:modifier:frontloaded-fading-slow-resistance:0",
+      "ownerId": "effect:slardar_sprint:modifier:frontloaded-fading-slow-resistance",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "guardianSprintActive"
+      }
+    },
+    {
+      "id": "condition:slardar_slithereen_crush:slow:crush-post-stun-movement-slow:0",
+      "ownerId": "effect:slardar_slithereen_crush:slow:crush-post-stun-movement-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "crushVictimPastInitialStun"
+      }
+    },
+    {
+      "id": "condition:slardar_slithereen_crush:modifier:crush-attack-speed-reduction:0",
+      "ownerId": "effect:slardar_slithereen_crush:modifier:crush-attack-speed-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "crushVictimPastInitialStun"
+      }
+    },
+    {
+      "id": "condition:slardar_slithereen_crush:modifier:shard-crush-dependent-haze:0",
+      "ownerId": "effect:slardar_slithereen_crush:modifier:shard-crush-dependent-haze",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyHitBySlithereenCrush"
+      }
+    },
+    {
+      "id": "condition:slardar_bash:damage:ready-bash-landed-attack-damage:0",
+      "ownerId": "effect:slardar_bash:damage:ready-bash-landed-attack-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "slardarBashReadyAndAttackLands"
+      }
+    },
+    {
+      "id": "condition:slardar_bash:control:ready-bash-landed-attack-stun:0",
+      "ownerId": "effect:slardar_bash:control:ready-bash-landed-attack-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "slardarBashReadyAndAttackLands"
+      }
+    },
+    {
+      "id": "condition:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed:0",
+      "ownerId": "effect:slardar_seaborn_sentinel:mobility:water-dependent-movement-speed",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "slardarInsidePuddleTrailOrRiver"
+      }
+    },
+    {
+      "id": "condition:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration:0",
+      "ownerId": "effect:slardar_seaborn_sentinel:heal:water-dependent-health-regeneration",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "slardarInsidePuddleTrailOrRiver"
+      }
+    },
+    {
+      "id": "condition:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage:0",
+      "ownerId": "effect:slardar_seaborn_sentinel:modifier:water-dependent-armor-and-attack-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "slardarInsidePuddleTrailOrRiver"
+      }
+    },
+    {
+      "id": "condition:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance:0",
+      "ownerId": "effect:slardar_seaborn_sentinel:modifier:scepter-water-regeneration-armor-status-resistance",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "slardarInsidePuddleTrailOrRiver"
+      }
+    },
+    {
+      "id": "condition:slardar_amplify_damage:modifier:haze-target-water-trail:0",
+      "ownerId": "effect:slardar_amplify_damage:modifier:haze-target-water-trail",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "corrosiveHazeTargetLeavesWaterTrail"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1237 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "luna_lucent_beam:damage:lucent-beam-damage",
+      "heroId": "48",
+      "abilityId": "ability:48:luna_lucent_beam",
+      "type": "damage",
+      "subtype": "lucent-beam-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:luna_lucent_beam:damage:lucent-beam-damage:range",
+          "ownerId": "effect:luna_lucent_beam:damage:lucent-beam-damage",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:luna_lucent_beam:damage:lucent-beam-damage:duration",
+          "ownerId": "effect:luna_lucent_beam:damage:lucent-beam-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:luna_lucent_beam:damage:lucent-beam-damage:magnitude",
+          "ownerId": "effect:luna_lucent_beam:damage:lucent-beam-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            75,
+            150,
+            225,
+            300
+          ]
+        },
+        "mana": {
+          "id": "value:effect:luna_lucent_beam:damage:lucent-beam-damage:mana",
+          "ownerId": "effect:luna_lucent_beam:damage:lucent-beam-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:luna_lucent_beam:damage:lucent-beam-damage:cooldown",
+          "ownerId": "effect:luna_lucent_beam:damage:lucent-beam-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            9,
+            8,
+            7,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:luna_lucent_beam:damage:lucent-beam-damage:delay",
+          "ownerId": "effect:luna_lucent_beam:damage:lucent-beam-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:luna_lucent_beam:damage:lucent-beam-damage:damageType",
+          "ownerId": "effect:luna_lucent_beam:damage:lucent-beam-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "luna_lucent_beam"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:luna_lucent_beam:damage:lucent-beam-damage",
+      "legacyEffectId": "luna_lucent_beam:damage:lucent-beam-damage",
+      "order": 0,
+      "legacyAbilityId": "luna_lucent_beam",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:luna_lucent_beam:damage:lucent-beam-damage:range",
+        "value:effect:luna_lucent_beam:damage:lucent-beam-damage:duration",
+        "value:effect:luna_lucent_beam:damage:lucent-beam-damage:magnitude",
+        "value:effect:luna_lucent_beam:damage:lucent-beam-damage:mana",
+        "value:effect:luna_lucent_beam:damage:lucent-beam-damage:cooldown",
+        "value:effect:luna_lucent_beam:damage:lucent-beam-damage:delay",
+        "value:effect:luna_lucent_beam:damage:lucent-beam-damage:damageType"
+      ],
+      "activationId": "activation:48:luna_lucent_beam"
+    },
+    {
+      "effectId": "luna_lucent_beam:control:lucent-beam-stun",
+      "heroId": "48",
+      "abilityId": "ability:48:luna_lucent_beam",
+      "type": "control",
+      "subtype": "lucent-beam-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:luna_lucent_beam:control:lucent-beam-stun:range",
+          "ownerId": "effect:luna_lucent_beam:control:lucent-beam-stun",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:luna_lucent_beam:control:lucent-beam-stun:duration",
+          "ownerId": "effect:luna_lucent_beam:control:lucent-beam-stun",
+          "field": "duration",
+          "state": "known",
+          "value": 0.6
+        },
+        "magnitude": {
+          "id": "value:effect:luna_lucent_beam:control:lucent-beam-stun:magnitude",
+          "ownerId": "effect:luna_lucent_beam:control:lucent-beam-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:luna_lucent_beam:control:lucent-beam-stun:mana",
+          "ownerId": "effect:luna_lucent_beam:control:lucent-beam-stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:luna_lucent_beam:control:lucent-beam-stun:cooldown",
+          "ownerId": "effect:luna_lucent_beam:control:lucent-beam-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            9,
+            8,
+            7,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:luna_lucent_beam:control:lucent-beam-stun:delay",
+          "ownerId": "effect:luna_lucent_beam:control:lucent-beam-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "luna_lucent_beam"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:luna_lucent_beam:control:lucent-beam-stun",
+      "legacyEffectId": "luna_lucent_beam:control:lucent-beam-stun",
+      "order": 1,
+      "legacyAbilityId": "luna_lucent_beam",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:luna_lucent_beam:control:lucent-beam-stun:range",
+        "value:effect:luna_lucent_beam:control:lucent-beam-stun:duration",
+        "value:effect:luna_lucent_beam:control:lucent-beam-stun:magnitude",
+        "value:effect:luna_lucent_beam:control:lucent-beam-stun:mana",
+        "value:effect:luna_lucent_beam:control:lucent-beam-stun:cooldown",
+        "value:effect:luna_lucent_beam:control:lucent-beam-stun:delay"
+      ],
+      "activationId": "activation:48:luna_lucent_beam"
+    },
+    {
+      "effectId": "luna_lunar_orbit:damage:orbit-collision-attack-fraction",
+      "heroId": "48",
+      "abilityId": "ability:48:luna_lunar_orbit",
+      "type": "damage",
+      "subtype": "orbit-collision-attack-fraction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction:range",
+          "ownerId": "effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction:duration",
+          "ownerId": "effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction:magnitude",
+          "ownerId": "effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction:mana",
+          "ownerId": "effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            65,
+            70,
+            75,
+            80
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction:cooldown",
+          "ownerId": "effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            35,
+            30,
+            25
+          ]
+        },
+        "delay": {
+          "id": "value:effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction:delay",
+          "ownerId": "effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction:damageType",
+          "ownerId": "effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "lunarGlaiveCollidesWithEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "luna_lunar_orbit"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction",
+      "legacyEffectId": "luna_lunar_orbit:damage:orbit-collision-attack-fraction",
+      "order": 2,
+      "legacyAbilityId": "luna_lunar_orbit",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:luna_lunar_orbit:damage:orbit-collision-attack-fraction:0"
+      ],
+      "valueIds": [
+        "value:effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction:range",
+        "value:effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction:duration",
+        "value:effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction:magnitude",
+        "value:effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction:mana",
+        "value:effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction:cooldown",
+        "value:effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction:delay",
+        "value:effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction:damageType"
+      ],
+      "activationId": "activation:48:luna_lunar_orbit"
+    },
+    {
+      "effectId": "luna_lunar_orbit:modifier:orbit-damage-reduction",
+      "heroId": "48",
+      "abilityId": "ability:48:luna_lunar_orbit",
+      "type": "modifier",
+      "subtype": "orbit-damage-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:luna_lunar_orbit:modifier:orbit-damage-reduction:range",
+          "ownerId": "effect:luna_lunar_orbit:modifier:orbit-damage-reduction",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:luna_lunar_orbit:modifier:orbit-damage-reduction:duration",
+          "ownerId": "effect:luna_lunar_orbit:modifier:orbit-damage-reduction",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:luna_lunar_orbit:modifier:orbit-damage-reduction:magnitude",
+          "ownerId": "effect:luna_lunar_orbit:modifier:orbit-damage-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            8,
+            12,
+            16,
+            20
+          ]
+        },
+        "mana": {
+          "id": "value:effect:luna_lunar_orbit:modifier:orbit-damage-reduction:mana",
+          "ownerId": "effect:luna_lunar_orbit:modifier:orbit-damage-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            65,
+            70,
+            75,
+            80
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:luna_lunar_orbit:modifier:orbit-damage-reduction:cooldown",
+          "ownerId": "effect:luna_lunar_orbit:modifier:orbit-damage-reduction",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            35,
+            30,
+            25
+          ]
+        },
+        "delay": {
+          "id": "value:effect:luna_lunar_orbit:modifier:orbit-damage-reduction:delay",
+          "ownerId": "effect:luna_lunar_orbit:modifier:orbit-damage-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "luna_lunar_orbit"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:luna_lunar_orbit:modifier:orbit-damage-reduction",
+      "legacyEffectId": "luna_lunar_orbit:modifier:orbit-damage-reduction",
+      "order": 3,
+      "legacyAbilityId": "luna_lunar_orbit",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:luna_lunar_orbit:modifier:orbit-damage-reduction:range",
+        "value:effect:luna_lunar_orbit:modifier:orbit-damage-reduction:duration",
+        "value:effect:luna_lunar_orbit:modifier:orbit-damage-reduction:magnitude",
+        "value:effect:luna_lunar_orbit:modifier:orbit-damage-reduction:mana",
+        "value:effect:luna_lunar_orbit:modifier:orbit-damage-reduction:cooldown",
+        "value:effect:luna_lunar_orbit:modifier:orbit-damage-reduction:delay"
+      ],
+      "activationId": "activation:48:luna_lunar_orbit"
+    },
+    {
+      "effectId": "luna_lunar_orbit:mobility:shard-orbit-movement-speed",
+      "heroId": "48",
+      "abilityId": "ability:48:luna_lunar_orbit",
+      "type": "mobility",
+      "subtype": "shard-orbit-movement-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed:range",
+          "ownerId": "effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed:duration",
+          "ownerId": "effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed:magnitude",
+          "ownerId": "effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed:mana",
+          "ownerId": "effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            65,
+            70,
+            75,
+            80
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed:cooldown",
+          "ownerId": "effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            35,
+            30,
+            25
+          ]
+        },
+        "delay": {
+          "id": "value:effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed:delay",
+          "ownerId": "effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "luna_lunar_orbit"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed",
+      "legacyEffectId": "luna_lunar_orbit:mobility:shard-orbit-movement-speed",
+      "order": 4,
+      "legacyAbilityId": "luna_lunar_orbit",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed:range",
+        "value:effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed:duration",
+        "value:effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed:magnitude",
+        "value:effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed:mana",
+        "value:effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed:cooldown",
+        "value:effect:luna_lunar_orbit:mobility:shard-orbit-movement-speed:delay"
+      ],
+      "activationId": "activation:48:luna_lunar_orbit"
+    },
+    {
+      "effectId": "luna_moon_glaive:passive:reducing-attack-bounces",
+      "heroId": "48",
+      "abilityId": "ability:48:luna_moon_glaive",
+      "type": "passive",
+      "subtype": "reducing-attack-bounces",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:luna_moon_glaive:passive:reducing-attack-bounces:range",
+          "ownerId": "effect:luna_moon_glaive:passive:reducing-attack-bounces",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:luna_moon_glaive:passive:reducing-attack-bounces:duration",
+          "ownerId": "effect:luna_moon_glaive:passive:reducing-attack-bounces",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:luna_moon_glaive:passive:reducing-attack-bounces:magnitude",
+          "ownerId": "effect:luna_moon_glaive:passive:reducing-attack-bounces",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:luna_moon_glaive:passive:reducing-attack-bounces:mana",
+          "ownerId": "effect:luna_moon_glaive:passive:reducing-attack-bounces",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:luna_moon_glaive:passive:reducing-attack-bounces:cooldown",
+          "ownerId": "effect:luna_moon_glaive:passive:reducing-attack-bounces",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:luna_moon_glaive:passive:reducing-attack-bounces:delay",
+          "ownerId": "effect:luna_moon_glaive:passive:reducing-attack-bounces",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "luna_moon_glaive:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:luna_moon_glaive:passive:reducing-attack-bounces",
+      "legacyEffectId": "luna_moon_glaive:passive:reducing-attack-bounces",
+      "order": 5,
+      "legacyAbilityId": "luna_moon_glaive",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:luna_moon_glaive:passive:reducing-attack-bounces:range",
+        "value:effect:luna_moon_glaive:passive:reducing-attack-bounces:duration",
+        "value:effect:luna_moon_glaive:passive:reducing-attack-bounces:magnitude",
+        "value:effect:luna_moon_glaive:passive:reducing-attack-bounces:mana",
+        "value:effect:luna_moon_glaive:passive:reducing-attack-bounces:cooldown",
+        "value:effect:luna_moon_glaive:passive:reducing-attack-bounces:delay"
+      ],
+      "activationId": "activation:48:luna_moon_glaive"
+    },
+    {
+      "effectId": "luna_lunar_blessing:modifier:allied-level-scaled-attack-aura",
+      "heroId": "48",
+      "abilityId": "ability:48:luna_lunar_blessing",
+      "type": "modifier",
+      "subtype": "allied-level-scaled-attack-aura",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura:range",
+          "ownerId": "effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura",
+          "field": "range",
+          "state": "known",
+          "value": 1200
+        },
+        "duration": {
+          "id": "value:effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura:duration",
+          "ownerId": "effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura:magnitude",
+          "ownerId": "effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura:mana",
+          "ownerId": "effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura:cooldown",
+          "ownerId": "effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura:delay",
+          "ownerId": "effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "luna_lunar_blessing:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura",
+      "legacyEffectId": "luna_lunar_blessing:modifier:allied-level-scaled-attack-aura",
+      "order": 6,
+      "legacyAbilityId": "luna_lunar_blessing",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura:range",
+        "value:effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura:duration",
+        "value:effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura:magnitude",
+        "value:effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura:mana",
+        "value:effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura:cooldown",
+        "value:effect:luna_lunar_blessing:modifier:allied-level-scaled-attack-aura:delay"
+      ],
+      "activationId": "activation:48:luna_lunar_blessing"
+    },
+    {
+      "effectId": "luna_eclipse:damage:random-nonstunning-beams",
+      "heroId": "48",
+      "abilityId": "ability:48:luna_eclipse",
+      "type": "damage",
+      "subtype": "random-nonstunning-beams",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:luna_eclipse:damage:random-nonstunning-beams:range",
+          "ownerId": "effect:luna_eclipse:damage:random-nonstunning-beams",
+          "field": "range",
+          "state": "known",
+          "value": 675
+        },
+        "duration": {
+          "id": "value:effect:luna_eclipse:damage:random-nonstunning-beams:duration",
+          "ownerId": "effect:luna_eclipse:damage:random-nonstunning-beams",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:luna_eclipse:damage:random-nonstunning-beams:magnitude",
+          "ownerId": "effect:luna_eclipse:damage:random-nonstunning-beams",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:luna_eclipse:damage:random-nonstunning-beams:mana",
+          "ownerId": "effect:luna_eclipse:damage:random-nonstunning-beams",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            200,
+            250
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:luna_eclipse:damage:random-nonstunning-beams:cooldown",
+          "ownerId": "effect:luna_eclipse:damage:random-nonstunning-beams",
+          "field": "cooldown",
+          "state": "known",
+          "value": 105
+        },
+        "delay": {
+          "id": "value:effect:luna_eclipse:damage:random-nonstunning-beams:delay",
+          "ownerId": "effect:luna_eclipse:damage:random-nonstunning-beams",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:luna_eclipse:damage:random-nonstunning-beams:damageType",
+          "ownerId": "effect:luna_eclipse:damage:random-nonstunning-beams",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "luna_lucent_beam"
+        ],
+        "upgrades": [],
+        "requiresContext": [
+          "eclipseVisibleEnemyAvailable"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "luna_eclipse"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:luna_eclipse:damage:random-nonstunning-beams",
+      "legacyEffectId": "luna_eclipse:damage:random-nonstunning-beams",
+      "order": 7,
+      "legacyAbilityId": "luna_eclipse",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:luna_eclipse:damage:random-nonstunning-beams:0"
+      ],
+      "valueIds": [
+        "value:effect:luna_eclipse:damage:random-nonstunning-beams:range",
+        "value:effect:luna_eclipse:damage:random-nonstunning-beams:duration",
+        "value:effect:luna_eclipse:damage:random-nonstunning-beams:magnitude",
+        "value:effect:luna_eclipse:damage:random-nonstunning-beams:mana",
+        "value:effect:luna_eclipse:damage:random-nonstunning-beams:cooldown",
+        "value:effect:luna_eclipse:damage:random-nonstunning-beams:delay",
+        "value:effect:luna_eclipse:damage:random-nonstunning-beams:damageType"
+      ],
+      "activationId": "activation:48:luna_eclipse"
+    },
+    {
+      "effectId": "luna_eclipse:modifier:scepter-remote-eclipse",
+      "heroId": "48",
+      "abilityId": "ability:48:luna_eclipse",
+      "type": "modifier",
+      "subtype": "scepter-remote-eclipse",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:luna_eclipse:modifier:scepter-remote-eclipse:range",
+          "ownerId": "effect:luna_eclipse:modifier:scepter-remote-eclipse",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:luna_eclipse:modifier:scepter-remote-eclipse:duration",
+          "ownerId": "effect:luna_eclipse:modifier:scepter-remote-eclipse",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:luna_eclipse:modifier:scepter-remote-eclipse:magnitude",
+          "ownerId": "effect:luna_eclipse:modifier:scepter-remote-eclipse",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:luna_eclipse:modifier:scepter-remote-eclipse:mana",
+          "ownerId": "effect:luna_eclipse:modifier:scepter-remote-eclipse",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            200,
+            250
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:luna_eclipse:modifier:scepter-remote-eclipse:cooldown",
+          "ownerId": "effect:luna_eclipse:modifier:scepter-remote-eclipse",
+          "field": "cooldown",
+          "state": "known",
+          "value": 105
+        },
+        "delay": {
+          "id": "value:effect:luna_eclipse:modifier:scepter-remote-eclipse:delay",
+          "ownerId": "effect:luna_eclipse:modifier:scepter-remote-eclipse",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "luna_lucent_beam"
+        ],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "luna_eclipse"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:luna_eclipse:modifier:scepter-remote-eclipse",
+      "legacyEffectId": "luna_eclipse:modifier:scepter-remote-eclipse",
+      "order": 8,
+      "legacyAbilityId": "luna_eclipse",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:luna_eclipse:modifier:scepter-remote-eclipse:range",
+        "value:effect:luna_eclipse:modifier:scepter-remote-eclipse:duration",
+        "value:effect:luna_eclipse:modifier:scepter-remote-eclipse:magnitude",
+        "value:effect:luna_eclipse:modifier:scepter-remote-eclipse:mana",
+        "value:effect:luna_eclipse:modifier:scepter-remote-eclipse:cooldown",
+        "value:effect:luna_eclipse:modifier:scepter-remote-eclipse:delay"
+      ],
+      "activationId": "activation:48:luna_eclipse"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:luna_lunar_orbit:damage:orbit-collision-attack-fraction:0",
+      "ownerId": "effect:luna_lunar_orbit:damage:orbit-collision-attack-fraction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "lunarGlaiveCollidesWithEnemy"
+      }
+    },
+    {
+      "id": "condition:luna_eclipse:damage:random-nonstunning-beams:0",
+      "ownerId": "effect:luna_eclipse:damage:random-nonstunning-beams",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "eclipseVisibleEnemyAvailable"
+      }
+    }
+  ]
+}

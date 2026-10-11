@@ -1,0 +1,2058 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "keeper_of_the_light_illuminate:damage:fully-channelled-wave",
+      "heroId": "90",
+      "abilityId": "ability:90:keeper_of_the_light_illuminate",
+      "type": "damage",
+      "subtype": "fully-channelled-wave",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave:range",
+          "ownerId": "effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave",
+          "field": "range",
+          "state": "known",
+          "value": 1550
+        },
+        "duration": {
+          "id": "value:effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave:duration",
+          "ownerId": "effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave:magnitude",
+          "ownerId": "effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            185,
+            290,
+            395,
+            500
+          ]
+        },
+        "mana": {
+          "id": "value:effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave:mana",
+          "ownerId": "effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150,
+            175
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave:cooldown",
+          "ownerId": "effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave",
+          "field": "cooldown",
+          "state": "known",
+          "value": 13
+        },
+        "delay": {
+          "id": "value:effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave:delay",
+          "ownerId": "effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave:damageType",
+          "ownerId": "effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "illuminateFullyChannelled"
+        ]
+      },
+      "delivery": {
+        "kind": "projectile",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "keeper_of_the_light_illuminate"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave",
+      "legacyEffectId": "keeper_of_the_light_illuminate:damage:fully-channelled-wave",
+      "order": 0,
+      "legacyAbilityId": "keeper_of_the_light_illuminate",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:keeper_of_the_light_illuminate:damage:fully-channelled-wave:0"
+      ],
+      "valueIds": [
+        "value:effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave:range",
+        "value:effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave:duration",
+        "value:effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave:magnitude",
+        "value:effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave:mana",
+        "value:effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave:cooldown",
+        "value:effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave:delay",
+        "value:effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave:damageType"
+      ],
+      "activationId": "activation:90:keeper_of_the_light_illuminate"
+    },
+    {
+      "effectId": "keeper_of_the_light_illuminate:vision:wave-path-vision",
+      "heroId": "90",
+      "abilityId": "ability:90:keeper_of_the_light_illuminate",
+      "type": "vision",
+      "subtype": "wave-path-vision",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:keeper_of_the_light_illuminate:vision:wave-path-vision:range",
+          "ownerId": "effect:keeper_of_the_light_illuminate:vision:wave-path-vision",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:keeper_of_the_light_illuminate:vision:wave-path-vision:duration",
+          "ownerId": "effect:keeper_of_the_light_illuminate:vision:wave-path-vision",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3.34,
+            3.34,
+            3.34,
+            3.34
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:keeper_of_the_light_illuminate:vision:wave-path-vision:magnitude",
+          "ownerId": "effect:keeper_of_the_light_illuminate:vision:wave-path-vision",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            800,
+            800,
+            800,
+            800
+          ]
+        },
+        "mana": {
+          "id": "value:effect:keeper_of_the_light_illuminate:vision:wave-path-vision:mana",
+          "ownerId": "effect:keeper_of_the_light_illuminate:vision:wave-path-vision",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150,
+            175
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:keeper_of_the_light_illuminate:vision:wave-path-vision:cooldown",
+          "ownerId": "effect:keeper_of_the_light_illuminate:vision:wave-path-vision",
+          "field": "cooldown",
+          "state": "known",
+          "value": 13
+        },
+        "delay": {
+          "id": "value:effect:keeper_of_the_light_illuminate:vision:wave-path-vision:delay",
+          "ownerId": "effect:keeper_of_the_light_illuminate:vision:wave-path-vision",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "projectile",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "keeper_of_the_light_illuminate"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:keeper_of_the_light_illuminate:vision:wave-path-vision",
+      "legacyEffectId": "keeper_of_the_light_illuminate:vision:wave-path-vision",
+      "order": 1,
+      "legacyAbilityId": "keeper_of_the_light_illuminate",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:keeper_of_the_light_illuminate:vision:wave-path-vision:range",
+        "value:effect:keeper_of_the_light_illuminate:vision:wave-path-vision:duration",
+        "value:effect:keeper_of_the_light_illuminate:vision:wave-path-vision:magnitude",
+        "value:effect:keeper_of_the_light_illuminate:vision:wave-path-vision:mana",
+        "value:effect:keeper_of_the_light_illuminate:vision:wave-path-vision:cooldown",
+        "value:effect:keeper_of_the_light_illuminate:vision:wave-path-vision:delay"
+      ],
+      "activationId": "activation:90:keeper_of_the_light_illuminate"
+    },
+    {
+      "effectId": "keeper_of_the_light_blinding_light:damage:area-damage",
+      "heroId": "90",
+      "abilityId": "ability:90:keeper_of_the_light_blinding_light",
+      "type": "damage",
+      "subtype": "area-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:damage:area-damage:range",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:damage:area-damage",
+          "field": "range",
+          "state": "known",
+          "value": [
+            500,
+            575,
+            650,
+            725
+          ]
+        },
+        "duration": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:damage:area-damage:duration",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:damage:area-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:damage:area-damage:magnitude",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:damage:area-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            90,
+            140,
+            190,
+            240
+          ]
+        },
+        "mana": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:damage:area-damage:mana",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:damage:area-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            120,
+            130,
+            140,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:damage:area-damage:cooldown",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:damage:area-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            21,
+            18,
+            15
+          ]
+        },
+        "delay": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:damage:area-damage:delay",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:damage:area-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:damage:area-damage:damageType",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:damage:area-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "keeper_of_the_light_blinding_light"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:keeper_of_the_light_blinding_light:damage:area-damage",
+      "legacyEffectId": "keeper_of_the_light_blinding_light:damage:area-damage",
+      "order": 2,
+      "legacyAbilityId": "keeper_of_the_light_blinding_light",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:keeper_of_the_light_blinding_light:damage:area-damage:range",
+        "value:effect:keeper_of_the_light_blinding_light:damage:area-damage:duration",
+        "value:effect:keeper_of_the_light_blinding_light:damage:area-damage:magnitude",
+        "value:effect:keeper_of_the_light_blinding_light:damage:area-damage:mana",
+        "value:effect:keeper_of_the_light_blinding_light:damage:area-damage:cooldown",
+        "value:effect:keeper_of_the_light_blinding_light:damage:area-damage:delay",
+        "value:effect:keeper_of_the_light_blinding_light:damage:area-damage:damageType"
+      ],
+      "activationId": "activation:90:keeper_of_the_light_blinding_light"
+    },
+    {
+      "effectId": "keeper_of_the_light_blinding_light:displacement:outward-knockback",
+      "heroId": "90",
+      "abilityId": "ability:90:keeper_of_the_light_blinding_light",
+      "type": "displacement",
+      "subtype": "outward-knockback",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:displacement:outward-knockback:range",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:displacement:outward-knockback",
+          "field": "range",
+          "state": "known",
+          "value": [
+            500,
+            575,
+            650,
+            725
+          ]
+        },
+        "duration": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:displacement:outward-knockback:duration",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:displacement:outward-knockback",
+          "field": "duration",
+          "state": "known",
+          "value": 0.6
+        },
+        "magnitude": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:displacement:outward-knockback:magnitude",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:displacement:outward-knockback",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:displacement:outward-knockback:mana",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:displacement:outward-knockback",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            120,
+            130,
+            140,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:displacement:outward-knockback:cooldown",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:displacement:outward-knockback",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            21,
+            18,
+            15
+          ]
+        },
+        "delay": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:displacement:outward-knockback:delay",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:displacement:outward-knockback",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "keeper_of_the_light_blinding_light"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:keeper_of_the_light_blinding_light:displacement:outward-knockback",
+      "legacyEffectId": "keeper_of_the_light_blinding_light:displacement:outward-knockback",
+      "order": 3,
+      "legacyAbilityId": "keeper_of_the_light_blinding_light",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:keeper_of_the_light_blinding_light:displacement:outward-knockback:range",
+        "value:effect:keeper_of_the_light_blinding_light:displacement:outward-knockback:duration",
+        "value:effect:keeper_of_the_light_blinding_light:displacement:outward-knockback:magnitude",
+        "value:effect:keeper_of_the_light_blinding_light:displacement:outward-knockback:mana",
+        "value:effect:keeper_of_the_light_blinding_light:displacement:outward-knockback:cooldown",
+        "value:effect:keeper_of_the_light_blinding_light:displacement:outward-knockback:delay"
+      ],
+      "activationId": "activation:90:keeper_of_the_light_blinding_light"
+    },
+    {
+      "effectId": "keeper_of_the_light_blinding_light:modifier:attack-miss-chance",
+      "heroId": "90",
+      "abilityId": "ability:90:keeper_of_the_light_blinding_light",
+      "type": "modifier",
+      "subtype": "attack-miss-chance",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance:range",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance",
+          "field": "range",
+          "state": "known",
+          "value": [
+            500,
+            575,
+            650,
+            725
+          ]
+        },
+        "duration": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance:duration",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance:magnitude",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance",
+          "field": "magnitude",
+          "state": "known",
+          "value": 45
+        },
+        "mana": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance:mana",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            120,
+            130,
+            140,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance:cooldown",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            21,
+            18,
+            15
+          ]
+        },
+        "delay": {
+          "id": "value:effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance:delay",
+          "ownerId": "effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "keeper_of_the_light_blinding_light"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance",
+      "legacyEffectId": "keeper_of_the_light_blinding_light:modifier:attack-miss-chance",
+      "order": 4,
+      "legacyAbilityId": "keeper_of_the_light_blinding_light",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance:range",
+        "value:effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance:duration",
+        "value:effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance:magnitude",
+        "value:effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance:mana",
+        "value:effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance:cooldown",
+        "value:effect:keeper_of_the_light_blinding_light:modifier:attack-miss-chance:delay"
+      ],
+      "activationId": "activation:90:keeper_of_the_light_blinding_light"
+    },
+    {
+      "effectId": "keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns",
+      "heroId": "90",
+      "abilityId": "ability:90:keeper_of_the_light_chakra_magic",
+      "type": "modifier",
+      "subtype": "mana-restoration-and-basic-cooldowns",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns:range",
+          "ownerId": "effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns",
+          "field": "range",
+          "state": "known",
+          "value": [
+            900,
+            900,
+            900,
+            900
+          ]
+        },
+        "duration": {
+          "id": "value:effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns:duration",
+          "ownerId": "effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns:magnitude",
+          "ownerId": "effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns:mana",
+          "ownerId": "effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns:cooldown",
+          "ownerId": "effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            17,
+            14,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns:delay",
+          "ownerId": "effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "keeper_of_the_light_chakra_magic"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns",
+      "legacyEffectId": "keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns",
+      "order": 5,
+      "legacyAbilityId": "keeper_of_the_light_chakra_magic",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns:range",
+        "value:effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns:duration",
+        "value:effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns:magnitude",
+        "value:effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns:mana",
+        "value:effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns:cooldown",
+        "value:effect:keeper_of_the_light_chakra_magic:modifier:mana-restoration-and-basic-cooldowns:delay"
+      ],
+      "activationId": "activation:90:keeper_of_the_light_chakra_magic"
+    },
+    {
+      "effectId": "keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel",
+      "heroId": "90",
+      "abilityId": "ability:90:keeper_of_the_light_chakra_magic",
+      "type": "dispel",
+      "subtype": "talent-strong-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel:range",
+          "ownerId": "effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel",
+          "field": "range",
+          "state": "known",
+          "value": [
+            900,
+            900,
+            900,
+            900
+          ]
+        },
+        "duration": {
+          "id": "value:effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel:duration",
+          "ownerId": "effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel:magnitude",
+          "ownerId": "effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel:mana",
+          "ownerId": "effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel:cooldown",
+          "ownerId": "effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            20,
+            17,
+            14,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel:delay",
+          "ownerId": "effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 25,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "keeperChakraStrongDispelTalentLearned"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "ally-debuffs"
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "keeper_of_the_light_chakra_magic"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel",
+      "legacyEffectId": "keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel",
+      "order": 6,
+      "legacyAbilityId": "keeper_of_the_light_chakra_magic",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel:0"
+      ],
+      "valueIds": [
+        "value:effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel:range",
+        "value:effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel:duration",
+        "value:effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel:magnitude",
+        "value:effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel:mana",
+        "value:effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel:cooldown",
+        "value:effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel:delay"
+      ],
+      "activationId": "activation:90:keeper_of_the_light_chakra_magic"
+    },
+    {
+      "effectId": "keeper_of_the_light_radiant_bind:slow:movement-dependent-slow",
+      "heroId": "90",
+      "abilityId": "ability:90:keeper_of_the_light_radiant_bind",
+      "type": "slow",
+      "subtype": "movement-dependent-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow:range",
+          "ownerId": "effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow",
+          "field": "range",
+          "state": "known",
+          "value": 750
+        },
+        "duration": {
+          "id": "value:effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow:duration",
+          "ownerId": "effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow:magnitude",
+          "ownerId": "effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow:mana",
+          "ownerId": "effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 120
+        },
+        "cooldown": {
+          "id": "value:effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow:cooldown",
+          "ownerId": "effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": 14
+        },
+        "delay": {
+          "id": "value:effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow:delay",
+          "ownerId": "effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "keeper_of_the_light_spirit_form"
+        ],
+        "upgrades": [],
+        "form": "spirit"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "keeper_of_the_light_radiant_bind"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow",
+      "legacyEffectId": "keeper_of_the_light_radiant_bind:slow:movement-dependent-slow",
+      "order": 7,
+      "legacyAbilityId": "keeper_of_the_light_radiant_bind",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow:range",
+        "value:effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow:duration",
+        "value:effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow:magnitude",
+        "value:effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow:mana",
+        "value:effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow:cooldown",
+        "value:effect:keeper_of_the_light_radiant_bind:slow:movement-dependent-slow:delay"
+      ],
+      "activationId": "activation:90:keeper_of_the_light_radiant_bind"
+    },
+    {
+      "effectId": "keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull",
+      "heroId": "90",
+      "abilityId": "ability:90:keeper_of_the_light_will_o_wisp",
+      "type": "displacement",
+      "subtype": "scepter-non-interrupting-pull",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull:range",
+          "ownerId": "effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull:duration",
+          "ownerId": "effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull",
+          "field": "duration",
+          "state": "known",
+          "value": 1
+        },
+        "magnitude": {
+          "id": "value:effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull:magnitude",
+          "ownerId": "effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull:mana",
+          "ownerId": "effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull",
+          "field": "mana",
+          "state": "known",
+          "value": 150
+        },
+        "cooldown": {
+          "id": "value:effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull:cooldown",
+          "ownerId": "effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull",
+          "field": "cooldown",
+          "state": "known",
+          "value": 60
+        },
+        "delay": {
+          "id": "value:effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull:delay",
+          "ownerId": "effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": false
+        }
+      },
+      "relationships": {
+        "resourceId": "keeper_of_the_light_will_o_wisp"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull",
+      "legacyEffectId": "keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull",
+      "order": 8,
+      "legacyAbilityId": "keeper_of_the_light_will_o_wisp",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull:range",
+        "value:effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull:duration",
+        "value:effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull:magnitude",
+        "value:effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull:mana",
+        "value:effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull:cooldown",
+        "value:effect:keeper_of_the_light_will_o_wisp:displacement:scepter-non-interrupting-pull:delay"
+      ],
+      "activationId": "activation:90:keeper_of_the_light_will_o_wisp"
+    },
+    {
+      "effectId": "keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage",
+      "heroId": "90",
+      "abilityId": "ability:90:keeper_of_the_light_will_o_wisp",
+      "type": "damage",
+      "subtype": "scepter-periodic-wisp-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage:range",
+          "ownerId": "effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage:duration",
+          "ownerId": "effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage:magnitude",
+          "ownerId": "effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage:mana",
+          "ownerId": "effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 150
+        },
+        "cooldown": {
+          "id": "value:effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage:cooldown",
+          "ownerId": "effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": 60
+        },
+        "delay": {
+          "id": "value:effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage:delay",
+          "ownerId": "effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage:damageType",
+          "ownerId": "effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "keeper_of_the_light_will_o_wisp"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage",
+      "legacyEffectId": "keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage",
+      "order": 9,
+      "legacyAbilityId": "keeper_of_the_light_will_o_wisp",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage:range",
+        "value:effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage:duration",
+        "value:effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage:magnitude",
+        "value:effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage:mana",
+        "value:effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage:cooldown",
+        "value:effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage:delay",
+        "value:effect:keeper_of_the_light_will_o_wisp:damage:scepter-periodic-wisp-damage:damageType"
+      ],
+      "activationId": "activation:90:keeper_of_the_light_will_o_wisp"
+    },
+    {
+      "effectId": "keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed",
+      "heroId": "90",
+      "abilityId": "ability:90:keeper_of_the_light_spirit_form",
+      "type": "modifier",
+      "subtype": "spirit-form-cast-range-and-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed:range",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed:duration",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            40,
+            45,
+            50
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed:magnitude",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed:mana",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            75,
+            125,
+            175
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed:cooldown",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            85,
+            80,
+            75
+          ]
+        },
+        "delay": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed:delay",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "keeper_of_the_light_spirit_form"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed",
+      "legacyEffectId": "keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed",
+      "order": 10,
+      "legacyAbilityId": "keeper_of_the_light_spirit_form",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed:range",
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed:duration",
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed:magnitude",
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed:mana",
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed:cooldown",
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-form-cast-range-and-speed:delay"
+      ],
+      "activationId": "activation:90:keeper_of_the_light_spirit_form"
+    },
+    {
+      "effectId": "keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal",
+      "heroId": "90",
+      "abilityId": "ability:90:keeper_of_the_light_spirit_form",
+      "type": "modifier",
+      "subtype": "spirit-illuminate-allied-heal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:range",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:duration",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:magnitude",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:mana",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            75,
+            125,
+            175
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:cooldown",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            85,
+            80,
+            75
+          ]
+        },
+        "delay": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:delay",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "keeper_of_the_light_illuminate"
+        ],
+        "upgrades": [],
+        "form": "spirit",
+        "requiresContext": [
+          "illuminateHitsAlly"
+        ]
+      },
+      "delivery": {
+        "kind": "projectile",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "health"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "keeper_of_the_light_spirit_form"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal",
+      "legacyEffectId": "keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal",
+      "order": 11,
+      "legacyAbilityId": "keeper_of_the_light_spirit_form",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:0"
+      ],
+      "valueIds": [
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:range",
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:duration",
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:magnitude",
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:mana",
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:cooldown",
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:delay"
+      ],
+      "activationId": "activation:90:keeper_of_the_light_spirit_form"
+    },
+    {
+      "effectId": "keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed",
+      "heroId": "90",
+      "abilityId": "ability:90:keeper_of_the_light_bright_speed",
+      "type": "passive",
+      "subtype": "intelligence-derived-movement-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed:range",
+          "ownerId": "effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed:duration",
+          "ownerId": "effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed:magnitude",
+          "ownerId": "effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed:mana",
+          "ownerId": "effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed:cooldown",
+          "ownerId": "effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed:delay",
+          "ownerId": "effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "keeper_of_the_light_bright_speed"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed",
+      "legacyEffectId": "keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed",
+      "order": 12,
+      "legacyAbilityId": "keeper_of_the_light_bright_speed",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed:range",
+        "value:effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed:duration",
+        "value:effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed:magnitude",
+        "value:effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed:mana",
+        "value:effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed:cooldown",
+        "value:effect:keeper_of_the_light_bright_speed:passive:intelligence-derived-movement-speed:delay"
+      ],
+      "activationId": "activation:90:keeper_of_the_light_bright_speed"
+    },
+    {
+      "effectId": "keeper_of_the_light_bright_speed:vision:movement-trail-vision",
+      "heroId": "90",
+      "abilityId": "ability:90:keeper_of_the_light_bright_speed",
+      "type": "vision",
+      "subtype": "movement-trail-vision",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision:range",
+          "ownerId": "effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision:duration",
+          "ownerId": "effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision",
+          "field": "duration",
+          "state": "known",
+          "value": 3
+        },
+        "magnitude": {
+          "id": "value:effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision:magnitude",
+          "ownerId": "effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision",
+          "field": "magnitude",
+          "state": "known",
+          "value": 400
+        },
+        "mana": {
+          "id": "value:effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision:mana",
+          "ownerId": "effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision:cooldown",
+          "ownerId": "effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision:delay",
+          "ownerId": "effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "brightSpeedMovementThresholdReached"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "keeper_of_the_light_bright_speed"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision",
+      "legacyEffectId": "keeper_of_the_light_bright_speed:vision:movement-trail-vision",
+      "order": 13,
+      "legacyAbilityId": "keeper_of_the_light_bright_speed",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:keeper_of_the_light_bright_speed:vision:movement-trail-vision:0"
+      ],
+      "valueIds": [
+        "value:effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision:range",
+        "value:effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision:duration",
+        "value:effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision:magnitude",
+        "value:effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision:mana",
+        "value:effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision:cooldown",
+        "value:effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision:delay"
+      ],
+      "activationId": "activation:90:keeper_of_the_light_bright_speed"
+    },
+    {
+      "effectId": "keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review",
+      "heroId": "90",
+      "abilityId": "ability:90:keeper_of_the_light_spirit_form",
+      "type": "modifier",
+      "subtype": "spirit-illuminate-allied-heal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review:range",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review:duration",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review:magnitude",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review:mana",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            75,
+            125,
+            175
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review:cooldown",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            85,
+            80,
+            75
+          ]
+        },
+        "delay": {
+          "id": "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review:delay",
+          "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "keeper_of_the_light_illuminate"
+        ],
+        "upgrades": [],
+        "form": "spirit",
+        "requiresContext": [
+          "illuminateHitsAlly"
+        ]
+      },
+      "delivery": {
+        "kind": "projectile",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "keeper_of_the_light_spirit_form",
+        "replaces": [
+          "keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal"
+        ]
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review",
+      "legacyEffectId": "keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review",
+      "order": 14,
+      "legacyAbilityId": "keeper_of_the_light_spirit_form",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review:0"
+      ],
+      "valueIds": [
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review:range",
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review:duration",
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review:magnitude",
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review:mana",
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review:cooldown",
+        "value:effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review:delay"
+      ],
+      "activationId": "activation:90:keeper_of_the_light_spirit_form"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:keeper_of_the_light_illuminate:damage:fully-channelled-wave:0",
+      "ownerId": "effect:keeper_of_the_light_illuminate:damage:fully-channelled-wave",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "illuminateFullyChannelled"
+      }
+    },
+    {
+      "id": "condition:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel:0",
+      "ownerId": "effect:keeper_of_the_light_chakra_magic:dispel:talent-strong-dispel",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "keeperChakraStrongDispelTalentLearned"
+      }
+    },
+    {
+      "id": "condition:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:0",
+      "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "illuminateHitsAlly"
+      }
+    },
+    {
+      "id": "condition:keeper_of_the_light_bright_speed:vision:movement-trail-vision:0",
+      "ownerId": "effect:keeper_of_the_light_bright_speed:vision:movement-trail-vision",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "brightSpeedMovementThresholdReached"
+      }
+    },
+    {
+      "id": "condition:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review:0",
+      "ownerId": "effect:keeper_of_the_light_spirit_form:modifier:spirit-illuminate-allied-heal:restoration-review",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "illuminateHitsAlly"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1662 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "skeleton_king_hellfire_blast:control:projectile-stun",
+      "heroId": "42",
+      "abilityId": "ability:42:skeleton_king_hellfire_blast",
+      "type": "control",
+      "subtype": "projectile-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:skeleton_king_hellfire_blast:control:projectile-stun:range",
+          "ownerId": "effect:skeleton_king_hellfire_blast:control:projectile-stun",
+          "field": "range",
+          "state": "known",
+          "value": 525
+        },
+        "duration": {
+          "id": "value:effect:skeleton_king_hellfire_blast:control:projectile-stun:duration",
+          "ownerId": "effect:skeleton_king_hellfire_blast:control:projectile-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1,
+            1.2,
+            1.4,
+            1.6
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:skeleton_king_hellfire_blast:control:projectile-stun:magnitude",
+          "ownerId": "effect:skeleton_king_hellfire_blast:control:projectile-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:skeleton_king_hellfire_blast:control:projectile-stun:mana",
+          "ownerId": "effect:skeleton_king_hellfire_blast:control:projectile-stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            95,
+            110,
+            125,
+            140
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:skeleton_king_hellfire_blast:control:projectile-stun:cooldown",
+          "ownerId": "effect:skeleton_king_hellfire_blast:control:projectile-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            12,
+            10,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:skeleton_king_hellfire_blast:control:projectile-stun:delay",
+          "ownerId": "effect:skeleton_king_hellfire_blast:control:projectile-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "skeleton_king_hellfire_blast"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:skeleton_king_hellfire_blast:control:projectile-stun",
+      "legacyEffectId": "skeleton_king_hellfire_blast:control:projectile-stun",
+      "order": 0,
+      "legacyAbilityId": "skeleton_king_hellfire_blast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:skeleton_king_hellfire_blast:control:projectile-stun:range",
+        "value:effect:skeleton_king_hellfire_blast:control:projectile-stun:duration",
+        "value:effect:skeleton_king_hellfire_blast:control:projectile-stun:magnitude",
+        "value:effect:skeleton_king_hellfire_blast:control:projectile-stun:mana",
+        "value:effect:skeleton_king_hellfire_blast:control:projectile-stun:cooldown",
+        "value:effect:skeleton_king_hellfire_blast:control:projectile-stun:delay"
+      ],
+      "activationId": "activation:42:skeleton_king_hellfire_blast"
+    },
+    {
+      "effectId": "skeleton_king_hellfire_blast:damage:initial-impact",
+      "heroId": "42",
+      "abilityId": "ability:42:skeleton_king_hellfire_blast",
+      "type": "damage",
+      "subtype": "initial-impact",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:skeleton_king_hellfire_blast:damage:initial-impact:range",
+          "ownerId": "effect:skeleton_king_hellfire_blast:damage:initial-impact",
+          "field": "range",
+          "state": "known",
+          "value": 525
+        },
+        "duration": {
+          "id": "value:effect:skeleton_king_hellfire_blast:damage:initial-impact:duration",
+          "ownerId": "effect:skeleton_king_hellfire_blast:damage:initial-impact",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:skeleton_king_hellfire_blast:damage:initial-impact:magnitude",
+          "ownerId": "effect:skeleton_king_hellfire_blast:damage:initial-impact",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            80,
+            100,
+            120,
+            140
+          ]
+        },
+        "mana": {
+          "id": "value:effect:skeleton_king_hellfire_blast:damage:initial-impact:mana",
+          "ownerId": "effect:skeleton_king_hellfire_blast:damage:initial-impact",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            95,
+            110,
+            125,
+            140
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:skeleton_king_hellfire_blast:damage:initial-impact:cooldown",
+          "ownerId": "effect:skeleton_king_hellfire_blast:damage:initial-impact",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            12,
+            10,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:skeleton_king_hellfire_blast:damage:initial-impact:delay",
+          "ownerId": "effect:skeleton_king_hellfire_blast:damage:initial-impact",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:skeleton_king_hellfire_blast:damage:initial-impact:damageType",
+          "ownerId": "effect:skeleton_king_hellfire_blast:damage:initial-impact",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "skeleton_king_hellfire_blast"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:skeleton_king_hellfire_blast:damage:initial-impact",
+      "legacyEffectId": "skeleton_king_hellfire_blast:damage:initial-impact",
+      "order": 1,
+      "legacyAbilityId": "skeleton_king_hellfire_blast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:skeleton_king_hellfire_blast:damage:initial-impact:range",
+        "value:effect:skeleton_king_hellfire_blast:damage:initial-impact:duration",
+        "value:effect:skeleton_king_hellfire_blast:damage:initial-impact:magnitude",
+        "value:effect:skeleton_king_hellfire_blast:damage:initial-impact:mana",
+        "value:effect:skeleton_king_hellfire_blast:damage:initial-impact:cooldown",
+        "value:effect:skeleton_king_hellfire_blast:damage:initial-impact:delay",
+        "value:effect:skeleton_king_hellfire_blast:damage:initial-impact:damageType"
+      ],
+      "activationId": "activation:42:skeleton_king_hellfire_blast"
+    },
+    {
+      "effectId": "skeleton_king_hellfire_blast:damage:periodic-damage",
+      "heroId": "42",
+      "abilityId": "ability:42:skeleton_king_hellfire_blast",
+      "type": "damage",
+      "subtype": "periodic-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:skeleton_king_hellfire_blast:damage:periodic-damage:range",
+          "ownerId": "effect:skeleton_king_hellfire_blast:damage:periodic-damage",
+          "field": "range",
+          "state": "known",
+          "value": 525
+        },
+        "duration": {
+          "id": "value:effect:skeleton_king_hellfire_blast:damage:periodic-damage:duration",
+          "ownerId": "effect:skeleton_king_hellfire_blast:damage:periodic-damage",
+          "field": "duration",
+          "state": "known",
+          "value": 2
+        },
+        "magnitude": {
+          "id": "value:effect:skeleton_king_hellfire_blast:damage:periodic-damage:magnitude",
+          "ownerId": "effect:skeleton_king_hellfire_blast:damage:periodic-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        "mana": {
+          "id": "value:effect:skeleton_king_hellfire_blast:damage:periodic-damage:mana",
+          "ownerId": "effect:skeleton_king_hellfire_blast:damage:periodic-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            95,
+            110,
+            125,
+            140
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:skeleton_king_hellfire_blast:damage:periodic-damage:cooldown",
+          "ownerId": "effect:skeleton_king_hellfire_blast:damage:periodic-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            12,
+            10,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:skeleton_king_hellfire_blast:damage:periodic-damage:delay",
+          "ownerId": "effect:skeleton_king_hellfire_blast:damage:periodic-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:skeleton_king_hellfire_blast:damage:periodic-damage:damageType",
+          "ownerId": "effect:skeleton_king_hellfire_blast:damage:periodic-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "skeleton_king_hellfire_blast"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:skeleton_king_hellfire_blast:damage:periodic-damage",
+      "legacyEffectId": "skeleton_king_hellfire_blast:damage:periodic-damage",
+      "order": 2,
+      "legacyAbilityId": "skeleton_king_hellfire_blast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:skeleton_king_hellfire_blast:damage:periodic-damage:range",
+        "value:effect:skeleton_king_hellfire_blast:damage:periodic-damage:duration",
+        "value:effect:skeleton_king_hellfire_blast:damage:periodic-damage:magnitude",
+        "value:effect:skeleton_king_hellfire_blast:damage:periodic-damage:mana",
+        "value:effect:skeleton_king_hellfire_blast:damage:periodic-damage:cooldown",
+        "value:effect:skeleton_king_hellfire_blast:damage:periodic-damage:delay",
+        "value:effect:skeleton_king_hellfire_blast:damage:periodic-damage:damageType"
+      ],
+      "activationId": "activation:42:skeleton_king_hellfire_blast"
+    },
+    {
+      "effectId": "skeleton_king_hellfire_blast:slow:post-stun-movement",
+      "heroId": "42",
+      "abilityId": "ability:42:skeleton_king_hellfire_blast",
+      "type": "slow",
+      "subtype": "post-stun-movement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:skeleton_king_hellfire_blast:slow:post-stun-movement:range",
+          "ownerId": "effect:skeleton_king_hellfire_blast:slow:post-stun-movement",
+          "field": "range",
+          "state": "known",
+          "value": 525
+        },
+        "duration": {
+          "id": "value:effect:skeleton_king_hellfire_blast:slow:post-stun-movement:duration",
+          "ownerId": "effect:skeleton_king_hellfire_blast:slow:post-stun-movement",
+          "field": "duration",
+          "state": "known",
+          "value": 2
+        },
+        "magnitude": {
+          "id": "value:effect:skeleton_king_hellfire_blast:slow:post-stun-movement:magnitude",
+          "ownerId": "effect:skeleton_king_hellfire_blast:slow:post-stun-movement",
+          "field": "magnitude",
+          "state": "known",
+          "value": -20
+        },
+        "mana": {
+          "id": "value:effect:skeleton_king_hellfire_blast:slow:post-stun-movement:mana",
+          "ownerId": "effect:skeleton_king_hellfire_blast:slow:post-stun-movement",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            95,
+            110,
+            125,
+            140
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:skeleton_king_hellfire_blast:slow:post-stun-movement:cooldown",
+          "ownerId": "effect:skeleton_king_hellfire_blast:slow:post-stun-movement",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            12,
+            10,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:skeleton_king_hellfire_blast:slow:post-stun-movement:delay",
+          "ownerId": "effect:skeleton_king_hellfire_blast:slow:post-stun-movement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "skeleton_king_hellfire_blast"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:skeleton_king_hellfire_blast:slow:post-stun-movement",
+      "legacyEffectId": "skeleton_king_hellfire_blast:slow:post-stun-movement",
+      "order": 3,
+      "legacyAbilityId": "skeleton_king_hellfire_blast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:skeleton_king_hellfire_blast:slow:post-stun-movement:range",
+        "value:effect:skeleton_king_hellfire_blast:slow:post-stun-movement:duration",
+        "value:effect:skeleton_king_hellfire_blast:slow:post-stun-movement:magnitude",
+        "value:effect:skeleton_king_hellfire_blast:slow:post-stun-movement:mana",
+        "value:effect:skeleton_king_hellfire_blast:slow:post-stun-movement:cooldown",
+        "value:effect:skeleton_king_hellfire_blast:slow:post-stun-movement:delay"
+      ],
+      "activationId": "activation:42:skeleton_king_hellfire_blast"
+    },
+    {
+      "effectId": "skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon",
+      "heroId": "42",
+      "abilityId": "ability:42:skeleton_king_bone_guard",
+      "type": "modifier",
+      "subtype": "charge-consuming-skeleton-summon",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon:range",
+          "ownerId": "effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon:duration",
+          "ownerId": "effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon",
+          "field": "duration",
+          "state": "known",
+          "value": 40
+        },
+        "magnitude": {
+          "id": "value:effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon:magnitude",
+          "ownerId": "effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon:mana",
+          "ownerId": "effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon:cooldown",
+          "ownerId": "effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon",
+          "field": "cooldown",
+          "state": "known",
+          "value": 42
+        },
+        "delay": {
+          "id": "value:effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon:delay",
+          "ownerId": "effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "boneGuardChargesPresent"
+        ]
+      },
+      "delivery": {
+        "kind": "no-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "skeleton_king_bone_guard"
+      },
+      "vulnerability": {
+        "breakable": false,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon",
+      "legacyEffectId": "skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon",
+      "order": 4,
+      "legacyAbilityId": "skeleton_king_bone_guard",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon:0"
+      ],
+      "valueIds": [
+        "value:effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon:range",
+        "value:effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon:duration",
+        "value:effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon:magnitude",
+        "value:effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon:mana",
+        "value:effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon:cooldown",
+        "value:effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon:delay"
+      ],
+      "activationId": "activation:42:skeleton_king_bone_guard"
+    },
+    {
+      "effectId": "skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical",
+      "heroId": "42",
+      "abilityId": "ability:42:skeleton_king_mortal_strike",
+      "type": "modifier",
+      "subtype": "cooldown-gated-attack-critical",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical:range",
+          "ownerId": "effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical:duration",
+          "ownerId": "effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical:magnitude",
+          "ownerId": "effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            160,
+            200,
+            240,
+            280
+          ]
+        },
+        "mana": {
+          "id": "value:effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical:mana",
+          "ownerId": "effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical:cooldown",
+          "ownerId": "effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical",
+          "field": "cooldown",
+          "state": "known",
+          "value": 5
+        },
+        "delay": {
+          "id": "value:effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical:delay",
+          "ownerId": "effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "mortalStrikeAttackLanded"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "skeleton_king_mortal_strike"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical",
+      "legacyEffectId": "skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical",
+      "order": 5,
+      "legacyAbilityId": "skeleton_king_mortal_strike",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical:0"
+      ],
+      "valueIds": [
+        "value:effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical:range",
+        "value:effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical:duration",
+        "value:effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical:magnitude",
+        "value:effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical:mana",
+        "value:effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical:cooldown",
+        "value:effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical:delay"
+      ],
+      "activationId": "activation:42:skeleton_king_mortal_strike"
+    },
+    {
+      "effectId": "skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse",
+      "heroId": "42",
+      "abilityId": "ability:42:skeleton_king_mortal_strike",
+      "type": "modifier",
+      "subtype": "shard-delayed-attack-damage-curse",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse:range",
+          "ownerId": "effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse:duration",
+          "ownerId": "effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse:magnitude",
+          "ownerId": "effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse:mana",
+          "ownerId": "effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse:cooldown",
+          "ownerId": "effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse",
+          "field": "cooldown",
+          "state": "known",
+          "value": 5
+        },
+        "delay": {
+          "id": "value:effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse:delay",
+          "ownerId": "effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse",
+          "field": "delay",
+          "state": "known",
+          "value": 3
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "mortalStrikeAttackLanded"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "skeleton_king_mortal_strike"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse",
+      "legacyEffectId": "skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse",
+      "order": 6,
+      "legacyAbilityId": "skeleton_king_mortal_strike",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse:0"
+      ],
+      "valueIds": [
+        "value:effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse:range",
+        "value:effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse:duration",
+        "value:effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse:magnitude",
+        "value:effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse:mana",
+        "value:effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse:cooldown",
+        "value:effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse:delay"
+      ],
+      "activationId": "activation:42:skeleton_king_mortal_strike"
+    },
+    {
+      "effectId": "skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal",
+      "heroId": "42",
+      "abilityId": "ability:42:skeleton_king_vampiric_spirit",
+      "type": "modifier",
+      "subtype": "level-scaled-lifesteal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal:range",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal:duration",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal:magnitude",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal:mana",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal:cooldown",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal:delay",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "skeleton_king_vampiric_spirit:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal",
+      "legacyEffectId": "skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal",
+      "order": 7,
+      "legacyAbilityId": "skeleton_king_vampiric_spirit",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal:range",
+        "value:effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal:duration",
+        "value:effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal:magnitude",
+        "value:effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal:mana",
+        "value:effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal:cooldown",
+        "value:effect:skeleton_king_vampiric_spirit:modifier:level-scaled-lifesteal:delay"
+      ],
+      "activationId": "activation:42:skeleton_king_vampiric_spirit"
+    },
+    {
+      "effectId": "skeleton_king_vampiric_spirit:save:death-delaying-wraith-form",
+      "heroId": "42",
+      "abilityId": "ability:42:skeleton_king_vampiric_spirit",
+      "type": "save",
+      "subtype": "death-delaying-wraith-form",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form:range",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form:duration",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form:magnitude",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form:mana",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form:cooldown",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form:delay",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "lethalDamageWithoutReincarnation"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "skeleton_king_vampiric_spirit"
+      },
+      "vulnerability": {
+        "breakable": false
+      },
+      "exceptions": [],
+      "id": "effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form",
+      "legacyEffectId": "skeleton_king_vampiric_spirit:save:death-delaying-wraith-form",
+      "order": 8,
+      "legacyAbilityId": "skeleton_king_vampiric_spirit",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form:0"
+      ],
+      "valueIds": [
+        "value:effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form:range",
+        "value:effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form:duration",
+        "value:effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form:magnitude",
+        "value:effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form:mana",
+        "value:effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form:cooldown",
+        "value:effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form:delay"
+      ],
+      "activationId": "activation:42:skeleton_king_vampiric_spirit"
+    },
+    {
+      "effectId": "skeleton_king_vampiric_spirit:save:scepter-ally-death-delay",
+      "heroId": "42",
+      "abilityId": "ability:42:skeleton_king_vampiric_spirit",
+      "type": "save",
+      "subtype": "scepter-ally-death-delay",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay:range",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay",
+          "field": "range",
+          "state": "unknown",
+          "reason": "The retained declaration requires additional expression or branch context."
+        },
+        "duration": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay:duration",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay:magnitude",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay:mana",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay:cooldown",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay:delay",
+          "ownerId": "effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "innate": true,
+        "requiresContext": [
+          "allyLethalDamageInWraithAura"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "skeleton_king_vampiric_spirit"
+      },
+      "vulnerability": {
+        "breakable": false
+      },
+      "exceptions": [],
+      "id": "effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay",
+      "legacyEffectId": "skeleton_king_vampiric_spirit:save:scepter-ally-death-delay",
+      "order": 9,
+      "legacyAbilityId": "skeleton_king_vampiric_spirit",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay:0"
+      ],
+      "valueIds": [
+        "value:effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay:range",
+        "value:effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay:duration",
+        "value:effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay:magnitude",
+        "value:effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay:mana",
+        "value:effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay:cooldown",
+        "value:effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay:delay"
+      ],
+      "activationId": "activation:42:skeleton_king_vampiric_spirit"
+    },
+    {
+      "effectId": "skeleton_king_reincarnation:save:self-revival",
+      "heroId": "42",
+      "abilityId": "ability:42:skeleton_king_reincarnation",
+      "type": "save",
+      "subtype": "self-revival",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:skeleton_king_reincarnation:save:self-revival:range",
+          "ownerId": "effect:skeleton_king_reincarnation:save:self-revival",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:skeleton_king_reincarnation:save:self-revival:duration",
+          "ownerId": "effect:skeleton_king_reincarnation:save:self-revival",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:skeleton_king_reincarnation:save:self-revival:magnitude",
+          "ownerId": "effect:skeleton_king_reincarnation:save:self-revival",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:skeleton_king_reincarnation:save:self-revival:mana",
+          "ownerId": "effect:skeleton_king_reincarnation:save:self-revival",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            220,
+            110,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:skeleton_king_reincarnation:save:self-revival:cooldown",
+          "ownerId": "effect:skeleton_king_reincarnation:save:self-revival",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            180,
+            150,
+            120
+          ]
+        },
+        "delay": {
+          "id": "value:effect:skeleton_king_reincarnation:save:self-revival:delay",
+          "ownerId": "effect:skeleton_king_reincarnation:save:self-revival",
+          "field": "delay",
+          "state": "known",
+          "value": [
+            3,
+            3,
+            3
+          ]
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "lethalDamageTriggersReincarnation"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "skeleton_king_reincarnation"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:skeleton_king_reincarnation:save:self-revival",
+      "legacyEffectId": "skeleton_king_reincarnation:save:self-revival",
+      "order": 10,
+      "legacyAbilityId": "skeleton_king_reincarnation",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:skeleton_king_reincarnation:save:self-revival:0"
+      ],
+      "valueIds": [
+        "value:effect:skeleton_king_reincarnation:save:self-revival:range",
+        "value:effect:skeleton_king_reincarnation:save:self-revival:duration",
+        "value:effect:skeleton_king_reincarnation:save:self-revival:magnitude",
+        "value:effect:skeleton_king_reincarnation:save:self-revival:mana",
+        "value:effect:skeleton_king_reincarnation:save:self-revival:cooldown",
+        "value:effect:skeleton_king_reincarnation:save:self-revival:delay"
+      ],
+      "activationId": "activation:42:skeleton_king_reincarnation"
+    },
+    {
+      "effectId": "skeleton_king_reincarnation:slow:death-movement-and-attack",
+      "heroId": "42",
+      "abilityId": "ability:42:skeleton_king_reincarnation",
+      "type": "slow",
+      "subtype": "death-movement-and-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:skeleton_king_reincarnation:slow:death-movement-and-attack:range",
+          "ownerId": "effect:skeleton_king_reincarnation:slow:death-movement-and-attack",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:skeleton_king_reincarnation:slow:death-movement-and-attack:duration",
+          "ownerId": "effect:skeleton_king_reincarnation:slow:death-movement-and-attack",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:skeleton_king_reincarnation:slow:death-movement-and-attack:magnitude",
+          "ownerId": "effect:skeleton_king_reincarnation:slow:death-movement-and-attack",
+          "field": "magnitude",
+          "state": "known",
+          "value": -75
+        },
+        "mana": {
+          "id": "value:effect:skeleton_king_reincarnation:slow:death-movement-and-attack:mana",
+          "ownerId": "effect:skeleton_king_reincarnation:slow:death-movement-and-attack",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            220,
+            110,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:skeleton_king_reincarnation:slow:death-movement-and-attack:cooldown",
+          "ownerId": "effect:skeleton_king_reincarnation:slow:death-movement-and-attack",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            180,
+            150,
+            120
+          ]
+        },
+        "delay": {
+          "id": "value:effect:skeleton_king_reincarnation:slow:death-movement-and-attack:delay",
+          "ownerId": "effect:skeleton_king_reincarnation:slow:death-movement-and-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "lethalDamageTriggersReincarnation"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "skeleton_king_reincarnation"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:skeleton_king_reincarnation:slow:death-movement-and-attack",
+      "legacyEffectId": "skeleton_king_reincarnation:slow:death-movement-and-attack",
+      "order": 11,
+      "legacyAbilityId": "skeleton_king_reincarnation",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:skeleton_king_reincarnation:slow:death-movement-and-attack:0"
+      ],
+      "valueIds": [
+        "value:effect:skeleton_king_reincarnation:slow:death-movement-and-attack:range",
+        "value:effect:skeleton_king_reincarnation:slow:death-movement-and-attack:duration",
+        "value:effect:skeleton_king_reincarnation:slow:death-movement-and-attack:magnitude",
+        "value:effect:skeleton_king_reincarnation:slow:death-movement-and-attack:mana",
+        "value:effect:skeleton_king_reincarnation:slow:death-movement-and-attack:cooldown",
+        "value:effect:skeleton_king_reincarnation:slow:death-movement-and-attack:delay"
+      ],
+      "activationId": "activation:42:skeleton_king_reincarnation"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon:0",
+      "ownerId": "effect:skeleton_king_bone_guard:modifier:charge-consuming-skeleton-summon",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "boneGuardChargesPresent"
+      }
+    },
+    {
+      "id": "condition:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical:0",
+      "ownerId": "effect:skeleton_king_mortal_strike:modifier:cooldown-gated-attack-critical",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "mortalStrikeAttackLanded"
+      }
+    },
+    {
+      "id": "condition:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse:0",
+      "ownerId": "effect:skeleton_king_mortal_strike:modifier:shard-delayed-attack-damage-curse",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "mortalStrikeAttackLanded"
+      }
+    },
+    {
+      "id": "condition:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form:0",
+      "ownerId": "effect:skeleton_king_vampiric_spirit:save:death-delaying-wraith-form",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "lethalDamageWithoutReincarnation"
+      }
+    },
+    {
+      "id": "condition:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay:0",
+      "ownerId": "effect:skeleton_king_vampiric_spirit:save:scepter-ally-death-delay",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyLethalDamageInWraithAura"
+      }
+    },
+    {
+      "id": "condition:skeleton_king_reincarnation:save:self-revival:0",
+      "ownerId": "effect:skeleton_king_reincarnation:save:self-revival",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "lethalDamageTriggersReincarnation"
+      }
+    },
+    {
+      "id": "condition:skeleton_king_reincarnation:slow:death-movement-and-attack:0",
+      "ownerId": "effect:skeleton_king_reincarnation:slow:death-movement-and-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "lethalDamageTriggersReincarnation"
+      }
+    }
+  ]
+}

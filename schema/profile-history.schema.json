@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/profile-history.schema.json",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "profiles"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "profiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "heroId",
+          "selection",
+          "build",
+          "sourceIdentities",
+          "fields",
+          "historicalObservationIds",
+          "officialHero",
+          "officialDataset"
+        ],
+        "properties": {
+          "heroId": {
+            "$ref": "core.schema.json#/$defs/heroId"
+          },
+          "selection": {
+            "const": "current-build-native"
+          },
+          "build": {
+            "type": "object"
+          },
+          "sourceIdentities": {
+            "type": "object"
+          },
+          "fields": {
+            "type": "object"
+          },
+          "historicalObservationIds": {
+            "$ref": "core.schema.json#/$defs/idList"
+          },
+          "officialHero": {},
+          "officialDataset": {}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

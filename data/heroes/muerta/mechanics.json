@@ -1,0 +1,2087 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "muerta_dead_shot:damage:dead-shot-single-hit",
+      "heroId": "138",
+      "abilityId": "ability:138:muerta_dead_shot",
+      "type": "damage",
+      "subtype": "dead-shot-single-hit",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:muerta_dead_shot:damage:dead-shot-single-hit:range",
+          "ownerId": "effect:muerta_dead_shot:damage:dead-shot-single-hit",
+          "field": "range",
+          "state": "known",
+          "value": 1000
+        },
+        "duration": {
+          "id": "value:effect:muerta_dead_shot:damage:dead-shot-single-hit:duration",
+          "ownerId": "effect:muerta_dead_shot:damage:dead-shot-single-hit",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:muerta_dead_shot:damage:dead-shot-single-hit:magnitude",
+          "ownerId": "effect:muerta_dead_shot:damage:dead-shot-single-hit",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            100,
+            175,
+            250,
+            325
+          ]
+        },
+        "mana": {
+          "id": "value:effect:muerta_dead_shot:damage:dead-shot-single-hit:mana",
+          "ownerId": "effect:muerta_dead_shot:damage:dead-shot-single-hit",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:muerta_dead_shot:damage:dead-shot-single-hit:cooldown",
+          "ownerId": "effect:muerta_dead_shot:damage:dead-shot-single-hit",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:muerta_dead_shot:damage:dead-shot-single-hit:delay",
+          "ownerId": "effect:muerta_dead_shot:damage:dead-shot-single-hit",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:muerta_dead_shot:damage:dead-shot-single-hit:damageType",
+          "ownerId": "effect:muerta_dead_shot:damage:dead-shot-single-hit",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "deadShotPrimaryEnemyHit"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "muerta_dead_shot"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:muerta_dead_shot:damage:dead-shot-single-hit",
+      "legacyEffectId": "muerta_dead_shot:damage:dead-shot-single-hit",
+      "order": 0,
+      "legacyAbilityId": "muerta_dead_shot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:muerta_dead_shot:damage:dead-shot-single-hit:0"
+      ],
+      "valueIds": [
+        "value:effect:muerta_dead_shot:damage:dead-shot-single-hit:range",
+        "value:effect:muerta_dead_shot:damage:dead-shot-single-hit:duration",
+        "value:effect:muerta_dead_shot:damage:dead-shot-single-hit:magnitude",
+        "value:effect:muerta_dead_shot:damage:dead-shot-single-hit:mana",
+        "value:effect:muerta_dead_shot:damage:dead-shot-single-hit:cooldown",
+        "value:effect:muerta_dead_shot:damage:dead-shot-single-hit:delay",
+        "value:effect:muerta_dead_shot:damage:dead-shot-single-hit:damageType"
+      ],
+      "activationId": "activation:138:muerta_dead_shot"
+    },
+    {
+      "effectId": "muerta_dead_shot:damage:dead-shot-ricochet-damage",
+      "heroId": "138",
+      "abilityId": "ability:138:muerta_dead_shot",
+      "type": "damage",
+      "subtype": "dead-shot-ricochet-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:muerta_dead_shot:damage:dead-shot-ricochet-damage:range",
+          "ownerId": "effect:muerta_dead_shot:damage:dead-shot-ricochet-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:muerta_dead_shot:damage:dead-shot-ricochet-damage:duration",
+          "ownerId": "effect:muerta_dead_shot:damage:dead-shot-ricochet-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:muerta_dead_shot:damage:dead-shot-ricochet-damage:magnitude",
+          "ownerId": "effect:muerta_dead_shot:damage:dead-shot-ricochet-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            100,
+            175,
+            250,
+            325
+          ]
+        },
+        "mana": {
+          "id": "value:effect:muerta_dead_shot:damage:dead-shot-ricochet-damage:mana",
+          "ownerId": "effect:muerta_dead_shot:damage:dead-shot-ricochet-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:muerta_dead_shot:damage:dead-shot-ricochet-damage:cooldown",
+          "ownerId": "effect:muerta_dead_shot:damage:dead-shot-ricochet-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:muerta_dead_shot:damage:dead-shot-ricochet-damage:delay",
+          "ownerId": "effect:muerta_dead_shot:damage:dead-shot-ricochet-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:muerta_dead_shot:damage:dead-shot-ricochet-damage:damageType",
+          "ownerId": "effect:muerta_dead_shot:damage:dead-shot-ricochet-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "deadShotRicochetHitsEnemyHero"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "muerta_dead_shot"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:muerta_dead_shot:damage:dead-shot-ricochet-damage",
+      "legacyEffectId": "muerta_dead_shot:damage:dead-shot-ricochet-damage",
+      "order": 1,
+      "legacyAbilityId": "muerta_dead_shot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:muerta_dead_shot:damage:dead-shot-ricochet-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:muerta_dead_shot:damage:dead-shot-ricochet-damage:range",
+        "value:effect:muerta_dead_shot:damage:dead-shot-ricochet-damage:duration",
+        "value:effect:muerta_dead_shot:damage:dead-shot-ricochet-damage:magnitude",
+        "value:effect:muerta_dead_shot:damage:dead-shot-ricochet-damage:mana",
+        "value:effect:muerta_dead_shot:damage:dead-shot-ricochet-damage:cooldown",
+        "value:effect:muerta_dead_shot:damage:dead-shot-ricochet-damage:delay",
+        "value:effect:muerta_dead_shot:damage:dead-shot-ricochet-damage:damageType"
+      ],
+      "activationId": "activation:138:muerta_dead_shot"
+    },
+    {
+      "effectId": "muerta_dead_shot:slow:dead-shot-primary-slow",
+      "heroId": "138",
+      "abilityId": "ability:138:muerta_dead_shot",
+      "type": "slow",
+      "subtype": "dead-shot-primary-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:muerta_dead_shot:slow:dead-shot-primary-slow:range",
+          "ownerId": "effect:muerta_dead_shot:slow:dead-shot-primary-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:muerta_dead_shot:slow:dead-shot-primary-slow:duration",
+          "ownerId": "effect:muerta_dead_shot:slow:dead-shot-primary-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 1
+        },
+        "magnitude": {
+          "id": "value:effect:muerta_dead_shot:slow:dead-shot-primary-slow:magnitude",
+          "ownerId": "effect:muerta_dead_shot:slow:dead-shot-primary-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": -100
+        },
+        "mana": {
+          "id": "value:effect:muerta_dead_shot:slow:dead-shot-primary-slow:mana",
+          "ownerId": "effect:muerta_dead_shot:slow:dead-shot-primary-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:muerta_dead_shot:slow:dead-shot-primary-slow:cooldown",
+          "ownerId": "effect:muerta_dead_shot:slow:dead-shot-primary-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:muerta_dead_shot:slow:dead-shot-primary-slow:delay",
+          "ownerId": "effect:muerta_dead_shot:slow:dead-shot-primary-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "deadShotPrimaryEnemyHit"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "muerta_dead_shot"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:muerta_dead_shot:slow:dead-shot-primary-slow",
+      "legacyEffectId": "muerta_dead_shot:slow:dead-shot-primary-slow",
+      "order": 2,
+      "legacyAbilityId": "muerta_dead_shot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:muerta_dead_shot:slow:dead-shot-primary-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:muerta_dead_shot:slow:dead-shot-primary-slow:range",
+        "value:effect:muerta_dead_shot:slow:dead-shot-primary-slow:duration",
+        "value:effect:muerta_dead_shot:slow:dead-shot-primary-slow:magnitude",
+        "value:effect:muerta_dead_shot:slow:dead-shot-primary-slow:mana",
+        "value:effect:muerta_dead_shot:slow:dead-shot-primary-slow:cooldown",
+        "value:effect:muerta_dead_shot:slow:dead-shot-primary-slow:delay"
+      ],
+      "activationId": "activation:138:muerta_dead_shot"
+    },
+    {
+      "effectId": "muerta_dead_shot:control:dead-shot-ricochet-fear",
+      "heroId": "138",
+      "abilityId": "ability:138:muerta_dead_shot",
+      "type": "control",
+      "subtype": "dead-shot-ricochet-fear",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:muerta_dead_shot:control:dead-shot-ricochet-fear:range",
+          "ownerId": "effect:muerta_dead_shot:control:dead-shot-ricochet-fear",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:muerta_dead_shot:control:dead-shot-ricochet-fear:duration",
+          "ownerId": "effect:muerta_dead_shot:control:dead-shot-ricochet-fear",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            0.8,
+            0.95,
+            1.1,
+            1.25
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:muerta_dead_shot:control:dead-shot-ricochet-fear:magnitude",
+          "ownerId": "effect:muerta_dead_shot:control:dead-shot-ricochet-fear",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:muerta_dead_shot:control:dead-shot-ricochet-fear:mana",
+          "ownerId": "effect:muerta_dead_shot:control:dead-shot-ricochet-fear",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:muerta_dead_shot:control:dead-shot-ricochet-fear:cooldown",
+          "ownerId": "effect:muerta_dead_shot:control:dead-shot-ricochet-fear",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            14,
+            12,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:muerta_dead_shot:control:dead-shot-ricochet-fear:delay",
+          "ownerId": "effect:muerta_dead_shot:control:dead-shot-ricochet-fear",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "deadShotRicochetHitsEnemyHero"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "muerta_dead_shot"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:muerta_dead_shot:control:dead-shot-ricochet-fear",
+      "legacyEffectId": "muerta_dead_shot:control:dead-shot-ricochet-fear",
+      "order": 3,
+      "legacyAbilityId": "muerta_dead_shot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:muerta_dead_shot:control:dead-shot-ricochet-fear:0"
+      ],
+      "valueIds": [
+        "value:effect:muerta_dead_shot:control:dead-shot-ricochet-fear:range",
+        "value:effect:muerta_dead_shot:control:dead-shot-ricochet-fear:duration",
+        "value:effect:muerta_dead_shot:control:dead-shot-ricochet-fear:magnitude",
+        "value:effect:muerta_dead_shot:control:dead-shot-ricochet-fear:mana",
+        "value:effect:muerta_dead_shot:control:dead-shot-ricochet-fear:cooldown",
+        "value:effect:muerta_dead_shot:control:dead-shot-ricochet-fear:delay"
+      ],
+      "activationId": "activation:138:muerta_dead_shot"
+    },
+    {
+      "effectId": "muerta_the_calling:slow:calling-area-movement-slow",
+      "heroId": "138",
+      "abilityId": "ability:138:muerta_the_calling",
+      "type": "slow",
+      "subtype": "calling-area-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:muerta_the_calling:slow:calling-area-movement-slow:range",
+          "ownerId": "effect:muerta_the_calling:slow:calling-area-movement-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:muerta_the_calling:slow:calling-area-movement-slow:duration",
+          "ownerId": "effect:muerta_the_calling:slow:calling-area-movement-slow",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:muerta_the_calling:slow:calling-area-movement-slow:magnitude",
+          "ownerId": "effect:muerta_the_calling:slow:calling-area-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": -20
+        },
+        "mana": {
+          "id": "value:effect:muerta_the_calling:slow:calling-area-movement-slow:mana",
+          "ownerId": "effect:muerta_the_calling:slow:calling-area-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            135,
+            150,
+            165,
+            180
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:muerta_the_calling:slow:calling-area-movement-slow:cooldown",
+          "ownerId": "effect:muerta_the_calling:slow:calling-area-movement-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            28,
+            26,
+            24
+          ]
+        },
+        "delay": {
+          "id": "value:effect:muerta_the_calling:slow:calling-area-movement-slow:delay",
+          "ownerId": "effect:muerta_the_calling:slow:calling-area-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideCallingArea"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "muerta_the_calling"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:muerta_the_calling:slow:calling-area-movement-slow",
+      "legacyEffectId": "muerta_the_calling:slow:calling-area-movement-slow",
+      "order": 4,
+      "legacyAbilityId": "muerta_the_calling",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:muerta_the_calling:slow:calling-area-movement-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:muerta_the_calling:slow:calling-area-movement-slow:range",
+        "value:effect:muerta_the_calling:slow:calling-area-movement-slow:duration",
+        "value:effect:muerta_the_calling:slow:calling-area-movement-slow:magnitude",
+        "value:effect:muerta_the_calling:slow:calling-area-movement-slow:mana",
+        "value:effect:muerta_the_calling:slow:calling-area-movement-slow:cooldown",
+        "value:effect:muerta_the_calling:slow:calling-area-movement-slow:delay"
+      ],
+      "activationId": "activation:138:muerta_the_calling"
+    },
+    {
+      "effectId": "muerta_the_calling:control:calling-revenant-contact-silence",
+      "heroId": "138",
+      "abilityId": "ability:138:muerta_the_calling",
+      "type": "control",
+      "subtype": "calling-revenant-contact-silence",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:muerta_the_calling:control:calling-revenant-contact-silence:range",
+          "ownerId": "effect:muerta_the_calling:control:calling-revenant-contact-silence",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:muerta_the_calling:control:calling-revenant-contact-silence:duration",
+          "ownerId": "effect:muerta_the_calling:control:calling-revenant-contact-silence",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.5,
+            2,
+            2.5,
+            3
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:muerta_the_calling:control:calling-revenant-contact-silence:magnitude",
+          "ownerId": "effect:muerta_the_calling:control:calling-revenant-contact-silence",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:muerta_the_calling:control:calling-revenant-contact-silence:mana",
+          "ownerId": "effect:muerta_the_calling:control:calling-revenant-contact-silence",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            135,
+            150,
+            165,
+            180
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:muerta_the_calling:control:calling-revenant-contact-silence:cooldown",
+          "ownerId": "effect:muerta_the_calling:control:calling-revenant-contact-silence",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            28,
+            26,
+            24
+          ]
+        },
+        "delay": {
+          "id": "value:effect:muerta_the_calling:control:calling-revenant-contact-silence:delay",
+          "ownerId": "effect:muerta_the_calling:control:calling-revenant-contact-silence",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "callingRevenantTouchesEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "muerta_the_calling"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:muerta_the_calling:control:calling-revenant-contact-silence",
+      "legacyEffectId": "muerta_the_calling:control:calling-revenant-contact-silence",
+      "order": 5,
+      "legacyAbilityId": "muerta_the_calling",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:muerta_the_calling:control:calling-revenant-contact-silence:0"
+      ],
+      "valueIds": [
+        "value:effect:muerta_the_calling:control:calling-revenant-contact-silence:range",
+        "value:effect:muerta_the_calling:control:calling-revenant-contact-silence:duration",
+        "value:effect:muerta_the_calling:control:calling-revenant-contact-silence:magnitude",
+        "value:effect:muerta_the_calling:control:calling-revenant-contact-silence:mana",
+        "value:effect:muerta_the_calling:control:calling-revenant-contact-silence:cooldown",
+        "value:effect:muerta_the_calling:control:calling-revenant-contact-silence:delay"
+      ],
+      "activationId": "activation:138:muerta_the_calling"
+    },
+    {
+      "effectId": "muerta_the_calling:damage:calling-revenant-contact-damage",
+      "heroId": "138",
+      "abilityId": "ability:138:muerta_the_calling",
+      "type": "damage",
+      "subtype": "calling-revenant-contact-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:muerta_the_calling:damage:calling-revenant-contact-damage:range",
+          "ownerId": "effect:muerta_the_calling:damage:calling-revenant-contact-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:muerta_the_calling:damage:calling-revenant-contact-damage:duration",
+          "ownerId": "effect:muerta_the_calling:damage:calling-revenant-contact-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:muerta_the_calling:damage:calling-revenant-contact-damage:magnitude",
+          "ownerId": "effect:muerta_the_calling:damage:calling-revenant-contact-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            45,
+            90,
+            135,
+            180
+          ]
+        },
+        "mana": {
+          "id": "value:effect:muerta_the_calling:damage:calling-revenant-contact-damage:mana",
+          "ownerId": "effect:muerta_the_calling:damage:calling-revenant-contact-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            135,
+            150,
+            165,
+            180
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:muerta_the_calling:damage:calling-revenant-contact-damage:cooldown",
+          "ownerId": "effect:muerta_the_calling:damage:calling-revenant-contact-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            28,
+            26,
+            24
+          ]
+        },
+        "delay": {
+          "id": "value:effect:muerta_the_calling:damage:calling-revenant-contact-damage:delay",
+          "ownerId": "effect:muerta_the_calling:damage:calling-revenant-contact-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:muerta_the_calling:damage:calling-revenant-contact-damage:damageType",
+          "ownerId": "effect:muerta_the_calling:damage:calling-revenant-contact-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "callingRevenantTouchesEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "muerta_the_calling"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:muerta_the_calling:damage:calling-revenant-contact-damage",
+      "legacyEffectId": "muerta_the_calling:damage:calling-revenant-contact-damage",
+      "order": 6,
+      "legacyAbilityId": "muerta_the_calling",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:muerta_the_calling:damage:calling-revenant-contact-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:muerta_the_calling:damage:calling-revenant-contact-damage:range",
+        "value:effect:muerta_the_calling:damage:calling-revenant-contact-damage:duration",
+        "value:effect:muerta_the_calling:damage:calling-revenant-contact-damage:magnitude",
+        "value:effect:muerta_the_calling:damage:calling-revenant-contact-damage:mana",
+        "value:effect:muerta_the_calling:damage:calling-revenant-contact-damage:cooldown",
+        "value:effect:muerta_the_calling:damage:calling-revenant-contact-damage:delay",
+        "value:effect:muerta_the_calling:damage:calling-revenant-contact-damage:damageType"
+      ],
+      "activationId": "activation:138:muerta_the_calling"
+    },
+    {
+      "effectId": "muerta_gunslinger:damage:gunslinger-toggled-proc-attack",
+      "heroId": "138",
+      "abilityId": "ability:138:muerta_gunslinger",
+      "type": "damage",
+      "subtype": "gunslinger-toggled-proc-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:range",
+          "ownerId": "effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:duration",
+          "ownerId": "effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:magnitude",
+          "ownerId": "effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:mana",
+          "ownerId": "effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:cooldown",
+          "ownerId": "effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:delay",
+          "ownerId": "effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:damageType",
+          "ownerId": "effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "gunslingerToggledOn",
+          "gunslingerProcOccurs",
+          "gunslingerEligibleTargetAvailable",
+          "muertaPhysicalAttackState"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "muerta_gunslinger:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack",
+      "legacyEffectId": "muerta_gunslinger:damage:gunslinger-toggled-proc-attack",
+      "order": 7,
+      "legacyAbilityId": "muerta_gunslinger",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:0",
+        "condition:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:1",
+        "condition:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:2",
+        "condition:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:3"
+      ],
+      "valueIds": [
+        "value:effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:range",
+        "value:effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:duration",
+        "value:effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:magnitude",
+        "value:effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:mana",
+        "value:effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:cooldown",
+        "value:effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:delay",
+        "value:effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:damageType"
+      ],
+      "activationId": "activation:138:muerta_gunslinger"
+    },
+    {
+      "effectId": "muerta_spectral_slug:damage:shard-spectral-slug-damage",
+      "heroId": "138",
+      "abilityId": "ability:138:muerta_spectral_slug",
+      "type": "damage",
+      "subtype": "shard-spectral-slug-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:muerta_spectral_slug:damage:shard-spectral-slug-damage:range",
+          "ownerId": "effect:muerta_spectral_slug:damage:shard-spectral-slug-damage",
+          "field": "range",
+          "state": "known",
+          "value": 500
+        },
+        "duration": {
+          "id": "value:effect:muerta_spectral_slug:damage:shard-spectral-slug-damage:duration",
+          "ownerId": "effect:muerta_spectral_slug:damage:shard-spectral-slug-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:muerta_spectral_slug:damage:shard-spectral-slug-damage:magnitude",
+          "ownerId": "effect:muerta_spectral_slug:damage:shard-spectral-slug-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": 225
+        },
+        "mana": {
+          "id": "value:effect:muerta_spectral_slug:damage:shard-spectral-slug-damage:mana",
+          "ownerId": "effect:muerta_spectral_slug:damage:shard-spectral-slug-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:muerta_spectral_slug:damage:shard-spectral-slug-damage:cooldown",
+          "ownerId": "effect:muerta_spectral_slug:damage:shard-spectral-slug-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": 12
+        },
+        "delay": {
+          "id": "value:effect:muerta_spectral_slug:damage:shard-spectral-slug-damage:delay",
+          "ownerId": "effect:muerta_spectral_slug:damage:shard-spectral-slug-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:muerta_spectral_slug:damage:shard-spectral-slug-damage:damageType",
+          "ownerId": "effect:muerta_spectral_slug:damage:shard-spectral-slug-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "muerta_spectral_slug"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:muerta_spectral_slug:damage:shard-spectral-slug-damage",
+      "legacyEffectId": "muerta_spectral_slug:damage:shard-spectral-slug-damage",
+      "order": 8,
+      "legacyAbilityId": "muerta_spectral_slug",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:muerta_spectral_slug:damage:shard-spectral-slug-damage:range",
+        "value:effect:muerta_spectral_slug:damage:shard-spectral-slug-damage:duration",
+        "value:effect:muerta_spectral_slug:damage:shard-spectral-slug-damage:magnitude",
+        "value:effect:muerta_spectral_slug:damage:shard-spectral-slug-damage:mana",
+        "value:effect:muerta_spectral_slug:damage:shard-spectral-slug-damage:cooldown",
+        "value:effect:muerta_spectral_slug:damage:shard-spectral-slug-damage:delay",
+        "value:effect:muerta_spectral_slug:damage:shard-spectral-slug-damage:damageType"
+      ],
+      "activationId": "activation:138:muerta_spectral_slug"
+    },
+    {
+      "effectId": "muerta_spectral_slug:displacement:shard-spectral-slug-knockback",
+      "heroId": "138",
+      "abilityId": "ability:138:muerta_spectral_slug",
+      "type": "displacement",
+      "subtype": "shard-spectral-slug-knockback",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback:range",
+          "ownerId": "effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback",
+          "field": "range",
+          "state": "known",
+          "value": 500
+        },
+        "duration": {
+          "id": "value:effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback:duration",
+          "ownerId": "effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback",
+          "field": "duration",
+          "state": "known",
+          "value": 0.2
+        },
+        "magnitude": {
+          "id": "value:effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback:magnitude",
+          "ownerId": "effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback:mana",
+          "ownerId": "effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback:cooldown",
+          "ownerId": "effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback",
+          "field": "cooldown",
+          "state": "known",
+          "value": 12
+        },
+        "delay": {
+          "id": "value:effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback:delay",
+          "ownerId": "effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "muerta_spectral_slug"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback",
+      "legacyEffectId": "muerta_spectral_slug:displacement:shard-spectral-slug-knockback",
+      "order": 9,
+      "legacyAbilityId": "muerta_spectral_slug",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback:range",
+        "value:effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback:duration",
+        "value:effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback:magnitude",
+        "value:effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback:mana",
+        "value:effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback:cooldown",
+        "value:effect:muerta_spectral_slug:displacement:shard-spectral-slug-knockback:delay"
+      ],
+      "activationId": "activation:138:muerta_spectral_slug"
+    },
+    {
+      "effectId": "muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm",
+      "heroId": "138",
+      "abilityId": "ability:138:muerta_spectral_slug",
+      "type": "control",
+      "subtype": "shard-spectral-slug-ethereal-disarm",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm:range",
+          "ownerId": "effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm",
+          "field": "range",
+          "state": "known",
+          "value": 500
+        },
+        "duration": {
+          "id": "value:effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm:duration",
+          "ownerId": "effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm",
+          "field": "duration",
+          "state": "known",
+          "value": 3
+        },
+        "magnitude": {
+          "id": "value:effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm:magnitude",
+          "ownerId": "effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm:mana",
+          "ownerId": "effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm:cooldown",
+          "ownerId": "effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm",
+          "field": "cooldown",
+          "state": "known",
+          "value": 12
+        },
+        "delay": {
+          "id": "value:effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm:delay",
+          "ownerId": "effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "attacking"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "muerta_spectral_slug"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm",
+      "legacyEffectId": "muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm",
+      "order": 10,
+      "legacyAbilityId": "muerta_spectral_slug",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm:range",
+        "value:effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm:duration",
+        "value:effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm:magnitude",
+        "value:effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm:mana",
+        "value:effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm:cooldown",
+        "value:effect:muerta_spectral_slug:control:shard-spectral-slug-ethereal-disarm:delay"
+      ],
+      "activationId": "activation:138:muerta_spectral_slug"
+    },
+    {
+      "effectId": "muerta_pierce_the_veil:save:veil-physical-immunity",
+      "heroId": "138",
+      "abilityId": "ability:138:muerta_pierce_the_veil",
+      "type": "save",
+      "subtype": "veil-physical-immunity",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:muerta_pierce_the_veil:save:veil-physical-immunity:range",
+          "ownerId": "effect:muerta_pierce_the_veil:save:veil-physical-immunity",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:muerta_pierce_the_veil:save:veil-physical-immunity:duration",
+          "ownerId": "effect:muerta_pierce_the_veil:save:veil-physical-immunity",
+          "field": "duration",
+          "state": "known",
+          "value": 8
+        },
+        "magnitude": {
+          "id": "value:effect:muerta_pierce_the_veil:save:veil-physical-immunity:magnitude",
+          "ownerId": "effect:muerta_pierce_the_veil:save:veil-physical-immunity",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:muerta_pierce_the_veil:save:veil-physical-immunity:mana",
+          "ownerId": "effect:muerta_pierce_the_veil:save:veil-physical-immunity",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            250,
+            350
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:muerta_pierce_the_veil:save:veil-physical-immunity:cooldown",
+          "ownerId": "effect:muerta_pierce_the_veil:save:veil-physical-immunity",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            75,
+            60,
+            45
+          ]
+        },
+        "delay": {
+          "id": "value:effect:muerta_pierce_the_veil:save:veil-physical-immunity:delay",
+          "ownerId": "effect:muerta_pierce_the_veil:save:veil-physical-immunity",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "physical"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "muerta_pierce_the_veil"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:muerta_pierce_the_veil:save:veil-physical-immunity",
+      "legacyEffectId": "muerta_pierce_the_veil:save:veil-physical-immunity",
+      "order": 11,
+      "legacyAbilityId": "muerta_pierce_the_veil",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:muerta_pierce_the_veil:save:veil-physical-immunity:range",
+        "value:effect:muerta_pierce_the_veil:save:veil-physical-immunity:duration",
+        "value:effect:muerta_pierce_the_veil:save:veil-physical-immunity:magnitude",
+        "value:effect:muerta_pierce_the_veil:save:veil-physical-immunity:mana",
+        "value:effect:muerta_pierce_the_veil:save:veil-physical-immunity:cooldown",
+        "value:effect:muerta_pierce_the_veil:save:veil-physical-immunity:delay"
+      ],
+      "activationId": "activation:138:muerta_pierce_the_veil"
+    },
+    {
+      "effectId": "muerta_pierce_the_veil:damage:veil-existing-transformed-attack",
+      "heroId": "138",
+      "abilityId": "ability:138:muerta_pierce_the_veil",
+      "type": "damage",
+      "subtype": "veil-existing-transformed-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:range",
+          "ownerId": "effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:duration",
+          "ownerId": "effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:magnitude",
+          "ownerId": "effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:mana",
+          "ownerId": "effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:cooldown",
+          "ownerId": "effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:delay",
+          "ownerId": "effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:damageType",
+          "ownerId": "effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "pierceTheVeilEstablished",
+          "muertaAttackHits"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "muerta_pierce_the_veil:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack",
+      "legacyEffectId": "muerta_pierce_the_veil:damage:veil-existing-transformed-attack",
+      "order": 12,
+      "legacyAbilityId": "muerta_pierce_the_veil",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:0",
+        "condition:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:1"
+      ],
+      "valueIds": [
+        "value:effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:range",
+        "value:effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:duration",
+        "value:effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:magnitude",
+        "value:effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:mana",
+        "value:effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:cooldown",
+        "value:effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:delay",
+        "value:effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:damageType"
+      ],
+      "activationId": "activation:138:muerta_pierce_the_veil"
+    },
+    {
+      "effectId": "muerta_supernatural:modifier:supernatural-death-stack-spell-amplification",
+      "heroId": "138",
+      "abilityId": "ability:138:muerta_supernatural",
+      "type": "modifier",
+      "subtype": "supernatural-death-stack-spell-amplification",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification:range",
+          "ownerId": "effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification:duration",
+          "ownerId": "effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification:magnitude",
+          "ownerId": "effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification:mana",
+          "ownerId": "effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification:cooldown",
+          "ownerId": "effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification:delay",
+          "ownerId": "effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "supernaturalStacksAvailable"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "muerta_supernatural:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification",
+      "legacyEffectId": "muerta_supernatural:modifier:supernatural-death-stack-spell-amplification",
+      "order": 13,
+      "legacyAbilityId": "muerta_supernatural",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification:0"
+      ],
+      "valueIds": [
+        "value:effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification:range",
+        "value:effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification:duration",
+        "value:effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification:magnitude",
+        "value:effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification:mana",
+        "value:effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification:cooldown",
+        "value:effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification:delay"
+      ],
+      "activationId": "activation:138:muerta_supernatural"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:muerta_dead_shot:damage:dead-shot-single-hit:0",
+      "ownerId": "effect:muerta_dead_shot:damage:dead-shot-single-hit",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "deadShotPrimaryEnemyHit"
+      }
+    },
+    {
+      "id": "condition:muerta_dead_shot:damage:dead-shot-ricochet-damage:0",
+      "ownerId": "effect:muerta_dead_shot:damage:dead-shot-ricochet-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "deadShotRicochetHitsEnemyHero"
+      }
+    },
+    {
+      "id": "condition:muerta_dead_shot:slow:dead-shot-primary-slow:0",
+      "ownerId": "effect:muerta_dead_shot:slow:dead-shot-primary-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "deadShotPrimaryEnemyHit"
+      }
+    },
+    {
+      "id": "condition:muerta_dead_shot:control:dead-shot-ricochet-fear:0",
+      "ownerId": "effect:muerta_dead_shot:control:dead-shot-ricochet-fear",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "deadShotRicochetHitsEnemyHero"
+      }
+    },
+    {
+      "id": "condition:muerta_the_calling:slow:calling-area-movement-slow:0",
+      "ownerId": "effect:muerta_the_calling:slow:calling-area-movement-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideCallingArea"
+      }
+    },
+    {
+      "id": "condition:muerta_the_calling:control:calling-revenant-contact-silence:0",
+      "ownerId": "effect:muerta_the_calling:control:calling-revenant-contact-silence",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "callingRevenantTouchesEnemy"
+      }
+    },
+    {
+      "id": "condition:muerta_the_calling:damage:calling-revenant-contact-damage:0",
+      "ownerId": "effect:muerta_the_calling:damage:calling-revenant-contact-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "callingRevenantTouchesEnemy"
+      }
+    },
+    {
+      "id": "condition:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:0",
+      "ownerId": "effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "gunslingerToggledOn"
+      }
+    },
+    {
+      "id": "condition:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:1",
+      "ownerId": "effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "gunslingerProcOccurs"
+      }
+    },
+    {
+      "id": "condition:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:2",
+      "ownerId": "effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "gunslingerEligibleTargetAvailable"
+      }
+    },
+    {
+      "id": "condition:muerta_gunslinger:damage:gunslinger-toggled-proc-attack:3",
+      "ownerId": "effect:muerta_gunslinger:damage:gunslinger-toggled-proc-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "muertaPhysicalAttackState"
+      }
+    },
+    {
+      "id": "condition:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:0",
+      "ownerId": "effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "pierceTheVeilEstablished"
+      }
+    },
+    {
+      "id": "condition:muerta_pierce_the_veil:damage:veil-existing-transformed-attack:1",
+      "ownerId": "effect:muerta_pierce_the_veil:damage:veil-existing-transformed-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "muertaAttackHits"
+      }
+    },
+    {
+      "id": "condition:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification:0",
+      "ownerId": "effect:muerta_supernatural:modifier:supernatural-death-stack-spell-amplification",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "supernaturalStacksAvailable"
+      }
+    }
+  ]
+}

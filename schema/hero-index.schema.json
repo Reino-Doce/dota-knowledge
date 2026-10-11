@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/hero-index.schema.json",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "heroes"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "heroes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "key",
+          "sourceKey",
+          "providerSlug",
+          "profile",
+          "abilities",
+          "mechanics",
+          "guide"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "core.schema.json#/$defs/heroId"
+          },
+          "key": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$"
+          },
+          "sourceKey": {
+            "type": "string",
+            "minLength": 1
+          },
+          "providerSlug": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "profile": {
+            "type": "string",
+            "maxLength": 240,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*(?:/[A-Za-z0-9][A-Za-z0-9._-]*)*$"
+          },
+          "abilities": {
+            "type": "string",
+            "maxLength": 240,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*(?:/[A-Za-z0-9][A-Za-z0-9._-]*)*$"
+          },
+          "mechanics": {
+            "type": "string",
+            "maxLength": 240,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*(?:/[A-Za-z0-9][A-Za-z0-9._-]*)*$"
+          },
+          "guide": {
+            "type": "string",
+            "maxLength": 240,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*(?:/[A-Za-z0-9][A-Za-z0-9._-]*)*$"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

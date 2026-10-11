@@ -1,0 +1,2559 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "viper_viper_strike:passive-suppression",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_viper_strike",
+      "type": "break",
+      "subtype": "passive-suppression",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_viper_strike:passive-suppression:range",
+          "ownerId": "effect:viper_viper_strike:passive-suppression",
+          "field": "range",
+          "state": "known",
+          "value": 750
+        },
+        "duration": {
+          "id": "value:effect:viper_viper_strike:passive-suppression:duration",
+          "ownerId": "effect:viper_viper_strike:passive-suppression",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:viper_viper_strike:passive-suppression:magnitude",
+          "ownerId": "effect:viper_viper_strike:passive-suppression",
+          "field": "magnitude",
+          "state": "known",
+          "value": 1
+        },
+        "mana": {
+          "id": "value:effect:viper_viper_strike:passive-suppression:mana",
+          "ownerId": "effect:viper_viper_strike:passive-suppression",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            150,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:viper_viper_strike:passive-suppression:cooldown",
+          "ownerId": "effect:viper_viper_strike:passive-suppression",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            50,
+            40,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:viper_viper_strike:passive-suppression:delay",
+          "ownerId": "effect:viper_viper_strike:passive-suppression",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "Cast point omits declared projectile travel and any channel or release timing; effective impact delay requires geometry and engine verification."
+        },
+        "castPoint": {
+          "id": "value:effect:viper_viper_strike:passive-suppression:castPoint",
+          "ownerId": "effect:viper_viper_strike:passive-suppression",
+          "field": "castPoint",
+          "state": "known",
+          "value": 0.2
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_viper_strike"
+      },
+      "vulnerability": {},
+      "exceptions": [
+        "passive-must-be-breakable"
+      ],
+      "id": "effect:viper_viper_strike:passive-suppression",
+      "legacyEffectId": "viper_viper_strike:passive-suppression",
+      "order": 0,
+      "legacyAbilityId": "viper_viper_strike",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:viper_viper_strike:passive-suppression:range",
+        "value:effect:viper_viper_strike:passive-suppression:duration",
+        "value:effect:viper_viper_strike:passive-suppression:magnitude",
+        "value:effect:viper_viper_strike:passive-suppression:mana",
+        "value:effect:viper_viper_strike:passive-suppression:cooldown",
+        "value:effect:viper_viper_strike:passive-suppression:delay",
+        "value:effect:viper_viper_strike:passive-suppression:castPoint"
+      ],
+      "activationId": "activation:47:viper_viper_strike"
+    },
+    {
+      "effectId": "viper_poison_attack:damage:poison-attack-single-stack-damage-rate",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_poison_attack",
+      "type": "damage",
+      "subtype": "poison-attack-single-stack-damage-rate",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate:range",
+          "ownerId": "effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate:duration",
+          "ownerId": "effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate:magnitude",
+          "ownerId": "effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            4,
+            8,
+            12,
+            16
+          ]
+        },
+        "mana": {
+          "id": "value:effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate:mana",
+          "ownerId": "effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate",
+          "field": "mana",
+          "state": "known",
+          "value": 20
+        },
+        "cooldown": {
+          "id": "value:effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate:cooldown",
+          "ownerId": "effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0
+        },
+        "delay": {
+          "id": "value:effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate:delay",
+          "ownerId": "effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate:damageType",
+          "ownerId": "effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "poisonAttackLands"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_poison_attack"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate",
+      "legacyEffectId": "viper_poison_attack:damage:poison-attack-single-stack-damage-rate",
+      "order": 1,
+      "legacyAbilityId": "viper_poison_attack",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:viper_poison_attack:damage:poison-attack-single-stack-damage-rate:0"
+      ],
+      "valueIds": [
+        "value:effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate:range",
+        "value:effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate:duration",
+        "value:effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate:magnitude",
+        "value:effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate:mana",
+        "value:effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate:cooldown",
+        "value:effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate:delay",
+        "value:effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate:damageType"
+      ],
+      "activationId": "activation:47:viper_poison_attack"
+    },
+    {
+      "effectId": "viper_poison_attack:slow:poison-attack-single-stack-movement-slow",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_poison_attack",
+      "type": "slow",
+      "subtype": "poison-attack-single-stack-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow:range",
+          "ownerId": "effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow:duration",
+          "ownerId": "effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow:magnitude",
+          "ownerId": "effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            3,
+            6,
+            9,
+            12
+          ]
+        },
+        "mana": {
+          "id": "value:effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow:mana",
+          "ownerId": "effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 20
+        },
+        "cooldown": {
+          "id": "value:effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow:cooldown",
+          "ownerId": "effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0
+        },
+        "delay": {
+          "id": "value:effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow:delay",
+          "ownerId": "effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "poisonAttackLands"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_poison_attack"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow",
+      "legacyEffectId": "viper_poison_attack:slow:poison-attack-single-stack-movement-slow",
+      "order": 2,
+      "legacyAbilityId": "viper_poison_attack",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:viper_poison_attack:slow:poison-attack-single-stack-movement-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow:range",
+        "value:effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow:duration",
+        "value:effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow:magnitude",
+        "value:effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow:mana",
+        "value:effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow:cooldown",
+        "value:effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow:delay"
+      ],
+      "activationId": "activation:47:viper_poison_attack"
+    },
+    {
+      "effectId": "viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_poison_attack",
+      "type": "modifier",
+      "subtype": "poison-attack-single-stack-magic-resistance",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance:range",
+          "ownerId": "effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance:duration",
+          "ownerId": "effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance:magnitude",
+          "ownerId": "effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            4,
+            6,
+            8,
+            10
+          ]
+        },
+        "mana": {
+          "id": "value:effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance:mana",
+          "ownerId": "effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance",
+          "field": "mana",
+          "state": "known",
+          "value": 20
+        },
+        "cooldown": {
+          "id": "value:effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance:cooldown",
+          "ownerId": "effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0
+        },
+        "delay": {
+          "id": "value:effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance:delay",
+          "ownerId": "effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "poisonAttackLands"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_poison_attack"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance",
+      "legacyEffectId": "viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance",
+      "order": 3,
+      "legacyAbilityId": "viper_poison_attack",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance:0"
+      ],
+      "valueIds": [
+        "value:effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance:range",
+        "value:effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance:duration",
+        "value:effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance:magnitude",
+        "value:effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance:mana",
+        "value:effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance:cooldown",
+        "value:effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance:delay"
+      ],
+      "activationId": "activation:47:viper_poison_attack"
+    },
+    {
+      "effectId": "viper_poison_attack:modifier:shard-poison-armor-and-building-branch",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_poison_attack",
+      "type": "modifier",
+      "subtype": "shard-poison-armor-and-building-branch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch:range",
+          "ownerId": "effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch:duration",
+          "ownerId": "effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch:magnitude",
+          "ownerId": "effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch:mana",
+          "ownerId": "effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch:cooldown",
+          "ownerId": "effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch:delay",
+          "ownerId": "effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "poisonAttackLands"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_poison_attack:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch",
+      "legacyEffectId": "viper_poison_attack:modifier:shard-poison-armor-and-building-branch",
+      "order": 4,
+      "legacyAbilityId": "viper_poison_attack",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:viper_poison_attack:modifier:shard-poison-armor-and-building-branch:0"
+      ],
+      "valueIds": [
+        "value:effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch:range",
+        "value:effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch:duration",
+        "value:effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch:magnitude",
+        "value:effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch:mana",
+        "value:effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch:cooldown",
+        "value:effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch:delay"
+      ],
+      "activationId": "activation:47:viper_poison_attack"
+    },
+    {
+      "effectId": "viper_nethertoxin:modifier:paid-nethertoxin-area-placement",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_nethertoxin",
+      "type": "modifier",
+      "subtype": "paid-nethertoxin-area-placement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement:range",
+          "ownerId": "effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement",
+          "field": "range",
+          "state": "known",
+          "value": 900
+        },
+        "duration": {
+          "id": "value:effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement:duration",
+          "ownerId": "effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            6.5,
+            7,
+            7.5,
+            8
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement:magnitude",
+          "ownerId": "effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement:mana",
+          "ownerId": "effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement",
+          "field": "mana",
+          "state": "known",
+          "value": 70
+        },
+        "cooldown": {
+          "id": "value:effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement:cooldown",
+          "ownerId": "effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement",
+          "field": "cooldown",
+          "state": "known",
+          "value": 14
+        },
+        "delay": {
+          "id": "value:effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement:delay",
+          "ownerId": "effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_nethertoxin"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement",
+      "legacyEffectId": "viper_nethertoxin:modifier:paid-nethertoxin-area-placement",
+      "order": 5,
+      "legacyAbilityId": "viper_nethertoxin",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement:range",
+        "value:effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement:duration",
+        "value:effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement:magnitude",
+        "value:effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement:mana",
+        "value:effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement:cooldown",
+        "value:effect:viper_nethertoxin:modifier:paid-nethertoxin-area-placement:delay"
+      ],
+      "activationId": "activation:47:viper_nethertoxin"
+    },
+    {
+      "effectId": "viper_nethertoxin:damage:nethertoxin-residence-dependent-damage",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_nethertoxin",
+      "type": "damage",
+      "subtype": "nethertoxin-residence-dependent-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:range",
+          "ownerId": "effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:duration",
+          "ownerId": "effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:magnitude",
+          "ownerId": "effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:mana",
+          "ownerId": "effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:cooldown",
+          "ownerId": "effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:delay",
+          "ownerId": "effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:damageType",
+          "ownerId": "effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "nethertoxinEstablished",
+          "enemyInsideNethertoxin"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_nethertoxin:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage",
+      "legacyEffectId": "viper_nethertoxin:damage:nethertoxin-residence-dependent-damage",
+      "order": 6,
+      "legacyAbilityId": "viper_nethertoxin",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:0",
+        "condition:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:1"
+      ],
+      "valueIds": [
+        "value:effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:range",
+        "value:effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:duration",
+        "value:effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:magnitude",
+        "value:effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:mana",
+        "value:effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:cooldown",
+        "value:effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:delay",
+        "value:effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:damageType"
+      ],
+      "activationId": "activation:47:viper_nethertoxin"
+    },
+    {
+      "effectId": "viper_nethertoxin:modifier:nethertoxin-resident-attack-slow",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_nethertoxin",
+      "type": "modifier",
+      "subtype": "nethertoxin-resident-attack-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow:range",
+          "ownerId": "effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow:duration",
+          "ownerId": "effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow:magnitude",
+          "ownerId": "effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            30,
+            40,
+            50,
+            60
+          ]
+        },
+        "mana": {
+          "id": "value:effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow:mana",
+          "ownerId": "effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow:cooldown",
+          "ownerId": "effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow:delay",
+          "ownerId": "effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "nethertoxinEstablished",
+          "enemyInsideNethertoxin"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_nethertoxin:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow",
+      "legacyEffectId": "viper_nethertoxin:modifier:nethertoxin-resident-attack-slow",
+      "order": 7,
+      "legacyAbilityId": "viper_nethertoxin",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow:0",
+        "condition:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow:1"
+      ],
+      "valueIds": [
+        "value:effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow:range",
+        "value:effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow:duration",
+        "value:effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow:magnitude",
+        "value:effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow:mana",
+        "value:effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow:cooldown",
+        "value:effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow:delay"
+      ],
+      "activationId": "activation:47:viper_nethertoxin"
+    },
+    {
+      "effectId": "viper_corrosive_skin:passive:corrosive-self-magic-resistance",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_corrosive_skin",
+      "type": "passive",
+      "subtype": "corrosive-self-magic-resistance",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance:range",
+          "ownerId": "effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance:duration",
+          "ownerId": "effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance:magnitude",
+          "ownerId": "effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            10,
+            15,
+            20,
+            25
+          ]
+        },
+        "mana": {
+          "id": "value:effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance:mana",
+          "ownerId": "effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance:cooldown",
+          "ownerId": "effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance:delay",
+          "ownerId": "effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_corrosive_skin:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance",
+      "legacyEffectId": "viper_corrosive_skin:passive:corrosive-self-magic-resistance",
+      "order": 8,
+      "legacyAbilityId": "viper_corrosive_skin",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance:range",
+        "value:effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance:duration",
+        "value:effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance:magnitude",
+        "value:effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance:mana",
+        "value:effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance:cooldown",
+        "value:effect:viper_corrosive_skin:passive:corrosive-self-magic-resistance:delay"
+      ],
+      "activationId": "activation:47:viper_corrosive_skin"
+    },
+    {
+      "effectId": "viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_corrosive_skin",
+      "type": "damage",
+      "subtype": "corrosive-qualifying-retaliation-rate",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate:range",
+          "ownerId": "effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate",
+          "field": "range",
+          "state": "known",
+          "value": 1200
+        },
+        "duration": {
+          "id": "value:effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate:duration",
+          "ownerId": "effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate:magnitude",
+          "ownerId": "effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            10,
+            15,
+            20,
+            25
+          ]
+        },
+        "mana": {
+          "id": "value:effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate:mana",
+          "ownerId": "effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate:cooldown",
+          "ownerId": "effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate:delay",
+          "ownerId": "effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate:damageType",
+          "ownerId": "effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyDamagedViper"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_corrosive_skin:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate",
+      "legacyEffectId": "viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate",
+      "order": 9,
+      "legacyAbilityId": "viper_corrosive_skin",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate:0"
+      ],
+      "valueIds": [
+        "value:effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate:range",
+        "value:effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate:duration",
+        "value:effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate:magnitude",
+        "value:effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate:mana",
+        "value:effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate:cooldown",
+        "value:effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate:delay",
+        "value:effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate:damageType"
+      ],
+      "activationId": "activation:47:viper_corrosive_skin"
+    },
+    {
+      "effectId": "viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_corrosive_skin",
+      "type": "modifier",
+      "subtype": "corrosive-qualifying-attack-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow:range",
+          "ownerId": "effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow",
+          "field": "range",
+          "state": "known",
+          "value": 1200
+        },
+        "duration": {
+          "id": "value:effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow:duration",
+          "ownerId": "effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow:magnitude",
+          "ownerId": "effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            9,
+            18,
+            27,
+            36
+          ]
+        },
+        "mana": {
+          "id": "value:effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow:mana",
+          "ownerId": "effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow:cooldown",
+          "ownerId": "effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow:delay",
+          "ownerId": "effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyDamagedViper"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_corrosive_skin:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow",
+      "legacyEffectId": "viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow",
+      "order": 10,
+      "legacyAbilityId": "viper_corrosive_skin",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow:range",
+        "value:effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow:duration",
+        "value:effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow:magnitude",
+        "value:effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow:mana",
+        "value:effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow:cooldown",
+        "value:effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow:delay"
+      ],
+      "activationId": "activation:47:viper_corrosive_skin"
+    },
+    {
+      "effectId": "viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_corrosive_skin",
+      "type": "modifier",
+      "subtype": "scepter-corrosive-close-range-and-residence",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence:range",
+          "ownerId": "effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence:duration",
+          "ownerId": "effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence:magnitude",
+          "ownerId": "effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence:mana",
+          "ownerId": "effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence:cooldown",
+          "ownerId": "effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence:delay",
+          "ownerId": "effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_corrosive_skin:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence",
+      "legacyEffectId": "viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence",
+      "order": 11,
+      "legacyAbilityId": "viper_corrosive_skin",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence:range",
+        "value:effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence:duration",
+        "value:effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence:magnitude",
+        "value:effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence:mana",
+        "value:effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence:cooldown",
+        "value:effect:viper_corrosive_skin:modifier:scepter-corrosive-close-range-and-residence:delay"
+      ],
+      "activationId": "activation:47:viper_corrosive_skin"
+    },
+    {
+      "effectId": "viper_nose_dive:mobility:scepter-nosedive-ground-travel",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_nose_dive",
+      "type": "mobility",
+      "subtype": "scepter-nosedive-ground-travel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel:range",
+          "ownerId": "effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel:duration",
+          "ownerId": "effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel:magnitude",
+          "ownerId": "effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel:mana",
+          "ownerId": "effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel:cooldown",
+          "ownerId": "effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel",
+          "field": "cooldown",
+          "state": "known",
+          "value": 25
+        },
+        "delay": {
+          "id": "value:effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel:delay",
+          "ownerId": "effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "nosediveLandingAvailable"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_nose_dive"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel",
+      "legacyEffectId": "viper_nose_dive:mobility:scepter-nosedive-ground-travel",
+      "order": 12,
+      "legacyAbilityId": "viper_nose_dive",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:viper_nose_dive:mobility:scepter-nosedive-ground-travel:0"
+      ],
+      "valueIds": [
+        "value:effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel:range",
+        "value:effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel:duration",
+        "value:effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel:magnitude",
+        "value:effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel:mana",
+        "value:effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel:cooldown",
+        "value:effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel:delay"
+      ],
+      "activationId": "activation:47:viper_nose_dive"
+    },
+    {
+      "effectId": "viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_nose_dive",
+      "type": "modifier",
+      "subtype": "scepter-nosedive-linked-pool-and-skin",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin:range",
+          "ownerId": "effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin:duration",
+          "ownerId": "effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin:magnitude",
+          "ownerId": "effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin:mana",
+          "ownerId": "effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin:cooldown",
+          "ownerId": "effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin:delay",
+          "ownerId": "effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "viper_nethertoxin",
+          "viper_corrosive_skin"
+        ],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "nosediveLandingCompleted",
+          "enemyInsideNosediveLanding"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_nose_dive:passive"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "breakable": false
+      },
+      "exceptions": [],
+      "id": "effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin",
+      "legacyEffectId": "viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin",
+      "order": 13,
+      "legacyAbilityId": "viper_nose_dive",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin:0",
+        "condition:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin:1"
+      ],
+      "valueIds": [
+        "value:effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin:range",
+        "value:effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin:duration",
+        "value:effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin:magnitude",
+        "value:effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin:mana",
+        "value:effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin:cooldown",
+        "value:effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin:delay"
+      ],
+      "activationId": "activation:47:viper_nose_dive"
+    },
+    {
+      "effectId": "viper_predator:damage:predator-missing-health-dependent-physical-instance",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_predator",
+      "type": "damage",
+      "subtype": "predator-missing-health-dependent-physical-instance",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_predator:damage:predator-missing-health-dependent-physical-instance:range",
+          "ownerId": "effect:viper_predator:damage:predator-missing-health-dependent-physical-instance",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:viper_predator:damage:predator-missing-health-dependent-physical-instance:duration",
+          "ownerId": "effect:viper_predator:damage:predator-missing-health-dependent-physical-instance",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:viper_predator:damage:predator-missing-health-dependent-physical-instance:magnitude",
+          "ownerId": "effect:viper_predator:damage:predator-missing-health-dependent-physical-instance",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:viper_predator:damage:predator-missing-health-dependent-physical-instance:mana",
+          "ownerId": "effect:viper_predator:damage:predator-missing-health-dependent-physical-instance",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:viper_predator:damage:predator-missing-health-dependent-physical-instance:cooldown",
+          "ownerId": "effect:viper_predator:damage:predator-missing-health-dependent-physical-instance",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:viper_predator:damage:predator-missing-health-dependent-physical-instance:delay",
+          "ownerId": "effect:viper_predator:damage:predator-missing-health-dependent-physical-instance",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:viper_predator:damage:predator-missing-health-dependent-physical-instance:damageType",
+          "ownerId": "effect:viper_predator:damage:predator-missing-health-dependent-physical-instance",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "viperAttackHitsEnemyHero"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_predator:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:viper_predator:damage:predator-missing-health-dependent-physical-instance",
+      "legacyEffectId": "viper_predator:damage:predator-missing-health-dependent-physical-instance",
+      "order": 14,
+      "legacyAbilityId": "viper_predator",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:viper_predator:damage:predator-missing-health-dependent-physical-instance:0"
+      ],
+      "valueIds": [
+        "value:effect:viper_predator:damage:predator-missing-health-dependent-physical-instance:range",
+        "value:effect:viper_predator:damage:predator-missing-health-dependent-physical-instance:duration",
+        "value:effect:viper_predator:damage:predator-missing-health-dependent-physical-instance:magnitude",
+        "value:effect:viper_predator:damage:predator-missing-health-dependent-physical-instance:mana",
+        "value:effect:viper_predator:damage:predator-missing-health-dependent-physical-instance:cooldown",
+        "value:effect:viper_predator:damage:predator-missing-health-dependent-physical-instance:delay",
+        "value:effect:viper_predator:damage:predator-missing-health-dependent-physical-instance:damageType"
+      ],
+      "activationId": "activation:47:viper_predator"
+    },
+    {
+      "effectId": "viper_viper_strike:damage:viper-strike-poison-damage-rate",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_viper_strike",
+      "type": "damage",
+      "subtype": "viper-strike-poison-damage-rate",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_viper_strike:damage:viper-strike-poison-damage-rate:range",
+          "ownerId": "effect:viper_viper_strike:damage:viper-strike-poison-damage-rate",
+          "field": "range",
+          "state": "known",
+          "value": 750
+        },
+        "duration": {
+          "id": "value:effect:viper_viper_strike:damage:viper-strike-poison-damage-rate:duration",
+          "ownerId": "effect:viper_viper_strike:damage:viper-strike-poison-damage-rate",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:viper_viper_strike:damage:viper-strike-poison-damage-rate:magnitude",
+          "ownerId": "effect:viper_viper_strike:damage:viper-strike-poison-damage-rate",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            70,
+            110,
+            150
+          ]
+        },
+        "mana": {
+          "id": "value:effect:viper_viper_strike:damage:viper-strike-poison-damage-rate:mana",
+          "ownerId": "effect:viper_viper_strike:damage:viper-strike-poison-damage-rate",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            150,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:viper_viper_strike:damage:viper-strike-poison-damage-rate:cooldown",
+          "ownerId": "effect:viper_viper_strike:damage:viper-strike-poison-damage-rate",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            50,
+            40,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:viper_viper_strike:damage:viper-strike-poison-damage-rate:delay",
+          "ownerId": "effect:viper_viper_strike:damage:viper-strike-poison-damage-rate",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:viper_viper_strike:damage:viper-strike-poison-damage-rate:damageType",
+          "ownerId": "effect:viper_viper_strike:damage:viper-strike-poison-damage-rate",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "viperStrikeProjectileHits"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "none"
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_viper_strike"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:viper_viper_strike:damage:viper-strike-poison-damage-rate",
+      "legacyEffectId": "viper_viper_strike:damage:viper-strike-poison-damage-rate",
+      "order": 15,
+      "legacyAbilityId": "viper_viper_strike",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:viper_viper_strike:damage:viper-strike-poison-damage-rate:0"
+      ],
+      "valueIds": [
+        "value:effect:viper_viper_strike:damage:viper-strike-poison-damage-rate:range",
+        "value:effect:viper_viper_strike:damage:viper-strike-poison-damage-rate:duration",
+        "value:effect:viper_viper_strike:damage:viper-strike-poison-damage-rate:magnitude",
+        "value:effect:viper_viper_strike:damage:viper-strike-poison-damage-rate:mana",
+        "value:effect:viper_viper_strike:damage:viper-strike-poison-damage-rate:cooldown",
+        "value:effect:viper_viper_strike:damage:viper-strike-poison-damage-rate:delay",
+        "value:effect:viper_viper_strike:damage:viper-strike-poison-damage-rate:damageType"
+      ],
+      "activationId": "activation:47:viper_viper_strike"
+    },
+    {
+      "effectId": "viper_viper_strike:slow:viper-strike-decaying-movement-slow",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_viper_strike",
+      "type": "slow",
+      "subtype": "viper-strike-decaying-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow:range",
+          "ownerId": "effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow",
+          "field": "range",
+          "state": "known",
+          "value": 750
+        },
+        "duration": {
+          "id": "value:effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow:duration",
+          "ownerId": "effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow:magnitude",
+          "ownerId": "effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow:mana",
+          "ownerId": "effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            150,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow:cooldown",
+          "ownerId": "effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            50,
+            40,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow:delay",
+          "ownerId": "effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "viperStrikeProjectileHits"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "none"
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_viper_strike"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow",
+      "legacyEffectId": "viper_viper_strike:slow:viper-strike-decaying-movement-slow",
+      "order": 16,
+      "legacyAbilityId": "viper_viper_strike",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:viper_viper_strike:slow:viper-strike-decaying-movement-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow:range",
+        "value:effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow:duration",
+        "value:effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow:magnitude",
+        "value:effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow:mana",
+        "value:effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow:cooldown",
+        "value:effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow:delay"
+      ],
+      "activationId": "activation:47:viper_viper_strike"
+    },
+    {
+      "effectId": "viper_viper_strike:modifier:viper-strike-decaying-attack-slow",
+      "heroId": "47",
+      "abilityId": "ability:47:viper_viper_strike",
+      "type": "modifier",
+      "subtype": "viper-strike-decaying-attack-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow:range",
+          "ownerId": "effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow",
+          "field": "range",
+          "state": "known",
+          "value": 750
+        },
+        "duration": {
+          "id": "value:effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow:duration",
+          "ownerId": "effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow:magnitude",
+          "ownerId": "effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow:mana",
+          "ownerId": "effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            150,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow:cooldown",
+          "ownerId": "effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            50,
+            40,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow:delay",
+          "ownerId": "effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "viperStrikeProjectileHits"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "viper_viper_strike"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow",
+      "legacyEffectId": "viper_viper_strike:modifier:viper-strike-decaying-attack-slow",
+      "order": 17,
+      "legacyAbilityId": "viper_viper_strike",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:viper_viper_strike:modifier:viper-strike-decaying-attack-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow:range",
+        "value:effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow:duration",
+        "value:effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow:magnitude",
+        "value:effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow:mana",
+        "value:effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow:cooldown",
+        "value:effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow:delay"
+      ],
+      "activationId": "activation:47:viper_viper_strike"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:viper_poison_attack:damage:poison-attack-single-stack-damage-rate:0",
+      "ownerId": "effect:viper_poison_attack:damage:poison-attack-single-stack-damage-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "poisonAttackLands"
+      }
+    },
+    {
+      "id": "condition:viper_poison_attack:slow:poison-attack-single-stack-movement-slow:0",
+      "ownerId": "effect:viper_poison_attack:slow:poison-attack-single-stack-movement-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "poisonAttackLands"
+      }
+    },
+    {
+      "id": "condition:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance:0",
+      "ownerId": "effect:viper_poison_attack:modifier:poison-attack-single-stack-magic-resistance",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "poisonAttackLands"
+      }
+    },
+    {
+      "id": "condition:viper_poison_attack:modifier:shard-poison-armor-and-building-branch:0",
+      "ownerId": "effect:viper_poison_attack:modifier:shard-poison-armor-and-building-branch",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "poisonAttackLands"
+      }
+    },
+    {
+      "id": "condition:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:0",
+      "ownerId": "effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "nethertoxinEstablished"
+      }
+    },
+    {
+      "id": "condition:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage:1",
+      "ownerId": "effect:viper_nethertoxin:damage:nethertoxin-residence-dependent-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideNethertoxin"
+      }
+    },
+    {
+      "id": "condition:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow:0",
+      "ownerId": "effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "nethertoxinEstablished"
+      }
+    },
+    {
+      "id": "condition:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow:1",
+      "ownerId": "effect:viper_nethertoxin:modifier:nethertoxin-resident-attack-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideNethertoxin"
+      }
+    },
+    {
+      "id": "condition:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate:0",
+      "ownerId": "effect:viper_corrosive_skin:damage:corrosive-qualifying-retaliation-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyDamagedViper"
+      }
+    },
+    {
+      "id": "condition:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow:0",
+      "ownerId": "effect:viper_corrosive_skin:modifier:corrosive-qualifying-attack-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyDamagedViper"
+      }
+    },
+    {
+      "id": "condition:viper_nose_dive:mobility:scepter-nosedive-ground-travel:0",
+      "ownerId": "effect:viper_nose_dive:mobility:scepter-nosedive-ground-travel",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "nosediveLandingAvailable"
+      }
+    },
+    {
+      "id": "condition:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin:0",
+      "ownerId": "effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "nosediveLandingCompleted"
+      }
+    },
+    {
+      "id": "condition:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin:1",
+      "ownerId": "effect:viper_nose_dive:modifier:scepter-nosedive-linked-pool-and-skin",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideNosediveLanding"
+      }
+    },
+    {
+      "id": "condition:viper_predator:damage:predator-missing-health-dependent-physical-instance:0",
+      "ownerId": "effect:viper_predator:damage:predator-missing-health-dependent-physical-instance",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "viperAttackHitsEnemyHero"
+      }
+    },
+    {
+      "id": "condition:viper_viper_strike:damage:viper-strike-poison-damage-rate:0",
+      "ownerId": "effect:viper_viper_strike:damage:viper-strike-poison-damage-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "viperStrikeProjectileHits"
+      }
+    },
+    {
+      "id": "condition:viper_viper_strike:slow:viper-strike-decaying-movement-slow:0",
+      "ownerId": "effect:viper_viper_strike:slow:viper-strike-decaying-movement-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "viperStrikeProjectileHits"
+      }
+    },
+    {
+      "id": "condition:viper_viper_strike:modifier:viper-strike-decaying-attack-slow:0",
+      "ownerId": "effect:viper_viper_strike:modifier:viper-strike-decaying-attack-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "viperStrikeProjectileHits"
+      }
+    }
+  ]
+}

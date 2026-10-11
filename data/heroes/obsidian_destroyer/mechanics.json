@@ -1,0 +1,1539 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack",
+      "heroId": "76",
+      "abilityId": "ability:76:obsidian_destroyer_arcane_orb",
+      "type": "damage",
+      "subtype": "remaining-mana-pure-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:range",
+          "ownerId": "effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack",
+          "field": "range",
+          "state": "known",
+          "value": 450
+        },
+        "duration": {
+          "id": "value:effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:duration",
+          "ownerId": "effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:magnitude",
+          "ownerId": "effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:mana",
+          "ownerId": "effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "The retained declaration requires additional expression or branch context."
+        },
+        "cooldown": {
+          "id": "value:effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:cooldown",
+          "ownerId": "effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            4.5,
+            3,
+            1.5,
+            0
+          ]
+        },
+        "delay": {
+          "id": "value:effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:delay",
+          "ownerId": "effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:damageType",
+          "ownerId": "effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack",
+          "field": "damageType",
+          "state": "known",
+          "value": "pure"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "arcaneOrbAttackHits",
+          "arcaneOrbManaCostAffordable"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "obsidian_destroyer_arcane_orb"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack",
+      "legacyEffectId": "obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack",
+      "order": 0,
+      "legacyAbilityId": "obsidian_destroyer_arcane_orb",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:0",
+        "condition:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:1"
+      ],
+      "valueIds": [
+        "value:effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:range",
+        "value:effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:duration",
+        "value:effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:magnitude",
+        "value:effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:mana",
+        "value:effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:cooldown",
+        "value:effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:delay",
+        "value:effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:damageType"
+      ],
+      "activationId": "activation:76:obsidian_destroyer_arcane_orb"
+    },
+    {
+      "effectId": "obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish",
+      "heroId": "76",
+      "abilityId": "ability:76:obsidian_destroyer_astral_imprisonment",
+      "type": "control",
+      "subtype": "enemy-astral-banish",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish:range",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish",
+          "field": "range",
+          "state": "known",
+          "value": 650
+        },
+        "duration": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish:duration",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.75,
+            2.5,
+            3.25,
+            4
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish:magnitude",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish:mana",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish",
+          "field": "mana",
+          "state": "known",
+          "value": 150
+        },
+        "cooldown": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish:cooldown",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish:delay",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "none"
+        }
+      },
+      "relationships": {
+        "resourceId": "obsidian_destroyer_astral_imprisonment"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish",
+      "legacyEffectId": "obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish",
+      "order": 1,
+      "legacyAbilityId": "obsidian_destroyer_astral_imprisonment",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish:range",
+        "value:effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish:duration",
+        "value:effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish:magnitude",
+        "value:effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish:mana",
+        "value:effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish:cooldown",
+        "value:effect:obsidian_destroyer_astral_imprisonment:control:enemy-astral-banish:delay"
+      ],
+      "activationId": "activation:76:obsidian_destroyer_astral_imprisonment"
+    },
+    {
+      "effectId": "obsidian_destroyer_astral_imprisonment:save:ally-astral-prison",
+      "heroId": "76",
+      "abilityId": "ability:76:obsidian_destroyer_astral_imprisonment",
+      "type": "save",
+      "subtype": "ally-astral-prison",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison:range",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison",
+          "field": "range",
+          "state": "known",
+          "value": 650
+        },
+        "duration": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison:duration",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.75,
+            2.5,
+            3.25,
+            4
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison:magnitude",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison:mana",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison",
+          "field": "mana",
+          "state": "known",
+          "value": 150
+        },
+        "cooldown": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison:cooldown",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison:delay",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "astralDamageExceptionAbsent"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "physical",
+            "magical",
+            "pure"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "obsidian_destroyer_astral_imprisonment"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison",
+      "legacyEffectId": "obsidian_destroyer_astral_imprisonment:save:ally-astral-prison",
+      "order": 2,
+      "legacyAbilityId": "obsidian_destroyer_astral_imprisonment",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison:0"
+      ],
+      "valueIds": [
+        "value:effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison:range",
+        "value:effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison:duration",
+        "value:effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison:magnitude",
+        "value:effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison:mana",
+        "value:effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison:cooldown",
+        "value:effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison:delay"
+      ],
+      "activationId": "activation:76:obsidian_destroyer_astral_imprisonment"
+    },
+    {
+      "effectId": "obsidian_destroyer_astral_imprisonment:damage:astral-release-damage",
+      "heroId": "76",
+      "abilityId": "ability:76:obsidian_destroyer_astral_imprisonment",
+      "type": "damage",
+      "subtype": "astral-release-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage:range",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage",
+          "field": "range",
+          "state": "known",
+          "value": 650
+        },
+        "duration": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage:duration",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage:magnitude",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            90,
+            180,
+            270,
+            360
+          ]
+        },
+        "mana": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage:mana",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 150
+        },
+        "cooldown": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage:cooldown",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage:delay",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage:damageType",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyAstralPrisonEnds"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "obsidian_destroyer_astral_imprisonment"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage",
+      "legacyEffectId": "obsidian_destroyer_astral_imprisonment:damage:astral-release-damage",
+      "order": 3,
+      "legacyAbilityId": "obsidian_destroyer_astral_imprisonment",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage:range",
+        "value:effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage:duration",
+        "value:effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage:magnitude",
+        "value:effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage:mana",
+        "value:effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage:cooldown",
+        "value:effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage:delay",
+        "value:effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage:damageType"
+      ],
+      "activationId": "activation:76:obsidian_destroyer_astral_imprisonment"
+    },
+    {
+      "effectId": "obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft",
+      "heroId": "76",
+      "abilityId": "ability:76:obsidian_destroyer_astral_imprisonment",
+      "type": "modifier",
+      "subtype": "maximum-mana-capacity-theft",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft:range",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft:duration",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            30,
+            40,
+            50,
+            60
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft:magnitude",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft:mana",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft",
+          "field": "mana",
+          "state": "known",
+          "value": 150
+        },
+        "cooldown": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft:cooldown",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft:delay",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "obsidian_destroyer_astral_imprisonment"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft",
+      "legacyEffectId": "obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft",
+      "order": 4,
+      "legacyAbilityId": "obsidian_destroyer_astral_imprisonment",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft:range",
+        "value:effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft:duration",
+        "value:effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft:magnitude",
+        "value:effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft:mana",
+        "value:effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft:cooldown",
+        "value:effect:obsidian_destroyer_astral_imprisonment:modifier:maximum-mana-capacity-theft:delay"
+      ],
+      "activationId": "activation:76:obsidian_destroyer_astral_imprisonment"
+    },
+    {
+      "effectId": "obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement",
+      "heroId": "76",
+      "abilityId": "ability:76:obsidian_destroyer_astral_imprisonment",
+      "type": "modifier",
+      "subtype": "shard-astral-radius-and-allied-movement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement:range",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement:duration",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement:magnitude",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement:mana",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement:cooldown",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement:delay",
+          "ownerId": "effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "obsidian_destroyer_astral_imprisonment:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement",
+      "legacyEffectId": "obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement",
+      "order": 5,
+      "legacyAbilityId": "obsidian_destroyer_astral_imprisonment",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement:range",
+        "value:effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement:duration",
+        "value:effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement:magnitude",
+        "value:effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement:mana",
+        "value:effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement:cooldown",
+        "value:effect:obsidian_destroyer_astral_imprisonment:modifier:shard-astral-radius-and-allied-movement:delay"
+      ],
+      "activationId": "activation:76:obsidian_destroyer_astral_imprisonment"
+    },
+    {
+      "effectId": "obsidian_destroyer_objurgation:save:active-mana-dependent-barrier",
+      "heroId": "76",
+      "abilityId": "ability:76:obsidian_destroyer_objurgation",
+      "type": "save",
+      "subtype": "active-mana-dependent-barrier",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier:range",
+          "ownerId": "effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier:duration",
+          "ownerId": "effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier",
+          "field": "duration",
+          "state": "known",
+          "value": 10
+        },
+        "magnitude": {
+          "id": "value:effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier:magnitude",
+          "ownerId": "effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier:mana",
+          "ownerId": "effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier",
+          "field": "mana",
+          "state": "known",
+          "value": 175
+        },
+        "cooldown": {
+          "id": "value:effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier:cooldown",
+          "ownerId": "effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            36,
+            33,
+            30,
+            27
+          ]
+        },
+        "delay": {
+          "id": "value:effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier:delay",
+          "ownerId": "effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "obsidian_destroyer_objurgation"
+      },
+      "vulnerability": {
+        "breakable": null,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier",
+      "legacyEffectId": "obsidian_destroyer_objurgation:save:active-mana-dependent-barrier",
+      "order": 6,
+      "legacyAbilityId": "obsidian_destroyer_objurgation",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier:range",
+        "value:effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier:duration",
+        "value:effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier:magnitude",
+        "value:effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier:mana",
+        "value:effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier:cooldown",
+        "value:effect:obsidian_destroyer_objurgation:save:active-mana-dependent-barrier:delay"
+      ],
+      "activationId": "activation:76:obsidian_destroyer_objurgation"
+    },
+    {
+      "effectId": "obsidian_destroyer_objurgation:modifier:passive-maximum-mana",
+      "heroId": "76",
+      "abilityId": "ability:76:obsidian_destroyer_objurgation",
+      "type": "modifier",
+      "subtype": "passive-maximum-mana",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana:range",
+          "ownerId": "effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana:duration",
+          "ownerId": "effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana:magnitude",
+          "ownerId": "effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            80,
+            160,
+            240,
+            320
+          ]
+        },
+        "mana": {
+          "id": "value:effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana:mana",
+          "ownerId": "effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana:cooldown",
+          "ownerId": "effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana:delay",
+          "ownerId": "effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "obsidian_destroyer_objurgation:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana",
+      "legacyEffectId": "obsidian_destroyer_objurgation:modifier:passive-maximum-mana",
+      "order": 7,
+      "legacyAbilityId": "obsidian_destroyer_objurgation",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana:range",
+        "value:effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana:duration",
+        "value:effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana:magnitude",
+        "value:effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana:mana",
+        "value:effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana:cooldown",
+        "value:effect:obsidian_destroyer_objurgation:modifier:passive-maximum-mana:delay"
+      ],
+      "activationId": "activation:76:obsidian_destroyer_objurgation"
+    },
+    {
+      "effectId": "obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel",
+      "heroId": "76",
+      "abilityId": "ability:76:obsidian_destroyer_objurgation",
+      "type": "dispel",
+      "subtype": "scepter-threshold-strong-self-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel:range",
+          "ownerId": "effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel:duration",
+          "ownerId": "effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel:magnitude",
+          "ownerId": "effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel:mana",
+          "ownerId": "effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel:cooldown",
+          "ownerId": "effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel:delay",
+          "ownerId": "effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "objurgationThresholdWouldBeCrossed",
+          "objurgationAutomaticTriggerReady"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "self-debuffs"
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "obsidian_destroyer_objurgation:passive"
+      },
+      "vulnerability": {
+        "breakable": null
+      },
+      "exceptions": [],
+      "id": "effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel",
+      "legacyEffectId": "obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel",
+      "order": 8,
+      "legacyAbilityId": "obsidian_destroyer_objurgation",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel:0",
+        "condition:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel:1"
+      ],
+      "valueIds": [
+        "value:effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel:range",
+        "value:effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel:duration",
+        "value:effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel:magnitude",
+        "value:effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel:mana",
+        "value:effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel:cooldown",
+        "value:effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel:delay"
+      ],
+      "activationId": "activation:76:obsidian_destroyer_objurgation"
+    },
+    {
+      "effectId": "obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration",
+      "heroId": "76",
+      "abilityId": "ability:76:obsidian_destroyer_equilibrium",
+      "type": "modifier",
+      "subtype": "probabilistic-mana-restoration",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration:range",
+          "ownerId": "effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration:duration",
+          "ownerId": "effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration:magnitude",
+          "ownerId": "effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration:mana",
+          "ownerId": "effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration:cooldown",
+          "ownerId": "effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration:delay",
+          "ownerId": "effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "equilibriumProcTriggered"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "obsidian_destroyer_equilibrium:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration",
+      "legacyEffectId": "obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration",
+      "order": 9,
+      "legacyAbilityId": "obsidian_destroyer_equilibrium",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration:0"
+      ],
+      "valueIds": [
+        "value:effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration:range",
+        "value:effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration:duration",
+        "value:effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration:magnitude",
+        "value:effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration:mana",
+        "value:effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration:cooldown",
+        "value:effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration:delay"
+      ],
+      "activationId": "activation:76:obsidian_destroyer_equilibrium"
+    },
+    {
+      "effectId": "obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst",
+      "heroId": "76",
+      "abilityId": "ability:76:obsidian_destroyer_sanity_eclipse",
+      "type": "damage",
+      "subtype": "maximum-mana-difference-burst",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst:range",
+          "ownerId": "effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst:duration",
+          "ownerId": "effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst:magnitude",
+          "ownerId": "effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst:mana",
+          "ownerId": "effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            200,
+            300,
+            400
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst:cooldown",
+          "ownerId": "effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            140,
+            130,
+            120
+          ]
+        },
+        "delay": {
+          "id": "value:effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst:delay",
+          "ownerId": "effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst:damageType",
+          "ownerId": "effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "obsidian_destroyer_sanity_eclipse"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst",
+      "legacyEffectId": "obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst",
+      "order": 10,
+      "legacyAbilityId": "obsidian_destroyer_sanity_eclipse",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst:range",
+        "value:effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst:duration",
+        "value:effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst:magnitude",
+        "value:effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst:mana",
+        "value:effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst:cooldown",
+        "value:effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst:delay",
+        "value:effect:obsidian_destroyer_sanity_eclipse:damage:maximum-mana-difference-burst:damageType"
+      ],
+      "activationId": "activation:76:obsidian_destroyer_sanity_eclipse"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:0",
+      "ownerId": "effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "arcaneOrbAttackHits"
+      }
+    },
+    {
+      "id": "condition:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack:1",
+      "ownerId": "effect:obsidian_destroyer_arcane_orb:damage:remaining-mana-pure-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "arcaneOrbManaCostAffordable"
+      }
+    },
+    {
+      "id": "condition:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison:0",
+      "ownerId": "effect:obsidian_destroyer_astral_imprisonment:save:ally-astral-prison",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "astralDamageExceptionAbsent"
+      }
+    },
+    {
+      "id": "condition:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage:0",
+      "ownerId": "effect:obsidian_destroyer_astral_imprisonment:damage:astral-release-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyAstralPrisonEnds"
+      }
+    },
+    {
+      "id": "condition:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel:0",
+      "ownerId": "effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "objurgationThresholdWouldBeCrossed"
+      }
+    },
+    {
+      "id": "condition:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel:1",
+      "ownerId": "effect:obsidian_destroyer_objurgation:dispel:scepter-threshold-strong-self-dispel",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "objurgationAutomaticTriggerReady"
+      }
+    },
+    {
+      "id": "condition:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration:0",
+      "ownerId": "effect:obsidian_destroyer_equilibrium:modifier:probabilistic-mana-restoration",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "equilibriumProcTriggered"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/reconciliation-fields.schema.json",
+  "title": "Selected source field reconciliation",
+  "description": "Field-level pointers to exact retained evidence and canonical record destinations.",
+  "type": "object",
+  "required": ["schemaVersion", "inputSignature", "sourceBundle", "evidenceFile", "evidenceSha256", "fieldCount", "fieldOccurrences", "fields"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "inputSignature": { "$ref": "core.schema.json#/$defs/hash" },
+    "sourceBundle": { "type": "string", "minLength": 1 },
+    "evidenceFile": { "type": "string", "minLength": 1 },
+    "evidenceSha256": { "$ref": "core.schema.json#/$defs/hash" },
+    "fieldCount": { "type": "integer", "minimum": 0 },
+    "fieldOccurrences": { "type": "integer", "minimum": 0 },
+    "fields": { "type": "array", "items": { "$ref": "#/$defs/field" } }
+  },
+  "$defs": {
+    "field": { "type": "object", "required": ["sourcePath", "evidenceFile", "evidencePointer", "occurrences", "preservation", "canonicalTargets"], "properties": {
+      "sourcePath": { "type": "string", "pattern": "^#(?:/|$)" },
+      "evidenceFile": { "type": "string", "minLength": 1 },
+      "evidencePointer": { "type": "string", "pattern": "^#(?:/|$)" },
+      "occurrences": { "type": "integer", "minimum": 1 },
+      "preservation": { "const": "retained-byte-for-byte" },
+      "canonicalTargets": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+    }, "additionalProperties": false }
+  },
+  "additionalProperties": false
+}

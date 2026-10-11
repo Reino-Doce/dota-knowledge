@@ -1,0 +1,1678 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "centaur_hoof_stomp:control:delayed-area-hoof-stun",
+      "heroId": "96",
+      "abilityId": "ability:96:centaur_hoof_stomp",
+      "type": "control",
+      "subtype": "delayed-area-hoof-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:centaur_hoof_stomp:control:delayed-area-hoof-stun:range",
+          "ownerId": "effect:centaur_hoof_stomp:control:delayed-area-hoof-stun",
+          "field": "range",
+          "state": "known",
+          "value": 325
+        },
+        "duration": {
+          "id": "value:effect:centaur_hoof_stomp:control:delayed-area-hoof-stun:duration",
+          "ownerId": "effect:centaur_hoof_stomp:control:delayed-area-hoof-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.6,
+            1.8,
+            2,
+            2.2
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:centaur_hoof_stomp:control:delayed-area-hoof-stun:magnitude",
+          "ownerId": "effect:centaur_hoof_stomp:control:delayed-area-hoof-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:centaur_hoof_stomp:control:delayed-area-hoof-stun:mana",
+          "ownerId": "effect:centaur_hoof_stomp:control:delayed-area-hoof-stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:centaur_hoof_stomp:control:delayed-area-hoof-stun:cooldown",
+          "ownerId": "effect:centaur_hoof_stomp:control:delayed-area-hoof-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:centaur_hoof_stomp:control:delayed-area-hoof-stun:delay",
+          "ownerId": "effect:centaur_hoof_stomp:control:delayed-area-hoof-stun",
+          "field": "delay",
+          "state": "known",
+          "value": 0.5
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "centaur_hoof_stomp"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:centaur_hoof_stomp:control:delayed-area-hoof-stun",
+      "legacyEffectId": "centaur_hoof_stomp:control:delayed-area-hoof-stun",
+      "order": 0,
+      "legacyAbilityId": "centaur_hoof_stomp",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:centaur_hoof_stomp:control:delayed-area-hoof-stun:range",
+        "value:effect:centaur_hoof_stomp:control:delayed-area-hoof-stun:duration",
+        "value:effect:centaur_hoof_stomp:control:delayed-area-hoof-stun:magnitude",
+        "value:effect:centaur_hoof_stomp:control:delayed-area-hoof-stun:mana",
+        "value:effect:centaur_hoof_stomp:control:delayed-area-hoof-stun:cooldown",
+        "value:effect:centaur_hoof_stomp:control:delayed-area-hoof-stun:delay"
+      ],
+      "activationId": "activation:96:centaur_hoof_stomp"
+    },
+    {
+      "effectId": "centaur_hoof_stomp:damage:delayed-area-hoof-damage",
+      "heroId": "96",
+      "abilityId": "ability:96:centaur_hoof_stomp",
+      "type": "damage",
+      "subtype": "delayed-area-hoof-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage:range",
+          "ownerId": "effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage",
+          "field": "range",
+          "state": "known",
+          "value": 325
+        },
+        "duration": {
+          "id": "value:effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage:duration",
+          "ownerId": "effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage:magnitude",
+          "ownerId": "effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            70,
+            140,
+            210,
+            280
+          ]
+        },
+        "mana": {
+          "id": "value:effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage:mana",
+          "ownerId": "effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage:cooldown",
+          "ownerId": "effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            16,
+            14,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage:delay",
+          "ownerId": "effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage",
+          "field": "delay",
+          "state": "known",
+          "value": 0.5
+        },
+        "damageType": {
+          "id": "value:effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage:damageType",
+          "ownerId": "effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "centaur_hoof_stomp"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage",
+      "legacyEffectId": "centaur_hoof_stomp:damage:delayed-area-hoof-damage",
+      "order": 1,
+      "legacyAbilityId": "centaur_hoof_stomp",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage:range",
+        "value:effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage:duration",
+        "value:effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage:magnitude",
+        "value:effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage:mana",
+        "value:effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage:cooldown",
+        "value:effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage:delay",
+        "value:effect:centaur_hoof_stomp:damage:delayed-area-hoof-damage:damageType"
+      ],
+      "activationId": "activation:96:centaur_hoof_stomp"
+    },
+    {
+      "effectId": "centaur_double_edge:damage:double-edge-base-damage",
+      "heroId": "96",
+      "abilityId": "ability:96:centaur_double_edge",
+      "type": "damage",
+      "subtype": "double-edge-base-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:centaur_double_edge:damage:double-edge-base-damage:range",
+          "ownerId": "effect:centaur_double_edge:damage:double-edge-base-damage",
+          "field": "range",
+          "state": "known",
+          "value": [
+            175,
+            175,
+            175,
+            175
+          ]
+        },
+        "duration": {
+          "id": "value:effect:centaur_double_edge:damage:double-edge-base-damage:duration",
+          "ownerId": "effect:centaur_double_edge:damage:double-edge-base-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:centaur_double_edge:damage:double-edge-base-damage:magnitude",
+          "ownerId": "effect:centaur_double_edge:damage:double-edge-base-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            120,
+            180,
+            240,
+            300
+          ]
+        },
+        "mana": {
+          "id": "value:effect:centaur_double_edge:damage:double-edge-base-damage:mana",
+          "ownerId": "effect:centaur_double_edge:damage:double-edge-base-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:centaur_double_edge:damage:double-edge-base-damage:cooldown",
+          "ownerId": "effect:centaur_double_edge:damage:double-edge-base-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": 3.5
+        },
+        "delay": {
+          "id": "value:effect:centaur_double_edge:damage:double-edge-base-damage:delay",
+          "ownerId": "effect:centaur_double_edge:damage:double-edge-base-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:centaur_double_edge:damage:double-edge-base-damage:damageType",
+          "ownerId": "effect:centaur_double_edge:damage:double-edge-base-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "centaur_double_edge"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:centaur_double_edge:damage:double-edge-base-damage",
+      "legacyEffectId": "centaur_double_edge:damage:double-edge-base-damage",
+      "order": 2,
+      "legacyAbilityId": "centaur_double_edge",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:centaur_double_edge:damage:double-edge-base-damage:range",
+        "value:effect:centaur_double_edge:damage:double-edge-base-damage:duration",
+        "value:effect:centaur_double_edge:damage:double-edge-base-damage:magnitude",
+        "value:effect:centaur_double_edge:damage:double-edge-base-damage:mana",
+        "value:effect:centaur_double_edge:damage:double-edge-base-damage:cooldown",
+        "value:effect:centaur_double_edge:damage:double-edge-base-damage:delay",
+        "value:effect:centaur_double_edge:damage:double-edge-base-damage:damageType"
+      ],
+      "activationId": "activation:96:centaur_double_edge"
+    },
+    {
+      "effectId": "centaur_double_edge:slow:shard-double-edge-hero-slow",
+      "heroId": "96",
+      "abilityId": "ability:96:centaur_double_edge",
+      "type": "slow",
+      "subtype": "shard-double-edge-hero-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:centaur_double_edge:slow:shard-double-edge-hero-slow:range",
+          "ownerId": "effect:centaur_double_edge:slow:shard-double-edge-hero-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:centaur_double_edge:slow:shard-double-edge-hero-slow:duration",
+          "ownerId": "effect:centaur_double_edge:slow:shard-double-edge-hero-slow",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:centaur_double_edge:slow:shard-double-edge-hero-slow:magnitude",
+          "ownerId": "effect:centaur_double_edge:slow:shard-double-edge-hero-slow",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:centaur_double_edge:slow:shard-double-edge-hero-slow:mana",
+          "ownerId": "effect:centaur_double_edge:slow:shard-double-edge-hero-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:centaur_double_edge:slow:shard-double-edge-hero-slow:cooldown",
+          "ownerId": "effect:centaur_double_edge:slow:shard-double-edge-hero-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": 3.5
+        },
+        "delay": {
+          "id": "value:effect:centaur_double_edge:slow:shard-double-edge-hero-slow:delay",
+          "ownerId": "effect:centaur_double_edge:slow:shard-double-edge-hero-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "doubleEdgeHitsEnemyHero"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "centaur_double_edge"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:centaur_double_edge:slow:shard-double-edge-hero-slow",
+      "legacyEffectId": "centaur_double_edge:slow:shard-double-edge-hero-slow",
+      "order": 3,
+      "legacyAbilityId": "centaur_double_edge",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:centaur_double_edge:slow:shard-double-edge-hero-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:centaur_double_edge:slow:shard-double-edge-hero-slow:range",
+        "value:effect:centaur_double_edge:slow:shard-double-edge-hero-slow:duration",
+        "value:effect:centaur_double_edge:slow:shard-double-edge-hero-slow:magnitude",
+        "value:effect:centaur_double_edge:slow:shard-double-edge-hero-slow:mana",
+        "value:effect:centaur_double_edge:slow:shard-double-edge-hero-slow:cooldown",
+        "value:effect:centaur_double_edge:slow:shard-double-edge-hero-slow:delay"
+      ],
+      "activationId": "activation:96:centaur_double_edge"
+    },
+    {
+      "effectId": "centaur_double_edge:modifier:shard-per-hero-strength-stacks",
+      "heroId": "96",
+      "abilityId": "ability:96:centaur_double_edge",
+      "type": "modifier",
+      "subtype": "shard-per-hero-strength-stacks",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks:range",
+          "ownerId": "effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks:duration",
+          "ownerId": "effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks:magnitude",
+          "ownerId": "effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks:mana",
+          "ownerId": "effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks:cooldown",
+          "ownerId": "effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks",
+          "field": "cooldown",
+          "state": "known",
+          "value": 3.5
+        },
+        "delay": {
+          "id": "value:effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks:delay",
+          "ownerId": "effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "doubleEdgeHitsEnemyHero"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "centaur_double_edge"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks",
+      "legacyEffectId": "centaur_double_edge:modifier:shard-per-hero-strength-stacks",
+      "order": 4,
+      "legacyAbilityId": "centaur_double_edge",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:centaur_double_edge:modifier:shard-per-hero-strength-stacks:0"
+      ],
+      "valueIds": [
+        "value:effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks:range",
+        "value:effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks:duration",
+        "value:effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks:magnitude",
+        "value:effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks:mana",
+        "value:effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks:cooldown",
+        "value:effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks:delay"
+      ],
+      "activationId": "activation:96:centaur_double_edge"
+    },
+    {
+      "effectId": "centaur_return:damage:attack-hit-retaliate-base",
+      "heroId": "96",
+      "abilityId": "ability:96:centaur_return",
+      "type": "damage",
+      "subtype": "attack-hit-retaliate-base",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:centaur_return:damage:attack-hit-retaliate-base:range",
+          "ownerId": "effect:centaur_return:damage:attack-hit-retaliate-base",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:centaur_return:damage:attack-hit-retaliate-base:duration",
+          "ownerId": "effect:centaur_return:damage:attack-hit-retaliate-base",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:centaur_return:damage:attack-hit-retaliate-base:magnitude",
+          "ownerId": "effect:centaur_return:damage:attack-hit-retaliate-base",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            15,
+            25,
+            35,
+            45
+          ]
+        },
+        "mana": {
+          "id": "value:effect:centaur_return:damage:attack-hit-retaliate-base:mana",
+          "ownerId": "effect:centaur_return:damage:attack-hit-retaliate-base",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:centaur_return:damage:attack-hit-retaliate-base:cooldown",
+          "ownerId": "effect:centaur_return:damage:attack-hit-retaliate-base",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:centaur_return:damage:attack-hit-retaliate-base:delay",
+          "ownerId": "effect:centaur_return:damage:attack-hit-retaliate-base",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:centaur_return:damage:attack-hit-retaliate-base:damageType",
+          "ownerId": "effect:centaur_return:damage:attack-hit-retaliate-base",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "centaurReceivesAttackHit"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "centaur_return"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:centaur_return:damage:attack-hit-retaliate-base",
+      "legacyEffectId": "centaur_return:damage:attack-hit-retaliate-base",
+      "order": 5,
+      "legacyAbilityId": "centaur_return",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:centaur_return:damage:attack-hit-retaliate-base:0"
+      ],
+      "valueIds": [
+        "value:effect:centaur_return:damage:attack-hit-retaliate-base:range",
+        "value:effect:centaur_return:damage:attack-hit-retaliate-base:duration",
+        "value:effect:centaur_return:damage:attack-hit-retaliate-base:magnitude",
+        "value:effect:centaur_return:damage:attack-hit-retaliate-base:mana",
+        "value:effect:centaur_return:damage:attack-hit-retaliate-base:cooldown",
+        "value:effect:centaur_return:damage:attack-hit-retaliate-base:delay",
+        "value:effect:centaur_return:damage:attack-hit-retaliate-base:damageType"
+      ],
+      "activationId": "activation:96:centaur_return"
+    },
+    {
+      "effectId": "centaur_work_horse:modifier:scepter-cart-and-stampede-benefits",
+      "heroId": "96",
+      "abilityId": "ability:96:centaur_work_horse",
+      "type": "modifier",
+      "subtype": "scepter-cart-and-stampede-benefits",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits:range",
+          "ownerId": "effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits:duration",
+          "ownerId": "effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits:magnitude",
+          "ownerId": "effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits:mana",
+          "ownerId": "effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits:cooldown",
+          "ownerId": "effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits",
+          "field": "cooldown",
+          "state": "known",
+          "value": 35
+        },
+        "delay": {
+          "id": "value:effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits:delay",
+          "ownerId": "effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "centaur_stampede"
+        ],
+        "upgrades": [
+          "scepter"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "centaur_work_horse"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits",
+      "legacyEffectId": "centaur_work_horse:modifier:scepter-cart-and-stampede-benefits",
+      "order": 6,
+      "legacyAbilityId": "centaur_work_horse",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits:range",
+        "value:effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits:duration",
+        "value:effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits:magnitude",
+        "value:effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits:mana",
+        "value:effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits:cooldown",
+        "value:effect:centaur_work_horse:modifier:scepter-cart-and-stampede-benefits:delay"
+      ],
+      "activationId": "activation:96:centaur_work_horse"
+    },
+    {
+      "effectId": "centaur_mount:save:scepter-hitched-ally-invulnerability",
+      "heroId": "96",
+      "abilityId": "ability:96:centaur_mount",
+      "type": "save",
+      "subtype": "scepter-hitched-ally-invulnerability",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:centaur_mount:save:scepter-hitched-ally-invulnerability:range",
+          "ownerId": "effect:centaur_mount:save:scepter-hitched-ally-invulnerability",
+          "field": "range",
+          "state": "known",
+          "value": 200
+        },
+        "duration": {
+          "id": "value:effect:centaur_mount:save:scepter-hitched-ally-invulnerability:duration",
+          "ownerId": "effect:centaur_mount:save:scepter-hitched-ally-invulnerability",
+          "field": "duration",
+          "state": "known",
+          "value": 8
+        },
+        "magnitude": {
+          "id": "value:effect:centaur_mount:save:scepter-hitched-ally-invulnerability:magnitude",
+          "ownerId": "effect:centaur_mount:save:scepter-hitched-ally-invulnerability",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:centaur_mount:save:scepter-hitched-ally-invulnerability:mana",
+          "ownerId": "effect:centaur_mount:save:scepter-hitched-ally-invulnerability",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:centaur_mount:save:scepter-hitched-ally-invulnerability:cooldown",
+          "ownerId": "effect:centaur_mount:save:scepter-hitched-ally-invulnerability",
+          "field": "cooldown",
+          "state": "known",
+          "value": 30
+        },
+        "delay": {
+          "id": "value:effect:centaur_mount:save:scepter-hitched-ally-invulnerability:delay",
+          "ownerId": "effect:centaur_mount:save:scepter-hitched-ally-invulnerability",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "centaur_work_horse"
+        ],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "centaurCartActive"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "physical",
+            "magical",
+            "pure"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "centaur_mount"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:centaur_mount:save:scepter-hitched-ally-invulnerability",
+      "legacyEffectId": "centaur_mount:save:scepter-hitched-ally-invulnerability",
+      "order": 7,
+      "legacyAbilityId": "centaur_mount",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:centaur_mount:save:scepter-hitched-ally-invulnerability:0"
+      ],
+      "valueIds": [
+        "value:effect:centaur_mount:save:scepter-hitched-ally-invulnerability:range",
+        "value:effect:centaur_mount:save:scepter-hitched-ally-invulnerability:duration",
+        "value:effect:centaur_mount:save:scepter-hitched-ally-invulnerability:magnitude",
+        "value:effect:centaur_mount:save:scepter-hitched-ally-invulnerability:mana",
+        "value:effect:centaur_mount:save:scepter-hitched-ally-invulnerability:cooldown",
+        "value:effect:centaur_mount:save:scepter-hitched-ally-invulnerability:delay"
+      ],
+      "activationId": "activation:96:centaur_mount"
+    },
+    {
+      "effectId": "centaur_stampede:mobility:global-allied-phased-charge",
+      "heroId": "96",
+      "abilityId": "ability:96:centaur_stampede",
+      "type": "mobility",
+      "subtype": "global-allied-phased-charge",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:centaur_stampede:mobility:global-allied-phased-charge:range",
+          "ownerId": "effect:centaur_stampede:mobility:global-allied-phased-charge",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:centaur_stampede:mobility:global-allied-phased-charge:duration",
+          "ownerId": "effect:centaur_stampede:mobility:global-allied-phased-charge",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3.5,
+            4,
+            4.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:centaur_stampede:mobility:global-allied-phased-charge:magnitude",
+          "ownerId": "effect:centaur_stampede:mobility:global-allied-phased-charge",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:centaur_stampede:mobility:global-allied-phased-charge:mana",
+          "ownerId": "effect:centaur_stampede:mobility:global-allied-phased-charge",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            200,
+            250
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:centaur_stampede:mobility:global-allied-phased-charge:cooldown",
+          "ownerId": "effect:centaur_stampede:mobility:global-allied-phased-charge",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            100,
+            95,
+            90
+          ]
+        },
+        "delay": {
+          "id": "value:effect:centaur_stampede:mobility:global-allied-phased-charge:delay",
+          "ownerId": "effect:centaur_stampede:mobility:global-allied-phased-charge",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": true
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "centaur_stampede"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:centaur_stampede:mobility:global-allied-phased-charge",
+      "legacyEffectId": "centaur_stampede:mobility:global-allied-phased-charge",
+      "order": 8,
+      "legacyAbilityId": "centaur_stampede",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:centaur_stampede:mobility:global-allied-phased-charge:range",
+        "value:effect:centaur_stampede:mobility:global-allied-phased-charge:duration",
+        "value:effect:centaur_stampede:mobility:global-allied-phased-charge:magnitude",
+        "value:effect:centaur_stampede:mobility:global-allied-phased-charge:mana",
+        "value:effect:centaur_stampede:mobility:global-allied-phased-charge:cooldown",
+        "value:effect:centaur_stampede:mobility:global-allied-phased-charge:delay"
+      ],
+      "activationId": "activation:96:centaur_stampede"
+    },
+    {
+      "effectId": "centaur_stampede:slow:one-trample-slow",
+      "heroId": "96",
+      "abilityId": "ability:96:centaur_stampede",
+      "type": "slow",
+      "subtype": "one-trample-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:centaur_stampede:slow:one-trample-slow:range",
+          "ownerId": "effect:centaur_stampede:slow:one-trample-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:centaur_stampede:slow:one-trample-slow:duration",
+          "ownerId": "effect:centaur_stampede:slow:one-trample-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 3
+        },
+        "magnitude": {
+          "id": "value:effect:centaur_stampede:slow:one-trample-slow:magnitude",
+          "ownerId": "effect:centaur_stampede:slow:one-trample-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": 100
+        },
+        "mana": {
+          "id": "value:effect:centaur_stampede:slow:one-trample-slow:mana",
+          "ownerId": "effect:centaur_stampede:slow:one-trample-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            200,
+            250
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:centaur_stampede:slow:one-trample-slow:cooldown",
+          "ownerId": "effect:centaur_stampede:slow:one-trample-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            100,
+            95,
+            90
+          ]
+        },
+        "delay": {
+          "id": "value:effect:centaur_stampede:slow:one-trample-slow:delay",
+          "ownerId": "effect:centaur_stampede:slow:one-trample-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "stampedeAllyTramplesEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "centaur_stampede"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:centaur_stampede:slow:one-trample-slow",
+      "legacyEffectId": "centaur_stampede:slow:one-trample-slow",
+      "order": 9,
+      "legacyAbilityId": "centaur_stampede",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:centaur_stampede:slow:one-trample-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:centaur_stampede:slow:one-trample-slow:range",
+        "value:effect:centaur_stampede:slow:one-trample-slow:duration",
+        "value:effect:centaur_stampede:slow:one-trample-slow:magnitude",
+        "value:effect:centaur_stampede:slow:one-trample-slow:mana",
+        "value:effect:centaur_stampede:slow:one-trample-slow:cooldown",
+        "value:effect:centaur_stampede:slow:one-trample-slow:delay"
+      ],
+      "activationId": "activation:96:centaur_stampede"
+    },
+    {
+      "effectId": "centaur_stampede:damage:strength-dependent-trample-damage",
+      "heroId": "96",
+      "abilityId": "ability:96:centaur_stampede",
+      "type": "damage",
+      "subtype": "strength-dependent-trample-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:centaur_stampede:damage:strength-dependent-trample-damage:range",
+          "ownerId": "effect:centaur_stampede:damage:strength-dependent-trample-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:centaur_stampede:damage:strength-dependent-trample-damage:duration",
+          "ownerId": "effect:centaur_stampede:damage:strength-dependent-trample-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:centaur_stampede:damage:strength-dependent-trample-damage:magnitude",
+          "ownerId": "effect:centaur_stampede:damage:strength-dependent-trample-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:centaur_stampede:damage:strength-dependent-trample-damage:mana",
+          "ownerId": "effect:centaur_stampede:damage:strength-dependent-trample-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            200,
+            250
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:centaur_stampede:damage:strength-dependent-trample-damage:cooldown",
+          "ownerId": "effect:centaur_stampede:damage:strength-dependent-trample-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            100,
+            95,
+            90
+          ]
+        },
+        "delay": {
+          "id": "value:effect:centaur_stampede:damage:strength-dependent-trample-damage:delay",
+          "ownerId": "effect:centaur_stampede:damage:strength-dependent-trample-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:centaur_stampede:damage:strength-dependent-trample-damage:damageType",
+          "ownerId": "effect:centaur_stampede:damage:strength-dependent-trample-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "stampedeAllyTramplesEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "centaur_stampede"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:centaur_stampede:damage:strength-dependent-trample-damage",
+      "legacyEffectId": "centaur_stampede:damage:strength-dependent-trample-damage",
+      "order": 10,
+      "legacyAbilityId": "centaur_stampede",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:centaur_stampede:damage:strength-dependent-trample-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:centaur_stampede:damage:strength-dependent-trample-damage:range",
+        "value:effect:centaur_stampede:damage:strength-dependent-trample-damage:duration",
+        "value:effect:centaur_stampede:damage:strength-dependent-trample-damage:magnitude",
+        "value:effect:centaur_stampede:damage:strength-dependent-trample-damage:mana",
+        "value:effect:centaur_stampede:damage:strength-dependent-trample-damage:cooldown",
+        "value:effect:centaur_stampede:damage:strength-dependent-trample-damage:delay",
+        "value:effect:centaur_stampede:damage:strength-dependent-trample-damage:damageType"
+      ],
+      "activationId": "activation:96:centaur_stampede"
+    },
+    {
+      "effectId": "centaur_horsepower:mobility:strength-derived-innate-speed",
+      "heroId": "96",
+      "abilityId": "ability:96:centaur_horsepower",
+      "type": "mobility",
+      "subtype": "strength-derived-innate-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:centaur_horsepower:mobility:strength-derived-innate-speed:range",
+          "ownerId": "effect:centaur_horsepower:mobility:strength-derived-innate-speed",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:centaur_horsepower:mobility:strength-derived-innate-speed:duration",
+          "ownerId": "effect:centaur_horsepower:mobility:strength-derived-innate-speed",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:centaur_horsepower:mobility:strength-derived-innate-speed:magnitude",
+          "ownerId": "effect:centaur_horsepower:mobility:strength-derived-innate-speed",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:centaur_horsepower:mobility:strength-derived-innate-speed:mana",
+          "ownerId": "effect:centaur_horsepower:mobility:strength-derived-innate-speed",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:centaur_horsepower:mobility:strength-derived-innate-speed:cooldown",
+          "ownerId": "effect:centaur_horsepower:mobility:strength-derived-innate-speed",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:centaur_horsepower:mobility:strength-derived-innate-speed:delay",
+          "ownerId": "effect:centaur_horsepower:mobility:strength-derived-innate-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "centaur_horsepower:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:centaur_horsepower:mobility:strength-derived-innate-speed",
+      "legacyEffectId": "centaur_horsepower:mobility:strength-derived-innate-speed",
+      "order": 11,
+      "legacyAbilityId": "centaur_horsepower",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:centaur_horsepower:mobility:strength-derived-innate-speed:range",
+        "value:effect:centaur_horsepower:mobility:strength-derived-innate-speed:duration",
+        "value:effect:centaur_horsepower:mobility:strength-derived-innate-speed:magnitude",
+        "value:effect:centaur_horsepower:mobility:strength-derived-innate-speed:mana",
+        "value:effect:centaur_horsepower:mobility:strength-derived-innate-speed:cooldown",
+        "value:effect:centaur_horsepower:mobility:strength-derived-innate-speed:delay"
+      ],
+      "activationId": "activation:96:centaur_horsepower"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:centaur_double_edge:slow:shard-double-edge-hero-slow:0",
+      "ownerId": "effect:centaur_double_edge:slow:shard-double-edge-hero-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "doubleEdgeHitsEnemyHero"
+      }
+    },
+    {
+      "id": "condition:centaur_double_edge:modifier:shard-per-hero-strength-stacks:0",
+      "ownerId": "effect:centaur_double_edge:modifier:shard-per-hero-strength-stacks",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "doubleEdgeHitsEnemyHero"
+      }
+    },
+    {
+      "id": "condition:centaur_return:damage:attack-hit-retaliate-base:0",
+      "ownerId": "effect:centaur_return:damage:attack-hit-retaliate-base",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "centaurReceivesAttackHit"
+      }
+    },
+    {
+      "id": "condition:centaur_mount:save:scepter-hitched-ally-invulnerability:0",
+      "ownerId": "effect:centaur_mount:save:scepter-hitched-ally-invulnerability",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "centaurCartActive"
+      }
+    },
+    {
+      "id": "condition:centaur_stampede:slow:one-trample-slow:0",
+      "ownerId": "effect:centaur_stampede:slow:one-trample-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "stampedeAllyTramplesEnemy"
+      }
+    },
+    {
+      "id": "condition:centaur_stampede:damage:strength-dependent-trample-damage:0",
+      "ownerId": "effect:centaur_stampede:damage:strength-dependent-trample-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "stampedeAllyTramplesEnemy"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1995 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "ember_spirit_searing_chains:control:random-visible-target-chains",
+      "heroId": "106",
+      "abilityId": "ability:106:ember_spirit_searing_chains",
+      "type": "control",
+      "subtype": "random-visible-target-chains",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ember_spirit_searing_chains:control:random-visible-target-chains:range",
+          "ownerId": "effect:ember_spirit_searing_chains:control:random-visible-target-chains",
+          "field": "range",
+          "state": "known",
+          "value": 400
+        },
+        "duration": {
+          "id": "value:effect:ember_spirit_searing_chains:control:random-visible-target-chains:duration",
+          "ownerId": "effect:ember_spirit_searing_chains:control:random-visible-target-chains",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.25,
+            1.75,
+            2.25,
+            2.75
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:ember_spirit_searing_chains:control:random-visible-target-chains:magnitude",
+          "ownerId": "effect:ember_spirit_searing_chains:control:random-visible-target-chains",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ember_spirit_searing_chains:control:random-visible-target-chains:mana",
+          "ownerId": "effect:ember_spirit_searing_chains:control:random-visible-target-chains",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ember_spirit_searing_chains:control:random-visible-target-chains:cooldown",
+          "ownerId": "effect:ember_spirit_searing_chains:control:random-visible-target-chains",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            13,
+            12,
+            11,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ember_spirit_searing_chains:control:random-visible-target-chains:delay",
+          "ownerId": "effect:ember_spirit_searing_chains:control:random-visible-target-chains",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemySelectedBySearingChains"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "ember_spirit_searing_chains"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ember_spirit_searing_chains:control:random-visible-target-chains",
+      "legacyEffectId": "ember_spirit_searing_chains:control:random-visible-target-chains",
+      "order": 0,
+      "legacyAbilityId": "ember_spirit_searing_chains",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ember_spirit_searing_chains:control:random-visible-target-chains:0"
+      ],
+      "valueIds": [
+        "value:effect:ember_spirit_searing_chains:control:random-visible-target-chains:range",
+        "value:effect:ember_spirit_searing_chains:control:random-visible-target-chains:duration",
+        "value:effect:ember_spirit_searing_chains:control:random-visible-target-chains:magnitude",
+        "value:effect:ember_spirit_searing_chains:control:random-visible-target-chains:mana",
+        "value:effect:ember_spirit_searing_chains:control:random-visible-target-chains:cooldown",
+        "value:effect:ember_spirit_searing_chains:control:random-visible-target-chains:delay"
+      ],
+      "activationId": "activation:106:ember_spirit_searing_chains"
+    },
+    {
+      "effectId": "ember_spirit_searing_chains:damage:chain-damage-over-time",
+      "heroId": "106",
+      "abilityId": "ability:106:ember_spirit_searing_chains",
+      "type": "damage",
+      "subtype": "chain-damage-over-time",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ember_spirit_searing_chains:damage:chain-damage-over-time:range",
+          "ownerId": "effect:ember_spirit_searing_chains:damage:chain-damage-over-time",
+          "field": "range",
+          "state": "known",
+          "value": 400
+        },
+        "duration": {
+          "id": "value:effect:ember_spirit_searing_chains:damage:chain-damage-over-time:duration",
+          "ownerId": "effect:ember_spirit_searing_chains:damage:chain-damage-over-time",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.25,
+            1.75,
+            2.25,
+            2.75
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:ember_spirit_searing_chains:damage:chain-damage-over-time:magnitude",
+          "ownerId": "effect:ember_spirit_searing_chains:damage:chain-damage-over-time",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ember_spirit_searing_chains:damage:chain-damage-over-time:mana",
+          "ownerId": "effect:ember_spirit_searing_chains:damage:chain-damage-over-time",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ember_spirit_searing_chains:damage:chain-damage-over-time:cooldown",
+          "ownerId": "effect:ember_spirit_searing_chains:damage:chain-damage-over-time",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            13,
+            12,
+            11,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ember_spirit_searing_chains:damage:chain-damage-over-time:delay",
+          "ownerId": "effect:ember_spirit_searing_chains:damage:chain-damage-over-time",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ember_spirit_searing_chains:damage:chain-damage-over-time:damageType",
+          "ownerId": "effect:ember_spirit_searing_chains:damage:chain-damage-over-time",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemySelectedBySearingChains"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "ember_spirit_searing_chains"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ember_spirit_searing_chains:damage:chain-damage-over-time",
+      "legacyEffectId": "ember_spirit_searing_chains:damage:chain-damage-over-time",
+      "order": 1,
+      "legacyAbilityId": "ember_spirit_searing_chains",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ember_spirit_searing_chains:damage:chain-damage-over-time:0"
+      ],
+      "valueIds": [
+        "value:effect:ember_spirit_searing_chains:damage:chain-damage-over-time:range",
+        "value:effect:ember_spirit_searing_chains:damage:chain-damage-over-time:duration",
+        "value:effect:ember_spirit_searing_chains:damage:chain-damage-over-time:magnitude",
+        "value:effect:ember_spirit_searing_chains:damage:chain-damage-over-time:mana",
+        "value:effect:ember_spirit_searing_chains:damage:chain-damage-over-time:cooldown",
+        "value:effect:ember_spirit_searing_chains:damage:chain-damage-over-time:delay",
+        "value:effect:ember_spirit_searing_chains:damage:chain-damage-over-time:damageType"
+      ],
+      "activationId": "activation:106:ember_spirit_searing_chains"
+    },
+    {
+      "effectId": "ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage",
+      "heroId": "106",
+      "abilityId": "ability:106:ember_spirit_sleight_of_fist",
+      "type": "damage",
+      "subtype": "sleight-hero-bonus-attack-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage:range",
+          "ownerId": "effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage",
+          "field": "range",
+          "state": "known",
+          "value": 650
+        },
+        "duration": {
+          "id": "value:effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage:duration",
+          "ownerId": "effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage:magnitude",
+          "ownerId": "effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            40,
+            80,
+            120,
+            160
+          ]
+        },
+        "mana": {
+          "id": "value:effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage:mana",
+          "ownerId": "effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage:cooldown",
+          "ownerId": "effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            13,
+            11,
+            9,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage:delay",
+          "ownerId": "effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage:damageType",
+          "ownerId": "effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyIncludedInSleightCastTargets"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ember_spirit_sleight_of_fist"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage",
+      "legacyEffectId": "ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage",
+      "order": 2,
+      "legacyAbilityId": "ember_spirit_sleight_of_fist",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage:range",
+        "value:effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage:duration",
+        "value:effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage:magnitude",
+        "value:effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage:mana",
+        "value:effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage:cooldown",
+        "value:effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage:delay",
+        "value:effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage:damageType"
+      ],
+      "activationId": "activation:106:ember_spirit_sleight_of_fist"
+    },
+    {
+      "effectId": "ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start",
+      "heroId": "106",
+      "abilityId": "ability:106:ember_spirit_sleight_of_fist",
+      "type": "mobility",
+      "subtype": "sleight-sequence-return-to-start",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start:range",
+          "ownerId": "effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start",
+          "field": "range",
+          "state": "known",
+          "value": 650
+        },
+        "duration": {
+          "id": "value:effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start:duration",
+          "ownerId": "effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start:magnitude",
+          "ownerId": "effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start:mana",
+          "ownerId": "effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start:cooldown",
+          "ownerId": "effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            13,
+            11,
+            9,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start:delay",
+          "ownerId": "effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "sleightHasEligibleCastTargets"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ember_spirit_sleight_of_fist"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start",
+      "legacyEffectId": "ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start",
+      "order": 3,
+      "legacyAbilityId": "ember_spirit_sleight_of_fist",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start:0"
+      ],
+      "valueIds": [
+        "value:effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start:range",
+        "value:effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start:duration",
+        "value:effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start:magnitude",
+        "value:effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start:mana",
+        "value:effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start:cooldown",
+        "value:effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start:delay"
+      ],
+      "activationId": "activation:106:ember_spirit_sleight_of_fist"
+    },
+    {
+      "effectId": "ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption",
+      "heroId": "106",
+      "abilityId": "ability:106:ember_spirit_flame_guard",
+      "type": "save",
+      "subtype": "flame-guard-partial-magic-absorption",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption:range",
+          "ownerId": "effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption:duration",
+          "ownerId": "effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            12,
+            14,
+            16,
+            18
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption:magnitude",
+          "ownerId": "effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            60,
+            140,
+            220,
+            300
+          ]
+        },
+        "mana": {
+          "id": "value:effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption:mana",
+          "ownerId": "effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            65,
+            80,
+            95,
+            110
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption:cooldown",
+          "ownerId": "effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption",
+          "field": "cooldown",
+          "state": "known",
+          "value": 32
+        },
+        "delay": {
+          "id": "value:effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption:delay",
+          "ownerId": "effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ember_spirit_flame_guard"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption",
+      "legacyEffectId": "ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption",
+      "order": 4,
+      "legacyAbilityId": "ember_spirit_flame_guard",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption:range",
+        "value:effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption:duration",
+        "value:effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption:magnitude",
+        "value:effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption:mana",
+        "value:effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption:cooldown",
+        "value:effect:ember_spirit_flame_guard:save:flame-guard-partial-magic-absorption:delay"
+      ],
+      "activationId": "activation:106:ember_spirit_flame_guard"
+    },
+    {
+      "effectId": "ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage",
+      "heroId": "106",
+      "abilityId": "ability:106:ember_spirit_flame_guard",
+      "type": "damage",
+      "subtype": "flame-guard-surviving-barrier-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:range",
+          "ownerId": "effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage",
+          "field": "range",
+          "state": "known",
+          "value": 500
+        },
+        "duration": {
+          "id": "value:effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:duration",
+          "ownerId": "effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:magnitude",
+          "ownerId": "effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:mana",
+          "ownerId": "effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:cooldown",
+          "ownerId": "effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:delay",
+          "ownerId": "effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:damageType",
+          "ownerId": "effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "flameGuardBarrierRemains",
+          "enemyInsideFlameGuard"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "ember_spirit_flame_guard:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage",
+      "legacyEffectId": "ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage",
+      "order": 5,
+      "legacyAbilityId": "ember_spirit_flame_guard",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:0",
+        "condition:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:1"
+      ],
+      "valueIds": [
+        "value:effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:range",
+        "value:effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:duration",
+        "value:effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:magnitude",
+        "value:effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:mana",
+        "value:effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:cooldown",
+        "value:effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:delay",
+        "value:effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:damageType"
+      ],
+      "activationId": "activation:106:ember_spirit_flame_guard"
+    },
+    {
+      "effectId": "ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant",
+      "heroId": "106",
+      "abilityId": "ability:106:ember_spirit_activate_fire_remnant",
+      "type": "mobility",
+      "subtype": "paid-dash-to-existing-remnant",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant:range",
+          "ownerId": "effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant:duration",
+          "ownerId": "effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant:magnitude",
+          "ownerId": "effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant:mana",
+          "ownerId": "effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant:cooldown",
+          "ownerId": "effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0
+        },
+        "delay": {
+          "id": "value:effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant:delay",
+          "ownerId": "effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "ember_spirit_fire_remnant"
+        ],
+        "upgrades": [],
+        "requiresContext": [
+          "activeFireRemnantAvailable"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ember_spirit_activate_fire_remnant"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant",
+      "legacyEffectId": "ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant",
+      "order": 6,
+      "legacyAbilityId": "ember_spirit_activate_fire_remnant",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant:0"
+      ],
+      "valueIds": [
+        "value:effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant:range",
+        "value:effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant:duration",
+        "value:effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant:magnitude",
+        "value:effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant:mana",
+        "value:effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant:cooldown",
+        "value:effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant:delay"
+      ],
+      "activationId": "activation:106:ember_spirit_activate_fire_remnant"
+    },
+    {
+      "effectId": "ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost",
+      "heroId": "106",
+      "abilityId": "ability:106:ember_spirit_activate_fire_remnant",
+      "type": "modifier",
+      "subtype": "scepter-remnant-activation-cost",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost:range",
+          "ownerId": "effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost:duration",
+          "ownerId": "effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost:magnitude",
+          "ownerId": "effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost:mana",
+          "ownerId": "effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost:cooldown",
+          "ownerId": "effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0
+        },
+        "delay": {
+          "id": "value:effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost:delay",
+          "ownerId": "effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "ember_spirit_fire_remnant"
+        ],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ember_spirit_activate_fire_remnant"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost",
+      "legacyEffectId": "ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost",
+      "order": 7,
+      "legacyAbilityId": "ember_spirit_activate_fire_remnant",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost:range",
+        "value:effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost:duration",
+        "value:effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost:magnitude",
+        "value:effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost:mana",
+        "value:effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost:cooldown",
+        "value:effect:ember_spirit_activate_fire_remnant:modifier:scepter-remnant-activation-cost:delay"
+      ],
+      "activationId": "activation:106:ember_spirit_activate_fire_remnant"
+    },
+    {
+      "effectId": "ember_spirit_fire_remnant:modifier:charged-remnant-placement",
+      "heroId": "106",
+      "abilityId": "ability:106:ember_spirit_fire_remnant",
+      "type": "modifier",
+      "subtype": "charged-remnant-placement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement:range",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement",
+          "field": "range",
+          "state": "known",
+          "value": 1400
+        },
+        "duration": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement:duration",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement",
+          "field": "duration",
+          "state": "known",
+          "value": 45
+        },
+        "magnitude": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement:magnitude",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement:mana",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement:cooldown",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0.5
+        },
+        "delay": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement:delay",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "fireRemnantChargeAvailable"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ember_spirit_fire_remnant"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement",
+      "legacyEffectId": "ember_spirit_fire_remnant:modifier:charged-remnant-placement",
+      "order": 8,
+      "legacyAbilityId": "ember_spirit_fire_remnant",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ember_spirit_fire_remnant:modifier:charged-remnant-placement:0"
+      ],
+      "valueIds": [
+        "value:effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement:range",
+        "value:effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement:duration",
+        "value:effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement:magnitude",
+        "value:effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement:mana",
+        "value:effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement:cooldown",
+        "value:effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement:delay"
+      ],
+      "activationId": "activation:106:ember_spirit_fire_remnant"
+    },
+    {
+      "effectId": "ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion",
+      "heroId": "106",
+      "abilityId": "ability:106:ember_spirit_fire_remnant",
+      "type": "damage",
+      "subtype": "consumed-remnant-area-explosion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:range",
+          "ownerId": "effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:duration",
+          "ownerId": "effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:magnitude",
+          "ownerId": "effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            100,
+            200,
+            300
+          ]
+        },
+        "mana": {
+          "id": "value:effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:mana",
+          "ownerId": "effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:cooldown",
+          "ownerId": "effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:delay",
+          "ownerId": "effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:damageType",
+          "ownerId": "effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "ember_spirit_activate_fire_remnant"
+        ],
+        "upgrades": [],
+        "requiresContext": [
+          "paidRemnantDashConsumesRemnant",
+          "enemyInsideConsumedRemnantExplosion"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ember_spirit_fire_remnant:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion",
+      "legacyEffectId": "ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion",
+      "order": 9,
+      "legacyAbilityId": "ember_spirit_fire_remnant",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:0",
+        "condition:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:1"
+      ],
+      "valueIds": [
+        "value:effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:range",
+        "value:effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:duration",
+        "value:effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:magnitude",
+        "value:effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:mana",
+        "value:effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:cooldown",
+        "value:effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:delay",
+        "value:effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:damageType"
+      ],
+      "activationId": "activation:106:ember_spirit_fire_remnant"
+    },
+    {
+      "effectId": "ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity",
+      "heroId": "106",
+      "abilityId": "ability:106:ember_spirit_fire_remnant",
+      "type": "modifier",
+      "subtype": "scepter-remnant-range-speed-capacity",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity:range",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity:duration",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity:magnitude",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity:mana",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity:cooldown",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity:delay",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ember_spirit_fire_remnant:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity",
+      "legacyEffectId": "ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity",
+      "order": 10,
+      "legacyAbilityId": "ember_spirit_fire_remnant",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity:range",
+        "value:effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity:duration",
+        "value:effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity:magnitude",
+        "value:effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity:mana",
+        "value:effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity:cooldown",
+        "value:effect:ember_spirit_fire_remnant:modifier:scepter-remnant-range-speed-capacity:delay"
+      ],
+      "activationId": "activation:106:ember_spirit_fire_remnant"
+    },
+    {
+      "effectId": "ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant",
+      "heroId": "106",
+      "abilityId": "ability:106:ember_spirit_fire_remnant",
+      "type": "modifier",
+      "subtype": "shard-nearby-death-charge-and-death-remnant",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant:range",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant:duration",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant:magnitude",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant:mana",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant:cooldown",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant:delay",
+          "ownerId": "effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ember_spirit_fire_remnant:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant",
+      "legacyEffectId": "ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant",
+      "order": 11,
+      "legacyAbilityId": "ember_spirit_fire_remnant",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant:range",
+        "value:effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant:duration",
+        "value:effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant:magnitude",
+        "value:effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant:mana",
+        "value:effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant:cooldown",
+        "value:effect:ember_spirit_fire_remnant:modifier:shard-nearby-death-charge-and-death-remnant:delay"
+      ],
+      "activationId": "activation:106:ember_spirit_fire_remnant"
+    },
+    {
+      "effectId": "ember_spirit_immolation:damage:hero-centered-level-scaled-immolation",
+      "heroId": "106",
+      "abilityId": "ability:106:ember_spirit_immolation",
+      "type": "damage",
+      "subtype": "hero-centered-level-scaled-immolation",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation:range",
+          "ownerId": "effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation",
+          "field": "range",
+          "state": "known",
+          "value": 200
+        },
+        "duration": {
+          "id": "value:effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation:duration",
+          "ownerId": "effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation:magnitude",
+          "ownerId": "effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation:mana",
+          "ownerId": "effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation:cooldown",
+          "ownerId": "effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation:delay",
+          "ownerId": "effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation:damageType",
+          "ownerId": "effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "enemyInsideEmberImmolation"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ember_spirit_immolation:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation",
+      "legacyEffectId": "ember_spirit_immolation:damage:hero-centered-level-scaled-immolation",
+      "order": 12,
+      "legacyAbilityId": "ember_spirit_immolation",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation:0"
+      ],
+      "valueIds": [
+        "value:effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation:range",
+        "value:effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation:duration",
+        "value:effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation:magnitude",
+        "value:effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation:mana",
+        "value:effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation:cooldown",
+        "value:effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation:delay",
+        "value:effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation:damageType"
+      ],
+      "activationId": "activation:106:ember_spirit_immolation"
+    },
+    {
+      "effectId": "ember_spirit_immolation:modifier:shard-remnant-owned-immolation",
+      "heroId": "106",
+      "abilityId": "ability:106:ember_spirit_immolation",
+      "type": "modifier",
+      "subtype": "shard-remnant-owned-immolation",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation:range",
+          "ownerId": "effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation:duration",
+          "ownerId": "effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation:magnitude",
+          "ownerId": "effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation:mana",
+          "ownerId": "effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation:cooldown",
+          "ownerId": "effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation:delay",
+          "ownerId": "effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [
+          "ember_spirit_fire_remnant"
+        ],
+        "upgrades": [
+          "shard"
+        ],
+        "innate": true,
+        "requiresContext": [
+          "activeFireRemnantAvailable"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ember_spirit_immolation:passive"
+      },
+      "vulnerability": {
+        "breakable": false
+      },
+      "exceptions": [],
+      "id": "effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation",
+      "legacyEffectId": "ember_spirit_immolation:modifier:shard-remnant-owned-immolation",
+      "order": 13,
+      "legacyAbilityId": "ember_spirit_immolation",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ember_spirit_immolation:modifier:shard-remnant-owned-immolation:0"
+      ],
+      "valueIds": [
+        "value:effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation:range",
+        "value:effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation:duration",
+        "value:effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation:magnitude",
+        "value:effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation:mana",
+        "value:effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation:cooldown",
+        "value:effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation:delay"
+      ],
+      "activationId": "activation:106:ember_spirit_immolation"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:ember_spirit_searing_chains:control:random-visible-target-chains:0",
+      "ownerId": "effect:ember_spirit_searing_chains:control:random-visible-target-chains",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemySelectedBySearingChains"
+      }
+    },
+    {
+      "id": "condition:ember_spirit_searing_chains:damage:chain-damage-over-time:0",
+      "ownerId": "effect:ember_spirit_searing_chains:damage:chain-damage-over-time",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemySelectedBySearingChains"
+      }
+    },
+    {
+      "id": "condition:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage:0",
+      "ownerId": "effect:ember_spirit_sleight_of_fist:damage:sleight-hero-bonus-attack-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyIncludedInSleightCastTargets"
+      }
+    },
+    {
+      "id": "condition:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start:0",
+      "ownerId": "effect:ember_spirit_sleight_of_fist:mobility:sleight-sequence-return-to-start",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "sleightHasEligibleCastTargets"
+      }
+    },
+    {
+      "id": "condition:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:0",
+      "ownerId": "effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "flameGuardBarrierRemains"
+      }
+    },
+    {
+      "id": "condition:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage:1",
+      "ownerId": "effect:ember_spirit_flame_guard:damage:flame-guard-surviving-barrier-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideFlameGuard"
+      }
+    },
+    {
+      "id": "condition:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant:0",
+      "ownerId": "effect:ember_spirit_activate_fire_remnant:mobility:paid-dash-to-existing-remnant",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "activeFireRemnantAvailable"
+      }
+    },
+    {
+      "id": "condition:ember_spirit_fire_remnant:modifier:charged-remnant-placement:0",
+      "ownerId": "effect:ember_spirit_fire_remnant:modifier:charged-remnant-placement",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "fireRemnantChargeAvailable"
+      }
+    },
+    {
+      "id": "condition:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:0",
+      "ownerId": "effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "paidRemnantDashConsumesRemnant"
+      }
+    },
+    {
+      "id": "condition:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion:1",
+      "ownerId": "effect:ember_spirit_fire_remnant:damage:consumed-remnant-area-explosion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideConsumedRemnantExplosion"
+      }
+    },
+    {
+      "id": "condition:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation:0",
+      "ownerId": "effect:ember_spirit_immolation:damage:hero-centered-level-scaled-immolation",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideEmberImmolation"
+      }
+    },
+    {
+      "id": "condition:ember_spirit_immolation:modifier:shard-remnant-owned-immolation:0",
+      "ownerId": "effect:ember_spirit_immolation:modifier:shard-remnant-owned-immolation",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "activeFireRemnantAvailable"
+      }
+    }
+  ]
+}

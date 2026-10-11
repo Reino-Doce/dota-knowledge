@@ -1,0 +1,2411 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "tusk_ice_shards:damage:shards-projectile-contact",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_ice_shards",
+      "type": "damage",
+      "subtype": "shards-projectile-contact",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_ice_shards:damage:shards-projectile-contact:range",
+          "ownerId": "effect:tusk_ice_shards:damage:shards-projectile-contact",
+          "field": "range",
+          "state": "known",
+          "value": 1400
+        },
+        "duration": {
+          "id": "value:effect:tusk_ice_shards:damage:shards-projectile-contact:duration",
+          "ownerId": "effect:tusk_ice_shards:damage:shards-projectile-contact",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_ice_shards:damage:shards-projectile-contact:magnitude",
+          "ownerId": "effect:tusk_ice_shards:damage:shards-projectile-contact",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            75,
+            150,
+            225,
+            300
+          ]
+        },
+        "mana": {
+          "id": "value:effect:tusk_ice_shards:damage:shards-projectile-contact:mana",
+          "ownerId": "effect:tusk_ice_shards:damage:shards-projectile-contact",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_ice_shards:damage:shards-projectile-contact:cooldown",
+          "ownerId": "effect:tusk_ice_shards:damage:shards-projectile-contact",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            23,
+            20,
+            17,
+            14
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tusk_ice_shards:damage:shards-projectile-contact:delay",
+          "ownerId": "effect:tusk_ice_shards:damage:shards-projectile-contact",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:tusk_ice_shards:damage:shards-projectile-contact:damageType",
+          "ownerId": "effect:tusk_ice_shards:damage:shards-projectile-contact",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "iceShardsProjectileHitsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_ice_shards"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tusk_ice_shards:damage:shards-projectile-contact",
+      "legacyEffectId": "tusk_ice_shards:damage:shards-projectile-contact",
+      "order": 0,
+      "legacyAbilityId": "tusk_ice_shards",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tusk_ice_shards:damage:shards-projectile-contact:0"
+      ],
+      "valueIds": [
+        "value:effect:tusk_ice_shards:damage:shards-projectile-contact:range",
+        "value:effect:tusk_ice_shards:damage:shards-projectile-contact:duration",
+        "value:effect:tusk_ice_shards:damage:shards-projectile-contact:magnitude",
+        "value:effect:tusk_ice_shards:damage:shards-projectile-contact:mana",
+        "value:effect:tusk_ice_shards:damage:shards-projectile-contact:cooldown",
+        "value:effect:tusk_ice_shards:damage:shards-projectile-contact:delay",
+        "value:effect:tusk_ice_shards:damage:shards-projectile-contact:damageType"
+      ],
+      "activationId": "activation:100:tusk_ice_shards"
+    },
+    {
+      "effectId": "tusk_ice_shards:modifier:impassable-shard-barrier",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_ice_shards",
+      "type": "modifier",
+      "subtype": "impassable-shard-barrier",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_ice_shards:modifier:impassable-shard-barrier:range",
+          "ownerId": "effect:tusk_ice_shards:modifier:impassable-shard-barrier",
+          "field": "range",
+          "state": "known",
+          "value": 1400
+        },
+        "duration": {
+          "id": "value:effect:tusk_ice_shards:modifier:impassable-shard-barrier:duration",
+          "ownerId": "effect:tusk_ice_shards:modifier:impassable-shard-barrier",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_ice_shards:modifier:impassable-shard-barrier:magnitude",
+          "ownerId": "effect:tusk_ice_shards:modifier:impassable-shard-barrier",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:tusk_ice_shards:modifier:impassable-shard-barrier:mana",
+          "ownerId": "effect:tusk_ice_shards:modifier:impassable-shard-barrier",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_ice_shards:modifier:impassable-shard-barrier:cooldown",
+          "ownerId": "effect:tusk_ice_shards:modifier:impassable-shard-barrier",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            23,
+            20,
+            17,
+            14
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tusk_ice_shards:modifier:impassable-shard-barrier:delay",
+          "ownerId": "effect:tusk_ice_shards:modifier:impassable-shard-barrier",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_ice_shards"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tusk_ice_shards:modifier:impassable-shard-barrier",
+      "legacyEffectId": "tusk_ice_shards:modifier:impassable-shard-barrier",
+      "order": 1,
+      "legacyAbilityId": "tusk_ice_shards",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:tusk_ice_shards:modifier:impassable-shard-barrier:range",
+        "value:effect:tusk_ice_shards:modifier:impassable-shard-barrier:duration",
+        "value:effect:tusk_ice_shards:modifier:impassable-shard-barrier:magnitude",
+        "value:effect:tusk_ice_shards:modifier:impassable-shard-barrier:mana",
+        "value:effect:tusk_ice_shards:modifier:impassable-shard-barrier:cooldown",
+        "value:effect:tusk_ice_shards:modifier:impassable-shard-barrier:delay"
+      ],
+      "activationId": "activation:100:tusk_ice_shards"
+    },
+    {
+      "effectId": "tusk_snowball:mobility:targeted-snowball-travel",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_snowball",
+      "type": "mobility",
+      "subtype": "targeted-snowball-travel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_snowball:mobility:targeted-snowball-travel:range",
+          "ownerId": "effect:tusk_snowball:mobility:targeted-snowball-travel",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:tusk_snowball:mobility:targeted-snowball-travel:duration",
+          "ownerId": "effect:tusk_snowball:mobility:targeted-snowball-travel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_snowball:mobility:targeted-snowball-travel:magnitude",
+          "ownerId": "effect:tusk_snowball:mobility:targeted-snowball-travel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:tusk_snowball:mobility:targeted-snowball-travel:mana",
+          "ownerId": "effect:tusk_snowball:mobility:targeted-snowball-travel",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            75,
+            75,
+            75,
+            75
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_snowball:mobility:targeted-snowball-travel:cooldown",
+          "ownerId": "effect:tusk_snowball:mobility:targeted-snowball-travel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            21,
+            19,
+            17,
+            15
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tusk_snowball:mobility:targeted-snowball-travel:delay",
+          "ownerId": "effect:tusk_snowball:mobility:targeted-snowball-travel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "snowballEnemyTargetAvailable"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_snowball"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tusk_snowball:mobility:targeted-snowball-travel",
+      "legacyEffectId": "tusk_snowball:mobility:targeted-snowball-travel",
+      "order": 2,
+      "legacyAbilityId": "tusk_snowball",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tusk_snowball:mobility:targeted-snowball-travel:0"
+      ],
+      "valueIds": [
+        "value:effect:tusk_snowball:mobility:targeted-snowball-travel:range",
+        "value:effect:tusk_snowball:mobility:targeted-snowball-travel:duration",
+        "value:effect:tusk_snowball:mobility:targeted-snowball-travel:magnitude",
+        "value:effect:tusk_snowball:mobility:targeted-snowball-travel:mana",
+        "value:effect:tusk_snowball:mobility:targeted-snowball-travel:cooldown",
+        "value:effect:tusk_snowball:mobility:targeted-snowball-travel:delay"
+      ],
+      "activationId": "activation:100:tusk_snowball"
+    },
+    {
+      "effectId": "tusk_snowball:control:snowball-contact-base-stun",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_snowball",
+      "type": "control",
+      "subtype": "snowball-contact-base-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_snowball:control:snowball-contact-base-stun:range",
+          "ownerId": "effect:tusk_snowball:control:snowball-contact-base-stun",
+          "field": "range",
+          "state": "known",
+          "value": 1150
+        },
+        "duration": {
+          "id": "value:effect:tusk_snowball:control:snowball-contact-base-stun:duration",
+          "ownerId": "effect:tusk_snowball:control:snowball-contact-base-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            0.6,
+            0.8,
+            1,
+            1.2
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_snowball:control:snowball-contact-base-stun:magnitude",
+          "ownerId": "effect:tusk_snowball:control:snowball-contact-base-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:tusk_snowball:control:snowball-contact-base-stun:mana",
+          "ownerId": "effect:tusk_snowball:control:snowball-contact-base-stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            75,
+            75,
+            75,
+            75
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_snowball:control:snowball-contact-base-stun:cooldown",
+          "ownerId": "effect:tusk_snowball:control:snowball-contact-base-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            21,
+            19,
+            17,
+            15
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tusk_snowball:control:snowball-contact-base-stun:delay",
+          "ownerId": "effect:tusk_snowball:control:snowball-contact-base-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "snowballReachesEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_snowball"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tusk_snowball:control:snowball-contact-base-stun",
+      "legacyEffectId": "tusk_snowball:control:snowball-contact-base-stun",
+      "order": 3,
+      "legacyAbilityId": "tusk_snowball",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tusk_snowball:control:snowball-contact-base-stun:0"
+      ],
+      "valueIds": [
+        "value:effect:tusk_snowball:control:snowball-contact-base-stun:range",
+        "value:effect:tusk_snowball:control:snowball-contact-base-stun:duration",
+        "value:effect:tusk_snowball:control:snowball-contact-base-stun:magnitude",
+        "value:effect:tusk_snowball:control:snowball-contact-base-stun:mana",
+        "value:effect:tusk_snowball:control:snowball-contact-base-stun:cooldown",
+        "value:effect:tusk_snowball:control:snowball-contact-base-stun:delay"
+      ],
+      "activationId": "activation:100:tusk_snowball"
+    },
+    {
+      "effectId": "tusk_snowball:damage:snowball-contact-base-damage",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_snowball",
+      "type": "damage",
+      "subtype": "snowball-contact-base-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_snowball:damage:snowball-contact-base-damage:range",
+          "ownerId": "effect:tusk_snowball:damage:snowball-contact-base-damage",
+          "field": "range",
+          "state": "known",
+          "value": 1150
+        },
+        "duration": {
+          "id": "value:effect:tusk_snowball:damage:snowball-contact-base-damage:duration",
+          "ownerId": "effect:tusk_snowball:damage:snowball-contact-base-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_snowball:damage:snowball-contact-base-damage:magnitude",
+          "ownerId": "effect:tusk_snowball:damage:snowball-contact-base-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            80,
+            140,
+            200,
+            260
+          ]
+        },
+        "mana": {
+          "id": "value:effect:tusk_snowball:damage:snowball-contact-base-damage:mana",
+          "ownerId": "effect:tusk_snowball:damage:snowball-contact-base-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            75,
+            75,
+            75,
+            75
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_snowball:damage:snowball-contact-base-damage:cooldown",
+          "ownerId": "effect:tusk_snowball:damage:snowball-contact-base-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            21,
+            19,
+            17,
+            15
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tusk_snowball:damage:snowball-contact-base-damage:delay",
+          "ownerId": "effect:tusk_snowball:damage:snowball-contact-base-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:tusk_snowball:damage:snowball-contact-base-damage:damageType",
+          "ownerId": "effect:tusk_snowball:damage:snowball-contact-base-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "snowballReachesEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_snowball"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tusk_snowball:damage:snowball-contact-base-damage",
+      "legacyEffectId": "tusk_snowball:damage:snowball-contact-base-damage",
+      "order": 4,
+      "legacyAbilityId": "tusk_snowball",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tusk_snowball:damage:snowball-contact-base-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:tusk_snowball:damage:snowball-contact-base-damage:range",
+        "value:effect:tusk_snowball:damage:snowball-contact-base-damage:duration",
+        "value:effect:tusk_snowball:damage:snowball-contact-base-damage:magnitude",
+        "value:effect:tusk_snowball:damage:snowball-contact-base-damage:mana",
+        "value:effect:tusk_snowball:damage:snowball-contact-base-damage:cooldown",
+        "value:effect:tusk_snowball:damage:snowball-contact-base-damage:delay",
+        "value:effect:tusk_snowball:damage:snowball-contact-base-damage:damageType"
+      ],
+      "activationId": "activation:100:tusk_snowball"
+    },
+    {
+      "effectId": "tusk_snowball:modifier:snowball-passenger-capture",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_snowball",
+      "type": "modifier",
+      "subtype": "snowball-passenger-capture",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_snowball:modifier:snowball-passenger-capture:range",
+          "ownerId": "effect:tusk_snowball:modifier:snowball-passenger-capture",
+          "field": "range",
+          "state": "unknown",
+          "reason": "The retained declaration requires additional expression or branch context."
+        },
+        "duration": {
+          "id": "value:effect:tusk_snowball:modifier:snowball-passenger-capture:duration",
+          "ownerId": "effect:tusk_snowball:modifier:snowball-passenger-capture",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_snowball:modifier:snowball-passenger-capture:magnitude",
+          "ownerId": "effect:tusk_snowball:modifier:snowball-passenger-capture",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:tusk_snowball:modifier:snowball-passenger-capture:mana",
+          "ownerId": "effect:tusk_snowball:modifier:snowball-passenger-capture",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_snowball:modifier:snowball-passenger-capture:cooldown",
+          "ownerId": "effect:tusk_snowball:modifier:snowball-passenger-capture",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:tusk_snowball:modifier:snowball-passenger-capture:delay",
+          "ownerId": "effect:tusk_snowball:modifier:snowball-passenger-capture",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "snowballActive",
+          "eligibleSnowballPassengerAvailable"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_snowball:passive"
+      },
+      "vulnerability": {
+        "rootDisabled": true
+      },
+      "exceptions": [],
+      "id": "effect:tusk_snowball:modifier:snowball-passenger-capture",
+      "legacyEffectId": "tusk_snowball:modifier:snowball-passenger-capture",
+      "order": 5,
+      "legacyAbilityId": "tusk_snowball",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tusk_snowball:modifier:snowball-passenger-capture:0",
+        "condition:tusk_snowball:modifier:snowball-passenger-capture:1"
+      ],
+      "valueIds": [
+        "value:effect:tusk_snowball:modifier:snowball-passenger-capture:range",
+        "value:effect:tusk_snowball:modifier:snowball-passenger-capture:duration",
+        "value:effect:tusk_snowball:modifier:snowball-passenger-capture:magnitude",
+        "value:effect:tusk_snowball:modifier:snowball-passenger-capture:mana",
+        "value:effect:tusk_snowball:modifier:snowball-passenger-capture:cooldown",
+        "value:effect:tusk_snowball:modifier:snowball-passenger-capture:delay"
+      ],
+      "activationId": "activation:100:tusk_snowball"
+    },
+    {
+      "effectId": "tusk_tag_team:damage:tag-team-attack-bonus",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_tag_team",
+      "type": "damage",
+      "subtype": "tag-team-attack-bonus",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_tag_team:damage:tag-team-attack-bonus:range",
+          "ownerId": "effect:tusk_tag_team:damage:tag-team-attack-bonus",
+          "field": "range",
+          "state": "known",
+          "value": 350
+        },
+        "duration": {
+          "id": "value:effect:tusk_tag_team:damage:tag-team-attack-bonus:duration",
+          "ownerId": "effect:tusk_tag_team:damage:tag-team-attack-bonus",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_tag_team:damage:tag-team-attack-bonus:magnitude",
+          "ownerId": "effect:tusk_tag_team:damage:tag-team-attack-bonus",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            25,
+            50,
+            75,
+            100
+          ]
+        },
+        "mana": {
+          "id": "value:effect:tusk_tag_team:damage:tag-team-attack-bonus:mana",
+          "ownerId": "effect:tusk_tag_team:damage:tag-team-attack-bonus",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_tag_team:damage:tag-team-attack-bonus:cooldown",
+          "ownerId": "effect:tusk_tag_team:damage:tag-team-attack-bonus",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:tusk_tag_team:damage:tag-team-attack-bonus:delay",
+          "ownerId": "effect:tusk_tag_team:damage:tag-team-attack-bonus",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:tusk_tag_team:damage:tag-team-attack-bonus:damageType",
+          "ownerId": "effect:tusk_tag_team:damage:tag-team-attack-bonus",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "tagTeamAuraEstablished",
+          "eligibleAttackHitsInsideTagTeam"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_tag_team:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:tusk_tag_team:damage:tag-team-attack-bonus",
+      "legacyEffectId": "tusk_tag_team:damage:tag-team-attack-bonus",
+      "order": 6,
+      "legacyAbilityId": "tusk_tag_team",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tusk_tag_team:damage:tag-team-attack-bonus:0",
+        "condition:tusk_tag_team:damage:tag-team-attack-bonus:1"
+      ],
+      "valueIds": [
+        "value:effect:tusk_tag_team:damage:tag-team-attack-bonus:range",
+        "value:effect:tusk_tag_team:damage:tag-team-attack-bonus:duration",
+        "value:effect:tusk_tag_team:damage:tag-team-attack-bonus:magnitude",
+        "value:effect:tusk_tag_team:damage:tag-team-attack-bonus:mana",
+        "value:effect:tusk_tag_team:damage:tag-team-attack-bonus:cooldown",
+        "value:effect:tusk_tag_team:damage:tag-team-attack-bonus:delay",
+        "value:effect:tusk_tag_team:damage:tag-team-attack-bonus:damageType"
+      ],
+      "activationId": "activation:100:tusk_tag_team"
+    },
+    {
+      "effectId": "tusk_tag_team:slow:tag-team-brief-hit-slow",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_tag_team",
+      "type": "slow",
+      "subtype": "tag-team-brief-hit-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_tag_team:slow:tag-team-brief-hit-slow:range",
+          "ownerId": "effect:tusk_tag_team:slow:tag-team-brief-hit-slow",
+          "field": "range",
+          "state": "known",
+          "value": 350
+        },
+        "duration": {
+          "id": "value:effect:tusk_tag_team:slow:tag-team-brief-hit-slow:duration",
+          "ownerId": "effect:tusk_tag_team:slow:tag-team-brief-hit-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 0.5
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_tag_team:slow:tag-team-brief-hit-slow:magnitude",
+          "ownerId": "effect:tusk_tag_team:slow:tag-team-brief-hit-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": 75
+        },
+        "mana": {
+          "id": "value:effect:tusk_tag_team:slow:tag-team-brief-hit-slow:mana",
+          "ownerId": "effect:tusk_tag_team:slow:tag-team-brief-hit-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_tag_team:slow:tag-team-brief-hit-slow:cooldown",
+          "ownerId": "effect:tusk_tag_team:slow:tag-team-brief-hit-slow",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:tusk_tag_team:slow:tag-team-brief-hit-slow:delay",
+          "ownerId": "effect:tusk_tag_team:slow:tag-team-brief-hit-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "tagTeamAuraEstablished",
+          "eligibleAttackHitsInsideTagTeam"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_tag_team:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:tusk_tag_team:slow:tag-team-brief-hit-slow",
+      "legacyEffectId": "tusk_tag_team:slow:tag-team-brief-hit-slow",
+      "order": 7,
+      "legacyAbilityId": "tusk_tag_team",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tusk_tag_team:slow:tag-team-brief-hit-slow:0",
+        "condition:tusk_tag_team:slow:tag-team-brief-hit-slow:1"
+      ],
+      "valueIds": [
+        "value:effect:tusk_tag_team:slow:tag-team-brief-hit-slow:range",
+        "value:effect:tusk_tag_team:slow:tag-team-brief-hit-slow:duration",
+        "value:effect:tusk_tag_team:slow:tag-team-brief-hit-slow:magnitude",
+        "value:effect:tusk_tag_team:slow:tag-team-brief-hit-slow:mana",
+        "value:effect:tusk_tag_team:slow:tag-team-brief-hit-slow:cooldown",
+        "value:effect:tusk_tag_team:slow:tag-team-brief-hit-slow:delay"
+      ],
+      "activationId": "activation:100:tusk_tag_team"
+    },
+    {
+      "effectId": "tusk_drinking_buddies:displacement:shard-friendly-tag-pull",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_drinking_buddies",
+      "type": "displacement",
+      "subtype": "shard-friendly-tag-pull",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull:range",
+          "ownerId": "effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull",
+          "field": "range",
+          "state": "known",
+          "value": 1000
+        },
+        "duration": {
+          "id": "value:effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull:duration",
+          "ownerId": "effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull",
+          "field": "duration",
+          "state": "known",
+          "value": 0.2
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull:magnitude",
+          "ownerId": "effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull:mana",
+          "ownerId": "effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull:cooldown",
+          "ownerId": "effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull",
+          "field": "cooldown",
+          "state": "known",
+          "value": 14
+        },
+        "delay": {
+          "id": "value:effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull:delay",
+          "ownerId": "effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "tuskOutsideSnowball",
+          "taggedAllyBeyondMinimumDistance"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_drinking_buddies"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull",
+      "legacyEffectId": "tusk_drinking_buddies:displacement:shard-friendly-tag-pull",
+      "order": 8,
+      "legacyAbilityId": "tusk_drinking_buddies",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tusk_drinking_buddies:displacement:shard-friendly-tag-pull:0",
+        "condition:tusk_drinking_buddies:displacement:shard-friendly-tag-pull:1"
+      ],
+      "valueIds": [
+        "value:effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull:range",
+        "value:effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull:duration",
+        "value:effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull:magnitude",
+        "value:effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull:mana",
+        "value:effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull:cooldown",
+        "value:effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull:delay"
+      ],
+      "activationId": "activation:100:tusk_drinking_buddies"
+    },
+    {
+      "effectId": "tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_drinking_buddies",
+      "type": "modifier",
+      "subtype": "shard-tagged-partner-armor-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed:range",
+          "ownerId": "effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed",
+          "field": "range",
+          "state": "known",
+          "value": 1000
+        },
+        "duration": {
+          "id": "value:effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed:duration",
+          "ownerId": "effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed:magnitude",
+          "ownerId": "effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed:mana",
+          "ownerId": "effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed:cooldown",
+          "ownerId": "effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed",
+          "field": "cooldown",
+          "state": "known",
+          "value": 14
+        },
+        "delay": {
+          "id": "value:effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed:delay",
+          "ownerId": "effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "tuskOutsideSnowball"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_drinking_buddies"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed",
+      "legacyEffectId": "tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed",
+      "order": 9,
+      "legacyAbilityId": "tusk_drinking_buddies",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed:0"
+      ],
+      "valueIds": [
+        "value:effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed:range",
+        "value:effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed:duration",
+        "value:effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed:magnitude",
+        "value:effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed:mana",
+        "value:effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed:cooldown",
+        "value:effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed:delay"
+      ],
+      "activationId": "activation:100:tusk_drinking_buddies"
+    },
+    {
+      "effectId": "tusk_walrus_kick:displacement:scepter-directional-kick",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_walrus_kick",
+      "type": "displacement",
+      "subtype": "scepter-directional-kick",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_walrus_kick:displacement:scepter-directional-kick:range",
+          "ownerId": "effect:tusk_walrus_kick:displacement:scepter-directional-kick",
+          "field": "range",
+          "state": "known",
+          "value": 250
+        },
+        "duration": {
+          "id": "value:effect:tusk_walrus_kick:displacement:scepter-directional-kick:duration",
+          "ownerId": "effect:tusk_walrus_kick:displacement:scepter-directional-kick",
+          "field": "duration",
+          "state": "known",
+          "value": 1
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_walrus_kick:displacement:scepter-directional-kick:magnitude",
+          "ownerId": "effect:tusk_walrus_kick:displacement:scepter-directional-kick",
+          "field": "magnitude",
+          "state": "known",
+          "value": 1200
+        },
+        "mana": {
+          "id": "value:effect:tusk_walrus_kick:displacement:scepter-directional-kick:mana",
+          "ownerId": "effect:tusk_walrus_kick:displacement:scepter-directional-kick",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_walrus_kick:displacement:scepter-directional-kick:cooldown",
+          "ownerId": "effect:tusk_walrus_kick:displacement:scepter-directional-kick",
+          "field": "cooldown",
+          "state": "known",
+          "value": 12
+        },
+        "delay": {
+          "id": "value:effect:tusk_walrus_kick:displacement:scepter-directional-kick:delay",
+          "ownerId": "effect:tusk_walrus_kick:displacement:scepter-directional-kick",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_walrus_kick"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tusk_walrus_kick:displacement:scepter-directional-kick",
+      "legacyEffectId": "tusk_walrus_kick:displacement:scepter-directional-kick",
+      "order": 10,
+      "legacyAbilityId": "tusk_walrus_kick",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:tusk_walrus_kick:displacement:scepter-directional-kick:range",
+        "value:effect:tusk_walrus_kick:displacement:scepter-directional-kick:duration",
+        "value:effect:tusk_walrus_kick:displacement:scepter-directional-kick:magnitude",
+        "value:effect:tusk_walrus_kick:displacement:scepter-directional-kick:mana",
+        "value:effect:tusk_walrus_kick:displacement:scepter-directional-kick:cooldown",
+        "value:effect:tusk_walrus_kick:displacement:scepter-directional-kick:delay"
+      ],
+      "activationId": "activation:100:tusk_walrus_kick"
+    },
+    {
+      "effectId": "tusk_walrus_kick:control:scepter-kick-stun",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_walrus_kick",
+      "type": "control",
+      "subtype": "scepter-kick-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_walrus_kick:control:scepter-kick-stun:range",
+          "ownerId": "effect:tusk_walrus_kick:control:scepter-kick-stun",
+          "field": "range",
+          "state": "known",
+          "value": 250
+        },
+        "duration": {
+          "id": "value:effect:tusk_walrus_kick:control:scepter-kick-stun:duration",
+          "ownerId": "effect:tusk_walrus_kick:control:scepter-kick-stun",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_walrus_kick:control:scepter-kick-stun:magnitude",
+          "ownerId": "effect:tusk_walrus_kick:control:scepter-kick-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:tusk_walrus_kick:control:scepter-kick-stun:mana",
+          "ownerId": "effect:tusk_walrus_kick:control:scepter-kick-stun",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_walrus_kick:control:scepter-kick-stun:cooldown",
+          "ownerId": "effect:tusk_walrus_kick:control:scepter-kick-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": 12
+        },
+        "delay": {
+          "id": "value:effect:tusk_walrus_kick:control:scepter-kick-stun:delay",
+          "ownerId": "effect:tusk_walrus_kick:control:scepter-kick-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_walrus_kick"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tusk_walrus_kick:control:scepter-kick-stun",
+      "legacyEffectId": "tusk_walrus_kick:control:scepter-kick-stun",
+      "order": 11,
+      "legacyAbilityId": "tusk_walrus_kick",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:tusk_walrus_kick:control:scepter-kick-stun:range",
+        "value:effect:tusk_walrus_kick:control:scepter-kick-stun:duration",
+        "value:effect:tusk_walrus_kick:control:scepter-kick-stun:magnitude",
+        "value:effect:tusk_walrus_kick:control:scepter-kick-stun:mana",
+        "value:effect:tusk_walrus_kick:control:scepter-kick-stun:cooldown",
+        "value:effect:tusk_walrus_kick:control:scepter-kick-stun:delay"
+      ],
+      "activationId": "activation:100:tusk_walrus_kick"
+    },
+    {
+      "effectId": "tusk_walrus_kick:damage:scepter-kick-damage",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_walrus_kick",
+      "type": "damage",
+      "subtype": "scepter-kick-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_walrus_kick:damage:scepter-kick-damage:range",
+          "ownerId": "effect:tusk_walrus_kick:damage:scepter-kick-damage",
+          "field": "range",
+          "state": "known",
+          "value": 250
+        },
+        "duration": {
+          "id": "value:effect:tusk_walrus_kick:damage:scepter-kick-damage:duration",
+          "ownerId": "effect:tusk_walrus_kick:damage:scepter-kick-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_walrus_kick:damage:scepter-kick-damage:magnitude",
+          "ownerId": "effect:tusk_walrus_kick:damage:scepter-kick-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": 550
+        },
+        "mana": {
+          "id": "value:effect:tusk_walrus_kick:damage:scepter-kick-damage:mana",
+          "ownerId": "effect:tusk_walrus_kick:damage:scepter-kick-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_walrus_kick:damage:scepter-kick-damage:cooldown",
+          "ownerId": "effect:tusk_walrus_kick:damage:scepter-kick-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": 12
+        },
+        "delay": {
+          "id": "value:effect:tusk_walrus_kick:damage:scepter-kick-damage:delay",
+          "ownerId": "effect:tusk_walrus_kick:damage:scepter-kick-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:tusk_walrus_kick:damage:scepter-kick-damage:damageType",
+          "ownerId": "effect:tusk_walrus_kick:damage:scepter-kick-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_walrus_kick"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tusk_walrus_kick:damage:scepter-kick-damage",
+      "legacyEffectId": "tusk_walrus_kick:damage:scepter-kick-damage",
+      "order": 12,
+      "legacyAbilityId": "tusk_walrus_kick",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:tusk_walrus_kick:damage:scepter-kick-damage:range",
+        "value:effect:tusk_walrus_kick:damage:scepter-kick-damage:duration",
+        "value:effect:tusk_walrus_kick:damage:scepter-kick-damage:magnitude",
+        "value:effect:tusk_walrus_kick:damage:scepter-kick-damage:mana",
+        "value:effect:tusk_walrus_kick:damage:scepter-kick-damage:cooldown",
+        "value:effect:tusk_walrus_kick:damage:scepter-kick-damage:delay",
+        "value:effect:tusk_walrus_kick:damage:scepter-kick-damage:damageType"
+      ],
+      "activationId": "activation:100:tusk_walrus_kick"
+    },
+    {
+      "effectId": "tusk_walrus_kick:slow:scepter-kick-slow",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_walrus_kick",
+      "type": "slow",
+      "subtype": "scepter-kick-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_walrus_kick:slow:scepter-kick-slow:range",
+          "ownerId": "effect:tusk_walrus_kick:slow:scepter-kick-slow",
+          "field": "range",
+          "state": "known",
+          "value": 250
+        },
+        "duration": {
+          "id": "value:effect:tusk_walrus_kick:slow:scepter-kick-slow:duration",
+          "ownerId": "effect:tusk_walrus_kick:slow:scepter-kick-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 2
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_walrus_kick:slow:scepter-kick-slow:magnitude",
+          "ownerId": "effect:tusk_walrus_kick:slow:scepter-kick-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": 40
+        },
+        "mana": {
+          "id": "value:effect:tusk_walrus_kick:slow:scepter-kick-slow:mana",
+          "ownerId": "effect:tusk_walrus_kick:slow:scepter-kick-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_walrus_kick:slow:scepter-kick-slow:cooldown",
+          "ownerId": "effect:tusk_walrus_kick:slow:scepter-kick-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": 12
+        },
+        "delay": {
+          "id": "value:effect:tusk_walrus_kick:slow:scepter-kick-slow:delay",
+          "ownerId": "effect:tusk_walrus_kick:slow:scepter-kick-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_walrus_kick"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:tusk_walrus_kick:slow:scepter-kick-slow",
+      "legacyEffectId": "tusk_walrus_kick:slow:scepter-kick-slow",
+      "order": 13,
+      "legacyAbilityId": "tusk_walrus_kick",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:tusk_walrus_kick:slow:scepter-kick-slow:range",
+        "value:effect:tusk_walrus_kick:slow:scepter-kick-slow:duration",
+        "value:effect:tusk_walrus_kick:slow:scepter-kick-slow:magnitude",
+        "value:effect:tusk_walrus_kick:slow:scepter-kick-slow:mana",
+        "value:effect:tusk_walrus_kick:slow:scepter-kick-slow:cooldown",
+        "value:effect:tusk_walrus_kick:slow:scepter-kick-slow:delay"
+      ],
+      "activationId": "activation:100:tusk_walrus_kick"
+    },
+    {
+      "effectId": "tusk_walrus_punch:modifier:true-strike-critical-punch",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_walrus_punch",
+      "type": "modifier",
+      "subtype": "true-strike-critical-punch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_walrus_punch:modifier:true-strike-critical-punch:range",
+          "ownerId": "effect:tusk_walrus_punch:modifier:true-strike-critical-punch",
+          "field": "range",
+          "state": "known",
+          "value": 150
+        },
+        "duration": {
+          "id": "value:effect:tusk_walrus_punch:modifier:true-strike-critical-punch:duration",
+          "ownerId": "effect:tusk_walrus_punch:modifier:true-strike-critical-punch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_walrus_punch:modifier:true-strike-critical-punch:magnitude",
+          "ownerId": "effect:tusk_walrus_punch:modifier:true-strike-critical-punch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:tusk_walrus_punch:modifier:true-strike-critical-punch:mana",
+          "ownerId": "effect:tusk_walrus_punch:modifier:true-strike-critical-punch",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_walrus_punch:modifier:true-strike-critical-punch:cooldown",
+          "ownerId": "effect:tusk_walrus_punch:modifier:true-strike-critical-punch",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            13,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tusk_walrus_punch:modifier:true-strike-critical-punch:delay",
+          "ownerId": "effect:tusk_walrus_punch:modifier:true-strike-critical-punch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "walrusPunchAttackHits"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_walrus_punch"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:tusk_walrus_punch:modifier:true-strike-critical-punch",
+      "legacyEffectId": "tusk_walrus_punch:modifier:true-strike-critical-punch",
+      "order": 14,
+      "legacyAbilityId": "tusk_walrus_punch",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tusk_walrus_punch:modifier:true-strike-critical-punch:0"
+      ],
+      "valueIds": [
+        "value:effect:tusk_walrus_punch:modifier:true-strike-critical-punch:range",
+        "value:effect:tusk_walrus_punch:modifier:true-strike-critical-punch:duration",
+        "value:effect:tusk_walrus_punch:modifier:true-strike-critical-punch:magnitude",
+        "value:effect:tusk_walrus_punch:modifier:true-strike-critical-punch:mana",
+        "value:effect:tusk_walrus_punch:modifier:true-strike-critical-punch:cooldown",
+        "value:effect:tusk_walrus_punch:modifier:true-strike-critical-punch:delay"
+      ],
+      "activationId": "activation:100:tusk_walrus_punch"
+    },
+    {
+      "effectId": "tusk_walrus_punch:displacement:walrus-punch-air-launch",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_walrus_punch",
+      "type": "displacement",
+      "subtype": "walrus-punch-air-launch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_walrus_punch:displacement:walrus-punch-air-launch:range",
+          "ownerId": "effect:tusk_walrus_punch:displacement:walrus-punch-air-launch",
+          "field": "range",
+          "state": "known",
+          "value": 150
+        },
+        "duration": {
+          "id": "value:effect:tusk_walrus_punch:displacement:walrus-punch-air-launch:duration",
+          "ownerId": "effect:tusk_walrus_punch:displacement:walrus-punch-air-launch",
+          "field": "duration",
+          "state": "known",
+          "value": 1
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_walrus_punch:displacement:walrus-punch-air-launch:magnitude",
+          "ownerId": "effect:tusk_walrus_punch:displacement:walrus-punch-air-launch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:tusk_walrus_punch:displacement:walrus-punch-air-launch:mana",
+          "ownerId": "effect:tusk_walrus_punch:displacement:walrus-punch-air-launch",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_walrus_punch:displacement:walrus-punch-air-launch:cooldown",
+          "ownerId": "effect:tusk_walrus_punch:displacement:walrus-punch-air-launch",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            13,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:tusk_walrus_punch:displacement:walrus-punch-air-launch:delay",
+          "ownerId": "effect:tusk_walrus_punch:displacement:walrus-punch-air-launch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "walrusPunchAttackHits"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_walrus_punch"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:tusk_walrus_punch:displacement:walrus-punch-air-launch",
+      "legacyEffectId": "tusk_walrus_punch:displacement:walrus-punch-air-launch",
+      "order": 15,
+      "legacyAbilityId": "tusk_walrus_punch",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tusk_walrus_punch:displacement:walrus-punch-air-launch:0"
+      ],
+      "valueIds": [
+        "value:effect:tusk_walrus_punch:displacement:walrus-punch-air-launch:range",
+        "value:effect:tusk_walrus_punch:displacement:walrus-punch-air-launch:duration",
+        "value:effect:tusk_walrus_punch:displacement:walrus-punch-air-launch:magnitude",
+        "value:effect:tusk_walrus_punch:displacement:walrus-punch-air-launch:mana",
+        "value:effect:tusk_walrus_punch:displacement:walrus-punch-air-launch:cooldown",
+        "value:effect:tusk_walrus_punch:displacement:walrus-punch-air-launch:delay"
+      ],
+      "activationId": "activation:100:tusk_walrus_punch"
+    },
+    {
+      "effectId": "tusk_bitter_chill:modifier:nearby-attack-speed-chill",
+      "heroId": "100",
+      "abilityId": "ability:100:tusk_bitter_chill",
+      "type": "modifier",
+      "subtype": "nearby-attack-speed-chill",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill:range",
+          "ownerId": "effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill",
+          "field": "range",
+          "state": "known",
+          "value": 350
+        },
+        "duration": {
+          "id": "value:effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill:duration",
+          "ownerId": "effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill:magnitude",
+          "ownerId": "effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill:mana",
+          "ownerId": "effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill:cooldown",
+          "ownerId": "effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill:delay",
+          "ownerId": "effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "enemyInsideBitterChill"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "tusk_bitter_chill:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill",
+      "legacyEffectId": "tusk_bitter_chill:modifier:nearby-attack-speed-chill",
+      "order": 16,
+      "legacyAbilityId": "tusk_bitter_chill",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:tusk_bitter_chill:modifier:nearby-attack-speed-chill:0"
+      ],
+      "valueIds": [
+        "value:effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill:range",
+        "value:effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill:duration",
+        "value:effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill:magnitude",
+        "value:effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill:mana",
+        "value:effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill:cooldown",
+        "value:effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill:delay"
+      ],
+      "activationId": "activation:100:tusk_bitter_chill"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:tusk_ice_shards:damage:shards-projectile-contact:0",
+      "ownerId": "effect:tusk_ice_shards:damage:shards-projectile-contact",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "iceShardsProjectileHitsEnemy"
+      }
+    },
+    {
+      "id": "condition:tusk_snowball:mobility:targeted-snowball-travel:0",
+      "ownerId": "effect:tusk_snowball:mobility:targeted-snowball-travel",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "snowballEnemyTargetAvailable"
+      }
+    },
+    {
+      "id": "condition:tusk_snowball:control:snowball-contact-base-stun:0",
+      "ownerId": "effect:tusk_snowball:control:snowball-contact-base-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "snowballReachesEnemy"
+      }
+    },
+    {
+      "id": "condition:tusk_snowball:damage:snowball-contact-base-damage:0",
+      "ownerId": "effect:tusk_snowball:damage:snowball-contact-base-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "snowballReachesEnemy"
+      }
+    },
+    {
+      "id": "condition:tusk_snowball:modifier:snowball-passenger-capture:0",
+      "ownerId": "effect:tusk_snowball:modifier:snowball-passenger-capture",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "snowballActive"
+      }
+    },
+    {
+      "id": "condition:tusk_snowball:modifier:snowball-passenger-capture:1",
+      "ownerId": "effect:tusk_snowball:modifier:snowball-passenger-capture",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "eligibleSnowballPassengerAvailable"
+      }
+    },
+    {
+      "id": "condition:tusk_tag_team:damage:tag-team-attack-bonus:0",
+      "ownerId": "effect:tusk_tag_team:damage:tag-team-attack-bonus",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "tagTeamAuraEstablished"
+      }
+    },
+    {
+      "id": "condition:tusk_tag_team:damage:tag-team-attack-bonus:1",
+      "ownerId": "effect:tusk_tag_team:damage:tag-team-attack-bonus",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "eligibleAttackHitsInsideTagTeam"
+      }
+    },
+    {
+      "id": "condition:tusk_tag_team:slow:tag-team-brief-hit-slow:0",
+      "ownerId": "effect:tusk_tag_team:slow:tag-team-brief-hit-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "tagTeamAuraEstablished"
+      }
+    },
+    {
+      "id": "condition:tusk_tag_team:slow:tag-team-brief-hit-slow:1",
+      "ownerId": "effect:tusk_tag_team:slow:tag-team-brief-hit-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "eligibleAttackHitsInsideTagTeam"
+      }
+    },
+    {
+      "id": "condition:tusk_drinking_buddies:displacement:shard-friendly-tag-pull:0",
+      "ownerId": "effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "tuskOutsideSnowball"
+      }
+    },
+    {
+      "id": "condition:tusk_drinking_buddies:displacement:shard-friendly-tag-pull:1",
+      "ownerId": "effect:tusk_drinking_buddies:displacement:shard-friendly-tag-pull",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "taggedAllyBeyondMinimumDistance"
+      }
+    },
+    {
+      "id": "condition:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed:0",
+      "ownerId": "effect:tusk_drinking_buddies:modifier:shard-tagged-partner-armor-speed",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "tuskOutsideSnowball"
+      }
+    },
+    {
+      "id": "condition:tusk_walrus_punch:modifier:true-strike-critical-punch:0",
+      "ownerId": "effect:tusk_walrus_punch:modifier:true-strike-critical-punch",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "walrusPunchAttackHits"
+      }
+    },
+    {
+      "id": "condition:tusk_walrus_punch:displacement:walrus-punch-air-launch:0",
+      "ownerId": "effect:tusk_walrus_punch:displacement:walrus-punch-air-launch",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "walrusPunchAttackHits"
+      }
+    },
+    {
+      "id": "condition:tusk_bitter_chill:modifier:nearby-attack-speed-chill:0",
+      "ownerId": "effect:tusk_bitter_chill:modifier:nearby-attack-speed-chill",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideBitterChill"
+      }
+    }
+  ]
+}

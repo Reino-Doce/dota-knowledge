@@ -1,0 +1,1463 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "necrolyte_death_pulse:damage:pulse",
+      "heroId": "36",
+      "abilityId": "ability:36:necrolyte_death_pulse",
+      "type": "damage",
+      "subtype": "pulse",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:necrolyte_death_pulse:damage:pulse:range",
+          "ownerId": "effect:necrolyte_death_pulse:damage:pulse",
+          "field": "range",
+          "state": "known",
+          "value": 500
+        },
+        "duration": {
+          "id": "value:effect:necrolyte_death_pulse:damage:pulse:duration",
+          "ownerId": "effect:necrolyte_death_pulse:damage:pulse",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:necrolyte_death_pulse:damage:pulse:magnitude",
+          "ownerId": "effect:necrolyte_death_pulse:damage:pulse",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            100,
+            160,
+            220,
+            280
+          ]
+        },
+        "mana": {
+          "id": "value:effect:necrolyte_death_pulse:damage:pulse:mana",
+          "ownerId": "effect:necrolyte_death_pulse:damage:pulse",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            115,
+            130,
+            145,
+            160
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:necrolyte_death_pulse:damage:pulse:cooldown",
+          "ownerId": "effect:necrolyte_death_pulse:damage:pulse",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            8,
+            7,
+            6,
+            5
+          ]
+        },
+        "delay": {
+          "id": "value:effect:necrolyte_death_pulse:damage:pulse:delay",
+          "ownerId": "effect:necrolyte_death_pulse:damage:pulse",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:necrolyte_death_pulse:damage:pulse:damageType",
+          "ownerId": "effect:necrolyte_death_pulse:damage:pulse",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "necrolyte_death_pulse"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:necrolyte_death_pulse:damage:pulse",
+      "legacyEffectId": "necrolyte_death_pulse:damage:pulse",
+      "order": 0,
+      "legacyAbilityId": "necrolyte_death_pulse",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:necrolyte_death_pulse:damage:pulse:range",
+        "value:effect:necrolyte_death_pulse:damage:pulse:duration",
+        "value:effect:necrolyte_death_pulse:damage:pulse:magnitude",
+        "value:effect:necrolyte_death_pulse:damage:pulse:mana",
+        "value:effect:necrolyte_death_pulse:damage:pulse:cooldown",
+        "value:effect:necrolyte_death_pulse:damage:pulse:delay",
+        "value:effect:necrolyte_death_pulse:damage:pulse:damageType"
+      ],
+      "activationId": "activation:36:necrolyte_death_pulse"
+    },
+    {
+      "effectId": "necrolyte_death_pulse:heal:pulse",
+      "heroId": "36",
+      "abilityId": "ability:36:necrolyte_death_pulse",
+      "type": "heal",
+      "subtype": "pulse",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:necrolyte_death_pulse:heal:pulse:range",
+          "ownerId": "effect:necrolyte_death_pulse:heal:pulse",
+          "field": "range",
+          "state": "known",
+          "value": 500
+        },
+        "duration": {
+          "id": "value:effect:necrolyte_death_pulse:heal:pulse:duration",
+          "ownerId": "effect:necrolyte_death_pulse:heal:pulse",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:necrolyte_death_pulse:heal:pulse:magnitude",
+          "ownerId": "effect:necrolyte_death_pulse:heal:pulse",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            70,
+            90,
+            110,
+            130
+          ]
+        },
+        "mana": {
+          "id": "value:effect:necrolyte_death_pulse:heal:pulse:mana",
+          "ownerId": "effect:necrolyte_death_pulse:heal:pulse",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            115,
+            130,
+            145,
+            160
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:necrolyte_death_pulse:heal:pulse:cooldown",
+          "ownerId": "effect:necrolyte_death_pulse:heal:pulse",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            8,
+            7,
+            6,
+            5
+          ]
+        },
+        "delay": {
+          "id": "value:effect:necrolyte_death_pulse:heal:pulse:delay",
+          "ownerId": "effect:necrolyte_death_pulse:heal:pulse",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "necrolyte_death_pulse"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:necrolyte_death_pulse:heal:pulse",
+      "legacyEffectId": "necrolyte_death_pulse:heal:pulse",
+      "order": 1,
+      "legacyAbilityId": "necrolyte_death_pulse",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:necrolyte_death_pulse:heal:pulse:range",
+        "value:effect:necrolyte_death_pulse:heal:pulse:duration",
+        "value:effect:necrolyte_death_pulse:heal:pulse:magnitude",
+        "value:effect:necrolyte_death_pulse:heal:pulse:mana",
+        "value:effect:necrolyte_death_pulse:heal:pulse:cooldown",
+        "value:effect:necrolyte_death_pulse:heal:pulse:delay"
+      ],
+      "activationId": "activation:36:necrolyte_death_pulse"
+    },
+    {
+      "effectId": "necrolyte_ghost_shroud:save:self-ethereal",
+      "heroId": "36",
+      "abilityId": "ability:36:necrolyte_ghost_shroud",
+      "type": "save",
+      "subtype": "self-ethereal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:necrolyte_ghost_shroud:save:self-ethereal:range",
+          "ownerId": "effect:necrolyte_ghost_shroud:save:self-ethereal",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:necrolyte_ghost_shroud:save:self-ethereal:duration",
+          "ownerId": "effect:necrolyte_ghost_shroud:save:self-ethereal",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3,
+            3.5,
+            4,
+            4.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:necrolyte_ghost_shroud:save:self-ethereal:magnitude",
+          "ownerId": "effect:necrolyte_ghost_shroud:save:self-ethereal",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:necrolyte_ghost_shroud:save:self-ethereal:mana",
+          "ownerId": "effect:necrolyte_ghost_shroud:save:self-ethereal",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:necrolyte_ghost_shroud:save:self-ethereal:cooldown",
+          "ownerId": "effect:necrolyte_ghost_shroud:save:self-ethereal",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            28,
+            24,
+            20,
+            16
+          ]
+        },
+        "delay": {
+          "id": "value:effect:necrolyte_ghost_shroud:save:self-ethereal:delay",
+          "ownerId": "effect:necrolyte_ghost_shroud:save:self-ethereal",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "no-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "physical"
+          ]
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "necrolyte_ghost_shroud"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:necrolyte_ghost_shroud:save:self-ethereal",
+      "legacyEffectId": "necrolyte_ghost_shroud:save:self-ethereal",
+      "order": 2,
+      "legacyAbilityId": "necrolyte_ghost_shroud",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:necrolyte_ghost_shroud:save:self-ethereal:range",
+        "value:effect:necrolyte_ghost_shroud:save:self-ethereal:duration",
+        "value:effect:necrolyte_ghost_shroud:save:self-ethereal:magnitude",
+        "value:effect:necrolyte_ghost_shroud:save:self-ethereal:mana",
+        "value:effect:necrolyte_ghost_shroud:save:self-ethereal:cooldown",
+        "value:effect:necrolyte_ghost_shroud:save:self-ethereal:delay"
+      ],
+      "activationId": "activation:36:necrolyte_ghost_shroud"
+    },
+    {
+      "effectId": "necrolyte_ghost_shroud:slow:aura-movement",
+      "heroId": "36",
+      "abilityId": "ability:36:necrolyte_ghost_shroud",
+      "type": "slow",
+      "subtype": "aura-movement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:necrolyte_ghost_shroud:slow:aura-movement:range",
+          "ownerId": "effect:necrolyte_ghost_shroud:slow:aura-movement",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:necrolyte_ghost_shroud:slow:aura-movement:duration",
+          "ownerId": "effect:necrolyte_ghost_shroud:slow:aura-movement",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3,
+            3.5,
+            4,
+            4.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:necrolyte_ghost_shroud:slow:aura-movement:magnitude",
+          "ownerId": "effect:necrolyte_ghost_shroud:slow:aura-movement",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            16,
+            19,
+            22,
+            25
+          ]
+        },
+        "mana": {
+          "id": "value:effect:necrolyte_ghost_shroud:slow:aura-movement:mana",
+          "ownerId": "effect:necrolyte_ghost_shroud:slow:aura-movement",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:necrolyte_ghost_shroud:slow:aura-movement:cooldown",
+          "ownerId": "effect:necrolyte_ghost_shroud:slow:aura-movement",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            28,
+            24,
+            20,
+            16
+          ]
+        },
+        "delay": {
+          "id": "value:effect:necrolyte_ghost_shroud:slow:aura-movement:delay",
+          "ownerId": "effect:necrolyte_ghost_shroud:slow:aura-movement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "necrolyte_ghost_shroud"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:necrolyte_ghost_shroud:slow:aura-movement",
+      "legacyEffectId": "necrolyte_ghost_shroud:slow:aura-movement",
+      "order": 3,
+      "legacyAbilityId": "necrolyte_ghost_shroud",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:necrolyte_ghost_shroud:slow:aura-movement:range",
+        "value:effect:necrolyte_ghost_shroud:slow:aura-movement:duration",
+        "value:effect:necrolyte_ghost_shroud:slow:aura-movement:magnitude",
+        "value:effect:necrolyte_ghost_shroud:slow:aura-movement:mana",
+        "value:effect:necrolyte_ghost_shroud:slow:aura-movement:cooldown",
+        "value:effect:necrolyte_ghost_shroud:slow:aura-movement:delay"
+      ],
+      "activationId": "activation:36:necrolyte_ghost_shroud"
+    },
+    {
+      "effectId": "necrolyte_ghost_shroud:modifier:self-restoration-amplification",
+      "heroId": "36",
+      "abilityId": "ability:36:necrolyte_ghost_shroud",
+      "type": "modifier",
+      "subtype": "self-restoration-amplification",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification:range",
+          "ownerId": "effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification:duration",
+          "ownerId": "effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3,
+            3.5,
+            4,
+            4.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification:magnitude",
+          "ownerId": "effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            45,
+            55,
+            65,
+            75
+          ]
+        },
+        "mana": {
+          "id": "value:effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification:mana",
+          "ownerId": "effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification:cooldown",
+          "ownerId": "effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            28,
+            24,
+            20,
+            16
+          ]
+        },
+        "delay": {
+          "id": "value:effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification:delay",
+          "ownerId": "effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "necrolyte_ghost_shroud"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification",
+      "legacyEffectId": "necrolyte_ghost_shroud:modifier:self-restoration-amplification",
+      "order": 4,
+      "legacyAbilityId": "necrolyte_ghost_shroud",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification:range",
+        "value:effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification:duration",
+        "value:effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification:magnitude",
+        "value:effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification:mana",
+        "value:effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification:cooldown",
+        "value:effect:necrolyte_ghost_shroud:modifier:self-restoration-amplification:delay"
+      ],
+      "activationId": "activation:36:necrolyte_ghost_shroud"
+    },
+    {
+      "effectId": "necrolyte_heartstopper_aura:modifier:maximum-health-decay",
+      "heroId": "36",
+      "abilityId": "ability:36:necrolyte_heartstopper_aura",
+      "type": "modifier",
+      "subtype": "maximum-health-decay",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay:range",
+          "ownerId": "effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay:duration",
+          "ownerId": "effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay:magnitude",
+          "ownerId": "effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay:mana",
+          "ownerId": "effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay:cooldown",
+          "ownerId": "effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay:delay",
+          "ownerId": "effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "necrolyte_heartstopper_aura:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay",
+      "legacyEffectId": "necrolyte_heartstopper_aura:modifier:maximum-health-decay",
+      "order": 5,
+      "legacyAbilityId": "necrolyte_heartstopper_aura",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay:range",
+        "value:effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay:duration",
+        "value:effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay:magnitude",
+        "value:effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay:mana",
+        "value:effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay:cooldown",
+        "value:effect:necrolyte_heartstopper_aura:modifier:maximum-health-decay:delay"
+      ],
+      "activationId": "activation:36:necrolyte_heartstopper_aura"
+    },
+    {
+      "effectId": "necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay",
+      "heroId": "36",
+      "abilityId": "ability:36:necrolyte_heartstopper_aura",
+      "type": "modifier",
+      "subtype": "scepter-regeneration-decay",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay:range",
+          "ownerId": "effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay:duration",
+          "ownerId": "effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay:magnitude",
+          "ownerId": "effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay:mana",
+          "ownerId": "effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay:cooldown",
+          "ownerId": "effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay:delay",
+          "ownerId": "effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "necrolyte_heartstopper_aura:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay",
+      "legacyEffectId": "necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay",
+      "order": 6,
+      "legacyAbilityId": "necrolyte_heartstopper_aura",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay:range",
+        "value:effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay:duration",
+        "value:effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay:magnitude",
+        "value:effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay:mana",
+        "value:effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay:cooldown",
+        "value:effect:necrolyte_heartstopper_aura:modifier:scepter-regeneration-decay:delay"
+      ],
+      "activationId": "activation:36:necrolyte_heartstopper_aura"
+    },
+    {
+      "effectId": "necrolyte_death_seeker:mobility:death-pulse-projectile",
+      "heroId": "36",
+      "abilityId": "ability:36:necrolyte_death_seeker",
+      "type": "mobility",
+      "subtype": "death-pulse-projectile",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:necrolyte_death_seeker:mobility:death-pulse-projectile:range",
+          "ownerId": "effect:necrolyte_death_seeker:mobility:death-pulse-projectile",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:necrolyte_death_seeker:mobility:death-pulse-projectile:duration",
+          "ownerId": "effect:necrolyte_death_seeker:mobility:death-pulse-projectile",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:necrolyte_death_seeker:mobility:death-pulse-projectile:magnitude",
+          "ownerId": "effect:necrolyte_death_seeker:mobility:death-pulse-projectile",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:necrolyte_death_seeker:mobility:death-pulse-projectile:mana",
+          "ownerId": "effect:necrolyte_death_seeker:mobility:death-pulse-projectile",
+          "field": "mana",
+          "state": "known",
+          "value": 160
+        },
+        "cooldown": {
+          "id": "value:effect:necrolyte_death_seeker:mobility:death-pulse-projectile:cooldown",
+          "ownerId": "effect:necrolyte_death_seeker:mobility:death-pulse-projectile",
+          "field": "cooldown",
+          "state": "known",
+          "value": 19
+        },
+        "delay": {
+          "id": "value:effect:necrolyte_death_seeker:mobility:death-pulse-projectile:delay",
+          "ownerId": "effect:necrolyte_death_seeker:mobility:death-pulse-projectile",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "necrolyte_death_seeker"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:necrolyte_death_seeker:mobility:death-pulse-projectile",
+      "legacyEffectId": "necrolyte_death_seeker:mobility:death-pulse-projectile",
+      "order": 7,
+      "legacyAbilityId": "necrolyte_death_seeker",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:necrolyte_death_seeker:mobility:death-pulse-projectile:range",
+        "value:effect:necrolyte_death_seeker:mobility:death-pulse-projectile:duration",
+        "value:effect:necrolyte_death_seeker:mobility:death-pulse-projectile:magnitude",
+        "value:effect:necrolyte_death_seeker:mobility:death-pulse-projectile:mana",
+        "value:effect:necrolyte_death_seeker:mobility:death-pulse-projectile:cooldown",
+        "value:effect:necrolyte_death_seeker:mobility:death-pulse-projectile:delay"
+      ],
+      "activationId": "activation:36:necrolyte_death_seeker"
+    },
+    {
+      "effectId": "necrolyte_sadist:modifier:kill-stacking-regeneration",
+      "heroId": "36",
+      "abilityId": "ability:36:necrolyte_sadist",
+      "type": "modifier",
+      "subtype": "kill-stacking-regeneration",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:necrolyte_sadist:modifier:kill-stacking-regeneration:range",
+          "ownerId": "effect:necrolyte_sadist:modifier:kill-stacking-regeneration",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:necrolyte_sadist:modifier:kill-stacking-regeneration:duration",
+          "ownerId": "effect:necrolyte_sadist:modifier:kill-stacking-regeneration",
+          "field": "duration",
+          "state": "known",
+          "value": 8
+        },
+        "magnitude": {
+          "id": "value:effect:necrolyte_sadist:modifier:kill-stacking-regeneration:magnitude",
+          "ownerId": "effect:necrolyte_sadist:modifier:kill-stacking-regeneration",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:necrolyte_sadist:modifier:kill-stacking-regeneration:mana",
+          "ownerId": "effect:necrolyte_sadist:modifier:kill-stacking-regeneration",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:necrolyte_sadist:modifier:kill-stacking-regeneration:cooldown",
+          "ownerId": "effect:necrolyte_sadist:modifier:kill-stacking-regeneration",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:necrolyte_sadist:modifier:kill-stacking-regeneration:delay",
+          "ownerId": "effect:necrolyte_sadist:modifier:kill-stacking-regeneration",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "sadistKillStacksPresent"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "necrolyte_sadist:passive"
+      },
+      "vulnerability": {
+        "breakable": false
+      },
+      "exceptions": [],
+      "id": "effect:necrolyte_sadist:modifier:kill-stacking-regeneration",
+      "legacyEffectId": "necrolyte_sadist:modifier:kill-stacking-regeneration",
+      "order": 8,
+      "legacyAbilityId": "necrolyte_sadist",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:necrolyte_sadist:modifier:kill-stacking-regeneration:0"
+      ],
+      "valueIds": [
+        "value:effect:necrolyte_sadist:modifier:kill-stacking-regeneration:range",
+        "value:effect:necrolyte_sadist:modifier:kill-stacking-regeneration:duration",
+        "value:effect:necrolyte_sadist:modifier:kill-stacking-regeneration:magnitude",
+        "value:effect:necrolyte_sadist:modifier:kill-stacking-regeneration:mana",
+        "value:effect:necrolyte_sadist:modifier:kill-stacking-regeneration:cooldown",
+        "value:effect:necrolyte_sadist:modifier:kill-stacking-regeneration:delay"
+      ],
+      "activationId": "activation:36:necrolyte_sadist"
+    },
+    {
+      "effectId": "necrolyte_reapers_scythe:control:stun",
+      "heroId": "36",
+      "abilityId": "ability:36:necrolyte_reapers_scythe",
+      "type": "control",
+      "subtype": "stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:necrolyte_reapers_scythe:control:stun:range",
+          "ownerId": "effect:necrolyte_reapers_scythe:control:stun",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:necrolyte_reapers_scythe:control:stun:duration",
+          "ownerId": "effect:necrolyte_reapers_scythe:control:stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:necrolyte_reapers_scythe:control:stun:magnitude",
+          "ownerId": "effect:necrolyte_reapers_scythe:control:stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:necrolyte_reapers_scythe:control:stun:mana",
+          "ownerId": "effect:necrolyte_reapers_scythe:control:stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            250,
+            375,
+            500
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:necrolyte_reapers_scythe:control:stun:cooldown",
+          "ownerId": "effect:necrolyte_reapers_scythe:control:stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": 100
+        },
+        "delay": {
+          "id": "value:effect:necrolyte_reapers_scythe:control:stun:delay",
+          "ownerId": "effect:necrolyte_reapers_scythe:control:stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "none"
+        }
+      },
+      "relationships": {
+        "resourceId": "necrolyte_reapers_scythe"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:necrolyte_reapers_scythe:control:stun",
+      "legacyEffectId": "necrolyte_reapers_scythe:control:stun",
+      "order": 9,
+      "legacyAbilityId": "necrolyte_reapers_scythe",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:necrolyte_reapers_scythe:control:stun:range",
+        "value:effect:necrolyte_reapers_scythe:control:stun:duration",
+        "value:effect:necrolyte_reapers_scythe:control:stun:magnitude",
+        "value:effect:necrolyte_reapers_scythe:control:stun:mana",
+        "value:effect:necrolyte_reapers_scythe:control:stun:cooldown",
+        "value:effect:necrolyte_reapers_scythe:control:stun:delay"
+      ],
+      "activationId": "activation:36:necrolyte_reapers_scythe"
+    },
+    {
+      "effectId": "necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration",
+      "heroId": "36",
+      "abilityId": "ability:36:necrolyte_reapers_scythe",
+      "type": "modifier",
+      "subtype": "missing-health-execution-and-kill-regeneration",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration:range",
+          "ownerId": "effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration:duration",
+          "ownerId": "effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration:magnitude",
+          "ownerId": "effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration:mana",
+          "ownerId": "effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            250,
+            375,
+            500
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration:cooldown",
+          "ownerId": "effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration",
+          "field": "cooldown",
+          "state": "known",
+          "value": 100
+        },
+        "delay": {
+          "id": "value:effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration:delay",
+          "ownerId": "effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration",
+          "field": "delay",
+          "state": "known",
+          "value": [
+            1.5,
+            1.5,
+            1.5
+          ]
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "necrolyte_reapers_scythe"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration",
+      "legacyEffectId": "necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration",
+      "order": 10,
+      "legacyAbilityId": "necrolyte_reapers_scythe",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration:range",
+        "value:effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration:duration",
+        "value:effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration:magnitude",
+        "value:effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration:mana",
+        "value:effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration:cooldown",
+        "value:effect:necrolyte_reapers_scythe:modifier:missing-health-execution-and-kill-regeneration:delay"
+      ],
+      "activationId": "activation:36:necrolyte_reapers_scythe"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:necrolyte_sadist:modifier:kill-stacking-regeneration:0",
+      "ownerId": "effect:necrolyte_sadist:modifier:kill-stacking-regeneration",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "sadistKillStacksPresent"
+      }
+    }
+  ]
+}

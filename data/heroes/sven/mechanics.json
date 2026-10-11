@@ -1,0 +1,1342 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "sven_storm_bolt:control:stun",
+      "heroId": "18",
+      "abilityId": "ability:18:sven_storm_bolt",
+      "type": "control",
+      "subtype": "stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sven_storm_bolt:control:stun:range",
+          "ownerId": "effect:sven_storm_bolt:control:stun",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:sven_storm_bolt:control:stun:duration",
+          "ownerId": "effect:sven_storm_bolt:control:stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1,
+            1.25,
+            1.5,
+            1.75
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:sven_storm_bolt:control:stun:magnitude",
+          "ownerId": "effect:sven_storm_bolt:control:stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sven_storm_bolt:control:stun:mana",
+          "ownerId": "effect:sven_storm_bolt:control:stun",
+          "field": "mana",
+          "state": "known",
+          "value": 110
+        },
+        "cooldown": {
+          "id": "value:effect:sven_storm_bolt:control:stun:cooldown",
+          "ownerId": "effect:sven_storm_bolt:control:stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            21,
+            18,
+            15,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sven_storm_bolt:control:stun:delay",
+          "ownerId": "effect:sven_storm_bolt:control:stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "sven_storm_bolt"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sven_storm_bolt:control:stun",
+      "legacyEffectId": "sven_storm_bolt:control:stun",
+      "order": 0,
+      "legacyAbilityId": "sven_storm_bolt",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sven_storm_bolt:control:stun:range",
+        "value:effect:sven_storm_bolt:control:stun:duration",
+        "value:effect:sven_storm_bolt:control:stun:magnitude",
+        "value:effect:sven_storm_bolt:control:stun:mana",
+        "value:effect:sven_storm_bolt:control:stun:cooldown",
+        "value:effect:sven_storm_bolt:control:stun:delay"
+      ],
+      "activationId": "activation:18:sven_storm_bolt"
+    },
+    {
+      "effectId": "sven_storm_bolt:damage:storm-hammer-base-damage",
+      "heroId": "18",
+      "abilityId": "ability:18:sven_storm_bolt",
+      "type": "damage",
+      "subtype": "storm-hammer-base-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sven_storm_bolt:damage:storm-hammer-base-damage:range",
+          "ownerId": "effect:sven_storm_bolt:damage:storm-hammer-base-damage",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:sven_storm_bolt:damage:storm-hammer-base-damage:duration",
+          "ownerId": "effect:sven_storm_bolt:damage:storm-hammer-base-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sven_storm_bolt:damage:storm-hammer-base-damage:magnitude",
+          "ownerId": "effect:sven_storm_bolt:damage:storm-hammer-base-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            80,
+            160,
+            240,
+            320
+          ]
+        },
+        "mana": {
+          "id": "value:effect:sven_storm_bolt:damage:storm-hammer-base-damage:mana",
+          "ownerId": "effect:sven_storm_bolt:damage:storm-hammer-base-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 110
+        },
+        "cooldown": {
+          "id": "value:effect:sven_storm_bolt:damage:storm-hammer-base-damage:cooldown",
+          "ownerId": "effect:sven_storm_bolt:damage:storm-hammer-base-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            21,
+            18,
+            15,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sven_storm_bolt:damage:storm-hammer-base-damage:delay",
+          "ownerId": "effect:sven_storm_bolt:damage:storm-hammer-base-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:sven_storm_bolt:damage:storm-hammer-base-damage:damageType",
+          "ownerId": "effect:sven_storm_bolt:damage:storm-hammer-base-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sven_storm_bolt"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sven_storm_bolt:damage:storm-hammer-base-damage",
+      "legacyEffectId": "sven_storm_bolt:damage:storm-hammer-base-damage",
+      "order": 1,
+      "legacyAbilityId": "sven_storm_bolt",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sven_storm_bolt:damage:storm-hammer-base-damage:range",
+        "value:effect:sven_storm_bolt:damage:storm-hammer-base-damage:duration",
+        "value:effect:sven_storm_bolt:damage:storm-hammer-base-damage:magnitude",
+        "value:effect:sven_storm_bolt:damage:storm-hammer-base-damage:mana",
+        "value:effect:sven_storm_bolt:damage:storm-hammer-base-damage:cooldown",
+        "value:effect:sven_storm_bolt:damage:storm-hammer-base-damage:delay",
+        "value:effect:sven_storm_bolt:damage:storm-hammer-base-damage:damageType"
+      ],
+      "activationId": "activation:18:sven_storm_bolt"
+    },
+    {
+      "effectId": "sven_storm_bolt:dispel:scepter-enemy-basic-dispel",
+      "heroId": "18",
+      "abilityId": "ability:18:sven_storm_bolt",
+      "type": "dispel",
+      "subtype": "scepter-enemy-basic-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel:range",
+          "ownerId": "effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel:duration",
+          "ownerId": "effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel:magnitude",
+          "ownerId": "effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel:mana",
+          "ownerId": "effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": 110
+        },
+        "cooldown": {
+          "id": "value:effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel:cooldown",
+          "ownerId": "effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            21,
+            18,
+            15,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel:delay",
+          "ownerId": "effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "known",
+          "value": true
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "enemy-buffs"
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "sven_storm_bolt"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel",
+      "legacyEffectId": "sven_storm_bolt:dispel:scepter-enemy-basic-dispel",
+      "order": 2,
+      "legacyAbilityId": "sven_storm_bolt",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel:range",
+        "value:effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel:duration",
+        "value:effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel:magnitude",
+        "value:effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel:mana",
+        "value:effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel:cooldown",
+        "value:effect:sven_storm_bolt:dispel:scepter-enemy-basic-dispel:delay"
+      ],
+      "activationId": "activation:18:sven_storm_bolt"
+    },
+    {
+      "effectId": "sven_storm_bolt:mobility:scepter-alt-cast-travel",
+      "heroId": "18",
+      "abilityId": "ability:18:sven_storm_bolt",
+      "type": "mobility",
+      "subtype": "scepter-alt-cast-travel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sven_storm_bolt:mobility:scepter-alt-cast-travel:range",
+          "ownerId": "effect:sven_storm_bolt:mobility:scepter-alt-cast-travel",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sven_storm_bolt:mobility:scepter-alt-cast-travel:duration",
+          "ownerId": "effect:sven_storm_bolt:mobility:scepter-alt-cast-travel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sven_storm_bolt:mobility:scepter-alt-cast-travel:magnitude",
+          "ownerId": "effect:sven_storm_bolt:mobility:scepter-alt-cast-travel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sven_storm_bolt:mobility:scepter-alt-cast-travel:mana",
+          "ownerId": "effect:sven_storm_bolt:mobility:scepter-alt-cast-travel",
+          "field": "mana",
+          "state": "known",
+          "value": 110
+        },
+        "cooldown": {
+          "id": "value:effect:sven_storm_bolt:mobility:scepter-alt-cast-travel:cooldown",
+          "ownerId": "effect:sven_storm_bolt:mobility:scepter-alt-cast-travel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            21,
+            18,
+            15,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sven_storm_bolt:mobility:scepter-alt-cast-travel:delay",
+          "ownerId": "effect:sven_storm_bolt:mobility:scepter-alt-cast-travel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "stormHammerAltCast"
+        ]
+      },
+      "delivery": {
+        "kind": "projectile",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sven_storm_bolt"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sven_storm_bolt:mobility:scepter-alt-cast-travel",
+      "legacyEffectId": "sven_storm_bolt:mobility:scepter-alt-cast-travel",
+      "order": 3,
+      "legacyAbilityId": "sven_storm_bolt",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:sven_storm_bolt:mobility:scepter-alt-cast-travel:0"
+      ],
+      "valueIds": [
+        "value:effect:sven_storm_bolt:mobility:scepter-alt-cast-travel:range",
+        "value:effect:sven_storm_bolt:mobility:scepter-alt-cast-travel:duration",
+        "value:effect:sven_storm_bolt:mobility:scepter-alt-cast-travel:magnitude",
+        "value:effect:sven_storm_bolt:mobility:scepter-alt-cast-travel:mana",
+        "value:effect:sven_storm_bolt:mobility:scepter-alt-cast-travel:cooldown",
+        "value:effect:sven_storm_bolt:mobility:scepter-alt-cast-travel:delay"
+      ],
+      "activationId": "activation:18:sven_storm_bolt"
+    },
+    {
+      "effectId": "sven_storm_bolt:damage:scepter-alt-cast-bonus-damage",
+      "heroId": "18",
+      "abilityId": "ability:18:sven_storm_bolt",
+      "type": "damage",
+      "subtype": "scepter-alt-cast-bonus-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage:range",
+          "ownerId": "effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage:duration",
+          "ownerId": "effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage:magnitude",
+          "ownerId": "effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": 180
+        },
+        "mana": {
+          "id": "value:effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage:mana",
+          "ownerId": "effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 110
+        },
+        "cooldown": {
+          "id": "value:effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage:cooldown",
+          "ownerId": "effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            21,
+            18,
+            15,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage:delay",
+          "ownerId": "effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage:damageType",
+          "ownerId": "effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "stormHammerAltCast"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sven_storm_bolt"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage",
+      "legacyEffectId": "sven_storm_bolt:damage:scepter-alt-cast-bonus-damage",
+      "order": 4,
+      "legacyAbilityId": "sven_storm_bolt",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage:range",
+        "value:effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage:duration",
+        "value:effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage:magnitude",
+        "value:effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage:mana",
+        "value:effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage:cooldown",
+        "value:effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage:delay",
+        "value:effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage:damageType"
+      ],
+      "activationId": "activation:18:sven_storm_bolt"
+    },
+    {
+      "effectId": "sven_great_cleave:passive:attack-cleave",
+      "heroId": "18",
+      "abilityId": "ability:18:sven_great_cleave",
+      "type": "passive",
+      "subtype": "attack-cleave",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sven_great_cleave:passive:attack-cleave:range",
+          "ownerId": "effect:sven_great_cleave:passive:attack-cleave",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sven_great_cleave:passive:attack-cleave:duration",
+          "ownerId": "effect:sven_great_cleave:passive:attack-cleave",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sven_great_cleave:passive:attack-cleave:magnitude",
+          "ownerId": "effect:sven_great_cleave:passive:attack-cleave",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sven_great_cleave:passive:attack-cleave:mana",
+          "ownerId": "effect:sven_great_cleave:passive:attack-cleave",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:sven_great_cleave:passive:attack-cleave:cooldown",
+          "ownerId": "effect:sven_great_cleave:passive:attack-cleave",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:sven_great_cleave:passive:attack-cleave:delay",
+          "ownerId": "effect:sven_great_cleave:passive:attack-cleave",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sven_great_cleave"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:sven_great_cleave:passive:attack-cleave",
+      "legacyEffectId": "sven_great_cleave:passive:attack-cleave",
+      "order": 5,
+      "legacyAbilityId": "sven_great_cleave",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sven_great_cleave:passive:attack-cleave:range",
+        "value:effect:sven_great_cleave:passive:attack-cleave:duration",
+        "value:effect:sven_great_cleave:passive:attack-cleave:magnitude",
+        "value:effect:sven_great_cleave:passive:attack-cleave:mana",
+        "value:effect:sven_great_cleave:passive:attack-cleave:cooldown",
+        "value:effect:sven_great_cleave:passive:attack-cleave:delay"
+      ],
+      "activationId": "activation:18:sven_great_cleave"
+    },
+    {
+      "effectId": "sven_warcry:modifier:allied-armor-and-speed",
+      "heroId": "18",
+      "abilityId": "ability:18:sven_warcry",
+      "type": "modifier",
+      "subtype": "allied-armor-and-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sven_warcry:modifier:allied-armor-and-speed:range",
+          "ownerId": "effect:sven_warcry:modifier:allied-armor-and-speed",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:sven_warcry:modifier:allied-armor-and-speed:duration",
+          "ownerId": "effect:sven_warcry:modifier:allied-armor-and-speed",
+          "field": "duration",
+          "state": "known",
+          "value": 8
+        },
+        "magnitude": {
+          "id": "value:effect:sven_warcry:modifier:allied-armor-and-speed:magnitude",
+          "ownerId": "effect:sven_warcry:modifier:allied-armor-and-speed",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sven_warcry:modifier:allied-armor-and-speed:mana",
+          "ownerId": "effect:sven_warcry:modifier:allied-armor-and-speed",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            30,
+            35,
+            40,
+            45
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:sven_warcry:modifier:allied-armor-and-speed:cooldown",
+          "ownerId": "effect:sven_warcry:modifier:allied-armor-and-speed",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            36,
+            32,
+            28,
+            24
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sven_warcry:modifier:allied-armor-and-speed:delay",
+          "ownerId": "effect:sven_warcry:modifier:allied-armor-and-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "sven_warcry"
+      },
+      "vulnerability": {
+        "breakable": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sven_warcry:modifier:allied-armor-and-speed",
+      "legacyEffectId": "sven_warcry:modifier:allied-armor-and-speed",
+      "order": 6,
+      "legacyAbilityId": "sven_warcry",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sven_warcry:modifier:allied-armor-and-speed:range",
+        "value:effect:sven_warcry:modifier:allied-armor-and-speed:duration",
+        "value:effect:sven_warcry:modifier:allied-armor-and-speed:magnitude",
+        "value:effect:sven_warcry:modifier:allied-armor-and-speed:mana",
+        "value:effect:sven_warcry:modifier:allied-armor-and-speed:cooldown",
+        "value:effect:sven_warcry:modifier:allied-armor-and-speed:delay"
+      ],
+      "activationId": "activation:18:sven_warcry"
+    },
+    {
+      "effectId": "sven_warcry:save:shard-physical-barrier",
+      "heroId": "18",
+      "abilityId": "ability:18:sven_warcry",
+      "type": "save",
+      "subtype": "shard-physical-barrier",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sven_warcry:save:shard-physical-barrier:range",
+          "ownerId": "effect:sven_warcry:save:shard-physical-barrier",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sven_warcry:save:shard-physical-barrier:duration",
+          "ownerId": "effect:sven_warcry:save:shard-physical-barrier",
+          "field": "duration",
+          "state": "known",
+          "value": 8
+        },
+        "magnitude": {
+          "id": "value:effect:sven_warcry:save:shard-physical-barrier:magnitude",
+          "ownerId": "effect:sven_warcry:save:shard-physical-barrier",
+          "field": "magnitude",
+          "state": "known",
+          "value": 300
+        },
+        "mana": {
+          "id": "value:effect:sven_warcry:save:shard-physical-barrier:mana",
+          "ownerId": "effect:sven_warcry:save:shard-physical-barrier",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            30,
+            35,
+            40,
+            45
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:sven_warcry:save:shard-physical-barrier:cooldown",
+          "ownerId": "effect:sven_warcry:save:shard-physical-barrier",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            36,
+            32,
+            28,
+            24
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sven_warcry:save:shard-physical-barrier:delay",
+          "ownerId": "effect:sven_warcry:save:shard-physical-barrier",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "physical"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "sven_warcry"
+      },
+      "vulnerability": {
+        "breakable": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sven_warcry:save:shard-physical-barrier",
+      "legacyEffectId": "sven_warcry:save:shard-physical-barrier",
+      "order": 7,
+      "legacyAbilityId": "sven_warcry",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sven_warcry:save:shard-physical-barrier:range",
+        "value:effect:sven_warcry:save:shard-physical-barrier:duration",
+        "value:effect:sven_warcry:save:shard-physical-barrier:magnitude",
+        "value:effect:sven_warcry:save:shard-physical-barrier:mana",
+        "value:effect:sven_warcry:save:shard-physical-barrier:cooldown",
+        "value:effect:sven_warcry:save:shard-physical-barrier:delay"
+      ],
+      "activationId": "activation:18:sven_warcry"
+    },
+    {
+      "effectId": "sven_gods_strength:modifier:self-attack-damage-and-slow-resistance",
+      "heroId": "18",
+      "abilityId": "ability:18:sven_gods_strength",
+      "type": "modifier",
+      "subtype": "self-attack-damage-and-slow-resistance",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance:range",
+          "ownerId": "effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance:duration",
+          "ownerId": "effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance",
+          "field": "duration",
+          "state": "known",
+          "value": 30
+        },
+        "magnitude": {
+          "id": "value:effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance:magnitude",
+          "ownerId": "effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance:mana",
+          "ownerId": "effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance:cooldown",
+          "ownerId": "effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            110,
+            105,
+            100
+          ]
+        },
+        "delay": {
+          "id": "value:effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance:delay",
+          "ownerId": "effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sven_gods_strength"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance",
+      "legacyEffectId": "sven_gods_strength:modifier:self-attack-damage-and-slow-resistance",
+      "order": 8,
+      "legacyAbilityId": "sven_gods_strength",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance:range",
+        "value:effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance:duration",
+        "value:effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance:magnitude",
+        "value:effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance:mana",
+        "value:effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance:cooldown",
+        "value:effect:sven_gods_strength:modifier:self-attack-damage-and-slow-resistance:delay"
+      ],
+      "activationId": "activation:18:sven_gods_strength"
+    },
+    {
+      "effectId": "sven_wrath_of_god:passive:strength-derived-attack-damage",
+      "heroId": "18",
+      "abilityId": "ability:18:sven_wrath_of_god",
+      "type": "passive",
+      "subtype": "strength-derived-attack-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:sven_wrath_of_god:passive:strength-derived-attack-damage:range",
+          "ownerId": "effect:sven_wrath_of_god:passive:strength-derived-attack-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:sven_wrath_of_god:passive:strength-derived-attack-damage:duration",
+          "ownerId": "effect:sven_wrath_of_god:passive:strength-derived-attack-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:sven_wrath_of_god:passive:strength-derived-attack-damage:magnitude",
+          "ownerId": "effect:sven_wrath_of_god:passive:strength-derived-attack-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:sven_wrath_of_god:passive:strength-derived-attack-damage:mana",
+          "ownerId": "effect:sven_wrath_of_god:passive:strength-derived-attack-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:sven_wrath_of_god:passive:strength-derived-attack-damage:cooldown",
+          "ownerId": "effect:sven_wrath_of_god:passive:strength-derived-attack-damage",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:sven_wrath_of_god:passive:strength-derived-attack-damage:delay",
+          "ownerId": "effect:sven_wrath_of_god:passive:strength-derived-attack-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "sven_wrath_of_god"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:sven_wrath_of_god:passive:strength-derived-attack-damage",
+      "legacyEffectId": "sven_wrath_of_god:passive:strength-derived-attack-damage",
+      "order": 9,
+      "legacyAbilityId": "sven_wrath_of_god",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:sven_wrath_of_god:passive:strength-derived-attack-damage:range",
+        "value:effect:sven_wrath_of_god:passive:strength-derived-attack-damage:duration",
+        "value:effect:sven_wrath_of_god:passive:strength-derived-attack-damage:magnitude",
+        "value:effect:sven_wrath_of_god:passive:strength-derived-attack-damage:mana",
+        "value:effect:sven_wrath_of_god:passive:strength-derived-attack-damage:cooldown",
+        "value:effect:sven_wrath_of_god:passive:strength-derived-attack-damage:delay"
+      ],
+      "activationId": "activation:18:sven_wrath_of_god"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:sven_storm_bolt:mobility:scepter-alt-cast-travel:0",
+      "ownerId": "effect:sven_storm_bolt:mobility:scepter-alt-cast-travel",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "stormHammerAltCast"
+      }
+    },
+    {
+      "id": "condition:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage:0",
+      "ownerId": "effect:sven_storm_bolt:damage:scepter-alt-cast-bonus-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "stormHammerAltCast"
+      }
+    }
+  ]
+}

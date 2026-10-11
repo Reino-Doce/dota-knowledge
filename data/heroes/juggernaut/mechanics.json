@@ -1,0 +1,1426 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "juggernaut_blade_fury:damage:area-damage-over-time",
+      "heroId": "8",
+      "abilityId": "ability:8:juggernaut_blade_fury",
+      "type": "damage",
+      "subtype": "area-damage-over-time",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:juggernaut_blade_fury:damage:area-damage-over-time:range",
+          "ownerId": "effect:juggernaut_blade_fury:damage:area-damage-over-time",
+          "field": "range",
+          "state": "known",
+          "value": 260
+        },
+        "duration": {
+          "id": "value:effect:juggernaut_blade_fury:damage:area-damage-over-time:duration",
+          "ownerId": "effect:juggernaut_blade_fury:damage:area-damage-over-time",
+          "field": "duration",
+          "state": "known",
+          "value": 5
+        },
+        "magnitude": {
+          "id": "value:effect:juggernaut_blade_fury:damage:area-damage-over-time:magnitude",
+          "ownerId": "effect:juggernaut_blade_fury:damage:area-damage-over-time",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            85,
+            115,
+            145,
+            175
+          ]
+        },
+        "mana": {
+          "id": "value:effect:juggernaut_blade_fury:damage:area-damage-over-time:mana",
+          "ownerId": "effect:juggernaut_blade_fury:damage:area-damage-over-time",
+          "field": "mana",
+          "state": "known",
+          "value": 110
+        },
+        "cooldown": {
+          "id": "value:effect:juggernaut_blade_fury:damage:area-damage-over-time:cooldown",
+          "ownerId": "effect:juggernaut_blade_fury:damage:area-damage-over-time",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            26,
+            22,
+            18
+          ]
+        },
+        "delay": {
+          "id": "value:effect:juggernaut_blade_fury:damage:area-damage-over-time:delay",
+          "ownerId": "effect:juggernaut_blade_fury:damage:area-damage-over-time",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:juggernaut_blade_fury:damage:area-damage-over-time:damageType",
+          "ownerId": "effect:juggernaut_blade_fury:damage:area-damage-over-time",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "juggernaut_blade_fury"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:juggernaut_blade_fury:damage:area-damage-over-time",
+      "legacyEffectId": "juggernaut_blade_fury:damage:area-damage-over-time",
+      "order": 0,
+      "legacyAbilityId": "juggernaut_blade_fury",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:juggernaut_blade_fury:damage:area-damage-over-time:range",
+        "value:effect:juggernaut_blade_fury:damage:area-damage-over-time:duration",
+        "value:effect:juggernaut_blade_fury:damage:area-damage-over-time:magnitude",
+        "value:effect:juggernaut_blade_fury:damage:area-damage-over-time:mana",
+        "value:effect:juggernaut_blade_fury:damage:area-damage-over-time:cooldown",
+        "value:effect:juggernaut_blade_fury:damage:area-damage-over-time:delay",
+        "value:effect:juggernaut_blade_fury:damage:area-damage-over-time:damageType"
+      ],
+      "activationId": "activation:8:juggernaut_blade_fury"
+    },
+    {
+      "effectId": "juggernaut_blade_fury:save:self-magic-resistance",
+      "heroId": "8",
+      "abilityId": "ability:8:juggernaut_blade_fury",
+      "type": "save",
+      "subtype": "self-magic-resistance",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:juggernaut_blade_fury:save:self-magic-resistance:range",
+          "ownerId": "effect:juggernaut_blade_fury:save:self-magic-resistance",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:juggernaut_blade_fury:save:self-magic-resistance:duration",
+          "ownerId": "effect:juggernaut_blade_fury:save:self-magic-resistance",
+          "field": "duration",
+          "state": "known",
+          "value": 5
+        },
+        "magnitude": {
+          "id": "value:effect:juggernaut_blade_fury:save:self-magic-resistance:magnitude",
+          "ownerId": "effect:juggernaut_blade_fury:save:self-magic-resistance",
+          "field": "magnitude",
+          "state": "known",
+          "value": 80
+        },
+        "mana": {
+          "id": "value:effect:juggernaut_blade_fury:save:self-magic-resistance:mana",
+          "ownerId": "effect:juggernaut_blade_fury:save:self-magic-resistance",
+          "field": "mana",
+          "state": "known",
+          "value": 110
+        },
+        "cooldown": {
+          "id": "value:effect:juggernaut_blade_fury:save:self-magic-resistance:cooldown",
+          "ownerId": "effect:juggernaut_blade_fury:save:self-magic-resistance",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            26,
+            22,
+            18
+          ]
+        },
+        "delay": {
+          "id": "value:effect:juggernaut_blade_fury:save:self-magic-resistance:delay",
+          "ownerId": "effect:juggernaut_blade_fury:save:self-magic-resistance",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "no-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "magical"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "juggernaut_blade_fury"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:juggernaut_blade_fury:save:self-magic-resistance",
+      "legacyEffectId": "juggernaut_blade_fury:save:self-magic-resistance",
+      "order": 1,
+      "legacyAbilityId": "juggernaut_blade_fury",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:juggernaut_blade_fury:save:self-magic-resistance:range",
+        "value:effect:juggernaut_blade_fury:save:self-magic-resistance:duration",
+        "value:effect:juggernaut_blade_fury:save:self-magic-resistance:magnitude",
+        "value:effect:juggernaut_blade_fury:save:self-magic-resistance:mana",
+        "value:effect:juggernaut_blade_fury:save:self-magic-resistance:cooldown",
+        "value:effect:juggernaut_blade_fury:save:self-magic-resistance:delay"
+      ],
+      "activationId": "activation:8:juggernaut_blade_fury"
+    },
+    {
+      "effectId": "juggernaut_blade_fury:dispel:end-spin-self-strong-dispel",
+      "heroId": "8",
+      "abilityId": "ability:8:juggernaut_blade_fury",
+      "type": "dispel",
+      "subtype": "end-spin-self-strong-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel:range",
+          "ownerId": "effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel:duration",
+          "ownerId": "effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel:magnitude",
+          "ownerId": "effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel:mana",
+          "ownerId": "effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": 110
+        },
+        "cooldown": {
+          "id": "value:effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel:cooldown",
+          "ownerId": "effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            26,
+            22,
+            18
+          ]
+        },
+        "delay": {
+          "id": "value:effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel:delay",
+          "ownerId": "effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel",
+          "field": "delay",
+          "state": "known",
+          "value": 5
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "bladeFuryEnds"
+        ]
+      },
+      "delivery": {
+        "kind": "no-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "self-debuffs"
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "juggernaut_blade_fury"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel",
+      "legacyEffectId": "juggernaut_blade_fury:dispel:end-spin-self-strong-dispel",
+      "order": 2,
+      "legacyAbilityId": "juggernaut_blade_fury",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel:0"
+      ],
+      "valueIds": [
+        "value:effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel:range",
+        "value:effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel:duration",
+        "value:effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel:magnitude",
+        "value:effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel:mana",
+        "value:effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel:cooldown",
+        "value:effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel:delay"
+      ],
+      "activationId": "activation:8:juggernaut_blade_fury"
+    },
+    {
+      "effectId": "juggernaut_healing_ward:heal:ward-health-regeneration",
+      "heroId": "8",
+      "abilityId": "ability:8:juggernaut_healing_ward",
+      "type": "heal",
+      "subtype": "ward-health-regeneration",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally",
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:juggernaut_healing_ward:heal:ward-health-regeneration:range",
+          "ownerId": "effect:juggernaut_healing_ward:heal:ward-health-regeneration",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:juggernaut_healing_ward:heal:ward-health-regeneration:duration",
+          "ownerId": "effect:juggernaut_healing_ward:heal:ward-health-regeneration",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            18,
+            20,
+            22,
+            24
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:juggernaut_healing_ward:heal:ward-health-regeneration:magnitude",
+          "ownerId": "effect:juggernaut_healing_ward:heal:ward-health-regeneration",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:juggernaut_healing_ward:heal:ward-health-regeneration:mana",
+          "ownerId": "effect:juggernaut_healing_ward:heal:ward-health-regeneration",
+          "field": "mana",
+          "state": "known",
+          "value": 120
+        },
+        "cooldown": {
+          "id": "value:effect:juggernaut_healing_ward:heal:ward-health-regeneration:cooldown",
+          "ownerId": "effect:juggernaut_healing_ward:heal:ward-health-regeneration",
+          "field": "cooldown",
+          "state": "known",
+          "value": 60
+        },
+        "delay": {
+          "id": "value:effect:juggernaut_healing_ward:heal:ward-health-regeneration:delay",
+          "ownerId": "effect:juggernaut_healing_ward:heal:ward-health-regeneration",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "healingWardAlive",
+          "recipientWithinHealingWardAura"
+        ]
+      },
+      "delivery": {
+        "kind": "summon",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "regeneration"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "juggernaut_healing_ward"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:juggernaut_healing_ward:heal:ward-health-regeneration",
+      "legacyEffectId": "juggernaut_healing_ward:heal:ward-health-regeneration",
+      "order": 3,
+      "legacyAbilityId": "juggernaut_healing_ward",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:juggernaut_healing_ward:heal:ward-health-regeneration:0",
+        "condition:juggernaut_healing_ward:heal:ward-health-regeneration:1"
+      ],
+      "valueIds": [
+        "value:effect:juggernaut_healing_ward:heal:ward-health-regeneration:range",
+        "value:effect:juggernaut_healing_ward:heal:ward-health-regeneration:duration",
+        "value:effect:juggernaut_healing_ward:heal:ward-health-regeneration:magnitude",
+        "value:effect:juggernaut_healing_ward:heal:ward-health-regeneration:mana",
+        "value:effect:juggernaut_healing_ward:heal:ward-health-regeneration:cooldown",
+        "value:effect:juggernaut_healing_ward:heal:ward-health-regeneration:delay"
+      ],
+      "activationId": "activation:8:juggernaut_healing_ward"
+    },
+    {
+      "effectId": "juggernaut_healing_ward:modifier:shard-branch",
+      "heroId": "8",
+      "abilityId": "ability:8:juggernaut_healing_ward",
+      "type": "modifier",
+      "subtype": "shard-branch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:juggernaut_healing_ward:modifier:shard-branch:range",
+          "ownerId": "effect:juggernaut_healing_ward:modifier:shard-branch",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:juggernaut_healing_ward:modifier:shard-branch:duration",
+          "ownerId": "effect:juggernaut_healing_ward:modifier:shard-branch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:juggernaut_healing_ward:modifier:shard-branch:magnitude",
+          "ownerId": "effect:juggernaut_healing_ward:modifier:shard-branch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:juggernaut_healing_ward:modifier:shard-branch:mana",
+          "ownerId": "effect:juggernaut_healing_ward:modifier:shard-branch",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:juggernaut_healing_ward:modifier:shard-branch:cooldown",
+          "ownerId": "effect:juggernaut_healing_ward:modifier:shard-branch",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:juggernaut_healing_ward:modifier:shard-branch:delay",
+          "ownerId": "effect:juggernaut_healing_ward:modifier:shard-branch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "juggernaut_healing_ward:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:juggernaut_healing_ward:modifier:shard-branch",
+      "legacyEffectId": "juggernaut_healing_ward:modifier:shard-branch",
+      "order": 4,
+      "legacyAbilityId": "juggernaut_healing_ward",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:juggernaut_healing_ward:modifier:shard-branch:range",
+        "value:effect:juggernaut_healing_ward:modifier:shard-branch:duration",
+        "value:effect:juggernaut_healing_ward:modifier:shard-branch:magnitude",
+        "value:effect:juggernaut_healing_ward:modifier:shard-branch:mana",
+        "value:effect:juggernaut_healing_ward:modifier:shard-branch:cooldown",
+        "value:effect:juggernaut_healing_ward:modifier:shard-branch:delay"
+      ],
+      "activationId": "activation:8:juggernaut_healing_ward"
+    },
+    {
+      "effectId": "juggernaut_blade_dance:passive:critical-strike",
+      "heroId": "8",
+      "abilityId": "ability:8:juggernaut_blade_dance",
+      "type": "passive",
+      "subtype": "critical-strike",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:juggernaut_blade_dance:passive:critical-strike:range",
+          "ownerId": "effect:juggernaut_blade_dance:passive:critical-strike",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:juggernaut_blade_dance:passive:critical-strike:duration",
+          "ownerId": "effect:juggernaut_blade_dance:passive:critical-strike",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:juggernaut_blade_dance:passive:critical-strike:magnitude",
+          "ownerId": "effect:juggernaut_blade_dance:passive:critical-strike",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:juggernaut_blade_dance:passive:critical-strike:mana",
+          "ownerId": "effect:juggernaut_blade_dance:passive:critical-strike",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:juggernaut_blade_dance:passive:critical-strike:cooldown",
+          "ownerId": "effect:juggernaut_blade_dance:passive:critical-strike",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:juggernaut_blade_dance:passive:critical-strike:delay",
+          "ownerId": "effect:juggernaut_blade_dance:passive:critical-strike",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "bladeDanceProc"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "juggernaut_blade_dance"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:juggernaut_blade_dance:passive:critical-strike",
+      "legacyEffectId": "juggernaut_blade_dance:passive:critical-strike",
+      "order": 5,
+      "legacyAbilityId": "juggernaut_blade_dance",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:juggernaut_blade_dance:passive:critical-strike:0"
+      ],
+      "valueIds": [
+        "value:effect:juggernaut_blade_dance:passive:critical-strike:range",
+        "value:effect:juggernaut_blade_dance:passive:critical-strike:duration",
+        "value:effect:juggernaut_blade_dance:passive:critical-strike:magnitude",
+        "value:effect:juggernaut_blade_dance:passive:critical-strike:mana",
+        "value:effect:juggernaut_blade_dance:passive:critical-strike:cooldown",
+        "value:effect:juggernaut_blade_dance:passive:critical-strike:delay"
+      ],
+      "activationId": "activation:8:juggernaut_blade_dance"
+    },
+    {
+      "effectId": "juggernaut_swift_slash:damage:attack-sequence",
+      "heroId": "8",
+      "abilityId": "ability:8:juggernaut_swift_slash",
+      "type": "damage",
+      "subtype": "attack-sequence",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:juggernaut_swift_slash:damage:attack-sequence:range",
+          "ownerId": "effect:juggernaut_swift_slash:damage:attack-sequence",
+          "field": "range",
+          "state": "known",
+          "value": 450
+        },
+        "duration": {
+          "id": "value:effect:juggernaut_swift_slash:damage:attack-sequence:duration",
+          "ownerId": "effect:juggernaut_swift_slash:damage:attack-sequence",
+          "field": "duration",
+          "state": "known",
+          "value": 1
+        },
+        "magnitude": {
+          "id": "value:effect:juggernaut_swift_slash:damage:attack-sequence:magnitude",
+          "ownerId": "effect:juggernaut_swift_slash:damage:attack-sequence",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:juggernaut_swift_slash:damage:attack-sequence:mana",
+          "ownerId": "effect:juggernaut_swift_slash:damage:attack-sequence",
+          "field": "mana",
+          "state": "known",
+          "value": 150
+        },
+        "cooldown": {
+          "id": "value:effect:juggernaut_swift_slash:damage:attack-sequence:cooldown",
+          "ownerId": "effect:juggernaut_swift_slash:damage:attack-sequence",
+          "field": "cooldown",
+          "state": "known",
+          "value": 25
+        },
+        "delay": {
+          "id": "value:effect:juggernaut_swift_slash:damage:attack-sequence:delay",
+          "ownerId": "effect:juggernaut_swift_slash:damage:attack-sequence",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:juggernaut_swift_slash:damage:attack-sequence:damageType",
+          "ownerId": "effect:juggernaut_swift_slash:damage:attack-sequence",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "juggernaut_omni_slash"
+        ],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "notUsingBladeFury"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "juggernaut_swift_slash"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:juggernaut_swift_slash:damage:attack-sequence",
+      "legacyEffectId": "juggernaut_swift_slash:damage:attack-sequence",
+      "order": 6,
+      "legacyAbilityId": "juggernaut_swift_slash",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:juggernaut_swift_slash:damage:attack-sequence:0"
+      ],
+      "valueIds": [
+        "value:effect:juggernaut_swift_slash:damage:attack-sequence:range",
+        "value:effect:juggernaut_swift_slash:damage:attack-sequence:duration",
+        "value:effect:juggernaut_swift_slash:damage:attack-sequence:magnitude",
+        "value:effect:juggernaut_swift_slash:damage:attack-sequence:mana",
+        "value:effect:juggernaut_swift_slash:damage:attack-sequence:cooldown",
+        "value:effect:juggernaut_swift_slash:damage:attack-sequence:delay",
+        "value:effect:juggernaut_swift_slash:damage:attack-sequence:damageType"
+      ],
+      "activationId": "activation:8:juggernaut_swift_slash"
+    },
+    {
+      "effectId": "juggernaut_bladeform:passive:stack-gain",
+      "heroId": "8",
+      "abilityId": "ability:8:juggernaut_bladeform",
+      "type": "passive",
+      "subtype": "stack-gain",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:juggernaut_bladeform:passive:stack-gain:range",
+          "ownerId": "effect:juggernaut_bladeform:passive:stack-gain",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:juggernaut_bladeform:passive:stack-gain:duration",
+          "ownerId": "effect:juggernaut_bladeform:passive:stack-gain",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:juggernaut_bladeform:passive:stack-gain:magnitude",
+          "ownerId": "effect:juggernaut_bladeform:passive:stack-gain",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:juggernaut_bladeform:passive:stack-gain:mana",
+          "ownerId": "effect:juggernaut_bladeform:passive:stack-gain",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:juggernaut_bladeform:passive:stack-gain:cooldown",
+          "ownerId": "effect:juggernaut_bladeform:passive:stack-gain",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:juggernaut_bladeform:passive:stack-gain:delay",
+          "ownerId": "effect:juggernaut_bladeform:passive:stack-gain",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "bladeformDamageFreeIntervalElapsed"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "juggernaut_bladeform"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:juggernaut_bladeform:passive:stack-gain",
+      "legacyEffectId": "juggernaut_bladeform:passive:stack-gain",
+      "order": 7,
+      "legacyAbilityId": "juggernaut_bladeform",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:juggernaut_bladeform:passive:stack-gain:0"
+      ],
+      "valueIds": [
+        "value:effect:juggernaut_bladeform:passive:stack-gain:range",
+        "value:effect:juggernaut_bladeform:passive:stack-gain:duration",
+        "value:effect:juggernaut_bladeform:passive:stack-gain:magnitude",
+        "value:effect:juggernaut_bladeform:passive:stack-gain:mana",
+        "value:effect:juggernaut_bladeform:passive:stack-gain:cooldown",
+        "value:effect:juggernaut_bladeform:passive:stack-gain:delay"
+      ],
+      "activationId": "activation:8:juggernaut_bladeform"
+    },
+    {
+      "effectId": "juggernaut_omni_slash:damage:attack-sequence",
+      "heroId": "8",
+      "abilityId": "ability:8:juggernaut_omni_slash",
+      "type": "damage",
+      "subtype": "attack-sequence",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:juggernaut_omni_slash:damage:attack-sequence:range",
+          "ownerId": "effect:juggernaut_omni_slash:damage:attack-sequence",
+          "field": "range",
+          "state": "known",
+          "value": 450
+        },
+        "duration": {
+          "id": "value:effect:juggernaut_omni_slash:damage:attack-sequence:duration",
+          "ownerId": "effect:juggernaut_omni_slash:damage:attack-sequence",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3,
+            3.25,
+            3.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:juggernaut_omni_slash:damage:attack-sequence:magnitude",
+          "ownerId": "effect:juggernaut_omni_slash:damage:attack-sequence",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:juggernaut_omni_slash:damage:attack-sequence:mana",
+          "ownerId": "effect:juggernaut_omni_slash:damage:attack-sequence",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            200,
+            275,
+            350
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:juggernaut_omni_slash:damage:attack-sequence:cooldown",
+          "ownerId": "effect:juggernaut_omni_slash:damage:attack-sequence",
+          "field": "cooldown",
+          "state": "known",
+          "value": 120
+        },
+        "delay": {
+          "id": "value:effect:juggernaut_omni_slash:damage:attack-sequence:delay",
+          "ownerId": "effect:juggernaut_omni_slash:damage:attack-sequence",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:juggernaut_omni_slash:damage:attack-sequence:damageType",
+          "ownerId": "effect:juggernaut_omni_slash:damage:attack-sequence",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "notUsingBladeFury"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "juggernaut_omni_slash"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:juggernaut_omni_slash:damage:attack-sequence",
+      "legacyEffectId": "juggernaut_omni_slash:damage:attack-sequence",
+      "order": 8,
+      "legacyAbilityId": "juggernaut_omni_slash",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:juggernaut_omni_slash:damage:attack-sequence:0"
+      ],
+      "valueIds": [
+        "value:effect:juggernaut_omni_slash:damage:attack-sequence:range",
+        "value:effect:juggernaut_omni_slash:damage:attack-sequence:duration",
+        "value:effect:juggernaut_omni_slash:damage:attack-sequence:magnitude",
+        "value:effect:juggernaut_omni_slash:damage:attack-sequence:mana",
+        "value:effect:juggernaut_omni_slash:damage:attack-sequence:cooldown",
+        "value:effect:juggernaut_omni_slash:damage:attack-sequence:delay",
+        "value:effect:juggernaut_omni_slash:damage:attack-sequence:damageType"
+      ],
+      "activationId": "activation:8:juggernaut_omni_slash"
+    },
+    {
+      "effectId": "juggernaut_omni_slash:save:self-invulnerability",
+      "heroId": "8",
+      "abilityId": "ability:8:juggernaut_omni_slash",
+      "type": "save",
+      "subtype": "self-invulnerability",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:juggernaut_omni_slash:save:self-invulnerability:range",
+          "ownerId": "effect:juggernaut_omni_slash:save:self-invulnerability",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:juggernaut_omni_slash:save:self-invulnerability:duration",
+          "ownerId": "effect:juggernaut_omni_slash:save:self-invulnerability",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3,
+            3.25,
+            3.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:juggernaut_omni_slash:save:self-invulnerability:magnitude",
+          "ownerId": "effect:juggernaut_omni_slash:save:self-invulnerability",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:juggernaut_omni_slash:save:self-invulnerability:mana",
+          "ownerId": "effect:juggernaut_omni_slash:save:self-invulnerability",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            200,
+            275,
+            350
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:juggernaut_omni_slash:save:self-invulnerability:cooldown",
+          "ownerId": "effect:juggernaut_omni_slash:save:self-invulnerability",
+          "field": "cooldown",
+          "state": "known",
+          "value": 120
+        },
+        "delay": {
+          "id": "value:effect:juggernaut_omni_slash:save:self-invulnerability:delay",
+          "ownerId": "effect:juggernaut_omni_slash:save:self-invulnerability",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "omnislashTargetAvailable",
+          "notUsingBladeFury"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "physical",
+            "magical",
+            "pure"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "juggernaut_omni_slash"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:juggernaut_omni_slash:save:self-invulnerability",
+      "legacyEffectId": "juggernaut_omni_slash:save:self-invulnerability",
+      "order": 9,
+      "legacyAbilityId": "juggernaut_omni_slash",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:juggernaut_omni_slash:save:self-invulnerability:0",
+        "condition:juggernaut_omni_slash:save:self-invulnerability:1"
+      ],
+      "valueIds": [
+        "value:effect:juggernaut_omni_slash:save:self-invulnerability:range",
+        "value:effect:juggernaut_omni_slash:save:self-invulnerability:duration",
+        "value:effect:juggernaut_omni_slash:save:self-invulnerability:magnitude",
+        "value:effect:juggernaut_omni_slash:save:self-invulnerability:mana",
+        "value:effect:juggernaut_omni_slash:save:self-invulnerability:cooldown",
+        "value:effect:juggernaut_omni_slash:save:self-invulnerability:delay"
+      ],
+      "activationId": "activation:8:juggernaut_omni_slash"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel:0",
+      "ownerId": "effect:juggernaut_blade_fury:dispel:end-spin-self-strong-dispel",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "bladeFuryEnds"
+      }
+    },
+    {
+      "id": "condition:juggernaut_healing_ward:heal:ward-health-regeneration:0",
+      "ownerId": "effect:juggernaut_healing_ward:heal:ward-health-regeneration",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "healingWardAlive"
+      }
+    },
+    {
+      "id": "condition:juggernaut_healing_ward:heal:ward-health-regeneration:1",
+      "ownerId": "effect:juggernaut_healing_ward:heal:ward-health-regeneration",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "recipientWithinHealingWardAura"
+      }
+    },
+    {
+      "id": "condition:juggernaut_blade_dance:passive:critical-strike:0",
+      "ownerId": "effect:juggernaut_blade_dance:passive:critical-strike",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "bladeDanceProc"
+      }
+    },
+    {
+      "id": "condition:juggernaut_swift_slash:damage:attack-sequence:0",
+      "ownerId": "effect:juggernaut_swift_slash:damage:attack-sequence",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "notUsingBladeFury"
+      }
+    },
+    {
+      "id": "condition:juggernaut_bladeform:passive:stack-gain:0",
+      "ownerId": "effect:juggernaut_bladeform:passive:stack-gain",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "bladeformDamageFreeIntervalElapsed"
+      }
+    },
+    {
+      "id": "condition:juggernaut_omni_slash:damage:attack-sequence:0",
+      "ownerId": "effect:juggernaut_omni_slash:damage:attack-sequence",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "notUsingBladeFury"
+      }
+    },
+    {
+      "id": "condition:juggernaut_omni_slash:save:self-invulnerability:0",
+      "ownerId": "effect:juggernaut_omni_slash:save:self-invulnerability",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "omnislashTargetAvailable"
+      }
+    },
+    {
+      "id": "condition:juggernaut_omni_slash:save:self-invulnerability:1",
+      "ownerId": "effect:juggernaut_omni_slash:save:self-invulnerability",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "notUsingBladeFury"
+      }
+    }
+  ]
+}

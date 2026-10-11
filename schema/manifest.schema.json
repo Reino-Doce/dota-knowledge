@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/manifest.schema.json",
+  "title": "Dota knowledge runtime manifest",
+  "description": "One current dataset identity and the bounded artifacts required to load it.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "version",
+    "createdAt",
+    "sourceIdentities",
+    "core",
+    "guides",
+    "observationShards"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "version": {
+      "$ref": "#/$defs/version"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sourceIdentities": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "core": {
+      "$ref": "#/$defs/boundedArtifact"
+    },
+    "guides": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[1-9][0-9]{0,5}$"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/boundedArtifact"
+      }
+    },
+    "observationShards": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/observationShard"
+      }
+    }
+  },
+  "$defs": {
+    "version": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9.-]{0,63}$"
+    },
+    "heroId": {
+      "type": "string",
+      "pattern": "^[1-9][0-9]{0,5}$"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "artifact": {
+      "type": "object",
+      "required": [
+        "name",
+        "bytes",
+        "sha256"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240,
+          "pattern": "^(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.?/)[^\\u0000]+$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "boundedArtifact": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/$defs/artifact"
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "observationShard": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/$defs/artifact"
+        },
+        {
+          "type": "object",
+          "required": [
+            "heroIds",
+            "kinds",
+            "sourceIds"
+          ],
+          "properties": {
+            "heroIds": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "$ref": "#/$defs/heroId"
+              }
+            },
+            "otherHeroIds": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "$ref": "#/$defs/heroId"
+              }
+            },
+            "allyHeroIds": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "$ref": "#/$defs/heroId"
+              }
+            },
+            "opponentHeroIds": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "$ref": "#/$defs/heroId"
+              }
+            },
+            "cohortIds": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "$ref": "#/$defs/id"
+              }
+            },
+            "kinds": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "sourceIds": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "$ref": "#/$defs/id"
+              }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,2367 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "phoenix_icarus_dive:mobility:curved-dive-and-return",
+      "heroId": "110",
+      "abilityId": "ability:110:phoenix_icarus_dive",
+      "type": "mobility",
+      "subtype": "curved-dive-and-return",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:phoenix_icarus_dive:mobility:curved-dive-and-return:range",
+          "ownerId": "effect:phoenix_icarus_dive:mobility:curved-dive-and-return",
+          "field": "range",
+          "state": "known",
+          "value": [
+            1100,
+            1200,
+            1300,
+            1400
+          ]
+        },
+        "duration": {
+          "id": "value:effect:phoenix_icarus_dive:mobility:curved-dive-and-return:duration",
+          "ownerId": "effect:phoenix_icarus_dive:mobility:curved-dive-and-return",
+          "field": "duration",
+          "state": "known",
+          "value": 2
+        },
+        "magnitude": {
+          "id": "value:effect:phoenix_icarus_dive:mobility:curved-dive-and-return:magnitude",
+          "ownerId": "effect:phoenix_icarus_dive:mobility:curved-dive-and-return",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:phoenix_icarus_dive:mobility:curved-dive-and-return:mana",
+          "ownerId": "effect:phoenix_icarus_dive:mobility:curved-dive-and-return",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:phoenix_icarus_dive:mobility:curved-dive-and-return:cooldown",
+          "ownerId": "effect:phoenix_icarus_dive:mobility:curved-dive-and-return",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            35,
+            30,
+            25
+          ]
+        },
+        "delay": {
+          "id": "value:effect:phoenix_icarus_dive:mobility:curved-dive-and-return:delay",
+          "ownerId": "effect:phoenix_icarus_dive:mobility:curved-dive-and-return",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "phoenixDiveHealthCostAccounted"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "phoenix_icarus_dive"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:phoenix_icarus_dive:mobility:curved-dive-and-return",
+      "legacyEffectId": "phoenix_icarus_dive:mobility:curved-dive-and-return",
+      "order": 0,
+      "legacyAbilityId": "phoenix_icarus_dive",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:phoenix_icarus_dive:mobility:curved-dive-and-return:0"
+      ],
+      "valueIds": [
+        "value:effect:phoenix_icarus_dive:mobility:curved-dive-and-return:range",
+        "value:effect:phoenix_icarus_dive:mobility:curved-dive-and-return:duration",
+        "value:effect:phoenix_icarus_dive:mobility:curved-dive-and-return:magnitude",
+        "value:effect:phoenix_icarus_dive:mobility:curved-dive-and-return:mana",
+        "value:effect:phoenix_icarus_dive:mobility:curved-dive-and-return:cooldown",
+        "value:effect:phoenix_icarus_dive:mobility:curved-dive-and-return:delay"
+      ],
+      "activationId": "activation:110:phoenix_icarus_dive"
+    },
+    {
+      "effectId": "phoenix_icarus_dive:damage:dive-contact-burn",
+      "heroId": "110",
+      "abilityId": "ability:110:phoenix_icarus_dive",
+      "type": "damage",
+      "subtype": "dive-contact-burn",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:phoenix_icarus_dive:damage:dive-contact-burn:range",
+          "ownerId": "effect:phoenix_icarus_dive:damage:dive-contact-burn",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:phoenix_icarus_dive:damage:dive-contact-burn:duration",
+          "ownerId": "effect:phoenix_icarus_dive:damage:dive-contact-burn",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:phoenix_icarus_dive:damage:dive-contact-burn:magnitude",
+          "ownerId": "effect:phoenix_icarus_dive:damage:dive-contact-burn",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:phoenix_icarus_dive:damage:dive-contact-burn:mana",
+          "ownerId": "effect:phoenix_icarus_dive:damage:dive-contact-burn",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:phoenix_icarus_dive:damage:dive-contact-burn:cooldown",
+          "ownerId": "effect:phoenix_icarus_dive:damage:dive-contact-burn",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:phoenix_icarus_dive:damage:dive-contact-burn:delay",
+          "ownerId": "effect:phoenix_icarus_dive:damage:dive-contact-burn",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:phoenix_icarus_dive:damage:dive-contact-burn:damageType",
+          "ownerId": "effect:phoenix_icarus_dive:damage:dive-contact-burn",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "phoenixDiveEstablished",
+          "diveContactsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "phoenix_icarus_dive:passive"
+      },
+      "vulnerability": {
+        "rootDisabled": true
+      },
+      "exceptions": [],
+      "id": "effect:phoenix_icarus_dive:damage:dive-contact-burn",
+      "legacyEffectId": "phoenix_icarus_dive:damage:dive-contact-burn",
+      "order": 1,
+      "legacyAbilityId": "phoenix_icarus_dive",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:phoenix_icarus_dive:damage:dive-contact-burn:0",
+        "condition:phoenix_icarus_dive:damage:dive-contact-burn:1"
+      ],
+      "valueIds": [
+        "value:effect:phoenix_icarus_dive:damage:dive-contact-burn:range",
+        "value:effect:phoenix_icarus_dive:damage:dive-contact-burn:duration",
+        "value:effect:phoenix_icarus_dive:damage:dive-contact-burn:magnitude",
+        "value:effect:phoenix_icarus_dive:damage:dive-contact-burn:mana",
+        "value:effect:phoenix_icarus_dive:damage:dive-contact-burn:cooldown",
+        "value:effect:phoenix_icarus_dive:damage:dive-contact-burn:delay",
+        "value:effect:phoenix_icarus_dive:damage:dive-contact-burn:damageType"
+      ],
+      "activationId": "activation:110:phoenix_icarus_dive"
+    },
+    {
+      "effectId": "phoenix_icarus_dive:slow:dive-contact-movement-slow",
+      "heroId": "110",
+      "abilityId": "ability:110:phoenix_icarus_dive",
+      "type": "slow",
+      "subtype": "dive-contact-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:phoenix_icarus_dive:slow:dive-contact-movement-slow:range",
+          "ownerId": "effect:phoenix_icarus_dive:slow:dive-contact-movement-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:phoenix_icarus_dive:slow:dive-contact-movement-slow:duration",
+          "ownerId": "effect:phoenix_icarus_dive:slow:dive-contact-movement-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:phoenix_icarus_dive:slow:dive-contact-movement-slow:magnitude",
+          "ownerId": "effect:phoenix_icarus_dive:slow:dive-contact-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            10,
+            15,
+            20,
+            25
+          ]
+        },
+        "mana": {
+          "id": "value:effect:phoenix_icarus_dive:slow:dive-contact-movement-slow:mana",
+          "ownerId": "effect:phoenix_icarus_dive:slow:dive-contact-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:phoenix_icarus_dive:slow:dive-contact-movement-slow:cooldown",
+          "ownerId": "effect:phoenix_icarus_dive:slow:dive-contact-movement-slow",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:phoenix_icarus_dive:slow:dive-contact-movement-slow:delay",
+          "ownerId": "effect:phoenix_icarus_dive:slow:dive-contact-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "phoenixDiveEstablished",
+          "diveContactsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "phoenix_icarus_dive:passive"
+      },
+      "vulnerability": {
+        "rootDisabled": true
+      },
+      "exceptions": [],
+      "id": "effect:phoenix_icarus_dive:slow:dive-contact-movement-slow",
+      "legacyEffectId": "phoenix_icarus_dive:slow:dive-contact-movement-slow",
+      "order": 2,
+      "legacyAbilityId": "phoenix_icarus_dive",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:phoenix_icarus_dive:slow:dive-contact-movement-slow:0",
+        "condition:phoenix_icarus_dive:slow:dive-contact-movement-slow:1"
+      ],
+      "valueIds": [
+        "value:effect:phoenix_icarus_dive:slow:dive-contact-movement-slow:range",
+        "value:effect:phoenix_icarus_dive:slow:dive-contact-movement-slow:duration",
+        "value:effect:phoenix_icarus_dive:slow:dive-contact-movement-slow:magnitude",
+        "value:effect:phoenix_icarus_dive:slow:dive-contact-movement-slow:mana",
+        "value:effect:phoenix_icarus_dive:slow:dive-contact-movement-slow:cooldown",
+        "value:effect:phoenix_icarus_dive:slow:dive-contact-movement-slow:delay"
+      ],
+      "activationId": "activation:110:phoenix_icarus_dive"
+    },
+    {
+      "effectId": "phoenix_fire_spirits:modifier:paid-fire-spirit-summoning",
+      "heroId": "110",
+      "abilityId": "ability:110:phoenix_fire_spirits",
+      "type": "modifier",
+      "subtype": "paid-fire-spirit-summoning",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning:range",
+          "ownerId": "effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning:duration",
+          "ownerId": "effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning",
+          "field": "duration",
+          "state": "known",
+          "value": 20
+        },
+        "magnitude": {
+          "id": "value:effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning:magnitude",
+          "ownerId": "effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning:mana",
+          "ownerId": "effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning:cooldown",
+          "ownerId": "effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            50,
+            40,
+            30,
+            20
+          ]
+        },
+        "delay": {
+          "id": "value:effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning:delay",
+          "ownerId": "effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "phoenixSpiritHealthCostAccounted"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "phoenix_fire_spirits"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning",
+      "legacyEffectId": "phoenix_fire_spirits:modifier:paid-fire-spirit-summoning",
+      "order": 3,
+      "legacyAbilityId": "phoenix_fire_spirits",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning:0"
+      ],
+      "valueIds": [
+        "value:effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning:range",
+        "value:effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning:duration",
+        "value:effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning:magnitude",
+        "value:effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning:mana",
+        "value:effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning:cooldown",
+        "value:effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning:delay"
+      ],
+      "activationId": "activation:110:phoenix_fire_spirits"
+    },
+    {
+      "effectId": "phoenix_fire_spirits:damage:launched-spirit-contact-burn",
+      "heroId": "110",
+      "abilityId": "ability:110:phoenix_fire_spirits",
+      "type": "damage",
+      "subtype": "launched-spirit-contact-burn",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn:range",
+          "ownerId": "effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn",
+          "field": "range",
+          "state": "known",
+          "value": 1400
+        },
+        "duration": {
+          "id": "value:effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn:duration",
+          "ownerId": "effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn:magnitude",
+          "ownerId": "effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn:mana",
+          "ownerId": "effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn:cooldown",
+          "ownerId": "effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn:delay",
+          "ownerId": "effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn:damageType",
+          "ownerId": "effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "phoenixSpiritAvailable",
+          "launchedSpiritHitsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "phoenix_fire_spirits:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn",
+      "legacyEffectId": "phoenix_fire_spirits:damage:launched-spirit-contact-burn",
+      "order": 4,
+      "legacyAbilityId": "phoenix_fire_spirits",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:phoenix_fire_spirits:damage:launched-spirit-contact-burn:0",
+        "condition:phoenix_fire_spirits:damage:launched-spirit-contact-burn:1"
+      ],
+      "valueIds": [
+        "value:effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn:range",
+        "value:effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn:duration",
+        "value:effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn:magnitude",
+        "value:effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn:mana",
+        "value:effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn:cooldown",
+        "value:effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn:delay",
+        "value:effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn:damageType"
+      ],
+      "activationId": "activation:110:phoenix_fire_spirits"
+    },
+    {
+      "effectId": "phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction",
+      "heroId": "110",
+      "abilityId": "ability:110:phoenix_fire_spirits",
+      "type": "modifier",
+      "subtype": "launched-spirit-attack-speed-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction:range",
+          "ownerId": "effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction",
+          "field": "range",
+          "state": "known",
+          "value": 1400
+        },
+        "duration": {
+          "id": "value:effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction:duration",
+          "ownerId": "effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction:magnitude",
+          "ownerId": "effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -35,
+            -70,
+            -105,
+            -140
+          ]
+        },
+        "mana": {
+          "id": "value:effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction:mana",
+          "ownerId": "effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction:cooldown",
+          "ownerId": "effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction:delay",
+          "ownerId": "effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "phoenixSpiritAvailable",
+          "launchedSpiritHitsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "phoenix_fire_spirits:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction",
+      "legacyEffectId": "phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction",
+      "order": 5,
+      "legacyAbilityId": "phoenix_fire_spirits",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction:0",
+        "condition:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction:1"
+      ],
+      "valueIds": [
+        "value:effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction:range",
+        "value:effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction:duration",
+        "value:effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction:magnitude",
+        "value:effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction:mana",
+        "value:effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction:cooldown",
+        "value:effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction:delay"
+      ],
+      "activationId": "activation:110:phoenix_fire_spirits"
+    },
+    {
+      "effectId": "phoenix_fire_spirits:vision:fire-spirit-impact-vision",
+      "heroId": "110",
+      "abilityId": "ability:110:phoenix_fire_spirits",
+      "type": "vision",
+      "subtype": "fire-spirit-impact-vision",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision:range",
+          "ownerId": "effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision",
+          "field": "range",
+          "state": "known",
+          "value": 1400
+        },
+        "duration": {
+          "id": "value:effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision:duration",
+          "ownerId": "effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision:magnitude",
+          "ownerId": "effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision:mana",
+          "ownerId": "effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision:cooldown",
+          "ownerId": "effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision:delay",
+          "ownerId": "effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "phoenixSpiritAvailable",
+          "launchedSpiritReachesArea"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "phoenix_fire_spirits:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision",
+      "legacyEffectId": "phoenix_fire_spirits:vision:fire-spirit-impact-vision",
+      "order": 6,
+      "legacyAbilityId": "phoenix_fire_spirits",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:phoenix_fire_spirits:vision:fire-spirit-impact-vision:0",
+        "condition:phoenix_fire_spirits:vision:fire-spirit-impact-vision:1"
+      ],
+      "valueIds": [
+        "value:effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision:range",
+        "value:effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision:duration",
+        "value:effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision:magnitude",
+        "value:effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision:mana",
+        "value:effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision:cooldown",
+        "value:effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision:delay"
+      ],
+      "activationId": "activation:110:phoenix_fire_spirits"
+    },
+    {
+      "effectId": "phoenix_sun_ray:damage:ramping-health-scaled-ray-damage",
+      "heroId": "110",
+      "abilityId": "ability:110:phoenix_sun_ray",
+      "type": "damage",
+      "subtype": "ramping-health-scaled-ray-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:range",
+          "ownerId": "effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage",
+          "field": "range",
+          "state": "known",
+          "value": 1200
+        },
+        "duration": {
+          "id": "value:effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:duration",
+          "ownerId": "effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:magnitude",
+          "ownerId": "effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:mana",
+          "ownerId": "effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:cooldown",
+          "ownerId": "effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": 30
+        },
+        "delay": {
+          "id": "value:effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:delay",
+          "ownerId": "effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:damageType",
+          "ownerId": "effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "phoenixRayHealthDrainAccounted",
+          "enemyInsideSunRay"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "phoenix_sun_ray"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage",
+      "legacyEffectId": "phoenix_sun_ray:damage:ramping-health-scaled-ray-damage",
+      "order": 7,
+      "legacyAbilityId": "phoenix_sun_ray",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:0",
+        "condition:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:1"
+      ],
+      "valueIds": [
+        "value:effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:range",
+        "value:effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:duration",
+        "value:effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:magnitude",
+        "value:effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:mana",
+        "value:effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:cooldown",
+        "value:effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:delay",
+        "value:effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:damageType"
+      ],
+      "activationId": "activation:110:phoenix_sun_ray"
+    },
+    {
+      "effectId": "phoenix_sun_ray:heal:ramping-health-scaled-ray-healing",
+      "heroId": "110",
+      "abilityId": "ability:110:phoenix_sun_ray",
+      "type": "heal",
+      "subtype": "ramping-health-scaled-ray-healing",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing:range",
+          "ownerId": "effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing",
+          "field": "range",
+          "state": "known",
+          "value": 1200
+        },
+        "duration": {
+          "id": "value:effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing:duration",
+          "ownerId": "effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing:magnitude",
+          "ownerId": "effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing:mana",
+          "ownerId": "effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing:cooldown",
+          "ownerId": "effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing",
+          "field": "cooldown",
+          "state": "known",
+          "value": 30
+        },
+        "delay": {
+          "id": "value:effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing:delay",
+          "ownerId": "effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "phoenixRayHealthDrainAccounted",
+          "allyInsideSunRay"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "phoenix_sun_ray"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing",
+      "legacyEffectId": "phoenix_sun_ray:heal:ramping-health-scaled-ray-healing",
+      "order": 8,
+      "legacyAbilityId": "phoenix_sun_ray",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing:0",
+        "condition:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing:1"
+      ],
+      "valueIds": [
+        "value:effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing:range",
+        "value:effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing:duration",
+        "value:effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing:magnitude",
+        "value:effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing:mana",
+        "value:effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing:cooldown",
+        "value:effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing:delay"
+      ],
+      "activationId": "activation:110:phoenix_sun_ray"
+    },
+    {
+      "effectId": "phoenix_sun_ray:modifier:shard-ray-during-supernova",
+      "heroId": "110",
+      "abilityId": "ability:110:phoenix_sun_ray",
+      "type": "modifier",
+      "subtype": "shard-ray-during-supernova",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:phoenix_sun_ray:modifier:shard-ray-during-supernova:range",
+          "ownerId": "effect:phoenix_sun_ray:modifier:shard-ray-during-supernova",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:phoenix_sun_ray:modifier:shard-ray-during-supernova:duration",
+          "ownerId": "effect:phoenix_sun_ray:modifier:shard-ray-during-supernova",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:phoenix_sun_ray:modifier:shard-ray-during-supernova:magnitude",
+          "ownerId": "effect:phoenix_sun_ray:modifier:shard-ray-during-supernova",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:phoenix_sun_ray:modifier:shard-ray-during-supernova:mana",
+          "ownerId": "effect:phoenix_sun_ray:modifier:shard-ray-during-supernova",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:phoenix_sun_ray:modifier:shard-ray-during-supernova:cooldown",
+          "ownerId": "effect:phoenix_sun_ray:modifier:shard-ray-during-supernova",
+          "field": "cooldown",
+          "state": "known",
+          "value": 30
+        },
+        "delay": {
+          "id": "value:effect:phoenix_sun_ray:modifier:shard-ray-during-supernova:delay",
+          "ownerId": "effect:phoenix_sun_ray:modifier:shard-ray-during-supernova",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "phoenixSupernovaActive"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "phoenix_sun_ray"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:phoenix_sun_ray:modifier:shard-ray-during-supernova",
+      "legacyEffectId": "phoenix_sun_ray:modifier:shard-ray-during-supernova",
+      "order": 9,
+      "legacyAbilityId": "phoenix_sun_ray",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:phoenix_sun_ray:modifier:shard-ray-during-supernova:0"
+      ],
+      "valueIds": [
+        "value:effect:phoenix_sun_ray:modifier:shard-ray-during-supernova:range",
+        "value:effect:phoenix_sun_ray:modifier:shard-ray-during-supernova:duration",
+        "value:effect:phoenix_sun_ray:modifier:shard-ray-during-supernova:magnitude",
+        "value:effect:phoenix_sun_ray:modifier:shard-ray-during-supernova:mana",
+        "value:effect:phoenix_sun_ray:modifier:shard-ray-during-supernova:cooldown",
+        "value:effect:phoenix_sun_ray:modifier:shard-ray-during-supernova:delay"
+      ],
+      "activationId": "activation:110:phoenix_sun_ray"
+    },
+    {
+      "effectId": "phoenix_dying_light:damage:missing-health-radiant-damage",
+      "heroId": "110",
+      "abilityId": "ability:110:phoenix_dying_light",
+      "type": "damage",
+      "subtype": "missing-health-radiant-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:phoenix_dying_light:damage:missing-health-radiant-damage:range",
+          "ownerId": "effect:phoenix_dying_light:damage:missing-health-radiant-damage",
+          "field": "range",
+          "state": "known",
+          "value": 400
+        },
+        "duration": {
+          "id": "value:effect:phoenix_dying_light:damage:missing-health-radiant-damage:duration",
+          "ownerId": "effect:phoenix_dying_light:damage:missing-health-radiant-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:phoenix_dying_light:damage:missing-health-radiant-damage:magnitude",
+          "ownerId": "effect:phoenix_dying_light:damage:missing-health-radiant-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:phoenix_dying_light:damage:missing-health-radiant-damage:mana",
+          "ownerId": "effect:phoenix_dying_light:damage:missing-health-radiant-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:phoenix_dying_light:damage:missing-health-radiant-damage:cooldown",
+          "ownerId": "effect:phoenix_dying_light:damage:missing-health-radiant-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:phoenix_dying_light:damage:missing-health-radiant-damage:delay",
+          "ownerId": "effect:phoenix_dying_light:damage:missing-health-radiant-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:phoenix_dying_light:damage:missing-health-radiant-damage:damageType",
+          "ownerId": "effect:phoenix_dying_light:damage:missing-health-radiant-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "phoenixHasMissingHealth"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "phoenix_dying_light:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:phoenix_dying_light:damage:missing-health-radiant-damage",
+      "legacyEffectId": "phoenix_dying_light:damage:missing-health-radiant-damage",
+      "order": 10,
+      "legacyAbilityId": "phoenix_dying_light",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:phoenix_dying_light:damage:missing-health-radiant-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:phoenix_dying_light:damage:missing-health-radiant-damage:range",
+        "value:effect:phoenix_dying_light:damage:missing-health-radiant-damage:duration",
+        "value:effect:phoenix_dying_light:damage:missing-health-radiant-damage:magnitude",
+        "value:effect:phoenix_dying_light:damage:missing-health-radiant-damage:mana",
+        "value:effect:phoenix_dying_light:damage:missing-health-radiant-damage:cooldown",
+        "value:effect:phoenix_dying_light:damage:missing-health-radiant-damage:delay",
+        "value:effect:phoenix_dying_light:damage:missing-health-radiant-damage:damageType"
+      ],
+      "activationId": "activation:110:phoenix_dying_light"
+    },
+    {
+      "effectId": "phoenix_supernova:modifier:attack-destroyable-rebirth-sun",
+      "heroId": "110",
+      "abilityId": "ability:110:phoenix_supernova",
+      "type": "modifier",
+      "subtype": "attack-destroyable-rebirth-sun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun:range",
+          "ownerId": "effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun:duration",
+          "ownerId": "effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun:magnitude",
+          "ownerId": "effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun:mana",
+          "ownerId": "effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            200,
+            250
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun:cooldown",
+          "ownerId": "effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun",
+          "field": "cooldown",
+          "state": "known",
+          "value": 120
+        },
+        "delay": {
+          "id": "value:effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun:delay",
+          "ownerId": "effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "phoenix_supernova"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun",
+      "legacyEffectId": "phoenix_supernova:modifier:attack-destroyable-rebirth-sun",
+      "order": 11,
+      "legacyAbilityId": "phoenix_supernova",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun:range",
+        "value:effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun:duration",
+        "value:effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun:magnitude",
+        "value:effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun:mana",
+        "value:effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun:cooldown",
+        "value:effect:phoenix_supernova:modifier:attack-destroyable-rebirth-sun:delay"
+      ],
+      "activationId": "activation:110:phoenix_supernova"
+    },
+    {
+      "effectId": "phoenix_supernova:dispel:supernova-strong-self-dispel",
+      "heroId": "110",
+      "abilityId": "ability:110:phoenix_supernova",
+      "type": "dispel",
+      "subtype": "supernova-strong-self-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:phoenix_supernova:dispel:supernova-strong-self-dispel:range",
+          "ownerId": "effect:phoenix_supernova:dispel:supernova-strong-self-dispel",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:phoenix_supernova:dispel:supernova-strong-self-dispel:duration",
+          "ownerId": "effect:phoenix_supernova:dispel:supernova-strong-self-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:phoenix_supernova:dispel:supernova-strong-self-dispel:magnitude",
+          "ownerId": "effect:phoenix_supernova:dispel:supernova-strong-self-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:phoenix_supernova:dispel:supernova-strong-self-dispel:mana",
+          "ownerId": "effect:phoenix_supernova:dispel:supernova-strong-self-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            200,
+            250
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:phoenix_supernova:dispel:supernova-strong-self-dispel:cooldown",
+          "ownerId": "effect:phoenix_supernova:dispel:supernova-strong-self-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": 120
+        },
+        "delay": {
+          "id": "value:effect:phoenix_supernova:dispel:supernova-strong-self-dispel:delay",
+          "ownerId": "effect:phoenix_supernova:dispel:supernova-strong-self-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "strong"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "self-debuffs"
+        }
+      },
+      "relationships": {
+        "resourceId": "phoenix_supernova"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:phoenix_supernova:dispel:supernova-strong-self-dispel",
+      "legacyEffectId": "phoenix_supernova:dispel:supernova-strong-self-dispel",
+      "order": 12,
+      "legacyAbilityId": "phoenix_supernova",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:phoenix_supernova:dispel:supernova-strong-self-dispel:range",
+        "value:effect:phoenix_supernova:dispel:supernova-strong-self-dispel:duration",
+        "value:effect:phoenix_supernova:dispel:supernova-strong-self-dispel:magnitude",
+        "value:effect:phoenix_supernova:dispel:supernova-strong-self-dispel:mana",
+        "value:effect:phoenix_supernova:dispel:supernova-strong-self-dispel:cooldown",
+        "value:effect:phoenix_supernova:dispel:supernova-strong-self-dispel:delay"
+      ],
+      "activationId": "activation:110:phoenix_supernova"
+    },
+    {
+      "effectId": "phoenix_supernova:damage:active-supernova-scorch",
+      "heroId": "110",
+      "abilityId": "ability:110:phoenix_supernova",
+      "type": "damage",
+      "subtype": "active-supernova-scorch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:phoenix_supernova:damage:active-supernova-scorch:range",
+          "ownerId": "effect:phoenix_supernova:damage:active-supernova-scorch",
+          "field": "range",
+          "state": "known",
+          "value": 1200
+        },
+        "duration": {
+          "id": "value:effect:phoenix_supernova:damage:active-supernova-scorch:duration",
+          "ownerId": "effect:phoenix_supernova:damage:active-supernova-scorch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:phoenix_supernova:damage:active-supernova-scorch:magnitude",
+          "ownerId": "effect:phoenix_supernova:damage:active-supernova-scorch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:phoenix_supernova:damage:active-supernova-scorch:mana",
+          "ownerId": "effect:phoenix_supernova:damage:active-supernova-scorch",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:phoenix_supernova:damage:active-supernova-scorch:cooldown",
+          "ownerId": "effect:phoenix_supernova:damage:active-supernova-scorch",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:phoenix_supernova:damage:active-supernova-scorch:delay",
+          "ownerId": "effect:phoenix_supernova:damage:active-supernova-scorch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:phoenix_supernova:damage:active-supernova-scorch:damageType",
+          "ownerId": "effect:phoenix_supernova:damage:active-supernova-scorch",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "phoenixSupernovaActive",
+          "enemyInsideSupernovaAura"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "phoenix_supernova:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:phoenix_supernova:damage:active-supernova-scorch",
+      "legacyEffectId": "phoenix_supernova:damage:active-supernova-scorch",
+      "order": 13,
+      "legacyAbilityId": "phoenix_supernova",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:phoenix_supernova:damage:active-supernova-scorch:0",
+        "condition:phoenix_supernova:damage:active-supernova-scorch:1"
+      ],
+      "valueIds": [
+        "value:effect:phoenix_supernova:damage:active-supernova-scorch:range",
+        "value:effect:phoenix_supernova:damage:active-supernova-scorch:duration",
+        "value:effect:phoenix_supernova:damage:active-supernova-scorch:magnitude",
+        "value:effect:phoenix_supernova:damage:active-supernova-scorch:mana",
+        "value:effect:phoenix_supernova:damage:active-supernova-scorch:cooldown",
+        "value:effect:phoenix_supernova:damage:active-supernova-scorch:delay",
+        "value:effect:phoenix_supernova:damage:active-supernova-scorch:damageType"
+      ],
+      "activationId": "activation:110:phoenix_supernova"
+    },
+    {
+      "effectId": "phoenix_supernova:control:surviving-supernova-stun",
+      "heroId": "110",
+      "abilityId": "ability:110:phoenix_supernova",
+      "type": "control",
+      "subtype": "surviving-supernova-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:phoenix_supernova:control:surviving-supernova-stun:range",
+          "ownerId": "effect:phoenix_supernova:control:surviving-supernova-stun",
+          "field": "range",
+          "state": "known",
+          "value": 1200
+        },
+        "duration": {
+          "id": "value:effect:phoenix_supernova:control:surviving-supernova-stun:duration",
+          "ownerId": "effect:phoenix_supernova:control:surviving-supernova-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.6,
+            2,
+            2.4
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:phoenix_supernova:control:surviving-supernova-stun:magnitude",
+          "ownerId": "effect:phoenix_supernova:control:surviving-supernova-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:phoenix_supernova:control:surviving-supernova-stun:mana",
+          "ownerId": "effect:phoenix_supernova:control:surviving-supernova-stun",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:phoenix_supernova:control:surviving-supernova-stun:cooldown",
+          "ownerId": "effect:phoenix_supernova:control:surviving-supernova-stun",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:phoenix_supernova:control:surviving-supernova-stun:delay",
+          "ownerId": "effect:phoenix_supernova:control:surviving-supernova-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "phoenixSupernovaSurvivedFullDuration",
+          "enemyInsideSupernovaAura"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "phoenix_supernova:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:phoenix_supernova:control:surviving-supernova-stun",
+      "legacyEffectId": "phoenix_supernova:control:surviving-supernova-stun",
+      "order": 14,
+      "legacyAbilityId": "phoenix_supernova",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:phoenix_supernova:control:surviving-supernova-stun:0",
+        "condition:phoenix_supernova:control:surviving-supernova-stun:1"
+      ],
+      "valueIds": [
+        "value:effect:phoenix_supernova:control:surviving-supernova-stun:range",
+        "value:effect:phoenix_supernova:control:surviving-supernova-stun:duration",
+        "value:effect:phoenix_supernova:control:surviving-supernova-stun:magnitude",
+        "value:effect:phoenix_supernova:control:surviving-supernova-stun:mana",
+        "value:effect:phoenix_supernova:control:surviving-supernova-stun:cooldown",
+        "value:effect:phoenix_supernova:control:surviving-supernova-stun:delay"
+      ],
+      "activationId": "activation:110:phoenix_supernova"
+    },
+    {
+      "effectId": "phoenix_supernova:modifier:scepter-allied-rebirth-sun",
+      "heroId": "110",
+      "abilityId": "ability:110:phoenix_supernova",
+      "type": "modifier",
+      "subtype": "scepter-allied-rebirth-sun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun:range",
+          "ownerId": "effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun",
+          "field": "range",
+          "state": "known",
+          "value": 500
+        },
+        "duration": {
+          "id": "value:effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun:duration",
+          "ownerId": "effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun:magnitude",
+          "ownerId": "effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun:mana",
+          "ownerId": "effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            200,
+            250
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun:cooldown",
+          "ownerId": "effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun",
+          "field": "cooldown",
+          "state": "known",
+          "value": 120
+        },
+        "delay": {
+          "id": "value:effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun:delay",
+          "ownerId": "effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "phoenix_supernova"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun",
+      "legacyEffectId": "phoenix_supernova:modifier:scepter-allied-rebirth-sun",
+      "order": 15,
+      "legacyAbilityId": "phoenix_supernova",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun:range",
+        "value:effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun:duration",
+        "value:effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun:magnitude",
+        "value:effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun:mana",
+        "value:effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun:cooldown",
+        "value:effect:phoenix_supernova:modifier:scepter-allied-rebirth-sun:delay"
+      ],
+      "activationId": "activation:110:phoenix_supernova"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:phoenix_icarus_dive:mobility:curved-dive-and-return:0",
+      "ownerId": "effect:phoenix_icarus_dive:mobility:curved-dive-and-return",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "phoenixDiveHealthCostAccounted"
+      }
+    },
+    {
+      "id": "condition:phoenix_icarus_dive:damage:dive-contact-burn:0",
+      "ownerId": "effect:phoenix_icarus_dive:damage:dive-contact-burn",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "phoenixDiveEstablished"
+      }
+    },
+    {
+      "id": "condition:phoenix_icarus_dive:damage:dive-contact-burn:1",
+      "ownerId": "effect:phoenix_icarus_dive:damage:dive-contact-burn",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "diveContactsEnemy"
+      }
+    },
+    {
+      "id": "condition:phoenix_icarus_dive:slow:dive-contact-movement-slow:0",
+      "ownerId": "effect:phoenix_icarus_dive:slow:dive-contact-movement-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "phoenixDiveEstablished"
+      }
+    },
+    {
+      "id": "condition:phoenix_icarus_dive:slow:dive-contact-movement-slow:1",
+      "ownerId": "effect:phoenix_icarus_dive:slow:dive-contact-movement-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "diveContactsEnemy"
+      }
+    },
+    {
+      "id": "condition:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning:0",
+      "ownerId": "effect:phoenix_fire_spirits:modifier:paid-fire-spirit-summoning",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "phoenixSpiritHealthCostAccounted"
+      }
+    },
+    {
+      "id": "condition:phoenix_fire_spirits:damage:launched-spirit-contact-burn:0",
+      "ownerId": "effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "phoenixSpiritAvailable"
+      }
+    },
+    {
+      "id": "condition:phoenix_fire_spirits:damage:launched-spirit-contact-burn:1",
+      "ownerId": "effect:phoenix_fire_spirits:damage:launched-spirit-contact-burn",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "launchedSpiritHitsEnemy"
+      }
+    },
+    {
+      "id": "condition:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction:0",
+      "ownerId": "effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "phoenixSpiritAvailable"
+      }
+    },
+    {
+      "id": "condition:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction:1",
+      "ownerId": "effect:phoenix_fire_spirits:modifier:launched-spirit-attack-speed-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "launchedSpiritHitsEnemy"
+      }
+    },
+    {
+      "id": "condition:phoenix_fire_spirits:vision:fire-spirit-impact-vision:0",
+      "ownerId": "effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "phoenixSpiritAvailable"
+      }
+    },
+    {
+      "id": "condition:phoenix_fire_spirits:vision:fire-spirit-impact-vision:1",
+      "ownerId": "effect:phoenix_fire_spirits:vision:fire-spirit-impact-vision",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "launchedSpiritReachesArea"
+      }
+    },
+    {
+      "id": "condition:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:0",
+      "ownerId": "effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "phoenixRayHealthDrainAccounted"
+      }
+    },
+    {
+      "id": "condition:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage:1",
+      "ownerId": "effect:phoenix_sun_ray:damage:ramping-health-scaled-ray-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideSunRay"
+      }
+    },
+    {
+      "id": "condition:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing:0",
+      "ownerId": "effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "phoenixRayHealthDrainAccounted"
+      }
+    },
+    {
+      "id": "condition:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing:1",
+      "ownerId": "effect:phoenix_sun_ray:heal:ramping-health-scaled-ray-healing",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyInsideSunRay"
+      }
+    },
+    {
+      "id": "condition:phoenix_sun_ray:modifier:shard-ray-during-supernova:0",
+      "ownerId": "effect:phoenix_sun_ray:modifier:shard-ray-during-supernova",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "phoenixSupernovaActive"
+      }
+    },
+    {
+      "id": "condition:phoenix_dying_light:damage:missing-health-radiant-damage:0",
+      "ownerId": "effect:phoenix_dying_light:damage:missing-health-radiant-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "phoenixHasMissingHealth"
+      }
+    },
+    {
+      "id": "condition:phoenix_supernova:damage:active-supernova-scorch:0",
+      "ownerId": "effect:phoenix_supernova:damage:active-supernova-scorch",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "phoenixSupernovaActive"
+      }
+    },
+    {
+      "id": "condition:phoenix_supernova:damage:active-supernova-scorch:1",
+      "ownerId": "effect:phoenix_supernova:damage:active-supernova-scorch",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideSupernovaAura"
+      }
+    },
+    {
+      "id": "condition:phoenix_supernova:control:surviving-supernova-stun:0",
+      "ownerId": "effect:phoenix_supernova:control:surviving-supernova-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "phoenixSupernovaSurvivedFullDuration"
+      }
+    },
+    {
+      "id": "condition:phoenix_supernova:control:surviving-supernova-stun:1",
+      "ownerId": "effect:phoenix_supernova:control:surviving-supernova-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideSupernovaAura"
+      }
+    }
+  ]
+}

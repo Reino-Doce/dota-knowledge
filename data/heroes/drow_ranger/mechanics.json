@@ -1,0 +1,1883 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "drow_ranger_frost_arrows:slow:attack-movement",
+      "heroId": "6",
+      "abilityId": "ability:6:drow_ranger_frost_arrows",
+      "type": "slow",
+      "subtype": "attack-movement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:drow_ranger_frost_arrows:slow:attack-movement:range",
+          "ownerId": "effect:drow_ranger_frost_arrows:slow:attack-movement",
+          "field": "range",
+          "state": "known",
+          "value": 625
+        },
+        "duration": {
+          "id": "value:effect:drow_ranger_frost_arrows:slow:attack-movement:duration",
+          "ownerId": "effect:drow_ranger_frost_arrows:slow:attack-movement",
+          "field": "duration",
+          "state": "known",
+          "value": 1.5
+        },
+        "magnitude": {
+          "id": "value:effect:drow_ranger_frost_arrows:slow:attack-movement:magnitude",
+          "ownerId": "effect:drow_ranger_frost_arrows:slow:attack-movement",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -15,
+            -25,
+            -35,
+            -45
+          ]
+        },
+        "mana": {
+          "id": "value:effect:drow_ranger_frost_arrows:slow:attack-movement:mana",
+          "ownerId": "effect:drow_ranger_frost_arrows:slow:attack-movement",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:drow_ranger_frost_arrows:slow:attack-movement:cooldown",
+          "ownerId": "effect:drow_ranger_frost_arrows:slow:attack-movement",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "delay": {
+          "id": "value:effect:drow_ranger_frost_arrows:slow:attack-movement:delay",
+          "ownerId": "effect:drow_ranger_frost_arrows:slow:attack-movement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "attackConnects"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "drow_ranger_frost_arrows"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:drow_ranger_frost_arrows:slow:attack-movement",
+      "legacyEffectId": "drow_ranger_frost_arrows:slow:attack-movement",
+      "order": 0,
+      "legacyAbilityId": "drow_ranger_frost_arrows",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:drow_ranger_frost_arrows:slow:attack-movement:0"
+      ],
+      "valueIds": [
+        "value:effect:drow_ranger_frost_arrows:slow:attack-movement:range",
+        "value:effect:drow_ranger_frost_arrows:slow:attack-movement:duration",
+        "value:effect:drow_ranger_frost_arrows:slow:attack-movement:magnitude",
+        "value:effect:drow_ranger_frost_arrows:slow:attack-movement:mana",
+        "value:effect:drow_ranger_frost_arrows:slow:attack-movement:cooldown",
+        "value:effect:drow_ranger_frost_arrows:slow:attack-movement:delay"
+      ],
+      "activationId": "activation:6:drow_ranger_frost_arrows"
+    },
+    {
+      "effectId": "drow_ranger_frost_arrows:damage:bonus-attack-damage",
+      "heroId": "6",
+      "abilityId": "ability:6:drow_ranger_frost_arrows",
+      "type": "damage",
+      "subtype": "bonus-attack-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:drow_ranger_frost_arrows:damage:bonus-attack-damage:range",
+          "ownerId": "effect:drow_ranger_frost_arrows:damage:bonus-attack-damage",
+          "field": "range",
+          "state": "known",
+          "value": 625
+        },
+        "duration": {
+          "id": "value:effect:drow_ranger_frost_arrows:damage:bonus-attack-damage:duration",
+          "ownerId": "effect:drow_ranger_frost_arrows:damage:bonus-attack-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:drow_ranger_frost_arrows:damage:bonus-attack-damage:magnitude",
+          "ownerId": "effect:drow_ranger_frost_arrows:damage:bonus-attack-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            12,
+            18,
+            24,
+            30
+          ]
+        },
+        "mana": {
+          "id": "value:effect:drow_ranger_frost_arrows:damage:bonus-attack-damage:mana",
+          "ownerId": "effect:drow_ranger_frost_arrows:damage:bonus-attack-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:drow_ranger_frost_arrows:damage:bonus-attack-damage:cooldown",
+          "ownerId": "effect:drow_ranger_frost_arrows:damage:bonus-attack-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "delay": {
+          "id": "value:effect:drow_ranger_frost_arrows:damage:bonus-attack-damage:delay",
+          "ownerId": "effect:drow_ranger_frost_arrows:damage:bonus-attack-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:drow_ranger_frost_arrows:damage:bonus-attack-damage:damageType",
+          "ownerId": "effect:drow_ranger_frost_arrows:damage:bonus-attack-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "attackConnects"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "drow_ranger_frost_arrows"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:drow_ranger_frost_arrows:damage:bonus-attack-damage",
+      "legacyEffectId": "drow_ranger_frost_arrows:damage:bonus-attack-damage",
+      "order": 1,
+      "legacyAbilityId": "drow_ranger_frost_arrows",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:drow_ranger_frost_arrows:damage:bonus-attack-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:drow_ranger_frost_arrows:damage:bonus-attack-damage:range",
+        "value:effect:drow_ranger_frost_arrows:damage:bonus-attack-damage:duration",
+        "value:effect:drow_ranger_frost_arrows:damage:bonus-attack-damage:magnitude",
+        "value:effect:drow_ranger_frost_arrows:damage:bonus-attack-damage:mana",
+        "value:effect:drow_ranger_frost_arrows:damage:bonus-attack-damage:cooldown",
+        "value:effect:drow_ranger_frost_arrows:damage:bonus-attack-damage:delay",
+        "value:effect:drow_ranger_frost_arrows:damage:bonus-attack-damage:damageType"
+      ],
+      "activationId": "activation:6:drow_ranger_frost_arrows"
+    },
+    {
+      "effectId": "drow_ranger_frost_arrows:anti-heal:hypothermia-stacks",
+      "heroId": "6",
+      "abilityId": "ability:6:drow_ranger_frost_arrows",
+      "type": "anti-heal",
+      "subtype": "hypothermia-stacks",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks:range",
+          "ownerId": "effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks",
+          "field": "range",
+          "state": "known",
+          "value": 625
+        },
+        "duration": {
+          "id": "value:effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks:duration",
+          "ownerId": "effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks:magnitude",
+          "ownerId": "effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks:mana",
+          "ownerId": "effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks:cooldown",
+          "ownerId": "effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "delay": {
+          "id": "value:effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks:delay",
+          "ownerId": "effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "attackConnects"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing",
+            "regeneration",
+            "lifesteal",
+            "spell-lifesteal"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "drow_ranger_frost_arrows"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks",
+      "legacyEffectId": "drow_ranger_frost_arrows:anti-heal:hypothermia-stacks",
+      "order": 2,
+      "legacyAbilityId": "drow_ranger_frost_arrows",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks:0"
+      ],
+      "valueIds": [
+        "value:effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks:range",
+        "value:effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks:duration",
+        "value:effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks:magnitude",
+        "value:effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks:mana",
+        "value:effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks:cooldown",
+        "value:effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks:delay"
+      ],
+      "activationId": "activation:6:drow_ranger_frost_arrows"
+    },
+    {
+      "effectId": "drow_ranger_frost_arrows:modifier:scepter-branch",
+      "heroId": "6",
+      "abilityId": "ability:6:drow_ranger_frost_arrows",
+      "type": "modifier",
+      "subtype": "scepter-branch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:drow_ranger_frost_arrows:modifier:scepter-branch:range",
+          "ownerId": "effect:drow_ranger_frost_arrows:modifier:scepter-branch",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:drow_ranger_frost_arrows:modifier:scepter-branch:duration",
+          "ownerId": "effect:drow_ranger_frost_arrows:modifier:scepter-branch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:drow_ranger_frost_arrows:modifier:scepter-branch:magnitude",
+          "ownerId": "effect:drow_ranger_frost_arrows:modifier:scepter-branch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:drow_ranger_frost_arrows:modifier:scepter-branch:mana",
+          "ownerId": "effect:drow_ranger_frost_arrows:modifier:scepter-branch",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:drow_ranger_frost_arrows:modifier:scepter-branch:cooldown",
+          "ownerId": "effect:drow_ranger_frost_arrows:modifier:scepter-branch",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:drow_ranger_frost_arrows:modifier:scepter-branch:delay",
+          "ownerId": "effect:drow_ranger_frost_arrows:modifier:scepter-branch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "hypothermiaTargetDied"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "drow_ranger_frost_arrows:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:drow_ranger_frost_arrows:modifier:scepter-branch",
+      "legacyEffectId": "drow_ranger_frost_arrows:modifier:scepter-branch",
+      "order": 3,
+      "legacyAbilityId": "drow_ranger_frost_arrows",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:drow_ranger_frost_arrows:modifier:scepter-branch:0"
+      ],
+      "valueIds": [
+        "value:effect:drow_ranger_frost_arrows:modifier:scepter-branch:range",
+        "value:effect:drow_ranger_frost_arrows:modifier:scepter-branch:duration",
+        "value:effect:drow_ranger_frost_arrows:modifier:scepter-branch:magnitude",
+        "value:effect:drow_ranger_frost_arrows:modifier:scepter-branch:mana",
+        "value:effect:drow_ranger_frost_arrows:modifier:scepter-branch:cooldown",
+        "value:effect:drow_ranger_frost_arrows:modifier:scepter-branch:delay"
+      ],
+      "activationId": "activation:6:drow_ranger_frost_arrows"
+    },
+    {
+      "effectId": "drow_ranger_wave_of_silence:control:silence",
+      "heroId": "6",
+      "abilityId": "ability:6:drow_ranger_wave_of_silence",
+      "type": "control",
+      "subtype": "silence",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:drow_ranger_wave_of_silence:control:silence:range",
+          "ownerId": "effect:drow_ranger_wave_of_silence:control:silence",
+          "field": "range",
+          "state": "known",
+          "value": 900
+        },
+        "duration": {
+          "id": "value:effect:drow_ranger_wave_of_silence:control:silence:duration",
+          "ownerId": "effect:drow_ranger_wave_of_silence:control:silence",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:drow_ranger_wave_of_silence:control:silence:magnitude",
+          "ownerId": "effect:drow_ranger_wave_of_silence:control:silence",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:drow_ranger_wave_of_silence:control:silence:mana",
+          "ownerId": "effect:drow_ranger_wave_of_silence:control:silence",
+          "field": "mana",
+          "state": "known",
+          "value": 55
+        },
+        "cooldown": {
+          "id": "value:effect:drow_ranger_wave_of_silence:control:silence:cooldown",
+          "ownerId": "effect:drow_ranger_wave_of_silence:control:silence",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            19,
+            17,
+            15,
+            13
+          ]
+        },
+        "delay": {
+          "id": "value:effect:drow_ranger_wave_of_silence:control:silence:delay",
+          "ownerId": "effect:drow_ranger_wave_of_silence:control:silence",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "projectile",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "drow_ranger_wave_of_silence"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:drow_ranger_wave_of_silence:control:silence",
+      "legacyEffectId": "drow_ranger_wave_of_silence:control:silence",
+      "order": 4,
+      "legacyAbilityId": "drow_ranger_wave_of_silence",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:drow_ranger_wave_of_silence:control:silence:range",
+        "value:effect:drow_ranger_wave_of_silence:control:silence:duration",
+        "value:effect:drow_ranger_wave_of_silence:control:silence:magnitude",
+        "value:effect:drow_ranger_wave_of_silence:control:silence:mana",
+        "value:effect:drow_ranger_wave_of_silence:control:silence:cooldown",
+        "value:effect:drow_ranger_wave_of_silence:control:silence:delay"
+      ],
+      "activationId": "activation:6:drow_ranger_wave_of_silence"
+    },
+    {
+      "effectId": "drow_ranger_wave_of_silence:displacement:distance-scaled-knockback",
+      "heroId": "6",
+      "abilityId": "ability:6:drow_ranger_wave_of_silence",
+      "type": "displacement",
+      "subtype": "distance-scaled-knockback",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback:range",
+          "ownerId": "effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback",
+          "field": "range",
+          "state": "known",
+          "value": 900
+        },
+        "duration": {
+          "id": "value:effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback:duration",
+          "ownerId": "effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback:magnitude",
+          "ownerId": "effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback:mana",
+          "ownerId": "effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback",
+          "field": "mana",
+          "state": "known",
+          "value": 55
+        },
+        "cooldown": {
+          "id": "value:effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback:cooldown",
+          "ownerId": "effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            19,
+            17,
+            15,
+            13
+          ]
+        },
+        "delay": {
+          "id": "value:effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback:delay",
+          "ownerId": "effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "projectile",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "drow_ranger_wave_of_silence"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback",
+      "legacyEffectId": "drow_ranger_wave_of_silence:displacement:distance-scaled-knockback",
+      "order": 5,
+      "legacyAbilityId": "drow_ranger_wave_of_silence",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback:range",
+        "value:effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback:duration",
+        "value:effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback:magnitude",
+        "value:effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback:mana",
+        "value:effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback:cooldown",
+        "value:effect:drow_ranger_wave_of_silence:displacement:distance-scaled-knockback:delay"
+      ],
+      "activationId": "activation:6:drow_ranger_wave_of_silence"
+    },
+    {
+      "effectId": "drow_ranger_wave_of_silence:detection:gust-reveal",
+      "heroId": "6",
+      "abilityId": "ability:6:drow_ranger_wave_of_silence",
+      "type": "detection",
+      "subtype": "gust-reveal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:drow_ranger_wave_of_silence:detection:gust-reveal:range",
+          "ownerId": "effect:drow_ranger_wave_of_silence:detection:gust-reveal",
+          "field": "range",
+          "state": "known",
+          "value": 900
+        },
+        "duration": {
+          "id": "value:effect:drow_ranger_wave_of_silence:detection:gust-reveal:duration",
+          "ownerId": "effect:drow_ranger_wave_of_silence:detection:gust-reveal",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:drow_ranger_wave_of_silence:detection:gust-reveal:magnitude",
+          "ownerId": "effect:drow_ranger_wave_of_silence:detection:gust-reveal",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:drow_ranger_wave_of_silence:detection:gust-reveal:mana",
+          "ownerId": "effect:drow_ranger_wave_of_silence:detection:gust-reveal",
+          "field": "mana",
+          "state": "known",
+          "value": 55
+        },
+        "cooldown": {
+          "id": "value:effect:drow_ranger_wave_of_silence:detection:gust-reveal:cooldown",
+          "ownerId": "effect:drow_ranger_wave_of_silence:detection:gust-reveal",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            19,
+            17,
+            15,
+            13
+          ]
+        },
+        "delay": {
+          "id": "value:effect:drow_ranger_wave_of_silence:detection:gust-reveal:delay",
+          "ownerId": "effect:drow_ranger_wave_of_silence:detection:gust-reveal",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "projectile",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "drow_ranger_wave_of_silence"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:drow_ranger_wave_of_silence:detection:gust-reveal",
+      "legacyEffectId": "drow_ranger_wave_of_silence:detection:gust-reveal",
+      "order": 6,
+      "legacyAbilityId": "drow_ranger_wave_of_silence",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:drow_ranger_wave_of_silence:detection:gust-reveal:range",
+        "value:effect:drow_ranger_wave_of_silence:detection:gust-reveal:duration",
+        "value:effect:drow_ranger_wave_of_silence:detection:gust-reveal:magnitude",
+        "value:effect:drow_ranger_wave_of_silence:detection:gust-reveal:mana",
+        "value:effect:drow_ranger_wave_of_silence:detection:gust-reveal:cooldown",
+        "value:effect:drow_ranger_wave_of_silence:detection:gust-reveal:delay"
+      ],
+      "activationId": "activation:6:drow_ranger_wave_of_silence"
+    },
+    {
+      "effectId": "drow_ranger_multishot:damage:channeled-attack-based-salvos",
+      "heroId": "6",
+      "abilityId": "ability:6:drow_ranger_multishot",
+      "type": "damage",
+      "subtype": "channeled-attack-based-salvos",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:drow_ranger_multishot:damage:channeled-attack-based-salvos:range",
+          "ownerId": "effect:drow_ranger_multishot:damage:channeled-attack-based-salvos",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:drow_ranger_multishot:damage:channeled-attack-based-salvos:duration",
+          "ownerId": "effect:drow_ranger_multishot:damage:channeled-attack-based-salvos",
+          "field": "duration",
+          "state": "known",
+          "value": 1.75
+        },
+        "magnitude": {
+          "id": "value:effect:drow_ranger_multishot:damage:channeled-attack-based-salvos:magnitude",
+          "ownerId": "effect:drow_ranger_multishot:damage:channeled-attack-based-salvos",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:drow_ranger_multishot:damage:channeled-attack-based-salvos:mana",
+          "ownerId": "effect:drow_ranger_multishot:damage:channeled-attack-based-salvos",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            70,
+            85,
+            100,
+            115
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:drow_ranger_multishot:damage:channeled-attack-based-salvos:cooldown",
+          "ownerId": "effect:drow_ranger_multishot:damage:channeled-attack-based-salvos",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            21,
+            18,
+            15
+          ]
+        },
+        "delay": {
+          "id": "value:effect:drow_ranger_multishot:damage:channeled-attack-based-salvos:delay",
+          "ownerId": "effect:drow_ranger_multishot:damage:channeled-attack-based-salvos",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:drow_ranger_multishot:damage:channeled-attack-based-salvos:damageType",
+          "ownerId": "effect:drow_ranger_multishot:damage:channeled-attack-based-salvos",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "multishotArrowsConnect",
+          "channelMaintained"
+        ]
+      },
+      "delivery": {
+        "kind": "projectile",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "drow_ranger_multishot"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:drow_ranger_multishot:damage:channeled-attack-based-salvos",
+      "legacyEffectId": "drow_ranger_multishot:damage:channeled-attack-based-salvos",
+      "order": 7,
+      "legacyAbilityId": "drow_ranger_multishot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:drow_ranger_multishot:damage:channeled-attack-based-salvos:0",
+        "condition:drow_ranger_multishot:damage:channeled-attack-based-salvos:1"
+      ],
+      "valueIds": [
+        "value:effect:drow_ranger_multishot:damage:channeled-attack-based-salvos:range",
+        "value:effect:drow_ranger_multishot:damage:channeled-attack-based-salvos:duration",
+        "value:effect:drow_ranger_multishot:damage:channeled-attack-based-salvos:magnitude",
+        "value:effect:drow_ranger_multishot:damage:channeled-attack-based-salvos:mana",
+        "value:effect:drow_ranger_multishot:damage:channeled-attack-based-salvos:cooldown",
+        "value:effect:drow_ranger_multishot:damage:channeled-attack-based-salvos:delay",
+        "value:effect:drow_ranger_multishot:damage:channeled-attack-based-salvos:damageType"
+      ],
+      "activationId": "activation:6:drow_ranger_multishot"
+    },
+    {
+      "effectId": "drow_ranger_glacier:displacement:nearby-knockback",
+      "heroId": "6",
+      "abilityId": "ability:6:drow_ranger_glacier",
+      "type": "displacement",
+      "subtype": "nearby-knockback",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:drow_ranger_glacier:displacement:nearby-knockback:range",
+          "ownerId": "effect:drow_ranger_glacier:displacement:nearby-knockback",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:drow_ranger_glacier:displacement:nearby-knockback:duration",
+          "ownerId": "effect:drow_ranger_glacier:displacement:nearby-knockback",
+          "field": "duration",
+          "state": "known",
+          "value": 0.1
+        },
+        "magnitude": {
+          "id": "value:effect:drow_ranger_glacier:displacement:nearby-knockback:magnitude",
+          "ownerId": "effect:drow_ranger_glacier:displacement:nearby-knockback",
+          "field": "magnitude",
+          "state": "known",
+          "value": 225
+        },
+        "mana": {
+          "id": "value:effect:drow_ranger_glacier:displacement:nearby-knockback:mana",
+          "ownerId": "effect:drow_ranger_glacier:displacement:nearby-knockback",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:drow_ranger_glacier:displacement:nearby-knockback:cooldown",
+          "ownerId": "effect:drow_ranger_glacier:displacement:nearby-knockback",
+          "field": "cooldown",
+          "state": "known",
+          "value": 25
+        },
+        "delay": {
+          "id": "value:effect:drow_ranger_glacier:displacement:nearby-knockback:delay",
+          "ownerId": "effect:drow_ranger_glacier:displacement:nearby-knockback",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "enemyInsideGlacierCreation"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "no-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "drow_ranger_glacier"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:drow_ranger_glacier:displacement:nearby-knockback",
+      "legacyEffectId": "drow_ranger_glacier:displacement:nearby-knockback",
+      "order": 8,
+      "legacyAbilityId": "drow_ranger_glacier",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:drow_ranger_glacier:displacement:nearby-knockback:0"
+      ],
+      "valueIds": [
+        "value:effect:drow_ranger_glacier:displacement:nearby-knockback:range",
+        "value:effect:drow_ranger_glacier:displacement:nearby-knockback:duration",
+        "value:effect:drow_ranger_glacier:displacement:nearby-knockback:magnitude",
+        "value:effect:drow_ranger_glacier:displacement:nearby-knockback:mana",
+        "value:effect:drow_ranger_glacier:displacement:nearby-knockback:cooldown",
+        "value:effect:drow_ranger_glacier:displacement:nearby-knockback:delay"
+      ],
+      "activationId": "activation:6:drow_ranger_glacier"
+    },
+    {
+      "effectId": "drow_ranger_glacier:vision:hill-flying-vision",
+      "heroId": "6",
+      "abilityId": "ability:6:drow_ranger_glacier",
+      "type": "vision",
+      "subtype": "hill-flying-vision",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally",
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:drow_ranger_glacier:vision:hill-flying-vision:range",
+          "ownerId": "effect:drow_ranger_glacier:vision:hill-flying-vision",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:drow_ranger_glacier:vision:hill-flying-vision:duration",
+          "ownerId": "effect:drow_ranger_glacier:vision:hill-flying-vision",
+          "field": "duration",
+          "state": "known",
+          "value": 8
+        },
+        "magnitude": {
+          "id": "value:effect:drow_ranger_glacier:vision:hill-flying-vision:magnitude",
+          "ownerId": "effect:drow_ranger_glacier:vision:hill-flying-vision",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:drow_ranger_glacier:vision:hill-flying-vision:mana",
+          "ownerId": "effect:drow_ranger_glacier:vision:hill-flying-vision",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:drow_ranger_glacier:vision:hill-flying-vision:cooldown",
+          "ownerId": "effect:drow_ranger_glacier:vision:hill-flying-vision",
+          "field": "cooldown",
+          "state": "known",
+          "value": 25
+        },
+        "delay": {
+          "id": "value:effect:drow_ranger_glacier:vision:hill-flying-vision:delay",
+          "ownerId": "effect:drow_ranger_glacier:vision:hill-flying-vision",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "recipientOnGlacier"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "no-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "drow_ranger_glacier"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:drow_ranger_glacier:vision:hill-flying-vision",
+      "legacyEffectId": "drow_ranger_glacier:vision:hill-flying-vision",
+      "order": 9,
+      "legacyAbilityId": "drow_ranger_glacier",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:drow_ranger_glacier:vision:hill-flying-vision:0"
+      ],
+      "valueIds": [
+        "value:effect:drow_ranger_glacier:vision:hill-flying-vision:range",
+        "value:effect:drow_ranger_glacier:vision:hill-flying-vision:duration",
+        "value:effect:drow_ranger_glacier:vision:hill-flying-vision:magnitude",
+        "value:effect:drow_ranger_glacier:vision:hill-flying-vision:mana",
+        "value:effect:drow_ranger_glacier:vision:hill-flying-vision:cooldown",
+        "value:effect:drow_ranger_glacier:vision:hill-flying-vision:delay"
+      ],
+      "activationId": "activation:6:drow_ranger_glacier"
+    },
+    {
+      "effectId": "drow_ranger_glacier:modifier:hill-ranged-attack-bonus",
+      "heroId": "6",
+      "abilityId": "ability:6:drow_ranger_glacier",
+      "type": "modifier",
+      "subtype": "hill-ranged-attack-bonus",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally",
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus:range",
+          "ownerId": "effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus:duration",
+          "ownerId": "effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus",
+          "field": "duration",
+          "state": "known",
+          "value": 8
+        },
+        "magnitude": {
+          "id": "value:effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus:magnitude",
+          "ownerId": "effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus",
+          "field": "magnitude",
+          "state": "known",
+          "value": 200
+        },
+        "mana": {
+          "id": "value:effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus:mana",
+          "ownerId": "effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus:cooldown",
+          "ownerId": "effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus",
+          "field": "cooldown",
+          "state": "known",
+          "value": 25
+        },
+        "delay": {
+          "id": "value:effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus:delay",
+          "ownerId": "effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "recipientOnGlacier",
+          "recipientIsRanged"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "no-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "drow_ranger_glacier"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus",
+      "legacyEffectId": "drow_ranger_glacier:modifier:hill-ranged-attack-bonus",
+      "order": 10,
+      "legacyAbilityId": "drow_ranger_glacier",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:drow_ranger_glacier:modifier:hill-ranged-attack-bonus:0",
+        "condition:drow_ranger_glacier:modifier:hill-ranged-attack-bonus:1"
+      ],
+      "valueIds": [
+        "value:effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus:range",
+        "value:effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus:duration",
+        "value:effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus:magnitude",
+        "value:effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus:mana",
+        "value:effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus:cooldown",
+        "value:effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus:delay"
+      ],
+      "activationId": "activation:6:drow_ranger_glacier"
+    },
+    {
+      "effectId": "drow_ranger_trueshot:passive:agility-aura",
+      "heroId": "6",
+      "abilityId": "ability:6:drow_ranger_trueshot",
+      "type": "passive",
+      "subtype": "agility-aura",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally",
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:drow_ranger_trueshot:passive:agility-aura:range",
+          "ownerId": "effect:drow_ranger_trueshot:passive:agility-aura",
+          "field": "range",
+          "state": "known",
+          "value": 1200
+        },
+        "duration": {
+          "id": "value:effect:drow_ranger_trueshot:passive:agility-aura:duration",
+          "ownerId": "effect:drow_ranger_trueshot:passive:agility-aura",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:drow_ranger_trueshot:passive:agility-aura:magnitude",
+          "ownerId": "effect:drow_ranger_trueshot:passive:agility-aura",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:drow_ranger_trueshot:passive:agility-aura:mana",
+          "ownerId": "effect:drow_ranger_trueshot:passive:agility-aura",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:drow_ranger_trueshot:passive:agility-aura:cooldown",
+          "ownerId": "effect:drow_ranger_trueshot:passive:agility-aura",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:drow_ranger_trueshot:passive:agility-aura:delay",
+          "ownerId": "effect:drow_ranger_trueshot:passive:agility-aura",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "recipientIsRanged"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "drow_ranger_trueshot"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:drow_ranger_trueshot:passive:agility-aura",
+      "legacyEffectId": "drow_ranger_trueshot:passive:agility-aura",
+      "order": 11,
+      "legacyAbilityId": "drow_ranger_trueshot",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:drow_ranger_trueshot:passive:agility-aura:0"
+      ],
+      "valueIds": [
+        "value:effect:drow_ranger_trueshot:passive:agility-aura:range",
+        "value:effect:drow_ranger_trueshot:passive:agility-aura:duration",
+        "value:effect:drow_ranger_trueshot:passive:agility-aura:magnitude",
+        "value:effect:drow_ranger_trueshot:passive:agility-aura:mana",
+        "value:effect:drow_ranger_trueshot:passive:agility-aura:cooldown",
+        "value:effect:drow_ranger_trueshot:passive:agility-aura:delay"
+      ],
+      "activationId": "activation:6:drow_ranger_trueshot"
+    },
+    {
+      "effectId": "drow_ranger_marksmanship:passive:base-armor-piercing-proc",
+      "heroId": "6",
+      "abilityId": "ability:6:drow_ranger_marksmanship",
+      "type": "passive",
+      "subtype": "base-armor-piercing-proc",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc:range",
+          "ownerId": "effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc:duration",
+          "ownerId": "effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc:magnitude",
+          "ownerId": "effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            50,
+            70,
+            90
+          ]
+        },
+        "mana": {
+          "id": "value:effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc:mana",
+          "ownerId": "effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc:cooldown",
+          "ownerId": "effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc:delay",
+          "ownerId": "effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc:damageType",
+          "ownerId": "effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "marksmanshipProc",
+          "noEnemyHeroWithinMarksmanshipDisableRange"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "drow_ranger_marksmanship"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc",
+      "legacyEffectId": "drow_ranger_marksmanship:passive:base-armor-piercing-proc",
+      "order": 12,
+      "legacyAbilityId": "drow_ranger_marksmanship",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:drow_ranger_marksmanship:passive:base-armor-piercing-proc:0",
+        "condition:drow_ranger_marksmanship:passive:base-armor-piercing-proc:1"
+      ],
+      "valueIds": [
+        "value:effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc:range",
+        "value:effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc:duration",
+        "value:effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc:magnitude",
+        "value:effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc:mana",
+        "value:effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc:cooldown",
+        "value:effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc:delay",
+        "value:effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc:damageType"
+      ],
+      "activationId": "activation:6:drow_ranger_marksmanship"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:drow_ranger_frost_arrows:slow:attack-movement:0",
+      "ownerId": "effect:drow_ranger_frost_arrows:slow:attack-movement",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "attackConnects"
+      }
+    },
+    {
+      "id": "condition:drow_ranger_frost_arrows:damage:bonus-attack-damage:0",
+      "ownerId": "effect:drow_ranger_frost_arrows:damage:bonus-attack-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "attackConnects"
+      }
+    },
+    {
+      "id": "condition:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks:0",
+      "ownerId": "effect:drow_ranger_frost_arrows:anti-heal:hypothermia-stacks",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "attackConnects"
+      }
+    },
+    {
+      "id": "condition:drow_ranger_frost_arrows:modifier:scepter-branch:0",
+      "ownerId": "effect:drow_ranger_frost_arrows:modifier:scepter-branch",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "hypothermiaTargetDied"
+      }
+    },
+    {
+      "id": "condition:drow_ranger_multishot:damage:channeled-attack-based-salvos:0",
+      "ownerId": "effect:drow_ranger_multishot:damage:channeled-attack-based-salvos",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "multishotArrowsConnect"
+      }
+    },
+    {
+      "id": "condition:drow_ranger_multishot:damage:channeled-attack-based-salvos:1",
+      "ownerId": "effect:drow_ranger_multishot:damage:channeled-attack-based-salvos",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "channelMaintained"
+      }
+    },
+    {
+      "id": "condition:drow_ranger_glacier:displacement:nearby-knockback:0",
+      "ownerId": "effect:drow_ranger_glacier:displacement:nearby-knockback",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideGlacierCreation"
+      }
+    },
+    {
+      "id": "condition:drow_ranger_glacier:vision:hill-flying-vision:0",
+      "ownerId": "effect:drow_ranger_glacier:vision:hill-flying-vision",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "recipientOnGlacier"
+      }
+    },
+    {
+      "id": "condition:drow_ranger_glacier:modifier:hill-ranged-attack-bonus:0",
+      "ownerId": "effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "recipientOnGlacier"
+      }
+    },
+    {
+      "id": "condition:drow_ranger_glacier:modifier:hill-ranged-attack-bonus:1",
+      "ownerId": "effect:drow_ranger_glacier:modifier:hill-ranged-attack-bonus",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "recipientIsRanged"
+      }
+    },
+    {
+      "id": "condition:drow_ranger_trueshot:passive:agility-aura:0",
+      "ownerId": "effect:drow_ranger_trueshot:passive:agility-aura",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "recipientIsRanged"
+      }
+    },
+    {
+      "id": "condition:drow_ranger_marksmanship:passive:base-armor-piercing-proc:0",
+      "ownerId": "effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "marksmanshipProc"
+      }
+    },
+    {
+      "id": "condition:drow_ranger_marksmanship:passive:base-armor-piercing-proc:1",
+      "ownerId": "effect:drow_ranger_marksmanship:passive:base-armor-piercing-proc",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "noEnemyHeroWithinMarksmanshipDisableRange"
+      }
+    }
+  ]
+}

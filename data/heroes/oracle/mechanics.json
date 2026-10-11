@@ -1,0 +1,4079 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "oracle_fortunes_end:enemy-basic-dispel",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_fortunes_end",
+      "type": "dispel",
+      "subtype": "enemy-basic-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_fortunes_end:enemy-basic-dispel:range",
+          "ownerId": "effect:oracle_fortunes_end:enemy-basic-dispel",
+          "field": "range",
+          "state": "known",
+          "value": 850
+        },
+        "duration": {
+          "id": "value:effect:oracle_fortunes_end:enemy-basic-dispel:duration",
+          "ownerId": "effect:oracle_fortunes_end:enemy-basic-dispel",
+          "field": "duration",
+          "state": "known",
+          "value": 0
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_fortunes_end:enemy-basic-dispel:magnitude",
+          "ownerId": "effect:oracle_fortunes_end:enemy-basic-dispel",
+          "field": "magnitude",
+          "state": "known",
+          "value": 1
+        },
+        "mana": {
+          "id": "value:effect:oracle_fortunes_end:enemy-basic-dispel:mana",
+          "ownerId": "effect:oracle_fortunes_end:enemy-basic-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_fortunes_end:enemy-basic-dispel:cooldown",
+          "ownerId": "effect:oracle_fortunes_end:enemy-basic-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            14,
+            10,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:oracle_fortunes_end:enemy-basic-dispel:delay",
+          "ownerId": "effect:oracle_fortunes_end:enemy-basic-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "Cast point omits declared projectile travel and any channel or release timing; effective impact delay requires geometry and engine verification."
+        },
+        "castPoint": {
+          "id": "value:effect:oracle_fortunes_end:enemy-basic-dispel:castPoint",
+          "ownerId": "effect:oracle_fortunes_end:enemy-basic-dispel",
+          "field": "castPoint",
+          "state": "known",
+          "value": 0
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "enemy-buffs"
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_fortunes_end"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [
+        "only-basic-dispellable-effects",
+        "channel-and-projectile-delay"
+      ],
+      "id": "effect:oracle_fortunes_end:enemy-basic-dispel",
+      "legacyEffectId": "oracle_fortunes_end:enemy-basic-dispel",
+      "order": 0,
+      "legacyAbilityId": "oracle_fortunes_end",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:oracle_fortunes_end:enemy-basic-dispel:range",
+        "value:effect:oracle_fortunes_end:enemy-basic-dispel:duration",
+        "value:effect:oracle_fortunes_end:enemy-basic-dispel:magnitude",
+        "value:effect:oracle_fortunes_end:enemy-basic-dispel:mana",
+        "value:effect:oracle_fortunes_end:enemy-basic-dispel:cooldown",
+        "value:effect:oracle_fortunes_end:enemy-basic-dispel:delay",
+        "value:effect:oracle_fortunes_end:enemy-basic-dispel:castPoint"
+      ],
+      "activationId": "activation:111:oracle_fortunes_end"
+    },
+    {
+      "effectId": "oracle_fortunes_end:ally-basic-dispel",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_fortunes_end",
+      "type": "dispel",
+      "subtype": "ally-basic-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_fortunes_end:ally-basic-dispel:range",
+          "ownerId": "effect:oracle_fortunes_end:ally-basic-dispel",
+          "field": "range",
+          "state": "known",
+          "value": 850
+        },
+        "duration": {
+          "id": "value:effect:oracle_fortunes_end:ally-basic-dispel:duration",
+          "ownerId": "effect:oracle_fortunes_end:ally-basic-dispel",
+          "field": "duration",
+          "state": "known",
+          "value": 0
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_fortunes_end:ally-basic-dispel:magnitude",
+          "ownerId": "effect:oracle_fortunes_end:ally-basic-dispel",
+          "field": "magnitude",
+          "state": "known",
+          "value": 1
+        },
+        "mana": {
+          "id": "value:effect:oracle_fortunes_end:ally-basic-dispel:mana",
+          "ownerId": "effect:oracle_fortunes_end:ally-basic-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_fortunes_end:ally-basic-dispel:cooldown",
+          "ownerId": "effect:oracle_fortunes_end:ally-basic-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            14,
+            10,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:oracle_fortunes_end:ally-basic-dispel:delay",
+          "ownerId": "effect:oracle_fortunes_end:ally-basic-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "Cast point omits declared projectile travel and any channel or release timing; effective impact delay requires geometry and engine verification."
+        },
+        "castPoint": {
+          "id": "value:effect:oracle_fortunes_end:ally-basic-dispel:castPoint",
+          "ownerId": "effect:oracle_fortunes_end:ally-basic-dispel",
+          "field": "castPoint",
+          "state": "known",
+          "value": 0
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Effect-specific engine exception unverified"
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "ally-debuffs"
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_fortunes_end"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [
+        "only-basic-dispellable-effects",
+        "channel-and-projectile-delay"
+      ],
+      "id": "effect:oracle_fortunes_end:ally-basic-dispel",
+      "legacyEffectId": "oracle_fortunes_end:ally-basic-dispel",
+      "order": 1,
+      "legacyAbilityId": "oracle_fortunes_end",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:oracle_fortunes_end:ally-basic-dispel:range",
+        "value:effect:oracle_fortunes_end:ally-basic-dispel:duration",
+        "value:effect:oracle_fortunes_end:ally-basic-dispel:magnitude",
+        "value:effect:oracle_fortunes_end:ally-basic-dispel:mana",
+        "value:effect:oracle_fortunes_end:ally-basic-dispel:cooldown",
+        "value:effect:oracle_fortunes_end:ally-basic-dispel:delay",
+        "value:effect:oracle_fortunes_end:ally-basic-dispel:castPoint"
+      ],
+      "activationId": "activation:111:oracle_fortunes_end"
+    },
+    {
+      "effectId": "oracle_fortunes_end:root",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_fortunes_end",
+      "type": "control",
+      "subtype": "root",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_fortunes_end:root:range",
+          "ownerId": "effect:oracle_fortunes_end:root",
+          "field": "range",
+          "state": "known",
+          "value": 850
+        },
+        "duration": {
+          "id": "value:effect:oracle_fortunes_end:root:duration",
+          "ownerId": "effect:oracle_fortunes_end:root",
+          "field": "duration",
+          "state": "known",
+          "value": 0.75
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_fortunes_end:root:magnitude",
+          "ownerId": "effect:oracle_fortunes_end:root",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            100,
+            160,
+            220,
+            280
+          ]
+        },
+        "mana": {
+          "id": "value:effect:oracle_fortunes_end:root:mana",
+          "ownerId": "effect:oracle_fortunes_end:root",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_fortunes_end:root:cooldown",
+          "ownerId": "effect:oracle_fortunes_end:root",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            14,
+            10,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:oracle_fortunes_end:root:delay",
+          "ownerId": "effect:oracle_fortunes_end:root",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "Cast point omits declared projectile travel and any channel or release timing; effective impact delay requires geometry and engine verification."
+        },
+        "castPoint": {
+          "id": "value:effect:oracle_fortunes_end:root:castPoint",
+          "ownerId": "effect:oracle_fortunes_end:root",
+          "field": "castPoint",
+          "state": "known",
+          "value": 0
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_fortunes_end"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:oracle_fortunes_end:root",
+      "legacyEffectId": "oracle_fortunes_end:root",
+      "order": 2,
+      "legacyAbilityId": "oracle_fortunes_end",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:oracle_fortunes_end:root:range",
+        "value:effect:oracle_fortunes_end:root:duration",
+        "value:effect:oracle_fortunes_end:root:magnitude",
+        "value:effect:oracle_fortunes_end:root:mana",
+        "value:effect:oracle_fortunes_end:root:cooldown",
+        "value:effect:oracle_fortunes_end:root:delay",
+        "value:effect:oracle_fortunes_end:root:castPoint"
+      ],
+      "activationId": "activation:111:oracle_fortunes_end"
+    },
+    {
+      "effectId": "oracle_fortunes_end:magical-burst",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_fortunes_end",
+      "type": "damage",
+      "subtype": "magical-burst",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_fortunes_end:magical-burst:range",
+          "ownerId": "effect:oracle_fortunes_end:magical-burst",
+          "field": "range",
+          "state": "known",
+          "value": 850
+        },
+        "duration": {
+          "id": "value:effect:oracle_fortunes_end:magical-burst:duration",
+          "ownerId": "effect:oracle_fortunes_end:magical-burst",
+          "field": "duration",
+          "state": "known",
+          "value": 0
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_fortunes_end:magical-burst:magnitude",
+          "ownerId": "effect:oracle_fortunes_end:magical-burst",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            100,
+            160,
+            220,
+            280
+          ]
+        },
+        "mana": {
+          "id": "value:effect:oracle_fortunes_end:magical-burst:mana",
+          "ownerId": "effect:oracle_fortunes_end:magical-burst",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_fortunes_end:magical-burst:cooldown",
+          "ownerId": "effect:oracle_fortunes_end:magical-burst",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            14,
+            10,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:oracle_fortunes_end:magical-burst:delay",
+          "ownerId": "effect:oracle_fortunes_end:magical-burst",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "Cast point omits declared projectile travel and any channel or release timing; effective impact delay requires geometry and engine verification."
+        },
+        "damageType": {
+          "id": "value:effect:oracle_fortunes_end:magical-burst:damageType",
+          "ownerId": "effect:oracle_fortunes_end:magical-burst",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        },
+        "castPoint": {
+          "id": "value:effect:oracle_fortunes_end:magical-burst:castPoint",
+          "ownerId": "effect:oracle_fortunes_end:magical-burst",
+          "field": "castPoint",
+          "state": "known",
+          "value": 0
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_fortunes_end"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:oracle_fortunes_end:magical-burst",
+      "legacyEffectId": "oracle_fortunes_end:magical-burst",
+      "order": 3,
+      "legacyAbilityId": "oracle_fortunes_end",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:oracle_fortunes_end:magical-burst:range",
+        "value:effect:oracle_fortunes_end:magical-burst:duration",
+        "value:effect:oracle_fortunes_end:magical-burst:magnitude",
+        "value:effect:oracle_fortunes_end:magical-burst:mana",
+        "value:effect:oracle_fortunes_end:magical-burst:cooldown",
+        "value:effect:oracle_fortunes_end:magical-burst:delay",
+        "value:effect:oracle_fortunes_end:magical-burst:damageType",
+        "value:effect:oracle_fortunes_end:magical-burst:castPoint"
+      ],
+      "activationId": "activation:111:oracle_fortunes_end"
+    },
+    {
+      "effectId": "oracle_fortunes_end:control:fully-channeled-fortune-root",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_fortunes_end",
+      "type": "control",
+      "subtype": "fully-channeled-fortune-root",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_fortunes_end:control:fully-channeled-fortune-root:range",
+          "ownerId": "effect:oracle_fortunes_end:control:fully-channeled-fortune-root",
+          "field": "range",
+          "state": "known",
+          "value": 850
+        },
+        "duration": {
+          "id": "value:effect:oracle_fortunes_end:control:fully-channeled-fortune-root:duration",
+          "ownerId": "effect:oracle_fortunes_end:control:fully-channeled-fortune-root",
+          "field": "duration",
+          "state": "known",
+          "value": 2.75
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_fortunes_end:control:fully-channeled-fortune-root:magnitude",
+          "ownerId": "effect:oracle_fortunes_end:control:fully-channeled-fortune-root",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:oracle_fortunes_end:control:fully-channeled-fortune-root:mana",
+          "ownerId": "effect:oracle_fortunes_end:control:fully-channeled-fortune-root",
+          "field": "mana",
+          "state": "known",
+          "value": 80
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_fortunes_end:control:fully-channeled-fortune-root:cooldown",
+          "ownerId": "effect:oracle_fortunes_end:control:fully-channeled-fortune-root",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            18,
+            14,
+            10,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:oracle_fortunes_end:control:fully-channeled-fortune-root:delay",
+          "ownerId": "effect:oracle_fortunes_end:control:fully-channeled-fortune-root",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "fortuneFullyChanneled",
+          "fortuneProjectileHitsEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_fortunes_end",
+        "replaces": [
+          "oracle_fortunes_end:root"
+        ]
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:oracle_fortunes_end:control:fully-channeled-fortune-root",
+      "legacyEffectId": "oracle_fortunes_end:control:fully-channeled-fortune-root",
+      "order": 4,
+      "legacyAbilityId": "oracle_fortunes_end",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:oracle_fortunes_end:control:fully-channeled-fortune-root:0",
+        "condition:oracle_fortunes_end:control:fully-channeled-fortune-root:1"
+      ],
+      "valueIds": [
+        "value:effect:oracle_fortunes_end:control:fully-channeled-fortune-root:range",
+        "value:effect:oracle_fortunes_end:control:fully-channeled-fortune-root:duration",
+        "value:effect:oracle_fortunes_end:control:fully-channeled-fortune-root:magnitude",
+        "value:effect:oracle_fortunes_end:control:fully-channeled-fortune-root:mana",
+        "value:effect:oracle_fortunes_end:control:fully-channeled-fortune-root:cooldown",
+        "value:effect:oracle_fortunes_end:control:fully-channeled-fortune-root:delay"
+      ],
+      "activationId": "activation:111:oracle_fortunes_end"
+    },
+    {
+      "effectId": "oracle_fates_edict:control:edict-enemy-disarm",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_fates_edict",
+      "type": "control",
+      "subtype": "edict-enemy-disarm",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_fates_edict:control:edict-enemy-disarm:range",
+          "ownerId": "effect:oracle_fates_edict:control:edict-enemy-disarm",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:oracle_fates_edict:control:edict-enemy-disarm:duration",
+          "ownerId": "effect:oracle_fates_edict:control:edict-enemy-disarm",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3.5,
+            4,
+            4.5,
+            5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_fates_edict:control:edict-enemy-disarm:magnitude",
+          "ownerId": "effect:oracle_fates_edict:control:edict-enemy-disarm",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:oracle_fates_edict:control:edict-enemy-disarm:mana",
+          "ownerId": "effect:oracle_fates_edict:control:edict-enemy-disarm",
+          "field": "mana",
+          "state": "known",
+          "value": 70
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_fates_edict:control:edict-enemy-disarm:cooldown",
+          "ownerId": "effect:oracle_fates_edict:control:edict-enemy-disarm",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            17,
+            14,
+            11,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:oracle_fates_edict:control:edict-enemy-disarm:delay",
+          "ownerId": "effect:oracle_fates_edict:control:edict-enemy-disarm",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "attacking"
+          ]
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_fates_edict"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:oracle_fates_edict:control:edict-enemy-disarm",
+      "legacyEffectId": "oracle_fates_edict:control:edict-enemy-disarm",
+      "order": 5,
+      "legacyAbilityId": "oracle_fates_edict",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:oracle_fates_edict:control:edict-enemy-disarm:range",
+        "value:effect:oracle_fates_edict:control:edict-enemy-disarm:duration",
+        "value:effect:oracle_fates_edict:control:edict-enemy-disarm:magnitude",
+        "value:effect:oracle_fates_edict:control:edict-enemy-disarm:mana",
+        "value:effect:oracle_fates_edict:control:edict-enemy-disarm:cooldown",
+        "value:effect:oracle_fates_edict:control:edict-enemy-disarm:delay"
+      ],
+      "activationId": "activation:111:oracle_fates_edict"
+    },
+    {
+      "effectId": "oracle_fates_edict:modifier:edict-allied-disarm-cost",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_fates_edict",
+      "type": "modifier",
+      "subtype": "edict-allied-disarm-cost",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_fates_edict:modifier:edict-allied-disarm-cost:range",
+          "ownerId": "effect:oracle_fates_edict:modifier:edict-allied-disarm-cost",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:oracle_fates_edict:modifier:edict-allied-disarm-cost:duration",
+          "ownerId": "effect:oracle_fates_edict:modifier:edict-allied-disarm-cost",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3.5,
+            4,
+            4.5,
+            5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_fates_edict:modifier:edict-allied-disarm-cost:magnitude",
+          "ownerId": "effect:oracle_fates_edict:modifier:edict-allied-disarm-cost",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:oracle_fates_edict:modifier:edict-allied-disarm-cost:mana",
+          "ownerId": "effect:oracle_fates_edict:modifier:edict-allied-disarm-cost",
+          "field": "mana",
+          "state": "known",
+          "value": 70
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_fates_edict:modifier:edict-allied-disarm-cost:cooldown",
+          "ownerId": "effect:oracle_fates_edict:modifier:edict-allied-disarm-cost",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            17,
+            14,
+            11,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:oracle_fates_edict:modifier:edict-allied-disarm-cost:delay",
+          "ownerId": "effect:oracle_fates_edict:modifier:edict-allied-disarm-cost",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "attacking"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_fates_edict"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:oracle_fates_edict:modifier:edict-allied-disarm-cost",
+      "legacyEffectId": "oracle_fates_edict:modifier:edict-allied-disarm-cost",
+      "order": 6,
+      "legacyAbilityId": "oracle_fates_edict",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:oracle_fates_edict:modifier:edict-allied-disarm-cost:range",
+        "value:effect:oracle_fates_edict:modifier:edict-allied-disarm-cost:duration",
+        "value:effect:oracle_fates_edict:modifier:edict-allied-disarm-cost:magnitude",
+        "value:effect:oracle_fates_edict:modifier:edict-allied-disarm-cost:mana",
+        "value:effect:oracle_fates_edict:modifier:edict-allied-disarm-cost:cooldown",
+        "value:effect:oracle_fates_edict:modifier:edict-allied-disarm-cost:delay"
+      ],
+      "activationId": "activation:111:oracle_fates_edict"
+    },
+    {
+      "effectId": "oracle_fates_edict:save:edict-allied-magical-protection",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_fates_edict",
+      "type": "save",
+      "subtype": "edict-allied-magical-protection",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_fates_edict:save:edict-allied-magical-protection:range",
+          "ownerId": "effect:oracle_fates_edict:save:edict-allied-magical-protection",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:oracle_fates_edict:save:edict-allied-magical-protection:duration",
+          "ownerId": "effect:oracle_fates_edict:save:edict-allied-magical-protection",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3.5,
+            4,
+            4.5,
+            5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_fates_edict:save:edict-allied-magical-protection:magnitude",
+          "ownerId": "effect:oracle_fates_edict:save:edict-allied-magical-protection",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:oracle_fates_edict:save:edict-allied-magical-protection:mana",
+          "ownerId": "effect:oracle_fates_edict:save:edict-allied-magical-protection",
+          "field": "mana",
+          "state": "known",
+          "value": 70
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_fates_edict:save:edict-allied-magical-protection:cooldown",
+          "ownerId": "effect:oracle_fates_edict:save:edict-allied-magical-protection",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            17,
+            14,
+            11,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:oracle_fates_edict:save:edict-allied-magical-protection:delay",
+          "ownerId": "effect:oracle_fates_edict:save:edict-allied-magical-protection",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "magical"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_fates_edict"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:oracle_fates_edict:save:edict-allied-magical-protection",
+      "legacyEffectId": "oracle_fates_edict:save:edict-allied-magical-protection",
+      "order": 7,
+      "legacyAbilityId": "oracle_fates_edict",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:oracle_fates_edict:save:edict-allied-magical-protection:range",
+        "value:effect:oracle_fates_edict:save:edict-allied-magical-protection:duration",
+        "value:effect:oracle_fates_edict:save:edict-allied-magical-protection:magnitude",
+        "value:effect:oracle_fates_edict:save:edict-allied-magical-protection:mana",
+        "value:effect:oracle_fates_edict:save:edict-allied-magical-protection:cooldown",
+        "value:effect:oracle_fates_edict:save:edict-allied-magical-protection:delay"
+      ],
+      "activationId": "activation:111:oracle_fates_edict"
+    },
+    {
+      "effectId": "oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_fates_edict",
+      "type": "modifier",
+      "subtype": "edict-enemy-magical-protection-tradeoff",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff:range",
+          "ownerId": "effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff",
+          "field": "range",
+          "state": "known",
+          "value": 700
+        },
+        "duration": {
+          "id": "value:effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff:duration",
+          "ownerId": "effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3.5,
+            4,
+            4.5,
+            5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff:magnitude",
+          "ownerId": "effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff:mana",
+          "ownerId": "effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff",
+          "field": "mana",
+          "state": "known",
+          "value": 70
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff:cooldown",
+          "ownerId": "effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            17,
+            14,
+            11,
+            8
+          ]
+        },
+        "delay": {
+          "id": "value:effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff:delay",
+          "ownerId": "effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_fates_edict"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff",
+      "legacyEffectId": "oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff",
+      "order": 8,
+      "legacyAbilityId": "oracle_fates_edict",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff:range",
+        "value:effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff:duration",
+        "value:effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff:magnitude",
+        "value:effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff:mana",
+        "value:effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff:cooldown",
+        "value:effect:oracle_fates_edict:modifier:edict-enemy-magical-protection-tradeoff:delay"
+      ],
+      "activationId": "activation:111:oracle_fates_edict"
+    },
+    {
+      "effectId": "oracle_purifying_flames:damage:flames-initial-enemy-magic-damage",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_purifying_flames",
+      "type": "damage",
+      "subtype": "flames-initial-enemy-magic-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage:range",
+          "ownerId": "effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage",
+          "field": "range",
+          "state": "known",
+          "value": 850
+        },
+        "duration": {
+          "id": "value:effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage:duration",
+          "ownerId": "effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage:magnitude",
+          "ownerId": "effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            90,
+            180,
+            270,
+            360
+          ]
+        },
+        "mana": {
+          "id": "value:effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage:mana",
+          "ownerId": "effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage:cooldown",
+          "ownerId": "effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": 2.5
+        },
+        "delay": {
+          "id": "value:effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage:delay",
+          "ownerId": "effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage:damageType",
+          "ownerId": "effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_purifying_flames"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage",
+      "legacyEffectId": "oracle_purifying_flames:damage:flames-initial-enemy-magic-damage",
+      "order": 9,
+      "legacyAbilityId": "oracle_purifying_flames",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage:range",
+        "value:effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage:duration",
+        "value:effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage:magnitude",
+        "value:effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage:mana",
+        "value:effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage:cooldown",
+        "value:effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage:delay",
+        "value:effect:oracle_purifying_flames:damage:flames-initial-enemy-magic-damage:damageType"
+      ],
+      "activationId": "activation:111:oracle_purifying_flames"
+    },
+    {
+      "effectId": "oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_purifying_flames",
+      "type": "modifier",
+      "subtype": "flames-nonlethal-friendly-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage:range",
+          "ownerId": "effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage",
+          "field": "range",
+          "state": "known",
+          "value": 850
+        },
+        "duration": {
+          "id": "value:effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage:duration",
+          "ownerId": "effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage:magnitude",
+          "ownerId": "effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            90,
+            180,
+            270,
+            360
+          ]
+        },
+        "mana": {
+          "id": "value:effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage:mana",
+          "ownerId": "effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage:cooldown",
+          "ownerId": "effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": 2.5
+        },
+        "delay": {
+          "id": "value:effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage:delay",
+          "ownerId": "effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage:damageType",
+          "ownerId": "effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "nonlethalToAllies": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_purifying_flames"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage",
+      "legacyEffectId": "oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage",
+      "order": 10,
+      "legacyAbilityId": "oracle_purifying_flames",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage:range",
+        "value:effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage:duration",
+        "value:effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage:magnitude",
+        "value:effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage:mana",
+        "value:effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage:cooldown",
+        "value:effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage:delay",
+        "value:effect:oracle_purifying_flames:modifier:flames-nonlethal-friendly-damage:damageType"
+      ],
+      "activationId": "activation:111:oracle_purifying_flames"
+    },
+    {
+      "effectId": "oracle_purifying_flames:heal:flames-existing-allied-healing-rate",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_purifying_flames",
+      "type": "heal",
+      "subtype": "flames-existing-allied-healing-rate",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate:range",
+          "ownerId": "effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate:duration",
+          "ownerId": "effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate:magnitude",
+          "ownerId": "effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            15,
+            25,
+            35,
+            45
+          ]
+        },
+        "mana": {
+          "id": "value:effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate:mana",
+          "ownerId": "effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate:cooldown",
+          "ownerId": "effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate:delay",
+          "ownerId": "effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "purifyingFlamesHealingBuffActive"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_purifying_flames:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate",
+      "legacyEffectId": "oracle_purifying_flames:heal:flames-existing-allied-healing-rate",
+      "order": 11,
+      "legacyAbilityId": "oracle_purifying_flames",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:oracle_purifying_flames:heal:flames-existing-allied-healing-rate:0"
+      ],
+      "valueIds": [
+        "value:effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate:range",
+        "value:effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate:duration",
+        "value:effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate:magnitude",
+        "value:effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate:mana",
+        "value:effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate:cooldown",
+        "value:effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate:delay"
+      ],
+      "activationId": "activation:111:oracle_purifying_flames"
+    },
+    {
+      "effectId": "oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_purifying_flames",
+      "type": "modifier",
+      "subtype": "flames-existing-enemy-healing-tradeoff",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff:range",
+          "ownerId": "effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff:duration",
+          "ownerId": "effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff:magnitude",
+          "ownerId": "effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            15,
+            25,
+            35,
+            45
+          ]
+        },
+        "mana": {
+          "id": "value:effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff:mana",
+          "ownerId": "effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff:cooldown",
+          "ownerId": "effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff:delay",
+          "ownerId": "effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "purifyingFlamesHealingBuffActive"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_purifying_flames:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff",
+      "legacyEffectId": "oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff",
+      "order": 12,
+      "legacyAbilityId": "oracle_purifying_flames",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff:0"
+      ],
+      "valueIds": [
+        "value:effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff:range",
+        "value:effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff:duration",
+        "value:effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff:magnitude",
+        "value:effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff:mana",
+        "value:effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff:cooldown",
+        "value:effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff:delay"
+      ],
+      "activationId": "activation:111:oracle_purifying_flames"
+    },
+    {
+      "effectId": "oracle_rain_of_destiny:modifier:shard-paid-rain-placement",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_rain_of_destiny",
+      "type": "modifier",
+      "subtype": "shard-paid-rain-placement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement:range",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement",
+          "field": "range",
+          "state": "known",
+          "value": 650
+        },
+        "duration": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement:duration",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement",
+          "field": "duration",
+          "state": "known",
+          "value": 10
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement:magnitude",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement:mana",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement",
+          "field": "mana",
+          "state": "known",
+          "value": 150
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement:cooldown",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement",
+          "field": "cooldown",
+          "state": "known",
+          "value": 40
+        },
+        "delay": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement:delay",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_rain_of_destiny"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement",
+      "legacyEffectId": "oracle_rain_of_destiny:modifier:shard-paid-rain-placement",
+      "order": 13,
+      "legacyAbilityId": "oracle_rain_of_destiny",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement:range",
+        "value:effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement:duration",
+        "value:effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement:magnitude",
+        "value:effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement:mana",
+        "value:effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement:cooldown",
+        "value:effect:oracle_rain_of_destiny:modifier:shard-paid-rain-placement:delay"
+      ],
+      "activationId": "activation:111:oracle_rain_of_destiny"
+    },
+    {
+      "effectId": "oracle_rain_of_destiny:damage:shard-established-rain-damage-rate",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_rain_of_destiny",
+      "type": "damage",
+      "subtype": "shard-established-rain-damage-rate",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:range",
+          "ownerId": "effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:duration",
+          "ownerId": "effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:magnitude",
+          "ownerId": "effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate",
+          "field": "magnitude",
+          "state": "known",
+          "value": 30
+        },
+        "mana": {
+          "id": "value:effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:mana",
+          "ownerId": "effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:cooldown",
+          "ownerId": "effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:delay",
+          "ownerId": "effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:damageType",
+          "ownerId": "effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "rainOfDestinyEstablished",
+          "enemyInsideDestinyRain"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_rain_of_destiny:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate",
+      "legacyEffectId": "oracle_rain_of_destiny:damage:shard-established-rain-damage-rate",
+      "order": 14,
+      "legacyAbilityId": "oracle_rain_of_destiny",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:0",
+        "condition:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:1"
+      ],
+      "valueIds": [
+        "value:effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:range",
+        "value:effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:duration",
+        "value:effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:magnitude",
+        "value:effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:mana",
+        "value:effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:cooldown",
+        "value:effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:delay",
+        "value:effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:damageType"
+      ],
+      "activationId": "activation:111:oracle_rain_of_destiny"
+    },
+    {
+      "effectId": "oracle_rain_of_destiny:heal:shard-established-rain-healing-rate",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_rain_of_destiny",
+      "type": "heal",
+      "subtype": "shard-established-rain-healing-rate",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate:range",
+          "ownerId": "effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate:duration",
+          "ownerId": "effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate:magnitude",
+          "ownerId": "effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate",
+          "field": "magnitude",
+          "state": "known",
+          "value": 30
+        },
+        "mana": {
+          "id": "value:effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate:mana",
+          "ownerId": "effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate:cooldown",
+          "ownerId": "effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate:delay",
+          "ownerId": "effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "rainOfDestinyEstablished",
+          "allyInsideDestinyRain"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_rain_of_destiny:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate",
+      "legacyEffectId": "oracle_rain_of_destiny:heal:shard-established-rain-healing-rate",
+      "order": 15,
+      "legacyAbilityId": "oracle_rain_of_destiny",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate:0",
+        "condition:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate:1"
+      ],
+      "valueIds": [
+        "value:effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate:range",
+        "value:effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate:duration",
+        "value:effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate:magnitude",
+        "value:effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate:mana",
+        "value:effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate:cooldown",
+        "value:effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate:delay"
+      ],
+      "activationId": "activation:111:oracle_rain_of_destiny"
+    },
+    {
+      "effectId": "oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_rain_of_destiny",
+      "type": "modifier",
+      "subtype": "shard-rain-enemy-heal-amplification-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction:range",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction:duration",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction:magnitude",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": 15
+        },
+        "mana": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction:mana",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction:cooldown",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction:delay",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "rainOfDestinyEstablished",
+          "enemyInsideDestinyRain"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_rain_of_destiny:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction",
+      "legacyEffectId": "oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction",
+      "order": 16,
+      "legacyAbilityId": "oracle_rain_of_destiny",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction:0",
+        "condition:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction:1"
+      ],
+      "valueIds": [
+        "value:effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction:range",
+        "value:effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction:duration",
+        "value:effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction:magnitude",
+        "value:effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction:mana",
+        "value:effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction:cooldown",
+        "value:effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction:delay"
+      ],
+      "activationId": "activation:111:oracle_rain_of_destiny"
+    },
+    {
+      "effectId": "oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_rain_of_destiny",
+      "type": "modifier",
+      "subtype": "shard-rain-allied-heal-amplification",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification:range",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification:duration",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification:magnitude",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification",
+          "field": "magnitude",
+          "state": "known",
+          "value": 15
+        },
+        "mana": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification:mana",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification:cooldown",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification:delay",
+          "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "rainOfDestinyEstablished",
+          "allyInsideDestinyRain"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_rain_of_destiny:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification",
+      "legacyEffectId": "oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification",
+      "order": 17,
+      "legacyAbilityId": "oracle_rain_of_destiny",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification:0",
+        "condition:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification:1"
+      ],
+      "valueIds": [
+        "value:effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification:range",
+        "value:effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification:duration",
+        "value:effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification:magnitude",
+        "value:effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification:mana",
+        "value:effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification:cooldown",
+        "value:effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification:delay"
+      ],
+      "activationId": "activation:111:oracle_rain_of_destiny"
+    },
+    {
+      "effectId": "oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_diviners_deck",
+      "type": "modifier",
+      "subtype": "scepter-deck-cycle-and-preview",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview:range",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview:duration",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview:magnitude",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview:mana",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview:cooldown",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview:delay",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_diviners_deck:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview",
+      "legacyEffectId": "oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview",
+      "order": 18,
+      "legacyAbilityId": "oracle_diviners_deck",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview:range",
+        "value:effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview:duration",
+        "value:effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview:magnitude",
+        "value:effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview:mana",
+        "value:effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview:cooldown",
+        "value:effect:oracle_diviners_deck:modifier:scepter-deck-cycle-and-preview:delay"
+      ],
+      "activationId": "activation:111:oracle_diviners_deck"
+    },
+    {
+      "effectId": "oracle_diviners_deck:modifier:scepter-active-spell-amplification-card",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_diviners_deck",
+      "type": "modifier",
+      "subtype": "scepter-active-spell-amplification-card",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card:range",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card:duration",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card:magnitude",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card",
+          "field": "magnitude",
+          "state": "known",
+          "value": 40
+        },
+        "mana": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card:mana",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card:cooldown",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card:delay",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "oracleSpellAmplificationCardActive"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_diviners_deck:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card",
+      "legacyEffectId": "oracle_diviners_deck:modifier:scepter-active-spell-amplification-card",
+      "order": 19,
+      "legacyAbilityId": "oracle_diviners_deck",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card:0"
+      ],
+      "valueIds": [
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card:range",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card:duration",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card:magnitude",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card:mana",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card:cooldown",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card:delay"
+      ],
+      "activationId": "activation:111:oracle_diviners_deck"
+    },
+    {
+      "effectId": "oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_diviners_deck",
+      "type": "modifier",
+      "subtype": "scepter-active-restoration-amplification-card",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card:range",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card:duration",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card:magnitude",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card",
+          "field": "magnitude",
+          "state": "known",
+          "value": 40
+        },
+        "mana": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card:mana",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card:cooldown",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card:delay",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "oracleRestorationCardActive"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_diviners_deck:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card",
+      "legacyEffectId": "oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card",
+      "order": 20,
+      "legacyAbilityId": "oracle_diviners_deck",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card:0"
+      ],
+      "valueIds": [
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card:range",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card:duration",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card:magnitude",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card:mana",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card:cooldown",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card:delay"
+      ],
+      "activationId": "activation:111:oracle_diviners_deck"
+    },
+    {
+      "effectId": "oracle_diviners_deck:save:scepter-active-finite-barrier-card",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_diviners_deck",
+      "type": "save",
+      "subtype": "scepter-active-finite-barrier-card",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card:range",
+          "ownerId": "effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card:duration",
+          "ownerId": "effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card:magnitude",
+          "ownerId": "effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card",
+          "field": "magnitude",
+          "state": "known",
+          "value": 400
+        },
+        "mana": {
+          "id": "value:effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card:mana",
+          "ownerId": "effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card:cooldown",
+          "ownerId": "effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card:delay",
+          "ownerId": "effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "oracleBarrierCardActive"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_diviners_deck:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card",
+      "legacyEffectId": "oracle_diviners_deck:save:scepter-active-finite-barrier-card",
+      "order": 21,
+      "legacyAbilityId": "oracle_diviners_deck",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:oracle_diviners_deck:save:scepter-active-finite-barrier-card:0"
+      ],
+      "valueIds": [
+        "value:effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card:range",
+        "value:effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card:duration",
+        "value:effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card:magnitude",
+        "value:effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card:mana",
+        "value:effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card:cooldown",
+        "value:effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card:delay"
+      ],
+      "activationId": "activation:111:oracle_diviners_deck"
+    },
+    {
+      "effectId": "oracle_diviners_deck:modifier:scepter-active-intelligence-card",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_diviners_deck",
+      "type": "modifier",
+      "subtype": "scepter-active-intelligence-card",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card:range",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card:duration",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card:magnitude",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card",
+          "field": "magnitude",
+          "state": "known",
+          "value": 150
+        },
+        "mana": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card:mana",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card:cooldown",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card:delay",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "oracleIntelligenceCardActive"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_diviners_deck:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card",
+      "legacyEffectId": "oracle_diviners_deck:modifier:scepter-active-intelligence-card",
+      "order": 22,
+      "legacyAbilityId": "oracle_diviners_deck",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:oracle_diviners_deck:modifier:scepter-active-intelligence-card:0"
+      ],
+      "valueIds": [
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card:range",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card:duration",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card:magnitude",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card:mana",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card:cooldown",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card:delay"
+      ],
+      "activationId": "activation:111:oracle_diviners_deck"
+    },
+    {
+      "effectId": "oracle_diviners_deck:modifier:scepter-active-gold-card",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_diviners_deck",
+      "type": "modifier",
+      "subtype": "scepter-active-gold-card",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-gold-card:range",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-gold-card",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-gold-card:duration",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-gold-card",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-gold-card:magnitude",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-gold-card",
+          "field": "magnitude",
+          "state": "known",
+          "value": 100
+        },
+        "mana": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-gold-card:mana",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-gold-card",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-gold-card:cooldown",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-gold-card",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:oracle_diviners_deck:modifier:scepter-active-gold-card:delay",
+          "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-gold-card",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "oracleGoldCardActive"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_diviners_deck:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:oracle_diviners_deck:modifier:scepter-active-gold-card",
+      "legacyEffectId": "oracle_diviners_deck:modifier:scepter-active-gold-card",
+      "order": 23,
+      "legacyAbilityId": "oracle_diviners_deck",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:oracle_diviners_deck:modifier:scepter-active-gold-card:0"
+      ],
+      "valueIds": [
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-gold-card:range",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-gold-card:duration",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-gold-card:magnitude",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-gold-card:mana",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-gold-card:cooldown",
+        "value:effect:oracle_diviners_deck:modifier:scepter-active-gold-card:delay"
+      ],
+      "activationId": "activation:111:oracle_diviners_deck"
+    },
+    {
+      "effectId": "oracle_false_promise:dispel:false-promise-initial-strong-dispel",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_false_promise",
+      "type": "dispel",
+      "subtype": "false-promise-initial-strong-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel:range",
+          "ownerId": "effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel",
+          "field": "range",
+          "state": "known",
+          "value": [
+            800,
+            850,
+            900
+          ]
+        },
+        "duration": {
+          "id": "value:effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel:duration",
+          "ownerId": "effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel:magnitude",
+          "ownerId": "effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel:mana",
+          "ownerId": "effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            150,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel:cooldown",
+          "ownerId": "effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            110,
+            85,
+            60
+          ]
+        },
+        "delay": {
+          "id": "value:effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel:delay",
+          "ownerId": "effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "strong"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "ally-debuffs"
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_false_promise"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel",
+      "legacyEffectId": "oracle_false_promise:dispel:false-promise-initial-strong-dispel",
+      "order": 24,
+      "legacyAbilityId": "oracle_false_promise",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel:range",
+        "value:effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel:duration",
+        "value:effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel:magnitude",
+        "value:effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel:mana",
+        "value:effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel:cooldown",
+        "value:effect:oracle_false_promise:dispel:false-promise-initial-strong-dispel:delay"
+      ],
+      "activationId": "activation:111:oracle_false_promise"
+    },
+    {
+      "effectId": "oracle_false_promise:save:false-promise-delayed-damage-and-healing",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_false_promise",
+      "type": "save",
+      "subtype": "false-promise-delayed-damage-and-healing",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing:range",
+          "ownerId": "effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing",
+          "field": "range",
+          "state": "known",
+          "value": [
+            800,
+            850,
+            900
+          ]
+        },
+        "duration": {
+          "id": "value:effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing:duration",
+          "ownerId": "effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            7,
+            8.5,
+            10
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing:magnitude",
+          "ownerId": "effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing:mana",
+          "ownerId": "effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            150,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing:cooldown",
+          "ownerId": "effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            110,
+            85,
+            60
+          ]
+        },
+        "delay": {
+          "id": "value:effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing:delay",
+          "ownerId": "effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "none"
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_false_promise"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing",
+      "legacyEffectId": "oracle_false_promise:save:false-promise-delayed-damage-and-healing",
+      "order": 25,
+      "legacyAbilityId": "oracle_false_promise",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing:range",
+        "value:effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing:duration",
+        "value:effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing:magnitude",
+        "value:effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing:mana",
+        "value:effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing:cooldown",
+        "value:effect:oracle_false_promise:save:false-promise-delayed-damage-and-healing:delay"
+      ],
+      "activationId": "activation:111:oracle_false_promise"
+    },
+    {
+      "effectId": "oracle_false_promise:modifier:false-promise-delayed-healing-amplification",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_false_promise",
+      "type": "modifier",
+      "subtype": "false-promise-delayed-healing-amplification",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification:range",
+          "ownerId": "effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification:duration",
+          "ownerId": "effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification:magnitude",
+          "ownerId": "effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification",
+          "field": "magnitude",
+          "state": "known",
+          "value": 100
+        },
+        "mana": {
+          "id": "value:effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification:mana",
+          "ownerId": "effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification:cooldown",
+          "ownerId": "effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification:delay",
+          "ownerId": "effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "falsePromiseEstablished"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_false_promise:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification",
+      "legacyEffectId": "oracle_false_promise:modifier:false-promise-delayed-healing-amplification",
+      "order": 26,
+      "legacyAbilityId": "oracle_false_promise",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:oracle_false_promise:modifier:false-promise-delayed-healing-amplification:0"
+      ],
+      "valueIds": [
+        "value:effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification:range",
+        "value:effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification:duration",
+        "value:effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification:magnitude",
+        "value:effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification:mana",
+        "value:effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification:cooldown",
+        "value:effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification:delay"
+      ],
+      "activationId": "activation:111:oracle_false_promise"
+    },
+    {
+      "effectId": "oracle_false_promise:heal:false-promise-positive-balance-settlement",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_false_promise",
+      "type": "heal",
+      "subtype": "false-promise-positive-balance-settlement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_false_promise:heal:false-promise-positive-balance-settlement:range",
+          "ownerId": "effect:oracle_false_promise:heal:false-promise-positive-balance-settlement",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:oracle_false_promise:heal:false-promise-positive-balance-settlement:duration",
+          "ownerId": "effect:oracle_false_promise:heal:false-promise-positive-balance-settlement",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_false_promise:heal:false-promise-positive-balance-settlement:magnitude",
+          "ownerId": "effect:oracle_false_promise:heal:false-promise-positive-balance-settlement",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:oracle_false_promise:heal:false-promise-positive-balance-settlement:mana",
+          "ownerId": "effect:oracle_false_promise:heal:false-promise-positive-balance-settlement",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_false_promise:heal:false-promise-positive-balance-settlement:cooldown",
+          "ownerId": "effect:oracle_false_promise:heal:false-promise-positive-balance-settlement",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:oracle_false_promise:heal:false-promise-positive-balance-settlement:delay",
+          "ownerId": "effect:oracle_false_promise:heal:false-promise-positive-balance-settlement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "falsePromiseEnded",
+          "falsePromiseBalancePositive",
+          "promiseRecipientVulnerable"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_false_promise:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:oracle_false_promise:heal:false-promise-positive-balance-settlement",
+      "legacyEffectId": "oracle_false_promise:heal:false-promise-positive-balance-settlement",
+      "order": 27,
+      "legacyAbilityId": "oracle_false_promise",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:oracle_false_promise:heal:false-promise-positive-balance-settlement:0",
+        "condition:oracle_false_promise:heal:false-promise-positive-balance-settlement:1",
+        "condition:oracle_false_promise:heal:false-promise-positive-balance-settlement:2"
+      ],
+      "valueIds": [
+        "value:effect:oracle_false_promise:heal:false-promise-positive-balance-settlement:range",
+        "value:effect:oracle_false_promise:heal:false-promise-positive-balance-settlement:duration",
+        "value:effect:oracle_false_promise:heal:false-promise-positive-balance-settlement:magnitude",
+        "value:effect:oracle_false_promise:heal:false-promise-positive-balance-settlement:mana",
+        "value:effect:oracle_false_promise:heal:false-promise-positive-balance-settlement:cooldown",
+        "value:effect:oracle_false_promise:heal:false-promise-positive-balance-settlement:delay"
+      ],
+      "activationId": "activation:111:oracle_false_promise"
+    },
+    {
+      "effectId": "oracle_prognosticate:modifier:innate-rune-and-roshan-prediction",
+      "heroId": "111",
+      "abilityId": "ability:111:oracle_prognosticate",
+      "type": "modifier",
+      "subtype": "innate-rune-and-roshan-prediction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction:range",
+          "ownerId": "effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction:duration",
+          "ownerId": "effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction:magnitude",
+          "ownerId": "effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction:mana",
+          "ownerId": "effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction:cooldown",
+          "ownerId": "effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction:delay",
+          "ownerId": "effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "oracle_prognosticate:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction",
+      "legacyEffectId": "oracle_prognosticate:modifier:innate-rune-and-roshan-prediction",
+      "order": 28,
+      "legacyAbilityId": "oracle_prognosticate",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction:range",
+        "value:effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction:duration",
+        "value:effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction:magnitude",
+        "value:effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction:mana",
+        "value:effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction:cooldown",
+        "value:effect:oracle_prognosticate:modifier:innate-rune-and-roshan-prediction:delay"
+      ],
+      "activationId": "activation:111:oracle_prognosticate"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:oracle_fortunes_end:control:fully-channeled-fortune-root:0",
+      "ownerId": "effect:oracle_fortunes_end:control:fully-channeled-fortune-root",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "fortuneFullyChanneled"
+      }
+    },
+    {
+      "id": "condition:oracle_fortunes_end:control:fully-channeled-fortune-root:1",
+      "ownerId": "effect:oracle_fortunes_end:control:fully-channeled-fortune-root",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "fortuneProjectileHitsEnemy"
+      }
+    },
+    {
+      "id": "condition:oracle_purifying_flames:heal:flames-existing-allied-healing-rate:0",
+      "ownerId": "effect:oracle_purifying_flames:heal:flames-existing-allied-healing-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "purifyingFlamesHealingBuffActive"
+      }
+    },
+    {
+      "id": "condition:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff:0",
+      "ownerId": "effect:oracle_purifying_flames:modifier:flames-existing-enemy-healing-tradeoff",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "purifyingFlamesHealingBuffActive"
+      }
+    },
+    {
+      "id": "condition:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:0",
+      "ownerId": "effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "rainOfDestinyEstablished"
+      }
+    },
+    {
+      "id": "condition:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate:1",
+      "ownerId": "effect:oracle_rain_of_destiny:damage:shard-established-rain-damage-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideDestinyRain"
+      }
+    },
+    {
+      "id": "condition:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate:0",
+      "ownerId": "effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "rainOfDestinyEstablished"
+      }
+    },
+    {
+      "id": "condition:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate:1",
+      "ownerId": "effect:oracle_rain_of_destiny:heal:shard-established-rain-healing-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyInsideDestinyRain"
+      }
+    },
+    {
+      "id": "condition:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction:0",
+      "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "rainOfDestinyEstablished"
+      }
+    },
+    {
+      "id": "condition:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction:1",
+      "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-rain-enemy-heal-amplification-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideDestinyRain"
+      }
+    },
+    {
+      "id": "condition:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification:0",
+      "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "rainOfDestinyEstablished"
+      }
+    },
+    {
+      "id": "condition:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification:1",
+      "ownerId": "effect:oracle_rain_of_destiny:modifier:shard-rain-allied-heal-amplification",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyInsideDestinyRain"
+      }
+    },
+    {
+      "id": "condition:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card:0",
+      "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-spell-amplification-card",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "oracleSpellAmplificationCardActive"
+      }
+    },
+    {
+      "id": "condition:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card:0",
+      "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-restoration-amplification-card",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "oracleRestorationCardActive"
+      }
+    },
+    {
+      "id": "condition:oracle_diviners_deck:save:scepter-active-finite-barrier-card:0",
+      "ownerId": "effect:oracle_diviners_deck:save:scepter-active-finite-barrier-card",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "oracleBarrierCardActive"
+      }
+    },
+    {
+      "id": "condition:oracle_diviners_deck:modifier:scepter-active-intelligence-card:0",
+      "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-intelligence-card",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "oracleIntelligenceCardActive"
+      }
+    },
+    {
+      "id": "condition:oracle_diviners_deck:modifier:scepter-active-gold-card:0",
+      "ownerId": "effect:oracle_diviners_deck:modifier:scepter-active-gold-card",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "oracleGoldCardActive"
+      }
+    },
+    {
+      "id": "condition:oracle_false_promise:modifier:false-promise-delayed-healing-amplification:0",
+      "ownerId": "effect:oracle_false_promise:modifier:false-promise-delayed-healing-amplification",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "falsePromiseEstablished"
+      }
+    },
+    {
+      "id": "condition:oracle_false_promise:heal:false-promise-positive-balance-settlement:0",
+      "ownerId": "effect:oracle_false_promise:heal:false-promise-positive-balance-settlement",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "falsePromiseEnded"
+      }
+    },
+    {
+      "id": "condition:oracle_false_promise:heal:false-promise-positive-balance-settlement:1",
+      "ownerId": "effect:oracle_false_promise:heal:false-promise-positive-balance-settlement",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "falsePromiseBalancePositive"
+      }
+    },
+    {
+      "id": "condition:oracle_false_promise:heal:false-promise-positive-balance-settlement:2",
+      "ownerId": "effect:oracle_false_promise:heal:false-promise-positive-balance-settlement",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "promiseRecipientVulnerable"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2071 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "shadow_demon_disruption:control:enemy-disruption-banish",
+      "heroId": "79",
+      "abilityId": "ability:79:shadow_demon_disruption",
+      "type": "control",
+      "subtype": "enemy-disruption-banish",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:shadow_demon_disruption:control:enemy-disruption-banish:range",
+          "ownerId": "effect:shadow_demon_disruption:control:enemy-disruption-banish",
+          "field": "range",
+          "state": "known",
+          "value": 675
+        },
+        "duration": {
+          "id": "value:effect:shadow_demon_disruption:control:enemy-disruption-banish:duration",
+          "ownerId": "effect:shadow_demon_disruption:control:enemy-disruption-banish",
+          "field": "duration",
+          "state": "known",
+          "value": 2.75
+        },
+        "magnitude": {
+          "id": "value:effect:shadow_demon_disruption:control:enemy-disruption-banish:magnitude",
+          "ownerId": "effect:shadow_demon_disruption:control:enemy-disruption-banish",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:shadow_demon_disruption:control:enemy-disruption-banish:mana",
+          "ownerId": "effect:shadow_demon_disruption:control:enemy-disruption-banish",
+          "field": "mana",
+          "state": "known",
+          "value": 120
+        },
+        "cooldown": {
+          "id": "value:effect:shadow_demon_disruption:control:enemy-disruption-banish:cooldown",
+          "ownerId": "effect:shadow_demon_disruption:control:enemy-disruption-banish",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            26,
+            24,
+            22,
+            20
+          ]
+        },
+        "delay": {
+          "id": "value:effect:shadow_demon_disruption:control:enemy-disruption-banish:delay",
+          "ownerId": "effect:shadow_demon_disruption:control:enemy-disruption-banish",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "none"
+        }
+      },
+      "relationships": {
+        "resourceId": "shadow_demon_disruption"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:shadow_demon_disruption:control:enemy-disruption-banish",
+      "legacyEffectId": "shadow_demon_disruption:control:enemy-disruption-banish",
+      "order": 0,
+      "legacyAbilityId": "shadow_demon_disruption",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:shadow_demon_disruption:control:enemy-disruption-banish:range",
+        "value:effect:shadow_demon_disruption:control:enemy-disruption-banish:duration",
+        "value:effect:shadow_demon_disruption:control:enemy-disruption-banish:magnitude",
+        "value:effect:shadow_demon_disruption:control:enemy-disruption-banish:mana",
+        "value:effect:shadow_demon_disruption:control:enemy-disruption-banish:cooldown",
+        "value:effect:shadow_demon_disruption:control:enemy-disruption-banish:delay"
+      ],
+      "activationId": "activation:79:shadow_demon_disruption"
+    },
+    {
+      "effectId": "shadow_demon_disruption:save:ally-disruption-banish",
+      "heroId": "79",
+      "abilityId": "ability:79:shadow_demon_disruption",
+      "type": "save",
+      "subtype": "ally-disruption-banish",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:shadow_demon_disruption:save:ally-disruption-banish:range",
+          "ownerId": "effect:shadow_demon_disruption:save:ally-disruption-banish",
+          "field": "range",
+          "state": "known",
+          "value": 675
+        },
+        "duration": {
+          "id": "value:effect:shadow_demon_disruption:save:ally-disruption-banish:duration",
+          "ownerId": "effect:shadow_demon_disruption:save:ally-disruption-banish",
+          "field": "duration",
+          "state": "known",
+          "value": 2.75
+        },
+        "magnitude": {
+          "id": "value:effect:shadow_demon_disruption:save:ally-disruption-banish:magnitude",
+          "ownerId": "effect:shadow_demon_disruption:save:ally-disruption-banish",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:shadow_demon_disruption:save:ally-disruption-banish:mana",
+          "ownerId": "effect:shadow_demon_disruption:save:ally-disruption-banish",
+          "field": "mana",
+          "state": "known",
+          "value": 120
+        },
+        "cooldown": {
+          "id": "value:effect:shadow_demon_disruption:save:ally-disruption-banish:cooldown",
+          "ownerId": "effect:shadow_demon_disruption:save:ally-disruption-banish",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            26,
+            24,
+            22,
+            20
+          ]
+        },
+        "delay": {
+          "id": "value:effect:shadow_demon_disruption:save:ally-disruption-banish:delay",
+          "ownerId": "effect:shadow_demon_disruption:save:ally-disruption-banish",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "disruptionDamageExceptionsAbsent"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "physical",
+            "magical",
+            "pure"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "shadow_demon_disruption"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:shadow_demon_disruption:save:ally-disruption-banish",
+      "legacyEffectId": "shadow_demon_disruption:save:ally-disruption-banish",
+      "order": 1,
+      "legacyAbilityId": "shadow_demon_disruption",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:shadow_demon_disruption:save:ally-disruption-banish:0"
+      ],
+      "valueIds": [
+        "value:effect:shadow_demon_disruption:save:ally-disruption-banish:range",
+        "value:effect:shadow_demon_disruption:save:ally-disruption-banish:duration",
+        "value:effect:shadow_demon_disruption:save:ally-disruption-banish:magnitude",
+        "value:effect:shadow_demon_disruption:save:ally-disruption-banish:mana",
+        "value:effect:shadow_demon_disruption:save:ally-disruption-banish:cooldown",
+        "value:effect:shadow_demon_disruption:save:ally-disruption-banish:delay"
+      ],
+      "activationId": "activation:79:shadow_demon_disruption"
+    },
+    {
+      "effectId": "shadow_demon_disruption:modifier:disruption-target-dependent-illusions",
+      "heroId": "79",
+      "abilityId": "ability:79:shadow_demon_disruption",
+      "type": "modifier",
+      "subtype": "disruption-target-dependent-illusions",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions:range",
+          "ownerId": "effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions:duration",
+          "ownerId": "effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            8,
+            10,
+            12,
+            14
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions:magnitude",
+          "ownerId": "effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions:mana",
+          "ownerId": "effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions",
+          "field": "mana",
+          "state": "known",
+          "value": 120
+        },
+        "cooldown": {
+          "id": "value:effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions:cooldown",
+          "ownerId": "effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            26,
+            24,
+            22,
+            20
+          ]
+        },
+        "delay": {
+          "id": "value:effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions:delay",
+          "ownerId": "effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "shadow_demon_disruption"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions",
+      "legacyEffectId": "shadow_demon_disruption:modifier:disruption-target-dependent-illusions",
+      "order": 2,
+      "legacyAbilityId": "shadow_demon_disruption",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions:range",
+        "value:effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions:duration",
+        "value:effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions:magnitude",
+        "value:effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions:mana",
+        "value:effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions:cooldown",
+        "value:effect:shadow_demon_disruption:modifier:disruption-target-dependent-illusions:delay"
+      ],
+      "activationId": "activation:79:shadow_demon_disruption"
+    },
+    {
+      "effectId": "shadow_demon_disseminate:modifier:received-damage-dissemination",
+      "heroId": "79",
+      "abilityId": "ability:79:shadow_demon_disseminate",
+      "type": "modifier",
+      "subtype": "received-damage-dissemination",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy",
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:shadow_demon_disseminate:modifier:received-damage-dissemination:range",
+          "ownerId": "effect:shadow_demon_disseminate:modifier:received-damage-dissemination",
+          "field": "range",
+          "state": "known",
+          "value": [
+            700,
+            775,
+            850,
+            925
+          ]
+        },
+        "duration": {
+          "id": "value:effect:shadow_demon_disseminate:modifier:received-damage-dissemination:duration",
+          "ownerId": "effect:shadow_demon_disseminate:modifier:received-damage-dissemination",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:shadow_demon_disseminate:modifier:received-damage-dissemination:magnitude",
+          "ownerId": "effect:shadow_demon_disseminate:modifier:received-damage-dissemination",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:shadow_demon_disseminate:modifier:received-damage-dissemination:mana",
+          "ownerId": "effect:shadow_demon_disseminate:modifier:received-damage-dissemination",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:shadow_demon_disseminate:modifier:received-damage-dissemination:cooldown",
+          "ownerId": "effect:shadow_demon_disseminate:modifier:received-damage-dissemination",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            26,
+            22,
+            18,
+            14
+          ]
+        },
+        "delay": {
+          "id": "value:effect:shadow_demon_disseminate:modifier:received-damage-dissemination:delay",
+          "ownerId": "effect:shadow_demon_disseminate:modifier:received-damage-dissemination",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "disseminateCarrierReceivesDamage"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "shadow_demon_disseminate"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:shadow_demon_disseminate:modifier:received-damage-dissemination",
+      "legacyEffectId": "shadow_demon_disseminate:modifier:received-damage-dissemination",
+      "order": 3,
+      "legacyAbilityId": "shadow_demon_disseminate",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:shadow_demon_disseminate:modifier:received-damage-dissemination:0"
+      ],
+      "valueIds": [
+        "value:effect:shadow_demon_disseminate:modifier:received-damage-dissemination:range",
+        "value:effect:shadow_demon_disseminate:modifier:received-damage-dissemination:duration",
+        "value:effect:shadow_demon_disseminate:modifier:received-damage-dissemination:magnitude",
+        "value:effect:shadow_demon_disseminate:modifier:received-damage-dissemination:mana",
+        "value:effect:shadow_demon_disseminate:modifier:received-damage-dissemination:cooldown",
+        "value:effect:shadow_demon_disseminate:modifier:received-damage-dissemination:delay"
+      ],
+      "activationId": "activation:79:shadow_demon_disseminate"
+    },
+    {
+      "effectId": "shadow_demon_shadow_poison:damage:shadow-poison-initial-hit",
+      "heroId": "79",
+      "abilityId": "ability:79:shadow_demon_shadow_poison",
+      "type": "damage",
+      "subtype": "shadow-poison-initial-hit",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit:range",
+          "ownerId": "effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit",
+          "field": "range",
+          "state": "known",
+          "value": 1500
+        },
+        "duration": {
+          "id": "value:effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit:duration",
+          "ownerId": "effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit:magnitude",
+          "ownerId": "effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            24,
+            36,
+            48,
+            60
+          ]
+        },
+        "mana": {
+          "id": "value:effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit:mana",
+          "ownerId": "effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit",
+          "field": "mana",
+          "state": "known",
+          "value": 40
+        },
+        "cooldown": {
+          "id": "value:effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit:cooldown",
+          "ownerId": "effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit",
+          "field": "cooldown",
+          "state": "known",
+          "value": 2.5
+        },
+        "delay": {
+          "id": "value:effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit:delay",
+          "ownerId": "effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit:damageType",
+          "ownerId": "effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "shadow_demon_shadow_poison"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit",
+      "legacyEffectId": "shadow_demon_shadow_poison:damage:shadow-poison-initial-hit",
+      "order": 4,
+      "legacyAbilityId": "shadow_demon_shadow_poison",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit:range",
+        "value:effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit:duration",
+        "value:effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit:magnitude",
+        "value:effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit:mana",
+        "value:effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit:cooldown",
+        "value:effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit:delay",
+        "value:effect:shadow_demon_shadow_poison:damage:shadow-poison-initial-hit:damageType"
+      ],
+      "activationId": "activation:79:shadow_demon_shadow_poison"
+    },
+    {
+      "effectId": "shadow_demon_shadow_poison:damage:released-poison-stack-payload",
+      "heroId": "79",
+      "abilityId": "ability:79:shadow_demon_shadow_poison",
+      "type": "damage",
+      "subtype": "released-poison-stack-payload",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload:range",
+          "ownerId": "effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload:duration",
+          "ownerId": "effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload:magnitude",
+          "ownerId": "effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload:mana",
+          "ownerId": "effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload:cooldown",
+          "ownerId": "effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload:delay",
+          "ownerId": "effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload:damageType",
+          "ownerId": "effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "shadowPoisonStacksReleasedOnEnemy"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "shadow_demon_shadow_poison:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload",
+      "legacyEffectId": "shadow_demon_shadow_poison:damage:released-poison-stack-payload",
+      "order": 5,
+      "legacyAbilityId": "shadow_demon_shadow_poison",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:shadow_demon_shadow_poison:damage:released-poison-stack-payload:0"
+      ],
+      "valueIds": [
+        "value:effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload:range",
+        "value:effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload:duration",
+        "value:effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload:magnitude",
+        "value:effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload:mana",
+        "value:effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload:cooldown",
+        "value:effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload:delay",
+        "value:effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload:damageType"
+      ],
+      "activationId": "activation:79:shadow_demon_shadow_poison"
+    },
+    {
+      "effectId": "shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint",
+      "heroId": "79",
+      "abilityId": "ability:79:shadow_demon_shadow_poison_release",
+      "type": "modifier",
+      "subtype": "release-existing-poison-endpoint",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint:range",
+          "ownerId": "effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint:duration",
+          "ownerId": "effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint:magnitude",
+          "ownerId": "effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint:mana",
+          "ownerId": "effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint:cooldown",
+          "ownerId": "effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint",
+          "field": "cooldown",
+          "state": "known",
+          "value": 1
+        },
+        "delay": {
+          "id": "value:effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint:delay",
+          "ownerId": "effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "shadow_demon_shadow_poison"
+        ],
+        "upgrades": [],
+        "requiresContext": [
+          "shadowPoisonStacksExist"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "shadow_demon_shadow_poison_release"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint",
+      "legacyEffectId": "shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint",
+      "order": 6,
+      "legacyAbilityId": "shadow_demon_shadow_poison_release",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint:0"
+      ],
+      "valueIds": [
+        "value:effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint:range",
+        "value:effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint:duration",
+        "value:effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint:magnitude",
+        "value:effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint:mana",
+        "value:effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint:cooldown",
+        "value:effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint:delay"
+      ],
+      "activationId": "activation:79:shadow_demon_shadow_poison_release"
+    },
+    {
+      "effectId": "shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel",
+      "heroId": "79",
+      "abilityId": "ability:79:shadow_demon_demonic_cleanse",
+      "type": "dispel",
+      "subtype": "shard-continuous-allied-basic-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel:range",
+          "ownerId": "effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel:duration",
+          "ownerId": "effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel",
+          "field": "duration",
+          "state": "known",
+          "value": 5
+        },
+        "magnitude": {
+          "id": "value:effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel:magnitude",
+          "ownerId": "effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel:mana",
+          "ownerId": "effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": 150
+        },
+        "cooldown": {
+          "id": "value:effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel:cooldown",
+          "ownerId": "effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": 60
+        },
+        "delay": {
+          "id": "value:effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel:delay",
+          "ownerId": "effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "basic"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "ally-debuffs"
+        }
+      },
+      "relationships": {
+        "resourceId": "shadow_demon_demonic_cleanse"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel",
+      "legacyEffectId": "shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel",
+      "order": 7,
+      "legacyAbilityId": "shadow_demon_demonic_cleanse",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel:range",
+        "value:effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel:duration",
+        "value:effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel:magnitude",
+        "value:effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel:mana",
+        "value:effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel:cooldown",
+        "value:effect:shadow_demon_demonic_cleanse:dispel:shard-continuous-allied-basic-dispel:delay"
+      ],
+      "activationId": "activation:79:shadow_demon_demonic_cleanse"
+    },
+    {
+      "effectId": "shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal",
+      "heroId": "79",
+      "abilityId": "ability:79:shadow_demon_demonic_cleanse",
+      "type": "heal",
+      "subtype": "shard-cleanse-end-heal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal:range",
+          "ownerId": "effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal:duration",
+          "ownerId": "effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal:magnitude",
+          "ownerId": "effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal",
+          "field": "magnitude",
+          "state": "known",
+          "value": 450
+        },
+        "mana": {
+          "id": "value:effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal:mana",
+          "ownerId": "effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal",
+          "field": "mana",
+          "state": "known",
+          "value": 150
+        },
+        "cooldown": {
+          "id": "value:effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal:cooldown",
+          "ownerId": "effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal",
+          "field": "cooldown",
+          "state": "known",
+          "value": 60
+        },
+        "delay": {
+          "id": "value:effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal:delay",
+          "ownerId": "effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal",
+          "field": "delay",
+          "state": "known",
+          "value": 5
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "demonicCleanseReachesEnd"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "shadow_demon_demonic_cleanse"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal",
+      "legacyEffectId": "shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal",
+      "order": 8,
+      "legacyAbilityId": "shadow_demon_demonic_cleanse",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal:0"
+      ],
+      "valueIds": [
+        "value:effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal:range",
+        "value:effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal:duration",
+        "value:effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal:magnitude",
+        "value:effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal:mana",
+        "value:effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal:cooldown",
+        "value:effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal:delay"
+      ],
+      "activationId": "activation:79:shadow_demon_demonic_cleanse"
+    },
+    {
+      "effectId": "shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge",
+      "heroId": "79",
+      "abilityId": "ability:79:shadow_demon_demonic_purge",
+      "type": "dispel",
+      "subtype": "continuous-enemy-buff-purge",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge:range",
+          "ownerId": "effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge:duration",
+          "ownerId": "effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge",
+          "field": "duration",
+          "state": "known",
+          "value": 5
+        },
+        "magnitude": {
+          "id": "value:effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge:magnitude",
+          "ownerId": "effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge:mana",
+          "ownerId": "effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            175,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge:cooldown",
+          "ownerId": "effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            70,
+            65,
+            60
+          ]
+        },
+        "delay": {
+          "id": "value:effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge:delay",
+          "ownerId": "effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "basic"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "enemy-buffs"
+        }
+      },
+      "relationships": {
+        "resourceId": "shadow_demon_demonic_purge"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge",
+      "legacyEffectId": "shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge",
+      "order": 9,
+      "legacyAbilityId": "shadow_demon_demonic_purge",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge:range",
+        "value:effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge:duration",
+        "value:effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge:magnitude",
+        "value:effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge:mana",
+        "value:effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge:cooldown",
+        "value:effect:shadow_demon_demonic_purge:dispel:continuous-enemy-buff-purge:delay"
+      ],
+      "activationId": "activation:79:shadow_demon_demonic_purge"
+    },
+    {
+      "effectId": "shadow_demon_demonic_purge:slow:purge-decaying-slow",
+      "heroId": "79",
+      "abilityId": "ability:79:shadow_demon_demonic_purge",
+      "type": "slow",
+      "subtype": "purge-decaying-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:shadow_demon_demonic_purge:slow:purge-decaying-slow:range",
+          "ownerId": "effect:shadow_demon_demonic_purge:slow:purge-decaying-slow",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:shadow_demon_demonic_purge:slow:purge-decaying-slow:duration",
+          "ownerId": "effect:shadow_demon_demonic_purge:slow:purge-decaying-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 5
+        },
+        "magnitude": {
+          "id": "value:effect:shadow_demon_demonic_purge:slow:purge-decaying-slow:magnitude",
+          "ownerId": "effect:shadow_demon_demonic_purge:slow:purge-decaying-slow",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:shadow_demon_demonic_purge:slow:purge-decaying-slow:mana",
+          "ownerId": "effect:shadow_demon_demonic_purge:slow:purge-decaying-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            175,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:shadow_demon_demonic_purge:slow:purge-decaying-slow:cooldown",
+          "ownerId": "effect:shadow_demon_demonic_purge:slow:purge-decaying-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            70,
+            65,
+            60
+          ]
+        },
+        "delay": {
+          "id": "value:effect:shadow_demon_demonic_purge:slow:purge-decaying-slow:delay",
+          "ownerId": "effect:shadow_demon_demonic_purge:slow:purge-decaying-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "none"
+        }
+      },
+      "relationships": {
+        "resourceId": "shadow_demon_demonic_purge"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:shadow_demon_demonic_purge:slow:purge-decaying-slow",
+      "legacyEffectId": "shadow_demon_demonic_purge:slow:purge-decaying-slow",
+      "order": 10,
+      "legacyAbilityId": "shadow_demon_demonic_purge",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:shadow_demon_demonic_purge:slow:purge-decaying-slow:range",
+        "value:effect:shadow_demon_demonic_purge:slow:purge-decaying-slow:duration",
+        "value:effect:shadow_demon_demonic_purge:slow:purge-decaying-slow:magnitude",
+        "value:effect:shadow_demon_demonic_purge:slow:purge-decaying-slow:mana",
+        "value:effect:shadow_demon_demonic_purge:slow:purge-decaying-slow:cooldown",
+        "value:effect:shadow_demon_demonic_purge:slow:purge-decaying-slow:delay"
+      ],
+      "activationId": "activation:79:shadow_demon_demonic_purge"
+    },
+    {
+      "effectId": "shadow_demon_demonic_purge:damage:purge-end-damage",
+      "heroId": "79",
+      "abilityId": "ability:79:shadow_demon_demonic_purge",
+      "type": "damage",
+      "subtype": "purge-end-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:shadow_demon_demonic_purge:damage:purge-end-damage:range",
+          "ownerId": "effect:shadow_demon_demonic_purge:damage:purge-end-damage",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:shadow_demon_demonic_purge:damage:purge-end-damage:duration",
+          "ownerId": "effect:shadow_demon_demonic_purge:damage:purge-end-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:shadow_demon_demonic_purge:damage:purge-end-damage:magnitude",
+          "ownerId": "effect:shadow_demon_demonic_purge:damage:purge-end-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            300,
+            450,
+            600
+          ]
+        },
+        "mana": {
+          "id": "value:effect:shadow_demon_demonic_purge:damage:purge-end-damage:mana",
+          "ownerId": "effect:shadow_demon_demonic_purge:damage:purge-end-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            175,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:shadow_demon_demonic_purge:damage:purge-end-damage:cooldown",
+          "ownerId": "effect:shadow_demon_demonic_purge:damage:purge-end-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            70,
+            65,
+            60
+          ]
+        },
+        "delay": {
+          "id": "value:effect:shadow_demon_demonic_purge:damage:purge-end-damage:delay",
+          "ownerId": "effect:shadow_demon_demonic_purge:damage:purge-end-damage",
+          "field": "delay",
+          "state": "known",
+          "value": 5
+        },
+        "damageType": {
+          "id": "value:effect:shadow_demon_demonic_purge:damage:purge-end-damage:damageType",
+          "ownerId": "effect:shadow_demon_demonic_purge:damage:purge-end-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "demonicPurgeReachesEnd"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "shadow_demon_demonic_purge"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:shadow_demon_demonic_purge:damage:purge-end-damage",
+      "legacyEffectId": "shadow_demon_demonic_purge:damage:purge-end-damage",
+      "order": 11,
+      "legacyAbilityId": "shadow_demon_demonic_purge",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:shadow_demon_demonic_purge:damage:purge-end-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:shadow_demon_demonic_purge:damage:purge-end-damage:range",
+        "value:effect:shadow_demon_demonic_purge:damage:purge-end-damage:duration",
+        "value:effect:shadow_demon_demonic_purge:damage:purge-end-damage:magnitude",
+        "value:effect:shadow_demon_demonic_purge:damage:purge-end-damage:mana",
+        "value:effect:shadow_demon_demonic_purge:damage:purge-end-damage:cooldown",
+        "value:effect:shadow_demon_demonic_purge:damage:purge-end-damage:delay",
+        "value:effect:shadow_demon_demonic_purge:damage:purge-end-damage:damageType"
+      ],
+      "activationId": "activation:79:shadow_demon_demonic_purge"
+    },
+    {
+      "effectId": "shadow_demon_demonic_purge:break:scepter-purge-break",
+      "heroId": "79",
+      "abilityId": "ability:79:shadow_demon_demonic_purge",
+      "type": "break",
+      "subtype": "scepter-purge-break",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:shadow_demon_demonic_purge:break:scepter-purge-break:range",
+          "ownerId": "effect:shadow_demon_demonic_purge:break:scepter-purge-break",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:shadow_demon_demonic_purge:break:scepter-purge-break:duration",
+          "ownerId": "effect:shadow_demon_demonic_purge:break:scepter-purge-break",
+          "field": "duration",
+          "state": "known",
+          "value": 5
+        },
+        "magnitude": {
+          "id": "value:effect:shadow_demon_demonic_purge:break:scepter-purge-break:magnitude",
+          "ownerId": "effect:shadow_demon_demonic_purge:break:scepter-purge-break",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:shadow_demon_demonic_purge:break:scepter-purge-break:mana",
+          "ownerId": "effect:shadow_demon_demonic_purge:break:scepter-purge-break",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            150,
+            175,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:shadow_demon_demonic_purge:break:scepter-purge-break:cooldown",
+          "ownerId": "effect:shadow_demon_demonic_purge:break:scepter-purge-break",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            70,
+            65,
+            60
+          ]
+        },
+        "delay": {
+          "id": "value:effect:shadow_demon_demonic_purge:break:scepter-purge-break:delay",
+          "ownerId": "effect:shadow_demon_demonic_purge:break:scepter-purge-break",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "none"
+        }
+      },
+      "relationships": {
+        "resourceId": "shadow_demon_demonic_purge"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:shadow_demon_demonic_purge:break:scepter-purge-break",
+      "legacyEffectId": "shadow_demon_demonic_purge:break:scepter-purge-break",
+      "order": 12,
+      "legacyAbilityId": "shadow_demon_demonic_purge",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:shadow_demon_demonic_purge:break:scepter-purge-break:range",
+        "value:effect:shadow_demon_demonic_purge:break:scepter-purge-break:duration",
+        "value:effect:shadow_demon_demonic_purge:break:scepter-purge-break:magnitude",
+        "value:effect:shadow_demon_demonic_purge:break:scepter-purge-break:mana",
+        "value:effect:shadow_demon_demonic_purge:break:scepter-purge-break:cooldown",
+        "value:effect:shadow_demon_demonic_purge:break:scepter-purge-break:delay"
+      ],
+      "activationId": "activation:79:shadow_demon_demonic_purge"
+    },
+    {
+      "effectId": "shadow_demon_menace:modifier:attack-applied-menace-amplification",
+      "heroId": "79",
+      "abilityId": "ability:79:shadow_demon_menace",
+      "type": "modifier",
+      "subtype": "attack-applied-menace-amplification",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:shadow_demon_menace:modifier:attack-applied-menace-amplification:range",
+          "ownerId": "effect:shadow_demon_menace:modifier:attack-applied-menace-amplification",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:shadow_demon_menace:modifier:attack-applied-menace-amplification:duration",
+          "ownerId": "effect:shadow_demon_menace:modifier:attack-applied-menace-amplification",
+          "field": "duration",
+          "state": "known",
+          "value": 8
+        },
+        "magnitude": {
+          "id": "value:effect:shadow_demon_menace:modifier:attack-applied-menace-amplification:magnitude",
+          "ownerId": "effect:shadow_demon_menace:modifier:attack-applied-menace-amplification",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:shadow_demon_menace:modifier:attack-applied-menace-amplification:mana",
+          "ownerId": "effect:shadow_demon_menace:modifier:attack-applied-menace-amplification",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:shadow_demon_menace:modifier:attack-applied-menace-amplification:cooldown",
+          "ownerId": "effect:shadow_demon_menace:modifier:attack-applied-menace-amplification",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:shadow_demon_menace:modifier:attack-applied-menace-amplification:delay",
+          "ownerId": "effect:shadow_demon_menace:modifier:attack-applied-menace-amplification",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "menaceAttackLanded"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "shadow_demon_menace:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:shadow_demon_menace:modifier:attack-applied-menace-amplification",
+      "legacyEffectId": "shadow_demon_menace:modifier:attack-applied-menace-amplification",
+      "order": 13,
+      "legacyAbilityId": "shadow_demon_menace",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:shadow_demon_menace:modifier:attack-applied-menace-amplification:0"
+      ],
+      "valueIds": [
+        "value:effect:shadow_demon_menace:modifier:attack-applied-menace-amplification:range",
+        "value:effect:shadow_demon_menace:modifier:attack-applied-menace-amplification:duration",
+        "value:effect:shadow_demon_menace:modifier:attack-applied-menace-amplification:magnitude",
+        "value:effect:shadow_demon_menace:modifier:attack-applied-menace-amplification:mana",
+        "value:effect:shadow_demon_menace:modifier:attack-applied-menace-amplification:cooldown",
+        "value:effect:shadow_demon_menace:modifier:attack-applied-menace-amplification:delay"
+      ],
+      "activationId": "activation:79:shadow_demon_menace"
+    },
+    {
+      "effectId": "shadow_demon_disruption:illusion:disruption-target-dependent-illusions",
+      "heroId": "79",
+      "abilityId": "ability:79:shadow_demon_disruption",
+      "type": "illusion",
+      "subtype": "disruption-target-dependent-illusions",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions:range",
+          "ownerId": "effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions:duration",
+          "ownerId": "effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            8,
+            10,
+            12,
+            14
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions:magnitude",
+          "ownerId": "effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions:mana",
+          "ownerId": "effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions",
+          "field": "mana",
+          "state": "known",
+          "value": 120
+        },
+        "cooldown": {
+          "id": "value:effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions:cooldown",
+          "ownerId": "effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            26,
+            24,
+            22,
+            20
+          ]
+        },
+        "delay": {
+          "id": "value:effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions:delay",
+          "ownerId": "effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "shadow_demon_disruption",
+        "replaces": [
+          "shadow_demon_disruption:modifier:disruption-target-dependent-illusions"
+        ]
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "mechanicsFacets": [
+        "illusions"
+      ],
+      "id": "effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions",
+      "legacyEffectId": "shadow_demon_disruption:illusion:disruption-target-dependent-illusions",
+      "order": 14,
+      "legacyAbilityId": "shadow_demon_disruption",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions:range",
+        "value:effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions:duration",
+        "value:effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions:magnitude",
+        "value:effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions:mana",
+        "value:effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions:cooldown",
+        "value:effect:shadow_demon_disruption:illusion:disruption-target-dependent-illusions:delay"
+      ],
+      "activationId": "activation:79:shadow_demon_disruption"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:shadow_demon_disruption:save:ally-disruption-banish:0",
+      "ownerId": "effect:shadow_demon_disruption:save:ally-disruption-banish",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "disruptionDamageExceptionsAbsent"
+      }
+    },
+    {
+      "id": "condition:shadow_demon_disseminate:modifier:received-damage-dissemination:0",
+      "ownerId": "effect:shadow_demon_disseminate:modifier:received-damage-dissemination",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "disseminateCarrierReceivesDamage"
+      }
+    },
+    {
+      "id": "condition:shadow_demon_shadow_poison:damage:released-poison-stack-payload:0",
+      "ownerId": "effect:shadow_demon_shadow_poison:damage:released-poison-stack-payload",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "shadowPoisonStacksReleasedOnEnemy"
+      }
+    },
+    {
+      "id": "condition:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint:0",
+      "ownerId": "effect:shadow_demon_shadow_poison_release:modifier:release-existing-poison-endpoint",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "shadowPoisonStacksExist"
+      }
+    },
+    {
+      "id": "condition:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal:0",
+      "ownerId": "effect:shadow_demon_demonic_cleanse:heal:shard-cleanse-end-heal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "demonicCleanseReachesEnd"
+      }
+    },
+    {
+      "id": "condition:shadow_demon_demonic_purge:damage:purge-end-damage:0",
+      "ownerId": "effect:shadow_demon_demonic_purge:damage:purge-end-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "demonicPurgeReachesEnd"
+      }
+    },
+    {
+      "id": "condition:shadow_demon_menace:modifier:attack-applied-menace-amplification:0",
+      "ownerId": "effect:shadow_demon_menace:modifier:attack-applied-menace-amplification",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "menaceAttackLanded"
+      }
+    }
+  ]
+}

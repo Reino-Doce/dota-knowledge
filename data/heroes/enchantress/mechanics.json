@@ -1,0 +1,1597 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "enchantress_impetus:damage:distance-at-impact-attack-damage",
+      "heroId": "58",
+      "abilityId": "ability:58:enchantress_impetus",
+      "type": "damage",
+      "subtype": "distance-at-impact-attack-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enchantress_impetus:damage:distance-at-impact-attack-damage:range",
+          "ownerId": "effect:enchantress_impetus:damage:distance-at-impact-attack-damage",
+          "field": "range",
+          "state": "known",
+          "value": 575
+        },
+        "duration": {
+          "id": "value:effect:enchantress_impetus:damage:distance-at-impact-attack-damage:duration",
+          "ownerId": "effect:enchantress_impetus:damage:distance-at-impact-attack-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:enchantress_impetus:damage:distance-at-impact-attack-damage:magnitude",
+          "ownerId": "effect:enchantress_impetus:damage:distance-at-impact-attack-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enchantress_impetus:damage:distance-at-impact-attack-damage:mana",
+          "ownerId": "effect:enchantress_impetus:damage:distance-at-impact-attack-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            40,
+            45,
+            50,
+            55
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:enchantress_impetus:damage:distance-at-impact-attack-damage:cooldown",
+          "ownerId": "effect:enchantress_impetus:damage:distance-at-impact-attack-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            6,
+            4,
+            2,
+            0
+          ]
+        },
+        "delay": {
+          "id": "value:effect:enchantress_impetus:damage:distance-at-impact-attack-damage:delay",
+          "ownerId": "effect:enchantress_impetus:damage:distance-at-impact-attack-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:enchantress_impetus:damage:distance-at-impact-attack-damage:damageType",
+          "ownerId": "effect:enchantress_impetus:damage:distance-at-impact-attack-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "pure"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "impetusAttackLanded"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "enchantress_impetus"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enchantress_impetus:damage:distance-at-impact-attack-damage",
+      "legacyEffectId": "enchantress_impetus:damage:distance-at-impact-attack-damage",
+      "order": 0,
+      "legacyAbilityId": "enchantress_impetus",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:enchantress_impetus:damage:distance-at-impact-attack-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:enchantress_impetus:damage:distance-at-impact-attack-damage:range",
+        "value:effect:enchantress_impetus:damage:distance-at-impact-attack-damage:duration",
+        "value:effect:enchantress_impetus:damage:distance-at-impact-attack-damage:magnitude",
+        "value:effect:enchantress_impetus:damage:distance-at-impact-attack-damage:mana",
+        "value:effect:enchantress_impetus:damage:distance-at-impact-attack-damage:cooldown",
+        "value:effect:enchantress_impetus:damage:distance-at-impact-attack-damage:delay",
+        "value:effect:enchantress_impetus:damage:distance-at-impact-attack-damage:damageType"
+      ],
+      "activationId": "activation:58:enchantress_impetus"
+    },
+    {
+      "effectId": "enchantress_enchant:slow:enemy-hero-slow",
+      "heroId": "58",
+      "abilityId": "ability:58:enchantress_enchant",
+      "type": "slow",
+      "subtype": "enemy-hero-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enchantress_enchant:slow:enemy-hero-slow:range",
+          "ownerId": "effect:enchantress_enchant:slow:enemy-hero-slow",
+          "field": "range",
+          "state": "known",
+          "value": [
+            500,
+            600,
+            700,
+            800
+          ]
+        },
+        "duration": {
+          "id": "value:effect:enchantress_enchant:slow:enemy-hero-slow:duration",
+          "ownerId": "effect:enchantress_enchant:slow:enemy-hero-slow",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3.5,
+            4,
+            4.5,
+            5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:enchantress_enchant:slow:enemy-hero-slow:magnitude",
+          "ownerId": "effect:enchantress_enchant:slow:enemy-hero-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -30,
+            -40,
+            -50,
+            -60
+          ]
+        },
+        "mana": {
+          "id": "value:effect:enchantress_enchant:slow:enemy-hero-slow:mana",
+          "ownerId": "effect:enchantress_enchant:slow:enemy-hero-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 70
+        },
+        "cooldown": {
+          "id": "value:effect:enchantress_enchant:slow:enemy-hero-slow:cooldown",
+          "ownerId": "effect:enchantress_enchant:slow:enemy-hero-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            24,
+            18,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:enchantress_enchant:slow:enemy-hero-slow:delay",
+          "ownerId": "effect:enchantress_enchant:slow:enemy-hero-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "enchantress_enchant"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enchantress_enchant:slow:enemy-hero-slow",
+      "legacyEffectId": "enchantress_enchant:slow:enemy-hero-slow",
+      "order": 1,
+      "legacyAbilityId": "enchantress_enchant",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:enchantress_enchant:slow:enemy-hero-slow:range",
+        "value:effect:enchantress_enchant:slow:enemy-hero-slow:duration",
+        "value:effect:enchantress_enchant:slow:enemy-hero-slow:magnitude",
+        "value:effect:enchantress_enchant:slow:enemy-hero-slow:mana",
+        "value:effect:enchantress_enchant:slow:enemy-hero-slow:cooldown",
+        "value:effect:enchantress_enchant:slow:enemy-hero-slow:delay"
+      ],
+      "activationId": "activation:58:enchantress_enchant"
+    },
+    {
+      "effectId": "enchantress_enchant:dispel:enemy-hero-basic-dispel",
+      "heroId": "58",
+      "abilityId": "ability:58:enchantress_enchant",
+      "type": "dispel",
+      "subtype": "enemy-hero-basic-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enchantress_enchant:dispel:enemy-hero-basic-dispel:range",
+          "ownerId": "effect:enchantress_enchant:dispel:enemy-hero-basic-dispel",
+          "field": "range",
+          "state": "known",
+          "value": [
+            500,
+            600,
+            700,
+            800
+          ]
+        },
+        "duration": {
+          "id": "value:effect:enchantress_enchant:dispel:enemy-hero-basic-dispel:duration",
+          "ownerId": "effect:enchantress_enchant:dispel:enemy-hero-basic-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:enchantress_enchant:dispel:enemy-hero-basic-dispel:magnitude",
+          "ownerId": "effect:enchantress_enchant:dispel:enemy-hero-basic-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enchantress_enchant:dispel:enemy-hero-basic-dispel:mana",
+          "ownerId": "effect:enchantress_enchant:dispel:enemy-hero-basic-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": 70
+        },
+        "cooldown": {
+          "id": "value:effect:enchantress_enchant:dispel:enemy-hero-basic-dispel:cooldown",
+          "ownerId": "effect:enchantress_enchant:dispel:enemy-hero-basic-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            24,
+            18,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:enchantress_enchant:dispel:enemy-hero-basic-dispel:delay",
+          "ownerId": "effect:enchantress_enchant:dispel:enemy-hero-basic-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "basic"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "enemy-buffs"
+        }
+      },
+      "relationships": {
+        "resourceId": "enchantress_enchant"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enchantress_enchant:dispel:enemy-hero-basic-dispel",
+      "legacyEffectId": "enchantress_enchant:dispel:enemy-hero-basic-dispel",
+      "order": 2,
+      "legacyAbilityId": "enchantress_enchant",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:enchantress_enchant:dispel:enemy-hero-basic-dispel:range",
+        "value:effect:enchantress_enchant:dispel:enemy-hero-basic-dispel:duration",
+        "value:effect:enchantress_enchant:dispel:enemy-hero-basic-dispel:magnitude",
+        "value:effect:enchantress_enchant:dispel:enemy-hero-basic-dispel:mana",
+        "value:effect:enchantress_enchant:dispel:enemy-hero-basic-dispel:cooldown",
+        "value:effect:enchantress_enchant:dispel:enemy-hero-basic-dispel:delay"
+      ],
+      "activationId": "activation:58:enchantress_enchant"
+    },
+    {
+      "effectId": "enchantress_enchant:modifier:creep-control-and-focused-attack-range",
+      "heroId": "58",
+      "abilityId": "ability:58:enchantress_enchant",
+      "type": "modifier",
+      "subtype": "creep-control-and-focused-attack-range",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range:range",
+          "ownerId": "effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range",
+          "field": "range",
+          "state": "known",
+          "value": [
+            500,
+            600,
+            700,
+            800
+          ]
+        },
+        "duration": {
+          "id": "value:effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range:duration",
+          "ownerId": "effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range:magnitude",
+          "ownerId": "effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range:mana",
+          "ownerId": "effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range",
+          "field": "mana",
+          "state": "known",
+          "value": 70
+        },
+        "cooldown": {
+          "id": "value:effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range:cooldown",
+          "ownerId": "effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            24,
+            18,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range:delay",
+          "ownerId": "effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "enchantress_enchant"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range",
+      "legacyEffectId": "enchantress_enchant:modifier:creep-control-and-focused-attack-range",
+      "order": 3,
+      "legacyAbilityId": "enchantress_enchant",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range:range",
+        "value:effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range:duration",
+        "value:effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range:magnitude",
+        "value:effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range:mana",
+        "value:effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range:cooldown",
+        "value:effect:enchantress_enchant:modifier:creep-control-and-focused-attack-range:delay"
+      ],
+      "activationId": "activation:58:enchantress_enchant"
+    },
+    {
+      "effectId": "enchantress_enchant:modifier:scepter-extra-controlled-creep",
+      "heroId": "58",
+      "abilityId": "ability:58:enchantress_enchant",
+      "type": "modifier",
+      "subtype": "scepter-extra-controlled-creep",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enchantress_enchant:modifier:scepter-extra-controlled-creep:range",
+          "ownerId": "effect:enchantress_enchant:modifier:scepter-extra-controlled-creep",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:enchantress_enchant:modifier:scepter-extra-controlled-creep:duration",
+          "ownerId": "effect:enchantress_enchant:modifier:scepter-extra-controlled-creep",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:enchantress_enchant:modifier:scepter-extra-controlled-creep:magnitude",
+          "ownerId": "effect:enchantress_enchant:modifier:scepter-extra-controlled-creep",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enchantress_enchant:modifier:scepter-extra-controlled-creep:mana",
+          "ownerId": "effect:enchantress_enchant:modifier:scepter-extra-controlled-creep",
+          "field": "mana",
+          "state": "known",
+          "value": 70
+        },
+        "cooldown": {
+          "id": "value:effect:enchantress_enchant:modifier:scepter-extra-controlled-creep:cooldown",
+          "ownerId": "effect:enchantress_enchant:modifier:scepter-extra-controlled-creep",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            30,
+            24,
+            18,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:enchantress_enchant:modifier:scepter-extra-controlled-creep:delay",
+          "ownerId": "effect:enchantress_enchant:modifier:scepter-extra-controlled-creep",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "enchantress_enchant"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enchantress_enchant:modifier:scepter-extra-controlled-creep",
+      "legacyEffectId": "enchantress_enchant:modifier:scepter-extra-controlled-creep",
+      "order": 4,
+      "legacyAbilityId": "enchantress_enchant",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:enchantress_enchant:modifier:scepter-extra-controlled-creep:range",
+        "value:effect:enchantress_enchant:modifier:scepter-extra-controlled-creep:duration",
+        "value:effect:enchantress_enchant:modifier:scepter-extra-controlled-creep:magnitude",
+        "value:effect:enchantress_enchant:modifier:scepter-extra-controlled-creep:mana",
+        "value:effect:enchantress_enchant:modifier:scepter-extra-controlled-creep:cooldown",
+        "value:effect:enchantress_enchant:modifier:scepter-extra-controlled-creep:delay"
+      ],
+      "activationId": "activation:58:enchantress_enchant"
+    },
+    {
+      "effectId": "enchantress_natures_attendants:heal:distributed-wisp-healing",
+      "heroId": "58",
+      "abilityId": "ability:58:enchantress_natures_attendants",
+      "type": "heal",
+      "subtype": "distributed-wisp-healing",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enchantress_natures_attendants:heal:distributed-wisp-healing:range",
+          "ownerId": "effect:enchantress_natures_attendants:heal:distributed-wisp-healing",
+          "field": "range",
+          "state": "known",
+          "value": [
+            275,
+            275,
+            275,
+            275
+          ]
+        },
+        "duration": {
+          "id": "value:effect:enchantress_natures_attendants:heal:distributed-wisp-healing:duration",
+          "ownerId": "effect:enchantress_natures_attendants:heal:distributed-wisp-healing",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            7,
+            9,
+            11,
+            13
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:enchantress_natures_attendants:heal:distributed-wisp-healing:magnitude",
+          "ownerId": "effect:enchantress_natures_attendants:heal:distributed-wisp-healing",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enchantress_natures_attendants:heal:distributed-wisp-healing:mana",
+          "ownerId": "effect:enchantress_natures_attendants:heal:distributed-wisp-healing",
+          "field": "mana",
+          "state": "known",
+          "value": 140
+        },
+        "cooldown": {
+          "id": "value:effect:enchantress_natures_attendants:heal:distributed-wisp-healing:cooldown",
+          "ownerId": "effect:enchantress_natures_attendants:heal:distributed-wisp-healing",
+          "field": "cooldown",
+          "state": "known",
+          "value": 35
+        },
+        "delay": {
+          "id": "value:effect:enchantress_natures_attendants:heal:distributed-wisp-healing:delay",
+          "ownerId": "effect:enchantress_natures_attendants:heal:distributed-wisp-healing",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "enchantress_natures_attendants"
+      },
+      "vulnerability": {
+        "breakable": null,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enchantress_natures_attendants:heal:distributed-wisp-healing",
+      "legacyEffectId": "enchantress_natures_attendants:heal:distributed-wisp-healing",
+      "order": 5,
+      "legacyAbilityId": "enchantress_natures_attendants",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:enchantress_natures_attendants:heal:distributed-wisp-healing:range",
+        "value:effect:enchantress_natures_attendants:heal:distributed-wisp-healing:duration",
+        "value:effect:enchantress_natures_attendants:heal:distributed-wisp-healing:magnitude",
+        "value:effect:enchantress_natures_attendants:heal:distributed-wisp-healing:mana",
+        "value:effect:enchantress_natures_attendants:heal:distributed-wisp-healing:cooldown",
+        "value:effect:enchantress_natures_attendants:heal:distributed-wisp-healing:delay"
+      ],
+      "activationId": "activation:58:enchantress_natures_attendants"
+    },
+    {
+      "effectId": "enchantress_bunny_hop:mobility:shard-backward-leap",
+      "heroId": "58",
+      "abilityId": "ability:58:enchantress_bunny_hop",
+      "type": "mobility",
+      "subtype": "shard-backward-leap",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enchantress_bunny_hop:mobility:shard-backward-leap:range",
+          "ownerId": "effect:enchantress_bunny_hop:mobility:shard-backward-leap",
+          "field": "range",
+          "state": "known",
+          "value": 500
+        },
+        "duration": {
+          "id": "value:effect:enchantress_bunny_hop:mobility:shard-backward-leap:duration",
+          "ownerId": "effect:enchantress_bunny_hop:mobility:shard-backward-leap",
+          "field": "duration",
+          "state": "known",
+          "value": 0.4
+        },
+        "magnitude": {
+          "id": "value:effect:enchantress_bunny_hop:mobility:shard-backward-leap:magnitude",
+          "ownerId": "effect:enchantress_bunny_hop:mobility:shard-backward-leap",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enchantress_bunny_hop:mobility:shard-backward-leap:mana",
+          "ownerId": "effect:enchantress_bunny_hop:mobility:shard-backward-leap",
+          "field": "mana",
+          "state": "known",
+          "value": 60
+        },
+        "cooldown": {
+          "id": "value:effect:enchantress_bunny_hop:mobility:shard-backward-leap:cooldown",
+          "ownerId": "effect:enchantress_bunny_hop:mobility:shard-backward-leap",
+          "field": "cooldown",
+          "state": "known",
+          "value": 10
+        },
+        "delay": {
+          "id": "value:effect:enchantress_bunny_hop:mobility:shard-backward-leap:delay",
+          "ownerId": "effect:enchantress_bunny_hop:mobility:shard-backward-leap",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "enchantress_bunny_hop"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enchantress_bunny_hop:mobility:shard-backward-leap",
+      "legacyEffectId": "enchantress_bunny_hop:mobility:shard-backward-leap",
+      "order": 6,
+      "legacyAbilityId": "enchantress_bunny_hop",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:enchantress_bunny_hop:mobility:shard-backward-leap:range",
+        "value:effect:enchantress_bunny_hop:mobility:shard-backward-leap:duration",
+        "value:effect:enchantress_bunny_hop:mobility:shard-backward-leap:magnitude",
+        "value:effect:enchantress_bunny_hop:mobility:shard-backward-leap:mana",
+        "value:effect:enchantress_bunny_hop:mobility:shard-backward-leap:cooldown",
+        "value:effect:enchantress_bunny_hop:mobility:shard-backward-leap:delay"
+      ],
+      "activationId": "activation:58:enchantress_bunny_hop"
+    },
+    {
+      "effectId": "enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks",
+      "heroId": "58",
+      "abilityId": "ability:58:enchantress_bunny_hop",
+      "type": "modifier",
+      "subtype": "shard-furthest-target-impetus-attacks",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks:range",
+          "ownerId": "effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks:duration",
+          "ownerId": "effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks:magnitude",
+          "ownerId": "effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks:mana",
+          "ownerId": "effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks",
+          "field": "mana",
+          "state": "known",
+          "value": 60
+        },
+        "cooldown": {
+          "id": "value:effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks:cooldown",
+          "ownerId": "effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks",
+          "field": "cooldown",
+          "state": "known",
+          "value": 10
+        },
+        "delay": {
+          "id": "value:effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks:delay",
+          "ownerId": "effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "enchantress_impetus"
+        ],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "eligibleSproinkTargetsAvailable"
+        ],
+        "grantedByUpgrade": "shard"
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "enchantress_bunny_hop"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks",
+      "legacyEffectId": "enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks",
+      "order": 7,
+      "legacyAbilityId": "enchantress_bunny_hop",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks:0"
+      ],
+      "valueIds": [
+        "value:effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks:range",
+        "value:effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks:duration",
+        "value:effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks:magnitude",
+        "value:effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks:mana",
+        "value:effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks:cooldown",
+        "value:effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks:delay"
+      ],
+      "activationId": "activation:58:enchantress_bunny_hop"
+    },
+    {
+      "effectId": "enchantress_little_friends:control:scepter-creep-count-root",
+      "heroId": "58",
+      "abilityId": "ability:58:enchantress_little_friends",
+      "type": "control",
+      "subtype": "scepter-creep-count-root",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enchantress_little_friends:control:scepter-creep-count-root:range",
+          "ownerId": "effect:enchantress_little_friends:control:scepter-creep-count-root",
+          "field": "range",
+          "state": "known",
+          "value": 750
+        },
+        "duration": {
+          "id": "value:effect:enchantress_little_friends:control:scepter-creep-count-root:duration",
+          "ownerId": "effect:enchantress_little_friends:control:scepter-creep-count-root",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:enchantress_little_friends:control:scepter-creep-count-root:magnitude",
+          "ownerId": "effect:enchantress_little_friends:control:scepter-creep-count-root",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enchantress_little_friends:control:scepter-creep-count-root:mana",
+          "ownerId": "effect:enchantress_little_friends:control:scepter-creep-count-root",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:enchantress_little_friends:control:scepter-creep-count-root:cooldown",
+          "ownerId": "effect:enchantress_little_friends:control:scepter-creep-count-root",
+          "field": "cooldown",
+          "state": "known",
+          "value": 20
+        },
+        "delay": {
+          "id": "value:effect:enchantress_little_friends:control:scepter-creep-count-root:delay",
+          "ownerId": "effect:enchantress_little_friends:control:scepter-creep-count-root",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "enchantress_little_friends"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enchantress_little_friends:control:scepter-creep-count-root",
+      "legacyEffectId": "enchantress_little_friends:control:scepter-creep-count-root",
+      "order": 8,
+      "legacyAbilityId": "enchantress_little_friends",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:enchantress_little_friends:control:scepter-creep-count-root:range",
+        "value:effect:enchantress_little_friends:control:scepter-creep-count-root:duration",
+        "value:effect:enchantress_little_friends:control:scepter-creep-count-root:magnitude",
+        "value:effect:enchantress_little_friends:control:scepter-creep-count-root:mana",
+        "value:effect:enchantress_little_friends:control:scepter-creep-count-root:cooldown",
+        "value:effect:enchantress_little_friends:control:scepter-creep-count-root:delay"
+      ],
+      "activationId": "activation:58:enchantress_little_friends"
+    },
+    {
+      "effectId": "enchantress_little_friends:modifier:scepter-creep-forced-attacks",
+      "heroId": "58",
+      "abilityId": "ability:58:enchantress_little_friends",
+      "type": "modifier",
+      "subtype": "scepter-creep-forced-attacks",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks:range",
+          "ownerId": "effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks",
+          "field": "range",
+          "state": "known",
+          "value": 750
+        },
+        "duration": {
+          "id": "value:effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks:duration",
+          "ownerId": "effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks:magnitude",
+          "ownerId": "effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks:mana",
+          "ownerId": "effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks",
+          "field": "mana",
+          "state": "known",
+          "value": 75
+        },
+        "cooldown": {
+          "id": "value:effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks:cooldown",
+          "ownerId": "effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks",
+          "field": "cooldown",
+          "state": "known",
+          "value": 20
+        },
+        "delay": {
+          "id": "value:effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks:delay",
+          "ownerId": "effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "grantedByUpgrade": "scepter"
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "enchantress_little_friends"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks",
+      "legacyEffectId": "enchantress_little_friends:modifier:scepter-creep-forced-attacks",
+      "order": 9,
+      "legacyAbilityId": "enchantress_little_friends",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks:range",
+        "value:effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks:duration",
+        "value:effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks:magnitude",
+        "value:effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks:mana",
+        "value:effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks:cooldown",
+        "value:effect:enchantress_little_friends:modifier:scepter-creep-forced-attacks:delay"
+      ],
+      "activationId": "activation:58:enchantress_little_friends"
+    },
+    {
+      "effectId": "enchantress_untouchable:passive:incoming-attacker-speed-penalty",
+      "heroId": "58",
+      "abilityId": "ability:58:enchantress_untouchable",
+      "type": "passive",
+      "subtype": "incoming-attacker-speed-penalty",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty:range",
+          "ownerId": "effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty:duration",
+          "ownerId": "effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty:magnitude",
+          "ownerId": "effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -110,
+            -160,
+            -210
+          ]
+        },
+        "mana": {
+          "id": "value:effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty:mana",
+          "ownerId": "effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty:cooldown",
+          "ownerId": "effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty:delay",
+          "ownerId": "effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyStartsAttackOnEnchantress"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "enchantress_untouchable:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty",
+      "legacyEffectId": "enchantress_untouchable:passive:incoming-attacker-speed-penalty",
+      "order": 10,
+      "legacyAbilityId": "enchantress_untouchable",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:enchantress_untouchable:passive:incoming-attacker-speed-penalty:0"
+      ],
+      "valueIds": [
+        "value:effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty:range",
+        "value:effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty:duration",
+        "value:effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty:magnitude",
+        "value:effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty:mana",
+        "value:effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty:cooldown",
+        "value:effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty:delay"
+      ],
+      "activationId": "activation:58:enchantress_untouchable"
+    },
+    {
+      "effectId": "enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification",
+      "heroId": "58",
+      "abilityId": "ability:58:enchantress_rabblerouser",
+      "type": "passive",
+      "subtype": "level-scaled-creep-hero-damage-amplification",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification:range",
+          "ownerId": "effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification:duration",
+          "ownerId": "effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification:magnitude",
+          "ownerId": "effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification:mana",
+          "ownerId": "effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification:cooldown",
+          "ownerId": "effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification:delay",
+          "ownerId": "effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "enchantress_rabblerouser:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification",
+      "legacyEffectId": "enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification",
+      "order": 11,
+      "legacyAbilityId": "enchantress_rabblerouser",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification:range",
+        "value:effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification:duration",
+        "value:effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification:magnitude",
+        "value:effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification:mana",
+        "value:effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification:cooldown",
+        "value:effect:enchantress_rabblerouser:passive:level-scaled-creep-hero-damage-amplification:delay"
+      ],
+      "activationId": "activation:58:enchantress_rabblerouser"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:enchantress_impetus:damage:distance-at-impact-attack-damage:0",
+      "ownerId": "effect:enchantress_impetus:damage:distance-at-impact-attack-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "impetusAttackLanded"
+      }
+    },
+    {
+      "id": "condition:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks:0",
+      "ownerId": "effect:enchantress_bunny_hop:modifier:shard-furthest-target-impetus-attacks",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "eligibleSproinkTargetsAvailable"
+      }
+    },
+    {
+      "id": "condition:enchantress_untouchable:passive:incoming-attacker-speed-penalty:0",
+      "ownerId": "effect:enchantress_untouchable:passive:incoming-attacker-speed-penalty",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyStartsAttackOnEnchantress"
+      }
+    }
+  ]
+}

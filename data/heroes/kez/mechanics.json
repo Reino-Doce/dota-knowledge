@@ -1,0 +1,3745 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "kez_echo_slash:damage:katana-echo-hero-bonus-per-strike",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_echo_slash",
+      "type": "damage",
+      "subtype": "katana-echo-hero-bonus-per-strike",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:range",
+          "ownerId": "effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:duration",
+          "ownerId": "effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:magnitude",
+          "ownerId": "effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        "mana": {
+          "id": "value:effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:mana",
+          "ownerId": "effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            75,
+            90,
+            105,
+            120
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:cooldown",
+          "ownerId": "effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            21,
+            18,
+            15,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:delay",
+          "ownerId": "effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:damageType",
+          "ownerId": "effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "katana",
+        "requiresContext": [
+          "echoSlashHitsEnemyHero",
+          "kezEchoFalconPairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_echo_slash"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike",
+      "legacyEffectId": "kez_echo_slash:damage:katana-echo-hero-bonus-per-strike",
+      "order": 0,
+      "legacyAbilityId": "kez_echo_slash",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:0",
+        "condition:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:1"
+      ],
+      "valueIds": [
+        "value:effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:range",
+        "value:effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:duration",
+        "value:effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:magnitude",
+        "value:effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:mana",
+        "value:effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:cooldown",
+        "value:effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:delay",
+        "value:effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:damageType"
+      ],
+      "activationId": "activation:145:kez_echo_slash"
+    },
+    {
+      "effectId": "kez_echo_slash:slow:katana-echo-impact-slow",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_echo_slash",
+      "type": "slow",
+      "subtype": "katana-echo-impact-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_echo_slash:slow:katana-echo-impact-slow:range",
+          "ownerId": "effect:kez_echo_slash:slow:katana-echo-impact-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kez_echo_slash:slow:katana-echo-impact-slow:duration",
+          "ownerId": "effect:kez_echo_slash:slow:katana-echo-impact-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 0.25
+        },
+        "magnitude": {
+          "id": "value:effect:kez_echo_slash:slow:katana-echo-impact-slow:magnitude",
+          "ownerId": "effect:kez_echo_slash:slow:katana-echo-impact-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": 100
+        },
+        "mana": {
+          "id": "value:effect:kez_echo_slash:slow:katana-echo-impact-slow:mana",
+          "ownerId": "effect:kez_echo_slash:slow:katana-echo-impact-slow",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            75,
+            90,
+            105,
+            120
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kez_echo_slash:slow:katana-echo-impact-slow:cooldown",
+          "ownerId": "effect:kez_echo_slash:slow:katana-echo-impact-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            21,
+            18,
+            15,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_echo_slash:slow:katana-echo-impact-slow:delay",
+          "ownerId": "effect:kez_echo_slash:slow:katana-echo-impact-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "katana",
+        "requiresContext": [
+          "echoSlashHitsEnemyHero",
+          "kezEchoFalconPairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_echo_slash"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_echo_slash:slow:katana-echo-impact-slow",
+      "legacyEffectId": "kez_echo_slash:slow:katana-echo-impact-slow",
+      "order": 1,
+      "legacyAbilityId": "kez_echo_slash",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_echo_slash:slow:katana-echo-impact-slow:0",
+        "condition:kez_echo_slash:slow:katana-echo-impact-slow:1"
+      ],
+      "valueIds": [
+        "value:effect:kez_echo_slash:slow:katana-echo-impact-slow:range",
+        "value:effect:kez_echo_slash:slow:katana-echo-impact-slow:duration",
+        "value:effect:kez_echo_slash:slow:katana-echo-impact-slow:magnitude",
+        "value:effect:kez_echo_slash:slow:katana-echo-impact-slow:mana",
+        "value:effect:kez_echo_slash:slow:katana-echo-impact-slow:cooldown",
+        "value:effect:kez_echo_slash:slow:katana-echo-impact-slow:delay"
+      ],
+      "activationId": "activation:145:kez_echo_slash"
+    },
+    {
+      "effectId": "kez_grappling_claw:mobility:katana-grapple-approach",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_grappling_claw",
+      "type": "mobility",
+      "subtype": "katana-grapple-approach",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_grappling_claw:mobility:katana-grapple-approach:range",
+          "ownerId": "effect:kez_grappling_claw:mobility:katana-grapple-approach",
+          "field": "range",
+          "state": "known",
+          "value": [
+            650,
+            750,
+            850,
+            950
+          ]
+        },
+        "duration": {
+          "id": "value:effect:kez_grappling_claw:mobility:katana-grapple-approach:duration",
+          "ownerId": "effect:kez_grappling_claw:mobility:katana-grapple-approach",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kez_grappling_claw:mobility:katana-grapple-approach:magnitude",
+          "ownerId": "effect:kez_grappling_claw:mobility:katana-grapple-approach",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_grappling_claw:mobility:katana-grapple-approach:mana",
+          "ownerId": "effect:kez_grappling_claw:mobility:katana-grapple-approach",
+          "field": "mana",
+          "state": "known",
+          "value": 40
+        },
+        "cooldown": {
+          "id": "value:effect:kez_grappling_claw:mobility:katana-grapple-approach:cooldown",
+          "ownerId": "effect:kez_grappling_claw:mobility:katana-grapple-approach",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            13,
+            11,
+            9,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_grappling_claw:mobility:katana-grapple-approach:delay",
+          "ownerId": "effect:kez_grappling_claw:mobility:katana-grapple-approach",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "katana",
+        "requiresContext": [
+          "grappleValidTargetOrTree",
+          "kezClawTalonPairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_grappling_claw"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_grappling_claw:mobility:katana-grapple-approach",
+      "legacyEffectId": "kez_grappling_claw:mobility:katana-grapple-approach",
+      "order": 2,
+      "legacyAbilityId": "kez_grappling_claw",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_grappling_claw:mobility:katana-grapple-approach:0",
+        "condition:kez_grappling_claw:mobility:katana-grapple-approach:1"
+      ],
+      "valueIds": [
+        "value:effect:kez_grappling_claw:mobility:katana-grapple-approach:range",
+        "value:effect:kez_grappling_claw:mobility:katana-grapple-approach:duration",
+        "value:effect:kez_grappling_claw:mobility:katana-grapple-approach:magnitude",
+        "value:effect:kez_grappling_claw:mobility:katana-grapple-approach:mana",
+        "value:effect:kez_grappling_claw:mobility:katana-grapple-approach:cooldown",
+        "value:effect:kez_grappling_claw:mobility:katana-grapple-approach:delay"
+      ],
+      "activationId": "activation:145:kez_grappling_claw"
+    },
+    {
+      "effectId": "kez_grappling_claw:slow:katana-grapple-target-slow",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_grappling_claw",
+      "type": "slow",
+      "subtype": "katana-grapple-target-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_grappling_claw:slow:katana-grapple-target-slow:range",
+          "ownerId": "effect:kez_grappling_claw:slow:katana-grapple-target-slow",
+          "field": "range",
+          "state": "known",
+          "value": [
+            650,
+            750,
+            850,
+            950
+          ]
+        },
+        "duration": {
+          "id": "value:effect:kez_grappling_claw:slow:katana-grapple-target-slow:duration",
+          "ownerId": "effect:kez_grappling_claw:slow:katana-grapple-target-slow",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            0.7,
+            0.8,
+            0.9,
+            1
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:kez_grappling_claw:slow:katana-grapple-target-slow:magnitude",
+          "ownerId": "effect:kez_grappling_claw:slow:katana-grapple-target-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        "mana": {
+          "id": "value:effect:kez_grappling_claw:slow:katana-grapple-target-slow:mana",
+          "ownerId": "effect:kez_grappling_claw:slow:katana-grapple-target-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 40
+        },
+        "cooldown": {
+          "id": "value:effect:kez_grappling_claw:slow:katana-grapple-target-slow:cooldown",
+          "ownerId": "effect:kez_grappling_claw:slow:katana-grapple-target-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            13,
+            11,
+            9,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_grappling_claw:slow:katana-grapple-target-slow:delay",
+          "ownerId": "effect:kez_grappling_claw:slow:katana-grapple-target-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "katana",
+        "requiresContext": [
+          "grappleHitsEnemy",
+          "kezClawTalonPairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_grappling_claw"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_grappling_claw:slow:katana-grapple-target-slow",
+      "legacyEffectId": "kez_grappling_claw:slow:katana-grapple-target-slow",
+      "order": 3,
+      "legacyAbilityId": "kez_grappling_claw",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_grappling_claw:slow:katana-grapple-target-slow:0",
+        "condition:kez_grappling_claw:slow:katana-grapple-target-slow:1"
+      ],
+      "valueIds": [
+        "value:effect:kez_grappling_claw:slow:katana-grapple-target-slow:range",
+        "value:effect:kez_grappling_claw:slow:katana-grapple-target-slow:duration",
+        "value:effect:kez_grappling_claw:slow:katana-grapple-target-slow:magnitude",
+        "value:effect:kez_grappling_claw:slow:katana-grapple-target-slow:mana",
+        "value:effect:kez_grappling_claw:slow:katana-grapple-target-slow:cooldown",
+        "value:effect:kez_grappling_claw:slow:katana-grapple-target-slow:delay"
+      ],
+      "activationId": "activation:145:kez_grappling_claw"
+    },
+    {
+      "effectId": "kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_kazurai_katana",
+      "type": "damage",
+      "subtype": "katana-stacking-attack-derived-bleed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed:range",
+          "ownerId": "effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed:duration",
+          "ownerId": "effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed",
+          "field": "duration",
+          "state": "known",
+          "value": 7
+        },
+        "magnitude": {
+          "id": "value:effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed:magnitude",
+          "ownerId": "effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed:mana",
+          "ownerId": "effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed:cooldown",
+          "ownerId": "effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed:delay",
+          "ownerId": "effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed:damageType",
+          "ownerId": "effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "katana",
+        "requiresContext": [
+          "katanaAttackOrAbilityAppliesBleed"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_kazurai_katana:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed",
+      "legacyEffectId": "kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed",
+      "order": 4,
+      "legacyAbilityId": "kez_kazurai_katana",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed:0"
+      ],
+      "valueIds": [
+        "value:effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed:range",
+        "value:effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed:duration",
+        "value:effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed:magnitude",
+        "value:effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed:mana",
+        "value:effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed:cooldown",
+        "value:effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed:delay",
+        "value:effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed:damageType"
+      ],
+      "activationId": "activation:145:kez_kazurai_katana"
+    },
+    {
+      "effectId": "kez_kazurai_katana:control:katana-active-impale-movement-lock",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_kazurai_katana",
+      "type": "control",
+      "subtype": "katana-active-impale-movement-lock",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_kazurai_katana:control:katana-active-impale-movement-lock:range",
+          "ownerId": "effect:kez_kazurai_katana:control:katana-active-impale-movement-lock",
+          "field": "range",
+          "state": "known",
+          "value": 200
+        },
+        "duration": {
+          "id": "value:effect:kez_kazurai_katana:control:katana-active-impale-movement-lock:duration",
+          "ownerId": "effect:kez_kazurai_katana:control:katana-active-impale-movement-lock",
+          "field": "duration",
+          "state": "known",
+          "value": 0.5
+        },
+        "magnitude": {
+          "id": "value:effect:kez_kazurai_katana:control:katana-active-impale-movement-lock:magnitude",
+          "ownerId": "effect:kez_kazurai_katana:control:katana-active-impale-movement-lock",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_kazurai_katana:control:katana-active-impale-movement-lock:mana",
+          "ownerId": "effect:kez_kazurai_katana:control:katana-active-impale-movement-lock",
+          "field": "mana",
+          "state": "known",
+          "value": 40
+        },
+        "cooldown": {
+          "id": "value:effect:kez_kazurai_katana:control:katana-active-impale-movement-lock:cooldown",
+          "ownerId": "effect:kez_kazurai_katana:control:katana-active-impale-movement-lock",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            18,
+            12,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_kazurai_katana:control:katana-active-impale-movement-lock:delay",
+          "ownerId": "effect:kez_kazurai_katana:control:katana-active-impale-movement-lock",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "katana",
+        "requiresContext": [
+          "kezImpaleParryPairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "turning"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_kazurai_katana"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_kazurai_katana:control:katana-active-impale-movement-lock",
+      "legacyEffectId": "kez_kazurai_katana:control:katana-active-impale-movement-lock",
+      "order": 5,
+      "legacyAbilityId": "kez_kazurai_katana",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_kazurai_katana:control:katana-active-impale-movement-lock:0"
+      ],
+      "valueIds": [
+        "value:effect:kez_kazurai_katana:control:katana-active-impale-movement-lock:range",
+        "value:effect:kez_kazurai_katana:control:katana-active-impale-movement-lock:duration",
+        "value:effect:kez_kazurai_katana:control:katana-active-impale-movement-lock:magnitude",
+        "value:effect:kez_kazurai_katana:control:katana-active-impale-movement-lock:mana",
+        "value:effect:kez_kazurai_katana:control:katana-active-impale-movement-lock:cooldown",
+        "value:effect:kez_kazurai_katana:control:katana-active-impale-movement-lock:delay"
+      ],
+      "activationId": "activation:145:kez_kazurai_katana"
+    },
+    {
+      "effectId": "kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_kazurai_katana",
+      "type": "heal",
+      "subtype": "shard-impale-damage-derived-lifesteal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal:range",
+          "ownerId": "effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal:duration",
+          "ownerId": "effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal:magnitude",
+          "ownerId": "effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal:mana",
+          "ownerId": "effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal",
+          "field": "mana",
+          "state": "known",
+          "value": 40
+        },
+        "cooldown": {
+          "id": "value:effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal:cooldown",
+          "ownerId": "effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            18,
+            12,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal:delay",
+          "ownerId": "effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "form": "katana",
+        "requiresContext": [
+          "impaleDealsDamage",
+          "kezImpaleParryPairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "lifesteal"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_kazurai_katana"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal",
+      "legacyEffectId": "kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal",
+      "order": 6,
+      "legacyAbilityId": "kez_kazurai_katana",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal:0",
+        "condition:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal:1"
+      ],
+      "valueIds": [
+        "value:effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal:range",
+        "value:effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal:duration",
+        "value:effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal:magnitude",
+        "value:effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal:mana",
+        "value:effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal:cooldown",
+        "value:effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal:delay"
+      ],
+      "activationId": "activation:145:kez_kazurai_katana"
+    },
+    {
+      "effectId": "kez_kazurai_katana:control:shard-impale-behind-target-stun",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_kazurai_katana",
+      "type": "control",
+      "subtype": "shard-impale-behind-target-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_kazurai_katana:control:shard-impale-behind-target-stun:range",
+          "ownerId": "effect:kez_kazurai_katana:control:shard-impale-behind-target-stun",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kez_kazurai_katana:control:shard-impale-behind-target-stun:duration",
+          "ownerId": "effect:kez_kazurai_katana:control:shard-impale-behind-target-stun",
+          "field": "duration",
+          "state": "known",
+          "value": 0.5
+        },
+        "magnitude": {
+          "id": "value:effect:kez_kazurai_katana:control:shard-impale-behind-target-stun:magnitude",
+          "ownerId": "effect:kez_kazurai_katana:control:shard-impale-behind-target-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_kazurai_katana:control:shard-impale-behind-target-stun:mana",
+          "ownerId": "effect:kez_kazurai_katana:control:shard-impale-behind-target-stun",
+          "field": "mana",
+          "state": "known",
+          "value": 40
+        },
+        "cooldown": {
+          "id": "value:effect:kez_kazurai_katana:control:shard-impale-behind-target-stun:cooldown",
+          "ownerId": "effect:kez_kazurai_katana:control:shard-impale-behind-target-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            18,
+            12,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_kazurai_katana:control:shard-impale-behind-target-stun:delay",
+          "ownerId": "effect:kez_kazurai_katana:control:shard-impale-behind-target-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "form": "katana",
+        "requiresContext": [
+          "impaleHitsFromBehind",
+          "kezImpaleParryPairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_kazurai_katana"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_kazurai_katana:control:shard-impale-behind-target-stun",
+      "legacyEffectId": "kez_kazurai_katana:control:shard-impale-behind-target-stun",
+      "order": 7,
+      "legacyAbilityId": "kez_kazurai_katana",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_kazurai_katana:control:shard-impale-behind-target-stun:0",
+        "condition:kez_kazurai_katana:control:shard-impale-behind-target-stun:1"
+      ],
+      "valueIds": [
+        "value:effect:kez_kazurai_katana:control:shard-impale-behind-target-stun:range",
+        "value:effect:kez_kazurai_katana:control:shard-impale-behind-target-stun:duration",
+        "value:effect:kez_kazurai_katana:control:shard-impale-behind-target-stun:magnitude",
+        "value:effect:kez_kazurai_katana:control:shard-impale-behind-target-stun:mana",
+        "value:effect:kez_kazurai_katana:control:shard-impale-behind-target-stun:cooldown",
+        "value:effect:kez_kazurai_katana:control:shard-impale-behind-target-stun:delay"
+      ],
+      "activationId": "activation:145:kez_kazurai_katana"
+    },
+    {
+      "effectId": "kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_switch_weapons",
+      "type": "modifier",
+      "subtype": "weapon-stance-and-paired-cooldown-contract",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract:range",
+          "ownerId": "effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract:duration",
+          "ownerId": "effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract:magnitude",
+          "ownerId": "effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract:mana",
+          "ownerId": "effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract:cooldown",
+          "ownerId": "effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract:delay",
+          "ownerId": "effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_switch_weapons:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract",
+      "legacyEffectId": "kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract",
+      "order": 8,
+      "legacyAbilityId": "kez_switch_weapons",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract:range",
+        "value:effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract:duration",
+        "value:effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract:magnitude",
+        "value:effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract:mana",
+        "value:effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract:cooldown",
+        "value:effect:kez_switch_weapons:modifier:weapon-stance-and-paired-cooldown-contract:delay"
+      ],
+      "activationId": "activation:145:kez_switch_weapons"
+    },
+    {
+      "effectId": "kez_raptor_dance:save:raptor-opening-invulnerability",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_raptor_dance",
+      "type": "save",
+      "subtype": "raptor-opening-invulnerability",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_raptor_dance:save:raptor-opening-invulnerability:range",
+          "ownerId": "effect:kez_raptor_dance:save:raptor-opening-invulnerability",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kez_raptor_dance:save:raptor-opening-invulnerability:duration",
+          "ownerId": "effect:kez_raptor_dance:save:raptor-opening-invulnerability",
+          "field": "duration",
+          "state": "known",
+          "value": 0.2
+        },
+        "magnitude": {
+          "id": "value:effect:kez_raptor_dance:save:raptor-opening-invulnerability:magnitude",
+          "ownerId": "effect:kez_raptor_dance:save:raptor-opening-invulnerability",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_raptor_dance:save:raptor-opening-invulnerability:mana",
+          "ownerId": "effect:kez_raptor_dance:save:raptor-opening-invulnerability",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kez_raptor_dance:save:raptor-opening-invulnerability:cooldown",
+          "ownerId": "effect:kez_raptor_dance:save:raptor-opening-invulnerability",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            35,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_raptor_dance:save:raptor-opening-invulnerability:delay",
+          "ownerId": "effect:kez_raptor_dance:save:raptor-opening-invulnerability",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "katana",
+        "requiresContext": [
+          "kezUltimatePairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "physical",
+            "magical",
+            "pure"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_raptor_dance"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_raptor_dance:save:raptor-opening-invulnerability",
+      "legacyEffectId": "kez_raptor_dance:save:raptor-opening-invulnerability",
+      "order": 9,
+      "legacyAbilityId": "kez_raptor_dance",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_raptor_dance:save:raptor-opening-invulnerability:0"
+      ],
+      "valueIds": [
+        "value:effect:kez_raptor_dance:save:raptor-opening-invulnerability:range",
+        "value:effect:kez_raptor_dance:save:raptor-opening-invulnerability:duration",
+        "value:effect:kez_raptor_dance:save:raptor-opening-invulnerability:magnitude",
+        "value:effect:kez_raptor_dance:save:raptor-opening-invulnerability:mana",
+        "value:effect:kez_raptor_dance:save:raptor-opening-invulnerability:cooldown",
+        "value:effect:kez_raptor_dance:save:raptor-opening-invulnerability:delay"
+      ],
+      "activationId": "activation:145:kez_raptor_dance"
+    },
+    {
+      "effectId": "kez_raptor_dance:dispel:raptor-basic-self-dispel",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_raptor_dance",
+      "type": "dispel",
+      "subtype": "raptor-basic-self-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_raptor_dance:dispel:raptor-basic-self-dispel:range",
+          "ownerId": "effect:kez_raptor_dance:dispel:raptor-basic-self-dispel",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kez_raptor_dance:dispel:raptor-basic-self-dispel:duration",
+          "ownerId": "effect:kez_raptor_dance:dispel:raptor-basic-self-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kez_raptor_dance:dispel:raptor-basic-self-dispel:magnitude",
+          "ownerId": "effect:kez_raptor_dance:dispel:raptor-basic-self-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_raptor_dance:dispel:raptor-basic-self-dispel:mana",
+          "ownerId": "effect:kez_raptor_dance:dispel:raptor-basic-self-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kez_raptor_dance:dispel:raptor-basic-self-dispel:cooldown",
+          "ownerId": "effect:kez_raptor_dance:dispel:raptor-basic-self-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            35,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_raptor_dance:dispel:raptor-basic-self-dispel:delay",
+          "ownerId": "effect:kez_raptor_dance:dispel:raptor-basic-self-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "katana",
+        "requiresContext": [
+          "kezUltimatePairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "basic"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "self-debuffs"
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_raptor_dance"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_raptor_dance:dispel:raptor-basic-self-dispel",
+      "legacyEffectId": "kez_raptor_dance:dispel:raptor-basic-self-dispel",
+      "order": 10,
+      "legacyAbilityId": "kez_raptor_dance",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_raptor_dance:dispel:raptor-basic-self-dispel:0"
+      ],
+      "valueIds": [
+        "value:effect:kez_raptor_dance:dispel:raptor-basic-self-dispel:range",
+        "value:effect:kez_raptor_dance:dispel:raptor-basic-self-dispel:duration",
+        "value:effect:kez_raptor_dance:dispel:raptor-basic-self-dispel:magnitude",
+        "value:effect:kez_raptor_dance:dispel:raptor-basic-self-dispel:mana",
+        "value:effect:kez_raptor_dance:dispel:raptor-basic-self-dispel:cooldown",
+        "value:effect:kez_raptor_dance:dispel:raptor-basic-self-dispel:delay"
+      ],
+      "activationId": "activation:145:kez_raptor_dance"
+    },
+    {
+      "effectId": "kez_raptor_dance:damage:raptor-completed-cast-single-base-slash",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_raptor_dance",
+      "type": "damage",
+      "subtype": "raptor-completed-cast-single-base-slash",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:range",
+          "ownerId": "effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash",
+          "field": "range",
+          "state": "known",
+          "value": 450
+        },
+        "duration": {
+          "id": "value:effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:duration",
+          "ownerId": "effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:magnitude",
+          "ownerId": "effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            40,
+            70,
+            100
+          ]
+        },
+        "mana": {
+          "id": "value:effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:mana",
+          "ownerId": "effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:cooldown",
+          "ownerId": "effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            35,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:delay",
+          "ownerId": "effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:damageType",
+          "ownerId": "effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash",
+          "field": "damageType",
+          "state": "known",
+          "value": "pure"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "katana",
+        "requiresContext": [
+          "raptorCastCompletes",
+          "kezUltimatePairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_raptor_dance"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash",
+      "legacyEffectId": "kez_raptor_dance:damage:raptor-completed-cast-single-base-slash",
+      "order": 11,
+      "legacyAbilityId": "kez_raptor_dance",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:0",
+        "condition:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:1"
+      ],
+      "valueIds": [
+        "value:effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:range",
+        "value:effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:duration",
+        "value:effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:magnitude",
+        "value:effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:mana",
+        "value:effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:cooldown",
+        "value:effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:delay",
+        "value:effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:damageType"
+      ],
+      "activationId": "activation:145:kez_raptor_dance"
+    },
+    {
+      "effectId": "kez_raptor_dance:heal:raptor-slash-damage-derived-heal",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_raptor_dance",
+      "type": "heal",
+      "subtype": "raptor-slash-damage-derived-heal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:range",
+          "ownerId": "effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:duration",
+          "ownerId": "effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:magnitude",
+          "ownerId": "effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:mana",
+          "ownerId": "effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:cooldown",
+          "ownerId": "effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            35,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:delay",
+          "ownerId": "effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "katana",
+        "requiresContext": [
+          "raptorCastCompletes",
+          "raptorSlashDealsDamage",
+          "kezUltimatePairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "lifesteal"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_raptor_dance"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal",
+      "legacyEffectId": "kez_raptor_dance:heal:raptor-slash-damage-derived-heal",
+      "order": 12,
+      "legacyAbilityId": "kez_raptor_dance",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:0",
+        "condition:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:1",
+        "condition:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:2"
+      ],
+      "valueIds": [
+        "value:effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:range",
+        "value:effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:duration",
+        "value:effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:magnitude",
+        "value:effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:mana",
+        "value:effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:cooldown",
+        "value:effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:delay"
+      ],
+      "activationId": "activation:145:kez_raptor_dance"
+    },
+    {
+      "effectId": "kez_falcon_rush:mobility:sai-falcon-target-rush",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_falcon_rush",
+      "type": "mobility",
+      "subtype": "sai-falcon-target-rush",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_falcon_rush:mobility:sai-falcon-target-rush:range",
+          "ownerId": "effect:kez_falcon_rush:mobility:sai-falcon-target-rush",
+          "field": "range",
+          "state": "known",
+          "value": 525
+        },
+        "duration": {
+          "id": "value:effect:kez_falcon_rush:mobility:sai-falcon-target-rush:duration",
+          "ownerId": "effect:kez_falcon_rush:mobility:sai-falcon-target-rush",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3.75,
+            4.5,
+            5.25,
+            6
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:kez_falcon_rush:mobility:sai-falcon-target-rush:magnitude",
+          "ownerId": "effect:kez_falcon_rush:mobility:sai-falcon-target-rush",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_falcon_rush:mobility:sai-falcon-target-rush:mana",
+          "ownerId": "effect:kez_falcon_rush:mobility:sai-falcon-target-rush",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            85,
+            90,
+            95,
+            100
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kez_falcon_rush:mobility:sai-falcon-target-rush:cooldown",
+          "ownerId": "effect:kez_falcon_rush:mobility:sai-falcon-target-rush",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            21,
+            18,
+            15,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_falcon_rush:mobility:sai-falcon-target-rush:delay",
+          "ownerId": "effect:kez_falcon_rush:mobility:sai-falcon-target-rush",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "sai",
+        "requiresContext": [
+          "falconRushEnemyTargetAvailable",
+          "kezEchoFalconPairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_falcon_rush"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_falcon_rush:mobility:sai-falcon-target-rush",
+      "legacyEffectId": "kez_falcon_rush:mobility:sai-falcon-target-rush",
+      "order": 13,
+      "legacyAbilityId": "kez_falcon_rush",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_falcon_rush:mobility:sai-falcon-target-rush:0",
+        "condition:kez_falcon_rush:mobility:sai-falcon-target-rush:1"
+      ],
+      "valueIds": [
+        "value:effect:kez_falcon_rush:mobility:sai-falcon-target-rush:range",
+        "value:effect:kez_falcon_rush:mobility:sai-falcon-target-rush:duration",
+        "value:effect:kez_falcon_rush:mobility:sai-falcon-target-rush:magnitude",
+        "value:effect:kez_falcon_rush:mobility:sai-falcon-target-rush:mana",
+        "value:effect:kez_falcon_rush:mobility:sai-falcon-target-rush:cooldown",
+        "value:effect:kez_falcon_rush:mobility:sai-falcon-target-rush:delay"
+      ],
+      "activationId": "activation:145:kez_falcon_rush"
+    },
+    {
+      "effectId": "kez_falcon_rush:damage:sai-existing-falcon-secondary-attack",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_falcon_rush",
+      "type": "damage",
+      "subtype": "sai-existing-falcon-secondary-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:range",
+          "ownerId": "effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:duration",
+          "ownerId": "effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:magnitude",
+          "ownerId": "effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:mana",
+          "ownerId": "effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:cooldown",
+          "ownerId": "effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:delay",
+          "ownerId": "effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:damageType",
+          "ownerId": "effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "sai",
+        "requiresContext": [
+          "falconRushBuffEstablished",
+          "falconRushAttackHits"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_falcon_rush:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack",
+      "legacyEffectId": "kez_falcon_rush:damage:sai-existing-falcon-secondary-attack",
+      "order": 14,
+      "legacyAbilityId": "kez_falcon_rush",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:0",
+        "condition:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:1"
+      ],
+      "valueIds": [
+        "value:effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:range",
+        "value:effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:duration",
+        "value:effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:magnitude",
+        "value:effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:mana",
+        "value:effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:cooldown",
+        "value:effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:delay",
+        "value:effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:damageType"
+      ],
+      "activationId": "activation:145:kez_falcon_rush"
+    },
+    {
+      "effectId": "kez_talon_toss:damage:sai-talon-fixed-attack",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_talon_toss",
+      "type": "damage",
+      "subtype": "sai-talon-fixed-attack",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_talon_toss:damage:sai-talon-fixed-attack:range",
+          "ownerId": "effect:kez_talon_toss:damage:sai-talon-fixed-attack",
+          "field": "range",
+          "state": "known",
+          "value": [
+            650,
+            750,
+            850,
+            950
+          ]
+        },
+        "duration": {
+          "id": "value:effect:kez_talon_toss:damage:sai-talon-fixed-attack:duration",
+          "ownerId": "effect:kez_talon_toss:damage:sai-talon-fixed-attack",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kez_talon_toss:damage:sai-talon-fixed-attack:magnitude",
+          "ownerId": "effect:kez_talon_toss:damage:sai-talon-fixed-attack",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            60,
+            120,
+            180,
+            240
+          ]
+        },
+        "mana": {
+          "id": "value:effect:kez_talon_toss:damage:sai-talon-fixed-attack:mana",
+          "ownerId": "effect:kez_talon_toss:damage:sai-talon-fixed-attack",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            60,
+            65,
+            70,
+            75
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kez_talon_toss:damage:sai-talon-fixed-attack:cooldown",
+          "ownerId": "effect:kez_talon_toss:damage:sai-talon-fixed-attack",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            13,
+            11,
+            9,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_talon_toss:damage:sai-talon-fixed-attack:delay",
+          "ownerId": "effect:kez_talon_toss:damage:sai-talon-fixed-attack",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:kez_talon_toss:damage:sai-talon-fixed-attack:damageType",
+          "ownerId": "effect:kez_talon_toss:damage:sai-talon-fixed-attack",
+          "field": "damageType",
+          "state": "known",
+          "value": "physical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "sai",
+        "requiresContext": [
+          "kezClawTalonPairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_talon_toss"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_talon_toss:damage:sai-talon-fixed-attack",
+      "legacyEffectId": "kez_talon_toss:damage:sai-talon-fixed-attack",
+      "order": 15,
+      "legacyAbilityId": "kez_talon_toss",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_talon_toss:damage:sai-talon-fixed-attack:0"
+      ],
+      "valueIds": [
+        "value:effect:kez_talon_toss:damage:sai-talon-fixed-attack:range",
+        "value:effect:kez_talon_toss:damage:sai-talon-fixed-attack:duration",
+        "value:effect:kez_talon_toss:damage:sai-talon-fixed-attack:magnitude",
+        "value:effect:kez_talon_toss:damage:sai-talon-fixed-attack:mana",
+        "value:effect:kez_talon_toss:damage:sai-talon-fixed-attack:cooldown",
+        "value:effect:kez_talon_toss:damage:sai-talon-fixed-attack:delay",
+        "value:effect:kez_talon_toss:damage:sai-talon-fixed-attack:damageType"
+      ],
+      "activationId": "activation:145:kez_talon_toss"
+    },
+    {
+      "effectId": "kez_talon_toss:control:sai-talon-silence",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_talon_toss",
+      "type": "control",
+      "subtype": "sai-talon-silence",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_talon_toss:control:sai-talon-silence:range",
+          "ownerId": "effect:kez_talon_toss:control:sai-talon-silence",
+          "field": "range",
+          "state": "known",
+          "value": [
+            650,
+            750,
+            850,
+            950
+          ]
+        },
+        "duration": {
+          "id": "value:effect:kez_talon_toss:control:sai-talon-silence:duration",
+          "ownerId": "effect:kez_talon_toss:control:sai-talon-silence",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2,
+            2.25,
+            2.5,
+            2.75
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:kez_talon_toss:control:sai-talon-silence:magnitude",
+          "ownerId": "effect:kez_talon_toss:control:sai-talon-silence",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_talon_toss:control:sai-talon-silence:mana",
+          "ownerId": "effect:kez_talon_toss:control:sai-talon-silence",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            60,
+            65,
+            70,
+            75
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kez_talon_toss:control:sai-talon-silence:cooldown",
+          "ownerId": "effect:kez_talon_toss:control:sai-talon-silence",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            13,
+            11,
+            9,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_talon_toss:control:sai-talon-silence:delay",
+          "ownerId": "effect:kez_talon_toss:control:sai-talon-silence",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "sai",
+        "requiresContext": [
+          "kezClawTalonPairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_talon_toss"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_talon_toss:control:sai-talon-silence",
+      "legacyEffectId": "kez_talon_toss:control:sai-talon-silence",
+      "order": 16,
+      "legacyAbilityId": "kez_talon_toss",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_talon_toss:control:sai-talon-silence:0"
+      ],
+      "valueIds": [
+        "value:effect:kez_talon_toss:control:sai-talon-silence:range",
+        "value:effect:kez_talon_toss:control:sai-talon-silence:duration",
+        "value:effect:kez_talon_toss:control:sai-talon-silence:magnitude",
+        "value:effect:kez_talon_toss:control:sai-talon-silence:mana",
+        "value:effect:kez_talon_toss:control:sai-talon-silence:cooldown",
+        "value:effect:kez_talon_toss:control:sai-talon-silence:delay"
+      ],
+      "activationId": "activation:145:kez_talon_toss"
+    },
+    {
+      "effectId": "kez_shodo_sai:modifier:sai-passive-critical-strike-chance",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_shodo_sai",
+      "type": "modifier",
+      "subtype": "sai-passive-critical-strike-chance",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance:range",
+          "ownerId": "effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance:duration",
+          "ownerId": "effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance:magnitude",
+          "ownerId": "effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance:mana",
+          "ownerId": "effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance:cooldown",
+          "ownerId": "effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance:delay",
+          "ownerId": "effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "sai"
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_shodo_sai:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance",
+      "legacyEffectId": "kez_shodo_sai:modifier:sai-passive-critical-strike-chance",
+      "order": 17,
+      "legacyAbilityId": "kez_shodo_sai",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance:range",
+        "value:effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance:duration",
+        "value:effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance:magnitude",
+        "value:effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance:mana",
+        "value:effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance:cooldown",
+        "value:effect:kez_shodo_sai:modifier:sai-passive-critical-strike-chance:delay"
+      ],
+      "activationId": "activation:145:kez_shodo_sai"
+    },
+    {
+      "effectId": "kez_shodo_sai:save:sai-directional-parry-window",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_shodo_sai",
+      "type": "save",
+      "subtype": "sai-directional-parry-window",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_shodo_sai:save:sai-directional-parry-window:range",
+          "ownerId": "effect:kez_shodo_sai:save:sai-directional-parry-window",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kez_shodo_sai:save:sai-directional-parry-window:duration",
+          "ownerId": "effect:kez_shodo_sai:save:sai-directional-parry-window",
+          "field": "duration",
+          "state": "known",
+          "value": 1.5
+        },
+        "magnitude": {
+          "id": "value:effect:kez_shodo_sai:save:sai-directional-parry-window:magnitude",
+          "ownerId": "effect:kez_shodo_sai:save:sai-directional-parry-window",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_shodo_sai:save:sai-directional-parry-window:mana",
+          "ownerId": "effect:kez_shodo_sai:save:sai-directional-parry-window",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            30,
+            20,
+            10,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kez_shodo_sai:save:sai-directional-parry-window:cooldown",
+          "ownerId": "effect:kez_shodo_sai:save:sai-directional-parry-window",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            18,
+            12,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_shodo_sai:save:sai-directional-parry-window:delay",
+          "ownerId": "effect:kez_shodo_sai:save:sai-directional-parry-window",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "sai",
+        "requiresContext": [
+          "attackFromParryFacing",
+          "kezImpaleParryPairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_shodo_sai"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_shodo_sai:save:sai-directional-parry-window",
+      "legacyEffectId": "kez_shodo_sai:save:sai-directional-parry-window",
+      "order": 18,
+      "legacyAbilityId": "kez_shodo_sai",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_shodo_sai:save:sai-directional-parry-window:0",
+        "condition:kez_shodo_sai:save:sai-directional-parry-window:1"
+      ],
+      "valueIds": [
+        "value:effect:kez_shodo_sai:save:sai-directional-parry-window:range",
+        "value:effect:kez_shodo_sai:save:sai-directional-parry-window:duration",
+        "value:effect:kez_shodo_sai:save:sai-directional-parry-window:magnitude",
+        "value:effect:kez_shodo_sai:save:sai-directional-parry-window:mana",
+        "value:effect:kez_shodo_sai:save:sai-directional-parry-window:cooldown",
+        "value:effect:kez_shodo_sai:save:sai-directional-parry-window:delay"
+      ],
+      "activationId": "activation:145:kez_shodo_sai"
+    },
+    {
+      "effectId": "kez_shodo_sai:control:sai-parried-hero-stun",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_shodo_sai",
+      "type": "control",
+      "subtype": "sai-parried-hero-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_shodo_sai:control:sai-parried-hero-stun:range",
+          "ownerId": "effect:kez_shodo_sai:control:sai-parried-hero-stun",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kez_shodo_sai:control:sai-parried-hero-stun:duration",
+          "ownerId": "effect:kez_shodo_sai:control:sai-parried-hero-stun",
+          "field": "duration",
+          "state": "known",
+          "value": 0.4
+        },
+        "magnitude": {
+          "id": "value:effect:kez_shodo_sai:control:sai-parried-hero-stun:magnitude",
+          "ownerId": "effect:kez_shodo_sai:control:sai-parried-hero-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_shodo_sai:control:sai-parried-hero-stun:mana",
+          "ownerId": "effect:kez_shodo_sai:control:sai-parried-hero-stun",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:kez_shodo_sai:control:sai-parried-hero-stun:cooldown",
+          "ownerId": "effect:kez_shodo_sai:control:sai-parried-hero-stun",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:kez_shodo_sai:control:sai-parried-hero-stun:delay",
+          "ownerId": "effect:kez_shodo_sai:control:sai-parried-hero-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "sai",
+        "requiresContext": [
+          "saiParryEstablished",
+          "enemyHeroAttackParried"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_shodo_sai:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:kez_shodo_sai:control:sai-parried-hero-stun",
+      "legacyEffectId": "kez_shodo_sai:control:sai-parried-hero-stun",
+      "order": 19,
+      "legacyAbilityId": "kez_shodo_sai",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_shodo_sai:control:sai-parried-hero-stun:0",
+        "condition:kez_shodo_sai:control:sai-parried-hero-stun:1"
+      ],
+      "valueIds": [
+        "value:effect:kez_shodo_sai:control:sai-parried-hero-stun:range",
+        "value:effect:kez_shodo_sai:control:sai-parried-hero-stun:duration",
+        "value:effect:kez_shodo_sai:control:sai-parried-hero-stun:magnitude",
+        "value:effect:kez_shodo_sai:control:sai-parried-hero-stun:mana",
+        "value:effect:kez_shodo_sai:control:sai-parried-hero-stun:cooldown",
+        "value:effect:kez_shodo_sai:control:sai-parried-hero-stun:delay"
+      ],
+      "activationId": "activation:145:kez_shodo_sai"
+    },
+    {
+      "effectId": "kez_shodo_sai:control:sai-existing-mark-attack-stun",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_shodo_sai",
+      "type": "control",
+      "subtype": "sai-existing-mark-attack-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_shodo_sai:control:sai-existing-mark-attack-stun:range",
+          "ownerId": "effect:kez_shodo_sai:control:sai-existing-mark-attack-stun",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kez_shodo_sai:control:sai-existing-mark-attack-stun:duration",
+          "ownerId": "effect:kez_shodo_sai:control:sai-existing-mark-attack-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            0.5,
+            0.6,
+            0.7,
+            0.8
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:kez_shodo_sai:control:sai-existing-mark-attack-stun:magnitude",
+          "ownerId": "effect:kez_shodo_sai:control:sai-existing-mark-attack-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_shodo_sai:control:sai-existing-mark-attack-stun:mana",
+          "ownerId": "effect:kez_shodo_sai:control:sai-existing-mark-attack-stun",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:kez_shodo_sai:control:sai-existing-mark-attack-stun:cooldown",
+          "ownerId": "effect:kez_shodo_sai:control:sai-existing-mark-attack-stun",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:kez_shodo_sai:control:sai-existing-mark-attack-stun:delay",
+          "ownerId": "effect:kez_shodo_sai:control:sai-existing-mark-attack-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "saiMarkedEnemyAttacked"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_shodo_sai:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:kez_shodo_sai:control:sai-existing-mark-attack-stun",
+      "legacyEffectId": "kez_shodo_sai:control:sai-existing-mark-attack-stun",
+      "order": 20,
+      "legacyAbilityId": "kez_shodo_sai",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_shodo_sai:control:sai-existing-mark-attack-stun:0"
+      ],
+      "valueIds": [
+        "value:effect:kez_shodo_sai:control:sai-existing-mark-attack-stun:range",
+        "value:effect:kez_shodo_sai:control:sai-existing-mark-attack-stun:duration",
+        "value:effect:kez_shodo_sai:control:sai-existing-mark-attack-stun:magnitude",
+        "value:effect:kez_shodo_sai:control:sai-existing-mark-attack-stun:mana",
+        "value:effect:kez_shodo_sai:control:sai-existing-mark-attack-stun:cooldown",
+        "value:effect:kez_shodo_sai:control:sai-existing-mark-attack-stun:delay"
+      ],
+      "activationId": "activation:145:kez_shodo_sai"
+    },
+    {
+      "effectId": "kez_ravens_veil:invisibility:sai-raven-invisibility",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_ravens_veil",
+      "type": "invisibility",
+      "subtype": "sai-raven-invisibility",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_ravens_veil:invisibility:sai-raven-invisibility:range",
+          "ownerId": "effect:kez_ravens_veil:invisibility:sai-raven-invisibility",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kez_ravens_veil:invisibility:sai-raven-invisibility:duration",
+          "ownerId": "effect:kez_ravens_veil:invisibility:sai-raven-invisibility",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            8,
+            10,
+            12
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:kez_ravens_veil:invisibility:sai-raven-invisibility:magnitude",
+          "ownerId": "effect:kez_ravens_veil:invisibility:sai-raven-invisibility",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_ravens_veil:invisibility:sai-raven-invisibility:mana",
+          "ownerId": "effect:kez_ravens_veil:invisibility:sai-raven-invisibility",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kez_ravens_veil:invisibility:sai-raven-invisibility:cooldown",
+          "ownerId": "effect:kez_ravens_veil:invisibility:sai-raven-invisibility",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            35,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_ravens_veil:invisibility:sai-raven-invisibility:delay",
+          "ownerId": "effect:kez_ravens_veil:invisibility:sai-raven-invisibility",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "sai",
+        "requiresContext": [
+          "kezUltimatePairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_ravens_veil"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_ravens_veil:invisibility:sai-raven-invisibility",
+      "legacyEffectId": "kez_ravens_veil:invisibility:sai-raven-invisibility",
+      "order": 21,
+      "legacyAbilityId": "kez_ravens_veil",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_ravens_veil:invisibility:sai-raven-invisibility:0"
+      ],
+      "valueIds": [
+        "value:effect:kez_ravens_veil:invisibility:sai-raven-invisibility:range",
+        "value:effect:kez_ravens_veil:invisibility:sai-raven-invisibility:duration",
+        "value:effect:kez_ravens_veil:invisibility:sai-raven-invisibility:magnitude",
+        "value:effect:kez_ravens_veil:invisibility:sai-raven-invisibility:mana",
+        "value:effect:kez_ravens_veil:invisibility:sai-raven-invisibility:cooldown",
+        "value:effect:kez_ravens_veil:invisibility:sai-raven-invisibility:delay"
+      ],
+      "activationId": "activation:145:kez_ravens_veil"
+    },
+    {
+      "effectId": "kez_ravens_veil:dispel:sai-raven-basic-self-dispel",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_ravens_veil",
+      "type": "dispel",
+      "subtype": "sai-raven-basic-self-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel:range",
+          "ownerId": "effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel:duration",
+          "ownerId": "effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel:magnitude",
+          "ownerId": "effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel:mana",
+          "ownerId": "effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel:cooldown",
+          "ownerId": "effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            35,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel:delay",
+          "ownerId": "effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "sai",
+        "requiresContext": [
+          "kezUltimatePairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "basic"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "self-debuffs"
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_ravens_veil"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel",
+      "legacyEffectId": "kez_ravens_veil:dispel:sai-raven-basic-self-dispel",
+      "order": 22,
+      "legacyAbilityId": "kez_ravens_veil",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_ravens_veil:dispel:sai-raven-basic-self-dispel:0"
+      ],
+      "valueIds": [
+        "value:effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel:range",
+        "value:effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel:duration",
+        "value:effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel:magnitude",
+        "value:effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel:mana",
+        "value:effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel:cooldown",
+        "value:effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel:delay"
+      ],
+      "activationId": "activation:145:kez_ravens_veil"
+    },
+    {
+      "effectId": "kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction",
+      "heroId": "145",
+      "abilityId": "ability:145:kez_ravens_veil",
+      "type": "modifier",
+      "subtype": "sai-raven-smoke-mark-and-vision-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction:range",
+          "ownerId": "effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction:duration",
+          "ownerId": "effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction:magnitude",
+          "ownerId": "effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction:mana",
+          "ownerId": "effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            125,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction:cooldown",
+          "ownerId": "effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            40,
+            35,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction:delay",
+          "ownerId": "effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "form": "sai",
+        "requiresContext": [
+          "ravenSmokeReachesEnemyHero",
+          "kezUltimatePairReady"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "kez_ravens_veil"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction",
+      "legacyEffectId": "kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction",
+      "order": 23,
+      "legacyAbilityId": "kez_ravens_veil",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction:0",
+        "condition:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction:1"
+      ],
+      "valueIds": [
+        "value:effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction:range",
+        "value:effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction:duration",
+        "value:effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction:magnitude",
+        "value:effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction:mana",
+        "value:effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction:cooldown",
+        "value:effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction:delay"
+      ],
+      "activationId": "activation:145:kez_ravens_veil"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:0",
+      "ownerId": "effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "echoSlashHitsEnemyHero"
+      }
+    },
+    {
+      "id": "condition:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike:1",
+      "ownerId": "effect:kez_echo_slash:damage:katana-echo-hero-bonus-per-strike",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezEchoFalconPairReady"
+      }
+    },
+    {
+      "id": "condition:kez_echo_slash:slow:katana-echo-impact-slow:0",
+      "ownerId": "effect:kez_echo_slash:slow:katana-echo-impact-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "echoSlashHitsEnemyHero"
+      }
+    },
+    {
+      "id": "condition:kez_echo_slash:slow:katana-echo-impact-slow:1",
+      "ownerId": "effect:kez_echo_slash:slow:katana-echo-impact-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezEchoFalconPairReady"
+      }
+    },
+    {
+      "id": "condition:kez_grappling_claw:mobility:katana-grapple-approach:0",
+      "ownerId": "effect:kez_grappling_claw:mobility:katana-grapple-approach",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "grappleValidTargetOrTree"
+      }
+    },
+    {
+      "id": "condition:kez_grappling_claw:mobility:katana-grapple-approach:1",
+      "ownerId": "effect:kez_grappling_claw:mobility:katana-grapple-approach",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezClawTalonPairReady"
+      }
+    },
+    {
+      "id": "condition:kez_grappling_claw:slow:katana-grapple-target-slow:0",
+      "ownerId": "effect:kez_grappling_claw:slow:katana-grapple-target-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "grappleHitsEnemy"
+      }
+    },
+    {
+      "id": "condition:kez_grappling_claw:slow:katana-grapple-target-slow:1",
+      "ownerId": "effect:kez_grappling_claw:slow:katana-grapple-target-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezClawTalonPairReady"
+      }
+    },
+    {
+      "id": "condition:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed:0",
+      "ownerId": "effect:kez_kazurai_katana:damage:katana-stacking-attack-derived-bleed",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "katanaAttackOrAbilityAppliesBleed"
+      }
+    },
+    {
+      "id": "condition:kez_kazurai_katana:control:katana-active-impale-movement-lock:0",
+      "ownerId": "effect:kez_kazurai_katana:control:katana-active-impale-movement-lock",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezImpaleParryPairReady"
+      }
+    },
+    {
+      "id": "condition:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal:0",
+      "ownerId": "effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "impaleDealsDamage"
+      }
+    },
+    {
+      "id": "condition:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal:1",
+      "ownerId": "effect:kez_kazurai_katana:heal:shard-impale-damage-derived-lifesteal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezImpaleParryPairReady"
+      }
+    },
+    {
+      "id": "condition:kez_kazurai_katana:control:shard-impale-behind-target-stun:0",
+      "ownerId": "effect:kez_kazurai_katana:control:shard-impale-behind-target-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "impaleHitsFromBehind"
+      }
+    },
+    {
+      "id": "condition:kez_kazurai_katana:control:shard-impale-behind-target-stun:1",
+      "ownerId": "effect:kez_kazurai_katana:control:shard-impale-behind-target-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezImpaleParryPairReady"
+      }
+    },
+    {
+      "id": "condition:kez_raptor_dance:save:raptor-opening-invulnerability:0",
+      "ownerId": "effect:kez_raptor_dance:save:raptor-opening-invulnerability",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezUltimatePairReady"
+      }
+    },
+    {
+      "id": "condition:kez_raptor_dance:dispel:raptor-basic-self-dispel:0",
+      "ownerId": "effect:kez_raptor_dance:dispel:raptor-basic-self-dispel",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezUltimatePairReady"
+      }
+    },
+    {
+      "id": "condition:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:0",
+      "ownerId": "effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "raptorCastCompletes"
+      }
+    },
+    {
+      "id": "condition:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash:1",
+      "ownerId": "effect:kez_raptor_dance:damage:raptor-completed-cast-single-base-slash",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezUltimatePairReady"
+      }
+    },
+    {
+      "id": "condition:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:0",
+      "ownerId": "effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "raptorCastCompletes"
+      }
+    },
+    {
+      "id": "condition:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:1",
+      "ownerId": "effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "raptorSlashDealsDamage"
+      }
+    },
+    {
+      "id": "condition:kez_raptor_dance:heal:raptor-slash-damage-derived-heal:2",
+      "ownerId": "effect:kez_raptor_dance:heal:raptor-slash-damage-derived-heal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezUltimatePairReady"
+      }
+    },
+    {
+      "id": "condition:kez_falcon_rush:mobility:sai-falcon-target-rush:0",
+      "ownerId": "effect:kez_falcon_rush:mobility:sai-falcon-target-rush",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "falconRushEnemyTargetAvailable"
+      }
+    },
+    {
+      "id": "condition:kez_falcon_rush:mobility:sai-falcon-target-rush:1",
+      "ownerId": "effect:kez_falcon_rush:mobility:sai-falcon-target-rush",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezEchoFalconPairReady"
+      }
+    },
+    {
+      "id": "condition:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:0",
+      "ownerId": "effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "falconRushBuffEstablished"
+      }
+    },
+    {
+      "id": "condition:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack:1",
+      "ownerId": "effect:kez_falcon_rush:damage:sai-existing-falcon-secondary-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "falconRushAttackHits"
+      }
+    },
+    {
+      "id": "condition:kez_talon_toss:damage:sai-talon-fixed-attack:0",
+      "ownerId": "effect:kez_talon_toss:damage:sai-talon-fixed-attack",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezClawTalonPairReady"
+      }
+    },
+    {
+      "id": "condition:kez_talon_toss:control:sai-talon-silence:0",
+      "ownerId": "effect:kez_talon_toss:control:sai-talon-silence",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezClawTalonPairReady"
+      }
+    },
+    {
+      "id": "condition:kez_shodo_sai:save:sai-directional-parry-window:0",
+      "ownerId": "effect:kez_shodo_sai:save:sai-directional-parry-window",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "attackFromParryFacing"
+      }
+    },
+    {
+      "id": "condition:kez_shodo_sai:save:sai-directional-parry-window:1",
+      "ownerId": "effect:kez_shodo_sai:save:sai-directional-parry-window",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezImpaleParryPairReady"
+      }
+    },
+    {
+      "id": "condition:kez_shodo_sai:control:sai-parried-hero-stun:0",
+      "ownerId": "effect:kez_shodo_sai:control:sai-parried-hero-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "saiParryEstablished"
+      }
+    },
+    {
+      "id": "condition:kez_shodo_sai:control:sai-parried-hero-stun:1",
+      "ownerId": "effect:kez_shodo_sai:control:sai-parried-hero-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyHeroAttackParried"
+      }
+    },
+    {
+      "id": "condition:kez_shodo_sai:control:sai-existing-mark-attack-stun:0",
+      "ownerId": "effect:kez_shodo_sai:control:sai-existing-mark-attack-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "saiMarkedEnemyAttacked"
+      }
+    },
+    {
+      "id": "condition:kez_ravens_veil:invisibility:sai-raven-invisibility:0",
+      "ownerId": "effect:kez_ravens_veil:invisibility:sai-raven-invisibility",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezUltimatePairReady"
+      }
+    },
+    {
+      "id": "condition:kez_ravens_veil:dispel:sai-raven-basic-self-dispel:0",
+      "ownerId": "effect:kez_ravens_veil:dispel:sai-raven-basic-self-dispel",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezUltimatePairReady"
+      }
+    },
+    {
+      "id": "condition:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction:0",
+      "ownerId": "effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "ravenSmokeReachesEnemyHero"
+      }
+    },
+    {
+      "id": "condition:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction:1",
+      "ownerId": "effect:kez_ravens_veil:modifier:sai-raven-smoke-mark-and-vision-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "kezUltimatePairReady"
+      }
+    }
+  ]
+}

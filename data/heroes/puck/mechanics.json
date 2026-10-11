@@ -1,0 +1,2843 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "puck_waning_rift:silence",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_waning_rift",
+      "type": "control",
+      "subtype": "silence",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_waning_rift:silence:range",
+          "ownerId": "effect:puck_waning_rift:silence",
+          "field": "range",
+          "state": "known",
+          "value": 400
+        },
+        "duration": {
+          "id": "value:effect:puck_waning_rift:silence:duration",
+          "ownerId": "effect:puck_waning_rift:silence",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2,
+            2.5,
+            3,
+            3.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:puck_waning_rift:silence:magnitude",
+          "ownerId": "effect:puck_waning_rift:silence",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            60,
+            120,
+            180,
+            240
+          ]
+        },
+        "mana": {
+          "id": "value:effect:puck_waning_rift:silence:mana",
+          "ownerId": "effect:puck_waning_rift:silence",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:puck_waning_rift:silence:cooldown",
+          "ownerId": "effect:puck_waning_rift:silence",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            15,
+            14,
+            13
+          ]
+        },
+        "delay": {
+          "id": "value:effect:puck_waning_rift:silence:delay",
+          "ownerId": "effect:puck_waning_rift:silence",
+          "field": "delay",
+          "state": "known",
+          "value": 0.1
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "casting"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_waning_rift"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:puck_waning_rift:silence",
+      "legacyEffectId": "puck_waning_rift:silence",
+      "order": 0,
+      "legacyAbilityId": "puck_waning_rift",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:puck_waning_rift:silence:range",
+        "value:effect:puck_waning_rift:silence:duration",
+        "value:effect:puck_waning_rift:silence:magnitude",
+        "value:effect:puck_waning_rift:silence:mana",
+        "value:effect:puck_waning_rift:silence:cooldown",
+        "value:effect:puck_waning_rift:silence:delay"
+      ],
+      "activationId": "activation:13:puck_waning_rift"
+    },
+    {
+      "effectId": "puck_waning_rift:short-teleport",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_waning_rift",
+      "type": "mobility",
+      "subtype": "short-teleport",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_waning_rift:short-teleport:range",
+          "ownerId": "effect:puck_waning_rift:short-teleport",
+          "field": "range",
+          "state": "known",
+          "value": 350
+        },
+        "duration": {
+          "id": "value:effect:puck_waning_rift:short-teleport:duration",
+          "ownerId": "effect:puck_waning_rift:short-teleport",
+          "field": "duration",
+          "state": "known",
+          "value": 0
+        },
+        "magnitude": {
+          "id": "value:effect:puck_waning_rift:short-teleport:magnitude",
+          "ownerId": "effect:puck_waning_rift:short-teleport",
+          "field": "magnitude",
+          "state": "known",
+          "value": 350
+        },
+        "mana": {
+          "id": "value:effect:puck_waning_rift:short-teleport:mana",
+          "ownerId": "effect:puck_waning_rift:short-teleport",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:puck_waning_rift:short-teleport:cooldown",
+          "ownerId": "effect:puck_waning_rift:short-teleport",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            15,
+            14,
+            13
+          ]
+        },
+        "delay": {
+          "id": "value:effect:puck_waning_rift:short-teleport:delay",
+          "ownerId": "effect:puck_waning_rift:short-teleport",
+          "field": "delay",
+          "state": "known",
+          "value": 0.1
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Effect-specific engine exception unverified"
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_waning_rift"
+      },
+      "vulnerability": {
+        "castDependent": true,
+        "rootDisabled": false
+      },
+      "exceptions": [],
+      "id": "effect:puck_waning_rift:short-teleport",
+      "legacyEffectId": "puck_waning_rift:short-teleport",
+      "order": 1,
+      "legacyAbilityId": "puck_waning_rift",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:puck_waning_rift:short-teleport:range",
+        "value:effect:puck_waning_rift:short-teleport:duration",
+        "value:effect:puck_waning_rift:short-teleport:magnitude",
+        "value:effect:puck_waning_rift:short-teleport:mana",
+        "value:effect:puck_waning_rift:short-teleport:cooldown",
+        "value:effect:puck_waning_rift:short-teleport:delay"
+      ],
+      "activationId": "activation:13:puck_waning_rift"
+    },
+    {
+      "effectId": "puck_illusory_orb:magical-impact",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_illusory_orb",
+      "type": "damage",
+      "subtype": "magical-impact",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_illusory_orb:magical-impact:range",
+          "ownerId": "effect:puck_illusory_orb:magical-impact",
+          "field": "range",
+          "state": "known",
+          "value": 1950
+        },
+        "duration": {
+          "id": "value:effect:puck_illusory_orb:magical-impact:duration",
+          "ownerId": "effect:puck_illusory_orb:magical-impact",
+          "field": "duration",
+          "state": "known",
+          "value": 0
+        },
+        "magnitude": {
+          "id": "value:effect:puck_illusory_orb:magical-impact:magnitude",
+          "ownerId": "effect:puck_illusory_orb:magical-impact",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            70,
+            140,
+            210,
+            280
+          ]
+        },
+        "mana": {
+          "id": "value:effect:puck_illusory_orb:magical-impact:mana",
+          "ownerId": "effect:puck_illusory_orb:magical-impact",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:puck_illusory_orb:magical-impact:cooldown",
+          "ownerId": "effect:puck_illusory_orb:magical-impact",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            12,
+            11,
+            10,
+            9
+          ]
+        },
+        "delay": {
+          "id": "value:effect:puck_illusory_orb:magical-impact:delay",
+          "ownerId": "effect:puck_illusory_orb:magical-impact",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "Cast point omits declared projectile travel and any channel or release timing; effective impact delay requires geometry and engine verification."
+        },
+        "damageType": {
+          "id": "value:effect:puck_illusory_orb:magical-impact:damageType",
+          "ownerId": "effect:puck_illusory_orb:magical-impact",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        },
+        "castPoint": {
+          "id": "value:effect:puck_illusory_orb:magical-impact:castPoint",
+          "ownerId": "effect:puck_illusory_orb:magical-impact",
+          "field": "castPoint",
+          "state": "known",
+          "value": [
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1
+          ]
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_illusory_orb"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:puck_illusory_orb:magical-impact",
+      "legacyEffectId": "puck_illusory_orb:magical-impact",
+      "order": 2,
+      "legacyAbilityId": "puck_illusory_orb",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:puck_illusory_orb:magical-impact:range",
+        "value:effect:puck_illusory_orb:magical-impact:duration",
+        "value:effect:puck_illusory_orb:magical-impact:magnitude",
+        "value:effect:puck_illusory_orb:magical-impact:mana",
+        "value:effect:puck_illusory_orb:magical-impact:cooldown",
+        "value:effect:puck_illusory_orb:magical-impact:delay",
+        "value:effect:puck_illusory_orb:magical-impact:damageType",
+        "value:effect:puck_illusory_orb:magical-impact:castPoint"
+      ],
+      "activationId": "activation:13:puck_illusory_orb"
+    },
+    {
+      "effectId": "puck_ethereal_jaunt:orb-teleport",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_ethereal_jaunt",
+      "type": "mobility",
+      "subtype": "orb-teleport",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_ethereal_jaunt:orb-teleport:range",
+          "ownerId": "effect:puck_ethereal_jaunt:orb-teleport",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This effect reach is not established by a matching local range declaration; dependency geometry and engine interpretation remain unverified."
+        },
+        "duration": {
+          "id": "value:effect:puck_ethereal_jaunt:orb-teleport:duration",
+          "ownerId": "effect:puck_ethereal_jaunt:orb-teleport",
+          "field": "duration",
+          "state": "known",
+          "value": 0
+        },
+        "magnitude": {
+          "id": "value:effect:puck_ethereal_jaunt:orb-teleport:magnitude",
+          "ownerId": "effect:puck_ethereal_jaunt:orb-teleport",
+          "field": "magnitude",
+          "state": "known",
+          "value": 1950
+        },
+        "mana": {
+          "id": "value:effect:puck_ethereal_jaunt:orb-teleport:mana",
+          "ownerId": "effect:puck_ethereal_jaunt:orb-teleport",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:puck_ethereal_jaunt:orb-teleport:cooldown",
+          "ownerId": "effect:puck_ethereal_jaunt:orb-teleport",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "Declaration absent"
+        },
+        "delay": {
+          "id": "value:effect:puck_ethereal_jaunt:orb-teleport:delay",
+          "ownerId": "effect:puck_ethereal_jaunt:orb-teleport",
+          "field": "delay",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "puck_illusory_orb"
+        ],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "orb-location",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Effect-specific engine exception unverified"
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_ethereal_jaunt"
+      },
+      "vulnerability": {
+        "castDependent": true,
+        "rootDisabled": true
+      },
+      "exceptions": [
+        "requires-existing-orb",
+        "orb-travel-and-location"
+      ],
+      "id": "effect:puck_ethereal_jaunt:orb-teleport",
+      "legacyEffectId": "puck_ethereal_jaunt:orb-teleport",
+      "order": 3,
+      "legacyAbilityId": "puck_ethereal_jaunt",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:puck_ethereal_jaunt:orb-teleport:range",
+        "value:effect:puck_ethereal_jaunt:orb-teleport:duration",
+        "value:effect:puck_ethereal_jaunt:orb-teleport:magnitude",
+        "value:effect:puck_ethereal_jaunt:orb-teleport:mana",
+        "value:effect:puck_ethereal_jaunt:orb-teleport:cooldown",
+        "value:effect:puck_ethereal_jaunt:orb-teleport:delay"
+      ],
+      "activationId": "activation:13:puck_ethereal_jaunt"
+    },
+    {
+      "effectId": "puck_illusory_orb:damage:existing-orb-proximity-periodic-damage",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_illusory_orb",
+      "type": "damage",
+      "subtype": "existing-orb-proximity-periodic-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:range",
+          "ownerId": "effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:duration",
+          "ownerId": "effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:magnitude",
+          "ownerId": "effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:mana",
+          "ownerId": "effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:cooldown",
+          "ownerId": "effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:delay",
+          "ownerId": "effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:damageType",
+          "ownerId": "effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "puckOrbExists",
+          "enemyInsideMovingOrb"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_illusory_orb:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage",
+      "legacyEffectId": "puck_illusory_orb:damage:existing-orb-proximity-periodic-damage",
+      "order": 4,
+      "legacyAbilityId": "puck_illusory_orb",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:0",
+        "condition:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:1"
+      ],
+      "valueIds": [
+        "value:effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:range",
+        "value:effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:duration",
+        "value:effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:magnitude",
+        "value:effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:mana",
+        "value:effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:cooldown",
+        "value:effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:delay",
+        "value:effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:damageType"
+      ],
+      "activationId": "activation:13:puck_illusory_orb"
+    },
+    {
+      "effectId": "puck_illusory_orb:vision:moving-orb-unobstructed-vision",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_illusory_orb",
+      "type": "vision",
+      "subtype": "moving-orb-unobstructed-vision",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision:range",
+          "ownerId": "effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision:duration",
+          "ownerId": "effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision",
+          "field": "duration",
+          "state": "known",
+          "value": 2.5
+        },
+        "magnitude": {
+          "id": "value:effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision:magnitude",
+          "ownerId": "effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision:mana",
+          "ownerId": "effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision:cooldown",
+          "ownerId": "effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision:delay",
+          "ownerId": "effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "puckOrbExists"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_illusory_orb:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision",
+      "legacyEffectId": "puck_illusory_orb:vision:moving-orb-unobstructed-vision",
+      "order": 5,
+      "legacyAbilityId": "puck_illusory_orb",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:puck_illusory_orb:vision:moving-orb-unobstructed-vision:0"
+      ],
+      "valueIds": [
+        "value:effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision:range",
+        "value:effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision:duration",
+        "value:effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision:magnitude",
+        "value:effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision:mana",
+        "value:effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision:cooldown",
+        "value:effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision:delay"
+      ],
+      "activationId": "activation:13:puck_illusory_orb"
+    },
+    {
+      "effectId": "puck_waning_rift:damage:rift-arrival-magical-damage",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_waning_rift",
+      "type": "damage",
+      "subtype": "rift-arrival-magical-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_waning_rift:damage:rift-arrival-magical-damage:range",
+          "ownerId": "effect:puck_waning_rift:damage:rift-arrival-magical-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:puck_waning_rift:damage:rift-arrival-magical-damage:duration",
+          "ownerId": "effect:puck_waning_rift:damage:rift-arrival-magical-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:puck_waning_rift:damage:rift-arrival-magical-damage:magnitude",
+          "ownerId": "effect:puck_waning_rift:damage:rift-arrival-magical-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            60,
+            120,
+            180,
+            240
+          ]
+        },
+        "mana": {
+          "id": "value:effect:puck_waning_rift:damage:rift-arrival-magical-damage:mana",
+          "ownerId": "effect:puck_waning_rift:damage:rift-arrival-magical-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:puck_waning_rift:damage:rift-arrival-magical-damage:cooldown",
+          "ownerId": "effect:puck_waning_rift:damage:rift-arrival-magical-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            16,
+            15,
+            14,
+            13
+          ]
+        },
+        "delay": {
+          "id": "value:effect:puck_waning_rift:damage:rift-arrival-magical-damage:delay",
+          "ownerId": "effect:puck_waning_rift:damage:rift-arrival-magical-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:puck_waning_rift:damage:rift-arrival-magical-damage:damageType",
+          "ownerId": "effect:puck_waning_rift:damage:rift-arrival-magical-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyInsideRiftArrivalArea"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_waning_rift"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:puck_waning_rift:damage:rift-arrival-magical-damage",
+      "legacyEffectId": "puck_waning_rift:damage:rift-arrival-magical-damage",
+      "order": 6,
+      "legacyAbilityId": "puck_waning_rift",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:puck_waning_rift:damage:rift-arrival-magical-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:puck_waning_rift:damage:rift-arrival-magical-damage:range",
+        "value:effect:puck_waning_rift:damage:rift-arrival-magical-damage:duration",
+        "value:effect:puck_waning_rift:damage:rift-arrival-magical-damage:magnitude",
+        "value:effect:puck_waning_rift:damage:rift-arrival-magical-damage:mana",
+        "value:effect:puck_waning_rift:damage:rift-arrival-magical-damage:cooldown",
+        "value:effect:puck_waning_rift:damage:rift-arrival-magical-damage:delay",
+        "value:effect:puck_waning_rift:damage:rift-arrival-magical-damage:damageType"
+      ],
+      "activationId": "activation:13:puck_waning_rift"
+    },
+    {
+      "effectId": "puck_phase_shift:modifier:paid-phase-channel-activation",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_phase_shift",
+      "type": "modifier",
+      "subtype": "paid-phase-channel-activation",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_phase_shift:modifier:paid-phase-channel-activation:range",
+          "ownerId": "effect:puck_phase_shift:modifier:paid-phase-channel-activation",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:puck_phase_shift:modifier:paid-phase-channel-activation:duration",
+          "ownerId": "effect:puck_phase_shift:modifier:paid-phase-channel-activation",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1,
+            1.75,
+            2.5,
+            3.25
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:puck_phase_shift:modifier:paid-phase-channel-activation:magnitude",
+          "ownerId": "effect:puck_phase_shift:modifier:paid-phase-channel-activation",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:puck_phase_shift:modifier:paid-phase-channel-activation:mana",
+          "ownerId": "effect:puck_phase_shift:modifier:paid-phase-channel-activation",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:puck_phase_shift:modifier:paid-phase-channel-activation:cooldown",
+          "ownerId": "effect:puck_phase_shift:modifier:paid-phase-channel-activation",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            8,
+            7.5,
+            7,
+            6.5
+          ]
+        },
+        "delay": {
+          "id": "value:effect:puck_phase_shift:modifier:paid-phase-channel-activation:delay",
+          "ownerId": "effect:puck_phase_shift:modifier:paid-phase-channel-activation",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_phase_shift"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:puck_phase_shift:modifier:paid-phase-channel-activation",
+      "legacyEffectId": "puck_phase_shift:modifier:paid-phase-channel-activation",
+      "order": 7,
+      "legacyAbilityId": "puck_phase_shift",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:puck_phase_shift:modifier:paid-phase-channel-activation:range",
+        "value:effect:puck_phase_shift:modifier:paid-phase-channel-activation:duration",
+        "value:effect:puck_phase_shift:modifier:paid-phase-channel-activation:magnitude",
+        "value:effect:puck_phase_shift:modifier:paid-phase-channel-activation:mana",
+        "value:effect:puck_phase_shift:modifier:paid-phase-channel-activation:cooldown",
+        "value:effect:puck_phase_shift:modifier:paid-phase-channel-activation:delay"
+      ],
+      "activationId": "activation:13:puck_phase_shift"
+    },
+    {
+      "effectId": "puck_phase_shift:save:established-phase-channel-invulnerability",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_phase_shift",
+      "type": "save",
+      "subtype": "established-phase-channel-invulnerability",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_phase_shift:save:established-phase-channel-invulnerability:range",
+          "ownerId": "effect:puck_phase_shift:save:established-phase-channel-invulnerability",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:puck_phase_shift:save:established-phase-channel-invulnerability:duration",
+          "ownerId": "effect:puck_phase_shift:save:established-phase-channel-invulnerability",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:puck_phase_shift:save:established-phase-channel-invulnerability:magnitude",
+          "ownerId": "effect:puck_phase_shift:save:established-phase-channel-invulnerability",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:puck_phase_shift:save:established-phase-channel-invulnerability:mana",
+          "ownerId": "effect:puck_phase_shift:save:established-phase-channel-invulnerability",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:puck_phase_shift:save:established-phase-channel-invulnerability:cooldown",
+          "ownerId": "effect:puck_phase_shift:save:established-phase-channel-invulnerability",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:puck_phase_shift:save:established-phase-channel-invulnerability:delay",
+          "ownerId": "effect:puck_phase_shift:save:established-phase-channel-invulnerability",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "puckPhaseShiftChannelActive"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "physical",
+            "magical",
+            "pure"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_phase_shift:passive"
+      },
+      "vulnerability": {
+        "channel": true
+      },
+      "exceptions": [],
+      "id": "effect:puck_phase_shift:save:established-phase-channel-invulnerability",
+      "legacyEffectId": "puck_phase_shift:save:established-phase-channel-invulnerability",
+      "order": 8,
+      "legacyAbilityId": "puck_phase_shift",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:puck_phase_shift:save:established-phase-channel-invulnerability:0"
+      ],
+      "valueIds": [
+        "value:effect:puck_phase_shift:save:established-phase-channel-invulnerability:range",
+        "value:effect:puck_phase_shift:save:established-phase-channel-invulnerability:duration",
+        "value:effect:puck_phase_shift:save:established-phase-channel-invulnerability:magnitude",
+        "value:effect:puck_phase_shift:save:established-phase-channel-invulnerability:mana",
+        "value:effect:puck_phase_shift:save:established-phase-channel-invulnerability:cooldown",
+        "value:effect:puck_phase_shift:save:established-phase-channel-invulnerability:delay"
+      ],
+      "activationId": "activation:13:puck_phase_shift"
+    },
+    {
+      "effectId": "puck_phase_shift:damage:shard-landed-attack-magical-bonus",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_phase_shift",
+      "type": "damage",
+      "subtype": "shard-landed-attack-magical-bonus",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus:range",
+          "ownerId": "effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus:duration",
+          "ownerId": "effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus:magnitude",
+          "ownerId": "effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus",
+          "field": "magnitude",
+          "state": "known",
+          "value": 20
+        },
+        "mana": {
+          "id": "value:effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus:mana",
+          "ownerId": "effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus:cooldown",
+          "ownerId": "effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus:delay",
+          "ownerId": "effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus:damageType",
+          "ownerId": "effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "puckAttackLanded"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_phase_shift:passive"
+      },
+      "vulnerability": {
+        "channel": false
+      },
+      "exceptions": [],
+      "id": "effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus",
+      "legacyEffectId": "puck_phase_shift:damage:shard-landed-attack-magical-bonus",
+      "order": 9,
+      "legacyAbilityId": "puck_phase_shift",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:puck_phase_shift:damage:shard-landed-attack-magical-bonus:0"
+      ],
+      "valueIds": [
+        "value:effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus:range",
+        "value:effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus:duration",
+        "value:effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus:magnitude",
+        "value:effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus:mana",
+        "value:effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus:cooldown",
+        "value:effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus:delay",
+        "value:effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus:damageType"
+      ],
+      "activationId": "activation:13:puck_phase_shift"
+    },
+    {
+      "effectId": "puck_phase_shift:modifier:shard-phase-cast-attack-set",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_phase_shift",
+      "type": "modifier",
+      "subtype": "shard-phase-cast-attack-set",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_phase_shift:modifier:shard-phase-cast-attack-set:range",
+          "ownerId": "effect:puck_phase_shift:modifier:shard-phase-cast-attack-set",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:puck_phase_shift:modifier:shard-phase-cast-attack-set:duration",
+          "ownerId": "effect:puck_phase_shift:modifier:shard-phase-cast-attack-set",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:puck_phase_shift:modifier:shard-phase-cast-attack-set:magnitude",
+          "ownerId": "effect:puck_phase_shift:modifier:shard-phase-cast-attack-set",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:puck_phase_shift:modifier:shard-phase-cast-attack-set:mana",
+          "ownerId": "effect:puck_phase_shift:modifier:shard-phase-cast-attack-set",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:puck_phase_shift:modifier:shard-phase-cast-attack-set:cooldown",
+          "ownerId": "effect:puck_phase_shift:modifier:shard-phase-cast-attack-set",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:puck_phase_shift:modifier:shard-phase-cast-attack-set:delay",
+          "ownerId": "effect:puck_phase_shift:modifier:shard-phase-cast-attack-set",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "puckJustCastPhaseShift",
+          "phaseAttackableEnemyInsideAttackRange"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_phase_shift:passive"
+      },
+      "vulnerability": {
+        "channel": false
+      },
+      "exceptions": [],
+      "id": "effect:puck_phase_shift:modifier:shard-phase-cast-attack-set",
+      "legacyEffectId": "puck_phase_shift:modifier:shard-phase-cast-attack-set",
+      "order": 10,
+      "legacyAbilityId": "puck_phase_shift",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:puck_phase_shift:modifier:shard-phase-cast-attack-set:0",
+        "condition:puck_phase_shift:modifier:shard-phase-cast-attack-set:1"
+      ],
+      "valueIds": [
+        "value:effect:puck_phase_shift:modifier:shard-phase-cast-attack-set:range",
+        "value:effect:puck_phase_shift:modifier:shard-phase-cast-attack-set:duration",
+        "value:effect:puck_phase_shift:modifier:shard-phase-cast-attack-set:magnitude",
+        "value:effect:puck_phase_shift:modifier:shard-phase-cast-attack-set:mana",
+        "value:effect:puck_phase_shift:modifier:shard-phase-cast-attack-set:cooldown",
+        "value:effect:puck_phase_shift:modifier:shard-phase-cast-attack-set:delay"
+      ],
+      "activationId": "activation:13:puck_phase_shift"
+    },
+    {
+      "effectId": "puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_ethereal_jaunt",
+      "type": "modifier",
+      "subtype": "retire-unguarded-orb-teleport",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport:range",
+          "ownerId": "effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport:duration",
+          "ownerId": "effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport:magnitude",
+          "ownerId": "effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport:mana",
+          "ownerId": "effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport:cooldown",
+          "ownerId": "effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport:delay",
+          "ownerId": "effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_ethereal_jaunt:passive",
+        "replaces": [
+          "puck_ethereal_jaunt:orb-teleport"
+        ]
+      },
+      "vulnerability": {
+        "rootDisabled": true
+      },
+      "exceptions": [],
+      "id": "effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport",
+      "legacyEffectId": "puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport",
+      "order": 11,
+      "legacyAbilityId": "puck_ethereal_jaunt",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport:range",
+        "value:effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport:duration",
+        "value:effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport:magnitude",
+        "value:effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport:mana",
+        "value:effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport:cooldown",
+        "value:effect:puck_ethereal_jaunt:modifier:retire-unguarded-orb-teleport:delay"
+      ],
+      "activationId": "activation:13:puck_ethereal_jaunt"
+    },
+    {
+      "effectId": "puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_ethereal_jaunt",
+      "type": "mobility",
+      "subtype": "existing-orb-dependent-teleport",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport:range",
+          "ownerId": "effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport:duration",
+          "ownerId": "effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport:magnitude",
+          "ownerId": "effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport:mana",
+          "ownerId": "effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport:cooldown",
+          "ownerId": "effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport",
+          "field": "cooldown",
+          "state": "known",
+          "value": 0
+        },
+        "delay": {
+          "id": "value:effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport:delay",
+          "ownerId": "effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "puck_illusory_orb"
+        ],
+        "upgrades": [],
+        "requiresContext": [
+          "puckOrbExists"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_ethereal_jaunt"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport",
+      "legacyEffectId": "puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport",
+      "order": 12,
+      "legacyAbilityId": "puck_ethereal_jaunt",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport:0"
+      ],
+      "valueIds": [
+        "value:effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport:range",
+        "value:effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport:duration",
+        "value:effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport:magnitude",
+        "value:effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport:mana",
+        "value:effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport:cooldown",
+        "value:effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport:delay"
+      ],
+      "activationId": "activation:13:puck_ethereal_jaunt"
+    },
+    {
+      "effectId": "puck_puckish:heal:eligible-disjoint-health-restoration",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_puckish",
+      "type": "heal",
+      "subtype": "eligible-disjoint-health-restoration",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_puckish:heal:eligible-disjoint-health-restoration:range",
+          "ownerId": "effect:puck_puckish:heal:eligible-disjoint-health-restoration",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:puck_puckish:heal:eligible-disjoint-health-restoration:duration",
+          "ownerId": "effect:puck_puckish:heal:eligible-disjoint-health-restoration",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:puck_puckish:heal:eligible-disjoint-health-restoration:magnitude",
+          "ownerId": "effect:puck_puckish:heal:eligible-disjoint-health-restoration",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:puck_puckish:heal:eligible-disjoint-health-restoration:mana",
+          "ownerId": "effect:puck_puckish:heal:eligible-disjoint-health-restoration",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:puck_puckish:heal:eligible-disjoint-health-restoration:cooldown",
+          "ownerId": "effect:puck_puckish:heal:eligible-disjoint-health-restoration",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:puck_puckish:heal:eligible-disjoint-health-restoration:delay",
+          "ownerId": "effect:puck_puckish:heal:eligible-disjoint-health-restoration",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "puckDisjointedEligibleNonTowerAttackOrSpell"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_puckish:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:puck_puckish:heal:eligible-disjoint-health-restoration",
+      "legacyEffectId": "puck_puckish:heal:eligible-disjoint-health-restoration",
+      "order": 13,
+      "legacyAbilityId": "puck_puckish",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:puck_puckish:heal:eligible-disjoint-health-restoration:0"
+      ],
+      "valueIds": [
+        "value:effect:puck_puckish:heal:eligible-disjoint-health-restoration:range",
+        "value:effect:puck_puckish:heal:eligible-disjoint-health-restoration:duration",
+        "value:effect:puck_puckish:heal:eligible-disjoint-health-restoration:magnitude",
+        "value:effect:puck_puckish:heal:eligible-disjoint-health-restoration:mana",
+        "value:effect:puck_puckish:heal:eligible-disjoint-health-restoration:cooldown",
+        "value:effect:puck_puckish:heal:eligible-disjoint-health-restoration:delay"
+      ],
+      "activationId": "activation:13:puck_puckish"
+    },
+    {
+      "effectId": "puck_puckish:modifier:eligible-disjoint-mana-restoration",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_puckish",
+      "type": "modifier",
+      "subtype": "eligible-disjoint-mana-restoration",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_puckish:modifier:eligible-disjoint-mana-restoration:range",
+          "ownerId": "effect:puck_puckish:modifier:eligible-disjoint-mana-restoration",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:puck_puckish:modifier:eligible-disjoint-mana-restoration:duration",
+          "ownerId": "effect:puck_puckish:modifier:eligible-disjoint-mana-restoration",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:puck_puckish:modifier:eligible-disjoint-mana-restoration:magnitude",
+          "ownerId": "effect:puck_puckish:modifier:eligible-disjoint-mana-restoration",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:puck_puckish:modifier:eligible-disjoint-mana-restoration:mana",
+          "ownerId": "effect:puck_puckish:modifier:eligible-disjoint-mana-restoration",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:puck_puckish:modifier:eligible-disjoint-mana-restoration:cooldown",
+          "ownerId": "effect:puck_puckish:modifier:eligible-disjoint-mana-restoration",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:puck_puckish:modifier:eligible-disjoint-mana-restoration:delay",
+          "ownerId": "effect:puck_puckish:modifier:eligible-disjoint-mana-restoration",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "puckDisjointedEligibleNonTowerAttackOrSpell"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_puckish:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:puck_puckish:modifier:eligible-disjoint-mana-restoration",
+      "legacyEffectId": "puck_puckish:modifier:eligible-disjoint-mana-restoration",
+      "order": 14,
+      "legacyAbilityId": "puck_puckish",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:puck_puckish:modifier:eligible-disjoint-mana-restoration:0"
+      ],
+      "valueIds": [
+        "value:effect:puck_puckish:modifier:eligible-disjoint-mana-restoration:range",
+        "value:effect:puck_puckish:modifier:eligible-disjoint-mana-restoration:duration",
+        "value:effect:puck_puckish:modifier:eligible-disjoint-mana-restoration:magnitude",
+        "value:effect:puck_puckish:modifier:eligible-disjoint-mana-restoration:mana",
+        "value:effect:puck_puckish:modifier:eligible-disjoint-mana-restoration:cooldown",
+        "value:effect:puck_puckish:modifier:eligible-disjoint-mana-restoration:delay"
+      ],
+      "activationId": "activation:13:puck_puckish"
+    },
+    {
+      "effectId": "puck_dream_coil:damage:coil-initial-hero-damage",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_dream_coil",
+      "type": "damage",
+      "subtype": "coil-initial-hero-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_dream_coil:damage:coil-initial-hero-damage:range",
+          "ownerId": "effect:puck_dream_coil:damage:coil-initial-hero-damage",
+          "field": "range",
+          "state": "known",
+          "value": 750
+        },
+        "duration": {
+          "id": "value:effect:puck_dream_coil:damage:coil-initial-hero-damage:duration",
+          "ownerId": "effect:puck_dream_coil:damage:coil-initial-hero-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:puck_dream_coil:damage:coil-initial-hero-damage:magnitude",
+          "ownerId": "effect:puck_dream_coil:damage:coil-initial-hero-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            175,
+            250,
+            325
+          ]
+        },
+        "mana": {
+          "id": "value:effect:puck_dream_coil:damage:coil-initial-hero-damage:mana",
+          "ownerId": "effect:puck_dream_coil:damage:coil-initial-hero-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            175,
+            225
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:puck_dream_coil:damage:coil-initial-hero-damage:cooldown",
+          "ownerId": "effect:puck_dream_coil:damage:coil-initial-hero-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": 75
+        },
+        "delay": {
+          "id": "value:effect:puck_dream_coil:damage:coil-initial-hero-damage:delay",
+          "ownerId": "effect:puck_dream_coil:damage:coil-initial-hero-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:puck_dream_coil:damage:coil-initial-hero-damage:damageType",
+          "ownerId": "effect:puck_dream_coil:damage:coil-initial-hero-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyHeroInsideCoilLatchArea"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_dream_coil"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:puck_dream_coil:damage:coil-initial-hero-damage",
+      "legacyEffectId": "puck_dream_coil:damage:coil-initial-hero-damage",
+      "order": 15,
+      "legacyAbilityId": "puck_dream_coil",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:puck_dream_coil:damage:coil-initial-hero-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:puck_dream_coil:damage:coil-initial-hero-damage:range",
+        "value:effect:puck_dream_coil:damage:coil-initial-hero-damage:duration",
+        "value:effect:puck_dream_coil:damage:coil-initial-hero-damage:magnitude",
+        "value:effect:puck_dream_coil:damage:coil-initial-hero-damage:mana",
+        "value:effect:puck_dream_coil:damage:coil-initial-hero-damage:cooldown",
+        "value:effect:puck_dream_coil:damage:coil-initial-hero-damage:delay",
+        "value:effect:puck_dream_coil:damage:coil-initial-hero-damage:damageType"
+      ],
+      "activationId": "activation:13:puck_dream_coil"
+    },
+    {
+      "effectId": "puck_dream_coil:modifier:coil-movement-ability-leash",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_dream_coil",
+      "type": "modifier",
+      "subtype": "coil-movement-ability-leash",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_dream_coil:modifier:coil-movement-ability-leash:range",
+          "ownerId": "effect:puck_dream_coil:modifier:coil-movement-ability-leash",
+          "field": "range",
+          "state": "known",
+          "value": 750
+        },
+        "duration": {
+          "id": "value:effect:puck_dream_coil:modifier:coil-movement-ability-leash:duration",
+          "ownerId": "effect:puck_dream_coil:modifier:coil-movement-ability-leash",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            5,
+            5.5,
+            6
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:puck_dream_coil:modifier:coil-movement-ability-leash:magnitude",
+          "ownerId": "effect:puck_dream_coil:modifier:coil-movement-ability-leash",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:puck_dream_coil:modifier:coil-movement-ability-leash:mana",
+          "ownerId": "effect:puck_dream_coil:modifier:coil-movement-ability-leash",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            125,
+            175,
+            225
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:puck_dream_coil:modifier:coil-movement-ability-leash:cooldown",
+          "ownerId": "effect:puck_dream_coil:modifier:coil-movement-ability-leash",
+          "field": "cooldown",
+          "state": "known",
+          "value": 75
+        },
+        "delay": {
+          "id": "value:effect:puck_dream_coil:modifier:coil-movement-ability-leash:delay",
+          "ownerId": "effect:puck_dream_coil:modifier:coil-movement-ability-leash",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyHeroInsideCoilLatchArea"
+        ]
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "none"
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_dream_coil"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:puck_dream_coil:modifier:coil-movement-ability-leash",
+      "legacyEffectId": "puck_dream_coil:modifier:coil-movement-ability-leash",
+      "order": 16,
+      "legacyAbilityId": "puck_dream_coil",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:puck_dream_coil:modifier:coil-movement-ability-leash:0"
+      ],
+      "valueIds": [
+        "value:effect:puck_dream_coil:modifier:coil-movement-ability-leash:range",
+        "value:effect:puck_dream_coil:modifier:coil-movement-ability-leash:duration",
+        "value:effect:puck_dream_coil:modifier:coil-movement-ability-leash:magnitude",
+        "value:effect:puck_dream_coil:modifier:coil-movement-ability-leash:mana",
+        "value:effect:puck_dream_coil:modifier:coil-movement-ability-leash:cooldown",
+        "value:effect:puck_dream_coil:modifier:coil-movement-ability-leash:delay"
+      ],
+      "activationId": "activation:13:puck_dream_coil"
+    },
+    {
+      "effectId": "puck_dream_coil:damage:broken-coil-additional-damage",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_dream_coil",
+      "type": "damage",
+      "subtype": "broken-coil-additional-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_dream_coil:damage:broken-coil-additional-damage:range",
+          "ownerId": "effect:puck_dream_coil:damage:broken-coil-additional-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:puck_dream_coil:damage:broken-coil-additional-damage:duration",
+          "ownerId": "effect:puck_dream_coil:damage:broken-coil-additional-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:puck_dream_coil:damage:broken-coil-additional-damage:magnitude",
+          "ownerId": "effect:puck_dream_coil:damage:broken-coil-additional-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            200,
+            300,
+            400
+          ]
+        },
+        "mana": {
+          "id": "value:effect:puck_dream_coil:damage:broken-coil-additional-damage:mana",
+          "ownerId": "effect:puck_dream_coil:damage:broken-coil-additional-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:puck_dream_coil:damage:broken-coil-additional-damage:cooldown",
+          "ownerId": "effect:puck_dream_coil:damage:broken-coil-additional-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:puck_dream_coil:damage:broken-coil-additional-damage:delay",
+          "ownerId": "effect:puck_dream_coil:damage:broken-coil-additional-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:puck_dream_coil:damage:broken-coil-additional-damage:damageType",
+          "ownerId": "effect:puck_dream_coil:damage:broken-coil-additional-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "puckCoilLinkBrokenByDistance"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_dream_coil:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:puck_dream_coil:damage:broken-coil-additional-damage",
+      "legacyEffectId": "puck_dream_coil:damage:broken-coil-additional-damage",
+      "order": 17,
+      "legacyAbilityId": "puck_dream_coil",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:puck_dream_coil:damage:broken-coil-additional-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:puck_dream_coil:damage:broken-coil-additional-damage:range",
+        "value:effect:puck_dream_coil:damage:broken-coil-additional-damage:duration",
+        "value:effect:puck_dream_coil:damage:broken-coil-additional-damage:magnitude",
+        "value:effect:puck_dream_coil:damage:broken-coil-additional-damage:mana",
+        "value:effect:puck_dream_coil:damage:broken-coil-additional-damage:cooldown",
+        "value:effect:puck_dream_coil:damage:broken-coil-additional-damage:delay",
+        "value:effect:puck_dream_coil:damage:broken-coil-additional-damage:damageType"
+      ],
+      "activationId": "activation:13:puck_dream_coil"
+    },
+    {
+      "effectId": "puck_dream_coil:control:broken-coil-strong-dispellable-stun",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_dream_coil",
+      "type": "control",
+      "subtype": "broken-coil-strong-dispellable-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun:range",
+          "ownerId": "effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun:duration",
+          "ownerId": "effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.5,
+            2,
+            2.5
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun:magnitude",
+          "ownerId": "effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun:mana",
+          "ownerId": "effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun:cooldown",
+          "ownerId": "effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun:delay",
+          "ownerId": "effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "puckCoilLinkBrokenByDistance"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_dream_coil:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun",
+      "legacyEffectId": "puck_dream_coil:control:broken-coil-strong-dispellable-stun",
+      "order": 18,
+      "legacyAbilityId": "puck_dream_coil",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:puck_dream_coil:control:broken-coil-strong-dispellable-stun:0"
+      ],
+      "valueIds": [
+        "value:effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun:range",
+        "value:effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun:duration",
+        "value:effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun:magnitude",
+        "value:effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun:mana",
+        "value:effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun:cooldown",
+        "value:effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun:delay"
+      ],
+      "activationId": "activation:13:puck_dream_coil"
+    },
+    {
+      "effectId": "puck_dream_coil:modifier:scepter-own-coil-dependent-attacks",
+      "heroId": "13",
+      "abilityId": "ability:13:puck_dream_coil",
+      "type": "modifier",
+      "subtype": "scepter-own-coil-dependent-attacks",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks:range",
+          "ownerId": "effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks:duration",
+          "ownerId": "effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks:magnitude",
+          "ownerId": "effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks:mana",
+          "ownerId": "effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks:cooldown",
+          "ownerId": "effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks:delay",
+          "ownerId": "effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "enemyAffectedByPucksCoilOrSnapStun"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "puck_dream_coil:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks",
+      "legacyEffectId": "puck_dream_coil:modifier:scepter-own-coil-dependent-attacks",
+      "order": 19,
+      "legacyAbilityId": "puck_dream_coil",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks:0"
+      ],
+      "valueIds": [
+        "value:effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks:range",
+        "value:effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks:duration",
+        "value:effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks:magnitude",
+        "value:effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks:mana",
+        "value:effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks:cooldown",
+        "value:effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks:delay"
+      ],
+      "activationId": "activation:13:puck_dream_coil"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:0",
+      "ownerId": "effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "puckOrbExists"
+      }
+    },
+    {
+      "id": "condition:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage:1",
+      "ownerId": "effect:puck_illusory_orb:damage:existing-orb-proximity-periodic-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideMovingOrb"
+      }
+    },
+    {
+      "id": "condition:puck_illusory_orb:vision:moving-orb-unobstructed-vision:0",
+      "ownerId": "effect:puck_illusory_orb:vision:moving-orb-unobstructed-vision",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "puckOrbExists"
+      }
+    },
+    {
+      "id": "condition:puck_waning_rift:damage:rift-arrival-magical-damage:0",
+      "ownerId": "effect:puck_waning_rift:damage:rift-arrival-magical-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideRiftArrivalArea"
+      }
+    },
+    {
+      "id": "condition:puck_phase_shift:save:established-phase-channel-invulnerability:0",
+      "ownerId": "effect:puck_phase_shift:save:established-phase-channel-invulnerability",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "puckPhaseShiftChannelActive"
+      }
+    },
+    {
+      "id": "condition:puck_phase_shift:damage:shard-landed-attack-magical-bonus:0",
+      "ownerId": "effect:puck_phase_shift:damage:shard-landed-attack-magical-bonus",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "puckAttackLanded"
+      }
+    },
+    {
+      "id": "condition:puck_phase_shift:modifier:shard-phase-cast-attack-set:0",
+      "ownerId": "effect:puck_phase_shift:modifier:shard-phase-cast-attack-set",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "puckJustCastPhaseShift"
+      }
+    },
+    {
+      "id": "condition:puck_phase_shift:modifier:shard-phase-cast-attack-set:1",
+      "ownerId": "effect:puck_phase_shift:modifier:shard-phase-cast-attack-set",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "phaseAttackableEnemyInsideAttackRange"
+      }
+    },
+    {
+      "id": "condition:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport:0",
+      "ownerId": "effect:puck_ethereal_jaunt:mobility:existing-orb-dependent-teleport",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "puckOrbExists"
+      }
+    },
+    {
+      "id": "condition:puck_puckish:heal:eligible-disjoint-health-restoration:0",
+      "ownerId": "effect:puck_puckish:heal:eligible-disjoint-health-restoration",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "puckDisjointedEligibleNonTowerAttackOrSpell"
+      }
+    },
+    {
+      "id": "condition:puck_puckish:modifier:eligible-disjoint-mana-restoration:0",
+      "ownerId": "effect:puck_puckish:modifier:eligible-disjoint-mana-restoration",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "puckDisjointedEligibleNonTowerAttackOrSpell"
+      }
+    },
+    {
+      "id": "condition:puck_dream_coil:damage:coil-initial-hero-damage:0",
+      "ownerId": "effect:puck_dream_coil:damage:coil-initial-hero-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyHeroInsideCoilLatchArea"
+      }
+    },
+    {
+      "id": "condition:puck_dream_coil:modifier:coil-movement-ability-leash:0",
+      "ownerId": "effect:puck_dream_coil:modifier:coil-movement-ability-leash",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyHeroInsideCoilLatchArea"
+      }
+    },
+    {
+      "id": "condition:puck_dream_coil:damage:broken-coil-additional-damage:0",
+      "ownerId": "effect:puck_dream_coil:damage:broken-coil-additional-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "puckCoilLinkBrokenByDistance"
+      }
+    },
+    {
+      "id": "condition:puck_dream_coil:control:broken-coil-strong-dispellable-stun:0",
+      "ownerId": "effect:puck_dream_coil:control:broken-coil-strong-dispellable-stun",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "puckCoilLinkBrokenByDistance"
+      }
+    },
+    {
+      "id": "condition:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks:0",
+      "ownerId": "effect:puck_dream_coil:modifier:scepter-own-coil-dependent-attacks",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyAffectedByPucksCoilOrSnapStun"
+      }
+    }
+  ]
+}

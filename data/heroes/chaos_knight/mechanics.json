@@ -1,0 +1,1968 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun",
+      "heroId": "81",
+      "abilityId": "ability:81:chaos_knight_chaos_bolt",
+      "type": "control",
+      "subtype": "chaos-bolt-minimum-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun:range",
+          "ownerId": "effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun:duration",
+          "ownerId": "effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.25,
+            1.5,
+            1.75,
+            2
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun:magnitude",
+          "ownerId": "effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun:mana",
+          "ownerId": "effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun",
+          "field": "mana",
+          "state": "known",
+          "value": 110
+        },
+        "cooldown": {
+          "id": "value:effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun:cooldown",
+          "ownerId": "effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            13,
+            12,
+            11,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun:delay",
+          "ownerId": "effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "chaos_knight_chaos_bolt"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun",
+      "legacyEffectId": "chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun",
+      "order": 0,
+      "legacyAbilityId": "chaos_knight_chaos_bolt",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun:range",
+        "value:effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun:duration",
+        "value:effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun:magnitude",
+        "value:effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun:mana",
+        "value:effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun:cooldown",
+        "value:effect:chaos_knight_chaos_bolt:control:chaos-bolt-minimum-stun:delay"
+      ],
+      "activationId": "activation:81:chaos_knight_chaos_bolt"
+    },
+    {
+      "effectId": "chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage",
+      "heroId": "81",
+      "abilityId": "ability:81:chaos_knight_chaos_bolt",
+      "type": "damage",
+      "subtype": "chaos-bolt-minimum-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage:range",
+          "ownerId": "effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage",
+          "field": "range",
+          "state": "known",
+          "value": 600
+        },
+        "duration": {
+          "id": "value:effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage:duration",
+          "ownerId": "effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage:magnitude",
+          "ownerId": "effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            90,
+            120,
+            150,
+            180
+          ]
+        },
+        "mana": {
+          "id": "value:effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage:mana",
+          "ownerId": "effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 110
+        },
+        "cooldown": {
+          "id": "value:effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage:cooldown",
+          "ownerId": "effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            13,
+            12,
+            11,
+            10
+          ]
+        },
+        "delay": {
+          "id": "value:effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage:delay",
+          "ownerId": "effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage:damageType",
+          "ownerId": "effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "chaos_knight_chaos_bolt"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage",
+      "legacyEffectId": "chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage",
+      "order": 1,
+      "legacyAbilityId": "chaos_knight_chaos_bolt",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage:range",
+        "value:effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage:duration",
+        "value:effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage:magnitude",
+        "value:effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage:mana",
+        "value:effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage:cooldown",
+        "value:effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage:delay",
+        "value:effect:chaos_knight_chaos_bolt:damage:chaos-bolt-minimum-damage:damageType"
+      ],
+      "activationId": "activation:81:chaos_knight_chaos_bolt"
+    },
+    {
+      "effectId": "chaos_knight_chaos_bolt:modifier:shard-bolt-illusion",
+      "heroId": "81",
+      "abilityId": "ability:81:chaos_knight_chaos_bolt",
+      "type": "modifier",
+      "subtype": "shard-bolt-illusion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion:range",
+          "ownerId": "effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion:duration",
+          "ownerId": "effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion:magnitude",
+          "ownerId": "effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion:mana",
+          "ownerId": "effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion:cooldown",
+          "ownerId": "effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion:delay",
+          "ownerId": "effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "chaos_knight_chaos_bolt:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion",
+      "legacyEffectId": "chaos_knight_chaos_bolt:modifier:shard-bolt-illusion",
+      "order": 2,
+      "legacyAbilityId": "chaos_knight_chaos_bolt",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion:range",
+        "value:effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion:duration",
+        "value:effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion:magnitude",
+        "value:effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion:mana",
+        "value:effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion:cooldown",
+        "value:effect:chaos_knight_chaos_bolt:modifier:shard-bolt-illusion:delay"
+      ],
+      "activationId": "activation:81:chaos_knight_chaos_bolt"
+    },
+    {
+      "effectId": "chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition",
+      "heroId": "81",
+      "abilityId": "ability:81:chaos_knight_reality_rift",
+      "type": "displacement",
+      "subtype": "rift-target-and-owned-illusion-reposition",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition:range",
+          "ownerId": "effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition",
+          "field": "range",
+          "state": "known",
+          "value": [
+            600,
+            650,
+            700,
+            750
+          ]
+        },
+        "duration": {
+          "id": "value:effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition:duration",
+          "ownerId": "effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition:magnitude",
+          "ownerId": "effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition:mana",
+          "ownerId": "effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition:cooldown",
+          "ownerId": "effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            15,
+            12,
+            9,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition:delay",
+          "ownerId": "effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "chaos_knight_reality_rift"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "mechanicsFacets": [
+        "illusions"
+      ],
+      "id": "effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition",
+      "legacyEffectId": "chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition",
+      "order": 3,
+      "legacyAbilityId": "chaos_knight_reality_rift",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition:range",
+        "value:effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition:duration",
+        "value:effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition:magnitude",
+        "value:effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition:mana",
+        "value:effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition:cooldown",
+        "value:effect:chaos_knight_reality_rift:displacement:rift-target-and-owned-illusion-reposition:delay"
+      ],
+      "activationId": "activation:81:chaos_knight_reality_rift"
+    },
+    {
+      "effectId": "chaos_knight_reality_rift:modifier:rift-armor-reduction",
+      "heroId": "81",
+      "abilityId": "ability:81:chaos_knight_reality_rift",
+      "type": "modifier",
+      "subtype": "rift-armor-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:chaos_knight_reality_rift:modifier:rift-armor-reduction:range",
+          "ownerId": "effect:chaos_knight_reality_rift:modifier:rift-armor-reduction",
+          "field": "range",
+          "state": "known",
+          "value": [
+            600,
+            650,
+            700,
+            750
+          ]
+        },
+        "duration": {
+          "id": "value:effect:chaos_knight_reality_rift:modifier:rift-armor-reduction:duration",
+          "ownerId": "effect:chaos_knight_reality_rift:modifier:rift-armor-reduction",
+          "field": "duration",
+          "state": "known",
+          "value": 6
+        },
+        "magnitude": {
+          "id": "value:effect:chaos_knight_reality_rift:modifier:rift-armor-reduction:magnitude",
+          "ownerId": "effect:chaos_knight_reality_rift:modifier:rift-armor-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "mana": {
+          "id": "value:effect:chaos_knight_reality_rift:modifier:rift-armor-reduction:mana",
+          "ownerId": "effect:chaos_knight_reality_rift:modifier:rift-armor-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 50
+        },
+        "cooldown": {
+          "id": "value:effect:chaos_knight_reality_rift:modifier:rift-armor-reduction:cooldown",
+          "ownerId": "effect:chaos_knight_reality_rift:modifier:rift-armor-reduction",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            15,
+            12,
+            9,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:chaos_knight_reality_rift:modifier:rift-armor-reduction:delay",
+          "ownerId": "effect:chaos_knight_reality_rift:modifier:rift-armor-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "chaos_knight_reality_rift"
+      },
+      "vulnerability": {
+        "rootDisabled": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:chaos_knight_reality_rift:modifier:rift-armor-reduction",
+      "legacyEffectId": "chaos_knight_reality_rift:modifier:rift-armor-reduction",
+      "order": 4,
+      "legacyAbilityId": "chaos_knight_reality_rift",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:chaos_knight_reality_rift:modifier:rift-armor-reduction:range",
+        "value:effect:chaos_knight_reality_rift:modifier:rift-armor-reduction:duration",
+        "value:effect:chaos_knight_reality_rift:modifier:rift-armor-reduction:magnitude",
+        "value:effect:chaos_knight_reality_rift:modifier:rift-armor-reduction:mana",
+        "value:effect:chaos_knight_reality_rift:modifier:rift-armor-reduction:cooldown",
+        "value:effect:chaos_knight_reality_rift:modifier:rift-armor-reduction:delay"
+      ],
+      "activationId": "activation:81:chaos_knight_reality_rift"
+    },
+    {
+      "effectId": "chaos_knight_chaos_strike:modifier:random-chaos-critical-strike",
+      "heroId": "81",
+      "abilityId": "ability:81:chaos_knight_chaos_strike",
+      "type": "modifier",
+      "subtype": "random-chaos-critical-strike",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike:range",
+          "ownerId": "effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike:duration",
+          "ownerId": "effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike:magnitude",
+          "ownerId": "effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike:mana",
+          "ownerId": "effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike:cooldown",
+          "ownerId": "effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike:delay",
+          "ownerId": "effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "chaosStrikeProcLanded"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "chaos_knight_chaos_strike:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike",
+      "legacyEffectId": "chaos_knight_chaos_strike:modifier:random-chaos-critical-strike",
+      "order": 5,
+      "legacyAbilityId": "chaos_knight_chaos_strike",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike:0"
+      ],
+      "valueIds": [
+        "value:effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike:range",
+        "value:effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike:duration",
+        "value:effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike:magnitude",
+        "value:effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike:mana",
+        "value:effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike:cooldown",
+        "value:effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike:delay"
+      ],
+      "activationId": "activation:81:chaos_knight_chaos_strike"
+    },
+    {
+      "effectId": "chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal",
+      "heroId": "81",
+      "abilityId": "ability:81:chaos_knight_chaos_strike",
+      "type": "heal",
+      "subtype": "chaos-strike-proc-lifesteal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal:range",
+          "ownerId": "effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal:duration",
+          "ownerId": "effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal:magnitude",
+          "ownerId": "effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal:mana",
+          "ownerId": "effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal:cooldown",
+          "ownerId": "effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal:delay",
+          "ownerId": "effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "chaosStrikeProcLanded"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "lifesteal"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "chaos_knight_chaos_strike:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal",
+      "legacyEffectId": "chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal",
+      "order": 6,
+      "legacyAbilityId": "chaos_knight_chaos_strike",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal:0"
+      ],
+      "valueIds": [
+        "value:effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal:range",
+        "value:effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal:duration",
+        "value:effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal:magnitude",
+        "value:effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal:mana",
+        "value:effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal:cooldown",
+        "value:effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal:delay"
+      ],
+      "activationId": "activation:81:chaos_knight_chaos_strike"
+    },
+    {
+      "effectId": "chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment",
+      "heroId": "81",
+      "abilityId": "ability:81:chaos_knight_fundamental_forging",
+      "type": "modifier",
+      "subtype": "additional-neutral-enchantment",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment:range",
+          "ownerId": "effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment:duration",
+          "ownerId": "effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment:magnitude",
+          "ownerId": "effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment:mana",
+          "ownerId": "effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment:cooldown",
+          "ownerId": "effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment:delay",
+          "ownerId": "effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "chaos_knight_fundamental_forging:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment",
+      "legacyEffectId": "chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment",
+      "order": 7,
+      "legacyAbilityId": "chaos_knight_fundamental_forging",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment:range",
+        "value:effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment:duration",
+        "value:effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment:magnitude",
+        "value:effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment:mana",
+        "value:effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment:cooldown",
+        "value:effect:chaos_knight_fundamental_forging:modifier:additional-neutral-enchantment:delay"
+      ],
+      "activationId": "activation:81:chaos_knight_fundamental_forging"
+    },
+    {
+      "effectId": "chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions",
+      "heroId": "81",
+      "abilityId": "ability:81:chaos_knight_phantasm",
+      "type": "modifier",
+      "subtype": "phantasm-target-dependent-illusions",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions:range",
+          "ownerId": "effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions:duration",
+          "ownerId": "effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions",
+          "field": "duration",
+          "state": "known",
+          "value": 30
+        },
+        "magnitude": {
+          "id": "value:effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions:magnitude",
+          "ownerId": "effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions:mana",
+          "ownerId": "effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            200,
+            300
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions:cooldown",
+          "ownerId": "effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            85,
+            80,
+            75
+          ]
+        },
+        "delay": {
+          "id": "value:effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions:delay",
+          "ownerId": "effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "chaos_knight_phantasm"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions",
+      "legacyEffectId": "chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions",
+      "order": 8,
+      "legacyAbilityId": "chaos_knight_phantasm",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions:range",
+        "value:effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions:duration",
+        "value:effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions:magnitude",
+        "value:effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions:mana",
+        "value:effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions:cooldown",
+        "value:effect:chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions:delay"
+      ],
+      "activationId": "activation:81:chaos_knight_phantasm"
+    },
+    {
+      "effectId": "chaos_knight_phantasm:dispel:phantasm-basic-self-dispel",
+      "heroId": "81",
+      "abilityId": "ability:81:chaos_knight_phantasm",
+      "type": "dispel",
+      "subtype": "phantasm-basic-self-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel:range",
+          "ownerId": "effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel:duration",
+          "ownerId": "effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel:magnitude",
+          "ownerId": "effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel:mana",
+          "ownerId": "effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            200,
+            300
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel:cooldown",
+          "ownerId": "effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            85,
+            80,
+            75
+          ]
+        },
+        "delay": {
+          "id": "value:effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel:delay",
+          "ownerId": "effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "basic"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "self-debuffs"
+        }
+      },
+      "relationships": {
+        "resourceId": "chaos_knight_phantasm"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel",
+      "legacyEffectId": "chaos_knight_phantasm:dispel:phantasm-basic-self-dispel",
+      "order": 9,
+      "legacyAbilityId": "chaos_knight_phantasm",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel:range",
+        "value:effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel:duration",
+        "value:effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel:magnitude",
+        "value:effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel:mana",
+        "value:effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel:cooldown",
+        "value:effect:chaos_knight_phantasm:dispel:phantasm-basic-self-dispel:delay"
+      ],
+      "activationId": "activation:81:chaos_knight_phantasm"
+    },
+    {
+      "effectId": "chaos_knight_phantasm:save:phantasm-brief-invulnerability",
+      "heroId": "81",
+      "abilityId": "ability:81:chaos_knight_phantasm",
+      "type": "save",
+      "subtype": "phantasm-brief-invulnerability",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability:range",
+          "ownerId": "effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability:duration",
+          "ownerId": "effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability",
+          "field": "duration",
+          "state": "known",
+          "value": 0.5
+        },
+        "magnitude": {
+          "id": "value:effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability:magnitude",
+          "ownerId": "effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability:mana",
+          "ownerId": "effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            200,
+            300
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability:cooldown",
+          "ownerId": "effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            85,
+            80,
+            75
+          ]
+        },
+        "delay": {
+          "id": "value:effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability:delay",
+          "ownerId": "effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "physical",
+            "magical",
+            "pure"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "chaos_knight_phantasm"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability",
+      "legacyEffectId": "chaos_knight_phantasm:save:phantasm-brief-invulnerability",
+      "order": 10,
+      "legacyAbilityId": "chaos_knight_phantasm",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability:range",
+        "value:effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability:duration",
+        "value:effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability:magnitude",
+        "value:effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability:mana",
+        "value:effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability:cooldown",
+        "value:effect:chaos_knight_phantasm:save:phantasm-brief-invulnerability:delay"
+      ],
+      "activationId": "activation:81:chaos_knight_phantasm"
+    },
+    {
+      "effectId": "chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions",
+      "heroId": "81",
+      "abilityId": "ability:81:chaos_knight_phantasm",
+      "type": "modifier",
+      "subtype": "scepter-probabilistic-and-allied-illusions",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions:range",
+          "ownerId": "effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions:duration",
+          "ownerId": "effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions:magnitude",
+          "ownerId": "effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions:mana",
+          "ownerId": "effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions:cooldown",
+          "ownerId": "effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions:delay",
+          "ownerId": "effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "chaos_knight_phantasm:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions",
+      "legacyEffectId": "chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions",
+      "order": 11,
+      "legacyAbilityId": "chaos_knight_phantasm",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions:range",
+        "value:effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions:duration",
+        "value:effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions:magnitude",
+        "value:effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions:mana",
+        "value:effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions:cooldown",
+        "value:effect:chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions:delay"
+      ],
+      "activationId": "activation:81:chaos_knight_phantasm"
+    },
+    {
+      "effectId": "chaos_knight_chaos_bolt:illusion:shard-bolt-illusion",
+      "heroId": "81",
+      "abilityId": "ability:81:chaos_knight_chaos_bolt",
+      "type": "illusion",
+      "subtype": "shard-bolt-illusion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion:range",
+          "ownerId": "effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion:duration",
+          "ownerId": "effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion:magnitude",
+          "ownerId": "effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion:mana",
+          "ownerId": "effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion:cooldown",
+          "ownerId": "effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion:delay",
+          "ownerId": "effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "chaos_knight_chaos_bolt:passive",
+        "replaces": [
+          "chaos_knight_chaos_bolt:modifier:shard-bolt-illusion"
+        ]
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "mechanicsFacets": [
+        "illusions"
+      ],
+      "id": "effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion",
+      "legacyEffectId": "chaos_knight_chaos_bolt:illusion:shard-bolt-illusion",
+      "order": 12,
+      "legacyAbilityId": "chaos_knight_chaos_bolt",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion:range",
+        "value:effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion:duration",
+        "value:effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion:magnitude",
+        "value:effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion:mana",
+        "value:effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion:cooldown",
+        "value:effect:chaos_knight_chaos_bolt:illusion:shard-bolt-illusion:delay"
+      ],
+      "activationId": "activation:81:chaos_knight_chaos_bolt"
+    },
+    {
+      "effectId": "chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions",
+      "heroId": "81",
+      "abilityId": "ability:81:chaos_knight_phantasm",
+      "type": "illusion",
+      "subtype": "phantasm-target-dependent-illusions",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions:range",
+          "ownerId": "effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions:duration",
+          "ownerId": "effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions",
+          "field": "duration",
+          "state": "known",
+          "value": 30
+        },
+        "magnitude": {
+          "id": "value:effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions:magnitude",
+          "ownerId": "effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions:mana",
+          "ownerId": "effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            200,
+            300
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions:cooldown",
+          "ownerId": "effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            85,
+            80,
+            75
+          ]
+        },
+        "delay": {
+          "id": "value:effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions:delay",
+          "ownerId": "effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "chaos_knight_phantasm",
+        "replaces": [
+          "chaos_knight_phantasm:modifier:phantasm-target-dependent-illusions"
+        ]
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "mechanicsFacets": [
+        "illusions"
+      ],
+      "id": "effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions",
+      "legacyEffectId": "chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions",
+      "order": 13,
+      "legacyAbilityId": "chaos_knight_phantasm",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions:range",
+        "value:effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions:duration",
+        "value:effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions:magnitude",
+        "value:effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions:mana",
+        "value:effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions:cooldown",
+        "value:effect:chaos_knight_phantasm:illusion:phantasm-target-dependent-illusions:delay"
+      ],
+      "activationId": "activation:81:chaos_knight_phantasm"
+    },
+    {
+      "effectId": "chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions",
+      "heroId": "81",
+      "abilityId": "ability:81:chaos_knight_phantasm",
+      "type": "illusion",
+      "subtype": "scepter-probabilistic-and-allied-illusions",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions:range",
+          "ownerId": "effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions:duration",
+          "ownerId": "effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions:magnitude",
+          "ownerId": "effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions:mana",
+          "ownerId": "effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions:cooldown",
+          "ownerId": "effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions:delay",
+          "ownerId": "effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "chaos_knight_phantasm:passive",
+        "replaces": [
+          "chaos_knight_phantasm:modifier:scepter-probabilistic-and-allied-illusions"
+        ]
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "mechanicsFacets": [
+        "illusions"
+      ],
+      "id": "effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions",
+      "legacyEffectId": "chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions",
+      "order": 14,
+      "legacyAbilityId": "chaos_knight_phantasm",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions:range",
+        "value:effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions:duration",
+        "value:effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions:magnitude",
+        "value:effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions:mana",
+        "value:effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions:cooldown",
+        "value:effect:chaos_knight_phantasm:illusion:scepter-probabilistic-and-allied-illusions:delay"
+      ],
+      "activationId": "activation:81:chaos_knight_phantasm"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike:0",
+      "ownerId": "effect:chaos_knight_chaos_strike:modifier:random-chaos-critical-strike",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "chaosStrikeProcLanded"
+      }
+    },
+    {
+      "id": "condition:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal:0",
+      "ownerId": "effect:chaos_knight_chaos_strike:heal:chaos-strike-proc-lifesteal",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "chaosStrikeProcLanded"
+      }
+    }
+  ]
+}

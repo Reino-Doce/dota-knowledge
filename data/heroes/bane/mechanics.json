@@ -1,0 +1,1866 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "bane_enfeeble:damage:damage-over-time",
+      "heroId": "3",
+      "abilityId": "ability:3:bane_enfeeble",
+      "type": "damage",
+      "subtype": "damage-over-time",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:bane_enfeeble:damage:damage-over-time:range",
+          "ownerId": "effect:bane_enfeeble:damage:damage-over-time",
+          "field": "range",
+          "state": "known",
+          "value": [
+            700,
+            800,
+            900,
+            1000
+          ]
+        },
+        "duration": {
+          "id": "value:effect:bane_enfeeble:damage:damage-over-time:duration",
+          "ownerId": "effect:bane_enfeeble:damage:damage-over-time",
+          "field": "duration",
+          "state": "known",
+          "value": 9
+        },
+        "magnitude": {
+          "id": "value:effect:bane_enfeeble:damage:damage-over-time:magnitude",
+          "ownerId": "effect:bane_enfeeble:damage:damage-over-time",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            12,
+            18,
+            24,
+            30
+          ]
+        },
+        "mana": {
+          "id": "value:effect:bane_enfeeble:damage:damage-over-time:mana",
+          "ownerId": "effect:bane_enfeeble:damage:damage-over-time",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:bane_enfeeble:damage:damage-over-time:cooldown",
+          "ownerId": "effect:bane_enfeeble:damage:damage-over-time",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            22,
+            17,
+            12,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:bane_enfeeble:damage:damage-over-time:delay",
+          "ownerId": "effect:bane_enfeeble:damage:damage-over-time",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:bane_enfeeble:damage:damage-over-time:damageType",
+          "ownerId": "effect:bane_enfeeble:damage:damage-over-time",
+          "field": "damageType",
+          "state": "known",
+          "value": "pure"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "bane_enfeeble"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:bane_enfeeble:damage:damage-over-time",
+      "legacyEffectId": "bane_enfeeble:damage:damage-over-time",
+      "order": 0,
+      "legacyAbilityId": "bane_enfeeble",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:bane_enfeeble:damage:damage-over-time:range",
+        "value:effect:bane_enfeeble:damage:damage-over-time:duration",
+        "value:effect:bane_enfeeble:damage:damage-over-time:magnitude",
+        "value:effect:bane_enfeeble:damage:damage-over-time:mana",
+        "value:effect:bane_enfeeble:damage:damage-over-time:cooldown",
+        "value:effect:bane_enfeeble:damage:damage-over-time:delay",
+        "value:effect:bane_enfeeble:damage:damage-over-time:damageType"
+      ],
+      "activationId": "activation:3:bane_enfeeble"
+    },
+    {
+      "effectId": "bane_enfeeble:modifier:attack-damage-and-cast-range-reduction",
+      "heroId": "3",
+      "abilityId": "ability:3:bane_enfeeble",
+      "type": "modifier",
+      "subtype": "attack-damage-and-cast-range-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction:range",
+          "ownerId": "effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction",
+          "field": "range",
+          "state": "known",
+          "value": [
+            700,
+            800,
+            900,
+            1000
+          ]
+        },
+        "duration": {
+          "id": "value:effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction:duration",
+          "ownerId": "effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction",
+          "field": "duration",
+          "state": "known",
+          "value": 9
+        },
+        "magnitude": {
+          "id": "value:effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction:magnitude",
+          "ownerId": "effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction:mana",
+          "ownerId": "effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction:cooldown",
+          "ownerId": "effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            22,
+            17,
+            12,
+            7
+          ]
+        },
+        "delay": {
+          "id": "value:effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction:delay",
+          "ownerId": "effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "bane_enfeeble"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction",
+      "legacyEffectId": "bane_enfeeble:modifier:attack-damage-and-cast-range-reduction",
+      "order": 1,
+      "legacyAbilityId": "bane_enfeeble",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction:range",
+        "value:effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction:duration",
+        "value:effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction:magnitude",
+        "value:effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction:mana",
+        "value:effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction:cooldown",
+        "value:effect:bane_enfeeble:modifier:attack-damage-and-cast-range-reduction:delay"
+      ],
+      "activationId": "activation:3:bane_enfeeble"
+    },
+    {
+      "effectId": "bane_brain_sap:damage:single-target",
+      "heroId": "3",
+      "abilityId": "ability:3:bane_brain_sap",
+      "type": "damage",
+      "subtype": "single-target",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:bane_brain_sap:damage:single-target:range",
+          "ownerId": "effect:bane_brain_sap:damage:single-target",
+          "field": "range",
+          "state": "known",
+          "value": 625
+        },
+        "duration": {
+          "id": "value:effect:bane_brain_sap:damage:single-target:duration",
+          "ownerId": "effect:bane_brain_sap:damage:single-target",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:bane_brain_sap:damage:single-target:magnitude",
+          "ownerId": "effect:bane_brain_sap:damage:single-target",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            90,
+            160,
+            230,
+            300
+          ]
+        },
+        "mana": {
+          "id": "value:effect:bane_brain_sap:damage:single-target:mana",
+          "ownerId": "effect:bane_brain_sap:damage:single-target",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            105,
+            120,
+            135,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:bane_brain_sap:damage:single-target:cooldown",
+          "ownerId": "effect:bane_brain_sap:damage:single-target",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            17,
+            15,
+            13,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:bane_brain_sap:damage:single-target:delay",
+          "ownerId": "effect:bane_brain_sap:damage:single-target",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:bane_brain_sap:damage:single-target:damageType",
+          "ownerId": "effect:bane_brain_sap:damage:single-target",
+          "field": "damageType",
+          "state": "known",
+          "value": "pure"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "bane_brain_sap"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:bane_brain_sap:damage:single-target",
+      "legacyEffectId": "bane_brain_sap:damage:single-target",
+      "order": 2,
+      "legacyAbilityId": "bane_brain_sap",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:bane_brain_sap:damage:single-target:range",
+        "value:effect:bane_brain_sap:damage:single-target:duration",
+        "value:effect:bane_brain_sap:damage:single-target:magnitude",
+        "value:effect:bane_brain_sap:damage:single-target:mana",
+        "value:effect:bane_brain_sap:damage:single-target:cooldown",
+        "value:effect:bane_brain_sap:damage:single-target:delay",
+        "value:effect:bane_brain_sap:damage:single-target:damageType"
+      ],
+      "activationId": "activation:3:bane_brain_sap"
+    },
+    {
+      "effectId": "bane_brain_sap:heal:self-sap",
+      "heroId": "3",
+      "abilityId": "ability:3:bane_brain_sap",
+      "type": "heal",
+      "subtype": "self-sap",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:bane_brain_sap:heal:self-sap:range",
+          "ownerId": "effect:bane_brain_sap:heal:self-sap",
+          "field": "range",
+          "state": "known",
+          "value": 625
+        },
+        "duration": {
+          "id": "value:effect:bane_brain_sap:heal:self-sap:duration",
+          "ownerId": "effect:bane_brain_sap:heal:self-sap",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:bane_brain_sap:heal:self-sap:magnitude",
+          "ownerId": "effect:bane_brain_sap:heal:self-sap",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:bane_brain_sap:heal:self-sap:mana",
+          "ownerId": "effect:bane_brain_sap:heal:self-sap",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            105,
+            120,
+            135,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:bane_brain_sap:heal:self-sap:cooldown",
+          "ownerId": "effect:bane_brain_sap:heal:self-sap",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            17,
+            15,
+            13,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:bane_brain_sap:heal:self-sap:delay",
+          "ownerId": "effect:bane_brain_sap:heal:self-sap",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "brainSapEnemyTargetAvailable"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "bane_brain_sap"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:bane_brain_sap:heal:self-sap",
+      "legacyEffectId": "bane_brain_sap:heal:self-sap",
+      "order": 3,
+      "legacyAbilityId": "bane_brain_sap",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:bane_brain_sap:heal:self-sap:0"
+      ],
+      "valueIds": [
+        "value:effect:bane_brain_sap:heal:self-sap:range",
+        "value:effect:bane_brain_sap:heal:self-sap:duration",
+        "value:effect:bane_brain_sap:heal:self-sap:magnitude",
+        "value:effect:bane_brain_sap:heal:self-sap:mana",
+        "value:effect:bane_brain_sap:heal:self-sap:cooldown",
+        "value:effect:bane_brain_sap:heal:self-sap:delay"
+      ],
+      "activationId": "activation:3:bane_brain_sap"
+    },
+    {
+      "effectId": "bane_brain_sap:modifier:shard-branch",
+      "heroId": "3",
+      "abilityId": "ability:3:bane_brain_sap",
+      "type": "modifier",
+      "subtype": "shard-branch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:bane_brain_sap:modifier:shard-branch:range",
+          "ownerId": "effect:bane_brain_sap:modifier:shard-branch",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:bane_brain_sap:modifier:shard-branch:duration",
+          "ownerId": "effect:bane_brain_sap:modifier:shard-branch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:bane_brain_sap:modifier:shard-branch:magnitude",
+          "ownerId": "effect:bane_brain_sap:modifier:shard-branch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:bane_brain_sap:modifier:shard-branch:mana",
+          "ownerId": "effect:bane_brain_sap:modifier:shard-branch",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:bane_brain_sap:modifier:shard-branch:cooldown",
+          "ownerId": "effect:bane_brain_sap:modifier:shard-branch",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:bane_brain_sap:modifier:shard-branch:delay",
+          "ownerId": "effect:bane_brain_sap:modifier:shard-branch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "bane_brain_sap:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:bane_brain_sap:modifier:shard-branch",
+      "legacyEffectId": "bane_brain_sap:modifier:shard-branch",
+      "order": 4,
+      "legacyAbilityId": "bane_brain_sap",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:bane_brain_sap:modifier:shard-branch:range",
+        "value:effect:bane_brain_sap:modifier:shard-branch:duration",
+        "value:effect:bane_brain_sap:modifier:shard-branch:magnitude",
+        "value:effect:bane_brain_sap:modifier:shard-branch:mana",
+        "value:effect:bane_brain_sap:modifier:shard-branch:cooldown",
+        "value:effect:bane_brain_sap:modifier:shard-branch:delay"
+      ],
+      "activationId": "activation:3:bane_brain_sap"
+    },
+    {
+      "effectId": "bane_nightmare:control:sleep",
+      "heroId": "3",
+      "abilityId": "ability:3:bane_nightmare",
+      "type": "control",
+      "subtype": "sleep",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:bane_nightmare:control:sleep:range",
+          "ownerId": "effect:bane_nightmare:control:sleep",
+          "field": "range",
+          "state": "known",
+          "value": [
+            550,
+            600,
+            650,
+            700
+          ]
+        },
+        "duration": {
+          "id": "value:effect:bane_nightmare:control:sleep:duration",
+          "ownerId": "effect:bane_nightmare:control:sleep",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:bane_nightmare:control:sleep:magnitude",
+          "ownerId": "effect:bane_nightmare:control:sleep",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:bane_nightmare:control:sleep:mana",
+          "ownerId": "effect:bane_nightmare:control:sleep",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            120,
+            130,
+            140,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:bane_nightmare:control:sleep:cooldown",
+          "ownerId": "effect:bane_nightmare:control:sleep",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            25,
+            22,
+            19,
+            16
+          ]
+        },
+        "delay": {
+          "id": "value:effect:bane_nightmare:control:sleep:delay",
+          "ownerId": "effect:bane_nightmare:control:sleep",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "bane_nightmare"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [
+        "Damage wakes the target; direct attacks transfer Nightmare to the attacker, except Bane can attack freely."
+      ],
+      "id": "effect:bane_nightmare:control:sleep",
+      "legacyEffectId": "bane_nightmare:control:sleep",
+      "order": 5,
+      "legacyAbilityId": "bane_nightmare",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:bane_nightmare:control:sleep:range",
+        "value:effect:bane_nightmare:control:sleep:duration",
+        "value:effect:bane_nightmare:control:sleep:magnitude",
+        "value:effect:bane_nightmare:control:sleep:mana",
+        "value:effect:bane_nightmare:control:sleep:cooldown",
+        "value:effect:bane_nightmare:control:sleep:delay"
+      ],
+      "activationId": "activation:3:bane_nightmare"
+    },
+    {
+      "effectId": "bane_nightmare:save:initial-invulnerability",
+      "heroId": "3",
+      "abilityId": "ability:3:bane_nightmare",
+      "type": "save",
+      "subtype": "initial-invulnerability",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally",
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:bane_nightmare:save:initial-invulnerability:range",
+          "ownerId": "effect:bane_nightmare:save:initial-invulnerability",
+          "field": "range",
+          "state": "known",
+          "value": [
+            550,
+            600,
+            650,
+            700
+          ]
+        },
+        "duration": {
+          "id": "value:effect:bane_nightmare:save:initial-invulnerability:duration",
+          "ownerId": "effect:bane_nightmare:save:initial-invulnerability",
+          "field": "duration",
+          "state": "known",
+          "value": 1
+        },
+        "magnitude": {
+          "id": "value:effect:bane_nightmare:save:initial-invulnerability:magnitude",
+          "ownerId": "effect:bane_nightmare:save:initial-invulnerability",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:bane_nightmare:save:initial-invulnerability:mana",
+          "ownerId": "effect:bane_nightmare:save:initial-invulnerability",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            120,
+            130,
+            140,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:bane_nightmare:save:initial-invulnerability:cooldown",
+          "ownerId": "effect:bane_nightmare:save:initial-invulnerability",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            25,
+            22,
+            19,
+            16
+          ]
+        },
+        "delay": {
+          "id": "value:effect:bane_nightmare:save:initial-invulnerability:delay",
+          "ownerId": "effect:bane_nightmare:save:initial-invulnerability",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "allyCanBeNightmared"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "protectsDamageTypes": {
+          "state": "known",
+          "value": [
+            "physical",
+            "magical",
+            "pure"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "bane_nightmare"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [
+        "Debuff-immune allies are excluded by current target flags."
+      ],
+      "id": "effect:bane_nightmare:save:initial-invulnerability",
+      "legacyEffectId": "bane_nightmare:save:initial-invulnerability",
+      "order": 6,
+      "legacyAbilityId": "bane_nightmare",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:bane_nightmare:save:initial-invulnerability:0"
+      ],
+      "valueIds": [
+        "value:effect:bane_nightmare:save:initial-invulnerability:range",
+        "value:effect:bane_nightmare:save:initial-invulnerability:duration",
+        "value:effect:bane_nightmare:save:initial-invulnerability:magnitude",
+        "value:effect:bane_nightmare:save:initial-invulnerability:mana",
+        "value:effect:bane_nightmare:save:initial-invulnerability:cooldown",
+        "value:effect:bane_nightmare:save:initial-invulnerability:delay"
+      ],
+      "activationId": "activation:3:bane_nightmare"
+    },
+    {
+      "effectId": "bane_fiends_grip:control:channeled-disable",
+      "heroId": "3",
+      "abilityId": "ability:3:bane_fiends_grip",
+      "type": "control",
+      "subtype": "channeled-disable",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:bane_fiends_grip:control:channeled-disable:range",
+          "ownerId": "effect:bane_fiends_grip:control:channeled-disable",
+          "field": "range",
+          "state": "known",
+          "value": 625
+        },
+        "duration": {
+          "id": "value:effect:bane_fiends_grip:control:channeled-disable:duration",
+          "ownerId": "effect:bane_fiends_grip:control:channeled-disable",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            4.75,
+            5.25,
+            5.75
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:bane_fiends_grip:control:channeled-disable:magnitude",
+          "ownerId": "effect:bane_fiends_grip:control:channeled-disable",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:bane_fiends_grip:control:channeled-disable:mana",
+          "ownerId": "effect:bane_fiends_grip:control:channeled-disable",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            200,
+            300,
+            400
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:bane_fiends_grip:control:channeled-disable:cooldown",
+          "ownerId": "effect:bane_fiends_grip:control:channeled-disable",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            120,
+            110,
+            100
+          ]
+        },
+        "delay": {
+          "id": "value:effect:bane_fiends_grip:control:channeled-disable:delay",
+          "ownerId": "effect:bane_fiends_grip:control:channeled-disable",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "channelMaintained"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "bane_fiends_grip"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:bane_fiends_grip:control:channeled-disable",
+      "legacyEffectId": "bane_fiends_grip:control:channeled-disable",
+      "order": 7,
+      "legacyAbilityId": "bane_fiends_grip",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:bane_fiends_grip:control:channeled-disable:0"
+      ],
+      "valueIds": [
+        "value:effect:bane_fiends_grip:control:channeled-disable:range",
+        "value:effect:bane_fiends_grip:control:channeled-disable:duration",
+        "value:effect:bane_fiends_grip:control:channeled-disable:magnitude",
+        "value:effect:bane_fiends_grip:control:channeled-disable:mana",
+        "value:effect:bane_fiends_grip:control:channeled-disable:cooldown",
+        "value:effect:bane_fiends_grip:control:channeled-disable:delay"
+      ],
+      "activationId": "activation:3:bane_fiends_grip"
+    },
+    {
+      "effectId": "bane_fiends_grip:damage:channeled-damage",
+      "heroId": "3",
+      "abilityId": "ability:3:bane_fiends_grip",
+      "type": "damage",
+      "subtype": "channeled-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:bane_fiends_grip:damage:channeled-damage:range",
+          "ownerId": "effect:bane_fiends_grip:damage:channeled-damage",
+          "field": "range",
+          "state": "known",
+          "value": 625
+        },
+        "duration": {
+          "id": "value:effect:bane_fiends_grip:damage:channeled-damage:duration",
+          "ownerId": "effect:bane_fiends_grip:damage:channeled-damage",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            4.75,
+            5.25,
+            5.75
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:bane_fiends_grip:damage:channeled-damage:magnitude",
+          "ownerId": "effect:bane_fiends_grip:damage:channeled-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            70,
+            110,
+            150
+          ]
+        },
+        "mana": {
+          "id": "value:effect:bane_fiends_grip:damage:channeled-damage:mana",
+          "ownerId": "effect:bane_fiends_grip:damage:channeled-damage",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            200,
+            300,
+            400
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:bane_fiends_grip:damage:channeled-damage:cooldown",
+          "ownerId": "effect:bane_fiends_grip:damage:channeled-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            120,
+            110,
+            100
+          ]
+        },
+        "delay": {
+          "id": "value:effect:bane_fiends_grip:damage:channeled-damage:delay",
+          "ownerId": "effect:bane_fiends_grip:damage:channeled-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:bane_fiends_grip:damage:channeled-damage:damageType",
+          "ownerId": "effect:bane_fiends_grip:damage:channeled-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "pure"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "channelMaintained"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "bane_fiends_grip"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:bane_fiends_grip:damage:channeled-damage",
+      "legacyEffectId": "bane_fiends_grip:damage:channeled-damage",
+      "order": 8,
+      "legacyAbilityId": "bane_fiends_grip",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:bane_fiends_grip:damage:channeled-damage:0"
+      ],
+      "valueIds": [
+        "value:effect:bane_fiends_grip:damage:channeled-damage:range",
+        "value:effect:bane_fiends_grip:damage:channeled-damage:duration",
+        "value:effect:bane_fiends_grip:damage:channeled-damage:magnitude",
+        "value:effect:bane_fiends_grip:damage:channeled-damage:mana",
+        "value:effect:bane_fiends_grip:damage:channeled-damage:cooldown",
+        "value:effect:bane_fiends_grip:damage:channeled-damage:delay",
+        "value:effect:bane_fiends_grip:damage:channeled-damage:damageType"
+      ],
+      "activationId": "activation:3:bane_fiends_grip"
+    },
+    {
+      "effectId": "bane_fiends_grip:modifier:scepter-branch",
+      "heroId": "3",
+      "abilityId": "ability:3:bane_fiends_grip",
+      "type": "modifier",
+      "subtype": "scepter-branch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:bane_fiends_grip:modifier:scepter-branch:range",
+          "ownerId": "effect:bane_fiends_grip:modifier:scepter-branch",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:bane_fiends_grip:modifier:scepter-branch:duration",
+          "ownerId": "effect:bane_fiends_grip:modifier:scepter-branch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:bane_fiends_grip:modifier:scepter-branch:magnitude",
+          "ownerId": "effect:bane_fiends_grip:modifier:scepter-branch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:bane_fiends_grip:modifier:scepter-branch:mana",
+          "ownerId": "effect:bane_fiends_grip:modifier:scepter-branch",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:bane_fiends_grip:modifier:scepter-branch:cooldown",
+          "ownerId": "effect:bane_fiends_grip:modifier:scepter-branch",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:bane_fiends_grip:modifier:scepter-branch:delay",
+          "ownerId": "effect:bane_fiends_grip:modifier:scepter-branch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "bane_fiends_grip:passive"
+      },
+      "vulnerability": {
+        "channel": true
+      },
+      "exceptions": [],
+      "id": "effect:bane_fiends_grip:modifier:scepter-branch",
+      "legacyEffectId": "bane_fiends_grip:modifier:scepter-branch",
+      "order": 9,
+      "legacyAbilityId": "bane_fiends_grip",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:bane_fiends_grip:modifier:scepter-branch:range",
+        "value:effect:bane_fiends_grip:modifier:scepter-branch:duration",
+        "value:effect:bane_fiends_grip:modifier:scepter-branch:magnitude",
+        "value:effect:bane_fiends_grip:modifier:scepter-branch:mana",
+        "value:effect:bane_fiends_grip:modifier:scepter-branch:cooldown",
+        "value:effect:bane_fiends_grip:modifier:scepter-branch:delay"
+      ],
+      "activationId": "activation:3:bane_fiends_grip"
+    },
+    {
+      "effectId": "bane_nightmare_end:modifier:end-own-nightmares",
+      "heroId": "3",
+      "abilityId": "ability:3:bane_nightmare_end",
+      "type": "modifier",
+      "subtype": "end-own-nightmares",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally",
+            "enemy",
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:bane_nightmare_end:modifier:end-own-nightmares:range",
+          "ownerId": "effect:bane_nightmare_end:modifier:end-own-nightmares",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:bane_nightmare_end:modifier:end-own-nightmares:duration",
+          "ownerId": "effect:bane_nightmare_end:modifier:end-own-nightmares",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:bane_nightmare_end:modifier:end-own-nightmares:magnitude",
+          "ownerId": "effect:bane_nightmare_end:modifier:end-own-nightmares",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:bane_nightmare_end:modifier:end-own-nightmares:mana",
+          "ownerId": "effect:bane_nightmare_end:modifier:end-own-nightmares",
+          "field": "mana",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "cooldown": {
+          "id": "value:effect:bane_nightmare_end:modifier:end-own-nightmares:cooldown",
+          "ownerId": "effect:bane_nightmare_end:modifier:end-own-nightmares",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:bane_nightmare_end:modifier:end-own-nightmares:delay",
+          "ownerId": "effect:bane_nightmare_end:modifier:end-own-nightmares",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [
+          "bane_nightmare"
+        ],
+        "upgrades": [],
+        "requiresContext": [
+          "nightmareActive"
+        ]
+      },
+      "delivery": {
+        "kind": "no-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "bane_nightmare_end"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:bane_nightmare_end:modifier:end-own-nightmares",
+      "legacyEffectId": "bane_nightmare_end:modifier:end-own-nightmares",
+      "order": 10,
+      "legacyAbilityId": "bane_nightmare_end",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:bane_nightmare_end:modifier:end-own-nightmares:0"
+      ],
+      "valueIds": [
+        "value:effect:bane_nightmare_end:modifier:end-own-nightmares:range",
+        "value:effect:bane_nightmare_end:modifier:end-own-nightmares:duration",
+        "value:effect:bane_nightmare_end:modifier:end-own-nightmares:magnitude",
+        "value:effect:bane_nightmare_end:modifier:end-own-nightmares:mana",
+        "value:effect:bane_nightmare_end:modifier:end-own-nightmares:cooldown",
+        "value:effect:bane_nightmare_end:modifier:end-own-nightmares:delay"
+      ],
+      "activationId": "activation:3:bane_nightmare_end"
+    },
+    {
+      "effectId": "bane_ichor_of_nyctasha:passive:terror-status-resistance",
+      "heroId": "3",
+      "abilityId": "ability:3:bane_ichor_of_nyctasha",
+      "type": "passive",
+      "subtype": "terror-status-resistance",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:bane_ichor_of_nyctasha:passive:terror-status-resistance:range",
+          "ownerId": "effect:bane_ichor_of_nyctasha:passive:terror-status-resistance",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:bane_ichor_of_nyctasha:passive:terror-status-resistance:duration",
+          "ownerId": "effect:bane_ichor_of_nyctasha:passive:terror-status-resistance",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:bane_ichor_of_nyctasha:passive:terror-status-resistance:magnitude",
+          "ownerId": "effect:bane_ichor_of_nyctasha:passive:terror-status-resistance",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:bane_ichor_of_nyctasha:passive:terror-status-resistance:mana",
+          "ownerId": "effect:bane_ichor_of_nyctasha:passive:terror-status-resistance",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:bane_ichor_of_nyctasha:passive:terror-status-resistance:cooldown",
+          "ownerId": "effect:bane_ichor_of_nyctasha:passive:terror-status-resistance",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:bane_ichor_of_nyctasha:passive:terror-status-resistance:delay",
+          "ownerId": "effect:bane_ichor_of_nyctasha:passive:terror-status-resistance",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "targetHasBaneTerrorStacks"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "bane_ichor_of_nyctasha"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:bane_ichor_of_nyctasha:passive:terror-status-resistance",
+      "legacyEffectId": "bane_ichor_of_nyctasha:passive:terror-status-resistance",
+      "order": 11,
+      "legacyAbilityId": "bane_ichor_of_nyctasha",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:bane_ichor_of_nyctasha:passive:terror-status-resistance:0"
+      ],
+      "valueIds": [
+        "value:effect:bane_ichor_of_nyctasha:passive:terror-status-resistance:range",
+        "value:effect:bane_ichor_of_nyctasha:passive:terror-status-resistance:duration",
+        "value:effect:bane_ichor_of_nyctasha:passive:terror-status-resistance:magnitude",
+        "value:effect:bane_ichor_of_nyctasha:passive:terror-status-resistance:mana",
+        "value:effect:bane_ichor_of_nyctasha:passive:terror-status-resistance:cooldown",
+        "value:effect:bane_ichor_of_nyctasha:passive:terror-status-resistance:delay"
+      ],
+      "activationId": "activation:3:bane_ichor_of_nyctasha"
+    },
+    {
+      "effectId": "bane_fiends_grip:illusion:scepter-branch",
+      "heroId": "3",
+      "abilityId": "ability:3:bane_fiends_grip",
+      "type": "illusion",
+      "subtype": "scepter-branch",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:bane_fiends_grip:illusion:scepter-branch:range",
+          "ownerId": "effect:bane_fiends_grip:illusion:scepter-branch",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:bane_fiends_grip:illusion:scepter-branch:duration",
+          "ownerId": "effect:bane_fiends_grip:illusion:scepter-branch",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:bane_fiends_grip:illusion:scepter-branch:magnitude",
+          "ownerId": "effect:bane_fiends_grip:illusion:scepter-branch",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:bane_fiends_grip:illusion:scepter-branch:mana",
+          "ownerId": "effect:bane_fiends_grip:illusion:scepter-branch",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:bane_fiends_grip:illusion:scepter-branch:cooldown",
+          "ownerId": "effect:bane_fiends_grip:illusion:scepter-branch",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:bane_fiends_grip:illusion:scepter-branch:delay",
+          "ownerId": "effect:bane_fiends_grip:illusion:scepter-branch",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "unknown",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "bane_fiends_grip:passive",
+        "replaces": [
+          "bane_fiends_grip:modifier:scepter-branch"
+        ]
+      },
+      "vulnerability": {
+        "channel": true
+      },
+      "exceptions": [],
+      "mechanicsFacets": [
+        "illusions"
+      ],
+      "id": "effect:bane_fiends_grip:illusion:scepter-branch",
+      "legacyEffectId": "bane_fiends_grip:illusion:scepter-branch",
+      "order": 12,
+      "legacyAbilityId": "bane_fiends_grip",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:bane_fiends_grip:illusion:scepter-branch:range",
+        "value:effect:bane_fiends_grip:illusion:scepter-branch:duration",
+        "value:effect:bane_fiends_grip:illusion:scepter-branch:magnitude",
+        "value:effect:bane_fiends_grip:illusion:scepter-branch:mana",
+        "value:effect:bane_fiends_grip:illusion:scepter-branch:cooldown",
+        "value:effect:bane_fiends_grip:illusion:scepter-branch:delay"
+      ],
+      "activationId": "activation:3:bane_fiends_grip"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:bane_brain_sap:heal:self-sap:0",
+      "ownerId": "effect:bane_brain_sap:heal:self-sap",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "brainSapEnemyTargetAvailable"
+      }
+    },
+    {
+      "id": "condition:bane_nightmare:save:initial-invulnerability:0",
+      "ownerId": "effect:bane_nightmare:save:initial-invulnerability",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyCanBeNightmared"
+      }
+    },
+    {
+      "id": "condition:bane_fiends_grip:control:channeled-disable:0",
+      "ownerId": "effect:bane_fiends_grip:control:channeled-disable",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "channelMaintained"
+      }
+    },
+    {
+      "id": "condition:bane_fiends_grip:damage:channeled-damage:0",
+      "ownerId": "effect:bane_fiends_grip:damage:channeled-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "channelMaintained"
+      }
+    },
+    {
+      "id": "condition:bane_nightmare_end:modifier:end-own-nightmares:0",
+      "ownerId": "effect:bane_nightmare_end:modifier:end-own-nightmares",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "nightmareActive"
+      }
+    },
+    {
+      "id": "condition:bane_ichor_of_nyctasha:passive:terror-status-resistance:0",
+      "ownerId": "effect:bane_ichor_of_nyctasha:passive:terror-status-resistance",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "targetHasBaneTerrorStacks"
+      }
+    }
+  ]
+}

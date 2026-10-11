@@ -1,0 +1,3047 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "ancient_apparition_ice_blast:health-restoration-prevention",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_ice_blast",
+      "type": "anti-heal",
+      "subtype": "health-restoration-prevention",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_ice_blast:health-restoration-prevention:range",
+          "ownerId": "effect:ancient_apparition_ice_blast:health-restoration-prevention",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This effect reach is not established by a matching local range declaration; dependency geometry and engine interpretation remain unverified."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_ice_blast:health-restoration-prevention:duration",
+          "ownerId": "effect:ancient_apparition_ice_blast:health-restoration-prevention",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            10,
+            11,
+            12
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_ice_blast:health-restoration-prevention:magnitude",
+          "ownerId": "effect:ancient_apparition_ice_blast:health-restoration-prevention",
+          "field": "magnitude",
+          "state": "known",
+          "value": 100
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_ice_blast:health-restoration-prevention:mana",
+          "ownerId": "effect:ancient_apparition_ice_blast:health-restoration-prevention",
+          "field": "mana",
+          "state": "known",
+          "value": 175
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_ice_blast:health-restoration-prevention:cooldown",
+          "ownerId": "effect:ancient_apparition_ice_blast:health-restoration-prevention",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            50,
+            45,
+            40
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_ice_blast:health-restoration-prevention:delay",
+          "ownerId": "effect:ancient_apparition_ice_blast:health-restoration-prevention",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "Cast point omits declared projectile travel and any channel or release timing; effective impact delay requires geometry and engine verification."
+        },
+        "castPoint": {
+          "id": "value:effect:ancient_apparition_ice_blast:health-restoration-prevention:castPoint",
+          "ownerId": "effect:ancient_apparition_ice_blast:health-restoration-prevention",
+          "field": "castPoint",
+          "state": "known",
+          "value": [
+            0.01,
+            0.01,
+            0.01
+          ]
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "tracer-projectile",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": true
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by declarations"
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing",
+            "regeneration"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_ice_blast"
+      },
+      "vulnerability": {},
+      "exceptions": [
+        "sunder",
+        "time_lapse",
+        "supernova",
+        "projectile-must-connect"
+      ],
+      "id": "effect:ancient_apparition_ice_blast:health-restoration-prevention",
+      "legacyEffectId": "ancient_apparition_ice_blast:health-restoration-prevention",
+      "order": 0,
+      "legacyAbilityId": "ancient_apparition_ice_blast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ancient_apparition_ice_blast:health-restoration-prevention:range",
+        "value:effect:ancient_apparition_ice_blast:health-restoration-prevention:duration",
+        "value:effect:ancient_apparition_ice_blast:health-restoration-prevention:magnitude",
+        "value:effect:ancient_apparition_ice_blast:health-restoration-prevention:mana",
+        "value:effect:ancient_apparition_ice_blast:health-restoration-prevention:cooldown",
+        "value:effect:ancient_apparition_ice_blast:health-restoration-prevention:delay",
+        "value:effect:ancient_apparition_ice_blast:health-restoration-prevention:castPoint"
+      ],
+      "activationId": "activation:68:ancient_apparition_ice_blast"
+    },
+    {
+      "effectId": "ancient_apparition_cold_feet:modifier:paid-cold-feet-curse",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_cold_feet",
+      "type": "modifier",
+      "subtype": "paid-cold-feet-curse",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse:range",
+          "ownerId": "effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse",
+          "field": "range",
+          "state": "known",
+          "value": [
+            700,
+            800,
+            900,
+            1000
+          ]
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse:duration",
+          "ownerId": "effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse:magnitude",
+          "ownerId": "effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse:mana",
+          "ownerId": "effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            110,
+            115,
+            120,
+            125
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse:cooldown",
+          "ownerId": "effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            15,
+            13,
+            11,
+            9
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse:delay",
+          "ownerId": "effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_cold_feet"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse",
+      "legacyEffectId": "ancient_apparition_cold_feet:modifier:paid-cold-feet-curse",
+      "order": 1,
+      "legacyAbilityId": "ancient_apparition_cold_feet",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse:range",
+        "value:effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse:duration",
+        "value:effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse:magnitude",
+        "value:effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse:mana",
+        "value:effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse:cooldown",
+        "value:effect:ancient_apparition_cold_feet:modifier:paid-cold-feet-curse:delay"
+      ],
+      "activationId": "activation:68:ancient_apparition_cold_feet"
+    },
+    {
+      "effectId": "ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_cold_feet",
+      "type": "damage",
+      "subtype": "cold-feet-active-curse-damage-rate",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:range",
+          "ownerId": "effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:duration",
+          "ownerId": "effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:magnitude",
+          "ownerId": "effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            25,
+            45,
+            65,
+            85
+          ]
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:mana",
+          "ownerId": "effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:cooldown",
+          "ownerId": "effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:delay",
+          "ownerId": "effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:damageType",
+          "ownerId": "effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "coldFeetCurseActive",
+          "targetInsideColdFeetBreakDistance"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_cold_feet:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate",
+      "legacyEffectId": "ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate",
+      "order": 2,
+      "legacyAbilityId": "ancient_apparition_cold_feet",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:0",
+        "condition:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:1"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:range",
+        "value:effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:duration",
+        "value:effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:magnitude",
+        "value:effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:mana",
+        "value:effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:cooldown",
+        "value:effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:delay",
+        "value:effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:damageType"
+      ],
+      "activationId": "activation:68:ancient_apparition_cold_feet"
+    },
+    {
+      "effectId": "ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_cold_feet",
+      "type": "control",
+      "subtype": "cold-feet-completed-curse-freeze",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze:range",
+          "ownerId": "effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze:duration",
+          "ownerId": "effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.8,
+            2.2,
+            2.6,
+            3
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze:magnitude",
+          "ownerId": "effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze:mana",
+          "ownerId": "effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze:cooldown",
+          "ownerId": "effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze:delay",
+          "ownerId": "effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "coldFeetCurseSurvivesFourSeconds",
+          "targetInsideColdFeetBreakDistance"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_cold_feet:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze",
+      "legacyEffectId": "ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze",
+      "order": 3,
+      "legacyAbilityId": "ancient_apparition_cold_feet",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze:0",
+        "condition:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze:1"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze:range",
+        "value:effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze:duration",
+        "value:effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze:magnitude",
+        "value:effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze:mana",
+        "value:effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze:cooldown",
+        "value:effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze:delay"
+      ],
+      "activationId": "activation:68:ancient_apparition_cold_feet"
+    },
+    {
+      "effectId": "ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_ice_vortex",
+      "type": "modifier",
+      "subtype": "paid-ice-vortex-placement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement:range",
+          "ownerId": "effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement",
+          "field": "range",
+          "state": "known",
+          "value": [
+            1200,
+            1200,
+            1200,
+            1200
+          ]
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement:duration",
+          "ownerId": "effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            6,
+            8,
+            10,
+            12
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement:magnitude",
+          "ownerId": "effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement:mana",
+          "ownerId": "effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            40,
+            55,
+            70,
+            85
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement:cooldown",
+          "ownerId": "effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            10,
+            8,
+            6,
+            4
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement:delay",
+          "ownerId": "effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_ice_vortex"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement",
+      "legacyEffectId": "ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement",
+      "order": 4,
+      "legacyAbilityId": "ancient_apparition_ice_vortex",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement:range",
+        "value:effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement:duration",
+        "value:effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement:magnitude",
+        "value:effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement:mana",
+        "value:effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement:cooldown",
+        "value:effect:ancient_apparition_ice_vortex:modifier:paid-ice-vortex-placement:delay"
+      ],
+      "activationId": "activation:68:ancient_apparition_ice_vortex"
+    },
+    {
+      "effectId": "ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_ice_vortex",
+      "type": "damage",
+      "subtype": "existing-vortex-damage-rate",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:range",
+          "ownerId": "effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:duration",
+          "ownerId": "effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:magnitude",
+          "ownerId": "effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:mana",
+          "ownerId": "effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:cooldown",
+          "ownerId": "effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:delay",
+          "ownerId": "effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:damageType",
+          "ownerId": "effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "iceVortexEstablished",
+          "enemyInsideIceVortex"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_ice_vortex:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate",
+      "legacyEffectId": "ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate",
+      "order": 5,
+      "legacyAbilityId": "ancient_apparition_ice_vortex",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:0",
+        "condition:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:1"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:range",
+        "value:effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:duration",
+        "value:effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:magnitude",
+        "value:effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:mana",
+        "value:effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:cooldown",
+        "value:effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:delay",
+        "value:effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:damageType"
+      ],
+      "activationId": "activation:68:ancient_apparition_ice_vortex"
+    },
+    {
+      "effectId": "ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_ice_vortex",
+      "type": "slow",
+      "subtype": "existing-vortex-movement-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow:range",
+          "ownerId": "effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow:duration",
+          "ownerId": "effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow:magnitude",
+          "ownerId": "effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": -8
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow:mana",
+          "ownerId": "effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow:cooldown",
+          "ownerId": "effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow:delay",
+          "ownerId": "effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "iceVortexEstablished",
+          "enemyInsideIceVortex"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_ice_vortex:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow",
+      "legacyEffectId": "ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow",
+      "order": 6,
+      "legacyAbilityId": "ancient_apparition_ice_vortex",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow:0",
+        "condition:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow:1"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow:range",
+        "value:effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow:duration",
+        "value:effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow:magnitude",
+        "value:effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow:mana",
+        "value:effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow:cooldown",
+        "value:effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow:delay"
+      ],
+      "activationId": "activation:68:ancient_apparition_ice_vortex"
+    },
+    {
+      "effectId": "ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_ice_vortex",
+      "type": "modifier",
+      "subtype": "existing-vortex-magic-resistance-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction:range",
+          "ownerId": "effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction:duration",
+          "ownerId": "effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction:magnitude",
+          "ownerId": "effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            -16,
+            -19,
+            -22,
+            -25
+          ]
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction:mana",
+          "ownerId": "effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction:cooldown",
+          "ownerId": "effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction:delay",
+          "ownerId": "effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "iceVortexEstablished",
+          "enemyInsideIceVortex"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_ice_vortex:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction",
+      "legacyEffectId": "ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction",
+      "order": 7,
+      "legacyAbilityId": "ancient_apparition_ice_vortex",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction:0",
+        "condition:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction:1"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction:range",
+        "value:effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction:duration",
+        "value:effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction:magnitude",
+        "value:effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction:mana",
+        "value:effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction:cooldown",
+        "value:effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction:delay"
+      ],
+      "activationId": "activation:68:ancient_apparition_ice_vortex"
+    },
+    {
+      "effectId": "ancient_apparition_ice_vortex:vision:existing-vortex-local-vision",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_ice_vortex",
+      "type": "vision",
+      "subtype": "existing-vortex-local-vision",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision:range",
+          "ownerId": "effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision:duration",
+          "ownerId": "effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision:magnitude",
+          "ownerId": "effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision:mana",
+          "ownerId": "effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision:cooldown",
+          "ownerId": "effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision:delay",
+          "ownerId": "effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "iceVortexEstablished"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_ice_vortex:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision",
+      "legacyEffectId": "ancient_apparition_ice_vortex:vision:existing-vortex-local-vision",
+      "order": 8,
+      "legacyAbilityId": "ancient_apparition_ice_vortex",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision:0"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision:range",
+        "value:effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision:duration",
+        "value:effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision:magnitude",
+        "value:effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision:mana",
+        "value:effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision:cooldown",
+        "value:effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision:delay"
+      ],
+      "activationId": "activation:68:ancient_apparition_ice_vortex"
+    },
+    {
+      "effectId": "ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_chilling_touch",
+      "type": "damage",
+      "subtype": "chilling-enhanced-attack-magic-burst",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst:range",
+          "ownerId": "effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst:duration",
+          "ownerId": "effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst:magnitude",
+          "ownerId": "effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            35,
+            65,
+            95,
+            125
+          ]
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst:mana",
+          "ownerId": "effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst",
+          "field": "mana",
+          "state": "known",
+          "value": 35
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst:cooldown",
+          "ownerId": "effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            10,
+            7.5,
+            5,
+            2.5
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst:delay",
+          "ownerId": "effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst:damageType",
+          "ownerId": "effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "chillingTouchAttackHits"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_chilling_touch"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst",
+      "legacyEffectId": "ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst",
+      "order": 9,
+      "legacyAbilityId": "ancient_apparition_chilling_touch",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst:0"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst:range",
+        "value:effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst:duration",
+        "value:effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst:magnitude",
+        "value:effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst:mana",
+        "value:effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst:cooldown",
+        "value:effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst:delay",
+        "value:effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst:damageType"
+      ],
+      "activationId": "activation:68:ancient_apparition_chilling_touch"
+    },
+    {
+      "effectId": "ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_chilling_touch",
+      "type": "slow",
+      "subtype": "chilling-enhanced-attack-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow:range",
+          "ownerId": "effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow:duration",
+          "ownerId": "effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            0.7,
+            0.8,
+            0.9,
+            1
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow:magnitude",
+          "ownerId": "effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": 100
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow:mana",
+          "ownerId": "effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 35
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow:cooldown",
+          "ownerId": "effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            10,
+            7.5,
+            5,
+            2.5
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow:delay",
+          "ownerId": "effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "chillingTouchAttackHits"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_chilling_touch"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow",
+      "legacyEffectId": "ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow",
+      "order": 10,
+      "legacyAbilityId": "ancient_apparition_chilling_touch",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow:range",
+        "value:effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow:duration",
+        "value:effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow:magnitude",
+        "value:effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow:mana",
+        "value:effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow:cooldown",
+        "value:effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow:delay"
+      ],
+      "activationId": "activation:68:ancient_apparition_chilling_touch"
+    },
+    {
+      "effectId": "ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_chilling_touch",
+      "type": "modifier",
+      "subtype": "scepter-chilling-cooldown-removal",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal:range",
+          "ownerId": "effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal:duration",
+          "ownerId": "effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal:magnitude",
+          "ownerId": "effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal:mana",
+          "ownerId": "effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal:cooldown",
+          "ownerId": "effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal:delay",
+          "ownerId": "effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_chilling_touch:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal",
+      "legacyEffectId": "ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal",
+      "order": 11,
+      "legacyAbilityId": "ancient_apparition_chilling_touch",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal:range",
+        "value:effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal:duration",
+        "value:effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal:magnitude",
+        "value:effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal:mana",
+        "value:effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal:cooldown",
+        "value:effect:ancient_apparition_chilling_touch:modifier:scepter-chilling-cooldown-removal:delay"
+      ],
+      "activationId": "activation:68:ancient_apparition_chilling_touch"
+    },
+    {
+      "effectId": "ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_bone_chill",
+      "type": "slow",
+      "subtype": "bone-chill-single-instance-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow:range",
+          "ownerId": "effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow:duration",
+          "ownerId": "effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 4
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow:magnitude",
+          "ownerId": "effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": 2
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow:mana",
+          "ownerId": "effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow:cooldown",
+          "ownerId": "effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow:delay",
+          "ownerId": "effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "aaAbilityDealsMagicDamage"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_bone_chill:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow",
+      "legacyEffectId": "ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow",
+      "order": 12,
+      "legacyAbilityId": "ancient_apparition_bone_chill",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow:range",
+        "value:effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow:duration",
+        "value:effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow:magnitude",
+        "value:effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow:mana",
+        "value:effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow:cooldown",
+        "value:effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow:delay"
+      ],
+      "activationId": "activation:68:ancient_apparition_bone_chill"
+    },
+    {
+      "effectId": "ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_bone_chill",
+      "type": "modifier",
+      "subtype": "bone-chill-hero-strength-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction:range",
+          "ownerId": "effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction:duration",
+          "ownerId": "effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction:magnitude",
+          "ownerId": "effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction:mana",
+          "ownerId": "effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction:cooldown",
+          "ownerId": "effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction:delay",
+          "ownerId": "effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "aaAbilityDealsMagicDamageToHero"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_bone_chill:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction",
+      "legacyEffectId": "ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction",
+      "order": 13,
+      "legacyAbilityId": "ancient_apparition_bone_chill",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction:0"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction:range",
+        "value:effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction:duration",
+        "value:effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction:magnitude",
+        "value:effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction:mana",
+        "value:effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction:cooldown",
+        "value:effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction:delay"
+      ],
+      "activationId": "activation:68:ancient_apparition_bone_chill"
+    },
+    {
+      "effectId": "ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_bone_chill",
+      "type": "modifier",
+      "subtype": "scepter-bone-chill-strength-bonus",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus:range",
+          "ownerId": "effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus:duration",
+          "ownerId": "effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus:magnitude",
+          "ownerId": "effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus:mana",
+          "ownerId": "effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus:cooldown",
+          "ownerId": "effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus:delay",
+          "ownerId": "effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "aaAbilityDealsMagicDamageToHero"
+        ],
+        "innate": true
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_bone_chill:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus",
+      "legacyEffectId": "ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus",
+      "order": 14,
+      "legacyAbilityId": "ancient_apparition_bone_chill",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus:0"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus:range",
+        "value:effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus:duration",
+        "value:effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus:magnitude",
+        "value:effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus:mana",
+        "value:effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus:cooldown",
+        "value:effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus:delay"
+      ],
+      "activationId": "activation:68:ancient_apparition_bone_chill"
+    },
+    {
+      "effectId": "ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_ice_blast",
+      "type": "damage",
+      "subtype": "released-ice-blast-explosion-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:range",
+          "ownerId": "effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:duration",
+          "ownerId": "effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:magnitude",
+          "ownerId": "effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            250,
+            325,
+            400
+          ]
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:mana",
+          "ownerId": "effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:cooldown",
+          "ownerId": "effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:delay",
+          "ownerId": "effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:damageType",
+          "ownerId": "effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "iceBlastReleased",
+          "enemyInsideIceBlastExplosion"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": true,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_ice_blast:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage",
+      "legacyEffectId": "ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage",
+      "order": 15,
+      "legacyAbilityId": "ancient_apparition_ice_blast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:0",
+        "condition:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:1"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:range",
+        "value:effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:duration",
+        "value:effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:magnitude",
+        "value:effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:mana",
+        "value:effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:cooldown",
+        "value:effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:delay",
+        "value:effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:damageType"
+      ],
+      "activationId": "activation:68:ancient_apparition_ice_blast"
+    },
+    {
+      "effectId": "ancient_apparition_ice_blast:damage:established-frostbite-damage-rate",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_ice_blast",
+      "type": "damage",
+      "subtype": "established-frostbite-damage-rate",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate:range",
+          "ownerId": "effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate:duration",
+          "ownerId": "effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate:magnitude",
+          "ownerId": "effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            12,
+            24,
+            36
+          ]
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate:mana",
+          "ownerId": "effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate:cooldown",
+          "ownerId": "effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate:delay",
+          "ownerId": "effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate:damageType",
+          "ownerId": "effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyFrostbitten"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": true,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_ice_blast:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate",
+      "legacyEffectId": "ancient_apparition_ice_blast:damage:established-frostbite-damage-rate",
+      "order": 16,
+      "legacyAbilityId": "ancient_apparition_ice_blast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate:0"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate:range",
+        "value:effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate:duration",
+        "value:effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate:magnitude",
+        "value:effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate:mana",
+        "value:effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate:cooldown",
+        "value:effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate:delay",
+        "value:effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate:damageType"
+      ],
+      "activationId": "activation:68:ancient_apparition_ice_blast"
+    },
+    {
+      "effectId": "ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_ice_blast",
+      "type": "modifier",
+      "subtype": "frostbite-health-threshold-shatter",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter:range",
+          "ownerId": "effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter:duration",
+          "ownerId": "effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter:magnitude",
+          "ownerId": "effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            12,
+            13,
+            14
+          ]
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter:mana",
+          "ownerId": "effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter:cooldown",
+          "ownerId": "effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter:delay",
+          "ownerId": "effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "enemyFrostbitten",
+          "enemyBelowFrostbiteKillThreshold"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": true,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_ice_blast:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "mechanicsFacets": [
+        "illusions"
+      ],
+      "id": "effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter",
+      "legacyEffectId": "ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter",
+      "order": 17,
+      "legacyAbilityId": "ancient_apparition_ice_blast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter:0",
+        "condition:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter:1"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter:range",
+        "value:effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter:duration",
+        "value:effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter:magnitude",
+        "value:effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter:mana",
+        "value:effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter:cooldown",
+        "value:effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter:delay"
+      ],
+      "activationId": "activation:68:ancient_apparition_ice_blast"
+    },
+    {
+      "effectId": "ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_ice_blast",
+      "type": "vision",
+      "subtype": "active-ice-blast-tracer-vision",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision:range",
+          "ownerId": "effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision:duration",
+          "ownerId": "effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision:magnitude",
+          "ownerId": "effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision:mana",
+          "ownerId": "effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision:cooldown",
+          "ownerId": "effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision:delay",
+          "ownerId": "effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "iceBlastTracerActive"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": true,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_ice_blast:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision",
+      "legacyEffectId": "ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision",
+      "order": 18,
+      "legacyAbilityId": "ancient_apparition_ice_blast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision:0"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision:range",
+        "value:effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision:duration",
+        "value:effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision:magnitude",
+        "value:effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision:mana",
+        "value:effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision:cooldown",
+        "value:effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision:delay"
+      ],
+      "activationId": "activation:68:ancient_apparition_ice_blast"
+    },
+    {
+      "effectId": "ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_ice_blast",
+      "type": "modifier",
+      "subtype": "shard-ice-blast-cold-feet-freeze",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze:range",
+          "ownerId": "effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze:duration",
+          "ownerId": "effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze:magnitude",
+          "ownerId": "effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze:mana",
+          "ownerId": "effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze:cooldown",
+          "ownerId": "effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze:delay",
+          "ownerId": "effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "ancient_apparition_cold_feet"
+        ],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "iceBlastReleased",
+          "enemyInsideIceBlastExplosion"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": true,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_ice_blast:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze",
+      "legacyEffectId": "ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze",
+      "order": 19,
+      "legacyAbilityId": "ancient_apparition_ice_blast",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze:0",
+        "condition:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze:1"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze:range",
+        "value:effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze:duration",
+        "value:effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze:magnitude",
+        "value:effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze:mana",
+        "value:effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze:cooldown",
+        "value:effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze:delay"
+      ],
+      "activationId": "activation:68:ancient_apparition_ice_blast"
+    },
+    {
+      "effectId": "ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint",
+      "heroId": "68",
+      "abilityId": "ability:68:ancient_apparition_ice_blast_release",
+      "type": "modifier",
+      "subtype": "existing-ice-blast-release-endpoint",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint:range",
+          "ownerId": "effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint:duration",
+          "ownerId": "effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint:magnitude",
+          "ownerId": "effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint:mana",
+          "ownerId": "effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint:cooldown",
+          "ownerId": "effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        "delay": {
+          "id": "value:effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint:delay",
+          "ownerId": "effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "ancient_apparition_ice_blast"
+        ],
+        "upgrades": [],
+        "requiresContext": [
+          "iceBlastTracerActive"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "ancient_apparition_ice_blast_release"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint",
+      "legacyEffectId": "ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint",
+      "order": 20,
+      "legacyAbilityId": "ancient_apparition_ice_blast_release",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint:0"
+      ],
+      "valueIds": [
+        "value:effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint:range",
+        "value:effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint:duration",
+        "value:effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint:magnitude",
+        "value:effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint:mana",
+        "value:effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint:cooldown",
+        "value:effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint:delay"
+      ],
+      "activationId": "activation:68:ancient_apparition_ice_blast_release"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:0",
+      "ownerId": "effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "coldFeetCurseActive"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate:1",
+      "ownerId": "effect:ancient_apparition_cold_feet:damage:cold-feet-active-curse-damage-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "targetInsideColdFeetBreakDistance"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze:0",
+      "ownerId": "effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "coldFeetCurseSurvivesFourSeconds"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze:1",
+      "ownerId": "effect:ancient_apparition_cold_feet:control:cold-feet-completed-curse-freeze",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "targetInsideColdFeetBreakDistance"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:0",
+      "ownerId": "effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "iceVortexEstablished"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate:1",
+      "ownerId": "effect:ancient_apparition_ice_vortex:damage:existing-vortex-damage-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideIceVortex"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow:0",
+      "ownerId": "effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "iceVortexEstablished"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow:1",
+      "ownerId": "effect:ancient_apparition_ice_vortex:slow:existing-vortex-movement-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideIceVortex"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction:0",
+      "ownerId": "effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "iceVortexEstablished"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction:1",
+      "ownerId": "effect:ancient_apparition_ice_vortex:modifier:existing-vortex-magic-resistance-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideIceVortex"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision:0",
+      "ownerId": "effect:ancient_apparition_ice_vortex:vision:existing-vortex-local-vision",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "iceVortexEstablished"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst:0",
+      "ownerId": "effect:ancient_apparition_chilling_touch:damage:chilling-enhanced-attack-magic-burst",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "chillingTouchAttackHits"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow:0",
+      "ownerId": "effect:ancient_apparition_chilling_touch:slow:chilling-enhanced-attack-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "chillingTouchAttackHits"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow:0",
+      "ownerId": "effect:ancient_apparition_bone_chill:slow:bone-chill-single-instance-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "aaAbilityDealsMagicDamage"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction:0",
+      "ownerId": "effect:ancient_apparition_bone_chill:modifier:bone-chill-hero-strength-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "aaAbilityDealsMagicDamageToHero"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus:0",
+      "ownerId": "effect:ancient_apparition_bone_chill:modifier:scepter-bone-chill-strength-bonus",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "aaAbilityDealsMagicDamageToHero"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:0",
+      "ownerId": "effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "iceBlastReleased"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage:1",
+      "ownerId": "effect:ancient_apparition_ice_blast:damage:released-ice-blast-explosion-damage",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideIceBlastExplosion"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate:0",
+      "ownerId": "effect:ancient_apparition_ice_blast:damage:established-frostbite-damage-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyFrostbitten"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter:0",
+      "ownerId": "effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyFrostbitten"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter:1",
+      "ownerId": "effect:ancient_apparition_ice_blast:modifier:frostbite-health-threshold-shatter",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyBelowFrostbiteKillThreshold"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision:0",
+      "ownerId": "effect:ancient_apparition_ice_blast:vision:active-ice-blast-tracer-vision",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "iceBlastTracerActive"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze:0",
+      "ownerId": "effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "iceBlastReleased"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze:1",
+      "ownerId": "effect:ancient_apparition_ice_blast:modifier:shard-ice-blast-cold-feet-freeze",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyInsideIceBlastExplosion"
+      }
+    },
+    {
+      "id": "condition:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint:0",
+      "ownerId": "effect:ancient_apparition_ice_blast_release:modifier:existing-ice-blast-release-endpoint",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "iceBlastTracerActive"
+      }
+    }
+  ]
+}

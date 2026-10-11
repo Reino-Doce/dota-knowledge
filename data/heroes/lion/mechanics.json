@@ -1,0 +1,1676 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "lion_impale:control:stun",
+      "heroId": "26",
+      "abilityId": "ability:26:lion_impale",
+      "type": "control",
+      "subtype": "stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lion_impale:control:stun:range",
+          "ownerId": "effect:lion_impale:control:stun",
+          "field": "range",
+          "state": "known",
+          "value": 650
+        },
+        "duration": {
+          "id": "value:effect:lion_impale:control:stun:duration",
+          "ownerId": "effect:lion_impale:control:stun",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            1.3,
+            1.6,
+            1.9,
+            2.2
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:lion_impale:control:stun:magnitude",
+          "ownerId": "effect:lion_impale:control:stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lion_impale:control:stun:mana",
+          "ownerId": "effect:lion_impale:control:stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            110,
+            130,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:lion_impale:control:stun:cooldown",
+          "ownerId": "effect:lion_impale:control:stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            13,
+            12,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lion_impale:control:stun:delay",
+          "ownerId": "effect:lion_impale:control:stun",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "known",
+          "value": false
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "lion_impale"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lion_impale:control:stun",
+      "legacyEffectId": "lion_impale:control:stun",
+      "order": 0,
+      "legacyAbilityId": "lion_impale",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lion_impale:control:stun:range",
+        "value:effect:lion_impale:control:stun:duration",
+        "value:effect:lion_impale:control:stun:magnitude",
+        "value:effect:lion_impale:control:stun:mana",
+        "value:effect:lion_impale:control:stun:cooldown",
+        "value:effect:lion_impale:control:stun:delay"
+      ],
+      "activationId": "activation:26:lion_impale"
+    },
+    {
+      "effectId": "lion_impale:damage:ground-spikes",
+      "heroId": "26",
+      "abilityId": "ability:26:lion_impale",
+      "type": "damage",
+      "subtype": "ground-spikes",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lion_impale:damage:ground-spikes:range",
+          "ownerId": "effect:lion_impale:damage:ground-spikes",
+          "field": "range",
+          "state": "known",
+          "value": 650
+        },
+        "duration": {
+          "id": "value:effect:lion_impale:damage:ground-spikes:duration",
+          "ownerId": "effect:lion_impale:damage:ground-spikes",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lion_impale:damage:ground-spikes:magnitude",
+          "ownerId": "effect:lion_impale:damage:ground-spikes",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            105,
+            170,
+            235,
+            300
+          ]
+        },
+        "mana": {
+          "id": "value:effect:lion_impale:damage:ground-spikes:mana",
+          "ownerId": "effect:lion_impale:damage:ground-spikes",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            90,
+            110,
+            130,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:lion_impale:damage:ground-spikes:cooldown",
+          "ownerId": "effect:lion_impale:damage:ground-spikes",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            14,
+            13,
+            12,
+            11
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lion_impale:damage:ground-spikes:delay",
+          "ownerId": "effect:lion_impale:damage:ground-spikes",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:lion_impale:damage:ground-spikes:damageType",
+          "ownerId": "effect:lion_impale:damage:ground-spikes",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "point-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "known",
+          "value": false
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lion_impale"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lion_impale:damage:ground-spikes",
+      "legacyEffectId": "lion_impale:damage:ground-spikes",
+      "order": 1,
+      "legacyAbilityId": "lion_impale",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lion_impale:damage:ground-spikes:range",
+        "value:effect:lion_impale:damage:ground-spikes:duration",
+        "value:effect:lion_impale:damage:ground-spikes:magnitude",
+        "value:effect:lion_impale:damage:ground-spikes:mana",
+        "value:effect:lion_impale:damage:ground-spikes:cooldown",
+        "value:effect:lion_impale:damage:ground-spikes:delay",
+        "value:effect:lion_impale:damage:ground-spikes:damageType"
+      ],
+      "activationId": "activation:26:lion_impale"
+    },
+    {
+      "effectId": "lion_voodoo:control:hex",
+      "heroId": "26",
+      "abilityId": "ability:26:lion_voodoo",
+      "type": "control",
+      "subtype": "hex",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lion_voodoo:control:hex:range",
+          "ownerId": "effect:lion_voodoo:control:hex",
+          "field": "range",
+          "state": "known",
+          "value": [
+            575,
+            600,
+            625,
+            650
+          ]
+        },
+        "duration": {
+          "id": "value:effect:lion_voodoo:control:hex:duration",
+          "ownerId": "effect:lion_voodoo:control:hex",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            2,
+            2.4,
+            2.8,
+            3.2
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:lion_voodoo:control:hex:magnitude",
+          "ownerId": "effect:lion_voodoo:control:hex",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lion_voodoo:control:hex:mana",
+          "ownerId": "effect:lion_voodoo:control:hex",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            110,
+            140,
+            170,
+            200
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:lion_voodoo:control:hex:cooldown",
+          "ownerId": "effect:lion_voodoo:control:hex",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            24,
+            20,
+            16,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lion_voodoo:control:hex:delay",
+          "ownerId": "effect:lion_voodoo:control:hex",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        }
+      },
+      "relationships": {
+        "resourceId": "lion_voodoo"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "mechanicsFacets": [
+        "illusions"
+      ],
+      "id": "effect:lion_voodoo:control:hex",
+      "legacyEffectId": "lion_voodoo:control:hex",
+      "order": 2,
+      "legacyAbilityId": "lion_voodoo",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lion_voodoo:control:hex:range",
+        "value:effect:lion_voodoo:control:hex:duration",
+        "value:effect:lion_voodoo:control:hex:magnitude",
+        "value:effect:lion_voodoo:control:hex:mana",
+        "value:effect:lion_voodoo:control:hex:cooldown",
+        "value:effect:lion_voodoo:control:hex:delay"
+      ],
+      "activationId": "activation:26:lion_voodoo"
+    },
+    {
+      "effectId": "lion_mana_drain:slow:channeled-movement-speed",
+      "heroId": "26",
+      "abilityId": "ability:26:lion_mana_drain",
+      "type": "slow",
+      "subtype": "channeled-movement-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lion_mana_drain:slow:channeled-movement-speed:range",
+          "ownerId": "effect:lion_mana_drain:slow:channeled-movement-speed",
+          "field": "range",
+          "state": "known",
+          "value": 850
+        },
+        "duration": {
+          "id": "value:effect:lion_mana_drain:slow:channeled-movement-speed:duration",
+          "ownerId": "effect:lion_mana_drain:slow:channeled-movement-speed",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lion_mana_drain:slow:channeled-movement-speed:magnitude",
+          "ownerId": "effect:lion_mana_drain:slow:channeled-movement-speed",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            15,
+            20,
+            25,
+            30
+          ]
+        },
+        "mana": {
+          "id": "value:effect:lion_mana_drain:slow:channeled-movement-speed:mana",
+          "ownerId": "effect:lion_mana_drain:slow:channeled-movement-speed",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:lion_mana_drain:slow:channeled-movement-speed:cooldown",
+          "ownerId": "effect:lion_mana_drain:slow:channeled-movement-speed",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            15,
+            12,
+            9,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lion_mana_drain:slow:channeled-movement-speed:delay",
+          "ownerId": "effect:lion_mana_drain:slow:channeled-movement-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lion_mana_drain"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lion_mana_drain:slow:channeled-movement-speed",
+      "legacyEffectId": "lion_mana_drain:slow:channeled-movement-speed",
+      "order": 3,
+      "legacyAbilityId": "lion_mana_drain",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lion_mana_drain:slow:channeled-movement-speed:range",
+        "value:effect:lion_mana_drain:slow:channeled-movement-speed:duration",
+        "value:effect:lion_mana_drain:slow:channeled-movement-speed:magnitude",
+        "value:effect:lion_mana_drain:slow:channeled-movement-speed:mana",
+        "value:effect:lion_mana_drain:slow:channeled-movement-speed:cooldown",
+        "value:effect:lion_mana_drain:slow:channeled-movement-speed:delay"
+      ],
+      "activationId": "activation:26:lion_mana_drain"
+    },
+    {
+      "effectId": "lion_mana_drain:detection:prevents-target-invisibility",
+      "heroId": "26",
+      "abilityId": "ability:26:lion_mana_drain",
+      "type": "detection",
+      "subtype": "prevents-target-invisibility",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lion_mana_drain:detection:prevents-target-invisibility:range",
+          "ownerId": "effect:lion_mana_drain:detection:prevents-target-invisibility",
+          "field": "range",
+          "state": "known",
+          "value": 850
+        },
+        "duration": {
+          "id": "value:effect:lion_mana_drain:detection:prevents-target-invisibility:duration",
+          "ownerId": "effect:lion_mana_drain:detection:prevents-target-invisibility",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lion_mana_drain:detection:prevents-target-invisibility:magnitude",
+          "ownerId": "effect:lion_mana_drain:detection:prevents-target-invisibility",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lion_mana_drain:detection:prevents-target-invisibility:mana",
+          "ownerId": "effect:lion_mana_drain:detection:prevents-target-invisibility",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:lion_mana_drain:detection:prevents-target-invisibility:cooldown",
+          "ownerId": "effect:lion_mana_drain:detection:prevents-target-invisibility",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            15,
+            12,
+            9,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lion_mana_drain:detection:prevents-target-invisibility:delay",
+          "ownerId": "effect:lion_mana_drain:detection:prevents-target-invisibility",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "manaDrainChannelActive"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lion_mana_drain"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lion_mana_drain:detection:prevents-target-invisibility",
+      "legacyEffectId": "lion_mana_drain:detection:prevents-target-invisibility",
+      "order": 4,
+      "legacyAbilityId": "lion_mana_drain",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:lion_mana_drain:detection:prevents-target-invisibility:0"
+      ],
+      "valueIds": [
+        "value:effect:lion_mana_drain:detection:prevents-target-invisibility:range",
+        "value:effect:lion_mana_drain:detection:prevents-target-invisibility:duration",
+        "value:effect:lion_mana_drain:detection:prevents-target-invisibility:magnitude",
+        "value:effect:lion_mana_drain:detection:prevents-target-invisibility:mana",
+        "value:effect:lion_mana_drain:detection:prevents-target-invisibility:cooldown",
+        "value:effect:lion_mana_drain:detection:prevents-target-invisibility:delay"
+      ],
+      "activationId": "activation:26:lion_mana_drain"
+    },
+    {
+      "effectId": "lion_mana_drain:modifier:mana-transfer-enemy",
+      "heroId": "26",
+      "abilityId": "ability:26:lion_mana_drain",
+      "type": "modifier",
+      "subtype": "mana-transfer-enemy",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lion_mana_drain:modifier:mana-transfer-enemy:range",
+          "ownerId": "effect:lion_mana_drain:modifier:mana-transfer-enemy",
+          "field": "range",
+          "state": "known",
+          "value": 850
+        },
+        "duration": {
+          "id": "value:effect:lion_mana_drain:modifier:mana-transfer-enemy:duration",
+          "ownerId": "effect:lion_mana_drain:modifier:mana-transfer-enemy",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lion_mana_drain:modifier:mana-transfer-enemy:magnitude",
+          "ownerId": "effect:lion_mana_drain:modifier:mana-transfer-enemy",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lion_mana_drain:modifier:mana-transfer-enemy:mana",
+          "ownerId": "effect:lion_mana_drain:modifier:mana-transfer-enemy",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:lion_mana_drain:modifier:mana-transfer-enemy:cooldown",
+          "ownerId": "effect:lion_mana_drain:modifier:mana-transfer-enemy",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            15,
+            12,
+            9,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lion_mana_drain:modifier:mana-transfer-enemy:delay",
+          "ownerId": "effect:lion_mana_drain:modifier:mana-transfer-enemy",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lion_mana_drain"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lion_mana_drain:modifier:mana-transfer-enemy",
+      "legacyEffectId": "lion_mana_drain:modifier:mana-transfer-enemy",
+      "order": 5,
+      "legacyAbilityId": "lion_mana_drain",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lion_mana_drain:modifier:mana-transfer-enemy:range",
+        "value:effect:lion_mana_drain:modifier:mana-transfer-enemy:duration",
+        "value:effect:lion_mana_drain:modifier:mana-transfer-enemy:magnitude",
+        "value:effect:lion_mana_drain:modifier:mana-transfer-enemy:mana",
+        "value:effect:lion_mana_drain:modifier:mana-transfer-enemy:cooldown",
+        "value:effect:lion_mana_drain:modifier:mana-transfer-enemy:delay"
+      ],
+      "activationId": "activation:26:lion_mana_drain"
+    },
+    {
+      "effectId": "lion_mana_drain:modifier:mana-transfer-ally",
+      "heroId": "26",
+      "abilityId": "ability:26:lion_mana_drain",
+      "type": "modifier",
+      "subtype": "mana-transfer-ally",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lion_mana_drain:modifier:mana-transfer-ally:range",
+          "ownerId": "effect:lion_mana_drain:modifier:mana-transfer-ally",
+          "field": "range",
+          "state": "known",
+          "value": 850
+        },
+        "duration": {
+          "id": "value:effect:lion_mana_drain:modifier:mana-transfer-ally:duration",
+          "ownerId": "effect:lion_mana_drain:modifier:mana-transfer-ally",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lion_mana_drain:modifier:mana-transfer-ally:magnitude",
+          "ownerId": "effect:lion_mana_drain:modifier:mana-transfer-ally",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lion_mana_drain:modifier:mana-transfer-ally:mana",
+          "ownerId": "effect:lion_mana_drain:modifier:mana-transfer-ally",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:lion_mana_drain:modifier:mana-transfer-ally:cooldown",
+          "ownerId": "effect:lion_mana_drain:modifier:mana-transfer-ally",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            15,
+            12,
+            9,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lion_mana_drain:modifier:mana-transfer-ally:delay",
+          "ownerId": "effect:lion_mana_drain:modifier:mana-transfer-ally",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "manaDrainAlliedTarget"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lion_mana_drain"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lion_mana_drain:modifier:mana-transfer-ally",
+      "legacyEffectId": "lion_mana_drain:modifier:mana-transfer-ally",
+      "order": 6,
+      "legacyAbilityId": "lion_mana_drain",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:lion_mana_drain:modifier:mana-transfer-ally:0"
+      ],
+      "valueIds": [
+        "value:effect:lion_mana_drain:modifier:mana-transfer-ally:range",
+        "value:effect:lion_mana_drain:modifier:mana-transfer-ally:duration",
+        "value:effect:lion_mana_drain:modifier:mana-transfer-ally:magnitude",
+        "value:effect:lion_mana_drain:modifier:mana-transfer-ally:mana",
+        "value:effect:lion_mana_drain:modifier:mana-transfer-ally:cooldown",
+        "value:effect:lion_mana_drain:modifier:mana-transfer-ally:delay"
+      ],
+      "activationId": "activation:26:lion_mana_drain"
+    },
+    {
+      "effectId": "lion_mana_drain:save:channel-self-debuff-immunity",
+      "heroId": "26",
+      "abilityId": "ability:26:lion_mana_drain",
+      "type": "save",
+      "subtype": "channel-self-debuff-immunity",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lion_mana_drain:save:channel-self-debuff-immunity:range",
+          "ownerId": "effect:lion_mana_drain:save:channel-self-debuff-immunity",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:lion_mana_drain:save:channel-self-debuff-immunity:duration",
+          "ownerId": "effect:lion_mana_drain:save:channel-self-debuff-immunity",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lion_mana_drain:save:channel-self-debuff-immunity:magnitude",
+          "ownerId": "effect:lion_mana_drain:save:channel-self-debuff-immunity",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lion_mana_drain:save:channel-self-debuff-immunity:mana",
+          "ownerId": "effect:lion_mana_drain:save:channel-self-debuff-immunity",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:lion_mana_drain:save:channel-self-debuff-immunity:cooldown",
+          "ownerId": "effect:lion_mana_drain:save:channel-self-debuff-immunity",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            15,
+            12,
+            9,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lion_mana_drain:save:channel-self-debuff-immunity:delay",
+          "ownerId": "effect:lion_mana_drain:save:channel-self-debuff-immunity",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "manaDrainChannelActive"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": true,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lion_mana_drain"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lion_mana_drain:save:channel-self-debuff-immunity",
+      "legacyEffectId": "lion_mana_drain:save:channel-self-debuff-immunity",
+      "order": 7,
+      "legacyAbilityId": "lion_mana_drain",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:lion_mana_drain:save:channel-self-debuff-immunity:0"
+      ],
+      "valueIds": [
+        "value:effect:lion_mana_drain:save:channel-self-debuff-immunity:range",
+        "value:effect:lion_mana_drain:save:channel-self-debuff-immunity:duration",
+        "value:effect:lion_mana_drain:save:channel-self-debuff-immunity:magnitude",
+        "value:effect:lion_mana_drain:save:channel-self-debuff-immunity:mana",
+        "value:effect:lion_mana_drain:save:channel-self-debuff-immunity:cooldown",
+        "value:effect:lion_mana_drain:save:channel-self-debuff-immunity:delay"
+      ],
+      "activationId": "activation:26:lion_mana_drain"
+    },
+    {
+      "effectId": "lion_to_hell_and_back:passive:debuff-duration-amplification",
+      "heroId": "26",
+      "abilityId": "ability:26:lion_to_hell_and_back",
+      "type": "passive",
+      "subtype": "debuff-duration-amplification",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lion_to_hell_and_back:passive:debuff-duration-amplification:range",
+          "ownerId": "effect:lion_to_hell_and_back:passive:debuff-duration-amplification",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:lion_to_hell_and_back:passive:debuff-duration-amplification:duration",
+          "ownerId": "effect:lion_to_hell_and_back:passive:debuff-duration-amplification",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lion_to_hell_and_back:passive:debuff-duration-amplification:magnitude",
+          "ownerId": "effect:lion_to_hell_and_back:passive:debuff-duration-amplification",
+          "field": "magnitude",
+          "state": "known",
+          "value": 20
+        },
+        "mana": {
+          "id": "value:effect:lion_to_hell_and_back:passive:debuff-duration-amplification:mana",
+          "ownerId": "effect:lion_to_hell_and_back:passive:debuff-duration-amplification",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:lion_to_hell_and_back:passive:debuff-duration-amplification:cooldown",
+          "ownerId": "effect:lion_to_hell_and_back:passive:debuff-duration-amplification",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:lion_to_hell_and_back:passive:debuff-duration-amplification:delay",
+          "ownerId": "effect:lion_to_hell_and_back:passive:debuff-duration-amplification",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "creditedEnemyKillStillDead"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lion_to_hell_and_back"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:lion_to_hell_and_back:passive:debuff-duration-amplification",
+      "legacyEffectId": "lion_to_hell_and_back:passive:debuff-duration-amplification",
+      "order": 8,
+      "legacyAbilityId": "lion_to_hell_and_back",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:lion_to_hell_and_back:passive:debuff-duration-amplification:0"
+      ],
+      "valueIds": [
+        "value:effect:lion_to_hell_and_back:passive:debuff-duration-amplification:range",
+        "value:effect:lion_to_hell_and_back:passive:debuff-duration-amplification:duration",
+        "value:effect:lion_to_hell_and_back:passive:debuff-duration-amplification:magnitude",
+        "value:effect:lion_to_hell_and_back:passive:debuff-duration-amplification:mana",
+        "value:effect:lion_to_hell_and_back:passive:debuff-duration-amplification:cooldown",
+        "value:effect:lion_to_hell_and_back:passive:debuff-duration-amplification:delay"
+      ],
+      "activationId": "activation:26:lion_to_hell_and_back"
+    },
+    {
+      "effectId": "lion_to_hell_and_back:passive:post-respawn-spell-amplification",
+      "heroId": "26",
+      "abilityId": "ability:26:lion_to_hell_and_back",
+      "type": "passive",
+      "subtype": "post-respawn-spell-amplification",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification:range",
+          "ownerId": "effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification:duration",
+          "ownerId": "effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification:magnitude",
+          "ownerId": "effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification",
+          "field": "magnitude",
+          "state": "known",
+          "value": 20
+        },
+        "mana": {
+          "id": "value:effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification:mana",
+          "ownerId": "effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification:cooldown",
+          "ownerId": "effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification:delay",
+          "ownerId": "effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "recentRespawnWithoutKillOrAssist"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lion_to_hell_and_back"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification",
+      "legacyEffectId": "lion_to_hell_and_back:passive:post-respawn-spell-amplification",
+      "order": 9,
+      "legacyAbilityId": "lion_to_hell_and_back",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:lion_to_hell_and_back:passive:post-respawn-spell-amplification:0"
+      ],
+      "valueIds": [
+        "value:effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification:range",
+        "value:effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification:duration",
+        "value:effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification:magnitude",
+        "value:effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification:mana",
+        "value:effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification:cooldown",
+        "value:effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification:delay"
+      ],
+      "activationId": "activation:26:lion_to_hell_and_back"
+    },
+    {
+      "effectId": "lion_finger_of_death:damage:single-target-burst",
+      "heroId": "26",
+      "abilityId": "ability:26:lion_finger_of_death",
+      "type": "damage",
+      "subtype": "single-target-burst",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Area or bounce declarations do not establish a one-recipient effect cap; effective recipient count requires separate verification."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lion_finger_of_death:damage:single-target-burst:range",
+          "ownerId": "effect:lion_finger_of_death:damage:single-target-burst",
+          "field": "range",
+          "state": "known",
+          "value": 900
+        },
+        "duration": {
+          "id": "value:effect:lion_finger_of_death:damage:single-target-burst:duration",
+          "ownerId": "effect:lion_finger_of_death:damage:single-target-burst",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:lion_finger_of_death:damage:single-target-burst:magnitude",
+          "ownerId": "effect:lion_finger_of_death:damage:single-target-burst",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            600,
+            725,
+            850
+          ]
+        },
+        "mana": {
+          "id": "value:effect:lion_finger_of_death:damage:single-target-burst:mana",
+          "ownerId": "effect:lion_finger_of_death:damage:single-target-burst",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            200,
+            400,
+            600
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:lion_finger_of_death:damage:single-target-burst:cooldown",
+          "ownerId": "effect:lion_finger_of_death:damage:single-target-burst",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            110,
+            70,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lion_finger_of_death:damage:single-target-burst:delay",
+          "ownerId": "effect:lion_finger_of_death:damage:single-target-burst",
+          "field": "delay",
+          "state": "known",
+          "value": 0.25
+        },
+        "damageType": {
+          "id": "value:effect:lion_finger_of_death:damage:single-target-burst:damageType",
+          "ownerId": "effect:lion_finger_of_death:damage:single-target-burst",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": true,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lion_finger_of_death"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lion_finger_of_death:damage:single-target-burst",
+      "legacyEffectId": "lion_finger_of_death:damage:single-target-burst",
+      "order": 10,
+      "legacyAbilityId": "lion_finger_of_death",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:lion_finger_of_death:damage:single-target-burst:range",
+        "value:effect:lion_finger_of_death:damage:single-target-burst:duration",
+        "value:effect:lion_finger_of_death:damage:single-target-burst:magnitude",
+        "value:effect:lion_finger_of_death:damage:single-target-burst:mana",
+        "value:effect:lion_finger_of_death:damage:single-target-burst:cooldown",
+        "value:effect:lion_finger_of_death:damage:single-target-burst:delay",
+        "value:effect:lion_finger_of_death:damage:single-target-burst:damageType"
+      ],
+      "activationId": "activation:26:lion_finger_of_death"
+    },
+    {
+      "effectId": "lion_finger_of_death:modifier:temporary-melee-cleave",
+      "heroId": "26",
+      "abilityId": "ability:26:lion_finger_of_death",
+      "type": "modifier",
+      "subtype": "temporary-melee-cleave",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:lion_finger_of_death:modifier:temporary-melee-cleave:range",
+          "ownerId": "effect:lion_finger_of_death:modifier:temporary-melee-cleave",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:lion_finger_of_death:modifier:temporary-melee-cleave:duration",
+          "ownerId": "effect:lion_finger_of_death:modifier:temporary-melee-cleave",
+          "field": "duration",
+          "state": "known",
+          "value": 20
+        },
+        "magnitude": {
+          "id": "value:effect:lion_finger_of_death:modifier:temporary-melee-cleave:magnitude",
+          "ownerId": "effect:lion_finger_of_death:modifier:temporary-melee-cleave",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:lion_finger_of_death:modifier:temporary-melee-cleave:mana",
+          "ownerId": "effect:lion_finger_of_death:modifier:temporary-melee-cleave",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            200,
+            400,
+            600
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:lion_finger_of_death:modifier:temporary-melee-cleave:cooldown",
+          "ownerId": "effect:lion_finger_of_death:modifier:temporary-melee-cleave",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            110,
+            70,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:lion_finger_of_death:modifier:temporary-melee-cleave:delay",
+          "ownerId": "effect:lion_finger_of_death:modifier:temporary-melee-cleave",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "fingerCastWithMeleeEnabled"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "lion_finger_of_death"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:lion_finger_of_death:modifier:temporary-melee-cleave",
+      "legacyEffectId": "lion_finger_of_death:modifier:temporary-melee-cleave",
+      "order": 11,
+      "legacyAbilityId": "lion_finger_of_death",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:lion_finger_of_death:modifier:temporary-melee-cleave:0"
+      ],
+      "valueIds": [
+        "value:effect:lion_finger_of_death:modifier:temporary-melee-cleave:range",
+        "value:effect:lion_finger_of_death:modifier:temporary-melee-cleave:duration",
+        "value:effect:lion_finger_of_death:modifier:temporary-melee-cleave:magnitude",
+        "value:effect:lion_finger_of_death:modifier:temporary-melee-cleave:mana",
+        "value:effect:lion_finger_of_death:modifier:temporary-melee-cleave:cooldown",
+        "value:effect:lion_finger_of_death:modifier:temporary-melee-cleave:delay"
+      ],
+      "activationId": "activation:26:lion_finger_of_death"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:lion_mana_drain:detection:prevents-target-invisibility:0",
+      "ownerId": "effect:lion_mana_drain:detection:prevents-target-invisibility",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "manaDrainChannelActive"
+      }
+    },
+    {
+      "id": "condition:lion_mana_drain:modifier:mana-transfer-ally:0",
+      "ownerId": "effect:lion_mana_drain:modifier:mana-transfer-ally",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "manaDrainAlliedTarget"
+      }
+    },
+    {
+      "id": "condition:lion_mana_drain:save:channel-self-debuff-immunity:0",
+      "ownerId": "effect:lion_mana_drain:save:channel-self-debuff-immunity",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "manaDrainChannelActive"
+      }
+    },
+    {
+      "id": "condition:lion_to_hell_and_back:passive:debuff-duration-amplification:0",
+      "ownerId": "effect:lion_to_hell_and_back:passive:debuff-duration-amplification",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "creditedEnemyKillStillDead"
+      }
+    },
+    {
+      "id": "condition:lion_to_hell_and_back:passive:post-respawn-spell-amplification:0",
+      "ownerId": "effect:lion_to_hell_and_back:passive:post-respawn-spell-amplification",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "recentRespawnWithoutKillOrAssist"
+      }
+    },
+    {
+      "id": "condition:lion_finger_of_death:modifier:temporary-melee-cleave:0",
+      "ownerId": "effect:lion_finger_of_death:modifier:temporary-melee-cleave",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "fingerCastWithMeleeEnabled"
+      }
+    }
+  ]
+}

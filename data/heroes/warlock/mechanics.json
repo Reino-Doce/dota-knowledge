@@ -1,0 +1,1211 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "warlock_fatal_bonds:modifier:linked-damage-sharing",
+      "heroId": "37",
+      "abilityId": "ability:37:warlock_fatal_bonds",
+      "type": "modifier",
+      "subtype": "linked-damage-sharing",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:warlock_fatal_bonds:modifier:linked-damage-sharing:range",
+          "ownerId": "effect:warlock_fatal_bonds:modifier:linked-damage-sharing",
+          "field": "range",
+          "state": "known",
+          "value": 1000
+        },
+        "duration": {
+          "id": "value:effect:warlock_fatal_bonds:modifier:linked-damage-sharing:duration",
+          "ownerId": "effect:warlock_fatal_bonds:modifier:linked-damage-sharing",
+          "field": "duration",
+          "state": "known",
+          "value": 18
+        },
+        "magnitude": {
+          "id": "value:effect:warlock_fatal_bonds:modifier:linked-damage-sharing:magnitude",
+          "ownerId": "effect:warlock_fatal_bonds:modifier:linked-damage-sharing",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            15,
+            18,
+            21,
+            24
+          ]
+        },
+        "mana": {
+          "id": "value:effect:warlock_fatal_bonds:modifier:linked-damage-sharing:mana",
+          "ownerId": "effect:warlock_fatal_bonds:modifier:linked-damage-sharing",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            120,
+            130,
+            140,
+            150
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:warlock_fatal_bonds:modifier:linked-damage-sharing:cooldown",
+          "ownerId": "effect:warlock_fatal_bonds:modifier:linked-damage-sharing",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            42,
+            34,
+            26,
+            18
+          ]
+        },
+        "delay": {
+          "id": "value:effect:warlock_fatal_bonds:modifier:linked-damage-sharing:delay",
+          "ownerId": "effect:warlock_fatal_bonds:modifier:linked-damage-sharing",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "warlock_fatal_bonds"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:warlock_fatal_bonds:modifier:linked-damage-sharing",
+      "legacyEffectId": "warlock_fatal_bonds:modifier:linked-damage-sharing",
+      "order": 0,
+      "legacyAbilityId": "warlock_fatal_bonds",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:warlock_fatal_bonds:modifier:linked-damage-sharing:range",
+        "value:effect:warlock_fatal_bonds:modifier:linked-damage-sharing:duration",
+        "value:effect:warlock_fatal_bonds:modifier:linked-damage-sharing:magnitude",
+        "value:effect:warlock_fatal_bonds:modifier:linked-damage-sharing:mana",
+        "value:effect:warlock_fatal_bonds:modifier:linked-damage-sharing:cooldown",
+        "value:effect:warlock_fatal_bonds:modifier:linked-damage-sharing:delay"
+      ],
+      "activationId": "activation:37:warlock_fatal_bonds"
+    },
+    {
+      "effectId": "warlock_shadow_word:damage:damage-over-time",
+      "heroId": "37",
+      "abilityId": "ability:37:warlock_shadow_word",
+      "type": "damage",
+      "subtype": "damage-over-time",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:warlock_shadow_word:damage:damage-over-time:range",
+          "ownerId": "effect:warlock_shadow_word:damage:damage-over-time",
+          "field": "range",
+          "state": "known",
+          "value": [
+            650,
+            700,
+            750,
+            800
+          ]
+        },
+        "duration": {
+          "id": "value:effect:warlock_shadow_word:damage:damage-over-time:duration",
+          "ownerId": "effect:warlock_shadow_word:damage:damage-over-time",
+          "field": "duration",
+          "state": "known",
+          "value": 10
+        },
+        "magnitude": {
+          "id": "value:effect:warlock_shadow_word:damage:damage-over-time:magnitude",
+          "ownerId": "effect:warlock_shadow_word:damage:damage-over-time",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            15,
+            25,
+            35,
+            45
+          ]
+        },
+        "mana": {
+          "id": "value:effect:warlock_shadow_word:damage:damage-over-time:mana",
+          "ownerId": "effect:warlock_shadow_word:damage:damage-over-time",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            110,
+            120,
+            130,
+            140
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:warlock_shadow_word:damage:damage-over-time:cooldown",
+          "ownerId": "effect:warlock_shadow_word:damage:damage-over-time",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            15,
+            14,
+            13,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:warlock_shadow_word:damage:damage-over-time:delay",
+          "ownerId": "effect:warlock_shadow_word:damage:damage-over-time",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:warlock_shadow_word:damage:damage-over-time:damageType",
+          "ownerId": "effect:warlock_shadow_word:damage:damage-over-time",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "warlock_shadow_word"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:warlock_shadow_word:damage:damage-over-time",
+      "legacyEffectId": "warlock_shadow_word:damage:damage-over-time",
+      "order": 1,
+      "legacyAbilityId": "warlock_shadow_word",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:warlock_shadow_word:damage:damage-over-time:range",
+        "value:effect:warlock_shadow_word:damage:damage-over-time:duration",
+        "value:effect:warlock_shadow_word:damage:damage-over-time:magnitude",
+        "value:effect:warlock_shadow_word:damage:damage-over-time:mana",
+        "value:effect:warlock_shadow_word:damage:damage-over-time:cooldown",
+        "value:effect:warlock_shadow_word:damage:damage-over-time:delay",
+        "value:effect:warlock_shadow_word:damage:damage-over-time:damageType"
+      ],
+      "activationId": "activation:37:warlock_shadow_word"
+    },
+    {
+      "effectId": "warlock_shadow_word:heal:healing-over-time",
+      "heroId": "37",
+      "abilityId": "ability:37:warlock_shadow_word",
+      "type": "heal",
+      "subtype": "healing-over-time",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:warlock_shadow_word:heal:healing-over-time:range",
+          "ownerId": "effect:warlock_shadow_word:heal:healing-over-time",
+          "field": "range",
+          "state": "known",
+          "value": [
+            650,
+            700,
+            750,
+            800
+          ]
+        },
+        "duration": {
+          "id": "value:effect:warlock_shadow_word:heal:healing-over-time:duration",
+          "ownerId": "effect:warlock_shadow_word:heal:healing-over-time",
+          "field": "duration",
+          "state": "known",
+          "value": 10
+        },
+        "magnitude": {
+          "id": "value:effect:warlock_shadow_word:heal:healing-over-time:magnitude",
+          "ownerId": "effect:warlock_shadow_word:heal:healing-over-time",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            15,
+            25,
+            35,
+            45
+          ]
+        },
+        "mana": {
+          "id": "value:effect:warlock_shadow_word:heal:healing-over-time:mana",
+          "ownerId": "effect:warlock_shadow_word:heal:healing-over-time",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            110,
+            120,
+            130,
+            140
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:warlock_shadow_word:heal:healing-over-time:cooldown",
+          "ownerId": "effect:warlock_shadow_word:heal:healing-over-time",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            15,
+            14,
+            13,
+            12
+          ]
+        },
+        "delay": {
+          "id": "value:effect:warlock_shadow_word:heal:healing-over-time:delay",
+          "ownerId": "effect:warlock_shadow_word:heal:healing-over-time",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "warlock_shadow_word"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:warlock_shadow_word:heal:healing-over-time",
+      "legacyEffectId": "warlock_shadow_word:heal:healing-over-time",
+      "order": 2,
+      "legacyAbilityId": "warlock_shadow_word",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:warlock_shadow_word:heal:healing-over-time:range",
+        "value:effect:warlock_shadow_word:heal:healing-over-time:duration",
+        "value:effect:warlock_shadow_word:heal:healing-over-time:magnitude",
+        "value:effect:warlock_shadow_word:heal:healing-over-time:mana",
+        "value:effect:warlock_shadow_word:heal:healing-over-time:cooldown",
+        "value:effect:warlock_shadow_word:heal:healing-over-time:delay"
+      ],
+      "activationId": "activation:37:warlock_shadow_word"
+    },
+    {
+      "effectId": "warlock_upheaval:slow:channel-ramping-movement",
+      "heroId": "37",
+      "abilityId": "ability:37:warlock_upheaval",
+      "type": "slow",
+      "subtype": "channel-ramping-movement",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:warlock_upheaval:slow:channel-ramping-movement:range",
+          "ownerId": "effect:warlock_upheaval:slow:channel-ramping-movement",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:warlock_upheaval:slow:channel-ramping-movement:duration",
+          "ownerId": "effect:warlock_upheaval:slow:channel-ramping-movement",
+          "field": "duration",
+          "state": "known",
+          "value": 1
+        },
+        "magnitude": {
+          "id": "value:effect:warlock_upheaval:slow:channel-ramping-movement:magnitude",
+          "ownerId": "effect:warlock_upheaval:slow:channel-ramping-movement",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:warlock_upheaval:slow:channel-ramping-movement:mana",
+          "ownerId": "effect:warlock_upheaval:slow:channel-ramping-movement",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:warlock_upheaval:slow:channel-ramping-movement:cooldown",
+          "ownerId": "effect:warlock_upheaval:slow:channel-ramping-movement",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            45,
+            40,
+            35,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:warlock_upheaval:slow:channel-ramping-movement:delay",
+          "ownerId": "effect:warlock_upheaval:slow:channel-ramping-movement",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "warlock_upheaval"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:warlock_upheaval:slow:channel-ramping-movement",
+      "legacyEffectId": "warlock_upheaval:slow:channel-ramping-movement",
+      "order": 3,
+      "legacyAbilityId": "warlock_upheaval",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:warlock_upheaval:slow:channel-ramping-movement:range",
+        "value:effect:warlock_upheaval:slow:channel-ramping-movement:duration",
+        "value:effect:warlock_upheaval:slow:channel-ramping-movement:magnitude",
+        "value:effect:warlock_upheaval:slow:channel-ramping-movement:mana",
+        "value:effect:warlock_upheaval:slow:channel-ramping-movement:cooldown",
+        "value:effect:warlock_upheaval:slow:channel-ramping-movement:delay"
+      ],
+      "activationId": "activation:37:warlock_upheaval"
+    },
+    {
+      "effectId": "warlock_upheaval:modifier:ramping-damage",
+      "heroId": "37",
+      "abilityId": "ability:37:warlock_upheaval",
+      "type": "modifier",
+      "subtype": "ramping-damage",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:warlock_upheaval:modifier:ramping-damage:range",
+          "ownerId": "effect:warlock_upheaval:modifier:ramping-damage",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:warlock_upheaval:modifier:ramping-damage:duration",
+          "ownerId": "effect:warlock_upheaval:modifier:ramping-damage",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:warlock_upheaval:modifier:ramping-damage:magnitude",
+          "ownerId": "effect:warlock_upheaval:modifier:ramping-damage",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:warlock_upheaval:modifier:ramping-damage:mana",
+          "ownerId": "effect:warlock_upheaval:modifier:ramping-damage",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:warlock_upheaval:modifier:ramping-damage:cooldown",
+          "ownerId": "effect:warlock_upheaval:modifier:ramping-damage",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            45,
+            40,
+            35,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:warlock_upheaval:modifier:ramping-damage:delay",
+          "ownerId": "effect:warlock_upheaval:modifier:ramping-damage",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "warlock_upheaval"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:warlock_upheaval:modifier:ramping-damage",
+      "legacyEffectId": "warlock_upheaval:modifier:ramping-damage",
+      "order": 4,
+      "legacyAbilityId": "warlock_upheaval",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:warlock_upheaval:modifier:ramping-damage:range",
+        "value:effect:warlock_upheaval:modifier:ramping-damage:duration",
+        "value:effect:warlock_upheaval:modifier:ramping-damage:magnitude",
+        "value:effect:warlock_upheaval:modifier:ramping-damage:mana",
+        "value:effect:warlock_upheaval:modifier:ramping-damage:cooldown",
+        "value:effect:warlock_upheaval:modifier:ramping-damage:delay"
+      ],
+      "activationId": "activation:37:warlock_upheaval"
+    },
+    {
+      "effectId": "warlock_upheaval:modifier:shard-channel-imps",
+      "heroId": "37",
+      "abilityId": "ability:37:warlock_upheaval",
+      "type": "modifier",
+      "subtype": "shard-channel-imps",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:warlock_upheaval:modifier:shard-channel-imps:range",
+          "ownerId": "effect:warlock_upheaval:modifier:shard-channel-imps",
+          "field": "range",
+          "state": "known",
+          "value": 800
+        },
+        "duration": {
+          "id": "value:effect:warlock_upheaval:modifier:shard-channel-imps:duration",
+          "ownerId": "effect:warlock_upheaval:modifier:shard-channel-imps",
+          "field": "duration",
+          "state": "known",
+          "value": 15
+        },
+        "magnitude": {
+          "id": "value:effect:warlock_upheaval:modifier:shard-channel-imps:magnitude",
+          "ownerId": "effect:warlock_upheaval:modifier:shard-channel-imps",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:warlock_upheaval:modifier:shard-channel-imps:mana",
+          "ownerId": "effect:warlock_upheaval:modifier:shard-channel-imps",
+          "field": "mana",
+          "state": "known",
+          "value": 100
+        },
+        "cooldown": {
+          "id": "value:effect:warlock_upheaval:modifier:shard-channel-imps:cooldown",
+          "ownerId": "effect:warlock_upheaval:modifier:shard-channel-imps",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            45,
+            40,
+            35,
+            30
+          ]
+        },
+        "delay": {
+          "id": "value:effect:warlock_upheaval:modifier:shard-channel-imps:delay",
+          "ownerId": "effect:warlock_upheaval:modifier:shard-channel-imps",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ]
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "warlock_upheaval"
+      },
+      "vulnerability": {
+        "channel": true,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:warlock_upheaval:modifier:shard-channel-imps",
+      "legacyEffectId": "warlock_upheaval:modifier:shard-channel-imps",
+      "order": 5,
+      "legacyAbilityId": "warlock_upheaval",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:warlock_upheaval:modifier:shard-channel-imps:range",
+        "value:effect:warlock_upheaval:modifier:shard-channel-imps:duration",
+        "value:effect:warlock_upheaval:modifier:shard-channel-imps:magnitude",
+        "value:effect:warlock_upheaval:modifier:shard-channel-imps:mana",
+        "value:effect:warlock_upheaval:modifier:shard-channel-imps:cooldown",
+        "value:effect:warlock_upheaval:modifier:shard-channel-imps:delay"
+      ],
+      "activationId": "activation:37:warlock_upheaval"
+    },
+    {
+      "effectId": "warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp",
+      "heroId": "37",
+      "abilityId": "ability:37:warlock_eldritch_summoning",
+      "type": "modifier",
+      "subtype": "debuffed-enemy-death-imp",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp:range",
+          "ownerId": "effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp:duration",
+          "ownerId": "effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp",
+          "field": "duration",
+          "state": "known",
+          "value": 15
+        },
+        "magnitude": {
+          "id": "value:effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp:magnitude",
+          "ownerId": "effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp:mana",
+          "ownerId": "effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp:cooldown",
+          "ownerId": "effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp",
+          "field": "cooldown",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "delay": {
+          "id": "value:effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp:delay",
+          "ownerId": "effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "warlockDebuffedEnemyDied"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "warlock_eldritch_summoning"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp",
+      "legacyEffectId": "warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp",
+      "order": 6,
+      "legacyAbilityId": "warlock_eldritch_summoning",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp:0"
+      ],
+      "valueIds": [
+        "value:effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp:range",
+        "value:effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp:duration",
+        "value:effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp:magnitude",
+        "value:effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp:mana",
+        "value:effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp:cooldown",
+        "value:effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp:delay"
+      ],
+      "activationId": "activation:37:warlock_eldritch_summoning"
+    },
+    {
+      "effectId": "warlock_rain_of_chaos:control:impact-stun",
+      "heroId": "37",
+      "abilityId": "ability:37:warlock_rain_of_chaos",
+      "type": "control",
+      "subtype": "impact-stun",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:warlock_rain_of_chaos:control:impact-stun:range",
+          "ownerId": "effect:warlock_rain_of_chaos:control:impact-stun",
+          "field": "range",
+          "state": "known",
+          "value": 900
+        },
+        "duration": {
+          "id": "value:effect:warlock_rain_of_chaos:control:impact-stun:duration",
+          "ownerId": "effect:warlock_rain_of_chaos:control:impact-stun",
+          "field": "duration",
+          "state": "known",
+          "value": 0.8
+        },
+        "magnitude": {
+          "id": "value:effect:warlock_rain_of_chaos:control:impact-stun:magnitude",
+          "ownerId": "effect:warlock_rain_of_chaos:control:impact-stun",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:warlock_rain_of_chaos:control:impact-stun:mana",
+          "ownerId": "effect:warlock_rain_of_chaos:control:impact-stun",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            200,
+            400,
+            600
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:warlock_rain_of_chaos:control:impact-stun:cooldown",
+          "ownerId": "effect:warlock_rain_of_chaos:control:impact-stun",
+          "field": "cooldown",
+          "state": "known",
+          "value": 165
+        },
+        "delay": {
+          "id": "value:effect:warlock_rain_of_chaos:control:impact-stun:delay",
+          "ownerId": "effect:warlock_rain_of_chaos:control:impact-stun",
+          "field": "delay",
+          "state": "known",
+          "value": 0.5
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "controlActions": {
+          "state": "known",
+          "value": [
+            "movement",
+            "attacking",
+            "casting",
+            "channel"
+          ]
+        },
+        "interruptsChannel": {
+          "state": "known",
+          "value": true
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "strong"
+        }
+      },
+      "relationships": {
+        "resourceId": "warlock_rain_of_chaos"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:warlock_rain_of_chaos:control:impact-stun",
+      "legacyEffectId": "warlock_rain_of_chaos:control:impact-stun",
+      "order": 7,
+      "legacyAbilityId": "warlock_rain_of_chaos",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:warlock_rain_of_chaos:control:impact-stun:range",
+        "value:effect:warlock_rain_of_chaos:control:impact-stun:duration",
+        "value:effect:warlock_rain_of_chaos:control:impact-stun:magnitude",
+        "value:effect:warlock_rain_of_chaos:control:impact-stun:mana",
+        "value:effect:warlock_rain_of_chaos:control:impact-stun:cooldown",
+        "value:effect:warlock_rain_of_chaos:control:impact-stun:delay"
+      ],
+      "activationId": "activation:37:warlock_rain_of_chaos"
+    },
+    {
+      "effectId": "warlock_rain_of_chaos:modifier:golem-summon",
+      "heroId": "37",
+      "abilityId": "ability:37:warlock_rain_of_chaos",
+      "type": "modifier",
+      "subtype": "golem-summon",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:warlock_rain_of_chaos:modifier:golem-summon:range",
+          "ownerId": "effect:warlock_rain_of_chaos:modifier:golem-summon",
+          "field": "range",
+          "state": "known",
+          "value": 900
+        },
+        "duration": {
+          "id": "value:effect:warlock_rain_of_chaos:modifier:golem-summon:duration",
+          "ownerId": "effect:warlock_rain_of_chaos:modifier:golem-summon",
+          "field": "duration",
+          "state": "known",
+          "value": 60
+        },
+        "magnitude": {
+          "id": "value:effect:warlock_rain_of_chaos:modifier:golem-summon:magnitude",
+          "ownerId": "effect:warlock_rain_of_chaos:modifier:golem-summon",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:warlock_rain_of_chaos:modifier:golem-summon:mana",
+          "ownerId": "effect:warlock_rain_of_chaos:modifier:golem-summon",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            200,
+            400,
+            600
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:warlock_rain_of_chaos:modifier:golem-summon:cooldown",
+          "ownerId": "effect:warlock_rain_of_chaos:modifier:golem-summon",
+          "field": "cooldown",
+          "state": "known",
+          "value": 165
+        },
+        "delay": {
+          "id": "value:effect:warlock_rain_of_chaos:modifier:golem-summon:delay",
+          "ownerId": "effect:warlock_rain_of_chaos:modifier:golem-summon",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "warlock_rain_of_chaos"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:warlock_rain_of_chaos:modifier:golem-summon",
+      "legacyEffectId": "warlock_rain_of_chaos:modifier:golem-summon",
+      "order": 8,
+      "legacyAbilityId": "warlock_rain_of_chaos",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:warlock_rain_of_chaos:modifier:golem-summon:range",
+        "value:effect:warlock_rain_of_chaos:modifier:golem-summon:duration",
+        "value:effect:warlock_rain_of_chaos:modifier:golem-summon:magnitude",
+        "value:effect:warlock_rain_of_chaos:modifier:golem-summon:mana",
+        "value:effect:warlock_rain_of_chaos:modifier:golem-summon:cooldown",
+        "value:effect:warlock_rain_of_chaos:modifier:golem-summon:delay"
+      ],
+      "activationId": "activation:37:warlock_rain_of_chaos"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp:0",
+      "ownerId": "effect:warlock_eldritch_summoning:modifier:debuffed-enemy-death-imp",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "warlockDebuffedEnemyDied"
+      }
+    }
+  ]
+}

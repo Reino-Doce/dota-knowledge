@@ -1,0 +1,2260 @@
+{
+  "schemaVersion": 2,
+  "effects": [
+    {
+      "effectId": "abaddon_death_coil:damage:health-cost-enemy-mist-coil",
+      "heroId": "102",
+      "abilityId": "ability:102:abaddon_death_coil",
+      "type": "damage",
+      "subtype": "health-cost-enemy-mist-coil",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil:range",
+          "ownerId": "effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil",
+          "field": "range",
+          "state": "known",
+          "value": 625
+        },
+        "duration": {
+          "id": "value:effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil:duration",
+          "ownerId": "effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil:magnitude",
+          "ownerId": "effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            95,
+            170,
+            245,
+            320
+          ]
+        },
+        "mana": {
+          "id": "value:effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil:mana",
+          "ownerId": "effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            50,
+            55,
+            60,
+            65
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil:cooldown",
+          "ownerId": "effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            8,
+            7,
+            6,
+            5
+          ]
+        },
+        "delay": {
+          "id": "value:effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil:delay",
+          "ownerId": "effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil:damageType",
+          "ownerId": "effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "abaddonCoilHealthCostAccounted"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "abaddon_death_coil"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil",
+      "legacyEffectId": "abaddon_death_coil:damage:health-cost-enemy-mist-coil",
+      "order": 0,
+      "legacyAbilityId": "abaddon_death_coil",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:abaddon_death_coil:damage:health-cost-enemy-mist-coil:0"
+      ],
+      "valueIds": [
+        "value:effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil:range",
+        "value:effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil:duration",
+        "value:effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil:magnitude",
+        "value:effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil:mana",
+        "value:effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil:cooldown",
+        "value:effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil:delay",
+        "value:effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil:damageType"
+      ],
+      "activationId": "activation:102:abaddon_death_coil"
+    },
+    {
+      "effectId": "abaddon_death_coil:heal:health-cost-allied-mist-coil",
+      "heroId": "102",
+      "abilityId": "ability:102:abaddon_death_coil",
+      "type": "heal",
+      "subtype": "health-cost-allied-mist-coil",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:abaddon_death_coil:heal:health-cost-allied-mist-coil:range",
+          "ownerId": "effect:abaddon_death_coil:heal:health-cost-allied-mist-coil",
+          "field": "range",
+          "state": "known",
+          "value": 625
+        },
+        "duration": {
+          "id": "value:effect:abaddon_death_coil:heal:health-cost-allied-mist-coil:duration",
+          "ownerId": "effect:abaddon_death_coil:heal:health-cost-allied-mist-coil",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:abaddon_death_coil:heal:health-cost-allied-mist-coil:magnitude",
+          "ownerId": "effect:abaddon_death_coil:heal:health-cost-allied-mist-coil",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            95,
+            170,
+            245,
+            320
+          ]
+        },
+        "mana": {
+          "id": "value:effect:abaddon_death_coil:heal:health-cost-allied-mist-coil:mana",
+          "ownerId": "effect:abaddon_death_coil:heal:health-cost-allied-mist-coil",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            50,
+            55,
+            60,
+            65
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:abaddon_death_coil:heal:health-cost-allied-mist-coil:cooldown",
+          "ownerId": "effect:abaddon_death_coil:heal:health-cost-allied-mist-coil",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            8,
+            7,
+            6,
+            5
+          ]
+        },
+        "delay": {
+          "id": "value:effect:abaddon_death_coil:heal:health-cost-allied-mist-coil:delay",
+          "ownerId": "effect:abaddon_death_coil:heal:health-cost-allied-mist-coil",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "abaddonCoilHealthCostAccounted"
+        ]
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": true
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "abaddon_death_coil"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:abaddon_death_coil:heal:health-cost-allied-mist-coil",
+      "legacyEffectId": "abaddon_death_coil:heal:health-cost-allied-mist-coil",
+      "order": 1,
+      "legacyAbilityId": "abaddon_death_coil",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:abaddon_death_coil:heal:health-cost-allied-mist-coil:0"
+      ],
+      "valueIds": [
+        "value:effect:abaddon_death_coil:heal:health-cost-allied-mist-coil:range",
+        "value:effect:abaddon_death_coil:heal:health-cost-allied-mist-coil:duration",
+        "value:effect:abaddon_death_coil:heal:health-cost-allied-mist-coil:magnitude",
+        "value:effect:abaddon_death_coil:heal:health-cost-allied-mist-coil:mana",
+        "value:effect:abaddon_death_coil:heal:health-cost-allied-mist-coil:cooldown",
+        "value:effect:abaddon_death_coil:heal:health-cost-allied-mist-coil:delay"
+      ],
+      "activationId": "activation:102:abaddon_death_coil"
+    },
+    {
+      "effectId": "abaddon_aphotic_shield:save:aphotic-all-damage-barrier",
+      "heroId": "102",
+      "abilityId": "ability:102:abaddon_aphotic_shield",
+      "type": "save",
+      "subtype": "aphotic-all-damage-barrier",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier:range",
+          "ownerId": "effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier",
+          "field": "range",
+          "state": "known",
+          "value": 550
+        },
+        "duration": {
+          "id": "value:effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier:duration",
+          "ownerId": "effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier",
+          "field": "duration",
+          "state": "known",
+          "value": 12
+        },
+        "magnitude": {
+          "id": "value:effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier:magnitude",
+          "ownerId": "effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            120,
+            150,
+            180,
+            210
+          ]
+        },
+        "mana": {
+          "id": "value:effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier:mana",
+          "ownerId": "effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            110,
+            120,
+            130,
+            140
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier:cooldown",
+          "ownerId": "effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            12,
+            10,
+            8,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier:delay",
+          "ownerId": "effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "abaddon_aphotic_shield"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier",
+      "legacyEffectId": "abaddon_aphotic_shield:save:aphotic-all-damage-barrier",
+      "order": 2,
+      "legacyAbilityId": "abaddon_aphotic_shield",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier:range",
+        "value:effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier:duration",
+        "value:effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier:magnitude",
+        "value:effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier:mana",
+        "value:effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier:cooldown",
+        "value:effect:abaddon_aphotic_shield:save:aphotic-all-damage-barrier:delay"
+      ],
+      "activationId": "activation:102:abaddon_aphotic_shield"
+    },
+    {
+      "effectId": "abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel",
+      "heroId": "102",
+      "abilityId": "ability:102:abaddon_aphotic_shield",
+      "type": "dispel",
+      "subtype": "aphotic-strong-allied-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self",
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel:range",
+          "ownerId": "effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel",
+          "field": "range",
+          "state": "known",
+          "value": 550
+        },
+        "duration": {
+          "id": "value:effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel:duration",
+          "ownerId": "effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel:magnitude",
+          "ownerId": "effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel:mana",
+          "ownerId": "effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            110,
+            120,
+            130,
+            140
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel:cooldown",
+          "ownerId": "effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            12,
+            10,
+            8,
+            6
+          ]
+        },
+        "delay": {
+          "id": "value:effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel:delay",
+          "ownerId": "effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": []
+      },
+      "delivery": {
+        "kind": "unit-target",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "strong"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "ally-debuffs"
+        }
+      },
+      "relationships": {
+        "resourceId": "abaddon_aphotic_shield"
+      },
+      "vulnerability": {
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel",
+      "legacyEffectId": "abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel",
+      "order": 3,
+      "legacyAbilityId": "abaddon_aphotic_shield",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [],
+      "valueIds": [
+        "value:effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel:range",
+        "value:effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel:duration",
+        "value:effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel:magnitude",
+        "value:effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel:mana",
+        "value:effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel:cooldown",
+        "value:effect:abaddon_aphotic_shield:dispel:aphotic-strong-allied-dispel:delay"
+      ],
+      "activationId": "activation:102:abaddon_aphotic_shield"
+    },
+    {
+      "effectId": "abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst",
+      "heroId": "102",
+      "abilityId": "ability:102:abaddon_aphotic_shield",
+      "type": "damage",
+      "subtype": "destroyed-aphotic-barrier-burst",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:range",
+          "ownerId": "effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:duration",
+          "ownerId": "effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:magnitude",
+          "ownerId": "effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            120,
+            150,
+            180,
+            210
+          ]
+        },
+        "mana": {
+          "id": "value:effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:mana",
+          "ownerId": "effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:cooldown",
+          "ownerId": "effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:delay",
+          "ownerId": "effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:damageType",
+          "ownerId": "effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "aphoticBarrierDestroyed",
+          "enemyVisibleInsideAphoticBurst"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "abaddon_aphotic_shield:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst",
+      "legacyEffectId": "abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst",
+      "order": 4,
+      "legacyAbilityId": "abaddon_aphotic_shield",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:0",
+        "condition:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:1"
+      ],
+      "valueIds": [
+        "value:effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:range",
+        "value:effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:duration",
+        "value:effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:magnitude",
+        "value:effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:mana",
+        "value:effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:cooldown",
+        "value:effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:delay",
+        "value:effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:damageType"
+      ],
+      "activationId": "activation:102:abaddon_aphotic_shield"
+    },
+    {
+      "effectId": "abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission",
+      "heroId": "102",
+      "abilityId": "ability:102:abaddon_aphotic_shield",
+      "type": "modifier",
+      "subtype": "shard-absorbed-damage-emission",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission:range",
+          "ownerId": "effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission:duration",
+          "ownerId": "effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission:magnitude",
+          "ownerId": "effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission:mana",
+          "ownerId": "effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission:cooldown",
+          "ownerId": "effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission:delay",
+          "ownerId": "effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [
+          "shard"
+        ],
+        "requiresContext": [
+          "aphoticBarrierAbsorbedDamage"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "abaddon_aphotic_shield:passive"
+      },
+      "vulnerability": {},
+      "exceptions": [],
+      "id": "effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission",
+      "legacyEffectId": "abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission",
+      "order": 5,
+      "legacyAbilityId": "abaddon_aphotic_shield",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission:0"
+      ],
+      "valueIds": [
+        "value:effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission:range",
+        "value:effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission:duration",
+        "value:effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission:magnitude",
+        "value:effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission:mana",
+        "value:effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission:cooldown",
+        "value:effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission:delay"
+      ],
+      "activationId": "activation:102:abaddon_aphotic_shield"
+    },
+    {
+      "effectId": "abaddon_frostmourne:slow:curse-landed-attack-slow",
+      "heroId": "102",
+      "abilityId": "ability:102:abaddon_frostmourne",
+      "type": "slow",
+      "subtype": "curse-landed-attack-slow",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:abaddon_frostmourne:slow:curse-landed-attack-slow:range",
+          "ownerId": "effect:abaddon_frostmourne:slow:curse-landed-attack-slow",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:abaddon_frostmourne:slow:curse-landed-attack-slow:duration",
+          "ownerId": "effect:abaddon_frostmourne:slow:curse-landed-attack-slow",
+          "field": "duration",
+          "state": "known",
+          "value": 2
+        },
+        "magnitude": {
+          "id": "value:effect:abaddon_frostmourne:slow:curse-landed-attack-slow:magnitude",
+          "ownerId": "effect:abaddon_frostmourne:slow:curse-landed-attack-slow",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            10,
+            15,
+            20,
+            25
+          ]
+        },
+        "mana": {
+          "id": "value:effect:abaddon_frostmourne:slow:curse-landed-attack-slow:mana",
+          "ownerId": "effect:abaddon_frostmourne:slow:curse-landed-attack-slow",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:abaddon_frostmourne:slow:curse-landed-attack-slow:cooldown",
+          "ownerId": "effect:abaddon_frostmourne:slow:curse-landed-attack-slow",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:abaddon_frostmourne:slow:curse-landed-attack-slow:delay",
+          "ownerId": "effect:abaddon_frostmourne:slow:curse-landed-attack-slow",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "curseOfAvernusAttackLanded"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "abaddon_frostmourne:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:abaddon_frostmourne:slow:curse-landed-attack-slow",
+      "legacyEffectId": "abaddon_frostmourne:slow:curse-landed-attack-slow",
+      "order": 6,
+      "legacyAbilityId": "abaddon_frostmourne",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:abaddon_frostmourne:slow:curse-landed-attack-slow:0"
+      ],
+      "valueIds": [
+        "value:effect:abaddon_frostmourne:slow:curse-landed-attack-slow:range",
+        "value:effect:abaddon_frostmourne:slow:curse-landed-attack-slow:duration",
+        "value:effect:abaddon_frostmourne:slow:curse-landed-attack-slow:magnitude",
+        "value:effect:abaddon_frostmourne:slow:curse-landed-attack-slow:mana",
+        "value:effect:abaddon_frostmourne:slow:curse-landed-attack-slow:cooldown",
+        "value:effect:abaddon_frostmourne:slow:curse-landed-attack-slow:delay"
+      ],
+      "activationId": "activation:102:abaddon_frostmourne"
+    },
+    {
+      "effectId": "abaddon_frostmourne:damage:curse-attack-damage-rate",
+      "heroId": "102",
+      "abilityId": "ability:102:abaddon_frostmourne",
+      "type": "damage",
+      "subtype": "curse-attack-damage-rate",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:abaddon_frostmourne:damage:curse-attack-damage-rate:range",
+          "ownerId": "effect:abaddon_frostmourne:damage:curse-attack-damage-rate",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:abaddon_frostmourne:damage:curse-attack-damage-rate:duration",
+          "ownerId": "effect:abaddon_frostmourne:damage:curse-attack-damage-rate",
+          "field": "duration",
+          "state": "known",
+          "value": 2
+        },
+        "magnitude": {
+          "id": "value:effect:abaddon_frostmourne:damage:curse-attack-damage-rate:magnitude",
+          "ownerId": "effect:abaddon_frostmourne:damage:curse-attack-damage-rate",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:abaddon_frostmourne:damage:curse-attack-damage-rate:mana",
+          "ownerId": "effect:abaddon_frostmourne:damage:curse-attack-damage-rate",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:abaddon_frostmourne:damage:curse-attack-damage-rate:cooldown",
+          "ownerId": "effect:abaddon_frostmourne:damage:curse-attack-damage-rate",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:abaddon_frostmourne:damage:curse-attack-damage-rate:delay",
+          "ownerId": "effect:abaddon_frostmourne:damage:curse-attack-damage-rate",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "damageType": {
+          "id": "value:effect:abaddon_frostmourne:damage:curse-attack-damage-rate:damageType",
+          "ownerId": "effect:abaddon_frostmourne:damage:curse-attack-damage-rate",
+          "field": "damageType",
+          "state": "known",
+          "value": "magical"
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "curseOfAvernusAttackLanded"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "known",
+          "value": false
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispellableBy": {
+          "state": "known",
+          "value": "basic"
+        }
+      },
+      "relationships": {
+        "resourceId": "abaddon_frostmourne:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:abaddon_frostmourne:damage:curse-attack-damage-rate",
+      "legacyEffectId": "abaddon_frostmourne:damage:curse-attack-damage-rate",
+      "order": 7,
+      "legacyAbilityId": "abaddon_frostmourne",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:abaddon_frostmourne:damage:curse-attack-damage-rate:0"
+      ],
+      "valueIds": [
+        "value:effect:abaddon_frostmourne:damage:curse-attack-damage-rate:range",
+        "value:effect:abaddon_frostmourne:damage:curse-attack-damage-rate:duration",
+        "value:effect:abaddon_frostmourne:damage:curse-attack-damage-rate:magnitude",
+        "value:effect:abaddon_frostmourne:damage:curse-attack-damage-rate:mana",
+        "value:effect:abaddon_frostmourne:damage:curse-attack-damage-rate:cooldown",
+        "value:effect:abaddon_frostmourne:damage:curse-attack-damage-rate:delay",
+        "value:effect:abaddon_frostmourne:damage:curse-attack-damage-rate:damageType"
+      ],
+      "activationId": "activation:102:abaddon_frostmourne"
+    },
+    {
+      "effectId": "abaddon_frostmourne:modifier:attacks-against-cursed-target-speed",
+      "heroId": "102",
+      "abilityId": "ability:102:abaddon_frostmourne",
+      "type": "modifier",
+      "subtype": "attacks-against-cursed-target-speed",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed:range",
+          "ownerId": "effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed:duration",
+          "ownerId": "effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed",
+          "field": "duration",
+          "state": "known",
+          "value": 2
+        },
+        "magnitude": {
+          "id": "value:effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed:magnitude",
+          "ownerId": "effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed",
+          "field": "magnitude",
+          "state": "known",
+          "value": [
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        "mana": {
+          "id": "value:effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed:mana",
+          "ownerId": "effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed:cooldown",
+          "ownerId": "effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed:delay",
+          "ownerId": "effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 1,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "curseOfAvernusAttackLanded"
+        ]
+      },
+      "delivery": {
+        "kind": "attack",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "abaddon_frostmourne:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed",
+      "legacyEffectId": "abaddon_frostmourne:modifier:attacks-against-cursed-target-speed",
+      "order": 8,
+      "legacyAbilityId": "abaddon_frostmourne",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed:0"
+      ],
+      "valueIds": [
+        "value:effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed:range",
+        "value:effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed:duration",
+        "value:effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed:magnitude",
+        "value:effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed:mana",
+        "value:effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed:cooldown",
+        "value:effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed:delay"
+      ],
+      "activationId": "activation:102:abaddon_frostmourne"
+    },
+    {
+      "effectId": "abaddon_withering_mist:modifier:low-health-restoration-reduction",
+      "heroId": "102",
+      "abilityId": "ability:102:abaddon_withering_mist",
+      "type": "modifier",
+      "subtype": "low-health-restoration-reduction",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "enemy"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:abaddon_withering_mist:modifier:low-health-restoration-reduction:range",
+          "ownerId": "effect:abaddon_withering_mist:modifier:low-health-restoration-reduction",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:abaddon_withering_mist:modifier:low-health-restoration-reduction:duration",
+          "ownerId": "effect:abaddon_withering_mist:modifier:low-health-restoration-reduction",
+          "field": "duration",
+          "state": "known",
+          "value": 5
+        },
+        "magnitude": {
+          "id": "value:effect:abaddon_withering_mist:modifier:low-health-restoration-reduction:magnitude",
+          "ownerId": "effect:abaddon_withering_mist:modifier:low-health-restoration-reduction",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:abaddon_withering_mist:modifier:low-health-restoration-reduction:mana",
+          "ownerId": "effect:abaddon_withering_mist:modifier:low-health-restoration-reduction",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:abaddon_withering_mist:modifier:low-health-restoration-reduction:cooldown",
+          "ownerId": "effect:abaddon_withering_mist:modifier:low-health-restoration-reduction",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:abaddon_withering_mist:modifier:low-health-restoration-reduction:delay",
+          "ownerId": "effect:abaddon_withering_mist:modifier:low-health-restoration-reduction",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 0,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "innate": true,
+        "requiresContext": [
+          "abaddonDamagedEnemy",
+          "witheringTargetBelowHealthThreshold"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "abaddon_withering_mist:passive"
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:abaddon_withering_mist:modifier:low-health-restoration-reduction",
+      "legacyEffectId": "abaddon_withering_mist:modifier:low-health-restoration-reduction",
+      "order": 9,
+      "legacyAbilityId": "abaddon_withering_mist",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:abaddon_withering_mist:modifier:low-health-restoration-reduction:0",
+        "condition:abaddon_withering_mist:modifier:low-health-restoration-reduction:1"
+      ],
+      "valueIds": [
+        "value:effect:abaddon_withering_mist:modifier:low-health-restoration-reduction:range",
+        "value:effect:abaddon_withering_mist:modifier:low-health-restoration-reduction:duration",
+        "value:effect:abaddon_withering_mist:modifier:low-health-restoration-reduction:magnitude",
+        "value:effect:abaddon_withering_mist:modifier:low-health-restoration-reduction:mana",
+        "value:effect:abaddon_withering_mist:modifier:low-health-restoration-reduction:cooldown",
+        "value:effect:abaddon_withering_mist:modifier:low-health-restoration-reduction:delay"
+      ],
+      "activationId": "activation:102:abaddon_withering_mist"
+    },
+    {
+      "effectId": "abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel",
+      "heroId": "102",
+      "abilityId": "ability:102:abaddon_borrowed_time",
+      "type": "dispel",
+      "subtype": "manual-borrowed-time-strong-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel:range",
+          "ownerId": "effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel:duration",
+          "ownerId": "effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel:magnitude",
+          "ownerId": "effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel:mana",
+          "ownerId": "effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel:cooldown",
+          "ownerId": "effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            85,
+            75,
+            65
+          ]
+        },
+        "delay": {
+          "id": "value:effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel:delay",
+          "ownerId": "effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "abaddonNotSilenced"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "castableWhileDisabled": true
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "strong"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "self-debuffs"
+        }
+      },
+      "relationships": {
+        "resourceId": "abaddon_borrowed_time"
+      },
+      "vulnerability": {
+        "breakable": null,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel",
+      "legacyEffectId": "abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel",
+      "order": 10,
+      "legacyAbilityId": "abaddon_borrowed_time",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel:0"
+      ],
+      "valueIds": [
+        "value:effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel:range",
+        "value:effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel:duration",
+        "value:effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel:magnitude",
+        "value:effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel:mana",
+        "value:effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel:cooldown",
+        "value:effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel:delay"
+      ],
+      "activationId": "activation:102:abaddon_borrowed_time"
+    },
+    {
+      "effectId": "abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion",
+      "heroId": "102",
+      "abilityId": "ability:102:abaddon_borrowed_time",
+      "type": "heal",
+      "subtype": "manual-borrowed-time-damage-conversion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion:range",
+          "ownerId": "effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion:duration",
+          "ownerId": "effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            4,
+            5,
+            6
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion:magnitude",
+          "ownerId": "effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion:mana",
+          "ownerId": "effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion:cooldown",
+          "ownerId": "effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            85,
+            75,
+            65
+          ]
+        },
+        "delay": {
+          "id": "value:effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion:delay",
+          "ownerId": "effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "abaddonNotSilenced",
+          "borrowedTimeReceivesDamage"
+        ]
+      },
+      "delivery": {
+        "kind": "self-area",
+        "requiresCasting": true,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "castableWhileDisabled": true
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "abaddon_borrowed_time"
+      },
+      "vulnerability": {
+        "breakable": null,
+        "castDependent": true
+      },
+      "exceptions": [],
+      "id": "effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion",
+      "legacyEffectId": "abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion",
+      "order": 11,
+      "legacyAbilityId": "abaddon_borrowed_time",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion:0",
+        "condition:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion:1"
+      ],
+      "valueIds": [
+        "value:effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion:range",
+        "value:effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion:duration",
+        "value:effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion:magnitude",
+        "value:effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion:mana",
+        "value:effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion:cooldown",
+        "value:effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion:delay"
+      ],
+      "activationId": "activation:102:abaddon_borrowed_time"
+    },
+    {
+      "effectId": "abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel",
+      "heroId": "102",
+      "abilityId": "ability:102:abaddon_borrowed_time",
+      "type": "dispel",
+      "subtype": "automatic-borrowed-time-strong-dispel",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel:range",
+          "ownerId": "effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel:duration",
+          "ownerId": "effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel:magnitude",
+          "ownerId": "effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel:mana",
+          "ownerId": "effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel:cooldown",
+          "ownerId": "effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            85,
+            75,
+            65
+          ]
+        },
+        "delay": {
+          "id": "value:effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel:delay",
+          "ownerId": "effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "abaddonHealthBelowAutomaticThreshold"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "dispelStrength": {
+          "state": "known",
+          "value": "strong"
+        },
+        "dispelDirection": {
+          "state": "known",
+          "value": "self-debuffs"
+        }
+      },
+      "relationships": {
+        "resourceId": "abaddon_borrowed_time",
+        "replaces": [
+          "abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel"
+        ]
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel",
+      "legacyEffectId": "abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel",
+      "order": 12,
+      "legacyAbilityId": "abaddon_borrowed_time",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel:0"
+      ],
+      "valueIds": [
+        "value:effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel:range",
+        "value:effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel:duration",
+        "value:effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel:magnitude",
+        "value:effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel:mana",
+        "value:effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel:cooldown",
+        "value:effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel:delay"
+      ],
+      "activationId": "activation:102:abaddon_borrowed_time"
+    },
+    {
+      "effectId": "abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion",
+      "heroId": "102",
+      "abilityId": "ability:102:abaddon_borrowed_time",
+      "type": "heal",
+      "subtype": "automatic-borrowed-time-damage-conversion",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "self"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "known",
+          "value": 1
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion:range",
+          "ownerId": "effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion:duration",
+          "ownerId": "effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion",
+          "field": "duration",
+          "state": "known",
+          "value": [
+            4,
+            5,
+            6
+          ]
+        },
+        "magnitude": {
+          "id": "value:effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion:magnitude",
+          "ownerId": "effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion:mana",
+          "ownerId": "effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion",
+          "field": "mana",
+          "state": "known",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        "cooldown": {
+          "id": "value:effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion:cooldown",
+          "ownerId": "effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion",
+          "field": "cooldown",
+          "state": "known",
+          "value": [
+            85,
+            75,
+            65
+          ]
+        },
+        "delay": {
+          "id": "value:effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion:delay",
+          "ownerId": "effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [],
+        "upgrades": [],
+        "requiresContext": [
+          "abaddonHealthBelowAutomaticThreshold",
+          "borrowedTimeReceivesDamage"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "restorationCategories": {
+          "state": "known",
+          "value": [
+            "healing"
+          ]
+        }
+      },
+      "relationships": {
+        "resourceId": "abaddon_borrowed_time",
+        "replaces": [
+          "abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion"
+        ]
+      },
+      "vulnerability": {
+        "breakable": true
+      },
+      "exceptions": [],
+      "id": "effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion",
+      "legacyEffectId": "abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion",
+      "order": 13,
+      "legacyAbilityId": "abaddon_borrowed_time",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion:0",
+        "condition:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion:1"
+      ],
+      "valueIds": [
+        "value:effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion:range",
+        "value:effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion:duration",
+        "value:effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion:magnitude",
+        "value:effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion:mana",
+        "value:effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion:cooldown",
+        "value:effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion:delay"
+      ],
+      "activationId": "activation:102:abaddon_borrowed_time"
+    },
+    {
+      "effectId": "abaddon_borrowed_time:modifier:scepter-threshold-allied-coil",
+      "heroId": "102",
+      "abilityId": "ability:102:abaddon_borrowed_time",
+      "type": "modifier",
+      "subtype": "scepter-threshold-allied-coil",
+      "targets": {
+        "teams": {
+          "state": "known",
+          "value": [
+            "ally"
+          ]
+        },
+        "unitClasses": {
+          "state": "known",
+          "value": [
+            "hero"
+          ]
+        },
+        "maxTargets": {
+          "state": "unknown",
+          "reason": "Effective recipient count is not established."
+        }
+      },
+      "values": {
+        "range": {
+          "id": "value:effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil:range",
+          "ownerId": "effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil",
+          "field": "range",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "duration": {
+          "id": "value:effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil:duration",
+          "ownerId": "effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil",
+          "field": "duration",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "magnitude": {
+          "id": "value:effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil:magnitude",
+          "ownerId": "effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil",
+          "field": "magnitude",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        },
+        "mana": {
+          "id": "value:effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil:mana",
+          "ownerId": "effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil",
+          "field": "mana",
+          "state": "known",
+          "value": 0
+        },
+        "cooldown": {
+          "id": "value:effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil:cooldown",
+          "ownerId": "effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil",
+          "field": "cooldown",
+          "state": "notApplicable",
+          "reason": "This passive component does not activate the owning ability."
+        },
+        "delay": {
+          "id": "value:effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil:delay",
+          "ownerId": "effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil",
+          "field": "delay",
+          "state": "unknown",
+          "reason": "This reviewed effect does not establish a concrete value for this field."
+        }
+      },
+      "availability": {
+        "minLevel": 6,
+        "requiresAbilityIds": [
+          "abaddon_death_coil"
+        ],
+        "upgrades": [
+          "scepter"
+        ],
+        "requiresContext": [
+          "borrowedTimeActive",
+          "allyTookThresholdDamageInsideMistCoilRange"
+        ]
+      },
+      "delivery": {
+        "kind": "passive",
+        "requiresCasting": false,
+        "requiresSetup": false,
+        "burst": false,
+        "global": false,
+        "requiresActivation": false
+      },
+      "interactions": {
+        "debuffImmunity": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "spellBlock": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        },
+        "invulnerableTarget": {
+          "state": "unknown",
+          "reason": "Not established by this source review."
+        }
+      },
+      "relationships": {
+        "resourceId": "abaddon_borrowed_time:passive"
+      },
+      "vulnerability": {
+        "breakable": null
+      },
+      "exceptions": [],
+      "id": "effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil",
+      "legacyEffectId": "abaddon_borrowed_time:modifier:scepter-threshold-allied-coil",
+      "order": 14,
+      "legacyAbilityId": "abaddon_borrowed_time",
+      "modifierIds": [],
+      "ruleIds": [],
+      "conditionIds": [
+        "condition:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil:0",
+        "condition:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil:1"
+      ],
+      "valueIds": [
+        "value:effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil:range",
+        "value:effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil:duration",
+        "value:effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil:magnitude",
+        "value:effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil:mana",
+        "value:effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil:cooldown",
+        "value:effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil:delay"
+      ],
+      "activationId": "activation:102:abaddon_borrowed_time"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "condition:abaddon_death_coil:damage:health-cost-enemy-mist-coil:0",
+      "ownerId": "effect:abaddon_death_coil:damage:health-cost-enemy-mist-coil",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "abaddonCoilHealthCostAccounted"
+      }
+    },
+    {
+      "id": "condition:abaddon_death_coil:heal:health-cost-allied-mist-coil:0",
+      "ownerId": "effect:abaddon_death_coil:heal:health-cost-allied-mist-coil",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "abaddonCoilHealthCostAccounted"
+      }
+    },
+    {
+      "id": "condition:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:0",
+      "ownerId": "effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "aphoticBarrierDestroyed"
+      }
+    },
+    {
+      "id": "condition:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst:1",
+      "ownerId": "effect:abaddon_aphotic_shield:damage:destroyed-aphotic-barrier-burst",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "enemyVisibleInsideAphoticBurst"
+      }
+    },
+    {
+      "id": "condition:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission:0",
+      "ownerId": "effect:abaddon_aphotic_shield:modifier:shard-absorbed-damage-emission",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "aphoticBarrierAbsorbedDamage"
+      }
+    },
+    {
+      "id": "condition:abaddon_frostmourne:slow:curse-landed-attack-slow:0",
+      "ownerId": "effect:abaddon_frostmourne:slow:curse-landed-attack-slow",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "curseOfAvernusAttackLanded"
+      }
+    },
+    {
+      "id": "condition:abaddon_frostmourne:damage:curse-attack-damage-rate:0",
+      "ownerId": "effect:abaddon_frostmourne:damage:curse-attack-damage-rate",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "curseOfAvernusAttackLanded"
+      }
+    },
+    {
+      "id": "condition:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed:0",
+      "ownerId": "effect:abaddon_frostmourne:modifier:attacks-against-cursed-target-speed",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "curseOfAvernusAttackLanded"
+      }
+    },
+    {
+      "id": "condition:abaddon_withering_mist:modifier:low-health-restoration-reduction:0",
+      "ownerId": "effect:abaddon_withering_mist:modifier:low-health-restoration-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "abaddonDamagedEnemy"
+      }
+    },
+    {
+      "id": "condition:abaddon_withering_mist:modifier:low-health-restoration-reduction:1",
+      "ownerId": "effect:abaddon_withering_mist:modifier:low-health-restoration-reduction",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "witheringTargetBelowHealthThreshold"
+      }
+    },
+    {
+      "id": "condition:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel:0",
+      "ownerId": "effect:abaddon_borrowed_time:dispel:manual-borrowed-time-strong-dispel",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "abaddonNotSilenced"
+      }
+    },
+    {
+      "id": "condition:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion:0",
+      "ownerId": "effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "abaddonNotSilenced"
+      }
+    },
+    {
+      "id": "condition:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion:1",
+      "ownerId": "effect:abaddon_borrowed_time:heal:manual-borrowed-time-damage-conversion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "borrowedTimeReceivesDamage"
+      }
+    },
+    {
+      "id": "condition:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel:0",
+      "ownerId": "effect:abaddon_borrowed_time:dispel:automatic-borrowed-time-strong-dispel",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "abaddonHealthBelowAutomaticThreshold"
+      }
+    },
+    {
+      "id": "condition:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion:0",
+      "ownerId": "effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "abaddonHealthBelowAutomaticThreshold"
+      }
+    },
+    {
+      "id": "condition:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion:1",
+      "ownerId": "effect:abaddon_borrowed_time:heal:automatic-borrowed-time-damage-conversion",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "borrowedTimeReceivesDamage"
+      }
+    },
+    {
+      "id": "condition:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil:0",
+      "ownerId": "effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "borrowedTimeActive"
+      }
+    },
+    {
+      "id": "condition:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil:1",
+      "ownerId": "effect:abaddon_borrowed_time:modifier:scepter-threshold-allied-coil",
+      "kind": "required-context",
+      "predicate": {
+        "state": "known",
+        "operator": "requires",
+        "field": "scenarioContext",
+        "value": "allyTookThresholdDamageInsideMistCoilRange"
+      }
+    }
+  ]
+}
