@@ -1,5 +1,5 @@
 import { sha256Hex } from './sha256.mjs';
-import { COMPILER_VERSION, validateProfile, subjectHeroIds } from './record-contracts.mjs';
+import { COMPILER_VERSION, validateProfile, subjectHeroIds, normalizeAlias } from './record-contracts.mjs';
 
 export const KNOWLEDGE_CORE_MAX_BYTES = 64 * 1024 * 1024;
 export const HERO_EVIDENCE_MAX_BYTES = 16 * 1024 * 1024;
@@ -523,6 +523,9 @@ export async function loadKnowledgeStore({ manifest, readArtifact, guideCacheSiz
     freezeData(core);
     profileMark('freeze');
     const heroEffects = new Map();
+    const heroKeyIndex = new Map();
+    const heroAliasIndex = new Map();
+    const noHeroes = Object.freeze([]);
     const heroBindings = new Map(core.entities.heroes.map(row => [row.id, []]));
     const bindingSubjects = new Map(entityKinds.flatMap(kind => [...tables[kind]]));
     for (const binding of core.reviewBindings) for (const heroId of subjectHeroIds(bindingSubjects.get(binding.subjectId), bindingSubjects)) {
@@ -530,6 +533,15 @@ export async function loadKnowledgeStore({ manifest, readArtifact, guideCacheSiz
     }
     for (const [id, hero] of tables.heroes) {
         heroEffects.set(id, Object.freeze(hero.effectIds.map(effectId => tables.effects.get(effectId))));
+        heroKeyIndex.set(hero.key, hero);
+        for (const alias of new Set(hero.aliases.map(normalizeAlias))) {
+            if (!heroAliasIndex.has(alias)) heroAliasIndex.set(alias, []);
+            heroAliasIndex.get(alias).push(hero);
+        }
+    }
+    for (const candidates of heroAliasIndex.values()) {
+        candidates.sort((left, right) => left.key < right.key ? -1 : left.key > right.key ? 1 : 0);
+        Object.freeze(candidates);
     }
     profileMark('indexes');
     const observations = Object.freeze(core.observations);
@@ -639,6 +651,8 @@ export async function loadKnowledgeStore({ manifest, readArtifact, guideCacheSiz
         coreSha256,
         heroes: () => Object.freeze([...tables.heroes.values()]),
         hero: id => tables.heroes.get(String(id)),
+        heroByKey: key => heroKeyIndex.get(key),
+        heroesByAlias: alias => heroAliasIndex.get(normalizeAlias(alias)) ?? noHeroes,
         ability: id => tables.abilities.get(String(id)),
         activation: id => tables.activations.get(String(id)),
         effect: id => tables.effects.get(String(id)),

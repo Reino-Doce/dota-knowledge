@@ -51,6 +51,10 @@ export interface KnowledgeStore {
     readonly coreSha256: string;
     heroes(): readonly HeroRecord[];
     hero(id: HeroId | string): HeroRecord | undefined;
+    /** Exact canonical key; no case folding, provider-slug conversion or alias fallback. */
+    heroByKey(key: string): HeroRecord | undefined;
+    /** All recorded alias candidates, normalized by trim/lowercase/collapsed whitespace and sorted by canonical key. */
+    heroesByAlias(alias: string): readonly HeroRecord[];
     ability(id: StableId | string): AbilityRecord | undefined;
     activation(id: StableId | string): ActivationRecord | undefined;
     effect(id: StableId | string): EffectRecord | undefined;

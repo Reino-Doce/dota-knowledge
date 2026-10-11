@@ -4,6 +4,15 @@ import { loadKnowledgePackage } from '@reino-doce/dota-knowledge/node';
 
 async function profilesAndReviews(store: KnowledgeStore) {
     const hero: HeroRecord | undefined = store.hero('1');
+    const keyed: HeroRecord | undefined = store.heroByKey('antimage');
+    const candidates: readonly HeroRecord[] = store.heroesByAlias('Anti-Mage');
+    // @ts-expect-error Candidates are read-only; the consumer must handle ambiguity.
+    candidates.push(...candidates);
+    // @ts-expect-error Keys are strings, not numeric IDs.
+    store.heroByKey(1);
+    // @ts-expect-error Alias queries require text.
+    store.heroesByAlias(1);
+    void [keyed, candidates];
     if (hero) {
         const attribute: 0 | 1 | 2 | 3 | null = hero.primaryAttribute;
         const range: number | null = hero.attackRange;

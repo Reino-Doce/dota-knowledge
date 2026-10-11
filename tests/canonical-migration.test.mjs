@@ -102,6 +102,13 @@ test('canonical serialization, offline recompilation and runtime lazy records ro
     await writeCanonical(second, recovered);
     assert.deepEqual(await inventory(first), await inventory(second));
     const store = await loadKnowledgeDirectory(path.join(first, 'runtime/manifest.json'));
+    for (const hero of store.heroes()) assert.equal(store.heroByKey(hero.key), store.hero(hero.id));
+    for (const { alias, keys } of recovered.aliases) {
+        assert.deepEqual(store.heroesByAlias(alias).map(hero => hero.key), keys);
+    }
+    assert.equal(store.heroByKey('anti-mage'), undefined);
+    assert.equal(store.heroByKey('antimage'), store.heroesByAlias('Anti-Mage')[0]);
+    assert.deepEqual(store.heroesByAlias('ES').map(hero => hero.key), ['antimage', 'earthshaker', 'target_dummy']);
     assert.equal(store.hero('127').complexity, null);
     assert.deepEqual(store.effectsForHero('1').map(row => row.id), ['effect:one', 'effect:two']);
     assert.equal((await store.loadObservations({ kind: 'synergy', heroId: '1' }))[0].matchCount, '9007199254740993');

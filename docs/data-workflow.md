@@ -8,6 +8,12 @@ For new population snapshots, use the independent [population collection and pub
 
 The canonical manifest lists every generated file and its byte length/SHA-256. `heroes/index.json` links decimal IDs, existing keys, engine identifiers and provider slugs to profiles, abilities, mechanics and guides. Alias candidates preserve collisions. `observations/index.json` references full records by path and offset; compact runtime projections select fields without replacing the full payloads. Calibration stays under its original source identity in `observations/sources.json`.
 
+Consumers use `heroByKey(key)` or `heroesByAlias(alias)` from the loaded store;
+the runtime builds these indexes from validated profiles already in the core.
+There is no separate alias artifact to serve. Alias results preserve every
+candidate in canonical key order and share the same records as decimal-ID
+lookups. See [lookup contracts and the runnable example](api.md#hero-keys-and-aliases).
+
 `reviews/claims.json`, `reviews/bindings.json` and `reviews/profiles.json` retain full decisions, explicit field attribution and native/historical profile comparisons. The plain current profile uses build-bound native values. Historical ranks, cohorts, counts, clocks and stored pair order remain observations. The separate [image workflow](images.md) collects and publishes artwork; canonical compilation and population publication preserve those image artifacts.
 
 ## Import selected source bundles

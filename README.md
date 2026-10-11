@@ -14,6 +14,13 @@ const matchups = await knowledge.loadObservations({ kind: 'matchup', heroId: '7'
 const guide = await knowledge.loadHeroEvidence('7');
 ```
 
+`knowledge.heroByKey('antimage')` resolves an exact canonical key.
+`knowledge.heroesByAlias('Anti-Mage')` returns all recorded alias candidates,
+sorted by canonical key; it trims, lowercases and collapses whitespace. Unknown
+aliases return an empty array, and collisions remain visible to the consumer.
+Use the returned hero's `id` for effects, observations, evidence and images.
+See the [runnable lookup example](docs/examples/hero-lookups.mjs).
+
 For a custom installation or package layout, use `loadKnowledgeDirectory(manifestPath)`. The Node entry reads only the manifest and the artifacts it lists. There is no filesystem, network, or provider access when the main package entry is imported.
 
 ## Browser

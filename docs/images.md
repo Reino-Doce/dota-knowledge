@@ -29,6 +29,12 @@ const blink = images.image('ability', 'ability:1:antimage_blink');
 const items = images.entities('item'); // decimal IDs, keys, engine IDs, acquisition class
 ```
 
+To start with a hero key or name, resolve it through the knowledge store's
+`heroByKey(key)` or `heroesByAlias(alias)` and pass the selected hero's `id` to
+`images.image('hero', hero.id)`. Alias queries can have multiple candidates.
+The [lookup example](examples/hero-lookups.mjs) combines both catalogs without
+constructing asset paths or loading pixels.
+
 `loadImageDirectory(dataRoot)` loads a caller-owned directory. The browser entry
 `@reino-doce/dota-knowledge/images` exports `loadImageCatalog({ manifest,
 readArtifact })` and `resolveImageUrl`. Import the manifest through

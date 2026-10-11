@@ -31,6 +31,8 @@ export async function checkPackage() {
             { cwd: extracted, encoding: 'utf8', windowsHide: true, maxBuffer: 1024 * 1024 }));
         const imageFixtureResult = JSON.parse(execFileSync(process.execPath, ['--import', pathToFileURL(path.join(temporary, 'no-network.mjs')).href, 'docs/examples/images-fixture.mjs'],
             { cwd: extracted, encoding: 'utf8', windowsHide: true, maxBuffer: 1024 * 1024 }));
+        const heroLookupResult = JSON.parse(execFileSync(process.execPath, ['--import', pathToFileURL(path.join(temporary, 'no-network.mjs')).href, 'docs/examples/hero-lookups.mjs'],
+            { cwd: extracted, encoding: 'utf8', windowsHide: true, maxBuffer: 1024 * 1024 }));
         const nodeSmoke = `import { loadKnowledgePackage } from '@reino-doce/dota-knowledge/node';
 import manifest from '@reino-doce/dota-knowledge/runtime/manifest.json' with { type: 'json' };
 import { loadImagePackage, validateImageDirectory } from '@reino-doce/dota-knowledge/node/images';
@@ -63,7 +65,12 @@ async function moduleFor(filename) {
 }
 const entry = await moduleFor(path.join(root, 'src/index.mjs')); await entry.evaluate();
 const manifest = JSON.parse(await fs.readFile('data/runtime/manifest.json'));
-const store = await entry.namespace.loadKnowledgeStore({ manifest, readArtifact: row => fs.readFile(path.join(root, 'data/runtime', row.name)) });
+let knowledgeReads = 0;
+const store = await entry.namespace.loadKnowledgeStore({ manifest, readArtifact: row => { knowledgeReads++; return fs.readFile(path.join(root, 'data/runtime', row.name)); } });
+const hero = store.heroByKey('antimage');
+if (hero !== store.hero('1') || store.heroByKey('anti-mage') !== undefined || store.heroesByAlias(' ANTI-MAGE ')[0] !== hero || store.heroesByAlias('unknown hero').length) throw new Error('Browser key/alias failure.');
+for (const record of store.heroes()) if (store.heroByKey(record.key) !== store.hero(record.id)) throw new Error('Browser ID/key round-trip failure.');
+if (knowledgeReads !== 1) throw new Error('Browser lookups eagerly load artifacts.');
 if (store.hero('1').sourceKey !== 'npc_dota_hero_antimage' || !(await store.loadHeroEvidence('1')).reviewBindings.length) throw new Error('Browser profile/guide failure.');
 if (!(await store.loadObservations({ kind: 'matchup', heroId: '1' })).length) throw new Error('Browser observation failure.');
 store.retire();
@@ -72,13 +79,14 @@ let imageReads = 0;
 const images = await imagesEntry.namespace.loadImageCatalog({ manifest: JSON.parse(await fs.readFile('data/images/manifest.json')),
  readArtifact: row => { if (row.kind === 'image') imageReads++; return fs.readFile(path.join(root, 'data', row.name)); } });
 if (imageReads !== 0 || images.image('hero', '127').state !== 'unavailable') throw new Error('Browser image laziness/absence failure.');
-await images.loadBytes(images.image('hero', '1').id);
-if (imageReads !== 1 || !imagesEntry.namespace.resolveImageUrl(images.image('hero', '1'), 'https://example.test/data/').includes('/heroes/antimage/')) throw new Error('Browser image resolution failure.');
-console.log(JSON.stringify({ state: 'passed', modules: modules.size, imageReads }));`;
+await images.loadBytes(images.image('hero', hero.id).id);
+if (imageReads !== 1 || !imagesEntry.namespace.resolveImageUrl(images.image('hero', hero.id), 'https://example.test/data/').includes('/heroes/antimage/')) throw new Error('Browser image resolution failure.');
+console.log(JSON.stringify({ state: 'passed', modules: modules.size, imageReads, heroRoundTrips: store.heroes().length }));`;
         const browserResult = JSON.parse(execFileSync(process.execPath, ['--experimental-vm-modules', '--input-type=module', '-e', browserSmoke],
             { cwd: extracted, encoding: 'utf8', windowsHide: true, maxBuffer: 1024 * 1024, stdio: ['ignore', 'pipe', 'pipe'] }));
         return { files: packed.entryCount, compressedBytes: packed.size, unpackedBytes: packed.unpackedSize, node: nodeResult,
-            browserEntry: browserResult, population: populationResult, imageFixture: imageFixtureResult, dependenciesInstalledInExtraction: 'production-only' };
+            browserEntry: browserResult, population: populationResult, imageFixture: imageFixtureResult,
+            heroLookups: heroLookupResult, dependenciesInstalledInExtraction: 'production-only' };
     }
     finally {
         if (path.dirname(await fs.realpath(temporary)) !== await fs.realpath(os.tmpdir()) || !path.basename(temporary).startsWith('knowledge-package-')) throw new Error('Unsafe package cleanup.');

@@ -7,7 +7,7 @@ import { sha256Hex as browserSha256Hex } from '../src/sha256.mjs';
 const bytes = value => new TextEncoder().encode(JSON.stringify(value));
 const sha256 = value => createHash('sha256').update(value).digest('hex');
 
-function fixture() {
+function fixture(configure = () => {}) {
     const core = {
         schemaVersion: 2,
         version: 'fixture-1',
@@ -56,6 +56,7 @@ function fixture() {
     core.reviewBindings = core.entities.effects.map(effect => ({ subjectId: effect.id, field: '/claimIds', value: effect.claimIds }));
     for (const effect of core.entities.effects) delete effect.claimIds;
     for (const ability of core.entities.abilities) delete ability.sourceIds;
+    configure(core);
     const coreBytes = bytes(core);
     const claimDetail = { id: 'claim:fixture', heroId: '1', subjectId: 'effect:arcane-orb:damage',
         sourceIds: ['source:fixture'], status: 'disputed' };
@@ -97,6 +98,62 @@ test('loads ordered records and filters observations without coercing large coun
 test('uses the same SHA-256 implementation in browsers without Node APIs', () => {
     assert.equal(browserSha256Hex(new TextEncoder().encode('abc')),
         'ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad');
+});
+
+test('key and alias queries preserve collisions, identity, ordering and lazy reads', async () => {
+    for (const reverse of [false, true]) {
+        const data = fixture(core => {
+            const [one, two, three] = core.entities.heroes;
+            one.aliases = ['Provider-One', ' Shared   Name ', 'shared name', two.key];
+            two.aliases = ['Other Name', 'SHARED NAME', two.key];
+            three.aliases = ['shared\tname'];
+            if (reverse) core.entities.heroes.reverse();
+        });
+        const reads = [];
+        const store = await loadKnowledgeStore({ manifest: data.manifest, readArtifact: async row => {
+            reads.push(row.kind);
+            return row.kind === 'core' ? data.coreBytes : data.guideBytes;
+        } });
+        const one = store.hero('1');
+        assert.equal(store.heroByKey('fixture-one'), one);
+        assert.equal(store.heroByKey('fixture-two'), store.hero('2'));
+        assert.equal(store.hero('fixture-one'), undefined);
+        for (const key of ['', '1', 'Fixture-One', ' fixture-one ', 'Provider-One', '../fixture-one', '__proto__']) {
+            assert.equal(store.heroByKey(key), undefined);
+        }
+        assert.deepEqual(store.heroesByAlias(' provider-ONE '), [one]);
+        const matches = store.heroesByAlias('\tSHARED \n NAME  ');
+        assert.deepEqual(matches.map(hero => hero.key), ['fixture-one', 'fixture-three', 'fixture-two']);
+        assert.equal(matches[0], one);
+        assert.equal(store.heroesByAlias('shared name'), matches);
+        assert.deepEqual(store.heroesByAlias('fixture-two').map(hero => hero.id), ['1', '2']);
+        for (const alias of ['', ' \t ', 'unknown', 'provider one', 'fixture-one', '__proto__']) {
+            assert.deepEqual(store.heroesByAlias(alias), []);
+            assert.ok(Object.isFrozen(store.heroesByAlias(alias)));
+        }
+        assert.ok(Object.isFrozen(matches));
+        assert.ok(Object.isFrozen(matches[0]));
+        assert.throws(() => matches.pop(), TypeError);
+        assert.throws(() => { matches[0].key = 'changed'; }, TypeError);
+        assert.deepEqual(reads, ['core']);
+        assert.equal((await store.loadHeroEvidence(one.id)).heroId, one.id);
+        assert.deepEqual(reads, ['core', 'guide']);
+        store.retire();
+    }
+});
+
+test('key indexes reject missing, unsafe, duplicate and inconsistent profile keys before exposing records', async () => {
+    const changes = [
+        core => { delete core.entities.heroes[0].key; },
+        core => { core.entities.heroes[0].key = '../fixture-one'; },
+        core => { core.entities.heroes[0].sourceKey = 'npc_dota_hero_other'; },
+        core => { core.entities.heroes[1].key = 'fixture-one'; core.entities.heroes[1].sourceKey = 'npc_dota_hero_fixture-one'; },
+    ];
+    for (const configure of changes) {
+        const data = fixture(configure);
+        await assert.rejects(loadKnowledgeStore({ manifest: data.manifest, readArtifact: async () => data.coreBytes }),
+            { code: 'CORE_SCHEMA' });
+    }
 });
 
 test('preserves explicit conflict values with their source and claim identities', async () => {
