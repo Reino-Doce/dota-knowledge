@@ -3,6 +3,7 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
+import { fileURLToPath } from 'node:url';
 import { graphFixture } from './fixtures/canonical-graph.mjs';
 import { buildHeroAliasIndex } from '../src/alias-index.mjs';
 import { mergeRecord, separateAttribution } from '../src/canonical-model.mjs';
@@ -56,6 +57,32 @@ test('flat alias mappings lowercase every alias and apply the documented hunter 
         'tidehunter': 'tidehunter',
     });
     assert.deepEqual(conflicts, [{ alias: 'hunter', keys: ['bounty_hunter', 'tidehunter'], resolvedKey: 'bounty_hunter' }]);
+});
+
+test('canonical profile aliases are lowercase atomic values with unique lookup mappings', async () => {
+    const index = JSON.parse(await fs.readFile(new URL('../data/heroes/index.json', import.meta.url), 'utf8'));
+    const profiles = await Promise.all(index.heroes.map(row =>
+        fs.readFile(new URL('../data/' + row.profile, import.meta.url), 'utf8').then(JSON.parse)));
+    for (const profile of profiles) {
+        assert.ok(profile.aliases.every(alias => alias === alias.toLowerCase() && !alias.includes(',')), profile.key);
+        assert.equal(new Set(profile.aliases).size, profile.aliases.length, profile.key);
+    }
+    const underlord = profiles.find(profile => profile.key === 'abyssal_underlord');
+    assert.ok(['azgalor', 'pitlord', 'ul'].every(alias => underlord.aliases.includes(alias)));
+
+    const lookup = JSON.parse(await fs.readFile(new URL('../data/heroes/aliases.json', import.meta.url), 'utf8'));
+    assert.ok(Object.keys(lookup).every(alias => !alias.includes(',')));
+    assert.deepEqual({ ...buildHeroAliasIndex(profiles).aliases }, lookup);
+    assert.equal(Object.hasOwn(lookup, 'void'), false);
+
+    const store = await loadKnowledgeDirectory(fileURLToPath(new URL('../data/runtime/manifest.json', import.meta.url)));
+    try {
+        for (const alias of ['pitlord', 'azgalor', 'ul']) {
+            assert.equal(store.heroesByAlias(alias)[0]?.key, 'abyssal_underlord');
+        }
+        assert.deepEqual(store.heroesByAlias('void'), []);
+    }
+    finally { store.retire(); }
 });
 
 test('duplicate observations merge only agreeing fields and retain exact counts and stored order', () => {

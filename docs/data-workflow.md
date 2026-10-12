@@ -6,13 +6,13 @@ For new population snapshots, use the independent [population collection and pub
 
 `npm run compile` reads `data/manifest.json` and its canonical records, then validates and publishes the schema-v2 tree with compiler `dota-knowledge-compiler-3`. It works offline without a Picker checkout or ignored acquisition files. `--dataset <directory>` and `--output <directory>` select another canonical input and destination. Unchanged selected inputs retain source clocks, review clocks, generation metadata and exact artifact bytes.
 
-The canonical manifest lists every generated file and its byte length/SHA-256. `heroes/index.json` links decimal IDs, existing keys, engine identifiers and provider slugs to profiles, abilities, mechanics and guides. Alias candidates preserve collisions. `observations/index.json` references full records by path and offset; compact runtime projections select fields without replacing the full payloads. Calibration stays under its original source identity in `observations/sources.json`.
+The canonical manifest lists every generated file and its byte length/SHA-256. `heroes/index.json` links decimal IDs, existing keys, engine identifiers and provider slugs to profiles, abilities, mechanics and guides. `heroes/aliases.json` maps lowercase aliases to canonical hero keys. Aliases claimed by multiple heroes are omitted unless explicitly resolved; see the [conflict list](alias-conflicts.md). `observations/index.json` references full records by path and offset; compact runtime projections select fields without replacing the full payloads. Calibration stays under its original source identity in `observations/sources.json`.
 
-Consumers use `heroByKey(key)` or `heroesByAlias(alias)` from the loaded store;
-the runtime builds these indexes from validated profiles already in the core.
-There is no separate alias artifact to serve. Alias results preserve every
-candidate in canonical key order and share the same records as decimal-ID
-lookups. See [lookup contracts and the runnable example](api.md#hero-keys-and-aliases).
+Consumers use `heroByKey(key)` or `heroesByAlias(alias)` from the loaded store.
+The runtime builds these lookups from validated profiles and the flat alias
+map in the core. `heroesByAlias` returns the single mapped hero or an empty
+array for an unknown or ambiguous alias. See [lookup contracts and the runnable
+example](api.md#hero-keys-and-aliases).
 
 `reviews/claims.json`, `reviews/bindings.json` and `reviews/profiles.json` retain full decisions, explicit field attribution and native/historical profile comparisons. The plain current profile uses build-bound native values. Historical ranks, cohorts, counts, clocks and stored pair order remain observations. The separate [image workflow](images.md) collects and publishes artwork; canonical compilation and population publication preserve those image artifacts.
 

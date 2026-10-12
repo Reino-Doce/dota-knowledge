@@ -40,5 +40,6 @@ updated when those claims change.
 | `spirit` | `earth_spirit`, `ember_spirit`, `storm_spirit`, `vengefulspirit`, `void_spirit` | omitted |
 | `ss` | `shadow_shaman`, `storm_spirit` | omitted |
 | `ts` | `leshrac`, `shredder` | omitted |
+| `void` | `faceless_void`, `void_spirit` | omitted |
 | `vs` | `vengefulspirit`, `void_spirit` | omitted |
 | `wolf` | `crystal_maiden`, `lycan` | omitted |
