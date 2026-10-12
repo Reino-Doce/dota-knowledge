@@ -157,6 +157,41 @@ test('verified identities reconcile separately from raw differences and never au
     }
 });
 
+test('verified historical statistics removal permits only the declared rank payload deletion', async t => {
+    const root = await temporary(t); const { before, after } = await archiveFixture(root);
+    const observation = after.observations.find(row => row.kind === 'historical-profile');
+    assert.ok(observation.sourceRecord.ranks);
+    delete observation.sourceRecord.ranks;
+    const ledger = JSON.parse(after.extras.get(IDENTITY_LEDGER));
+    ledger.statisticsRemoval = { field: 'sourceRecord.ranks', recordCount: 1, appliedAt: '2026-10-12T00:04:04Z',
+        beforeInputSignature: before.metadata.inputSignature };
+    const entry = ledger.entries.find(row => row.newId === observation.id);
+    entry.afterSha256 = semanticHash(observation);
+    after.extras.set(IDENTITY_LEDGER, jsonBytes(ledger));
+    after.metadata.inputSignature = historicalInputSignature(after);
+
+    const mapping = await verifiedIdentityMapping(after, root);
+    assert.equal(mapping.statisticsRemoval.recordCount, 1);
+    const oldObservation = before.observations.find(row => row.kind === 'historical-profile');
+    assert.ok(mapping.observations.has(oldObservation.id), JSON.stringify([...mapping.observations.keys()]));
+    assert.deepEqual(oldObservation, mapping.observations.get(oldObservation.id).before);
+    assert.deepEqual(reconcileValue(oldObservation, mapping), observation);
+    const report = await compareWithIdentities(before, after, { repository: root });
+    assert.equal(report.equivalent, true, JSON.stringify(report.unexplained));
+    assert.deepEqual(report.authorizedDataChanges, [ledger.statisticsRemoval]);
+    assert.ok(report.raw.counts.observations > 0);
+    assert.equal(report.counts.observations, 0);
+    await writeCanonical(path.join(root, 'data'), after);
+    await validateDataset(path.join(root, 'data'));
+
+    const altered = structuredClone(after);
+    altered.observations.find(row => row.kind === 'historical-profile').sourceRecord.name = 'changed';
+    assert.throws(() => verifyIdentityLedger(altered), /altered/);
+    const restored = structuredClone(after);
+    restored.observations.find(row => row.kind === 'historical-profile').sourceRecord.ranks = [1, 2];
+    assert.throws(() => verifyIdentityLedger(restored), /missing or altered/);
+});
+
 test('missing, tampered and incomplete archives, mappings, deleted records and reused identities fail closed', async t => {
     const root = await temporary(t); const { after, ledger, preservation } = await archiveFixture(root);
     for (const mutation of [

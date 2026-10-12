@@ -126,8 +126,8 @@ export async function compareWithIdentities(before, after, { repository = packag
         ? historicalInputSignature(after) : null;
     const unexplained = reconciled.changes.filter(row => {
         if (row.category !== 'metadata' || row.identity !== 'dataset') return true;
-        if (row.pointer === '/inputSignature') return row.before !== mapping.generation.before.inputSignature
-            || row.after !== expectedSignature;
+        if (row.pointer === '/inputSignature') return ![mapping.generation.before.inputSignature,
+            mapping.statisticsRemoval?.beforeInputSignature].filter(Boolean).includes(row.before) || row.after !== expectedSignature;
         const field = row.pointer.slice(1);
         return !['createdAt', 'generatedAt'].includes(field) || row.before !== mapping.generation.before[field] || row.after !== mapping.generation.after[field];
     });
@@ -137,8 +137,9 @@ export async function compareWithIdentities(before, after, { repository = packag
                 before: before.metadata[field], after: after.metadata[field], reason: 'Historical transition requires the verified generation and recomputed signature.' });
         }
     }
+    const authorizedDataChanges = mapping.statisticsRemoval ? [{ ...mapping.statisticsRemoval }] : [];
     return { ...reconciled, equivalent: unexplained.length === 0, raw,
-        identityChanges, unexplained };
+        identityChanges, authorizedDataChanges, unexplained };
 }
 
 async function compareCurrent({ base, dataset = defaultDataset } = {}) {

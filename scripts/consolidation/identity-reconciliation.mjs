@@ -54,6 +54,13 @@ export function verifyIdentityLedger(graph, preserved = new Map()) {
         || semanticHash(index.identityCoverage) !== semanticHash(ledger.entries.map(row => row.oldIdentitySha256))) {
         throw new Error('Incomplete historical identity mapping.');
     }
+    if (ledger.statisticsRemoval && (ledger.statisticsRemoval.field !== 'sourceRecord.ranks'
+        || !Number.isInteger(ledger.statisticsRemoval.recordCount) || ledger.statisticsRemoval.recordCount < 1
+        || !Number.isFinite(Date.parse(ledger.statisticsRemoval.appliedAt))
+        || !/^[a-f0-9]{64}$/.test(ledger.statisticsRemoval.beforeInputSignature ?? '')
+        || ledger.statisticsRemoval.recordCount !== ledger.entries.filter(row => row.kind === 'observation').length)) {
+        throw new Error('Invalid historical statistics removal authorization.');
+    }
     const seen = new Set(); const destinations = new Set();
     const records = new Map([...graph.sources, ...graph.observations, ...preserved.values()].map(row => [row.id, row]));
     const activeDigests = new Set([...records.keys()].map(hash));
@@ -70,6 +77,7 @@ export function verifyIdentityLedger(graph, preserved = new Map()) {
             validatePreservationReference(record.preservation);
         }
         else if (record.kind !== 'historical-profile' || record.originalField !== 'historicalProfile'
+            || ledger.statisticsRemoval && Object.hasOwn(record.sourceRecord ?? {}, 'ranks')
             || row.newId !== historicalObservationId(record.heroId, record.sourceId?.slice('source:historical:'.length))) throw new Error('Invalid historical observation.');
         seen.add(row.oldIdentitySha256); destinations.add(row.newId);
     }
@@ -88,7 +96,8 @@ export async function verifiedIdentityMapping(graph, repository, preserved) {
     if (!/^[a-f0-9]{64}$/.test(generation.before.inputSignature ?? '')) throw new Error('Unverified original input signature.');
     if (!Array.isArray(archive.records) || archive.records.length !== ledger.entries.length) throw new Error('Incomplete archived identity mapping.');
     const byDigest = new Map(ledger.entries.map(row => [row.oldIdentitySha256, row]));
-    const mapping = { entries: ledger.entries, ids: new Map(), sources: new Map(), observations: new Map(), generation };
+    const mapping = { entries: ledger.entries, ids: new Map(), sources: new Map(), observations: new Map(), generation,
+        statisticsRemoval: ledger.statisticsRemoval ?? null, statisticsBefore: new Map() };
     const active = new Map([...graph.sources, ...graph.observations, ...(preserved?.values() ?? [])].map(row => [row.id, row]));
     for (const { kind, before } of archive.records) {
         const entry = byDigest.get(hash(before.id));
@@ -100,12 +109,21 @@ export async function verifiedIdentityMapping(graph, repository, preserved) {
                 || semanticHash(historicalSource(before, after.preservation)) !== entry.afterSha256) throw new Error('Unauthorized historical source change.');
             mapping.sources.set(before.id, { before, after });
         }
-        else mapping.observations.set(before.id, { before, after: active.get(entry.newId) });
+        else mapping.observations.set(before.id, { before, after: active.get(entry.newId), entry });
     }
     for (const { before, after } of mapping.observations.values()) {
         const source = mapping.sources.get(before.sourceId)?.after;
-        if (!source || semanticHash({ ...before, id: historicalObservationId(before.heroId, source.sha256),
-            sourceId: source.id, originalField: 'historicalProfile' }) !== semanticHash(after)) throw new Error('Unauthorized historical payload change.');
+        if (!source) throw new Error('Unauthorized historical payload change.');
+        const expected = structuredClone({ ...before, id: historicalObservationId(before.heroId, source.sha256),
+            sourceId: source.id, originalField: 'historicalProfile' });
+        if (mapping.statisticsRemoval) {
+            if (!Object.hasOwn(expected.sourceRecord ?? {}, 'ranks') || Object.hasOwn(after.sourceRecord ?? {}, 'ranks')) {
+                throw new Error('Historical statistics removal is incomplete or unexpected.');
+            }
+            mapping.statisticsBefore.set(expected.id, structuredClone(expected));
+            delete expected.sourceRecord.ranks;
+        }
+        if (semanticHash(expected) !== semanticHash(after)) throw new Error('Unauthorized historical payload change.');
     }
     return mapping;
 }
@@ -115,6 +133,12 @@ export function reconcileValue(value, mapping) {
     if (typeof value === 'string') return mapping.ids.get(value) ?? value;
     if (Array.isArray(value)) return value.map(row => reconcileValue(row, mapping));
     if (!value || typeof value !== 'object') return value;
+    const verifiedStatistics = mapping.statisticsBefore?.get(value.id);
+    if (verifiedStatistics && semanticHash(value) === semanticHash(verifiedStatistics)) {
+        const sanitized = structuredClone(value);
+        delete sanitized.sourceRecord.ranks;
+        return sanitized;
+    }
     const replacement = mapping.sources.get(value.id) ?? mapping.observations.get(value.id);
     if (replacement && semanticHash(value) === semanticHash(replacement.before)) return structuredClone(replacement.after);
     return Object.fromEntries(Object.entries(value).map(([key, child]) => [key, reconcileValue(child, mapping)]));

@@ -73,6 +73,17 @@
         }
       },
       "additionalProperties": false
+    },
+    "statisticsRemoval": {
+      "type": "object",
+      "required": ["field", "recordCount", "appliedAt", "beforeInputSignature"],
+      "properties": {
+        "field": { "const": "sourceRecord.ranks" },
+        "recordCount": { "type": "integer", "minimum": 1 },
+        "appliedAt": { "type": "string", "format": "date-time" },
+        "beforeInputSignature": { "$ref": "core.schema.json#/$defs/hash" }
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": false
