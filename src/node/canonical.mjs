@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { hash, semanticHash, stable } from '../canonical-model.mjs';
 import { SCHEMA_VERSION, COMPILER_VERSION, safePath, normalizeAlias, validateProfile, subjectHeroIds } from '../record-contracts.mjs';
+import { buildHeroAliasIndex, validateHeroAliasIndex } from '../alias-index.mjs';
 import { loadKnowledgeDirectory } from '../node.mjs';
 import { isImageFile } from '../image-contracts.mjs';
 
@@ -57,19 +58,7 @@ function validateGraph(graph) {
             if (row[field] !== `heroes/${hero.key}/${suffix}`) throw new Error('Invalid hero record location.');
         }
     }
-    const expected = new Map();
-    for (const hero of graph.entities.heroes) for (const alias of hero.aliases) {
-        const key = normalizeAlias(alias);
-        if (!expected.has(key)) expected.set(key, new Set());
-        expected.get(key).add(hero.key);
-    }
-    const actual = new Set();
-    for (const row of graph.aliases) {
-        if (actual.has(row.alias) || !expected.has(row.alias)
-            || stable([...expected.get(row.alias)].sort()) !== stable(row.keys)) throw new Error('Invalid alias candidate index.');
-        actual.add(row.alias);
-    }
-    if (actual.size !== expected.size) throw new Error('Incomplete alias index.');
+    validateHeroAliasIndex(graph.entities.heroes, graph.aliases);
     const observationIds = new Set();
     for (const row of graph.observations) {
         if (observationIds.has(row.id) || !ids.has(row.heroId)) throw new Error('Duplicate or unowned observation: ' + row.id);
@@ -120,12 +109,14 @@ export async function readCanonical(root, { verify = true } = {}) {
     const metadata = verify ? await verifyManifest(root) : await readJson(root, 'manifest.json');
     if (metadata.schemaVersion !== 2) throw new Error('Canonical compilation requires schema version 2.');
     const index = await readJson(root, 'heroes/index.json');
-    const aliases = await readJson(root, 'heroes/aliases.json');
+    const aliasArtifact = await readJson(root, 'heroes/aliases.json');
     const reference = await readJson(root, 'mechanics/reference.json');
     const entities = { heroes: [], abilities: [], activations: [], effects: [], conditions: [], ...reference.entities };
     const guides = new Map();
     for (const row of index.heroes) {
-        entities.heroes.push(await readJson(root, row.profile));
+        const hero = await readJson(root, row.profile);
+        hero.aliases = [...new Set(hero.aliases.map(normalizeAlias))].sort();
+        entities.heroes.push(hero);
         const abilities = await readJson(root, row.abilities);
         const mechanics = await readJson(root, row.mechanics);
         for (const kind of ['abilities', 'activations']) entities[kind].push(...abilities[kind]);
@@ -150,12 +141,21 @@ export async function readCanonical(root, { verify = true } = {}) {
     for (const descriptor of metadata.sourceFiles ?? []) {
         if (descriptor.name.startsWith('reviews/reconciliation/') || isImageFile(descriptor.name)) extras.set(descriptor.name, await regularBytes(root, descriptor.name));
     }
+    const aliasIndex = buildHeroAliasIndex(entities.heroes);
+    if (Array.isArray(aliasArtifact?.entries)) {
+        if (aliasArtifact.schemaVersion !== 2 || aliasArtifact.normalization !== 'trim + lowercase + collapsed whitespace'
+            || stable(aliasArtifact.entries) !== stable(aliasIndex.candidateRows)) {
+            throw new Error('Legacy alias candidate index does not match hero profile aliases.');
+        }
+    }
+    else validateHeroAliasIndex(entities.heroes, aliasArtifact);
     return validateGraph({ inputManifest, metadata, entities, sources: await readJson(root, 'observations/sources.json'),
         claims: (await readJson(root, 'reviews/claims.json')).claims,
         bindings: (await readJson(root, 'reviews/bindings.json')).bindings,
         history: (await readJson(root, 'reviews/profiles.json')).profiles,
         guides, observations, runtimeProjection, projections: observationIndex.projections,
-        heroIndex: index.heroes, aliases: aliases.entries, reconciliation: metadata.consolidation, extras });
+        heroIndex: index.heroes, aliases: aliasIndex.aliases, aliasConflicts: aliasIndex.conflicts,
+        reconciliation: metadata.consolidation, extras });
 }
 
 export function observationFile(row, heroes) {
@@ -182,9 +182,10 @@ export async function writeCanonical(root, graph) {
     const { sourceFiles: _files, consolidation: _oldConsolidation, ...metadata } = graph.metadata;
     metadata.schemaVersion = SCHEMA_VERSION;
     metadata.compilerVersion = COMPILER_VERSION;
-    metadata.inputSignature ??= semanticHash({ entities: graph.entities, sources: graph.sources, claims: graph.claims, observations: graph.observations });
+    metadata.inputSignature ??= semanticHash({ entities: graph.entities, sources: graph.sources,
+        claims: graph.claims, observations: graph.observations });
     await write('heroes/index.json', { schemaVersion: 2, heroes: graph.heroIndex });
-    await write('heroes/aliases.json', { schemaVersion: 2, normalization: 'trim + lowercase + collapsed whitespace', entries: graph.aliases });
+    await write('heroes/aliases.json', graph.aliases);
     for (const entry of graph.heroIndex) {
         await write(entry.profile, heroes.get(entry.id));
         await write(entry.abilities, { schemaVersion: 2,
@@ -225,7 +226,7 @@ export async function writeCanonical(root, graph) {
     });
     const runtimeBindings = graph.bindings.filter(row => !['/evidence', '/detailRecord', '/heroId', '/heroKey', '/sourceIdentity'].includes(row.field));
     const subjects = new Map(Object.values(graph.entities).flat().map(row => [row.id, row]));
-    const core = { ...metadata, entities: compiledEntities, sources: graph.sources, claims: coreClaims,
+    const core = { ...metadata, aliases: graph.aliases, entities: compiledEntities, sources: graph.sources, claims: coreClaims,
         reviewBindings: runtimeBindings,
         observations: [...graph.runtimeProjection].map(([id, projection]) => {
             const row = observationsById.get(id);

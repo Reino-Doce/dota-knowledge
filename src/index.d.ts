@@ -53,7 +53,7 @@ export interface KnowledgeStore {
     hero(id: HeroId | string): HeroRecord | undefined;
     /** Exact canonical key; no case folding, provider-slug conversion or alias fallback. */
     heroByKey(key: string): HeroRecord | undefined;
-    /** All recorded alias candidates, normalized by trim/lowercase/collapsed whitespace and sorted by canonical key. */
+    /** Returns the mapped hero, or an empty array for unknown or unresolved ambiguous aliases. */
     heroesByAlias(alias: string): readonly HeroRecord[];
     ability(id: StableId | string): AbilityRecord | undefined;
     activation(id: StableId | string): ActivationRecord | undefined;

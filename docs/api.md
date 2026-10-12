@@ -16,14 +16,14 @@ Use `./images` in browsers and `./node/images` for filesystem loading and explic
 | Query | Result |
 | --- | --- |
 | `heroByKey(key: string)` | Hero for that exact canonical key, or `undefined`. No normalization or alias fallback. |
-| `heroesByAlias(alias: string)` | Read-only array of every recorded alias candidate, sorted by canonical key. Unknown or blank aliases return an empty array. |
+| `heroesByAlias(alias: string)` | Read-only array containing the mapped hero, or empty when the alias is unknown or ambiguous. |
 
-Alias matching uses the canonical normalization: trim, lowercase and collapse
-whitespace. It preserves punctuation and uses only recorded `HeroRecord.aliases`;
-it does not infer nicknames, translate provider slugs or perform fuzzy matching.
-Multiple spellings that normalize to the same alias produce one entry per hero.
-If an alias matches several heroes, every candidate is returned even when the
-alias is also a canonical key. The consumer decides how to resolve ambiguity.
+Alias matching trims, lowercases and collapses whitespace, while preserving
+punctuation. The compiled alias map contains one canonical hero key per alias;
+unknown and unresolved ambiguous aliases have no mapping. It does not infer
+nicknames, translate provider slugs or perform fuzzy matching. All stored alias
+strings are lowercase. Current conflict resolutions are documented in
+[alias conflicts](alias-conflicts.md).
 
 For example, `heroByKey('antimage')` returns the same frozen record as `hero('1')`.
 `heroByKey('anti-mage')` is absent; `heroesByAlias(' ANTI-MAGE ')` matches the
@@ -49,7 +49,7 @@ The loader accepts schema version 2 and compiler `dota-knowledge-compiler-3`. `h
 | `roles` | Declaration-ordered `{ role, level }[]`; lowercase native role names, levels `0`–`3` |
 | `coverage.fields` | Status for each of those fields; unavailable values include a reason |
 
-Historical profiles contribute aliases but never replace current native scalar facts or roles. Measured position distributions remain observations. Canonical alias indexes map each normalized alias to a sorted array of candidate keys. Runtime `heroesByAlias` exposes those candidates as hero records; `hero(id)` continues to take a decimal ID.
+Historical profiles contribute lowercase aliases but never replace current native scalar facts or roles. Measured position distributions remain observations. `heroes/aliases.json` is the flat alias-to-key map embedded in the runtime core; `heroesByAlias` resolves the mapped key and returns at most one hero record. `hero(id)` continues to take a decimal ID.
 
 Static abilities, shared activations, effects and conditions have separate records. Their acquisition references and review metadata are in `reviews/bindings.json`, with explicit `{ subjectId, field, value }` entries. `field` is a JSON pointer to the removed field in that subject; nested conflict values retain their position. Lazy `HeroEvidence.reviewBindings` exposes the corresponding runtime attribution, and `profileHistory` retains native selection evidence and official comparisons. `claim(id)` and `source(id)` remain available; full claim details load with the guide. Separation never promotes a review or resolves a conflict.
 

@@ -33,6 +33,7 @@ export interface HeroRecord {
     /** Game engine identity, not an acquisition source. */
     readonly sourceKey: string;
     readonly name: string;
+    /** Lowercase, normalized lookup aliases; ambiguous claims may have no lookup mapping. */
     readonly aliases: readonly string[];
     /** 0 strength, 1 agility, 2 intelligence, 3 universal. */
     readonly primaryAttribute: 0 | 1 | 2 | 3 | null;

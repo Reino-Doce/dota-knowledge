@@ -4,6 +4,7 @@ import os from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
 import { graphFixture } from './fixtures/canonical-graph.mjs';
+import { buildHeroAliasIndex } from '../src/alias-index.mjs';
 import { mergeRecord, separateAttribution } from '../src/canonical-model.mjs';
 import { validateImageDescriptor } from '../src/record-contracts.mjs';
 import { writeCanonical, readCanonical, readJson } from '../src/node/canonical.mjs';
@@ -21,20 +22,40 @@ async function temporary(t) {
     return root;
 }
 
-test('profiles select native facts, retain historical aliases and every alias collision', () => {
+test('profiles select native facts and publish normalized aliases with explicit conflict handling', () => {
     const graph = graphFixture();
     const hero = graph.entities.heroes[0];
     assert.equal(hero.primaryAttribute, 1);
     assert.equal(hero.complexity, 1);
     assert.deepEqual(hero.roles, [{ role: 'carry', level: 3 }, { role: 'escape', level: 2 }]);
-    assert.ok(hero.aliases.includes('Magina'));
+    assert.ok(hero.aliases.includes('magina'));
     assert.equal(graph.heroIndex[0].providerSlug, 'anti-mage');
     assert.equal(graph.heroIndex[0].profile, 'heroes/antimage/profile.json');
-    assert.deepEqual(graph.aliases.find(row => row.alias === 'es').keys, ['antimage', 'earthshaker', 'target_dummy']);
+    assert.equal(Object.hasOwn(graph.aliases, 'es'), false);
+    assert.deepEqual(graph.aliasConflicts.find(row => row.alias === 'es'),
+        { alias: 'es', keys: ['antimage', 'earthshaker', 'target_dummy'], resolvedKey: null });
     assert.equal(graph.entities.heroes[2].complexity, null);
     assert.equal(graph.entities.heroes[2].coverage.fields.complexity.state, 'unknown');
     assert.equal(graph.history[0].officialHero.primaryAttribute, 0);
     assert.equal(graph.observations[1].sourceRecord.complexity, 1.5);
+});
+
+test('flat alias mappings lowercase every alias and apply the documented hunter resolution', () => {
+    const { aliases, conflicts } = buildHeroAliasIndex([
+        { key: 'bounty_hunter', aliases: ['Bounty Hunter', 'BH', 'bounty-hunter', 'bounty_hunter', 'Gondar', 'Hunter', 'npc_dota_hero_bounty_hunter'] },
+        { key: 'tidehunter', aliases: ['Tidehunter', 'hunter'] },
+    ]);
+    assert.deepEqual({ ...aliases }, {
+        'bh': 'bounty_hunter',
+        'bounty hunter': 'bounty_hunter',
+        'bounty-hunter': 'bounty_hunter',
+        'bounty_hunter': 'bounty_hunter',
+        'gondar': 'bounty_hunter',
+        'hunter': 'bounty_hunter',
+        'npc_dota_hero_bounty_hunter': 'bounty_hunter',
+        'tidehunter': 'tidehunter',
+    });
+    assert.deepEqual(conflicts, [{ alias: 'hunter', keys: ['bounty_hunter', 'tidehunter'], resolvedKey: 'bounty_hunter' }]);
 });
 
 test('duplicate observations merge only agreeing fields and retain exact counts and stored order', () => {
@@ -103,12 +124,12 @@ test('canonical serialization, offline recompilation and runtime lazy records ro
     assert.deepEqual(await inventory(first), await inventory(second));
     const store = await loadKnowledgeDirectory(path.join(first, 'runtime/manifest.json'));
     for (const hero of store.heroes()) assert.equal(store.heroByKey(hero.key), store.hero(hero.id));
-    for (const { alias, keys } of recovered.aliases) {
-        assert.deepEqual(store.heroesByAlias(alias).map(hero => hero.key), keys);
+    for (const [alias, key] of Object.entries(recovered.aliases)) {
+        assert.deepEqual(store.heroesByAlias(alias).map(hero => hero.key), [key]);
     }
     assert.equal(store.heroByKey('anti-mage'), undefined);
     assert.equal(store.heroByKey('antimage'), store.heroesByAlias('Anti-Mage')[0]);
-    assert.deepEqual(store.heroesByAlias('ES').map(hero => hero.key), ['antimage', 'earthshaker', 'target_dummy']);
+    assert.deepEqual(store.heroesByAlias('ES'), []);
     assert.equal(store.hero('127').complexity, null);
     assert.deepEqual(store.effectsForHero('1').map(row => row.id), ['effect:one', 'effect:two']);
     assert.equal((await store.loadObservations({ kind: 'synergy', heroId: '1' }))[0].matchCount, '9007199254740993');
@@ -126,6 +147,10 @@ test('canonical gates reject duplicate keys, identity mappings, malformed profil
         ['binding', graph => { graph.bindings.push({ subjectId: 'missing', field: '/sourceIdentity', value: 'missing-source' }); }],
         ['history', graph => { graph.history[0].historicalObservationIds = ['observation:missing']; }],
         ['duplicate-history', graph => { graph.history.push(graph.history[0]); }],
+        ['missing-alias', graph => { delete graph.aliases['anti-mage']; }],
+        ['wrong-alias-target', graph => { graph.aliases['anti-mage'] = 'earthshaker'; }],
+        ['ambiguous-alias', graph => { graph.aliases.es = 'antimage'; }],
+        ['uppercase-alias', graph => { graph.aliases['ANTI-MAGE'] = 'antimage'; }],
     ]) {
         const graph = graphFixture(); mutate(graph);
         await assert.rejects(writeCanonical(path.join(root, name), graph));

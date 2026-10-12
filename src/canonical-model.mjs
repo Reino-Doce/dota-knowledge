@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import { COMPILER_VERSION, SCHEMA_VERSION, ROLE_NAMES, normalizeAlias, validateProfile } from './record-contracts.mjs';
+import { buildHeroAliasIndex } from './alias-index.mjs';
 
 export const stable = value => Array.isArray(value) ? '[' + value.map(stable).join(',') + ']'
     : value && typeof value === 'object' ? '{' + Object.keys(value).sort().map(key => JSON.stringify(key) + ':' + stable(value[key])).join(',') + '}'
@@ -57,10 +58,10 @@ export function makeProfile(hero, guide, observations = [], extraAliases = []) {
     if (names.length !== levels.length || names.some(name => !ROLE_NAMES.includes(name))) throw new Error('Invalid native roles: ' + hero.id);
     const roles = names.map((role, index) => ({ role, level: levels[index] }));
     const aliases = new Set([hero.name, hero.key, hero.heroKey ?? hero.sourceKey, ...extraAliases,
-        ...(raw.NameAliases ?? '').split(';')].filter(value => typeof value === 'string' && normalizeAlias(value)));
+        ...(raw.NameAliases ?? '').split(';')].map(value => typeof value === 'string' ? normalizeAlias(value) : '').filter(Boolean));
     for (const row of observations.filter(row => /profile$/.test(row.kind))) {
         for (const value of [row.sourceRecord?.name, row.sourceRecord?.localized_name, ...(row.sourceRecord?.aliases ?? [])]) {
-            if (typeof value === 'string' && normalizeAlias(value)) aliases.add(value);
+            if (typeof value === 'string' && normalizeAlias(value)) aliases.add(normalizeAlias(value));
         }
     }
     const status = (value, field) => value === null ? { state: 'unknown', reason: 'No usable current native ' + field + ' declaration.' } : { state: 'known' };
@@ -105,7 +106,9 @@ export function normalizeLegacyRecords({ metadata, heroes, sources, claims, obse
             throw new Error('Current native profile is not bound to the selected build: ' + hero.id);
         }
         const stats = [...byObservation.values()].filter(value => value.heroId === hero.id);
-        const extraAliases = aliases.filter(alias => alias.keys.includes(hero.key)).map(alias => alias.alias);
+        const extraAliases = Array.isArray(aliases)
+            ? aliases.filter(alias => alias.keys.includes(hero.key)).map(alias => alias.alias)
+            : Object.entries(aliases).filter(([, key]) => key === hero.key).map(([alias]) => alias);
         const identity = crosswalk.find(entry => entry.id === hero.id);
         if (identity && (identity.key !== hero.key || identity.sourceKey !== hero.heroKey)) throw new Error('Crosswalk identity mismatch: ' + hero.id);
         const provider = identity?.providerSlug ?? stats.find(value => value.originalField === 'pickerProfile')?.sourceRecord?.value?.slug ?? null;
@@ -132,16 +135,11 @@ export function normalizeLegacyRecords({ metadata, heroes, sources, claims, obse
             mechanics: `heroes/${hero.key}/mechanics.json`, guide: `heroes/${hero.key}/guides/details.json` });
     }
     for (const kind of ['modifiers', 'rules', 'units', 'upgrades']) entities[kind] = entities[kind].map(row => separateAttribution(row, bindings));
-    const aliasIndex = new Map();
-    for (const hero of entities.heroes) for (const alias of hero.aliases) {
-        const key = normalizeAlias(alias);
-        if (!aliasIndex.has(key)) aliasIndex.set(key, new Set());
-        aliasIndex.get(key).add(hero.key);
-    }
+    const aliasIndex = buildHeroAliasIndex(entities.heroes);
     const { sourceFiles: _files, runtimeObservations: _indexed, ...header } = metadata;
     return { metadata: { ...header, schemaVersion: SCHEMA_VERSION, compilerVersion: COMPILER_VERSION }, entities, sources,
         claims, bindings, history, guides: details, observations: [...byObservation.values()], projections, runtimeProjection,
-        heroIndex: locations, aliases: [...aliasIndex].sort(([a], [b]) => a.localeCompare(b)).map(([alias, keys]) => ({ alias, keys: [...keys].sort() })),
+        heroIndex: locations, aliases: aliasIndex.aliases, aliasConflicts: aliasIndex.conflicts,
         reconciliation: { observationOccurrences: occurrences, duplicateOccurrences: occurrences - byObservation.size,
             uniqueObservations: byObservation.size }, extras: new Map() };
 }

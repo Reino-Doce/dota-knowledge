@@ -19,7 +19,7 @@ export function validateProfile(row) {
     if (!isObject(row) || !/^[1-9][0-9]{0,5}$/.test(row.id) || !safeKey(row.key)
         || row.sourceKey !== 'npc_dota_hero_' + row.key || typeof row.name !== 'string' || !row.name
         || typeof row.enabled !== 'boolean' || typeof row.cmEnabled !== 'boolean'
-        || !Array.isArray(row.aliases) || row.aliases.some(alias => typeof alias !== 'string' || !normalizeAlias(alias))
+        || !Array.isArray(row.aliases) || row.aliases.some(alias => typeof alias !== 'string' || !normalizeAlias(alias) || alias !== normalizeAlias(alias))
         || new Set(row.aliases).size !== row.aliases.length
         || ![null, 0, 1, 2, 3].includes(row.primaryAttribute)
         || row.attackRange !== null && (typeof row.attackRange !== 'number' || !Number.isFinite(row.attackRange) || row.attackRange < 0)

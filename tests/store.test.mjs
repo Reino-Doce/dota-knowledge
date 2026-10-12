@@ -50,7 +50,7 @@ function fixture(configure = () => {}) {
             sourceId: 'source:fixture', cohortId: 'cohort:fixture', matchCount: '9007199254740993', unit: 'matches' }],
     };
     for (const hero of core.entities.heroes) Object.assign(hero, {
-        sourceKey: 'npc_dota_hero_' + hero.key, aliases: [hero.name], primaryAttribute: 0, attackRange: 150, complexity: 1, roles: [],
+        sourceKey: 'npc_dota_hero_' + hero.key, aliases: [hero.name.toLowerCase()], primaryAttribute: 0, attackRange: 150, complexity: 1, roles: [],
         coverage: { fields: { primaryAttribute: { state: 'known' }, attackRange: { state: 'known' }, complexity: { state: 'known' }, roles: { state: 'unknown', reason: 'Fixture has no role declaration.' } } },
     });
     core.reviewBindings = core.entities.effects.map(effect => ({ subjectId: effect.id, field: '/claimIds', value: effect.claimIds }));
@@ -100,13 +100,13 @@ test('uses the same SHA-256 implementation in browsers without Node APIs', () =>
         'ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad');
 });
 
-test('key and alias queries preserve collisions, identity, ordering and lazy reads', async () => {
+test('key and alias queries resolve unique aliases and leave collisions unmapped', async () => {
     for (const reverse of [false, true]) {
         const data = fixture(core => {
             const [one, two, three] = core.entities.heroes;
-            one.aliases = ['Provider-One', ' Shared   Name ', 'shared name', two.key];
-            two.aliases = ['Other Name', 'SHARED NAME', two.key];
-            three.aliases = ['shared\tname'];
+            one.aliases = ['provider-one', 'shared name', two.key];
+            two.aliases = ['other name', 'shared name', two.key];
+            three.aliases = ['shared name'];
             if (reverse) core.entities.heroes.reverse();
         });
         const reads = [];
@@ -123,16 +123,15 @@ test('key and alias queries preserve collisions, identity, ordering and lazy rea
         }
         assert.deepEqual(store.heroesByAlias(' provider-ONE '), [one]);
         const matches = store.heroesByAlias('\tSHARED \n NAME  ');
-        assert.deepEqual(matches.map(hero => hero.key), ['fixture-one', 'fixture-three', 'fixture-two']);
-        assert.equal(matches[0], one);
+        assert.deepEqual(matches, []);
         assert.equal(store.heroesByAlias('shared name'), matches);
-        assert.deepEqual(store.heroesByAlias('fixture-two').map(hero => hero.id), ['1', '2']);
+        assert.deepEqual(store.heroesByAlias('fixture-two'), []);
         for (const alias of ['', ' \t ', 'unknown', 'provider one', 'fixture-one', '__proto__']) {
             assert.deepEqual(store.heroesByAlias(alias), []);
             assert.ok(Object.isFrozen(store.heroesByAlias(alias)));
         }
         assert.ok(Object.isFrozen(matches));
-        assert.ok(Object.isFrozen(matches[0]));
+        assert.ok(Object.isFrozen(one));
         assert.throws(() => matches.pop(), TypeError);
         assert.throws(() => { matches[0].key = 'changed'; }, TypeError);
         assert.deepEqual(reads, ['core']);
@@ -140,6 +139,15 @@ test('key and alias queries preserve collisions, identity, ordering and lazy rea
         assert.deepEqual(reads, ['core', 'guide']);
         store.retire();
     }
+});
+
+test('legacy runtime profiles without a compiled alias map normalize aliases before lookup', async () => {
+    const data = fixture(core => { core.entities.heroes[0].aliases = ['Fixture One', 'fixture one']; });
+    const store = await loadKnowledgeStore({ manifest: data.manifest, readArtifact: async artifact =>
+        artifact.kind === 'core' ? data.coreBytes : data.guideBytes });
+    assert.deepEqual(store.hero('1').aliases, ['fixture one']);
+    assert.deepEqual(store.heroesByAlias(' FIXTURE   ONE ').map(hero => hero.key), ['fixture-one']);
+    store.retire();
 });
 
 test('key indexes reject missing, unsafe, duplicate and inconsistent profile keys before exposing records', async () => {

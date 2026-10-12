@@ -1,5 +1,6 @@
 import { sha256Hex } from './sha256.mjs';
 import { COMPILER_VERSION, validateProfile, subjectHeroIds, normalizeAlias } from './record-contracts.mjs';
+import { buildHeroAliasIndex, validateHeroAliasIndex } from './alias-index.mjs';
 
 export const KNOWLEDGE_CORE_MAX_BYTES = 64 * 1024 * 1024;
 export const HERO_EVIDENCE_MAX_BYTES = 16 * 1024 * 1024;
@@ -204,6 +205,10 @@ function validateCore(core, manifest) {
                 fail('CORE_ORDER', `${effectId} is out of order or owned by another hero.`);
             }
         }
+    }
+    if (core.aliases !== undefined) {
+        try { validateHeroAliasIndex([...tables.heroes.values()], core.aliases); }
+        catch (error) { fail('CORE_SCHEMA', error.message); }
     }
     const heroIds = [...tables.heroes.keys()];
     if (Object.keys(manifest.guides).length !== heroIds.length || heroIds.some(id => !manifest.guides[id])) {
@@ -517,6 +522,16 @@ export async function loadKnowledgeStore({ manifest, readArtifact, guideCacheSiz
     await verifyArtifact(coreBytes, manifest.core, 'The compiled core', KNOWLEDGE_CORE_MAX_BYTES);
     profileMark('digest');
     const core = decode(coreBytes, 'The compiled core');
+    if (isRecord(core) && !Object.hasOwn(core, 'aliases') && Array.isArray(core.entities?.heroes)) {
+        for (const hero of core.entities.heroes) if (Array.isArray(hero.aliases)) {
+            const normalized = new Map();
+            for (const alias of hero.aliases) {
+                const value = typeof alias === 'string' ? normalizeAlias(alias) : alias;
+                normalized.set(value, value);
+            }
+            hero.aliases = [...normalized.values()].sort();
+        }
+    }
     profileMark('decode');
     const { tables, sourceIndex, claimIndex } = validateCore(core, manifest);
     profileMark('validate');
@@ -534,14 +549,12 @@ export async function loadKnowledgeStore({ manifest, readArtifact, guideCacheSiz
     for (const [id, hero] of tables.heroes) {
         heroEffects.set(id, Object.freeze(hero.effectIds.map(effectId => tables.effects.get(effectId))));
         heroKeyIndex.set(hero.key, hero);
-        for (const alias of new Set(hero.aliases.map(normalizeAlias))) {
-            if (!heroAliasIndex.has(alias)) heroAliasIndex.set(alias, []);
-            heroAliasIndex.get(alias).push(hero);
-        }
     }
-    for (const candidates of heroAliasIndex.values()) {
-        candidates.sort((left, right) => left.key < right.key ? -1 : left.key > right.key ? 1 : 0);
-        Object.freeze(candidates);
+    const aliasMap = core.aliases ?? buildHeroAliasIndex([...tables.heroes.values()]).aliases;
+    for (const [alias, key] of Object.entries(aliasMap)) {
+        const hero = heroKeyIndex.get(key);
+        if (!hero) fail('CORE_SCHEMA', `Alias ${alias} points to an unknown hero key.`);
+        heroAliasIndex.set(alias, Object.freeze([hero]));
     }
     profileMark('indexes');
     const observations = Object.freeze(core.observations);

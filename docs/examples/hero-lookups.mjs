@@ -7,10 +7,9 @@ try {
     const hero = knowledge.heroByKey('antimage');
     assert.equal(hero, knowledge.hero('1'));
     assert.equal(knowledge.heroByKey('anti-mage'), undefined);
-    const candidates = knowledge.heroesByAlias('  ANTI-MAGE  ');
-    // An alias can identify several heroes. Let the consumer resolve that choice.
-    assert.equal(candidates.length, 1);
-    assert.equal(candidates[0], hero);
+    const matches = knowledge.heroesByAlias('  ANTI-MAGE  ');
+    assert.equal(matches.length, 1);
+    assert.equal(matches[0], hero);
     assert.equal(knowledge.heroesByAlias('Magina')[0], hero);
     assert.deepEqual(knowledge.heroesByAlias('unknown hero'), []);
     for (const record of knowledge.heroes()) {
@@ -22,7 +21,7 @@ try {
     const images = await loadImagePackage(); // Metadata only; no pixel reads.
     const portrait = images.image('hero', hero.id, 'profile');
     assert.equal(portrait.state, 'available');
-    console.log(JSON.stringify({ heroId: hero.id, key: hero.key, candidates: candidates.map(row => row.key),
+    console.log(JSON.stringify({ heroId: hero.id, key: hero.key, aliasMatches: matches.map(row => row.key),
         roundTrips: knowledge.heroes().length, effects: effects.length, portrait: portrait.state }));
 }
 finally {

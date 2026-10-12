@@ -23,7 +23,7 @@ export async function captureCanonicalAudit({ repository = packageRoot, output, 
     }
     await writeJson(output, 'files.json', files);
     await writeJson(output, 'heroes.json', graph.heroIndex);
-    await writeJson(output, 'aliases.json', { entries: graph.aliases, collisions: graph.aliases.filter(row => row.keys.length > 1) });
+    await writeJson(output, 'aliases.json', { mapping: graph.aliases, conflicts: graph.aliasConflicts });
     const identityLedger = verifyIdentityLedger(graph);
     await writeJson(output, 'identities.json', { entities: Object.fromEntries(Object.entries(graph.entities).map(([kind, rows]) => [kind, rows.map(row => row.id)])),
         claims: graph.claims.map(row => row.id), observations: graph.observations.map(row => row.id), semanticIdRenames: identityLedger?.entries ?? [],

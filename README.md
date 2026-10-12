@@ -15,9 +15,10 @@ const guide = await knowledge.loadHeroEvidence('7');
 ```
 
 `knowledge.heroByKey('antimage')` resolves an exact canonical key.
-`knowledge.heroesByAlias('Anti-Mage')` returns all recorded alias candidates,
-sorted by canonical key; it trims, lowercases and collapses whitespace. Unknown
-aliases return an empty array, and collisions remain visible to the consumer.
+`knowledge.heroesByAlias('Anti-Mage')` looks up the lowercase alias map and
+returns a read-only array with zero or one hero. It trims, lowercases and
+collapses whitespace. Ambiguous aliases are omitted unless their documented
+resolution selects one hero; see [alias conflicts](docs/alias-conflicts.md).
 Use the returned hero's `id` for effects, observations, evidence and images.
 See the [runnable lookup example](docs/examples/hero-lookups.mjs).
 
@@ -49,7 +50,7 @@ Heroes, abilities, activations, effects, modifiers, rules, conditions, values, u
 
 Known, decoded, unknown, unsupported, not-applicable, and conflicted values have separate states. Review decisions remain source- and build-qualified. Data absence is never converted to a zero or an approval. Observation queries select identities, kinds, sources, and cohorts; provider selection, compatibility policy, freshness policy, and statistical weighting belong to the application.
 
-`data/` is the canonical current dataset, using schema **2** and compiler **3**. `heroes/<key>/` holds plain profiles, abilities, ordered mechanics, guides and population records. `heroes/index.json` supplies ID/key/engine/provider crosswalks; `heroes/aliases.json` preserves all normalized alias candidates. Shared mechanics, sources and review records live under `mechanics/`, `observations/` and `reviews/`. Indexes point to records instead of repeating their payloads.
+`data/` is the canonical current dataset, using schema **2** and compiler **3**. `heroes/<key>/` holds plain profiles, abilities, ordered mechanics, guides and population records. `heroes/index.json` supplies ID/key/engine/provider crosswalks; `heroes/aliases.json` is a flat lowercase alias-to-hero-key map. Shared mechanics, sources and review records live under `mechanics/`, `observations/` and `reviews/`. Indexes point to records instead of repeating their payloads.
 
 Profiles select current native attributes, attack range, complexity and ordered roles. Missing scalars are `null` with an explanation in `coverage.fields`. Historical profiles, official comparisons and acquisition bindings remain available in observations and review records. A separate image catalog supplies base hero portraits/icons, ability artwork and current playable item icons, with explicit reasons for unavailable artwork.
 
