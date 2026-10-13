@@ -1,827 +1,216 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "dawnbreaker_break_of_dawn",
+    "Name": "Break of Dawn",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "vision"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:135:dawnbreaker_fire_wreath",
-      "heroId": "135",
-      "engineId": "dawnbreaker_fire_wreath",
-      "activationId": "activation:135:dawnbreaker_fire_wreath",
+      "id": "dawnbreaker_fire_wreath",
+      "Name": "Starbreaker",
+      "behavior": [
+        "point-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "piercesDebuffImmunity": "yes",
+      "damageType": "physical",
       "order": 0,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "known"
+      "type": "point",
+      "manaCost": 110,
+      "tags": [
+        "bkb_pierce",
+        "buff",
+        "debuff_immunity",
+        "disable",
+        "slow",
+        "stun"
+      ]
     },
     {
-      "id": "ability:135:dawnbreaker_celestial_hammer",
-      "heroId": "135",
-      "engineId": "dawnbreaker_celestial_hammer",
-      "activationId": "activation:135:dawnbreaker_celestial_hammer",
+      "id": "dawnbreaker_celestial_hammer",
+      "Name": "Celestial Hammer",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "cooldown": [
+        18,
+        16,
+        14,
+        12
+      ],
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:135:dawnbreaker_luminosity",
-      "heroId": "135",
-      "engineId": "dawnbreaker_luminosity",
-      "activationId": "activation:135:dawnbreaker_luminosity",
+      "id": "dawnbreaker_luminosity",
+      "behavior": [
+        "passive"
+      ],
+      "affects": [
+        "allies"
+      ],
+      "piercesDebuffImmunity": "allies-only",
+      "breakable": true,
       "order": 2,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "ally_heal",
+        "heal",
+        "self_heal"
+      ]
     },
     {
-      "id": "ability:135:dawnbreaker_converge",
-      "heroId": "135",
-      "engineId": "dawnbreaker_converge",
-      "activationId": "activation:135:dawnbreaker_converge",
+      "id": "dawnbreaker_converge",
+      "Name": "Converge",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
       "order": 3,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 0,
+      "cooldown": 0.25,
+      "tags": [
+        "escape",
+        "mobility"
+      ]
     },
     {
-      "id": "ability:135:dawnbreaker_break_of_dawn",
-      "heroId": "135",
-      "engineId": "dawnbreaker_break_of_dawn",
-      "activationId": "activation:135:dawnbreaker_break_of_dawn",
-      "order": 4,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "known"
-    },
-    {
-      "id": "ability:135:dawnbreaker_solar_guardian",
-      "heroId": "135",
-      "engineId": "dawnbreaker_solar_guardian",
-      "activationId": "activation:135:dawnbreaker_solar_guardian",
+      "id": "dawnbreaker_solar_guardian",
+      "Name": "Solar Guardian",
+      "behavior": [
+        "channeled",
+        "point-target"
+      ],
+      "affects": [
+        "allied-heroes"
+      ],
+      "piercesDebuffImmunity": "yes",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        150,
+        200,
+        250
+      ],
+      "tags": [
+        "ally_heal",
+        "bkb_pierce",
+        "channeled",
+        "disable",
+        "escape",
+        "global_delivery",
+        "heal",
+        "mobility",
+        "self_heal",
+        "self_reposition",
+        "stun"
+      ]
     },
     {
-      "id": "ability:135:dawnbreaker_land",
-      "heroId": "135",
-      "engineId": "dawnbreaker_land",
-      "activationId": "activation:135:dawnbreaker_land",
+      "id": "dawnbreaker_land",
+      "behavior": [
+        "no-target"
+      ],
       "order": 6,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "known"
+      "type": "self-target",
+      "cooldown": 2,
+      "tags": []
     },
     {
-      "id": "ability:135:special_bonus_unique_dawnbreaker_luminosity_crit",
-      "heroId": "135",
-      "engineId": "special_bonus_unique_dawnbreaker_luminosity_crit",
-      "activationId": "activation:135:special_bonus_unique_dawnbreaker_luminosity_crit",
-      "order": 7,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:135:special_bonus_unique_dawnbreaker_celestial_hammer_targets_allies",
-      "heroId": "135",
-      "engineId": "special_bonus_unique_dawnbreaker_celestial_hammer_targets_allies",
-      "activationId": "activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_targets_allies",
-      "order": 8,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:135:special_bonus_unique_dawnbreaker_celestial_hammer_damage",
-      "heroId": "135",
-      "engineId": "special_bonus_unique_dawnbreaker_celestial_hammer_damage",
-      "activationId": "activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_damage",
-      "order": 9,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:135:special_bonus_unique_dawnbreaker_solar_guardian_cooldown",
-      "heroId": "135",
-      "engineId": "special_bonus_unique_dawnbreaker_solar_guardian_cooldown",
-      "activationId": "activation:135:special_bonus_unique_dawnbreaker_solar_guardian_cooldown",
-      "order": 10,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:135:special_bonus_unique_dawnbreaker_solar_guardian_radius",
-      "heroId": "135",
-      "engineId": "special_bonus_unique_dawnbreaker_solar_guardian_radius",
-      "activationId": "activation:135:special_bonus_unique_dawnbreaker_solar_guardian_radius",
-      "order": 11,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:135:special_bonus_unique_dawnbreaker_luminosity_attack_count",
-      "heroId": "135",
-      "engineId": "special_bonus_unique_dawnbreaker_luminosity_attack_count",
-      "activationId": "activation:135:special_bonus_unique_dawnbreaker_luminosity_attack_count",
-      "order": 12,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:135:special_bonus_unique_dawnbreaker_fire_wreath_cooldown",
-      "heroId": "135",
-      "engineId": "special_bonus_unique_dawnbreaker_fire_wreath_cooldown",
-      "activationId": "activation:135:special_bonus_unique_dawnbreaker_fire_wreath_cooldown",
-      "order": 13,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:135:special_bonus_unique_dawnbreaker_celestial_hammer_cast_range",
-      "heroId": "135",
-      "engineId": "special_bonus_unique_dawnbreaker_celestial_hammer_cast_range",
-      "activationId": "activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_cast_range",
-      "order": 14,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:135:special_bonus_attributes",
-      "heroId": "135",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:135:special_bonus_attributes",
-      "order": 15,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "known"
-    },
-    {
-      "id": "ability:135:dawnbreaker_unbreakable",
-      "heroId": "135",
-      "engineId": "dawnbreaker_unbreakable",
-      "activationId": "activation:135:dawnbreaker_unbreakable",
+      "id": "dawnbreaker_unbreakable",
+      "behavior": [
+        "passive"
+      ],
       "order": 16,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "known"
-    },
-    {
-      "id": "ability:135:special_bonus_unique_dawnbreaker_break_of_dawn_damage",
-      "heroId": "135",
-      "engineId": "special_bonus_unique_dawnbreaker_break_of_dawn_damage",
-      "activationId": "activation:135:special_bonus_unique_dawnbreaker_break_of_dawn_damage",
-      "order": 17,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "known"
-    },
-    {
-      "id": "ability:135:special_bonus_unique_dawnbreaker_gleaming_hammer",
-      "heroId": "135",
-      "engineId": "special_bonus_unique_dawnbreaker_gleaming_hammer",
-      "activationId": "activation:135:special_bonus_unique_dawnbreaker_gleaming_hammer",
-      "order": 18,
-      "owner": "npc_dota_hero_dawnbreaker",
-      "state": "known"
+      "type": "passive",
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:135:dawnbreaker_fire_wreath",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:dawnbreaker_fire_wreath"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:dawnbreaker_fire_wreath:manaCost",
-        "ownerId": "activation:135:dawnbreaker_fire_wreath",
-        "field": "manaCost",
-        "state": "known",
-        "value": 110
-      },
-      "cooldown": {
-        "id": "value:activation:135:dawnbreaker_fire_wreath:cooldown",
-        "ownerId": "activation:135:dawnbreaker_fire_wreath",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "17 15 13 11",
-          "special_bonus_unique_dawnbreaker_fire_wreath_cooldown": "-4"
-        }
-      },
-      "charges": {
-        "id": "value:activation:135:dawnbreaker_fire_wreath:charges",
-        "ownerId": "activation:135:dawnbreaker_fire_wreath",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:dawnbreaker_fire_wreath:manaCost",
-        "value:activation:135:dawnbreaker_fire_wreath:cooldown",
-        "value:activation:135:dawnbreaker_fire_wreath:charges"
+      "id": "special_bonus_unique_dawnbreaker_luminosity_crit",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_dawnbreaker_celestial_hammer_targets_allies",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_dawnbreaker_celestial_hammer_damage",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:135:dawnbreaker_celestial_hammer",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:dawnbreaker_celestial_hammer"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:dawnbreaker_celestial_hammer:manaCost",
-        "ownerId": "activation:135:dawnbreaker_celestial_hammer",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          100,
-          110,
-          120,
-          130
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:135:dawnbreaker_celestial_hammer:cooldown",
-        "ownerId": "activation:135:dawnbreaker_celestial_hammer",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          18,
-          16,
-          14,
-          12
-        ]
-      },
-      "charges": {
-        "id": "value:activation:135:dawnbreaker_celestial_hammer:charges",
-        "ownerId": "activation:135:dawnbreaker_celestial_hammer",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:dawnbreaker_celestial_hammer:manaCost",
-        "value:activation:135:dawnbreaker_celestial_hammer:cooldown",
-        "value:activation:135:dawnbreaker_celestial_hammer:charges"
+      "id": "special_bonus_unique_dawnbreaker_solar_guardian_cooldown",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:135:dawnbreaker_luminosity",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:dawnbreaker_luminosity"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:dawnbreaker_luminosity:manaCost",
-        "ownerId": "activation:135:dawnbreaker_luminosity",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:135:dawnbreaker_luminosity:cooldown",
-        "ownerId": "activation:135:dawnbreaker_luminosity",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:135:dawnbreaker_luminosity:charges",
-        "ownerId": "activation:135:dawnbreaker_luminosity",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:dawnbreaker_luminosity:manaCost",
-        "value:activation:135:dawnbreaker_luminosity:cooldown",
-        "value:activation:135:dawnbreaker_luminosity:charges"
+      "id": "special_bonus_unique_dawnbreaker_solar_guardian_radius",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_dawnbreaker_luminosity_attack_count",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_dawnbreaker_fire_wreath_cooldown",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:135:dawnbreaker_converge",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:dawnbreaker_converge"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:dawnbreaker_converge:manaCost",
-        "ownerId": "activation:135:dawnbreaker_converge",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:135:dawnbreaker_converge:cooldown",
-        "ownerId": "activation:135:dawnbreaker_converge",
-        "field": "cooldown",
-        "state": "known",
-        "value": 0.25
-      },
-      "charges": {
-        "id": "value:activation:135:dawnbreaker_converge:charges",
-        "ownerId": "activation:135:dawnbreaker_converge",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:dawnbreaker_converge:manaCost",
-        "value:activation:135:dawnbreaker_converge:cooldown",
-        "value:activation:135:dawnbreaker_converge:charges"
-      ]
+      "id": "special_bonus_unique_dawnbreaker_celestial_hammer_cast_range",
+      "tags": []
     },
     {
-      "id": "activation:135:dawnbreaker_break_of_dawn",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:dawnbreaker_break_of_dawn"
+      "id": "special_bonus_unique_dawnbreaker_break_of_dawn_damage",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:135:dawnbreaker_break_of_dawn:manaCost",
-        "ownerId": "activation:135:dawnbreaker_break_of_dawn",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:135:dawnbreaker_break_of_dawn:cooldown",
-        "ownerId": "activation:135:dawnbreaker_break_of_dawn",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:135:dawnbreaker_break_of_dawn:charges",
-        "ownerId": "activation:135:dawnbreaker_break_of_dawn",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:dawnbreaker_break_of_dawn:manaCost",
-        "value:activation:135:dawnbreaker_break_of_dawn:cooldown",
-        "value:activation:135:dawnbreaker_break_of_dawn:charges"
-      ]
+      "tags": []
     },
     {
-      "id": "activation:135:dawnbreaker_solar_guardian",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:dawnbreaker_solar_guardian"
+      "id": "special_bonus_unique_dawnbreaker_gleaming_hammer",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:135:dawnbreaker_solar_guardian:manaCost",
-        "ownerId": "activation:135:dawnbreaker_solar_guardian",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          150,
-          200,
-          250
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:135:dawnbreaker_solar_guardian:cooldown",
-        "ownerId": "activation:135:dawnbreaker_solar_guardian",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "110 100 90",
-          "special_bonus_unique_dawnbreaker_solar_guardian_cooldown": "-20"
-        }
-      },
-      "charges": {
-        "id": "value:activation:135:dawnbreaker_solar_guardian:charges",
-        "ownerId": "activation:135:dawnbreaker_solar_guardian",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:dawnbreaker_solar_guardian:manaCost",
-        "value:activation:135:dawnbreaker_solar_guardian:cooldown",
-        "value:activation:135:dawnbreaker_solar_guardian:charges"
-      ]
-    },
-    {
-      "id": "activation:135:dawnbreaker_land",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:dawnbreaker_land"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:dawnbreaker_land:manaCost",
-        "ownerId": "activation:135:dawnbreaker_land",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:135:dawnbreaker_land:cooldown",
-        "ownerId": "activation:135:dawnbreaker_land",
-        "field": "cooldown",
-        "state": "known",
-        "value": 2
-      },
-      "charges": {
-        "id": "value:activation:135:dawnbreaker_land:charges",
-        "ownerId": "activation:135:dawnbreaker_land",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:dawnbreaker_land:manaCost",
-        "value:activation:135:dawnbreaker_land:cooldown",
-        "value:activation:135:dawnbreaker_land:charges"
-      ]
-    },
-    {
-      "id": "activation:135:special_bonus_unique_dawnbreaker_luminosity_crit",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:special_bonus_unique_dawnbreaker_luminosity_crit"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_luminosity_crit:manaCost",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_luminosity_crit",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_luminosity_crit:cooldown",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_luminosity_crit",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_luminosity_crit:charges",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_luminosity_crit",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:special_bonus_unique_dawnbreaker_luminosity_crit:manaCost",
-        "value:activation:135:special_bonus_unique_dawnbreaker_luminosity_crit:cooldown",
-        "value:activation:135:special_bonus_unique_dawnbreaker_luminosity_crit:charges"
-      ]
-    },
-    {
-      "id": "activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_targets_allies",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:special_bonus_unique_dawnbreaker_celestial_hammer_targets_allies"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_targets_allies:manaCost",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_targets_allies",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_targets_allies:cooldown",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_targets_allies",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_targets_allies:charges",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_targets_allies",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_targets_allies:manaCost",
-        "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_targets_allies:cooldown",
-        "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_targets_allies:charges"
-      ]
-    },
-    {
-      "id": "activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_damage",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:special_bonus_unique_dawnbreaker_celestial_hammer_damage"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_damage:manaCost",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_damage",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_damage:cooldown",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_damage",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_damage:charges",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_damage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_damage:manaCost",
-        "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_damage:cooldown",
-        "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_damage:charges"
-      ]
-    },
-    {
-      "id": "activation:135:special_bonus_unique_dawnbreaker_solar_guardian_cooldown",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:special_bonus_unique_dawnbreaker_solar_guardian_cooldown"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_solar_guardian_cooldown:manaCost",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_solar_guardian_cooldown",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_solar_guardian_cooldown:cooldown",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_solar_guardian_cooldown",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_solar_guardian_cooldown:charges",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_solar_guardian_cooldown",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:special_bonus_unique_dawnbreaker_solar_guardian_cooldown:manaCost",
-        "value:activation:135:special_bonus_unique_dawnbreaker_solar_guardian_cooldown:cooldown",
-        "value:activation:135:special_bonus_unique_dawnbreaker_solar_guardian_cooldown:charges"
-      ]
-    },
-    {
-      "id": "activation:135:special_bonus_unique_dawnbreaker_solar_guardian_radius",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:special_bonus_unique_dawnbreaker_solar_guardian_radius"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_solar_guardian_radius:manaCost",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_solar_guardian_radius",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_solar_guardian_radius:cooldown",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_solar_guardian_radius",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_solar_guardian_radius:charges",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_solar_guardian_radius",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:special_bonus_unique_dawnbreaker_solar_guardian_radius:manaCost",
-        "value:activation:135:special_bonus_unique_dawnbreaker_solar_guardian_radius:cooldown",
-        "value:activation:135:special_bonus_unique_dawnbreaker_solar_guardian_radius:charges"
-      ]
-    },
-    {
-      "id": "activation:135:special_bonus_unique_dawnbreaker_luminosity_attack_count",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:special_bonus_unique_dawnbreaker_luminosity_attack_count"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_luminosity_attack_count:manaCost",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_luminosity_attack_count",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_luminosity_attack_count:cooldown",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_luminosity_attack_count",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_luminosity_attack_count:charges",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_luminosity_attack_count",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:special_bonus_unique_dawnbreaker_luminosity_attack_count:manaCost",
-        "value:activation:135:special_bonus_unique_dawnbreaker_luminosity_attack_count:cooldown",
-        "value:activation:135:special_bonus_unique_dawnbreaker_luminosity_attack_count:charges"
-      ]
-    },
-    {
-      "id": "activation:135:special_bonus_unique_dawnbreaker_fire_wreath_cooldown",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:special_bonus_unique_dawnbreaker_fire_wreath_cooldown"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_fire_wreath_cooldown:manaCost",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_fire_wreath_cooldown",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_fire_wreath_cooldown:cooldown",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_fire_wreath_cooldown",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_fire_wreath_cooldown:charges",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_fire_wreath_cooldown",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:special_bonus_unique_dawnbreaker_fire_wreath_cooldown:manaCost",
-        "value:activation:135:special_bonus_unique_dawnbreaker_fire_wreath_cooldown:cooldown",
-        "value:activation:135:special_bonus_unique_dawnbreaker_fire_wreath_cooldown:charges"
-      ]
-    },
-    {
-      "id": "activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_cast_range",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:special_bonus_unique_dawnbreaker_celestial_hammer_cast_range"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_cast_range:manaCost",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_cast_range",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_cast_range:cooldown",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_cast_range",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_cast_range:charges",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_cast_range",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_cast_range:manaCost",
-        "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_cast_range:cooldown",
-        "value:activation:135:special_bonus_unique_dawnbreaker_celestial_hammer_cast_range:charges"
-      ]
-    },
-    {
-      "id": "activation:135:special_bonus_attributes",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:special_bonus_attributes:manaCost",
-        "ownerId": "activation:135:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:135:special_bonus_attributes:cooldown",
-        "ownerId": "activation:135:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:135:special_bonus_attributes:charges",
-        "ownerId": "activation:135:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:special_bonus_attributes:manaCost",
-        "value:activation:135:special_bonus_attributes:cooldown",
-        "value:activation:135:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:135:dawnbreaker_unbreakable",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:dawnbreaker_unbreakable"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:dawnbreaker_unbreakable:manaCost",
-        "ownerId": "activation:135:dawnbreaker_unbreakable",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:135:dawnbreaker_unbreakable:cooldown",
-        "ownerId": "activation:135:dawnbreaker_unbreakable",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:135:dawnbreaker_unbreakable:charges",
-        "ownerId": "activation:135:dawnbreaker_unbreakable",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:dawnbreaker_unbreakable:manaCost",
-        "value:activation:135:dawnbreaker_unbreakable:cooldown",
-        "value:activation:135:dawnbreaker_unbreakable:charges"
-      ]
-    },
-    {
-      "id": "activation:135:special_bonus_unique_dawnbreaker_break_of_dawn_damage",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:special_bonus_unique_dawnbreaker_break_of_dawn_damage"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_break_of_dawn_damage:manaCost",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_break_of_dawn_damage",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_break_of_dawn_damage:cooldown",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_break_of_dawn_damage",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_break_of_dawn_damage:charges",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_break_of_dawn_damage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:special_bonus_unique_dawnbreaker_break_of_dawn_damage:manaCost",
-        "value:activation:135:special_bonus_unique_dawnbreaker_break_of_dawn_damage:cooldown",
-        "value:activation:135:special_bonus_unique_dawnbreaker_break_of_dawn_damage:charges"
-      ]
-    },
-    {
-      "id": "activation:135:special_bonus_unique_dawnbreaker_gleaming_hammer",
-      "heroId": "135",
-      "abilityIds": [
-        "ability:135:special_bonus_unique_dawnbreaker_gleaming_hammer"
-      ],
-      "manaCost": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_gleaming_hammer:manaCost",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_gleaming_hammer",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_gleaming_hammer:cooldown",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_gleaming_hammer",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:135:special_bonus_unique_dawnbreaker_gleaming_hammer:charges",
-        "ownerId": "activation:135:special_bonus_unique_dawnbreaker_gleaming_hammer",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:135:special_bonus_unique_dawnbreaker_gleaming_hammer:manaCost",
-        "value:activation:135:special_bonus_unique_dawnbreaker_gleaming_hammer:cooldown",
-        "value:activation:135:special_bonus_unique_dawnbreaker_gleaming_hammer:charges"
-      ]
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

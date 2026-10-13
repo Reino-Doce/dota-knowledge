@@ -1,713 +1,210 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "zuus_static_field",
+    "Name": "Static Field",
+    "behavior": [
+      "passive"
+    ],
+    "piercesDebuffImmunity": "no",
+    "damageType": "magical",
+    "breakable": true,
+    "tags": [
+      "target_health_scaling"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:22:zuus_arc_lightning",
-      "heroId": "22",
-      "engineId": "zuus_arc_lightning",
-      "activationId": "activation:22:zuus_arc_lightning",
+      "id": "zuus_arc_lightning",
+      "Name": "Arc Lightning",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_zuus",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "tags": []
     },
     {
-      "id": "ability:22:zuus_lightning_bolt",
-      "heroId": "22",
-      "engineId": "zuus_lightning_bolt",
-      "activationId": "activation:22:zuus_lightning_bolt",
+      "id": "zuus_lightning_bolt",
+      "Name": "Lightning Bolt",
+      "behavior": [
+        "point-target",
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_zuus",
-      "state": "known"
+      "type": "target-or-point",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        120,
+        125,
+        130,
+        135
+      ],
+      "cooldown": 6,
+      "tags": [
+        "detection",
+        "disable",
+        "stun",
+        "vision"
+      ]
     },
     {
-      "id": "ability:22:zuus_heavenly_jump",
-      "heroId": "22",
-      "engineId": "zuus_heavenly_jump",
-      "activationId": "activation:22:zuus_heavenly_jump",
+      "id": "zuus_heavenly_jump",
+      "Name": "Heavenly Jump",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 2,
-      "owner": "npc_dota_hero_zuus",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        50,
+        60,
+        70,
+        80
+      ],
+      "tags": [
+        "escape",
+        "mobility",
+        "slow"
+      ]
     },
     {
-      "id": "ability:22:zuus_cloud",
-      "heroId": "22",
-      "engineId": "zuus_cloud",
-      "activationId": "activation:22:zuus_cloud",
+      "id": "zuus_cloud",
+      "Name": "Nimbus",
+      "behavior": [
+        "point-target"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 3,
-      "owner": "npc_dota_hero_zuus",
-      "state": "known"
+      "type": "point",
+      "manaCost": 275,
+      "cooldown": 45,
+      "tags": [
+        "aoe",
+        "global_delivery",
+        "summons"
+      ]
     },
     {
-      "id": "ability:22:zuus_lightning_hands",
-      "heroId": "22",
-      "engineId": "zuus_lightning_hands",
-      "activationId": "activation:22:zuus_lightning_hands",
+      "id": "zuus_lightning_hands",
+      "Name": "Lightning Hands",
+      "behavior": [
+        "toggle"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 4,
-      "owner": "npc_dota_hero_zuus",
-      "state": "known"
+      "type": "toggle",
+      "manaCost": 0,
+      "cooldown": 0,
+      "tags": [
+        "buff",
+        "self_attack_speed"
+      ]
     },
     {
-      "id": "ability:22:zuus_thundergods_wrath",
-      "heroId": "22",
-      "engineId": "zuus_thundergods_wrath",
-      "activationId": "activation:22:zuus_thundergods_wrath",
+      "id": "zuus_thundergods_wrath",
+      "Name": "Thundergod's Wrath",
+      "behavior": [
+        "no-target"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_zuus",
-      "state": "known"
-    },
-    {
-      "id": "ability:22:zuus_static_field",
-      "heroId": "22",
-      "engineId": "zuus_static_field",
-      "activationId": "activation:22:zuus_static_field",
-      "order": 6,
-      "owner": "npc_dota_hero_zuus",
-      "state": "known"
-    },
-    {
-      "id": "ability:22:special_bonus_unique_zeus",
-      "heroId": "22",
-      "engineId": "special_bonus_unique_zeus",
-      "activationId": "activation:22:special_bonus_unique_zeus",
-      "order": 7,
-      "owner": "npc_dota_hero_zuus",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:22:special_bonus_hp_200",
-      "heroId": "22",
-      "engineId": "special_bonus_hp_200",
-      "activationId": "activation:22:special_bonus_hp_200",
-      "order": 8,
-      "owner": "npc_dota_hero_zuus",
-      "state": "known"
-    },
-    {
-      "id": "ability:22:special_bonus_unique_zeus_4",
-      "heroId": "22",
-      "engineId": "special_bonus_unique_zeus_4",
-      "activationId": "activation:22:special_bonus_unique_zeus_4",
-      "order": 9,
-      "owner": "npc_dota_hero_zuus",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:22:special_bonus_unique_zeus_6",
-      "heroId": "22",
-      "engineId": "special_bonus_unique_zeus_6",
-      "activationId": "activation:22:special_bonus_unique_zeus_6",
-      "order": 10,
-      "owner": "npc_dota_hero_zuus",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:22:special_bonus_unique_zeus_2",
-      "heroId": "22",
-      "engineId": "special_bonus_unique_zeus_2",
-      "activationId": "activation:22:special_bonus_unique_zeus_2",
-      "order": 11,
-      "owner": "npc_dota_hero_zuus",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:22:special_bonus_unique_zeus_3",
-      "heroId": "22",
-      "engineId": "special_bonus_unique_zeus_3",
-      "activationId": "activation:22:special_bonus_unique_zeus_3",
-      "order": 12,
-      "owner": "npc_dota_hero_zuus",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:22:special_bonus_unique_zeus_5",
-      "heroId": "22",
-      "engineId": "special_bonus_unique_zeus_5",
-      "activationId": "activation:22:special_bonus_unique_zeus_5",
-      "order": 13,
-      "owner": "npc_dota_hero_zuus",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:22:special_bonus_unique_zeus_jump_charges",
-      "heroId": "22",
-      "engineId": "special_bonus_unique_zeus_jump_charges",
-      "activationId": "activation:22:special_bonus_unique_zeus_jump_charges",
-      "order": 14,
-      "owner": "npc_dota_hero_zuus",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:22:special_bonus_attributes",
-      "heroId": "22",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:22:special_bonus_attributes",
-      "order": 15,
-      "owner": "npc_dota_hero_zuus",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        250,
+        375,
+        500
+      ],
+      "cooldown": 130,
+      "tags": [
+        "detection",
+        "vision"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:22:zuus_arc_lightning",
-      "heroId": "22",
-      "abilityIds": [
-        "ability:22:zuus_arc_lightning"
+      "id": "special_bonus_unique_zeus",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_hp_200",
+      "Name": "+200 Health",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:22:zuus_arc_lightning:manaCost",
-        "ownerId": "activation:22:zuus_arc_lightning",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "85 90 95 100",
-          "special_bonus_unique_zeus_6": "-20%"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:22:zuus_arc_lightning:cooldown",
-        "ownerId": "activation:22:zuus_arc_lightning",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "1.6",
-          "special_bonus_unique_zeus_6": "-20%"
-        }
-      },
-      "charges": {
-        "id": "value:activation:22:zuus_arc_lightning:charges",
-        "ownerId": "activation:22:zuus_arc_lightning",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:22:zuus_arc_lightning:manaCost",
-        "value:activation:22:zuus_arc_lightning:cooldown",
-        "value:activation:22:zuus_arc_lightning:charges"
+      "tags": [
+        "buff",
+        "self_max_health"
       ]
     },
     {
-      "id": "activation:22:zuus_lightning_bolt",
-      "heroId": "22",
-      "abilityIds": [
-        "ability:22:zuus_lightning_bolt"
-      ],
-      "manaCost": {
-        "id": "value:activation:22:zuus_lightning_bolt:manaCost",
-        "ownerId": "activation:22:zuus_lightning_bolt",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          120,
-          125,
-          130,
-          135
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:22:zuus_lightning_bolt:cooldown",
-        "ownerId": "activation:22:zuus_lightning_bolt",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          6,
-          6,
-          6,
-          6
-        ]
-      },
-      "charges": {
-        "id": "value:activation:22:zuus_lightning_bolt:charges",
-        "ownerId": "activation:22:zuus_lightning_bolt",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:22:zuus_lightning_bolt:manaCost",
-        "value:activation:22:zuus_lightning_bolt:cooldown",
-        "value:activation:22:zuus_lightning_bolt:charges"
+      "id": "special_bonus_unique_zeus_4",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:22:zuus_heavenly_jump",
-      "heroId": "22",
-      "abilityIds": [
-        "ability:22:zuus_heavenly_jump"
-      ],
-      "manaCost": {
-        "id": "value:activation:22:zuus_heavenly_jump:manaCost",
-        "ownerId": "activation:22:zuus_heavenly_jump",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          50,
-          60,
-          70,
-          80
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:22:zuus_heavenly_jump:cooldown",
-        "ownerId": "activation:22:zuus_heavenly_jump",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "26 22 18 14"
-        }
-      },
-      "charges": {
-        "id": "value:activation:22:zuus_heavenly_jump:charges",
-        "ownerId": "activation:22:zuus_heavenly_jump",
-        "field": "charges",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0",
-          "special_bonus_unique_zeus_jump_charges": "+3"
-        }
-      },
-      "valueIds": [
-        "value:activation:22:zuus_heavenly_jump:manaCost",
-        "value:activation:22:zuus_heavenly_jump:cooldown",
-        "value:activation:22:zuus_heavenly_jump:charges"
+      "id": "special_bonus_unique_zeus_6",
+      "tags": [
+        "buff",
+        "cooldown_reduction",
+        "mana_cost_reduction"
       ]
     },
     {
-      "id": "activation:22:zuus_cloud",
-      "heroId": "22",
-      "abilityIds": [
-        "ability:22:zuus_cloud"
-      ],
-      "manaCost": {
-        "id": "value:activation:22:zuus_cloud:manaCost",
-        "ownerId": "activation:22:zuus_cloud",
-        "field": "manaCost",
-        "state": "known",
-        "value": 275
-      },
-      "cooldown": {
-        "id": "value:activation:22:zuus_cloud:cooldown",
-        "ownerId": "activation:22:zuus_cloud",
-        "field": "cooldown",
-        "state": "known",
-        "value": 45
-      },
-      "charges": {
-        "id": "value:activation:22:zuus_cloud:charges",
-        "ownerId": "activation:22:zuus_cloud",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:22:zuus_cloud:manaCost",
-        "value:activation:22:zuus_cloud:cooldown",
-        "value:activation:22:zuus_cloud:charges"
-      ]
+      "id": "special_bonus_unique_zeus_2",
+      "tags": []
     },
     {
-      "id": "activation:22:zuus_lightning_hands",
-      "heroId": "22",
-      "abilityIds": [
-        "ability:22:zuus_lightning_hands"
-      ],
-      "manaCost": {
-        "id": "value:activation:22:zuus_lightning_hands:manaCost",
-        "ownerId": "activation:22:zuus_lightning_hands",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:22:zuus_lightning_hands:cooldown",
-        "ownerId": "activation:22:zuus_lightning_hands",
-        "field": "cooldown",
-        "state": "known",
-        "value": 0
-      },
-      "charges": {
-        "id": "value:activation:22:zuus_lightning_hands:charges",
-        "ownerId": "activation:22:zuus_lightning_hands",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:22:zuus_lightning_hands:manaCost",
-        "value:activation:22:zuus_lightning_hands:cooldown",
-        "value:activation:22:zuus_lightning_hands:charges"
-      ]
+      "id": "special_bonus_unique_zeus_3",
+      "tags": []
     },
     {
-      "id": "activation:22:zuus_thundergods_wrath",
-      "heroId": "22",
-      "abilityIds": [
-        "ability:22:zuus_thundergods_wrath"
-      ],
-      "manaCost": {
-        "id": "value:activation:22:zuus_thundergods_wrath:manaCost",
-        "ownerId": "activation:22:zuus_thundergods_wrath",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          250,
-          375,
-          500
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:22:zuus_thundergods_wrath:cooldown",
-        "ownerId": "activation:22:zuus_thundergods_wrath",
-        "field": "cooldown",
-        "state": "known",
-        "value": 130
-      },
-      "charges": {
-        "id": "value:activation:22:zuus_thundergods_wrath:charges",
-        "ownerId": "activation:22:zuus_thundergods_wrath",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:22:zuus_thundergods_wrath:manaCost",
-        "value:activation:22:zuus_thundergods_wrath:cooldown",
-        "value:activation:22:zuus_thundergods_wrath:charges"
-      ]
+      "id": "special_bonus_unique_zeus_5",
+      "tags": []
     },
     {
-      "id": "activation:22:zuus_static_field",
-      "heroId": "22",
-      "abilityIds": [
-        "ability:22:zuus_static_field"
-      ],
-      "manaCost": {
-        "id": "value:activation:22:zuus_static_field:manaCost",
-        "ownerId": "activation:22:zuus_static_field",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:22:zuus_static_field:cooldown",
-        "ownerId": "activation:22:zuus_static_field",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:22:zuus_static_field:charges",
-        "ownerId": "activation:22:zuus_static_field",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:22:zuus_static_field:manaCost",
-        "value:activation:22:zuus_static_field:cooldown",
-        "value:activation:22:zuus_static_field:charges"
-      ]
-    },
-    {
-      "id": "activation:22:special_bonus_unique_zeus",
-      "heroId": "22",
-      "abilityIds": [
-        "ability:22:special_bonus_unique_zeus"
-      ],
-      "manaCost": {
-        "id": "value:activation:22:special_bonus_unique_zeus:manaCost",
-        "ownerId": "activation:22:special_bonus_unique_zeus",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:22:special_bonus_unique_zeus:cooldown",
-        "ownerId": "activation:22:special_bonus_unique_zeus",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:22:special_bonus_unique_zeus:charges",
-        "ownerId": "activation:22:special_bonus_unique_zeus",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:22:special_bonus_unique_zeus:manaCost",
-        "value:activation:22:special_bonus_unique_zeus:cooldown",
-        "value:activation:22:special_bonus_unique_zeus:charges"
-      ]
-    },
-    {
-      "id": "activation:22:special_bonus_hp_200",
-      "heroId": "22",
-      "abilityIds": [
-        "ability:22:special_bonus_hp_200"
-      ],
-      "manaCost": {
-        "id": "value:activation:22:special_bonus_hp_200:manaCost",
-        "ownerId": "activation:22:special_bonus_hp_200",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:22:special_bonus_hp_200:cooldown",
-        "ownerId": "activation:22:special_bonus_hp_200",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:22:special_bonus_hp_200:charges",
-        "ownerId": "activation:22:special_bonus_hp_200",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:22:special_bonus_hp_200:manaCost",
-        "value:activation:22:special_bonus_hp_200:cooldown",
-        "value:activation:22:special_bonus_hp_200:charges"
-      ]
-    },
-    {
-      "id": "activation:22:special_bonus_unique_zeus_4",
-      "heroId": "22",
-      "abilityIds": [
-        "ability:22:special_bonus_unique_zeus_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:22:special_bonus_unique_zeus_4:manaCost",
-        "ownerId": "activation:22:special_bonus_unique_zeus_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:22:special_bonus_unique_zeus_4:cooldown",
-        "ownerId": "activation:22:special_bonus_unique_zeus_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:22:special_bonus_unique_zeus_4:charges",
-        "ownerId": "activation:22:special_bonus_unique_zeus_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:22:special_bonus_unique_zeus_4:manaCost",
-        "value:activation:22:special_bonus_unique_zeus_4:cooldown",
-        "value:activation:22:special_bonus_unique_zeus_4:charges"
-      ]
-    },
-    {
-      "id": "activation:22:special_bonus_unique_zeus_6",
-      "heroId": "22",
-      "abilityIds": [
-        "ability:22:special_bonus_unique_zeus_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:22:special_bonus_unique_zeus_6:manaCost",
-        "ownerId": "activation:22:special_bonus_unique_zeus_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:22:special_bonus_unique_zeus_6:cooldown",
-        "ownerId": "activation:22:special_bonus_unique_zeus_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:22:special_bonus_unique_zeus_6:charges",
-        "ownerId": "activation:22:special_bonus_unique_zeus_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:22:special_bonus_unique_zeus_6:manaCost",
-        "value:activation:22:special_bonus_unique_zeus_6:cooldown",
-        "value:activation:22:special_bonus_unique_zeus_6:charges"
-      ]
-    },
-    {
-      "id": "activation:22:special_bonus_unique_zeus_2",
-      "heroId": "22",
-      "abilityIds": [
-        "ability:22:special_bonus_unique_zeus_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:22:special_bonus_unique_zeus_2:manaCost",
-        "ownerId": "activation:22:special_bonus_unique_zeus_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:22:special_bonus_unique_zeus_2:cooldown",
-        "ownerId": "activation:22:special_bonus_unique_zeus_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:22:special_bonus_unique_zeus_2:charges",
-        "ownerId": "activation:22:special_bonus_unique_zeus_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:22:special_bonus_unique_zeus_2:manaCost",
-        "value:activation:22:special_bonus_unique_zeus_2:cooldown",
-        "value:activation:22:special_bonus_unique_zeus_2:charges"
-      ]
-    },
-    {
-      "id": "activation:22:special_bonus_unique_zeus_3",
-      "heroId": "22",
-      "abilityIds": [
-        "ability:22:special_bonus_unique_zeus_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:22:special_bonus_unique_zeus_3:manaCost",
-        "ownerId": "activation:22:special_bonus_unique_zeus_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:22:special_bonus_unique_zeus_3:cooldown",
-        "ownerId": "activation:22:special_bonus_unique_zeus_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:22:special_bonus_unique_zeus_3:charges",
-        "ownerId": "activation:22:special_bonus_unique_zeus_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:22:special_bonus_unique_zeus_3:manaCost",
-        "value:activation:22:special_bonus_unique_zeus_3:cooldown",
-        "value:activation:22:special_bonus_unique_zeus_3:charges"
-      ]
-    },
-    {
-      "id": "activation:22:special_bonus_unique_zeus_5",
-      "heroId": "22",
-      "abilityIds": [
-        "ability:22:special_bonus_unique_zeus_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:22:special_bonus_unique_zeus_5:manaCost",
-        "ownerId": "activation:22:special_bonus_unique_zeus_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:22:special_bonus_unique_zeus_5:cooldown",
-        "ownerId": "activation:22:special_bonus_unique_zeus_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:22:special_bonus_unique_zeus_5:charges",
-        "ownerId": "activation:22:special_bonus_unique_zeus_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:22:special_bonus_unique_zeus_5:manaCost",
-        "value:activation:22:special_bonus_unique_zeus_5:cooldown",
-        "value:activation:22:special_bonus_unique_zeus_5:charges"
-      ]
-    },
-    {
-      "id": "activation:22:special_bonus_unique_zeus_jump_charges",
-      "heroId": "22",
-      "abilityIds": [
-        "ability:22:special_bonus_unique_zeus_jump_charges"
-      ],
-      "manaCost": {
-        "id": "value:activation:22:special_bonus_unique_zeus_jump_charges:manaCost",
-        "ownerId": "activation:22:special_bonus_unique_zeus_jump_charges",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:22:special_bonus_unique_zeus_jump_charges:cooldown",
-        "ownerId": "activation:22:special_bonus_unique_zeus_jump_charges",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:22:special_bonus_unique_zeus_jump_charges:charges",
-        "ownerId": "activation:22:special_bonus_unique_zeus_jump_charges",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:22:special_bonus_unique_zeus_jump_charges:manaCost",
-        "value:activation:22:special_bonus_unique_zeus_jump_charges:cooldown",
-        "value:activation:22:special_bonus_unique_zeus_jump_charges:charges"
-      ]
-    },
-    {
-      "id": "activation:22:special_bonus_attributes",
-      "heroId": "22",
-      "abilityIds": [
-        "ability:22:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:22:special_bonus_attributes:manaCost",
-        "ownerId": "activation:22:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:22:special_bonus_attributes:cooldown",
-        "ownerId": "activation:22:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:22:special_bonus_attributes:charges",
-        "ownerId": "activation:22:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:22:special_bonus_attributes:manaCost",
-        "value:activation:22:special_bonus_attributes:cooldown",
-        "value:activation:22:special_bonus_attributes:charges"
-      ]
+      "id": "special_bonus_unique_zeus_jump_charges",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

@@ -1,655 +1,149 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "phantom_lancer_illusory_armaments",
+    "Name": "Illusory Armaments",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "buff",
+      "controlled_unit_damage"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:12:phantom_lancer_spirit_lance",
-      "heroId": "12",
-      "engineId": "phantom_lancer_spirit_lance",
-      "activationId": "activation:12:phantom_lancer_spirit_lance",
+      "id": "phantom_lancer_spirit_lance",
+      "Name": "Spirit Lance",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_phantom_lancer",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": 120,
+      "tags": [
+        "illusions",
+        "slow"
+      ]
     },
     {
-      "id": "ability:12:phantom_lancer_doppelwalk",
-      "heroId": "12",
-      "engineId": "phantom_lancer_doppelwalk",
-      "activationId": "activation:12:phantom_lancer_doppelwalk",
+      "id": "phantom_lancer_doppelwalk",
+      "Name": "Doppelganger",
+      "behavior": [
+        "point-target"
+      ],
       "order": 1,
-      "owner": "npc_dota_hero_phantom_lancer",
-      "state": "known"
+      "type": "point",
+      "manaCost": 70,
+      "tags": [
+        "aoe",
+        "dispel",
+        "escape",
+        "illusions",
+        "mobility"
+      ]
     },
     {
-      "id": "ability:12:phantom_lancer_phantom_edge",
-      "heroId": "12",
-      "engineId": "phantom_lancer_phantom_edge",
-      "activationId": "activation:12:phantom_lancer_phantom_edge",
+      "id": "phantom_lancer_phantom_edge",
+      "Name": "Phantom Rush",
+      "behavior": [
+        "no-target",
+        "toggle"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "damageType": "physical",
+      "breakable": true,
       "order": 2,
-      "owner": "npc_dota_hero_phantom_lancer",
-      "state": "known"
+      "type": "toggle",
+      "tags": [
+        "buff",
+        "escape",
+        "evasion",
+        "mobility",
+        "self_movement_speed"
+      ]
     },
     {
-      "id": "ability:12:phantom_lancer_illusory_armaments",
-      "heroId": "12",
-      "engineId": "phantom_lancer_illusory_armaments",
-      "activationId": "activation:12:phantom_lancer_illusory_armaments",
-      "order": 3,
-      "owner": "npc_dota_hero_phantom_lancer",
-      "state": "known"
-    },
-    {
-      "id": "ability:12:generic_hidden",
-      "heroId": "12",
-      "engineId": "generic_hidden",
-      "activationId": "activation:12:generic_hidden",
+      "id": "generic_hidden",
       "order": 4,
-      "owner": "npc_dota_hero_phantom_lancer",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:12:phantom_lancer_juxtapose",
-      "heroId": "12",
-      "engineId": "phantom_lancer_juxtapose",
-      "activationId": "activation:12:phantom_lancer_juxtapose",
+      "id": "phantom_lancer_juxtapose",
+      "Name": "Juxtapose",
+      "behavior": [
+        "passive"
+      ],
+      "breakable": true,
       "order": 5,
-      "owner": "npc_dota_hero_phantom_lancer",
-      "state": "known"
-    },
-    {
-      "id": "ability:12:special_bonus_unique_phantom_lancer_lance_slow_duration",
-      "heroId": "12",
-      "engineId": "special_bonus_unique_phantom_lancer_lance_slow_duration",
-      "activationId": "activation:12:special_bonus_unique_phantom_lancer_lance_slow_duration",
-      "order": 6,
-      "owner": "npc_dota_hero_phantom_lancer",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:12:special_bonus_unique_phantom_lancer_juxtapose_illusio_proc_chance",
-      "heroId": "12",
-      "engineId": "special_bonus_unique_phantom_lancer_juxtapose_illusio_proc_chance",
-      "activationId": "activation:12:special_bonus_unique_phantom_lancer_juxtapose_illusio_proc_chance",
-      "order": 7,
-      "owner": "npc_dota_hero_phantom_lancer",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:12:special_bonus_unique_phantom_lancer_illusion_lances",
-      "heroId": "12",
-      "engineId": "special_bonus_unique_phantom_lancer_illusion_lances",
-      "activationId": "activation:12:special_bonus_unique_phantom_lancer_illusion_lances",
-      "order": 8,
-      "owner": "npc_dota_hero_phantom_lancer",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:12:special_bonus_unique_phantom_lancer_doppelwalk_cast_range",
-      "heroId": "12",
-      "engineId": "special_bonus_unique_phantom_lancer_doppelwalk_cast_range",
-      "activationId": "activation:12:special_bonus_unique_phantom_lancer_doppelwalk_cast_range",
-      "order": 9,
-      "owner": "npc_dota_hero_phantom_lancer",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:12:special_bonus_unique_phantom_lancer_lance_damage",
-      "heroId": "12",
-      "engineId": "special_bonus_unique_phantom_lancer_lance_damage",
-      "activationId": "activation:12:special_bonus_unique_phantom_lancer_lance_damage",
-      "order": 10,
-      "owner": "npc_dota_hero_phantom_lancer",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:12:special_bonus_unique_phantom_lancer_juxtapose_damage_in",
-      "heroId": "12",
-      "engineId": "special_bonus_unique_phantom_lancer_juxtapose_damage_in",
-      "activationId": "activation:12:special_bonus_unique_phantom_lancer_juxtapose_damage_in",
-      "order": 11,
-      "owner": "npc_dota_hero_phantom_lancer",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:12:special_bonus_unique_phantom_lancer_4",
-      "heroId": "12",
-      "engineId": "special_bonus_unique_phantom_lancer_4",
-      "activationId": "activation:12:special_bonus_unique_phantom_lancer_4",
-      "order": 12,
-      "owner": "npc_dota_hero_phantom_lancer",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:12:special_bonus_unique_phantom_lancer_illusory_armaments_duration",
-      "heroId": "12",
-      "engineId": "special_bonus_unique_phantom_lancer_illusory_armaments_duration",
-      "activationId": "activation:12:special_bonus_unique_phantom_lancer_illusory_armaments_duration",
-      "order": 13,
-      "owner": "npc_dota_hero_phantom_lancer",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:12:special_bonus_attributes",
-      "heroId": "12",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:12:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_phantom_lancer",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "illusions"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:12:phantom_lancer_spirit_lance",
-      "heroId": "12",
-      "abilityIds": [
-        "ability:12:phantom_lancer_spirit_lance"
-      ],
-      "manaCost": {
-        "id": "value:activation:12:phantom_lancer_spirit_lance:manaCost",
-        "ownerId": "activation:12:phantom_lancer_spirit_lance",
-        "field": "manaCost",
-        "state": "known",
-        "value": 120
-      },
-      "cooldown": {
-        "id": "value:activation:12:phantom_lancer_spirit_lance:cooldown",
-        "ownerId": "activation:12:phantom_lancer_spirit_lance",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "10 9 8 7",
-          "special_bonus_unique_phantom_lancer_5": "-1"
-        }
-      },
-      "charges": {
-        "id": "value:activation:12:phantom_lancer_spirit_lance:charges",
-        "ownerId": "activation:12:phantom_lancer_spirit_lance",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:12:phantom_lancer_spirit_lance:manaCost",
-        "value:activation:12:phantom_lancer_spirit_lance:cooldown",
-        "value:activation:12:phantom_lancer_spirit_lance:charges"
+      "id": "special_bonus_unique_phantom_lancer_lance_slow_duration",
+      "tags": [
+        "duration_extension"
       ]
     },
     {
-      "id": "activation:12:phantom_lancer_doppelwalk",
-      "heroId": "12",
-      "abilityIds": [
-        "ability:12:phantom_lancer_doppelwalk"
-      ],
-      "manaCost": {
-        "id": "value:activation:12:phantom_lancer_doppelwalk:manaCost",
-        "ownerId": "activation:12:phantom_lancer_doppelwalk",
-        "field": "manaCost",
-        "state": "known",
-        "value": 70
-      },
-      "cooldown": {
-        "id": "value:activation:12:phantom_lancer_doppelwalk:cooldown",
-        "ownerId": "activation:12:phantom_lancer_doppelwalk",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "22 18 14 10",
-          "special_bonus_unique_phantom_lancer_4": "-4"
-        }
-      },
-      "charges": {
-        "id": "value:activation:12:phantom_lancer_doppelwalk:charges",
-        "ownerId": "activation:12:phantom_lancer_doppelwalk",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:12:phantom_lancer_doppelwalk:manaCost",
-        "value:activation:12:phantom_lancer_doppelwalk:cooldown",
-        "value:activation:12:phantom_lancer_doppelwalk:charges"
+      "id": "special_bonus_unique_phantom_lancer_juxtapose_illusio_proc_chance",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_phantom_lancer_illusion_lances",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_phantom_lancer_doppelwalk_cast_range",
+      "tags": [
+        "buff",
+        "cast_range"
       ]
     },
     {
-      "id": "activation:12:phantom_lancer_phantom_edge",
-      "heroId": "12",
-      "abilityIds": [
-        "ability:12:phantom_lancer_phantom_edge"
-      ],
-      "manaCost": {
-        "id": "value:activation:12:phantom_lancer_phantom_edge:manaCost",
-        "ownerId": "activation:12:phantom_lancer_phantom_edge",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:12:phantom_lancer_phantom_edge:cooldown",
-        "ownerId": "activation:12:phantom_lancer_phantom_edge",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "15 11 7 3",
-          "special_bonus_unique_phantom_lancer_phantom_rush_cooldown": "-2"
-        }
-      },
-      "charges": {
-        "id": "value:activation:12:phantom_lancer_phantom_edge:charges",
-        "ownerId": "activation:12:phantom_lancer_phantom_edge",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:12:phantom_lancer_phantom_edge:manaCost",
-        "value:activation:12:phantom_lancer_phantom_edge:cooldown",
-        "value:activation:12:phantom_lancer_phantom_edge:charges"
+      "id": "special_bonus_unique_phantom_lancer_lance_damage",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_phantom_lancer_juxtapose_damage_in",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_phantom_lancer_4",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:12:phantom_lancer_illusory_armaments",
-      "heroId": "12",
-      "abilityIds": [
-        "ability:12:phantom_lancer_illusory_armaments"
-      ],
-      "manaCost": {
-        "id": "value:activation:12:phantom_lancer_illusory_armaments:manaCost",
-        "ownerId": "activation:12:phantom_lancer_illusory_armaments",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:12:phantom_lancer_illusory_armaments:cooldown",
-        "ownerId": "activation:12:phantom_lancer_illusory_armaments",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:12:phantom_lancer_illusory_armaments:charges",
-        "ownerId": "activation:12:phantom_lancer_illusory_armaments",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:12:phantom_lancer_illusory_armaments:manaCost",
-        "value:activation:12:phantom_lancer_illusory_armaments:cooldown",
-        "value:activation:12:phantom_lancer_illusory_armaments:charges"
-      ]
-    },
-    {
-      "id": "activation:12:generic_hidden",
-      "heroId": "12",
-      "abilityIds": [
-        "ability:12:generic_hidden"
-      ],
-      "manaCost": {
-        "id": "value:activation:12:generic_hidden:manaCost",
-        "ownerId": "activation:12:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:12:generic_hidden:cooldown",
-        "ownerId": "activation:12:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:12:generic_hidden:charges",
-        "ownerId": "activation:12:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:12:generic_hidden:manaCost",
-        "value:activation:12:generic_hidden:cooldown",
-        "value:activation:12:generic_hidden:charges"
-      ]
-    },
-    {
-      "id": "activation:12:phantom_lancer_juxtapose",
-      "heroId": "12",
-      "abilityIds": [
-        "ability:12:phantom_lancer_juxtapose"
-      ],
-      "manaCost": {
-        "id": "value:activation:12:phantom_lancer_juxtapose:manaCost",
-        "ownerId": "activation:12:phantom_lancer_juxtapose",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "special_bonus_shard": "75"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:12:phantom_lancer_juxtapose:cooldown",
-        "ownerId": "activation:12:phantom_lancer_juxtapose",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "special_bonus_shard": "18"
-        }
-      },
-      "charges": {
-        "id": "value:activation:12:phantom_lancer_juxtapose:charges",
-        "ownerId": "activation:12:phantom_lancer_juxtapose",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:12:phantom_lancer_juxtapose:manaCost",
-        "value:activation:12:phantom_lancer_juxtapose:cooldown",
-        "value:activation:12:phantom_lancer_juxtapose:charges"
-      ]
-    },
-    {
-      "id": "activation:12:special_bonus_unique_phantom_lancer_lance_slow_duration",
-      "heroId": "12",
-      "abilityIds": [
-        "ability:12:special_bonus_unique_phantom_lancer_lance_slow_duration"
-      ],
-      "manaCost": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_lance_slow_duration:manaCost",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_lance_slow_duration",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_lance_slow_duration:cooldown",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_lance_slow_duration",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_lance_slow_duration:charges",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_lance_slow_duration",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:12:special_bonus_unique_phantom_lancer_lance_slow_duration:manaCost",
-        "value:activation:12:special_bonus_unique_phantom_lancer_lance_slow_duration:cooldown",
-        "value:activation:12:special_bonus_unique_phantom_lancer_lance_slow_duration:charges"
-      ]
-    },
-    {
-      "id": "activation:12:special_bonus_unique_phantom_lancer_juxtapose_illusio_proc_chance",
-      "heroId": "12",
-      "abilityIds": [
-        "ability:12:special_bonus_unique_phantom_lancer_juxtapose_illusio_proc_chance"
-      ],
-      "manaCost": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_juxtapose_illusio_proc_chance:manaCost",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_juxtapose_illusio_proc_chance",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_juxtapose_illusio_proc_chance:cooldown",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_juxtapose_illusio_proc_chance",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_juxtapose_illusio_proc_chance:charges",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_juxtapose_illusio_proc_chance",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:12:special_bonus_unique_phantom_lancer_juxtapose_illusio_proc_chance:manaCost",
-        "value:activation:12:special_bonus_unique_phantom_lancer_juxtapose_illusio_proc_chance:cooldown",
-        "value:activation:12:special_bonus_unique_phantom_lancer_juxtapose_illusio_proc_chance:charges"
-      ]
-    },
-    {
-      "id": "activation:12:special_bonus_unique_phantom_lancer_illusion_lances",
-      "heroId": "12",
-      "abilityIds": [
-        "ability:12:special_bonus_unique_phantom_lancer_illusion_lances"
-      ],
-      "manaCost": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_illusion_lances:manaCost",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_illusion_lances",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_illusion_lances:cooldown",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_illusion_lances",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_illusion_lances:charges",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_illusion_lances",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:12:special_bonus_unique_phantom_lancer_illusion_lances:manaCost",
-        "value:activation:12:special_bonus_unique_phantom_lancer_illusion_lances:cooldown",
-        "value:activation:12:special_bonus_unique_phantom_lancer_illusion_lances:charges"
-      ]
-    },
-    {
-      "id": "activation:12:special_bonus_unique_phantom_lancer_doppelwalk_cast_range",
-      "heroId": "12",
-      "abilityIds": [
-        "ability:12:special_bonus_unique_phantom_lancer_doppelwalk_cast_range"
-      ],
-      "manaCost": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_doppelwalk_cast_range:manaCost",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_doppelwalk_cast_range",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_doppelwalk_cast_range:cooldown",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_doppelwalk_cast_range",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_doppelwalk_cast_range:charges",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_doppelwalk_cast_range",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:12:special_bonus_unique_phantom_lancer_doppelwalk_cast_range:manaCost",
-        "value:activation:12:special_bonus_unique_phantom_lancer_doppelwalk_cast_range:cooldown",
-        "value:activation:12:special_bonus_unique_phantom_lancer_doppelwalk_cast_range:charges"
-      ]
-    },
-    {
-      "id": "activation:12:special_bonus_unique_phantom_lancer_lance_damage",
-      "heroId": "12",
-      "abilityIds": [
-        "ability:12:special_bonus_unique_phantom_lancer_lance_damage"
-      ],
-      "manaCost": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_lance_damage:manaCost",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_lance_damage",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_lance_damage:cooldown",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_lance_damage",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_lance_damage:charges",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_lance_damage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:12:special_bonus_unique_phantom_lancer_lance_damage:manaCost",
-        "value:activation:12:special_bonus_unique_phantom_lancer_lance_damage:cooldown",
-        "value:activation:12:special_bonus_unique_phantom_lancer_lance_damage:charges"
-      ]
-    },
-    {
-      "id": "activation:12:special_bonus_unique_phantom_lancer_juxtapose_damage_in",
-      "heroId": "12",
-      "abilityIds": [
-        "ability:12:special_bonus_unique_phantom_lancer_juxtapose_damage_in"
-      ],
-      "manaCost": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_juxtapose_damage_in:manaCost",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_juxtapose_damage_in",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_juxtapose_damage_in:cooldown",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_juxtapose_damage_in",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_juxtapose_damage_in:charges",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_juxtapose_damage_in",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:12:special_bonus_unique_phantom_lancer_juxtapose_damage_in:manaCost",
-        "value:activation:12:special_bonus_unique_phantom_lancer_juxtapose_damage_in:cooldown",
-        "value:activation:12:special_bonus_unique_phantom_lancer_juxtapose_damage_in:charges"
-      ]
-    },
-    {
-      "id": "activation:12:special_bonus_unique_phantom_lancer_4",
-      "heroId": "12",
-      "abilityIds": [
-        "ability:12:special_bonus_unique_phantom_lancer_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_4:manaCost",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_4:cooldown",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_4:charges",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:12:special_bonus_unique_phantom_lancer_4:manaCost",
-        "value:activation:12:special_bonus_unique_phantom_lancer_4:cooldown",
-        "value:activation:12:special_bonus_unique_phantom_lancer_4:charges"
-      ]
-    },
-    {
-      "id": "activation:12:special_bonus_unique_phantom_lancer_illusory_armaments_duration",
-      "heroId": "12",
-      "abilityIds": [
-        "ability:12:special_bonus_unique_phantom_lancer_illusory_armaments_duration"
-      ],
-      "manaCost": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_illusory_armaments_duration:manaCost",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_illusory_armaments_duration",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_illusory_armaments_duration:cooldown",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_illusory_armaments_duration",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:12:special_bonus_unique_phantom_lancer_illusory_armaments_duration:charges",
-        "ownerId": "activation:12:special_bonus_unique_phantom_lancer_illusory_armaments_duration",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:12:special_bonus_unique_phantom_lancer_illusory_armaments_duration:manaCost",
-        "value:activation:12:special_bonus_unique_phantom_lancer_illusory_armaments_duration:cooldown",
-        "value:activation:12:special_bonus_unique_phantom_lancer_illusory_armaments_duration:charges"
-      ]
-    },
-    {
-      "id": "activation:12:special_bonus_attributes",
-      "heroId": "12",
-      "abilityIds": [
-        "ability:12:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:12:special_bonus_attributes:manaCost",
-        "ownerId": "activation:12:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:12:special_bonus_attributes:cooldown",
-        "ownerId": "activation:12:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:12:special_bonus_attributes:charges",
-        "ownerId": "activation:12:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:12:special_bonus_attributes:manaCost",
-        "value:activation:12:special_bonus_attributes:cooldown",
-        "value:activation:12:special_bonus_attributes:charges"
+      "id": "special_bonus_unique_phantom_lancer_illusory_armaments_duration",
+      "tags": [
+        "duration_extension"
       ]
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

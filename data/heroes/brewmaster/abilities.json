@@ -1,1281 +1,423 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "brewmaster_liquid_courage",
+    "Name": "Liquid Courage",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "buff",
+      "status_resistance"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:78:brewmaster_thunder_clap",
-      "heroId": "78",
-      "engineId": "brewmaster_thunder_clap",
-      "activationId": "activation:78:brewmaster_thunder_clap",
+      "id": "brewmaster_thunder_clap",
+      "Name": "Thunder Clap",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 100,
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:78:brewmaster_cinder_brew",
-      "heroId": "78",
-      "engineId": "brewmaster_cinder_brew",
-      "activationId": "activation:78:brewmaster_cinder_brew",
+      "id": "brewmaster_cinder_brew",
+      "Name": "Cinder Brew",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        50,
+        60,
+        70,
+        80
+      ],
+      "cooldown": [
+        19,
+        17,
+        15,
+        13
+      ],
+      "tags": [
+        "aoe",
+        "damage_over_time",
+        "slow"
+      ]
     },
     {
-      "id": "ability:78:brewmaster_drunken_brawler",
-      "heroId": "78",
-      "engineId": "brewmaster_drunken_brawler",
-      "activationId": "activation:78:brewmaster_drunken_brawler",
+      "id": "brewmaster_drunken_brawler",
+      "Name": "Drunken Brawler",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
       "order": 2,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 0,
+      "cooldown": 0,
+      "tags": [
+        "attack_damage_scaling",
+        "buff",
+        "magic_resistance",
+        "self_armor",
+        "self_attack_damage",
+        "self_attack_speed",
+        "self_movement_speed"
+      ]
     },
     {
-      "id": "ability:78:brewmaster_liquid_courage",
-      "heroId": "78",
-      "engineId": "brewmaster_liquid_courage",
-      "activationId": "activation:78:brewmaster_liquid_courage",
-      "order": 3,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
-    },
-    {
-      "id": "ability:78:generic_hidden",
-      "heroId": "78",
-      "engineId": "generic_hidden",
-      "activationId": "activation:78:generic_hidden",
+      "id": "generic_hidden",
       "order": 4,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:78:brewmaster_primal_split",
-      "heroId": "78",
-      "engineId": "brewmaster_primal_split",
-      "activationId": "activation:78:brewmaster_primal_split",
+      "id": "brewmaster_primal_split",
+      "Name": "Primal Split",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
       "order": 5,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        150,
+        200,
+        250,
+        250
+      ],
+      "tags": [
+        "summons"
+      ]
     },
     {
-      "id": "ability:78:special_bonus_unique_brewmaster_2",
-      "heroId": "78",
-      "engineId": "special_bonus_unique_brewmaster_2",
-      "activationId": "activation:78:special_bonus_unique_brewmaster_2",
-      "order": 6,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:78:special_bonus_unique_brewmaster_brewed_up_duration",
-      "heroId": "78",
-      "engineId": "special_bonus_unique_brewmaster_brewed_up_duration",
-      "activationId": "activation:78:special_bonus_unique_brewmaster_brewed_up_duration",
-      "order": 7,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:78:special_bonus_unique_brewmaster_5",
-      "heroId": "78",
-      "engineId": "special_bonus_unique_brewmaster_5",
-      "activationId": "activation:78:special_bonus_unique_brewmaster_5",
-      "order": 8,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:78:special_bonus_unique_brewmaster",
-      "heroId": "78",
-      "engineId": "special_bonus_unique_brewmaster",
-      "activationId": "activation:78:special_bonus_unique_brewmaster",
-      "order": 9,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:78:special_bonus_unique_brewmaster_primal_split_cooldown",
-      "heroId": "78",
-      "engineId": "special_bonus_unique_brewmaster_primal_split_cooldown",
-      "activationId": "activation:78:special_bonus_unique_brewmaster_primal_split_cooldown",
-      "order": 10,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:78:special_bonus_attack_speed_110",
-      "heroId": "78",
-      "engineId": "special_bonus_attack_speed_110",
-      "activationId": "activation:78:special_bonus_attack_speed_110",
-      "order": 11,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
-    },
-    {
-      "id": "ability:78:special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
-      "heroId": "78",
-      "engineId": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
-      "activationId": "activation:78:special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
-      "order": 12,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:78:special_bonus_unique_brewmaster_4",
-      "heroId": "78",
-      "engineId": "special_bonus_unique_brewmaster_4",
-      "activationId": "activation:78:special_bonus_unique_brewmaster_4",
-      "order": 13,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:78:special_bonus_attributes",
-      "heroId": "78",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:78:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
-    },
-    {
-      "id": "ability:78:brewmaster_drunken_haze",
-      "heroId": "78",
-      "engineId": "brewmaster_drunken_haze",
-      "activationId": "activation:78:brewmaster_drunken_haze",
+      "id": "brewmaster_drunken_haze",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
       "order": 15,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero"
+      ],
+      "manaCost": 25,
+      "cooldown": [
+        11,
+        9,
+        7,
+        5
+      ],
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:78:brewmaster_drunken_brawler_brew_up",
-      "heroId": "78",
-      "engineId": "brewmaster_drunken_brawler_brew_up",
-      "activationId": "activation:78:brewmaster_drunken_brawler_brew_up",
+      "id": "brewmaster_drunken_brawler_brew_up",
+      "Name": "Drunken Brawler - Brew Up",
+      "behavior": [
+        "passive"
+      ],
       "order": 16,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "passive",
+      "tags": []
     },
     {
-      "id": "ability:78:brewmaster_primal_split_cancel",
-      "heroId": "78",
-      "engineId": "brewmaster_primal_split_cancel",
-      "activationId": "activation:78:brewmaster_primal_split_cancel",
+      "id": "brewmaster_primal_split_cancel",
+      "Name": "Primal Split Cancel",
+      "behavior": [
+        "no-target"
+      ],
       "order": 17,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 0,
+      "cooldown": 3,
+      "tags": []
     },
     {
-      "id": "ability:78:brewmaster_primal_companion",
-      "heroId": "78",
-      "engineId": "brewmaster_primal_companion",
-      "activationId": "activation:78:brewmaster_primal_companion",
+      "id": "brewmaster_primal_companion",
+      "Name": "Primal Companion",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
       "order": 18,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 50,
+      "cooldown": 20,
+      "tags": [
+        "summons"
+      ]
     },
     {
-      "id": "ability:78:brewmaster_earth_hurl_boulder",
-      "heroId": "78",
-      "engineId": "brewmaster_earth_hurl_boulder",
-      "activationId": "activation:78:brewmaster_earth_hurl_boulder",
+      "id": "brewmaster_earth_hurl_boulder",
+      "Name": "Hurl Boulder",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "strong-only",
+      "dispelType": "strong",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 19,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero"
+      ],
+      "manaCost": 0,
+      "cooldown": 5,
+      "tags": [
+        "disable",
+        "stun"
+      ]
     },
     {
-      "id": "ability:78:brewmaster_void_astral_pulse",
-      "heroId": "78",
-      "engineId": "brewmaster_void_astral_pulse",
-      "activationId": "activation:78:brewmaster_void_astral_pulse",
+      "id": "brewmaster_void_astral_pulse",
+      "behavior": [
+        "no-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 20,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "self-target",
+      "cooldown": 12,
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:78:brewmaster_earth_spell_immunity",
-      "heroId": "78",
-      "engineId": "brewmaster_earth_spell_immunity",
-      "activationId": "activation:78:brewmaster_earth_spell_immunity",
+      "id": "brewmaster_earth_spell_immunity",
+      "Name": "Earth Element",
+      "behavior": [
+        "passive"
+      ],
       "order": 21,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "buff",
+        "slow_resistance"
+      ]
     },
     {
-      "id": "ability:78:brewmaster_earth_pulverize",
-      "heroId": "78",
-      "engineId": "brewmaster_earth_pulverize",
-      "activationId": "activation:78:brewmaster_earth_pulverize",
+      "id": "brewmaster_earth_pulverize",
+      "Name": "Demolish",
+      "behavior": [
+        "passive"
+      ],
+      "breakable": true,
       "order": 22,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "building_damage"
+      ]
     },
     {
-      "id": "ability:78:brewmaster_storm_dispel_magic",
-      "heroId": "78",
-      "engineId": "brewmaster_storm_dispel_magic",
-      "activationId": "activation:78:brewmaster_storm_dispel_magic",
+      "id": "brewmaster_storm_dispel_magic",
+      "Name": "Dispel Magic",
+      "behavior": [
+        "point-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "piercesDebuffImmunity": "no",
       "order": 23,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "point",
+      "manaCost": 75,
+      "cooldown": 4,
+      "tags": [
+        "aoe",
+        "dispel"
+      ]
     },
     {
-      "id": "ability:78:brewmaster_storm_cyclone",
-      "heroId": "78",
-      "engineId": "brewmaster_storm_cyclone",
-      "activationId": "activation:78:brewmaster_storm_cyclone",
+      "id": "brewmaster_storm_cyclone",
+      "Name": "Cyclone",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
       "order": 24,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero"
+      ],
+      "manaCost": 150,
+      "cooldown": 8,
+      "tags": [
+        "cyclone",
+        "disable"
+      ]
     },
     {
-      "id": "ability:78:brewmaster_storm_wind_walk",
-      "heroId": "78",
-      "engineId": "brewmaster_storm_wind_walk",
-      "activationId": "activation:78:brewmaster_storm_wind_walk",
+      "id": "brewmaster_storm_wind_walk",
+      "Name": "Wind Walk",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
       "order": 25,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 75,
+      "cooldown": [
+        20,
+        14,
+        8,
+        6
+      ],
+      "tags": [
+        "buff",
+        "self_attack_damage"
+      ]
     },
     {
-      "id": "ability:78:brewmaster_fire_permanent_immolation",
-      "heroId": "78",
-      "engineId": "brewmaster_fire_permanent_immolation",
-      "activationId": "activation:78:brewmaster_fire_permanent_immolation",
+      "id": "brewmaster_fire_permanent_immolation",
+      "Name": "Permanent Immolation",
+      "behavior": [
+        "passive"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "breakable": true,
       "order": 26,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "damage_over_time"
+      ]
     },
     {
-      "id": "ability:78:brewmaster_fire_phase",
-      "heroId": "78",
-      "engineId": "brewmaster_fire_phase",
-      "activationId": "activation:78:brewmaster_fire_phase",
+      "id": "brewmaster_fire_phase",
+      "Name": "Permanent Phase",
+      "behavior": [
+        "passive"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
       "order": 27,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "buff",
+        "status_resistance"
+      ]
     },
     {
-      "id": "ability:78:brewmaster_fire_pull",
-      "heroId": "78",
-      "engineId": "brewmaster_fire_pull",
-      "activationId": "activation:78:brewmaster_fire_pull",
+      "id": "brewmaster_fire_pull",
+      "behavior": [
+        "point-vector-target",
+        "unit-target"
+      ],
+      "affects": [
+        "units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 28,
-      "owner": "npc_dota_hero_brewmaster",
-      "state": "known"
+      "type": "vector",
+      "target": [
+        "self",
+        "ally_hero",
+        "enemy_hero",
+        "ally_creep",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": 50,
+      "cooldown": 8,
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:78:brewmaster_thunder_clap",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_thunder_clap"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_thunder_clap:manaCost",
-        "ownerId": "activation:78:brewmaster_thunder_clap",
-        "field": "manaCost",
-        "state": "known",
-        "value": 100
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_thunder_clap:cooldown",
-        "ownerId": "activation:78:brewmaster_thunder_clap",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "18 16 14 12",
-          "special_bonus_unique_brewmaster_thunderclap_cd": "-3"
-        }
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_thunder_clap:charges",
-        "ownerId": "activation:78:brewmaster_thunder_clap",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_thunder_clap:manaCost",
-        "value:activation:78:brewmaster_thunder_clap:cooldown",
-        "value:activation:78:brewmaster_thunder_clap:charges"
+      "id": "special_bonus_unique_brewmaster_2",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_brewmaster_brewed_up_duration",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_brewmaster_5",
+      "tags": [
+        "duration_extension"
       ]
     },
     {
-      "id": "activation:78:brewmaster_cinder_brew",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_cinder_brew"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_cinder_brew:manaCost",
-        "ownerId": "activation:78:brewmaster_cinder_brew",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          50,
-          60,
-          70,
-          80
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_cinder_brew:cooldown",
-        "ownerId": "activation:78:brewmaster_cinder_brew",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          19,
-          17,
-          15,
-          13
-        ]
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_cinder_brew:charges",
-        "ownerId": "activation:78:brewmaster_cinder_brew",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_cinder_brew:manaCost",
-        "value:activation:78:brewmaster_cinder_brew:cooldown",
-        "value:activation:78:brewmaster_cinder_brew:charges"
+      "id": "special_bonus_unique_brewmaster",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_brewmaster_primal_split_cooldown",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:78:brewmaster_drunken_brawler",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_drunken_brawler"
+      "id": "special_bonus_attack_speed_110",
+      "Name": "+110 Attack Speed",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_drunken_brawler:manaCost",
-        "ownerId": "activation:78:brewmaster_drunken_brawler",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_drunken_brawler:cooldown",
-        "ownerId": "activation:78:brewmaster_drunken_brawler",
-        "field": "cooldown",
-        "state": "known",
-        "value": 0
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_drunken_brawler:charges",
-        "ownerId": "activation:78:brewmaster_drunken_brawler",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_drunken_brawler:manaCost",
-        "value:activation:78:brewmaster_drunken_brawler:cooldown",
-        "value:activation:78:brewmaster_drunken_brawler:charges"
+      "tags": [
+        "buff",
+        "self_attack_speed"
       ]
     },
     {
-      "id": "activation:78:brewmaster_liquid_courage",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_liquid_courage"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_liquid_courage:manaCost",
-        "ownerId": "activation:78:brewmaster_liquid_courage",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0",
-          "special_bonus_shard": "50"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_liquid_courage:cooldown",
-        "ownerId": "activation:78:brewmaster_liquid_courage",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0",
-          "special_bonus_shard": "20.0"
-        }
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_liquid_courage:charges",
-        "ownerId": "activation:78:brewmaster_liquid_courage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_liquid_courage:manaCost",
-        "value:activation:78:brewmaster_liquid_courage:cooldown",
-        "value:activation:78:brewmaster_liquid_courage:charges"
+      "id": "special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
+      "tags": [
+        "buff",
+        "self_armor",
+        "self_attack_speed",
+        "self_movement_speed"
       ]
     },
     {
-      "id": "activation:78:generic_hidden",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:generic_hidden"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:generic_hidden:manaCost",
-        "ownerId": "activation:78:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:78:generic_hidden:cooldown",
-        "ownerId": "activation:78:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:78:generic_hidden:charges",
-        "ownerId": "activation:78:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:generic_hidden:manaCost",
-        "value:activation:78:generic_hidden:cooldown",
-        "value:activation:78:generic_hidden:charges"
-      ]
-    },
-    {
-      "id": "activation:78:brewmaster_primal_split",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_primal_split"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_primal_split:manaCost",
-        "ownerId": "activation:78:brewmaster_primal_split",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          150,
-          200,
-          250,
-          250
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_primal_split:cooldown",
-        "ownerId": "activation:78:brewmaster_primal_split",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "140 130 120",
-          "special_bonus_unique_brewmaster_primal_split_cooldown": "-12"
-        }
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_primal_split:charges",
-        "ownerId": "activation:78:brewmaster_primal_split",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_primal_split:manaCost",
-        "value:activation:78:brewmaster_primal_split:cooldown",
-        "value:activation:78:brewmaster_primal_split:charges"
-      ]
-    },
-    {
-      "id": "activation:78:special_bonus_unique_brewmaster_2",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:special_bonus_unique_brewmaster_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_2:manaCost",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_2:cooldown",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_2:charges",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:special_bonus_unique_brewmaster_2:manaCost",
-        "value:activation:78:special_bonus_unique_brewmaster_2:cooldown",
-        "value:activation:78:special_bonus_unique_brewmaster_2:charges"
-      ]
-    },
-    {
-      "id": "activation:78:special_bonus_unique_brewmaster_brewed_up_duration",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:special_bonus_unique_brewmaster_brewed_up_duration"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_brewed_up_duration:manaCost",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_brewed_up_duration",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_brewed_up_duration:cooldown",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_brewed_up_duration",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_brewed_up_duration:charges",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_brewed_up_duration",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:special_bonus_unique_brewmaster_brewed_up_duration:manaCost",
-        "value:activation:78:special_bonus_unique_brewmaster_brewed_up_duration:cooldown",
-        "value:activation:78:special_bonus_unique_brewmaster_brewed_up_duration:charges"
-      ]
-    },
-    {
-      "id": "activation:78:special_bonus_unique_brewmaster_5",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:special_bonus_unique_brewmaster_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_5:manaCost",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_5:cooldown",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_5:charges",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:special_bonus_unique_brewmaster_5:manaCost",
-        "value:activation:78:special_bonus_unique_brewmaster_5:cooldown",
-        "value:activation:78:special_bonus_unique_brewmaster_5:charges"
-      ]
-    },
-    {
-      "id": "activation:78:special_bonus_unique_brewmaster",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:special_bonus_unique_brewmaster"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster:manaCost",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster:cooldown",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster:charges",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:special_bonus_unique_brewmaster:manaCost",
-        "value:activation:78:special_bonus_unique_brewmaster:cooldown",
-        "value:activation:78:special_bonus_unique_brewmaster:charges"
-      ]
-    },
-    {
-      "id": "activation:78:special_bonus_unique_brewmaster_primal_split_cooldown",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:special_bonus_unique_brewmaster_primal_split_cooldown"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_primal_split_cooldown:manaCost",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_primal_split_cooldown",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_primal_split_cooldown:cooldown",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_primal_split_cooldown",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_primal_split_cooldown:charges",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_primal_split_cooldown",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:special_bonus_unique_brewmaster_primal_split_cooldown:manaCost",
-        "value:activation:78:special_bonus_unique_brewmaster_primal_split_cooldown:cooldown",
-        "value:activation:78:special_bonus_unique_brewmaster_primal_split_cooldown:charges"
-      ]
-    },
-    {
-      "id": "activation:78:special_bonus_attack_speed_110",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:special_bonus_attack_speed_110"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:special_bonus_attack_speed_110:manaCost",
-        "ownerId": "activation:78:special_bonus_attack_speed_110",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:78:special_bonus_attack_speed_110:cooldown",
-        "ownerId": "activation:78:special_bonus_attack_speed_110",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:78:special_bonus_attack_speed_110:charges",
-        "ownerId": "activation:78:special_bonus_attack_speed_110",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:special_bonus_attack_speed_110:manaCost",
-        "value:activation:78:special_bonus_attack_speed_110:cooldown",
-        "value:activation:78:special_bonus_attack_speed_110:charges"
-      ]
-    },
-    {
-      "id": "activation:78:special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:special_bonus_unique_brewmaster_drunken_brawler_stance_bonus"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_drunken_brawler_stance_bonus:manaCost",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_drunken_brawler_stance_bonus:cooldown",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_drunken_brawler_stance_bonus:charges",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_drunken_brawler_stance_bonus",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:special_bonus_unique_brewmaster_drunken_brawler_stance_bonus:manaCost",
-        "value:activation:78:special_bonus_unique_brewmaster_drunken_brawler_stance_bonus:cooldown",
-        "value:activation:78:special_bonus_unique_brewmaster_drunken_brawler_stance_bonus:charges"
-      ]
-    },
-    {
-      "id": "activation:78:special_bonus_unique_brewmaster_4",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:special_bonus_unique_brewmaster_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_4:manaCost",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_4:cooldown",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:78:special_bonus_unique_brewmaster_4:charges",
-        "ownerId": "activation:78:special_bonus_unique_brewmaster_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:special_bonus_unique_brewmaster_4:manaCost",
-        "value:activation:78:special_bonus_unique_brewmaster_4:cooldown",
-        "value:activation:78:special_bonus_unique_brewmaster_4:charges"
-      ]
-    },
-    {
-      "id": "activation:78:special_bonus_attributes",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:special_bonus_attributes:manaCost",
-        "ownerId": "activation:78:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:78:special_bonus_attributes:cooldown",
-        "ownerId": "activation:78:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:78:special_bonus_attributes:charges",
-        "ownerId": "activation:78:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:special_bonus_attributes:manaCost",
-        "value:activation:78:special_bonus_attributes:cooldown",
-        "value:activation:78:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:78:brewmaster_drunken_haze",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_drunken_haze"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_drunken_haze:manaCost",
-        "ownerId": "activation:78:brewmaster_drunken_haze",
-        "field": "manaCost",
-        "state": "known",
-        "value": 25
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_drunken_haze:cooldown",
-        "ownerId": "activation:78:brewmaster_drunken_haze",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          11,
-          9,
-          7,
-          5
-        ]
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_drunken_haze:charges",
-        "ownerId": "activation:78:brewmaster_drunken_haze",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_drunken_haze:manaCost",
-        "value:activation:78:brewmaster_drunken_haze:cooldown",
-        "value:activation:78:brewmaster_drunken_haze:charges"
-      ]
-    },
-    {
-      "id": "activation:78:brewmaster_drunken_brawler_brew_up",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_drunken_brawler_brew_up"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_drunken_brawler_brew_up:manaCost",
-        "ownerId": "activation:78:brewmaster_drunken_brawler_brew_up",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_drunken_brawler_brew_up:cooldown",
-        "ownerId": "activation:78:brewmaster_drunken_brawler_brew_up",
-        "field": "cooldown",
-        "state": "known",
-        "value": 9
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_drunken_brawler_brew_up:charges",
-        "ownerId": "activation:78:brewmaster_drunken_brawler_brew_up",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_drunken_brawler_brew_up:manaCost",
-        "value:activation:78:brewmaster_drunken_brawler_brew_up:cooldown",
-        "value:activation:78:brewmaster_drunken_brawler_brew_up:charges"
-      ]
-    },
-    {
-      "id": "activation:78:brewmaster_primal_split_cancel",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_primal_split_cancel"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_primal_split_cancel:manaCost",
-        "ownerId": "activation:78:brewmaster_primal_split_cancel",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_primal_split_cancel:cooldown",
-        "ownerId": "activation:78:brewmaster_primal_split_cancel",
-        "field": "cooldown",
-        "state": "known",
-        "value": 3
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_primal_split_cancel:charges",
-        "ownerId": "activation:78:brewmaster_primal_split_cancel",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_primal_split_cancel:manaCost",
-        "value:activation:78:brewmaster_primal_split_cancel:cooldown",
-        "value:activation:78:brewmaster_primal_split_cancel:charges"
-      ]
-    },
-    {
-      "id": "activation:78:brewmaster_primal_companion",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_primal_companion"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_primal_companion:manaCost",
-        "ownerId": "activation:78:brewmaster_primal_companion",
-        "field": "manaCost",
-        "state": "known",
-        "value": 50
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_primal_companion:cooldown",
-        "ownerId": "activation:78:brewmaster_primal_companion",
-        "field": "cooldown",
-        "state": "known",
-        "value": 20
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_primal_companion:charges",
-        "ownerId": "activation:78:brewmaster_primal_companion",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_primal_companion:manaCost",
-        "value:activation:78:brewmaster_primal_companion:cooldown",
-        "value:activation:78:brewmaster_primal_companion:charges"
-      ]
-    },
-    {
-      "id": "activation:78:brewmaster_earth_hurl_boulder",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_earth_hurl_boulder"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_earth_hurl_boulder:manaCost",
-        "ownerId": "activation:78:brewmaster_earth_hurl_boulder",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_earth_hurl_boulder:cooldown",
-        "ownerId": "activation:78:brewmaster_earth_hurl_boulder",
-        "field": "cooldown",
-        "state": "known",
-        "value": 5
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_earth_hurl_boulder:charges",
-        "ownerId": "activation:78:brewmaster_earth_hurl_boulder",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_earth_hurl_boulder:manaCost",
-        "value:activation:78:brewmaster_earth_hurl_boulder:cooldown",
-        "value:activation:78:brewmaster_earth_hurl_boulder:charges"
-      ]
-    },
-    {
-      "id": "activation:78:brewmaster_void_astral_pulse",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_void_astral_pulse"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_void_astral_pulse:manaCost",
-        "ownerId": "activation:78:brewmaster_void_astral_pulse",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_void_astral_pulse:cooldown",
-        "ownerId": "activation:78:brewmaster_void_astral_pulse",
-        "field": "cooldown",
-        "state": "known",
-        "value": 12
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_void_astral_pulse:charges",
-        "ownerId": "activation:78:brewmaster_void_astral_pulse",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_void_astral_pulse:manaCost",
-        "value:activation:78:brewmaster_void_astral_pulse:cooldown",
-        "value:activation:78:brewmaster_void_astral_pulse:charges"
-      ]
-    },
-    {
-      "id": "activation:78:brewmaster_earth_spell_immunity",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_earth_spell_immunity"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_earth_spell_immunity:manaCost",
-        "ownerId": "activation:78:brewmaster_earth_spell_immunity",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_earth_spell_immunity:cooldown",
-        "ownerId": "activation:78:brewmaster_earth_spell_immunity",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_earth_spell_immunity:charges",
-        "ownerId": "activation:78:brewmaster_earth_spell_immunity",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_earth_spell_immunity:manaCost",
-        "value:activation:78:brewmaster_earth_spell_immunity:cooldown",
-        "value:activation:78:brewmaster_earth_spell_immunity:charges"
-      ]
-    },
-    {
-      "id": "activation:78:brewmaster_earth_pulverize",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_earth_pulverize"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_earth_pulverize:manaCost",
-        "ownerId": "activation:78:brewmaster_earth_pulverize",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_earth_pulverize:cooldown",
-        "ownerId": "activation:78:brewmaster_earth_pulverize",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_earth_pulverize:charges",
-        "ownerId": "activation:78:brewmaster_earth_pulverize",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_earth_pulverize:manaCost",
-        "value:activation:78:brewmaster_earth_pulverize:cooldown",
-        "value:activation:78:brewmaster_earth_pulverize:charges"
-      ]
-    },
-    {
-      "id": "activation:78:brewmaster_storm_dispel_magic",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_storm_dispel_magic"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_storm_dispel_magic:manaCost",
-        "ownerId": "activation:78:brewmaster_storm_dispel_magic",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          75,
-          75,
-          75,
-          75
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_storm_dispel_magic:cooldown",
-        "ownerId": "activation:78:brewmaster_storm_dispel_magic",
-        "field": "cooldown",
-        "state": "known",
-        "value": 4
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_storm_dispel_magic:charges",
-        "ownerId": "activation:78:brewmaster_storm_dispel_magic",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_storm_dispel_magic:manaCost",
-        "value:activation:78:brewmaster_storm_dispel_magic:cooldown",
-        "value:activation:78:brewmaster_storm_dispel_magic:charges"
-      ]
-    },
-    {
-      "id": "activation:78:brewmaster_storm_cyclone",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_storm_cyclone"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_storm_cyclone:manaCost",
-        "ownerId": "activation:78:brewmaster_storm_cyclone",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          150,
-          150,
-          150,
-          150
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_storm_cyclone:cooldown",
-        "ownerId": "activation:78:brewmaster_storm_cyclone",
-        "field": "cooldown",
-        "state": "known",
-        "value": 8
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_storm_cyclone:charges",
-        "ownerId": "activation:78:brewmaster_storm_cyclone",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_storm_cyclone:manaCost",
-        "value:activation:78:brewmaster_storm_cyclone:cooldown",
-        "value:activation:78:brewmaster_storm_cyclone:charges"
-      ]
-    },
-    {
-      "id": "activation:78:brewmaster_storm_wind_walk",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_storm_wind_walk"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_storm_wind_walk:manaCost",
-        "ownerId": "activation:78:brewmaster_storm_wind_walk",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          75,
-          75,
-          75,
-          75
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_storm_wind_walk:cooldown",
-        "ownerId": "activation:78:brewmaster_storm_wind_walk",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          20,
-          14,
-          8,
-          6
-        ]
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_storm_wind_walk:charges",
-        "ownerId": "activation:78:brewmaster_storm_wind_walk",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_storm_wind_walk:manaCost",
-        "value:activation:78:brewmaster_storm_wind_walk:cooldown",
-        "value:activation:78:brewmaster_storm_wind_walk:charges"
-      ]
-    },
-    {
-      "id": "activation:78:brewmaster_fire_permanent_immolation",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_fire_permanent_immolation"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_fire_permanent_immolation:manaCost",
-        "ownerId": "activation:78:brewmaster_fire_permanent_immolation",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_fire_permanent_immolation:cooldown",
-        "ownerId": "activation:78:brewmaster_fire_permanent_immolation",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_fire_permanent_immolation:charges",
-        "ownerId": "activation:78:brewmaster_fire_permanent_immolation",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_fire_permanent_immolation:manaCost",
-        "value:activation:78:brewmaster_fire_permanent_immolation:cooldown",
-        "value:activation:78:brewmaster_fire_permanent_immolation:charges"
-      ]
-    },
-    {
-      "id": "activation:78:brewmaster_fire_phase",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_fire_phase"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_fire_phase:manaCost",
-        "ownerId": "activation:78:brewmaster_fire_phase",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_fire_phase:cooldown",
-        "ownerId": "activation:78:brewmaster_fire_phase",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_fire_phase:charges",
-        "ownerId": "activation:78:brewmaster_fire_phase",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_fire_phase:manaCost",
-        "value:activation:78:brewmaster_fire_phase:cooldown",
-        "value:activation:78:brewmaster_fire_phase:charges"
-      ]
-    },
-    {
-      "id": "activation:78:brewmaster_fire_pull",
-      "heroId": "78",
-      "abilityIds": [
-        "ability:78:brewmaster_fire_pull"
-      ],
-      "manaCost": {
-        "id": "value:activation:78:brewmaster_fire_pull:manaCost",
-        "ownerId": "activation:78:brewmaster_fire_pull",
-        "field": "manaCost",
-        "state": "known",
-        "value": 50
-      },
-      "cooldown": {
-        "id": "value:activation:78:brewmaster_fire_pull:cooldown",
-        "ownerId": "activation:78:brewmaster_fire_pull",
-        "field": "cooldown",
-        "state": "known",
-        "value": 8
-      },
-      "charges": {
-        "id": "value:activation:78:brewmaster_fire_pull:charges",
-        "ownerId": "activation:78:brewmaster_fire_pull",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:78:brewmaster_fire_pull:manaCost",
-        "value:activation:78:brewmaster_fire_pull:cooldown",
-        "value:activation:78:brewmaster_fire_pull:charges"
-      ]
+      "id": "special_bonus_unique_brewmaster_4",
+      "Name": "Cinder Brew applies Fear when ignited",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

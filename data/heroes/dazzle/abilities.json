@@ -1,971 +1,315 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "dazzle_innate_weave",
+    "Name": "Weave",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "ally_armor",
+      "armor_reduction",
+      "buff"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:50:dazzle_poison_touch",
-      "heroId": "50",
-      "engineId": "dazzle_poison_touch",
-      "activationId": "activation:50:dazzle_poison_touch",
+      "id": "dazzle_poison_touch",
+      "Name": "Poison Touch",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "physical",
       "order": 0,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        125,
+        130,
+        135,
+        140
+      ],
+      "cooldown": [
+        24,
+        21,
+        18,
+        15
+      ],
+      "tags": [
+        "damage_over_time",
+        "slow"
+      ]
     },
     {
-      "id": "ability:50:dazzle_shallow_grave",
-      "heroId": "50",
-      "engineId": "dazzle_shallow_grave",
-      "activationId": "activation:50:dazzle_shallow_grave",
+      "id": "dazzle_shallow_grave",
+      "Name": "Shallow Grave",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "allied-heroes"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "allies-only",
       "order": 1,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero"
+      ],
+      "manaCost": [
+        90,
+        100,
+        110,
+        120
+      ],
+      "tags": [
+        "ally_healing_amplification",
+        "buff",
+        "death_prevention",
+        "healing_amplification"
+      ]
     },
     {
-      "id": "ability:50:dazzle_shadow_wave",
-      "heroId": "50",
-      "engineId": "dazzle_shadow_wave",
-      "activationId": "activation:50:dazzle_shadow_wave",
+      "id": "dazzle_shadow_wave",
+      "Name": "Shadow Wave",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "allied-units"
+      ],
+      "piercesDebuffImmunity": "yes",
+      "damageType": "physical",
       "order": 2,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero",
+        "ally_creep"
+      ],
+      "manaCost": 90,
+      "cooldown": [
+        10,
+        9,
+        8,
+        7
+      ],
+      "tags": [
+        "ally_heal",
+        "bkb_pierce",
+        "heal",
+        "self_heal"
+      ]
     },
     {
-      "id": "ability:50:dazzle_innate_weave",
-      "heroId": "50",
-      "engineId": "dazzle_innate_weave",
-      "activationId": "activation:50:dazzle_innate_weave",
-      "order": 3,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
-    },
-    {
-      "id": "ability:50:generic_hidden",
-      "heroId": "50",
-      "engineId": "generic_hidden",
-      "activationId": "activation:50:generic_hidden",
+      "id": "generic_hidden",
       "order": 4,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:50:dazzle_nothl_projection",
-      "heroId": "50",
-      "engineId": "dazzle_nothl_projection",
-      "activationId": "activation:50:dazzle_nothl_projection",
+      "id": "dazzle_nothl_projection",
+      "Name": "Nothl Projection",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "no",
       "order": 5,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        100,
+        150,
+        200
+      ],
+      "cooldown": [
+        70,
+        60,
+        50
+      ],
+      "tags": [
+        "ally_heal",
+        "heal",
+        "self_heal"
+      ]
     },
     {
-      "id": "ability:50:dazzle_nothl_projection_end",
-      "heroId": "50",
-      "engineId": "dazzle_nothl_projection_end",
-      "activationId": "activation:50:dazzle_nothl_projection_end",
+      "id": "dazzle_nothl_projection_end",
+      "Name": "End Projection",
+      "behavior": [
+        "no-target"
+      ],
       "order": 6,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
+      "type": "self-target",
+      "tags": []
     },
     {
-      "id": "ability:50:special_bonus_unique_dazzle_poison_touch_attack_range_bonus",
-      "heroId": "50",
-      "engineId": "special_bonus_unique_dazzle_poison_touch_attack_range_bonus",
-      "activationId": "activation:50:special_bonus_unique_dazzle_poison_touch_attack_range_bonus",
-      "order": 7,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
-    },
-    {
-      "id": "ability:50:special_bonus_mp_regen_175",
-      "heroId": "50",
-      "engineId": "special_bonus_mp_regen_175",
-      "activationId": "activation:50:special_bonus_mp_regen_175",
-      "order": 8,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
-    },
-    {
-      "id": "ability:50:special_bonus_unique_dazzle_2",
-      "heroId": "50",
-      "engineId": "special_bonus_unique_dazzle_2",
-      "activationId": "activation:50:special_bonus_unique_dazzle_2",
-      "order": 9,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
-    },
-    {
-      "id": "ability:50:special_bonus_unique_dazzle_nothl_projection_duration",
-      "heroId": "50",
-      "engineId": "special_bonus_unique_dazzle_nothl_projection_duration",
-      "activationId": "activation:50:special_bonus_unique_dazzle_nothl_projection_duration",
-      "order": 10,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:50:special_bonus_unique_dazzle_shallow_grave_cooldown",
-      "heroId": "50",
-      "engineId": "special_bonus_unique_dazzle_shallow_grave_cooldown",
-      "activationId": "activation:50:special_bonus_unique_dazzle_shallow_grave_cooldown",
-      "order": 11,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
-    },
-    {
-      "id": "ability:50:special_bonus_unique_dazzle_3",
-      "heroId": "50",
-      "engineId": "special_bonus_unique_dazzle_3",
-      "activationId": "activation:50:special_bonus_unique_dazzle_3",
-      "order": 12,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
-    },
-    {
-      "id": "ability:50:special_bonus_unique_dazzle_1",
-      "heroId": "50",
-      "engineId": "special_bonus_unique_dazzle_1",
-      "activationId": "activation:50:special_bonus_unique_dazzle_1",
-      "order": 13,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
-    },
-    {
-      "id": "ability:50:special_bonus_unique_dazzle_4",
-      "heroId": "50",
-      "engineId": "special_bonus_unique_dazzle_4",
-      "activationId": "activation:50:special_bonus_unique_dazzle_4",
-      "order": 14,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
-    },
-    {
-      "id": "ability:50:special_bonus_attributes",
-      "heroId": "50",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:50:special_bonus_attributes",
-      "order": 15,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
-    },
-    {
-      "id": "ability:50:dazzle_rain_of_vermin",
-      "heroId": "50",
-      "engineId": "dazzle_rain_of_vermin",
-      "activationId": "activation:50:dazzle_rain_of_vermin",
+      "id": "dazzle_rain_of_vermin",
+      "behavior": [
+        "point-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "physical",
       "order": 16,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
+      "type": "point",
+      "manaCost": 150,
+      "cooldown": 30,
+      "tags": [
+        "aoe"
+      ]
     },
     {
-      "id": "ability:50:dazzle_weave",
-      "heroId": "50",
-      "engineId": "dazzle_weave",
-      "activationId": "activation:50:dazzle_weave",
+      "id": "dazzle_weave",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "yes",
       "order": 17,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
+      "type": "point",
+      "manaCost": 100,
+      "cooldown": 40,
+      "tags": [
+        "aoe"
+      ]
     },
     {
-      "id": "ability:50:dazzle_bad_juju",
-      "heroId": "50",
-      "engineId": "dazzle_bad_juju",
-      "activationId": "activation:50:dazzle_bad_juju",
+      "id": "dazzle_bad_juju",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "physical",
       "order": 18,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
+      "type": "self-target",
+      "cooldown": 3,
+      "tags": [
+        "buff",
+        "cooldown_reduction"
+      ]
     },
     {
-      "id": "ability:50:dazzle_good_juju",
-      "heroId": "50",
-      "engineId": "dazzle_good_juju",
-      "activationId": "activation:50:dazzle_good_juju",
+      "id": "dazzle_good_juju",
+      "behavior": [
+        "passive"
+      ],
+      "affects": [
+        "allied-heroes"
+      ],
       "order": 19,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
+      ]
     },
     {
-      "id": "ability:50:dazzle_nothl_boon",
-      "heroId": "50",
-      "engineId": "dazzle_nothl_boon",
-      "activationId": "activation:50:dazzle_nothl_boon",
+      "id": "dazzle_nothl_boon",
+      "behavior": [
+        "passive"
+      ],
+      "piercesDebuffImmunity": "no",
       "order": 20,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
-    },
-    {
-      "id": "ability:50:special_bonus_unique_dazzle_5",
-      "heroId": "50",
-      "engineId": "special_bonus_unique_dazzle_5",
-      "activationId": "activation:50:special_bonus_unique_dazzle_5",
-      "order": 21,
-      "owner": "npc_dota_hero_dazzle",
-      "state": "known"
+      "type": "passive",
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:50:dazzle_poison_touch",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:dazzle_poison_touch"
+      "id": "special_bonus_unique_dazzle_poison_touch_attack_range_bonus",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:50:dazzle_poison_touch:manaCost",
-        "ownerId": "activation:50:dazzle_poison_touch",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          125,
-          130,
-          135,
-          140
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:50:dazzle_poison_touch:cooldown",
-        "ownerId": "activation:50:dazzle_poison_touch",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          24,
-          21,
-          18,
-          15
-        ]
-      },
-      "charges": {
-        "id": "value:activation:50:dazzle_poison_touch:charges",
-        "ownerId": "activation:50:dazzle_poison_touch",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:dazzle_poison_touch:manaCost",
-        "value:activation:50:dazzle_poison_touch:cooldown",
-        "value:activation:50:dazzle_poison_touch:charges"
+      "tags": []
+    },
+    {
+      "id": "special_bonus_mp_regen_175",
+      "Name": "+1.75 Mana Regen",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "buff",
+        "self_mana_regen"
       ]
     },
     {
-      "id": "activation:50:dazzle_shallow_grave",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:dazzle_shallow_grave"
+      "id": "special_bonus_unique_dazzle_2",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:50:dazzle_shallow_grave:manaCost",
-        "ownerId": "activation:50:dazzle_shallow_grave",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          90,
-          100,
-          110,
-          120
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:50:dazzle_shallow_grave:cooldown",
-        "ownerId": "activation:50:dazzle_shallow_grave",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "30 26 22 18",
-          "special_bonus_unique_dazzle_shallow_grave_cooldown": "-3"
-        }
-      },
-      "charges": {
-        "id": "value:activation:50:dazzle_shallow_grave:charges",
-        "ownerId": "activation:50:dazzle_shallow_grave",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:dazzle_shallow_grave:manaCost",
-        "value:activation:50:dazzle_shallow_grave:cooldown",
-        "value:activation:50:dazzle_shallow_grave:charges"
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:50:dazzle_shadow_wave",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:dazzle_shadow_wave"
+      "id": "special_bonus_unique_dazzle_nothl_projection_duration",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_dazzle_shallow_grave_cooldown",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:50:dazzle_shadow_wave:manaCost",
-        "ownerId": "activation:50:dazzle_shadow_wave",
-        "field": "manaCost",
-        "state": "known",
-        "value": 90
-      },
-      "cooldown": {
-        "id": "value:activation:50:dazzle_shadow_wave:cooldown",
-        "ownerId": "activation:50:dazzle_shadow_wave",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          10,
-          9,
-          8,
-          7
-        ]
-      },
-      "charges": {
-        "id": "value:activation:50:dazzle_shadow_wave:charges",
-        "ownerId": "activation:50:dazzle_shadow_wave",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:dazzle_shadow_wave:manaCost",
-        "value:activation:50:dazzle_shadow_wave:cooldown",
-        "value:activation:50:dazzle_shadow_wave:charges"
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:50:dazzle_innate_weave",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:dazzle_innate_weave"
+      "id": "special_bonus_unique_dazzle_3",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:50:dazzle_innate_weave:manaCost",
-        "ownerId": "activation:50:dazzle_innate_weave",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:50:dazzle_innate_weave:cooldown",
-        "ownerId": "activation:50:dazzle_innate_weave",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:50:dazzle_innate_weave:charges",
-        "ownerId": "activation:50:dazzle_innate_weave",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:dazzle_innate_weave:manaCost",
-        "value:activation:50:dazzle_innate_weave:cooldown",
-        "value:activation:50:dazzle_innate_weave:charges"
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:50:generic_hidden",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:generic_hidden"
+      "id": "special_bonus_unique_dazzle_1",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:50:generic_hidden:manaCost",
-        "ownerId": "activation:50:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:50:generic_hidden:cooldown",
-        "ownerId": "activation:50:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:50:generic_hidden:charges",
-        "ownerId": "activation:50:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:generic_hidden:manaCost",
-        "value:activation:50:generic_hidden:cooldown",
-        "value:activation:50:generic_hidden:charges"
+      "tags": [
+        "slow"
       ]
     },
     {
-      "id": "activation:50:dazzle_nothl_projection",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:dazzle_nothl_projection"
+      "id": "special_bonus_unique_dazzle_4",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:50:dazzle_nothl_projection:manaCost",
-        "ownerId": "activation:50:dazzle_nothl_projection",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          100,
-          150,
-          200
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:50:dazzle_nothl_projection:cooldown",
-        "ownerId": "activation:50:dazzle_nothl_projection",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          70,
-          60,
-          50
-        ]
-      },
-      "charges": {
-        "id": "value:activation:50:dazzle_nothl_projection:charges",
-        "ownerId": "activation:50:dazzle_nothl_projection",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:dazzle_nothl_projection:manaCost",
-        "value:activation:50:dazzle_nothl_projection:cooldown",
-        "value:activation:50:dazzle_nothl_projection:charges"
-      ]
+      "tags": []
     },
     {
-      "id": "activation:50:dazzle_nothl_projection_end",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:dazzle_nothl_projection_end"
+      "id": "special_bonus_unique_dazzle_5",
+      "Name": "+200 Heal On Shallow Grave End",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:50:dazzle_nothl_projection_end:manaCost",
-        "ownerId": "activation:50:dazzle_nothl_projection_end",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:50:dazzle_nothl_projection_end:cooldown",
-        "ownerId": "activation:50:dazzle_nothl_projection_end",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:50:dazzle_nothl_projection_end:charges",
-        "ownerId": "activation:50:dazzle_nothl_projection_end",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:dazzle_nothl_projection_end:manaCost",
-        "value:activation:50:dazzle_nothl_projection_end:cooldown",
-        "value:activation:50:dazzle_nothl_projection_end:charges"
-      ]
-    },
-    {
-      "id": "activation:50:special_bonus_unique_dazzle_poison_touch_attack_range_bonus",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:special_bonus_unique_dazzle_poison_touch_attack_range_bonus"
-      ],
-      "manaCost": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_poison_touch_attack_range_bonus:manaCost",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_poison_touch_attack_range_bonus",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_poison_touch_attack_range_bonus:cooldown",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_poison_touch_attack_range_bonus",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_poison_touch_attack_range_bonus:charges",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_poison_touch_attack_range_bonus",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:special_bonus_unique_dazzle_poison_touch_attack_range_bonus:manaCost",
-        "value:activation:50:special_bonus_unique_dazzle_poison_touch_attack_range_bonus:cooldown",
-        "value:activation:50:special_bonus_unique_dazzle_poison_touch_attack_range_bonus:charges"
-      ]
-    },
-    {
-      "id": "activation:50:special_bonus_mp_regen_175",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:special_bonus_mp_regen_175"
-      ],
-      "manaCost": {
-        "id": "value:activation:50:special_bonus_mp_regen_175:manaCost",
-        "ownerId": "activation:50:special_bonus_mp_regen_175",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:50:special_bonus_mp_regen_175:cooldown",
-        "ownerId": "activation:50:special_bonus_mp_regen_175",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:50:special_bonus_mp_regen_175:charges",
-        "ownerId": "activation:50:special_bonus_mp_regen_175",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:special_bonus_mp_regen_175:manaCost",
-        "value:activation:50:special_bonus_mp_regen_175:cooldown",
-        "value:activation:50:special_bonus_mp_regen_175:charges"
-      ]
-    },
-    {
-      "id": "activation:50:special_bonus_unique_dazzle_2",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:special_bonus_unique_dazzle_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_2:manaCost",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_2:cooldown",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_2:charges",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:special_bonus_unique_dazzle_2:manaCost",
-        "value:activation:50:special_bonus_unique_dazzle_2:cooldown",
-        "value:activation:50:special_bonus_unique_dazzle_2:charges"
-      ]
-    },
-    {
-      "id": "activation:50:special_bonus_unique_dazzle_nothl_projection_duration",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:special_bonus_unique_dazzle_nothl_projection_duration"
-      ],
-      "manaCost": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_nothl_projection_duration:manaCost",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_nothl_projection_duration",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_nothl_projection_duration:cooldown",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_nothl_projection_duration",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_nothl_projection_duration:charges",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_nothl_projection_duration",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:special_bonus_unique_dazzle_nothl_projection_duration:manaCost",
-        "value:activation:50:special_bonus_unique_dazzle_nothl_projection_duration:cooldown",
-        "value:activation:50:special_bonus_unique_dazzle_nothl_projection_duration:charges"
-      ]
-    },
-    {
-      "id": "activation:50:special_bonus_unique_dazzle_shallow_grave_cooldown",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:special_bonus_unique_dazzle_shallow_grave_cooldown"
-      ],
-      "manaCost": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_shallow_grave_cooldown:manaCost",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_shallow_grave_cooldown",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_shallow_grave_cooldown:cooldown",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_shallow_grave_cooldown",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_shallow_grave_cooldown:charges",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_shallow_grave_cooldown",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:special_bonus_unique_dazzle_shallow_grave_cooldown:manaCost",
-        "value:activation:50:special_bonus_unique_dazzle_shallow_grave_cooldown:cooldown",
-        "value:activation:50:special_bonus_unique_dazzle_shallow_grave_cooldown:charges"
-      ]
-    },
-    {
-      "id": "activation:50:special_bonus_unique_dazzle_3",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:special_bonus_unique_dazzle_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_3:manaCost",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_3:cooldown",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_3:charges",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:special_bonus_unique_dazzle_3:manaCost",
-        "value:activation:50:special_bonus_unique_dazzle_3:cooldown",
-        "value:activation:50:special_bonus_unique_dazzle_3:charges"
-      ]
-    },
-    {
-      "id": "activation:50:special_bonus_unique_dazzle_1",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:special_bonus_unique_dazzle_1"
-      ],
-      "manaCost": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_1:manaCost",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_1",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_1:cooldown",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_1",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_1:charges",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_1",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:special_bonus_unique_dazzle_1:manaCost",
-        "value:activation:50:special_bonus_unique_dazzle_1:cooldown",
-        "value:activation:50:special_bonus_unique_dazzle_1:charges"
-      ]
-    },
-    {
-      "id": "activation:50:special_bonus_unique_dazzle_4",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:special_bonus_unique_dazzle_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_4:manaCost",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_4:cooldown",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_4:charges",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:special_bonus_unique_dazzle_4:manaCost",
-        "value:activation:50:special_bonus_unique_dazzle_4:cooldown",
-        "value:activation:50:special_bonus_unique_dazzle_4:charges"
-      ]
-    },
-    {
-      "id": "activation:50:special_bonus_attributes",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:50:special_bonus_attributes:manaCost",
-        "ownerId": "activation:50:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:50:special_bonus_attributes:cooldown",
-        "ownerId": "activation:50:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:50:special_bonus_attributes:charges",
-        "ownerId": "activation:50:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:special_bonus_attributes:manaCost",
-        "value:activation:50:special_bonus_attributes:cooldown",
-        "value:activation:50:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:50:dazzle_rain_of_vermin",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:dazzle_rain_of_vermin"
-      ],
-      "manaCost": {
-        "id": "value:activation:50:dazzle_rain_of_vermin:manaCost",
-        "ownerId": "activation:50:dazzle_rain_of_vermin",
-        "field": "manaCost",
-        "state": "known",
-        "value": 150
-      },
-      "cooldown": {
-        "id": "value:activation:50:dazzle_rain_of_vermin:cooldown",
-        "ownerId": "activation:50:dazzle_rain_of_vermin",
-        "field": "cooldown",
-        "state": "known",
-        "value": 30
-      },
-      "charges": {
-        "id": "value:activation:50:dazzle_rain_of_vermin:charges",
-        "ownerId": "activation:50:dazzle_rain_of_vermin",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:dazzle_rain_of_vermin:manaCost",
-        "value:activation:50:dazzle_rain_of_vermin:cooldown",
-        "value:activation:50:dazzle_rain_of_vermin:charges"
-      ]
-    },
-    {
-      "id": "activation:50:dazzle_weave",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:dazzle_weave"
-      ],
-      "manaCost": {
-        "id": "value:activation:50:dazzle_weave:manaCost",
-        "ownerId": "activation:50:dazzle_weave",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          100,
-          100,
-          100
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:50:dazzle_weave:cooldown",
-        "ownerId": "activation:50:dazzle_weave",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          40,
-          40,
-          40
-        ]
-      },
-      "charges": {
-        "id": "value:activation:50:dazzle_weave:charges",
-        "ownerId": "activation:50:dazzle_weave",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:dazzle_weave:manaCost",
-        "value:activation:50:dazzle_weave:cooldown",
-        "value:activation:50:dazzle_weave:charges"
-      ]
-    },
-    {
-      "id": "activation:50:dazzle_bad_juju",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:dazzle_bad_juju"
-      ],
-      "manaCost": {
-        "id": "value:activation:50:dazzle_bad_juju:manaCost",
-        "ownerId": "activation:50:dazzle_bad_juju",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:50:dazzle_bad_juju:cooldown",
-        "ownerId": "activation:50:dazzle_bad_juju",
-        "field": "cooldown",
-        "state": "known",
-        "value": 3
-      },
-      "charges": {
-        "id": "value:activation:50:dazzle_bad_juju:charges",
-        "ownerId": "activation:50:dazzle_bad_juju",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:dazzle_bad_juju:manaCost",
-        "value:activation:50:dazzle_bad_juju:cooldown",
-        "value:activation:50:dazzle_bad_juju:charges"
-      ]
-    },
-    {
-      "id": "activation:50:dazzle_good_juju",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:dazzle_good_juju"
-      ],
-      "manaCost": {
-        "id": "value:activation:50:dazzle_good_juju:manaCost",
-        "ownerId": "activation:50:dazzle_good_juju",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:50:dazzle_good_juju:cooldown",
-        "ownerId": "activation:50:dazzle_good_juju",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:50:dazzle_good_juju:charges",
-        "ownerId": "activation:50:dazzle_good_juju",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:dazzle_good_juju:manaCost",
-        "value:activation:50:dazzle_good_juju:cooldown",
-        "value:activation:50:dazzle_good_juju:charges"
-      ]
-    },
-    {
-      "id": "activation:50:dazzle_nothl_boon",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:dazzle_nothl_boon"
-      ],
-      "manaCost": {
-        "id": "value:activation:50:dazzle_nothl_boon:manaCost",
-        "ownerId": "activation:50:dazzle_nothl_boon",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:50:dazzle_nothl_boon:cooldown",
-        "ownerId": "activation:50:dazzle_nothl_boon",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:50:dazzle_nothl_boon:charges",
-        "ownerId": "activation:50:dazzle_nothl_boon",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:dazzle_nothl_boon:manaCost",
-        "value:activation:50:dazzle_nothl_boon:cooldown",
-        "value:activation:50:dazzle_nothl_boon:charges"
-      ]
-    },
-    {
-      "id": "activation:50:special_bonus_unique_dazzle_5",
-      "heroId": "50",
-      "abilityIds": [
-        "ability:50:special_bonus_unique_dazzle_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_5:manaCost",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_5:cooldown",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:50:special_bonus_unique_dazzle_5:charges",
-        "ownerId": "activation:50:special_bonus_unique_dazzle_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:50:special_bonus_unique_dazzle_5:manaCost",
-        "value:activation:50:special_bonus_unique_dazzle_5:cooldown",
-        "value:activation:50:special_bonus_unique_dazzle_5:charges"
-      ]
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

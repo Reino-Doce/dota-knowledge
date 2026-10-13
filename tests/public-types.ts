@@ -22,6 +22,15 @@ async function profilesAndReviews(store: KnowledgeStore) {
         void [kind, pointer];
     }
     if (hero) {
+        const capabilities: Readonly<Record<string, number>> | undefined = hero.capabilities;
+        // @ts-expect-error Generated capability maps are immutable.
+        hero.capabilities = {};
+        if (capabilities) {
+            const sustain: number | undefined = capabilities.sustain;
+            // @ts-expect-error Individual capability scores are immutable.
+            capabilities.sustain = 2;
+            void sustain;
+        }
         const attribute: 0 | 1 | 2 | 3 | null = hero.primaryAttribute;
         const range: number | null = hero.attackRange;
         const complexity: 1 | 2 | 3 | null = hero.complexity;
@@ -30,7 +39,7 @@ async function profilesAndReviews(store: KnowledgeStore) {
         const binding: ReviewBinding | undefined = guide?.reviewBindings[0];
         const state = hero.coverage.fields.complexity;
         if (state.state !== 'known') { const reason: string = state.reason; void reason; }
-        void [attribute, range, complexity, role, binding];
+        void [attribute, range, complexity, role, binding, capabilities];
     }
 }
 

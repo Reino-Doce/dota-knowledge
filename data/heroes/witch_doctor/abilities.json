@@ -1,711 +1,197 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "witch_doctor_gris_gris",
+    "Name": "Gris-Gris",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "economy_gain"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:30:witch_doctor_paralyzing_cask",
-      "heroId": "30",
-      "engineId": "witch_doctor_paralyzing_cask",
-      "activationId": "activation:30:witch_doctor_paralyzing_cask",
+      "id": "witch_doctor_paralyzing_cask",
+      "Name": "Paralyzing Cask",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "strong-only",
+      "dispelType": "strong",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_witch_doctor",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        80,
+        100,
+        120,
+        140
+      ],
+      "tags": [
+        "disable",
+        "stun"
+      ]
     },
     {
-      "id": "ability:30:witch_doctor_voodoo_restoration",
-      "heroId": "30",
-      "engineId": "witch_doctor_voodoo_restoration",
-      "activationId": "activation:30:witch_doctor_voodoo_restoration",
+      "id": "witch_doctor_voodoo_restoration",
+      "Name": "Voodoo Restoration",
+      "behavior": [
+        "no-target",
+        "toggle"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "allies-only",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_witch_doctor",
-      "state": "known"
+      "type": "toggle",
+      "manaCost": 25,
+      "cooldown": 0,
+      "tags": [
+        "ally_heal",
+        "heal",
+        "self_heal",
+        "self_mana_restore"
+      ]
     },
     {
-      "id": "ability:30:witch_doctor_maledict",
-      "heroId": "30",
-      "engineId": "witch_doctor_maledict",
-      "activationId": "activation:30:witch_doctor_maledict",
+      "id": "witch_doctor_maledict",
+      "Name": "Maledict",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 2,
-      "owner": "npc_dota_hero_witch_doctor",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        105,
+        110,
+        115,
+        120
+      ],
+      "cooldown": [
+        30,
+        26,
+        22,
+        18
+      ],
+      "tags": [
+        "aoe",
+        "damage_over_time"
+      ]
     },
     {
-      "id": "ability:30:witch_doctor_voodoo_switcheroo",
-      "heroId": "30",
-      "engineId": "witch_doctor_voodoo_switcheroo",
-      "activationId": "activation:30:witch_doctor_voodoo_switcheroo",
+      "id": "witch_doctor_voodoo_switcheroo",
+      "Name": "Voodoo Switcheroo",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
       "order": 3,
-      "owner": "npc_dota_hero_witch_doctor",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 200,
+      "cooldown": 50,
+      "tags": [
+        "concealment",
+        "escape"
+      ]
     },
     {
-      "id": "ability:30:witch_doctor_gris_gris",
-      "heroId": "30",
-      "engineId": "witch_doctor_gris_gris",
-      "activationId": "activation:30:witch_doctor_gris_gris",
-      "order": 4,
-      "owner": "npc_dota_hero_witch_doctor",
-      "state": "known"
-    },
-    {
-      "id": "ability:30:witch_doctor_death_ward",
-      "heroId": "30",
-      "engineId": "witch_doctor_death_ward",
-      "activationId": "activation:30:witch_doctor_death_ward",
+      "id": "witch_doctor_death_ward",
+      "Name": "Death Ward",
+      "behavior": [
+        "channeled",
+        "point-target"
+      ],
+      "piercesDebuffImmunity": "yes",
+      "damageType": "pure",
       "order": 5,
-      "owner": "npc_dota_hero_witch_doctor",
-      "state": "known"
+      "type": "point",
+      "manaCost": 200,
+      "cooldown": [
+        100,
+        90,
+        80
+      ],
+      "tags": [
+        "bkb_pierce",
+        "channeled"
+      ]
     },
     {
-      "id": "ability:30:special_bonus_unique_witch_doctor_4",
-      "heroId": "30",
-      "engineId": "special_bonus_unique_witch_doctor_4",
-      "activationId": "activation:30:special_bonus_unique_witch_doctor_4",
-      "order": 6,
-      "owner": "npc_dota_hero_witch_doctor",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:30:special_bonus_hp_200",
-      "heroId": "30",
-      "engineId": "special_bonus_hp_200",
-      "activationId": "activation:30:special_bonus_hp_200",
-      "order": 7,
-      "owner": "npc_dota_hero_witch_doctor",
-      "state": "known"
-    },
-    {
-      "id": "ability:30:special_bonus_unique_witch_doctor_6",
-      "heroId": "30",
-      "engineId": "special_bonus_unique_witch_doctor_6",
-      "activationId": "activation:30:special_bonus_unique_witch_doctor_6",
-      "order": 8,
-      "owner": "npc_dota_hero_witch_doctor",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:30:special_bonus_unique_witch_doctor_7",
-      "heroId": "30",
-      "engineId": "special_bonus_unique_witch_doctor_7",
-      "activationId": "activation:30:special_bonus_unique_witch_doctor_7",
-      "order": 9,
-      "owner": "npc_dota_hero_witch_doctor",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:30:special_bonus_unique_witch_doctor_maledict_spread",
-      "heroId": "30",
-      "engineId": "special_bonus_unique_witch_doctor_maledict_spread",
-      "activationId": "activation:30:special_bonus_unique_witch_doctor_maledict_spread",
-      "order": 10,
-      "owner": "npc_dota_hero_witch_doctor",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:30:special_bonus_unique_witch_doctor_2",
-      "heroId": "30",
-      "engineId": "special_bonus_unique_witch_doctor_2",
-      "activationId": "activation:30:special_bonus_unique_witch_doctor_2",
-      "order": 11,
-      "owner": "npc_dota_hero_witch_doctor",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:30:special_bonus_unique_witch_doctor_3",
-      "heroId": "30",
-      "engineId": "special_bonus_unique_witch_doctor_3",
-      "activationId": "activation:30:special_bonus_unique_witch_doctor_3",
-      "order": 12,
-      "owner": "npc_dota_hero_witch_doctor",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:30:special_bonus_unique_witch_doctor_5",
-      "heroId": "30",
-      "engineId": "special_bonus_unique_witch_doctor_5",
-      "activationId": "activation:30:special_bonus_unique_witch_doctor_5",
-      "order": 13,
-      "owner": "npc_dota_hero_witch_doctor",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:30:special_bonus_attributes",
-      "heroId": "30",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:30:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_witch_doctor",
-      "state": "known"
-    },
-    {
-      "id": "ability:30:witch_doctor_innate_maledict_heal_reduction",
-      "heroId": "30",
-      "engineId": "witch_doctor_innate_maledict_heal_reduction",
-      "activationId": "activation:30:witch_doctor_innate_maledict_heal_reduction",
+      "id": "witch_doctor_innate_maledict_heal_reduction",
+      "behavior": [
+        "passive"
+      ],
       "order": 15,
-      "owner": "npc_dota_hero_witch_doctor",
-      "state": "known"
+      "type": "passive",
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:30:witch_doctor_paralyzing_cask",
-      "heroId": "30",
-      "abilityIds": [
-        "ability:30:witch_doctor_paralyzing_cask"
+      "id": "special_bonus_unique_witch_doctor_4",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_hp_200",
+      "Name": "+200 Health",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:30:witch_doctor_paralyzing_cask:manaCost",
-        "ownerId": "activation:30:witch_doctor_paralyzing_cask",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          80,
-          100,
-          120,
-          140
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:30:witch_doctor_paralyzing_cask:cooldown",
-        "ownerId": "activation:30:witch_doctor_paralyzing_cask",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "20.0 18.0 16.0 14.0",
-          "special_bonus_unique_witch_doctor_6": "-3.0"
-        }
-      },
-      "charges": {
-        "id": "value:activation:30:witch_doctor_paralyzing_cask:charges",
-        "ownerId": "activation:30:witch_doctor_paralyzing_cask",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:30:witch_doctor_paralyzing_cask:manaCost",
-        "value:activation:30:witch_doctor_paralyzing_cask:cooldown",
-        "value:activation:30:witch_doctor_paralyzing_cask:charges"
+      "tags": [
+        "buff",
+        "self_max_health"
       ]
     },
     {
-      "id": "activation:30:witch_doctor_voodoo_restoration",
-      "heroId": "30",
-      "abilityIds": [
-        "ability:30:witch_doctor_voodoo_restoration"
-      ],
-      "manaCost": {
-        "id": "value:activation:30:witch_doctor_voodoo_restoration:manaCost",
-        "ownerId": "activation:30:witch_doctor_voodoo_restoration",
-        "field": "manaCost",
-        "state": "known",
-        "value": 25
-      },
-      "cooldown": {
-        "id": "value:activation:30:witch_doctor_voodoo_restoration:cooldown",
-        "ownerId": "activation:30:witch_doctor_voodoo_restoration",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      "charges": {
-        "id": "value:activation:30:witch_doctor_voodoo_restoration:charges",
-        "ownerId": "activation:30:witch_doctor_voodoo_restoration",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:30:witch_doctor_voodoo_restoration:manaCost",
-        "value:activation:30:witch_doctor_voodoo_restoration:cooldown",
-        "value:activation:30:witch_doctor_voodoo_restoration:charges"
+      "id": "special_bonus_unique_witch_doctor_6",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:30:witch_doctor_maledict",
-      "heroId": "30",
-      "abilityIds": [
-        "ability:30:witch_doctor_maledict"
-      ],
-      "manaCost": {
-        "id": "value:activation:30:witch_doctor_maledict:manaCost",
-        "ownerId": "activation:30:witch_doctor_maledict",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          105,
-          110,
-          115,
-          120
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:30:witch_doctor_maledict:cooldown",
-        "ownerId": "activation:30:witch_doctor_maledict",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          30,
-          26,
-          22,
-          18
-        ]
-      },
-      "charges": {
-        "id": "value:activation:30:witch_doctor_maledict:charges",
-        "ownerId": "activation:30:witch_doctor_maledict",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:30:witch_doctor_maledict:manaCost",
-        "value:activation:30:witch_doctor_maledict:cooldown",
-        "value:activation:30:witch_doctor_maledict:charges"
+      "id": "special_bonus_unique_witch_doctor_7",
+      "tags": [
+        "duration_extension"
       ]
     },
     {
-      "id": "activation:30:witch_doctor_voodoo_switcheroo",
-      "heroId": "30",
-      "abilityIds": [
-        "ability:30:witch_doctor_voodoo_switcheroo"
-      ],
-      "manaCost": {
-        "id": "value:activation:30:witch_doctor_voodoo_switcheroo:manaCost",
-        "ownerId": "activation:30:witch_doctor_voodoo_switcheroo",
-        "field": "manaCost",
-        "state": "known",
-        "value": 200
-      },
-      "cooldown": {
-        "id": "value:activation:30:witch_doctor_voodoo_switcheroo:cooldown",
-        "ownerId": "activation:30:witch_doctor_voodoo_switcheroo",
-        "field": "cooldown",
-        "state": "known",
-        "value": 50
-      },
-      "charges": {
-        "id": "value:activation:30:witch_doctor_voodoo_switcheroo:charges",
-        "ownerId": "activation:30:witch_doctor_voodoo_switcheroo",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:30:witch_doctor_voodoo_switcheroo:manaCost",
-        "value:activation:30:witch_doctor_voodoo_switcheroo:cooldown",
-        "value:activation:30:witch_doctor_voodoo_switcheroo:charges"
-      ]
+      "id": "special_bonus_unique_witch_doctor_maledict_spread",
+      "tags": []
     },
     {
-      "id": "activation:30:witch_doctor_gris_gris",
-      "heroId": "30",
-      "abilityIds": [
-        "ability:30:witch_doctor_gris_gris"
-      ],
-      "manaCost": {
-        "id": "value:activation:30:witch_doctor_gris_gris:manaCost",
-        "ownerId": "activation:30:witch_doctor_gris_gris",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:30:witch_doctor_gris_gris:cooldown",
-        "ownerId": "activation:30:witch_doctor_gris_gris",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:30:witch_doctor_gris_gris:charges",
-        "ownerId": "activation:30:witch_doctor_gris_gris",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:30:witch_doctor_gris_gris:manaCost",
-        "value:activation:30:witch_doctor_gris_gris:cooldown",
-        "value:activation:30:witch_doctor_gris_gris:charges"
-      ]
+      "id": "special_bonus_unique_witch_doctor_2",
+      "tags": []
     },
     {
-      "id": "activation:30:witch_doctor_death_ward",
-      "heroId": "30",
-      "abilityIds": [
-        "ability:30:witch_doctor_death_ward"
-      ],
-      "manaCost": {
-        "id": "value:activation:30:witch_doctor_death_ward:manaCost",
-        "ownerId": "activation:30:witch_doctor_death_ward",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          200,
-          200,
-          200
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:30:witch_doctor_death_ward:cooldown",
-        "ownerId": "activation:30:witch_doctor_death_ward",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          100,
-          90,
-          80
-        ]
-      },
-      "charges": {
-        "id": "value:activation:30:witch_doctor_death_ward:charges",
-        "ownerId": "activation:30:witch_doctor_death_ward",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:30:witch_doctor_death_ward:manaCost",
-        "value:activation:30:witch_doctor_death_ward:cooldown",
-        "value:activation:30:witch_doctor_death_ward:charges"
-      ]
+      "id": "special_bonus_unique_witch_doctor_3",
+      "tags": []
     },
     {
-      "id": "activation:30:special_bonus_unique_witch_doctor_4",
-      "heroId": "30",
-      "abilityIds": [
-        "ability:30:special_bonus_unique_witch_doctor_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_4:manaCost",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_4:cooldown",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_4:charges",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:30:special_bonus_unique_witch_doctor_4:manaCost",
-        "value:activation:30:special_bonus_unique_witch_doctor_4:cooldown",
-        "value:activation:30:special_bonus_unique_witch_doctor_4:charges"
-      ]
-    },
-    {
-      "id": "activation:30:special_bonus_hp_200",
-      "heroId": "30",
-      "abilityIds": [
-        "ability:30:special_bonus_hp_200"
-      ],
-      "manaCost": {
-        "id": "value:activation:30:special_bonus_hp_200:manaCost",
-        "ownerId": "activation:30:special_bonus_hp_200",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:30:special_bonus_hp_200:cooldown",
-        "ownerId": "activation:30:special_bonus_hp_200",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:30:special_bonus_hp_200:charges",
-        "ownerId": "activation:30:special_bonus_hp_200",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:30:special_bonus_hp_200:manaCost",
-        "value:activation:30:special_bonus_hp_200:cooldown",
-        "value:activation:30:special_bonus_hp_200:charges"
-      ]
-    },
-    {
-      "id": "activation:30:special_bonus_unique_witch_doctor_6",
-      "heroId": "30",
-      "abilityIds": [
-        "ability:30:special_bonus_unique_witch_doctor_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_6:manaCost",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_6:cooldown",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_6:charges",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:30:special_bonus_unique_witch_doctor_6:manaCost",
-        "value:activation:30:special_bonus_unique_witch_doctor_6:cooldown",
-        "value:activation:30:special_bonus_unique_witch_doctor_6:charges"
-      ]
-    },
-    {
-      "id": "activation:30:special_bonus_unique_witch_doctor_7",
-      "heroId": "30",
-      "abilityIds": [
-        "ability:30:special_bonus_unique_witch_doctor_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_7:manaCost",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_7:cooldown",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_7:charges",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:30:special_bonus_unique_witch_doctor_7:manaCost",
-        "value:activation:30:special_bonus_unique_witch_doctor_7:cooldown",
-        "value:activation:30:special_bonus_unique_witch_doctor_7:charges"
-      ]
-    },
-    {
-      "id": "activation:30:special_bonus_unique_witch_doctor_maledict_spread",
-      "heroId": "30",
-      "abilityIds": [
-        "ability:30:special_bonus_unique_witch_doctor_maledict_spread"
-      ],
-      "manaCost": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_maledict_spread:manaCost",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_maledict_spread",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_maledict_spread:cooldown",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_maledict_spread",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_maledict_spread:charges",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_maledict_spread",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:30:special_bonus_unique_witch_doctor_maledict_spread:manaCost",
-        "value:activation:30:special_bonus_unique_witch_doctor_maledict_spread:cooldown",
-        "value:activation:30:special_bonus_unique_witch_doctor_maledict_spread:charges"
-      ]
-    },
-    {
-      "id": "activation:30:special_bonus_unique_witch_doctor_2",
-      "heroId": "30",
-      "abilityIds": [
-        "ability:30:special_bonus_unique_witch_doctor_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_2:manaCost",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_2:cooldown",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_2:charges",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:30:special_bonus_unique_witch_doctor_2:manaCost",
-        "value:activation:30:special_bonus_unique_witch_doctor_2:cooldown",
-        "value:activation:30:special_bonus_unique_witch_doctor_2:charges"
-      ]
-    },
-    {
-      "id": "activation:30:special_bonus_unique_witch_doctor_3",
-      "heroId": "30",
-      "abilityIds": [
-        "ability:30:special_bonus_unique_witch_doctor_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_3:manaCost",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_3:cooldown",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_3:charges",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:30:special_bonus_unique_witch_doctor_3:manaCost",
-        "value:activation:30:special_bonus_unique_witch_doctor_3:cooldown",
-        "value:activation:30:special_bonus_unique_witch_doctor_3:charges"
-      ]
-    },
-    {
-      "id": "activation:30:special_bonus_unique_witch_doctor_5",
-      "heroId": "30",
-      "abilityIds": [
-        "ability:30:special_bonus_unique_witch_doctor_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_5:manaCost",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_5:cooldown",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:30:special_bonus_unique_witch_doctor_5:charges",
-        "ownerId": "activation:30:special_bonus_unique_witch_doctor_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:30:special_bonus_unique_witch_doctor_5:manaCost",
-        "value:activation:30:special_bonus_unique_witch_doctor_5:cooldown",
-        "value:activation:30:special_bonus_unique_witch_doctor_5:charges"
-      ]
-    },
-    {
-      "id": "activation:30:special_bonus_attributes",
-      "heroId": "30",
-      "abilityIds": [
-        "ability:30:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:30:special_bonus_attributes:manaCost",
-        "ownerId": "activation:30:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:30:special_bonus_attributes:cooldown",
-        "ownerId": "activation:30:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:30:special_bonus_attributes:charges",
-        "ownerId": "activation:30:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:30:special_bonus_attributes:manaCost",
-        "value:activation:30:special_bonus_attributes:cooldown",
-        "value:activation:30:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:30:witch_doctor_innate_maledict_heal_reduction",
-      "heroId": "30",
-      "abilityIds": [
-        "ability:30:witch_doctor_innate_maledict_heal_reduction"
-      ],
-      "manaCost": {
-        "id": "value:activation:30:witch_doctor_innate_maledict_heal_reduction:manaCost",
-        "ownerId": "activation:30:witch_doctor_innate_maledict_heal_reduction",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:30:witch_doctor_innate_maledict_heal_reduction:cooldown",
-        "ownerId": "activation:30:witch_doctor_innate_maledict_heal_reduction",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:30:witch_doctor_innate_maledict_heal_reduction:charges",
-        "ownerId": "activation:30:witch_doctor_innate_maledict_heal_reduction",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:30:witch_doctor_innate_maledict_heal_reduction:manaCost",
-        "value:activation:30:witch_doctor_innate_maledict_heal_reduction:cooldown",
-        "value:activation:30:witch_doctor_innate_maledict_heal_reduction:charges"
+      "id": "special_bonus_unique_witch_doctor_5",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

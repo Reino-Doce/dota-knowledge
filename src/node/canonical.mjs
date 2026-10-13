@@ -2,9 +2,12 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { hash, semanticHash, stable } from '../canonical-model.mjs';
 import { SCHEMA_VERSION, COMPILER_VERSION, safePath, normalizeAlias, validateProfile, subjectHeroIds } from '../record-contracts.mjs';
+import { deriveAbilityTags } from '../tags/ability-tags.mjs';
+import { deriveHeroCapabilities, assertHeroCapabilities } from '../tags/hero-capabilities.mjs';
 import { buildHeroAliasIndex, validateHeroAliasIndex } from '../alias-index.mjs';
 import { loadKnowledgeDirectory } from '../node.mjs';
 import { isImageFile } from '../image-contracts.mjs';
+import { compactHeroAbilities, joinCompactHeroAbilities } from './ability-view.mjs';
 
 export const jsonBytes = value => Buffer.from(JSON.stringify(value, null, 2) + '\n');
 export function within(root, name) {
@@ -103,7 +106,9 @@ function validateGraph(graph) {
     return graph;
 }
 
-export async function readCanonical(root, { verify = true } = {}) {
+// Compilation may skip only the derived presentation comparison so new source
+// classifiers can regenerate older views. Identity and byte checks still apply.
+export async function readCanonical(root, { verify = true, validateAbilityView = true } = {}) {
     const manifestBytes = await regularBytes(root, 'manifest.json');
     const inputManifest = { name: 'manifest.json', bytes: manifestBytes.length, sha256: hash(manifestBytes) };
     const metadata = verify ? await verifyManifest(root) : await readJson(root, 'manifest.json');
@@ -112,6 +117,12 @@ export async function readCanonical(root, { verify = true } = {}) {
     const aliasArtifact = await readJson(root, 'heroes/aliases.json');
     const reference = await readJson(root, 'mechanics/reference.json');
     const entities = { heroes: [], abilities: [], activations: [], effects: [], conditions: [], ...reference.entities };
+    const compactLayout = metadata.sourceFiles.some(row => row.name === 'mechanics/abilities.json');
+    const abilityMetadata = compactLayout ? await readJson(root, 'mechanics/abilities.json') : null;
+    if (compactLayout && (abilityMetadata.schemaVersion !== 2 || !Array.isArray(abilityMetadata.abilities) || !Array.isArray(abilityMetadata.activations)
+        || abilityMetadata.abilities.some(row => Object.hasOwn(row, 'tags')))) throw new Error('Unsupported canonical ability metadata.');
+    if (compactLayout) entities.activations.push(...abilityMetadata.activations);
+    const sources = await readJson(root, 'observations/sources.json');
     const guides = new Map();
     for (const row of index.heroes) {
         const hero = await readJson(root, row.profile);
@@ -119,10 +130,18 @@ export async function readCanonical(root, { verify = true } = {}) {
         entities.heroes.push(hero);
         const abilities = await readJson(root, row.abilities);
         const mechanics = await readJson(root, row.mechanics);
-        for (const kind of ['abilities', 'activations']) entities[kind].push(...abilities[kind]);
-        for (const kind of ['effects', 'conditions']) entities[kind].push(...mechanics[kind]);
         guides.set(row.id, await readJson(root, row.guide));
+        if (compactLayout) entities.abilities.push(...joinCompactHeroAbilities({ metadata, sources, entities, guides },
+            row.id, abilities, abilityMetadata.abilities, { validateAbilityView }));
+        else {
+            if (!Array.isArray(abilities.abilities) || !Array.isArray(abilities.activations)) throw new Error('Compact hero abilities require canonical ability metadata.');
+            for (const kind of ['abilities', 'activations']) entities[kind].push(...abilities[kind]);
+        }
+        for (const kind of ['effects', 'conditions']) entities[kind].push(...mechanics[kind]);
     }
+    if (compactLayout && (entities.abilities.length !== abilityMetadata.abilities.length
+        || abilityMetadata.activations.some(row => !entities.heroes.some(hero => hero.id === row.heroId)))) throw new Error('Unowned canonical ability metadata.');
+    if (validateAbilityView) assertHeroCapabilities(entities.heroes, entities.abilities);
     const observationIndex = await readJson(root, 'observations/index.json');
     const files = new Map();
     const observations = [];
@@ -149,7 +168,7 @@ export async function readCanonical(root, { verify = true } = {}) {
         }
     }
     else validateHeroAliasIndex(entities.heroes, aliasArtifact);
-    return validateGraph({ inputManifest, metadata, entities, sources: await readJson(root, 'observations/sources.json'),
+    return validateGraph({ inputManifest, metadata, entities, sources,
         claims: (await readJson(root, 'reviews/claims.json')).claims,
         bindings: (await readJson(root, 'reviews/bindings.json')).bindings,
         history: (await readJson(root, 'reviews/profiles.json')).profiles,
@@ -168,6 +187,10 @@ export function observationFile(row, heroes) {
 
 export async function writeCanonical(root, graph) {
     validateGraph(graph);
+    const tagging = deriveAbilityTags(graph);
+    const effects = graph.entities.effects.map(({ tags: _tags, tagDerivation: _tagDerivation, ...effect }) => effect);
+    const heroesWithCapabilities = deriveHeroCapabilities(graph.entities.heroes, tagging.abilities);
+    graph = { ...graph, entities: { ...graph.entities, heroes: heroesWithCapabilities, effects, abilities: tagging.abilities } };
     const descriptors = [];
     const write = async (name, value, raw = false) => {
         const bytes = raw ? value : jsonBytes(value);
@@ -180,22 +203,25 @@ export async function writeCanonical(root, graph) {
     };
     const heroes = new Map(graph.entities.heroes.map(hero => [hero.id, hero]));
     const { sourceFiles: _files, consolidation: _oldConsolidation, ...metadata } = graph.metadata;
+    delete metadata.tagGeneration;
     metadata.schemaVersion = SCHEMA_VERSION;
     metadata.compilerVersion = COMPILER_VERSION;
     metadata.inputSignature ??= semanticHash({ entities: graph.entities, sources: graph.sources,
         claims: graph.claims, observations: graph.observations });
     await write('heroes/index.json', { schemaVersion: 2, heroes: graph.heroIndex });
+    await write('tags/index.json', tagging.tagIndex);
     await write('heroes/aliases.json', graph.aliases);
     for (const entry of graph.heroIndex) {
         await write(entry.profile, heroes.get(entry.id));
-        await write(entry.abilities, { schemaVersion: 2,
-            abilities: graph.entities.abilities.filter(row => row.heroId === entry.id),
-            activations: graph.entities.activations.filter(row => row.heroId === entry.id) });
+        await write(entry.abilities, compactHeroAbilities(graph, entry.id));
         const effects = graph.entities.effects.filter(row => row.heroId === entry.id);
         const owned = new Set(effects.map(row => row.id));
         await write(entry.mechanics, { schemaVersion: 2, effects, conditions: graph.entities.conditions.filter(row => owned.has(row.ownerId)) });
         await write(entry.guide, graph.guides.get(entry.id));
     }
+    await write('mechanics/abilities.json', { schemaVersion: 2,
+        abilities: graph.entities.abilities.map(({ tags: _tags, ...ability }) => ability),
+        activations: graph.entities.activations });
     await write('mechanics/reference.json', { schemaVersion: 2, entities: Object.fromEntries(['modifiers', 'rules', 'units', 'upgrades'].map(kind => [kind, graph.entities[kind]])) });
     await write('observations/sources.json', graph.sources);
     await write('reviews/claims.json', { schemaVersion: 2, claims: graph.claims });

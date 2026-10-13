@@ -1,798 +1,221 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "monkey_king_mischief",
+    "Name": "Mischief",
+    "behavior": [
+      "no-target"
+    ],
+    "type": "self-target",
+    "manaCost": 0,
+    "tags": [
+      "damage_immunity",
+      "escape"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:114:monkey_king_boundless_strike",
-      "heroId": "114",
-      "engineId": "monkey_king_boundless_strike",
-      "activationId": "activation:114:monkey_king_boundless_strike",
+      "id": "monkey_king_boundless_strike",
+      "Name": "Boundless Strike",
+      "behavior": [
+        "point-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "strong-only",
+      "dispelType": "strong",
+      "piercesDebuffImmunity": "no",
+      "damageType": "physical",
       "order": 0,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        85,
+        90,
+        95,
+        100
+      ],
+      "tags": [
+        "attack_damage_scaling",
+        "disable",
+        "escape",
+        "mobility",
+        "self_reposition",
+        "stun"
+      ]
     },
     {
-      "id": "ability:114:monkey_king_tree_dance",
-      "heroId": "114",
-      "engineId": "monkey_king_tree_dance",
-      "activationId": "activation:114:monkey_king_tree_dance",
+      "id": "monkey_king_tree_dance",
+      "Name": "Tree Dance",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "trees"
+      ],
       "order": 1,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "tree"
+      ],
+      "manaCost": 0,
+      "cooldown": [
+        0.9,
+        0.6,
+        0.3,
+        0
+      ],
+      "tags": [
+        "escape",
+        "mobility",
+        "self_reposition"
+      ]
     },
     {
-      "id": "ability:114:monkey_king_primal_spring",
-      "heroId": "114",
-      "engineId": "monkey_king_primal_spring",
-      "activationId": "activation:114:monkey_king_primal_spring",
+      "id": "monkey_king_primal_spring",
+      "Name": "Primal Spring",
+      "behavior": [
+        "channeled",
+        "point-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 2,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "known"
+      "type": "point",
+      "manaCost": 100,
+      "tags": [
+        "aoe",
+        "channeled",
+        "slow"
+      ]
     },
     {
-      "id": "ability:114:monkey_king_jingu_mastery",
-      "heroId": "114",
-      "engineId": "monkey_king_jingu_mastery",
-      "activationId": "activation:114:monkey_king_jingu_mastery",
+      "id": "monkey_king_jingu_mastery",
+      "Name": "Jingu Mastery",
+      "behavior": [
+        "passive"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "yes",
+      "damageType": "physical",
+      "breakable": true,
       "order": 3,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "bkb_pierce",
+        "buff",
+        "lifesteal",
+        "self_attack_damage",
+        "self_lifesteal"
+      ]
     },
     {
-      "id": "ability:114:monkey_king_mischief",
-      "heroId": "114",
-      "engineId": "monkey_king_mischief",
-      "activationId": "activation:114:monkey_king_mischief",
-      "order": 4,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "known"
-    },
-    {
-      "id": "ability:114:monkey_king_wukongs_command",
-      "heroId": "114",
-      "engineId": "monkey_king_wukongs_command",
-      "activationId": "activation:114:monkey_king_wukongs_command",
+      "id": "monkey_king_wukongs_command",
+      "Name": "Wukong's Command",
+      "behavior": [
+        "point-target"
+      ],
+      "damageType": "physical",
       "order": 5,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "known"
+      "type": "point",
+      "manaCost": 100,
+      "cooldown": [
+        100,
+        90,
+        80
+      ],
+      "tags": [
+        "aoe",
+        "buff",
+        "self_armor"
+      ]
     },
     {
-      "id": "ability:114:monkey_king_primal_spring_early",
-      "heroId": "114",
-      "engineId": "monkey_king_primal_spring_early",
-      "activationId": "activation:114:monkey_king_primal_spring_early",
+      "id": "monkey_king_primal_spring_early",
+      "behavior": [
+        "no-target"
+      ],
       "order": 6,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "known"
+      "type": "self-target",
+      "tags": []
     },
     {
-      "id": "ability:114:monkey_king_untransform",
-      "heroId": "114",
-      "engineId": "monkey_king_untransform",
-      "activationId": "activation:114:monkey_king_untransform",
+      "id": "monkey_king_untransform",
+      "Name": "Revert Form",
+      "behavior": [
+        "no-target"
+      ],
       "order": 7,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 0,
+      "cooldown": 1,
+      "tags": []
     },
     {
-      "id": "ability:114:monkey_king_transfiguration",
-      "heroId": "114",
-      "engineId": "monkey_king_transfiguration",
-      "activationId": "activation:114:monkey_king_transfiguration",
+      "id": "monkey_king_transfiguration",
+      "Name": "Changing of the Guard",
+      "behavior": [
+        "point-target"
+      ],
       "order": 8,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "known"
-    },
-    {
-      "id": "ability:114:special_bonus_unique_monkey_king_7",
-      "heroId": "114",
-      "engineId": "special_bonus_unique_monkey_king_7",
-      "activationId": "activation:114:special_bonus_unique_monkey_king_7",
-      "order": 9,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:114:special_bonus_unique_monkey_king_9",
-      "heroId": "114",
-      "engineId": "special_bonus_unique_monkey_king_9",
-      "activationId": "activation:114:special_bonus_unique_monkey_king_9",
-      "order": 10,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:114:special_bonus_unique_monkey_king_8",
-      "heroId": "114",
-      "engineId": "special_bonus_unique_monkey_king_8",
-      "activationId": "activation:114:special_bonus_unique_monkey_king_8",
-      "order": 11,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:114:special_bonus_unique_monkey_king_2",
-      "heroId": "114",
-      "engineId": "special_bonus_unique_monkey_king_2",
-      "activationId": "activation:114:special_bonus_unique_monkey_king_2",
-      "order": 12,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:114:special_bonus_unique_monkey_king_3",
-      "heroId": "114",
-      "engineId": "special_bonus_unique_monkey_king_3",
-      "activationId": "activation:114:special_bonus_unique_monkey_king_3",
-      "order": 13,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:114:special_bonus_unique_monkey_king_10",
-      "heroId": "114",
-      "engineId": "special_bonus_unique_monkey_king_10",
-      "activationId": "activation:114:special_bonus_unique_monkey_king_10",
-      "order": 14,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:114:special_bonus_unique_monkey_king_11",
-      "heroId": "114",
-      "engineId": "special_bonus_unique_monkey_king_11",
-      "activationId": "activation:114:special_bonus_unique_monkey_king_11",
-      "order": 15,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:114:special_bonus_unique_monkey_king_6",
-      "heroId": "114",
-      "engineId": "special_bonus_unique_monkey_king_6",
-      "activationId": "activation:114:special_bonus_unique_monkey_king_6",
-      "order": 16,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:114:special_bonus_attributes",
-      "heroId": "114",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:114:special_bonus_attributes",
-      "order": 17,
-      "owner": "npc_dota_hero_monkey_king",
-      "state": "known"
+      "type": "point",
+      "manaCost": 0,
+      "cooldown": 5,
+      "tags": [
+        "damage_immunity",
+        "escape"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:114:monkey_king_boundless_strike",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:monkey_king_boundless_strike"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:monkey_king_boundless_strike:manaCost",
-        "ownerId": "activation:114:monkey_king_boundless_strike",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          85,
-          90,
-          95,
-          100
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:114:monkey_king_boundless_strike:cooldown",
-        "ownerId": "activation:114:monkey_king_boundless_strike",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "24 21 18 15"
-        }
-      },
-      "charges": {
-        "id": "value:activation:114:monkey_king_boundless_strike:charges",
-        "ownerId": "activation:114:monkey_king_boundless_strike",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:monkey_king_boundless_strike:manaCost",
-        "value:activation:114:monkey_king_boundless_strike:cooldown",
-        "value:activation:114:monkey_king_boundless_strike:charges"
+      "id": "special_bonus_unique_monkey_king_7",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_monkey_king_9",
+      "tags": [
+        "duration_extension",
+        "stun"
       ]
     },
     {
-      "id": "activation:114:monkey_king_tree_dance",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:monkey_king_tree_dance"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:monkey_king_tree_dance:manaCost",
-        "ownerId": "activation:114:monkey_king_tree_dance",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:114:monkey_king_tree_dance:cooldown",
-        "ownerId": "activation:114:monkey_king_tree_dance",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          0.9,
-          0.6,
-          0.3,
-          0
-        ]
-      },
-      "charges": {
-        "id": "value:activation:114:monkey_king_tree_dance:charges",
-        "ownerId": "activation:114:monkey_king_tree_dance",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:monkey_king_tree_dance:manaCost",
-        "value:activation:114:monkey_king_tree_dance:cooldown",
-        "value:activation:114:monkey_king_tree_dance:charges"
+      "id": "special_bonus_unique_monkey_king_8",
+      "Name": "0 Cooldown Primal Spring",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:114:monkey_king_primal_spring",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:monkey_king_primal_spring"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:monkey_king_primal_spring:manaCost",
-        "ownerId": "activation:114:monkey_king_primal_spring",
-        "field": "manaCost",
-        "state": "known",
-        "value": 100
-      },
-      "cooldown": {
-        "id": "value:activation:114:monkey_king_primal_spring:cooldown",
-        "ownerId": "activation:114:monkey_king_primal_spring",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "18 16 14 12",
-          "special_bonus_unique_monkey_king_8": "=0"
-        }
-      },
-      "charges": {
-        "id": "value:activation:114:monkey_king_primal_spring:charges",
-        "ownerId": "activation:114:monkey_king_primal_spring",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:monkey_king_primal_spring:manaCost",
-        "value:activation:114:monkey_king_primal_spring:cooldown",
-        "value:activation:114:monkey_king_primal_spring:charges"
-      ]
+      "id": "special_bonus_unique_monkey_king_2",
+      "tags": []
     },
     {
-      "id": "activation:114:monkey_king_jingu_mastery",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:monkey_king_jingu_mastery"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:monkey_king_jingu_mastery:manaCost",
-        "ownerId": "activation:114:monkey_king_jingu_mastery",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:114:monkey_king_jingu_mastery:cooldown",
-        "ownerId": "activation:114:monkey_king_jingu_mastery",
-        "field": "cooldown",
-        "state": "known",
-        "value": 0
-      },
-      "charges": {
-        "id": "value:activation:114:monkey_king_jingu_mastery:charges",
-        "ownerId": "activation:114:monkey_king_jingu_mastery",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:monkey_king_jingu_mastery:manaCost",
-        "value:activation:114:monkey_king_jingu_mastery:cooldown",
-        "value:activation:114:monkey_king_jingu_mastery:charges"
-      ]
+      "id": "special_bonus_unique_monkey_king_3",
+      "Name": "Jingu Mastery Undispellable",
+      "tags": []
     },
     {
-      "id": "activation:114:monkey_king_mischief",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:monkey_king_mischief"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:monkey_king_mischief:manaCost",
-        "ownerId": "activation:114:monkey_king_mischief",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:114:monkey_king_mischief:cooldown",
-        "ownerId": "activation:114:monkey_king_mischief",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "24.5",
-          "hero_levelup": "-0.5"
-        }
-      },
-      "charges": {
-        "id": "value:activation:114:monkey_king_mischief:charges",
-        "ownerId": "activation:114:monkey_king_mischief",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:monkey_king_mischief:manaCost",
-        "value:activation:114:monkey_king_mischief:cooldown",
-        "value:activation:114:monkey_king_mischief:charges"
-      ]
+      "id": "special_bonus_unique_monkey_king_10",
+      "tags": []
     },
     {
-      "id": "activation:114:monkey_king_wukongs_command",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:monkey_king_wukongs_command"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:monkey_king_wukongs_command:manaCost",
-        "ownerId": "activation:114:monkey_king_wukongs_command",
-        "field": "manaCost",
-        "state": "known",
-        "value": 100
-      },
-      "cooldown": {
-        "id": "value:activation:114:monkey_king_wukongs_command:cooldown",
-        "ownerId": "activation:114:monkey_king_wukongs_command",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          100,
-          90,
-          80
-        ]
-      },
-      "charges": {
-        "id": "value:activation:114:monkey_king_wukongs_command:charges",
-        "ownerId": "activation:114:monkey_king_wukongs_command",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:monkey_king_wukongs_command:manaCost",
-        "value:activation:114:monkey_king_wukongs_command:cooldown",
-        "value:activation:114:monkey_king_wukongs_command:charges"
-      ]
+      "id": "special_bonus_unique_monkey_king_11",
+      "tags": []
     },
     {
-      "id": "activation:114:monkey_king_primal_spring_early",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:monkey_king_primal_spring_early"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:monkey_king_primal_spring_early:manaCost",
-        "ownerId": "activation:114:monkey_king_primal_spring_early",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:114:monkey_king_primal_spring_early:cooldown",
-        "ownerId": "activation:114:monkey_king_primal_spring_early",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:114:monkey_king_primal_spring_early:charges",
-        "ownerId": "activation:114:monkey_king_primal_spring_early",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:monkey_king_primal_spring_early:manaCost",
-        "value:activation:114:monkey_king_primal_spring_early:cooldown",
-        "value:activation:114:monkey_king_primal_spring_early:charges"
-      ]
-    },
-    {
-      "id": "activation:114:monkey_king_untransform",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:monkey_king_untransform"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:monkey_king_untransform:manaCost",
-        "ownerId": "activation:114:monkey_king_untransform",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:114:monkey_king_untransform:cooldown",
-        "ownerId": "activation:114:monkey_king_untransform",
-        "field": "cooldown",
-        "state": "known",
-        "value": 1
-      },
-      "charges": {
-        "id": "value:activation:114:monkey_king_untransform:charges",
-        "ownerId": "activation:114:monkey_king_untransform",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:monkey_king_untransform:manaCost",
-        "value:activation:114:monkey_king_untransform:cooldown",
-        "value:activation:114:monkey_king_untransform:charges"
-      ]
-    },
-    {
-      "id": "activation:114:monkey_king_transfiguration",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:monkey_king_transfiguration"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:monkey_king_transfiguration:manaCost",
-        "ownerId": "activation:114:monkey_king_transfiguration",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:114:monkey_king_transfiguration:cooldown",
-        "ownerId": "activation:114:monkey_king_transfiguration",
-        "field": "cooldown",
-        "state": "known",
-        "value": 5
-      },
-      "charges": {
-        "id": "value:activation:114:monkey_king_transfiguration:charges",
-        "ownerId": "activation:114:monkey_king_transfiguration",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:monkey_king_transfiguration:manaCost",
-        "value:activation:114:monkey_king_transfiguration:cooldown",
-        "value:activation:114:monkey_king_transfiguration:charges"
-      ]
-    },
-    {
-      "id": "activation:114:special_bonus_unique_monkey_king_7",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:special_bonus_unique_monkey_king_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_7:manaCost",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_7:cooldown",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_7:charges",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:special_bonus_unique_monkey_king_7:manaCost",
-        "value:activation:114:special_bonus_unique_monkey_king_7:cooldown",
-        "value:activation:114:special_bonus_unique_monkey_king_7:charges"
-      ]
-    },
-    {
-      "id": "activation:114:special_bonus_unique_monkey_king_9",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:special_bonus_unique_monkey_king_9"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_9:manaCost",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_9",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_9:cooldown",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_9",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_9:charges",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_9",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:special_bonus_unique_monkey_king_9:manaCost",
-        "value:activation:114:special_bonus_unique_monkey_king_9:cooldown",
-        "value:activation:114:special_bonus_unique_monkey_king_9:charges"
-      ]
-    },
-    {
-      "id": "activation:114:special_bonus_unique_monkey_king_8",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:special_bonus_unique_monkey_king_8"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_8:manaCost",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_8:cooldown",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_8:charges",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:special_bonus_unique_monkey_king_8:manaCost",
-        "value:activation:114:special_bonus_unique_monkey_king_8:cooldown",
-        "value:activation:114:special_bonus_unique_monkey_king_8:charges"
-      ]
-    },
-    {
-      "id": "activation:114:special_bonus_unique_monkey_king_2",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:special_bonus_unique_monkey_king_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_2:manaCost",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_2:cooldown",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_2:charges",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:special_bonus_unique_monkey_king_2:manaCost",
-        "value:activation:114:special_bonus_unique_monkey_king_2:cooldown",
-        "value:activation:114:special_bonus_unique_monkey_king_2:charges"
-      ]
-    },
-    {
-      "id": "activation:114:special_bonus_unique_monkey_king_3",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:special_bonus_unique_monkey_king_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_3:manaCost",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_3:cooldown",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_3:charges",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:special_bonus_unique_monkey_king_3:manaCost",
-        "value:activation:114:special_bonus_unique_monkey_king_3:cooldown",
-        "value:activation:114:special_bonus_unique_monkey_king_3:charges"
-      ]
-    },
-    {
-      "id": "activation:114:special_bonus_unique_monkey_king_10",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:special_bonus_unique_monkey_king_10"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_10:manaCost",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_10",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_10:cooldown",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_10",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_10:charges",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_10",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:special_bonus_unique_monkey_king_10:manaCost",
-        "value:activation:114:special_bonus_unique_monkey_king_10:cooldown",
-        "value:activation:114:special_bonus_unique_monkey_king_10:charges"
-      ]
-    },
-    {
-      "id": "activation:114:special_bonus_unique_monkey_king_11",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:special_bonus_unique_monkey_king_11"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_11:manaCost",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_11",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_11:cooldown",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_11",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_11:charges",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_11",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:special_bonus_unique_monkey_king_11:manaCost",
-        "value:activation:114:special_bonus_unique_monkey_king_11:cooldown",
-        "value:activation:114:special_bonus_unique_monkey_king_11:charges"
-      ]
-    },
-    {
-      "id": "activation:114:special_bonus_unique_monkey_king_6",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:special_bonus_unique_monkey_king_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_6:manaCost",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_6:cooldown",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:114:special_bonus_unique_monkey_king_6:charges",
-        "ownerId": "activation:114:special_bonus_unique_monkey_king_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:special_bonus_unique_monkey_king_6:manaCost",
-        "value:activation:114:special_bonus_unique_monkey_king_6:cooldown",
-        "value:activation:114:special_bonus_unique_monkey_king_6:charges"
-      ]
-    },
-    {
-      "id": "activation:114:special_bonus_attributes",
-      "heroId": "114",
-      "abilityIds": [
-        "ability:114:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:114:special_bonus_attributes:manaCost",
-        "ownerId": "activation:114:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:114:special_bonus_attributes:cooldown",
-        "ownerId": "activation:114:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:114:special_bonus_attributes:charges",
-        "ownerId": "activation:114:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:114:special_bonus_attributes:manaCost",
-        "value:activation:114:special_bonus_attributes:cooldown",
-        "value:activation:114:special_bonus_attributes:charges"
-      ]
+      "id": "special_bonus_unique_monkey_king_6",
+      "Name": "Additional Wukong's Command Ring",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

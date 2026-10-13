@@ -1,697 +1,183 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "razor_unstable_current",
+    "behavior": [
+      "passive"
+    ],
+    "breakable": true,
+    "tags": [
+      "escape",
+      "mobility"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:15:razor_plasma_field",
-      "heroId": "15",
-      "engineId": "razor_plasma_field",
-      "activationId": "activation:15:razor_plasma_field",
+      "id": "razor_plasma_field",
+      "Name": "Plasma Field",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_razor",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 125,
+      "cooldown": [
+        13,
+        12,
+        11,
+        10
+      ],
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:15:razor_static_link",
-      "heroId": "15",
-      "engineId": "razor_static_link",
-      "activationId": "activation:15:razor_static_link",
+      "id": "razor_static_link",
+      "Name": "Static Link",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-heroes"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "yes",
       "order": 1,
-      "owner": "npc_dota_hero_razor",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero"
+      ],
+      "manaCost": 65,
+      "cooldown": [
+        44,
+        36,
+        28,
+        20
+      ],
+      "tags": [
+        "bkb_pierce",
+        "buff",
+        "outgoing_damage_reduction",
+        "self_attack_damage"
+      ]
     },
     {
-      "id": "ability:15:razor_storm_surge",
-      "heroId": "15",
-      "engineId": "razor_storm_surge",
-      "activationId": "activation:15:razor_storm_surge",
+      "id": "razor_storm_surge",
+      "Name": "Storm Surge",
+      "behavior": [
+        "passive"
+      ],
+      "damageType": "magical",
+      "breakable": true,
       "order": 2,
-      "owner": "npc_dota_hero_razor",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:15:razor_unstable_current",
-      "heroId": "15",
-      "engineId": "razor_unstable_current",
-      "activationId": "activation:15:razor_unstable_current",
-      "order": 3,
-      "owner": "npc_dota_hero_razor",
-      "state": "known"
-    },
-    {
-      "id": "ability:15:generic_hidden",
-      "heroId": "15",
-      "engineId": "generic_hidden",
-      "activationId": "activation:15:generic_hidden",
+      "id": "generic_hidden",
       "order": 4,
-      "owner": "npc_dota_hero_razor",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:15:razor_eye_of_the_storm",
-      "heroId": "15",
-      "engineId": "razor_eye_of_the_storm",
-      "activationId": "activation:15:razor_eye_of_the_storm",
+      "id": "razor_eye_of_the_storm",
+      "Name": "Eye of the Storm",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "yes",
+      "damageType": "physical",
       "order": 5,
-      "owner": "npc_dota_hero_razor",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        100,
+        150,
+        200
+      ],
+      "cooldown": [
+        80,
+        70,
+        60
+      ],
+      "tags": [
+        "bkb_pierce"
+      ]
     },
     {
-      "id": "ability:15:special_bonus_unique_razor_4",
-      "heroId": "15",
-      "engineId": "special_bonus_unique_razor_4",
-      "activationId": "activation:15:special_bonus_unique_razor_4",
-      "order": 6,
-      "owner": "npc_dota_hero_razor",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:15:special_bonus_armor_4",
-      "heroId": "15",
-      "engineId": "special_bonus_armor_4",
-      "activationId": "activation:15:special_bonus_armor_4",
-      "order": 7,
-      "owner": "npc_dota_hero_razor",
-      "state": "known"
-    },
-    {
-      "id": "ability:15:special_bonus_unique_razor",
-      "heroId": "15",
-      "engineId": "special_bonus_unique_razor",
-      "activationId": "activation:15:special_bonus_unique_razor",
-      "order": 8,
-      "owner": "npc_dota_hero_razor",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:15:special_bonus_strength_12",
-      "heroId": "15",
-      "engineId": "special_bonus_strength_12",
-      "activationId": "activation:15:special_bonus_strength_12",
-      "order": 9,
-      "owner": "npc_dota_hero_razor",
-      "state": "known"
-    },
-    {
-      "id": "ability:15:special_bonus_unique_razor_storm_surge_damage_and_slow",
-      "heroId": "15",
-      "engineId": "special_bonus_unique_razor_storm_surge_damage_and_slow",
-      "activationId": "activation:15:special_bonus_unique_razor_storm_surge_damage_and_slow",
-      "order": 10,
-      "owner": "npc_dota_hero_razor",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:15:special_bonus_unique_razor_2",
-      "heroId": "15",
-      "engineId": "special_bonus_unique_razor_2",
-      "activationId": "activation:15:special_bonus_unique_razor_2",
-      "order": 11,
-      "owner": "npc_dota_hero_razor",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:15:special_bonus_unique_razor_plasmafield_second_ring",
-      "heroId": "15",
-      "engineId": "special_bonus_unique_razor_plasmafield_second_ring",
-      "activationId": "activation:15:special_bonus_unique_razor_plasmafield_second_ring",
-      "order": 12,
-      "owner": "npc_dota_hero_razor",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:15:special_bonus_unique_razor_static_link_aspd",
-      "heroId": "15",
-      "engineId": "special_bonus_unique_razor_static_link_aspd",
-      "activationId": "activation:15:special_bonus_unique_razor_static_link_aspd",
-      "order": 13,
-      "owner": "npc_dota_hero_razor",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:15:special_bonus_attributes",
-      "heroId": "15",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:15:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_razor",
-      "state": "known"
-    },
-    {
-      "id": "ability:15:razor_dynamo",
-      "heroId": "15",
-      "engineId": "razor_dynamo",
-      "activationId": "activation:15:razor_dynamo",
+      "id": "razor_dynamo",
+      "behavior": [
+        "passive"
+      ],
+      "dispellable": "no",
+      "breakable": true,
       "order": 15,
-      "owner": "npc_dota_hero_razor",
-      "state": "known"
+      "type": "passive",
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:15:razor_plasma_field",
-      "heroId": "15",
-      "abilityIds": [
-        "ability:15:razor_plasma_field"
-      ],
-      "manaCost": {
-        "id": "value:activation:15:razor_plasma_field:manaCost",
-        "ownerId": "activation:15:razor_plasma_field",
-        "field": "manaCost",
-        "state": "known",
-        "value": 125
-      },
-      "cooldown": {
-        "id": "value:activation:15:razor_plasma_field:cooldown",
-        "ownerId": "activation:15:razor_plasma_field",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          13,
-          12,
-          11,
-          10
-        ]
-      },
-      "charges": {
-        "id": "value:activation:15:razor_plasma_field:charges",
-        "ownerId": "activation:15:razor_plasma_field",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:15:razor_plasma_field:manaCost",
-        "value:activation:15:razor_plasma_field:cooldown",
-        "value:activation:15:razor_plasma_field:charges"
+      "id": "special_bonus_unique_razor_4",
+      "tags": [
+        "duration_extension",
+        "slow"
       ]
     },
     {
-      "id": "activation:15:razor_static_link",
-      "heroId": "15",
-      "abilityIds": [
-        "ability:15:razor_static_link"
+      "id": "special_bonus_armor_4",
+      "Name": "+4 Armor",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:15:razor_static_link:manaCost",
-        "ownerId": "activation:15:razor_static_link",
-        "field": "manaCost",
-        "state": "known",
-        "value": 65
-      },
-      "cooldown": {
-        "id": "value:activation:15:razor_static_link:cooldown",
-        "ownerId": "activation:15:razor_static_link",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          44,
-          36,
-          28,
-          20
-        ]
-      },
-      "charges": {
-        "id": "value:activation:15:razor_static_link:charges",
-        "ownerId": "activation:15:razor_static_link",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:15:razor_static_link:manaCost",
-        "value:activation:15:razor_static_link:cooldown",
-        "value:activation:15:razor_static_link:charges"
+      "tags": [
+        "buff",
+        "self_armor"
       ]
     },
     {
-      "id": "activation:15:razor_storm_surge",
-      "heroId": "15",
-      "abilityIds": [
-        "ability:15:razor_storm_surge"
+      "id": "special_bonus_unique_razor",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_strength_12",
+      "Name": "+12 Strength",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:15:razor_storm_surge:manaCost",
-        "ownerId": "activation:15:razor_storm_surge",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:15:razor_storm_surge:cooldown",
-        "ownerId": "activation:15:razor_storm_surge",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:15:razor_storm_surge:charges",
-        "ownerId": "activation:15:razor_storm_surge",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:15:razor_storm_surge:manaCost",
-        "value:activation:15:razor_storm_surge:cooldown",
-        "value:activation:15:razor_storm_surge:charges"
+      "tags": [
+        "attribute_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:15:razor_unstable_current",
-      "heroId": "15",
-      "abilityIds": [
-        "ability:15:razor_unstable_current"
-      ],
-      "manaCost": {
-        "id": "value:activation:15:razor_unstable_current:manaCost",
-        "ownerId": "activation:15:razor_unstable_current",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:15:razor_unstable_current:cooldown",
-        "ownerId": "activation:15:razor_unstable_current",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:15:razor_unstable_current:charges",
-        "ownerId": "activation:15:razor_unstable_current",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:15:razor_unstable_current:manaCost",
-        "value:activation:15:razor_unstable_current:cooldown",
-        "value:activation:15:razor_unstable_current:charges"
-      ]
+      "id": "special_bonus_unique_razor_storm_surge_damage_and_slow",
+      "tags": []
     },
     {
-      "id": "activation:15:generic_hidden",
-      "heroId": "15",
-      "abilityIds": [
-        "ability:15:generic_hidden"
-      ],
-      "manaCost": {
-        "id": "value:activation:15:generic_hidden:manaCost",
-        "ownerId": "activation:15:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:15:generic_hidden:cooldown",
-        "ownerId": "activation:15:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:15:generic_hidden:charges",
-        "ownerId": "activation:15:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:15:generic_hidden:manaCost",
-        "value:activation:15:generic_hidden:cooldown",
-        "value:activation:15:generic_hidden:charges"
-      ]
+      "id": "special_bonus_unique_razor_2",
+      "tags": []
     },
     {
-      "id": "activation:15:razor_eye_of_the_storm",
-      "heroId": "15",
-      "abilityIds": [
-        "ability:15:razor_eye_of_the_storm"
-      ],
-      "manaCost": {
-        "id": "value:activation:15:razor_eye_of_the_storm:manaCost",
-        "ownerId": "activation:15:razor_eye_of_the_storm",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          100,
-          150,
-          200
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:15:razor_eye_of_the_storm:cooldown",
-        "ownerId": "activation:15:razor_eye_of_the_storm",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          80,
-          70,
-          60
-        ]
-      },
-      "charges": {
-        "id": "value:activation:15:razor_eye_of_the_storm:charges",
-        "ownerId": "activation:15:razor_eye_of_the_storm",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:15:razor_eye_of_the_storm:manaCost",
-        "value:activation:15:razor_eye_of_the_storm:cooldown",
-        "value:activation:15:razor_eye_of_the_storm:charges"
-      ]
+      "id": "special_bonus_unique_razor_plasmafield_second_ring",
+      "tags": []
     },
     {
-      "id": "activation:15:special_bonus_unique_razor_4",
-      "heroId": "15",
-      "abilityIds": [
-        "ability:15:special_bonus_unique_razor_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:15:special_bonus_unique_razor_4:manaCost",
-        "ownerId": "activation:15:special_bonus_unique_razor_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:15:special_bonus_unique_razor_4:cooldown",
-        "ownerId": "activation:15:special_bonus_unique_razor_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:15:special_bonus_unique_razor_4:charges",
-        "ownerId": "activation:15:special_bonus_unique_razor_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:15:special_bonus_unique_razor_4:manaCost",
-        "value:activation:15:special_bonus_unique_razor_4:cooldown",
-        "value:activation:15:special_bonus_unique_razor_4:charges"
-      ]
-    },
-    {
-      "id": "activation:15:special_bonus_armor_4",
-      "heroId": "15",
-      "abilityIds": [
-        "ability:15:special_bonus_armor_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:15:special_bonus_armor_4:manaCost",
-        "ownerId": "activation:15:special_bonus_armor_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:15:special_bonus_armor_4:cooldown",
-        "ownerId": "activation:15:special_bonus_armor_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:15:special_bonus_armor_4:charges",
-        "ownerId": "activation:15:special_bonus_armor_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:15:special_bonus_armor_4:manaCost",
-        "value:activation:15:special_bonus_armor_4:cooldown",
-        "value:activation:15:special_bonus_armor_4:charges"
-      ]
-    },
-    {
-      "id": "activation:15:special_bonus_unique_razor",
-      "heroId": "15",
-      "abilityIds": [
-        "ability:15:special_bonus_unique_razor"
-      ],
-      "manaCost": {
-        "id": "value:activation:15:special_bonus_unique_razor:manaCost",
-        "ownerId": "activation:15:special_bonus_unique_razor",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:15:special_bonus_unique_razor:cooldown",
-        "ownerId": "activation:15:special_bonus_unique_razor",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:15:special_bonus_unique_razor:charges",
-        "ownerId": "activation:15:special_bonus_unique_razor",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:15:special_bonus_unique_razor:manaCost",
-        "value:activation:15:special_bonus_unique_razor:cooldown",
-        "value:activation:15:special_bonus_unique_razor:charges"
-      ]
-    },
-    {
-      "id": "activation:15:special_bonus_strength_12",
-      "heroId": "15",
-      "abilityIds": [
-        "ability:15:special_bonus_strength_12"
-      ],
-      "manaCost": {
-        "id": "value:activation:15:special_bonus_strength_12:manaCost",
-        "ownerId": "activation:15:special_bonus_strength_12",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:15:special_bonus_strength_12:cooldown",
-        "ownerId": "activation:15:special_bonus_strength_12",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:15:special_bonus_strength_12:charges",
-        "ownerId": "activation:15:special_bonus_strength_12",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:15:special_bonus_strength_12:manaCost",
-        "value:activation:15:special_bonus_strength_12:cooldown",
-        "value:activation:15:special_bonus_strength_12:charges"
-      ]
-    },
-    {
-      "id": "activation:15:special_bonus_unique_razor_storm_surge_damage_and_slow",
-      "heroId": "15",
-      "abilityIds": [
-        "ability:15:special_bonus_unique_razor_storm_surge_damage_and_slow"
-      ],
-      "manaCost": {
-        "id": "value:activation:15:special_bonus_unique_razor_storm_surge_damage_and_slow:manaCost",
-        "ownerId": "activation:15:special_bonus_unique_razor_storm_surge_damage_and_slow",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:15:special_bonus_unique_razor_storm_surge_damage_and_slow:cooldown",
-        "ownerId": "activation:15:special_bonus_unique_razor_storm_surge_damage_and_slow",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:15:special_bonus_unique_razor_storm_surge_damage_and_slow:charges",
-        "ownerId": "activation:15:special_bonus_unique_razor_storm_surge_damage_and_slow",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:15:special_bonus_unique_razor_storm_surge_damage_and_slow:manaCost",
-        "value:activation:15:special_bonus_unique_razor_storm_surge_damage_and_slow:cooldown",
-        "value:activation:15:special_bonus_unique_razor_storm_surge_damage_and_slow:charges"
-      ]
-    },
-    {
-      "id": "activation:15:special_bonus_unique_razor_2",
-      "heroId": "15",
-      "abilityIds": [
-        "ability:15:special_bonus_unique_razor_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:15:special_bonus_unique_razor_2:manaCost",
-        "ownerId": "activation:15:special_bonus_unique_razor_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:15:special_bonus_unique_razor_2:cooldown",
-        "ownerId": "activation:15:special_bonus_unique_razor_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:15:special_bonus_unique_razor_2:charges",
-        "ownerId": "activation:15:special_bonus_unique_razor_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:15:special_bonus_unique_razor_2:manaCost",
-        "value:activation:15:special_bonus_unique_razor_2:cooldown",
-        "value:activation:15:special_bonus_unique_razor_2:charges"
-      ]
-    },
-    {
-      "id": "activation:15:special_bonus_unique_razor_plasmafield_second_ring",
-      "heroId": "15",
-      "abilityIds": [
-        "ability:15:special_bonus_unique_razor_plasmafield_second_ring"
-      ],
-      "manaCost": {
-        "id": "value:activation:15:special_bonus_unique_razor_plasmafield_second_ring:manaCost",
-        "ownerId": "activation:15:special_bonus_unique_razor_plasmafield_second_ring",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:15:special_bonus_unique_razor_plasmafield_second_ring:cooldown",
-        "ownerId": "activation:15:special_bonus_unique_razor_plasmafield_second_ring",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:15:special_bonus_unique_razor_plasmafield_second_ring:charges",
-        "ownerId": "activation:15:special_bonus_unique_razor_plasmafield_second_ring",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:15:special_bonus_unique_razor_plasmafield_second_ring:manaCost",
-        "value:activation:15:special_bonus_unique_razor_plasmafield_second_ring:cooldown",
-        "value:activation:15:special_bonus_unique_razor_plasmafield_second_ring:charges"
-      ]
-    },
-    {
-      "id": "activation:15:special_bonus_unique_razor_static_link_aspd",
-      "heroId": "15",
-      "abilityIds": [
-        "ability:15:special_bonus_unique_razor_static_link_aspd"
-      ],
-      "manaCost": {
-        "id": "value:activation:15:special_bonus_unique_razor_static_link_aspd:manaCost",
-        "ownerId": "activation:15:special_bonus_unique_razor_static_link_aspd",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:15:special_bonus_unique_razor_static_link_aspd:cooldown",
-        "ownerId": "activation:15:special_bonus_unique_razor_static_link_aspd",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:15:special_bonus_unique_razor_static_link_aspd:charges",
-        "ownerId": "activation:15:special_bonus_unique_razor_static_link_aspd",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:15:special_bonus_unique_razor_static_link_aspd:manaCost",
-        "value:activation:15:special_bonus_unique_razor_static_link_aspd:cooldown",
-        "value:activation:15:special_bonus_unique_razor_static_link_aspd:charges"
-      ]
-    },
-    {
-      "id": "activation:15:special_bonus_attributes",
-      "heroId": "15",
-      "abilityIds": [
-        "ability:15:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:15:special_bonus_attributes:manaCost",
-        "ownerId": "activation:15:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:15:special_bonus_attributes:cooldown",
-        "ownerId": "activation:15:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:15:special_bonus_attributes:charges",
-        "ownerId": "activation:15:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:15:special_bonus_attributes:manaCost",
-        "value:activation:15:special_bonus_attributes:cooldown",
-        "value:activation:15:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:15:razor_dynamo",
-      "heroId": "15",
-      "abilityIds": [
-        "ability:15:razor_dynamo"
-      ],
-      "manaCost": {
-        "id": "value:activation:15:razor_dynamo:manaCost",
-        "ownerId": "activation:15:razor_dynamo",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:15:razor_dynamo:cooldown",
-        "ownerId": "activation:15:razor_dynamo",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:15:razor_dynamo:charges",
-        "ownerId": "activation:15:razor_dynamo",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:15:razor_dynamo:manaCost",
-        "value:activation:15:razor_dynamo:cooldown",
-        "value:activation:15:razor_dynamo:charges"
-      ]
+      "id": "special_bonus_unique_razor_static_link_aspd",
+      "Name": "Static Link Steals Attack Speed",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

@@ -1,645 +1,182 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "viper_predator",
+    "behavior": [
+      "passive"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "piercesDebuffImmunity": "no",
+    "damageType": "physical",
+    "breakable": true,
+    "tags": []
+  },
+  "skills": [
     {
-      "id": "ability:47:viper_poison_attack",
-      "heroId": "47",
-      "engineId": "viper_poison_attack",
-      "activationId": "activation:47:viper_poison_attack",
+      "id": "viper_poison_attack",
+      "Name": "Poison Attack",
+      "behavior": [
+        "auto-cast",
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_viper",
-      "state": "known"
+      "type": "toggle",
+      "manaCost": 20,
+      "cooldown": 0,
+      "tags": [
+        "damage_over_time",
+        "slow"
+      ]
     },
     {
-      "id": "ability:47:viper_nethertoxin",
-      "heroId": "47",
-      "engineId": "viper_nethertoxin",
-      "activationId": "activation:47:viper_nethertoxin",
+      "id": "viper_nethertoxin",
+      "Name": "Nethertoxin",
+      "behavior": [
+        "point-target"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_viper",
-      "state": "known"
+      "type": "point",
+      "manaCost": 70,
+      "cooldown": 14,
+      "tags": [
+        "aoe",
+        "damage_over_time"
+      ]
     },
     {
-      "id": "ability:47:viper_corrosive_skin",
-      "heroId": "47",
-      "engineId": "viper_corrosive_skin",
-      "activationId": "activation:47:viper_corrosive_skin",
+      "id": "viper_corrosive_skin",
+      "Name": "Corrosive Skin",
+      "behavior": [
+        "passive"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "breakable": true,
       "order": 2,
-      "owner": "npc_dota_hero_viper",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "buff",
+        "enemy_attack_speed_reduction",
+        "magic_resistance"
+      ]
     },
     {
-      "id": "ability:47:viper_nose_dive",
-      "heroId": "47",
-      "engineId": "viper_nose_dive",
-      "activationId": "activation:47:viper_nose_dive",
+      "id": "viper_nose_dive",
+      "Name": "Nosedive",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 3,
-      "owner": "npc_dota_hero_viper",
-      "state": "known"
+      "type": "point",
+      "manaCost": 75,
+      "cooldown": 25,
+      "tags": [
+        "aoe",
+        "escape",
+        "mobility"
+      ]
     },
     {
-      "id": "ability:47:viper_predator",
-      "heroId": "47",
-      "engineId": "viper_predator",
-      "activationId": "activation:47:viper_predator",
-      "order": 4,
-      "owner": "npc_dota_hero_viper",
-      "state": "known"
-    },
-    {
-      "id": "ability:47:viper_viper_strike",
-      "heroId": "47",
-      "engineId": "viper_viper_strike",
-      "activationId": "activation:47:viper_viper_strike",
+      "id": "viper_viper_strike",
+      "Name": "Viper Strike",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "yes",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_viper",
-      "state": "known"
-    },
-    {
-      "id": "ability:47:special_bonus_unique_viper_4",
-      "heroId": "47",
-      "engineId": "special_bonus_unique_viper_4",
-      "activationId": "activation:47:special_bonus_unique_viper_4",
-      "order": 6,
-      "owner": "npc_dota_hero_viper",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:47:special_bonus_unique_viper_1",
-      "heroId": "47",
-      "engineId": "special_bonus_unique_viper_1",
-      "activationId": "activation:47:special_bonus_unique_viper_1",
-      "order": 7,
-      "owner": "npc_dota_hero_viper",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:47:special_bonus_unique_viper_3",
-      "heroId": "47",
-      "engineId": "special_bonus_unique_viper_3",
-      "activationId": "activation:47:special_bonus_unique_viper_3",
-      "order": 8,
-      "owner": "npc_dota_hero_viper",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:47:special_bonus_unique_viper_7",
-      "heroId": "47",
-      "engineId": "special_bonus_unique_viper_7",
-      "activationId": "activation:47:special_bonus_unique_viper_7",
-      "order": 9,
-      "owner": "npc_dota_hero_viper",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:47:special_bonus_unique_viper_2",
-      "heroId": "47",
-      "engineId": "special_bonus_unique_viper_2",
-      "activationId": "activation:47:special_bonus_unique_viper_2",
-      "order": 10,
-      "owner": "npc_dota_hero_viper",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:47:special_bonus_unique_viper_predator_damage",
-      "heroId": "47",
-      "engineId": "special_bonus_unique_viper_predator_damage",
-      "activationId": "activation:47:special_bonus_unique_viper_predator_damage",
-      "order": 11,
-      "owner": "npc_dota_hero_viper",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:47:special_bonus_unique_viper_nethertoxin_radius",
-      "heroId": "47",
-      "engineId": "special_bonus_unique_viper_nethertoxin_radius",
-      "activationId": "activation:47:special_bonus_unique_viper_nethertoxin_radius",
-      "order": 12,
-      "owner": "npc_dota_hero_viper",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:47:special_bonus_unique_viper_8",
-      "heroId": "47",
-      "engineId": "special_bonus_unique_viper_8",
-      "activationId": "activation:47:special_bonus_unique_viper_8",
-      "order": 13,
-      "owner": "npc_dota_hero_viper",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:47:special_bonus_attributes",
-      "heroId": "47",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:47:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_viper",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "tags": [
+        "bkb_pierce",
+        "break",
+        "damage_over_time",
+        "disable",
+        "enemy_attack_speed_reduction",
+        "slow"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:47:viper_poison_attack",
-      "heroId": "47",
-      "abilityIds": [
-        "ability:47:viper_poison_attack"
-      ],
-      "manaCost": {
-        "id": "value:activation:47:viper_poison_attack:manaCost",
-        "ownerId": "activation:47:viper_poison_attack",
-        "field": "manaCost",
-        "state": "known",
-        "value": 20
-      },
-      "cooldown": {
-        "id": "value:activation:47:viper_poison_attack:cooldown",
-        "ownerId": "activation:47:viper_poison_attack",
-        "field": "cooldown",
-        "state": "known",
-        "value": 0
-      },
-      "charges": {
-        "id": "value:activation:47:viper_poison_attack:charges",
-        "ownerId": "activation:47:viper_poison_attack",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:47:viper_poison_attack:manaCost",
-        "value:activation:47:viper_poison_attack:cooldown",
-        "value:activation:47:viper_poison_attack:charges"
+      "id": "special_bonus_unique_viper_4",
+      "tags": [
+        "duration_extension"
       ]
     },
     {
-      "id": "activation:47:viper_nethertoxin",
-      "heroId": "47",
-      "abilityIds": [
-        "ability:47:viper_nethertoxin"
-      ],
-      "manaCost": {
-        "id": "value:activation:47:viper_nethertoxin:manaCost",
-        "ownerId": "activation:47:viper_nethertoxin",
-        "field": "manaCost",
-        "state": "known",
-        "value": 70
-      },
-      "cooldown": {
-        "id": "value:activation:47:viper_nethertoxin:cooldown",
-        "ownerId": "activation:47:viper_nethertoxin",
-        "field": "cooldown",
-        "state": "known",
-        "value": 14
-      },
-      "charges": {
-        "id": "value:activation:47:viper_nethertoxin:charges",
-        "ownerId": "activation:47:viper_nethertoxin",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:47:viper_nethertoxin:manaCost",
-        "value:activation:47:viper_nethertoxin:cooldown",
-        "value:activation:47:viper_nethertoxin:charges"
+      "id": "special_bonus_unique_viper_1",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:47:viper_corrosive_skin",
-      "heroId": "47",
-      "abilityIds": [
-        "ability:47:viper_corrosive_skin"
-      ],
-      "manaCost": {
-        "id": "value:activation:47:viper_corrosive_skin:manaCost",
-        "ownerId": "activation:47:viper_corrosive_skin",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:47:viper_corrosive_skin:cooldown",
-        "ownerId": "activation:47:viper_corrosive_skin",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:47:viper_corrosive_skin:charges",
-        "ownerId": "activation:47:viper_corrosive_skin",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:47:viper_corrosive_skin:manaCost",
-        "value:activation:47:viper_corrosive_skin:cooldown",
-        "value:activation:47:viper_corrosive_skin:charges"
+      "id": "special_bonus_unique_viper_3",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_viper_7",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:47:viper_nose_dive",
-      "heroId": "47",
-      "abilityIds": [
-        "ability:47:viper_nose_dive"
-      ],
-      "manaCost": {
-        "id": "value:activation:47:viper_nose_dive:manaCost",
-        "ownerId": "activation:47:viper_nose_dive",
-        "field": "manaCost",
-        "state": "known",
-        "value": 75
-      },
-      "cooldown": {
-        "id": "value:activation:47:viper_nose_dive:cooldown",
-        "ownerId": "activation:47:viper_nose_dive",
-        "field": "cooldown",
-        "state": "known",
-        "value": 25
-      },
-      "charges": {
-        "id": "value:activation:47:viper_nose_dive:charges",
-        "ownerId": "activation:47:viper_nose_dive",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:47:viper_nose_dive:manaCost",
-        "value:activation:47:viper_nose_dive:cooldown",
-        "value:activation:47:viper_nose_dive:charges"
+      "id": "special_bonus_unique_viper_2",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:47:viper_predator",
-      "heroId": "47",
-      "abilityIds": [
-        "ability:47:viper_predator"
-      ],
-      "manaCost": {
-        "id": "value:activation:47:viper_predator:manaCost",
-        "ownerId": "activation:47:viper_predator",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:47:viper_predator:cooldown",
-        "ownerId": "activation:47:viper_predator",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:47:viper_predator:charges",
-        "ownerId": "activation:47:viper_predator",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:47:viper_predator:manaCost",
-        "value:activation:47:viper_predator:cooldown",
-        "value:activation:47:viper_predator:charges"
+      "id": "special_bonus_unique_viper_predator_damage",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:47:viper_viper_strike",
-      "heroId": "47",
-      "abilityIds": [
-        "ability:47:viper_viper_strike"
-      ],
-      "manaCost": {
-        "id": "value:activation:47:viper_viper_strike:manaCost",
-        "ownerId": "activation:47:viper_viper_strike",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "100 150 200",
-          "special_bonus_unique_viper_8": "-50%"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:47:viper_viper_strike:cooldown",
-        "ownerId": "activation:47:viper_viper_strike",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "50 40 30",
-          "special_bonus_unique_viper_8": "-50%"
-        }
-      },
-      "charges": {
-        "id": "value:activation:47:viper_viper_strike:charges",
-        "ownerId": "activation:47:viper_viper_strike",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:47:viper_viper_strike:manaCost",
-        "value:activation:47:viper_viper_strike:cooldown",
-        "value:activation:47:viper_viper_strike:charges"
-      ]
+      "id": "special_bonus_unique_viper_nethertoxin_radius",
+      "tags": []
     },
     {
-      "id": "activation:47:special_bonus_unique_viper_4",
-      "heroId": "47",
-      "abilityIds": [
-        "ability:47:special_bonus_unique_viper_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:47:special_bonus_unique_viper_4:manaCost",
-        "ownerId": "activation:47:special_bonus_unique_viper_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:47:special_bonus_unique_viper_4:cooldown",
-        "ownerId": "activation:47:special_bonus_unique_viper_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:47:special_bonus_unique_viper_4:charges",
-        "ownerId": "activation:47:special_bonus_unique_viper_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:47:special_bonus_unique_viper_4:manaCost",
-        "value:activation:47:special_bonus_unique_viper_4:cooldown",
-        "value:activation:47:special_bonus_unique_viper_4:charges"
-      ]
-    },
-    {
-      "id": "activation:47:special_bonus_unique_viper_1",
-      "heroId": "47",
-      "abilityIds": [
-        "ability:47:special_bonus_unique_viper_1"
-      ],
-      "manaCost": {
-        "id": "value:activation:47:special_bonus_unique_viper_1:manaCost",
-        "ownerId": "activation:47:special_bonus_unique_viper_1",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:47:special_bonus_unique_viper_1:cooldown",
-        "ownerId": "activation:47:special_bonus_unique_viper_1",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:47:special_bonus_unique_viper_1:charges",
-        "ownerId": "activation:47:special_bonus_unique_viper_1",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:47:special_bonus_unique_viper_1:manaCost",
-        "value:activation:47:special_bonus_unique_viper_1:cooldown",
-        "value:activation:47:special_bonus_unique_viper_1:charges"
-      ]
-    },
-    {
-      "id": "activation:47:special_bonus_unique_viper_3",
-      "heroId": "47",
-      "abilityIds": [
-        "ability:47:special_bonus_unique_viper_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:47:special_bonus_unique_viper_3:manaCost",
-        "ownerId": "activation:47:special_bonus_unique_viper_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:47:special_bonus_unique_viper_3:cooldown",
-        "ownerId": "activation:47:special_bonus_unique_viper_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:47:special_bonus_unique_viper_3:charges",
-        "ownerId": "activation:47:special_bonus_unique_viper_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:47:special_bonus_unique_viper_3:manaCost",
-        "value:activation:47:special_bonus_unique_viper_3:cooldown",
-        "value:activation:47:special_bonus_unique_viper_3:charges"
-      ]
-    },
-    {
-      "id": "activation:47:special_bonus_unique_viper_7",
-      "heroId": "47",
-      "abilityIds": [
-        "ability:47:special_bonus_unique_viper_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:47:special_bonus_unique_viper_7:manaCost",
-        "ownerId": "activation:47:special_bonus_unique_viper_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:47:special_bonus_unique_viper_7:cooldown",
-        "ownerId": "activation:47:special_bonus_unique_viper_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:47:special_bonus_unique_viper_7:charges",
-        "ownerId": "activation:47:special_bonus_unique_viper_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:47:special_bonus_unique_viper_7:manaCost",
-        "value:activation:47:special_bonus_unique_viper_7:cooldown",
-        "value:activation:47:special_bonus_unique_viper_7:charges"
-      ]
-    },
-    {
-      "id": "activation:47:special_bonus_unique_viper_2",
-      "heroId": "47",
-      "abilityIds": [
-        "ability:47:special_bonus_unique_viper_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:47:special_bonus_unique_viper_2:manaCost",
-        "ownerId": "activation:47:special_bonus_unique_viper_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:47:special_bonus_unique_viper_2:cooldown",
-        "ownerId": "activation:47:special_bonus_unique_viper_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:47:special_bonus_unique_viper_2:charges",
-        "ownerId": "activation:47:special_bonus_unique_viper_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:47:special_bonus_unique_viper_2:manaCost",
-        "value:activation:47:special_bonus_unique_viper_2:cooldown",
-        "value:activation:47:special_bonus_unique_viper_2:charges"
-      ]
-    },
-    {
-      "id": "activation:47:special_bonus_unique_viper_predator_damage",
-      "heroId": "47",
-      "abilityIds": [
-        "ability:47:special_bonus_unique_viper_predator_damage"
-      ],
-      "manaCost": {
-        "id": "value:activation:47:special_bonus_unique_viper_predator_damage:manaCost",
-        "ownerId": "activation:47:special_bonus_unique_viper_predator_damage",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:47:special_bonus_unique_viper_predator_damage:cooldown",
-        "ownerId": "activation:47:special_bonus_unique_viper_predator_damage",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:47:special_bonus_unique_viper_predator_damage:charges",
-        "ownerId": "activation:47:special_bonus_unique_viper_predator_damage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:47:special_bonus_unique_viper_predator_damage:manaCost",
-        "value:activation:47:special_bonus_unique_viper_predator_damage:cooldown",
-        "value:activation:47:special_bonus_unique_viper_predator_damage:charges"
-      ]
-    },
-    {
-      "id": "activation:47:special_bonus_unique_viper_nethertoxin_radius",
-      "heroId": "47",
-      "abilityIds": [
-        "ability:47:special_bonus_unique_viper_nethertoxin_radius"
-      ],
-      "manaCost": {
-        "id": "value:activation:47:special_bonus_unique_viper_nethertoxin_radius:manaCost",
-        "ownerId": "activation:47:special_bonus_unique_viper_nethertoxin_radius",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:47:special_bonus_unique_viper_nethertoxin_radius:cooldown",
-        "ownerId": "activation:47:special_bonus_unique_viper_nethertoxin_radius",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:47:special_bonus_unique_viper_nethertoxin_radius:charges",
-        "ownerId": "activation:47:special_bonus_unique_viper_nethertoxin_radius",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:47:special_bonus_unique_viper_nethertoxin_radius:manaCost",
-        "value:activation:47:special_bonus_unique_viper_nethertoxin_radius:cooldown",
-        "value:activation:47:special_bonus_unique_viper_nethertoxin_radius:charges"
-      ]
-    },
-    {
-      "id": "activation:47:special_bonus_unique_viper_8",
-      "heroId": "47",
-      "abilityIds": [
-        "ability:47:special_bonus_unique_viper_8"
-      ],
-      "manaCost": {
-        "id": "value:activation:47:special_bonus_unique_viper_8:manaCost",
-        "ownerId": "activation:47:special_bonus_unique_viper_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:47:special_bonus_unique_viper_8:cooldown",
-        "ownerId": "activation:47:special_bonus_unique_viper_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:47:special_bonus_unique_viper_8:charges",
-        "ownerId": "activation:47:special_bonus_unique_viper_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:47:special_bonus_unique_viper_8:manaCost",
-        "value:activation:47:special_bonus_unique_viper_8:cooldown",
-        "value:activation:47:special_bonus_unique_viper_8:charges"
-      ]
-    },
-    {
-      "id": "activation:47:special_bonus_attributes",
-      "heroId": "47",
-      "abilityIds": [
-        "ability:47:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:47:special_bonus_attributes:manaCost",
-        "ownerId": "activation:47:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:47:special_bonus_attributes:cooldown",
-        "ownerId": "activation:47:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:47:special_bonus_attributes:charges",
-        "ownerId": "activation:47:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:47:special_bonus_attributes:manaCost",
-        "value:activation:47:special_bonus_attributes:cooldown",
-        "value:activation:47:special_bonus_attributes:charges"
+      "id": "special_bonus_unique_viper_8",
+      "tags": [
+        "buff",
+        "cooldown_reduction",
+        "mana_cost_reduction"
       ]
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

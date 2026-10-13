@@ -1,650 +1,173 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "phantom_assassin_blur",
+    "Name": "Blur",
+    "behavior": [
+      "no-target"
+    ],
+    "affects": [
+      "allied-heroes"
+    ],
+    "dispellable": "no",
+    "type": "self-target",
+    "manaCost": 50,
+    "tags": [
+      "buff",
+      "disjoint",
+      "escape",
+      "self_movement_speed"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:44:phantom_assassin_stifling_dagger",
-      "heroId": "44",
-      "engineId": "phantom_assassin_stifling_dagger",
-      "activationId": "activation:44:phantom_assassin_stifling_dagger",
+      "id": "phantom_assassin_stifling_dagger",
+      "Name": "Stifling Dagger",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "damageType": "physical",
       "order": 0,
-      "owner": "npc_dota_hero_phantom_assassin",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero"
+      ],
+      "manaCost": 30,
+      "tags": [
+        "attack_damage_scaling",
+        "slow",
+        "vision"
+      ]
     },
     {
-      "id": "ability:44:phantom_assassin_phantom_strike",
-      "heroId": "44",
-      "engineId": "phantom_assassin_phantom_strike",
-      "activationId": "activation:44:phantom_assassin_phantom_strike",
+      "id": "phantom_assassin_phantom_strike",
+      "Name": "Phantom Strike",
+      "behavior": [
+        "unit-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "yes",
       "order": 1,
-      "owner": "npc_dota_hero_phantom_assassin",
-      "state": "known"
+      "type": "target",
+      "manaCost": [
+        35,
+        40,
+        45,
+        50
+      ],
+      "cooldown": 0.1,
+      "tags": [
+        "ally_attack_speed",
+        "blink",
+        "buff",
+        "escape",
+        "mobility",
+        "self_reposition"
+      ]
     },
     {
-      "id": "ability:44:phantom_assassin_blur",
-      "heroId": "44",
-      "engineId": "phantom_assassin_blur",
-      "activationId": "activation:44:phantom_assassin_blur",
-      "order": 2,
-      "owner": "npc_dota_hero_phantom_assassin",
-      "state": "known"
-    },
-    {
-      "id": "ability:44:phantom_assassin_fan_of_knives",
-      "heroId": "44",
-      "engineId": "phantom_assassin_fan_of_knives",
-      "activationId": "activation:44:phantom_assassin_fan_of_knives",
+      "id": "phantom_assassin_fan_of_knives",
+      "Name": "Fan of Knives",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "yes",
+      "damageType": "physical",
       "order": 3,
-      "owner": "npc_dota_hero_phantom_assassin",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 80,
+      "cooldown": 14,
+      "tags": [
+        "bkb_pierce",
+        "break"
+      ]
     },
     {
-      "id": "ability:44:phantom_assassin_immaterial",
-      "heroId": "44",
-      "engineId": "phantom_assassin_immaterial",
-      "activationId": "activation:44:phantom_assassin_immaterial",
+      "id": "phantom_assassin_immaterial",
+      "Name": "Immaterial",
+      "behavior": [
+        "passive"
+      ],
+      "breakable": true,
       "order": 4,
-      "owner": "npc_dota_hero_phantom_assassin",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "buff",
+        "evasion"
+      ]
     },
     {
-      "id": "ability:44:phantom_assassin_coup_de_grace",
-      "heroId": "44",
-      "engineId": "phantom_assassin_coup_de_grace",
-      "activationId": "activation:44:phantom_assassin_coup_de_grace",
+      "id": "phantom_assassin_coup_de_grace",
+      "Name": "Coup de Grace",
+      "behavior": [
+        "passive"
+      ],
+      "piercesDebuffImmunity": "yes",
+      "breakable": true,
       "order": 5,
-      "owner": "npc_dota_hero_phantom_assassin",
-      "state": "known"
-    },
-    {
-      "id": "ability:44:special_bonus_unique_phantom_assassin_4",
-      "heroId": "44",
-      "engineId": "special_bonus_unique_phantom_assassin_4",
-      "activationId": "activation:44:special_bonus_unique_phantom_assassin_4",
-      "order": 6,
-      "owner": "npc_dota_hero_phantom_assassin",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:44:special_bonus_unique_phantom_assassin_7",
-      "heroId": "44",
-      "engineId": "special_bonus_unique_phantom_assassin_7",
-      "activationId": "activation:44:special_bonus_unique_phantom_assassin_7",
-      "order": 7,
-      "owner": "npc_dota_hero_phantom_assassin",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:44:special_bonus_unique_phantom_assassin_3",
-      "heroId": "44",
-      "engineId": "special_bonus_unique_phantom_assassin_3",
-      "activationId": "activation:44:special_bonus_unique_phantom_assassin_3",
-      "order": 8,
-      "owner": "npc_dota_hero_phantom_assassin",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:44:special_bonus_unique_phantom_assassin_5",
-      "heroId": "44",
-      "engineId": "special_bonus_unique_phantom_assassin_5",
-      "activationId": "activation:44:special_bonus_unique_phantom_assassin_5",
-      "order": 9,
-      "owner": "npc_dota_hero_phantom_assassin",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:44:special_bonus_unique_phantom_assassin_6",
-      "heroId": "44",
-      "engineId": "special_bonus_unique_phantom_assassin_6",
-      "activationId": "activation:44:special_bonus_unique_phantom_assassin_6",
-      "order": 10,
-      "owner": "npc_dota_hero_phantom_assassin",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:44:special_bonus_unique_phantom_assassin_strike_aspd",
-      "heroId": "44",
-      "engineId": "special_bonus_unique_phantom_assassin_strike_aspd",
-      "activationId": "activation:44:special_bonus_unique_phantom_assassin_strike_aspd",
-      "order": 11,
-      "owner": "npc_dota_hero_phantom_assassin",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:44:special_bonus_unique_phantom_assassin_2",
-      "heroId": "44",
-      "engineId": "special_bonus_unique_phantom_assassin_2",
-      "activationId": "activation:44:special_bonus_unique_phantom_assassin_2",
-      "order": 12,
-      "owner": "npc_dota_hero_phantom_assassin",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:44:special_bonus_unique_phantom_assassin",
-      "heroId": "44",
-      "engineId": "special_bonus_unique_phantom_assassin",
-      "activationId": "activation:44:special_bonus_unique_phantom_assassin",
-      "order": 13,
-      "owner": "npc_dota_hero_phantom_assassin",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:44:special_bonus_attributes",
-      "heroId": "44",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:44:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_phantom_assassin",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "attack_damage_scaling"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:44:phantom_assassin_stifling_dagger",
-      "heroId": "44",
-      "abilityIds": [
-        "ability:44:phantom_assassin_stifling_dagger"
-      ],
-      "manaCost": {
-        "id": "value:activation:44:phantom_assassin_stifling_dagger:manaCost",
-        "ownerId": "activation:44:phantom_assassin_stifling_dagger",
-        "field": "manaCost",
-        "state": "known",
-        "value": 30
-      },
-      "cooldown": {
-        "id": "value:activation:44:phantom_assassin_stifling_dagger:cooldown",
-        "ownerId": "activation:44:phantom_assassin_stifling_dagger",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "6",
-          "special_bonus_unique_phantom_assassin_7": "-2.0"
-        }
-      },
-      "charges": {
-        "id": "value:activation:44:phantom_assassin_stifling_dagger:charges",
-        "ownerId": "activation:44:phantom_assassin_stifling_dagger",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:44:phantom_assassin_stifling_dagger:manaCost",
-        "value:activation:44:phantom_assassin_stifling_dagger:cooldown",
-        "value:activation:44:phantom_assassin_stifling_dagger:charges"
+      "id": "special_bonus_unique_phantom_assassin_4",
+      "tags": [
+        "duration_extension"
       ]
     },
     {
-      "id": "activation:44:phantom_assassin_phantom_strike",
-      "heroId": "44",
-      "abilityIds": [
-        "ability:44:phantom_assassin_phantom_strike"
-      ],
-      "manaCost": {
-        "id": "value:activation:44:phantom_assassin_phantom_strike:manaCost",
-        "ownerId": "activation:44:phantom_assassin_phantom_strike",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          35,
-          40,
-          45,
-          50
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:44:phantom_assassin_phantom_strike:cooldown",
-        "ownerId": "activation:44:phantom_assassin_phantom_strike",
-        "field": "cooldown",
-        "state": "known",
-        "value": 0.1
-      },
-      "charges": {
-        "id": "value:activation:44:phantom_assassin_phantom_strike:charges",
-        "ownerId": "activation:44:phantom_assassin_phantom_strike",
-        "field": "charges",
-        "state": "known",
-        "value": 2
-      },
-      "valueIds": [
-        "value:activation:44:phantom_assassin_phantom_strike:manaCost",
-        "value:activation:44:phantom_assassin_phantom_strike:cooldown",
-        "value:activation:44:phantom_assassin_phantom_strike:charges"
+      "id": "special_bonus_unique_phantom_assassin_7",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:44:phantom_assassin_blur",
-      "heroId": "44",
-      "abilityIds": [
-        "ability:44:phantom_assassin_blur"
-      ],
-      "manaCost": {
-        "id": "value:activation:44:phantom_assassin_blur:manaCost",
-        "ownerId": "activation:44:phantom_assassin_blur",
-        "field": "manaCost",
-        "state": "known",
-        "value": 50
-      },
-      "cooldown": {
-        "id": "value:activation:44:phantom_assassin_blur:cooldown",
-        "ownerId": "activation:44:phantom_assassin_blur",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "45",
-          "special_bonus_shard": "-10"
-        }
-      },
-      "charges": {
-        "id": "value:activation:44:phantom_assassin_blur:charges",
-        "ownerId": "activation:44:phantom_assassin_blur",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:44:phantom_assassin_blur:manaCost",
-        "value:activation:44:phantom_assassin_blur:cooldown",
-        "value:activation:44:phantom_assassin_blur:charges"
+      "id": "special_bonus_unique_phantom_assassin_3",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_phantom_assassin_5",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_phantom_assassin_6",
+      "tags": [
+        "buff",
+        "cast_range"
       ]
     },
     {
-      "id": "activation:44:phantom_assassin_fan_of_knives",
-      "heroId": "44",
-      "abilityIds": [
-        "ability:44:phantom_assassin_fan_of_knives"
-      ],
-      "manaCost": {
-        "id": "value:activation:44:phantom_assassin_fan_of_knives:manaCost",
-        "ownerId": "activation:44:phantom_assassin_fan_of_knives",
-        "field": "manaCost",
-        "state": "known",
-        "value": 80
-      },
-      "cooldown": {
-        "id": "value:activation:44:phantom_assassin_fan_of_knives:cooldown",
-        "ownerId": "activation:44:phantom_assassin_fan_of_knives",
-        "field": "cooldown",
-        "state": "known",
-        "value": 14
-      },
-      "charges": {
-        "id": "value:activation:44:phantom_assassin_fan_of_knives:charges",
-        "ownerId": "activation:44:phantom_assassin_fan_of_knives",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:44:phantom_assassin_fan_of_knives:manaCost",
-        "value:activation:44:phantom_assassin_fan_of_knives:cooldown",
-        "value:activation:44:phantom_assassin_fan_of_knives:charges"
+      "id": "special_bonus_unique_phantom_assassin_strike_aspd",
+      "tags": [
+        "ally_attack_speed",
+        "buff"
       ]
     },
     {
-      "id": "activation:44:phantom_assassin_immaterial",
-      "heroId": "44",
-      "abilityIds": [
-        "ability:44:phantom_assassin_immaterial"
-      ],
-      "manaCost": {
-        "id": "value:activation:44:phantom_assassin_immaterial:manaCost",
-        "ownerId": "activation:44:phantom_assassin_immaterial",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:44:phantom_assassin_immaterial:cooldown",
-        "ownerId": "activation:44:phantom_assassin_immaterial",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:44:phantom_assassin_immaterial:charges",
-        "ownerId": "activation:44:phantom_assassin_immaterial",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:44:phantom_assassin_immaterial:manaCost",
-        "value:activation:44:phantom_assassin_immaterial:cooldown",
-        "value:activation:44:phantom_assassin_immaterial:charges"
-      ]
+      "id": "special_bonus_unique_phantom_assassin_2",
+      "tags": []
     },
     {
-      "id": "activation:44:phantom_assassin_coup_de_grace",
-      "heroId": "44",
-      "abilityIds": [
-        "ability:44:phantom_assassin_coup_de_grace"
-      ],
-      "manaCost": {
-        "id": "value:activation:44:phantom_assassin_coup_de_grace:manaCost",
-        "ownerId": "activation:44:phantom_assassin_coup_de_grace",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:44:phantom_assassin_coup_de_grace:cooldown",
-        "ownerId": "activation:44:phantom_assassin_coup_de_grace",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:44:phantom_assassin_coup_de_grace:charges",
-        "ownerId": "activation:44:phantom_assassin_coup_de_grace",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:44:phantom_assassin_coup_de_grace:manaCost",
-        "value:activation:44:phantom_assassin_coup_de_grace:cooldown",
-        "value:activation:44:phantom_assassin_coup_de_grace:charges"
-      ]
-    },
-    {
-      "id": "activation:44:special_bonus_unique_phantom_assassin_4",
-      "heroId": "44",
-      "abilityIds": [
-        "ability:44:special_bonus_unique_phantom_assassin_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_4:manaCost",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_4:cooldown",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_4:charges",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:44:special_bonus_unique_phantom_assassin_4:manaCost",
-        "value:activation:44:special_bonus_unique_phantom_assassin_4:cooldown",
-        "value:activation:44:special_bonus_unique_phantom_assassin_4:charges"
-      ]
-    },
-    {
-      "id": "activation:44:special_bonus_unique_phantom_assassin_7",
-      "heroId": "44",
-      "abilityIds": [
-        "ability:44:special_bonus_unique_phantom_assassin_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_7:manaCost",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_7:cooldown",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_7:charges",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:44:special_bonus_unique_phantom_assassin_7:manaCost",
-        "value:activation:44:special_bonus_unique_phantom_assassin_7:cooldown",
-        "value:activation:44:special_bonus_unique_phantom_assassin_7:charges"
-      ]
-    },
-    {
-      "id": "activation:44:special_bonus_unique_phantom_assassin_3",
-      "heroId": "44",
-      "abilityIds": [
-        "ability:44:special_bonus_unique_phantom_assassin_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_3:manaCost",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_3:cooldown",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_3:charges",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:44:special_bonus_unique_phantom_assassin_3:manaCost",
-        "value:activation:44:special_bonus_unique_phantom_assassin_3:cooldown",
-        "value:activation:44:special_bonus_unique_phantom_assassin_3:charges"
-      ]
-    },
-    {
-      "id": "activation:44:special_bonus_unique_phantom_assassin_5",
-      "heroId": "44",
-      "abilityIds": [
-        "ability:44:special_bonus_unique_phantom_assassin_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_5:manaCost",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_5:cooldown",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_5:charges",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:44:special_bonus_unique_phantom_assassin_5:manaCost",
-        "value:activation:44:special_bonus_unique_phantom_assassin_5:cooldown",
-        "value:activation:44:special_bonus_unique_phantom_assassin_5:charges"
-      ]
-    },
-    {
-      "id": "activation:44:special_bonus_unique_phantom_assassin_6",
-      "heroId": "44",
-      "abilityIds": [
-        "ability:44:special_bonus_unique_phantom_assassin_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_6:manaCost",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_6:cooldown",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_6:charges",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:44:special_bonus_unique_phantom_assassin_6:manaCost",
-        "value:activation:44:special_bonus_unique_phantom_assassin_6:cooldown",
-        "value:activation:44:special_bonus_unique_phantom_assassin_6:charges"
-      ]
-    },
-    {
-      "id": "activation:44:special_bonus_unique_phantom_assassin_strike_aspd",
-      "heroId": "44",
-      "abilityIds": [
-        "ability:44:special_bonus_unique_phantom_assassin_strike_aspd"
-      ],
-      "manaCost": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_strike_aspd:manaCost",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_strike_aspd",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_strike_aspd:cooldown",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_strike_aspd",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_strike_aspd:charges",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_strike_aspd",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:44:special_bonus_unique_phantom_assassin_strike_aspd:manaCost",
-        "value:activation:44:special_bonus_unique_phantom_assassin_strike_aspd:cooldown",
-        "value:activation:44:special_bonus_unique_phantom_assassin_strike_aspd:charges"
-      ]
-    },
-    {
-      "id": "activation:44:special_bonus_unique_phantom_assassin_2",
-      "heroId": "44",
-      "abilityIds": [
-        "ability:44:special_bonus_unique_phantom_assassin_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_2:manaCost",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_2:cooldown",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin_2:charges",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:44:special_bonus_unique_phantom_assassin_2:manaCost",
-        "value:activation:44:special_bonus_unique_phantom_assassin_2:cooldown",
-        "value:activation:44:special_bonus_unique_phantom_assassin_2:charges"
-      ]
-    },
-    {
-      "id": "activation:44:special_bonus_unique_phantom_assassin",
-      "heroId": "44",
-      "abilityIds": [
-        "ability:44:special_bonus_unique_phantom_assassin"
-      ],
-      "manaCost": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin:manaCost",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin:cooldown",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:44:special_bonus_unique_phantom_assassin:charges",
-        "ownerId": "activation:44:special_bonus_unique_phantom_assassin",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:44:special_bonus_unique_phantom_assassin:manaCost",
-        "value:activation:44:special_bonus_unique_phantom_assassin:cooldown",
-        "value:activation:44:special_bonus_unique_phantom_assassin:charges"
-      ]
-    },
-    {
-      "id": "activation:44:special_bonus_attributes",
-      "heroId": "44",
-      "abilityIds": [
-        "ability:44:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:44:special_bonus_attributes:manaCost",
-        "ownerId": "activation:44:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:44:special_bonus_attributes:cooldown",
-        "ownerId": "activation:44:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:44:special_bonus_attributes:charges",
-        "ownerId": "activation:44:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:44:special_bonus_attributes:manaCost",
-        "value:activation:44:special_bonus_attributes:cooldown",
-        "value:activation:44:special_bonus_attributes:charges"
-      ]
+      "id": "special_bonus_unique_phantom_assassin",
+      "Name": "Triple Strike Stifling Dagger",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

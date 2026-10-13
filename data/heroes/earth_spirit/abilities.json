@@ -1,707 +1,221 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "earth_spirit_stone_caller",
+    "Name": "Stone Remnant",
+    "behavior": [
+      "point-target"
+    ],
+    "type": "point",
+    "tags": []
+  },
+  "skills": [
     {
-      "id": "ability:107:earth_spirit_boulder_smash",
-      "heroId": "107",
-      "engineId": "earth_spirit_boulder_smash",
-      "activationId": "activation:107:earth_spirit_boulder_smash",
+      "id": "earth_spirit_boulder_smash",
+      "Name": "Boulder Smash",
+      "behavior": [
+        "point-target",
+        "unit-target"
+      ],
+      "affects": [
+        "units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_earth_spirit",
-      "state": "known"
+      "type": "target-or-point",
+      "target": [
+        "self",
+        "ally_hero",
+        "enemy_hero"
+      ],
+      "manaCost": 100,
+      "tags": [
+        "ally_reposition",
+        "enemy_displacement",
+        "escape",
+        "mobility",
+        "slow"
+      ]
     },
     {
-      "id": "ability:107:earth_spirit_rolling_boulder",
-      "heroId": "107",
-      "engineId": "earth_spirit_rolling_boulder",
-      "activationId": "activation:107:earth_spirit_rolling_boulder",
+      "id": "earth_spirit_rolling_boulder",
+      "Name": "Rolling Boulder",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "strong-only",
+      "dispelType": "strong",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_earth_spirit",
-      "state": "known"
+      "type": "point",
+      "manaCost": 50,
+      "cooldown": [
+        16,
+        12,
+        8,
+        4
+      ],
+      "tags": [
+        "delayed_damage",
+        "disable",
+        "escape",
+        "mobility",
+        "stun",
+        "untargetable"
+      ]
     },
     {
-      "id": "ability:107:earth_spirit_geomagnetic_grip",
-      "heroId": "107",
-      "engineId": "earth_spirit_geomagnetic_grip",
-      "activationId": "activation:107:earth_spirit_geomagnetic_grip",
+      "id": "earth_spirit_geomagnetic_grip",
+      "Name": "Geomagnetic Grip",
+      "behavior": [
+        "point-target",
+        "unit-target"
+      ],
+      "affects": [
+        "allied-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 2,
-      "owner": "npc_dota_hero_earth_spirit",
-      "state": "known"
+      "type": "target-or-point",
+      "target": [
+        "self",
+        "ally_hero"
+      ],
+      "manaCost": 75,
+      "tags": [
+        "ally_reposition",
+        "buff",
+        "cast_range",
+        "cooldown_reduction",
+        "disable",
+        "enemy_displacement",
+        "escape",
+        "mobility",
+        "silence"
+      ]
     },
     {
-      "id": "ability:107:earth_spirit_stone_caller",
-      "heroId": "107",
-      "engineId": "earth_spirit_stone_caller",
-      "activationId": "activation:107:earth_spirit_stone_caller",
-      "order": 3,
-      "owner": "npc_dota_hero_earth_spirit",
-      "state": "known"
-    },
-    {
-      "id": "ability:107:earth_spirit_petrify",
-      "heroId": "107",
-      "engineId": "earth_spirit_petrify",
-      "activationId": "activation:107:earth_spirit_petrify",
+      "id": "earth_spirit_petrify",
+      "Name": "Enchant Remnant",
+      "behavior": [
+        "unit-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 4,
-      "owner": "npc_dota_hero_earth_spirit",
-      "state": "known"
+      "type": "target",
+      "manaCost": 150,
+      "cooldown": 45,
+      "tags": []
     },
     {
-      "id": "ability:107:earth_spirit_magnetize",
-      "heroId": "107",
-      "engineId": "earth_spirit_magnetize",
-      "activationId": "activation:107:earth_spirit_magnetize",
+      "id": "earth_spirit_magnetize",
+      "Name": "Magnetize",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "yes",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_earth_spirit",
-      "state": "known"
-    },
-    {
-      "id": "ability:107:special_bonus_unique_earth_spirit_7",
-      "heroId": "107",
-      "engineId": "special_bonus_unique_earth_spirit_7",
-      "activationId": "activation:107:special_bonus_unique_earth_spirit_7",
-      "order": 6,
-      "owner": "npc_dota_hero_earth_spirit",
-      "state": "known"
-    },
-    {
-      "id": "ability:107:special_bonus_unique_earth_spirit_4",
-      "heroId": "107",
-      "engineId": "special_bonus_unique_earth_spirit_4",
-      "activationId": "activation:107:special_bonus_unique_earth_spirit_4",
-      "order": 7,
-      "owner": "npc_dota_hero_earth_spirit",
-      "state": "known"
-    },
-    {
-      "id": "ability:107:special_bonus_unique_earth_spirit_rolling_boulder_stun",
-      "heroId": "107",
-      "engineId": "special_bonus_unique_earth_spirit_rolling_boulder_stun",
-      "activationId": "activation:107:special_bonus_unique_earth_spirit_rolling_boulder_stun",
-      "order": 8,
-      "owner": "npc_dota_hero_earth_spirit",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:107:special_bonus_unique_earth_spirit_6",
-      "heroId": "107",
-      "engineId": "special_bonus_unique_earth_spirit_6",
-      "activationId": "activation:107:special_bonus_unique_earth_spirit_6",
-      "order": 9,
-      "owner": "npc_dota_hero_earth_spirit",
-      "state": "known"
-    },
-    {
-      "id": "ability:107:special_bonus_unique_earth_spirit_8",
-      "heroId": "107",
-      "engineId": "special_bonus_unique_earth_spirit_8",
-      "activationId": "activation:107:special_bonus_unique_earth_spirit_8",
-      "order": 10,
-      "owner": "npc_dota_hero_earth_spirit",
-      "state": "known"
-    },
-    {
-      "id": "ability:107:special_bonus_unique_earth_spirit_5",
-      "heroId": "107",
-      "engineId": "special_bonus_unique_earth_spirit_5",
-      "activationId": "activation:107:special_bonus_unique_earth_spirit_5",
-      "order": 11,
-      "owner": "npc_dota_hero_earth_spirit",
-      "state": "known"
-    },
-    {
-      "id": "ability:107:special_bonus_unique_earth_spirit_2",
-      "heroId": "107",
-      "engineId": "special_bonus_unique_earth_spirit_2",
-      "activationId": "activation:107:special_bonus_unique_earth_spirit_2",
-      "order": 12,
-      "owner": "npc_dota_hero_earth_spirit",
-      "state": "known"
-    },
-    {
-      "id": "ability:107:special_bonus_unique_earth_spirit",
-      "heroId": "107",
-      "engineId": "special_bonus_unique_earth_spirit",
-      "activationId": "activation:107:special_bonus_unique_earth_spirit",
-      "order": 13,
-      "owner": "npc_dota_hero_earth_spirit",
-      "state": "known"
-    },
-    {
-      "id": "ability:107:special_bonus_attributes",
-      "heroId": "107",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:107:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_earth_spirit",
-      "state": "known"
-    },
-    {
-      "id": "ability:107:special_bonus_unique_earth_spirit_3",
-      "heroId": "107",
-      "engineId": "special_bonus_unique_earth_spirit_3",
-      "activationId": "activation:107:special_bonus_unique_earth_spirit_3",
-      "order": 15,
-      "owner": "npc_dota_hero_earth_spirit",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 100,
+      "cooldown": [
+        100,
+        90,
+        80
+      ],
+      "tags": [
+        "bkb_pierce",
+        "damage_over_time"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:107:earth_spirit_boulder_smash",
-      "heroId": "107",
-      "abilityIds": [
-        "ability:107:earth_spirit_boulder_smash"
+      "id": "special_bonus_unique_earth_spirit_7",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:107:earth_spirit_boulder_smash:manaCost",
-        "ownerId": "activation:107:earth_spirit_boulder_smash",
-        "field": "manaCost",
-        "state": "known",
-        "value": 100
-      },
-      "cooldown": {
-        "id": "value:activation:107:earth_spirit_boulder_smash:cooldown",
-        "ownerId": "activation:107:earth_spirit_boulder_smash",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "20.0 17.0 14.0 11.0",
-          "special_bonus_unique_earth_spirit_7": "-2.0"
-        }
-      },
-      "charges": {
-        "id": "value:activation:107:earth_spirit_boulder_smash:charges",
-        "ownerId": "activation:107:earth_spirit_boulder_smash",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:107:earth_spirit_boulder_smash:manaCost",
-        "value:activation:107:earth_spirit_boulder_smash:cooldown",
-        "value:activation:107:earth_spirit_boulder_smash:charges"
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:107:earth_spirit_rolling_boulder",
-      "heroId": "107",
-      "abilityIds": [
-        "ability:107:earth_spirit_rolling_boulder"
+      "id": "special_bonus_unique_earth_spirit_4",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:107:earth_spirit_rolling_boulder:manaCost",
-        "ownerId": "activation:107:earth_spirit_rolling_boulder",
-        "field": "manaCost",
-        "state": "known",
-        "value": 50
-      },
-      "cooldown": {
-        "id": "value:activation:107:earth_spirit_rolling_boulder:cooldown",
-        "ownerId": "activation:107:earth_spirit_rolling_boulder",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          16,
-          12,
-          8,
-          4
-        ]
-      },
-      "charges": {
-        "id": "value:activation:107:earth_spirit_rolling_boulder:charges",
-        "ownerId": "activation:107:earth_spirit_rolling_boulder",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:107:earth_spirit_rolling_boulder:manaCost",
-        "value:activation:107:earth_spirit_rolling_boulder:cooldown",
-        "value:activation:107:earth_spirit_rolling_boulder:charges"
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_earth_spirit_rolling_boulder_stun",
+      "tags": [
+        "duration_extension",
+        "stun"
       ]
     },
     {
-      "id": "activation:107:earth_spirit_geomagnetic_grip",
-      "heroId": "107",
-      "abilityIds": [
-        "ability:107:earth_spirit_geomagnetic_grip"
+      "id": "special_bonus_unique_earth_spirit_6",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:107:earth_spirit_geomagnetic_grip:manaCost",
-        "ownerId": "activation:107:earth_spirit_geomagnetic_grip",
-        "field": "manaCost",
-        "state": "known",
-        "value": 75
-      },
-      "cooldown": {
-        "id": "value:activation:107:earth_spirit_geomagnetic_grip:cooldown",
-        "ownerId": "activation:107:earth_spirit_geomagnetic_grip",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "13",
-          "special_bonus_shard": "-3"
-        }
-      },
-      "charges": {
-        "id": "value:activation:107:earth_spirit_geomagnetic_grip:charges",
-        "ownerId": "activation:107:earth_spirit_geomagnetic_grip",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:107:earth_spirit_geomagnetic_grip:manaCost",
-        "value:activation:107:earth_spirit_geomagnetic_grip:cooldown",
-        "value:activation:107:earth_spirit_geomagnetic_grip:charges"
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_earth_spirit_8",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:107:earth_spirit_stone_caller",
-      "heroId": "107",
-      "abilityIds": [
-        "ability:107:earth_spirit_stone_caller"
+      "id": "special_bonus_unique_earth_spirit_5",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:107:earth_spirit_stone_caller:manaCost",
-        "ownerId": "activation:107:earth_spirit_stone_caller",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:107:earth_spirit_stone_caller:cooldown",
-        "ownerId": "activation:107:earth_spirit_stone_caller",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0.0"
-        }
-      },
-      "charges": {
-        "id": "value:activation:107:earth_spirit_stone_caller:charges",
-        "ownerId": "activation:107:earth_spirit_stone_caller",
-        "field": "charges",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "7",
-          "hero_levelup": "+1",
-          "levelup_interval": "5"
-        }
-      },
-      "valueIds": [
-        "value:activation:107:earth_spirit_stone_caller:manaCost",
-        "value:activation:107:earth_spirit_stone_caller:cooldown",
-        "value:activation:107:earth_spirit_stone_caller:charges"
-      ]
+      "tags": []
     },
     {
-      "id": "activation:107:earth_spirit_petrify",
-      "heroId": "107",
-      "abilityIds": [
-        "ability:107:earth_spirit_petrify"
+      "id": "special_bonus_unique_earth_spirit_2",
+      "Name": "Earth Spirit Magnetizes himself",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:107:earth_spirit_petrify:manaCost",
-        "ownerId": "activation:107:earth_spirit_petrify",
-        "field": "manaCost",
-        "state": "known",
-        "value": 150
-      },
-      "cooldown": {
-        "id": "value:activation:107:earth_spirit_petrify:cooldown",
-        "ownerId": "activation:107:earth_spirit_petrify",
-        "field": "cooldown",
-        "state": "known",
-        "value": 45
-      },
-      "charges": {
-        "id": "value:activation:107:earth_spirit_petrify:charges",
-        "ownerId": "activation:107:earth_spirit_petrify",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:107:earth_spirit_petrify:manaCost",
-        "value:activation:107:earth_spirit_petrify:cooldown",
-        "value:activation:107:earth_spirit_petrify:charges"
-      ]
+      "tags": []
     },
     {
-      "id": "activation:107:earth_spirit_magnetize",
-      "heroId": "107",
-      "abilityIds": [
-        "ability:107:earth_spirit_magnetize"
+      "id": "special_bonus_unique_earth_spirit",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:107:earth_spirit_magnetize:manaCost",
-        "ownerId": "activation:107:earth_spirit_magnetize",
-        "field": "manaCost",
-        "state": "known",
-        "value": 100
-      },
-      "cooldown": {
-        "id": "value:activation:107:earth_spirit_magnetize:cooldown",
-        "ownerId": "activation:107:earth_spirit_magnetize",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          100,
-          90,
-          80
-        ]
-      },
-      "charges": {
-        "id": "value:activation:107:earth_spirit_magnetize:charges",
-        "ownerId": "activation:107:earth_spirit_magnetize",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:107:earth_spirit_magnetize:manaCost",
-        "value:activation:107:earth_spirit_magnetize:cooldown",
-        "value:activation:107:earth_spirit_magnetize:charges"
-      ]
+      "tags": []
     },
     {
-      "id": "activation:107:special_bonus_unique_earth_spirit_7",
-      "heroId": "107",
-      "abilityIds": [
-        "ability:107:special_bonus_unique_earth_spirit_7"
+      "id": "special_bonus_unique_earth_spirit_3",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_7:manaCost",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_7:cooldown",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_7:charges",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:107:special_bonus_unique_earth_spirit_7:manaCost",
-        "value:activation:107:special_bonus_unique_earth_spirit_7:cooldown",
-        "value:activation:107:special_bonus_unique_earth_spirit_7:charges"
-      ]
-    },
-    {
-      "id": "activation:107:special_bonus_unique_earth_spirit_4",
-      "heroId": "107",
-      "abilityIds": [
-        "ability:107:special_bonus_unique_earth_spirit_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_4:manaCost",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_4:cooldown",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_4:charges",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:107:special_bonus_unique_earth_spirit_4:manaCost",
-        "value:activation:107:special_bonus_unique_earth_spirit_4:cooldown",
-        "value:activation:107:special_bonus_unique_earth_spirit_4:charges"
-      ]
-    },
-    {
-      "id": "activation:107:special_bonus_unique_earth_spirit_rolling_boulder_stun",
-      "heroId": "107",
-      "abilityIds": [
-        "ability:107:special_bonus_unique_earth_spirit_rolling_boulder_stun"
-      ],
-      "manaCost": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_rolling_boulder_stun:manaCost",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_rolling_boulder_stun",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_rolling_boulder_stun:cooldown",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_rolling_boulder_stun",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_rolling_boulder_stun:charges",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_rolling_boulder_stun",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:107:special_bonus_unique_earth_spirit_rolling_boulder_stun:manaCost",
-        "value:activation:107:special_bonus_unique_earth_spirit_rolling_boulder_stun:cooldown",
-        "value:activation:107:special_bonus_unique_earth_spirit_rolling_boulder_stun:charges"
-      ]
-    },
-    {
-      "id": "activation:107:special_bonus_unique_earth_spirit_6",
-      "heroId": "107",
-      "abilityIds": [
-        "ability:107:special_bonus_unique_earth_spirit_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_6:manaCost",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_6:cooldown",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_6:charges",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:107:special_bonus_unique_earth_spirit_6:manaCost",
-        "value:activation:107:special_bonus_unique_earth_spirit_6:cooldown",
-        "value:activation:107:special_bonus_unique_earth_spirit_6:charges"
-      ]
-    },
-    {
-      "id": "activation:107:special_bonus_unique_earth_spirit_8",
-      "heroId": "107",
-      "abilityIds": [
-        "ability:107:special_bonus_unique_earth_spirit_8"
-      ],
-      "manaCost": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_8:manaCost",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_8:cooldown",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_8:charges",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:107:special_bonus_unique_earth_spirit_8:manaCost",
-        "value:activation:107:special_bonus_unique_earth_spirit_8:cooldown",
-        "value:activation:107:special_bonus_unique_earth_spirit_8:charges"
-      ]
-    },
-    {
-      "id": "activation:107:special_bonus_unique_earth_spirit_5",
-      "heroId": "107",
-      "abilityIds": [
-        "ability:107:special_bonus_unique_earth_spirit_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_5:manaCost",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_5:cooldown",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_5:charges",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:107:special_bonus_unique_earth_spirit_5:manaCost",
-        "value:activation:107:special_bonus_unique_earth_spirit_5:cooldown",
-        "value:activation:107:special_bonus_unique_earth_spirit_5:charges"
-      ]
-    },
-    {
-      "id": "activation:107:special_bonus_unique_earth_spirit_2",
-      "heroId": "107",
-      "abilityIds": [
-        "ability:107:special_bonus_unique_earth_spirit_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_2:manaCost",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_2:cooldown",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_2:charges",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:107:special_bonus_unique_earth_spirit_2:manaCost",
-        "value:activation:107:special_bonus_unique_earth_spirit_2:cooldown",
-        "value:activation:107:special_bonus_unique_earth_spirit_2:charges"
-      ]
-    },
-    {
-      "id": "activation:107:special_bonus_unique_earth_spirit",
-      "heroId": "107",
-      "abilityIds": [
-        "ability:107:special_bonus_unique_earth_spirit"
-      ],
-      "manaCost": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit:manaCost",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit:cooldown",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit:charges",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:107:special_bonus_unique_earth_spirit:manaCost",
-        "value:activation:107:special_bonus_unique_earth_spirit:cooldown",
-        "value:activation:107:special_bonus_unique_earth_spirit:charges"
-      ]
-    },
-    {
-      "id": "activation:107:special_bonus_attributes",
-      "heroId": "107",
-      "abilityIds": [
-        "ability:107:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:107:special_bonus_attributes:manaCost",
-        "ownerId": "activation:107:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:107:special_bonus_attributes:cooldown",
-        "ownerId": "activation:107:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:107:special_bonus_attributes:charges",
-        "ownerId": "activation:107:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:107:special_bonus_attributes:manaCost",
-        "value:activation:107:special_bonus_attributes:cooldown",
-        "value:activation:107:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:107:special_bonus_unique_earth_spirit_3",
-      "heroId": "107",
-      "abilityIds": [
-        "ability:107:special_bonus_unique_earth_spirit_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_3:manaCost",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_3:cooldown",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:107:special_bonus_unique_earth_spirit_3:charges",
-        "ownerId": "activation:107:special_bonus_unique_earth_spirit_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:107:special_bonus_unique_earth_spirit_3:manaCost",
-        "value:activation:107:special_bonus_unique_earth_spirit_3:cooldown",
-        "value:activation:107:special_bonus_unique_earth_spirit_3:charges"
-      ]
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

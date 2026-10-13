@@ -1,759 +1,211 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "rattletrap_armor_power",
+    "Name": "Armor Power",
+    "behavior": [
+      "passive"
+    ],
+    "breakable": true,
+    "tags": [
+      "buff",
+      "earned_permanent_growth",
+      "self_armor"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:51:rattletrap_battery_assault",
-      "heroId": "51",
-      "engineId": "rattletrap_battery_assault",
-      "activationId": "activation:51:rattletrap_battery_assault",
+      "id": "rattletrap_battery_assault",
+      "Name": "Battery Assault",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        75,
+        80,
+        85,
+        90
+      ],
+      "cooldown": [
+        24,
+        22,
+        20,
+        18
+      ],
+      "tags": []
     },
     {
-      "id": "ability:51:rattletrap_power_cogs",
-      "heroId": "51",
-      "engineId": "rattletrap_power_cogs",
-      "activationId": "activation:51:rattletrap_power_cogs",
+      "id": "rattletrap_power_cogs",
+      "Name": "Power Cogs",
+      "behavior": [
+        "no-target"
+      ],
+      "piercesDebuffImmunity": "yes",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 90,
+      "tags": [
+        "bkb_pierce",
+        "enemy_displacement"
+      ]
     },
     {
-      "id": "ability:51:rattletrap_rocket_flare",
-      "heroId": "51",
-      "engineId": "rattletrap_rocket_flare",
-      "activationId": "activation:51:rattletrap_rocket_flare",
+      "id": "rattletrap_rocket_flare",
+      "Name": "Rocket Flare",
+      "behavior": [
+        "point-target"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 2,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        35,
+        40,
+        45,
+        50
+      ],
+      "tags": [
+        "aoe",
+        "damage_over_time",
+        "global_delivery",
+        "slow",
+        "vision"
+      ]
     },
     {
-      "id": "ability:51:rattletrap_overclocking",
-      "heroId": "51",
-      "engineId": "rattletrap_overclocking",
-      "activationId": "activation:51:rattletrap_overclocking",
+      "id": "rattletrap_overclocking",
+      "Name": "Overclocking",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "yes",
       "order": 3,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 90,
+      "cooldown": 50,
+      "tags": [
+        "buff",
+        "self_armor"
+      ]
     },
     {
-      "id": "ability:51:rattletrap_jetpack",
-      "heroId": "51",
-      "engineId": "rattletrap_jetpack",
-      "activationId": "activation:51:rattletrap_jetpack",
+      "id": "rattletrap_jetpack",
+      "Name": "Jetpack",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
       "order": 4,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 75,
+      "cooldown": 16,
+      "tags": [
+        "buff",
+        "escape",
+        "mobility",
+        "self_movement_speed"
+      ]
     },
     {
-      "id": "ability:51:rattletrap_hookshot",
-      "heroId": "51",
-      "engineId": "rattletrap_hookshot",
-      "activationId": "activation:51:rattletrap_hookshot",
+      "id": "rattletrap_hookshot",
+      "Name": "Hookshot",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "strong-only",
+      "dispelType": "strong",
+      "piercesDebuffImmunity": "yes",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        100,
+        125,
+        150
+      ],
+      "tags": [
+        "bkb_pierce",
+        "escape",
+        "mobility"
+      ]
     },
     {
-      "id": "ability:51:rattletrap_armor_power",
-      "heroId": "51",
-      "engineId": "rattletrap_armor_power",
-      "activationId": "activation:51:rattletrap_armor_power",
-      "order": 6,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "known"
-    },
-    {
-      "id": "ability:51:rattletrap_jetpack_toggle",
-      "heroId": "51",
-      "engineId": "rattletrap_jetpack_toggle",
-      "activationId": "activation:51:rattletrap_jetpack_toggle",
+      "id": "rattletrap_jetpack_toggle",
+      "Name": "Jetpack Toggle",
+      "behavior": [
+        "no-target",
+        "toggle"
+      ],
       "order": 7,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "known"
-    },
-    {
-      "id": "ability:51:special_bonus_mp_regen_150",
-      "heroId": "51",
-      "engineId": "special_bonus_mp_regen_150",
-      "activationId": "activation:51:special_bonus_mp_regen_150",
-      "order": 8,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "known"
-    },
-    {
-      "id": "ability:51:special_bonus_unique_clockwerk_hookshot_damage",
-      "heroId": "51",
-      "engineId": "special_bonus_unique_clockwerk_hookshot_damage",
-      "activationId": "activation:51:special_bonus_unique_clockwerk_hookshot_damage",
-      "order": 9,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:51:special_bonus_unique_clockwerk_5",
-      "heroId": "51",
-      "engineId": "special_bonus_unique_clockwerk_5",
-      "activationId": "activation:51:special_bonus_unique_clockwerk_5",
-      "order": 10,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:51:special_bonus_unique_clockwerk_3",
-      "heroId": "51",
-      "engineId": "special_bonus_unique_clockwerk_3",
-      "activationId": "activation:51:special_bonus_unique_clockwerk_3",
-      "order": 11,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:51:special_bonus_unique_clockwerk_4",
-      "heroId": "51",
-      "engineId": "special_bonus_unique_clockwerk_4",
-      "activationId": "activation:51:special_bonus_unique_clockwerk_4",
-      "order": 12,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:51:special_bonus_unique_clockwerk_2",
-      "heroId": "51",
-      "engineId": "special_bonus_unique_clockwerk_2",
-      "activationId": "activation:51:special_bonus_unique_clockwerk_2",
-      "order": 13,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:51:special_bonus_unique_clockwerk_rocket_flare_charges",
-      "heroId": "51",
-      "engineId": "special_bonus_unique_clockwerk_rocket_flare_charges",
-      "activationId": "activation:51:special_bonus_unique_clockwerk_rocket_flare_charges",
-      "order": 14,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:51:special_bonus_unique_clockwerk",
-      "heroId": "51",
-      "engineId": "special_bonus_unique_clockwerk",
-      "activationId": "activation:51:special_bonus_unique_clockwerk",
-      "order": 15,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:51:special_bonus_attributes",
-      "heroId": "51",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:51:special_bonus_attributes",
-      "order": 16,
-      "owner": "npc_dota_hero_rattletrap",
-      "state": "known"
+      "type": "toggle",
+      "cooldown": 1,
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:51:rattletrap_battery_assault",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:rattletrap_battery_assault"
+      "id": "special_bonus_mp_regen_150",
+      "Name": "+1.5 Mana Regen",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:51:rattletrap_battery_assault:manaCost",
-        "ownerId": "activation:51:rattletrap_battery_assault",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          75,
-          80,
-          85,
-          90
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:51:rattletrap_battery_assault:cooldown",
-        "ownerId": "activation:51:rattletrap_battery_assault",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          24,
-          22,
-          20,
-          18
-        ]
-      },
-      "charges": {
-        "id": "value:activation:51:rattletrap_battery_assault:charges",
-        "ownerId": "activation:51:rattletrap_battery_assault",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:51:rattletrap_battery_assault:manaCost",
-        "value:activation:51:rattletrap_battery_assault:cooldown",
-        "value:activation:51:rattletrap_battery_assault:charges"
+      "tags": [
+        "buff",
+        "self_mana_regen"
       ]
     },
     {
-      "id": "activation:51:rattletrap_power_cogs",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:rattletrap_power_cogs"
-      ],
-      "manaCost": {
-        "id": "value:activation:51:rattletrap_power_cogs:manaCost",
-        "ownerId": "activation:51:rattletrap_power_cogs",
-        "field": "manaCost",
-        "state": "known",
-        "value": 90
-      },
-      "cooldown": {
-        "id": "value:activation:51:rattletrap_power_cogs:cooldown",
-        "ownerId": "activation:51:rattletrap_power_cogs",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "21 19 17 15",
-          "special_bonus_unique_clockwerk_9": "-2"
-        }
-      },
-      "charges": {
-        "id": "value:activation:51:rattletrap_power_cogs:charges",
-        "ownerId": "activation:51:rattletrap_power_cogs",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:51:rattletrap_power_cogs:manaCost",
-        "value:activation:51:rattletrap_power_cogs:cooldown",
-        "value:activation:51:rattletrap_power_cogs:charges"
+      "id": "special_bonus_unique_clockwerk_hookshot_damage",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:51:rattletrap_rocket_flare",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:rattletrap_rocket_flare"
-      ],
-      "manaCost": {
-        "id": "value:activation:51:rattletrap_rocket_flare:manaCost",
-        "ownerId": "activation:51:rattletrap_rocket_flare",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          35,
-          40,
-          45,
-          50
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:51:rattletrap_rocket_flare:cooldown",
-        "ownerId": "activation:51:rattletrap_rocket_flare",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "20.0 18.0 16.0 14.0"
-        }
-      },
-      "charges": {
-        "id": "value:activation:51:rattletrap_rocket_flare:charges",
-        "ownerId": "activation:51:rattletrap_rocket_flare",
-        "field": "charges",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0",
-          "special_bonus_unique_clockwerk_rocket_flare_charges": "+3"
-        }
-      },
-      "valueIds": [
-        "value:activation:51:rattletrap_rocket_flare:manaCost",
-        "value:activation:51:rattletrap_rocket_flare:cooldown",
-        "value:activation:51:rattletrap_rocket_flare:charges"
+      "id": "special_bonus_unique_clockwerk_5",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:51:rattletrap_overclocking",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:rattletrap_overclocking"
-      ],
-      "manaCost": {
-        "id": "value:activation:51:rattletrap_overclocking:manaCost",
-        "ownerId": "activation:51:rattletrap_overclocking",
-        "field": "manaCost",
-        "state": "known",
-        "value": 90
-      },
-      "cooldown": {
-        "id": "value:activation:51:rattletrap_overclocking:cooldown",
-        "ownerId": "activation:51:rattletrap_overclocking",
-        "field": "cooldown",
-        "state": "known",
-        "value": 50
-      },
-      "charges": {
-        "id": "value:activation:51:rattletrap_overclocking:charges",
-        "ownerId": "activation:51:rattletrap_overclocking",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:51:rattletrap_overclocking:manaCost",
-        "value:activation:51:rattletrap_overclocking:cooldown",
-        "value:activation:51:rattletrap_overclocking:charges"
+      "id": "special_bonus_unique_clockwerk_3",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:51:rattletrap_jetpack",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:rattletrap_jetpack"
-      ],
-      "manaCost": {
-        "id": "value:activation:51:rattletrap_jetpack:manaCost",
-        "ownerId": "activation:51:rattletrap_jetpack",
-        "field": "manaCost",
-        "state": "known",
-        "value": 75
-      },
-      "cooldown": {
-        "id": "value:activation:51:rattletrap_jetpack:cooldown",
-        "ownerId": "activation:51:rattletrap_jetpack",
-        "field": "cooldown",
-        "state": "known",
-        "value": 16
-      },
-      "charges": {
-        "id": "value:activation:51:rattletrap_jetpack:charges",
-        "ownerId": "activation:51:rattletrap_jetpack",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:51:rattletrap_jetpack:manaCost",
-        "value:activation:51:rattletrap_jetpack:cooldown",
-        "value:activation:51:rattletrap_jetpack:charges"
-      ]
+      "id": "special_bonus_unique_clockwerk_4",
+      "Name": "Rocket Flare True Sight",
+      "tags": []
     },
     {
-      "id": "activation:51:rattletrap_hookshot",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:rattletrap_hookshot"
-      ],
-      "manaCost": {
-        "id": "value:activation:51:rattletrap_hookshot:manaCost",
-        "ownerId": "activation:51:rattletrap_hookshot",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          100,
-          125,
-          150
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:51:rattletrap_hookshot:cooldown",
-        "ownerId": "activation:51:rattletrap_hookshot",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "60.0 45.0 30.0",
-          "special_bonus_unique_clockwerk_5": "-8"
-        }
-      },
-      "charges": {
-        "id": "value:activation:51:rattletrap_hookshot:charges",
-        "ownerId": "activation:51:rattletrap_hookshot",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:51:rattletrap_hookshot:manaCost",
-        "value:activation:51:rattletrap_hookshot:cooldown",
-        "value:activation:51:rattletrap_hookshot:charges"
-      ]
+      "id": "special_bonus_unique_clockwerk_2",
+      "tags": []
     },
     {
-      "id": "activation:51:rattletrap_armor_power",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:rattletrap_armor_power"
-      ],
-      "manaCost": {
-        "id": "value:activation:51:rattletrap_armor_power:manaCost",
-        "ownerId": "activation:51:rattletrap_armor_power",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:51:rattletrap_armor_power:cooldown",
-        "ownerId": "activation:51:rattletrap_armor_power",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:51:rattletrap_armor_power:charges",
-        "ownerId": "activation:51:rattletrap_armor_power",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:51:rattletrap_armor_power:manaCost",
-        "value:activation:51:rattletrap_armor_power:cooldown",
-        "value:activation:51:rattletrap_armor_power:charges"
-      ]
+      "id": "special_bonus_unique_clockwerk_rocket_flare_charges",
+      "tags": []
     },
     {
-      "id": "activation:51:rattletrap_jetpack_toggle",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:rattletrap_jetpack_toggle"
-      ],
-      "manaCost": {
-        "id": "value:activation:51:rattletrap_jetpack_toggle:manaCost",
-        "ownerId": "activation:51:rattletrap_jetpack_toggle",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:51:rattletrap_jetpack_toggle:cooldown",
-        "ownerId": "activation:51:rattletrap_jetpack_toggle",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          1,
-          1,
-          1
-        ]
-      },
-      "charges": {
-        "id": "value:activation:51:rattletrap_jetpack_toggle:charges",
-        "ownerId": "activation:51:rattletrap_jetpack_toggle",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:51:rattletrap_jetpack_toggle:manaCost",
-        "value:activation:51:rattletrap_jetpack_toggle:cooldown",
-        "value:activation:51:rattletrap_jetpack_toggle:charges"
-      ]
-    },
-    {
-      "id": "activation:51:special_bonus_mp_regen_150",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:special_bonus_mp_regen_150"
-      ],
-      "manaCost": {
-        "id": "value:activation:51:special_bonus_mp_regen_150:manaCost",
-        "ownerId": "activation:51:special_bonus_mp_regen_150",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:51:special_bonus_mp_regen_150:cooldown",
-        "ownerId": "activation:51:special_bonus_mp_regen_150",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:51:special_bonus_mp_regen_150:charges",
-        "ownerId": "activation:51:special_bonus_mp_regen_150",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:51:special_bonus_mp_regen_150:manaCost",
-        "value:activation:51:special_bonus_mp_regen_150:cooldown",
-        "value:activation:51:special_bonus_mp_regen_150:charges"
-      ]
-    },
-    {
-      "id": "activation:51:special_bonus_unique_clockwerk_hookshot_damage",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:special_bonus_unique_clockwerk_hookshot_damage"
-      ],
-      "manaCost": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_hookshot_damage:manaCost",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_hookshot_damage",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_hookshot_damage:cooldown",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_hookshot_damage",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_hookshot_damage:charges",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_hookshot_damage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:51:special_bonus_unique_clockwerk_hookshot_damage:manaCost",
-        "value:activation:51:special_bonus_unique_clockwerk_hookshot_damage:cooldown",
-        "value:activation:51:special_bonus_unique_clockwerk_hookshot_damage:charges"
-      ]
-    },
-    {
-      "id": "activation:51:special_bonus_unique_clockwerk_5",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:special_bonus_unique_clockwerk_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_5:manaCost",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_5:cooldown",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_5:charges",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:51:special_bonus_unique_clockwerk_5:manaCost",
-        "value:activation:51:special_bonus_unique_clockwerk_5:cooldown",
-        "value:activation:51:special_bonus_unique_clockwerk_5:charges"
-      ]
-    },
-    {
-      "id": "activation:51:special_bonus_unique_clockwerk_3",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:special_bonus_unique_clockwerk_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_3:manaCost",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_3:cooldown",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_3:charges",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:51:special_bonus_unique_clockwerk_3:manaCost",
-        "value:activation:51:special_bonus_unique_clockwerk_3:cooldown",
-        "value:activation:51:special_bonus_unique_clockwerk_3:charges"
-      ]
-    },
-    {
-      "id": "activation:51:special_bonus_unique_clockwerk_4",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:special_bonus_unique_clockwerk_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_4:manaCost",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_4:cooldown",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_4:charges",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:51:special_bonus_unique_clockwerk_4:manaCost",
-        "value:activation:51:special_bonus_unique_clockwerk_4:cooldown",
-        "value:activation:51:special_bonus_unique_clockwerk_4:charges"
-      ]
-    },
-    {
-      "id": "activation:51:special_bonus_unique_clockwerk_2",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:special_bonus_unique_clockwerk_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_2:manaCost",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_2:cooldown",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_2:charges",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:51:special_bonus_unique_clockwerk_2:manaCost",
-        "value:activation:51:special_bonus_unique_clockwerk_2:cooldown",
-        "value:activation:51:special_bonus_unique_clockwerk_2:charges"
-      ]
-    },
-    {
-      "id": "activation:51:special_bonus_unique_clockwerk_rocket_flare_charges",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:special_bonus_unique_clockwerk_rocket_flare_charges"
-      ],
-      "manaCost": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_rocket_flare_charges:manaCost",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_rocket_flare_charges",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_rocket_flare_charges:cooldown",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_rocket_flare_charges",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk_rocket_flare_charges:charges",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk_rocket_flare_charges",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:51:special_bonus_unique_clockwerk_rocket_flare_charges:manaCost",
-        "value:activation:51:special_bonus_unique_clockwerk_rocket_flare_charges:cooldown",
-        "value:activation:51:special_bonus_unique_clockwerk_rocket_flare_charges:charges"
-      ]
-    },
-    {
-      "id": "activation:51:special_bonus_unique_clockwerk",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:special_bonus_unique_clockwerk"
-      ],
-      "manaCost": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk:manaCost",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk:cooldown",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:51:special_bonus_unique_clockwerk:charges",
-        "ownerId": "activation:51:special_bonus_unique_clockwerk",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:51:special_bonus_unique_clockwerk:manaCost",
-        "value:activation:51:special_bonus_unique_clockwerk:cooldown",
-        "value:activation:51:special_bonus_unique_clockwerk:charges"
-      ]
-    },
-    {
-      "id": "activation:51:special_bonus_attributes",
-      "heroId": "51",
-      "abilityIds": [
-        "ability:51:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:51:special_bonus_attributes:manaCost",
-        "ownerId": "activation:51:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:51:special_bonus_attributes:cooldown",
-        "ownerId": "activation:51:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:51:special_bonus_attributes:charges",
-        "ownerId": "activation:51:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:51:special_bonus_attributes:manaCost",
-        "value:activation:51:special_bonus_attributes:cooldown",
-        "value:activation:51:special_bonus_attributes:charges"
-      ]
+      "id": "special_bonus_unique_clockwerk",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

@@ -1,705 +1,174 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "terrorblade_dark_unity",
+    "Name": "Dark Unity",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "buff",
+      "self_attack_damage"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:109:terrorblade_reflection",
-      "heroId": "109",
-      "engineId": "terrorblade_reflection",
-      "activationId": "activation:109:terrorblade_reflection",
+      "id": "terrorblade_reflection",
+      "Name": "Reflection",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
       "order": 0,
-      "owner": "npc_dota_hero_terrorblade",
-      "state": "known"
+      "type": "point",
+      "tags": [
+        "aoe",
+        "slow"
+      ]
     },
     {
-      "id": "ability:109:terrorblade_conjure_image",
-      "heroId": "109",
-      "engineId": "terrorblade_conjure_image",
-      "activationId": "activation:109:terrorblade_conjure_image",
+      "id": "terrorblade_conjure_image",
+      "Name": "Conjure Image",
+      "behavior": [
+        "no-target"
+      ],
       "order": 1,
-      "owner": "npc_dota_hero_terrorblade",
-      "state": "known"
+      "type": "self-target",
+      "tags": [
+        "illusions"
+      ]
     },
     {
-      "id": "ability:109:terrorblade_metamorphosis",
-      "heroId": "109",
-      "engineId": "terrorblade_metamorphosis",
-      "activationId": "activation:109:terrorblade_metamorphosis",
+      "id": "terrorblade_metamorphosis",
+      "Name": "Metamorphosis",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
+      "damageType": "physical",
       "order": 2,
-      "owner": "npc_dota_hero_terrorblade",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 100,
+      "tags": [
+        "buff",
+        "self_attack_damage"
+      ]
     },
     {
-      "id": "ability:109:terrorblade_demon_zeal",
-      "heroId": "109",
-      "engineId": "terrorblade_demon_zeal",
-      "activationId": "activation:109:terrorblade_demon_zeal",
+      "id": "terrorblade_demon_zeal",
+      "Name": "Demon Zeal",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
       "order": 3,
-      "owner": "npc_dota_hero_terrorblade",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 0,
+      "cooldown": 45,
+      "tags": [
+        "buff",
+        "escape",
+        "health_regen",
+        "mobility",
+        "self_attack_speed",
+        "self_health_regen"
+      ]
     },
     {
-      "id": "ability:109:terrorblade_terror_wave",
-      "heroId": "109",
-      "engineId": "terrorblade_terror_wave",
-      "activationId": "activation:109:terrorblade_terror_wave",
+      "id": "terrorblade_terror_wave",
+      "Name": "Terror Wave",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "damageType": "magical",
       "order": 4,
-      "owner": "npc_dota_hero_terrorblade",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 75,
+      "cooldown": 90,
+      "tags": [
+        "disable",
+        "fear"
+      ]
     },
     {
-      "id": "ability:109:terrorblade_sunder",
-      "heroId": "109",
-      "engineId": "terrorblade_sunder",
-      "activationId": "activation:109:terrorblade_sunder",
+      "id": "terrorblade_sunder",
+      "Name": "Sunder",
+      "behavior": [
+        "unit-target"
+      ],
+      "piercesDebuffImmunity": "no",
       "order": 5,
-      "owner": "npc_dota_hero_terrorblade",
-      "state": "known"
-    },
-    {
-      "id": "ability:109:terrorblade_dark_unity",
-      "heroId": "109",
-      "engineId": "terrorblade_dark_unity",
-      "activationId": "activation:109:terrorblade_dark_unity",
-      "order": 6,
-      "owner": "npc_dota_hero_terrorblade",
-      "state": "known"
-    },
-    {
-      "id": "ability:109:special_bonus_unique_terrorblade_2",
-      "heroId": "109",
-      "engineId": "special_bonus_unique_terrorblade_2",
-      "activationId": "activation:109:special_bonus_unique_terrorblade_2",
-      "order": 7,
-      "owner": "npc_dota_hero_terrorblade",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:109:special_bonus_unique_terrorblade_4",
-      "heroId": "109",
-      "engineId": "special_bonus_unique_terrorblade_4",
-      "activationId": "activation:109:special_bonus_unique_terrorblade_4",
-      "order": 8,
-      "owner": "npc_dota_hero_terrorblade",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:109:special_bonus_unique_terrorblade_metamorphosis_cooldown",
-      "heroId": "109",
-      "engineId": "special_bonus_unique_terrorblade_metamorphosis_cooldown",
-      "activationId": "activation:109:special_bonus_unique_terrorblade_metamorphosis_cooldown",
-      "order": 9,
-      "owner": "npc_dota_hero_terrorblade",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:109:special_bonus_unique_terrorblade_sunder_hp_threshold",
-      "heroId": "109",
-      "engineId": "special_bonus_unique_terrorblade_sunder_hp_threshold",
-      "activationId": "activation:109:special_bonus_unique_terrorblade_sunder_hp_threshold",
-      "order": 10,
-      "owner": "npc_dota_hero_terrorblade",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:109:special_bonus_all_stats_10",
-      "heroId": "109",
-      "engineId": "special_bonus_all_stats_10",
-      "activationId": "activation:109:special_bonus_all_stats_10",
-      "order": 11,
-      "owner": "npc_dota_hero_terrorblade",
-      "state": "known"
-    },
-    {
-      "id": "ability:109:special_bonus_unique_terrorblade_5",
-      "heroId": "109",
-      "engineId": "special_bonus_unique_terrorblade_5",
-      "activationId": "activation:109:special_bonus_unique_terrorblade_5",
-      "order": 12,
-      "owner": "npc_dota_hero_terrorblade",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:109:special_bonus_unique_terrorblade",
-      "heroId": "109",
-      "engineId": "special_bonus_unique_terrorblade",
-      "activationId": "activation:109:special_bonus_unique_terrorblade",
-      "order": 13,
-      "owner": "npc_dota_hero_terrorblade",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:109:special_bonus_unique_terrorblade_3",
-      "heroId": "109",
-      "engineId": "special_bonus_unique_terrorblade_3",
-      "activationId": "activation:109:special_bonus_unique_terrorblade_3",
-      "order": 14,
-      "owner": "npc_dota_hero_terrorblade",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:109:special_bonus_attributes",
-      "heroId": "109",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:109:special_bonus_attributes",
-      "order": 15,
-      "owner": "npc_dota_hero_terrorblade",
-      "state": "known"
+      "type": "target",
+      "manaCost": [
+        100,
+        75,
+        50
+      ],
+      "tags": [
+        "health_exchange"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:109:terrorblade_reflection",
-      "heroId": "109",
-      "abilityIds": [
-        "ability:109:terrorblade_reflection"
-      ],
-      "manaCost": {
-        "id": "value:activation:109:terrorblade_reflection:manaCost",
-        "ownerId": "activation:109:terrorblade_reflection",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "60 65 70 75"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:109:terrorblade_reflection:cooldown",
-        "ownerId": "activation:109:terrorblade_reflection",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "23 20 17 14"
-        }
-      },
-      "charges": {
-        "id": "value:activation:109:terrorblade_reflection:charges",
-        "ownerId": "activation:109:terrorblade_reflection",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:109:terrorblade_reflection:manaCost",
-        "value:activation:109:terrorblade_reflection:cooldown",
-        "value:activation:109:terrorblade_reflection:charges"
+      "id": "special_bonus_unique_terrorblade_2",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_terrorblade_4",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:109:terrorblade_conjure_image",
-      "heroId": "109",
-      "abilityIds": [
-        "ability:109:terrorblade_conjure_image"
-      ],
-      "manaCost": {
-        "id": "value:activation:109:terrorblade_conjure_image:manaCost",
-        "ownerId": "activation:109:terrorblade_conjure_image",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "50 60 70 80",
-          "special_bonus_facet_terrorblade_soul_fragment": "-100%"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:109:terrorblade_conjure_image:cooldown",
-        "ownerId": "activation:109:terrorblade_conjure_image",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "16",
-          "special_bonus_unique_terrorblade_4": "-2"
-        }
-      },
-      "charges": {
-        "id": "value:activation:109:terrorblade_conjure_image:charges",
-        "ownerId": "activation:109:terrorblade_conjure_image",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:109:terrorblade_conjure_image:manaCost",
-        "value:activation:109:terrorblade_conjure_image:cooldown",
-        "value:activation:109:terrorblade_conjure_image:charges"
+      "id": "special_bonus_unique_terrorblade_metamorphosis_cooldown",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:109:terrorblade_metamorphosis",
-      "heroId": "109",
-      "abilityIds": [
-        "ability:109:terrorblade_metamorphosis"
+      "id": "special_bonus_unique_terrorblade_sunder_hp_threshold",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_all_stats_10",
+      "Name": "+10 All Attributes",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:109:terrorblade_metamorphosis:manaCost",
-        "ownerId": "activation:109:terrorblade_metamorphosis",
-        "field": "manaCost",
-        "state": "known",
-        "value": 100
-      },
-      "cooldown": {
-        "id": "value:activation:109:terrorblade_metamorphosis:cooldown",
-        "ownerId": "activation:109:terrorblade_metamorphosis",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "145 140 135 130",
-          "special_bonus_unique_terrorblade_metamorphosis_cooldown": "-10"
-        }
-      },
-      "charges": {
-        "id": "value:activation:109:terrorblade_metamorphosis:charges",
-        "ownerId": "activation:109:terrorblade_metamorphosis",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:109:terrorblade_metamorphosis:manaCost",
-        "value:activation:109:terrorblade_metamorphosis:cooldown",
-        "value:activation:109:terrorblade_metamorphosis:charges"
+      "tags": [
+        "attribute_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:109:terrorblade_demon_zeal",
-      "heroId": "109",
-      "abilityIds": [
-        "ability:109:terrorblade_demon_zeal"
-      ],
-      "manaCost": {
-        "id": "value:activation:109:terrorblade_demon_zeal:manaCost",
-        "ownerId": "activation:109:terrorblade_demon_zeal",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:109:terrorblade_demon_zeal:cooldown",
-        "ownerId": "activation:109:terrorblade_demon_zeal",
-        "field": "cooldown",
-        "state": "known",
-        "value": 45
-      },
-      "charges": {
-        "id": "value:activation:109:terrorblade_demon_zeal:charges",
-        "ownerId": "activation:109:terrorblade_demon_zeal",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:109:terrorblade_demon_zeal:manaCost",
-        "value:activation:109:terrorblade_demon_zeal:cooldown",
-        "value:activation:109:terrorblade_demon_zeal:charges"
+      "id": "special_bonus_unique_terrorblade_5",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_terrorblade",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:109:terrorblade_terror_wave",
-      "heroId": "109",
-      "abilityIds": [
-        "ability:109:terrorblade_terror_wave"
-      ],
-      "manaCost": {
-        "id": "value:activation:109:terrorblade_terror_wave:manaCost",
-        "ownerId": "activation:109:terrorblade_terror_wave",
-        "field": "manaCost",
-        "state": "known",
-        "value": 75
-      },
-      "cooldown": {
-        "id": "value:activation:109:terrorblade_terror_wave:cooldown",
-        "ownerId": "activation:109:terrorblade_terror_wave",
-        "field": "cooldown",
-        "state": "known",
-        "value": 90
-      },
-      "charges": {
-        "id": "value:activation:109:terrorblade_terror_wave:charges",
-        "ownerId": "activation:109:terrorblade_terror_wave",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:109:terrorblade_terror_wave:manaCost",
-        "value:activation:109:terrorblade_terror_wave:cooldown",
-        "value:activation:109:terrorblade_terror_wave:charges"
-      ]
-    },
-    {
-      "id": "activation:109:terrorblade_sunder",
-      "heroId": "109",
-      "abilityIds": [
-        "ability:109:terrorblade_sunder"
-      ],
-      "manaCost": {
-        "id": "value:activation:109:terrorblade_sunder:manaCost",
-        "ownerId": "activation:109:terrorblade_sunder",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          100,
-          75,
-          50
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:109:terrorblade_sunder:cooldown",
-        "ownerId": "activation:109:terrorblade_sunder",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "110.0 75.0 40.0",
-          "special_bonus_unique_terrorblade": "-30"
-        }
-      },
-      "charges": {
-        "id": "value:activation:109:terrorblade_sunder:charges",
-        "ownerId": "activation:109:terrorblade_sunder",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:109:terrorblade_sunder:manaCost",
-        "value:activation:109:terrorblade_sunder:cooldown",
-        "value:activation:109:terrorblade_sunder:charges"
-      ]
-    },
-    {
-      "id": "activation:109:terrorblade_dark_unity",
-      "heroId": "109",
-      "abilityIds": [
-        "ability:109:terrorblade_dark_unity"
-      ],
-      "manaCost": {
-        "id": "value:activation:109:terrorblade_dark_unity:manaCost",
-        "ownerId": "activation:109:terrorblade_dark_unity",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:109:terrorblade_dark_unity:cooldown",
-        "ownerId": "activation:109:terrorblade_dark_unity",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:109:terrorblade_dark_unity:charges",
-        "ownerId": "activation:109:terrorblade_dark_unity",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:109:terrorblade_dark_unity:manaCost",
-        "value:activation:109:terrorblade_dark_unity:cooldown",
-        "value:activation:109:terrorblade_dark_unity:charges"
-      ]
-    },
-    {
-      "id": "activation:109:special_bonus_unique_terrorblade_2",
-      "heroId": "109",
-      "abilityIds": [
-        "ability:109:special_bonus_unique_terrorblade_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_2:manaCost",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_2:cooldown",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_2:charges",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:109:special_bonus_unique_terrorblade_2:manaCost",
-        "value:activation:109:special_bonus_unique_terrorblade_2:cooldown",
-        "value:activation:109:special_bonus_unique_terrorblade_2:charges"
-      ]
-    },
-    {
-      "id": "activation:109:special_bonus_unique_terrorblade_4",
-      "heroId": "109",
-      "abilityIds": [
-        "ability:109:special_bonus_unique_terrorblade_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_4:manaCost",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_4:cooldown",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_4:charges",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:109:special_bonus_unique_terrorblade_4:manaCost",
-        "value:activation:109:special_bonus_unique_terrorblade_4:cooldown",
-        "value:activation:109:special_bonus_unique_terrorblade_4:charges"
-      ]
-    },
-    {
-      "id": "activation:109:special_bonus_unique_terrorblade_metamorphosis_cooldown",
-      "heroId": "109",
-      "abilityIds": [
-        "ability:109:special_bonus_unique_terrorblade_metamorphosis_cooldown"
-      ],
-      "manaCost": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_metamorphosis_cooldown:manaCost",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_metamorphosis_cooldown",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_metamorphosis_cooldown:cooldown",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_metamorphosis_cooldown",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_metamorphosis_cooldown:charges",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_metamorphosis_cooldown",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:109:special_bonus_unique_terrorblade_metamorphosis_cooldown:manaCost",
-        "value:activation:109:special_bonus_unique_terrorblade_metamorphosis_cooldown:cooldown",
-        "value:activation:109:special_bonus_unique_terrorblade_metamorphosis_cooldown:charges"
-      ]
-    },
-    {
-      "id": "activation:109:special_bonus_unique_terrorblade_sunder_hp_threshold",
-      "heroId": "109",
-      "abilityIds": [
-        "ability:109:special_bonus_unique_terrorblade_sunder_hp_threshold"
-      ],
-      "manaCost": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_sunder_hp_threshold:manaCost",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_sunder_hp_threshold",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_sunder_hp_threshold:cooldown",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_sunder_hp_threshold",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_sunder_hp_threshold:charges",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_sunder_hp_threshold",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:109:special_bonus_unique_terrorblade_sunder_hp_threshold:manaCost",
-        "value:activation:109:special_bonus_unique_terrorblade_sunder_hp_threshold:cooldown",
-        "value:activation:109:special_bonus_unique_terrorblade_sunder_hp_threshold:charges"
-      ]
-    },
-    {
-      "id": "activation:109:special_bonus_all_stats_10",
-      "heroId": "109",
-      "abilityIds": [
-        "ability:109:special_bonus_all_stats_10"
-      ],
-      "manaCost": {
-        "id": "value:activation:109:special_bonus_all_stats_10:manaCost",
-        "ownerId": "activation:109:special_bonus_all_stats_10",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:109:special_bonus_all_stats_10:cooldown",
-        "ownerId": "activation:109:special_bonus_all_stats_10",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:109:special_bonus_all_stats_10:charges",
-        "ownerId": "activation:109:special_bonus_all_stats_10",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:109:special_bonus_all_stats_10:manaCost",
-        "value:activation:109:special_bonus_all_stats_10:cooldown",
-        "value:activation:109:special_bonus_all_stats_10:charges"
-      ]
-    },
-    {
-      "id": "activation:109:special_bonus_unique_terrorblade_5",
-      "heroId": "109",
-      "abilityIds": [
-        "ability:109:special_bonus_unique_terrorblade_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_5:manaCost",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_5:cooldown",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_5:charges",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:109:special_bonus_unique_terrorblade_5:manaCost",
-        "value:activation:109:special_bonus_unique_terrorblade_5:cooldown",
-        "value:activation:109:special_bonus_unique_terrorblade_5:charges"
-      ]
-    },
-    {
-      "id": "activation:109:special_bonus_unique_terrorblade",
-      "heroId": "109",
-      "abilityIds": [
-        "ability:109:special_bonus_unique_terrorblade"
-      ],
-      "manaCost": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade:manaCost",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade:cooldown",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade:charges",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:109:special_bonus_unique_terrorblade:manaCost",
-        "value:activation:109:special_bonus_unique_terrorblade:cooldown",
-        "value:activation:109:special_bonus_unique_terrorblade:charges"
-      ]
-    },
-    {
-      "id": "activation:109:special_bonus_unique_terrorblade_3",
-      "heroId": "109",
-      "abilityIds": [
-        "ability:109:special_bonus_unique_terrorblade_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_3:manaCost",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_3:cooldown",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:109:special_bonus_unique_terrorblade_3:charges",
-        "ownerId": "activation:109:special_bonus_unique_terrorblade_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:109:special_bonus_unique_terrorblade_3:manaCost",
-        "value:activation:109:special_bonus_unique_terrorblade_3:cooldown",
-        "value:activation:109:special_bonus_unique_terrorblade_3:charges"
-      ]
-    },
-    {
-      "id": "activation:109:special_bonus_attributes",
-      "heroId": "109",
-      "abilityIds": [
-        "ability:109:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:109:special_bonus_attributes:manaCost",
-        "ownerId": "activation:109:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:109:special_bonus_attributes:cooldown",
-        "ownerId": "activation:109:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:109:special_bonus_attributes:charges",
-        "ownerId": "activation:109:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:109:special_bonus_attributes:manaCost",
-        "value:activation:109:special_bonus_attributes:cooldown",
-        "value:activation:109:special_bonus_attributes:charges"
+      "id": "special_bonus_unique_terrorblade_3",
+      "tags": [
+        "duration_extension"
       ]
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

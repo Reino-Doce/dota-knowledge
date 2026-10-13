@@ -1,7 +1,9 @@
 export const SCHEMA_VERSION = 2;
-export const COMPILER_VERSION = 'dota-knowledge-compiler-3';
+export const COMPILER_VERSION = 'dota-knowledge-compiler-5';
 export const ROLE_NAMES = ['carry', 'support', 'nuker', 'disabler', 'jungler', 'durable', 'escape', 'pusher', 'initiator'];
 export const isObject = value => value !== null && typeof value === 'object' && !Array.isArray(value);
+export const isHeroCapabilities = value => isObject(value) && Object.entries(value).every(([category, count]) =>
+    /^[a-z][a-z0-9_]{0,63}$/.test(category) && Number.isSafeInteger(count) && count > 0);
 export const normalizeAlias = value => value.trim().toLowerCase().replace(/\s+/g, ' ');
 export const safeKey = value => typeof value === 'string' && /^[a-z0-9]+(?:[_-][a-z0-9]+)*$/.test(value);
 export const safePath = value => typeof value === 'string' && value.length <= 240
@@ -26,6 +28,7 @@ export function validateProfile(row) {
         || ![null, 1, 2, 3].includes(row.complexity) || !Array.isArray(row.roles)
         || row.roles.some(role => !ROLE_NAMES.includes(role.role) || !Number.isInteger(role.level) || role.level < 0 || role.level > 3)
         || new Set(row.roles.map(role => role.role)).size !== row.roles.length
+        || Object.hasOwn(row, 'capabilities') && !isHeroCapabilities(row.capabilities)
         || !isObject(row.coverage?.fields) || !Array.isArray(row.abilityIds) || !Array.isArray(row.effectIds)) {
         throw new Error('Malformed hero profile: ' + row?.id);
     }

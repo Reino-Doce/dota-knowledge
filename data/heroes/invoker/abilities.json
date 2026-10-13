@@ -1,1579 +1,550 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": [
     {
-      "id": "ability:74:invoker_quas",
-      "heroId": "74",
-      "engineId": "invoker_quas",
-      "activationId": "activation:74:invoker_quas",
-      "order": 0,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
+      "id": "invoker_invoke",
+      "Name": "Invoke",
+      "behavior": [
+        "no-target"
+      ],
+      "type": "self-target",
+      "manaCost": 0,
+      "cooldown": 7,
+      "tags": [
+        "buff",
+        "cooldown_reduction",
+        "item_choice",
+        "skill_progression"
+      ]
     },
     {
-      "id": "ability:74:invoker_wex",
-      "heroId": "74",
-      "engineId": "invoker_wex",
-      "activationId": "activation:74:invoker_wex",
-      "order": 1,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_exort",
-      "heroId": "74",
-      "engineId": "invoker_exort",
-      "activationId": "activation:74:invoker_exort",
-      "order": 2,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_empty1",
-      "heroId": "74",
-      "engineId": "invoker_empty1",
-      "activationId": "activation:74:invoker_empty1",
-      "order": 3,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_empty2",
-      "heroId": "74",
-      "engineId": "invoker_empty2",
-      "activationId": "activation:74:invoker_empty2",
-      "order": 4,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_invoke",
-      "heroId": "74",
-      "engineId": "invoker_invoke",
-      "activationId": "activation:74:invoker_invoke",
-      "order": 5,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_cold_snap",
-      "heroId": "74",
-      "engineId": "invoker_cold_snap",
-      "activationId": "activation:74:invoker_cold_snap",
-      "order": 6,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_ghost_walk",
-      "heroId": "74",
-      "engineId": "invoker_ghost_walk",
-      "activationId": "activation:74:invoker_ghost_walk",
-      "order": 7,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_tornado",
-      "heroId": "74",
-      "engineId": "invoker_tornado",
-      "activationId": "activation:74:invoker_tornado",
-      "order": 8,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_emp",
-      "heroId": "74",
-      "engineId": "invoker_emp",
-      "activationId": "activation:74:invoker_emp",
-      "order": 9,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_alacrity",
-      "heroId": "74",
-      "engineId": "invoker_alacrity",
-      "activationId": "activation:74:invoker_alacrity",
-      "order": 10,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_chaos_meteor",
-      "heroId": "74",
-      "engineId": "invoker_chaos_meteor",
-      "activationId": "activation:74:invoker_chaos_meteor",
-      "order": 11,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_sun_strike",
-      "heroId": "74",
-      "engineId": "invoker_sun_strike",
-      "activationId": "activation:74:invoker_sun_strike",
-      "order": 12,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_forge_spirit",
-      "heroId": "74",
-      "engineId": "invoker_forge_spirit",
-      "activationId": "activation:74:invoker_forge_spirit",
-      "order": 13,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_ice_wall",
-      "heroId": "74",
-      "engineId": "invoker_ice_wall",
-      "activationId": "activation:74:invoker_ice_wall",
-      "order": 14,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_deafening_blast",
-      "heroId": "74",
-      "engineId": "invoker_deafening_blast",
-      "activationId": "activation:74:invoker_deafening_blast",
-      "order": 15,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:special_bonus_unique_invoker_ice_wall_dps",
-      "heroId": "74",
-      "engineId": "special_bonus_unique_invoker_ice_wall_dps",
-      "activationId": "activation:74:special_bonus_unique_invoker_ice_wall_dps",
-      "order": 16,
-      "owner": "npc_dota_hero_invoker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:74:special_bonus_unique_invoker_3",
-      "heroId": "74",
-      "engineId": "special_bonus_unique_invoker_3",
-      "activationId": "activation:74:special_bonus_unique_invoker_3",
-      "order": 17,
-      "owner": "npc_dota_hero_invoker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:74:special_bonus_unique_invoker_5",
-      "heroId": "74",
-      "engineId": "special_bonus_unique_invoker_5",
-      "activationId": "activation:74:special_bonus_unique_invoker_5",
-      "order": 18,
-      "owner": "npc_dota_hero_invoker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:74:special_bonus_unique_invoker_9",
-      "heroId": "74",
-      "engineId": "special_bonus_unique_invoker_9",
-      "activationId": "activation:74:special_bonus_unique_invoker_9",
-      "order": 19,
-      "owner": "npc_dota_hero_invoker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:74:special_bonus_unique_invoker_additional_chaos_meteors",
-      "heroId": "74",
-      "engineId": "special_bonus_unique_invoker_additional_chaos_meteors",
-      "activationId": "activation:74:special_bonus_unique_invoker_additional_chaos_meteors",
-      "order": 20,
-      "owner": "npc_dota_hero_invoker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:74:special_bonus_unique_invoker_forged_spirit_armor_reduction",
-      "heroId": "74",
-      "engineId": "special_bonus_unique_invoker_forged_spirit_armor_reduction",
-      "activationId": "activation:74:special_bonus_unique_invoker_forged_spirit_armor_reduction",
-      "order": 21,
-      "owner": "npc_dota_hero_invoker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:74:special_bonus_unique_invoker_2",
-      "heroId": "74",
-      "engineId": "special_bonus_unique_invoker_2",
-      "activationId": "activation:74:special_bonus_unique_invoker_2",
-      "order": 22,
-      "owner": "npc_dota_hero_invoker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:74:special_bonus_unique_invoker_13",
-      "heroId": "74",
-      "engineId": "special_bonus_unique_invoker_13",
-      "activationId": "activation:74:special_bonus_unique_invoker_13",
-      "order": 23,
-      "owner": "npc_dota_hero_invoker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:74:invoker_attribute_bonus",
-      "heroId": "74",
-      "engineId": "invoker_attribute_bonus",
-      "activationId": "activation:74:invoker_attribute_bonus",
-      "order": 24,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_cold_snap_ad",
-      "heroId": "74",
-      "engineId": "invoker_cold_snap_ad",
-      "activationId": "activation:74:invoker_cold_snap_ad",
-      "order": 25,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_ghost_walk_ad",
-      "heroId": "74",
-      "engineId": "invoker_ghost_walk_ad",
-      "activationId": "activation:74:invoker_ghost_walk_ad",
-      "order": 26,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_tornado_ad",
-      "heroId": "74",
-      "engineId": "invoker_tornado_ad",
-      "activationId": "activation:74:invoker_tornado_ad",
-      "order": 27,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_emp_ad",
-      "heroId": "74",
-      "engineId": "invoker_emp_ad",
-      "activationId": "activation:74:invoker_emp_ad",
-      "order": 28,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_alacrity_ad",
-      "heroId": "74",
-      "engineId": "invoker_alacrity_ad",
-      "activationId": "activation:74:invoker_alacrity_ad",
-      "order": 29,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_chaos_meteor_ad",
-      "heroId": "74",
-      "engineId": "invoker_chaos_meteor_ad",
-      "activationId": "activation:74:invoker_chaos_meteor_ad",
-      "order": 30,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_sun_strike_ad",
-      "heroId": "74",
-      "engineId": "invoker_sun_strike_ad",
-      "activationId": "activation:74:invoker_sun_strike_ad",
-      "order": 31,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_forge_spirit_ad",
-      "heroId": "74",
-      "engineId": "invoker_forge_spirit_ad",
-      "activationId": "activation:74:invoker_forge_spirit_ad",
-      "order": 32,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:forged_spirit_melting_strike",
-      "heroId": "74",
-      "engineId": "forged_spirit_melting_strike",
-      "activationId": "activation:74:forged_spirit_melting_strike",
-      "order": 33,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_ice_wall_ad",
-      "heroId": "74",
-      "engineId": "invoker_ice_wall_ad",
-      "activationId": "activation:74:invoker_ice_wall_ad",
-      "order": 34,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_deafening_blast_ad",
-      "heroId": "74",
-      "engineId": "invoker_deafening_blast_ad",
-      "activationId": "activation:74:invoker_deafening_blast_ad",
-      "order": 35,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
-    },
-    {
-      "id": "ability:74:invoker_mastermind",
-      "heroId": "74",
-      "engineId": "invoker_mastermind",
-      "activationId": "activation:74:invoker_mastermind",
-      "order": 36,
-      "owner": "npc_dota_hero_invoker",
-      "state": "known"
+      "id": "invoker_mastermind",
+      "Name": "Mastermind",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "experience_gain"
+      ]
     }
   ],
-  "activations": [
+  "skills": [
     {
-      "id": "activation:74:invoker_quas",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_quas"
+      "id": "invoker_quas",
+      "Name": "Quas",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_quas:manaCost",
-        "ownerId": "activation:74:invoker_quas",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_quas:cooldown",
-        "ownerId": "activation:74:invoker_quas",
-        "field": "cooldown",
-        "state": "known",
-        "value": 0
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_quas:charges",
-        "ownerId": "activation:74:invoker_quas",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_quas:manaCost",
-        "value:activation:74:invoker_quas:cooldown",
-        "value:activation:74:invoker_quas:charges"
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "order": 0,
+      "type": "self-target",
+      "manaCost": 0,
+      "cooldown": 0,
+      "tags": [
+        "attribute_bonus",
+        "buff",
+        "health_regen",
+        "self_health_regen"
       ]
     },
     {
-      "id": "activation:74:invoker_wex",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_wex"
+      "id": "invoker_wex",
+      "Name": "Wex",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_wex:manaCost",
-        "ownerId": "activation:74:invoker_wex",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_wex:cooldown",
-        "ownerId": "activation:74:invoker_wex",
-        "field": "cooldown",
-        "state": "known",
-        "value": 0
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_wex:charges",
-        "ownerId": "activation:74:invoker_wex",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_wex:manaCost",
-        "value:activation:74:invoker_wex:cooldown",
-        "value:activation:74:invoker_wex:charges"
+      "dispellable": "no",
+      "order": 1,
+      "type": "self-target",
+      "manaCost": 0,
+      "cooldown": 0,
+      "tags": [
+        "attribute_bonus",
+        "buff",
+        "self_attack_speed",
+        "self_movement_speed"
       ]
     },
     {
-      "id": "activation:74:invoker_exort",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_exort"
+      "id": "invoker_exort",
+      "Name": "Exort",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_exort:manaCost",
-        "ownerId": "activation:74:invoker_exort",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_exort:cooldown",
-        "ownerId": "activation:74:invoker_exort",
-        "field": "cooldown",
-        "state": "known",
-        "value": 0
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_exort:charges",
-        "ownerId": "activation:74:invoker_exort",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_exort:manaCost",
-        "value:activation:74:invoker_exort:cooldown",
-        "value:activation:74:invoker_exort:charges"
+      "dispellable": "no",
+      "order": 2,
+      "type": "self-target",
+      "manaCost": 0,
+      "cooldown": 0,
+      "tags": [
+        "attribute_bonus",
+        "buff",
+        "self_attack_damage"
       ]
     },
     {
-      "id": "activation:74:invoker_empty1",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_empty1"
+      "id": "invoker_empty1",
+      "Name": "Invoked Spell",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_empty1:manaCost",
-        "ownerId": "activation:74:invoker_empty1",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_empty1:cooldown",
-        "ownerId": "activation:74:invoker_empty1",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_empty1:charges",
-        "ownerId": "activation:74:invoker_empty1",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_empty1:manaCost",
-        "value:activation:74:invoker_empty1:cooldown",
-        "value:activation:74:invoker_empty1:charges"
+      "order": 3,
+      "type": "placeholder",
+      "tags": []
+    },
+    {
+      "id": "invoker_empty2",
+      "Name": "Invoked Spell",
+      "behavior": [
+        "passive"
+      ],
+      "order": 4,
+      "type": "placeholder",
+      "tags": []
+    },
+    {
+      "id": "invoker_cold_snap",
+      "Name": "Cold Snap",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "order": 6,
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": 100,
+      "tags": [
+        "disable",
+        "stun"
       ]
     },
     {
-      "id": "activation:74:invoker_empty2",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_empty2"
+      "id": "invoker_ghost_walk",
+      "Name": "Ghost Walk",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_empty2:manaCost",
-        "ownerId": "activation:74:invoker_empty2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_empty2:cooldown",
-        "ownerId": "activation:74:invoker_empty2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_empty2:charges",
-        "ownerId": "activation:74:invoker_empty2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_empty2:manaCost",
-        "value:activation:74:invoker_empty2:cooldown",
-        "value:activation:74:invoker_empty2:charges"
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "order": 7,
+      "type": "self-target",
+      "manaCost": 175,
+      "tags": [
+        "buff",
+        "escape",
+        "health_regen",
+        "invisibility",
+        "self_health_regen",
+        "self_mana_regen",
+        "slow"
       ]
     },
     {
-      "id": "activation:74:invoker_invoke",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_invoke"
+      "id": "invoker_tornado",
+      "Name": "Tornado",
+      "behavior": [
+        "point-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_invoke:manaCost",
-        "ownerId": "activation:74:invoker_invoke",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_invoke:cooldown",
-        "ownerId": "activation:74:invoker_invoke",
-        "field": "cooldown",
-        "state": "known",
-        "value": 7
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_invoke:charges",
-        "ownerId": "activation:74:invoker_invoke",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_invoke:manaCost",
-        "value:activation:74:invoker_invoke:cooldown",
-        "value:activation:74:invoker_invoke:charges"
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "order": 8,
+      "type": "point",
+      "manaCost": 140,
+      "tags": [
+        "cyclone",
+        "damage_over_time",
+        "disable",
+        "dispel"
       ]
     },
     {
-      "id": "activation:74:invoker_cold_snap",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_cold_snap"
+      "id": "invoker_emp",
+      "Name": "E.M.P.",
+      "behavior": [
+        "point-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_cold_snap:manaCost",
-        "ownerId": "activation:74:invoker_cold_snap",
-        "field": "manaCost",
-        "state": "known",
-        "value": 100
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_cold_snap:cooldown",
-        "ownerId": "activation:74:invoker_cold_snap",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "19",
-          "special_bonus_unique_invoker_9": "-6"
-        }
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_cold_snap:charges",
-        "ownerId": "activation:74:invoker_cold_snap",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_cold_snap:manaCost",
-        "value:activation:74:invoker_cold_snap:cooldown",
-        "value:activation:74:invoker_cold_snap:charges"
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "order": 9,
+      "type": "point",
+      "manaCost": 125,
+      "cooldown": 27,
+      "tags": [
+        "aoe",
+        "delayed_damage",
+        "self_mana_restore"
       ]
     },
     {
-      "id": "activation:74:invoker_ghost_walk",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_ghost_walk"
+      "id": "invoker_alacrity",
+      "Name": "Alacrity",
+      "behavior": [
+        "unit-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_ghost_walk:manaCost",
-        "ownerId": "activation:74:invoker_ghost_walk",
-        "field": "manaCost",
-        "state": "known",
-        "value": 175
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_ghost_walk:cooldown",
-        "ownerId": "activation:74:invoker_ghost_walk",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "40"
-        }
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_ghost_walk:charges",
-        "ownerId": "activation:74:invoker_ghost_walk",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_ghost_walk:manaCost",
-        "value:activation:74:invoker_ghost_walk:cooldown",
-        "value:activation:74:invoker_ghost_walk:charges"
+      "affects": [
+        "allied-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "allies-only",
+      "damageType": "physical",
+      "order": 10,
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero"
+      ],
+      "manaCost": 75,
+      "cooldown": 15,
+      "tags": [
+        "ally_attack_speed",
+        "buff"
       ]
     },
     {
-      "id": "activation:74:invoker_tornado",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_tornado"
+      "id": "invoker_chaos_meteor",
+      "Name": "Chaos Meteor",
+      "behavior": [
+        "point-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_tornado:manaCost",
-        "ownerId": "activation:74:invoker_tornado",
-        "field": "manaCost",
-        "state": "known",
-        "value": 140
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_tornado:cooldown",
-        "ownerId": "activation:74:invoker_tornado",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "27",
-          "special_bonus_unique_invoker_3": "-5"
-        }
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_tornado:charges",
-        "ownerId": "activation:74:invoker_tornado",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_tornado:manaCost",
-        "value:activation:74:invoker_tornado:cooldown",
-        "value:activation:74:invoker_tornado:charges"
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "order": 11,
+      "type": "point",
+      "manaCost": 200,
+      "tags": [
+        "damage_over_time"
       ]
     },
     {
-      "id": "activation:74:invoker_emp",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_emp"
+      "id": "invoker_sun_strike",
+      "Name": "Sun Strike",
+      "behavior": [
+        "point-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_emp:manaCost",
-        "ownerId": "activation:74:invoker_emp",
-        "field": "manaCost",
-        "state": "known",
-        "value": 125
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_emp:cooldown",
-        "ownerId": "activation:74:invoker_emp",
-        "field": "cooldown",
-        "state": "known",
-        "value": 27
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_emp:charges",
-        "ownerId": "activation:74:invoker_emp",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_emp:manaCost",
-        "value:activation:74:invoker_emp:cooldown",
-        "value:activation:74:invoker_emp:charges"
+      "piercesDebuffImmunity": "yes",
+      "damageType": "pure",
+      "order": 12,
+      "type": "point",
+      "manaCost": 175,
+      "tags": [
+        "aoe",
+        "bkb_pierce"
       ]
     },
     {
-      "id": "activation:74:invoker_alacrity",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_alacrity"
+      "id": "invoker_forge_spirit",
+      "Name": "Forge Spirit",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_alacrity:manaCost",
-        "ownerId": "activation:74:invoker_alacrity",
-        "field": "manaCost",
-        "state": "known",
-        "value": 75
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_alacrity:cooldown",
-        "ownerId": "activation:74:invoker_alacrity",
-        "field": "cooldown",
-        "state": "known",
-        "value": 15
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_alacrity:charges",
-        "ownerId": "activation:74:invoker_alacrity",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_alacrity:manaCost",
-        "value:activation:74:invoker_alacrity:cooldown",
-        "value:activation:74:invoker_alacrity:charges"
+      "piercesDebuffImmunity": "no",
+      "order": 13,
+      "type": "self-target",
+      "manaCost": 75,
+      "cooldown": 27,
+      "tags": [
+        "summons"
       ]
     },
     {
-      "id": "activation:74:invoker_chaos_meteor",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_chaos_meteor"
+      "id": "invoker_ice_wall",
+      "Name": "Ice Wall",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_chaos_meteor:manaCost",
-        "ownerId": "activation:74:invoker_chaos_meteor",
-        "field": "manaCost",
-        "state": "known",
-        "value": 200
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_chaos_meteor:cooldown",
-        "ownerId": "activation:74:invoker_chaos_meteor",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "50"
-        }
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_chaos_meteor:charges",
-        "ownerId": "activation:74:invoker_chaos_meteor",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_chaos_meteor:manaCost",
-        "value:activation:74:invoker_chaos_meteor:cooldown",
-        "value:activation:74:invoker_chaos_meteor:charges"
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "order": 14,
+      "type": "self-target",
+      "manaCost": 125,
+      "cooldown": 23,
+      "tags": [
+        "damage_over_time",
+        "delayed_damage",
+        "slow"
       ]
     },
     {
-      "id": "activation:74:invoker_sun_strike",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_sun_strike"
+      "id": "invoker_deafening_blast",
+      "Name": "Deafening Blast",
+      "behavior": [
+        "point-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_sun_strike:manaCost",
-        "ownerId": "activation:74:invoker_sun_strike",
-        "field": "manaCost",
-        "state": "known",
-        "value": 175
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_sun_strike:cooldown",
-        "ownerId": "activation:74:invoker_sun_strike",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "23",
-          "special_bonus_unique_invoker_11": "-4"
-        }
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_sun_strike:charges",
-        "ownerId": "activation:74:invoker_sun_strike",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_sun_strike:manaCost",
-        "value:activation:74:invoker_sun_strike:cooldown",
-        "value:activation:74:invoker_sun_strike:charges"
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "order": 15,
+      "type": "point",
+      "manaCost": 250,
+      "cooldown": 36,
+      "tags": [
+        "disable",
+        "disarm",
+        "enemy_displacement"
       ]
     },
     {
-      "id": "activation:74:invoker_forge_spirit",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_forge_spirit"
+      "id": "invoker_cold_snap_ad",
+      "Name": "Cold Snap (AD)",
+      "behavior": [
+        "unit-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_forge_spirit:manaCost",
-        "ownerId": "activation:74:invoker_forge_spirit",
-        "field": "manaCost",
-        "state": "known",
-        "value": 75
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_forge_spirit:cooldown",
-        "ownerId": "activation:74:invoker_forge_spirit",
-        "field": "cooldown",
-        "state": "known",
-        "value": 27
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_forge_spirit:charges",
-        "ownerId": "activation:74:invoker_forge_spirit",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_forge_spirit:manaCost",
-        "value:activation:74:invoker_forge_spirit:cooldown",
-        "value:activation:74:invoker_forge_spirit:charges"
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "order": 25,
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "tags": [
+        "disable",
+        "stun"
       ]
     },
     {
-      "id": "activation:74:invoker_ice_wall",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_ice_wall"
+      "id": "invoker_ghost_walk_ad",
+      "Name": "Ghost Walk (AD)",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_ice_wall:manaCost",
-        "ownerId": "activation:74:invoker_ice_wall",
-        "field": "manaCost",
-        "state": "known",
-        "value": 125
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_ice_wall:cooldown",
-        "ownerId": "activation:74:invoker_ice_wall",
-        "field": "cooldown",
-        "state": "known",
-        "value": 23
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_ice_wall:charges",
-        "ownerId": "activation:74:invoker_ice_wall",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_ice_wall:manaCost",
-        "value:activation:74:invoker_ice_wall:cooldown",
-        "value:activation:74:invoker_ice_wall:charges"
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "order": 26,
+      "type": "self-target",
+      "tags": [
+        "escape",
+        "invisibility"
       ]
     },
     {
-      "id": "activation:74:invoker_deafening_blast",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_deafening_blast"
+      "id": "invoker_tornado_ad",
+      "Name": "Tornado (AD)",
+      "behavior": [
+        "point-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_deafening_blast:manaCost",
-        "ownerId": "activation:74:invoker_deafening_blast",
-        "field": "manaCost",
-        "state": "known",
-        "value": 250
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_deafening_blast:cooldown",
-        "ownerId": "activation:74:invoker_deafening_blast",
-        "field": "cooldown",
-        "state": "known",
-        "value": 36
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_deafening_blast:charges",
-        "ownerId": "activation:74:invoker_deafening_blast",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_deafening_blast:manaCost",
-        "value:activation:74:invoker_deafening_blast:cooldown",
-        "value:activation:74:invoker_deafening_blast:charges"
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "order": 27,
+      "type": "point",
+      "tags": [
+        "cyclone",
+        "damage_over_time",
+        "disable"
       ]
     },
     {
-      "id": "activation:74:special_bonus_unique_invoker_ice_wall_dps",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:special_bonus_unique_invoker_ice_wall_dps"
+      "id": "invoker_emp_ad",
+      "Name": "E.M.P. (AD)",
+      "behavior": [
+        "point-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:special_bonus_unique_invoker_ice_wall_dps:manaCost",
-        "ownerId": "activation:74:special_bonus_unique_invoker_ice_wall_dps",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:special_bonus_unique_invoker_ice_wall_dps:cooldown",
-        "ownerId": "activation:74:special_bonus_unique_invoker_ice_wall_dps",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:special_bonus_unique_invoker_ice_wall_dps:charges",
-        "ownerId": "activation:74:special_bonus_unique_invoker_ice_wall_dps",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:special_bonus_unique_invoker_ice_wall_dps:manaCost",
-        "value:activation:74:special_bonus_unique_invoker_ice_wall_dps:cooldown",
-        "value:activation:74:special_bonus_unique_invoker_ice_wall_dps:charges"
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "order": 28,
+      "type": "point",
+      "tags": [
+        "aoe",
+        "delayed_damage",
+        "self_mana_restore"
       ]
     },
     {
-      "id": "activation:74:special_bonus_unique_invoker_3",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:special_bonus_unique_invoker_3"
+      "id": "invoker_alacrity_ad",
+      "Name": "Alacrity (AD)",
+      "behavior": [
+        "unit-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:special_bonus_unique_invoker_3:manaCost",
-        "ownerId": "activation:74:special_bonus_unique_invoker_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:special_bonus_unique_invoker_3:cooldown",
-        "ownerId": "activation:74:special_bonus_unique_invoker_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:special_bonus_unique_invoker_3:charges",
-        "ownerId": "activation:74:special_bonus_unique_invoker_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:special_bonus_unique_invoker_3:manaCost",
-        "value:activation:74:special_bonus_unique_invoker_3:cooldown",
-        "value:activation:74:special_bonus_unique_invoker_3:charges"
+      "affects": [
+        "allied-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "allies-only",
+      "damageType": "physical",
+      "order": 29,
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero"
+      ],
+      "tags": [
+        "ally_attack_speed",
+        "buff"
       ]
     },
     {
-      "id": "activation:74:special_bonus_unique_invoker_5",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:special_bonus_unique_invoker_5"
+      "id": "invoker_chaos_meteor_ad",
+      "Name": "Chaos Meteor (AD)",
+      "behavior": [
+        "point-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:special_bonus_unique_invoker_5:manaCost",
-        "ownerId": "activation:74:special_bonus_unique_invoker_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:special_bonus_unique_invoker_5:cooldown",
-        "ownerId": "activation:74:special_bonus_unique_invoker_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:special_bonus_unique_invoker_5:charges",
-        "ownerId": "activation:74:special_bonus_unique_invoker_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:special_bonus_unique_invoker_5:manaCost",
-        "value:activation:74:special_bonus_unique_invoker_5:cooldown",
-        "value:activation:74:special_bonus_unique_invoker_5:charges"
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "order": 30,
+      "type": "point",
+      "tags": [
+        "damage_over_time"
       ]
     },
     {
-      "id": "activation:74:special_bonus_unique_invoker_9",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:special_bonus_unique_invoker_9"
+      "id": "invoker_sun_strike_ad",
+      "Name": "Sun Strike (AD)",
+      "behavior": [
+        "point-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:special_bonus_unique_invoker_9:manaCost",
-        "ownerId": "activation:74:special_bonus_unique_invoker_9",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:special_bonus_unique_invoker_9:cooldown",
-        "ownerId": "activation:74:special_bonus_unique_invoker_9",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:special_bonus_unique_invoker_9:charges",
-        "ownerId": "activation:74:special_bonus_unique_invoker_9",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:special_bonus_unique_invoker_9:manaCost",
-        "value:activation:74:special_bonus_unique_invoker_9:cooldown",
-        "value:activation:74:special_bonus_unique_invoker_9:charges"
+      "piercesDebuffImmunity": "yes",
+      "damageType": "pure",
+      "order": 31,
+      "type": "point",
+      "tags": [
+        "aoe",
+        "bkb_pierce"
       ]
     },
     {
-      "id": "activation:74:special_bonus_unique_invoker_additional_chaos_meteors",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:special_bonus_unique_invoker_additional_chaos_meteors"
+      "id": "invoker_forge_spirit_ad",
+      "Name": "Forge Spirit (AD)",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:special_bonus_unique_invoker_additional_chaos_meteors:manaCost",
-        "ownerId": "activation:74:special_bonus_unique_invoker_additional_chaos_meteors",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:special_bonus_unique_invoker_additional_chaos_meteors:cooldown",
-        "ownerId": "activation:74:special_bonus_unique_invoker_additional_chaos_meteors",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:special_bonus_unique_invoker_additional_chaos_meteors:charges",
-        "ownerId": "activation:74:special_bonus_unique_invoker_additional_chaos_meteors",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:special_bonus_unique_invoker_additional_chaos_meteors:manaCost",
-        "value:activation:74:special_bonus_unique_invoker_additional_chaos_meteors:cooldown",
-        "value:activation:74:special_bonus_unique_invoker_additional_chaos_meteors:charges"
+      "piercesDebuffImmunity": "no",
+      "order": 32,
+      "type": "self-target",
+      "tags": [
+        "summons"
       ]
     },
     {
-      "id": "activation:74:special_bonus_unique_invoker_forged_spirit_armor_reduction",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:special_bonus_unique_invoker_forged_spirit_armor_reduction"
+      "id": "forged_spirit_melting_strike",
+      "Name": "Melting Strike",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:74:special_bonus_unique_invoker_forged_spirit_armor_reduction:manaCost",
-        "ownerId": "activation:74:special_bonus_unique_invoker_forged_spirit_armor_reduction",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:special_bonus_unique_invoker_forged_spirit_armor_reduction:cooldown",
-        "ownerId": "activation:74:special_bonus_unique_invoker_forged_spirit_armor_reduction",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:special_bonus_unique_invoker_forged_spirit_armor_reduction:charges",
-        "ownerId": "activation:74:special_bonus_unique_invoker_forged_spirit_armor_reduction",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:special_bonus_unique_invoker_forged_spirit_armor_reduction:manaCost",
-        "value:activation:74:special_bonus_unique_invoker_forged_spirit_armor_reduction:cooldown",
-        "value:activation:74:special_bonus_unique_invoker_forged_spirit_armor_reduction:charges"
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "order": 33,
+      "type": "passive",
+      "tags": [
+        "buff",
+        "self_armor"
       ]
     },
     {
-      "id": "activation:74:special_bonus_unique_invoker_2",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:special_bonus_unique_invoker_2"
+      "id": "invoker_ice_wall_ad",
+      "Name": "Ice Wall (AD)",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:special_bonus_unique_invoker_2:manaCost",
-        "ownerId": "activation:74:special_bonus_unique_invoker_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:special_bonus_unique_invoker_2:cooldown",
-        "ownerId": "activation:74:special_bonus_unique_invoker_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:special_bonus_unique_invoker_2:charges",
-        "ownerId": "activation:74:special_bonus_unique_invoker_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:special_bonus_unique_invoker_2:manaCost",
-        "value:activation:74:special_bonus_unique_invoker_2:cooldown",
-        "value:activation:74:special_bonus_unique_invoker_2:charges"
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "order": 34,
+      "type": "self-target",
+      "tags": [
+        "damage_over_time",
+        "slow"
       ]
     },
     {
-      "id": "activation:74:special_bonus_unique_invoker_13",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:special_bonus_unique_invoker_13"
+      "id": "invoker_deafening_blast_ad",
+      "Name": "Deafening Blast",
+      "behavior": [
+        "point-target"
       ],
-      "manaCost": {
-        "id": "value:activation:74:special_bonus_unique_invoker_13:manaCost",
-        "ownerId": "activation:74:special_bonus_unique_invoker_13",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:special_bonus_unique_invoker_13:cooldown",
-        "ownerId": "activation:74:special_bonus_unique_invoker_13",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:special_bonus_unique_invoker_13:charges",
-        "ownerId": "activation:74:special_bonus_unique_invoker_13",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:special_bonus_unique_invoker_13:manaCost",
-        "value:activation:74:special_bonus_unique_invoker_13:cooldown",
-        "value:activation:74:special_bonus_unique_invoker_13:charges"
-      ]
-    },
-    {
-      "id": "activation:74:invoker_attribute_bonus",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_attribute_bonus"
-      ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_attribute_bonus:manaCost",
-        "ownerId": "activation:74:invoker_attribute_bonus",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_attribute_bonus:cooldown",
-        "ownerId": "activation:74:invoker_attribute_bonus",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_attribute_bonus:charges",
-        "ownerId": "activation:74:invoker_attribute_bonus",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_attribute_bonus:manaCost",
-        "value:activation:74:invoker_attribute_bonus:cooldown",
-        "value:activation:74:invoker_attribute_bonus:charges"
-      ]
-    },
-    {
-      "id": "activation:74:invoker_cold_snap_ad",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_cold_snap_ad"
-      ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_cold_snap_ad:manaCost",
-        "ownerId": "activation:74:invoker_cold_snap_ad",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_cold_snap_ad:cooldown",
-        "ownerId": "activation:74:invoker_cold_snap_ad",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_cold_snap_ad:charges",
-        "ownerId": "activation:74:invoker_cold_snap_ad",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_cold_snap_ad:manaCost",
-        "value:activation:74:invoker_cold_snap_ad:cooldown",
-        "value:activation:74:invoker_cold_snap_ad:charges"
-      ]
-    },
-    {
-      "id": "activation:74:invoker_ghost_walk_ad",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_ghost_walk_ad"
-      ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_ghost_walk_ad:manaCost",
-        "ownerId": "activation:74:invoker_ghost_walk_ad",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_ghost_walk_ad:cooldown",
-        "ownerId": "activation:74:invoker_ghost_walk_ad",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_ghost_walk_ad:charges",
-        "ownerId": "activation:74:invoker_ghost_walk_ad",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_ghost_walk_ad:manaCost",
-        "value:activation:74:invoker_ghost_walk_ad:cooldown",
-        "value:activation:74:invoker_ghost_walk_ad:charges"
-      ]
-    },
-    {
-      "id": "activation:74:invoker_tornado_ad",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_tornado_ad"
-      ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_tornado_ad:manaCost",
-        "ownerId": "activation:74:invoker_tornado_ad",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_tornado_ad:cooldown",
-        "ownerId": "activation:74:invoker_tornado_ad",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_tornado_ad:charges",
-        "ownerId": "activation:74:invoker_tornado_ad",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_tornado_ad:manaCost",
-        "value:activation:74:invoker_tornado_ad:cooldown",
-        "value:activation:74:invoker_tornado_ad:charges"
-      ]
-    },
-    {
-      "id": "activation:74:invoker_emp_ad",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_emp_ad"
-      ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_emp_ad:manaCost",
-        "ownerId": "activation:74:invoker_emp_ad",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_emp_ad:cooldown",
-        "ownerId": "activation:74:invoker_emp_ad",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_emp_ad:charges",
-        "ownerId": "activation:74:invoker_emp_ad",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_emp_ad:manaCost",
-        "value:activation:74:invoker_emp_ad:cooldown",
-        "value:activation:74:invoker_emp_ad:charges"
-      ]
-    },
-    {
-      "id": "activation:74:invoker_alacrity_ad",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_alacrity_ad"
-      ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_alacrity_ad:manaCost",
-        "ownerId": "activation:74:invoker_alacrity_ad",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_alacrity_ad:cooldown",
-        "ownerId": "activation:74:invoker_alacrity_ad",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_alacrity_ad:charges",
-        "ownerId": "activation:74:invoker_alacrity_ad",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_alacrity_ad:manaCost",
-        "value:activation:74:invoker_alacrity_ad:cooldown",
-        "value:activation:74:invoker_alacrity_ad:charges"
-      ]
-    },
-    {
-      "id": "activation:74:invoker_chaos_meteor_ad",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_chaos_meteor_ad"
-      ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_chaos_meteor_ad:manaCost",
-        "ownerId": "activation:74:invoker_chaos_meteor_ad",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_chaos_meteor_ad:cooldown",
-        "ownerId": "activation:74:invoker_chaos_meteor_ad",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_chaos_meteor_ad:charges",
-        "ownerId": "activation:74:invoker_chaos_meteor_ad",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_chaos_meteor_ad:manaCost",
-        "value:activation:74:invoker_chaos_meteor_ad:cooldown",
-        "value:activation:74:invoker_chaos_meteor_ad:charges"
-      ]
-    },
-    {
-      "id": "activation:74:invoker_sun_strike_ad",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_sun_strike_ad"
-      ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_sun_strike_ad:manaCost",
-        "ownerId": "activation:74:invoker_sun_strike_ad",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_sun_strike_ad:cooldown",
-        "ownerId": "activation:74:invoker_sun_strike_ad",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_sun_strike_ad:charges",
-        "ownerId": "activation:74:invoker_sun_strike_ad",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_sun_strike_ad:manaCost",
-        "value:activation:74:invoker_sun_strike_ad:cooldown",
-        "value:activation:74:invoker_sun_strike_ad:charges"
-      ]
-    },
-    {
-      "id": "activation:74:invoker_forge_spirit_ad",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_forge_spirit_ad"
-      ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_forge_spirit_ad:manaCost",
-        "ownerId": "activation:74:invoker_forge_spirit_ad",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_forge_spirit_ad:cooldown",
-        "ownerId": "activation:74:invoker_forge_spirit_ad",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_forge_spirit_ad:charges",
-        "ownerId": "activation:74:invoker_forge_spirit_ad",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_forge_spirit_ad:manaCost",
-        "value:activation:74:invoker_forge_spirit_ad:cooldown",
-        "value:activation:74:invoker_forge_spirit_ad:charges"
-      ]
-    },
-    {
-      "id": "activation:74:forged_spirit_melting_strike",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:forged_spirit_melting_strike"
-      ],
-      "manaCost": {
-        "id": "value:activation:74:forged_spirit_melting_strike:manaCost",
-        "ownerId": "activation:74:forged_spirit_melting_strike",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:forged_spirit_melting_strike:cooldown",
-        "ownerId": "activation:74:forged_spirit_melting_strike",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:forged_spirit_melting_strike:charges",
-        "ownerId": "activation:74:forged_spirit_melting_strike",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:forged_spirit_melting_strike:manaCost",
-        "value:activation:74:forged_spirit_melting_strike:cooldown",
-        "value:activation:74:forged_spirit_melting_strike:charges"
-      ]
-    },
-    {
-      "id": "activation:74:invoker_ice_wall_ad",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_ice_wall_ad"
-      ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_ice_wall_ad:manaCost",
-        "ownerId": "activation:74:invoker_ice_wall_ad",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_ice_wall_ad:cooldown",
-        "ownerId": "activation:74:invoker_ice_wall_ad",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_ice_wall_ad:charges",
-        "ownerId": "activation:74:invoker_ice_wall_ad",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_ice_wall_ad:manaCost",
-        "value:activation:74:invoker_ice_wall_ad:cooldown",
-        "value:activation:74:invoker_ice_wall_ad:charges"
-      ]
-    },
-    {
-      "id": "activation:74:invoker_deafening_blast_ad",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_deafening_blast_ad"
-      ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_deafening_blast_ad:manaCost",
-        "ownerId": "activation:74:invoker_deafening_blast_ad",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_deafening_blast_ad:cooldown",
-        "ownerId": "activation:74:invoker_deafening_blast_ad",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_deafening_blast_ad:charges",
-        "ownerId": "activation:74:invoker_deafening_blast_ad",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_deafening_blast_ad:manaCost",
-        "value:activation:74:invoker_deafening_blast_ad:cooldown",
-        "value:activation:74:invoker_deafening_blast_ad:charges"
-      ]
-    },
-    {
-      "id": "activation:74:invoker_mastermind",
-      "heroId": "74",
-      "abilityIds": [
-        "ability:74:invoker_mastermind"
-      ],
-      "manaCost": {
-        "id": "value:activation:74:invoker_mastermind:manaCost",
-        "ownerId": "activation:74:invoker_mastermind",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:74:invoker_mastermind:cooldown",
-        "ownerId": "activation:74:invoker_mastermind",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:74:invoker_mastermind:charges",
-        "ownerId": "activation:74:invoker_mastermind",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:74:invoker_mastermind:manaCost",
-        "value:activation:74:invoker_mastermind:cooldown",
-        "value:activation:74:invoker_mastermind:charges"
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "order": 35,
+      "type": "point",
+      "tags": [
+        "disable",
+        "disarm"
       ]
     }
-  ]
+  ],
+  "talents": [
+    {
+      "id": "special_bonus_unique_invoker_ice_wall_dps",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
+      ]
+    },
+    {
+      "id": "special_bonus_unique_invoker_3",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
+      ]
+    },
+    {
+      "id": "special_bonus_unique_invoker_5",
+      "tags": [
+        "ally_attack_speed",
+        "buff"
+      ]
+    },
+    {
+      "id": "special_bonus_unique_invoker_9",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
+      ]
+    },
+    {
+      "id": "special_bonus_unique_invoker_additional_chaos_meteors",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_invoker_forged_spirit_armor_reduction",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_invoker_2",
+      "Name": "Radial Deafening Blast",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_invoker_13",
+      "tags": []
+    },
+    {
+      "id": "invoker_attribute_bonus",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "attribute_bonus",
+        "buff"
+      ]
+    }
+  ],
+  "bonus_attributes": null
 }

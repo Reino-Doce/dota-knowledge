@@ -44,6 +44,8 @@ export interface HeroRecord {
     readonly cmEnabled: boolean;
     readonly abilityIds: readonly StableId[];
     readonly effectIds: readonly StableId[];
+    /** Category scores: each distinct owned ability tag adds one point to every category it belongs to. */
+    readonly capabilities?: Readonly<Record<string, number>>;
     readonly coverage: Readonly<Record<string, unknown>> & {
         readonly fields: Readonly<Record<'primaryAttribute' | 'attackRange' | 'complexity' | 'roles', ProfileFieldStatus>>;
     };
@@ -56,6 +58,7 @@ export interface AbilityRecord {
     readonly activationId: StableId;
     readonly order: number;
     readonly state: 'known' | 'unknown' | 'unsupported';
+    readonly tags: readonly string[];
     readonly [field: string]: unknown;
 }
 export interface ActivationRecord {

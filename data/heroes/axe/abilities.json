@@ -1,669 +1,212 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "axe_one_man_army",
+    "Name": "One Man Army",
+    "behavior": [
+      "passive"
+    ],
+    "dispellable": "no",
+    "breakable": true,
+    "tags": [
+      "attribute_bonus",
+      "buff"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:2:axe_berserkers_call",
-      "heroId": "2",
-      "engineId": "axe_berserkers_call",
-      "activationId": "activation:2:axe_berserkers_call",
+      "id": "axe_berserkers_call",
+      "Name": "Berserker's Call",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "yes",
       "order": 0,
-      "owner": "npc_dota_hero_axe",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        90,
+        100,
+        110,
+        120
+      ],
+      "cooldown": [
+        18,
+        16,
+        14,
+        12
+      ],
+      "tags": [
+        "bkb_pierce",
+        "buff",
+        "disable",
+        "self_armor",
+        "taunt"
+      ]
     },
     {
-      "id": "ability:2:axe_battle_hunger",
-      "heroId": "2",
-      "engineId": "axe_battle_hunger",
-      "activationId": "activation:2:axe_battle_hunger",
+      "id": "axe_battle_hunger",
+      "Name": "Battle Hunger",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "pure",
       "order": 1,
-      "owner": "npc_dota_hero_axe",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        50,
+        60,
+        70,
+        80
+      ],
+      "cooldown": [
+        20,
+        15,
+        10,
+        5
+      ],
+      "tags": [
+        "damage_over_time",
+        "dispel",
+        "slow"
+      ]
     },
     {
-      "id": "ability:2:axe_counter_helix",
-      "heroId": "2",
-      "engineId": "axe_counter_helix",
-      "activationId": "activation:2:axe_counter_helix",
+      "id": "axe_counter_helix",
+      "Name": "Counter Helix",
+      "behavior": [
+        "passive"
+      ],
+      "piercesDebuffImmunity": "yes",
+      "damageType": "pure",
+      "breakable": true,
       "order": 2,
-      "owner": "npc_dota_hero_axe",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "bkb_pierce"
+      ]
     },
     {
-      "id": "ability:2:generic_hidden",
-      "heroId": "2",
-      "engineId": "generic_hidden",
-      "activationId": "activation:2:generic_hidden",
+      "id": "generic_hidden",
       "order": 3,
-      "owner": "npc_dota_hero_axe",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:2:axe_culling_blade",
-      "heroId": "2",
-      "engineId": "axe_culling_blade",
-      "activationId": "activation:2:axe_culling_blade",
+      "id": "axe_culling_blade",
+      "Name": "Culling Blade",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "yes",
+      "damageType": "pure",
       "order": 4,
-      "owner": "npc_dota_hero_axe",
-      "state": "known"
-    },
-    {
-      "id": "ability:2:axe_one_man_army",
-      "heroId": "2",
-      "engineId": "axe_one_man_army",
-      "activationId": "activation:2:axe_one_man_army",
-      "order": 5,
-      "owner": "npc_dota_hero_axe",
-      "state": "known"
-    },
-    {
-      "id": "ability:2:special_bonus_unique_axe_culling_blade_speed_duration",
-      "heroId": "2",
-      "engineId": "special_bonus_unique_axe_culling_blade_speed_duration",
-      "activationId": "activation:2:special_bonus_unique_axe_culling_blade_speed_duration",
-      "order": 6,
-      "owner": "npc_dota_hero_axe",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:2:special_bonus_unique_axe_8",
-      "heroId": "2",
-      "engineId": "special_bonus_unique_axe_8",
-      "activationId": "activation:2:special_bonus_unique_axe_8",
-      "order": 7,
-      "owner": "npc_dota_hero_axe",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:2:special_bonus_unique_axe",
-      "heroId": "2",
-      "engineId": "special_bonus_unique_axe",
-      "activationId": "activation:2:special_bonus_unique_axe",
-      "order": 8,
-      "owner": "npc_dota_hero_axe",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:2:special_bonus_unique_axe_7",
-      "heroId": "2",
-      "engineId": "special_bonus_unique_axe_7",
-      "activationId": "activation:2:special_bonus_unique_axe_7",
-      "order": 9,
-      "owner": "npc_dota_hero_axe",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:2:special_bonus_strength_15",
-      "heroId": "2",
-      "engineId": "special_bonus_strength_15",
-      "activationId": "activation:2:special_bonus_strength_15",
-      "order": 10,
-      "owner": "npc_dota_hero_axe",
-      "state": "known"
-    },
-    {
-      "id": "ability:2:special_bonus_unique_axe_4",
-      "heroId": "2",
-      "engineId": "special_bonus_unique_axe_4",
-      "activationId": "activation:2:special_bonus_unique_axe_4",
-      "order": 11,
-      "owner": "npc_dota_hero_axe",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:2:special_bonus_unique_axe_2",
-      "heroId": "2",
-      "engineId": "special_bonus_unique_axe_2",
-      "activationId": "activation:2:special_bonus_unique_axe_2",
-      "order": 12,
-      "owner": "npc_dota_hero_axe",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:2:special_bonus_unique_axe_5",
-      "heroId": "2",
-      "engineId": "special_bonus_unique_axe_5",
-      "activationId": "activation:2:special_bonus_unique_axe_5",
-      "order": 13,
-      "owner": "npc_dota_hero_axe",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:2:special_bonus_attributes",
-      "heroId": "2",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:2:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_axe",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        100,
+        125,
+        150
+      ],
+      "cooldown": [
+        80,
+        75,
+        70
+      ],
+      "tags": [
+        "ally_armor",
+        "ally_movement_speed",
+        "bkb_pierce",
+        "buff",
+        "escape",
+        "mobility",
+        "self_armor"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:2:axe_berserkers_call",
-      "heroId": "2",
-      "abilityIds": [
-        "ability:2:axe_berserkers_call"
-      ],
-      "manaCost": {
-        "id": "value:activation:2:axe_berserkers_call:manaCost",
-        "ownerId": "activation:2:axe_berserkers_call",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          90,
-          100,
-          110,
-          120
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:2:axe_berserkers_call:cooldown",
-        "ownerId": "activation:2:axe_berserkers_call",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          18,
-          16,
-          14,
-          12
-        ]
-      },
-      "charges": {
-        "id": "value:activation:2:axe_berserkers_call:charges",
-        "ownerId": "activation:2:axe_berserkers_call",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:2:axe_berserkers_call:manaCost",
-        "value:activation:2:axe_berserkers_call:cooldown",
-        "value:activation:2:axe_berserkers_call:charges"
+      "id": "special_bonus_unique_axe_culling_blade_speed_duration",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_axe_8",
+      "tags": [
+        "buff",
+        "self_movement_speed"
       ]
     },
     {
-      "id": "activation:2:axe_battle_hunger",
-      "heroId": "2",
-      "abilityIds": [
-        "ability:2:axe_battle_hunger"
-      ],
-      "manaCost": {
-        "id": "value:activation:2:axe_battle_hunger:manaCost",
-        "ownerId": "activation:2:axe_battle_hunger",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          50,
-          60,
-          70,
-          80
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:2:axe_battle_hunger:cooldown",
-        "ownerId": "activation:2:axe_battle_hunger",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          20,
-          15,
-          10,
-          5
-        ]
-      },
-      "charges": {
-        "id": "value:activation:2:axe_battle_hunger:charges",
-        "ownerId": "activation:2:axe_battle_hunger",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:2:axe_battle_hunger:manaCost",
-        "value:activation:2:axe_battle_hunger:cooldown",
-        "value:activation:2:axe_battle_hunger:charges"
+      "id": "special_bonus_unique_axe",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:2:axe_counter_helix",
-      "heroId": "2",
-      "abilityIds": [
-        "ability:2:axe_counter_helix"
-      ],
-      "manaCost": {
-        "id": "value:activation:2:axe_counter_helix:manaCost",
-        "ownerId": "activation:2:axe_counter_helix",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:2:axe_counter_helix:cooldown",
-        "ownerId": "activation:2:axe_counter_helix",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0.3",
-          "special_bonus_scepter": "-0.3"
-        }
-      },
-      "charges": {
-        "id": "value:activation:2:axe_counter_helix:charges",
-        "ownerId": "activation:2:axe_counter_helix",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:2:axe_counter_helix:manaCost",
-        "value:activation:2:axe_counter_helix:cooldown",
-        "value:activation:2:axe_counter_helix:charges"
+      "id": "special_bonus_unique_axe_7",
+      "tags": [
+        "buff",
+        "self_armor"
       ]
     },
     {
-      "id": "activation:2:generic_hidden",
-      "heroId": "2",
-      "abilityIds": [
-        "ability:2:generic_hidden"
+      "id": "special_bonus_strength_15",
+      "Name": "+15 Strength",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:2:generic_hidden:manaCost",
-        "ownerId": "activation:2:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:2:generic_hidden:cooldown",
-        "ownerId": "activation:2:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:2:generic_hidden:charges",
-        "ownerId": "activation:2:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:2:generic_hidden:manaCost",
-        "value:activation:2:generic_hidden:cooldown",
-        "value:activation:2:generic_hidden:charges"
+      "tags": [
+        "attribute_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:2:axe_culling_blade",
-      "heroId": "2",
-      "abilityIds": [
-        "ability:2:axe_culling_blade"
-      ],
-      "manaCost": {
-        "id": "value:activation:2:axe_culling_blade:manaCost",
-        "ownerId": "activation:2:axe_culling_blade",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          100,
-          125,
-          150
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:2:axe_culling_blade:cooldown",
-        "ownerId": "activation:2:axe_culling_blade",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          80,
-          75,
-          70
-        ]
-      },
-      "charges": {
-        "id": "value:activation:2:axe_culling_blade:charges",
-        "ownerId": "activation:2:axe_culling_blade",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:2:axe_culling_blade:manaCost",
-        "value:activation:2:axe_culling_blade:cooldown",
-        "value:activation:2:axe_culling_blade:charges"
+      "id": "special_bonus_unique_axe_4",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:2:axe_one_man_army",
-      "heroId": "2",
-      "abilityIds": [
-        "ability:2:axe_one_man_army"
-      ],
-      "manaCost": {
-        "id": "value:activation:2:axe_one_man_army:manaCost",
-        "ownerId": "activation:2:axe_one_man_army",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:2:axe_one_man_army:cooldown",
-        "ownerId": "activation:2:axe_one_man_army",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:2:axe_one_man_army:charges",
-        "ownerId": "activation:2:axe_one_man_army",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:2:axe_one_man_army:manaCost",
-        "value:activation:2:axe_one_man_army:cooldown",
-        "value:activation:2:axe_one_man_army:charges"
+      "id": "special_bonus_unique_axe_2",
+      "tags": [
+        "area_increase",
+        "buff"
       ]
     },
     {
-      "id": "activation:2:special_bonus_unique_axe_culling_blade_speed_duration",
-      "heroId": "2",
-      "abilityIds": [
-        "ability:2:special_bonus_unique_axe_culling_blade_speed_duration"
-      ],
-      "manaCost": {
-        "id": "value:activation:2:special_bonus_unique_axe_culling_blade_speed_duration:manaCost",
-        "ownerId": "activation:2:special_bonus_unique_axe_culling_blade_speed_duration",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:2:special_bonus_unique_axe_culling_blade_speed_duration:cooldown",
-        "ownerId": "activation:2:special_bonus_unique_axe_culling_blade_speed_duration",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:2:special_bonus_unique_axe_culling_blade_speed_duration:charges",
-        "ownerId": "activation:2:special_bonus_unique_axe_culling_blade_speed_duration",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:2:special_bonus_unique_axe_culling_blade_speed_duration:manaCost",
-        "value:activation:2:special_bonus_unique_axe_culling_blade_speed_duration:cooldown",
-        "value:activation:2:special_bonus_unique_axe_culling_blade_speed_duration:charges"
-      ]
-    },
-    {
-      "id": "activation:2:special_bonus_unique_axe_8",
-      "heroId": "2",
-      "abilityIds": [
-        "ability:2:special_bonus_unique_axe_8"
-      ],
-      "manaCost": {
-        "id": "value:activation:2:special_bonus_unique_axe_8:manaCost",
-        "ownerId": "activation:2:special_bonus_unique_axe_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:2:special_bonus_unique_axe_8:cooldown",
-        "ownerId": "activation:2:special_bonus_unique_axe_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:2:special_bonus_unique_axe_8:charges",
-        "ownerId": "activation:2:special_bonus_unique_axe_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:2:special_bonus_unique_axe_8:manaCost",
-        "value:activation:2:special_bonus_unique_axe_8:cooldown",
-        "value:activation:2:special_bonus_unique_axe_8:charges"
-      ]
-    },
-    {
-      "id": "activation:2:special_bonus_unique_axe",
-      "heroId": "2",
-      "abilityIds": [
-        "ability:2:special_bonus_unique_axe"
-      ],
-      "manaCost": {
-        "id": "value:activation:2:special_bonus_unique_axe:manaCost",
-        "ownerId": "activation:2:special_bonus_unique_axe",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:2:special_bonus_unique_axe:cooldown",
-        "ownerId": "activation:2:special_bonus_unique_axe",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:2:special_bonus_unique_axe:charges",
-        "ownerId": "activation:2:special_bonus_unique_axe",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:2:special_bonus_unique_axe:manaCost",
-        "value:activation:2:special_bonus_unique_axe:cooldown",
-        "value:activation:2:special_bonus_unique_axe:charges"
-      ]
-    },
-    {
-      "id": "activation:2:special_bonus_unique_axe_7",
-      "heroId": "2",
-      "abilityIds": [
-        "ability:2:special_bonus_unique_axe_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:2:special_bonus_unique_axe_7:manaCost",
-        "ownerId": "activation:2:special_bonus_unique_axe_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:2:special_bonus_unique_axe_7:cooldown",
-        "ownerId": "activation:2:special_bonus_unique_axe_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:2:special_bonus_unique_axe_7:charges",
-        "ownerId": "activation:2:special_bonus_unique_axe_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:2:special_bonus_unique_axe_7:manaCost",
-        "value:activation:2:special_bonus_unique_axe_7:cooldown",
-        "value:activation:2:special_bonus_unique_axe_7:charges"
-      ]
-    },
-    {
-      "id": "activation:2:special_bonus_strength_15",
-      "heroId": "2",
-      "abilityIds": [
-        "ability:2:special_bonus_strength_15"
-      ],
-      "manaCost": {
-        "id": "value:activation:2:special_bonus_strength_15:manaCost",
-        "ownerId": "activation:2:special_bonus_strength_15",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:2:special_bonus_strength_15:cooldown",
-        "ownerId": "activation:2:special_bonus_strength_15",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:2:special_bonus_strength_15:charges",
-        "ownerId": "activation:2:special_bonus_strength_15",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:2:special_bonus_strength_15:manaCost",
-        "value:activation:2:special_bonus_strength_15:cooldown",
-        "value:activation:2:special_bonus_strength_15:charges"
-      ]
-    },
-    {
-      "id": "activation:2:special_bonus_unique_axe_4",
-      "heroId": "2",
-      "abilityIds": [
-        "ability:2:special_bonus_unique_axe_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:2:special_bonus_unique_axe_4:manaCost",
-        "ownerId": "activation:2:special_bonus_unique_axe_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:2:special_bonus_unique_axe_4:cooldown",
-        "ownerId": "activation:2:special_bonus_unique_axe_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:2:special_bonus_unique_axe_4:charges",
-        "ownerId": "activation:2:special_bonus_unique_axe_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:2:special_bonus_unique_axe_4:manaCost",
-        "value:activation:2:special_bonus_unique_axe_4:cooldown",
-        "value:activation:2:special_bonus_unique_axe_4:charges"
-      ]
-    },
-    {
-      "id": "activation:2:special_bonus_unique_axe_2",
-      "heroId": "2",
-      "abilityIds": [
-        "ability:2:special_bonus_unique_axe_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:2:special_bonus_unique_axe_2:manaCost",
-        "ownerId": "activation:2:special_bonus_unique_axe_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:2:special_bonus_unique_axe_2:cooldown",
-        "ownerId": "activation:2:special_bonus_unique_axe_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:2:special_bonus_unique_axe_2:charges",
-        "ownerId": "activation:2:special_bonus_unique_axe_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:2:special_bonus_unique_axe_2:manaCost",
-        "value:activation:2:special_bonus_unique_axe_2:cooldown",
-        "value:activation:2:special_bonus_unique_axe_2:charges"
-      ]
-    },
-    {
-      "id": "activation:2:special_bonus_unique_axe_5",
-      "heroId": "2",
-      "abilityIds": [
-        "ability:2:special_bonus_unique_axe_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:2:special_bonus_unique_axe_5:manaCost",
-        "ownerId": "activation:2:special_bonus_unique_axe_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:2:special_bonus_unique_axe_5:cooldown",
-        "ownerId": "activation:2:special_bonus_unique_axe_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:2:special_bonus_unique_axe_5:charges",
-        "ownerId": "activation:2:special_bonus_unique_axe_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:2:special_bonus_unique_axe_5:manaCost",
-        "value:activation:2:special_bonus_unique_axe_5:cooldown",
-        "value:activation:2:special_bonus_unique_axe_5:charges"
-      ]
-    },
-    {
-      "id": "activation:2:special_bonus_attributes",
-      "heroId": "2",
-      "abilityIds": [
-        "ability:2:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:2:special_bonus_attributes:manaCost",
-        "ownerId": "activation:2:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:2:special_bonus_attributes:cooldown",
-        "ownerId": "activation:2:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:2:special_bonus_attributes:charges",
-        "ownerId": "activation:2:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:2:special_bonus_attributes:manaCost",
-        "value:activation:2:special_bonus_attributes:cooldown",
-        "value:activation:2:special_bonus_attributes:charges"
+      "id": "special_bonus_unique_axe_5",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

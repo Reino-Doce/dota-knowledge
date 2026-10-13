@@ -43,7 +43,9 @@ test('refresh is isolated; offline apply and repeated application preserve ident
     const result = await applyPopulation({ dataset: f.dataset, storage: f.storage, runId: 'first', clock: f.options.clock });
     assert.equal(result.state, 'verified-promoted');
     const after = await readCanonical(f.dataset);
-    assert.deepEqual(after.entities, f.graph.entities); assert.deepEqual(after.claims, f.graph.claims); assert.deepEqual(after.bindings, f.graph.bindings);
+    const expectedEntities = structuredClone(f.graph.entities);
+    for (const hero of expectedEntities.heroes) hero.capabilities = {};
+    assert.deepEqual(after.entities, expectedEntities); assert.deepEqual(after.claims, f.graph.claims); assert.deepEqual(after.bindings, f.graph.bindings);
     assert.equal(after.observations.find(row => row.kind === 'matchup').matchCount, '900719925474099312345');
     assert.equal(after.observations.find(row => row.kind === 'provider-profile' && row.heroId === '1').providerName, 'Provider renamed Magina');
     assert.deepEqual(after.observations.find(row => row.id === 'observation:pair'), f.graph.observations.find(row => row.id === 'observation:pair'));

@@ -1,6 +1,7 @@
 import { sha256Hex } from './sha256.mjs';
 import { COMPILER_VERSION, validateProfile, subjectHeroIds, normalizeAlias } from './record-contracts.mjs';
 import { buildHeroAliasIndex, validateHeroAliasIndex } from './alias-index.mjs';
+import { assertHeroCapabilities } from './tags/hero-capabilities.mjs';
 
 export const KNOWLEDGE_CORE_MAX_BYTES = 64 * 1024 * 1024;
 export const HERO_EVIDENCE_MAX_BYTES = 16 * 1024 * 1024;
@@ -231,6 +232,8 @@ function validateCore(core, manifest) {
             if (!sourceIndex.has(sourceId)) fail('UNKNOWN_REFERENCE', `${id} references missing source ${sourceId}.`);
         }
     }
+    try { assertHeroCapabilities([...tables.heroes.values()], [...tables.abilities.values()]); }
+    catch (error) { fail('CORE_SCHEMA', error.message); }
     for (const [id, row] of tables.activations) {
         if (typeof row.heroId !== 'string' || !tables.heroes.has(row.heroId)) fail('UNKNOWN_REFERENCE', `${id} has no owning hero.`);
         requiredArray(row, 'abilityIds', 'abilities');

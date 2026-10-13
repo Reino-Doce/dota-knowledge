@@ -1,962 +1,263 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "abyssal_underlord_raid_boss",
+    "Name": "Invading Force",
+    "behavior": [
+      "passive"
+    ],
+    "breakable": true,
+    "tags": [
+      "ally_movement_speed",
+      "buff",
+      "damage_reduction",
+      "escape",
+      "mobility",
+      "self_movement_speed"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:108:abyssal_underlord_firestorm",
-      "heroId": "108",
-      "engineId": "abyssal_underlord_firestorm",
-      "activationId": "activation:108:abyssal_underlord_firestorm",
+      "id": "abyssal_underlord_firestorm",
+      "Name": "Firestorm",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        110,
+        125,
+        140,
+        155
+      ],
+      "tags": [
+        "aoe"
+      ]
     },
     {
-      "id": "ability:108:abyssal_underlord_pit_of_malice",
-      "heroId": "108",
-      "engineId": "abyssal_underlord_pit_of_malice",
-      "activationId": "activation:108:abyssal_underlord_pit_of_malice",
+      "id": "abyssal_underlord_pit_of_malice",
+      "Name": "Pit of Malice",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        110,
+        120,
+        130,
+        140
+      ],
+      "cooldown": [
+        30,
+        25,
+        20,
+        15
+      ],
+      "tags": [
+        "aoe",
+        "disable",
+        "root"
+      ]
     },
     {
-      "id": "ability:108:abyssal_underlord_atrophy_aura",
-      "heroId": "108",
-      "engineId": "abyssal_underlord_atrophy_aura",
-      "activationId": "activation:108:abyssal_underlord_atrophy_aura",
+      "id": "abyssal_underlord_atrophy_aura",
+      "Name": "Atrophy Aura",
+      "behavior": [
+        "passive"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "allies-only",
+      "damageType": "physical",
+      "breakable": true,
       "order": 2,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "aura"
+      ]
     },
     {
-      "id": "ability:108:abyssal_underlord_raid_boss",
-      "heroId": "108",
-      "engineId": "abyssal_underlord_raid_boss",
-      "activationId": "activation:108:abyssal_underlord_raid_boss",
-      "order": 3,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "known"
-    },
-    {
-      "id": "ability:108:generic_hidden",
-      "heroId": "108",
-      "engineId": "generic_hidden",
-      "activationId": "activation:108:generic_hidden",
+      "id": "generic_hidden",
       "order": 4,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:108:abyssal_underlord_dark_portal",
-      "heroId": "108",
-      "engineId": "abyssal_underlord_dark_portal",
-      "activationId": "activation:108:abyssal_underlord_dark_portal",
+      "id": "abyssal_underlord_dark_portal",
+      "Name": "Fiend's Gate",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
       "order": 5,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "known"
+      "type": "point",
+      "manaCost": 175,
+      "tags": [
+        "blink",
+        "escape",
+        "mobility",
+        "self_reposition"
+      ]
     },
     {
-      "id": "ability:108:special_bonus_unique_underlord_7",
-      "heroId": "108",
-      "engineId": "special_bonus_unique_underlord_7",
-      "activationId": "activation:108:special_bonus_unique_underlord_7",
-      "order": 6,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:108:special_bonus_unique_underlord_8",
-      "heroId": "108",
-      "engineId": "special_bonus_unique_underlord_8",
-      "activationId": "activation:108:special_bonus_unique_underlord_8",
-      "order": 7,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:108:special_bonus_unique_underlord_6",
-      "heroId": "108",
-      "engineId": "special_bonus_unique_underlord_6",
-      "activationId": "activation:108:special_bonus_unique_underlord_6",
-      "order": 8,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:108:special_bonus_unique_underlord_5",
-      "heroId": "108",
-      "engineId": "special_bonus_unique_underlord_5",
-      "activationId": "activation:108:special_bonus_unique_underlord_5",
-      "order": 9,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:108:special_bonus_unique_underlord_4",
-      "heroId": "108",
-      "engineId": "special_bonus_unique_underlord_4",
-      "activationId": "activation:108:special_bonus_unique_underlord_4",
-      "order": 10,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:108:special_bonus_unique_underlord_3",
-      "heroId": "108",
-      "engineId": "special_bonus_unique_underlord_3",
-      "activationId": "activation:108:special_bonus_unique_underlord_3",
-      "order": 11,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:108:special_bonus_unique_underlord",
-      "heroId": "108",
-      "engineId": "special_bonus_unique_underlord",
-      "activationId": "activation:108:special_bonus_unique_underlord",
-      "order": 12,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:108:special_bonus_unique_underlord_9",
-      "heroId": "108",
-      "engineId": "special_bonus_unique_underlord_9",
-      "activationId": "activation:108:special_bonus_unique_underlord_9",
-      "order": 13,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:108:special_bonus_attributes",
-      "heroId": "108",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:108:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "known"
-    },
-    {
-      "id": "ability:108:abyssal_underlord_dark_rift",
-      "heroId": "108",
-      "engineId": "abyssal_underlord_dark_rift",
-      "activationId": "activation:108:abyssal_underlord_dark_rift",
+      "id": "abyssal_underlord_dark_rift",
+      "behavior": [
+        "point-target",
+        "unit-target"
+      ],
+      "affects": [
+        "allied-buildings",
+        "allied-units"
+      ],
+      "dispellable": "no",
       "order": 15,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "known"
+      "type": "target-or-point",
+      "target": [
+        "ally_building"
+      ],
+      "manaCost": [
+        100,
+        200,
+        300
+      ],
+      "cooldown": [
+        110,
+        100,
+        90
+      ],
+      "tags": []
     },
     {
-      "id": "ability:108:abyssal_underlord_cancel_dark_rift",
-      "heroId": "108",
-      "engineId": "abyssal_underlord_cancel_dark_rift",
-      "activationId": "activation:108:abyssal_underlord_cancel_dark_rift",
+      "id": "abyssal_underlord_cancel_dark_rift",
+      "behavior": [
+        "no-target"
+      ],
       "order": 16,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "known"
+      "type": "self-target",
+      "tags": []
     },
     {
-      "id": "ability:108:abyssal_underlord_portal_warp",
-      "heroId": "108",
-      "engineId": "abyssal_underlord_portal_warp",
-      "activationId": "activation:108:abyssal_underlord_portal_warp",
+      "id": "abyssal_underlord_portal_warp",
+      "behavior": [
+        "channeled",
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
       "order": 17,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "known"
+      "type": "target",
+      "tags": [
+        "channeled"
+      ]
     },
     {
-      "id": "ability:108:abyssal_underlord_abyssal_horde",
-      "heroId": "108",
-      "engineId": "abyssal_underlord_abyssal_horde",
-      "activationId": "activation:108:abyssal_underlord_abyssal_horde",
+      "id": "abyssal_underlord_abyssal_horde",
+      "Name": "Abyssal Horde",
+      "behavior": [
+        "passive"
+      ],
       "order": 18,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "summons"
+      ]
     },
     {
-      "id": "ability:108:abyssal_underling_warrior_last_will",
-      "heroId": "108",
-      "engineId": "abyssal_underling_warrior_last_will",
-      "activationId": "activation:108:abyssal_underling_warrior_last_will",
+      "id": "abyssal_underling_warrior_last_will",
+      "Name": "Last Will",
+      "behavior": [
+        "passive"
+      ],
+      "damageType": "magical",
+      "breakable": true,
       "order": 19,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "known"
+      "type": "passive",
+      "tags": []
     },
     {
-      "id": "ability:108:abyssal_underling_warrior_mana_burn",
-      "heroId": "108",
-      "engineId": "abyssal_underling_warrior_mana_burn",
-      "activationId": "activation:108:abyssal_underling_warrior_mana_burn",
+      "id": "abyssal_underling_warrior_mana_burn",
+      "Name": "Mana Break",
+      "behavior": [
+        "passive"
+      ],
+      "damageType": "physical",
+      "breakable": true,
       "order": 20,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "mana_burn"
+      ]
     },
     {
-      "id": "ability:108:abyssal_underling_archer_aoe",
-      "heroId": "108",
-      "engineId": "abyssal_underling_archer_aoe",
-      "activationId": "activation:108:abyssal_underling_archer_aoe",
+      "id": "abyssal_underling_archer_aoe",
+      "Name": "Archer Aura",
+      "behavior": [
+        "passive"
+      ],
+      "breakable": true,
       "order": 21,
-      "owner": "npc_dota_hero_abyssal_underlord",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "buff",
+        "self_movement_speed"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:108:abyssal_underlord_firestorm",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:abyssal_underlord_firestorm"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:abyssal_underlord_firestorm:manaCost",
-        "ownerId": "activation:108:abyssal_underlord_firestorm",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          110,
-          125,
-          140,
-          155
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:108:abyssal_underlord_firestorm:cooldown",
-        "ownerId": "activation:108:abyssal_underlord_firestorm",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "16 15 14 13",
-          "special_bonus_unique_underlord_5": "-5"
-        }
-      },
-      "charges": {
-        "id": "value:activation:108:abyssal_underlord_firestorm:charges",
-        "ownerId": "activation:108:abyssal_underlord_firestorm",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:abyssal_underlord_firestorm:manaCost",
-        "value:activation:108:abyssal_underlord_firestorm:cooldown",
-        "value:activation:108:abyssal_underlord_firestorm:charges"
+      "id": "special_bonus_unique_underlord_7",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_underlord_8",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_underlord_6",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_underlord_5",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:108:abyssal_underlord_pit_of_malice",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:abyssal_underlord_pit_of_malice"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:abyssal_underlord_pit_of_malice:manaCost",
-        "ownerId": "activation:108:abyssal_underlord_pit_of_malice",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          110,
-          120,
-          130,
-          140
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:108:abyssal_underlord_pit_of_malice:cooldown",
-        "ownerId": "activation:108:abyssal_underlord_pit_of_malice",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          30,
-          25,
-          20,
-          15
-        ]
-      },
-      "charges": {
-        "id": "value:activation:108:abyssal_underlord_pit_of_malice:charges",
-        "ownerId": "activation:108:abyssal_underlord_pit_of_malice",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:abyssal_underlord_pit_of_malice:manaCost",
-        "value:activation:108:abyssal_underlord_pit_of_malice:cooldown",
-        "value:activation:108:abyssal_underlord_pit_of_malice:charges"
-      ]
+      "id": "special_bonus_unique_underlord_4",
+      "tags": []
     },
     {
-      "id": "activation:108:abyssal_underlord_atrophy_aura",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:abyssal_underlord_atrophy_aura"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:abyssal_underlord_atrophy_aura:manaCost",
-        "ownerId": "activation:108:abyssal_underlord_atrophy_aura",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:abyssal_underlord_atrophy_aura:cooldown",
-        "ownerId": "activation:108:abyssal_underlord_atrophy_aura",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:abyssal_underlord_atrophy_aura:charges",
-        "ownerId": "activation:108:abyssal_underlord_atrophy_aura",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:abyssal_underlord_atrophy_aura:manaCost",
-        "value:activation:108:abyssal_underlord_atrophy_aura:cooldown",
-        "value:activation:108:abyssal_underlord_atrophy_aura:charges"
-      ]
+      "id": "special_bonus_unique_underlord_3",
+      "tags": []
     },
     {
-      "id": "activation:108:abyssal_underlord_raid_boss",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:abyssal_underlord_raid_boss"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:abyssal_underlord_raid_boss:manaCost",
-        "ownerId": "activation:108:abyssal_underlord_raid_boss",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:abyssal_underlord_raid_boss:cooldown",
-        "ownerId": "activation:108:abyssal_underlord_raid_boss",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:abyssal_underlord_raid_boss:charges",
-        "ownerId": "activation:108:abyssal_underlord_raid_boss",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:abyssal_underlord_raid_boss:manaCost",
-        "value:activation:108:abyssal_underlord_raid_boss:cooldown",
-        "value:activation:108:abyssal_underlord_raid_boss:charges"
-      ]
+      "id": "special_bonus_unique_underlord",
+      "tags": []
     },
     {
-      "id": "activation:108:generic_hidden",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:generic_hidden"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:generic_hidden:manaCost",
-        "ownerId": "activation:108:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:generic_hidden:cooldown",
-        "ownerId": "activation:108:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:generic_hidden:charges",
-        "ownerId": "activation:108:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:generic_hidden:manaCost",
-        "value:activation:108:generic_hidden:cooldown",
-        "value:activation:108:generic_hidden:charges"
-      ]
-    },
-    {
-      "id": "activation:108:abyssal_underlord_dark_portal",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:abyssal_underlord_dark_portal"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:abyssal_underlord_dark_portal:manaCost",
-        "ownerId": "activation:108:abyssal_underlord_dark_portal",
-        "field": "manaCost",
-        "state": "known",
-        "value": 175
-      },
-      "cooldown": {
-        "id": "value:activation:108:abyssal_underlord_dark_portal:cooldown",
-        "ownerId": "activation:108:abyssal_underlord_dark_portal",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "110 105 100",
-          "special_bonus_scepter": "-20"
-        }
-      },
-      "charges": {
-        "id": "value:activation:108:abyssal_underlord_dark_portal:charges",
-        "ownerId": "activation:108:abyssal_underlord_dark_portal",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:abyssal_underlord_dark_portal:manaCost",
-        "value:activation:108:abyssal_underlord_dark_portal:cooldown",
-        "value:activation:108:abyssal_underlord_dark_portal:charges"
-      ]
-    },
-    {
-      "id": "activation:108:special_bonus_unique_underlord_7",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:special_bonus_unique_underlord_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:special_bonus_unique_underlord_7:manaCost",
-        "ownerId": "activation:108:special_bonus_unique_underlord_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:special_bonus_unique_underlord_7:cooldown",
-        "ownerId": "activation:108:special_bonus_unique_underlord_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:special_bonus_unique_underlord_7:charges",
-        "ownerId": "activation:108:special_bonus_unique_underlord_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:special_bonus_unique_underlord_7:manaCost",
-        "value:activation:108:special_bonus_unique_underlord_7:cooldown",
-        "value:activation:108:special_bonus_unique_underlord_7:charges"
-      ]
-    },
-    {
-      "id": "activation:108:special_bonus_unique_underlord_8",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:special_bonus_unique_underlord_8"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:special_bonus_unique_underlord_8:manaCost",
-        "ownerId": "activation:108:special_bonus_unique_underlord_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:special_bonus_unique_underlord_8:cooldown",
-        "ownerId": "activation:108:special_bonus_unique_underlord_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:special_bonus_unique_underlord_8:charges",
-        "ownerId": "activation:108:special_bonus_unique_underlord_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:special_bonus_unique_underlord_8:manaCost",
-        "value:activation:108:special_bonus_unique_underlord_8:cooldown",
-        "value:activation:108:special_bonus_unique_underlord_8:charges"
-      ]
-    },
-    {
-      "id": "activation:108:special_bonus_unique_underlord_6",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:special_bonus_unique_underlord_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:special_bonus_unique_underlord_6:manaCost",
-        "ownerId": "activation:108:special_bonus_unique_underlord_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:special_bonus_unique_underlord_6:cooldown",
-        "ownerId": "activation:108:special_bonus_unique_underlord_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:special_bonus_unique_underlord_6:charges",
-        "ownerId": "activation:108:special_bonus_unique_underlord_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:special_bonus_unique_underlord_6:manaCost",
-        "value:activation:108:special_bonus_unique_underlord_6:cooldown",
-        "value:activation:108:special_bonus_unique_underlord_6:charges"
-      ]
-    },
-    {
-      "id": "activation:108:special_bonus_unique_underlord_5",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:special_bonus_unique_underlord_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:special_bonus_unique_underlord_5:manaCost",
-        "ownerId": "activation:108:special_bonus_unique_underlord_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:special_bonus_unique_underlord_5:cooldown",
-        "ownerId": "activation:108:special_bonus_unique_underlord_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:special_bonus_unique_underlord_5:charges",
-        "ownerId": "activation:108:special_bonus_unique_underlord_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:special_bonus_unique_underlord_5:manaCost",
-        "value:activation:108:special_bonus_unique_underlord_5:cooldown",
-        "value:activation:108:special_bonus_unique_underlord_5:charges"
-      ]
-    },
-    {
-      "id": "activation:108:special_bonus_unique_underlord_4",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:special_bonus_unique_underlord_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:special_bonus_unique_underlord_4:manaCost",
-        "ownerId": "activation:108:special_bonus_unique_underlord_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:special_bonus_unique_underlord_4:cooldown",
-        "ownerId": "activation:108:special_bonus_unique_underlord_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:special_bonus_unique_underlord_4:charges",
-        "ownerId": "activation:108:special_bonus_unique_underlord_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:special_bonus_unique_underlord_4:manaCost",
-        "value:activation:108:special_bonus_unique_underlord_4:cooldown",
-        "value:activation:108:special_bonus_unique_underlord_4:charges"
-      ]
-    },
-    {
-      "id": "activation:108:special_bonus_unique_underlord_3",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:special_bonus_unique_underlord_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:special_bonus_unique_underlord_3:manaCost",
-        "ownerId": "activation:108:special_bonus_unique_underlord_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:special_bonus_unique_underlord_3:cooldown",
-        "ownerId": "activation:108:special_bonus_unique_underlord_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:special_bonus_unique_underlord_3:charges",
-        "ownerId": "activation:108:special_bonus_unique_underlord_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:special_bonus_unique_underlord_3:manaCost",
-        "value:activation:108:special_bonus_unique_underlord_3:cooldown",
-        "value:activation:108:special_bonus_unique_underlord_3:charges"
-      ]
-    },
-    {
-      "id": "activation:108:special_bonus_unique_underlord",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:special_bonus_unique_underlord"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:special_bonus_unique_underlord:manaCost",
-        "ownerId": "activation:108:special_bonus_unique_underlord",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:special_bonus_unique_underlord:cooldown",
-        "ownerId": "activation:108:special_bonus_unique_underlord",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:special_bonus_unique_underlord:charges",
-        "ownerId": "activation:108:special_bonus_unique_underlord",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:special_bonus_unique_underlord:manaCost",
-        "value:activation:108:special_bonus_unique_underlord:cooldown",
-        "value:activation:108:special_bonus_unique_underlord:charges"
-      ]
-    },
-    {
-      "id": "activation:108:special_bonus_unique_underlord_9",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:special_bonus_unique_underlord_9"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:special_bonus_unique_underlord_9:manaCost",
-        "ownerId": "activation:108:special_bonus_unique_underlord_9",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:special_bonus_unique_underlord_9:cooldown",
-        "ownerId": "activation:108:special_bonus_unique_underlord_9",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:special_bonus_unique_underlord_9:charges",
-        "ownerId": "activation:108:special_bonus_unique_underlord_9",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:special_bonus_unique_underlord_9:manaCost",
-        "value:activation:108:special_bonus_unique_underlord_9:cooldown",
-        "value:activation:108:special_bonus_unique_underlord_9:charges"
-      ]
-    },
-    {
-      "id": "activation:108:special_bonus_attributes",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:special_bonus_attributes:manaCost",
-        "ownerId": "activation:108:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:special_bonus_attributes:cooldown",
-        "ownerId": "activation:108:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:special_bonus_attributes:charges",
-        "ownerId": "activation:108:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:special_bonus_attributes:manaCost",
-        "value:activation:108:special_bonus_attributes:cooldown",
-        "value:activation:108:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:108:abyssal_underlord_dark_rift",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:abyssal_underlord_dark_rift"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:abyssal_underlord_dark_rift:manaCost",
-        "ownerId": "activation:108:abyssal_underlord_dark_rift",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          100,
-          200,
-          300
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:108:abyssal_underlord_dark_rift:cooldown",
-        "ownerId": "activation:108:abyssal_underlord_dark_rift",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          110,
-          100,
-          90
-        ]
-      },
-      "charges": {
-        "id": "value:activation:108:abyssal_underlord_dark_rift:charges",
-        "ownerId": "activation:108:abyssal_underlord_dark_rift",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:abyssal_underlord_dark_rift:manaCost",
-        "value:activation:108:abyssal_underlord_dark_rift:cooldown",
-        "value:activation:108:abyssal_underlord_dark_rift:charges"
-      ]
-    },
-    {
-      "id": "activation:108:abyssal_underlord_cancel_dark_rift",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:abyssal_underlord_cancel_dark_rift"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:abyssal_underlord_cancel_dark_rift:manaCost",
-        "ownerId": "activation:108:abyssal_underlord_cancel_dark_rift",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:abyssal_underlord_cancel_dark_rift:cooldown",
-        "ownerId": "activation:108:abyssal_underlord_cancel_dark_rift",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:abyssal_underlord_cancel_dark_rift:charges",
-        "ownerId": "activation:108:abyssal_underlord_cancel_dark_rift",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:abyssal_underlord_cancel_dark_rift:manaCost",
-        "value:activation:108:abyssal_underlord_cancel_dark_rift:cooldown",
-        "value:activation:108:abyssal_underlord_cancel_dark_rift:charges"
-      ]
-    },
-    {
-      "id": "activation:108:abyssal_underlord_portal_warp",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:abyssal_underlord_portal_warp"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:abyssal_underlord_portal_warp:manaCost",
-        "ownerId": "activation:108:abyssal_underlord_portal_warp",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:abyssal_underlord_portal_warp:cooldown",
-        "ownerId": "activation:108:abyssal_underlord_portal_warp",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:abyssal_underlord_portal_warp:charges",
-        "ownerId": "activation:108:abyssal_underlord_portal_warp",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:abyssal_underlord_portal_warp:manaCost",
-        "value:activation:108:abyssal_underlord_portal_warp:cooldown",
-        "value:activation:108:abyssal_underlord_portal_warp:charges"
-      ]
-    },
-    {
-      "id": "activation:108:abyssal_underlord_abyssal_horde",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:abyssal_underlord_abyssal_horde"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:abyssal_underlord_abyssal_horde:manaCost",
-        "ownerId": "activation:108:abyssal_underlord_abyssal_horde",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:abyssal_underlord_abyssal_horde:cooldown",
-        "ownerId": "activation:108:abyssal_underlord_abyssal_horde",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:abyssal_underlord_abyssal_horde:charges",
-        "ownerId": "activation:108:abyssal_underlord_abyssal_horde",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:abyssal_underlord_abyssal_horde:manaCost",
-        "value:activation:108:abyssal_underlord_abyssal_horde:cooldown",
-        "value:activation:108:abyssal_underlord_abyssal_horde:charges"
-      ]
-    },
-    {
-      "id": "activation:108:abyssal_underling_warrior_last_will",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:abyssal_underling_warrior_last_will"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:abyssal_underling_warrior_last_will:manaCost",
-        "ownerId": "activation:108:abyssal_underling_warrior_last_will",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:abyssal_underling_warrior_last_will:cooldown",
-        "ownerId": "activation:108:abyssal_underling_warrior_last_will",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:abyssal_underling_warrior_last_will:charges",
-        "ownerId": "activation:108:abyssal_underling_warrior_last_will",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:abyssal_underling_warrior_last_will:manaCost",
-        "value:activation:108:abyssal_underling_warrior_last_will:cooldown",
-        "value:activation:108:abyssal_underling_warrior_last_will:charges"
-      ]
-    },
-    {
-      "id": "activation:108:abyssal_underling_warrior_mana_burn",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:abyssal_underling_warrior_mana_burn"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:abyssal_underling_warrior_mana_burn:manaCost",
-        "ownerId": "activation:108:abyssal_underling_warrior_mana_burn",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:abyssal_underling_warrior_mana_burn:cooldown",
-        "ownerId": "activation:108:abyssal_underling_warrior_mana_burn",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:abyssal_underling_warrior_mana_burn:charges",
-        "ownerId": "activation:108:abyssal_underling_warrior_mana_burn",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:abyssal_underling_warrior_mana_burn:manaCost",
-        "value:activation:108:abyssal_underling_warrior_mana_burn:cooldown",
-        "value:activation:108:abyssal_underling_warrior_mana_burn:charges"
-      ]
-    },
-    {
-      "id": "activation:108:abyssal_underling_archer_aoe",
-      "heroId": "108",
-      "abilityIds": [
-        "ability:108:abyssal_underling_archer_aoe"
-      ],
-      "manaCost": {
-        "id": "value:activation:108:abyssal_underling_archer_aoe:manaCost",
-        "ownerId": "activation:108:abyssal_underling_archer_aoe",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:108:abyssal_underling_archer_aoe:cooldown",
-        "ownerId": "activation:108:abyssal_underling_archer_aoe",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:108:abyssal_underling_archer_aoe:charges",
-        "ownerId": "activation:108:abyssal_underling_archer_aoe",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:108:abyssal_underling_archer_aoe:manaCost",
-        "value:activation:108:abyssal_underling_archer_aoe:cooldown",
-        "value:activation:108:abyssal_underling_archer_aoe:charges"
-      ]
+      "id": "special_bonus_unique_underlord_9",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

@@ -1,715 +1,220 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "bane_ichor_of_nyctasha",
+    "Name": "Ichor of Nyctasha",
+    "behavior": [
+      "passive"
+    ],
+    "damageType": "pure",
+    "tags": [
+      "buff",
+      "status_resistance"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:3:bane_enfeeble",
-      "heroId": "3",
-      "engineId": "bane_enfeeble",
-      "activationId": "activation:3:bane_enfeeble",
+      "id": "bane_enfeeble",
+      "Name": "Enfeeble",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "pure",
       "order": 0,
-      "owner": "npc_dota_hero_bane",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "cooldown": [
+        22,
+        17,
+        12,
+        7
+      ],
+      "tags": [
+        "damage_over_time",
+        "outgoing_damage_reduction"
+      ]
     },
     {
-      "id": "ability:3:bane_brain_sap",
-      "heroId": "3",
-      "engineId": "bane_brain_sap",
-      "activationId": "activation:3:bane_brain_sap",
+      "id": "bane_brain_sap",
+      "Name": "Brain Sap",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "piercesDebuffImmunity": "yes",
+      "damageType": "pure",
       "order": 1,
-      "owner": "npc_dota_hero_bane",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        105,
+        120,
+        135,
+        150
+      ],
+      "tags": [
+        "bkb_pierce",
+        "heal",
+        "self_heal"
+      ]
     },
     {
-      "id": "ability:3:bane_nightmare",
-      "heroId": "3",
-      "engineId": "bane_nightmare",
-      "activationId": "activation:3:bane_nightmare",
+      "id": "bane_nightmare",
+      "Name": "Nightmare",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
       "order": 2,
-      "owner": "npc_dota_hero_bane",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero",
+        "enemy_hero"
+      ],
+      "manaCost": [
+        120,
+        130,
+        140,
+        150
+      ],
+      "tags": [
+        "damage_immunity",
+        "disable",
+        "escape",
+        "sleep"
+      ]
     },
     {
-      "id": "ability:3:generic_hidden",
-      "heroId": "3",
-      "engineId": "generic_hidden",
-      "activationId": "activation:3:generic_hidden",
+      "id": "generic_hidden",
       "order": 3,
-      "owner": "npc_dota_hero_bane",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:3:bane_fiends_grip",
-      "heroId": "3",
-      "engineId": "bane_fiends_grip",
-      "activationId": "activation:3:bane_fiends_grip",
+      "id": "bane_fiends_grip",
+      "Name": "Fiend's Grip",
+      "behavior": [
+        "channeled",
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "strong-only",
+      "dispelType": "strong",
+      "piercesDebuffImmunity": "yes",
+      "damageType": "pure",
       "order": 4,
-      "owner": "npc_dota_hero_bane",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        200,
+        300,
+        400
+      ],
+      "tags": [
+        "bkb_pierce",
+        "channeled",
+        "damage_over_time",
+        "disable",
+        "mana_burn"
+      ]
     },
     {
-      "id": "ability:3:bane_nightmare_end",
-      "heroId": "3",
-      "engineId": "bane_nightmare_end",
-      "activationId": "activation:3:bane_nightmare_end",
+      "id": "bane_nightmare_end",
+      "Name": "Nightmare End",
+      "behavior": [
+        "no-target",
+        "toggle"
+      ],
       "order": 5,
-      "owner": "npc_dota_hero_bane",
-      "state": "known"
-    },
-    {
-      "id": "ability:3:bane_ichor_of_nyctasha",
-      "heroId": "3",
-      "engineId": "bane_ichor_of_nyctasha",
-      "activationId": "activation:3:bane_ichor_of_nyctasha",
-      "order": 6,
-      "owner": "npc_dota_hero_bane",
-      "state": "known"
-    },
-    {
-      "id": "ability:3:special_bonus_unique_bane_8",
-      "heroId": "3",
-      "engineId": "special_bonus_unique_bane_8",
-      "activationId": "activation:3:special_bonus_unique_bane_8",
-      "order": 7,
-      "owner": "npc_dota_hero_bane",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:3:special_bonus_unique_bane_11",
-      "heroId": "3",
-      "engineId": "special_bonus_unique_bane_11",
-      "activationId": "activation:3:special_bonus_unique_bane_11",
-      "order": 8,
-      "owner": "npc_dota_hero_bane",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:3:special_bonus_unique_bane_10",
-      "heroId": "3",
-      "engineId": "special_bonus_unique_bane_10",
-      "activationId": "activation:3:special_bonus_unique_bane_10",
-      "order": 9,
-      "owner": "npc_dota_hero_bane",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:3:special_bonus_unique_bane_9",
-      "heroId": "3",
-      "engineId": "special_bonus_unique_bane_9",
-      "activationId": "activation:3:special_bonus_unique_bane_9",
-      "order": 10,
-      "owner": "npc_dota_hero_bane",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:3:special_bonus_unique_bane_5",
-      "heroId": "3",
-      "engineId": "special_bonus_unique_bane_5",
-      "activationId": "activation:3:special_bonus_unique_bane_5",
-      "order": 11,
-      "owner": "npc_dota_hero_bane",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:3:special_bonus_movement_speed_30",
-      "heroId": "3",
-      "engineId": "special_bonus_movement_speed_30",
-      "activationId": "activation:3:special_bonus_movement_speed_30",
-      "order": 12,
-      "owner": "npc_dota_hero_bane",
-      "state": "known"
-    },
-    {
-      "id": "ability:3:special_bonus_unique_bane_2",
-      "heroId": "3",
-      "engineId": "special_bonus_unique_bane_2",
-      "activationId": "activation:3:special_bonus_unique_bane_2",
-      "order": 13,
-      "owner": "npc_dota_hero_bane",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:3:special_bonus_unique_bane_3",
-      "heroId": "3",
-      "engineId": "special_bonus_unique_bane_3",
-      "activationId": "activation:3:special_bonus_unique_bane_3",
-      "order": 14,
-      "owner": "npc_dota_hero_bane",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:3:special_bonus_attributes",
-      "heroId": "3",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:3:special_bonus_attributes",
-      "order": 15,
-      "owner": "npc_dota_hero_bane",
-      "state": "known"
+      "type": "toggle",
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:3:bane_enfeeble",
-      "heroId": "3",
-      "abilityIds": [
-        "ability:3:bane_enfeeble"
-      ],
-      "manaCost": {
-        "id": "value:activation:3:bane_enfeeble:manaCost",
-        "ownerId": "activation:3:bane_enfeeble",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          100,
-          110,
-          120,
-          130
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:3:bane_enfeeble:cooldown",
-        "ownerId": "activation:3:bane_enfeeble",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          22,
-          17,
-          12,
-          7
-        ]
-      },
-      "charges": {
-        "id": "value:activation:3:bane_enfeeble:charges",
-        "ownerId": "activation:3:bane_enfeeble",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:3:bane_enfeeble:manaCost",
-        "value:activation:3:bane_enfeeble:cooldown",
-        "value:activation:3:bane_enfeeble:charges"
+      "id": "special_bonus_unique_bane_8",
+      "tags": [
+        "buff",
+        "cast_range"
       ]
     },
     {
-      "id": "activation:3:bane_brain_sap",
-      "heroId": "3",
-      "abilityIds": [
-        "ability:3:bane_brain_sap"
-      ],
-      "manaCost": {
-        "id": "value:activation:3:bane_brain_sap:manaCost",
-        "ownerId": "activation:3:bane_brain_sap",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          105,
-          120,
-          135,
-          150
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:3:bane_brain_sap:cooldown",
-        "ownerId": "activation:3:bane_brain_sap",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "17 15 13 11",
-          "special_bonus_shard": "-3"
-        }
-      },
-      "charges": {
-        "id": "value:activation:3:bane_brain_sap:charges",
-        "ownerId": "activation:3:bane_brain_sap",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:3:bane_brain_sap:manaCost",
-        "value:activation:3:bane_brain_sap:cooldown",
-        "value:activation:3:bane_brain_sap:charges"
+      "id": "special_bonus_unique_bane_11",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_bane_10",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_bane_9",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_bane_5",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:3:bane_nightmare",
-      "heroId": "3",
-      "abilityIds": [
-        "ability:3:bane_nightmare"
+      "id": "special_bonus_movement_speed_30",
+      "Name": "+30 Movement Speed",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:3:bane_nightmare:manaCost",
-        "ownerId": "activation:3:bane_nightmare",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          120,
-          130,
-          140,
-          150
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:3:bane_nightmare:cooldown",
-        "ownerId": "activation:3:bane_nightmare",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "25 22 19 16",
-          "special_bonus_unique_bane_5": "-3"
-        }
-      },
-      "charges": {
-        "id": "value:activation:3:bane_nightmare:charges",
-        "ownerId": "activation:3:bane_nightmare",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:3:bane_nightmare:manaCost",
-        "value:activation:3:bane_nightmare:cooldown",
-        "value:activation:3:bane_nightmare:charges"
+      "tags": [
+        "buff",
+        "self_movement_speed"
       ]
     },
     {
-      "id": "activation:3:generic_hidden",
-      "heroId": "3",
-      "abilityIds": [
-        "ability:3:generic_hidden"
-      ],
-      "manaCost": {
-        "id": "value:activation:3:generic_hidden:manaCost",
-        "ownerId": "activation:3:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:3:generic_hidden:cooldown",
-        "ownerId": "activation:3:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:3:generic_hidden:charges",
-        "ownerId": "activation:3:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:3:generic_hidden:manaCost",
-        "value:activation:3:generic_hidden:cooldown",
-        "value:activation:3:generic_hidden:charges"
-      ]
+      "id": "special_bonus_unique_bane_2",
+      "tags": []
     },
     {
-      "id": "activation:3:bane_fiends_grip",
-      "heroId": "3",
-      "abilityIds": [
-        "ability:3:bane_fiends_grip"
-      ],
-      "manaCost": {
-        "id": "value:activation:3:bane_fiends_grip:manaCost",
-        "ownerId": "activation:3:bane_fiends_grip",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          200,
-          300,
-          400
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:3:bane_fiends_grip:cooldown",
-        "ownerId": "activation:3:bane_fiends_grip",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "120 110 100",
-          "special_bonus_scepter": "-40"
-        }
-      },
-      "charges": {
-        "id": "value:activation:3:bane_fiends_grip:charges",
-        "ownerId": "activation:3:bane_fiends_grip",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:3:bane_fiends_grip:manaCost",
-        "value:activation:3:bane_fiends_grip:cooldown",
-        "value:activation:3:bane_fiends_grip:charges"
-      ]
-    },
-    {
-      "id": "activation:3:bane_nightmare_end",
-      "heroId": "3",
-      "abilityIds": [
-        "ability:3:bane_nightmare_end"
-      ],
-      "manaCost": {
-        "id": "value:activation:3:bane_nightmare_end:manaCost",
-        "ownerId": "activation:3:bane_nightmare_end",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:3:bane_nightmare_end:cooldown",
-        "ownerId": "activation:3:bane_nightmare_end",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:3:bane_nightmare_end:charges",
-        "ownerId": "activation:3:bane_nightmare_end",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:3:bane_nightmare_end:manaCost",
-        "value:activation:3:bane_nightmare_end:cooldown",
-        "value:activation:3:bane_nightmare_end:charges"
-      ]
-    },
-    {
-      "id": "activation:3:bane_ichor_of_nyctasha",
-      "heroId": "3",
-      "abilityIds": [
-        "ability:3:bane_ichor_of_nyctasha"
-      ],
-      "manaCost": {
-        "id": "value:activation:3:bane_ichor_of_nyctasha:manaCost",
-        "ownerId": "activation:3:bane_ichor_of_nyctasha",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:3:bane_ichor_of_nyctasha:cooldown",
-        "ownerId": "activation:3:bane_ichor_of_nyctasha",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:3:bane_ichor_of_nyctasha:charges",
-        "ownerId": "activation:3:bane_ichor_of_nyctasha",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:3:bane_ichor_of_nyctasha:manaCost",
-        "value:activation:3:bane_ichor_of_nyctasha:cooldown",
-        "value:activation:3:bane_ichor_of_nyctasha:charges"
-      ]
-    },
-    {
-      "id": "activation:3:special_bonus_unique_bane_8",
-      "heroId": "3",
-      "abilityIds": [
-        "ability:3:special_bonus_unique_bane_8"
-      ],
-      "manaCost": {
-        "id": "value:activation:3:special_bonus_unique_bane_8:manaCost",
-        "ownerId": "activation:3:special_bonus_unique_bane_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:3:special_bonus_unique_bane_8:cooldown",
-        "ownerId": "activation:3:special_bonus_unique_bane_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:3:special_bonus_unique_bane_8:charges",
-        "ownerId": "activation:3:special_bonus_unique_bane_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:3:special_bonus_unique_bane_8:manaCost",
-        "value:activation:3:special_bonus_unique_bane_8:cooldown",
-        "value:activation:3:special_bonus_unique_bane_8:charges"
-      ]
-    },
-    {
-      "id": "activation:3:special_bonus_unique_bane_11",
-      "heroId": "3",
-      "abilityIds": [
-        "ability:3:special_bonus_unique_bane_11"
-      ],
-      "manaCost": {
-        "id": "value:activation:3:special_bonus_unique_bane_11:manaCost",
-        "ownerId": "activation:3:special_bonus_unique_bane_11",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:3:special_bonus_unique_bane_11:cooldown",
-        "ownerId": "activation:3:special_bonus_unique_bane_11",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:3:special_bonus_unique_bane_11:charges",
-        "ownerId": "activation:3:special_bonus_unique_bane_11",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:3:special_bonus_unique_bane_11:manaCost",
-        "value:activation:3:special_bonus_unique_bane_11:cooldown",
-        "value:activation:3:special_bonus_unique_bane_11:charges"
-      ]
-    },
-    {
-      "id": "activation:3:special_bonus_unique_bane_10",
-      "heroId": "3",
-      "abilityIds": [
-        "ability:3:special_bonus_unique_bane_10"
-      ],
-      "manaCost": {
-        "id": "value:activation:3:special_bonus_unique_bane_10:manaCost",
-        "ownerId": "activation:3:special_bonus_unique_bane_10",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:3:special_bonus_unique_bane_10:cooldown",
-        "ownerId": "activation:3:special_bonus_unique_bane_10",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:3:special_bonus_unique_bane_10:charges",
-        "ownerId": "activation:3:special_bonus_unique_bane_10",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:3:special_bonus_unique_bane_10:manaCost",
-        "value:activation:3:special_bonus_unique_bane_10:cooldown",
-        "value:activation:3:special_bonus_unique_bane_10:charges"
-      ]
-    },
-    {
-      "id": "activation:3:special_bonus_unique_bane_9",
-      "heroId": "3",
-      "abilityIds": [
-        "ability:3:special_bonus_unique_bane_9"
-      ],
-      "manaCost": {
-        "id": "value:activation:3:special_bonus_unique_bane_9:manaCost",
-        "ownerId": "activation:3:special_bonus_unique_bane_9",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:3:special_bonus_unique_bane_9:cooldown",
-        "ownerId": "activation:3:special_bonus_unique_bane_9",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:3:special_bonus_unique_bane_9:charges",
-        "ownerId": "activation:3:special_bonus_unique_bane_9",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:3:special_bonus_unique_bane_9:manaCost",
-        "value:activation:3:special_bonus_unique_bane_9:cooldown",
-        "value:activation:3:special_bonus_unique_bane_9:charges"
-      ]
-    },
-    {
-      "id": "activation:3:special_bonus_unique_bane_5",
-      "heroId": "3",
-      "abilityIds": [
-        "ability:3:special_bonus_unique_bane_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:3:special_bonus_unique_bane_5:manaCost",
-        "ownerId": "activation:3:special_bonus_unique_bane_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:3:special_bonus_unique_bane_5:cooldown",
-        "ownerId": "activation:3:special_bonus_unique_bane_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:3:special_bonus_unique_bane_5:charges",
-        "ownerId": "activation:3:special_bonus_unique_bane_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:3:special_bonus_unique_bane_5:manaCost",
-        "value:activation:3:special_bonus_unique_bane_5:cooldown",
-        "value:activation:3:special_bonus_unique_bane_5:charges"
-      ]
-    },
-    {
-      "id": "activation:3:special_bonus_movement_speed_30",
-      "heroId": "3",
-      "abilityIds": [
-        "ability:3:special_bonus_movement_speed_30"
-      ],
-      "manaCost": {
-        "id": "value:activation:3:special_bonus_movement_speed_30:manaCost",
-        "ownerId": "activation:3:special_bonus_movement_speed_30",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:3:special_bonus_movement_speed_30:cooldown",
-        "ownerId": "activation:3:special_bonus_movement_speed_30",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:3:special_bonus_movement_speed_30:charges",
-        "ownerId": "activation:3:special_bonus_movement_speed_30",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:3:special_bonus_movement_speed_30:manaCost",
-        "value:activation:3:special_bonus_movement_speed_30:cooldown",
-        "value:activation:3:special_bonus_movement_speed_30:charges"
-      ]
-    },
-    {
-      "id": "activation:3:special_bonus_unique_bane_2",
-      "heroId": "3",
-      "abilityIds": [
-        "ability:3:special_bonus_unique_bane_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:3:special_bonus_unique_bane_2:manaCost",
-        "ownerId": "activation:3:special_bonus_unique_bane_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:3:special_bonus_unique_bane_2:cooldown",
-        "ownerId": "activation:3:special_bonus_unique_bane_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:3:special_bonus_unique_bane_2:charges",
-        "ownerId": "activation:3:special_bonus_unique_bane_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:3:special_bonus_unique_bane_2:manaCost",
-        "value:activation:3:special_bonus_unique_bane_2:cooldown",
-        "value:activation:3:special_bonus_unique_bane_2:charges"
-      ]
-    },
-    {
-      "id": "activation:3:special_bonus_unique_bane_3",
-      "heroId": "3",
-      "abilityIds": [
-        "ability:3:special_bonus_unique_bane_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:3:special_bonus_unique_bane_3:manaCost",
-        "ownerId": "activation:3:special_bonus_unique_bane_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:3:special_bonus_unique_bane_3:cooldown",
-        "ownerId": "activation:3:special_bonus_unique_bane_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:3:special_bonus_unique_bane_3:charges",
-        "ownerId": "activation:3:special_bonus_unique_bane_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:3:special_bonus_unique_bane_3:manaCost",
-        "value:activation:3:special_bonus_unique_bane_3:cooldown",
-        "value:activation:3:special_bonus_unique_bane_3:charges"
-      ]
-    },
-    {
-      "id": "activation:3:special_bonus_attributes",
-      "heroId": "3",
-      "abilityIds": [
-        "ability:3:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:3:special_bonus_attributes:manaCost",
-        "ownerId": "activation:3:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:3:special_bonus_attributes:cooldown",
-        "ownerId": "activation:3:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:3:special_bonus_attributes:charges",
-        "ownerId": "activation:3:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:3:special_bonus_attributes:manaCost",
-        "value:activation:3:special_bonus_attributes:cooldown",
-        "value:activation:3:special_bonus_attributes:charges"
-      ]
+      "id": "special_bonus_unique_bane_3",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

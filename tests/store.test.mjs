@@ -7,6 +7,26 @@ import { sha256Hex as browserSha256Hex } from '../src/sha256.mjs';
 const bytes = value => new TextEncoder().encode(JSON.stringify(value));
 const sha256 = value => createHash('sha256').update(value).digest('hex');
 
+test('runtime category scores count each ability tag and remain immutable', async () => {
+    const data = fixture(core => {
+        core.entities.abilities[0].tags = ['heal', 'ally_heal', 'self_heal', 'buff', 'self_attack_damage', 'stun'];
+        core.entities.heroes[0].capabilities = { buff: 2, control: 1, defense: 2, save: 1, sustain: 3 };
+        core.entities.heroes[1].capabilities = {};
+    });
+    const store = await loadKnowledgeStore({ manifest: data.manifest, readArtifact: async () => data.coreBytes });
+    assert.deepEqual(store.hero('1').capabilities, { buff: 2, control: 1, defense: 2, save: 1, sustain: 3 });
+    assert.ok(Object.isFrozen(store.hero('1').capabilities));
+    assert.throws(() => { store.hero('1').capabilities.sustain = 2; }, TypeError);
+    store.retire();
+    for (const capabilities of [{ heal: 1 }, { sustain: 2 }, { sustain: 0 }, { sustain: -1 }, { sustain: 1.5 }, { sustain: '1' }, { sustain: Number.MAX_SAFE_INTEGER + 1 }]) {
+        const invalid = fixture(core => {
+            core.entities.abilities[0].tags = ['heal'];
+            core.entities.heroes[0].capabilities = capabilities;
+        });
+        await assert.rejects(loadKnowledgeStore({ manifest: invalid.manifest, readArtifact: async () => invalid.coreBytes }), { code: 'CORE_SCHEMA' });
+    }
+});
+
 function fixture(configure = () => {}) {
     const core = {
         schemaVersion: 2,
@@ -15,7 +35,7 @@ function fixture(configure = () => {}) {
         generatedAt: '2026-10-11T00:00:00.000Z',
         build: { clientVersion: 'fixture', serverVersion: 'fixture', publicPatchLabel: null },
         patchLabel: { state: 'unknown', reason: 'Fixture build has no public patch mapping.' },
-        compilerVersion: 'dota-knowledge-compiler-3',
+        compilerVersion: 'dota-knowledge-compiler-5',
         reviewVersion: 'annotations-1',
         sourceIdentities: { mechanics: 'a'.repeat(64), knowledge: 'b'.repeat(64) },
         entities: {
@@ -26,7 +46,7 @@ function fixture(configure = () => {}) {
                 { id: '3', key: 'fixture-three', name: 'Fixture Three', enabled: true, cmEnabled: true, abilityIds: [], effectIds: [] },
             ],
             abilities: [{ id: 'ability:arcane-orb', heroId: '1', engineId: 'arcane_orb', activationId: 'activation:arcane-orb',
-                order: 0, state: 'known', sourceIds: [] }],
+                order: 0, state: 'known', sourceIds: [], tags: [] }],
             activations: [{ id: 'activation:arcane-orb', heroId: '1', abilityIds: ['ability:arcane-orb'],
                 manaCost: { state: 'known', value: 0 }, cooldown: { state: 'unknown', reason: 'unavailable' },
                 charges: { state: 'notApplicable', reason: 'not charged' },

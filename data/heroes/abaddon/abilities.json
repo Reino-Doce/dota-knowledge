@@ -1,705 +1,198 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "abaddon_withering_mist",
+    "Name": "Withering Mist",
+    "behavior": [
+      "passive"
+    ],
+    "breakable": true,
+    "tags": [
+      "anti_heal"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:102:abaddon_death_coil",
-      "heroId": "102",
-      "engineId": "abaddon_death_coil",
-      "activationId": "activation:102:abaddon_death_coil",
+      "id": "abaddon_death_coil",
+      "Name": "Mist Coil",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "units"
+      ],
+      "piercesDebuffImmunity": "allies-only",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_abaddon",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero",
+        "enemy_hero"
+      ],
+      "manaCost": [
+        50,
+        55,
+        60,
+        65
+      ],
+      "cooldown": [
+        8,
+        7,
+        6,
+        5
+      ],
+      "tags": [
+        "ally_heal",
+        "heal",
+        "self_heal"
+      ]
     },
     {
-      "id": "ability:102:abaddon_aphotic_shield",
-      "heroId": "102",
-      "engineId": "abaddon_aphotic_shield",
-      "activationId": "activation:102:abaddon_aphotic_shield",
+      "id": "abaddon_aphotic_shield",
+      "Name": "Aphotic Shield",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "allied-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_abaddon",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero",
+        "ally_creep"
+      ],
+      "manaCost": [
+        110,
+        120,
+        130,
+        140
+      ],
+      "tags": [
+        "ally_barrier",
+        "ally_dispel",
+        "barrier",
+        "buff",
+        "dispel"
+      ]
     },
     {
-      "id": "ability:102:abaddon_frostmourne",
-      "heroId": "102",
-      "engineId": "abaddon_frostmourne",
-      "activationId": "activation:102:abaddon_frostmourne",
+      "id": "abaddon_frostmourne",
+      "Name": "Curse of Avernus",
+      "behavior": [
+        "passive"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "breakable": true,
       "order": 2,
-      "owner": "npc_dota_hero_abaddon",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "damage_over_time",
+        "slow"
+      ]
     },
     {
-      "id": "ability:102:abaddon_withering_mist",
-      "heroId": "102",
-      "engineId": "abaddon_withering_mist",
-      "activationId": "activation:102:abaddon_withering_mist",
-      "order": 3,
-      "owner": "npc_dota_hero_abaddon",
-      "state": "known"
-    },
-    {
-      "id": "ability:102:generic_hidden",
-      "heroId": "102",
-      "engineId": "generic_hidden",
-      "activationId": "activation:102:generic_hidden",
+      "id": "generic_hidden",
       "order": 4,
-      "owner": "npc_dota_hero_abaddon",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:102:abaddon_borrowed_time",
-      "heroId": "102",
-      "engineId": "abaddon_borrowed_time",
-      "activationId": "activation:102:abaddon_borrowed_time",
+      "id": "abaddon_borrowed_time",
+      "Name": "Borrowed Time",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
+      "breakable": true,
       "order": 5,
-      "owner": "npc_dota_hero_abaddon",
-      "state": "known"
-    },
-    {
-      "id": "ability:102:special_bonus_unique_abaddon_5",
-      "heroId": "102",
-      "engineId": "special_bonus_unique_abaddon_5",
-      "activationId": "activation:102:special_bonus_unique_abaddon_5",
-      "order": 6,
-      "owner": "npc_dota_hero_abaddon",
-      "state": "known"
-    },
-    {
-      "id": "ability:102:special_bonus_unique_abaddon_7",
-      "heroId": "102",
-      "engineId": "special_bonus_unique_abaddon_7",
-      "activationId": "activation:102:special_bonus_unique_abaddon_7",
-      "order": 7,
-      "owner": "npc_dota_hero_abaddon",
-      "state": "known"
-    },
-    {
-      "id": "ability:102:special_bonus_unique_abaddon_borrowed_time_cd",
-      "heroId": "102",
-      "engineId": "special_bonus_unique_abaddon_borrowed_time_cd",
-      "activationId": "activation:102:special_bonus_unique_abaddon_borrowed_time_cd",
-      "order": 8,
-      "owner": "npc_dota_hero_abaddon",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:102:special_bonus_unique_abaddon_2",
-      "heroId": "102",
-      "engineId": "special_bonus_unique_abaddon_2",
-      "activationId": "activation:102:special_bonus_unique_abaddon_2",
-      "order": 9,
-      "owner": "npc_dota_hero_abaddon",
-      "state": "known"
-    },
-    {
-      "id": "ability:102:special_bonus_unique_abaddon",
-      "heroId": "102",
-      "engineId": "special_bonus_unique_abaddon",
-      "activationId": "activation:102:special_bonus_unique_abaddon",
-      "order": 10,
-      "owner": "npc_dota_hero_abaddon",
-      "state": "known"
-    },
-    {
-      "id": "ability:102:special_bonus_unique_abaddon_immolation",
-      "heroId": "102",
-      "engineId": "special_bonus_unique_abaddon_immolation",
-      "activationId": "activation:102:special_bonus_unique_abaddon_immolation",
-      "order": 11,
-      "owner": "npc_dota_hero_abaddon",
-      "state": "known"
-    },
-    {
-      "id": "ability:102:special_bonus_unique_abaddon_3",
-      "heroId": "102",
-      "engineId": "special_bonus_unique_abaddon_3",
-      "activationId": "activation:102:special_bonus_unique_abaddon_3",
-      "order": 12,
-      "owner": "npc_dota_hero_abaddon",
-      "state": "known"
-    },
-    {
-      "id": "ability:102:special_bonus_unique_abaddon_4",
-      "heroId": "102",
-      "engineId": "special_bonus_unique_abaddon_4",
-      "activationId": "activation:102:special_bonus_unique_abaddon_4",
-      "order": 13,
-      "owner": "npc_dota_hero_abaddon",
-      "state": "known"
-    },
-    {
-      "id": "ability:102:special_bonus_attributes",
-      "heroId": "102",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:102:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_abaddon",
-      "state": "known"
-    },
-    {
-      "id": "ability:102:special_bonus_unique_abaddon_6",
-      "heroId": "102",
-      "engineId": "special_bonus_unique_abaddon_6",
-      "activationId": "activation:102:special_bonus_unique_abaddon_6",
-      "order": 15,
-      "owner": "npc_dota_hero_abaddon",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 0,
+      "tags": [
+        "buff",
+        "cast_range",
+        "dispel"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:102:abaddon_death_coil",
-      "heroId": "102",
-      "abilityIds": [
-        "ability:102:abaddon_death_coil"
+      "id": "special_bonus_unique_abaddon_5",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:102:abaddon_death_coil:manaCost",
-        "ownerId": "activation:102:abaddon_death_coil",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          50,
-          55,
-          60,
-          65
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:102:abaddon_death_coil:cooldown",
-        "ownerId": "activation:102:abaddon_death_coil",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          8,
-          7,
-          6,
-          5
-        ]
-      },
-      "charges": {
-        "id": "value:activation:102:abaddon_death_coil:charges",
-        "ownerId": "activation:102:abaddon_death_coil",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:102:abaddon_death_coil:manaCost",
-        "value:activation:102:abaddon_death_coil:cooldown",
-        "value:activation:102:abaddon_death_coil:charges"
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_abaddon_7",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_abaddon_borrowed_time_cd",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:102:abaddon_aphotic_shield",
-      "heroId": "102",
-      "abilityIds": [
-        "ability:102:abaddon_aphotic_shield"
+      "id": "special_bonus_unique_abaddon_2",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:102:abaddon_aphotic_shield:manaCost",
-        "ownerId": "activation:102:abaddon_aphotic_shield",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          110,
-          120,
-          130,
-          140
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:102:abaddon_aphotic_shield:cooldown",
-        "ownerId": "activation:102:abaddon_aphotic_shield",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "12 10 8 6"
-        }
-      },
-      "charges": {
-        "id": "value:activation:102:abaddon_aphotic_shield:charges",
-        "ownerId": "activation:102:abaddon_aphotic_shield",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:102:abaddon_aphotic_shield:manaCost",
-        "value:activation:102:abaddon_aphotic_shield:cooldown",
-        "value:activation:102:abaddon_aphotic_shield:charges"
-      ]
+      "tags": []
     },
     {
-      "id": "activation:102:abaddon_frostmourne",
-      "heroId": "102",
-      "abilityIds": [
-        "ability:102:abaddon_frostmourne"
+      "id": "special_bonus_unique_abaddon",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:102:abaddon_frostmourne:manaCost",
-        "ownerId": "activation:102:abaddon_frostmourne",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:102:abaddon_frostmourne:cooldown",
-        "ownerId": "activation:102:abaddon_frostmourne",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:102:abaddon_frostmourne:charges",
-        "ownerId": "activation:102:abaddon_frostmourne",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:102:abaddon_frostmourne:manaCost",
-        "value:activation:102:abaddon_frostmourne:cooldown",
-        "value:activation:102:abaddon_frostmourne:charges"
-      ]
+      "tags": []
     },
     {
-      "id": "activation:102:abaddon_withering_mist",
-      "heroId": "102",
-      "abilityIds": [
-        "ability:102:abaddon_withering_mist"
+      "id": "special_bonus_unique_abaddon_immolation",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:102:abaddon_withering_mist:manaCost",
-        "ownerId": "activation:102:abaddon_withering_mist",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:102:abaddon_withering_mist:cooldown",
-        "ownerId": "activation:102:abaddon_withering_mist",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:102:abaddon_withering_mist:charges",
-        "ownerId": "activation:102:abaddon_withering_mist",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:102:abaddon_withering_mist:manaCost",
-        "value:activation:102:abaddon_withering_mist:cooldown",
-        "value:activation:102:abaddon_withering_mist:charges"
-      ]
+      "tags": []
     },
     {
-      "id": "activation:102:generic_hidden",
-      "heroId": "102",
-      "abilityIds": [
-        "ability:102:generic_hidden"
+      "id": "special_bonus_unique_abaddon_3",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:102:generic_hidden:manaCost",
-        "ownerId": "activation:102:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:102:generic_hidden:cooldown",
-        "ownerId": "activation:102:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:102:generic_hidden:charges",
-        "ownerId": "activation:102:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:102:generic_hidden:manaCost",
-        "value:activation:102:generic_hidden:cooldown",
-        "value:activation:102:generic_hidden:charges"
-      ]
+      "tags": []
     },
     {
-      "id": "activation:102:abaddon_borrowed_time",
-      "heroId": "102",
-      "abilityIds": [
-        "ability:102:abaddon_borrowed_time"
+      "id": "special_bonus_unique_abaddon_4",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:102:abaddon_borrowed_time:manaCost",
-        "ownerId": "activation:102:abaddon_borrowed_time",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          0,
-          0,
-          0
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:102:abaddon_borrowed_time:cooldown",
-        "ownerId": "activation:102:abaddon_borrowed_time",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "85 75 65",
-          "special_bonus_unique_abaddon_borrowed_time_cd": "-10"
-        }
-      },
-      "charges": {
-        "id": "value:activation:102:abaddon_borrowed_time:charges",
-        "ownerId": "activation:102:abaddon_borrowed_time",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:102:abaddon_borrowed_time:manaCost",
-        "value:activation:102:abaddon_borrowed_time:cooldown",
-        "value:activation:102:abaddon_borrowed_time:charges"
-      ]
+      "tags": []
     },
     {
-      "id": "activation:102:special_bonus_unique_abaddon_5",
-      "heroId": "102",
-      "abilityIds": [
-        "ability:102:special_bonus_unique_abaddon_5"
+      "id": "special_bonus_unique_abaddon_6",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_5:manaCost",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_5:cooldown",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_5:charges",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:102:special_bonus_unique_abaddon_5:manaCost",
-        "value:activation:102:special_bonus_unique_abaddon_5:cooldown",
-        "value:activation:102:special_bonus_unique_abaddon_5:charges"
-      ]
-    },
-    {
-      "id": "activation:102:special_bonus_unique_abaddon_7",
-      "heroId": "102",
-      "abilityIds": [
-        "ability:102:special_bonus_unique_abaddon_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_7:manaCost",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_7:cooldown",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_7:charges",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:102:special_bonus_unique_abaddon_7:manaCost",
-        "value:activation:102:special_bonus_unique_abaddon_7:cooldown",
-        "value:activation:102:special_bonus_unique_abaddon_7:charges"
-      ]
-    },
-    {
-      "id": "activation:102:special_bonus_unique_abaddon_borrowed_time_cd",
-      "heroId": "102",
-      "abilityIds": [
-        "ability:102:special_bonus_unique_abaddon_borrowed_time_cd"
-      ],
-      "manaCost": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_borrowed_time_cd:manaCost",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_borrowed_time_cd",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_borrowed_time_cd:cooldown",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_borrowed_time_cd",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_borrowed_time_cd:charges",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_borrowed_time_cd",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:102:special_bonus_unique_abaddon_borrowed_time_cd:manaCost",
-        "value:activation:102:special_bonus_unique_abaddon_borrowed_time_cd:cooldown",
-        "value:activation:102:special_bonus_unique_abaddon_borrowed_time_cd:charges"
-      ]
-    },
-    {
-      "id": "activation:102:special_bonus_unique_abaddon_2",
-      "heroId": "102",
-      "abilityIds": [
-        "ability:102:special_bonus_unique_abaddon_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_2:manaCost",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_2:cooldown",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_2:charges",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:102:special_bonus_unique_abaddon_2:manaCost",
-        "value:activation:102:special_bonus_unique_abaddon_2:cooldown",
-        "value:activation:102:special_bonus_unique_abaddon_2:charges"
-      ]
-    },
-    {
-      "id": "activation:102:special_bonus_unique_abaddon",
-      "heroId": "102",
-      "abilityIds": [
-        "ability:102:special_bonus_unique_abaddon"
-      ],
-      "manaCost": {
-        "id": "value:activation:102:special_bonus_unique_abaddon:manaCost",
-        "ownerId": "activation:102:special_bonus_unique_abaddon",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:102:special_bonus_unique_abaddon:cooldown",
-        "ownerId": "activation:102:special_bonus_unique_abaddon",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:102:special_bonus_unique_abaddon:charges",
-        "ownerId": "activation:102:special_bonus_unique_abaddon",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:102:special_bonus_unique_abaddon:manaCost",
-        "value:activation:102:special_bonus_unique_abaddon:cooldown",
-        "value:activation:102:special_bonus_unique_abaddon:charges"
-      ]
-    },
-    {
-      "id": "activation:102:special_bonus_unique_abaddon_immolation",
-      "heroId": "102",
-      "abilityIds": [
-        "ability:102:special_bonus_unique_abaddon_immolation"
-      ],
-      "manaCost": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_immolation:manaCost",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_immolation",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_immolation:cooldown",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_immolation",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_immolation:charges",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_immolation",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:102:special_bonus_unique_abaddon_immolation:manaCost",
-        "value:activation:102:special_bonus_unique_abaddon_immolation:cooldown",
-        "value:activation:102:special_bonus_unique_abaddon_immolation:charges"
-      ]
-    },
-    {
-      "id": "activation:102:special_bonus_unique_abaddon_3",
-      "heroId": "102",
-      "abilityIds": [
-        "ability:102:special_bonus_unique_abaddon_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_3:manaCost",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_3:cooldown",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_3:charges",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:102:special_bonus_unique_abaddon_3:manaCost",
-        "value:activation:102:special_bonus_unique_abaddon_3:cooldown",
-        "value:activation:102:special_bonus_unique_abaddon_3:charges"
-      ]
-    },
-    {
-      "id": "activation:102:special_bonus_unique_abaddon_4",
-      "heroId": "102",
-      "abilityIds": [
-        "ability:102:special_bonus_unique_abaddon_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_4:manaCost",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_4:cooldown",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_4:charges",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:102:special_bonus_unique_abaddon_4:manaCost",
-        "value:activation:102:special_bonus_unique_abaddon_4:cooldown",
-        "value:activation:102:special_bonus_unique_abaddon_4:charges"
-      ]
-    },
-    {
-      "id": "activation:102:special_bonus_attributes",
-      "heroId": "102",
-      "abilityIds": [
-        "ability:102:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:102:special_bonus_attributes:manaCost",
-        "ownerId": "activation:102:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:102:special_bonus_attributes:cooldown",
-        "ownerId": "activation:102:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:102:special_bonus_attributes:charges",
-        "ownerId": "activation:102:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:102:special_bonus_attributes:manaCost",
-        "value:activation:102:special_bonus_attributes:cooldown",
-        "value:activation:102:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:102:special_bonus_unique_abaddon_6",
-      "heroId": "102",
-      "abilityIds": [
-        "ability:102:special_bonus_unique_abaddon_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_6:manaCost",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_6:cooldown",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:102:special_bonus_unique_abaddon_6:charges",
-        "ownerId": "activation:102:special_bonus_unique_abaddon_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:102:special_bonus_unique_abaddon_6:manaCost",
-        "value:activation:102:special_bonus_unique_abaddon_6:cooldown",
-        "value:activation:102:special_bonus_unique_abaddon_6:charges"
-      ]
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

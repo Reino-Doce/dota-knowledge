@@ -4,9 +4,13 @@ For new population snapshots, use the independent [population collection and pub
 
 ## Compile canonical records
 
-`npm run compile` reads `data/manifest.json` and its canonical records, then validates and publishes the schema-v2 tree with compiler `dota-knowledge-compiler-3`. It works offline without a Picker checkout or ignored acquisition files. `--dataset <directory>` and `--output <directory>` select another canonical input and destination. Unchanged selected inputs retain source clocks, review clocks, generation metadata and exact artifact bytes.
+`npm run compile` reads `data/manifest.json` and its canonical records, then validates and publishes the schema-v2 tree with compiler `dota-knowledge-compiler-5`. It works offline without a Picker checkout or ignored acquisition files. `--dataset <directory>` and `--output <directory>` select another canonical input and destination. Unchanged selected inputs retain source clocks, review clocks, generation metadata and exact artifact bytes.
 
 The canonical manifest lists every generated file and its byte length/SHA-256. `heroes/index.json` links decimal IDs, existing keys, engine identifiers and provider slugs to profiles, abilities, mechanics and guides. `heroes/aliases.json` maps lowercase aliases to canonical hero keys. Aliases claimed by multiple heroes are omitted unless explicitly resolved; see the [conflict list](alias-conflicts.md). `observations/index.json` references full records by path and offset; compact runtime projections select fields without replacing the full payloads. Calibration stays under its original source identity in `observations/sources.json`.
+
+Per-hero ability files are compact generated views with `innate`, `skills`, `talents`, and `bonus_attributes`. Their game identifiers and tags join lossless full records in `mechanics/abilities.json`. The views expose source-declared behavior, affected target classes, dispel and debuff-immunity properties, damage type, and breakability when those declarations are recognized. Compilation validates the views against source declarations and structured activation quantities; unsupported casting modes and missing quantities remain explicit or omitted. Legacy files containing Ability/Activation arrays remain readable for migration. Runtime Ability and Activation APIs retain their full records.
+
+The compiler accepts stale derived casting/name/cost views when rules change, using canonical metadata and verified source declarations to regenerate them. It still checks input hashes, identities, completeness and tag-array structure, and strictly validates the freshly generated dataset. Ordinary canonical reads remain strict about source-derived views. Editing a generated cost or casting type does not change its canonical source value.
 
 Consumers use `heroByKey(key)` or `heroesByAlias(alias)` from the loaded store.
 The runtime builds these lookups from validated profiles and the flat alias

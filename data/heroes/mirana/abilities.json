@@ -1,830 +1,216 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": [
     {
-      "id": "ability:9:mirana_starfall",
-      "heroId": "9",
-      "engineId": "mirana_starfall",
-      "activationId": "activation:9:mirana_starfall",
-      "order": 0,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
+      "id": "mirana_celestial_quiver",
+      "Name": "Celestial Quiver",
+      "behavior": [
+        "auto-cast",
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "damageType": "magical",
+      "breakable": true,
+      "type": "toggle",
+      "tags": []
     },
     {
-      "id": "ability:9:mirana_arrow",
-      "heroId": "9",
-      "engineId": "mirana_arrow",
-      "activationId": "activation:9:mirana_arrow",
-      "order": 1,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
+      "id": "mirana_selemenes_faithful",
+      "Name": "Selemene's Faithful",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "ally_healing_amplification",
+        "buff",
+        "healing_amplification"
+      ]
     },
     {
-      "id": "ability:9:mirana_leap",
-      "heroId": "9",
-      "engineId": "mirana_leap",
-      "activationId": "activation:9:mirana_leap",
-      "order": 2,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
-    },
-    {
-      "id": "ability:9:mirana_celestial_quiver",
-      "heroId": "9",
-      "engineId": "mirana_celestial_quiver",
-      "activationId": "activation:9:mirana_celestial_quiver",
-      "order": 3,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
-    },
-    {
-      "id": "ability:9:generic_hidden",
-      "heroId": "9",
-      "engineId": "generic_hidden",
-      "activationId": "activation:9:generic_hidden",
-      "order": 4,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
-    },
-    {
-      "id": "ability:9:mirana_invis",
-      "heroId": "9",
-      "engineId": "mirana_invis",
-      "activationId": "activation:9:mirana_invis",
-      "order": 5,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
-    },
-    {
-      "id": "ability:9:special_bonus_unique_mirana_3",
-      "heroId": "9",
-      "engineId": "special_bonus_unique_mirana_3",
-      "activationId": "activation:9:special_bonus_unique_mirana_3",
-      "order": 6,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
-    },
-    {
-      "id": "ability:9:special_bonus_unique_mirana_6",
-      "heroId": "9",
-      "engineId": "special_bonus_unique_mirana_6",
-      "activationId": "activation:9:special_bonus_unique_mirana_6",
-      "order": 7,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
-    },
-    {
-      "id": "ability:9:special_bonus_unique_mirana_5",
-      "heroId": "9",
-      "engineId": "special_bonus_unique_mirana_5",
-      "activationId": "activation:9:special_bonus_unique_mirana_5",
-      "order": 8,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
-    },
-    {
-      "id": "ability:9:special_bonus_unique_mirana_1",
-      "heroId": "9",
-      "engineId": "special_bonus_unique_mirana_1",
-      "activationId": "activation:9:special_bonus_unique_mirana_1",
-      "order": 9,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
-    },
-    {
-      "id": "ability:9:special_bonus_unique_mirana_7",
-      "heroId": "9",
-      "engineId": "special_bonus_unique_mirana_7",
-      "activationId": "activation:9:special_bonus_unique_mirana_7",
-      "order": 10,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
-    },
-    {
-      "id": "ability:9:special_bonus_unique_mirana_quiver_damage",
-      "heroId": "9",
-      "engineId": "special_bonus_unique_mirana_quiver_damage",
-      "activationId": "activation:9:special_bonus_unique_mirana_quiver_damage",
-      "order": 11,
-      "owner": "npc_dota_hero_mirana",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:9:special_bonus_unique_mirana_2",
-      "heroId": "9",
-      "engineId": "special_bonus_unique_mirana_2",
-      "activationId": "activation:9:special_bonus_unique_mirana_2",
-      "order": 12,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
-    },
-    {
-      "id": "ability:9:special_bonus_unique_mirana_4",
-      "heroId": "9",
-      "engineId": "special_bonus_unique_mirana_4",
-      "activationId": "activation:9:special_bonus_unique_mirana_4",
-      "order": 13,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
-    },
-    {
-      "id": "ability:9:special_bonus_attributes",
-      "heroId": "9",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:9:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
-    },
-    {
-      "id": "ability:9:mirana_solar_flare",
-      "heroId": "9",
-      "engineId": "mirana_solar_flare",
-      "activationId": "activation:9:mirana_solar_flare",
-      "order": 15,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
-    },
-    {
-      "id": "ability:9:mirana_selemenes_faithful",
-      "heroId": "9",
-      "engineId": "mirana_selemenes_faithful",
-      "activationId": "activation:9:mirana_selemenes_faithful",
-      "order": 16,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
-    },
-    {
-      "id": "ability:9:mirana_nightveil",
-      "heroId": "9",
-      "engineId": "mirana_nightveil",
-      "activationId": "activation:9:mirana_nightveil",
-      "order": 17,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
-    },
-    {
-      "id": "ability:9:special_bonus_unique_mirana_arrow_damage",
-      "heroId": "9",
-      "engineId": "special_bonus_unique_mirana_arrow_damage",
-      "activationId": "activation:9:special_bonus_unique_mirana_arrow_damage",
-      "order": 18,
-      "owner": "npc_dota_hero_mirana",
-      "state": "known"
+      "id": "mirana_nightveil",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
     }
   ],
-  "activations": [
+  "skills": [
     {
-      "id": "activation:9:mirana_starfall",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:mirana_starfall"
+      "id": "mirana_starfall",
+      "Name": "Starstorm",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:9:mirana_starfall:manaCost",
-        "ownerId": "activation:9:mirana_starfall",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          80,
-          90,
-          100,
-          110
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:9:mirana_starfall:cooldown",
-        "ownerId": "activation:9:mirana_starfall",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "12.0 12.0 12.0 12.0",
-          "special_bonus_unique_mirana_3": "-2"
-        }
-      },
-      "charges": {
-        "id": "value:activation:9:mirana_starfall:charges",
-        "ownerId": "activation:9:mirana_starfall",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:9:mirana_starfall:manaCost",
-        "value:activation:9:mirana_starfall:cooldown",
-        "value:activation:9:mirana_starfall:charges"
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "order": 0,
+      "type": "self-target",
+      "manaCost": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "tags": []
+    },
+    {
+      "id": "mirana_arrow",
+      "Name": "Sacred Arrow",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "strong-only",
+      "dispelType": "strong",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "order": 1,
+      "type": "point",
+      "manaCost": 90,
+      "tags": [
+        "disable",
+        "stun"
       ]
     },
     {
-      "id": "activation:9:mirana_arrow",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:mirana_arrow"
+      "id": "mirana_leap",
+      "Name": "Leap",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:9:mirana_arrow:manaCost",
-        "ownerId": "activation:9:mirana_arrow",
-        "field": "manaCost",
-        "state": "known",
-        "value": 90
-      },
-      "cooldown": {
-        "id": "value:activation:9:mirana_arrow:cooldown",
-        "ownerId": "activation:9:mirana_arrow",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "19 18 17 16"
-        }
-      },
-      "charges": {
-        "id": "value:activation:9:mirana_arrow:charges",
-        "ownerId": "activation:9:mirana_arrow",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:9:mirana_arrow:manaCost",
-        "value:activation:9:mirana_arrow:cooldown",
-        "value:activation:9:mirana_arrow:charges"
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "order": 2,
+      "type": "self-target",
+      "manaCost": 50,
+      "cooldown": 0,
+      "tags": [
+        "escape",
+        "mobility",
+        "self_reposition"
       ]
     },
     {
-      "id": "activation:9:mirana_leap",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:mirana_leap"
+      "id": "generic_hidden",
+      "order": 4,
+      "type": "unknown",
+      "tags": []
+    },
+    {
+      "id": "mirana_invis",
+      "Name": "Moonlight Shadow",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:9:mirana_leap:manaCost",
-        "ownerId": "activation:9:mirana_leap",
-        "field": "manaCost",
-        "state": "known",
-        "value": 50
-      },
-      "cooldown": {
-        "id": "value:activation:9:mirana_leap:cooldown",
-        "ownerId": "activation:9:mirana_leap",
-        "field": "cooldown",
-        "state": "known",
-        "value": 0
-      },
-      "charges": {
-        "id": "value:activation:9:mirana_leap:charges",
-        "ownerId": "activation:9:mirana_leap",
-        "field": "charges",
-        "state": "known",
-        "value": 2
-      },
-      "valueIds": [
-        "value:activation:9:mirana_leap:manaCost",
-        "value:activation:9:mirana_leap:cooldown",
-        "value:activation:9:mirana_leap:charges"
+      "dispellable": "no",
+      "piercesDebuffImmunity": "allies-only",
+      "order": 5,
+      "type": "self-target",
+      "manaCost": 125,
+      "tags": [
+        "ally_movement_speed",
+        "buff",
+        "escape",
+        "invisibility",
+        "mobility",
+        "self_movement_speed"
       ]
     },
     {
-      "id": "activation:9:mirana_celestial_quiver",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:mirana_celestial_quiver"
+      "id": "mirana_solar_flare",
+      "Name": "Solar Flare",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:9:mirana_celestial_quiver:manaCost",
-        "ownerId": "activation:9:mirana_celestial_quiver",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:9:mirana_celestial_quiver:cooldown",
-        "ownerId": "activation:9:mirana_celestial_quiver",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:9:mirana_celestial_quiver:charges",
-        "ownerId": "activation:9:mirana_celestial_quiver",
-        "field": "charges",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "2",
-          "hero_levelup": "+1",
-          "levelup_interval": "6"
-        }
-      },
-      "valueIds": [
-        "value:activation:9:mirana_celestial_quiver:manaCost",
-        "value:activation:9:mirana_celestial_quiver:cooldown",
-        "value:activation:9:mirana_celestial_quiver:charges"
-      ]
-    },
-    {
-      "id": "activation:9:generic_hidden",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:generic_hidden"
-      ],
-      "manaCost": {
-        "id": "value:activation:9:generic_hidden:manaCost",
-        "ownerId": "activation:9:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:9:generic_hidden:cooldown",
-        "ownerId": "activation:9:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:9:generic_hidden:charges",
-        "ownerId": "activation:9:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:9:generic_hidden:manaCost",
-        "value:activation:9:generic_hidden:cooldown",
-        "value:activation:9:generic_hidden:charges"
-      ]
-    },
-    {
-      "id": "activation:9:mirana_invis",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:mirana_invis"
-      ],
-      "manaCost": {
-        "id": "value:activation:9:mirana_invis:manaCost",
-        "ownerId": "activation:9:mirana_invis",
-        "field": "manaCost",
-        "state": "known",
-        "value": 125
-      },
-      "cooldown": {
-        "id": "value:activation:9:mirana_invis:cooldown",
-        "ownerId": "activation:9:mirana_invis",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "120 110 100",
-          "special_bonus_unique_mirana_4": "-30"
-        }
-      },
-      "charges": {
-        "id": "value:activation:9:mirana_invis:charges",
-        "ownerId": "activation:9:mirana_invis",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:9:mirana_invis:manaCost",
-        "value:activation:9:mirana_invis:cooldown",
-        "value:activation:9:mirana_invis:charges"
-      ]
-    },
-    {
-      "id": "activation:9:special_bonus_unique_mirana_3",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:special_bonus_unique_mirana_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:9:special_bonus_unique_mirana_3:manaCost",
-        "ownerId": "activation:9:special_bonus_unique_mirana_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:9:special_bonus_unique_mirana_3:cooldown",
-        "ownerId": "activation:9:special_bonus_unique_mirana_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:9:special_bonus_unique_mirana_3:charges",
-        "ownerId": "activation:9:special_bonus_unique_mirana_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:9:special_bonus_unique_mirana_3:manaCost",
-        "value:activation:9:special_bonus_unique_mirana_3:cooldown",
-        "value:activation:9:special_bonus_unique_mirana_3:charges"
-      ]
-    },
-    {
-      "id": "activation:9:special_bonus_unique_mirana_6",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:special_bonus_unique_mirana_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:9:special_bonus_unique_mirana_6:manaCost",
-        "ownerId": "activation:9:special_bonus_unique_mirana_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:9:special_bonus_unique_mirana_6:cooldown",
-        "ownerId": "activation:9:special_bonus_unique_mirana_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:9:special_bonus_unique_mirana_6:charges",
-        "ownerId": "activation:9:special_bonus_unique_mirana_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:9:special_bonus_unique_mirana_6:manaCost",
-        "value:activation:9:special_bonus_unique_mirana_6:cooldown",
-        "value:activation:9:special_bonus_unique_mirana_6:charges"
-      ]
-    },
-    {
-      "id": "activation:9:special_bonus_unique_mirana_5",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:special_bonus_unique_mirana_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:9:special_bonus_unique_mirana_5:manaCost",
-        "ownerId": "activation:9:special_bonus_unique_mirana_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:9:special_bonus_unique_mirana_5:cooldown",
-        "ownerId": "activation:9:special_bonus_unique_mirana_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:9:special_bonus_unique_mirana_5:charges",
-        "ownerId": "activation:9:special_bonus_unique_mirana_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:9:special_bonus_unique_mirana_5:manaCost",
-        "value:activation:9:special_bonus_unique_mirana_5:cooldown",
-        "value:activation:9:special_bonus_unique_mirana_5:charges"
-      ]
-    },
-    {
-      "id": "activation:9:special_bonus_unique_mirana_1",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:special_bonus_unique_mirana_1"
-      ],
-      "manaCost": {
-        "id": "value:activation:9:special_bonus_unique_mirana_1:manaCost",
-        "ownerId": "activation:9:special_bonus_unique_mirana_1",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:9:special_bonus_unique_mirana_1:cooldown",
-        "ownerId": "activation:9:special_bonus_unique_mirana_1",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:9:special_bonus_unique_mirana_1:charges",
-        "ownerId": "activation:9:special_bonus_unique_mirana_1",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:9:special_bonus_unique_mirana_1:manaCost",
-        "value:activation:9:special_bonus_unique_mirana_1:cooldown",
-        "value:activation:9:special_bonus_unique_mirana_1:charges"
-      ]
-    },
-    {
-      "id": "activation:9:special_bonus_unique_mirana_7",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:special_bonus_unique_mirana_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:9:special_bonus_unique_mirana_7:manaCost",
-        "ownerId": "activation:9:special_bonus_unique_mirana_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:9:special_bonus_unique_mirana_7:cooldown",
-        "ownerId": "activation:9:special_bonus_unique_mirana_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:9:special_bonus_unique_mirana_7:charges",
-        "ownerId": "activation:9:special_bonus_unique_mirana_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:9:special_bonus_unique_mirana_7:manaCost",
-        "value:activation:9:special_bonus_unique_mirana_7:cooldown",
-        "value:activation:9:special_bonus_unique_mirana_7:charges"
-      ]
-    },
-    {
-      "id": "activation:9:special_bonus_unique_mirana_quiver_damage",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:special_bonus_unique_mirana_quiver_damage"
-      ],
-      "manaCost": {
-        "id": "value:activation:9:special_bonus_unique_mirana_quiver_damage:manaCost",
-        "ownerId": "activation:9:special_bonus_unique_mirana_quiver_damage",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:9:special_bonus_unique_mirana_quiver_damage:cooldown",
-        "ownerId": "activation:9:special_bonus_unique_mirana_quiver_damage",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:9:special_bonus_unique_mirana_quiver_damage:charges",
-        "ownerId": "activation:9:special_bonus_unique_mirana_quiver_damage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:9:special_bonus_unique_mirana_quiver_damage:manaCost",
-        "value:activation:9:special_bonus_unique_mirana_quiver_damage:cooldown",
-        "value:activation:9:special_bonus_unique_mirana_quiver_damage:charges"
-      ]
-    },
-    {
-      "id": "activation:9:special_bonus_unique_mirana_2",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:special_bonus_unique_mirana_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:9:special_bonus_unique_mirana_2:manaCost",
-        "ownerId": "activation:9:special_bonus_unique_mirana_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:9:special_bonus_unique_mirana_2:cooldown",
-        "ownerId": "activation:9:special_bonus_unique_mirana_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:9:special_bonus_unique_mirana_2:charges",
-        "ownerId": "activation:9:special_bonus_unique_mirana_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:9:special_bonus_unique_mirana_2:manaCost",
-        "value:activation:9:special_bonus_unique_mirana_2:cooldown",
-        "value:activation:9:special_bonus_unique_mirana_2:charges"
-      ]
-    },
-    {
-      "id": "activation:9:special_bonus_unique_mirana_4",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:special_bonus_unique_mirana_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:9:special_bonus_unique_mirana_4:manaCost",
-        "ownerId": "activation:9:special_bonus_unique_mirana_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:9:special_bonus_unique_mirana_4:cooldown",
-        "ownerId": "activation:9:special_bonus_unique_mirana_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:9:special_bonus_unique_mirana_4:charges",
-        "ownerId": "activation:9:special_bonus_unique_mirana_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:9:special_bonus_unique_mirana_4:manaCost",
-        "value:activation:9:special_bonus_unique_mirana_4:cooldown",
-        "value:activation:9:special_bonus_unique_mirana_4:charges"
-      ]
-    },
-    {
-      "id": "activation:9:special_bonus_attributes",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:9:special_bonus_attributes:manaCost",
-        "ownerId": "activation:9:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:9:special_bonus_attributes:cooldown",
-        "ownerId": "activation:9:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:9:special_bonus_attributes:charges",
-        "ownerId": "activation:9:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:9:special_bonus_attributes:manaCost",
-        "value:activation:9:special_bonus_attributes:cooldown",
-        "value:activation:9:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:9:mirana_solar_flare",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:mirana_solar_flare"
-      ],
-      "manaCost": {
-        "id": "value:activation:9:mirana_solar_flare:manaCost",
-        "ownerId": "activation:9:mirana_solar_flare",
-        "field": "manaCost",
-        "state": "known",
-        "value": 125
-      },
-      "cooldown": {
-        "id": "value:activation:9:mirana_solar_flare:cooldown",
-        "ownerId": "activation:9:mirana_solar_flare",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "120 110 100",
-          "special_bonus_unique_mirana_4": "-30"
-        }
-      },
-      "charges": {
-        "id": "value:activation:9:mirana_solar_flare:charges",
-        "ownerId": "activation:9:mirana_solar_flare",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:9:mirana_solar_flare:manaCost",
-        "value:activation:9:mirana_solar_flare:cooldown",
-        "value:activation:9:mirana_solar_flare:charges"
-      ]
-    },
-    {
-      "id": "activation:9:mirana_selemenes_faithful",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:mirana_selemenes_faithful"
-      ],
-      "manaCost": {
-        "id": "value:activation:9:mirana_selemenes_faithful:manaCost",
-        "ownerId": "activation:9:mirana_selemenes_faithful",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:9:mirana_selemenes_faithful:cooldown",
-        "ownerId": "activation:9:mirana_selemenes_faithful",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:9:mirana_selemenes_faithful:charges",
-        "ownerId": "activation:9:mirana_selemenes_faithful",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:9:mirana_selemenes_faithful:manaCost",
-        "value:activation:9:mirana_selemenes_faithful:cooldown",
-        "value:activation:9:mirana_selemenes_faithful:charges"
-      ]
-    },
-    {
-      "id": "activation:9:mirana_nightveil",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:mirana_nightveil"
-      ],
-      "manaCost": {
-        "id": "value:activation:9:mirana_nightveil:manaCost",
-        "ownerId": "activation:9:mirana_nightveil",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:9:mirana_nightveil:cooldown",
-        "ownerId": "activation:9:mirana_nightveil",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:9:mirana_nightveil:charges",
-        "ownerId": "activation:9:mirana_nightveil",
-        "field": "charges",
-        "state": "known",
-        "value": 5
-      },
-      "valueIds": [
-        "value:activation:9:mirana_nightveil:manaCost",
-        "value:activation:9:mirana_nightveil:cooldown",
-        "value:activation:9:mirana_nightveil:charges"
-      ]
-    },
-    {
-      "id": "activation:9:special_bonus_unique_mirana_arrow_damage",
-      "heroId": "9",
-      "abilityIds": [
-        "ability:9:special_bonus_unique_mirana_arrow_damage"
-      ],
-      "manaCost": {
-        "id": "value:activation:9:special_bonus_unique_mirana_arrow_damage:manaCost",
-        "ownerId": "activation:9:special_bonus_unique_mirana_arrow_damage",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:9:special_bonus_unique_mirana_arrow_damage:cooldown",
-        "ownerId": "activation:9:special_bonus_unique_mirana_arrow_damage",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:9:special_bonus_unique_mirana_arrow_damage:charges",
-        "ownerId": "activation:9:special_bonus_unique_mirana_arrow_damage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:9:special_bonus_unique_mirana_arrow_damage:manaCost",
-        "value:activation:9:special_bonus_unique_mirana_arrow_damage:cooldown",
-        "value:activation:9:special_bonus_unique_mirana_arrow_damage:charges"
+      "dispellable": "no",
+      "order": 15,
+      "type": "self-target",
+      "manaCost": 125,
+      "tags": [
+        "ally_attack_damage",
+        "ally_attack_speed",
+        "buff",
+        "self_attack_damage",
+        "self_attack_speed"
       ]
     }
-  ]
+  ],
+  "talents": [
+    {
+      "id": "special_bonus_unique_mirana_3",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "buff",
+        "cooldown_reduction"
+      ]
+    },
+    {
+      "id": "special_bonus_unique_mirana_6",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_mirana_5",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_mirana_1",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_mirana_7",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
+      ]
+    },
+    {
+      "id": "special_bonus_unique_mirana_quiver_damage",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_mirana_2",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_mirana_4",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "buff",
+        "cooldown_reduction"
+      ]
+    },
+    {
+      "id": "special_bonus_unique_mirana_arrow_damage",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    }
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

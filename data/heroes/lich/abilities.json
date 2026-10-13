@@ -1,823 +1,280 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "lich_death_charge",
+    "Name": "Sacrifice",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-units"
+    ],
+    "type": "target",
+    "target": [
+      "ally_creep"
+    ],
+    "tags": [
+      "experience_gain",
+      "resource_conversion",
+      "self_mana_restore"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:31:lich_frost_nova",
-      "heroId": "31",
-      "engineId": "lich_frost_nova",
-      "activationId": "activation:31:lich_frost_nova",
+      "id": "lich_frost_nova",
+      "Name": "Frost Blast",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_lich",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        110,
+        120,
+        130,
+        140
+      ],
+      "tags": [
+        "aoe",
+        "slow"
+      ]
     },
     {
-      "id": "ability:31:lich_frost_shield",
-      "heroId": "31",
-      "engineId": "lich_frost_shield",
-      "activationId": "activation:31:lich_frost_shield",
+      "id": "lich_frost_shield",
+      "Name": "Frost Shield",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "allied-buildings",
+        "allied-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "allies-only",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_lich",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero",
+        "ally_creep",
+        "ally_building"
+      ],
+      "manaCost": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "cooldown": [
+        30,
+        25,
+        20,
+        15
+      ],
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:31:lich_sinister_gaze",
-      "heroId": "31",
-      "engineId": "lich_sinister_gaze",
-      "activationId": "activation:31:lich_sinister_gaze",
+      "id": "lich_sinister_gaze",
+      "Name": "Sinister Gaze",
+      "behavior": [
+        "channeled",
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
       "order": 2,
-      "owner": "npc_dota_hero_lich",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "cooldown": [
+        24,
+        22,
+        20,
+        18
+      ],
+      "tags": [
+        "channeled",
+        "enemy_displacement"
+      ]
     },
     {
-      "id": "ability:31:lich_ice_spire",
-      "heroId": "31",
-      "engineId": "lich_ice_spire",
-      "activationId": "activation:31:lich_ice_spire",
+      "id": "lich_ice_spire",
+      "Name": "Ice Spire",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
       "order": 3,
-      "owner": "npc_dota_hero_lich",
-      "state": "known"
+      "type": "point",
+      "manaCost": 150,
+      "cooldown": 25,
+      "tags": [
+        "aoe",
+        "slow"
+      ]
     },
     {
-      "id": "ability:31:lich_death_charge",
-      "heroId": "31",
-      "engineId": "lich_death_charge",
-      "activationId": "activation:31:lich_death_charge",
-      "order": 4,
-      "owner": "npc_dota_hero_lich",
-      "state": "known"
-    },
-    {
-      "id": "ability:31:lich_chain_frost",
-      "heroId": "31",
-      "engineId": "lich_chain_frost",
-      "activationId": "activation:31:lich_chain_frost",
+      "id": "lich_chain_frost",
+      "Name": "Chain Frost",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_lich",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        180,
+        300,
+        420
+      ],
+      "cooldown": [
+        100,
+        80,
+        60
+      ],
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:31:special_bonus_unique_lich_8",
-      "heroId": "31",
-      "engineId": "special_bonus_unique_lich_8",
-      "activationId": "activation:31:special_bonus_unique_lich_8",
-      "order": 6,
-      "owner": "npc_dota_hero_lich",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:31:special_bonus_unique_lich_6",
-      "heroId": "31",
-      "engineId": "special_bonus_unique_lich_6",
-      "activationId": "activation:31:special_bonus_unique_lich_6",
-      "order": 7,
-      "owner": "npc_dota_hero_lich",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:31:special_bonus_unique_lich_2",
-      "heroId": "31",
-      "engineId": "special_bonus_unique_lich_2",
-      "activationId": "activation:31:special_bonus_unique_lich_2",
-      "order": 8,
-      "owner": "npc_dota_hero_lich",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:31:special_bonus_unique_lich_3",
-      "heroId": "31",
-      "engineId": "special_bonus_unique_lich_3",
-      "activationId": "activation:31:special_bonus_unique_lich_3",
-      "order": 9,
-      "owner": "npc_dota_hero_lich",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:31:special_bonus_unique_lich_4",
-      "heroId": "31",
-      "engineId": "special_bonus_unique_lich_4",
-      "activationId": "activation:31:special_bonus_unique_lich_4",
-      "order": 10,
-      "owner": "npc_dota_hero_lich",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:31:special_bonus_unique_lich_7",
-      "heroId": "31",
-      "engineId": "special_bonus_unique_lich_7",
-      "activationId": "activation:31:special_bonus_unique_lich_7",
-      "order": 11,
-      "owner": "npc_dota_hero_lich",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:31:special_bonus_unique_lich_1",
-      "heroId": "31",
-      "engineId": "special_bonus_unique_lich_1",
-      "activationId": "activation:31:special_bonus_unique_lich_1",
-      "order": 12,
-      "owner": "npc_dota_hero_lich",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:31:special_bonus_unique_lich_5",
-      "heroId": "31",
-      "engineId": "special_bonus_unique_lich_5",
-      "activationId": "activation:31:special_bonus_unique_lich_5",
-      "order": 13,
-      "owner": "npc_dota_hero_lich",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:31:special_bonus_attributes",
-      "heroId": "31",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:31:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_lich",
-      "state": "known"
-    },
-    {
-      "id": "ability:31:lich_dark_sorcery",
-      "heroId": "31",
-      "engineId": "lich_dark_sorcery",
-      "activationId": "activation:31:lich_dark_sorcery",
+      "id": "lich_dark_sorcery",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
       "order": 15,
-      "owner": "npc_dota_hero_lich",
-      "state": "known"
+      "type": "self-target",
+      "cooldown": [
+        25,
+        20,
+        15,
+        10
+      ],
+      "tags": [
+        "buff",
+        "self_attack_speed"
+      ]
     },
     {
-      "id": "ability:31:lich_frost_aura",
-      "heroId": "31",
-      "engineId": "lich_frost_aura",
-      "activationId": "activation:31:lich_frost_aura",
+      "id": "lich_frost_aura",
+      "behavior": [
+        "passive"
+      ],
+      "affects": [
+        "allies"
+      ],
       "order": 16,
-      "owner": "npc_dota_hero_lich",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "aura"
+      ]
     },
     {
-      "id": "ability:31:lich_frost_armor",
-      "heroId": "31",
-      "engineId": "lich_frost_armor",
-      "activationId": "activation:31:lich_frost_armor",
+      "id": "lich_frost_armor",
+      "behavior": [
+        "auto-cast",
+        "unit-target"
+      ],
+      "affects": [
+        "allied-buildings",
+        "allied-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "allies-only",
       "order": 17,
-      "owner": "npc_dota_hero_lich",
-      "state": "known"
+      "type": "toggle",
+      "manaCost": 50,
+      "cooldown": 5,
+      "tags": [
+        "ally_armor",
+        "buff",
+        "self_armor"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:31:lich_frost_nova",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:lich_frost_nova"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:lich_frost_nova:manaCost",
-        "ownerId": "activation:31:lich_frost_nova",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          110,
-          120,
-          130,
-          140
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:31:lich_frost_nova:cooldown",
-        "ownerId": "activation:31:lich_frost_nova",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "7.0",
-          "special_bonus_unique_lich_3": "-3.5"
-        }
-      },
-      "charges": {
-        "id": "value:activation:31:lich_frost_nova:charges",
-        "ownerId": "activation:31:lich_frost_nova",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:31:lich_frost_nova:manaCost",
-        "value:activation:31:lich_frost_nova:cooldown",
-        "value:activation:31:lich_frost_nova:charges"
+      "id": "special_bonus_unique_lich_8",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_lich_6",
+      "tags": [
+        "area_increase",
+        "buff"
       ]
     },
     {
-      "id": "activation:31:lich_frost_shield",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:lich_frost_shield"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:lich_frost_shield:manaCost",
-        "ownerId": "activation:31:lich_frost_shield",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          100,
-          110,
-          120,
-          130
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:31:lich_frost_shield:cooldown",
-        "ownerId": "activation:31:lich_frost_shield",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          30,
-          25,
-          20,
-          15
-        ]
-      },
-      "charges": {
-        "id": "value:activation:31:lich_frost_shield:charges",
-        "ownerId": "activation:31:lich_frost_shield",
-        "field": "charges",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0",
-          "special_bonus_unique_lich_4": "+2"
-        }
-      },
-      "valueIds": [
-        "value:activation:31:lich_frost_shield:manaCost",
-        "value:activation:31:lich_frost_shield:cooldown",
-        "value:activation:31:lich_frost_shield:charges"
+      "id": "special_bonus_unique_lich_2",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_lich_3",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:31:lich_sinister_gaze",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:lich_sinister_gaze"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:lich_sinister_gaze:manaCost",
-        "ownerId": "activation:31:lich_sinister_gaze",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "25"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:31:lich_sinister_gaze:cooldown",
-        "ownerId": "activation:31:lich_sinister_gaze",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          24,
-          22,
-          20,
-          18
-        ]
-      },
-      "charges": {
-        "id": "value:activation:31:lich_sinister_gaze:charges",
-        "ownerId": "activation:31:lich_sinister_gaze",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:31:lich_sinister_gaze:manaCost",
-        "value:activation:31:lich_sinister_gaze:cooldown",
-        "value:activation:31:lich_sinister_gaze:charges"
-      ]
+      "id": "special_bonus_unique_lich_4",
+      "tags": []
     },
     {
-      "id": "activation:31:lich_ice_spire",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:lich_ice_spire"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:lich_ice_spire:manaCost",
-        "ownerId": "activation:31:lich_ice_spire",
-        "field": "manaCost",
-        "state": "known",
-        "value": 150
-      },
-      "cooldown": {
-        "id": "value:activation:31:lich_ice_spire:cooldown",
-        "ownerId": "activation:31:lich_ice_spire",
-        "field": "cooldown",
-        "state": "known",
-        "value": 25
-      },
-      "charges": {
-        "id": "value:activation:31:lich_ice_spire:charges",
-        "ownerId": "activation:31:lich_ice_spire",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:31:lich_ice_spire:manaCost",
-        "value:activation:31:lich_ice_spire:cooldown",
-        "value:activation:31:lich_ice_spire:charges"
-      ]
+      "id": "special_bonus_unique_lich_7",
+      "Name": "Chain Frost on Death",
+      "tags": []
     },
     {
-      "id": "activation:31:lich_death_charge",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:lich_death_charge"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:lich_death_charge:manaCost",
-        "ownerId": "activation:31:lich_death_charge",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:31:lich_death_charge:cooldown",
-        "ownerId": "activation:31:lich_death_charge",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0.0"
-        }
-      },
-      "charges": {
-        "id": "value:activation:31:lich_death_charge:charges",
-        "ownerId": "activation:31:lich_death_charge",
-        "field": "charges",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "2"
-        }
-      },
-      "valueIds": [
-        "value:activation:31:lich_death_charge:manaCost",
-        "value:activation:31:lich_death_charge:cooldown",
-        "value:activation:31:lich_death_charge:charges"
-      ]
+      "id": "special_bonus_unique_lich_1",
+      "tags": []
     },
     {
-      "id": "activation:31:lich_chain_frost",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:lich_chain_frost"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:lich_chain_frost:manaCost",
-        "ownerId": "activation:31:lich_chain_frost",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          180,
-          300,
-          420
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:31:lich_chain_frost:cooldown",
-        "ownerId": "activation:31:lich_chain_frost",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          100,
-          80,
-          60
-        ]
-      },
-      "charges": {
-        "id": "value:activation:31:lich_chain_frost:charges",
-        "ownerId": "activation:31:lich_chain_frost",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:31:lich_chain_frost:manaCost",
-        "value:activation:31:lich_chain_frost:cooldown",
-        "value:activation:31:lich_chain_frost:charges"
-      ]
-    },
-    {
-      "id": "activation:31:special_bonus_unique_lich_8",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:special_bonus_unique_lich_8"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:special_bonus_unique_lich_8:manaCost",
-        "ownerId": "activation:31:special_bonus_unique_lich_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:31:special_bonus_unique_lich_8:cooldown",
-        "ownerId": "activation:31:special_bonus_unique_lich_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:31:special_bonus_unique_lich_8:charges",
-        "ownerId": "activation:31:special_bonus_unique_lich_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:31:special_bonus_unique_lich_8:manaCost",
-        "value:activation:31:special_bonus_unique_lich_8:cooldown",
-        "value:activation:31:special_bonus_unique_lich_8:charges"
-      ]
-    },
-    {
-      "id": "activation:31:special_bonus_unique_lich_6",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:special_bonus_unique_lich_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:special_bonus_unique_lich_6:manaCost",
-        "ownerId": "activation:31:special_bonus_unique_lich_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:31:special_bonus_unique_lich_6:cooldown",
-        "ownerId": "activation:31:special_bonus_unique_lich_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:31:special_bonus_unique_lich_6:charges",
-        "ownerId": "activation:31:special_bonus_unique_lich_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:31:special_bonus_unique_lich_6:manaCost",
-        "value:activation:31:special_bonus_unique_lich_6:cooldown",
-        "value:activation:31:special_bonus_unique_lich_6:charges"
-      ]
-    },
-    {
-      "id": "activation:31:special_bonus_unique_lich_2",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:special_bonus_unique_lich_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:special_bonus_unique_lich_2:manaCost",
-        "ownerId": "activation:31:special_bonus_unique_lich_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:31:special_bonus_unique_lich_2:cooldown",
-        "ownerId": "activation:31:special_bonus_unique_lich_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:31:special_bonus_unique_lich_2:charges",
-        "ownerId": "activation:31:special_bonus_unique_lich_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:31:special_bonus_unique_lich_2:manaCost",
-        "value:activation:31:special_bonus_unique_lich_2:cooldown",
-        "value:activation:31:special_bonus_unique_lich_2:charges"
-      ]
-    },
-    {
-      "id": "activation:31:special_bonus_unique_lich_3",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:special_bonus_unique_lich_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:special_bonus_unique_lich_3:manaCost",
-        "ownerId": "activation:31:special_bonus_unique_lich_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:31:special_bonus_unique_lich_3:cooldown",
-        "ownerId": "activation:31:special_bonus_unique_lich_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:31:special_bonus_unique_lich_3:charges",
-        "ownerId": "activation:31:special_bonus_unique_lich_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:31:special_bonus_unique_lich_3:manaCost",
-        "value:activation:31:special_bonus_unique_lich_3:cooldown",
-        "value:activation:31:special_bonus_unique_lich_3:charges"
-      ]
-    },
-    {
-      "id": "activation:31:special_bonus_unique_lich_4",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:special_bonus_unique_lich_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:special_bonus_unique_lich_4:manaCost",
-        "ownerId": "activation:31:special_bonus_unique_lich_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:31:special_bonus_unique_lich_4:cooldown",
-        "ownerId": "activation:31:special_bonus_unique_lich_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:31:special_bonus_unique_lich_4:charges",
-        "ownerId": "activation:31:special_bonus_unique_lich_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:31:special_bonus_unique_lich_4:manaCost",
-        "value:activation:31:special_bonus_unique_lich_4:cooldown",
-        "value:activation:31:special_bonus_unique_lich_4:charges"
-      ]
-    },
-    {
-      "id": "activation:31:special_bonus_unique_lich_7",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:special_bonus_unique_lich_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:special_bonus_unique_lich_7:manaCost",
-        "ownerId": "activation:31:special_bonus_unique_lich_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:31:special_bonus_unique_lich_7:cooldown",
-        "ownerId": "activation:31:special_bonus_unique_lich_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:31:special_bonus_unique_lich_7:charges",
-        "ownerId": "activation:31:special_bonus_unique_lich_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:31:special_bonus_unique_lich_7:manaCost",
-        "value:activation:31:special_bonus_unique_lich_7:cooldown",
-        "value:activation:31:special_bonus_unique_lich_7:charges"
-      ]
-    },
-    {
-      "id": "activation:31:special_bonus_unique_lich_1",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:special_bonus_unique_lich_1"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:special_bonus_unique_lich_1:manaCost",
-        "ownerId": "activation:31:special_bonus_unique_lich_1",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:31:special_bonus_unique_lich_1:cooldown",
-        "ownerId": "activation:31:special_bonus_unique_lich_1",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:31:special_bonus_unique_lich_1:charges",
-        "ownerId": "activation:31:special_bonus_unique_lich_1",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:31:special_bonus_unique_lich_1:manaCost",
-        "value:activation:31:special_bonus_unique_lich_1:cooldown",
-        "value:activation:31:special_bonus_unique_lich_1:charges"
-      ]
-    },
-    {
-      "id": "activation:31:special_bonus_unique_lich_5",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:special_bonus_unique_lich_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:special_bonus_unique_lich_5:manaCost",
-        "ownerId": "activation:31:special_bonus_unique_lich_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:31:special_bonus_unique_lich_5:cooldown",
-        "ownerId": "activation:31:special_bonus_unique_lich_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:31:special_bonus_unique_lich_5:charges",
-        "ownerId": "activation:31:special_bonus_unique_lich_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:31:special_bonus_unique_lich_5:manaCost",
-        "value:activation:31:special_bonus_unique_lich_5:cooldown",
-        "value:activation:31:special_bonus_unique_lich_5:charges"
-      ]
-    },
-    {
-      "id": "activation:31:special_bonus_attributes",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:special_bonus_attributes:manaCost",
-        "ownerId": "activation:31:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:31:special_bonus_attributes:cooldown",
-        "ownerId": "activation:31:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:31:special_bonus_attributes:charges",
-        "ownerId": "activation:31:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:31:special_bonus_attributes:manaCost",
-        "value:activation:31:special_bonus_attributes:cooldown",
-        "value:activation:31:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:31:lich_dark_sorcery",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:lich_dark_sorcery"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:lich_dark_sorcery:manaCost",
-        "ownerId": "activation:31:lich_dark_sorcery",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:31:lich_dark_sorcery:cooldown",
-        "ownerId": "activation:31:lich_dark_sorcery",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          25,
-          20,
-          15,
-          10
-        ]
-      },
-      "charges": {
-        "id": "value:activation:31:lich_dark_sorcery:charges",
-        "ownerId": "activation:31:lich_dark_sorcery",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:31:lich_dark_sorcery:manaCost",
-        "value:activation:31:lich_dark_sorcery:cooldown",
-        "value:activation:31:lich_dark_sorcery:charges"
-      ]
-    },
-    {
-      "id": "activation:31:lich_frost_aura",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:lich_frost_aura"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:lich_frost_aura:manaCost",
-        "ownerId": "activation:31:lich_frost_aura",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:31:lich_frost_aura:cooldown",
-        "ownerId": "activation:31:lich_frost_aura",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:31:lich_frost_aura:charges",
-        "ownerId": "activation:31:lich_frost_aura",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:31:lich_frost_aura:manaCost",
-        "value:activation:31:lich_frost_aura:cooldown",
-        "value:activation:31:lich_frost_aura:charges"
-      ]
-    },
-    {
-      "id": "activation:31:lich_frost_armor",
-      "heroId": "31",
-      "abilityIds": [
-        "ability:31:lich_frost_armor"
-      ],
-      "manaCost": {
-        "id": "value:activation:31:lich_frost_armor:manaCost",
-        "ownerId": "activation:31:lich_frost_armor",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          50,
-          50,
-          50,
-          50
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:31:lich_frost_armor:cooldown",
-        "ownerId": "activation:31:lich_frost_armor",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          5,
-          5,
-          5,
-          5
-        ]
-      },
-      "charges": {
-        "id": "value:activation:31:lich_frost_armor:charges",
-        "ownerId": "activation:31:lich_frost_armor",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:31:lich_frost_armor:manaCost",
-        "value:activation:31:lich_frost_armor:cooldown",
-        "value:activation:31:lich_frost_armor:charges"
-      ]
+      "id": "special_bonus_unique_lich_5",
+      "Name": "Chain Frost Unlimited Bounces",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

@@ -1,1486 +1,425 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": [
     {
-      "id": "ability:80:lone_druid_entangle",
-      "heroId": "80",
-      "engineId": "lone_druid_entangle",
-      "activationId": "activation:80:lone_druid_entangle",
-      "order": 0,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
+      "id": "lone_druid_spirit_bear",
+      "Name": "Summon Spirit Bear",
+      "behavior": [
+        "no-target"
+      ],
+      "type": "self-target",
+      "manaCost": 100,
+      "tags": [
+        "item_copy",
+        "summons"
+      ]
     },
     {
-      "id": "ability:80:lone_druid_spirit_link",
-      "heroId": "80",
-      "engineId": "lone_druid_spirit_link",
-      "activationId": "activation:80:lone_druid_spirit_link",
-      "order": 1,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
+      "id": "lone_druid_gift_bearer",
+      "Name": "Gift Bearer",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "item_copy"
+      ]
     },
     {
-      "id": "ability:80:lone_druid_savage_roar",
-      "heroId": "80",
-      "engineId": "lone_druid_savage_roar",
-      "activationId": "activation:80:lone_druid_savage_roar",
-      "order": 2,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:lone_druid_spirit_bear",
-      "heroId": "80",
-      "engineId": "lone_druid_spirit_bear",
-      "activationId": "activation:80:lone_druid_spirit_bear",
-      "order": 3,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:generic_hidden",
-      "heroId": "80",
-      "engineId": "generic_hidden",
-      "activationId": "activation:80:generic_hidden",
-      "order": 4,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:lone_druid_true_form",
-      "heroId": "80",
-      "engineId": "lone_druid_true_form",
-      "activationId": "activation:80:lone_druid_true_form",
-      "order": 5,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:special_bonus_unique_lone_druid_2",
-      "heroId": "80",
-      "engineId": "special_bonus_unique_lone_druid_2",
-      "activationId": "activation:80:special_bonus_unique_lone_druid_2",
-      "order": 6,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:special_bonus_unique_lone_druid_1",
-      "heroId": "80",
-      "engineId": "special_bonus_unique_lone_druid_1",
-      "activationId": "activation:80:special_bonus_unique_lone_druid_1",
-      "order": 7,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:80:special_bonus_unique_lone_druid_4",
-      "heroId": "80",
-      "engineId": "special_bonus_unique_lone_druid_4",
-      "activationId": "activation:80:special_bonus_unique_lone_druid_4",
-      "order": 8,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:special_bonus_agility_12",
-      "heroId": "80",
-      "engineId": "special_bonus_agility_12",
-      "activationId": "activation:80:special_bonus_agility_12",
-      "order": 9,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:special_bonus_unique_lone_druid_savage_roar_aoe",
-      "heroId": "80",
-      "engineId": "special_bonus_unique_lone_druid_savage_roar_aoe",
-      "activationId": "activation:80:special_bonus_unique_lone_druid_savage_roar_aoe",
-      "order": 10,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:special_bonus_attack_speed_55",
-      "heroId": "80",
-      "engineId": "special_bonus_attack_speed_55",
-      "activationId": "activation:80:special_bonus_attack_speed_55",
-      "order": 11,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:special_bonus_unique_lone_druid_8",
-      "heroId": "80",
-      "engineId": "special_bonus_unique_lone_druid_8",
-      "activationId": "activation:80:special_bonus_unique_lone_druid_8",
-      "order": 12,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:special_bonus_unique_lone_druid_entangle_duration",
-      "heroId": "80",
-      "engineId": "special_bonus_unique_lone_druid_entangle_duration",
-      "activationId": "activation:80:special_bonus_unique_lone_druid_entangle_duration",
-      "order": 13,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:80:special_bonus_attributes",
-      "heroId": "80",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:80:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:lone_druid_gift_bearer",
-      "heroId": "80",
-      "engineId": "lone_druid_gift_bearer",
-      "activationId": "activation:80:lone_druid_gift_bearer",
-      "order": 15,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:lone_druid_bear_necessities",
-      "heroId": "80",
-      "engineId": "lone_druid_bear_necessities",
-      "activationId": "activation:80:lone_druid_bear_necessities",
-      "order": 16,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:lone_druid_rabid",
-      "heroId": "80",
-      "engineId": "lone_druid_rabid",
-      "activationId": "activation:80:lone_druid_rabid",
-      "order": 17,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:lone_druid_spirit_bear_spirit_link",
-      "heroId": "80",
-      "engineId": "lone_druid_spirit_bear_spirit_link",
-      "activationId": "activation:80:lone_druid_spirit_bear_spirit_link",
-      "order": 18,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:lone_druid_savage_roar_bear",
-      "heroId": "80",
-      "engineId": "lone_druid_savage_roar_bear",
-      "activationId": "activation:80:lone_druid_savage_roar_bear",
-      "order": 19,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:lone_druid_true_form_druid",
-      "heroId": "80",
-      "engineId": "lone_druid_true_form_druid",
-      "activationId": "activation:80:lone_druid_true_form_druid",
-      "order": 20,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:lone_druid_true_form_battle_cry",
-      "heroId": "80",
-      "engineId": "lone_druid_true_form_battle_cry",
-      "activationId": "activation:80:lone_druid_true_form_battle_cry",
-      "order": 21,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:lone_druid_spirit_bear_return",
-      "heroId": "80",
-      "engineId": "lone_druid_spirit_bear_return",
-      "activationId": "activation:80:lone_druid_spirit_bear_return",
-      "order": 22,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:lone_druid_spirit_bear_entangle",
-      "heroId": "80",
-      "engineId": "lone_druid_spirit_bear_entangle",
-      "activationId": "activation:80:lone_druid_spirit_bear_entangle",
-      "order": 23,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:lone_druid_spirit_bear_defender",
-      "heroId": "80",
-      "engineId": "lone_druid_spirit_bear_defender",
-      "activationId": "activation:80:lone_druid_spirit_bear_defender",
-      "order": 24,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:lone_druid_spirit_bear_fetch",
-      "heroId": "80",
-      "engineId": "lone_druid_spirit_bear_fetch",
-      "activationId": "activation:80:lone_druid_spirit_bear_fetch",
-      "order": 25,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:lone_druid_spirit_bear_demolish",
-      "heroId": "80",
-      "engineId": "lone_druid_spirit_bear_demolish",
-      "activationId": "activation:80:lone_druid_spirit_bear_demolish",
-      "order": 26,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:special_bonus_unique_lone_druid_11",
-      "heroId": "80",
-      "engineId": "special_bonus_unique_lone_druid_11",
-      "activationId": "activation:80:special_bonus_unique_lone_druid_11",
-      "order": 27,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:special_bonus_unique_lone_druid_entangle_hits",
-      "heroId": "80",
-      "engineId": "special_bonus_unique_lone_druid_entangle_hits",
-      "activationId": "activation:80:special_bonus_unique_lone_druid_entangle_hits",
-      "order": 28,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:special_bonus_unique_lone_druid_entangle_cd",
-      "heroId": "80",
-      "engineId": "special_bonus_unique_lone_druid_entangle_cd",
-      "activationId": "activation:80:special_bonus_unique_lone_druid_entangle_cd",
-      "order": 29,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:special_bonus_unique_lone_druid_spirit_bear_damage_against_entangled",
-      "heroId": "80",
-      "engineId": "special_bonus_unique_lone_druid_spirit_bear_damage_against_entangled",
-      "activationId": "activation:80:special_bonus_unique_lone_druid_spirit_bear_damage_against_entangled",
-      "order": 30,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:special_bonus_unique_lone_druid_spirit_bear_demolish",
-      "heroId": "80",
-      "engineId": "special_bonus_unique_lone_druid_spirit_bear_demolish",
-      "activationId": "activation:80:special_bonus_unique_lone_druid_spirit_bear_demolish",
-      "order": 31,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:special_bonus_unique_lone_druid_spirit_bear_return_channel",
-      "heroId": "80",
-      "engineId": "special_bonus_unique_lone_druid_spirit_bear_return_channel",
-      "activationId": "activation:80:special_bonus_unique_lone_druid_spirit_bear_return_channel",
-      "order": 32,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
-    },
-    {
-      "id": "ability:80:special_bonus_unique_lone_druid_spirit_bear_return_cd",
-      "heroId": "80",
-      "engineId": "special_bonus_unique_lone_druid_spirit_bear_return_cd",
-      "activationId": "activation:80:special_bonus_unique_lone_druid_spirit_bear_return_cd",
-      "order": 33,
-      "owner": "npc_dota_hero_lone_druid",
-      "state": "known"
+      "id": "lone_druid_spirit_bear_demolish",
+      "Name": "Demolish",
+      "behavior": [
+        "passive"
+      ],
+      "breakable": true,
+      "tags": [
+        "building_damage"
+      ]
     }
   ],
-  "activations": [
+  "skills": [
     {
-      "id": "activation:80:lone_druid_entangle",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_entangle"
+      "id": "lone_druid_entangle",
+      "Name": "Entangle",
+      "behavior": [
+        "point-target"
       ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_entangle:manaCost",
-        "ownerId": "activation:80:lone_druid_entangle",
-        "field": "manaCost",
-        "state": "known",
-        "value": 60
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_entangle:cooldown",
-        "ownerId": "activation:80:lone_druid_entangle",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "20 19 18 17"
-        }
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_entangle:charges",
-        "ownerId": "activation:80:lone_druid_entangle",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_entangle:manaCost",
-        "value:activation:80:lone_druid_entangle:cooldown",
-        "value:activation:80:lone_druid_entangle:charges"
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "yes",
+      "damageType": "magical",
+      "order": 0,
+      "type": "point",
+      "manaCost": 60,
+      "tags": [
+        "aoe",
+        "bkb_pierce",
+        "damage_over_time",
+        "detection"
       ]
     },
     {
-      "id": "activation:80:lone_druid_spirit_link",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_spirit_link"
+      "id": "lone_druid_spirit_link",
+      "Name": "Spirit Link",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_spirit_link:manaCost",
-        "ownerId": "activation:80:lone_druid_spirit_link",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_spirit_link:cooldown",
-        "ownerId": "activation:80:lone_druid_spirit_link",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0"
-        }
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_spirit_link:charges",
-        "ownerId": "activation:80:lone_druid_spirit_link",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_spirit_link:manaCost",
-        "value:activation:80:lone_druid_spirit_link:cooldown",
-        "value:activation:80:lone_druid_spirit_link:charges"
+      "breakable": true,
+      "order": 1,
+      "type": "passive",
+      "tags": [
+        "buff",
+        "lifesteal",
+        "self_lifesteal",
+        "self_movement_speed"
       ]
     },
     {
-      "id": "activation:80:lone_druid_savage_roar",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_savage_roar"
+      "id": "lone_druid_savage_roar",
+      "Name": "Savage Roar",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_savage_roar:manaCost",
-        "ownerId": "activation:80:lone_druid_savage_roar",
-        "field": "manaCost",
-        "state": "known",
-        "value": 50
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_savage_roar:cooldown",
-        "ownerId": "activation:80:lone_druid_savage_roar",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "29 26 23 20",
-          "special_bonus_unique_lone_druid_4": "-4"
-        }
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_savage_roar:charges",
-        "ownerId": "activation:80:lone_druid_savage_roar",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_savage_roar:manaCost",
-        "value:activation:80:lone_druid_savage_roar:cooldown",
-        "value:activation:80:lone_druid_savage_roar:charges"
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "order": 2,
+      "type": "self-target",
+      "manaCost": 50,
+      "tags": [
+        "ally_dispel",
+        "ally_movement_speed",
+        "buff",
+        "disable",
+        "dispel",
+        "fear",
+        "self_movement_speed"
       ]
     },
     {
-      "id": "activation:80:lone_druid_spirit_bear",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_spirit_bear"
+      "id": "generic_hidden",
+      "order": 4,
+      "type": "unknown",
+      "tags": []
+    },
+    {
+      "id": "lone_druid_true_form",
+      "Name": "True Form",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_spirit_bear:manaCost",
-        "ownerId": "activation:80:lone_druid_spirit_bear",
-        "field": "manaCost",
-        "state": "known",
-        "value": 100
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_spirit_bear:cooldown",
-        "ownerId": "activation:80:lone_druid_spirit_bear",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "120.0"
-        }
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_spirit_bear:charges",
-        "ownerId": "activation:80:lone_druid_spirit_bear",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_spirit_bear:manaCost",
-        "value:activation:80:lone_druid_spirit_bear:cooldown",
-        "value:activation:80:lone_druid_spirit_bear:charges"
+      "dispellable": "no",
+      "order": 5,
+      "type": "self-target",
+      "manaCost": 80,
+      "tags": [
+        "buff",
+        "self_armor",
+        "self_attack_damage",
+        "self_max_health"
       ]
     },
     {
-      "id": "activation:80:generic_hidden",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:generic_hidden"
+      "id": "lone_druid_bear_necessities",
+      "Name": "Bear Necessities",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:80:generic_hidden:manaCost",
-        "ownerId": "activation:80:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:generic_hidden:cooldown",
-        "ownerId": "activation:80:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:generic_hidden:charges",
-        "ownerId": "activation:80:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:generic_hidden:manaCost",
-        "value:activation:80:generic_hidden:cooldown",
-        "value:activation:80:generic_hidden:charges"
+      "order": 16,
+      "type": "passive",
+      "tags": [
+        "attribute_bonus",
+        "buff",
+        "item_upgrade"
       ]
     },
     {
-      "id": "activation:80:lone_druid_true_form",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_true_form"
+      "id": "lone_druid_rabid",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_true_form:manaCost",
-        "ownerId": "activation:80:lone_druid_true_form",
-        "field": "manaCost",
-        "state": "known",
-        "value": 80
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_true_form:cooldown",
-        "ownerId": "activation:80:lone_druid_true_form",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "60 55 50"
-        }
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_true_form:charges",
-        "ownerId": "activation:80:lone_druid_true_form",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_true_form:manaCost",
-        "value:activation:80:lone_druid_true_form:cooldown",
-        "value:activation:80:lone_druid_true_form:charges"
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "order": 17,
+      "type": "self-target",
+      "manaCost": 50,
+      "cooldown": 35,
+      "tags": [
+        "buff",
+        "self_attack_speed",
+        "self_movement_speed"
       ]
     },
     {
-      "id": "activation:80:special_bonus_unique_lone_druid_2",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:special_bonus_unique_lone_druid_2"
+      "id": "lone_druid_spirit_bear_spirit_link",
+      "Name": "Spirit Link",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_2:manaCost",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_2:cooldown",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_2:charges",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:special_bonus_unique_lone_druid_2:manaCost",
-        "value:activation:80:special_bonus_unique_lone_druid_2:cooldown",
-        "value:activation:80:special_bonus_unique_lone_druid_2:charges"
+      "breakable": true,
+      "order": 18,
+      "type": "passive",
+      "tags": [
+        "buff",
+        "lifesteal",
+        "self_lifesteal",
+        "self_movement_speed"
       ]
     },
     {
-      "id": "activation:80:special_bonus_unique_lone_druid_1",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:special_bonus_unique_lone_druid_1"
+      "id": "lone_druid_savage_roar_bear",
+      "Name": "Savage Roar",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_1:manaCost",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_1",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_1:cooldown",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_1",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_1:charges",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_1",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:special_bonus_unique_lone_druid_1:manaCost",
-        "value:activation:80:special_bonus_unique_lone_druid_1:cooldown",
-        "value:activation:80:special_bonus_unique_lone_druid_1:charges"
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "order": 19,
+      "type": "self-target",
+      "manaCost": 50,
+      "cooldown": [
+        38,
+        32,
+        26,
+        20
+      ],
+      "tags": [
+        "buff",
+        "disable",
+        "fear",
+        "self_movement_speed"
       ]
     },
     {
-      "id": "activation:80:special_bonus_unique_lone_druid_4",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:special_bonus_unique_lone_druid_4"
+      "id": "lone_druid_true_form_druid",
+      "behavior": [
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_4:manaCost",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_4:cooldown",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_4:charges",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:special_bonus_unique_lone_druid_4:manaCost",
-        "value:activation:80:special_bonus_unique_lone_druid_4:cooldown",
-        "value:activation:80:special_bonus_unique_lone_druid_4:charges"
+      "dispellable": "no",
+      "order": 20,
+      "type": "self-target",
+      "manaCost": 25,
+      "cooldown": 0,
+      "tags": []
+    },
+    {
+      "id": "lone_druid_true_form_battle_cry",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "allies-only",
+      "order": 21,
+      "type": "self-target",
+      "manaCost": 50,
+      "cooldown": 45,
+      "tags": [
+        "buff",
+        "self_armor",
+        "self_attack_damage"
       ]
     },
     {
-      "id": "activation:80:special_bonus_agility_12",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:special_bonus_agility_12"
+      "id": "lone_druid_spirit_bear_return",
+      "Name": "Return",
+      "behavior": [
+        "channeled",
+        "no-target"
       ],
-      "manaCost": {
-        "id": "value:activation:80:special_bonus_agility_12:manaCost",
-        "ownerId": "activation:80:special_bonus_agility_12",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:special_bonus_agility_12:cooldown",
-        "ownerId": "activation:80:special_bonus_agility_12",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:special_bonus_agility_12:charges",
-        "ownerId": "activation:80:special_bonus_agility_12",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:special_bonus_agility_12:manaCost",
-        "value:activation:80:special_bonus_agility_12:cooldown",
-        "value:activation:80:special_bonus_agility_12:charges"
+      "order": 22,
+      "type": "self-target",
+      "manaCost": 0,
+      "tags": [
+        "channeled"
       ]
     },
     {
-      "id": "activation:80:special_bonus_unique_lone_druid_savage_roar_aoe",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:special_bonus_unique_lone_druid_savage_roar_aoe"
+      "id": "lone_druid_spirit_bear_entangle",
+      "Name": "Entangling Claws",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_savage_roar_aoe:manaCost",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_savage_roar_aoe",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_savage_roar_aoe:cooldown",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_savage_roar_aoe",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_savage_roar_aoe:charges",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_savage_roar_aoe",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:special_bonus_unique_lone_druid_savage_roar_aoe:manaCost",
-        "value:activation:80:special_bonus_unique_lone_druid_savage_roar_aoe:cooldown",
-        "value:activation:80:special_bonus_unique_lone_druid_savage_roar_aoe:charges"
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "yes",
+      "damageType": "magical",
+      "breakable": true,
+      "order": 23,
+      "type": "passive",
+      "tags": [
+        "bkb_pierce",
+        "damage_over_time",
+        "disable",
+        "root"
       ]
     },
     {
-      "id": "activation:80:special_bonus_attack_speed_55",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:special_bonus_attack_speed_55"
+      "id": "lone_druid_spirit_bear_defender",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:80:special_bonus_attack_speed_55:manaCost",
-        "ownerId": "activation:80:special_bonus_attack_speed_55",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:special_bonus_attack_speed_55:cooldown",
-        "ownerId": "activation:80:special_bonus_attack_speed_55",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:special_bonus_attack_speed_55:charges",
-        "ownerId": "activation:80:special_bonus_attack_speed_55",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:special_bonus_attack_speed_55:manaCost",
-        "value:activation:80:special_bonus_attack_speed_55:cooldown",
-        "value:activation:80:special_bonus_attack_speed_55:charges"
-      ]
+      "order": 24,
+      "type": "passive",
+      "tags": []
     },
     {
-      "id": "activation:80:special_bonus_unique_lone_druid_8",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:special_bonus_unique_lone_druid_8"
+      "id": "lone_druid_spirit_bear_fetch",
+      "Name": "Fetch",
+      "behavior": [
+        "unit-target"
       ],
-      "manaCost": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_8:manaCost",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_8:cooldown",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_8:charges",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:special_bonus_unique_lone_druid_8:manaCost",
-        "value:activation:80:special_bonus_unique_lone_druid_8:cooldown",
-        "value:activation:80:special_bonus_unique_lone_druid_8:charges"
-      ]
-    },
-    {
-      "id": "activation:80:special_bonus_unique_lone_druid_entangle_duration",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:special_bonus_unique_lone_druid_entangle_duration"
+      "affects": [
+        "units"
       ],
-      "manaCost": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_entangle_duration:manaCost",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_entangle_duration",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_entangle_duration:cooldown",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_entangle_duration",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_entangle_duration:charges",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_entangle_duration",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:special_bonus_unique_lone_druid_entangle_duration:manaCost",
-        "value:activation:80:special_bonus_unique_lone_druid_entangle_duration:cooldown",
-        "value:activation:80:special_bonus_unique_lone_druid_entangle_duration:charges"
-      ]
-    },
-    {
-      "id": "activation:80:special_bonus_attributes",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:special_bonus_attributes"
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "order": 25,
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero",
+        "enemy_hero",
+        "ally_creep",
+        "enemy_creep",
+        "neutral_creep"
       ],
-      "manaCost": {
-        "id": "value:activation:80:special_bonus_attributes:manaCost",
-        "ownerId": "activation:80:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:special_bonus_attributes:cooldown",
-        "ownerId": "activation:80:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:special_bonus_attributes:charges",
-        "ownerId": "activation:80:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:special_bonus_attributes:manaCost",
-        "value:activation:80:special_bonus_attributes:cooldown",
-        "value:activation:80:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:80:lone_druid_gift_bearer",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_gift_bearer"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_gift_bearer:manaCost",
-        "ownerId": "activation:80:lone_druid_gift_bearer",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_gift_bearer:cooldown",
-        "ownerId": "activation:80:lone_druid_gift_bearer",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_gift_bearer:charges",
-        "ownerId": "activation:80:lone_druid_gift_bearer",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_gift_bearer:manaCost",
-        "value:activation:80:lone_druid_gift_bearer:cooldown",
-        "value:activation:80:lone_druid_gift_bearer:charges"
-      ]
-    },
-    {
-      "id": "activation:80:lone_druid_bear_necessities",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_bear_necessities"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_bear_necessities:manaCost",
-        "ownerId": "activation:80:lone_druid_bear_necessities",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_bear_necessities:cooldown",
-        "ownerId": "activation:80:lone_druid_bear_necessities",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_bear_necessities:charges",
-        "ownerId": "activation:80:lone_druid_bear_necessities",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_bear_necessities:manaCost",
-        "value:activation:80:lone_druid_bear_necessities:cooldown",
-        "value:activation:80:lone_druid_bear_necessities:charges"
-      ]
-    },
-    {
-      "id": "activation:80:lone_druid_rabid",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_rabid"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_rabid:manaCost",
-        "ownerId": "activation:80:lone_druid_rabid",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          50,
-          50,
-          50,
-          50
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_rabid:cooldown",
-        "ownerId": "activation:80:lone_druid_rabid",
-        "field": "cooldown",
-        "state": "known",
-        "value": 35
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_rabid:charges",
-        "ownerId": "activation:80:lone_druid_rabid",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_rabid:manaCost",
-        "value:activation:80:lone_druid_rabid:cooldown",
-        "value:activation:80:lone_druid_rabid:charges"
-      ]
-    },
-    {
-      "id": "activation:80:lone_druid_spirit_bear_spirit_link",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_spirit_bear_spirit_link"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_spirit_bear_spirit_link:manaCost",
-        "ownerId": "activation:80:lone_druid_spirit_bear_spirit_link",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_spirit_bear_spirit_link:cooldown",
-        "ownerId": "activation:80:lone_druid_spirit_bear_spirit_link",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0"
-        }
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_spirit_bear_spirit_link:charges",
-        "ownerId": "activation:80:lone_druid_spirit_bear_spirit_link",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_spirit_bear_spirit_link:manaCost",
-        "value:activation:80:lone_druid_spirit_bear_spirit_link:cooldown",
-        "value:activation:80:lone_druid_spirit_bear_spirit_link:charges"
-      ]
-    },
-    {
-      "id": "activation:80:lone_druid_savage_roar_bear",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_savage_roar_bear"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_savage_roar_bear:manaCost",
-        "ownerId": "activation:80:lone_druid_savage_roar_bear",
-        "field": "manaCost",
-        "state": "known",
-        "value": 50
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_savage_roar_bear:cooldown",
-        "ownerId": "activation:80:lone_druid_savage_roar_bear",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          38,
-          32,
-          26,
-          20
-        ]
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_savage_roar_bear:charges",
-        "ownerId": "activation:80:lone_druid_savage_roar_bear",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_savage_roar_bear:manaCost",
-        "value:activation:80:lone_druid_savage_roar_bear:cooldown",
-        "value:activation:80:lone_druid_savage_roar_bear:charges"
-      ]
-    },
-    {
-      "id": "activation:80:lone_druid_true_form_druid",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_true_form_druid"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_true_form_druid:manaCost",
-        "ownerId": "activation:80:lone_druid_true_form_druid",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          25,
-          25,
-          25
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_true_form_druid:cooldown",
-        "ownerId": "activation:80:lone_druid_true_form_druid",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          0,
-          0,
-          0
-        ]
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_true_form_druid:charges",
-        "ownerId": "activation:80:lone_druid_true_form_druid",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_true_form_druid:manaCost",
-        "value:activation:80:lone_druid_true_form_druid:cooldown",
-        "value:activation:80:lone_druid_true_form_druid:charges"
-      ]
-    },
-    {
-      "id": "activation:80:lone_druid_true_form_battle_cry",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_true_form_battle_cry"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_true_form_battle_cry:manaCost",
-        "ownerId": "activation:80:lone_druid_true_form_battle_cry",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          50,
-          50,
-          50
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_true_form_battle_cry:cooldown",
-        "ownerId": "activation:80:lone_druid_true_form_battle_cry",
-        "field": "cooldown",
-        "state": "known",
-        "value": 45
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_true_form_battle_cry:charges",
-        "ownerId": "activation:80:lone_druid_true_form_battle_cry",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_true_form_battle_cry:manaCost",
-        "value:activation:80:lone_druid_true_form_battle_cry:cooldown",
-        "value:activation:80:lone_druid_true_form_battle_cry:charges"
-      ]
-    },
-    {
-      "id": "activation:80:lone_druid_spirit_bear_return",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_spirit_bear_return"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_spirit_bear_return:manaCost",
-        "ownerId": "activation:80:lone_druid_spirit_bear_return",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_spirit_bear_return:cooldown",
-        "ownerId": "activation:80:lone_druid_spirit_bear_return",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "30.0",
-          "special_bonus_unique_lone_druid_spirit_bear_return_cd": "=0.2"
-        }
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_spirit_bear_return:charges",
-        "ownerId": "activation:80:lone_druid_spirit_bear_return",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_spirit_bear_return:manaCost",
-        "value:activation:80:lone_druid_spirit_bear_return:cooldown",
-        "value:activation:80:lone_druid_spirit_bear_return:charges"
-      ]
-    },
-    {
-      "id": "activation:80:lone_druid_spirit_bear_entangle",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_spirit_bear_entangle"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_spirit_bear_entangle:manaCost",
-        "ownerId": "activation:80:lone_druid_spirit_bear_entangle",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_spirit_bear_entangle:cooldown",
-        "ownerId": "activation:80:lone_druid_spirit_bear_entangle",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_spirit_bear_entangle:charges",
-        "ownerId": "activation:80:lone_druid_spirit_bear_entangle",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_spirit_bear_entangle:manaCost",
-        "value:activation:80:lone_druid_spirit_bear_entangle:cooldown",
-        "value:activation:80:lone_druid_spirit_bear_entangle:charges"
-      ]
-    },
-    {
-      "id": "activation:80:lone_druid_spirit_bear_defender",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_spirit_bear_defender"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_spirit_bear_defender:manaCost",
-        "ownerId": "activation:80:lone_druid_spirit_bear_defender",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_spirit_bear_defender:cooldown",
-        "ownerId": "activation:80:lone_druid_spirit_bear_defender",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_spirit_bear_defender:charges",
-        "ownerId": "activation:80:lone_druid_spirit_bear_defender",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_spirit_bear_defender:manaCost",
-        "value:activation:80:lone_druid_spirit_bear_defender:cooldown",
-        "value:activation:80:lone_druid_spirit_bear_defender:charges"
-      ]
-    },
-    {
-      "id": "activation:80:lone_druid_spirit_bear_fetch",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_spirit_bear_fetch"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_spirit_bear_fetch:manaCost",
-        "ownerId": "activation:80:lone_druid_spirit_bear_fetch",
-        "field": "manaCost",
-        "state": "known",
-        "value": 75
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_spirit_bear_fetch:cooldown",
-        "ownerId": "activation:80:lone_druid_spirit_bear_fetch",
-        "field": "cooldown",
-        "state": "known",
-        "value": 30
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_spirit_bear_fetch:charges",
-        "ownerId": "activation:80:lone_druid_spirit_bear_fetch",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_spirit_bear_fetch:manaCost",
-        "value:activation:80:lone_druid_spirit_bear_fetch:cooldown",
-        "value:activation:80:lone_druid_spirit_bear_fetch:charges"
-      ]
-    },
-    {
-      "id": "activation:80:lone_druid_spirit_bear_demolish",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:lone_druid_spirit_bear_demolish"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:lone_druid_spirit_bear_demolish:manaCost",
-        "ownerId": "activation:80:lone_druid_spirit_bear_demolish",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:lone_druid_spirit_bear_demolish:cooldown",
-        "ownerId": "activation:80:lone_druid_spirit_bear_demolish",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:lone_druid_spirit_bear_demolish:charges",
-        "ownerId": "activation:80:lone_druid_spirit_bear_demolish",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:lone_druid_spirit_bear_demolish:manaCost",
-        "value:activation:80:lone_druid_spirit_bear_demolish:cooldown",
-        "value:activation:80:lone_druid_spirit_bear_demolish:charges"
-      ]
-    },
-    {
-      "id": "activation:80:special_bonus_unique_lone_druid_11",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:special_bonus_unique_lone_druid_11"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_11:manaCost",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_11",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_11:cooldown",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_11",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_11:charges",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_11",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:special_bonus_unique_lone_druid_11:manaCost",
-        "value:activation:80:special_bonus_unique_lone_druid_11:cooldown",
-        "value:activation:80:special_bonus_unique_lone_druid_11:charges"
-      ]
-    },
-    {
-      "id": "activation:80:special_bonus_unique_lone_druid_entangle_hits",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:special_bonus_unique_lone_druid_entangle_hits"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_entangle_hits:manaCost",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_entangle_hits",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_entangle_hits:cooldown",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_entangle_hits",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_entangle_hits:charges",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_entangle_hits",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:special_bonus_unique_lone_druid_entangle_hits:manaCost",
-        "value:activation:80:special_bonus_unique_lone_druid_entangle_hits:cooldown",
-        "value:activation:80:special_bonus_unique_lone_druid_entangle_hits:charges"
-      ]
-    },
-    {
-      "id": "activation:80:special_bonus_unique_lone_druid_entangle_cd",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:special_bonus_unique_lone_druid_entangle_cd"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_entangle_cd:manaCost",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_entangle_cd",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_entangle_cd:cooldown",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_entangle_cd",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_entangle_cd:charges",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_entangle_cd",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:special_bonus_unique_lone_druid_entangle_cd:manaCost",
-        "value:activation:80:special_bonus_unique_lone_druid_entangle_cd:cooldown",
-        "value:activation:80:special_bonus_unique_lone_druid_entangle_cd:charges"
-      ]
-    },
-    {
-      "id": "activation:80:special_bonus_unique_lone_druid_spirit_bear_damage_against_entangled",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:special_bonus_unique_lone_druid_spirit_bear_damage_against_entangled"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_damage_against_entangled:manaCost",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_spirit_bear_damage_against_entangled",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_damage_against_entangled:cooldown",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_spirit_bear_damage_against_entangled",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_damage_against_entangled:charges",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_spirit_bear_damage_against_entangled",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_damage_against_entangled:manaCost",
-        "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_damage_against_entangled:cooldown",
-        "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_damage_against_entangled:charges"
-      ]
-    },
-    {
-      "id": "activation:80:special_bonus_unique_lone_druid_spirit_bear_demolish",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:special_bonus_unique_lone_druid_spirit_bear_demolish"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_demolish:manaCost",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_spirit_bear_demolish",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_demolish:cooldown",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_spirit_bear_demolish",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_demolish:charges",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_spirit_bear_demolish",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_demolish:manaCost",
-        "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_demolish:cooldown",
-        "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_demolish:charges"
-      ]
-    },
-    {
-      "id": "activation:80:special_bonus_unique_lone_druid_spirit_bear_return_channel",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:special_bonus_unique_lone_druid_spirit_bear_return_channel"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_return_channel:manaCost",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_spirit_bear_return_channel",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_return_channel:cooldown",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_spirit_bear_return_channel",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_return_channel:charges",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_spirit_bear_return_channel",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_return_channel:manaCost",
-        "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_return_channel:cooldown",
-        "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_return_channel:charges"
-      ]
-    },
-    {
-      "id": "activation:80:special_bonus_unique_lone_druid_spirit_bear_return_cd",
-      "heroId": "80",
-      "abilityIds": [
-        "ability:80:special_bonus_unique_lone_druid_spirit_bear_return_cd"
-      ],
-      "manaCost": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_return_cd:manaCost",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_spirit_bear_return_cd",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_return_cd:cooldown",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_spirit_bear_return_cd",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_return_cd:charges",
-        "ownerId": "activation:80:special_bonus_unique_lone_druid_spirit_bear_return_cd",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_return_cd:manaCost",
-        "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_return_cd:cooldown",
-        "value:activation:80:special_bonus_unique_lone_druid_spirit_bear_return_cd:charges"
+      "manaCost": 75,
+      "cooldown": 30,
+      "tags": [
+        "disable",
+        "root"
       ]
     }
-  ]
+  ],
+  "talents": [
+    {
+      "id": "special_bonus_unique_lone_druid_2",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "duration_extension"
+      ]
+    },
+    {
+      "id": "special_bonus_unique_lone_druid_1",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
+      ]
+    },
+    {
+      "id": "special_bonus_unique_lone_druid_4",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "buff",
+        "cooldown_reduction"
+      ]
+    },
+    {
+      "id": "special_bonus_agility_12",
+      "Name": "+12 Agility",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "attribute_bonus",
+        "buff"
+      ]
+    },
+    {
+      "id": "special_bonus_unique_lone_druid_savage_roar_aoe",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_attack_speed_55",
+      "Name": "+55 Attack Speed",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "buff",
+        "self_attack_speed"
+      ]
+    },
+    {
+      "id": "special_bonus_unique_lone_druid_8",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_lone_druid_entangle_duration",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_lone_druid_11",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_lone_druid_entangle_hits",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_lone_druid_entangle_cd",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_lone_druid_spirit_bear_damage_against_entangled",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_lone_druid_spirit_bear_demolish",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_lone_druid_spirit_bear_return_channel",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_lone_druid_spirit_bear_return_cd",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "buff",
+        "cooldown_reduction"
+      ]
+    }
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

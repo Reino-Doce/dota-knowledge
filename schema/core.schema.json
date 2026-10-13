@@ -56,7 +56,7 @@
       ]
     },
     "compilerVersion": {
-      "const": "dota-knowledge-compiler-3"
+      "const": "dota-knowledge-compiler-5"
     },
     "aliases": {
       "description": "Flat alias-to-hero-key map emitted by current canonical builds.",
@@ -485,7 +485,8 @@
         "engineId",
         "activationId",
         "order",
-        "state"
+        "state",
+        "tags"
       ],
       "properties": {
         "id": {
@@ -511,6 +512,14 @@
             "unknown",
             "unsupported"
           ]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]{0,63}$"
+          },
+          "uniqueItems": true
         },
         "owner": {
           "type": "string"

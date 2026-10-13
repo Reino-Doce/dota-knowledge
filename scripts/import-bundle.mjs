@@ -258,7 +258,7 @@ async function writeReconciliation(stage, inputs, migrated, evidenceRoot, inputS
         { id: 'mechanics-manifest', file: 'mechanics/hero_mechanics_manifest.json', value: inputs.inputFiles.mechanics,
             targets: ['runtime/manifest.json#/sourceIdentities', 'observations/sources.json#/'] },
         { id: 'mechanics', file: 'mechanics/hero_mechanics.json', value: inputs.mechanics,
-            targets: ['heroes/{heroKey}/abilities.json#/abilities', 'mechanics/reference.json#/entities'] },
+            targets: ['mechanics/abilities.json#/abilities', 'mechanics/abilities.json#/activations', 'mechanics/reference.json#/entities'] },
         { id: 'annotations', file: 'mechanics/hero_mechanics_annotations.json', value: inputs.annotations,
             targets: ['reviews/claims.json#/claims', 'runtime/heroes/{heroKey}/guide.json#/claims'] },
         { id: 'browser-catalog', file: 'mechanics/hero_mechanics_browser.json', value: inputs.browserCatalog,

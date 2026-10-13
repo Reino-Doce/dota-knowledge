@@ -23,6 +23,7 @@ export async function fixtureExample() {
             raw: { AttributePrimary: 'DOTA_ATTRIBUTE_AGILITY', AttackRange: '150', Complexity: '1', Role: 'Carry', Rolelevels: '1' }, nativeStats: {} } }])),
         sources: [], claims: [], observations: [], reference: {} }, { crosswalk: roster });
         const dataset = path.join(root, 'data'); await writeCanonical(dataset, graph);
+        const baseline = await readCanonical(dataset);
         const storage = await createFileStorage(path.join(root, 'evidence/population'));
         const clock = () => new Date('2026-10-11T12:00:00Z');
         const json = value => new Response(JSON.stringify(value));
@@ -57,7 +58,7 @@ export async function fixtureExample() {
         assert.equal((await applyPopulation({ dataset, storage, runId: 'fixture', clock })).state, 'unchanged');
         assert.deepEqual(await regularBytes(dataset, 'manifest.json'), published);
         const after = await readCanonical(dataset);
-        assert.deepEqual(after.entities, graph.entities);
+        assert.deepEqual(after.entities, baseline.entities);
         assert.deepEqual(new Set(after.observations.filter(row => row.kind === 'lane-outcome').map(row => row.direction)), new Set(['with', 'against']));
         return { state: 'passed', steps: run.config.steps, completedScopes: Object.keys(run.scopes).length, observations: after.observations.length };
     }

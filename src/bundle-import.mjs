@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto';
 import { graphFromBundleImport } from './canonical-model.mjs';
 import { historicalSource, historicalProfile } from './historical-records.mjs';
 
-const COMPILE_VERSION = 'dota-knowledge-compiler-3';
+const COMPILE_VERSION = 'dota-knowledge-compiler-5';
 const nativeStatsId = 'source:installed-game-resources';
 const textHash = value => createHash('sha256').update(value).digest('hex');
 const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);

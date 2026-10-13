@@ -1,956 +1,291 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "morphling_ebb_and_flow",
+    "Name": "Ebb and Flow",
+    "behavior": [
+      "passive"
+    ],
+    "dispellable": "no",
+    "tags": [
+      "buff",
+      "cast_range",
+      "slow_resistance"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:10:morphling_waveform",
-      "heroId": "10",
-      "engineId": "morphling_waveform",
-      "activationId": "activation:10:morphling_waveform",
+      "id": "morphling_waveform",
+      "Name": "Waveform",
+      "behavior": [
+        "point-target"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
+      "type": "point",
+      "manaCost": 115,
+      "tags": [
+        "damage_immunity",
+        "escape",
+        "mobility"
+      ]
     },
     {
-      "id": "ability:10:morphling_adaptive_strike_agi",
-      "heroId": "10",
-      "engineId": "morphling_adaptive_strike_agi",
-      "activationId": "activation:10:morphling_adaptive_strike_agi",
+      "id": "morphling_adaptive_strike_agi",
+      "Name": "Adaptive Strike",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        40,
+        50,
+        60,
+        70
+      ],
+      "tags": [
+        "disable",
+        "enemy_displacement",
+        "stun"
+      ]
     },
     {
-      "id": "ability:10:generic_hidden",
-      "heroId": "10",
-      "engineId": "generic_hidden",
-      "activationId": "activation:10:generic_hidden",
+      "id": "generic_hidden",
       "order": 2,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:10:morphling_morph_agi",
-      "heroId": "10",
-      "engineId": "morphling_morph_agi",
-      "activationId": "activation:10:morphling_morph_agi",
+      "id": "morphling_morph_agi",
+      "Name": "Attribute Shift (Agility Gain)",
+      "behavior": [
+        "no-target",
+        "toggle"
+      ],
       "order": 3,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
+      "type": "toggle",
+      "cooldown": 0,
+      "tags": [
+        "attribute_shift"
+      ]
     },
     {
-      "id": "ability:10:morphling_morph_str",
-      "heroId": "10",
-      "engineId": "morphling_morph_str",
-      "activationId": "activation:10:morphling_morph_str",
+      "id": "morphling_morph_str",
+      "Name": "Attribute Shift (Strength Gain)",
+      "behavior": [
+        "no-target",
+        "toggle"
+      ],
       "order": 4,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
+      "type": "toggle",
+      "cooldown": 0,
+      "tags": [
+        "attribute_shift"
+      ]
     },
     {
-      "id": "ability:10:morphling_replicate",
-      "heroId": "10",
-      "engineId": "morphling_replicate",
-      "activationId": "activation:10:morphling_replicate",
+      "id": "morphling_replicate",
+      "Name": "Morph",
+      "behavior": [
+        "unit-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "yes",
       "order": 5,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
+      "type": "target",
+      "manaCost": 50,
+      "cooldown": [
+        125,
+        90,
+        55
+      ],
+      "tags": [
+        "illusions"
+      ]
     },
     {
-      "id": "ability:10:morphling_morph_replicate",
-      "heroId": "10",
-      "engineId": "morphling_morph_replicate",
-      "activationId": "activation:10:morphling_morph_replicate",
+      "id": "morphling_morph_replicate",
+      "Name": "Morph Replicate",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
       "order": 6,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 0,
+      "cooldown": 2,
+      "tags": []
     },
     {
-      "id": "ability:10:morphling_ebb_and_flow",
-      "heroId": "10",
-      "engineId": "morphling_ebb_and_flow",
-      "activationId": "activation:10:morphling_ebb_and_flow",
-      "order": 7,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
-    },
-    {
-      "id": "ability:10:special_bonus_magic_resistance_15",
-      "heroId": "10",
-      "engineId": "special_bonus_magic_resistance_15",
-      "activationId": "activation:10:special_bonus_magic_resistance_15",
-      "order": 8,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
-    },
-    {
-      "id": "ability:10:special_bonus_unique_morphling_8",
-      "heroId": "10",
-      "engineId": "special_bonus_unique_morphling_8",
-      "activationId": "activation:10:special_bonus_unique_morphling_8",
-      "order": 9,
-      "owner": "npc_dota_hero_morphling",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:10:special_bonus_unique_morphling_1",
-      "heroId": "10",
-      "engineId": "special_bonus_unique_morphling_1",
-      "activationId": "activation:10:special_bonus_unique_morphling_1",
-      "order": 10,
-      "owner": "npc_dota_hero_morphling",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:10:special_bonus_attack_range_75",
-      "heroId": "10",
-      "engineId": "special_bonus_attack_range_75",
-      "activationId": "activation:10:special_bonus_attack_range_75",
-      "order": 11,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
-    },
-    {
-      "id": "ability:10:special_bonus_unique_morphling_7",
-      "heroId": "10",
-      "engineId": "special_bonus_unique_morphling_7",
-      "activationId": "activation:10:special_bonus_unique_morphling_7",
-      "order": 12,
-      "owner": "npc_dota_hero_morphling",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:10:special_bonus_agility_15",
-      "heroId": "10",
-      "engineId": "special_bonus_agility_15",
-      "activationId": "activation:10:special_bonus_agility_15",
-      "order": 13,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
-    },
-    {
-      "id": "ability:10:special_bonus_unique_morphling_waveform_cooldown",
-      "heroId": "10",
-      "engineId": "special_bonus_unique_morphling_waveform_cooldown",
-      "activationId": "activation:10:special_bonus_unique_morphling_waveform_cooldown",
-      "order": 14,
-      "owner": "npc_dota_hero_morphling",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:10:special_bonus_strength_35",
-      "heroId": "10",
-      "engineId": "special_bonus_strength_35",
-      "activationId": "activation:10:special_bonus_strength_35",
-      "order": 15,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
-    },
-    {
-      "id": "ability:10:special_bonus_attributes",
-      "heroId": "10",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:10:special_bonus_attributes",
-      "order": 16,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
-    },
-    {
-      "id": "ability:10:morphling_syntropy",
-      "heroId": "10",
-      "engineId": "morphling_syntropy",
-      "activationId": "activation:10:morphling_syntropy",
+      "id": "morphling_syntropy",
+      "Name": "Syntropy",
+      "behavior": [
+        "auto-cast",
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 17,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
+      "type": "toggle",
+      "manaCost": [
+        10,
+        12,
+        14,
+        16
+      ],
+      "tags": [
+        "buff",
+        "self_attack_range",
+        "slow"
+      ]
     },
     {
-      "id": "ability:10:morphling_ebb",
-      "heroId": "10",
-      "engineId": "morphling_ebb",
-      "activationId": "activation:10:morphling_ebb",
+      "id": "morphling_ebb",
+      "Name": "Ebb",
+      "behavior": [
+        "passive"
+      ],
       "order": 18,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "primary_attribute_change"
+      ]
     },
     {
-      "id": "ability:10:morphling_flow",
-      "heroId": "10",
-      "engineId": "morphling_flow",
-      "activationId": "activation:10:morphling_flow",
+      "id": "morphling_flow",
+      "Name": "Flow",
+      "behavior": [
+        "passive"
+      ],
+      "breakable": true,
       "order": 19,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "attribute_bonus",
+        "buff",
+        "primary_attribute_change",
+        "spell_amplification"
+      ]
     },
     {
-      "id": "ability:10:morphling_hybrid",
-      "heroId": "10",
-      "engineId": "morphling_hybrid",
-      "activationId": "activation:10:morphling_hybrid",
+      "id": "morphling_hybrid",
+      "behavior": [
+        "unit-target"
+      ],
       "order": 20,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
+      "type": "target",
+      "manaCost": 200,
+      "cooldown": 60,
+      "tags": []
     },
     {
-      "id": "ability:10:morphling_accumulation",
-      "heroId": "10",
-      "engineId": "morphling_accumulation",
-      "activationId": "activation:10:morphling_accumulation",
+      "id": "morphling_accumulation",
+      "Name": "Accumulation",
+      "behavior": [
+        "passive"
+      ],
       "order": 21,
-      "owner": "npc_dota_hero_morphling",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "attribute_bonus",
+        "buff"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:10:morphling_waveform",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:morphling_waveform"
+      "id": "special_bonus_magic_resistance_15",
+      "Name": "+15% Magic Resistance",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:10:morphling_waveform:manaCost",
-        "ownerId": "activation:10:morphling_waveform",
-        "field": "manaCost",
-        "state": "known",
-        "value": 115
-      },
-      "cooldown": {
-        "id": "value:activation:10:morphling_waveform:cooldown",
-        "ownerId": "activation:10:morphling_waveform",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "21 18 15 12",
-          "special_bonus_unique_morphling_waveform_cooldown": "-40%"
-        }
-      },
-      "charges": {
-        "id": "value:activation:10:morphling_waveform:charges",
-        "ownerId": "activation:10:morphling_waveform",
-        "field": "charges",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0"
-        }
-      },
-      "valueIds": [
-        "value:activation:10:morphling_waveform:manaCost",
-        "value:activation:10:morphling_waveform:cooldown",
-        "value:activation:10:morphling_waveform:charges"
+      "tags": [
+        "buff",
+        "magic_resistance"
       ]
     },
     {
-      "id": "activation:10:morphling_adaptive_strike_agi",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:morphling_adaptive_strike_agi"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:morphling_adaptive_strike_agi:manaCost",
-        "ownerId": "activation:10:morphling_adaptive_strike_agi",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          40,
-          50,
-          60,
-          70
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:10:morphling_adaptive_strike_agi:cooldown",
-        "ownerId": "activation:10:morphling_adaptive_strike_agi",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "17 14 11 8",
-          "special_bonus_unique_morphling_7": "-3"
-        }
-      },
-      "charges": {
-        "id": "value:activation:10:morphling_adaptive_strike_agi:charges",
-        "ownerId": "activation:10:morphling_adaptive_strike_agi",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:morphling_adaptive_strike_agi:manaCost",
-        "value:activation:10:morphling_adaptive_strike_agi:cooldown",
-        "value:activation:10:morphling_adaptive_strike_agi:charges"
+      "id": "special_bonus_unique_morphling_8",
+      "tags": [
+        "duration_extension"
       ]
     },
     {
-      "id": "activation:10:generic_hidden",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:generic_hidden"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:generic_hidden:manaCost",
-        "ownerId": "activation:10:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:10:generic_hidden:cooldown",
-        "ownerId": "activation:10:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:10:generic_hidden:charges",
-        "ownerId": "activation:10:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:generic_hidden:manaCost",
-        "value:activation:10:generic_hidden:cooldown",
-        "value:activation:10:generic_hidden:charges"
+      "id": "special_bonus_unique_morphling_1",
+      "tags": [
+        "buff",
+        "cast_range"
       ]
     },
     {
-      "id": "activation:10:morphling_morph_agi",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:morphling_morph_agi"
+      "id": "special_bonus_attack_range_75",
+      "Name": "+75 Attack Range",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:10:morphling_morph_agi:manaCost",
-        "ownerId": "activation:10:morphling_morph_agi",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:10:morphling_morph_agi:cooldown",
-        "ownerId": "activation:10:morphling_morph_agi",
-        "field": "cooldown",
-        "state": "known",
-        "value": 0
-      },
-      "charges": {
-        "id": "value:activation:10:morphling_morph_agi:charges",
-        "ownerId": "activation:10:morphling_morph_agi",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:morphling_morph_agi:manaCost",
-        "value:activation:10:morphling_morph_agi:cooldown",
-        "value:activation:10:morphling_morph_agi:charges"
+      "tags": [
+        "buff",
+        "self_attack_range"
       ]
     },
     {
-      "id": "activation:10:morphling_morph_str",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:morphling_morph_str"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:morphling_morph_str:manaCost",
-        "ownerId": "activation:10:morphling_morph_str",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:10:morphling_morph_str:cooldown",
-        "ownerId": "activation:10:morphling_morph_str",
-        "field": "cooldown",
-        "state": "known",
-        "value": 0
-      },
-      "charges": {
-        "id": "value:activation:10:morphling_morph_str:charges",
-        "ownerId": "activation:10:morphling_morph_str",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:morphling_morph_str:manaCost",
-        "value:activation:10:morphling_morph_str:cooldown",
-        "value:activation:10:morphling_morph_str:charges"
+      "id": "special_bonus_unique_morphling_7",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:10:morphling_replicate",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:morphling_replicate"
+      "id": "special_bonus_agility_15",
+      "Name": "+15 Agility",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:10:morphling_replicate:manaCost",
-        "ownerId": "activation:10:morphling_replicate",
-        "field": "manaCost",
-        "state": "known",
-        "value": 50
-      },
-      "cooldown": {
-        "id": "value:activation:10:morphling_replicate:cooldown",
-        "ownerId": "activation:10:morphling_replicate",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          125,
-          90,
-          55
-        ]
-      },
-      "charges": {
-        "id": "value:activation:10:morphling_replicate:charges",
-        "ownerId": "activation:10:morphling_replicate",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:morphling_replicate:manaCost",
-        "value:activation:10:morphling_replicate:cooldown",
-        "value:activation:10:morphling_replicate:charges"
+      "tags": [
+        "attribute_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:10:morphling_morph_replicate",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:morphling_morph_replicate"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:morphling_morph_replicate:manaCost",
-        "ownerId": "activation:10:morphling_morph_replicate",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:10:morphling_morph_replicate:cooldown",
-        "ownerId": "activation:10:morphling_morph_replicate",
-        "field": "cooldown",
-        "state": "known",
-        "value": 2
-      },
-      "charges": {
-        "id": "value:activation:10:morphling_morph_replicate:charges",
-        "ownerId": "activation:10:morphling_morph_replicate",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:morphling_morph_replicate:manaCost",
-        "value:activation:10:morphling_morph_replicate:cooldown",
-        "value:activation:10:morphling_morph_replicate:charges"
+      "id": "special_bonus_unique_morphling_waveform_cooldown",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:10:morphling_ebb_and_flow",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:morphling_ebb_and_flow"
+      "id": "special_bonus_strength_35",
+      "Name": "+35 Strength",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:10:morphling_ebb_and_flow:manaCost",
-        "ownerId": "activation:10:morphling_ebb_and_flow",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:10:morphling_ebb_and_flow:cooldown",
-        "ownerId": "activation:10:morphling_ebb_and_flow",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:10:morphling_ebb_and_flow:charges",
-        "ownerId": "activation:10:morphling_ebb_and_flow",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:morphling_ebb_and_flow:manaCost",
-        "value:activation:10:morphling_ebb_and_flow:cooldown",
-        "value:activation:10:morphling_ebb_and_flow:charges"
-      ]
-    },
-    {
-      "id": "activation:10:special_bonus_magic_resistance_15",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:special_bonus_magic_resistance_15"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:special_bonus_magic_resistance_15:manaCost",
-        "ownerId": "activation:10:special_bonus_magic_resistance_15",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:10:special_bonus_magic_resistance_15:cooldown",
-        "ownerId": "activation:10:special_bonus_magic_resistance_15",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:10:special_bonus_magic_resistance_15:charges",
-        "ownerId": "activation:10:special_bonus_magic_resistance_15",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:special_bonus_magic_resistance_15:manaCost",
-        "value:activation:10:special_bonus_magic_resistance_15:cooldown",
-        "value:activation:10:special_bonus_magic_resistance_15:charges"
-      ]
-    },
-    {
-      "id": "activation:10:special_bonus_unique_morphling_8",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:special_bonus_unique_morphling_8"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:special_bonus_unique_morphling_8:manaCost",
-        "ownerId": "activation:10:special_bonus_unique_morphling_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:10:special_bonus_unique_morphling_8:cooldown",
-        "ownerId": "activation:10:special_bonus_unique_morphling_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:10:special_bonus_unique_morphling_8:charges",
-        "ownerId": "activation:10:special_bonus_unique_morphling_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:special_bonus_unique_morphling_8:manaCost",
-        "value:activation:10:special_bonus_unique_morphling_8:cooldown",
-        "value:activation:10:special_bonus_unique_morphling_8:charges"
-      ]
-    },
-    {
-      "id": "activation:10:special_bonus_unique_morphling_1",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:special_bonus_unique_morphling_1"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:special_bonus_unique_morphling_1:manaCost",
-        "ownerId": "activation:10:special_bonus_unique_morphling_1",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:10:special_bonus_unique_morphling_1:cooldown",
-        "ownerId": "activation:10:special_bonus_unique_morphling_1",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:10:special_bonus_unique_morphling_1:charges",
-        "ownerId": "activation:10:special_bonus_unique_morphling_1",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:special_bonus_unique_morphling_1:manaCost",
-        "value:activation:10:special_bonus_unique_morphling_1:cooldown",
-        "value:activation:10:special_bonus_unique_morphling_1:charges"
-      ]
-    },
-    {
-      "id": "activation:10:special_bonus_attack_range_75",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:special_bonus_attack_range_75"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:special_bonus_attack_range_75:manaCost",
-        "ownerId": "activation:10:special_bonus_attack_range_75",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:10:special_bonus_attack_range_75:cooldown",
-        "ownerId": "activation:10:special_bonus_attack_range_75",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:10:special_bonus_attack_range_75:charges",
-        "ownerId": "activation:10:special_bonus_attack_range_75",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:special_bonus_attack_range_75:manaCost",
-        "value:activation:10:special_bonus_attack_range_75:cooldown",
-        "value:activation:10:special_bonus_attack_range_75:charges"
-      ]
-    },
-    {
-      "id": "activation:10:special_bonus_unique_morphling_7",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:special_bonus_unique_morphling_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:special_bonus_unique_morphling_7:manaCost",
-        "ownerId": "activation:10:special_bonus_unique_morphling_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:10:special_bonus_unique_morphling_7:cooldown",
-        "ownerId": "activation:10:special_bonus_unique_morphling_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:10:special_bonus_unique_morphling_7:charges",
-        "ownerId": "activation:10:special_bonus_unique_morphling_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:special_bonus_unique_morphling_7:manaCost",
-        "value:activation:10:special_bonus_unique_morphling_7:cooldown",
-        "value:activation:10:special_bonus_unique_morphling_7:charges"
-      ]
-    },
-    {
-      "id": "activation:10:special_bonus_agility_15",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:special_bonus_agility_15"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:special_bonus_agility_15:manaCost",
-        "ownerId": "activation:10:special_bonus_agility_15",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:10:special_bonus_agility_15:cooldown",
-        "ownerId": "activation:10:special_bonus_agility_15",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:10:special_bonus_agility_15:charges",
-        "ownerId": "activation:10:special_bonus_agility_15",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:special_bonus_agility_15:manaCost",
-        "value:activation:10:special_bonus_agility_15:cooldown",
-        "value:activation:10:special_bonus_agility_15:charges"
-      ]
-    },
-    {
-      "id": "activation:10:special_bonus_unique_morphling_waveform_cooldown",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:special_bonus_unique_morphling_waveform_cooldown"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:special_bonus_unique_morphling_waveform_cooldown:manaCost",
-        "ownerId": "activation:10:special_bonus_unique_morphling_waveform_cooldown",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:10:special_bonus_unique_morphling_waveform_cooldown:cooldown",
-        "ownerId": "activation:10:special_bonus_unique_morphling_waveform_cooldown",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:10:special_bonus_unique_morphling_waveform_cooldown:charges",
-        "ownerId": "activation:10:special_bonus_unique_morphling_waveform_cooldown",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:special_bonus_unique_morphling_waveform_cooldown:manaCost",
-        "value:activation:10:special_bonus_unique_morphling_waveform_cooldown:cooldown",
-        "value:activation:10:special_bonus_unique_morphling_waveform_cooldown:charges"
-      ]
-    },
-    {
-      "id": "activation:10:special_bonus_strength_35",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:special_bonus_strength_35"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:special_bonus_strength_35:manaCost",
-        "ownerId": "activation:10:special_bonus_strength_35",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:10:special_bonus_strength_35:cooldown",
-        "ownerId": "activation:10:special_bonus_strength_35",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:10:special_bonus_strength_35:charges",
-        "ownerId": "activation:10:special_bonus_strength_35",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:special_bonus_strength_35:manaCost",
-        "value:activation:10:special_bonus_strength_35:cooldown",
-        "value:activation:10:special_bonus_strength_35:charges"
-      ]
-    },
-    {
-      "id": "activation:10:special_bonus_attributes",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:special_bonus_attributes:manaCost",
-        "ownerId": "activation:10:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:10:special_bonus_attributes:cooldown",
-        "ownerId": "activation:10:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:10:special_bonus_attributes:charges",
-        "ownerId": "activation:10:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:special_bonus_attributes:manaCost",
-        "value:activation:10:special_bonus_attributes:cooldown",
-        "value:activation:10:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:10:morphling_syntropy",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:morphling_syntropy"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:morphling_syntropy:manaCost",
-        "ownerId": "activation:10:morphling_syntropy",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          10,
-          12,
-          14,
-          16
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:10:morphling_syntropy:cooldown",
-        "ownerId": "activation:10:morphling_syntropy",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:10:morphling_syntropy:charges",
-        "ownerId": "activation:10:morphling_syntropy",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:morphling_syntropy:manaCost",
-        "value:activation:10:morphling_syntropy:cooldown",
-        "value:activation:10:morphling_syntropy:charges"
-      ]
-    },
-    {
-      "id": "activation:10:morphling_ebb",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:morphling_ebb"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:morphling_ebb:manaCost",
-        "ownerId": "activation:10:morphling_ebb",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:10:morphling_ebb:cooldown",
-        "ownerId": "activation:10:morphling_ebb",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:10:morphling_ebb:charges",
-        "ownerId": "activation:10:morphling_ebb",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:morphling_ebb:manaCost",
-        "value:activation:10:morphling_ebb:cooldown",
-        "value:activation:10:morphling_ebb:charges"
-      ]
-    },
-    {
-      "id": "activation:10:morphling_flow",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:morphling_flow"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:morphling_flow:manaCost",
-        "ownerId": "activation:10:morphling_flow",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:10:morphling_flow:cooldown",
-        "ownerId": "activation:10:morphling_flow",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:10:morphling_flow:charges",
-        "ownerId": "activation:10:morphling_flow",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:morphling_flow:manaCost",
-        "value:activation:10:morphling_flow:cooldown",
-        "value:activation:10:morphling_flow:charges"
-      ]
-    },
-    {
-      "id": "activation:10:morphling_hybrid",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:morphling_hybrid"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:morphling_hybrid:manaCost",
-        "ownerId": "activation:10:morphling_hybrid",
-        "field": "manaCost",
-        "state": "known",
-        "value": 200
-      },
-      "cooldown": {
-        "id": "value:activation:10:morphling_hybrid:cooldown",
-        "ownerId": "activation:10:morphling_hybrid",
-        "field": "cooldown",
-        "state": "known",
-        "value": 60
-      },
-      "charges": {
-        "id": "value:activation:10:morphling_hybrid:charges",
-        "ownerId": "activation:10:morphling_hybrid",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:morphling_hybrid:manaCost",
-        "value:activation:10:morphling_hybrid:cooldown",
-        "value:activation:10:morphling_hybrid:charges"
-      ]
-    },
-    {
-      "id": "activation:10:morphling_accumulation",
-      "heroId": "10",
-      "abilityIds": [
-        "ability:10:morphling_accumulation"
-      ],
-      "manaCost": {
-        "id": "value:activation:10:morphling_accumulation:manaCost",
-        "ownerId": "activation:10:morphling_accumulation",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:10:morphling_accumulation:cooldown",
-        "ownerId": "activation:10:morphling_accumulation",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:10:morphling_accumulation:charges",
-        "ownerId": "activation:10:morphling_accumulation",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:10:morphling_accumulation:manaCost",
-        "value:activation:10:morphling_accumulation:cooldown",
-        "value:activation:10:morphling_accumulation:charges"
+      "tags": [
+        "attribute_bonus",
+        "buff"
       ]
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

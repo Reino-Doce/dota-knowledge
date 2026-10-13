@@ -16,7 +16,7 @@ export function graphFixture() {
         const effectIds = id === '1' ? ['effect:one', 'effect:two'] : [];
         heroes.push({ hero: { id, heroId: id, heroKey: 'npc_dota_hero_' + key, key, name, enabled: id !== '127', cmEnabled: true,
             abilityIds, effectIds, coverage: { complete: false } },
-        abilities: id === '1' ? [{ id: 'ability:blink', heroId: id, engineId: 'blink', activationId: 'activation:blink', order: 0, state: 'known', sourceIds: [source.id] }] : [],
+        abilities: id === '1' ? [{ id: 'ability:blink', heroId: id, engineId: 'blink', activationId: 'activation:blink', order: 0, state: 'known', sourceIds: [source.id], tags: [] }] : [],
         activations: id === '1' ? [{ id: 'activation:blink', heroId: id, abilityIds, manaCost: known([60, 70]), cooldown: known([12, 9]),
             charges: { state: 'notApplicable', reason: 'No charges.' }, valueIds: ['manaCost', 'cooldown', 'charges'].map(field => 'value:activation:blink:' + field) }] : [],
         effects: effectIds.map((effectId, order) => ({ id: effectId, legacyEffectId: effectId, heroId: id, abilityId: 'ability:blink', activationId: 'activation:blink',

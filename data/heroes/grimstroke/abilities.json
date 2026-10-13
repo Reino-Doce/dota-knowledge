@@ -1,800 +1,256 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "grimstroke_ink_trail",
+    "Name": "Ink Trail",
+    "behavior": [
+      "passive"
+    ],
+    "piercesDebuffImmunity": "no",
+    "breakable": true,
+    "tags": [
+      "vision"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:121:grimstroke_dark_artistry",
-      "heroId": "121",
-      "engineId": "grimstroke_dark_artistry",
-      "activationId": "activation:121:grimstroke_dark_artistry",
+      "id": "grimstroke_dark_artistry",
+      "Name": "Stroke of Fate",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "cooldown": [
+        11,
+        9,
+        7,
+        5
+      ],
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:121:grimstroke_ink_creature",
-      "heroId": "121",
-      "engineId": "grimstroke_ink_creature",
-      "activationId": "activation:121:grimstroke_ink_creature",
+      "id": "grimstroke_ink_creature",
+      "Name": "Phantom's Embrace",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        80,
+        100,
+        120,
+        140
+      ],
+      "cooldown": [
+        30,
+        26,
+        22,
+        18
+      ],
+      "tags": []
     },
     {
-      "id": "ability:121:grimstroke_spirit_walk",
-      "heroId": "121",
-      "engineId": "grimstroke_spirit_walk",
-      "activationId": "activation:121:grimstroke_spirit_walk",
+      "id": "grimstroke_spirit_walk",
+      "Name": "Ink Swell",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "allied-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "allies-only",
+      "damageType": "magical",
       "order": 2,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero",
+        "ally_creep"
+      ],
+      "manaCost": [
+        120,
+        130,
+        140,
+        150
+      ],
+      "tags": [
+        "ally_dispel",
+        "ally_movement_speed",
+        "buff",
+        "damage_over_time",
+        "dispel"
+      ]
     },
     {
-      "id": "ability:121:grimstroke_dark_portrait",
-      "heroId": "121",
-      "engineId": "grimstroke_dark_portrait",
-      "activationId": "activation:121:grimstroke_dark_portrait",
+      "id": "grimstroke_dark_portrait",
+      "Name": "Dark Portrait",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-heroes"
+      ],
+      "piercesDebuffImmunity": "yes",
       "order": 3,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero"
+      ],
+      "manaCost": 200,
+      "cooldown": 35,
+      "tags": [
+        "illusions"
+      ]
     },
     {
-      "id": "ability:121:generic_hidden",
-      "heroId": "121",
-      "engineId": "generic_hidden",
-      "activationId": "activation:121:generic_hidden",
+      "id": "generic_hidden",
       "order": 4,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:121:grimstroke_soul_chain",
-      "heroId": "121",
-      "engineId": "grimstroke_soul_chain",
-      "activationId": "activation:121:grimstroke_soul_chain",
+      "id": "grimstroke_soul_chain",
+      "Name": "Soulbind",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-heroes"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "yes",
       "order": 5,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero"
+      ],
+      "manaCost": [
+        150,
+        200,
+        250
+      ],
+      "cooldown": [
+        70,
+        65,
+        60
+      ],
+      "tags": [
+        "aoe",
+        "bkb_pierce",
+        "vision"
+      ]
     },
     {
-      "id": "ability:121:grimstroke_ink_trail",
-      "heroId": "121",
-      "engineId": "grimstroke_ink_trail",
-      "activationId": "activation:121:grimstroke_ink_trail",
-      "order": 6,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "known"
-    },
-    {
-      "id": "ability:121:special_bonus_unique_grimstroke_8",
-      "heroId": "121",
-      "engineId": "special_bonus_unique_grimstroke_8",
-      "activationId": "activation:121:special_bonus_unique_grimstroke_8",
-      "order": 7,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:121:special_bonus_unique_grimstroke_7",
-      "heroId": "121",
-      "engineId": "special_bonus_unique_grimstroke_7",
-      "activationId": "activation:121:special_bonus_unique_grimstroke_7",
-      "order": 8,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:121:special_bonus_unique_grimstroke_soul_chain_reflect_damage",
-      "heroId": "121",
-      "engineId": "special_bonus_unique_grimstroke_soul_chain_reflect_damage",
-      "activationId": "activation:121:special_bonus_unique_grimstroke_soul_chain_reflect_damage",
-      "order": 9,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:121:special_bonus_unique_grimstroke_6",
-      "heroId": "121",
-      "engineId": "special_bonus_unique_grimstroke_6",
-      "activationId": "activation:121:special_bonus_unique_grimstroke_6",
-      "order": 10,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:121:special_bonus_unique_grimstroke_2",
-      "heroId": "121",
-      "engineId": "special_bonus_unique_grimstroke_2",
-      "activationId": "activation:121:special_bonus_unique_grimstroke_2",
-      "order": 11,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:121:special_bonus_unique_grimstroke_4",
-      "heroId": "121",
-      "engineId": "special_bonus_unique_grimstroke_4",
-      "activationId": "activation:121:special_bonus_unique_grimstroke_4",
-      "order": 12,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:121:special_bonus_unique_grimstroke_1",
-      "heroId": "121",
-      "engineId": "special_bonus_unique_grimstroke_1",
-      "activationId": "activation:121:special_bonus_unique_grimstroke_1",
-      "order": 13,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:121:special_bonus_unique_grimstroke_3",
-      "heroId": "121",
-      "engineId": "special_bonus_unique_grimstroke_3",
-      "activationId": "activation:121:special_bonus_unique_grimstroke_3",
-      "order": 14,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:121:special_bonus_attributes",
-      "heroId": "121",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:121:special_bonus_attributes",
-      "order": 15,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "known"
-    },
-    {
-      "id": "ability:121:grimstroke_ink_over",
-      "heroId": "121",
-      "engineId": "grimstroke_ink_over",
-      "activationId": "activation:121:grimstroke_ink_over",
+      "id": "grimstroke_ink_over",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "piercesDebuffImmunity": "no",
       "order": 16,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": 125,
+      "cooldown": 14,
+      "tags": []
     },
     {
-      "id": "ability:121:grimstroke_return",
-      "heroId": "121",
-      "engineId": "grimstroke_return",
-      "activationId": "activation:121:grimstroke_return",
+      "id": "grimstroke_return",
+      "Name": "Ink Explosion",
+      "behavior": [
+        "no-target"
+      ],
+      "piercesDebuffImmunity": "no",
       "order": 17,
-      "owner": "npc_dota_hero_grimstroke",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 0,
+      "cooldown": 1,
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:121:grimstroke_dark_artistry",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:grimstroke_dark_artistry"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:grimstroke_dark_artistry:manaCost",
-        "ownerId": "activation:121:grimstroke_dark_artistry",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          100,
-          110,
-          120,
-          130
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:121:grimstroke_dark_artistry:cooldown",
-        "ownerId": "activation:121:grimstroke_dark_artistry",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          11,
-          9,
-          7,
-          5
-        ]
-      },
-      "charges": {
-        "id": "value:activation:121:grimstroke_dark_artistry:charges",
-        "ownerId": "activation:121:grimstroke_dark_artistry",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:grimstroke_dark_artistry:manaCost",
-        "value:activation:121:grimstroke_dark_artistry:cooldown",
-        "value:activation:121:grimstroke_dark_artistry:charges"
+      "id": "special_bonus_unique_grimstroke_8",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:121:grimstroke_ink_creature",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:grimstroke_ink_creature"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:grimstroke_ink_creature:manaCost",
-        "ownerId": "activation:121:grimstroke_ink_creature",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          80,
-          100,
-          120,
-          140
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:121:grimstroke_ink_creature:cooldown",
-        "ownerId": "activation:121:grimstroke_ink_creature",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          30,
-          26,
-          22,
-          18
-        ]
-      },
-      "charges": {
-        "id": "value:activation:121:grimstroke_ink_creature:charges",
-        "ownerId": "activation:121:grimstroke_ink_creature",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:grimstroke_ink_creature:manaCost",
-        "value:activation:121:grimstroke_ink_creature:cooldown",
-        "value:activation:121:grimstroke_ink_creature:charges"
+      "id": "special_bonus_unique_grimstroke_7",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:121:grimstroke_spirit_walk",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:grimstroke_spirit_walk"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:grimstroke_spirit_walk:manaCost",
-        "ownerId": "activation:121:grimstroke_spirit_walk",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          120,
-          130,
-          140,
-          150
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:121:grimstroke_spirit_walk:cooldown",
-        "ownerId": "activation:121:grimstroke_spirit_walk",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "27 24 21 18",
-          "special_bonus_unique_grimstroke_7": "-4"
-        }
-      },
-      "charges": {
-        "id": "value:activation:121:grimstroke_spirit_walk:charges",
-        "ownerId": "activation:121:grimstroke_spirit_walk",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:grimstroke_spirit_walk:manaCost",
-        "value:activation:121:grimstroke_spirit_walk:cooldown",
-        "value:activation:121:grimstroke_spirit_walk:charges"
+      "id": "special_bonus_unique_grimstroke_soul_chain_reflect_damage",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_grimstroke_6",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_grimstroke_2",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:121:grimstroke_dark_portrait",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:grimstroke_dark_portrait"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:grimstroke_dark_portrait:manaCost",
-        "ownerId": "activation:121:grimstroke_dark_portrait",
-        "field": "manaCost",
-        "state": "known",
-        "value": 200
-      },
-      "cooldown": {
-        "id": "value:activation:121:grimstroke_dark_portrait:cooldown",
-        "ownerId": "activation:121:grimstroke_dark_portrait",
-        "field": "cooldown",
-        "state": "known",
-        "value": 35
-      },
-      "charges": {
-        "id": "value:activation:121:grimstroke_dark_portrait:charges",
-        "ownerId": "activation:121:grimstroke_dark_portrait",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:grimstroke_dark_portrait:manaCost",
-        "value:activation:121:grimstroke_dark_portrait:cooldown",
-        "value:activation:121:grimstroke_dark_portrait:charges"
-      ]
+      "id": "special_bonus_unique_grimstroke_4",
+      "tags": []
     },
     {
-      "id": "activation:121:generic_hidden",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:generic_hidden"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:generic_hidden:manaCost",
-        "ownerId": "activation:121:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:121:generic_hidden:cooldown",
-        "ownerId": "activation:121:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:121:generic_hidden:charges",
-        "ownerId": "activation:121:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:generic_hidden:manaCost",
-        "value:activation:121:generic_hidden:cooldown",
-        "value:activation:121:generic_hidden:charges"
-      ]
+      "id": "special_bonus_unique_grimstroke_1",
+      "tags": []
     },
     {
-      "id": "activation:121:grimstroke_soul_chain",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:grimstroke_soul_chain"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:grimstroke_soul_chain:manaCost",
-        "ownerId": "activation:121:grimstroke_soul_chain",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          150,
-          200,
-          250
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:121:grimstroke_soul_chain:cooldown",
-        "ownerId": "activation:121:grimstroke_soul_chain",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          70,
-          65,
-          60
-        ]
-      },
-      "charges": {
-        "id": "value:activation:121:grimstroke_soul_chain:charges",
-        "ownerId": "activation:121:grimstroke_soul_chain",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:grimstroke_soul_chain:manaCost",
-        "value:activation:121:grimstroke_soul_chain:cooldown",
-        "value:activation:121:grimstroke_soul_chain:charges"
-      ]
-    },
-    {
-      "id": "activation:121:grimstroke_ink_trail",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:grimstroke_ink_trail"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:grimstroke_ink_trail:manaCost",
-        "ownerId": "activation:121:grimstroke_ink_trail",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:121:grimstroke_ink_trail:cooldown",
-        "ownerId": "activation:121:grimstroke_ink_trail",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:121:grimstroke_ink_trail:charges",
-        "ownerId": "activation:121:grimstroke_ink_trail",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:grimstroke_ink_trail:manaCost",
-        "value:activation:121:grimstroke_ink_trail:cooldown",
-        "value:activation:121:grimstroke_ink_trail:charges"
-      ]
-    },
-    {
-      "id": "activation:121:special_bonus_unique_grimstroke_8",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:special_bonus_unique_grimstroke_8"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_8:manaCost",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_8:cooldown",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_8:charges",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:special_bonus_unique_grimstroke_8:manaCost",
-        "value:activation:121:special_bonus_unique_grimstroke_8:cooldown",
-        "value:activation:121:special_bonus_unique_grimstroke_8:charges"
-      ]
-    },
-    {
-      "id": "activation:121:special_bonus_unique_grimstroke_7",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:special_bonus_unique_grimstroke_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_7:manaCost",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_7:cooldown",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_7:charges",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:special_bonus_unique_grimstroke_7:manaCost",
-        "value:activation:121:special_bonus_unique_grimstroke_7:cooldown",
-        "value:activation:121:special_bonus_unique_grimstroke_7:charges"
-      ]
-    },
-    {
-      "id": "activation:121:special_bonus_unique_grimstroke_soul_chain_reflect_damage",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:special_bonus_unique_grimstroke_soul_chain_reflect_damage"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_soul_chain_reflect_damage:manaCost",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_soul_chain_reflect_damage",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_soul_chain_reflect_damage:cooldown",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_soul_chain_reflect_damage",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_soul_chain_reflect_damage:charges",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_soul_chain_reflect_damage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:special_bonus_unique_grimstroke_soul_chain_reflect_damage:manaCost",
-        "value:activation:121:special_bonus_unique_grimstroke_soul_chain_reflect_damage:cooldown",
-        "value:activation:121:special_bonus_unique_grimstroke_soul_chain_reflect_damage:charges"
-      ]
-    },
-    {
-      "id": "activation:121:special_bonus_unique_grimstroke_6",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:special_bonus_unique_grimstroke_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_6:manaCost",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_6:cooldown",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_6:charges",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:special_bonus_unique_grimstroke_6:manaCost",
-        "value:activation:121:special_bonus_unique_grimstroke_6:cooldown",
-        "value:activation:121:special_bonus_unique_grimstroke_6:charges"
-      ]
-    },
-    {
-      "id": "activation:121:special_bonus_unique_grimstroke_2",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:special_bonus_unique_grimstroke_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_2:manaCost",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_2:cooldown",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_2:charges",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:special_bonus_unique_grimstroke_2:manaCost",
-        "value:activation:121:special_bonus_unique_grimstroke_2:cooldown",
-        "value:activation:121:special_bonus_unique_grimstroke_2:charges"
-      ]
-    },
-    {
-      "id": "activation:121:special_bonus_unique_grimstroke_4",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:special_bonus_unique_grimstroke_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_4:manaCost",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_4:cooldown",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_4:charges",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:special_bonus_unique_grimstroke_4:manaCost",
-        "value:activation:121:special_bonus_unique_grimstroke_4:cooldown",
-        "value:activation:121:special_bonus_unique_grimstroke_4:charges"
-      ]
-    },
-    {
-      "id": "activation:121:special_bonus_unique_grimstroke_1",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:special_bonus_unique_grimstroke_1"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_1:manaCost",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_1",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_1:cooldown",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_1",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_1:charges",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_1",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:special_bonus_unique_grimstroke_1:manaCost",
-        "value:activation:121:special_bonus_unique_grimstroke_1:cooldown",
-        "value:activation:121:special_bonus_unique_grimstroke_1:charges"
-      ]
-    },
-    {
-      "id": "activation:121:special_bonus_unique_grimstroke_3",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:special_bonus_unique_grimstroke_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_3:manaCost",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_3:cooldown",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:121:special_bonus_unique_grimstroke_3:charges",
-        "ownerId": "activation:121:special_bonus_unique_grimstroke_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:special_bonus_unique_grimstroke_3:manaCost",
-        "value:activation:121:special_bonus_unique_grimstroke_3:cooldown",
-        "value:activation:121:special_bonus_unique_grimstroke_3:charges"
-      ]
-    },
-    {
-      "id": "activation:121:special_bonus_attributes",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:special_bonus_attributes:manaCost",
-        "ownerId": "activation:121:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:121:special_bonus_attributes:cooldown",
-        "ownerId": "activation:121:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:121:special_bonus_attributes:charges",
-        "ownerId": "activation:121:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:special_bonus_attributes:manaCost",
-        "value:activation:121:special_bonus_attributes:cooldown",
-        "value:activation:121:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:121:grimstroke_ink_over",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:grimstroke_ink_over"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:grimstroke_ink_over:manaCost",
-        "ownerId": "activation:121:grimstroke_ink_over",
-        "field": "manaCost",
-        "state": "known",
-        "value": 125
-      },
-      "cooldown": {
-        "id": "value:activation:121:grimstroke_ink_over:cooldown",
-        "ownerId": "activation:121:grimstroke_ink_over",
-        "field": "cooldown",
-        "state": "known",
-        "value": 14
-      },
-      "charges": {
-        "id": "value:activation:121:grimstroke_ink_over:charges",
-        "ownerId": "activation:121:grimstroke_ink_over",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:grimstroke_ink_over:manaCost",
-        "value:activation:121:grimstroke_ink_over:cooldown",
-        "value:activation:121:grimstroke_ink_over:charges"
-      ]
-    },
-    {
-      "id": "activation:121:grimstroke_return",
-      "heroId": "121",
-      "abilityIds": [
-        "ability:121:grimstroke_return"
-      ],
-      "manaCost": {
-        "id": "value:activation:121:grimstroke_return:manaCost",
-        "ownerId": "activation:121:grimstroke_return",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:121:grimstroke_return:cooldown",
-        "ownerId": "activation:121:grimstroke_return",
-        "field": "cooldown",
-        "state": "known",
-        "value": 1
-      },
-      "charges": {
-        "id": "value:activation:121:grimstroke_return:charges",
-        "ownerId": "activation:121:grimstroke_return",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:121:grimstroke_return:manaCost",
-        "value:activation:121:grimstroke_return:cooldown",
-        "value:activation:121:grimstroke_return:charges"
+      "id": "special_bonus_unique_grimstroke_3",
+      "tags": [
+        "buff",
+        "cast_range"
       ]
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

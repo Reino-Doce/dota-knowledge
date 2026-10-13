@@ -18,6 +18,7 @@ export async function schemaValidators() {
     const names = (await fs.readdir(root)).filter(name => name.endsWith('.schema.json'));
     for (const name of names) ajv.addSchema(JSON.parse(await fs.readFile(new URL(name, root))));
     validators = new Map(names.map(name => [name.slice(0, -12), ajv.getSchema('https://github.com/devilesk/dota-interactive-map/dota-knowledge/' + name)]));
+    validators.set('legacy-abilities', ajv.getSchema('https://github.com/devilesk/dota-interactive-map/dota-knowledge/abilities.schema.json#/$defs/legacy'));
     return validators;
 }
 export async function validateDataset(root) {
@@ -57,10 +58,12 @@ export async function validateDataset(root) {
         ['reviews/claims.json', 'claim-index'], ['reviews/bindings.json', 'review-bindings'], ['reviews/profiles.json', 'profile-history'],
         ['runtime/manifest.json', 'manifest'], ['runtime/core.json', 'core']]) validate(schema, await readJson(root, name), name);
     const seen = new Set();
+    const compactLayout = graph.metadata.sourceFiles.some(row => row.name === 'mechanics/abilities.json');
     for (const row of graph.metadata.sourceFiles) {
         let schema;
         if (/^heroes\/[^/]+\/profile.json$/.test(row.name)) schema = 'hero';
-        else if (/^heroes\/[^/]+\/abilities.json$/.test(row.name)) schema = 'abilities';
+        else if (/^heroes\/[^/]+\/abilities.json$/.test(row.name)) schema = compactLayout ? 'abilities' : 'legacy-abilities';
+        else if (row.name === 'mechanics/abilities.json') schema = 'ability-metadata';
         else if (/^heroes\/[^/]+\/mechanics.json$/.test(row.name)) schema = 'mechanics';
         else if (/^heroes\/[^/]+\/(statistics|matchups\/(counters|synergies)).json$/.test(row.name)) schema = 'hero-observations';
         else if (/^runtime\/heroes\/[^/]+\/guide.json$/.test(row.name)) schema = 'guide';

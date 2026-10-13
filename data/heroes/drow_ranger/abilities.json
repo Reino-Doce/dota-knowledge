@@ -1,755 +1,229 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "drow_ranger_trueshot",
+    "Name": "Precision Aura",
+    "behavior": [
+      "passive"
+    ],
+    "breakable": true,
+    "tags": [
+      "attribute_bonus",
+      "buff"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:6:drow_ranger_frost_arrows",
-      "heroId": "6",
-      "engineId": "drow_ranger_frost_arrows",
-      "activationId": "activation:6:drow_ranger_frost_arrows",
+      "id": "drow_ranger_frost_arrows",
+      "Name": "Frost Arrows",
+      "behavior": [
+        "auto-cast",
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "physical",
       "order": 0,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
+      "type": "toggle",
+      "cooldown": 0,
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:6:drow_ranger_wave_of_silence",
-      "heroId": "6",
-      "engineId": "drow_ranger_wave_of_silence",
-      "activationId": "activation:6:drow_ranger_wave_of_silence",
+      "id": "drow_ranger_wave_of_silence",
+      "Name": "Gust",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
       "order": 1,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
+      "type": "point",
+      "tags": [
+        "detection",
+        "disable",
+        "enemy_displacement",
+        "silence"
+      ]
     },
     {
-      "id": "ability:6:drow_ranger_multishot",
-      "heroId": "6",
-      "engineId": "drow_ranger_multishot",
-      "activationId": "activation:6:drow_ranger_multishot",
+      "id": "drow_ranger_multishot",
+      "Name": "Multishot",
+      "behavior": [
+        "channeled",
+        "point-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "piercesDebuffImmunity": "yes",
+      "damageType": "physical",
       "order": 2,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        70,
+        85,
+        100,
+        115
+      ],
+      "tags": [
+        "bkb_pierce",
+        "channeled",
+        "slow"
+      ]
     },
     {
-      "id": "ability:6:drow_ranger_glacier",
-      "heroId": "6",
-      "engineId": "drow_ranger_glacier",
-      "activationId": "activation:6:drow_ranger_glacier",
+      "id": "drow_ranger_glacier",
+      "Name": "Glacier",
+      "behavior": [
+        "no-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 3,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 50,
+      "cooldown": 25,
+      "tags": [
+        "ally_attack_range",
+        "buff",
+        "enemy_displacement",
+        "self_attack_range",
+        "vision"
+      ]
     },
     {
-      "id": "ability:6:drow_ranger_trueshot",
-      "heroId": "6",
-      "engineId": "drow_ranger_trueshot",
-      "activationId": "activation:6:drow_ranger_trueshot",
-      "order": 4,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
-    },
-    {
-      "id": "ability:6:drow_ranger_marksmanship",
-      "heroId": "6",
-      "engineId": "drow_ranger_marksmanship",
-      "activationId": "activation:6:drow_ranger_marksmanship",
+      "id": "drow_ranger_marksmanship",
+      "Name": "Marksmanship",
+      "behavior": [
+        "passive"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "piercesDebuffImmunity": "yes",
+      "damageType": "physical",
+      "breakable": true,
       "order": 5,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "armor_piercing",
+        "true_strike"
+      ]
     },
     {
-      "id": "ability:6:special_bonus_unique_drow_ranger_7",
-      "heroId": "6",
-      "engineId": "special_bonus_unique_drow_ranger_7",
-      "activationId": "activation:6:special_bonus_unique_drow_ranger_7",
-      "order": 6,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
-    },
-    {
-      "id": "ability:6:special_bonus_unique_drow_ranger_2",
-      "heroId": "6",
-      "engineId": "special_bonus_unique_drow_ranger_2",
-      "activationId": "activation:6:special_bonus_unique_drow_ranger_2",
-      "order": 7,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
-    },
-    {
-      "id": "ability:6:special_bonus_attack_range_75",
-      "heroId": "6",
-      "engineId": "special_bonus_attack_range_75",
-      "activationId": "activation:6:special_bonus_attack_range_75",
-      "order": 8,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
-    },
-    {
-      "id": "ability:6:special_bonus_unique_drow_ranger_6",
-      "heroId": "6",
-      "engineId": "special_bonus_unique_drow_ranger_6",
-      "activationId": "activation:6:special_bonus_unique_drow_ranger_6",
-      "order": 9,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
-    },
-    {
-      "id": "ability:6:special_bonus_unique_drow_ranger_gust_selfmovespeed",
-      "heroId": "6",
-      "engineId": "special_bonus_unique_drow_ranger_gust_selfmovespeed",
-      "activationId": "activation:6:special_bonus_unique_drow_ranger_gust_selfmovespeed",
-      "order": 10,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
-    },
-    {
-      "id": "ability:6:special_bonus_unique_drow_ranger_1",
-      "heroId": "6",
-      "engineId": "special_bonus_unique_drow_ranger_1",
-      "activationId": "activation:6:special_bonus_unique_drow_ranger_1",
-      "order": 11,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
-    },
-    {
-      "id": "ability:6:special_bonus_unique_drow_ranger_3",
-      "heroId": "6",
-      "engineId": "special_bonus_unique_drow_ranger_3",
-      "activationId": "activation:6:special_bonus_unique_drow_ranger_3",
-      "order": 12,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
-    },
-    {
-      "id": "ability:6:special_bonus_unique_drow_ranger_8",
-      "heroId": "6",
-      "engineId": "special_bonus_unique_drow_ranger_8",
-      "activationId": "activation:6:special_bonus_unique_drow_ranger_8",
-      "order": 13,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
-    },
-    {
-      "id": "ability:6:special_bonus_attributes",
-      "heroId": "6",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:6:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
-    },
-    {
-      "id": "ability:6:drow_ranger_silence",
-      "heroId": "6",
-      "engineId": "drow_ranger_silence",
-      "activationId": "activation:6:drow_ranger_silence",
+      "id": "drow_ranger_silence",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
       "order": 15,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
+      "type": "point",
+      "manaCost": 90,
+      "cooldown": [
+        16,
+        15,
+        14,
+        13
+      ],
+      "tags": [
+        "aoe"
+      ]
     },
     {
-      "id": "ability:6:drow_ranger_creep_rally",
-      "heroId": "6",
-      "engineId": "drow_ranger_creep_rally",
-      "activationId": "activation:6:drow_ranger_creep_rally",
+      "id": "drow_ranger_creep_rally",
+      "behavior": [
+        "passive"
+      ],
+      "dispellable": "no",
       "order": 16,
-      "owner": "npc_dota_hero_drow_ranger",
-      "state": "known"
+      "type": "passive",
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:6:drow_ranger_frost_arrows",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:drow_ranger_frost_arrows"
+      "id": "special_bonus_unique_drow_ranger_7",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:6:drow_ranger_frost_arrows:manaCost",
-        "ownerId": "activation:6:drow_ranger_frost_arrows",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "9 10 11 12",
-          "special_bonus_unique_drow_ranger_7": "-18%"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:6:drow_ranger_frost_arrows:cooldown",
-        "ownerId": "activation:6:drow_ranger_frost_arrows",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      "charges": {
-        "id": "value:activation:6:drow_ranger_frost_arrows:charges",
-        "ownerId": "activation:6:drow_ranger_frost_arrows",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:drow_ranger_frost_arrows:manaCost",
-        "value:activation:6:drow_ranger_frost_arrows:cooldown",
-        "value:activation:6:drow_ranger_frost_arrows:charges"
+      "tags": [
+        "buff",
+        "mana_cost_reduction"
       ]
     },
     {
-      "id": "activation:6:drow_ranger_wave_of_silence",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:drow_ranger_wave_of_silence"
+      "id": "special_bonus_unique_drow_ranger_2",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:6:drow_ranger_wave_of_silence:manaCost",
-        "ownerId": "activation:6:drow_ranger_wave_of_silence",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "55"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:6:drow_ranger_wave_of_silence:cooldown",
-        "ownerId": "activation:6:drow_ranger_wave_of_silence",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "19 17 15 13"
-        }
-      },
-      "charges": {
-        "id": "value:activation:6:drow_ranger_wave_of_silence:charges",
-        "ownerId": "activation:6:drow_ranger_wave_of_silence",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:drow_ranger_wave_of_silence:manaCost",
-        "value:activation:6:drow_ranger_wave_of_silence:cooldown",
-        "value:activation:6:drow_ranger_wave_of_silence:charges"
+      "tags": []
+    },
+    {
+      "id": "special_bonus_attack_range_75",
+      "Name": "+75 Attack Range",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "buff",
+        "self_attack_range"
       ]
     },
     {
-      "id": "activation:6:drow_ranger_multishot",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:drow_ranger_multishot"
+      "id": "special_bonus_unique_drow_ranger_6",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:6:drow_ranger_multishot:manaCost",
-        "ownerId": "activation:6:drow_ranger_multishot",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          70,
-          85,
-          100,
-          115
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:6:drow_ranger_multishot:cooldown",
-        "ownerId": "activation:6:drow_ranger_multishot",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "24 21 18 15",
-          "special_bonus_unique_drow_ranger_6": "-6"
-        }
-      },
-      "charges": {
-        "id": "value:activation:6:drow_ranger_multishot:charges",
-        "ownerId": "activation:6:drow_ranger_multishot",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:drow_ranger_multishot:manaCost",
-        "value:activation:6:drow_ranger_multishot:cooldown",
-        "value:activation:6:drow_ranger_multishot:charges"
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:6:drow_ranger_glacier",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:drow_ranger_glacier"
+      "id": "special_bonus_unique_drow_ranger_gust_selfmovespeed",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:6:drow_ranger_glacier:manaCost",
-        "ownerId": "activation:6:drow_ranger_glacier",
-        "field": "manaCost",
-        "state": "known",
-        "value": 50
-      },
-      "cooldown": {
-        "id": "value:activation:6:drow_ranger_glacier:cooldown",
-        "ownerId": "activation:6:drow_ranger_glacier",
-        "field": "cooldown",
-        "state": "known",
-        "value": 25
-      },
-      "charges": {
-        "id": "value:activation:6:drow_ranger_glacier:charges",
-        "ownerId": "activation:6:drow_ranger_glacier",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:drow_ranger_glacier:manaCost",
-        "value:activation:6:drow_ranger_glacier:cooldown",
-        "value:activation:6:drow_ranger_glacier:charges"
-      ]
+      "tags": []
     },
     {
-      "id": "activation:6:drow_ranger_trueshot",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:drow_ranger_trueshot"
+      "id": "special_bonus_unique_drow_ranger_1",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:6:drow_ranger_trueshot:manaCost",
-        "ownerId": "activation:6:drow_ranger_trueshot",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:6:drow_ranger_trueshot:cooldown",
-        "ownerId": "activation:6:drow_ranger_trueshot",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:6:drow_ranger_trueshot:charges",
-        "ownerId": "activation:6:drow_ranger_trueshot",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:drow_ranger_trueshot:manaCost",
-        "value:activation:6:drow_ranger_trueshot:cooldown",
-        "value:activation:6:drow_ranger_trueshot:charges"
-      ]
+      "tags": []
     },
     {
-      "id": "activation:6:drow_ranger_marksmanship",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:drow_ranger_marksmanship"
+      "id": "special_bonus_unique_drow_ranger_3",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:6:drow_ranger_marksmanship:manaCost",
-        "ownerId": "activation:6:drow_ranger_marksmanship",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:6:drow_ranger_marksmanship:cooldown",
-        "ownerId": "activation:6:drow_ranger_marksmanship",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:6:drow_ranger_marksmanship:charges",
-        "ownerId": "activation:6:drow_ranger_marksmanship",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:drow_ranger_marksmanship:manaCost",
-        "value:activation:6:drow_ranger_marksmanship:cooldown",
-        "value:activation:6:drow_ranger_marksmanship:charges"
-      ]
+      "tags": []
     },
     {
-      "id": "activation:6:special_bonus_unique_drow_ranger_7",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:special_bonus_unique_drow_ranger_7"
+      "id": "special_bonus_unique_drow_ranger_8",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_7:manaCost",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_7:cooldown",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_7:charges",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:special_bonus_unique_drow_ranger_7:manaCost",
-        "value:activation:6:special_bonus_unique_drow_ranger_7:cooldown",
-        "value:activation:6:special_bonus_unique_drow_ranger_7:charges"
-      ]
-    },
-    {
-      "id": "activation:6:special_bonus_unique_drow_ranger_2",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:special_bonus_unique_drow_ranger_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_2:manaCost",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_2:cooldown",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_2:charges",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:special_bonus_unique_drow_ranger_2:manaCost",
-        "value:activation:6:special_bonus_unique_drow_ranger_2:cooldown",
-        "value:activation:6:special_bonus_unique_drow_ranger_2:charges"
-      ]
-    },
-    {
-      "id": "activation:6:special_bonus_attack_range_75",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:special_bonus_attack_range_75"
-      ],
-      "manaCost": {
-        "id": "value:activation:6:special_bonus_attack_range_75:manaCost",
-        "ownerId": "activation:6:special_bonus_attack_range_75",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:6:special_bonus_attack_range_75:cooldown",
-        "ownerId": "activation:6:special_bonus_attack_range_75",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:6:special_bonus_attack_range_75:charges",
-        "ownerId": "activation:6:special_bonus_attack_range_75",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:special_bonus_attack_range_75:manaCost",
-        "value:activation:6:special_bonus_attack_range_75:cooldown",
-        "value:activation:6:special_bonus_attack_range_75:charges"
-      ]
-    },
-    {
-      "id": "activation:6:special_bonus_unique_drow_ranger_6",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:special_bonus_unique_drow_ranger_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_6:manaCost",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_6:cooldown",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_6:charges",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:special_bonus_unique_drow_ranger_6:manaCost",
-        "value:activation:6:special_bonus_unique_drow_ranger_6:cooldown",
-        "value:activation:6:special_bonus_unique_drow_ranger_6:charges"
-      ]
-    },
-    {
-      "id": "activation:6:special_bonus_unique_drow_ranger_gust_selfmovespeed",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:special_bonus_unique_drow_ranger_gust_selfmovespeed"
-      ],
-      "manaCost": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_gust_selfmovespeed:manaCost",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_gust_selfmovespeed",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_gust_selfmovespeed:cooldown",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_gust_selfmovespeed",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_gust_selfmovespeed:charges",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_gust_selfmovespeed",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:special_bonus_unique_drow_ranger_gust_selfmovespeed:manaCost",
-        "value:activation:6:special_bonus_unique_drow_ranger_gust_selfmovespeed:cooldown",
-        "value:activation:6:special_bonus_unique_drow_ranger_gust_selfmovespeed:charges"
-      ]
-    },
-    {
-      "id": "activation:6:special_bonus_unique_drow_ranger_1",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:special_bonus_unique_drow_ranger_1"
-      ],
-      "manaCost": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_1:manaCost",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_1",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_1:cooldown",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_1",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_1:charges",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_1",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:special_bonus_unique_drow_ranger_1:manaCost",
-        "value:activation:6:special_bonus_unique_drow_ranger_1:cooldown",
-        "value:activation:6:special_bonus_unique_drow_ranger_1:charges"
-      ]
-    },
-    {
-      "id": "activation:6:special_bonus_unique_drow_ranger_3",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:special_bonus_unique_drow_ranger_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_3:manaCost",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_3:cooldown",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_3:charges",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:special_bonus_unique_drow_ranger_3:manaCost",
-        "value:activation:6:special_bonus_unique_drow_ranger_3:cooldown",
-        "value:activation:6:special_bonus_unique_drow_ranger_3:charges"
-      ]
-    },
-    {
-      "id": "activation:6:special_bonus_unique_drow_ranger_8",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:special_bonus_unique_drow_ranger_8"
-      ],
-      "manaCost": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_8:manaCost",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_8:cooldown",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:6:special_bonus_unique_drow_ranger_8:charges",
-        "ownerId": "activation:6:special_bonus_unique_drow_ranger_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:special_bonus_unique_drow_ranger_8:manaCost",
-        "value:activation:6:special_bonus_unique_drow_ranger_8:cooldown",
-        "value:activation:6:special_bonus_unique_drow_ranger_8:charges"
-      ]
-    },
-    {
-      "id": "activation:6:special_bonus_attributes",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:6:special_bonus_attributes:manaCost",
-        "ownerId": "activation:6:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:6:special_bonus_attributes:cooldown",
-        "ownerId": "activation:6:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:6:special_bonus_attributes:charges",
-        "ownerId": "activation:6:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:special_bonus_attributes:manaCost",
-        "value:activation:6:special_bonus_attributes:cooldown",
-        "value:activation:6:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:6:drow_ranger_silence",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:drow_ranger_silence"
-      ],
-      "manaCost": {
-        "id": "value:activation:6:drow_ranger_silence:manaCost",
-        "ownerId": "activation:6:drow_ranger_silence",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          90,
-          90,
-          90,
-          90
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:6:drow_ranger_silence:cooldown",
-        "ownerId": "activation:6:drow_ranger_silence",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          16,
-          15,
-          14,
-          13
-        ]
-      },
-      "charges": {
-        "id": "value:activation:6:drow_ranger_silence:charges",
-        "ownerId": "activation:6:drow_ranger_silence",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:drow_ranger_silence:manaCost",
-        "value:activation:6:drow_ranger_silence:cooldown",
-        "value:activation:6:drow_ranger_silence:charges"
-      ]
-    },
-    {
-      "id": "activation:6:drow_ranger_creep_rally",
-      "heroId": "6",
-      "abilityIds": [
-        "ability:6:drow_ranger_creep_rally"
-      ],
-      "manaCost": {
-        "id": "value:activation:6:drow_ranger_creep_rally:manaCost",
-        "ownerId": "activation:6:drow_ranger_creep_rally",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:6:drow_ranger_creep_rally:cooldown",
-        "ownerId": "activation:6:drow_ranger_creep_rally",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:6:drow_ranger_creep_rally:charges",
-        "ownerId": "activation:6:drow_ranger_creep_rally",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:6:drow_ranger_creep_rally:manaCost",
-        "value:activation:6:drow_ranger_creep_rally:cooldown",
-        "value:activation:6:drow_ranger_creep_rally:charges"
-      ]
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

@@ -39,7 +39,7 @@ node docs/examples/hero-lookups.mjs
 
 ### Profile and review contracts
 
-The loader accepts schema version 2 and compiler `dota-knowledge-compiler-3`. `hero(id)` exposes `id`, `key`, engine `sourceKey`, `name`, `aliases`, `primaryAttribute`, `attackRange`, `complexity`, `roles`, enable flags, ordered ability/effect IDs and coverage.
+The loader accepts schema version 2 and compiler `dota-knowledge-compiler-5`. `hero(id)` exposes `id`, `key`, engine `sourceKey`, `name`, `aliases`, `primaryAttribute`, `attackRange`, `complexity`, `roles`, enable flags, ordered ability/effect IDs and coverage.
 
 | Field | Representation |
 | --- | --- |
@@ -52,6 +52,10 @@ The loader accepts schema version 2 and compiler `dota-knowledge-compiler-3`. `h
 Historical profiles contribute lowercase aliases but never replace current native scalar facts or roles. Measured position distributions remain observations. `heroes/aliases.json` is the flat alias-to-key map embedded in the runtime core; `heroesByAlias` resolves the mapped key and returns at most one hero record. `hero(id)` continues to take a decimal ID.
 
 Static abilities, shared activations, effects and conditions have separate records. Their acquisition references and review metadata are in `reviews/bindings.json`, with explicit `{ subjectId, field, value }` entries. `field` is a JSON pointer to the removed field in that subject; nested conflict values retain their position. Lazy `HeroEvidence.reviewBindings` exposes the corresponding runtime attribution, and `profileHistory` retains native selection evidence and official comparisons. `claim(id)` and `source(id)` remain available; full claim details load with the guide. Separation never promotes a review or resolves a conflict.
+
+Canonical `heroes/<key>/abilities.json` is a compact grouped view using game identifiers, contribution tags and known casting fields. Lossless Ability/Activation metadata is stored globally in `mechanics/abilities.json`. This presentation does not change the runtime `AbilityRecord`, `ActivationRecord`, `ability()` or `activation()` contracts or their semantic record identities.
+
+Generated hero profiles and runtime `HeroRecord` values expose `capabilities: { category: score }`. Each distinct tag per owned ability contributes one point to every category it belongs to in `data/tags/index.json`, including innate and talent records. Multiple tags from the same ability can add multiple points to one category. Keys with no contributions are omitted. The map is immutable. Older schema-v2 profiles may omit this additive field; ordinary loads verify present scores against the ability tags and category memberships, and compilation replaces stale derived scores.
 
 `ImageDescriptor` defines available assets with a safe relative path, identity, positive dimensions/byte length, media type and SHA-256. Unavailable descriptors contain a reason and no asset metadata. The separate [image catalog](images.md) supplies hero, ability and item lookups and lazy bytes without adding image reads to the knowledge loader.
 

@@ -1,717 +1,227 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "jakiro_double_trouble",
+    "Name": "Double Trouble",
+    "behavior": [
+      "passive"
+    ],
+    "dispellable": "no",
+    "tags": [
+      "repeated_attacks"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:64:jakiro_dual_breath",
-      "heroId": "64",
-      "engineId": "jakiro_dual_breath",
-      "activationId": "activation:64:jakiro_dual_breath",
+      "id": "jakiro_dual_breath",
+      "Name": "Dual Breath",
+      "behavior": [
+        "point-target",
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_jakiro",
-      "state": "known"
+      "type": "target-or-point",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        135,
+        150,
+        165,
+        180
+      ],
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:64:jakiro_ice_path",
-      "heroId": "64",
-      "engineId": "jakiro_ice_path",
-      "activationId": "activation:64:jakiro_ice_path",
+      "id": "jakiro_ice_path",
+      "Name": "Ice Path",
+      "behavior": [
+        "point-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "strong-only",
+      "dispelType": "strong",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_jakiro",
-      "state": "known"
+      "type": "point",
+      "manaCost": 100,
+      "tags": [
+        "disable",
+        "stun",
+        "summons"
+      ]
     },
     {
-      "id": "ability:64:jakiro_liquid_fire",
-      "heroId": "64",
-      "engineId": "jakiro_liquid_fire",
-      "activationId": "activation:64:jakiro_liquid_fire",
+      "id": "jakiro_liquid_fire",
+      "Name": "Liquid Fire",
+      "behavior": [
+        "auto-cast",
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-buildings",
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 2,
-      "owner": "npc_dota_hero_jakiro",
-      "state": "known"
+      "type": "toggle",
+      "cooldown": [
+        13,
+        10,
+        7,
+        4
+      ],
+      "tags": [
+        "aoe",
+        "damage_over_time"
+      ]
     },
     {
-      "id": "ability:64:jakiro_liquid_ice",
-      "heroId": "64",
-      "engineId": "jakiro_liquid_ice",
-      "activationId": "activation:64:jakiro_liquid_ice",
+      "id": "jakiro_liquid_ice",
+      "Name": "Liquid Frost",
+      "behavior": [
+        "auto-cast",
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 3,
-      "owner": "npc_dota_hero_jakiro",
-      "state": "known"
+      "type": "toggle",
+      "cooldown": [
+        13,
+        10,
+        7,
+        4
+      ],
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:64:jakiro_double_trouble",
-      "heroId": "64",
-      "engineId": "jakiro_double_trouble",
-      "activationId": "activation:64:jakiro_double_trouble",
-      "order": 4,
-      "owner": "npc_dota_hero_jakiro",
-      "state": "known"
-    },
-    {
-      "id": "ability:64:jakiro_macropyre",
-      "heroId": "64",
-      "engineId": "jakiro_macropyre",
-      "activationId": "activation:64:jakiro_macropyre",
+      "id": "jakiro_macropyre",
+      "Name": "Macropyre",
+      "behavior": [
+        "point-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_jakiro",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        225,
+        325,
+        425
+      ],
+      "cooldown": [
+        90,
+        80,
+        70
+      ],
+      "tags": [
+        "damage_over_time"
+      ]
     },
     {
-      "id": "ability:64:special_bonus_unique_jakiro_4",
-      "heroId": "64",
-      "engineId": "special_bonus_unique_jakiro_4",
-      "activationId": "activation:64:special_bonus_unique_jakiro_4",
-      "order": 6,
-      "owner": "npc_dota_hero_jakiro",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:64:special_bonus_unique_jakiro_6",
-      "heroId": "64",
-      "engineId": "special_bonus_unique_jakiro_6",
-      "activationId": "activation:64:special_bonus_unique_jakiro_6",
-      "order": 7,
-      "owner": "npc_dota_hero_jakiro",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:64:special_bonus_attack_range_175",
-      "heroId": "64",
-      "engineId": "special_bonus_attack_range_175",
-      "activationId": "activation:64:special_bonus_attack_range_175",
-      "order": 8,
-      "owner": "npc_dota_hero_jakiro",
-      "state": "known"
-    },
-    {
-      "id": "ability:64:special_bonus_unique_jakiro_dualbreath_cooldown",
-      "heroId": "64",
-      "engineId": "special_bonus_unique_jakiro_dualbreath_cooldown",
-      "activationId": "activation:64:special_bonus_unique_jakiro_dualbreath_cooldown",
-      "order": 9,
-      "owner": "npc_dota_hero_jakiro",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:64:special_bonus_unique_jakiro",
-      "heroId": "64",
-      "engineId": "special_bonus_unique_jakiro",
-      "activationId": "activation:64:special_bonus_unique_jakiro",
-      "order": 10,
-      "owner": "npc_dota_hero_jakiro",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:64:special_bonus_unique_jakiro_7",
-      "heroId": "64",
-      "engineId": "special_bonus_unique_jakiro_7",
-      "activationId": "activation:64:special_bonus_unique_jakiro_7",
-      "order": 11,
-      "owner": "npc_dota_hero_jakiro",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:64:special_bonus_unique_jakiro_2",
-      "heroId": "64",
-      "engineId": "special_bonus_unique_jakiro_2",
-      "activationId": "activation:64:special_bonus_unique_jakiro_2",
-      "order": 12,
-      "owner": "npc_dota_hero_jakiro",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:64:special_bonus_unique_jakiro_3",
-      "heroId": "64",
-      "engineId": "special_bonus_unique_jakiro_3",
-      "activationId": "activation:64:special_bonus_unique_jakiro_3",
-      "order": 13,
-      "owner": "npc_dota_hero_jakiro",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:64:special_bonus_attributes",
-      "heroId": "64",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:64:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_jakiro",
-      "state": "known"
-    },
-    {
-      "id": "ability:64:jakiro_ice_path_detonate",
-      "heroId": "64",
-      "engineId": "jakiro_ice_path_detonate",
-      "activationId": "activation:64:jakiro_ice_path_detonate",
+      "id": "jakiro_ice_path_detonate",
+      "Name": "Destroy Ice Path",
+      "behavior": [
+        "no-target"
+      ],
+      "piercesDebuffImmunity": "no",
       "order": 15,
-      "owner": "npc_dota_hero_jakiro",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 0,
+      "cooldown": 1,
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:64:jakiro_dual_breath",
-      "heroId": "64",
-      "abilityIds": [
-        "ability:64:jakiro_dual_breath"
-      ],
-      "manaCost": {
-        "id": "value:activation:64:jakiro_dual_breath:manaCost",
-        "ownerId": "activation:64:jakiro_dual_breath",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          135,
-          150,
-          165,
-          180
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:64:jakiro_dual_breath:cooldown",
-        "ownerId": "activation:64:jakiro_dual_breath",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "12 11 10 9",
-          "special_bonus_unique_jakiro_dualbreath_cooldown": "-3.5"
-        }
-      },
-      "charges": {
-        "id": "value:activation:64:jakiro_dual_breath:charges",
-        "ownerId": "activation:64:jakiro_dual_breath",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:64:jakiro_dual_breath:manaCost",
-        "value:activation:64:jakiro_dual_breath:cooldown",
-        "value:activation:64:jakiro_dual_breath:charges"
+      "id": "special_bonus_unique_jakiro_4",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_jakiro_6",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:64:jakiro_ice_path",
-      "heroId": "64",
-      "abilityIds": [
-        "ability:64:jakiro_ice_path"
+      "id": "special_bonus_attack_range_175",
+      "Name": "+175 Attack Range",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:64:jakiro_ice_path:manaCost",
-        "ownerId": "activation:64:jakiro_ice_path",
-        "field": "manaCost",
-        "state": "known",
-        "value": 100
-      },
-      "cooldown": {
-        "id": "value:activation:64:jakiro_ice_path:cooldown",
-        "ownerId": "activation:64:jakiro_ice_path",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "20 17 14 11"
-        }
-      },
-      "charges": {
-        "id": "value:activation:64:jakiro_ice_path:charges",
-        "ownerId": "activation:64:jakiro_ice_path",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:64:jakiro_ice_path:manaCost",
-        "value:activation:64:jakiro_ice_path:cooldown",
-        "value:activation:64:jakiro_ice_path:charges"
+      "tags": [
+        "buff",
+        "self_attack_range"
       ]
     },
     {
-      "id": "activation:64:jakiro_liquid_fire",
-      "heroId": "64",
-      "abilityIds": [
-        "ability:64:jakiro_liquid_fire"
-      ],
-      "manaCost": {
-        "id": "value:activation:64:jakiro_liquid_fire:manaCost",
-        "ownerId": "activation:64:jakiro_liquid_fire",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "20",
-          "special_bonus_shard": "=0"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:64:jakiro_liquid_fire:cooldown",
-        "ownerId": "activation:64:jakiro_liquid_fire",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          13,
-          10,
-          7,
-          4
-        ]
-      },
-      "charges": {
-        "id": "value:activation:64:jakiro_liquid_fire:charges",
-        "ownerId": "activation:64:jakiro_liquid_fire",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:64:jakiro_liquid_fire:manaCost",
-        "value:activation:64:jakiro_liquid_fire:cooldown",
-        "value:activation:64:jakiro_liquid_fire:charges"
+      "id": "special_bonus_unique_jakiro_dualbreath_cooldown",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:64:jakiro_liquid_ice",
-      "heroId": "64",
-      "abilityIds": [
-        "ability:64:jakiro_liquid_ice"
-      ],
-      "manaCost": {
-        "id": "value:activation:64:jakiro_liquid_ice:manaCost",
-        "ownerId": "activation:64:jakiro_liquid_ice",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "20",
-          "special_bonus_shard": "=0"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:64:jakiro_liquid_ice:cooldown",
-        "ownerId": "activation:64:jakiro_liquid_ice",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          13,
-          10,
-          7,
-          4
-        ]
-      },
-      "charges": {
-        "id": "value:activation:64:jakiro_liquid_ice:charges",
-        "ownerId": "activation:64:jakiro_liquid_ice",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:64:jakiro_liquid_ice:manaCost",
-        "value:activation:64:jakiro_liquid_ice:cooldown",
-        "value:activation:64:jakiro_liquid_ice:charges"
+      "id": "special_bonus_unique_jakiro",
+      "tags": [
+        "duration_extension",
+        "stun"
       ]
     },
     {
-      "id": "activation:64:jakiro_double_trouble",
-      "heroId": "64",
-      "abilityIds": [
-        "ability:64:jakiro_double_trouble"
-      ],
-      "manaCost": {
-        "id": "value:activation:64:jakiro_double_trouble:manaCost",
-        "ownerId": "activation:64:jakiro_double_trouble",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:64:jakiro_double_trouble:cooldown",
-        "ownerId": "activation:64:jakiro_double_trouble",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:64:jakiro_double_trouble:charges",
-        "ownerId": "activation:64:jakiro_double_trouble",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:64:jakiro_double_trouble:manaCost",
-        "value:activation:64:jakiro_double_trouble:cooldown",
-        "value:activation:64:jakiro_double_trouble:charges"
+      "id": "special_bonus_unique_jakiro_7",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:64:jakiro_macropyre",
-      "heroId": "64",
-      "abilityIds": [
-        "ability:64:jakiro_macropyre"
-      ],
-      "manaCost": {
-        "id": "value:activation:64:jakiro_macropyre:manaCost",
-        "ownerId": "activation:64:jakiro_macropyre",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          225,
-          325,
-          425
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:64:jakiro_macropyre:cooldown",
-        "ownerId": "activation:64:jakiro_macropyre",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          90,
-          80,
-          70
-        ]
-      },
-      "charges": {
-        "id": "value:activation:64:jakiro_macropyre:charges",
-        "ownerId": "activation:64:jakiro_macropyre",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:64:jakiro_macropyre:manaCost",
-        "value:activation:64:jakiro_macropyre:cooldown",
-        "value:activation:64:jakiro_macropyre:charges"
+      "id": "special_bonus_unique_jakiro_2",
+      "tags": [
+        "ability_damage_bonus",
+        "buff",
+        "cast_range"
       ]
     },
     {
-      "id": "activation:64:special_bonus_unique_jakiro_4",
-      "heroId": "64",
-      "abilityIds": [
-        "ability:64:special_bonus_unique_jakiro_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_4:manaCost",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_4:cooldown",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_4:charges",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:64:special_bonus_unique_jakiro_4:manaCost",
-        "value:activation:64:special_bonus_unique_jakiro_4:cooldown",
-        "value:activation:64:special_bonus_unique_jakiro_4:charges"
-      ]
-    },
-    {
-      "id": "activation:64:special_bonus_unique_jakiro_6",
-      "heroId": "64",
-      "abilityIds": [
-        "ability:64:special_bonus_unique_jakiro_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_6:manaCost",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_6:cooldown",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_6:charges",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:64:special_bonus_unique_jakiro_6:manaCost",
-        "value:activation:64:special_bonus_unique_jakiro_6:cooldown",
-        "value:activation:64:special_bonus_unique_jakiro_6:charges"
-      ]
-    },
-    {
-      "id": "activation:64:special_bonus_attack_range_175",
-      "heroId": "64",
-      "abilityIds": [
-        "ability:64:special_bonus_attack_range_175"
-      ],
-      "manaCost": {
-        "id": "value:activation:64:special_bonus_attack_range_175:manaCost",
-        "ownerId": "activation:64:special_bonus_attack_range_175",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:64:special_bonus_attack_range_175:cooldown",
-        "ownerId": "activation:64:special_bonus_attack_range_175",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:64:special_bonus_attack_range_175:charges",
-        "ownerId": "activation:64:special_bonus_attack_range_175",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:64:special_bonus_attack_range_175:manaCost",
-        "value:activation:64:special_bonus_attack_range_175:cooldown",
-        "value:activation:64:special_bonus_attack_range_175:charges"
-      ]
-    },
-    {
-      "id": "activation:64:special_bonus_unique_jakiro_dualbreath_cooldown",
-      "heroId": "64",
-      "abilityIds": [
-        "ability:64:special_bonus_unique_jakiro_dualbreath_cooldown"
-      ],
-      "manaCost": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_dualbreath_cooldown:manaCost",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_dualbreath_cooldown",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_dualbreath_cooldown:cooldown",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_dualbreath_cooldown",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_dualbreath_cooldown:charges",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_dualbreath_cooldown",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:64:special_bonus_unique_jakiro_dualbreath_cooldown:manaCost",
-        "value:activation:64:special_bonus_unique_jakiro_dualbreath_cooldown:cooldown",
-        "value:activation:64:special_bonus_unique_jakiro_dualbreath_cooldown:charges"
-      ]
-    },
-    {
-      "id": "activation:64:special_bonus_unique_jakiro",
-      "heroId": "64",
-      "abilityIds": [
-        "ability:64:special_bonus_unique_jakiro"
-      ],
-      "manaCost": {
-        "id": "value:activation:64:special_bonus_unique_jakiro:manaCost",
-        "ownerId": "activation:64:special_bonus_unique_jakiro",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:64:special_bonus_unique_jakiro:cooldown",
-        "ownerId": "activation:64:special_bonus_unique_jakiro",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:64:special_bonus_unique_jakiro:charges",
-        "ownerId": "activation:64:special_bonus_unique_jakiro",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:64:special_bonus_unique_jakiro:manaCost",
-        "value:activation:64:special_bonus_unique_jakiro:cooldown",
-        "value:activation:64:special_bonus_unique_jakiro:charges"
-      ]
-    },
-    {
-      "id": "activation:64:special_bonus_unique_jakiro_7",
-      "heroId": "64",
-      "abilityIds": [
-        "ability:64:special_bonus_unique_jakiro_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_7:manaCost",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_7:cooldown",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_7:charges",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:64:special_bonus_unique_jakiro_7:manaCost",
-        "value:activation:64:special_bonus_unique_jakiro_7:cooldown",
-        "value:activation:64:special_bonus_unique_jakiro_7:charges"
-      ]
-    },
-    {
-      "id": "activation:64:special_bonus_unique_jakiro_2",
-      "heroId": "64",
-      "abilityIds": [
-        "ability:64:special_bonus_unique_jakiro_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_2:manaCost",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_2:cooldown",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_2:charges",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:64:special_bonus_unique_jakiro_2:manaCost",
-        "value:activation:64:special_bonus_unique_jakiro_2:cooldown",
-        "value:activation:64:special_bonus_unique_jakiro_2:charges"
-      ]
-    },
-    {
-      "id": "activation:64:special_bonus_unique_jakiro_3",
-      "heroId": "64",
-      "abilityIds": [
-        "ability:64:special_bonus_unique_jakiro_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_3:manaCost",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_3:cooldown",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:64:special_bonus_unique_jakiro_3:charges",
-        "ownerId": "activation:64:special_bonus_unique_jakiro_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:64:special_bonus_unique_jakiro_3:manaCost",
-        "value:activation:64:special_bonus_unique_jakiro_3:cooldown",
-        "value:activation:64:special_bonus_unique_jakiro_3:charges"
-      ]
-    },
-    {
-      "id": "activation:64:special_bonus_attributes",
-      "heroId": "64",
-      "abilityIds": [
-        "ability:64:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:64:special_bonus_attributes:manaCost",
-        "ownerId": "activation:64:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:64:special_bonus_attributes:cooldown",
-        "ownerId": "activation:64:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:64:special_bonus_attributes:charges",
-        "ownerId": "activation:64:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:64:special_bonus_attributes:manaCost",
-        "value:activation:64:special_bonus_attributes:cooldown",
-        "value:activation:64:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:64:jakiro_ice_path_detonate",
-      "heroId": "64",
-      "abilityIds": [
-        "ability:64:jakiro_ice_path_detonate"
-      ],
-      "manaCost": {
-        "id": "value:activation:64:jakiro_ice_path_detonate:manaCost",
-        "ownerId": "activation:64:jakiro_ice_path_detonate",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:64:jakiro_ice_path_detonate:cooldown",
-        "ownerId": "activation:64:jakiro_ice_path_detonate",
-        "field": "cooldown",
-        "state": "known",
-        "value": 1
-      },
-      "charges": {
-        "id": "value:activation:64:jakiro_ice_path_detonate:charges",
-        "ownerId": "activation:64:jakiro_ice_path_detonate",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:64:jakiro_ice_path_detonate:manaCost",
-        "value:activation:64:jakiro_ice_path_detonate:cooldown",
-        "value:activation:64:jakiro_ice_path_detonate:charges"
-      ]
+      "id": "special_bonus_unique_jakiro_3",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

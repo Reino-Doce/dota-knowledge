@@ -110,6 +110,19 @@
     "effectIds": {
       "$ref": "core.schema.json#/$defs/idList"
     },
+    "capabilities": {
+      "description": "Category scores from owned ability tags, including innates and talents. Each distinct tag per ability adds one point to every category it belongs to, including multiple tags from the same ability.",
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_]{0,63}$"
+      },
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 9007199254740991
+      }
+    },
     "coverage": {
       "type": "object",
       "required": [

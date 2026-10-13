@@ -1,701 +1,171 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "nevermore_necromastery",
+    "Name": "Necromastery",
+    "behavior": [
+      "passive"
+    ],
+    "breakable": true,
+    "tags": []
+  },
+  "skills": [
     {
-      "id": "ability:11:nevermore_shadowraze1",
-      "heroId": "11",
-      "engineId": "nevermore_shadowraze1",
-      "activationId": "activation:11:nevermore_shadowraze1",
+      "id": "nevermore_shadowraze1",
+      "Name": "Shadowraze",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_nevermore",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 75,
+      "tags": []
     },
     {
-      "id": "ability:11:nevermore_shadowraze2",
-      "heroId": "11",
-      "engineId": "nevermore_shadowraze2",
-      "activationId": "activation:11:nevermore_shadowraze2",
+      "id": "nevermore_shadowraze2",
+      "Name": "Shadowraze",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_nevermore",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 75,
+      "tags": []
     },
     {
-      "id": "ability:11:nevermore_shadowraze3",
-      "heroId": "11",
-      "engineId": "nevermore_shadowraze3",
-      "activationId": "activation:11:nevermore_shadowraze3",
+      "id": "nevermore_shadowraze3",
+      "Name": "Shadowraze",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 2,
-      "owner": "npc_dota_hero_nevermore",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 75,
+      "tags": []
     },
     {
-      "id": "ability:11:nevermore_frenzy",
-      "heroId": "11",
-      "engineId": "nevermore_frenzy",
-      "activationId": "activation:11:nevermore_frenzy",
+      "id": "nevermore_frenzy",
+      "Name": "Feast of Souls",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
       "order": 3,
-      "owner": "npc_dota_hero_nevermore",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        60,
+        65,
+        70,
+        75
+      ],
+      "cooldown": 21,
+      "tags": [
+        "buff",
+        "escape",
+        "mobility",
+        "self_attack_speed",
+        "self_movement_speed"
+      ]
     },
     {
-      "id": "ability:11:nevermore_dark_lord",
-      "heroId": "11",
-      "engineId": "nevermore_dark_lord",
-      "activationId": "activation:11:nevermore_dark_lord",
+      "id": "nevermore_dark_lord",
+      "Name": "Presence of the Dark Lord",
+      "behavior": [
+        "passive"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "piercesDebuffImmunity": "yes",
+      "breakable": true,
       "order": 4,
-      "owner": "npc_dota_hero_nevermore",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "aura"
+      ]
     },
     {
-      "id": "ability:11:nevermore_requiem",
-      "heroId": "11",
-      "engineId": "nevermore_requiem",
-      "activationId": "activation:11:nevermore_requiem",
+      "id": "nevermore_requiem",
+      "Name": "Requiem of Souls",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_nevermore",
-      "state": "known"
-    },
-    {
-      "id": "ability:11:nevermore_necromastery",
-      "heroId": "11",
-      "engineId": "nevermore_necromastery",
-      "activationId": "activation:11:nevermore_necromastery",
-      "order": 6,
-      "owner": "npc_dota_hero_nevermore",
-      "state": "known"
-    },
-    {
-      "id": "ability:11:special_bonus_unique_nevermore_7",
-      "heroId": "11",
-      "engineId": "special_bonus_unique_nevermore_7",
-      "activationId": "activation:11:special_bonus_unique_nevermore_7",
-      "order": 7,
-      "owner": "npc_dota_hero_nevermore",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:11:special_bonus_unique_nevermore_4",
-      "heroId": "11",
-      "engineId": "special_bonus_unique_nevermore_4",
-      "activationId": "activation:11:special_bonus_unique_nevermore_4",
-      "order": 8,
-      "owner": "npc_dota_hero_nevermore",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:11:special_bonus_unique_nevermore_3",
-      "heroId": "11",
-      "engineId": "special_bonus_unique_nevermore_3",
-      "activationId": "activation:11:special_bonus_unique_nevermore_3",
-      "order": 9,
-      "owner": "npc_dota_hero_nevermore",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:11:special_bonus_unique_nevermore_frenzy_max_collection_count",
-      "heroId": "11",
-      "engineId": "special_bonus_unique_nevermore_frenzy_max_collection_count",
-      "activationId": "activation:11:special_bonus_unique_nevermore_frenzy_max_collection_count",
-      "order": 10,
-      "owner": "npc_dota_hero_nevermore",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:11:special_bonus_unique_nevermore_1",
-      "heroId": "11",
-      "engineId": "special_bonus_unique_nevermore_1",
-      "activationId": "activation:11:special_bonus_unique_nevermore_1",
-      "order": 11,
-      "owner": "npc_dota_hero_nevermore",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:11:special_bonus_unique_nevermore_6",
-      "heroId": "11",
-      "engineId": "special_bonus_unique_nevermore_6",
-      "activationId": "activation:11:special_bonus_unique_nevermore_6",
-      "order": 12,
-      "owner": "npc_dota_hero_nevermore",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:11:special_bonus_unique_nevermore_frenzy_castspeed",
-      "heroId": "11",
-      "engineId": "special_bonus_unique_nevermore_frenzy_castspeed",
-      "activationId": "activation:11:special_bonus_unique_nevermore_frenzy_castspeed",
-      "order": 13,
-      "owner": "npc_dota_hero_nevermore",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:11:special_bonus_unique_nevermore_raze_procsattacks",
-      "heroId": "11",
-      "engineId": "special_bonus_unique_nevermore_raze_procsattacks",
-      "activationId": "activation:11:special_bonus_unique_nevermore_raze_procsattacks",
-      "order": 14,
-      "owner": "npc_dota_hero_nevermore",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:11:special_bonus_attributes",
-      "heroId": "11",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:11:special_bonus_attributes",
-      "order": 15,
-      "owner": "npc_dota_hero_nevermore",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        150,
+        175,
+        200
+      ],
+      "tags": [
+        "buff",
+        "cooldown_reduction",
+        "slow"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:11:nevermore_shadowraze1",
-      "heroId": "11",
-      "abilityIds": [
-        "ability:11:nevermore_shadowraze1"
-      ],
-      "manaCost": {
-        "id": "value:activation:11:nevermore_shadowraze1:manaCost",
-        "ownerId": "activation:11:nevermore_shadowraze1",
-        "field": "manaCost",
-        "state": "known",
-        "value": 75
-      },
-      "cooldown": {
-        "id": "value:activation:11:nevermore_shadowraze1:cooldown",
-        "ownerId": "activation:11:nevermore_shadowraze1",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "9"
-        }
-      },
-      "charges": {
-        "id": "value:activation:11:nevermore_shadowraze1:charges",
-        "ownerId": "activation:11:nevermore_shadowraze1",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:11:nevermore_shadowraze1:manaCost",
-        "value:activation:11:nevermore_shadowraze1:cooldown",
-        "value:activation:11:nevermore_shadowraze1:charges"
+      "id": "special_bonus_unique_nevermore_7",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_nevermore_4",
+      "tags": [
+        "buff",
+        "self_attack_speed"
       ]
     },
     {
-      "id": "activation:11:nevermore_shadowraze2",
-      "heroId": "11",
-      "abilityIds": [
-        "ability:11:nevermore_shadowraze2"
-      ],
-      "manaCost": {
-        "id": "value:activation:11:nevermore_shadowraze2:manaCost",
-        "ownerId": "activation:11:nevermore_shadowraze2",
-        "field": "manaCost",
-        "state": "known",
-        "value": 75
-      },
-      "cooldown": {
-        "id": "value:activation:11:nevermore_shadowraze2:cooldown",
-        "ownerId": "activation:11:nevermore_shadowraze2",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "9"
-        }
-      },
-      "charges": {
-        "id": "value:activation:11:nevermore_shadowraze2:charges",
-        "ownerId": "activation:11:nevermore_shadowraze2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:11:nevermore_shadowraze2:manaCost",
-        "value:activation:11:nevermore_shadowraze2:cooldown",
-        "value:activation:11:nevermore_shadowraze2:charges"
+      "id": "special_bonus_unique_nevermore_3",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_nevermore_frenzy_max_collection_count",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_nevermore_1",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_nevermore_6",
+      "tags": [
+        "duration_extension",
+        "slow"
       ]
     },
     {
-      "id": "activation:11:nevermore_shadowraze3",
-      "heroId": "11",
-      "abilityIds": [
-        "ability:11:nevermore_shadowraze3"
-      ],
-      "manaCost": {
-        "id": "value:activation:11:nevermore_shadowraze3:manaCost",
-        "ownerId": "activation:11:nevermore_shadowraze3",
-        "field": "manaCost",
-        "state": "known",
-        "value": 75
-      },
-      "cooldown": {
-        "id": "value:activation:11:nevermore_shadowraze3:cooldown",
-        "ownerId": "activation:11:nevermore_shadowraze3",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "9"
-        }
-      },
-      "charges": {
-        "id": "value:activation:11:nevermore_shadowraze3:charges",
-        "ownerId": "activation:11:nevermore_shadowraze3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:11:nevermore_shadowraze3:manaCost",
-        "value:activation:11:nevermore_shadowraze3:cooldown",
-        "value:activation:11:nevermore_shadowraze3:charges"
-      ]
+      "id": "special_bonus_unique_nevermore_frenzy_castspeed",
+      "tags": []
     },
     {
-      "id": "activation:11:nevermore_frenzy",
-      "heroId": "11",
-      "abilityIds": [
-        "ability:11:nevermore_frenzy"
-      ],
-      "manaCost": {
-        "id": "value:activation:11:nevermore_frenzy:manaCost",
-        "ownerId": "activation:11:nevermore_frenzy",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          60,
-          65,
-          70,
-          75
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:11:nevermore_frenzy:cooldown",
-        "ownerId": "activation:11:nevermore_frenzy",
-        "field": "cooldown",
-        "state": "known",
-        "value": 21
-      },
-      "charges": {
-        "id": "value:activation:11:nevermore_frenzy:charges",
-        "ownerId": "activation:11:nevermore_frenzy",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:11:nevermore_frenzy:manaCost",
-        "value:activation:11:nevermore_frenzy:cooldown",
-        "value:activation:11:nevermore_frenzy:charges"
-      ]
-    },
-    {
-      "id": "activation:11:nevermore_dark_lord",
-      "heroId": "11",
-      "abilityIds": [
-        "ability:11:nevermore_dark_lord"
-      ],
-      "manaCost": {
-        "id": "value:activation:11:nevermore_dark_lord:manaCost",
-        "ownerId": "activation:11:nevermore_dark_lord",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:11:nevermore_dark_lord:cooldown",
-        "ownerId": "activation:11:nevermore_dark_lord",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:11:nevermore_dark_lord:charges",
-        "ownerId": "activation:11:nevermore_dark_lord",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:11:nevermore_dark_lord:manaCost",
-        "value:activation:11:nevermore_dark_lord:cooldown",
-        "value:activation:11:nevermore_dark_lord:charges"
-      ]
-    },
-    {
-      "id": "activation:11:nevermore_requiem",
-      "heroId": "11",
-      "abilityIds": [
-        "ability:11:nevermore_requiem"
-      ],
-      "manaCost": {
-        "id": "value:activation:11:nevermore_requiem:manaCost",
-        "ownerId": "activation:11:nevermore_requiem",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          150,
-          175,
-          200
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:11:nevermore_requiem:cooldown",
-        "ownerId": "activation:11:nevermore_requiem",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "120 110 100",
-          "special_bonus_scepter": "-30"
-        }
-      },
-      "charges": {
-        "id": "value:activation:11:nevermore_requiem:charges",
-        "ownerId": "activation:11:nevermore_requiem",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:11:nevermore_requiem:manaCost",
-        "value:activation:11:nevermore_requiem:cooldown",
-        "value:activation:11:nevermore_requiem:charges"
-      ]
-    },
-    {
-      "id": "activation:11:nevermore_necromastery",
-      "heroId": "11",
-      "abilityIds": [
-        "ability:11:nevermore_necromastery"
-      ],
-      "manaCost": {
-        "id": "value:activation:11:nevermore_necromastery:manaCost",
-        "ownerId": "activation:11:nevermore_necromastery",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:11:nevermore_necromastery:cooldown",
-        "ownerId": "activation:11:nevermore_necromastery",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:11:nevermore_necromastery:charges",
-        "ownerId": "activation:11:nevermore_necromastery",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:11:nevermore_necromastery:manaCost",
-        "value:activation:11:nevermore_necromastery:cooldown",
-        "value:activation:11:nevermore_necromastery:charges"
-      ]
-    },
-    {
-      "id": "activation:11:special_bonus_unique_nevermore_7",
-      "heroId": "11",
-      "abilityIds": [
-        "ability:11:special_bonus_unique_nevermore_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_7:manaCost",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_7:cooldown",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_7:charges",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:11:special_bonus_unique_nevermore_7:manaCost",
-        "value:activation:11:special_bonus_unique_nevermore_7:cooldown",
-        "value:activation:11:special_bonus_unique_nevermore_7:charges"
-      ]
-    },
-    {
-      "id": "activation:11:special_bonus_unique_nevermore_4",
-      "heroId": "11",
-      "abilityIds": [
-        "ability:11:special_bonus_unique_nevermore_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_4:manaCost",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_4:cooldown",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_4:charges",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:11:special_bonus_unique_nevermore_4:manaCost",
-        "value:activation:11:special_bonus_unique_nevermore_4:cooldown",
-        "value:activation:11:special_bonus_unique_nevermore_4:charges"
-      ]
-    },
-    {
-      "id": "activation:11:special_bonus_unique_nevermore_3",
-      "heroId": "11",
-      "abilityIds": [
-        "ability:11:special_bonus_unique_nevermore_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_3:manaCost",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_3:cooldown",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_3:charges",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:11:special_bonus_unique_nevermore_3:manaCost",
-        "value:activation:11:special_bonus_unique_nevermore_3:cooldown",
-        "value:activation:11:special_bonus_unique_nevermore_3:charges"
-      ]
-    },
-    {
-      "id": "activation:11:special_bonus_unique_nevermore_frenzy_max_collection_count",
-      "heroId": "11",
-      "abilityIds": [
-        "ability:11:special_bonus_unique_nevermore_frenzy_max_collection_count"
-      ],
-      "manaCost": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_frenzy_max_collection_count:manaCost",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_frenzy_max_collection_count",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_frenzy_max_collection_count:cooldown",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_frenzy_max_collection_count",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_frenzy_max_collection_count:charges",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_frenzy_max_collection_count",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:11:special_bonus_unique_nevermore_frenzy_max_collection_count:manaCost",
-        "value:activation:11:special_bonus_unique_nevermore_frenzy_max_collection_count:cooldown",
-        "value:activation:11:special_bonus_unique_nevermore_frenzy_max_collection_count:charges"
-      ]
-    },
-    {
-      "id": "activation:11:special_bonus_unique_nevermore_1",
-      "heroId": "11",
-      "abilityIds": [
-        "ability:11:special_bonus_unique_nevermore_1"
-      ],
-      "manaCost": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_1:manaCost",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_1",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_1:cooldown",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_1",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_1:charges",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_1",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:11:special_bonus_unique_nevermore_1:manaCost",
-        "value:activation:11:special_bonus_unique_nevermore_1:cooldown",
-        "value:activation:11:special_bonus_unique_nevermore_1:charges"
-      ]
-    },
-    {
-      "id": "activation:11:special_bonus_unique_nevermore_6",
-      "heroId": "11",
-      "abilityIds": [
-        "ability:11:special_bonus_unique_nevermore_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_6:manaCost",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_6:cooldown",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_6:charges",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:11:special_bonus_unique_nevermore_6:manaCost",
-        "value:activation:11:special_bonus_unique_nevermore_6:cooldown",
-        "value:activation:11:special_bonus_unique_nevermore_6:charges"
-      ]
-    },
-    {
-      "id": "activation:11:special_bonus_unique_nevermore_frenzy_castspeed",
-      "heroId": "11",
-      "abilityIds": [
-        "ability:11:special_bonus_unique_nevermore_frenzy_castspeed"
-      ],
-      "manaCost": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_frenzy_castspeed:manaCost",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_frenzy_castspeed",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_frenzy_castspeed:cooldown",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_frenzy_castspeed",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_frenzy_castspeed:charges",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_frenzy_castspeed",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:11:special_bonus_unique_nevermore_frenzy_castspeed:manaCost",
-        "value:activation:11:special_bonus_unique_nevermore_frenzy_castspeed:cooldown",
-        "value:activation:11:special_bonus_unique_nevermore_frenzy_castspeed:charges"
-      ]
-    },
-    {
-      "id": "activation:11:special_bonus_unique_nevermore_raze_procsattacks",
-      "heroId": "11",
-      "abilityIds": [
-        "ability:11:special_bonus_unique_nevermore_raze_procsattacks"
-      ],
-      "manaCost": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_raze_procsattacks:manaCost",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_raze_procsattacks",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_raze_procsattacks:cooldown",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_raze_procsattacks",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:11:special_bonus_unique_nevermore_raze_procsattacks:charges",
-        "ownerId": "activation:11:special_bonus_unique_nevermore_raze_procsattacks",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:11:special_bonus_unique_nevermore_raze_procsattacks:manaCost",
-        "value:activation:11:special_bonus_unique_nevermore_raze_procsattacks:cooldown",
-        "value:activation:11:special_bonus_unique_nevermore_raze_procsattacks:charges"
-      ]
-    },
-    {
-      "id": "activation:11:special_bonus_attributes",
-      "heroId": "11",
-      "abilityIds": [
-        "ability:11:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:11:special_bonus_attributes:manaCost",
-        "ownerId": "activation:11:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:11:special_bonus_attributes:cooldown",
-        "ownerId": "activation:11:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:11:special_bonus_attributes:charges",
-        "ownerId": "activation:11:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:11:special_bonus_attributes:manaCost",
-        "value:activation:11:special_bonus_attributes:cooldown",
-        "value:activation:11:special_bonus_attributes:charges"
-      ]
+      "id": "special_bonus_unique_nevermore_raze_procsattacks",
+      "Name": "Shadowraze Applies Attack Damage",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

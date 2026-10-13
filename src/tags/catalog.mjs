@@ -1,0 +1,1598 @@
+export const abilityTagCatalog = {
+  "schemaVersion": 1,
+  "version": "native-tags-catalog-2",
+  "categories": [
+    {
+      "key": "buff",
+      "label": "Buffs",
+      "description": "Beneficial stat/state enhancements; exact positive operations remain authoritative.",
+      "tags": [
+        "ability_damage_bonus",
+        "ally_armor",
+        "ally_attack_damage",
+        "ally_attack_range",
+        "ally_attack_speed",
+        "ally_barrier",
+        "ally_healing_amplification",
+        "ally_health_regen",
+        "ally_mana_regen",
+        "ally_max_health",
+        "ally_max_mana",
+        "ally_movement_speed",
+        "area_increase",
+        "attribute_bonus",
+        "attribute_floor",
+        "attribute_shift",
+        "barrier",
+        "buff",
+        "building_attack_amplification",
+        "cast_range",
+        "controlled_unit_damage",
+        "controlled_unit_health_regen",
+        "cooldown_reduction",
+        "damage_reduction",
+        "debuff_immunity",
+        "economy_gain",
+        "evasion",
+        "healing_amplification",
+        "health_regen",
+        "magic_resistance",
+        "mana_cost_reduction",
+        "mana_floor",
+        "outgoing_damage_amplification",
+        "restoration_rate_amplification",
+        "self_armor",
+        "self_attack_damage",
+        "self_attack_range",
+        "self_attack_speed",
+        "self_health_regen",
+        "self_mana_regen",
+        "self_max_health",
+        "self_max_mana",
+        "self_movement_speed",
+        "slow_resistance",
+        "spell_amplification",
+        "status_resistance"
+      ]
+    },
+    {
+      "key": "control",
+      "label": "Control",
+      "description": "Exact hostile action restrictions and forced movement; restrictions remain separately modeled.",
+      "tags": [
+        "attack_stun",
+        "break",
+        "cyclone",
+        "disable",
+        "disarm",
+        "dispel",
+        "enemy_displacement",
+        "fear",
+        "hex",
+        "mute",
+        "petrify",
+        "root",
+        "silence",
+        "sleep",
+        "slow",
+        "stun",
+        "taunt",
+        "terrain_block",
+        "turn_rate_reduction"
+      ]
+    },
+    {
+      "key": "costs",
+      "label": "Costs and setup",
+      "description": "Costs, drawbacks, commands and transformations; not independent positive payloads.",
+      "tags": [
+        "attribute_shift",
+        "effect_replacement",
+        "enemy_benefit",
+        "health_cost",
+        "mana_cost_reduction",
+        "release",
+        "resource_conversion",
+        "self_damage",
+        "setup"
+      ]
+    },
+    {
+      "key": "damage",
+      "label": "Damage",
+      "description": "Damage payloads and temporal delivery; qualifiers do not add damage quantities.",
+      "tags": [
+        "ability_damage_bonus",
+        "armor_piercing",
+        "attack_bounce",
+        "attack_modifier",
+        "building_damage",
+        "cleave",
+        "creep_damage",
+        "damage_over_distance",
+        "damage_over_time",
+        "damage_reflection",
+        "damage_sharing",
+        "delayed_damage",
+        "immediate_damage",
+        "incoming_damage_amplification",
+        "outgoing_damage_amplification",
+        "repeated_attacks",
+        "repeated_hits",
+        "spell_amplification",
+        "true_strike"
+      ]
+    },
+    {
+      "key": "defense",
+      "label": "Defense",
+      "description": "Damage avoidance, mitigation and survival mechanisms for their supported recipients.",
+      "tags": [
+        "ally_armor",
+        "ally_barrier",
+        "ally_dispel",
+        "ally_heal",
+        "ally_health_regen",
+        "ally_max_health",
+        "barrier",
+        "concealment",
+        "controlled_unit_damage_immunity",
+        "controlled_unit_damage_reduction",
+        "controlled_unit_health_regen",
+        "damage_block",
+        "damage_immunity",
+        "damage_negation",
+        "damage_reduction",
+        "damage_reflection",
+        "damage_sharing",
+        "death_prevention",
+        "debuff_immunity",
+        "disjoint",
+        "dispel",
+        "evasion",
+        "forced_movement_immunity",
+        "health_regen",
+        "invisibility",
+        "magic_resistance",
+        "magical_damage_immunity",
+        "outgoing_damage_reduction",
+        "physical_damage_immunity",
+        "proc_chance_reduction",
+        "projectile_slow",
+        "protective_banish",
+        "reincarnation",
+        "self_armor",
+        "self_heal",
+        "self_health_regen",
+        "self_lifesteal",
+        "self_max_health",
+        "slow_resistance",
+        "spell_reflection",
+        "status_resistance",
+        "untargetable"
+      ]
+    },
+    {
+      "key": "delivery",
+      "label": "Delivery and shape",
+      "description": "Operation shape, reach, targeting and temporal qualifiers.",
+      "tags": [
+        "ability_repetition",
+        "aoe",
+        "area_increase",
+        "attack_bounce",
+        "attack_modifier",
+        "aura",
+        "bkb_pierce",
+        "channeled",
+        "cleave",
+        "duration_extension",
+        "global_delivery",
+        "melee_attack_interaction",
+        "repeated_hits",
+        "single_target",
+        "terrain_block",
+        "trap",
+        "true_strike"
+      ]
+    },
+    {
+      "key": "denial",
+      "label": "Stat and resource denial",
+      "description": "Hostile reductions to armor, movement, attacks, resources or information.",
+      "tags": [
+        "anti_heal",
+        "armor_reduction",
+        "enemy_attack_speed_reduction",
+        "incoming_damage_amplification",
+        "magic_resistance_reduction",
+        "mana_burn",
+        "mana_restoration_prevention",
+        "outgoing_damage_reduction",
+        "proc_chance_reduction",
+        "slow",
+        "turn_rate_reduction",
+        "vision_denial"
+      ]
+    },
+    {
+      "key": "growth",
+      "label": "Scaling and permanent growth",
+      "description": "Exact formula inputs and event-earned persistence traits; no claim of strong scaling or late-game superiority.",
+      "tags": [
+        "attack_damage_scaling",
+        "attribute_bonus",
+        "attribute_floor",
+        "attribute_shift",
+        "damage_over_distance",
+        "earned_permanent_growth",
+        "economy_gain",
+        "experience_gain",
+        "item_upgrade",
+        "primary_attribute_change",
+        "skill_progression",
+        "target_health_scaling"
+      ]
+    },
+    {
+      "key": "information",
+      "label": "Vision and information",
+      "description": "Information granted or denied, with sight and detection distinguished.",
+      "tags": [
+        "concealment",
+        "detection",
+        "invisibility",
+        "objective_information",
+        "vision",
+        "vision_denial"
+      ]
+    },
+    {
+      "key": "mobility",
+      "label": "Movement",
+      "description": "Supported relocation, speed and evasion; escape describes an ability capability, not a guaranteed outcome.",
+      "tags": [
+        "ally_movement_speed",
+        "ally_reposition",
+        "blink",
+        "disjoint",
+        "escape",
+        "mobility",
+        "self_movement_speed",
+        "self_reposition"
+      ]
+    },
+    {
+      "key": "objectives",
+      "label": "Objective interactions",
+      "description": "Verified creep/building interactions; scenario outputs remain separately scoped.",
+      "tags": [
+        "building_attack_amplification",
+        "building_damage",
+        "creep_damage",
+        "objective_information"
+      ]
+    },
+    {
+      "key": "save",
+      "label": "Ally protection tools",
+      "description": "Exact protective mechanisms with known allied-hero recipients; no successful-rescue assertion.",
+      "tags": [
+        "ally_barrier",
+        "ally_dispel",
+        "ally_heal",
+        "ally_reposition",
+        "barrier",
+        "controlled_unit_damage_immunity",
+        "damage_block",
+        "damage_immunity",
+        "damage_negation",
+        "death_prevention",
+        "forced_movement_immunity",
+        "magical_damage_immunity",
+        "physical_damage_immunity",
+        "protective_banish",
+        "reincarnation",
+        "spell_reflection"
+      ]
+    },
+    {
+      "key": "sustain",
+      "label": "Recovery and sustain",
+      "description": "Health and mana recovery; distinct restoration mechanisms are preserved.",
+      "tags": [
+        "ally_heal",
+        "ally_healing_amplification",
+        "ally_health_regen",
+        "ally_mana_regen",
+        "ally_mana_restore",
+        "controlled_unit_health_regen",
+        "heal",
+        "healing_amplification",
+        "health_regen",
+        "lifesteal",
+        "mana_floor",
+        "restoration_rate_amplification",
+        "self_heal",
+        "self_health_regen",
+        "self_lifesteal",
+        "self_mana_regen",
+        "self_mana_restore",
+        "spell_lifesteal"
+      ]
+    },
+    {
+      "key": "triggers",
+      "label": "Triggers and availability",
+      "description": "Explicit trigger/casting facts attached to independently established payloads.",
+      "tags": [
+        "attack_stun",
+        "castable_while_disabled",
+        "on_damage_trigger",
+        "trap"
+      ]
+    },
+    {
+      "key": "units",
+      "label": "Units and illusions",
+      "description": "Gameplay-unit/illusion creation and supported controlled-unit benefits.",
+      "tags": [
+        "clone_creation",
+        "controlled_unit_damage",
+        "controlled_unit_damage_immunity",
+        "controlled_unit_damage_reduction",
+        "controlled_unit_health_regen",
+        "creep_conversion",
+        "illusions",
+        "summons"
+      ]
+    },
+    {
+      "key": "utility",
+      "label": "Utility",
+      "description": "Specific item, ability and resource operations established by gameplay declarations.",
+      "tags": [
+        "ability_copy",
+        "ability_repetition",
+        "consumable_generation",
+        "courier_utility",
+        "creep_conversion",
+        "health_exchange",
+        "item_choice",
+        "item_copy",
+        "item_disassembly",
+        "item_sharing",
+        "item_upgrade",
+        "resource_conversion",
+        "skill_progression"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "key": "ability_copy",
+      "label": "Ability copying",
+      "categories": [
+        "utility"
+      ]
+    },
+    {
+      "key": "ability_damage_bonus",
+      "label": "Ability damage bonus",
+      "categories": [
+        "buff",
+        "damage"
+      ]
+    },
+    {
+      "key": "ability_repetition",
+      "label": "Ability repetition",
+      "categories": [
+        "delivery",
+        "utility"
+      ]
+    },
+    {
+      "key": "ally_armor",
+      "label": "Ally armor",
+      "categories": [
+        "buff",
+        "defense"
+      ]
+    },
+    {
+      "key": "ally_attack_damage",
+      "label": "Ally attack damage",
+      "categories": [
+        "buff"
+      ]
+    },
+    {
+      "key": "ally_attack_range",
+      "label": "Ally attack range",
+      "categories": [
+        "buff"
+      ]
+    },
+    {
+      "key": "ally_attack_speed",
+      "label": "Ally attack speed",
+      "categories": [
+        "buff"
+      ]
+    },
+    {
+      "key": "ally_barrier",
+      "label": "Ally barrier",
+      "categories": [
+        "buff",
+        "defense",
+        "save"
+      ]
+    },
+    {
+      "key": "ally_dispel",
+      "label": "Ally dispel",
+      "categories": [
+        "defense",
+        "save"
+      ]
+    },
+    {
+      "key": "ally_heal",
+      "label": "Ally heal",
+      "categories": [
+        "defense",
+        "save",
+        "sustain"
+      ]
+    },
+    {
+      "key": "ally_healing_amplification",
+      "label": "Ally healing amplification",
+      "categories": [
+        "buff",
+        "sustain"
+      ]
+    },
+    {
+      "key": "ally_health_regen",
+      "label": "Ally health regeneration",
+      "categories": [
+        "buff",
+        "defense",
+        "sustain"
+      ]
+    },
+    {
+      "key": "ally_mana_regen",
+      "label": "Ally mana regen",
+      "categories": [
+        "buff",
+        "sustain"
+      ]
+    },
+    {
+      "key": "ally_mana_restore",
+      "label": "Ally mana restore",
+      "categories": [
+        "sustain"
+      ]
+    },
+    {
+      "key": "ally_max_health",
+      "label": "Ally maximum health",
+      "categories": [
+        "buff",
+        "defense"
+      ]
+    },
+    {
+      "key": "ally_max_mana",
+      "label": "Ally maximum mana",
+      "categories": [
+        "buff"
+      ]
+    },
+    {
+      "key": "ally_movement_speed",
+      "label": "Ally movement speed",
+      "categories": [
+        "buff",
+        "mobility"
+      ]
+    },
+    {
+      "key": "ally_reposition",
+      "label": "Ally reposition",
+      "categories": [
+        "mobility",
+        "save"
+      ]
+    },
+    {
+      "key": "anti_heal",
+      "label": "Anti heal",
+      "categories": [
+        "denial"
+      ]
+    },
+    {
+      "key": "aoe",
+      "label": "Aoe",
+      "categories": [
+        "delivery"
+      ]
+    },
+    {
+      "key": "area_increase",
+      "label": "Effect area increase",
+      "categories": [
+        "buff",
+        "delivery"
+      ]
+    },
+    {
+      "key": "armor_piercing",
+      "label": "Armor piercing",
+      "categories": [
+        "damage"
+      ]
+    },
+    {
+      "key": "armor_reduction",
+      "label": "Armor reduction",
+      "categories": [
+        "denial"
+      ]
+    },
+    {
+      "key": "attack_bounce",
+      "label": "Attack bouncing",
+      "categories": [
+        "damage",
+        "delivery"
+      ]
+    },
+    {
+      "key": "attack_damage_scaling",
+      "label": "Attack-damage scaling",
+      "categories": [
+        "growth"
+      ]
+    },
+    {
+      "key": "attack_modifier",
+      "label": "Basic attack payload modifier",
+      "categories": [
+        "damage",
+        "delivery"
+      ]
+    },
+    {
+      "key": "attack_stun",
+      "label": "Attack stun",
+      "categories": [
+        "control",
+        "triggers"
+      ]
+    },
+    {
+      "key": "attribute_bonus",
+      "label": "Attribute bonus",
+      "categories": [
+        "buff",
+        "growth"
+      ]
+    },
+    {
+      "key": "attribute_floor",
+      "label": "Minimum attributes",
+      "categories": [
+        "buff",
+        "growth"
+      ]
+    },
+    {
+      "key": "attribute_shift",
+      "label": "Attribute shifting",
+      "categories": [
+        "buff",
+        "costs",
+        "growth"
+      ]
+    },
+    {
+      "key": "aura",
+      "label": "Aura",
+      "categories": [
+        "delivery"
+      ]
+    },
+    {
+      "key": "barrier",
+      "label": "Barrier",
+      "categories": [
+        "buff",
+        "defense",
+        "save"
+      ]
+    },
+    {
+      "key": "bkb_pierce",
+      "label": "Bkb pierce",
+      "categories": [
+        "delivery"
+      ]
+    },
+    {
+      "key": "blink",
+      "label": "Blink",
+      "categories": [
+        "mobility"
+      ]
+    },
+    {
+      "key": "break",
+      "label": "Break",
+      "categories": [
+        "control"
+      ]
+    },
+    {
+      "key": "buff",
+      "label": "Buff",
+      "categories": [
+        "buff"
+      ]
+    },
+    {
+      "key": "building_attack_amplification",
+      "label": "Building attack amplification",
+      "categories": [
+        "buff",
+        "objectives"
+      ]
+    },
+    {
+      "key": "building_damage",
+      "label": "Building damage",
+      "categories": [
+        "damage",
+        "objectives"
+      ]
+    },
+    {
+      "key": "cast_range",
+      "label": "Cast range",
+      "categories": [
+        "buff"
+      ]
+    },
+    {
+      "key": "castable_while_disabled",
+      "label": "Castable while disabled",
+      "categories": [
+        "triggers"
+      ]
+    },
+    {
+      "key": "channeled",
+      "label": "Channeled",
+      "categories": [
+        "delivery"
+      ]
+    },
+    {
+      "key": "cleave",
+      "label": "Cleave",
+      "categories": [
+        "damage",
+        "delivery"
+      ]
+    },
+    {
+      "key": "clone_creation",
+      "label": "Clone creation",
+      "categories": [
+        "units"
+      ]
+    },
+    {
+      "key": "concealment",
+      "label": "Concealment",
+      "categories": [
+        "defense",
+        "information"
+      ]
+    },
+    {
+      "key": "consumable_generation",
+      "label": "Consumable generation",
+      "categories": [
+        "utility"
+      ]
+    },
+    {
+      "key": "controlled_unit_damage",
+      "label": "Controlled unit damage",
+      "categories": [
+        "buff",
+        "units"
+      ]
+    },
+    {
+      "key": "controlled_unit_damage_immunity",
+      "label": "Controlled unit damage immunity",
+      "categories": [
+        "defense",
+        "save",
+        "units"
+      ]
+    },
+    {
+      "key": "controlled_unit_damage_reduction",
+      "label": "Controlled unit damage reduction",
+      "categories": [
+        "defense",
+        "units"
+      ]
+    },
+    {
+      "key": "controlled_unit_health_regen",
+      "label": "Controlled unit health regeneration",
+      "categories": [
+        "buff",
+        "defense",
+        "sustain",
+        "units"
+      ]
+    },
+    {
+      "key": "cooldown_reduction",
+      "label": "Cooldown reduction",
+      "categories": [
+        "buff"
+      ]
+    },
+    {
+      "key": "courier_utility",
+      "label": "Courier utility",
+      "categories": [
+        "utility"
+      ]
+    },
+    {
+      "key": "creep_conversion",
+      "label": "Creep conversion",
+      "categories": [
+        "units",
+        "utility"
+      ]
+    },
+    {
+      "key": "creep_damage",
+      "label": "Creep damage",
+      "categories": [
+        "damage",
+        "objectives"
+      ]
+    },
+    {
+      "key": "cyclone",
+      "label": "Cyclone",
+      "categories": [
+        "control"
+      ]
+    },
+    {
+      "key": "damage_block",
+      "label": "Damage blocking",
+      "categories": [
+        "defense",
+        "save"
+      ]
+    },
+    {
+      "key": "damage_immunity",
+      "label": "Damage immunity",
+      "categories": [
+        "defense",
+        "save"
+      ]
+    },
+    {
+      "key": "damage_negation",
+      "label": "Damage negation",
+      "categories": [
+        "defense",
+        "save"
+      ]
+    },
+    {
+      "key": "damage_over_distance",
+      "label": "Damage scaling with distance",
+      "categories": [
+        "damage",
+        "growth"
+      ]
+    },
+    {
+      "key": "damage_over_time",
+      "label": "Damage over time",
+      "categories": [
+        "damage"
+      ]
+    },
+    {
+      "key": "damage_reduction",
+      "label": "Damage reduction",
+      "categories": [
+        "buff",
+        "defense"
+      ]
+    },
+    {
+      "key": "damage_reflection",
+      "label": "Damage reflection",
+      "categories": [
+        "damage",
+        "defense"
+      ]
+    },
+    {
+      "key": "damage_sharing",
+      "label": "Damage sharing",
+      "categories": [
+        "damage",
+        "defense"
+      ]
+    },
+    {
+      "key": "death_prevention",
+      "label": "Death prevention",
+      "categories": [
+        "defense",
+        "save"
+      ]
+    },
+    {
+      "key": "debuff_immunity",
+      "label": "Debuff immunity",
+      "categories": [
+        "buff",
+        "defense"
+      ]
+    },
+    {
+      "key": "delayed_damage",
+      "label": "Delayed damage",
+      "categories": [
+        "damage"
+      ]
+    },
+    {
+      "key": "detection",
+      "label": "Detection",
+      "categories": [
+        "information"
+      ]
+    },
+    {
+      "key": "disable",
+      "label": "Disable",
+      "categories": [
+        "control"
+      ]
+    },
+    {
+      "key": "disarm",
+      "label": "Disarm",
+      "categories": [
+        "control"
+      ]
+    },
+    {
+      "key": "disjoint",
+      "label": "Disjoint",
+      "categories": [
+        "defense",
+        "mobility"
+      ]
+    },
+    {
+      "key": "dispel",
+      "label": "Dispel",
+      "categories": [
+        "control",
+        "defense"
+      ]
+    },
+    {
+      "key": "duration_extension",
+      "label": "Effect duration extension",
+      "categories": [
+        "delivery"
+      ]
+    },
+    {
+      "key": "earned_permanent_growth",
+      "label": "Earned permanent growth",
+      "categories": [
+        "growth"
+      ]
+    },
+    {
+      "key": "economy_gain",
+      "label": "Economy gain",
+      "categories": [
+        "buff",
+        "growth"
+      ]
+    },
+    {
+      "key": "effect_replacement",
+      "label": "Effect replacement",
+      "categories": [
+        "costs"
+      ]
+    },
+    {
+      "key": "enemy_attack_speed_reduction",
+      "label": "Enemy attack speed reduction",
+      "categories": [
+        "denial"
+      ]
+    },
+    {
+      "key": "enemy_benefit",
+      "label": "Enemy benefit",
+      "categories": [
+        "costs"
+      ]
+    },
+    {
+      "key": "enemy_displacement",
+      "label": "Enemy displacement",
+      "categories": [
+        "control"
+      ]
+    },
+    {
+      "key": "escape",
+      "label": "Escape",
+      "categories": [
+        "mobility"
+      ]
+    },
+    {
+      "key": "evasion",
+      "label": "Evasion",
+      "categories": [
+        "buff",
+        "defense"
+      ]
+    },
+    {
+      "key": "experience_gain",
+      "label": "Experience gain",
+      "categories": [
+        "growth"
+      ]
+    },
+    {
+      "key": "fear",
+      "label": "Fear",
+      "categories": [
+        "control"
+      ]
+    },
+    {
+      "key": "forced_movement_immunity",
+      "label": "Forced movement immunity",
+      "categories": [
+        "defense",
+        "save"
+      ]
+    },
+    {
+      "key": "global_delivery",
+      "label": "Global delivery",
+      "categories": [
+        "delivery"
+      ]
+    },
+    {
+      "key": "heal",
+      "label": "Heal",
+      "categories": [
+        "sustain"
+      ]
+    },
+    {
+      "key": "healing_amplification",
+      "label": "Healing amplification",
+      "categories": [
+        "buff",
+        "sustain"
+      ]
+    },
+    {
+      "key": "health_cost",
+      "label": "Health cost",
+      "categories": [
+        "costs"
+      ]
+    },
+    {
+      "key": "health_exchange",
+      "label": "Health exchange",
+      "categories": [
+        "utility"
+      ]
+    },
+    {
+      "key": "health_regen",
+      "label": "Health regen",
+      "categories": [
+        "buff",
+        "defense",
+        "sustain"
+      ]
+    },
+    {
+      "key": "hex",
+      "label": "Hex",
+      "categories": [
+        "control"
+      ]
+    },
+    {
+      "key": "illusions",
+      "label": "Illusions",
+      "categories": [
+        "units"
+      ]
+    },
+    {
+      "key": "immediate_damage",
+      "label": "Immediate damage",
+      "categories": [
+        "damage"
+      ]
+    },
+    {
+      "key": "incoming_damage_amplification",
+      "label": "Incoming damage amplification",
+      "categories": [
+        "damage",
+        "denial"
+      ]
+    },
+    {
+      "key": "invisibility",
+      "label": "Invisibility",
+      "categories": [
+        "defense",
+        "information"
+      ]
+    },
+    {
+      "key": "item_choice",
+      "label": "Item choice",
+      "categories": [
+        "utility"
+      ]
+    },
+    {
+      "key": "item_copy",
+      "label": "Item copying",
+      "categories": [
+        "utility"
+      ]
+    },
+    {
+      "key": "item_disassembly",
+      "label": "Item disassembly",
+      "categories": [
+        "utility"
+      ]
+    },
+    {
+      "key": "item_sharing",
+      "label": "Item sharing",
+      "categories": [
+        "utility"
+      ]
+    },
+    {
+      "key": "item_upgrade",
+      "label": "Item upgrading",
+      "categories": [
+        "growth",
+        "utility"
+      ]
+    },
+    {
+      "key": "lifesteal",
+      "label": "Lifesteal",
+      "categories": [
+        "sustain"
+      ]
+    },
+    {
+      "key": "magic_resistance",
+      "label": "Magic resistance",
+      "categories": [
+        "buff",
+        "defense"
+      ]
+    },
+    {
+      "key": "magic_resistance_reduction",
+      "label": "Magic resistance reduction",
+      "categories": [
+        "denial"
+      ]
+    },
+    {
+      "key": "magical_damage_immunity",
+      "label": "Magical damage immunity",
+      "categories": [
+        "defense",
+        "save"
+      ]
+    },
+    {
+      "key": "mana_burn",
+      "label": "Mana burn",
+      "categories": [
+        "denial"
+      ]
+    },
+    {
+      "key": "mana_cost_reduction",
+      "label": "Mana cost reduction",
+      "categories": [
+        "buff",
+        "costs"
+      ]
+    },
+    {
+      "key": "mana_floor",
+      "label": "Minimum mana",
+      "categories": [
+        "buff",
+        "sustain"
+      ]
+    },
+    {
+      "key": "mana_restoration_prevention",
+      "label": "Mana restoration prevention",
+      "categories": [
+        "denial"
+      ]
+    },
+    {
+      "key": "melee_attack_interaction",
+      "label": "Melee attack interaction",
+      "categories": [
+        "delivery"
+      ]
+    },
+    {
+      "key": "mobility",
+      "label": "Mobility",
+      "categories": [
+        "mobility"
+      ]
+    },
+    {
+      "key": "mute",
+      "label": "Mute",
+      "categories": [
+        "control"
+      ]
+    },
+    {
+      "key": "objective_information",
+      "label": "Objective information",
+      "categories": [
+        "information",
+        "objectives"
+      ]
+    },
+    {
+      "key": "on_damage_trigger",
+      "label": "On damage trigger",
+      "categories": [
+        "triggers"
+      ]
+    },
+    {
+      "key": "outgoing_damage_amplification",
+      "label": "Outgoing damage amplification",
+      "categories": [
+        "buff",
+        "damage"
+      ]
+    },
+    {
+      "key": "outgoing_damage_reduction",
+      "label": "Outgoing damage reduction",
+      "categories": [
+        "defense",
+        "denial"
+      ]
+    },
+    {
+      "key": "petrify",
+      "label": "Petrification",
+      "categories": [
+        "control"
+      ]
+    },
+    {
+      "key": "physical_damage_immunity",
+      "label": "Physical damage immunity",
+      "categories": [
+        "defense",
+        "save"
+      ]
+    },
+    {
+      "key": "primary_attribute_change",
+      "label": "Primary attribute change",
+      "categories": [
+        "growth"
+      ]
+    },
+    {
+      "key": "proc_chance_reduction",
+      "label": "Proc chance reduction",
+      "categories": [
+        "defense",
+        "denial"
+      ]
+    },
+    {
+      "key": "projectile_slow",
+      "label": "Projectile slow",
+      "categories": [
+        "defense"
+      ]
+    },
+    {
+      "key": "protective_banish",
+      "label": "Protective banish",
+      "categories": [
+        "defense",
+        "save"
+      ]
+    },
+    {
+      "key": "reincarnation",
+      "label": "Reincarnation",
+      "categories": [
+        "defense",
+        "save"
+      ]
+    },
+    {
+      "key": "release",
+      "label": "Release",
+      "categories": [
+        "costs"
+      ]
+    },
+    {
+      "key": "repeated_attacks",
+      "label": "Repeated attacks",
+      "categories": [
+        "damage"
+      ]
+    },
+    {
+      "key": "repeated_hits",
+      "label": "Repeated hits",
+      "categories": [
+        "damage",
+        "delivery"
+      ]
+    },
+    {
+      "key": "resource_conversion",
+      "label": "Resource conversion",
+      "categories": [
+        "costs",
+        "utility"
+      ]
+    },
+    {
+      "key": "restoration_rate_amplification",
+      "label": "Restoration rate amplification",
+      "categories": [
+        "buff",
+        "sustain"
+      ]
+    },
+    {
+      "key": "root",
+      "label": "Root",
+      "categories": [
+        "control"
+      ]
+    },
+    {
+      "key": "self_armor",
+      "label": "Self armor",
+      "categories": [
+        "buff",
+        "defense"
+      ]
+    },
+    {
+      "key": "self_attack_damage",
+      "label": "Self attack damage",
+      "categories": [
+        "buff"
+      ]
+    },
+    {
+      "key": "self_attack_range",
+      "label": "Self attack range",
+      "categories": [
+        "buff"
+      ]
+    },
+    {
+      "key": "self_attack_speed",
+      "label": "Self attack speed",
+      "categories": [
+        "buff"
+      ]
+    },
+    {
+      "key": "self_damage",
+      "label": "Self damage",
+      "categories": [
+        "costs"
+      ]
+    },
+    {
+      "key": "self_heal",
+      "label": "Self heal",
+      "categories": [
+        "defense",
+        "sustain"
+      ]
+    },
+    {
+      "key": "self_health_regen",
+      "label": "Self health regen",
+      "categories": [
+        "buff",
+        "defense",
+        "sustain"
+      ]
+    },
+    {
+      "key": "self_lifesteal",
+      "label": "Self lifesteal",
+      "categories": [
+        "defense",
+        "sustain"
+      ]
+    },
+    {
+      "key": "self_mana_regen",
+      "label": "Self mana regeneration",
+      "categories": [
+        "buff",
+        "sustain"
+      ]
+    },
+    {
+      "key": "self_mana_restore",
+      "label": "Self mana restore",
+      "categories": [
+        "sustain"
+      ]
+    },
+    {
+      "key": "self_max_health",
+      "label": "Self maximum health",
+      "categories": [
+        "buff",
+        "defense"
+      ]
+    },
+    {
+      "key": "self_max_mana",
+      "label": "Self maximum mana",
+      "categories": [
+        "buff"
+      ]
+    },
+    {
+      "key": "self_movement_speed",
+      "label": "Self movement speed",
+      "categories": [
+        "buff",
+        "mobility"
+      ]
+    },
+    {
+      "key": "self_reposition",
+      "label": "Self reposition",
+      "categories": [
+        "mobility"
+      ]
+    },
+    {
+      "key": "setup",
+      "label": "Setup",
+      "categories": [
+        "costs"
+      ]
+    },
+    {
+      "key": "silence",
+      "label": "Silence",
+      "categories": [
+        "control"
+      ]
+    },
+    {
+      "key": "single_target",
+      "label": "Single target",
+      "categories": [
+        "delivery"
+      ]
+    },
+    {
+      "key": "skill_progression",
+      "label": "Skill progression",
+      "categories": [
+        "growth",
+        "utility"
+      ]
+    },
+    {
+      "key": "sleep",
+      "label": "Sleep",
+      "categories": [
+        "control"
+      ]
+    },
+    {
+      "key": "slow",
+      "label": "Slow",
+      "categories": [
+        "control",
+        "denial"
+      ]
+    },
+    {
+      "key": "slow_resistance",
+      "label": "Slow resistance",
+      "categories": [
+        "buff",
+        "defense"
+      ]
+    },
+    {
+      "key": "spell_amplification",
+      "label": "Spell amplification",
+      "categories": [
+        "buff",
+        "damage"
+      ]
+    },
+    {
+      "key": "spell_lifesteal",
+      "label": "Spell lifesteal",
+      "categories": [
+        "sustain"
+      ]
+    },
+    {
+      "key": "spell_reflection",
+      "label": "Spell reflection",
+      "categories": [
+        "defense",
+        "save"
+      ]
+    },
+    {
+      "key": "status_resistance",
+      "label": "Status resistance",
+      "categories": [
+        "buff",
+        "defense"
+      ]
+    },
+    {
+      "key": "stun",
+      "label": "Stun",
+      "categories": [
+        "control"
+      ]
+    },
+    {
+      "key": "summons",
+      "label": "Summons",
+      "categories": [
+        "units"
+      ]
+    },
+    {
+      "key": "target_health_scaling",
+      "label": "Target-health scaling",
+      "categories": [
+        "growth"
+      ]
+    },
+    {
+      "key": "taunt",
+      "label": "Taunt",
+      "categories": [
+        "control"
+      ]
+    },
+    {
+      "key": "terrain_block",
+      "label": "Terrain obstruction",
+      "categories": [
+        "control",
+        "delivery"
+      ]
+    },
+    {
+      "key": "trap",
+      "label": "Trap",
+      "categories": [
+        "delivery",
+        "triggers"
+      ]
+    },
+    {
+      "key": "true_strike",
+      "label": "True strike",
+      "categories": [
+        "damage",
+        "delivery"
+      ]
+    },
+    {
+      "key": "turn_rate_reduction",
+      "label": "Turn rate reduction",
+      "categories": [
+        "control",
+        "denial"
+      ]
+    },
+    {
+      "key": "untargetable",
+      "label": "Untargetable",
+      "categories": [
+        "defense"
+      ]
+    },
+    {
+      "key": "vision",
+      "label": "Vision",
+      "categories": [
+        "information"
+      ]
+    },
+    {
+      "key": "vision_denial",
+      "label": "Vision denial",
+      "categories": [
+        "denial",
+        "information"
+      ]
+    }
+  ]
+};

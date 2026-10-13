@@ -1,708 +1,213 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "bloodseeker_sanguivore",
+    "Name": "Sanguivore",
+    "behavior": [
+      "passive"
+    ],
+    "piercesDebuffImmunity": "yes",
+    "breakable": true,
+    "tags": [
+      "heal",
+      "self_heal"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:4:bloodseeker_bloodrage",
-      "heroId": "4",
-      "engineId": "bloodseeker_bloodrage",
-      "activationId": "activation:4:bloodseeker_bloodrage",
+      "id": "bloodseeker_bloodrage",
+      "Name": "Bloodrage",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "yes",
+      "damageType": "pure",
       "order": 0,
-      "owner": "npc_dota_hero_bloodseeker",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 0,
+      "cooldown": [
+        14,
+        12,
+        10,
+        8
+      ],
+      "tags": [
+        "buff",
+        "spell_amplification"
+      ]
     },
     {
-      "id": "ability:4:bloodseeker_blood_bath",
-      "heroId": "4",
-      "engineId": "bloodseeker_blood_bath",
-      "activationId": "activation:4:bloodseeker_blood_bath",
+      "id": "bloodseeker_blood_bath",
+      "Name": "Blood Rite",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "pure",
       "order": 1,
-      "owner": "npc_dota_hero_bloodseeker",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        90,
+        100,
+        110,
+        120
+      ],
+      "tags": [
+        "aoe",
+        "delayed_damage",
+        "disable",
+        "silence"
+      ]
     },
     {
-      "id": "ability:4:bloodseeker_thirst",
-      "heroId": "4",
-      "engineId": "bloodseeker_thirst",
-      "activationId": "activation:4:bloodseeker_thirst",
+      "id": "bloodseeker_thirst",
+      "Name": "Thirst",
+      "behavior": [
+        "passive"
+      ],
+      "piercesDebuffImmunity": "yes",
+      "breakable": true,
       "order": 2,
-      "owner": "npc_dota_hero_bloodseeker",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "buff",
+        "detection",
+        "escape",
+        "mobility",
+        "self_movement_speed",
+        "vision"
+      ]
     },
     {
-      "id": "ability:4:generic_hidden",
-      "heroId": "4",
-      "engineId": "generic_hidden",
-      "activationId": "activation:4:generic_hidden",
+      "id": "generic_hidden",
       "order": 3,
-      "owner": "npc_dota_hero_bloodseeker",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:4:bloodseeker_sanguivore",
-      "heroId": "4",
-      "engineId": "bloodseeker_sanguivore",
-      "activationId": "activation:4:bloodseeker_sanguivore",
-      "order": 4,
-      "owner": "npc_dota_hero_bloodseeker",
-      "state": "known"
-    },
-    {
-      "id": "ability:4:bloodseeker_rupture",
-      "heroId": "4",
-      "engineId": "bloodseeker_rupture",
-      "activationId": "activation:4:bloodseeker_rupture",
+      "id": "bloodseeker_rupture",
+      "Name": "Rupture",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "yes",
+      "damageType": "pure",
       "order": 5,
-      "owner": "npc_dota_hero_bloodseeker",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        125,
+        175,
+        225
+      ],
+      "cooldown": [
+        75,
+        70,
+        65
+      ],
+      "tags": [
+        "bkb_pierce",
+        "immediate_damage"
+      ]
     },
     {
-      "id": "ability:4:special_bonus_hp_200",
-      "heroId": "4",
-      "engineId": "special_bonus_hp_200",
-      "activationId": "activation:4:special_bonus_hp_200",
-      "order": 6,
-      "owner": "npc_dota_hero_bloodseeker",
-      "state": "known"
-    },
-    {
-      "id": "ability:4:special_bonus_unique_bloodseeker_5",
-      "heroId": "4",
-      "engineId": "special_bonus_unique_bloodseeker_5",
-      "activationId": "activation:4:special_bonus_unique_bloodseeker_5",
-      "order": 7,
-      "owner": "npc_dota_hero_bloodseeker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:4:special_bonus_unique_bloodseeker",
-      "heroId": "4",
-      "engineId": "special_bonus_unique_bloodseeker",
-      "activationId": "activation:4:special_bonus_unique_bloodseeker",
-      "order": 8,
-      "owner": "npc_dota_hero_bloodseeker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:4:special_bonus_unique_bloodseeker_2",
-      "heroId": "4",
-      "engineId": "special_bonus_unique_bloodseeker_2",
-      "activationId": "activation:4:special_bonus_unique_bloodseeker_2",
-      "order": 9,
-      "owner": "npc_dota_hero_bloodseeker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:4:special_bonus_unique_bloodseeker_3",
-      "heroId": "4",
-      "engineId": "special_bonus_unique_bloodseeker_3",
-      "activationId": "activation:4:special_bonus_unique_bloodseeker_3",
-      "order": 10,
-      "owner": "npc_dota_hero_bloodseeker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:4:special_bonus_agility_15",
-      "heroId": "4",
-      "engineId": "special_bonus_agility_15",
-      "activationId": "activation:4:special_bonus_agility_15",
-      "order": 11,
-      "owner": "npc_dota_hero_bloodseeker",
-      "state": "known"
-    },
-    {
-      "id": "ability:4:special_bonus_unique_bloodseeker_7",
-      "heroId": "4",
-      "engineId": "special_bonus_unique_bloodseeker_7",
-      "activationId": "activation:4:special_bonus_unique_bloodseeker_7",
-      "order": 12,
-      "owner": "npc_dota_hero_bloodseeker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:4:special_bonus_unique_bloodseeker_4",
-      "heroId": "4",
-      "engineId": "special_bonus_unique_bloodseeker_4",
-      "activationId": "activation:4:special_bonus_unique_bloodseeker_4",
-      "order": 13,
-      "owner": "npc_dota_hero_bloodseeker",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:4:special_bonus_attributes",
-      "heroId": "4",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:4:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_bloodseeker",
-      "state": "known"
-    },
-    {
-      "id": "ability:4:bloodseeker_blood_mist",
-      "heroId": "4",
-      "engineId": "bloodseeker_blood_mist",
-      "activationId": "activation:4:bloodseeker_blood_mist",
+      "id": "bloodseeker_blood_mist",
+      "Name": "Blood Mist",
+      "behavior": [
+        "no-target",
+        "toggle"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 15,
-      "owner": "npc_dota_hero_bloodseeker",
-      "state": "known"
+      "type": "toggle",
+      "manaCost": 0,
+      "cooldown": 3,
+      "tags": [
+        "slow"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:4:bloodseeker_bloodrage",
-      "heroId": "4",
-      "abilityIds": [
-        "ability:4:bloodseeker_bloodrage"
+      "id": "special_bonus_hp_200",
+      "Name": "+200 Health",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:4:bloodseeker_bloodrage:manaCost",
-        "ownerId": "activation:4:bloodseeker_bloodrage",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:4:bloodseeker_bloodrage:cooldown",
-        "ownerId": "activation:4:bloodseeker_bloodrage",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          14,
-          12,
-          10,
-          8
-        ]
-      },
-      "charges": {
-        "id": "value:activation:4:bloodseeker_bloodrage:charges",
-        "ownerId": "activation:4:bloodseeker_bloodrage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:4:bloodseeker_bloodrage:manaCost",
-        "value:activation:4:bloodseeker_bloodrage:cooldown",
-        "value:activation:4:bloodseeker_bloodrage:charges"
+      "tags": [
+        "buff",
+        "self_max_health"
       ]
     },
     {
-      "id": "activation:4:bloodseeker_blood_bath",
-      "heroId": "4",
-      "abilityIds": [
-        "ability:4:bloodseeker_blood_bath"
-      ],
-      "manaCost": {
-        "id": "value:activation:4:bloodseeker_blood_bath:manaCost",
-        "ownerId": "activation:4:bloodseeker_blood_bath",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          90,
-          100,
-          110,
-          120
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:4:bloodseeker_blood_bath:cooldown",
-        "ownerId": "activation:4:bloodseeker_blood_bath",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "15 14 13 12"
-        }
-      },
-      "charges": {
-        "id": "value:activation:4:bloodseeker_blood_bath:charges",
-        "ownerId": "activation:4:bloodseeker_blood_bath",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:4:bloodseeker_blood_bath:manaCost",
-        "value:activation:4:bloodseeker_blood_bath:cooldown",
-        "value:activation:4:bloodseeker_blood_bath:charges"
+      "id": "special_bonus_unique_bloodseeker_5",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_bloodseeker",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_bloodseeker_2",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:4:bloodseeker_thirst",
-      "heroId": "4",
-      "abilityIds": [
-        "ability:4:bloodseeker_thirst"
-      ],
-      "manaCost": {
-        "id": "value:activation:4:bloodseeker_thirst:manaCost",
-        "ownerId": "activation:4:bloodseeker_thirst",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0",
-          "special_bonus_facet_bloodseeker_bloodrush": "50"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:4:bloodseeker_thirst:cooldown",
-        "ownerId": "activation:4:bloodseeker_thirst",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:4:bloodseeker_thirst:charges",
-        "ownerId": "activation:4:bloodseeker_thirst",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:4:bloodseeker_thirst:manaCost",
-        "value:activation:4:bloodseeker_thirst:cooldown",
-        "value:activation:4:bloodseeker_thirst:charges"
+      "id": "special_bonus_unique_bloodseeker_3",
+      "tags": [
+        "buff",
+        "cast_range"
       ]
     },
     {
-      "id": "activation:4:generic_hidden",
-      "heroId": "4",
-      "abilityIds": [
-        "ability:4:generic_hidden"
+      "id": "special_bonus_agility_15",
+      "Name": "+15 Agility",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:4:generic_hidden:manaCost",
-        "ownerId": "activation:4:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:4:generic_hidden:cooldown",
-        "ownerId": "activation:4:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:4:generic_hidden:charges",
-        "ownerId": "activation:4:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:4:generic_hidden:manaCost",
-        "value:activation:4:generic_hidden:cooldown",
-        "value:activation:4:generic_hidden:charges"
+      "tags": [
+        "attribute_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:4:bloodseeker_sanguivore",
-      "heroId": "4",
-      "abilityIds": [
-        "ability:4:bloodseeker_sanguivore"
-      ],
-      "manaCost": {
-        "id": "value:activation:4:bloodseeker_sanguivore:manaCost",
-        "ownerId": "activation:4:bloodseeker_sanguivore",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:4:bloodseeker_sanguivore:cooldown",
-        "ownerId": "activation:4:bloodseeker_sanguivore",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:4:bloodseeker_sanguivore:charges",
-        "ownerId": "activation:4:bloodseeker_sanguivore",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:4:bloodseeker_sanguivore:manaCost",
-        "value:activation:4:bloodseeker_sanguivore:cooldown",
-        "value:activation:4:bloodseeker_sanguivore:charges"
+      "id": "special_bonus_unique_bloodseeker_7",
+      "tags": [
+        "duration_extension",
+        "silence"
       ]
     },
     {
-      "id": "activation:4:bloodseeker_rupture",
-      "heroId": "4",
-      "abilityIds": [
-        "ability:4:bloodseeker_rupture"
-      ],
-      "manaCost": {
-        "id": "value:activation:4:bloodseeker_rupture:manaCost",
-        "ownerId": "activation:4:bloodseeker_rupture",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          125,
-          175,
-          225
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:4:bloodseeker_rupture:cooldown",
-        "ownerId": "activation:4:bloodseeker_rupture",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          75,
-          70,
-          65
-        ]
-      },
-      "charges": {
-        "id": "value:activation:4:bloodseeker_rupture:charges",
-        "ownerId": "activation:4:bloodseeker_rupture",
-        "field": "charges",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0",
-          "special_bonus_scepter": "+2"
-        }
-      },
-      "valueIds": [
-        "value:activation:4:bloodseeker_rupture:manaCost",
-        "value:activation:4:bloodseeker_rupture:cooldown",
-        "value:activation:4:bloodseeker_rupture:charges"
-      ]
-    },
-    {
-      "id": "activation:4:special_bonus_hp_200",
-      "heroId": "4",
-      "abilityIds": [
-        "ability:4:special_bonus_hp_200"
-      ],
-      "manaCost": {
-        "id": "value:activation:4:special_bonus_hp_200:manaCost",
-        "ownerId": "activation:4:special_bonus_hp_200",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:4:special_bonus_hp_200:cooldown",
-        "ownerId": "activation:4:special_bonus_hp_200",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:4:special_bonus_hp_200:charges",
-        "ownerId": "activation:4:special_bonus_hp_200",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:4:special_bonus_hp_200:manaCost",
-        "value:activation:4:special_bonus_hp_200:cooldown",
-        "value:activation:4:special_bonus_hp_200:charges"
-      ]
-    },
-    {
-      "id": "activation:4:special_bonus_unique_bloodseeker_5",
-      "heroId": "4",
-      "abilityIds": [
-        "ability:4:special_bonus_unique_bloodseeker_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker_5:manaCost",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker_5:cooldown",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker_5:charges",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:4:special_bonus_unique_bloodseeker_5:manaCost",
-        "value:activation:4:special_bonus_unique_bloodseeker_5:cooldown",
-        "value:activation:4:special_bonus_unique_bloodseeker_5:charges"
-      ]
-    },
-    {
-      "id": "activation:4:special_bonus_unique_bloodseeker",
-      "heroId": "4",
-      "abilityIds": [
-        "ability:4:special_bonus_unique_bloodseeker"
-      ],
-      "manaCost": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker:manaCost",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker:cooldown",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker:charges",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:4:special_bonus_unique_bloodseeker:manaCost",
-        "value:activation:4:special_bonus_unique_bloodseeker:cooldown",
-        "value:activation:4:special_bonus_unique_bloodseeker:charges"
-      ]
-    },
-    {
-      "id": "activation:4:special_bonus_unique_bloodseeker_2",
-      "heroId": "4",
-      "abilityIds": [
-        "ability:4:special_bonus_unique_bloodseeker_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker_2:manaCost",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker_2:cooldown",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker_2:charges",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:4:special_bonus_unique_bloodseeker_2:manaCost",
-        "value:activation:4:special_bonus_unique_bloodseeker_2:cooldown",
-        "value:activation:4:special_bonus_unique_bloodseeker_2:charges"
-      ]
-    },
-    {
-      "id": "activation:4:special_bonus_unique_bloodseeker_3",
-      "heroId": "4",
-      "abilityIds": [
-        "ability:4:special_bonus_unique_bloodseeker_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker_3:manaCost",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker_3:cooldown",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker_3:charges",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:4:special_bonus_unique_bloodseeker_3:manaCost",
-        "value:activation:4:special_bonus_unique_bloodseeker_3:cooldown",
-        "value:activation:4:special_bonus_unique_bloodseeker_3:charges"
-      ]
-    },
-    {
-      "id": "activation:4:special_bonus_agility_15",
-      "heroId": "4",
-      "abilityIds": [
-        "ability:4:special_bonus_agility_15"
-      ],
-      "manaCost": {
-        "id": "value:activation:4:special_bonus_agility_15:manaCost",
-        "ownerId": "activation:4:special_bonus_agility_15",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:4:special_bonus_agility_15:cooldown",
-        "ownerId": "activation:4:special_bonus_agility_15",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:4:special_bonus_agility_15:charges",
-        "ownerId": "activation:4:special_bonus_agility_15",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:4:special_bonus_agility_15:manaCost",
-        "value:activation:4:special_bonus_agility_15:cooldown",
-        "value:activation:4:special_bonus_agility_15:charges"
-      ]
-    },
-    {
-      "id": "activation:4:special_bonus_unique_bloodseeker_7",
-      "heroId": "4",
-      "abilityIds": [
-        "ability:4:special_bonus_unique_bloodseeker_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker_7:manaCost",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker_7:cooldown",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker_7:charges",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:4:special_bonus_unique_bloodseeker_7:manaCost",
-        "value:activation:4:special_bonus_unique_bloodseeker_7:cooldown",
-        "value:activation:4:special_bonus_unique_bloodseeker_7:charges"
-      ]
-    },
-    {
-      "id": "activation:4:special_bonus_unique_bloodseeker_4",
-      "heroId": "4",
-      "abilityIds": [
-        "ability:4:special_bonus_unique_bloodseeker_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker_4:manaCost",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker_4:cooldown",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:4:special_bonus_unique_bloodseeker_4:charges",
-        "ownerId": "activation:4:special_bonus_unique_bloodseeker_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:4:special_bonus_unique_bloodseeker_4:manaCost",
-        "value:activation:4:special_bonus_unique_bloodseeker_4:cooldown",
-        "value:activation:4:special_bonus_unique_bloodseeker_4:charges"
-      ]
-    },
-    {
-      "id": "activation:4:special_bonus_attributes",
-      "heroId": "4",
-      "abilityIds": [
-        "ability:4:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:4:special_bonus_attributes:manaCost",
-        "ownerId": "activation:4:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:4:special_bonus_attributes:cooldown",
-        "ownerId": "activation:4:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:4:special_bonus_attributes:charges",
-        "ownerId": "activation:4:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:4:special_bonus_attributes:manaCost",
-        "value:activation:4:special_bonus_attributes:cooldown",
-        "value:activation:4:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:4:bloodseeker_blood_mist",
-      "heroId": "4",
-      "abilityIds": [
-        "ability:4:bloodseeker_blood_mist"
-      ],
-      "manaCost": {
-        "id": "value:activation:4:bloodseeker_blood_mist:manaCost",
-        "ownerId": "activation:4:bloodseeker_blood_mist",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:4:bloodseeker_blood_mist:cooldown",
-        "ownerId": "activation:4:bloodseeker_blood_mist",
-        "field": "cooldown",
-        "state": "known",
-        "value": 3
-      },
-      "charges": {
-        "id": "value:activation:4:bloodseeker_blood_mist:charges",
-        "ownerId": "activation:4:bloodseeker_blood_mist",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:4:bloodseeker_blood_mist:manaCost",
-        "value:activation:4:bloodseeker_blood_mist:cooldown",
-        "value:activation:4:bloodseeker_blood_mist:charges"
+      "id": "special_bonus_unique_bloodseeker_4",
+      "tags": [
+        "buff",
+        "self_movement_speed"
       ]
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

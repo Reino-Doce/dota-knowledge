@@ -1,868 +1,240 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "lycan_apex_predator",
+    "Name": "Apex Predator",
+    "behavior": [
+      "passive"
+    ],
+    "breakable": true,
+    "tags": [
+      "creep_damage"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:77:lycan_summon_wolves",
-      "heroId": "77",
-      "engineId": "lycan_summon_wolves",
-      "activationId": "activation:77:lycan_summon_wolves",
+      "id": "lycan_summon_wolves",
+      "Name": "Summon Wolves",
+      "behavior": [
+        "no-target"
+      ],
       "order": 0,
-      "owner": "npc_dota_hero_lycan",
-      "state": "known"
+      "type": "self-target",
+      "cooldown": 30,
+      "tags": [
+        "summons"
+      ]
     },
     {
-      "id": "ability:77:lycan_howl",
-      "heroId": "77",
-      "engineId": "lycan_howl",
-      "activationId": "activation:77:lycan_howl",
+      "id": "lycan_howl",
+      "Name": "Howl",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
       "order": 1,
-      "owner": "npc_dota_hero_lycan",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 40,
+      "cooldown": [
+        22,
+        20,
+        18,
+        16
+      ],
+      "tags": [
+        "armor_reduction",
+        "global_delivery",
+        "outgoing_damage_reduction"
+      ]
     },
     {
-      "id": "ability:77:lycan_feral_impulse",
-      "heroId": "77",
-      "engineId": "lycan_feral_impulse",
-      "activationId": "activation:77:lycan_feral_impulse",
+      "id": "lycan_feral_impulse",
+      "Name": "Feral Impulse",
+      "behavior": [
+        "passive"
+      ],
+      "breakable": true,
       "order": 2,
-      "owner": "npc_dota_hero_lycan",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "buff",
+        "health_regen",
+        "self_health_regen"
+      ]
     },
     {
-      "id": "ability:77:lycan_wolf_bite",
-      "heroId": "77",
-      "engineId": "lycan_wolf_bite",
-      "activationId": "activation:77:lycan_wolf_bite",
+      "id": "lycan_wolf_bite",
+      "Name": "Wolf Bite",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "allied-units"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "allies-only",
       "order": 3,
-      "owner": "npc_dota_hero_lycan",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero"
+      ],
+      "manaCost": 150,
+      "tags": [
+        "buff",
+        "lifesteal",
+        "self_lifesteal"
+      ]
     },
     {
-      "id": "ability:77:lycan_apex_predator",
-      "heroId": "77",
-      "engineId": "lycan_apex_predator",
-      "activationId": "activation:77:lycan_apex_predator",
-      "order": 4,
-      "owner": "npc_dota_hero_lycan",
-      "state": "known"
-    },
-    {
-      "id": "ability:77:lycan_shapeshift",
-      "heroId": "77",
-      "engineId": "lycan_shapeshift",
-      "activationId": "activation:77:lycan_shapeshift",
+      "id": "lycan_shapeshift",
+      "Name": "Shapeshift",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
       "order": 5,
-      "owner": "npc_dota_hero_lycan",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 100,
+      "tags": [
+        "attack_damage_scaling",
+        "escape",
+        "mobility",
+        "vision"
+      ]
     },
     {
-      "id": "ability:77:special_bonus_unique_lycan_howl_armor",
-      "heroId": "77",
-      "engineId": "special_bonus_unique_lycan_howl_armor",
-      "activationId": "activation:77:special_bonus_unique_lycan_howl_armor",
-      "order": 6,
-      "owner": "npc_dota_hero_lycan",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:77:special_bonus_unique_lycan_3",
-      "heroId": "77",
-      "engineId": "special_bonus_unique_lycan_3",
-      "activationId": "activation:77:special_bonus_unique_lycan_3",
-      "order": 7,
-      "owner": "npc_dota_hero_lycan",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:77:special_bonus_unique_lycan_7",
-      "heroId": "77",
-      "engineId": "special_bonus_unique_lycan_7",
-      "activationId": "activation:77:special_bonus_unique_lycan_7",
-      "order": 8,
-      "owner": "npc_dota_hero_lycan",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:77:special_bonus_unique_lycan_8",
-      "heroId": "77",
-      "engineId": "special_bonus_unique_lycan_8",
-      "activationId": "activation:77:special_bonus_unique_lycan_8",
-      "order": 9,
-      "owner": "npc_dota_hero_lycan",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:77:special_bonus_unique_lycan_1",
-      "heroId": "77",
-      "engineId": "special_bonus_unique_lycan_1",
-      "activationId": "activation:77:special_bonus_unique_lycan_1",
-      "order": 10,
-      "owner": "npc_dota_hero_lycan",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:77:special_bonus_unique_lycan_4",
-      "heroId": "77",
-      "engineId": "special_bonus_unique_lycan_4",
-      "activationId": "activation:77:special_bonus_unique_lycan_4",
-      "order": 11,
-      "owner": "npc_dota_hero_lycan",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:77:special_bonus_unique_lycan_5",
-      "heroId": "77",
-      "engineId": "special_bonus_unique_lycan_5",
-      "activationId": "activation:77:special_bonus_unique_lycan_5",
-      "order": 12,
-      "owner": "npc_dota_hero_lycan",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:77:special_bonus_unique_lycan_2",
-      "heroId": "77",
-      "engineId": "special_bonus_unique_lycan_2",
-      "activationId": "activation:77:special_bonus_unique_lycan_2",
-      "order": 13,
-      "owner": "npc_dota_hero_lycan",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:77:special_bonus_attributes",
-      "heroId": "77",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:77:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_lycan",
-      "state": "known"
-    },
-    {
-      "id": "ability:77:lycan_summon_wolves_critical_strike",
-      "heroId": "77",
-      "engineId": "lycan_summon_wolves_critical_strike",
-      "activationId": "activation:77:lycan_summon_wolves_critical_strike",
+      "id": "lycan_summon_wolves_critical_strike",
+      "Name": "Cripple",
+      "behavior": [
+        "passive"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "breakable": true,
       "order": 15,
-      "owner": "npc_dota_hero_lycan",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "damage_over_time"
+      ]
     },
     {
-      "id": "ability:77:lycan_summon_wolves_invisibility",
-      "heroId": "77",
-      "engineId": "lycan_summon_wolves_invisibility",
-      "activationId": "activation:77:lycan_summon_wolves_invisibility",
+      "id": "lycan_summon_wolves_invisibility",
+      "Name": "Invisibility",
+      "behavior": [
+        "passive"
+      ],
+      "dispellable": "no",
       "order": 16,
-      "owner": "npc_dota_hero_lycan",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "escape",
+        "invisibility"
+      ]
     },
     {
-      "id": "ability:77:lycan_summon_wolves_bash",
-      "heroId": "77",
-      "engineId": "lycan_summon_wolves_bash",
-      "activationId": "activation:77:lycan_summon_wolves_bash",
+      "id": "lycan_summon_wolves_bash",
+      "behavior": [
+        "passive"
+      ],
+      "dispellable": "no",
+      "damageType": "physical",
+      "breakable": true,
       "order": 17,
-      "owner": "npc_dota_hero_lycan",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "attack_stun",
+        "disable",
+        "stun"
+      ]
     },
     {
-      "id": "ability:77:lycan_summon_wolves_hamstring",
-      "heroId": "77",
-      "engineId": "lycan_summon_wolves_hamstring",
-      "activationId": "activation:77:lycan_summon_wolves_hamstring",
+      "id": "lycan_summon_wolves_hamstring",
+      "Name": "Hamstring",
+      "behavior": [
+        "auto-cast",
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "piercesDebuffImmunity": "yes",
+      "damageType": "physical",
+      "breakable": true,
       "order": 18,
-      "owner": "npc_dota_hero_lycan",
-      "state": "known"
+      "type": "toggle",
+      "cooldown": 8,
+      "tags": [
+        "bkb_pierce",
+        "disable",
+        "root"
+      ]
     },
     {
-      "id": "ability:77:lycan_summon_wolves_hightail",
-      "heroId": "77",
-      "engineId": "lycan_summon_wolves_hightail",
-      "activationId": "activation:77:lycan_summon_wolves_hightail",
+      "id": "lycan_summon_wolves_hightail",
+      "Name": "Hightail",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
       "order": 19,
-      "owner": "npc_dota_hero_lycan",
-      "state": "known"
+      "type": "self-target",
+      "cooldown": 50,
+      "tags": [
+        "buff",
+        "evasion",
+        "self_attack_speed",
+        "self_movement_speed"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:77:lycan_summon_wolves",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:lycan_summon_wolves"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:lycan_summon_wolves:manaCost",
-        "ownerId": "activation:77:lycan_summon_wolves",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "115 120 125 130"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:77:lycan_summon_wolves:cooldown",
-        "ownerId": "activation:77:lycan_summon_wolves",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          30,
-          30,
-          30,
-          30
-        ]
-      },
-      "charges": {
-        "id": "value:activation:77:lycan_summon_wolves:charges",
-        "ownerId": "activation:77:lycan_summon_wolves",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:lycan_summon_wolves:manaCost",
-        "value:activation:77:lycan_summon_wolves:cooldown",
-        "value:activation:77:lycan_summon_wolves:charges"
+      "id": "special_bonus_unique_lycan_howl_armor",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_lycan_3",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_lycan_7",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_lycan_8",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:77:lycan_howl",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:lycan_howl"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:lycan_howl:manaCost",
-        "ownerId": "activation:77:lycan_howl",
-        "field": "manaCost",
-        "state": "known",
-        "value": 40
-      },
-      "cooldown": {
-        "id": "value:activation:77:lycan_howl:cooldown",
-        "ownerId": "activation:77:lycan_howl",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          22,
-          20,
-          18,
-          16
-        ]
-      },
-      "charges": {
-        "id": "value:activation:77:lycan_howl:charges",
-        "ownerId": "activation:77:lycan_howl",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:lycan_howl:manaCost",
-        "value:activation:77:lycan_howl:cooldown",
-        "value:activation:77:lycan_howl:charges"
+      "id": "special_bonus_unique_lycan_1",
+      "tags": [
+        "duration_extension"
       ]
     },
     {
-      "id": "activation:77:lycan_feral_impulse",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:lycan_feral_impulse"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:lycan_feral_impulse:manaCost",
-        "ownerId": "activation:77:lycan_feral_impulse",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:77:lycan_feral_impulse:cooldown",
-        "ownerId": "activation:77:lycan_feral_impulse",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:77:lycan_feral_impulse:charges",
-        "ownerId": "activation:77:lycan_feral_impulse",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:lycan_feral_impulse:manaCost",
-        "value:activation:77:lycan_feral_impulse:cooldown",
-        "value:activation:77:lycan_feral_impulse:charges"
-      ]
+      "id": "special_bonus_unique_lycan_4",
+      "tags": []
     },
     {
-      "id": "activation:77:lycan_wolf_bite",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:lycan_wolf_bite"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:lycan_wolf_bite:manaCost",
-        "ownerId": "activation:77:lycan_wolf_bite",
-        "field": "manaCost",
-        "state": "known",
-        "value": 150
-      },
-      "cooldown": {
-        "id": "value:activation:77:lycan_wolf_bite:cooldown",
-        "ownerId": "activation:77:lycan_wolf_bite",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "105 95 85",
-          "special_bonus_unique_lycan_8": "-15"
-        }
-      },
-      "charges": {
-        "id": "value:activation:77:lycan_wolf_bite:charges",
-        "ownerId": "activation:77:lycan_wolf_bite",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:lycan_wolf_bite:manaCost",
-        "value:activation:77:lycan_wolf_bite:cooldown",
-        "value:activation:77:lycan_wolf_bite:charges"
-      ]
+      "id": "special_bonus_unique_lycan_5",
+      "Name": "Howl Reduces Total Attack Damage",
+      "tags": []
     },
     {
-      "id": "activation:77:lycan_apex_predator",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:lycan_apex_predator"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:lycan_apex_predator:manaCost",
-        "ownerId": "activation:77:lycan_apex_predator",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:77:lycan_apex_predator:cooldown",
-        "ownerId": "activation:77:lycan_apex_predator",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:77:lycan_apex_predator:charges",
-        "ownerId": "activation:77:lycan_apex_predator",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:lycan_apex_predator:manaCost",
-        "value:activation:77:lycan_apex_predator:cooldown",
-        "value:activation:77:lycan_apex_predator:charges"
-      ]
-    },
-    {
-      "id": "activation:77:lycan_shapeshift",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:lycan_shapeshift"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:lycan_shapeshift:manaCost",
-        "ownerId": "activation:77:lycan_shapeshift",
-        "field": "manaCost",
-        "state": "known",
-        "value": 100
-      },
-      "cooldown": {
-        "id": "value:activation:77:lycan_shapeshift:cooldown",
-        "ownerId": "activation:77:lycan_shapeshift",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "105 95 85",
-          "special_bonus_unique_lycan_8": "-15"
-        }
-      },
-      "charges": {
-        "id": "value:activation:77:lycan_shapeshift:charges",
-        "ownerId": "activation:77:lycan_shapeshift",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:lycan_shapeshift:manaCost",
-        "value:activation:77:lycan_shapeshift:cooldown",
-        "value:activation:77:lycan_shapeshift:charges"
-      ]
-    },
-    {
-      "id": "activation:77:special_bonus_unique_lycan_howl_armor",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:special_bonus_unique_lycan_howl_armor"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:special_bonus_unique_lycan_howl_armor:manaCost",
-        "ownerId": "activation:77:special_bonus_unique_lycan_howl_armor",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:77:special_bonus_unique_lycan_howl_armor:cooldown",
-        "ownerId": "activation:77:special_bonus_unique_lycan_howl_armor",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:77:special_bonus_unique_lycan_howl_armor:charges",
-        "ownerId": "activation:77:special_bonus_unique_lycan_howl_armor",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:special_bonus_unique_lycan_howl_armor:manaCost",
-        "value:activation:77:special_bonus_unique_lycan_howl_armor:cooldown",
-        "value:activation:77:special_bonus_unique_lycan_howl_armor:charges"
-      ]
-    },
-    {
-      "id": "activation:77:special_bonus_unique_lycan_3",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:special_bonus_unique_lycan_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:special_bonus_unique_lycan_3:manaCost",
-        "ownerId": "activation:77:special_bonus_unique_lycan_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:77:special_bonus_unique_lycan_3:cooldown",
-        "ownerId": "activation:77:special_bonus_unique_lycan_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:77:special_bonus_unique_lycan_3:charges",
-        "ownerId": "activation:77:special_bonus_unique_lycan_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:special_bonus_unique_lycan_3:manaCost",
-        "value:activation:77:special_bonus_unique_lycan_3:cooldown",
-        "value:activation:77:special_bonus_unique_lycan_3:charges"
-      ]
-    },
-    {
-      "id": "activation:77:special_bonus_unique_lycan_7",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:special_bonus_unique_lycan_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:special_bonus_unique_lycan_7:manaCost",
-        "ownerId": "activation:77:special_bonus_unique_lycan_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:77:special_bonus_unique_lycan_7:cooldown",
-        "ownerId": "activation:77:special_bonus_unique_lycan_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:77:special_bonus_unique_lycan_7:charges",
-        "ownerId": "activation:77:special_bonus_unique_lycan_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:special_bonus_unique_lycan_7:manaCost",
-        "value:activation:77:special_bonus_unique_lycan_7:cooldown",
-        "value:activation:77:special_bonus_unique_lycan_7:charges"
-      ]
-    },
-    {
-      "id": "activation:77:special_bonus_unique_lycan_8",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:special_bonus_unique_lycan_8"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:special_bonus_unique_lycan_8:manaCost",
-        "ownerId": "activation:77:special_bonus_unique_lycan_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:77:special_bonus_unique_lycan_8:cooldown",
-        "ownerId": "activation:77:special_bonus_unique_lycan_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:77:special_bonus_unique_lycan_8:charges",
-        "ownerId": "activation:77:special_bonus_unique_lycan_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:special_bonus_unique_lycan_8:manaCost",
-        "value:activation:77:special_bonus_unique_lycan_8:cooldown",
-        "value:activation:77:special_bonus_unique_lycan_8:charges"
-      ]
-    },
-    {
-      "id": "activation:77:special_bonus_unique_lycan_1",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:special_bonus_unique_lycan_1"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:special_bonus_unique_lycan_1:manaCost",
-        "ownerId": "activation:77:special_bonus_unique_lycan_1",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:77:special_bonus_unique_lycan_1:cooldown",
-        "ownerId": "activation:77:special_bonus_unique_lycan_1",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:77:special_bonus_unique_lycan_1:charges",
-        "ownerId": "activation:77:special_bonus_unique_lycan_1",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:special_bonus_unique_lycan_1:manaCost",
-        "value:activation:77:special_bonus_unique_lycan_1:cooldown",
-        "value:activation:77:special_bonus_unique_lycan_1:charges"
-      ]
-    },
-    {
-      "id": "activation:77:special_bonus_unique_lycan_4",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:special_bonus_unique_lycan_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:special_bonus_unique_lycan_4:manaCost",
-        "ownerId": "activation:77:special_bonus_unique_lycan_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:77:special_bonus_unique_lycan_4:cooldown",
-        "ownerId": "activation:77:special_bonus_unique_lycan_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:77:special_bonus_unique_lycan_4:charges",
-        "ownerId": "activation:77:special_bonus_unique_lycan_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:special_bonus_unique_lycan_4:manaCost",
-        "value:activation:77:special_bonus_unique_lycan_4:cooldown",
-        "value:activation:77:special_bonus_unique_lycan_4:charges"
-      ]
-    },
-    {
-      "id": "activation:77:special_bonus_unique_lycan_5",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:special_bonus_unique_lycan_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:special_bonus_unique_lycan_5:manaCost",
-        "ownerId": "activation:77:special_bonus_unique_lycan_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:77:special_bonus_unique_lycan_5:cooldown",
-        "ownerId": "activation:77:special_bonus_unique_lycan_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:77:special_bonus_unique_lycan_5:charges",
-        "ownerId": "activation:77:special_bonus_unique_lycan_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:special_bonus_unique_lycan_5:manaCost",
-        "value:activation:77:special_bonus_unique_lycan_5:cooldown",
-        "value:activation:77:special_bonus_unique_lycan_5:charges"
-      ]
-    },
-    {
-      "id": "activation:77:special_bonus_unique_lycan_2",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:special_bonus_unique_lycan_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:special_bonus_unique_lycan_2:manaCost",
-        "ownerId": "activation:77:special_bonus_unique_lycan_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:77:special_bonus_unique_lycan_2:cooldown",
-        "ownerId": "activation:77:special_bonus_unique_lycan_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:77:special_bonus_unique_lycan_2:charges",
-        "ownerId": "activation:77:special_bonus_unique_lycan_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:special_bonus_unique_lycan_2:manaCost",
-        "value:activation:77:special_bonus_unique_lycan_2:cooldown",
-        "value:activation:77:special_bonus_unique_lycan_2:charges"
-      ]
-    },
-    {
-      "id": "activation:77:special_bonus_attributes",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:special_bonus_attributes:manaCost",
-        "ownerId": "activation:77:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:77:special_bonus_attributes:cooldown",
-        "ownerId": "activation:77:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:77:special_bonus_attributes:charges",
-        "ownerId": "activation:77:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:special_bonus_attributes:manaCost",
-        "value:activation:77:special_bonus_attributes:cooldown",
-        "value:activation:77:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:77:lycan_summon_wolves_critical_strike",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:lycan_summon_wolves_critical_strike"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:lycan_summon_wolves_critical_strike:manaCost",
-        "ownerId": "activation:77:lycan_summon_wolves_critical_strike",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:77:lycan_summon_wolves_critical_strike:cooldown",
-        "ownerId": "activation:77:lycan_summon_wolves_critical_strike",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:77:lycan_summon_wolves_critical_strike:charges",
-        "ownerId": "activation:77:lycan_summon_wolves_critical_strike",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:lycan_summon_wolves_critical_strike:manaCost",
-        "value:activation:77:lycan_summon_wolves_critical_strike:cooldown",
-        "value:activation:77:lycan_summon_wolves_critical_strike:charges"
-      ]
-    },
-    {
-      "id": "activation:77:lycan_summon_wolves_invisibility",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:lycan_summon_wolves_invisibility"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:lycan_summon_wolves_invisibility:manaCost",
-        "ownerId": "activation:77:lycan_summon_wolves_invisibility",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:77:lycan_summon_wolves_invisibility:cooldown",
-        "ownerId": "activation:77:lycan_summon_wolves_invisibility",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:77:lycan_summon_wolves_invisibility:charges",
-        "ownerId": "activation:77:lycan_summon_wolves_invisibility",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:lycan_summon_wolves_invisibility:manaCost",
-        "value:activation:77:lycan_summon_wolves_invisibility:cooldown",
-        "value:activation:77:lycan_summon_wolves_invisibility:charges"
-      ]
-    },
-    {
-      "id": "activation:77:lycan_summon_wolves_bash",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:lycan_summon_wolves_bash"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:lycan_summon_wolves_bash:manaCost",
-        "ownerId": "activation:77:lycan_summon_wolves_bash",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:77:lycan_summon_wolves_bash:cooldown",
-        "ownerId": "activation:77:lycan_summon_wolves_bash",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:77:lycan_summon_wolves_bash:charges",
-        "ownerId": "activation:77:lycan_summon_wolves_bash",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:lycan_summon_wolves_bash:manaCost",
-        "value:activation:77:lycan_summon_wolves_bash:cooldown",
-        "value:activation:77:lycan_summon_wolves_bash:charges"
-      ]
-    },
-    {
-      "id": "activation:77:lycan_summon_wolves_hamstring",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:lycan_summon_wolves_hamstring"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:lycan_summon_wolves_hamstring:manaCost",
-        "ownerId": "activation:77:lycan_summon_wolves_hamstring",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:77:lycan_summon_wolves_hamstring:cooldown",
-        "ownerId": "activation:77:lycan_summon_wolves_hamstring",
-        "field": "cooldown",
-        "state": "known",
-        "value": 8
-      },
-      "charges": {
-        "id": "value:activation:77:lycan_summon_wolves_hamstring:charges",
-        "ownerId": "activation:77:lycan_summon_wolves_hamstring",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:lycan_summon_wolves_hamstring:manaCost",
-        "value:activation:77:lycan_summon_wolves_hamstring:cooldown",
-        "value:activation:77:lycan_summon_wolves_hamstring:charges"
-      ]
-    },
-    {
-      "id": "activation:77:lycan_summon_wolves_hightail",
-      "heroId": "77",
-      "abilityIds": [
-        "ability:77:lycan_summon_wolves_hightail"
-      ],
-      "manaCost": {
-        "id": "value:activation:77:lycan_summon_wolves_hightail:manaCost",
-        "ownerId": "activation:77:lycan_summon_wolves_hightail",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:77:lycan_summon_wolves_hightail:cooldown",
-        "ownerId": "activation:77:lycan_summon_wolves_hightail",
-        "field": "cooldown",
-        "state": "known",
-        "value": 50
-      },
-      "charges": {
-        "id": "value:activation:77:lycan_summon_wolves_hightail:charges",
-        "ownerId": "activation:77:lycan_summon_wolves_hightail",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:77:lycan_summon_wolves_hightail:manaCost",
-        "value:activation:77:lycan_summon_wolves_hightail:cooldown",
-        "value:activation:77:lycan_summon_wolves_hightail:charges"
-      ]
+      "id": "special_bonus_unique_lycan_2",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

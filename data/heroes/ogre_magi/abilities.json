@@ -1,790 +1,277 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "ogre_magi_dumb_luck",
+    "Name": "Dumb Luck",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "buff",
+      "self_mana_regen"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:84:ogre_magi_fireblast",
-      "heroId": "84",
-      "engineId": "ogre_magi_fireblast",
-      "activationId": "activation:84:ogre_magi_fireblast",
+      "id": "ogre_magi_fireblast",
+      "Name": "Fireblast",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "strong-only",
+      "dispelType": "strong",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        70,
+        85,
+        100,
+        115
+      ],
+      "tags": [
+        "disable",
+        "stun"
+      ]
     },
     {
-      "id": "ability:84:ogre_magi_ignite",
-      "heroId": "84",
-      "engineId": "ogre_magi_ignite",
-      "activationId": "activation:84:ogre_magi_ignite",
+      "id": "ogre_magi_ignite",
+      "Name": "Ignite",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "cooldown": 17,
+      "tags": [
+        "aoe",
+        "slow"
+      ]
     },
     {
-      "id": "ability:84:ogre_magi_bloodlust",
-      "heroId": "84",
-      "engineId": "ogre_magi_bloodlust",
-      "activationId": "activation:84:ogre_magi_bloodlust",
+      "id": "ogre_magi_bloodlust",
+      "Name": "Bloodlust",
+      "behavior": [
+        "auto-cast",
+        "unit-target"
+      ],
+      "affects": [
+        "allied-buildings",
+        "allied-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "allies-only",
       "order": 2,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "known"
+      "type": "toggle",
+      "manaCost": [
+        40,
+        50,
+        60,
+        70
+      ],
+      "cooldown": [
+        20,
+        18,
+        16,
+        14
+      ],
+      "tags": [
+        "ally_attack_speed",
+        "ally_movement_speed",
+        "buff",
+        "self_attack_speed"
+      ]
     },
     {
-      "id": "ability:84:ogre_magi_unrefined_fireblast",
-      "heroId": "84",
-      "engineId": "ogre_magi_unrefined_fireblast",
-      "activationId": "activation:84:ogre_magi_unrefined_fireblast",
+      "id": "ogre_magi_unrefined_fireblast",
+      "Name": "Unrefined Fireblast",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "strong-only",
+      "dispelType": "strong",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 3,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": 400,
+      "tags": [
+        "disable",
+        "stun"
+      ]
     },
     {
-      "id": "ability:84:ogre_magi_smash",
-      "heroId": "84",
-      "engineId": "ogre_magi_smash",
-      "activationId": "activation:84:ogre_magi_smash",
+      "id": "ogre_magi_smash",
+      "Name": "Fire Shield",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "allied-buildings",
+        "allied-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 4,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero",
+        "ally_creep",
+        "ally_building"
+      ],
+      "manaCost": 50,
+      "cooldown": 15,
+      "tags": [
+        "buff",
+        "damage_reduction"
+      ]
     },
     {
-      "id": "ability:84:ogre_magi_dumb_luck",
-      "heroId": "84",
-      "engineId": "ogre_magi_dumb_luck",
-      "activationId": "activation:84:ogre_magi_dumb_luck",
-      "order": 5,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "known"
-    },
-    {
-      "id": "ability:84:ogre_magi_multicast",
-      "heroId": "84",
-      "engineId": "ogre_magi_multicast",
-      "activationId": "activation:84:ogre_magi_multicast",
+      "id": "ogre_magi_multicast",
+      "Name": "Multicast",
+      "behavior": [
+        "passive"
+      ],
+      "breakable": true,
       "order": 6,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "ability_repetition"
+      ]
     },
     {
-      "id": "ability:84:special_bonus_unique_ogre_magi_4",
-      "heroId": "84",
-      "engineId": "special_bonus_unique_ogre_magi_4",
-      "activationId": "activation:84:special_bonus_unique_ogre_magi_4",
-      "order": 7,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:84:special_bonus_unique_ogre_magi_dumb_luck_mana",
-      "heroId": "84",
-      "engineId": "special_bonus_unique_ogre_magi_dumb_luck_mana",
-      "activationId": "activation:84:special_bonus_unique_ogre_magi_dumb_luck_mana",
-      "order": 8,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:84:special_bonus_attack_damage_80",
-      "heroId": "84",
-      "engineId": "special_bonus_attack_damage_80",
-      "activationId": "activation:84:special_bonus_attack_damage_80",
-      "order": 9,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "known"
-    },
-    {
-      "id": "ability:84:special_bonus_unique_ogre_magi",
-      "heroId": "84",
-      "engineId": "special_bonus_unique_ogre_magi",
-      "activationId": "activation:84:special_bonus_unique_ogre_magi",
-      "order": 10,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:84:special_bonus_strength_30",
-      "heroId": "84",
-      "engineId": "special_bonus_strength_30",
-      "activationId": "activation:84:special_bonus_strength_30",
-      "order": 11,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "known"
-    },
-    {
-      "id": "ability:84:special_bonus_unique_ogre_magi_2",
-      "heroId": "84",
-      "engineId": "special_bonus_unique_ogre_magi_2",
-      "activationId": "activation:84:special_bonus_unique_ogre_magi_2",
-      "order": 12,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:84:special_bonus_unique_ogre_magi_3",
-      "heroId": "84",
-      "engineId": "special_bonus_unique_ogre_magi_3",
-      "activationId": "activation:84:special_bonus_unique_ogre_magi_3",
-      "order": 13,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:84:special_bonus_unique_ogre_magi_multicast_chance",
-      "heroId": "84",
-      "engineId": "special_bonus_unique_ogre_magi_multicast_chance",
-      "activationId": "activation:84:special_bonus_unique_ogre_magi_multicast_chance",
-      "order": 14,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:84:special_bonus_attributes",
-      "heroId": "84",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:84:special_bonus_attributes",
-      "order": 15,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "known"
-    },
-    {
-      "id": "ability:84:ogre_magi_frost_armor",
-      "heroId": "84",
-      "engineId": "ogre_magi_frost_armor",
-      "activationId": "activation:84:ogre_magi_frost_armor",
+      "id": "ogre_magi_frost_armor",
+      "Name": "Ice Armor",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "allied-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
       "order": 16,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero",
+        "ally_creep"
+      ],
+      "manaCost": 40,
+      "cooldown": 5,
+      "tags": [
+        "armor_reduction",
+        "slow"
+      ]
     },
     {
-      "id": "ability:84:ogre_magi_school",
-      "heroId": "84",
-      "engineId": "ogre_magi_school",
-      "activationId": "activation:84:ogre_magi_school",
+      "id": "ogre_magi_school",
+      "behavior": [
+        "passive"
+      ],
       "order": 17,
-      "owner": "npc_dota_hero_ogre_magi",
-      "state": "known"
+      "type": "passive",
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:84:ogre_magi_fireblast",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:ogre_magi_fireblast"
-      ],
-      "manaCost": {
-        "id": "value:activation:84:ogre_magi_fireblast:manaCost",
-        "ownerId": "activation:84:ogre_magi_fireblast",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          70,
-          85,
-          100,
-          115
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:84:ogre_magi_fireblast:cooldown",
-        "ownerId": "activation:84:ogre_magi_fireblast",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "11 10 9 8",
-          "special_bonus_scepter": "-1"
-        }
-      },
-      "charges": {
-        "id": "value:activation:84:ogre_magi_fireblast:charges",
-        "ownerId": "activation:84:ogre_magi_fireblast",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:ogre_magi_fireblast:manaCost",
-        "value:activation:84:ogre_magi_fireblast:cooldown",
-        "value:activation:84:ogre_magi_fireblast:charges"
+      "id": "special_bonus_unique_ogre_magi_4",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:84:ogre_magi_ignite",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:ogre_magi_ignite"
+      "id": "special_bonus_unique_ogre_magi_dumb_luck_mana",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_attack_damage_80",
+      "Name": "+80 Damage",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:84:ogre_magi_ignite:manaCost",
-        "ownerId": "activation:84:ogre_magi_ignite",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          80,
-          90,
-          100,
-          110
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:84:ogre_magi_ignite:cooldown",
-        "ownerId": "activation:84:ogre_magi_ignite",
-        "field": "cooldown",
-        "state": "known",
-        "value": 17
-      },
-      "charges": {
-        "id": "value:activation:84:ogre_magi_ignite:charges",
-        "ownerId": "activation:84:ogre_magi_ignite",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:ogre_magi_ignite:manaCost",
-        "value:activation:84:ogre_magi_ignite:cooldown",
-        "value:activation:84:ogre_magi_ignite:charges"
+      "tags": [
+        "buff",
+        "self_attack_damage"
       ]
     },
     {
-      "id": "activation:84:ogre_magi_bloodlust",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:ogre_magi_bloodlust"
-      ],
-      "manaCost": {
-        "id": "value:activation:84:ogre_magi_bloodlust:manaCost",
-        "ownerId": "activation:84:ogre_magi_bloodlust",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          40,
-          50,
-          60,
-          70
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:84:ogre_magi_bloodlust:cooldown",
-        "ownerId": "activation:84:ogre_magi_bloodlust",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          20,
-          18,
-          16,
-          14
-        ]
-      },
-      "charges": {
-        "id": "value:activation:84:ogre_magi_bloodlust:charges",
-        "ownerId": "activation:84:ogre_magi_bloodlust",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:ogre_magi_bloodlust:manaCost",
-        "value:activation:84:ogre_magi_bloodlust:cooldown",
-        "value:activation:84:ogre_magi_bloodlust:charges"
+      "id": "special_bonus_unique_ogre_magi",
+      "tags": [
+        "ally_attack_speed",
+        "buff",
+        "self_attack_speed"
       ]
     },
     {
-      "id": "activation:84:ogre_magi_unrefined_fireblast",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:ogre_magi_unrefined_fireblast"
+      "id": "special_bonus_strength_30",
+      "Name": "+30 Strength",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:84:ogre_magi_unrefined_fireblast:manaCost",
-        "ownerId": "activation:84:ogre_magi_unrefined_fireblast",
-        "field": "manaCost",
-        "state": "known",
-        "value": 400
-      },
-      "cooldown": {
-        "id": "value:activation:84:ogre_magi_unrefined_fireblast:cooldown",
-        "ownerId": "activation:84:ogre_magi_unrefined_fireblast",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "7"
-        }
-      },
-      "charges": {
-        "id": "value:activation:84:ogre_magi_unrefined_fireblast:charges",
-        "ownerId": "activation:84:ogre_magi_unrefined_fireblast",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:ogre_magi_unrefined_fireblast:manaCost",
-        "value:activation:84:ogre_magi_unrefined_fireblast:cooldown",
-        "value:activation:84:ogre_magi_unrefined_fireblast:charges"
+      "tags": [
+        "attribute_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:84:ogre_magi_smash",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:ogre_magi_smash"
-      ],
-      "manaCost": {
-        "id": "value:activation:84:ogre_magi_smash:manaCost",
-        "ownerId": "activation:84:ogre_magi_smash",
-        "field": "manaCost",
-        "state": "known",
-        "value": 50
-      },
-      "cooldown": {
-        "id": "value:activation:84:ogre_magi_smash:cooldown",
-        "ownerId": "activation:84:ogre_magi_smash",
-        "field": "cooldown",
-        "state": "known",
-        "value": 15
-      },
-      "charges": {
-        "id": "value:activation:84:ogre_magi_smash:charges",
-        "ownerId": "activation:84:ogre_magi_smash",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:ogre_magi_smash:manaCost",
-        "value:activation:84:ogre_magi_smash:cooldown",
-        "value:activation:84:ogre_magi_smash:charges"
-      ]
+      "id": "special_bonus_unique_ogre_magi_2",
+      "tags": []
     },
     {
-      "id": "activation:84:ogre_magi_dumb_luck",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:ogre_magi_dumb_luck"
-      ],
-      "manaCost": {
-        "id": "value:activation:84:ogre_magi_dumb_luck:manaCost",
-        "ownerId": "activation:84:ogre_magi_dumb_luck",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:84:ogre_magi_dumb_luck:cooldown",
-        "ownerId": "activation:84:ogre_magi_dumb_luck",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:84:ogre_magi_dumb_luck:charges",
-        "ownerId": "activation:84:ogre_magi_dumb_luck",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:ogre_magi_dumb_luck:manaCost",
-        "value:activation:84:ogre_magi_dumb_luck:cooldown",
-        "value:activation:84:ogre_magi_dumb_luck:charges"
-      ]
+      "id": "special_bonus_unique_ogre_magi_3",
+      "tags": []
     },
     {
-      "id": "activation:84:ogre_magi_multicast",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:ogre_magi_multicast"
-      ],
-      "manaCost": {
-        "id": "value:activation:84:ogre_magi_multicast:manaCost",
-        "ownerId": "activation:84:ogre_magi_multicast",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:84:ogre_magi_multicast:cooldown",
-        "ownerId": "activation:84:ogre_magi_multicast",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:84:ogre_magi_multicast:charges",
-        "ownerId": "activation:84:ogre_magi_multicast",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:ogre_magi_multicast:manaCost",
-        "value:activation:84:ogre_magi_multicast:cooldown",
-        "value:activation:84:ogre_magi_multicast:charges"
-      ]
-    },
-    {
-      "id": "activation:84:special_bonus_unique_ogre_magi_4",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:special_bonus_unique_ogre_magi_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi_4:manaCost",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi_4:cooldown",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi_4:charges",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:special_bonus_unique_ogre_magi_4:manaCost",
-        "value:activation:84:special_bonus_unique_ogre_magi_4:cooldown",
-        "value:activation:84:special_bonus_unique_ogre_magi_4:charges"
-      ]
-    },
-    {
-      "id": "activation:84:special_bonus_unique_ogre_magi_dumb_luck_mana",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:special_bonus_unique_ogre_magi_dumb_luck_mana"
-      ],
-      "manaCost": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi_dumb_luck_mana:manaCost",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi_dumb_luck_mana",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi_dumb_luck_mana:cooldown",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi_dumb_luck_mana",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi_dumb_luck_mana:charges",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi_dumb_luck_mana",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:special_bonus_unique_ogre_magi_dumb_luck_mana:manaCost",
-        "value:activation:84:special_bonus_unique_ogre_magi_dumb_luck_mana:cooldown",
-        "value:activation:84:special_bonus_unique_ogre_magi_dumb_luck_mana:charges"
-      ]
-    },
-    {
-      "id": "activation:84:special_bonus_attack_damage_80",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:special_bonus_attack_damage_80"
-      ],
-      "manaCost": {
-        "id": "value:activation:84:special_bonus_attack_damage_80:manaCost",
-        "ownerId": "activation:84:special_bonus_attack_damage_80",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:84:special_bonus_attack_damage_80:cooldown",
-        "ownerId": "activation:84:special_bonus_attack_damage_80",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:84:special_bonus_attack_damage_80:charges",
-        "ownerId": "activation:84:special_bonus_attack_damage_80",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:special_bonus_attack_damage_80:manaCost",
-        "value:activation:84:special_bonus_attack_damage_80:cooldown",
-        "value:activation:84:special_bonus_attack_damage_80:charges"
-      ]
-    },
-    {
-      "id": "activation:84:special_bonus_unique_ogre_magi",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:special_bonus_unique_ogre_magi"
-      ],
-      "manaCost": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi:manaCost",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi:cooldown",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi:charges",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:special_bonus_unique_ogre_magi:manaCost",
-        "value:activation:84:special_bonus_unique_ogre_magi:cooldown",
-        "value:activation:84:special_bonus_unique_ogre_magi:charges"
-      ]
-    },
-    {
-      "id": "activation:84:special_bonus_strength_30",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:special_bonus_strength_30"
-      ],
-      "manaCost": {
-        "id": "value:activation:84:special_bonus_strength_30:manaCost",
-        "ownerId": "activation:84:special_bonus_strength_30",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:84:special_bonus_strength_30:cooldown",
-        "ownerId": "activation:84:special_bonus_strength_30",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:84:special_bonus_strength_30:charges",
-        "ownerId": "activation:84:special_bonus_strength_30",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:special_bonus_strength_30:manaCost",
-        "value:activation:84:special_bonus_strength_30:cooldown",
-        "value:activation:84:special_bonus_strength_30:charges"
-      ]
-    },
-    {
-      "id": "activation:84:special_bonus_unique_ogre_magi_2",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:special_bonus_unique_ogre_magi_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi_2:manaCost",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi_2:cooldown",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi_2:charges",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:special_bonus_unique_ogre_magi_2:manaCost",
-        "value:activation:84:special_bonus_unique_ogre_magi_2:cooldown",
-        "value:activation:84:special_bonus_unique_ogre_magi_2:charges"
-      ]
-    },
-    {
-      "id": "activation:84:special_bonus_unique_ogre_magi_3",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:special_bonus_unique_ogre_magi_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi_3:manaCost",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi_3:cooldown",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi_3:charges",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:special_bonus_unique_ogre_magi_3:manaCost",
-        "value:activation:84:special_bonus_unique_ogre_magi_3:cooldown",
-        "value:activation:84:special_bonus_unique_ogre_magi_3:charges"
-      ]
-    },
-    {
-      "id": "activation:84:special_bonus_unique_ogre_magi_multicast_chance",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:special_bonus_unique_ogre_magi_multicast_chance"
-      ],
-      "manaCost": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi_multicast_chance:manaCost",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi_multicast_chance",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi_multicast_chance:cooldown",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi_multicast_chance",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:84:special_bonus_unique_ogre_magi_multicast_chance:charges",
-        "ownerId": "activation:84:special_bonus_unique_ogre_magi_multicast_chance",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:special_bonus_unique_ogre_magi_multicast_chance:manaCost",
-        "value:activation:84:special_bonus_unique_ogre_magi_multicast_chance:cooldown",
-        "value:activation:84:special_bonus_unique_ogre_magi_multicast_chance:charges"
-      ]
-    },
-    {
-      "id": "activation:84:special_bonus_attributes",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:84:special_bonus_attributes:manaCost",
-        "ownerId": "activation:84:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:84:special_bonus_attributes:cooldown",
-        "ownerId": "activation:84:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:84:special_bonus_attributes:charges",
-        "ownerId": "activation:84:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:special_bonus_attributes:manaCost",
-        "value:activation:84:special_bonus_attributes:cooldown",
-        "value:activation:84:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:84:ogre_magi_frost_armor",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:ogre_magi_frost_armor"
-      ],
-      "manaCost": {
-        "id": "value:activation:84:ogre_magi_frost_armor:manaCost",
-        "ownerId": "activation:84:ogre_magi_frost_armor",
-        "field": "manaCost",
-        "state": "known",
-        "value": 40
-      },
-      "cooldown": {
-        "id": "value:activation:84:ogre_magi_frost_armor:cooldown",
-        "ownerId": "activation:84:ogre_magi_frost_armor",
-        "field": "cooldown",
-        "state": "known",
-        "value": 5
-      },
-      "charges": {
-        "id": "value:activation:84:ogre_magi_frost_armor:charges",
-        "ownerId": "activation:84:ogre_magi_frost_armor",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:ogre_magi_frost_armor:manaCost",
-        "value:activation:84:ogre_magi_frost_armor:cooldown",
-        "value:activation:84:ogre_magi_frost_armor:charges"
-      ]
-    },
-    {
-      "id": "activation:84:ogre_magi_school",
-      "heroId": "84",
-      "abilityIds": [
-        "ability:84:ogre_magi_school"
-      ],
-      "manaCost": {
-        "id": "value:activation:84:ogre_magi_school:manaCost",
-        "ownerId": "activation:84:ogre_magi_school",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:84:ogre_magi_school:cooldown",
-        "ownerId": "activation:84:ogre_magi_school",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:84:ogre_magi_school:charges",
-        "ownerId": "activation:84:ogre_magi_school",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:84:ogre_magi_school:manaCost",
-        "value:activation:84:ogre_magi_school:cooldown",
-        "value:activation:84:ogre_magi_school:charges"
-      ]
+      "id": "special_bonus_unique_ogre_magi_multicast_chance",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

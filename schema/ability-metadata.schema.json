@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/ability-metadata.schema.json",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "abilities",
+    "activations"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "abilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "heroId",
+          "engineId",
+          "activationId",
+          "order",
+          "state"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "core.schema.json#/$defs/id"
+          },
+          "heroId": {
+            "$ref": "core.schema.json#/$defs/heroId"
+          },
+          "engineId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "activationId": {
+            "$ref": "core.schema.json#/$defs/id"
+          },
+          "order": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "state": {
+            "enum": [
+              "known",
+              "unknown",
+              "unsupported"
+            ]
+          },
+          "tags": false,
+          "owner": {
+            "type": "string"
+          },
+          "declarationRef": {
+            "$ref": "core.schema.json#/$defs/evidenceRef"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "activations": {
+      "type": "array",
+      "items": {
+        "$ref": "core.schema.json#/$defs/activation"
+      }
+    }
+  },
+  "additionalProperties": false
+}

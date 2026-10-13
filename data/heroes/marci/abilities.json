@@ -1,833 +1,270 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "marci_special_delivery",
+    "Name": "Special Delivery",
+    "behavior": [
+      "no-target"
+    ],
+    "type": "self-target",
+    "tags": [
+      "courier_utility"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:136:marci_grapple",
-      "heroId": "136",
-      "engineId": "marci_grapple",
-      "activationId": "activation:136:marci_grapple",
+      "id": "marci_grapple",
+      "Name": "Dispose",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero",
+        "enemy_hero",
+        "ally_creep",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": 80,
+      "cooldown": [
+        16,
+        14,
+        12,
+        10
+      ],
+      "tags": [
+        "ally_reposition",
+        "enemy_displacement",
+        "escape",
+        "mobility",
+        "slow"
+      ]
     },
     {
-      "id": "ability:136:marci_companion_run",
-      "heroId": "136",
-      "engineId": "marci_companion_run",
-      "activationId": "activation:136:marci_companion_run",
+      "id": "marci_companion_run",
+      "Name": "Rebound",
+      "behavior": [
+        "point-vector-target",
+        "unit-target"
+      ],
+      "affects": [
+        "allied-units"
+      ],
+      "dispellable": "strong-only",
+      "dispelType": "strong",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
+      "type": "vector",
+      "target": [
+        "self",
+        "ally_hero"
+      ],
+      "manaCost": [
+        70,
+        80,
+        90,
+        100
+      ],
+      "tags": [
+        "ally_movement_speed",
+        "buff",
+        "disable",
+        "escape",
+        "mobility",
+        "stun"
+      ]
     },
     {
-      "id": "ability:136:marci_bodyguard",
-      "heroId": "136",
-      "engineId": "marci_bodyguard",
-      "activationId": "activation:136:marci_bodyguard",
+      "id": "marci_bodyguard",
+      "Name": "Bodyguard",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "allied-heroes"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "allies-only",
+      "damageType": "physical",
       "order": 2,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero"
+      ],
+      "manaCost": 60,
+      "cooldown": 20,
+      "tags": [
+        "barrier",
+        "buff",
+        "damage_sharing",
+        "lifesteal",
+        "self_attack_damage",
+        "self_lifesteal"
+      ]
     },
     {
-      "id": "ability:136:marci_special_delivery",
-      "heroId": "136",
-      "engineId": "marci_special_delivery",
-      "activationId": "activation:136:marci_special_delivery",
-      "order": 3,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
-    },
-    {
-      "id": "ability:136:generic_hidden",
-      "heroId": "136",
-      "engineId": "generic_hidden",
-      "activationId": "activation:136:generic_hidden",
+      "id": "generic_hidden",
       "order": 4,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:136:marci_unleash",
-      "heroId": "136",
-      "engineId": "marci_unleash",
-      "activationId": "activation:136:marci_unleash",
+      "id": "marci_unleash",
+      "Name": "Unleash",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
+      "type": "self-target",
+      "tags": [
+        "buff",
+        "damage_over_time",
+        "dispel",
+        "enemy_attack_speed_reduction",
+        "self_attack_speed",
+        "self_movement_speed",
+        "slow"
+      ]
     },
     {
-      "id": "ability:136:special_bonus_unique_marci_dispose_slow",
-      "heroId": "136",
-      "engineId": "special_bonus_unique_marci_dispose_slow",
-      "activationId": "activation:136:special_bonus_unique_marci_dispose_slow",
-      "order": 6,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
-    },
-    {
-      "id": "ability:136:special_bonus_unique_marci_rebound_radius",
-      "heroId": "136",
-      "engineId": "special_bonus_unique_marci_rebound_radius",
-      "activationId": "activation:136:special_bonus_unique_marci_rebound_radius",
-      "order": 7,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
-    },
-    {
-      "id": "ability:136:special_bonus_unique_marci_grapple_damage",
-      "heroId": "136",
-      "engineId": "special_bonus_unique_marci_grapple_damage",
-      "activationId": "activation:136:special_bonus_unique_marci_grapple_damage",
-      "order": 8,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
-    },
-    {
-      "id": "ability:136:special_bonus_unique_marci_guardian_damage",
-      "heroId": "136",
-      "engineId": "special_bonus_unique_marci_guardian_damage",
-      "activationId": "activation:136:special_bonus_unique_marci_guardian_damage",
-      "order": 9,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
-    },
-    {
-      "id": "ability:136:special_bonus_unique_marci_grapple_stun_duration",
-      "heroId": "136",
-      "engineId": "special_bonus_unique_marci_grapple_stun_duration",
-      "activationId": "activation:136:special_bonus_unique_marci_grapple_stun_duration",
-      "order": 10,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
-    },
-    {
-      "id": "ability:136:special_bonus_unique_marci_unleash_speed",
-      "heroId": "136",
-      "engineId": "special_bonus_unique_marci_unleash_speed",
-      "activationId": "activation:136:special_bonus_unique_marci_unleash_speed",
-      "order": 11,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
-    },
-    {
-      "id": "ability:136:special_bonus_unique_marci_unleash_extend_duration",
-      "heroId": "136",
-      "engineId": "special_bonus_unique_marci_unleash_extend_duration",
-      "activationId": "activation:136:special_bonus_unique_marci_unleash_extend_duration",
-      "order": 12,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
-    },
-    {
-      "id": "ability:136:special_bonus_unique_marci_guardian_strong_dispel",
-      "heroId": "136",
-      "engineId": "special_bonus_unique_marci_guardian_strong_dispel",
-      "activationId": "activation:136:special_bonus_unique_marci_guardian_strong_dispel",
-      "order": 13,
-      "owner": "npc_dota_hero_marci",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:136:special_bonus_attributes",
-      "heroId": "136",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:136:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
-    },
-    {
-      "id": "ability:136:marci_guardian",
-      "heroId": "136",
-      "engineId": "marci_guardian",
-      "activationId": "activation:136:marci_guardian",
+      "id": "marci_guardian",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "allied-heroes"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "allies-only",
+      "damageType": "physical",
       "order": 15,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
-    },
-    {
-      "id": "ability:136:special_bonus_unique_marci_guardian_lifesteal",
-      "heroId": "136",
-      "engineId": "special_bonus_unique_marci_guardian_lifesteal",
-      "activationId": "activation:136:special_bonus_unique_marci_guardian_lifesteal",
-      "order": 16,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
-    },
-    {
-      "id": "ability:136:special_bonus_unique_marci_lunge_range",
-      "heroId": "136",
-      "engineId": "special_bonus_unique_marci_lunge_range",
-      "activationId": "activation:136:special_bonus_unique_marci_lunge_range",
-      "order": 17,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
-    },
-    {
-      "id": "ability:136:special_bonus_unique_marci_lunge_movespeed",
-      "heroId": "136",
-      "engineId": "special_bonus_unique_marci_lunge_movespeed",
-      "activationId": "activation:136:special_bonus_unique_marci_lunge_movespeed",
-      "order": 18,
-      "owner": "npc_dota_hero_marci",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero"
+      ],
+      "manaCost": [
+        45,
+        40,
+        35,
+        30
+      ],
+      "cooldown": 20,
+      "tags": [
+        "ally_attack_damage",
+        "buff",
+        "lifesteal",
+        "self_attack_damage",
+        "self_lifesteal"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:136:marci_grapple",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:marci_grapple"
+      "id": "special_bonus_unique_marci_dispose_slow",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:136:marci_grapple:manaCost",
-        "ownerId": "activation:136:marci_grapple",
-        "field": "manaCost",
-        "state": "known",
-        "value": 80
-      },
-      "cooldown": {
-        "id": "value:activation:136:marci_grapple:cooldown",
-        "ownerId": "activation:136:marci_grapple",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          16,
-          14,
-          12,
-          10
-        ]
-      },
-      "charges": {
-        "id": "value:activation:136:marci_grapple:charges",
-        "ownerId": "activation:136:marci_grapple",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:marci_grapple:manaCost",
-        "value:activation:136:marci_grapple:cooldown",
-        "value:activation:136:marci_grapple:charges"
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_marci_rebound_radius",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_marci_grapple_damage",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:136:marci_companion_run",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:marci_companion_run"
+      "id": "special_bonus_unique_marci_guardian_damage",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:136:marci_companion_run:manaCost",
-        "ownerId": "activation:136:marci_companion_run",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          70,
-          80,
-          90,
-          100
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:136:marci_companion_run:cooldown",
-        "ownerId": "activation:136:marci_companion_run",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "24 20 16 12"
-        }
-      },
-      "charges": {
-        "id": "value:activation:136:marci_companion_run:charges",
-        "ownerId": "activation:136:marci_companion_run",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:marci_companion_run:manaCost",
-        "value:activation:136:marci_companion_run:cooldown",
-        "value:activation:136:marci_companion_run:charges"
+      "tags": [
+        "ally_attack_damage",
+        "buff",
+        "self_attack_damage"
       ]
     },
     {
-      "id": "activation:136:marci_bodyguard",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:marci_bodyguard"
+      "id": "special_bonus_unique_marci_grapple_stun_duration",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:136:marci_bodyguard:manaCost",
-        "ownerId": "activation:136:marci_bodyguard",
-        "field": "manaCost",
-        "state": "known",
-        "value": 60
-      },
-      "cooldown": {
-        "id": "value:activation:136:marci_bodyguard:cooldown",
-        "ownerId": "activation:136:marci_bodyguard",
-        "field": "cooldown",
-        "state": "known",
-        "value": 20
-      },
-      "charges": {
-        "id": "value:activation:136:marci_bodyguard:charges",
-        "ownerId": "activation:136:marci_bodyguard",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:marci_bodyguard:manaCost",
-        "value:activation:136:marci_bodyguard:cooldown",
-        "value:activation:136:marci_bodyguard:charges"
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_marci_unleash_speed",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_marci_unleash_extend_duration",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_marci_guardian_strong_dispel",
+      "Name": "Bodyguard Strong Dispels",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_marci_guardian_lifesteal",
+      "behavior": [
+        "passive"
+      ],
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_marci_lunge_range",
+      "behavior": [
+        "passive"
+      ],
+      "tags": [
+        "buff",
+        "cast_range"
       ]
     },
     {
-      "id": "activation:136:marci_special_delivery",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:marci_special_delivery"
+      "id": "special_bonus_unique_marci_lunge_movespeed",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:136:marci_special_delivery:manaCost",
-        "ownerId": "activation:136:marci_special_delivery",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:136:marci_special_delivery:cooldown",
-        "ownerId": "activation:136:marci_special_delivery",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "215.0",
-          "hero_levelup": "-5"
-        }
-      },
-      "charges": {
-        "id": "value:activation:136:marci_special_delivery:charges",
-        "ownerId": "activation:136:marci_special_delivery",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:marci_special_delivery:manaCost",
-        "value:activation:136:marci_special_delivery:cooldown",
-        "value:activation:136:marci_special_delivery:charges"
-      ]
-    },
-    {
-      "id": "activation:136:generic_hidden",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:generic_hidden"
-      ],
-      "manaCost": {
-        "id": "value:activation:136:generic_hidden:manaCost",
-        "ownerId": "activation:136:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:136:generic_hidden:cooldown",
-        "ownerId": "activation:136:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:136:generic_hidden:charges",
-        "ownerId": "activation:136:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:generic_hidden:manaCost",
-        "value:activation:136:generic_hidden:cooldown",
-        "value:activation:136:generic_hidden:charges"
-      ]
-    },
-    {
-      "id": "activation:136:marci_unleash",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:marci_unleash"
-      ],
-      "manaCost": {
-        "id": "value:activation:136:marci_unleash:manaCost",
-        "ownerId": "activation:136:marci_unleash",
-        "field": "manaCost",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "100 125 150"
-        }
-      },
-      "cooldown": {
-        "id": "value:activation:136:marci_unleash:cooldown",
-        "ownerId": "activation:136:marci_unleash",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "80 70 60"
-        }
-      },
-      "charges": {
-        "id": "value:activation:136:marci_unleash:charges",
-        "ownerId": "activation:136:marci_unleash",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:marci_unleash:manaCost",
-        "value:activation:136:marci_unleash:cooldown",
-        "value:activation:136:marci_unleash:charges"
-      ]
-    },
-    {
-      "id": "activation:136:special_bonus_unique_marci_dispose_slow",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:special_bonus_unique_marci_dispose_slow"
-      ],
-      "manaCost": {
-        "id": "value:activation:136:special_bonus_unique_marci_dispose_slow:manaCost",
-        "ownerId": "activation:136:special_bonus_unique_marci_dispose_slow",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:136:special_bonus_unique_marci_dispose_slow:cooldown",
-        "ownerId": "activation:136:special_bonus_unique_marci_dispose_slow",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:136:special_bonus_unique_marci_dispose_slow:charges",
-        "ownerId": "activation:136:special_bonus_unique_marci_dispose_slow",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:special_bonus_unique_marci_dispose_slow:manaCost",
-        "value:activation:136:special_bonus_unique_marci_dispose_slow:cooldown",
-        "value:activation:136:special_bonus_unique_marci_dispose_slow:charges"
-      ]
-    },
-    {
-      "id": "activation:136:special_bonus_unique_marci_rebound_radius",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:special_bonus_unique_marci_rebound_radius"
-      ],
-      "manaCost": {
-        "id": "value:activation:136:special_bonus_unique_marci_rebound_radius:manaCost",
-        "ownerId": "activation:136:special_bonus_unique_marci_rebound_radius",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:136:special_bonus_unique_marci_rebound_radius:cooldown",
-        "ownerId": "activation:136:special_bonus_unique_marci_rebound_radius",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:136:special_bonus_unique_marci_rebound_radius:charges",
-        "ownerId": "activation:136:special_bonus_unique_marci_rebound_radius",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:special_bonus_unique_marci_rebound_radius:manaCost",
-        "value:activation:136:special_bonus_unique_marci_rebound_radius:cooldown",
-        "value:activation:136:special_bonus_unique_marci_rebound_radius:charges"
-      ]
-    },
-    {
-      "id": "activation:136:special_bonus_unique_marci_grapple_damage",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:special_bonus_unique_marci_grapple_damage"
-      ],
-      "manaCost": {
-        "id": "value:activation:136:special_bonus_unique_marci_grapple_damage:manaCost",
-        "ownerId": "activation:136:special_bonus_unique_marci_grapple_damage",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:136:special_bonus_unique_marci_grapple_damage:cooldown",
-        "ownerId": "activation:136:special_bonus_unique_marci_grapple_damage",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:136:special_bonus_unique_marci_grapple_damage:charges",
-        "ownerId": "activation:136:special_bonus_unique_marci_grapple_damage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:special_bonus_unique_marci_grapple_damage:manaCost",
-        "value:activation:136:special_bonus_unique_marci_grapple_damage:cooldown",
-        "value:activation:136:special_bonus_unique_marci_grapple_damage:charges"
-      ]
-    },
-    {
-      "id": "activation:136:special_bonus_unique_marci_guardian_damage",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:special_bonus_unique_marci_guardian_damage"
-      ],
-      "manaCost": {
-        "id": "value:activation:136:special_bonus_unique_marci_guardian_damage:manaCost",
-        "ownerId": "activation:136:special_bonus_unique_marci_guardian_damage",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:136:special_bonus_unique_marci_guardian_damage:cooldown",
-        "ownerId": "activation:136:special_bonus_unique_marci_guardian_damage",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:136:special_bonus_unique_marci_guardian_damage:charges",
-        "ownerId": "activation:136:special_bonus_unique_marci_guardian_damage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:special_bonus_unique_marci_guardian_damage:manaCost",
-        "value:activation:136:special_bonus_unique_marci_guardian_damage:cooldown",
-        "value:activation:136:special_bonus_unique_marci_guardian_damage:charges"
-      ]
-    },
-    {
-      "id": "activation:136:special_bonus_unique_marci_grapple_stun_duration",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:special_bonus_unique_marci_grapple_stun_duration"
-      ],
-      "manaCost": {
-        "id": "value:activation:136:special_bonus_unique_marci_grapple_stun_duration:manaCost",
-        "ownerId": "activation:136:special_bonus_unique_marci_grapple_stun_duration",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:136:special_bonus_unique_marci_grapple_stun_duration:cooldown",
-        "ownerId": "activation:136:special_bonus_unique_marci_grapple_stun_duration",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:136:special_bonus_unique_marci_grapple_stun_duration:charges",
-        "ownerId": "activation:136:special_bonus_unique_marci_grapple_stun_duration",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:special_bonus_unique_marci_grapple_stun_duration:manaCost",
-        "value:activation:136:special_bonus_unique_marci_grapple_stun_duration:cooldown",
-        "value:activation:136:special_bonus_unique_marci_grapple_stun_duration:charges"
-      ]
-    },
-    {
-      "id": "activation:136:special_bonus_unique_marci_unleash_speed",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:special_bonus_unique_marci_unleash_speed"
-      ],
-      "manaCost": {
-        "id": "value:activation:136:special_bonus_unique_marci_unleash_speed:manaCost",
-        "ownerId": "activation:136:special_bonus_unique_marci_unleash_speed",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:136:special_bonus_unique_marci_unleash_speed:cooldown",
-        "ownerId": "activation:136:special_bonus_unique_marci_unleash_speed",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:136:special_bonus_unique_marci_unleash_speed:charges",
-        "ownerId": "activation:136:special_bonus_unique_marci_unleash_speed",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:special_bonus_unique_marci_unleash_speed:manaCost",
-        "value:activation:136:special_bonus_unique_marci_unleash_speed:cooldown",
-        "value:activation:136:special_bonus_unique_marci_unleash_speed:charges"
-      ]
-    },
-    {
-      "id": "activation:136:special_bonus_unique_marci_unleash_extend_duration",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:special_bonus_unique_marci_unleash_extend_duration"
-      ],
-      "manaCost": {
-        "id": "value:activation:136:special_bonus_unique_marci_unleash_extend_duration:manaCost",
-        "ownerId": "activation:136:special_bonus_unique_marci_unleash_extend_duration",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:136:special_bonus_unique_marci_unleash_extend_duration:cooldown",
-        "ownerId": "activation:136:special_bonus_unique_marci_unleash_extend_duration",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:136:special_bonus_unique_marci_unleash_extend_duration:charges",
-        "ownerId": "activation:136:special_bonus_unique_marci_unleash_extend_duration",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:special_bonus_unique_marci_unleash_extend_duration:manaCost",
-        "value:activation:136:special_bonus_unique_marci_unleash_extend_duration:cooldown",
-        "value:activation:136:special_bonus_unique_marci_unleash_extend_duration:charges"
-      ]
-    },
-    {
-      "id": "activation:136:special_bonus_unique_marci_guardian_strong_dispel",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:special_bonus_unique_marci_guardian_strong_dispel"
-      ],
-      "manaCost": {
-        "id": "value:activation:136:special_bonus_unique_marci_guardian_strong_dispel:manaCost",
-        "ownerId": "activation:136:special_bonus_unique_marci_guardian_strong_dispel",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:136:special_bonus_unique_marci_guardian_strong_dispel:cooldown",
-        "ownerId": "activation:136:special_bonus_unique_marci_guardian_strong_dispel",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:136:special_bonus_unique_marci_guardian_strong_dispel:charges",
-        "ownerId": "activation:136:special_bonus_unique_marci_guardian_strong_dispel",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:special_bonus_unique_marci_guardian_strong_dispel:manaCost",
-        "value:activation:136:special_bonus_unique_marci_guardian_strong_dispel:cooldown",
-        "value:activation:136:special_bonus_unique_marci_guardian_strong_dispel:charges"
-      ]
-    },
-    {
-      "id": "activation:136:special_bonus_attributes",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:136:special_bonus_attributes:manaCost",
-        "ownerId": "activation:136:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:136:special_bonus_attributes:cooldown",
-        "ownerId": "activation:136:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:136:special_bonus_attributes:charges",
-        "ownerId": "activation:136:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:special_bonus_attributes:manaCost",
-        "value:activation:136:special_bonus_attributes:cooldown",
-        "value:activation:136:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:136:marci_guardian",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:marci_guardian"
-      ],
-      "manaCost": {
-        "id": "value:activation:136:marci_guardian:manaCost",
-        "ownerId": "activation:136:marci_guardian",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          45,
-          40,
-          35,
-          30
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:136:marci_guardian:cooldown",
-        "ownerId": "activation:136:marci_guardian",
-        "field": "cooldown",
-        "state": "known",
-        "value": 20
-      },
-      "charges": {
-        "id": "value:activation:136:marci_guardian:charges",
-        "ownerId": "activation:136:marci_guardian",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:marci_guardian:manaCost",
-        "value:activation:136:marci_guardian:cooldown",
-        "value:activation:136:marci_guardian:charges"
-      ]
-    },
-    {
-      "id": "activation:136:special_bonus_unique_marci_guardian_lifesteal",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:special_bonus_unique_marci_guardian_lifesteal"
-      ],
-      "manaCost": {
-        "id": "value:activation:136:special_bonus_unique_marci_guardian_lifesteal:manaCost",
-        "ownerId": "activation:136:special_bonus_unique_marci_guardian_lifesteal",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:136:special_bonus_unique_marci_guardian_lifesteal:cooldown",
-        "ownerId": "activation:136:special_bonus_unique_marci_guardian_lifesteal",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:136:special_bonus_unique_marci_guardian_lifesteal:charges",
-        "ownerId": "activation:136:special_bonus_unique_marci_guardian_lifesteal",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:special_bonus_unique_marci_guardian_lifesteal:manaCost",
-        "value:activation:136:special_bonus_unique_marci_guardian_lifesteal:cooldown",
-        "value:activation:136:special_bonus_unique_marci_guardian_lifesteal:charges"
-      ]
-    },
-    {
-      "id": "activation:136:special_bonus_unique_marci_lunge_range",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:special_bonus_unique_marci_lunge_range"
-      ],
-      "manaCost": {
-        "id": "value:activation:136:special_bonus_unique_marci_lunge_range:manaCost",
-        "ownerId": "activation:136:special_bonus_unique_marci_lunge_range",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:136:special_bonus_unique_marci_lunge_range:cooldown",
-        "ownerId": "activation:136:special_bonus_unique_marci_lunge_range",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:136:special_bonus_unique_marci_lunge_range:charges",
-        "ownerId": "activation:136:special_bonus_unique_marci_lunge_range",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:special_bonus_unique_marci_lunge_range:manaCost",
-        "value:activation:136:special_bonus_unique_marci_lunge_range:cooldown",
-        "value:activation:136:special_bonus_unique_marci_lunge_range:charges"
-      ]
-    },
-    {
-      "id": "activation:136:special_bonus_unique_marci_lunge_movespeed",
-      "heroId": "136",
-      "abilityIds": [
-        "ability:136:special_bonus_unique_marci_lunge_movespeed"
-      ],
-      "manaCost": {
-        "id": "value:activation:136:special_bonus_unique_marci_lunge_movespeed:manaCost",
-        "ownerId": "activation:136:special_bonus_unique_marci_lunge_movespeed",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:136:special_bonus_unique_marci_lunge_movespeed:cooldown",
-        "ownerId": "activation:136:special_bonus_unique_marci_lunge_movespeed",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:136:special_bonus_unique_marci_lunge_movespeed:charges",
-        "ownerId": "activation:136:special_bonus_unique_marci_lunge_movespeed",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:136:special_bonus_unique_marci_lunge_movespeed:manaCost",
-        "value:activation:136:special_bonus_unique_marci_lunge_movespeed:cooldown",
-        "value:activation:136:special_bonus_unique_marci_lunge_movespeed:charges"
-      ]
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

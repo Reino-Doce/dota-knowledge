@@ -1,708 +1,226 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "leshrac_defilement",
+    "Name": "Defilement",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "area_increase",
+      "buff"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:52:leshrac_split_earth",
-      "heroId": "52",
-      "engineId": "leshrac_split_earth",
-      "activationId": "activation:52:leshrac_split_earth",
+      "id": "leshrac_split_earth",
+      "Name": "Split Earth",
+      "behavior": [
+        "point-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "strong-only",
+      "dispelType": "strong",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_leshrac",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        80,
+        100,
+        120,
+        140
+      ],
+      "cooldown": 11,
+      "tags": [
+        "aoe",
+        "disable",
+        "stun"
+      ]
     },
     {
-      "id": "ability:52:leshrac_diabolic_edict",
-      "heroId": "52",
-      "engineId": "leshrac_diabolic_edict",
-      "activationId": "activation:52:leshrac_diabolic_edict",
+      "id": "leshrac_diabolic_edict",
+      "Name": "Diabolic Edict",
+      "behavior": [
+        "no-target"
+      ],
+      "affects": [
+        "enemy-buildings",
+        "enemy-units"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "yes",
+      "damageType": "pure",
       "order": 1,
-      "owner": "npc_dota_hero_leshrac",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        90,
+        120,
+        150,
+        180
+      ],
+      "cooldown": [
+        22,
+        21,
+        20,
+        19
+      ],
+      "tags": [
+        "bkb_pierce",
+        "building_damage"
+      ]
     },
     {
-      "id": "ability:52:leshrac_lightning_storm",
-      "heroId": "52",
-      "engineId": "leshrac_lightning_storm",
-      "activationId": "activation:52:leshrac_lightning_storm",
+      "id": "leshrac_lightning_storm",
+      "Name": "Lightning Storm",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 2,
-      "owner": "npc_dota_hero_leshrac",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        80,
+        100,
+        120,
+        140
+      ],
+      "cooldown": 4,
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:52:leshrac_greater_lightning_storm",
-      "heroId": "52",
-      "engineId": "leshrac_greater_lightning_storm",
-      "activationId": "activation:52:leshrac_greater_lightning_storm",
+      "id": "leshrac_greater_lightning_storm",
+      "Name": "Nihilism",
+      "behavior": [
+        "no-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
       "order": 3,
-      "owner": "npc_dota_hero_leshrac",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 75,
+      "cooldown": 25,
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:52:leshrac_defilement",
-      "heroId": "52",
-      "engineId": "leshrac_defilement",
-      "activationId": "activation:52:leshrac_defilement",
-      "order": 4,
-      "owner": "npc_dota_hero_leshrac",
-      "state": "known"
-    },
-    {
-      "id": "ability:52:leshrac_pulse_nova",
-      "heroId": "52",
-      "engineId": "leshrac_pulse_nova",
-      "activationId": "activation:52:leshrac_pulse_nova",
+      "id": "leshrac_pulse_nova",
+      "Name": "Pulse Nova",
+      "behavior": [
+        "no-target",
+        "toggle"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_leshrac",
-      "state": "known"
+      "type": "toggle",
+      "manaCost": [
+        50,
+        60,
+        70
+      ],
+      "cooldown": 1,
+      "tags": []
     },
     {
-      "id": "ability:52:special_bonus_mp_regen_150",
-      "heroId": "52",
-      "engineId": "special_bonus_mp_regen_150",
-      "activationId": "activation:52:special_bonus_mp_regen_150",
-      "order": 6,
-      "owner": "npc_dota_hero_leshrac",
-      "state": "known"
-    },
-    {
-      "id": "ability:52:special_bonus_armor_4",
-      "heroId": "52",
-      "engineId": "special_bonus_armor_4",
-      "activationId": "activation:52:special_bonus_armor_4",
-      "order": 7,
-      "owner": "npc_dota_hero_leshrac",
-      "state": "known"
-    },
-    {
-      "id": "ability:52:special_bonus_unique_leshrac_6",
-      "heroId": "52",
-      "engineId": "special_bonus_unique_leshrac_6",
-      "activationId": "activation:52:special_bonus_unique_leshrac_6",
-      "order": 8,
-      "owner": "npc_dota_hero_leshrac",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:52:special_bonus_unique_leshrac_4",
-      "heroId": "52",
-      "engineId": "special_bonus_unique_leshrac_4",
-      "activationId": "activation:52:special_bonus_unique_leshrac_4",
-      "order": 9,
-      "owner": "npc_dota_hero_leshrac",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:52:special_bonus_unique_leshrac_7",
-      "heroId": "52",
-      "engineId": "special_bonus_unique_leshrac_7",
-      "activationId": "activation:52:special_bonus_unique_leshrac_7",
-      "order": 10,
-      "owner": "npc_dota_hero_leshrac",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:52:special_bonus_unique_leshrac_3",
-      "heroId": "52",
-      "engineId": "special_bonus_unique_leshrac_3",
-      "activationId": "activation:52:special_bonus_unique_leshrac_3",
-      "order": 11,
-      "owner": "npc_dota_hero_leshrac",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:52:special_bonus_unique_leshrac_1",
-      "heroId": "52",
-      "engineId": "special_bonus_unique_leshrac_1",
-      "activationId": "activation:52:special_bonus_unique_leshrac_1",
-      "order": 12,
-      "owner": "npc_dota_hero_leshrac",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:52:special_bonus_unique_leshrac_pulse_nova_lightning",
-      "heroId": "52",
-      "engineId": "special_bonus_unique_leshrac_pulse_nova_lightning",
-      "activationId": "activation:52:special_bonus_unique_leshrac_pulse_nova_lightning",
-      "order": 13,
-      "owner": "npc_dota_hero_leshrac",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:52:special_bonus_attributes",
-      "heroId": "52",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:52:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_leshrac",
-      "state": "known"
-    },
-    {
-      "id": "ability:52:leshrac_chronoptic_nourishment",
-      "heroId": "52",
-      "engineId": "leshrac_chronoptic_nourishment",
-      "activationId": "activation:52:leshrac_chronoptic_nourishment",
+      "id": "leshrac_chronoptic_nourishment",
+      "Name": "Chronoptic Nourishment",
+      "behavior": [
+        "passive"
+      ],
+      "dispellable": "no",
+      "breakable": true,
       "order": 15,
-      "owner": "npc_dota_hero_leshrac",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "self_mana_restore"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:52:leshrac_split_earth",
-      "heroId": "52",
-      "abilityIds": [
-        "ability:52:leshrac_split_earth"
+      "id": "special_bonus_mp_regen_150",
+      "Name": "+1.5 Mana Regen",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:52:leshrac_split_earth:manaCost",
-        "ownerId": "activation:52:leshrac_split_earth",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          80,
-          100,
-          120,
-          140
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:52:leshrac_split_earth:cooldown",
-        "ownerId": "activation:52:leshrac_split_earth",
-        "field": "cooldown",
-        "state": "known",
-        "value": 11
-      },
-      "charges": {
-        "id": "value:activation:52:leshrac_split_earth:charges",
-        "ownerId": "activation:52:leshrac_split_earth",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:52:leshrac_split_earth:manaCost",
-        "value:activation:52:leshrac_split_earth:cooldown",
-        "value:activation:52:leshrac_split_earth:charges"
+      "tags": [
+        "buff",
+        "self_mana_regen"
       ]
     },
     {
-      "id": "activation:52:leshrac_diabolic_edict",
-      "heroId": "52",
-      "abilityIds": [
-        "ability:52:leshrac_diabolic_edict"
+      "id": "special_bonus_armor_4",
+      "Name": "+4 Armor",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:52:leshrac_diabolic_edict:manaCost",
-        "ownerId": "activation:52:leshrac_diabolic_edict",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          90,
-          120,
-          150,
-          180
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:52:leshrac_diabolic_edict:cooldown",
-        "ownerId": "activation:52:leshrac_diabolic_edict",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          22,
-          21,
-          20,
-          19
-        ]
-      },
-      "charges": {
-        "id": "value:activation:52:leshrac_diabolic_edict:charges",
-        "ownerId": "activation:52:leshrac_diabolic_edict",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:52:leshrac_diabolic_edict:manaCost",
-        "value:activation:52:leshrac_diabolic_edict:cooldown",
-        "value:activation:52:leshrac_diabolic_edict:charges"
+      "tags": [
+        "buff",
+        "self_armor"
       ]
     },
     {
-      "id": "activation:52:leshrac_lightning_storm",
-      "heroId": "52",
-      "abilityIds": [
-        "ability:52:leshrac_lightning_storm"
-      ],
-      "manaCost": {
-        "id": "value:activation:52:leshrac_lightning_storm:manaCost",
-        "ownerId": "activation:52:leshrac_lightning_storm",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          80,
-          100,
-          120,
-          140
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:52:leshrac_lightning_storm:cooldown",
-        "ownerId": "activation:52:leshrac_lightning_storm",
-        "field": "cooldown",
-        "state": "known",
-        "value": 4
-      },
-      "charges": {
-        "id": "value:activation:52:leshrac_lightning_storm:charges",
-        "ownerId": "activation:52:leshrac_lightning_storm",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:52:leshrac_lightning_storm:manaCost",
-        "value:activation:52:leshrac_lightning_storm:cooldown",
-        "value:activation:52:leshrac_lightning_storm:charges"
+      "id": "special_bonus_unique_leshrac_6",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:52:leshrac_greater_lightning_storm",
-      "heroId": "52",
-      "abilityIds": [
-        "ability:52:leshrac_greater_lightning_storm"
-      ],
-      "manaCost": {
-        "id": "value:activation:52:leshrac_greater_lightning_storm:manaCost",
-        "ownerId": "activation:52:leshrac_greater_lightning_storm",
-        "field": "manaCost",
-        "state": "known",
-        "value": 75
-      },
-      "cooldown": {
-        "id": "value:activation:52:leshrac_greater_lightning_storm:cooldown",
-        "ownerId": "activation:52:leshrac_greater_lightning_storm",
-        "field": "cooldown",
-        "state": "known",
-        "value": 25
-      },
-      "charges": {
-        "id": "value:activation:52:leshrac_greater_lightning_storm:charges",
-        "ownerId": "activation:52:leshrac_greater_lightning_storm",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:52:leshrac_greater_lightning_storm:manaCost",
-        "value:activation:52:leshrac_greater_lightning_storm:cooldown",
-        "value:activation:52:leshrac_greater_lightning_storm:charges"
+      "id": "special_bonus_unique_leshrac_4",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_leshrac_7",
+      "Name": "Diabolic Edict Hits An Additional Target",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_leshrac_3",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:52:leshrac_defilement",
-      "heroId": "52",
-      "abilityIds": [
-        "ability:52:leshrac_defilement"
-      ],
-      "manaCost": {
-        "id": "value:activation:52:leshrac_defilement:manaCost",
-        "ownerId": "activation:52:leshrac_defilement",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:52:leshrac_defilement:cooldown",
-        "ownerId": "activation:52:leshrac_defilement",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:52:leshrac_defilement:charges",
-        "ownerId": "activation:52:leshrac_defilement",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:52:leshrac_defilement:manaCost",
-        "value:activation:52:leshrac_defilement:cooldown",
-        "value:activation:52:leshrac_defilement:charges"
-      ]
+      "id": "special_bonus_unique_leshrac_1",
+      "tags": []
     },
     {
-      "id": "activation:52:leshrac_pulse_nova",
-      "heroId": "52",
-      "abilityIds": [
-        "ability:52:leshrac_pulse_nova"
-      ],
-      "manaCost": {
-        "id": "value:activation:52:leshrac_pulse_nova:manaCost",
-        "ownerId": "activation:52:leshrac_pulse_nova",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          50,
-          60,
-          70
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:52:leshrac_pulse_nova:cooldown",
-        "ownerId": "activation:52:leshrac_pulse_nova",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          1,
-          1,
-          1,
-          1
-        ]
-      },
-      "charges": {
-        "id": "value:activation:52:leshrac_pulse_nova:charges",
-        "ownerId": "activation:52:leshrac_pulse_nova",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:52:leshrac_pulse_nova:manaCost",
-        "value:activation:52:leshrac_pulse_nova:cooldown",
-        "value:activation:52:leshrac_pulse_nova:charges"
-      ]
-    },
-    {
-      "id": "activation:52:special_bonus_mp_regen_150",
-      "heroId": "52",
-      "abilityIds": [
-        "ability:52:special_bonus_mp_regen_150"
-      ],
-      "manaCost": {
-        "id": "value:activation:52:special_bonus_mp_regen_150:manaCost",
-        "ownerId": "activation:52:special_bonus_mp_regen_150",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:52:special_bonus_mp_regen_150:cooldown",
-        "ownerId": "activation:52:special_bonus_mp_regen_150",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:52:special_bonus_mp_regen_150:charges",
-        "ownerId": "activation:52:special_bonus_mp_regen_150",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:52:special_bonus_mp_regen_150:manaCost",
-        "value:activation:52:special_bonus_mp_regen_150:cooldown",
-        "value:activation:52:special_bonus_mp_regen_150:charges"
-      ]
-    },
-    {
-      "id": "activation:52:special_bonus_armor_4",
-      "heroId": "52",
-      "abilityIds": [
-        "ability:52:special_bonus_armor_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:52:special_bonus_armor_4:manaCost",
-        "ownerId": "activation:52:special_bonus_armor_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:52:special_bonus_armor_4:cooldown",
-        "ownerId": "activation:52:special_bonus_armor_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:52:special_bonus_armor_4:charges",
-        "ownerId": "activation:52:special_bonus_armor_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:52:special_bonus_armor_4:manaCost",
-        "value:activation:52:special_bonus_armor_4:cooldown",
-        "value:activation:52:special_bonus_armor_4:charges"
-      ]
-    },
-    {
-      "id": "activation:52:special_bonus_unique_leshrac_6",
-      "heroId": "52",
-      "abilityIds": [
-        "ability:52:special_bonus_unique_leshrac_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_6:manaCost",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_6:cooldown",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_6:charges",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:52:special_bonus_unique_leshrac_6:manaCost",
-        "value:activation:52:special_bonus_unique_leshrac_6:cooldown",
-        "value:activation:52:special_bonus_unique_leshrac_6:charges"
-      ]
-    },
-    {
-      "id": "activation:52:special_bonus_unique_leshrac_4",
-      "heroId": "52",
-      "abilityIds": [
-        "ability:52:special_bonus_unique_leshrac_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_4:manaCost",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_4:cooldown",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_4:charges",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:52:special_bonus_unique_leshrac_4:manaCost",
-        "value:activation:52:special_bonus_unique_leshrac_4:cooldown",
-        "value:activation:52:special_bonus_unique_leshrac_4:charges"
-      ]
-    },
-    {
-      "id": "activation:52:special_bonus_unique_leshrac_7",
-      "heroId": "52",
-      "abilityIds": [
-        "ability:52:special_bonus_unique_leshrac_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_7:manaCost",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_7:cooldown",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_7:charges",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:52:special_bonus_unique_leshrac_7:manaCost",
-        "value:activation:52:special_bonus_unique_leshrac_7:cooldown",
-        "value:activation:52:special_bonus_unique_leshrac_7:charges"
-      ]
-    },
-    {
-      "id": "activation:52:special_bonus_unique_leshrac_3",
-      "heroId": "52",
-      "abilityIds": [
-        "ability:52:special_bonus_unique_leshrac_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_3:manaCost",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_3:cooldown",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_3:charges",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:52:special_bonus_unique_leshrac_3:manaCost",
-        "value:activation:52:special_bonus_unique_leshrac_3:cooldown",
-        "value:activation:52:special_bonus_unique_leshrac_3:charges"
-      ]
-    },
-    {
-      "id": "activation:52:special_bonus_unique_leshrac_1",
-      "heroId": "52",
-      "abilityIds": [
-        "ability:52:special_bonus_unique_leshrac_1"
-      ],
-      "manaCost": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_1:manaCost",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_1",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_1:cooldown",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_1",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_1:charges",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_1",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:52:special_bonus_unique_leshrac_1:manaCost",
-        "value:activation:52:special_bonus_unique_leshrac_1:cooldown",
-        "value:activation:52:special_bonus_unique_leshrac_1:charges"
-      ]
-    },
-    {
-      "id": "activation:52:special_bonus_unique_leshrac_pulse_nova_lightning",
-      "heroId": "52",
-      "abilityIds": [
-        "ability:52:special_bonus_unique_leshrac_pulse_nova_lightning"
-      ],
-      "manaCost": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_pulse_nova_lightning:manaCost",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_pulse_nova_lightning",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_pulse_nova_lightning:cooldown",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_pulse_nova_lightning",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:52:special_bonus_unique_leshrac_pulse_nova_lightning:charges",
-        "ownerId": "activation:52:special_bonus_unique_leshrac_pulse_nova_lightning",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:52:special_bonus_unique_leshrac_pulse_nova_lightning:manaCost",
-        "value:activation:52:special_bonus_unique_leshrac_pulse_nova_lightning:cooldown",
-        "value:activation:52:special_bonus_unique_leshrac_pulse_nova_lightning:charges"
-      ]
-    },
-    {
-      "id": "activation:52:special_bonus_attributes",
-      "heroId": "52",
-      "abilityIds": [
-        "ability:52:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:52:special_bonus_attributes:manaCost",
-        "ownerId": "activation:52:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:52:special_bonus_attributes:cooldown",
-        "ownerId": "activation:52:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:52:special_bonus_attributes:charges",
-        "ownerId": "activation:52:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:52:special_bonus_attributes:manaCost",
-        "value:activation:52:special_bonus_attributes:cooldown",
-        "value:activation:52:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:52:leshrac_chronoptic_nourishment",
-      "heroId": "52",
-      "abilityIds": [
-        "ability:52:leshrac_chronoptic_nourishment"
-      ],
-      "manaCost": {
-        "id": "value:activation:52:leshrac_chronoptic_nourishment:manaCost",
-        "ownerId": "activation:52:leshrac_chronoptic_nourishment",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:52:leshrac_chronoptic_nourishment:cooldown",
-        "ownerId": "activation:52:leshrac_chronoptic_nourishment",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:52:leshrac_chronoptic_nourishment:charges",
-        "ownerId": "activation:52:leshrac_chronoptic_nourishment",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:52:leshrac_chronoptic_nourishment:manaCost",
-        "value:activation:52:leshrac_chronoptic_nourishment:cooldown",
-        "value:activation:52:leshrac_chronoptic_nourishment:charges"
-      ]
+      "id": "special_bonus_unique_leshrac_pulse_nova_lightning",
+      "Name": "Pulse Nova triggers Lightning Storm",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

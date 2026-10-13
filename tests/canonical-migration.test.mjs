@@ -146,7 +146,9 @@ test('canonical serialization, offline recompilation and runtime lazy records ro
     await writeCanonical(first, graph);
     const counts = await validateDataset(first); assert.equal(counts.observations, 2);
     const recovered = await readCanonical(first);
-    assert.equal(compareGraphs(graph, recovered).equivalent, true);
+    const expected = structuredClone(graph);
+    for (const hero of expected.entities.heroes) hero.capabilities = {};
+    assert.equal(compareGraphs(expected, recovered).equivalent, true);
     await writeCanonical(second, recovered);
     assert.deepEqual(await inventory(first), await inventory(second));
     const store = await loadKnowledgeDirectory(path.join(first, 'runtime/manifest.json'));

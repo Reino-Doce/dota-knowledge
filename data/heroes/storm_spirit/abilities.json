@@ -1,698 +1,191 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "storm_spirit_galvanized",
+    "Name": "Galvanized",
+    "behavior": [
+      "passive"
+    ],
+    "dispellable": "no",
+    "breakable": true,
+    "tags": [
+      "buff",
+      "earned_permanent_growth",
+      "self_mana_regen"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:17:storm_spirit_static_remnant",
-      "heroId": "17",
-      "engineId": "storm_spirit_static_remnant",
-      "activationId": "activation:17:storm_spirit_static_remnant",
+      "id": "storm_spirit_static_remnant",
+      "Name": "Static Remnant",
+      "behavior": [
+        "no-target"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_storm_spirit",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        70,
+        80,
+        90,
+        100
+      ],
+      "tags": [
+        "vision"
+      ]
     },
     {
-      "id": "ability:17:storm_spirit_electric_vortex",
-      "heroId": "17",
-      "engineId": "storm_spirit_electric_vortex",
-      "activationId": "activation:17:storm_spirit_electric_vortex",
+      "id": "storm_spirit_electric_vortex",
+      "Name": "Electric Vortex",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "strong-only",
+      "dispelType": "strong",
+      "piercesDebuffImmunity": "no",
       "order": 1,
-      "owner": "npc_dota_hero_storm_spirit",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        60,
+        70,
+        80,
+        90
+      ],
+      "cooldown": [
+        20,
+        18,
+        16,
+        14
+      ],
+      "tags": [
+        "enemy_displacement"
+      ]
     },
     {
-      "id": "ability:17:storm_spirit_overload",
-      "heroId": "17",
-      "engineId": "storm_spirit_overload",
-      "activationId": "activation:17:storm_spirit_overload",
+      "id": "storm_spirit_overload",
+      "Name": "Overload",
+      "behavior": [
+        "passive"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "breakable": true,
       "order": 2,
-      "owner": "npc_dota_hero_storm_spirit",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:17:generic_hidden",
-      "heroId": "17",
-      "engineId": "generic_hidden",
-      "activationId": "activation:17:generic_hidden",
+      "id": "generic_hidden",
       "order": 3,
-      "owner": "npc_dota_hero_storm_spirit",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:17:storm_spirit_ball_lightning",
-      "heroId": "17",
-      "engineId": "storm_spirit_ball_lightning",
-      "activationId": "activation:17:storm_spirit_ball_lightning",
+      "id": "storm_spirit_ball_lightning",
+      "Name": "Ball Lightning",
+      "behavior": [
+        "point-target"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 4,
-      "owner": "npc_dota_hero_storm_spirit",
-      "state": "known"
+      "type": "point",
+      "manaCost": 30,
+      "tags": [
+        "damage_immunity",
+        "escape",
+        "mobility"
+      ]
     },
     {
-      "id": "ability:17:storm_spirit_galvanized",
-      "heroId": "17",
-      "engineId": "storm_spirit_galvanized",
-      "activationId": "activation:17:storm_spirit_galvanized",
-      "order": 5,
-      "owner": "npc_dota_hero_storm_spirit",
-      "state": "known"
-    },
-    {
-      "id": "ability:17:special_bonus_unique_storm_spirit_overload_aspd",
-      "heroId": "17",
-      "engineId": "special_bonus_unique_storm_spirit_overload_aspd",
-      "activationId": "activation:17:special_bonus_unique_storm_spirit_overload_aspd",
-      "order": 6,
-      "owner": "npc_dota_hero_storm_spirit",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:17:special_bonus_mp_regen_150",
-      "heroId": "17",
-      "engineId": "special_bonus_mp_regen_150",
-      "activationId": "activation:17:special_bonus_mp_regen_150",
-      "order": 7,
-      "owner": "npc_dota_hero_storm_spirit",
-      "state": "known"
-    },
-    {
-      "id": "ability:17:special_bonus_hp_250",
-      "heroId": "17",
-      "engineId": "special_bonus_hp_250",
-      "activationId": "activation:17:special_bonus_hp_250",
-      "order": 8,
-      "owner": "npc_dota_hero_storm_spirit",
-      "state": "known"
-    },
-    {
-      "id": "ability:17:special_bonus_unique_storm_spirit_5",
-      "heroId": "17",
-      "engineId": "special_bonus_unique_storm_spirit_5",
-      "activationId": "activation:17:special_bonus_unique_storm_spirit_5",
-      "order": 9,
-      "owner": "npc_dota_hero_storm_spirit",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:17:special_bonus_unique_storm_spirit",
-      "heroId": "17",
-      "engineId": "special_bonus_unique_storm_spirit",
-      "activationId": "activation:17:special_bonus_unique_storm_spirit",
-      "order": 10,
-      "owner": "npc_dota_hero_storm_spirit",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:17:special_bonus_unique_storm_spirit_8",
-      "heroId": "17",
-      "engineId": "special_bonus_unique_storm_spirit_8",
-      "activationId": "activation:17:special_bonus_unique_storm_spirit_8",
-      "order": 11,
-      "owner": "npc_dota_hero_storm_spirit",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:17:special_bonus_unique_storm_spirit_7",
-      "heroId": "17",
-      "engineId": "special_bonus_unique_storm_spirit_7",
-      "activationId": "activation:17:special_bonus_unique_storm_spirit_7",
-      "order": 12,
-      "owner": "npc_dota_hero_storm_spirit",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:17:special_bonus_unique_storm_spirit_4",
-      "heroId": "17",
-      "engineId": "special_bonus_unique_storm_spirit_4",
-      "activationId": "activation:17:special_bonus_unique_storm_spirit_4",
-      "order": 13,
-      "owner": "npc_dota_hero_storm_spirit",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:17:special_bonus_attributes",
-      "heroId": "17",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:17:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_storm_spirit",
-      "state": "known"
-    },
-    {
-      "id": "ability:17:storm_spirit_electric_rave",
-      "heroId": "17",
-      "engineId": "storm_spirit_electric_rave",
-      "activationId": "activation:17:storm_spirit_electric_rave",
+      "id": "storm_spirit_electric_rave",
+      "Name": "Electric Rave",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
       "order": 15,
-      "owner": "npc_dota_hero_storm_spirit",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 100,
+      "cooldown": 30,
+      "tags": [
+        "ally_attack_speed",
+        "buff",
+        "self_attack_speed"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:17:storm_spirit_static_remnant",
-      "heroId": "17",
-      "abilityIds": [
-        "ability:17:storm_spirit_static_remnant"
+      "id": "special_bonus_unique_storm_spirit_overload_aspd",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_mp_regen_150",
+      "Name": "+1.5 Mana Regen",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:17:storm_spirit_static_remnant:manaCost",
-        "ownerId": "activation:17:storm_spirit_static_remnant",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          70,
-          80,
-          90,
-          100
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:17:storm_spirit_static_remnant:cooldown",
-        "ownerId": "activation:17:storm_spirit_static_remnant",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "3.5",
-          "special_bonus_unique_storm_spirit_8": "-1.25"
-        }
-      },
-      "charges": {
-        "id": "value:activation:17:storm_spirit_static_remnant:charges",
-        "ownerId": "activation:17:storm_spirit_static_remnant",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:17:storm_spirit_static_remnant:manaCost",
-        "value:activation:17:storm_spirit_static_remnant:cooldown",
-        "value:activation:17:storm_spirit_static_remnant:charges"
+      "tags": [
+        "buff",
+        "self_mana_regen"
       ]
     },
     {
-      "id": "activation:17:storm_spirit_electric_vortex",
-      "heroId": "17",
-      "abilityIds": [
-        "ability:17:storm_spirit_electric_vortex"
+      "id": "special_bonus_hp_250",
+      "Name": "+250 Health",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:17:storm_spirit_electric_vortex:manaCost",
-        "ownerId": "activation:17:storm_spirit_electric_vortex",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          60,
-          70,
-          80,
-          90
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:17:storm_spirit_electric_vortex:cooldown",
-        "ownerId": "activation:17:storm_spirit_electric_vortex",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          20,
-          18,
-          16,
-          14
-        ]
-      },
-      "charges": {
-        "id": "value:activation:17:storm_spirit_electric_vortex:charges",
-        "ownerId": "activation:17:storm_spirit_electric_vortex",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:17:storm_spirit_electric_vortex:manaCost",
-        "value:activation:17:storm_spirit_electric_vortex:cooldown",
-        "value:activation:17:storm_spirit_electric_vortex:charges"
+      "tags": [
+        "buff",
+        "self_max_health"
       ]
     },
     {
-      "id": "activation:17:storm_spirit_overload",
-      "heroId": "17",
-      "abilityIds": [
-        "ability:17:storm_spirit_overload"
-      ],
-      "manaCost": {
-        "id": "value:activation:17:storm_spirit_overload:manaCost",
-        "ownerId": "activation:17:storm_spirit_overload",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:17:storm_spirit_overload:cooldown",
-        "ownerId": "activation:17:storm_spirit_overload",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:17:storm_spirit_overload:charges",
-        "ownerId": "activation:17:storm_spirit_overload",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:17:storm_spirit_overload:manaCost",
-        "value:activation:17:storm_spirit_overload:cooldown",
-        "value:activation:17:storm_spirit_overload:charges"
+      "id": "special_bonus_unique_storm_spirit_5",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_storm_spirit",
+      "tags": [
+        "duration_extension"
       ]
     },
     {
-      "id": "activation:17:generic_hidden",
-      "heroId": "17",
-      "abilityIds": [
-        "ability:17:generic_hidden"
-      ],
-      "manaCost": {
-        "id": "value:activation:17:generic_hidden:manaCost",
-        "ownerId": "activation:17:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:17:generic_hidden:cooldown",
-        "ownerId": "activation:17:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:17:generic_hidden:charges",
-        "ownerId": "activation:17:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:17:generic_hidden:manaCost",
-        "value:activation:17:generic_hidden:cooldown",
-        "value:activation:17:generic_hidden:charges"
+      "id": "special_bonus_unique_storm_spirit_8",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:17:storm_spirit_ball_lightning",
-      "heroId": "17",
-      "abilityIds": [
-        "ability:17:storm_spirit_ball_lightning"
-      ],
-      "manaCost": {
-        "id": "value:activation:17:storm_spirit_ball_lightning:manaCost",
-        "ownerId": "activation:17:storm_spirit_ball_lightning",
-        "field": "manaCost",
-        "state": "known",
-        "value": 30
-      },
-      "cooldown": {
-        "id": "value:activation:17:storm_spirit_ball_lightning:cooldown",
-        "ownerId": "activation:17:storm_spirit_ball_lightning",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:17:storm_spirit_ball_lightning:charges",
-        "ownerId": "activation:17:storm_spirit_ball_lightning",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:17:storm_spirit_ball_lightning:manaCost",
-        "value:activation:17:storm_spirit_ball_lightning:cooldown",
-        "value:activation:17:storm_spirit_ball_lightning:charges"
-      ]
+      "id": "special_bonus_unique_storm_spirit_7",
+      "tags": []
     },
     {
-      "id": "activation:17:storm_spirit_galvanized",
-      "heroId": "17",
-      "abilityIds": [
-        "ability:17:storm_spirit_galvanized"
-      ],
-      "manaCost": {
-        "id": "value:activation:17:storm_spirit_galvanized:manaCost",
-        "ownerId": "activation:17:storm_spirit_galvanized",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:17:storm_spirit_galvanized:cooldown",
-        "ownerId": "activation:17:storm_spirit_galvanized",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:17:storm_spirit_galvanized:charges",
-        "ownerId": "activation:17:storm_spirit_galvanized",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:17:storm_spirit_galvanized:manaCost",
-        "value:activation:17:storm_spirit_galvanized:cooldown",
-        "value:activation:17:storm_spirit_galvanized:charges"
-      ]
-    },
-    {
-      "id": "activation:17:special_bonus_unique_storm_spirit_overload_aspd",
-      "heroId": "17",
-      "abilityIds": [
-        "ability:17:special_bonus_unique_storm_spirit_overload_aspd"
-      ],
-      "manaCost": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit_overload_aspd:manaCost",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit_overload_aspd",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit_overload_aspd:cooldown",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit_overload_aspd",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit_overload_aspd:charges",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit_overload_aspd",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:17:special_bonus_unique_storm_spirit_overload_aspd:manaCost",
-        "value:activation:17:special_bonus_unique_storm_spirit_overload_aspd:cooldown",
-        "value:activation:17:special_bonus_unique_storm_spirit_overload_aspd:charges"
-      ]
-    },
-    {
-      "id": "activation:17:special_bonus_mp_regen_150",
-      "heroId": "17",
-      "abilityIds": [
-        "ability:17:special_bonus_mp_regen_150"
-      ],
-      "manaCost": {
-        "id": "value:activation:17:special_bonus_mp_regen_150:manaCost",
-        "ownerId": "activation:17:special_bonus_mp_regen_150",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:17:special_bonus_mp_regen_150:cooldown",
-        "ownerId": "activation:17:special_bonus_mp_regen_150",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:17:special_bonus_mp_regen_150:charges",
-        "ownerId": "activation:17:special_bonus_mp_regen_150",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:17:special_bonus_mp_regen_150:manaCost",
-        "value:activation:17:special_bonus_mp_regen_150:cooldown",
-        "value:activation:17:special_bonus_mp_regen_150:charges"
-      ]
-    },
-    {
-      "id": "activation:17:special_bonus_hp_250",
-      "heroId": "17",
-      "abilityIds": [
-        "ability:17:special_bonus_hp_250"
-      ],
-      "manaCost": {
-        "id": "value:activation:17:special_bonus_hp_250:manaCost",
-        "ownerId": "activation:17:special_bonus_hp_250",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:17:special_bonus_hp_250:cooldown",
-        "ownerId": "activation:17:special_bonus_hp_250",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:17:special_bonus_hp_250:charges",
-        "ownerId": "activation:17:special_bonus_hp_250",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:17:special_bonus_hp_250:manaCost",
-        "value:activation:17:special_bonus_hp_250:cooldown",
-        "value:activation:17:special_bonus_hp_250:charges"
-      ]
-    },
-    {
-      "id": "activation:17:special_bonus_unique_storm_spirit_5",
-      "heroId": "17",
-      "abilityIds": [
-        "ability:17:special_bonus_unique_storm_spirit_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit_5:manaCost",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit_5:cooldown",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit_5:charges",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:17:special_bonus_unique_storm_spirit_5:manaCost",
-        "value:activation:17:special_bonus_unique_storm_spirit_5:cooldown",
-        "value:activation:17:special_bonus_unique_storm_spirit_5:charges"
-      ]
-    },
-    {
-      "id": "activation:17:special_bonus_unique_storm_spirit",
-      "heroId": "17",
-      "abilityIds": [
-        "ability:17:special_bonus_unique_storm_spirit"
-      ],
-      "manaCost": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit:manaCost",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit:cooldown",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit:charges",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:17:special_bonus_unique_storm_spirit:manaCost",
-        "value:activation:17:special_bonus_unique_storm_spirit:cooldown",
-        "value:activation:17:special_bonus_unique_storm_spirit:charges"
-      ]
-    },
-    {
-      "id": "activation:17:special_bonus_unique_storm_spirit_8",
-      "heroId": "17",
-      "abilityIds": [
-        "ability:17:special_bonus_unique_storm_spirit_8"
-      ],
-      "manaCost": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit_8:manaCost",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit_8:cooldown",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit_8:charges",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:17:special_bonus_unique_storm_spirit_8:manaCost",
-        "value:activation:17:special_bonus_unique_storm_spirit_8:cooldown",
-        "value:activation:17:special_bonus_unique_storm_spirit_8:charges"
-      ]
-    },
-    {
-      "id": "activation:17:special_bonus_unique_storm_spirit_7",
-      "heroId": "17",
-      "abilityIds": [
-        "ability:17:special_bonus_unique_storm_spirit_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit_7:manaCost",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit_7:cooldown",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit_7:charges",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:17:special_bonus_unique_storm_spirit_7:manaCost",
-        "value:activation:17:special_bonus_unique_storm_spirit_7:cooldown",
-        "value:activation:17:special_bonus_unique_storm_spirit_7:charges"
-      ]
-    },
-    {
-      "id": "activation:17:special_bonus_unique_storm_spirit_4",
-      "heroId": "17",
-      "abilityIds": [
-        "ability:17:special_bonus_unique_storm_spirit_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit_4:manaCost",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit_4:cooldown",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:17:special_bonus_unique_storm_spirit_4:charges",
-        "ownerId": "activation:17:special_bonus_unique_storm_spirit_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:17:special_bonus_unique_storm_spirit_4:manaCost",
-        "value:activation:17:special_bonus_unique_storm_spirit_4:cooldown",
-        "value:activation:17:special_bonus_unique_storm_spirit_4:charges"
-      ]
-    },
-    {
-      "id": "activation:17:special_bonus_attributes",
-      "heroId": "17",
-      "abilityIds": [
-        "ability:17:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:17:special_bonus_attributes:manaCost",
-        "ownerId": "activation:17:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:17:special_bonus_attributes:cooldown",
-        "ownerId": "activation:17:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:17:special_bonus_attributes:charges",
-        "ownerId": "activation:17:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:17:special_bonus_attributes:manaCost",
-        "value:activation:17:special_bonus_attributes:cooldown",
-        "value:activation:17:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:17:storm_spirit_electric_rave",
-      "heroId": "17",
-      "abilityIds": [
-        "ability:17:storm_spirit_electric_rave"
-      ],
-      "manaCost": {
-        "id": "value:activation:17:storm_spirit_electric_rave:manaCost",
-        "ownerId": "activation:17:storm_spirit_electric_rave",
-        "field": "manaCost",
-        "state": "known",
-        "value": 100
-      },
-      "cooldown": {
-        "id": "value:activation:17:storm_spirit_electric_rave:cooldown",
-        "ownerId": "activation:17:storm_spirit_electric_rave",
-        "field": "cooldown",
-        "state": "known",
-        "value": 30
-      },
-      "charges": {
-        "id": "value:activation:17:storm_spirit_electric_rave:charges",
-        "ownerId": "activation:17:storm_spirit_electric_rave",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:17:storm_spirit_electric_rave:manaCost",
-        "value:activation:17:storm_spirit_electric_rave:cooldown",
-        "value:activation:17:storm_spirit_electric_rave:charges"
-      ]
+      "id": "special_bonus_unique_storm_spirit_4",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

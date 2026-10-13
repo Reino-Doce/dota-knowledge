@@ -1,670 +1,184 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "puck_puckish",
+    "Name": "Puckish",
+    "behavior": [
+      "passive"
+    ],
+    "breakable": true,
+    "tags": [
+      "heal",
+      "self_heal",
+      "self_mana_restore"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:13:puck_illusory_orb",
-      "heroId": "13",
-      "engineId": "puck_illusory_orb",
-      "activationId": "activation:13:puck_illusory_orb",
+      "id": "puck_illusory_orb",
+      "Name": "Illusory Orb",
+      "behavior": [
+        "point-target"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_puck",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        90,
+        100,
+        110,
+        120
+      ],
+      "tags": [
+        "blink",
+        "damage_over_time",
+        "escape",
+        "immediate_damage",
+        "mobility",
+        "self_reposition",
+        "vision"
+      ]
     },
     {
-      "id": "ability:13:puck_waning_rift",
-      "heroId": "13",
-      "engineId": "puck_waning_rift",
-      "activationId": "activation:13:puck_waning_rift",
+      "id": "puck_waning_rift",
+      "Name": "Waning Rift",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_puck",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "tags": [
+        "aoe",
+        "blink",
+        "disable",
+        "enemy_displacement",
+        "escape",
+        "mobility",
+        "self_reposition",
+        "silence"
+      ]
     },
     {
-      "id": "ability:13:puck_phase_shift",
-      "heroId": "13",
-      "engineId": "puck_phase_shift",
-      "activationId": "activation:13:puck_phase_shift",
+      "id": "puck_phase_shift",
+      "Name": "Phase Shift",
+      "behavior": [
+        "channeled",
+        "no-target"
+      ],
       "order": 2,
-      "owner": "npc_dota_hero_puck",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 0,
+      "tags": [
+        "channeled",
+        "damage_immunity",
+        "escape"
+      ]
     },
     {
-      "id": "ability:13:puck_ethereal_jaunt",
-      "heroId": "13",
-      "engineId": "puck_ethereal_jaunt",
-      "activationId": "activation:13:puck_ethereal_jaunt",
+      "id": "puck_ethereal_jaunt",
+      "Name": "Ethereal Jaunt",
+      "behavior": [
+        "no-target"
+      ],
       "order": 3,
-      "owner": "npc_dota_hero_puck",
-      "state": "known"
+      "type": "self-target",
+      "tags": [
+        "blink",
+        "escape",
+        "mobility",
+        "self_reposition"
+      ]
     },
     {
-      "id": "ability:13:puck_puckish",
-      "heroId": "13",
-      "engineId": "puck_puckish",
-      "activationId": "activation:13:puck_puckish",
-      "order": 4,
-      "owner": "npc_dota_hero_puck",
-      "state": "known"
-    },
-    {
-      "id": "ability:13:puck_dream_coil",
-      "heroId": "13",
-      "engineId": "puck_dream_coil",
-      "activationId": "activation:13:puck_dream_coil",
+      "id": "puck_dream_coil",
+      "Name": "Dream Coil",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_puck",
-      "state": "known"
-    },
-    {
-      "id": "ability:13:special_bonus_unique_puck_orb_damage",
-      "heroId": "13",
-      "engineId": "special_bonus_unique_puck_orb_damage",
-      "activationId": "activation:13:special_bonus_unique_puck_orb_damage",
-      "order": 6,
-      "owner": "npc_dota_hero_puck",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:13:special_bonus_unique_puck_7",
-      "heroId": "13",
-      "engineId": "special_bonus_unique_puck_7",
-      "activationId": "activation:13:special_bonus_unique_puck_7",
-      "order": 7,
-      "owner": "npc_dota_hero_puck",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:13:special_bonus_unique_puck_5",
-      "heroId": "13",
-      "engineId": "special_bonus_unique_puck_5",
-      "activationId": "activation:13:special_bonus_unique_puck_5",
-      "order": 8,
-      "owner": "npc_dota_hero_puck",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:13:special_bonus_unique_puck_6",
-      "heroId": "13",
-      "engineId": "special_bonus_unique_puck_6",
-      "activationId": "activation:13:special_bonus_unique_puck_6",
-      "order": 9,
-      "owner": "npc_dota_hero_puck",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:13:special_bonus_unique_puck_2",
-      "heroId": "13",
-      "engineId": "special_bonus_unique_puck_2",
-      "activationId": "activation:13:special_bonus_unique_puck_2",
-      "order": 10,
-      "owner": "npc_dota_hero_puck",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:13:special_bonus_unique_puck_coil_damage",
-      "heroId": "13",
-      "engineId": "special_bonus_unique_puck_coil_damage",
-      "activationId": "activation:13:special_bonus_unique_puck_coil_damage",
-      "order": 11,
-      "owner": "npc_dota_hero_puck",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:13:special_bonus_unique_puck",
-      "heroId": "13",
-      "engineId": "special_bonus_unique_puck",
-      "activationId": "activation:13:special_bonus_unique_puck",
-      "order": 12,
-      "owner": "npc_dota_hero_puck",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:13:special_bonus_unique_puck_rift_radius",
-      "heroId": "13",
-      "engineId": "special_bonus_unique_puck_rift_radius",
-      "activationId": "activation:13:special_bonus_unique_puck_rift_radius",
-      "order": 13,
-      "owner": "npc_dota_hero_puck",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:13:special_bonus_attributes",
-      "heroId": "13",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:13:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_puck",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        125,
+        175,
+        225
+      ],
+      "tags": [
+        "aoe",
+        "disable",
+        "stun"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:13:puck_illusory_orb",
-      "heroId": "13",
-      "abilityIds": [
-        "ability:13:puck_illusory_orb"
-      ],
-      "manaCost": {
-        "id": "value:activation:13:puck_illusory_orb:manaCost",
-        "ownerId": "activation:13:puck_illusory_orb",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          90,
-          100,
-          110,
-          120
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:13:puck_illusory_orb:cooldown",
-        "ownerId": "activation:13:puck_illusory_orb",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "12 11 10 9"
-        }
-      },
-      "charges": {
-        "id": "value:activation:13:puck_illusory_orb:charges",
-        "ownerId": "activation:13:puck_illusory_orb",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:13:puck_illusory_orb:manaCost",
-        "value:activation:13:puck_illusory_orb:cooldown",
-        "value:activation:13:puck_illusory_orb:charges"
+      "id": "special_bonus_unique_puck_orb_damage",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:13:puck_waning_rift",
-      "heroId": "13",
-      "abilityIds": [
-        "ability:13:puck_waning_rift"
-      ],
-      "manaCost": {
-        "id": "value:activation:13:puck_waning_rift:manaCost",
-        "ownerId": "activation:13:puck_waning_rift",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          100,
-          110,
-          120,
-          130
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:13:puck_waning_rift:cooldown",
-        "ownerId": "activation:13:puck_waning_rift",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "16 15 14 13",
-          "special_bonus_unique_puck_2": "-2.5"
-        }
-      },
-      "charges": {
-        "id": "value:activation:13:puck_waning_rift:charges",
-        "ownerId": "activation:13:puck_waning_rift",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:13:puck_waning_rift:manaCost",
-        "value:activation:13:puck_waning_rift:cooldown",
-        "value:activation:13:puck_waning_rift:charges"
+      "id": "special_bonus_unique_puck_7",
+      "tags": [
+        "duration_extension",
+        "silence"
       ]
     },
     {
-      "id": "activation:13:puck_phase_shift",
-      "heroId": "13",
-      "abilityIds": [
-        "ability:13:puck_phase_shift"
-      ],
-      "manaCost": {
-        "id": "value:activation:13:puck_phase_shift:manaCost",
-        "ownerId": "activation:13:puck_phase_shift",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:13:puck_phase_shift:cooldown",
-        "ownerId": "activation:13:puck_phase_shift",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "8 7.5 7 6.5"
-        }
-      },
-      "charges": {
-        "id": "value:activation:13:puck_phase_shift:charges",
-        "ownerId": "activation:13:puck_phase_shift",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:13:puck_phase_shift:manaCost",
-        "value:activation:13:puck_phase_shift:cooldown",
-        "value:activation:13:puck_phase_shift:charges"
+      "id": "special_bonus_unique_puck_5",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_puck_6",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:13:puck_ethereal_jaunt",
-      "heroId": "13",
-      "abilityIds": [
-        "ability:13:puck_ethereal_jaunt"
-      ],
-      "manaCost": {
-        "id": "value:activation:13:puck_ethereal_jaunt:manaCost",
-        "ownerId": "activation:13:puck_ethereal_jaunt",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:13:puck_ethereal_jaunt:cooldown",
-        "ownerId": "activation:13:puck_ethereal_jaunt",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:13:puck_ethereal_jaunt:charges",
-        "ownerId": "activation:13:puck_ethereal_jaunt",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:13:puck_ethereal_jaunt:manaCost",
-        "value:activation:13:puck_ethereal_jaunt:cooldown",
-        "value:activation:13:puck_ethereal_jaunt:charges"
+      "id": "special_bonus_unique_puck_2",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:13:puck_puckish",
-      "heroId": "13",
-      "abilityIds": [
-        "ability:13:puck_puckish"
-      ],
-      "manaCost": {
-        "id": "value:activation:13:puck_puckish:manaCost",
-        "ownerId": "activation:13:puck_puckish",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:13:puck_puckish:cooldown",
-        "ownerId": "activation:13:puck_puckish",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:13:puck_puckish:charges",
-        "ownerId": "activation:13:puck_puckish",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:13:puck_puckish:manaCost",
-        "value:activation:13:puck_puckish:cooldown",
-        "value:activation:13:puck_puckish:charges"
+      "id": "special_bonus_unique_puck_coil_damage",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_puck",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:13:puck_dream_coil",
-      "heroId": "13",
-      "abilityIds": [
-        "ability:13:puck_dream_coil"
-      ],
-      "manaCost": {
-        "id": "value:activation:13:puck_dream_coil:manaCost",
-        "ownerId": "activation:13:puck_dream_coil",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          125,
-          175,
-          225
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:13:puck_dream_coil:cooldown",
-        "ownerId": "activation:13:puck_dream_coil",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "75",
-          "special_bonus_unique_puck": "-30"
-        }
-      },
-      "charges": {
-        "id": "value:activation:13:puck_dream_coil:charges",
-        "ownerId": "activation:13:puck_dream_coil",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:13:puck_dream_coil:manaCost",
-        "value:activation:13:puck_dream_coil:cooldown",
-        "value:activation:13:puck_dream_coil:charges"
-      ]
-    },
-    {
-      "id": "activation:13:special_bonus_unique_puck_orb_damage",
-      "heroId": "13",
-      "abilityIds": [
-        "ability:13:special_bonus_unique_puck_orb_damage"
-      ],
-      "manaCost": {
-        "id": "value:activation:13:special_bonus_unique_puck_orb_damage:manaCost",
-        "ownerId": "activation:13:special_bonus_unique_puck_orb_damage",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:13:special_bonus_unique_puck_orb_damage:cooldown",
-        "ownerId": "activation:13:special_bonus_unique_puck_orb_damage",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:13:special_bonus_unique_puck_orb_damage:charges",
-        "ownerId": "activation:13:special_bonus_unique_puck_orb_damage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:13:special_bonus_unique_puck_orb_damage:manaCost",
-        "value:activation:13:special_bonus_unique_puck_orb_damage:cooldown",
-        "value:activation:13:special_bonus_unique_puck_orb_damage:charges"
-      ]
-    },
-    {
-      "id": "activation:13:special_bonus_unique_puck_7",
-      "heroId": "13",
-      "abilityIds": [
-        "ability:13:special_bonus_unique_puck_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:13:special_bonus_unique_puck_7:manaCost",
-        "ownerId": "activation:13:special_bonus_unique_puck_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:13:special_bonus_unique_puck_7:cooldown",
-        "ownerId": "activation:13:special_bonus_unique_puck_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:13:special_bonus_unique_puck_7:charges",
-        "ownerId": "activation:13:special_bonus_unique_puck_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:13:special_bonus_unique_puck_7:manaCost",
-        "value:activation:13:special_bonus_unique_puck_7:cooldown",
-        "value:activation:13:special_bonus_unique_puck_7:charges"
-      ]
-    },
-    {
-      "id": "activation:13:special_bonus_unique_puck_5",
-      "heroId": "13",
-      "abilityIds": [
-        "ability:13:special_bonus_unique_puck_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:13:special_bonus_unique_puck_5:manaCost",
-        "ownerId": "activation:13:special_bonus_unique_puck_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:13:special_bonus_unique_puck_5:cooldown",
-        "ownerId": "activation:13:special_bonus_unique_puck_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:13:special_bonus_unique_puck_5:charges",
-        "ownerId": "activation:13:special_bonus_unique_puck_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:13:special_bonus_unique_puck_5:manaCost",
-        "value:activation:13:special_bonus_unique_puck_5:cooldown",
-        "value:activation:13:special_bonus_unique_puck_5:charges"
-      ]
-    },
-    {
-      "id": "activation:13:special_bonus_unique_puck_6",
-      "heroId": "13",
-      "abilityIds": [
-        "ability:13:special_bonus_unique_puck_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:13:special_bonus_unique_puck_6:manaCost",
-        "ownerId": "activation:13:special_bonus_unique_puck_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:13:special_bonus_unique_puck_6:cooldown",
-        "ownerId": "activation:13:special_bonus_unique_puck_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:13:special_bonus_unique_puck_6:charges",
-        "ownerId": "activation:13:special_bonus_unique_puck_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:13:special_bonus_unique_puck_6:manaCost",
-        "value:activation:13:special_bonus_unique_puck_6:cooldown",
-        "value:activation:13:special_bonus_unique_puck_6:charges"
-      ]
-    },
-    {
-      "id": "activation:13:special_bonus_unique_puck_2",
-      "heroId": "13",
-      "abilityIds": [
-        "ability:13:special_bonus_unique_puck_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:13:special_bonus_unique_puck_2:manaCost",
-        "ownerId": "activation:13:special_bonus_unique_puck_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:13:special_bonus_unique_puck_2:cooldown",
-        "ownerId": "activation:13:special_bonus_unique_puck_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:13:special_bonus_unique_puck_2:charges",
-        "ownerId": "activation:13:special_bonus_unique_puck_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:13:special_bonus_unique_puck_2:manaCost",
-        "value:activation:13:special_bonus_unique_puck_2:cooldown",
-        "value:activation:13:special_bonus_unique_puck_2:charges"
-      ]
-    },
-    {
-      "id": "activation:13:special_bonus_unique_puck_coil_damage",
-      "heroId": "13",
-      "abilityIds": [
-        "ability:13:special_bonus_unique_puck_coil_damage"
-      ],
-      "manaCost": {
-        "id": "value:activation:13:special_bonus_unique_puck_coil_damage:manaCost",
-        "ownerId": "activation:13:special_bonus_unique_puck_coil_damage",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:13:special_bonus_unique_puck_coil_damage:cooldown",
-        "ownerId": "activation:13:special_bonus_unique_puck_coil_damage",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:13:special_bonus_unique_puck_coil_damage:charges",
-        "ownerId": "activation:13:special_bonus_unique_puck_coil_damage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:13:special_bonus_unique_puck_coil_damage:manaCost",
-        "value:activation:13:special_bonus_unique_puck_coil_damage:cooldown",
-        "value:activation:13:special_bonus_unique_puck_coil_damage:charges"
-      ]
-    },
-    {
-      "id": "activation:13:special_bonus_unique_puck",
-      "heroId": "13",
-      "abilityIds": [
-        "ability:13:special_bonus_unique_puck"
-      ],
-      "manaCost": {
-        "id": "value:activation:13:special_bonus_unique_puck:manaCost",
-        "ownerId": "activation:13:special_bonus_unique_puck",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:13:special_bonus_unique_puck:cooldown",
-        "ownerId": "activation:13:special_bonus_unique_puck",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:13:special_bonus_unique_puck:charges",
-        "ownerId": "activation:13:special_bonus_unique_puck",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:13:special_bonus_unique_puck:manaCost",
-        "value:activation:13:special_bonus_unique_puck:cooldown",
-        "value:activation:13:special_bonus_unique_puck:charges"
-      ]
-    },
-    {
-      "id": "activation:13:special_bonus_unique_puck_rift_radius",
-      "heroId": "13",
-      "abilityIds": [
-        "ability:13:special_bonus_unique_puck_rift_radius"
-      ],
-      "manaCost": {
-        "id": "value:activation:13:special_bonus_unique_puck_rift_radius:manaCost",
-        "ownerId": "activation:13:special_bonus_unique_puck_rift_radius",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:13:special_bonus_unique_puck_rift_radius:cooldown",
-        "ownerId": "activation:13:special_bonus_unique_puck_rift_radius",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:13:special_bonus_unique_puck_rift_radius:charges",
-        "ownerId": "activation:13:special_bonus_unique_puck_rift_radius",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:13:special_bonus_unique_puck_rift_radius:manaCost",
-        "value:activation:13:special_bonus_unique_puck_rift_radius:cooldown",
-        "value:activation:13:special_bonus_unique_puck_rift_radius:charges"
-      ]
-    },
-    {
-      "id": "activation:13:special_bonus_attributes",
-      "heroId": "13",
-      "abilityIds": [
-        "ability:13:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:13:special_bonus_attributes:manaCost",
-        "ownerId": "activation:13:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:13:special_bonus_attributes:cooldown",
-        "ownerId": "activation:13:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:13:special_bonus_attributes:charges",
-        "ownerId": "activation:13:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:13:special_bonus_attributes:manaCost",
-        "value:activation:13:special_bonus_attributes:cooldown",
-        "value:activation:13:special_bonus_attributes:charges"
+      "id": "special_bonus_unique_puck_rift_radius",
+      "tags": [
+        "area_increase",
+        "buff"
       ]
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

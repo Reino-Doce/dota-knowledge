@@ -1,848 +1,285 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "chen_zealot",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-units"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "piercesDebuffImmunity": "no",
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero"
+    ],
+    "manaCost": 50,
+    "cooldown": 10,
+    "tags": [
+      "escape",
+      "mobility"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:66:chen_penitence",
-      "heroId": "66",
-      "engineId": "chen_penitence",
-      "activationId": "activation:66:chen_penitence",
+      "id": "chen_penitence",
+      "Name": "Penitence",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "pure",
       "order": 0,
-      "owner": "npc_dota_hero_chen",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "cooldown": [
+        20,
+        17,
+        14,
+        11
+      ],
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:66:chen_holy_persuasion",
-      "heroId": "66",
-      "engineId": "chen_holy_persuasion",
-      "activationId": "activation:66:chen_holy_persuasion",
+      "id": "chen_holy_persuasion",
+      "Name": "Holy Persuasion",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "units"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "yes",
       "order": 1,
-      "owner": "npc_dota_hero_chen",
-      "state": "known"
+      "type": "target",
+      "manaCost": [
+        110,
+        130,
+        150,
+        170
+      ],
+      "cooldown": 15,
+      "tags": [
+        "buff",
+        "creep_conversion",
+        "economy_gain",
+        "global_delivery",
+        "self_movement_speed"
+      ]
     },
     {
-      "id": "ability:66:chen_divine_favor",
-      "heroId": "66",
-      "engineId": "chen_divine_favor",
-      "activationId": "activation:66:chen_divine_favor",
+      "id": "chen_divine_favor",
+      "Name": "Divine Favor",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "allied-units"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "allies-only",
+      "breakable": true,
       "order": 2,
-      "owner": "npc_dota_hero_chen",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero",
+        "ally_creep"
+      ],
+      "manaCost": 75,
+      "cooldown": [
+        20,
+        18,
+        16,
+        14
+      ],
+      "tags": [
+        "ally_armor",
+        "ally_heal",
+        "ally_healing_amplification",
+        "aura",
+        "buff",
+        "heal",
+        "healing_amplification",
+        "self_heal"
+      ]
     },
     {
-      "id": "ability:66:chen_zealot",
-      "heroId": "66",
-      "engineId": "chen_zealot",
-      "activationId": "activation:66:chen_zealot",
-      "order": 3,
-      "owner": "npc_dota_hero_chen",
-      "state": "known"
-    },
-    {
-      "id": "ability:66:generic_hidden",
-      "heroId": "66",
-      "engineId": "generic_hidden",
-      "activationId": "activation:66:generic_hidden",
+      "id": "generic_hidden",
       "order": 4,
-      "owner": "npc_dota_hero_chen",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:66:chen_hand_of_god",
-      "heroId": "66",
-      "engineId": "chen_hand_of_god",
-      "activationId": "activation:66:chen_hand_of_god",
+      "id": "chen_hand_of_god",
+      "Name": "Hand of God",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "allies-only",
       "order": 5,
-      "owner": "npc_dota_hero_chen",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        200,
+        300,
+        400
+      ],
+      "tags": [
+        "ally_heal",
+        "buff",
+        "cooldown_reduction",
+        "debuff_immunity",
+        "heal",
+        "self_heal"
+      ]
     },
     {
-      "id": "ability:66:special_bonus_unique_chen_11",
-      "heroId": "66",
-      "engineId": "special_bonus_unique_chen_11",
-      "activationId": "activation:66:special_bonus_unique_chen_11",
-      "order": 6,
-      "owner": "npc_dota_hero_chen",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:66:special_bonus_unique_chen_zealot",
-      "heroId": "66",
-      "engineId": "special_bonus_unique_chen_zealot",
-      "activationId": "activation:66:special_bonus_unique_chen_zealot",
-      "order": 7,
-      "owner": "npc_dota_hero_chen",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:66:special_bonus_unique_chen_5",
-      "heroId": "66",
-      "engineId": "special_bonus_unique_chen_5",
-      "activationId": "activation:66:special_bonus_unique_chen_5",
-      "order": 8,
-      "owner": "npc_dota_hero_chen",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:66:special_bonus_unique_chen_8",
-      "heroId": "66",
-      "engineId": "special_bonus_unique_chen_8",
-      "activationId": "activation:66:special_bonus_unique_chen_8",
-      "order": 9,
-      "owner": "npc_dota_hero_chen",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:66:special_bonus_unique_chen_divine_favor_healing",
-      "heroId": "66",
-      "engineId": "special_bonus_unique_chen_divine_favor_healing",
-      "activationId": "activation:66:special_bonus_unique_chen_divine_favor_healing",
-      "order": 10,
-      "owner": "npc_dota_hero_chen",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:66:special_bonus_unique_chen_4",
-      "heroId": "66",
-      "engineId": "special_bonus_unique_chen_4",
-      "activationId": "activation:66:special_bonus_unique_chen_4",
-      "order": 11,
-      "owner": "npc_dota_hero_chen",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:66:special_bonus_unique_chen_12",
-      "heroId": "66",
-      "engineId": "special_bonus_unique_chen_12",
-      "activationId": "activation:66:special_bonus_unique_chen_12",
-      "order": 12,
-      "owner": "npc_dota_hero_chen",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:66:special_bonus_unique_chen_2",
-      "heroId": "66",
-      "engineId": "special_bonus_unique_chen_2",
-      "activationId": "activation:66:special_bonus_unique_chen_2",
-      "order": 13,
-      "owner": "npc_dota_hero_chen",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:66:special_bonus_attributes",
-      "heroId": "66",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:66:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_chen",
-      "state": "known"
-    },
-    {
-      "id": "ability:66:chen_test_of_faith",
-      "heroId": "66",
-      "engineId": "chen_test_of_faith",
-      "activationId": "activation:66:chen_test_of_faith",
+      "id": "chen_test_of_faith",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "units"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "pure",
       "order": 15,
-      "owner": "npc_dota_hero_chen",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero",
+        "enemy_hero",
+        "ally_creep",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        60,
+        80,
+        100,
+        120
+      ],
+      "cooldown": 16,
+      "tags": []
     },
     {
-      "id": "ability:66:chen_test_of_faith_teleport",
-      "heroId": "66",
-      "engineId": "chen_test_of_faith_teleport",
-      "activationId": "activation:66:chen_test_of_faith_teleport",
+      "id": "chen_test_of_faith_teleport",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "allied-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
       "order": 16,
-      "owner": "npc_dota_hero_chen",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero"
+      ],
+      "manaCost": 200,
+      "cooldown": 24,
+      "tags": []
     },
     {
-      "id": "ability:66:chen_martyrdom",
-      "heroId": "66",
-      "engineId": "chen_martyrdom",
-      "activationId": "activation:66:chen_martyrdom",
+      "id": "chen_martyrdom",
+      "Name": "Martyrdom",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "units"
+      ],
+      "piercesDebuffImmunity": "allies-only",
       "order": 17,
-      "owner": "npc_dota_hero_chen",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero",
+        "enemy_hero"
+      ],
+      "manaCost": 0,
+      "cooldown": 0,
+      "tags": [
+        "ally_heal",
+        "heal"
+      ]
     },
     {
-      "id": "ability:66:chen_innate_check_for_team_change",
-      "heroId": "66",
-      "engineId": "chen_innate_check_for_team_change",
-      "activationId": "activation:66:chen_innate_check_for_team_change",
+      "id": "chen_innate_check_for_team_change",
       "order": 18,
-      "owner": "npc_dota_hero_chen",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:66:chen_penitence",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:chen_penitence"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:chen_penitence:manaCost",
-        "ownerId": "activation:66:chen_penitence",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          80,
-          90,
-          100,
-          110
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:66:chen_penitence:cooldown",
-        "ownerId": "activation:66:chen_penitence",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          20,
-          17,
-          14,
-          11
-        ]
-      },
-      "charges": {
-        "id": "value:activation:66:chen_penitence:charges",
-        "ownerId": "activation:66:chen_penitence",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:chen_penitence:manaCost",
-        "value:activation:66:chen_penitence:cooldown",
-        "value:activation:66:chen_penitence:charges"
+      "id": "special_bonus_unique_chen_11",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:66:chen_holy_persuasion",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:chen_holy_persuasion"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:chen_holy_persuasion:manaCost",
-        "ownerId": "activation:66:chen_holy_persuasion",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          110,
-          130,
-          150,
-          170
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:66:chen_holy_persuasion:cooldown",
-        "ownerId": "activation:66:chen_holy_persuasion",
-        "field": "cooldown",
-        "state": "known",
-        "value": 15
-      },
-      "charges": {
-        "id": "value:activation:66:chen_holy_persuasion:charges",
-        "ownerId": "activation:66:chen_holy_persuasion",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:chen_holy_persuasion:manaCost",
-        "value:activation:66:chen_holy_persuasion:cooldown",
-        "value:activation:66:chen_holy_persuasion:charges"
-      ]
+      "id": "special_bonus_unique_chen_zealot",
+      "tags": []
     },
     {
-      "id": "activation:66:chen_divine_favor",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:chen_divine_favor"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:chen_divine_favor:manaCost",
-        "ownerId": "activation:66:chen_divine_favor",
-        "field": "manaCost",
-        "state": "known",
-        "value": 75
-      },
-      "cooldown": {
-        "id": "value:activation:66:chen_divine_favor:cooldown",
-        "ownerId": "activation:66:chen_divine_favor",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          20,
-          18,
-          16,
-          14
-        ]
-      },
-      "charges": {
-        "id": "value:activation:66:chen_divine_favor:charges",
-        "ownerId": "activation:66:chen_divine_favor",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:chen_divine_favor:manaCost",
-        "value:activation:66:chen_divine_favor:cooldown",
-        "value:activation:66:chen_divine_favor:charges"
-      ]
+      "id": "special_bonus_unique_chen_5",
+      "tags": []
     },
     {
-      "id": "activation:66:chen_zealot",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:chen_zealot"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:chen_zealot:manaCost",
-        "ownerId": "activation:66:chen_zealot",
-        "field": "manaCost",
-        "state": "known",
-        "value": 50
-      },
-      "cooldown": {
-        "id": "value:activation:66:chen_zealot:cooldown",
-        "ownerId": "activation:66:chen_zealot",
-        "field": "cooldown",
-        "state": "known",
-        "value": 10
-      },
-      "charges": {
-        "id": "value:activation:66:chen_zealot:charges",
-        "ownerId": "activation:66:chen_zealot",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:chen_zealot:manaCost",
-        "value:activation:66:chen_zealot:cooldown",
-        "value:activation:66:chen_zealot:charges"
-      ]
+      "id": "special_bonus_unique_chen_8",
+      "tags": []
     },
     {
-      "id": "activation:66:generic_hidden",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:generic_hidden"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:generic_hidden:manaCost",
-        "ownerId": "activation:66:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:66:generic_hidden:cooldown",
-        "ownerId": "activation:66:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:66:generic_hidden:charges",
-        "ownerId": "activation:66:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:generic_hidden:manaCost",
-        "value:activation:66:generic_hidden:cooldown",
-        "value:activation:66:generic_hidden:charges"
-      ]
+      "id": "special_bonus_unique_chen_divine_favor_healing",
+      "tags": []
     },
     {
-      "id": "activation:66:chen_hand_of_god",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:chen_hand_of_god"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:chen_hand_of_god:manaCost",
-        "ownerId": "activation:66:chen_hand_of_god",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          200,
-          300,
-          400
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:66:chen_hand_of_god:cooldown",
-        "ownerId": "activation:66:chen_hand_of_god",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "150 130 110",
-          "special_bonus_scepter": "-40"
-        }
-      },
-      "charges": {
-        "id": "value:activation:66:chen_hand_of_god:charges",
-        "ownerId": "activation:66:chen_hand_of_god",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:chen_hand_of_god:manaCost",
-        "value:activation:66:chen_hand_of_god:cooldown",
-        "value:activation:66:chen_hand_of_god:charges"
-      ]
+      "id": "special_bonus_unique_chen_4",
+      "tags": []
     },
     {
-      "id": "activation:66:special_bonus_unique_chen_11",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:special_bonus_unique_chen_11"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:special_bonus_unique_chen_11:manaCost",
-        "ownerId": "activation:66:special_bonus_unique_chen_11",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:66:special_bonus_unique_chen_11:cooldown",
-        "ownerId": "activation:66:special_bonus_unique_chen_11",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:66:special_bonus_unique_chen_11:charges",
-        "ownerId": "activation:66:special_bonus_unique_chen_11",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:special_bonus_unique_chen_11:manaCost",
-        "value:activation:66:special_bonus_unique_chen_11:cooldown",
-        "value:activation:66:special_bonus_unique_chen_11:charges"
-      ]
+      "id": "special_bonus_unique_chen_12",
+      "Name": "Hand of God applies a Strong Dispel",
+      "tags": []
     },
     {
-      "id": "activation:66:special_bonus_unique_chen_zealot",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:special_bonus_unique_chen_zealot"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:special_bonus_unique_chen_zealot:manaCost",
-        "ownerId": "activation:66:special_bonus_unique_chen_zealot",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:66:special_bonus_unique_chen_zealot:cooldown",
-        "ownerId": "activation:66:special_bonus_unique_chen_zealot",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:66:special_bonus_unique_chen_zealot:charges",
-        "ownerId": "activation:66:special_bonus_unique_chen_zealot",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:special_bonus_unique_chen_zealot:manaCost",
-        "value:activation:66:special_bonus_unique_chen_zealot:cooldown",
-        "value:activation:66:special_bonus_unique_chen_zealot:charges"
-      ]
-    },
-    {
-      "id": "activation:66:special_bonus_unique_chen_5",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:special_bonus_unique_chen_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:special_bonus_unique_chen_5:manaCost",
-        "ownerId": "activation:66:special_bonus_unique_chen_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:66:special_bonus_unique_chen_5:cooldown",
-        "ownerId": "activation:66:special_bonus_unique_chen_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:66:special_bonus_unique_chen_5:charges",
-        "ownerId": "activation:66:special_bonus_unique_chen_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:special_bonus_unique_chen_5:manaCost",
-        "value:activation:66:special_bonus_unique_chen_5:cooldown",
-        "value:activation:66:special_bonus_unique_chen_5:charges"
-      ]
-    },
-    {
-      "id": "activation:66:special_bonus_unique_chen_8",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:special_bonus_unique_chen_8"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:special_bonus_unique_chen_8:manaCost",
-        "ownerId": "activation:66:special_bonus_unique_chen_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:66:special_bonus_unique_chen_8:cooldown",
-        "ownerId": "activation:66:special_bonus_unique_chen_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:66:special_bonus_unique_chen_8:charges",
-        "ownerId": "activation:66:special_bonus_unique_chen_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:special_bonus_unique_chen_8:manaCost",
-        "value:activation:66:special_bonus_unique_chen_8:cooldown",
-        "value:activation:66:special_bonus_unique_chen_8:charges"
-      ]
-    },
-    {
-      "id": "activation:66:special_bonus_unique_chen_divine_favor_healing",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:special_bonus_unique_chen_divine_favor_healing"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:special_bonus_unique_chen_divine_favor_healing:manaCost",
-        "ownerId": "activation:66:special_bonus_unique_chen_divine_favor_healing",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:66:special_bonus_unique_chen_divine_favor_healing:cooldown",
-        "ownerId": "activation:66:special_bonus_unique_chen_divine_favor_healing",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:66:special_bonus_unique_chen_divine_favor_healing:charges",
-        "ownerId": "activation:66:special_bonus_unique_chen_divine_favor_healing",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:special_bonus_unique_chen_divine_favor_healing:manaCost",
-        "value:activation:66:special_bonus_unique_chen_divine_favor_healing:cooldown",
-        "value:activation:66:special_bonus_unique_chen_divine_favor_healing:charges"
-      ]
-    },
-    {
-      "id": "activation:66:special_bonus_unique_chen_4",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:special_bonus_unique_chen_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:special_bonus_unique_chen_4:manaCost",
-        "ownerId": "activation:66:special_bonus_unique_chen_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:66:special_bonus_unique_chen_4:cooldown",
-        "ownerId": "activation:66:special_bonus_unique_chen_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:66:special_bonus_unique_chen_4:charges",
-        "ownerId": "activation:66:special_bonus_unique_chen_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:special_bonus_unique_chen_4:manaCost",
-        "value:activation:66:special_bonus_unique_chen_4:cooldown",
-        "value:activation:66:special_bonus_unique_chen_4:charges"
-      ]
-    },
-    {
-      "id": "activation:66:special_bonus_unique_chen_12",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:special_bonus_unique_chen_12"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:special_bonus_unique_chen_12:manaCost",
-        "ownerId": "activation:66:special_bonus_unique_chen_12",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:66:special_bonus_unique_chen_12:cooldown",
-        "ownerId": "activation:66:special_bonus_unique_chen_12",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:66:special_bonus_unique_chen_12:charges",
-        "ownerId": "activation:66:special_bonus_unique_chen_12",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:special_bonus_unique_chen_12:manaCost",
-        "value:activation:66:special_bonus_unique_chen_12:cooldown",
-        "value:activation:66:special_bonus_unique_chen_12:charges"
-      ]
-    },
-    {
-      "id": "activation:66:special_bonus_unique_chen_2",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:special_bonus_unique_chen_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:special_bonus_unique_chen_2:manaCost",
-        "ownerId": "activation:66:special_bonus_unique_chen_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:66:special_bonus_unique_chen_2:cooldown",
-        "ownerId": "activation:66:special_bonus_unique_chen_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:66:special_bonus_unique_chen_2:charges",
-        "ownerId": "activation:66:special_bonus_unique_chen_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:special_bonus_unique_chen_2:manaCost",
-        "value:activation:66:special_bonus_unique_chen_2:cooldown",
-        "value:activation:66:special_bonus_unique_chen_2:charges"
-      ]
-    },
-    {
-      "id": "activation:66:special_bonus_attributes",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:special_bonus_attributes:manaCost",
-        "ownerId": "activation:66:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:66:special_bonus_attributes:cooldown",
-        "ownerId": "activation:66:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:66:special_bonus_attributes:charges",
-        "ownerId": "activation:66:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:special_bonus_attributes:manaCost",
-        "value:activation:66:special_bonus_attributes:cooldown",
-        "value:activation:66:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:66:chen_test_of_faith",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:chen_test_of_faith"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:chen_test_of_faith:manaCost",
-        "ownerId": "activation:66:chen_test_of_faith",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          60,
-          80,
-          100,
-          120
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:66:chen_test_of_faith:cooldown",
-        "ownerId": "activation:66:chen_test_of_faith",
-        "field": "cooldown",
-        "state": "known",
-        "value": 16
-      },
-      "charges": {
-        "id": "value:activation:66:chen_test_of_faith:charges",
-        "ownerId": "activation:66:chen_test_of_faith",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:chen_test_of_faith:manaCost",
-        "value:activation:66:chen_test_of_faith:cooldown",
-        "value:activation:66:chen_test_of_faith:charges"
-      ]
-    },
-    {
-      "id": "activation:66:chen_test_of_faith_teleport",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:chen_test_of_faith_teleport"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:chen_test_of_faith_teleport:manaCost",
-        "ownerId": "activation:66:chen_test_of_faith_teleport",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          200,
-          200,
-          200,
-          200
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:66:chen_test_of_faith_teleport:cooldown",
-        "ownerId": "activation:66:chen_test_of_faith_teleport",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          24,
-          24,
-          24,
-          24
-        ]
-      },
-      "charges": {
-        "id": "value:activation:66:chen_test_of_faith_teleport:charges",
-        "ownerId": "activation:66:chen_test_of_faith_teleport",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:chen_test_of_faith_teleport:manaCost",
-        "value:activation:66:chen_test_of_faith_teleport:cooldown",
-        "value:activation:66:chen_test_of_faith_teleport:charges"
-      ]
-    },
-    {
-      "id": "activation:66:chen_martyrdom",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:chen_martyrdom"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:chen_martyrdom:manaCost",
-        "ownerId": "activation:66:chen_martyrdom",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:66:chen_martyrdom:cooldown",
-        "ownerId": "activation:66:chen_martyrdom",
-        "field": "cooldown",
-        "state": "known",
-        "value": 0
-      },
-      "charges": {
-        "id": "value:activation:66:chen_martyrdom:charges",
-        "ownerId": "activation:66:chen_martyrdom",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:chen_martyrdom:manaCost",
-        "value:activation:66:chen_martyrdom:cooldown",
-        "value:activation:66:chen_martyrdom:charges"
-      ]
-    },
-    {
-      "id": "activation:66:chen_innate_check_for_team_change",
-      "heroId": "66",
-      "abilityIds": [
-        "ability:66:chen_innate_check_for_team_change"
-      ],
-      "manaCost": {
-        "id": "value:activation:66:chen_innate_check_for_team_change:manaCost",
-        "ownerId": "activation:66:chen_innate_check_for_team_change",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:66:chen_innate_check_for_team_change:cooldown",
-        "ownerId": "activation:66:chen_innate_check_for_team_change",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:66:chen_innate_check_for_team_change:charges",
-        "ownerId": "activation:66:chen_innate_check_for_team_change",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:66:chen_innate_check_for_team_change:manaCost",
-        "value:activation:66:chen_innate_check_for_team_change:cooldown",
-        "value:activation:66:chen_innate_check_for_team_change:charges"
-      ]
+      "id": "special_bonus_unique_chen_2",
+      "Name": "Hand of God Fully Heals Chen and His Creeps",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

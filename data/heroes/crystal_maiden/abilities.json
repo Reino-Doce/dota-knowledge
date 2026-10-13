@@ -1,748 +1,233 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "crystal_maiden_glacial_guard",
+    "Name": "Glacial Guard",
+    "behavior": [
+      "passive"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "piercesDebuffImmunity": "no",
+    "breakable": true,
+    "tags": [
+      "barrier",
+      "buff"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:5:crystal_maiden_crystal_nova",
-      "heroId": "5",
-      "engineId": "crystal_maiden_crystal_nova",
-      "activationId": "activation:5:crystal_maiden_crystal_nova",
+      "id": "crystal_maiden_crystal_nova",
+      "Name": "Crystal Nova",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        115,
+        135,
+        155,
+        175
+      ],
+      "tags": [
+        "aoe",
+        "slow",
+        "vision"
+      ]
     },
     {
-      "id": "ability:5:crystal_maiden_frostbite",
-      "heroId": "5",
-      "engineId": "crystal_maiden_frostbite",
-      "activationId": "activation:5:crystal_maiden_frostbite",
+      "id": "crystal_maiden_frostbite",
+      "Name": "Frostbite",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        125,
+        135,
+        145,
+        155
+      ],
+      "cooldown": [
+        9,
+        8,
+        7,
+        6
+      ],
+      "tags": [
+        "damage_over_time",
+        "disable",
+        "root"
+      ]
     },
     {
-      "id": "ability:5:crystal_maiden_brilliance_aura",
-      "heroId": "5",
-      "engineId": "crystal_maiden_brilliance_aura",
-      "activationId": "activation:5:crystal_maiden_brilliance_aura",
+      "id": "crystal_maiden_brilliance_aura",
+      "Name": "Arcane Aura",
+      "behavior": [
+        "passive"
+      ],
+      "affects": [
+        "allies"
+      ],
+      "piercesDebuffImmunity": "allies-only",
+      "breakable": true,
       "order": 2,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "ally_mana_regen",
+        "buff",
+        "global_delivery",
+        "self_mana_regen"
+      ]
     },
     {
-      "id": "ability:5:crystal_maiden_crystal_clone",
-      "heroId": "5",
-      "engineId": "crystal_maiden_crystal_clone",
-      "activationId": "activation:5:crystal_maiden_crystal_clone",
+      "id": "crystal_maiden_crystal_clone",
+      "Name": "Crystal Clone",
+      "behavior": [
+        "point-target"
+      ],
+      "piercesDebuffImmunity": "no",
       "order": 3,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "known"
+      "type": "point",
+      "manaCost": 150,
+      "cooldown": 12,
+      "tags": [
+        "clone_creation",
+        "disjoint",
+        "escape",
+        "mobility"
+      ]
     },
     {
-      "id": "ability:5:crystal_maiden_glacial_guard",
-      "heroId": "5",
-      "engineId": "crystal_maiden_glacial_guard",
-      "activationId": "activation:5:crystal_maiden_glacial_guard",
-      "order": 4,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "known"
-    },
-    {
-      "id": "ability:5:crystal_maiden_freezing_field",
-      "heroId": "5",
-      "engineId": "crystal_maiden_freezing_field",
-      "activationId": "activation:5:crystal_maiden_freezing_field",
+      "id": "crystal_maiden_freezing_field",
+      "Name": "Freezing Field",
+      "behavior": [
+        "channeled",
+        "no-target"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        200,
+        400,
+        600
+      ],
+      "cooldown": [
+        100,
+        95,
+        90
+      ],
+      "tags": [
+        "channeled",
+        "slow"
+      ]
     },
     {
-      "id": "ability:5:crystal_maiden_freezing_field_stop",
-      "heroId": "5",
-      "engineId": "crystal_maiden_freezing_field_stop",
-      "activationId": "activation:5:crystal_maiden_freezing_field_stop",
+      "id": "crystal_maiden_freezing_field_stop",
+      "Name": "Stop Freezing Field",
+      "behavior": [
+        "no-target"
+      ],
       "order": 6,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "known"
+      "type": "self-target",
+      "cooldown": 1,
+      "tags": []
     },
     {
-      "id": "ability:5:special_bonus_hp_200",
-      "heroId": "5",
-      "engineId": "special_bonus_hp_200",
-      "activationId": "activation:5:special_bonus_hp_200",
-      "order": 7,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "known"
-    },
-    {
-      "id": "ability:5:special_bonus_intelligence_12",
-      "heroId": "5",
-      "engineId": "special_bonus_intelligence_12",
-      "activationId": "activation:5:special_bonus_intelligence_12",
-      "order": 8,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "known"
-    },
-    {
-      "id": "ability:5:special_bonus_unique_crystal_maiden_frostbite_castrange",
-      "heroId": "5",
-      "engineId": "special_bonus_unique_crystal_maiden_frostbite_castrange",
-      "activationId": "activation:5:special_bonus_unique_crystal_maiden_frostbite_castrange",
-      "order": 9,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:5:special_bonus_unique_crystal_maiden_5",
-      "heroId": "5",
-      "engineId": "special_bonus_unique_crystal_maiden_5",
-      "activationId": "activation:5:special_bonus_unique_crystal_maiden_5",
-      "order": 10,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:5:special_bonus_unique_crystal_maiden_glacial_guard_mana_multiplier",
-      "heroId": "5",
-      "engineId": "special_bonus_unique_crystal_maiden_glacial_guard_mana_multiplier",
-      "activationId": "activation:5:special_bonus_unique_crystal_maiden_glacial_guard_mana_multiplier",
-      "order": 11,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:5:special_bonus_unique_crystal_maiden_3",
-      "heroId": "5",
-      "engineId": "special_bonus_unique_crystal_maiden_3",
-      "activationId": "activation:5:special_bonus_unique_crystal_maiden_3",
-      "order": 12,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:5:special_bonus_unique_crystal_maiden_1",
-      "heroId": "5",
-      "engineId": "special_bonus_unique_crystal_maiden_1",
-      "activationId": "activation:5:special_bonus_unique_crystal_maiden_1",
-      "order": 13,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:5:special_bonus_unique_crystal_maiden_2",
-      "heroId": "5",
-      "engineId": "special_bonus_unique_crystal_maiden_2",
-      "activationId": "activation:5:special_bonus_unique_crystal_maiden_2",
-      "order": 14,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:5:special_bonus_attributes",
-      "heroId": "5",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:5:special_bonus_attributes",
-      "order": 15,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "known"
-    },
-    {
-      "id": "ability:5:crystal_maiden_let_it_go",
-      "heroId": "5",
-      "engineId": "crystal_maiden_let_it_go",
-      "activationId": "activation:5:crystal_maiden_let_it_go",
+      "id": "crystal_maiden_let_it_go",
+      "behavior": [
+        "point-target"
+      ],
       "order": 16,
-      "owner": "npc_dota_hero_crystal_maiden",
-      "state": "known"
+      "type": "point",
+      "manaCost": 100,
+      "cooldown": 30,
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:5:crystal_maiden_crystal_nova",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:crystal_maiden_crystal_nova"
+      "id": "special_bonus_hp_200",
+      "Name": "+200 Health",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:5:crystal_maiden_crystal_nova:manaCost",
-        "ownerId": "activation:5:crystal_maiden_crystal_nova",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          115,
-          135,
-          155,
-          175
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:5:crystal_maiden_crystal_nova:cooldown",
-        "ownerId": "activation:5:crystal_maiden_crystal_nova",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "11 10 9 8",
-          "special_bonus_unique_crystal_maiden_5": "-4.5"
-        }
-      },
-      "charges": {
-        "id": "value:activation:5:crystal_maiden_crystal_nova:charges",
-        "ownerId": "activation:5:crystal_maiden_crystal_nova",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:crystal_maiden_crystal_nova:manaCost",
-        "value:activation:5:crystal_maiden_crystal_nova:cooldown",
-        "value:activation:5:crystal_maiden_crystal_nova:charges"
+      "tags": [
+        "buff",
+        "self_max_health"
       ]
     },
     {
-      "id": "activation:5:crystal_maiden_frostbite",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:crystal_maiden_frostbite"
+      "id": "special_bonus_intelligence_12",
+      "Name": "+12 Intelligence",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:5:crystal_maiden_frostbite:manaCost",
-        "ownerId": "activation:5:crystal_maiden_frostbite",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          125,
-          135,
-          145,
-          155
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:5:crystal_maiden_frostbite:cooldown",
-        "ownerId": "activation:5:crystal_maiden_frostbite",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          9,
-          8,
-          7,
-          6
-        ]
-      },
-      "charges": {
-        "id": "value:activation:5:crystal_maiden_frostbite:charges",
-        "ownerId": "activation:5:crystal_maiden_frostbite",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:crystal_maiden_frostbite:manaCost",
-        "value:activation:5:crystal_maiden_frostbite:cooldown",
-        "value:activation:5:crystal_maiden_frostbite:charges"
+      "tags": [
+        "attribute_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:5:crystal_maiden_brilliance_aura",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:crystal_maiden_brilliance_aura"
-      ],
-      "manaCost": {
-        "id": "value:activation:5:crystal_maiden_brilliance_aura:manaCost",
-        "ownerId": "activation:5:crystal_maiden_brilliance_aura",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:5:crystal_maiden_brilliance_aura:cooldown",
-        "ownerId": "activation:5:crystal_maiden_brilliance_aura",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:5:crystal_maiden_brilliance_aura:charges",
-        "ownerId": "activation:5:crystal_maiden_brilliance_aura",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:crystal_maiden_brilliance_aura:manaCost",
-        "value:activation:5:crystal_maiden_brilliance_aura:cooldown",
-        "value:activation:5:crystal_maiden_brilliance_aura:charges"
+      "id": "special_bonus_unique_crystal_maiden_frostbite_castrange",
+      "tags": [
+        "buff",
+        "cast_range"
       ]
     },
     {
-      "id": "activation:5:crystal_maiden_crystal_clone",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:crystal_maiden_crystal_clone"
-      ],
-      "manaCost": {
-        "id": "value:activation:5:crystal_maiden_crystal_clone:manaCost",
-        "ownerId": "activation:5:crystal_maiden_crystal_clone",
-        "field": "manaCost",
-        "state": "known",
-        "value": 150
-      },
-      "cooldown": {
-        "id": "value:activation:5:crystal_maiden_crystal_clone:cooldown",
-        "ownerId": "activation:5:crystal_maiden_crystal_clone",
-        "field": "cooldown",
-        "state": "known",
-        "value": 12
-      },
-      "charges": {
-        "id": "value:activation:5:crystal_maiden_crystal_clone:charges",
-        "ownerId": "activation:5:crystal_maiden_crystal_clone",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:crystal_maiden_crystal_clone:manaCost",
-        "value:activation:5:crystal_maiden_crystal_clone:cooldown",
-        "value:activation:5:crystal_maiden_crystal_clone:charges"
+      "id": "special_bonus_unique_crystal_maiden_5",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:5:crystal_maiden_glacial_guard",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:crystal_maiden_glacial_guard"
-      ],
-      "manaCost": {
-        "id": "value:activation:5:crystal_maiden_glacial_guard:manaCost",
-        "ownerId": "activation:5:crystal_maiden_glacial_guard",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:5:crystal_maiden_glacial_guard:cooldown",
-        "ownerId": "activation:5:crystal_maiden_glacial_guard",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:5:crystal_maiden_glacial_guard:charges",
-        "ownerId": "activation:5:crystal_maiden_glacial_guard",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:crystal_maiden_glacial_guard:manaCost",
-        "value:activation:5:crystal_maiden_glacial_guard:cooldown",
-        "value:activation:5:crystal_maiden_glacial_guard:charges"
+      "id": "special_bonus_unique_crystal_maiden_glacial_guard_mana_multiplier",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_crystal_maiden_3",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:5:crystal_maiden_freezing_field",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:crystal_maiden_freezing_field"
-      ],
-      "manaCost": {
-        "id": "value:activation:5:crystal_maiden_freezing_field:manaCost",
-        "ownerId": "activation:5:crystal_maiden_freezing_field",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          200,
-          400,
-          600
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:5:crystal_maiden_freezing_field:cooldown",
-        "ownerId": "activation:5:crystal_maiden_freezing_field",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          100,
-          95,
-          90
-        ]
-      },
-      "charges": {
-        "id": "value:activation:5:crystal_maiden_freezing_field:charges",
-        "ownerId": "activation:5:crystal_maiden_freezing_field",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:crystal_maiden_freezing_field:manaCost",
-        "value:activation:5:crystal_maiden_freezing_field:cooldown",
-        "value:activation:5:crystal_maiden_freezing_field:charges"
+      "id": "special_bonus_unique_crystal_maiden_1",
+      "tags": [
+        "duration_extension"
       ]
     },
     {
-      "id": "activation:5:crystal_maiden_freezing_field_stop",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:crystal_maiden_freezing_field_stop"
-      ],
-      "manaCost": {
-        "id": "value:activation:5:crystal_maiden_freezing_field_stop:manaCost",
-        "ownerId": "activation:5:crystal_maiden_freezing_field_stop",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:5:crystal_maiden_freezing_field_stop:cooldown",
-        "ownerId": "activation:5:crystal_maiden_freezing_field_stop",
-        "field": "cooldown",
-        "state": "known",
-        "value": 1
-      },
-      "charges": {
-        "id": "value:activation:5:crystal_maiden_freezing_field_stop:charges",
-        "ownerId": "activation:5:crystal_maiden_freezing_field_stop",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:crystal_maiden_freezing_field_stop:manaCost",
-        "value:activation:5:crystal_maiden_freezing_field_stop:cooldown",
-        "value:activation:5:crystal_maiden_freezing_field_stop:charges"
-      ]
-    },
-    {
-      "id": "activation:5:special_bonus_hp_200",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:special_bonus_hp_200"
-      ],
-      "manaCost": {
-        "id": "value:activation:5:special_bonus_hp_200:manaCost",
-        "ownerId": "activation:5:special_bonus_hp_200",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:5:special_bonus_hp_200:cooldown",
-        "ownerId": "activation:5:special_bonus_hp_200",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:5:special_bonus_hp_200:charges",
-        "ownerId": "activation:5:special_bonus_hp_200",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:special_bonus_hp_200:manaCost",
-        "value:activation:5:special_bonus_hp_200:cooldown",
-        "value:activation:5:special_bonus_hp_200:charges"
-      ]
-    },
-    {
-      "id": "activation:5:special_bonus_intelligence_12",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:special_bonus_intelligence_12"
-      ],
-      "manaCost": {
-        "id": "value:activation:5:special_bonus_intelligence_12:manaCost",
-        "ownerId": "activation:5:special_bonus_intelligence_12",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:5:special_bonus_intelligence_12:cooldown",
-        "ownerId": "activation:5:special_bonus_intelligence_12",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:5:special_bonus_intelligence_12:charges",
-        "ownerId": "activation:5:special_bonus_intelligence_12",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:special_bonus_intelligence_12:manaCost",
-        "value:activation:5:special_bonus_intelligence_12:cooldown",
-        "value:activation:5:special_bonus_intelligence_12:charges"
-      ]
-    },
-    {
-      "id": "activation:5:special_bonus_unique_crystal_maiden_frostbite_castrange",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:special_bonus_unique_crystal_maiden_frostbite_castrange"
-      ],
-      "manaCost": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_frostbite_castrange:manaCost",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_frostbite_castrange",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_frostbite_castrange:cooldown",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_frostbite_castrange",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_frostbite_castrange:charges",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_frostbite_castrange",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:special_bonus_unique_crystal_maiden_frostbite_castrange:manaCost",
-        "value:activation:5:special_bonus_unique_crystal_maiden_frostbite_castrange:cooldown",
-        "value:activation:5:special_bonus_unique_crystal_maiden_frostbite_castrange:charges"
-      ]
-    },
-    {
-      "id": "activation:5:special_bonus_unique_crystal_maiden_5",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:special_bonus_unique_crystal_maiden_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_5:manaCost",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_5:cooldown",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_5:charges",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:special_bonus_unique_crystal_maiden_5:manaCost",
-        "value:activation:5:special_bonus_unique_crystal_maiden_5:cooldown",
-        "value:activation:5:special_bonus_unique_crystal_maiden_5:charges"
-      ]
-    },
-    {
-      "id": "activation:5:special_bonus_unique_crystal_maiden_glacial_guard_mana_multiplier",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:special_bonus_unique_crystal_maiden_glacial_guard_mana_multiplier"
-      ],
-      "manaCost": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_glacial_guard_mana_multiplier:manaCost",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_glacial_guard_mana_multiplier",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_glacial_guard_mana_multiplier:cooldown",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_glacial_guard_mana_multiplier",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_glacial_guard_mana_multiplier:charges",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_glacial_guard_mana_multiplier",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:special_bonus_unique_crystal_maiden_glacial_guard_mana_multiplier:manaCost",
-        "value:activation:5:special_bonus_unique_crystal_maiden_glacial_guard_mana_multiplier:cooldown",
-        "value:activation:5:special_bonus_unique_crystal_maiden_glacial_guard_mana_multiplier:charges"
-      ]
-    },
-    {
-      "id": "activation:5:special_bonus_unique_crystal_maiden_3",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:special_bonus_unique_crystal_maiden_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_3:manaCost",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_3:cooldown",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_3:charges",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:special_bonus_unique_crystal_maiden_3:manaCost",
-        "value:activation:5:special_bonus_unique_crystal_maiden_3:cooldown",
-        "value:activation:5:special_bonus_unique_crystal_maiden_3:charges"
-      ]
-    },
-    {
-      "id": "activation:5:special_bonus_unique_crystal_maiden_1",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:special_bonus_unique_crystal_maiden_1"
-      ],
-      "manaCost": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_1:manaCost",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_1",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_1:cooldown",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_1",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_1:charges",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_1",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:special_bonus_unique_crystal_maiden_1:manaCost",
-        "value:activation:5:special_bonus_unique_crystal_maiden_1:cooldown",
-        "value:activation:5:special_bonus_unique_crystal_maiden_1:charges"
-      ]
-    },
-    {
-      "id": "activation:5:special_bonus_unique_crystal_maiden_2",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:special_bonus_unique_crystal_maiden_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_2:manaCost",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_2:cooldown",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:5:special_bonus_unique_crystal_maiden_2:charges",
-        "ownerId": "activation:5:special_bonus_unique_crystal_maiden_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:special_bonus_unique_crystal_maiden_2:manaCost",
-        "value:activation:5:special_bonus_unique_crystal_maiden_2:cooldown",
-        "value:activation:5:special_bonus_unique_crystal_maiden_2:charges"
-      ]
-    },
-    {
-      "id": "activation:5:special_bonus_attributes",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:5:special_bonus_attributes:manaCost",
-        "ownerId": "activation:5:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:5:special_bonus_attributes:cooldown",
-        "ownerId": "activation:5:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:5:special_bonus_attributes:charges",
-        "ownerId": "activation:5:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:special_bonus_attributes:manaCost",
-        "value:activation:5:special_bonus_attributes:cooldown",
-        "value:activation:5:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:5:crystal_maiden_let_it_go",
-      "heroId": "5",
-      "abilityIds": [
-        "ability:5:crystal_maiden_let_it_go"
-      ],
-      "manaCost": {
-        "id": "value:activation:5:crystal_maiden_let_it_go:manaCost",
-        "ownerId": "activation:5:crystal_maiden_let_it_go",
-        "field": "manaCost",
-        "state": "known",
-        "value": 100
-      },
-      "cooldown": {
-        "id": "value:activation:5:crystal_maiden_let_it_go:cooldown",
-        "ownerId": "activation:5:crystal_maiden_let_it_go",
-        "field": "cooldown",
-        "state": "known",
-        "value": 30
-      },
-      "charges": {
-        "id": "value:activation:5:crystal_maiden_let_it_go:charges",
-        "ownerId": "activation:5:crystal_maiden_let_it_go",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:5:crystal_maiden_let_it_go:manaCost",
-        "value:activation:5:crystal_maiden_let_it_go:cooldown",
-        "value:activation:5:crystal_maiden_let_it_go:charges"
-      ]
+      "id": "special_bonus_unique_crystal_maiden_2",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

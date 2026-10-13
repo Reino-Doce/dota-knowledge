@@ -64,7 +64,7 @@ async function moduleFor(filename) {
  const module = new vm.SourceTextModule(await fs.readFile(filename, 'utf8'), { context, identifier: filename });
  modules.set(filename, module);
  await module.link((specifier, referencing) => {
-  if (!specifier.startsWith('./')) throw new Error('Browser entry has a non-browser dependency: ' + specifier);
+ if (!specifier.startsWith('./') && !specifier.startsWith('../')) throw new Error('Browser entry has a non-browser dependency: ' + specifier);
   return moduleFor(path.resolve(path.dirname(referencing.identifier), specifier));
  }); return module;
 }

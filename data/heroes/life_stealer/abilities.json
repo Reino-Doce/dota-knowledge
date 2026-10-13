@@ -1,1090 +1,322 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "life_stealer_ghoul_frenzy",
+    "Name": "Ghoul Frenzy",
+    "behavior": [
+      "passive"
+    ],
+    "affects": [
+      "enemy-units"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "piercesDebuffImmunity": "no",
+    "breakable": true,
+    "tags": [
+      "buff",
+      "self_attack_speed"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:54:life_stealer_rage",
-      "heroId": "54",
-      "engineId": "life_stealer_rage",
-      "activationId": "activation:54:life_stealer_rage",
+      "id": "life_stealer_rage",
+      "Name": "Rage",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
       "order": 0,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        80,
+        100,
+        120,
+        140
+      ],
+      "cooldown": [
+        21,
+        20,
+        19,
+        18
+      ],
+      "tags": [
+        "buff",
+        "debuff_immunity",
+        "dispel",
+        "escape",
+        "magic_resistance",
+        "mobility",
+        "self_movement_speed"
+      ]
     },
     {
-      "id": "ability:54:life_stealer_open_wounds",
-      "heroId": "54",
-      "engineId": "life_stealer_open_wounds",
-      "activationId": "activation:54:life_stealer_open_wounds",
+      "id": "life_stealer_open_wounds",
+      "Name": "Open Wounds",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
       "order": 1,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": 90,
+      "cooldown": [
+        30,
+        25,
+        20,
+        15
+      ],
+      "tags": [
+        "ally_heal",
+        "heal",
+        "self_heal",
+        "slow"
+      ]
     },
     {
-      "id": "ability:54:life_stealer_feast",
-      "heroId": "54",
-      "engineId": "life_stealer_feast",
-      "activationId": "activation:54:life_stealer_feast",
+      "id": "life_stealer_feast",
+      "Name": "Feast",
+      "behavior": [
+        "passive"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "yes",
+      "damageType": "physical",
+      "breakable": true,
       "order": 2,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "bkb_pierce",
+        "buff",
+        "earned_permanent_growth",
+        "self_max_health"
+      ]
     },
     {
-      "id": "ability:54:life_stealer_ghoul_frenzy",
-      "heroId": "54",
-      "engineId": "life_stealer_ghoul_frenzy",
-      "activationId": "activation:54:life_stealer_ghoul_frenzy",
-      "order": 3,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
-    },
-    {
-      "id": "ability:54:generic_hidden",
-      "heroId": "54",
-      "engineId": "generic_hidden",
-      "activationId": "activation:54:generic_hidden",
+      "id": "generic_hidden",
       "order": 4,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:54:life_stealer_infest",
-      "heroId": "54",
-      "engineId": "life_stealer_infest",
-      "activationId": "activation:54:life_stealer_infest",
+      "id": "life_stealer_infest",
+      "Name": "Infest",
+      "behavior": [
+        "unit-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "allies-only",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
+      "type": "target",
+      "manaCost": [
+        100,
+        125,
+        150
+      ],
+      "tags": [
+        "buff",
+        "cast_range",
+        "damage_over_time",
+        "dispel",
+        "self_movement_speed"
+      ]
     },
     {
-      "id": "ability:54:life_stealer_consume",
-      "heroId": "54",
-      "engineId": "life_stealer_consume",
-      "activationId": "activation:54:life_stealer_consume",
+      "id": "life_stealer_consume",
+      "Name": "Consume",
+      "behavior": [
+        "no-target"
+      ],
       "order": 6,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
+      "type": "self-target",
+      "tags": []
     },
     {
-      "id": "ability:54:special_bonus_all_stats_4",
-      "heroId": "54",
-      "engineId": "special_bonus_all_stats_4",
-      "activationId": "activation:54:special_bonus_all_stats_4",
-      "order": 7,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
-    },
-    {
-      "id": "ability:54:special_bonus_movement_speed_15",
-      "heroId": "54",
-      "engineId": "special_bonus_movement_speed_15",
-      "activationId": "activation:54:special_bonus_movement_speed_15",
-      "order": 8,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
-    },
-    {
-      "id": "ability:54:special_bonus_unique_lifestealer_infest_damage",
-      "heroId": "54",
-      "engineId": "special_bonus_unique_lifestealer_infest_damage",
-      "activationId": "activation:54:special_bonus_unique_lifestealer_infest_damage",
-      "order": 9,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:54:special_bonus_unique_lifestealer_4",
-      "heroId": "54",
-      "engineId": "special_bonus_unique_lifestealer_4",
-      "activationId": "activation:54:special_bonus_unique_lifestealer_4",
-      "order": 10,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:54:special_bonus_unique_lifestealer_infest_target_bonus",
-      "heroId": "54",
-      "engineId": "special_bonus_unique_lifestealer_infest_target_bonus",
-      "activationId": "activation:54:special_bonus_unique_lifestealer_infest_target_bonus",
-      "order": 11,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:54:special_bonus_unique_lifestealer_6",
-      "heroId": "54",
-      "engineId": "special_bonus_unique_lifestealer_6",
-      "activationId": "activation:54:special_bonus_unique_lifestealer_6",
-      "order": 12,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:54:special_bonus_unique_lifestealer_3",
-      "heroId": "54",
-      "engineId": "special_bonus_unique_lifestealer_3",
-      "activationId": "activation:54:special_bonus_unique_lifestealer_3",
-      "order": 13,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:54:special_bonus_unique_lifestealer",
-      "heroId": "54",
-      "engineId": "special_bonus_unique_lifestealer",
-      "activationId": "activation:54:special_bonus_unique_lifestealer",
-      "order": 14,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:54:special_bonus_attributes",
-      "heroId": "54",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:54:special_bonus_attributes",
-      "order": 15,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
-    },
-    {
-      "id": "ability:54:life_stealer_unfettered",
-      "heroId": "54",
-      "engineId": "life_stealer_unfettered",
-      "activationId": "activation:54:life_stealer_unfettered",
+      "id": "life_stealer_unfettered",
+      "Name": "Unfettered",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
       "order": 16,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        80,
+        100,
+        120,
+        140
+      ],
+      "cooldown": [
+        20,
+        19,
+        18,
+        17
+      ],
+      "tags": [
+        "buff",
+        "magic_resistance"
+      ]
     },
     {
-      "id": "ability:54:life_stealer_assimilate",
-      "heroId": "54",
-      "engineId": "life_stealer_assimilate",
-      "activationId": "activation:54:life_stealer_assimilate",
+      "id": "life_stealer_assimilate",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "allied-heroes"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "allies-only",
+      "damageType": "magical",
       "order": 17,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero"
+      ],
+      "manaCost": 50,
+      "cooldown": 50,
+      "tags": []
     },
     {
-      "id": "ability:54:life_stealer_assimilate_eject",
-      "heroId": "54",
-      "engineId": "life_stealer_assimilate_eject",
-      "activationId": "activation:54:life_stealer_assimilate_eject",
+      "id": "life_stealer_assimilate_eject",
+      "behavior": [
+        "no-target"
+      ],
+      "damageType": "magical",
       "order": 18,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
+      "type": "self-target",
+      "tags": []
     },
     {
-      "id": "ability:54:life_stealer_control",
-      "heroId": "54",
-      "engineId": "life_stealer_control",
-      "activationId": "activation:54:life_stealer_control",
+      "id": "life_stealer_control",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
       "order": 19,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
+      "type": "self-target",
+      "tags": []
     },
     {
-      "id": "ability:54:life_stealer_corpse_eater",
-      "heroId": "54",
-      "engineId": "life_stealer_corpse_eater",
-      "activationId": "activation:54:life_stealer_corpse_eater",
+      "id": "life_stealer_corpse_eater",
+      "behavior": [
+        "passive"
+      ],
+      "dispellable": "no",
+      "breakable": true,
       "order": 20,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
+      "type": "passive",
+      "tags": []
     },
     {
-      "id": "ability:54:life_stealer_empty_1",
-      "heroId": "54",
-      "engineId": "life_stealer_empty_1",
-      "activationId": "activation:54:life_stealer_empty_1",
+      "id": "life_stealer_empty_1",
+      "behavior": [
+        "passive"
+      ],
       "order": 21,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
+      "type": "passive",
+      "tags": []
     },
     {
-      "id": "ability:54:life_stealer_empty_2",
-      "heroId": "54",
-      "engineId": "life_stealer_empty_2",
-      "activationId": "activation:54:life_stealer_empty_2",
+      "id": "life_stealer_empty_2",
+      "behavior": [
+        "passive"
+      ],
       "order": 22,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
+      "type": "passive",
+      "tags": []
     },
     {
-      "id": "ability:54:life_stealer_empty_3",
-      "heroId": "54",
-      "engineId": "life_stealer_empty_3",
-      "activationId": "activation:54:life_stealer_empty_3",
+      "id": "life_stealer_empty_3",
+      "behavior": [
+        "passive"
+      ],
       "order": 23,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
+      "type": "passive",
+      "tags": []
     },
     {
-      "id": "ability:54:life_stealer_empty_4",
-      "heroId": "54",
-      "engineId": "life_stealer_empty_4",
-      "activationId": "activation:54:life_stealer_empty_4",
+      "id": "life_stealer_empty_4",
+      "behavior": [
+        "passive"
+      ],
       "order": 24,
-      "owner": "npc_dota_hero_life_stealer",
-      "state": "known"
+      "type": "passive",
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:54:life_stealer_rage",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:life_stealer_rage"
+      "id": "special_bonus_all_stats_4",
+      "Name": "+4 All Attributes",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:54:life_stealer_rage:manaCost",
-        "ownerId": "activation:54:life_stealer_rage",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          80,
-          100,
-          120,
-          140
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:54:life_stealer_rage:cooldown",
-        "ownerId": "activation:54:life_stealer_rage",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          21,
-          20,
-          19,
-          18
-        ]
-      },
-      "charges": {
-        "id": "value:activation:54:life_stealer_rage:charges",
-        "ownerId": "activation:54:life_stealer_rage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:life_stealer_rage:manaCost",
-        "value:activation:54:life_stealer_rage:cooldown",
-        "value:activation:54:life_stealer_rage:charges"
+      "tags": [
+        "attribute_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:54:life_stealer_open_wounds",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:life_stealer_open_wounds"
+      "id": "special_bonus_movement_speed_15",
+      "Name": "+15 Movement Speed",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:54:life_stealer_open_wounds:manaCost",
-        "ownerId": "activation:54:life_stealer_open_wounds",
-        "field": "manaCost",
-        "state": "known",
-        "value": 90
-      },
-      "cooldown": {
-        "id": "value:activation:54:life_stealer_open_wounds:cooldown",
-        "ownerId": "activation:54:life_stealer_open_wounds",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          30,
-          25,
-          20,
-          15
-        ]
-      },
-      "charges": {
-        "id": "value:activation:54:life_stealer_open_wounds:charges",
-        "ownerId": "activation:54:life_stealer_open_wounds",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:life_stealer_open_wounds:manaCost",
-        "value:activation:54:life_stealer_open_wounds:cooldown",
-        "value:activation:54:life_stealer_open_wounds:charges"
+      "tags": [
+        "buff",
+        "self_movement_speed"
       ]
     },
     {
-      "id": "activation:54:life_stealer_feast",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:life_stealer_feast"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:life_stealer_feast:manaCost",
-        "ownerId": "activation:54:life_stealer_feast",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:life_stealer_feast:cooldown",
-        "ownerId": "activation:54:life_stealer_feast",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:life_stealer_feast:charges",
-        "ownerId": "activation:54:life_stealer_feast",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:life_stealer_feast:manaCost",
-        "value:activation:54:life_stealer_feast:cooldown",
-        "value:activation:54:life_stealer_feast:charges"
+      "id": "special_bonus_unique_lifestealer_infest_damage",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:54:life_stealer_ghoul_frenzy",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:life_stealer_ghoul_frenzy"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:life_stealer_ghoul_frenzy:manaCost",
-        "ownerId": "activation:54:life_stealer_ghoul_frenzy",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:life_stealer_ghoul_frenzy:cooldown",
-        "ownerId": "activation:54:life_stealer_ghoul_frenzy",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:life_stealer_ghoul_frenzy:charges",
-        "ownerId": "activation:54:life_stealer_ghoul_frenzy",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:life_stealer_ghoul_frenzy:manaCost",
-        "value:activation:54:life_stealer_ghoul_frenzy:cooldown",
-        "value:activation:54:life_stealer_ghoul_frenzy:charges"
+      "id": "special_bonus_unique_lifestealer_4",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_lifestealer_infest_target_bonus",
+      "tags": [
+        "buff",
+        "self_movement_speed"
       ]
     },
     {
-      "id": "activation:54:generic_hidden",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:generic_hidden"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:generic_hidden:manaCost",
-        "ownerId": "activation:54:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:generic_hidden:cooldown",
-        "ownerId": "activation:54:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:generic_hidden:charges",
-        "ownerId": "activation:54:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:generic_hidden:manaCost",
-        "value:activation:54:generic_hidden:cooldown",
-        "value:activation:54:generic_hidden:charges"
-      ]
+      "id": "special_bonus_unique_lifestealer_6",
+      "tags": []
     },
     {
-      "id": "activation:54:life_stealer_infest",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:life_stealer_infest"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:life_stealer_infest:manaCost",
-        "ownerId": "activation:54:life_stealer_infest",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          100,
-          125,
-          150
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:54:life_stealer_infest:cooldown",
-        "ownerId": "activation:54:life_stealer_infest",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "80 65 50",
-          "special_bonus_scepter": "=20"
-        }
-      },
-      "charges": {
-        "id": "value:activation:54:life_stealer_infest:charges",
-        "ownerId": "activation:54:life_stealer_infest",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:life_stealer_infest:manaCost",
-        "value:activation:54:life_stealer_infest:cooldown",
-        "value:activation:54:life_stealer_infest:charges"
-      ]
+      "id": "special_bonus_unique_lifestealer_3",
+      "tags": []
     },
     {
-      "id": "activation:54:life_stealer_consume",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:life_stealer_consume"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:life_stealer_consume:manaCost",
-        "ownerId": "activation:54:life_stealer_consume",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:life_stealer_consume:cooldown",
-        "ownerId": "activation:54:life_stealer_consume",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:life_stealer_consume:charges",
-        "ownerId": "activation:54:life_stealer_consume",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:life_stealer_consume:manaCost",
-        "value:activation:54:life_stealer_consume:cooldown",
-        "value:activation:54:life_stealer_consume:charges"
-      ]
-    },
-    {
-      "id": "activation:54:special_bonus_all_stats_4",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:special_bonus_all_stats_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:special_bonus_all_stats_4:manaCost",
-        "ownerId": "activation:54:special_bonus_all_stats_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:special_bonus_all_stats_4:cooldown",
-        "ownerId": "activation:54:special_bonus_all_stats_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:special_bonus_all_stats_4:charges",
-        "ownerId": "activation:54:special_bonus_all_stats_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:special_bonus_all_stats_4:manaCost",
-        "value:activation:54:special_bonus_all_stats_4:cooldown",
-        "value:activation:54:special_bonus_all_stats_4:charges"
-      ]
-    },
-    {
-      "id": "activation:54:special_bonus_movement_speed_15",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:special_bonus_movement_speed_15"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:special_bonus_movement_speed_15:manaCost",
-        "ownerId": "activation:54:special_bonus_movement_speed_15",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:special_bonus_movement_speed_15:cooldown",
-        "ownerId": "activation:54:special_bonus_movement_speed_15",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:special_bonus_movement_speed_15:charges",
-        "ownerId": "activation:54:special_bonus_movement_speed_15",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:special_bonus_movement_speed_15:manaCost",
-        "value:activation:54:special_bonus_movement_speed_15:cooldown",
-        "value:activation:54:special_bonus_movement_speed_15:charges"
-      ]
-    },
-    {
-      "id": "activation:54:special_bonus_unique_lifestealer_infest_damage",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:special_bonus_unique_lifestealer_infest_damage"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer_infest_damage:manaCost",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer_infest_damage",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer_infest_damage:cooldown",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer_infest_damage",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer_infest_damage:charges",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer_infest_damage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:special_bonus_unique_lifestealer_infest_damage:manaCost",
-        "value:activation:54:special_bonus_unique_lifestealer_infest_damage:cooldown",
-        "value:activation:54:special_bonus_unique_lifestealer_infest_damage:charges"
-      ]
-    },
-    {
-      "id": "activation:54:special_bonus_unique_lifestealer_4",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:special_bonus_unique_lifestealer_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer_4:manaCost",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer_4:cooldown",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer_4:charges",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:special_bonus_unique_lifestealer_4:manaCost",
-        "value:activation:54:special_bonus_unique_lifestealer_4:cooldown",
-        "value:activation:54:special_bonus_unique_lifestealer_4:charges"
-      ]
-    },
-    {
-      "id": "activation:54:special_bonus_unique_lifestealer_infest_target_bonus",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:special_bonus_unique_lifestealer_infest_target_bonus"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer_infest_target_bonus:manaCost",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer_infest_target_bonus",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer_infest_target_bonus:cooldown",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer_infest_target_bonus",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer_infest_target_bonus:charges",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer_infest_target_bonus",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:special_bonus_unique_lifestealer_infest_target_bonus:manaCost",
-        "value:activation:54:special_bonus_unique_lifestealer_infest_target_bonus:cooldown",
-        "value:activation:54:special_bonus_unique_lifestealer_infest_target_bonus:charges"
-      ]
-    },
-    {
-      "id": "activation:54:special_bonus_unique_lifestealer_6",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:special_bonus_unique_lifestealer_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer_6:manaCost",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer_6:cooldown",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer_6:charges",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:special_bonus_unique_lifestealer_6:manaCost",
-        "value:activation:54:special_bonus_unique_lifestealer_6:cooldown",
-        "value:activation:54:special_bonus_unique_lifestealer_6:charges"
-      ]
-    },
-    {
-      "id": "activation:54:special_bonus_unique_lifestealer_3",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:special_bonus_unique_lifestealer_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer_3:manaCost",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer_3:cooldown",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer_3:charges",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:special_bonus_unique_lifestealer_3:manaCost",
-        "value:activation:54:special_bonus_unique_lifestealer_3:cooldown",
-        "value:activation:54:special_bonus_unique_lifestealer_3:charges"
-      ]
-    },
-    {
-      "id": "activation:54:special_bonus_unique_lifestealer",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:special_bonus_unique_lifestealer"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer:manaCost",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer:cooldown",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:special_bonus_unique_lifestealer:charges",
-        "ownerId": "activation:54:special_bonus_unique_lifestealer",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:special_bonus_unique_lifestealer:manaCost",
-        "value:activation:54:special_bonus_unique_lifestealer:cooldown",
-        "value:activation:54:special_bonus_unique_lifestealer:charges"
-      ]
-    },
-    {
-      "id": "activation:54:special_bonus_attributes",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:special_bonus_attributes:manaCost",
-        "ownerId": "activation:54:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:special_bonus_attributes:cooldown",
-        "ownerId": "activation:54:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:special_bonus_attributes:charges",
-        "ownerId": "activation:54:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:special_bonus_attributes:manaCost",
-        "value:activation:54:special_bonus_attributes:cooldown",
-        "value:activation:54:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:54:life_stealer_unfettered",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:life_stealer_unfettered"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:life_stealer_unfettered:manaCost",
-        "ownerId": "activation:54:life_stealer_unfettered",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          80,
-          100,
-          120,
-          140
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:54:life_stealer_unfettered:cooldown",
-        "ownerId": "activation:54:life_stealer_unfettered",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          20,
-          19,
-          18,
-          17
-        ]
-      },
-      "charges": {
-        "id": "value:activation:54:life_stealer_unfettered:charges",
-        "ownerId": "activation:54:life_stealer_unfettered",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:life_stealer_unfettered:manaCost",
-        "value:activation:54:life_stealer_unfettered:cooldown",
-        "value:activation:54:life_stealer_unfettered:charges"
-      ]
-    },
-    {
-      "id": "activation:54:life_stealer_assimilate",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:life_stealer_assimilate"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:life_stealer_assimilate:manaCost",
-        "ownerId": "activation:54:life_stealer_assimilate",
-        "field": "manaCost",
-        "state": "known",
-        "value": 50
-      },
-      "cooldown": {
-        "id": "value:activation:54:life_stealer_assimilate:cooldown",
-        "ownerId": "activation:54:life_stealer_assimilate",
-        "field": "cooldown",
-        "state": "known",
-        "value": 50
-      },
-      "charges": {
-        "id": "value:activation:54:life_stealer_assimilate:charges",
-        "ownerId": "activation:54:life_stealer_assimilate",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:life_stealer_assimilate:manaCost",
-        "value:activation:54:life_stealer_assimilate:cooldown",
-        "value:activation:54:life_stealer_assimilate:charges"
-      ]
-    },
-    {
-      "id": "activation:54:life_stealer_assimilate_eject",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:life_stealer_assimilate_eject"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:life_stealer_assimilate_eject:manaCost",
-        "ownerId": "activation:54:life_stealer_assimilate_eject",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:life_stealer_assimilate_eject:cooldown",
-        "ownerId": "activation:54:life_stealer_assimilate_eject",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:life_stealer_assimilate_eject:charges",
-        "ownerId": "activation:54:life_stealer_assimilate_eject",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:life_stealer_assimilate_eject:manaCost",
-        "value:activation:54:life_stealer_assimilate_eject:cooldown",
-        "value:activation:54:life_stealer_assimilate_eject:charges"
-      ]
-    },
-    {
-      "id": "activation:54:life_stealer_control",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:life_stealer_control"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:life_stealer_control:manaCost",
-        "ownerId": "activation:54:life_stealer_control",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:life_stealer_control:cooldown",
-        "ownerId": "activation:54:life_stealer_control",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:life_stealer_control:charges",
-        "ownerId": "activation:54:life_stealer_control",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:life_stealer_control:manaCost",
-        "value:activation:54:life_stealer_control:cooldown",
-        "value:activation:54:life_stealer_control:charges"
-      ]
-    },
-    {
-      "id": "activation:54:life_stealer_corpse_eater",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:life_stealer_corpse_eater"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:life_stealer_corpse_eater:manaCost",
-        "ownerId": "activation:54:life_stealer_corpse_eater",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:life_stealer_corpse_eater:cooldown",
-        "ownerId": "activation:54:life_stealer_corpse_eater",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:life_stealer_corpse_eater:charges",
-        "ownerId": "activation:54:life_stealer_corpse_eater",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:life_stealer_corpse_eater:manaCost",
-        "value:activation:54:life_stealer_corpse_eater:cooldown",
-        "value:activation:54:life_stealer_corpse_eater:charges"
-      ]
-    },
-    {
-      "id": "activation:54:life_stealer_empty_1",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:life_stealer_empty_1"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:life_stealer_empty_1:manaCost",
-        "ownerId": "activation:54:life_stealer_empty_1",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:life_stealer_empty_1:cooldown",
-        "ownerId": "activation:54:life_stealer_empty_1",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:life_stealer_empty_1:charges",
-        "ownerId": "activation:54:life_stealer_empty_1",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:life_stealer_empty_1:manaCost",
-        "value:activation:54:life_stealer_empty_1:cooldown",
-        "value:activation:54:life_stealer_empty_1:charges"
-      ]
-    },
-    {
-      "id": "activation:54:life_stealer_empty_2",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:life_stealer_empty_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:life_stealer_empty_2:manaCost",
-        "ownerId": "activation:54:life_stealer_empty_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:life_stealer_empty_2:cooldown",
-        "ownerId": "activation:54:life_stealer_empty_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:life_stealer_empty_2:charges",
-        "ownerId": "activation:54:life_stealer_empty_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:life_stealer_empty_2:manaCost",
-        "value:activation:54:life_stealer_empty_2:cooldown",
-        "value:activation:54:life_stealer_empty_2:charges"
-      ]
-    },
-    {
-      "id": "activation:54:life_stealer_empty_3",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:life_stealer_empty_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:life_stealer_empty_3:manaCost",
-        "ownerId": "activation:54:life_stealer_empty_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:life_stealer_empty_3:cooldown",
-        "ownerId": "activation:54:life_stealer_empty_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:life_stealer_empty_3:charges",
-        "ownerId": "activation:54:life_stealer_empty_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:life_stealer_empty_3:manaCost",
-        "value:activation:54:life_stealer_empty_3:cooldown",
-        "value:activation:54:life_stealer_empty_3:charges"
-      ]
-    },
-    {
-      "id": "activation:54:life_stealer_empty_4",
-      "heroId": "54",
-      "abilityIds": [
-        "ability:54:life_stealer_empty_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:54:life_stealer_empty_4:manaCost",
-        "ownerId": "activation:54:life_stealer_empty_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:54:life_stealer_empty_4:cooldown",
-        "ownerId": "activation:54:life_stealer_empty_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:54:life_stealer_empty_4:charges",
-        "ownerId": "activation:54:life_stealer_empty_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:54:life_stealer_empty_4:manaCost",
-        "value:activation:54:life_stealer_empty_4:cooldown",
-        "value:activation:54:life_stealer_empty_4:charges"
+      "id": "special_bonus_unique_lifestealer",
+      "tags": [
+        "duration_extension"
       ]
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

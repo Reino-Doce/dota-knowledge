@@ -108,7 +108,7 @@ export function fileDestinations(name, byId) {
         const key = byId.get(match[1])?.key;
         if (!key) throw new Error('Unknown hero file: ' + name);
         return ['profile.json', 'abilities.json', 'mechanics.json'].map(file => 'data/heroes/' + key + '/' + file)
-            .concat('data/reviews/claims.json', 'data/heroes/' + key + '/guides/details.json');
+            .concat('data/mechanics/abilities.json', 'data/reviews/claims.json', 'data/heroes/' + key + '/guides/details.json');
     }
     if ((match = /^(?:runtime\/)?observations\/heroes\/(\d+)\.json$/.exec(name))) {
         const key = byId.get(match[1])?.key;
@@ -137,7 +137,7 @@ export function heroFieldDestination(section, field, key) {
     if (section === 'claims') return 'data/reviews/claims.json';
     if (['sourceIds', 'sourceIdentity', 'sourceRefs', 'review', 'compatibility'].includes(field)) return 'data/reviews/bindings.json';
     if (section === 'hero') return field === 'detailRecord' ? 'data/heroes/index.json' : base + 'profile.json';
-    if (section === 'abilities' || section === 'activations') return base + 'abilities.json';
+    if (section === 'abilities' || section === 'activations') return 'data/mechanics/abilities.json';
     if (section === 'effects' || section === 'conditions') return base + 'mechanics.json';
     if (section === 'evidence') return field === 'guidePath' ? base + 'guides/details.json' : 'data/reviews/sources.json';
     throw new Error('Unmapped hero section: ' + section);

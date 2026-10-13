@@ -1,835 +1,226 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "undying_ceaseless_dirge",
+    "Name": "Ceaseless Dirge",
+    "behavior": [
+      "passive"
+    ],
+    "dispellable": "no",
+    "tags": [
+      "reincarnation"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:85:undying_decay",
-      "heroId": "85",
-      "engineId": "undying_decay",
-      "activationId": "activation:85:undying_decay",
+      "id": "undying_decay",
+      "Name": "Decay",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_undying",
-      "state": "known"
+      "type": "point",
+      "manaCost": 110,
+      "tags": [
+        "aoe",
+        "creep_damage"
+      ]
     },
     {
-      "id": "ability:85:undying_soul_rip",
-      "heroId": "85",
-      "engineId": "undying_soul_rip",
-      "activationId": "activation:85:undying_soul_rip",
+      "id": "undying_soul_rip",
+      "Name": "Soul Rip",
+      "behavior": [
+        "unit-target"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_undying",
-      "state": "known"
+      "type": "target",
+      "manaCost": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "cooldown": [
+        15,
+        12,
+        9,
+        6
+      ],
+      "tags": [
+        "ally_heal",
+        "heal",
+        "self_heal"
+      ]
     },
     {
-      "id": "ability:85:undying_tombstone",
-      "heroId": "85",
-      "engineId": "undying_tombstone",
-      "activationId": "activation:85:undying_tombstone",
+      "id": "undying_tombstone",
+      "Name": "Tombstone",
+      "behavior": [
+        "point-target"
+      ],
+      "affects": [
+        "allied-heroes"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "physical",
       "order": 2,
-      "owner": "npc_dota_hero_undying",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        125,
+        150,
+        175,
+        200
+      ],
+      "tags": [
+        "summons"
+      ]
     },
     {
-      "id": "ability:85:undying_ceaseless_dirge",
-      "heroId": "85",
-      "engineId": "undying_ceaseless_dirge",
-      "activationId": "activation:85:undying_ceaseless_dirge",
-      "order": 3,
-      "owner": "npc_dota_hero_undying",
-      "state": "known"
-    },
-    {
-      "id": "ability:85:generic_hidden",
-      "heroId": "85",
-      "engineId": "generic_hidden",
-      "activationId": "activation:85:generic_hidden",
+      "id": "generic_hidden",
       "order": 4,
-      "owner": "npc_dota_hero_undying",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:85:undying_flesh_golem",
-      "heroId": "85",
-      "engineId": "undying_flesh_golem",
-      "activationId": "activation:85:undying_flesh_golem",
+      "id": "undying_flesh_golem",
+      "Name": "Flesh Golem",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_undying",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        100,
+        125,
+        150
+      ],
+      "tags": [
+        "slow",
+        "summons"
+      ]
     },
     {
-      "id": "ability:85:special_bonus_unique_undying_8",
-      "heroId": "85",
-      "engineId": "special_bonus_unique_undying_8",
-      "activationId": "activation:85:special_bonus_unique_undying_8",
-      "order": 6,
-      "owner": "npc_dota_hero_undying",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:85:special_bonus_unique_undying_7",
-      "heroId": "85",
-      "engineId": "special_bonus_unique_undying_7",
-      "activationId": "activation:85:special_bonus_unique_undying_7",
-      "order": 7,
-      "owner": "npc_dota_hero_undying",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:85:special_bonus_unique_undying_6",
-      "heroId": "85",
-      "engineId": "special_bonus_unique_undying_6",
-      "activationId": "activation:85:special_bonus_unique_undying_6",
-      "order": 8,
-      "owner": "npc_dota_hero_undying",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:85:special_bonus_unique_undying",
-      "heroId": "85",
-      "engineId": "special_bonus_unique_undying",
-      "activationId": "activation:85:special_bonus_unique_undying",
-      "order": 9,
-      "owner": "npc_dota_hero_undying",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:85:special_bonus_unique_undying_2",
-      "heroId": "85",
-      "engineId": "special_bonus_unique_undying_2",
-      "activationId": "activation:85:special_bonus_unique_undying_2",
-      "order": 10,
-      "owner": "npc_dota_hero_undying",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:85:special_bonus_unique_undying_5",
-      "heroId": "85",
-      "engineId": "special_bonus_unique_undying_5",
-      "activationId": "activation:85:special_bonus_unique_undying_5",
-      "order": 11,
-      "owner": "npc_dota_hero_undying",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:85:special_bonus_unique_undying_4",
-      "heroId": "85",
-      "engineId": "special_bonus_unique_undying_4",
-      "activationId": "activation:85:special_bonus_unique_undying_4",
-      "order": 12,
-      "owner": "npc_dota_hero_undying",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:85:special_bonus_unique_undying_3",
-      "heroId": "85",
-      "engineId": "special_bonus_unique_undying_3",
-      "activationId": "activation:85:special_bonus_unique_undying_3",
-      "order": 13,
-      "owner": "npc_dota_hero_undying",
-      "state": "known"
-    },
-    {
-      "id": "ability:85:special_bonus_attributes",
-      "heroId": "85",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:85:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_undying",
-      "state": "known"
-    },
-    {
-      "id": "ability:85:undying_tombstone_zombie_aura",
-      "heroId": "85",
-      "engineId": "undying_tombstone_zombie_aura",
-      "activationId": "activation:85:undying_tombstone_zombie_aura",
+      "id": "undying_tombstone_zombie_aura",
+      "behavior": [
+        "passive"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "piercesDebuffImmunity": "yes",
       "order": 15,
-      "owner": "npc_dota_hero_undying",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "aura"
+      ]
     },
     {
-      "id": "ability:85:undying_tombstone_zombie_deathstrike",
-      "heroId": "85",
-      "engineId": "undying_tombstone_zombie_deathstrike",
-      "activationId": "activation:85:undying_tombstone_zombie_deathstrike",
+      "id": "undying_tombstone_zombie_deathstrike",
+      "Name": "Deathlust",
+      "behavior": [
+        "passive"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "yes",
       "order": 16,
-      "owner": "npc_dota_hero_undying",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "bkb_pierce",
+        "slow"
+      ]
     },
     {
-      "id": "ability:85:undying_tombstone_grab",
-      "heroId": "85",
-      "engineId": "undying_tombstone_grab",
-      "activationId": "activation:85:undying_tombstone_grab",
+      "id": "undying_tombstone_grab",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "allied-heroes"
+      ],
       "order": 17,
-      "owner": "npc_dota_hero_undying",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero"
+      ],
+      "cooldown": 10,
+      "tags": []
     },
     {
-      "id": "ability:85:undying_tombstone_unit_grab",
-      "heroId": "85",
-      "engineId": "undying_tombstone_unit_grab",
-      "activationId": "activation:85:undying_tombstone_unit_grab",
+      "id": "undying_tombstone_unit_grab",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "allied-heroes"
+      ],
       "order": 18,
-      "owner": "npc_dota_hero_undying",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero"
+      ],
+      "cooldown": 10,
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:85:undying_decay",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:undying_decay"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:undying_decay:manaCost",
-        "ownerId": "activation:85:undying_decay",
-        "field": "manaCost",
-        "state": "known",
-        "value": 110
-      },
-      "cooldown": {
-        "id": "value:activation:85:undying_decay:cooldown",
-        "ownerId": "activation:85:undying_decay",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "13 10 7 4",
-          "special_bonus_unique_undying_2": "-2"
-        }
-      },
-      "charges": {
-        "id": "value:activation:85:undying_decay:charges",
-        "ownerId": "activation:85:undying_decay",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:undying_decay:manaCost",
-        "value:activation:85:undying_decay:cooldown",
-        "value:activation:85:undying_decay:charges"
+      "id": "special_bonus_unique_undying_8",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_undying_7",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:85:undying_soul_rip",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:undying_soul_rip"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:undying_soul_rip:manaCost",
-        "ownerId": "activation:85:undying_soul_rip",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          80,
-          90,
-          100,
-          110
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:85:undying_soul_rip:cooldown",
-        "ownerId": "activation:85:undying_soul_rip",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          15,
-          12,
-          9,
-          6
-        ]
-      },
-      "charges": {
-        "id": "value:activation:85:undying_soul_rip:charges",
-        "ownerId": "activation:85:undying_soul_rip",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:undying_soul_rip:manaCost",
-        "value:activation:85:undying_soul_rip:cooldown",
-        "value:activation:85:undying_soul_rip:charges"
+      "id": "special_bonus_unique_undying_6",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_undying",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_undying_2",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:85:undying_tombstone",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:undying_tombstone"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:undying_tombstone:manaCost",
-        "ownerId": "activation:85:undying_tombstone",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          125,
-          150,
-          175,
-          200
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:85:undying_tombstone:cooldown",
-        "ownerId": "activation:85:undying_tombstone",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "80",
-          "special_bonus_unique_undying_7": "-15"
-        }
-      },
-      "charges": {
-        "id": "value:activation:85:undying_tombstone:charges",
-        "ownerId": "activation:85:undying_tombstone",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:undying_tombstone:manaCost",
-        "value:activation:85:undying_tombstone:cooldown",
-        "value:activation:85:undying_tombstone:charges"
-      ]
+      "id": "special_bonus_unique_undying_5",
+      "tags": []
     },
     {
-      "id": "activation:85:undying_ceaseless_dirge",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:undying_ceaseless_dirge"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:undying_ceaseless_dirge:manaCost",
-        "ownerId": "activation:85:undying_ceaseless_dirge",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:85:undying_ceaseless_dirge:cooldown",
-        "ownerId": "activation:85:undying_ceaseless_dirge",
-        "field": "cooldown",
-        "state": "known",
-        "value": 480
-      },
-      "charges": {
-        "id": "value:activation:85:undying_ceaseless_dirge:charges",
-        "ownerId": "activation:85:undying_ceaseless_dirge",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:undying_ceaseless_dirge:manaCost",
-        "value:activation:85:undying_ceaseless_dirge:cooldown",
-        "value:activation:85:undying_ceaseless_dirge:charges"
-      ]
+      "id": "special_bonus_unique_undying_4",
+      "tags": []
     },
     {
-      "id": "activation:85:generic_hidden",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:generic_hidden"
+      "id": "special_bonus_unique_undying_3",
+      "Name": "Tombstone On Death",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:85:generic_hidden:manaCost",
-        "ownerId": "activation:85:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:85:generic_hidden:cooldown",
-        "ownerId": "activation:85:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:85:generic_hidden:charges",
-        "ownerId": "activation:85:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:generic_hidden:manaCost",
-        "value:activation:85:generic_hidden:cooldown",
-        "value:activation:85:generic_hidden:charges"
-      ]
-    },
-    {
-      "id": "activation:85:undying_flesh_golem",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:undying_flesh_golem"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:undying_flesh_golem:manaCost",
-        "ownerId": "activation:85:undying_flesh_golem",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          100,
-          125,
-          150
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:85:undying_flesh_golem:cooldown",
-        "ownerId": "activation:85:undying_flesh_golem",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "140"
-        }
-      },
-      "charges": {
-        "id": "value:activation:85:undying_flesh_golem:charges",
-        "ownerId": "activation:85:undying_flesh_golem",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:undying_flesh_golem:manaCost",
-        "value:activation:85:undying_flesh_golem:cooldown",
-        "value:activation:85:undying_flesh_golem:charges"
-      ]
-    },
-    {
-      "id": "activation:85:special_bonus_unique_undying_8",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:special_bonus_unique_undying_8"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:special_bonus_unique_undying_8:manaCost",
-        "ownerId": "activation:85:special_bonus_unique_undying_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:85:special_bonus_unique_undying_8:cooldown",
-        "ownerId": "activation:85:special_bonus_unique_undying_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:85:special_bonus_unique_undying_8:charges",
-        "ownerId": "activation:85:special_bonus_unique_undying_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:special_bonus_unique_undying_8:manaCost",
-        "value:activation:85:special_bonus_unique_undying_8:cooldown",
-        "value:activation:85:special_bonus_unique_undying_8:charges"
-      ]
-    },
-    {
-      "id": "activation:85:special_bonus_unique_undying_7",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:special_bonus_unique_undying_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:special_bonus_unique_undying_7:manaCost",
-        "ownerId": "activation:85:special_bonus_unique_undying_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:85:special_bonus_unique_undying_7:cooldown",
-        "ownerId": "activation:85:special_bonus_unique_undying_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:85:special_bonus_unique_undying_7:charges",
-        "ownerId": "activation:85:special_bonus_unique_undying_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:special_bonus_unique_undying_7:manaCost",
-        "value:activation:85:special_bonus_unique_undying_7:cooldown",
-        "value:activation:85:special_bonus_unique_undying_7:charges"
-      ]
-    },
-    {
-      "id": "activation:85:special_bonus_unique_undying_6",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:special_bonus_unique_undying_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:special_bonus_unique_undying_6:manaCost",
-        "ownerId": "activation:85:special_bonus_unique_undying_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:85:special_bonus_unique_undying_6:cooldown",
-        "ownerId": "activation:85:special_bonus_unique_undying_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:85:special_bonus_unique_undying_6:charges",
-        "ownerId": "activation:85:special_bonus_unique_undying_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:special_bonus_unique_undying_6:manaCost",
-        "value:activation:85:special_bonus_unique_undying_6:cooldown",
-        "value:activation:85:special_bonus_unique_undying_6:charges"
-      ]
-    },
-    {
-      "id": "activation:85:special_bonus_unique_undying",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:special_bonus_unique_undying"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:special_bonus_unique_undying:manaCost",
-        "ownerId": "activation:85:special_bonus_unique_undying",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:85:special_bonus_unique_undying:cooldown",
-        "ownerId": "activation:85:special_bonus_unique_undying",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:85:special_bonus_unique_undying:charges",
-        "ownerId": "activation:85:special_bonus_unique_undying",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:special_bonus_unique_undying:manaCost",
-        "value:activation:85:special_bonus_unique_undying:cooldown",
-        "value:activation:85:special_bonus_unique_undying:charges"
-      ]
-    },
-    {
-      "id": "activation:85:special_bonus_unique_undying_2",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:special_bonus_unique_undying_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:special_bonus_unique_undying_2:manaCost",
-        "ownerId": "activation:85:special_bonus_unique_undying_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:85:special_bonus_unique_undying_2:cooldown",
-        "ownerId": "activation:85:special_bonus_unique_undying_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:85:special_bonus_unique_undying_2:charges",
-        "ownerId": "activation:85:special_bonus_unique_undying_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:special_bonus_unique_undying_2:manaCost",
-        "value:activation:85:special_bonus_unique_undying_2:cooldown",
-        "value:activation:85:special_bonus_unique_undying_2:charges"
-      ]
-    },
-    {
-      "id": "activation:85:special_bonus_unique_undying_5",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:special_bonus_unique_undying_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:special_bonus_unique_undying_5:manaCost",
-        "ownerId": "activation:85:special_bonus_unique_undying_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:85:special_bonus_unique_undying_5:cooldown",
-        "ownerId": "activation:85:special_bonus_unique_undying_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:85:special_bonus_unique_undying_5:charges",
-        "ownerId": "activation:85:special_bonus_unique_undying_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:special_bonus_unique_undying_5:manaCost",
-        "value:activation:85:special_bonus_unique_undying_5:cooldown",
-        "value:activation:85:special_bonus_unique_undying_5:charges"
-      ]
-    },
-    {
-      "id": "activation:85:special_bonus_unique_undying_4",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:special_bonus_unique_undying_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:special_bonus_unique_undying_4:manaCost",
-        "ownerId": "activation:85:special_bonus_unique_undying_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:85:special_bonus_unique_undying_4:cooldown",
-        "ownerId": "activation:85:special_bonus_unique_undying_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:85:special_bonus_unique_undying_4:charges",
-        "ownerId": "activation:85:special_bonus_unique_undying_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:special_bonus_unique_undying_4:manaCost",
-        "value:activation:85:special_bonus_unique_undying_4:cooldown",
-        "value:activation:85:special_bonus_unique_undying_4:charges"
-      ]
-    },
-    {
-      "id": "activation:85:special_bonus_unique_undying_3",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:special_bonus_unique_undying_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:special_bonus_unique_undying_3:manaCost",
-        "ownerId": "activation:85:special_bonus_unique_undying_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:85:special_bonus_unique_undying_3:cooldown",
-        "ownerId": "activation:85:special_bonus_unique_undying_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:85:special_bonus_unique_undying_3:charges",
-        "ownerId": "activation:85:special_bonus_unique_undying_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:special_bonus_unique_undying_3:manaCost",
-        "value:activation:85:special_bonus_unique_undying_3:cooldown",
-        "value:activation:85:special_bonus_unique_undying_3:charges"
-      ]
-    },
-    {
-      "id": "activation:85:special_bonus_attributes",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:special_bonus_attributes:manaCost",
-        "ownerId": "activation:85:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:85:special_bonus_attributes:cooldown",
-        "ownerId": "activation:85:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:85:special_bonus_attributes:charges",
-        "ownerId": "activation:85:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:special_bonus_attributes:manaCost",
-        "value:activation:85:special_bonus_attributes:cooldown",
-        "value:activation:85:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:85:undying_tombstone_zombie_aura",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:undying_tombstone_zombie_aura"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:undying_tombstone_zombie_aura:manaCost",
-        "ownerId": "activation:85:undying_tombstone_zombie_aura",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:85:undying_tombstone_zombie_aura:cooldown",
-        "ownerId": "activation:85:undying_tombstone_zombie_aura",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:85:undying_tombstone_zombie_aura:charges",
-        "ownerId": "activation:85:undying_tombstone_zombie_aura",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:undying_tombstone_zombie_aura:manaCost",
-        "value:activation:85:undying_tombstone_zombie_aura:cooldown",
-        "value:activation:85:undying_tombstone_zombie_aura:charges"
-      ]
-    },
-    {
-      "id": "activation:85:undying_tombstone_zombie_deathstrike",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:undying_tombstone_zombie_deathstrike"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:undying_tombstone_zombie_deathstrike:manaCost",
-        "ownerId": "activation:85:undying_tombstone_zombie_deathstrike",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:85:undying_tombstone_zombie_deathstrike:cooldown",
-        "ownerId": "activation:85:undying_tombstone_zombie_deathstrike",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:85:undying_tombstone_zombie_deathstrike:charges",
-        "ownerId": "activation:85:undying_tombstone_zombie_deathstrike",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:undying_tombstone_zombie_deathstrike:manaCost",
-        "value:activation:85:undying_tombstone_zombie_deathstrike:cooldown",
-        "value:activation:85:undying_tombstone_zombie_deathstrike:charges"
-      ]
-    },
-    {
-      "id": "activation:85:undying_tombstone_grab",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:undying_tombstone_grab"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:undying_tombstone_grab:manaCost",
-        "ownerId": "activation:85:undying_tombstone_grab",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:85:undying_tombstone_grab:cooldown",
-        "ownerId": "activation:85:undying_tombstone_grab",
-        "field": "cooldown",
-        "state": "known",
-        "value": 10
-      },
-      "charges": {
-        "id": "value:activation:85:undying_tombstone_grab:charges",
-        "ownerId": "activation:85:undying_tombstone_grab",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:undying_tombstone_grab:manaCost",
-        "value:activation:85:undying_tombstone_grab:cooldown",
-        "value:activation:85:undying_tombstone_grab:charges"
-      ]
-    },
-    {
-      "id": "activation:85:undying_tombstone_unit_grab",
-      "heroId": "85",
-      "abilityIds": [
-        "ability:85:undying_tombstone_unit_grab"
-      ],
-      "manaCost": {
-        "id": "value:activation:85:undying_tombstone_unit_grab:manaCost",
-        "ownerId": "activation:85:undying_tombstone_unit_grab",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:85:undying_tombstone_unit_grab:cooldown",
-        "ownerId": "activation:85:undying_tombstone_unit_grab",
-        "field": "cooldown",
-        "state": "known",
-        "value": 10
-      },
-      "charges": {
-        "id": "value:activation:85:undying_tombstone_unit_grab:charges",
-        "ownerId": "activation:85:undying_tombstone_unit_grab",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:85:undying_tombstone_unit_grab:manaCost",
-        "value:activation:85:undying_tombstone_unit_grab:cooldown",
-        "value:activation:85:undying_tombstone_unit_grab:charges"
-      ]
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

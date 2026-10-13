@@ -1,672 +1,206 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "dark_willow_pixie_dust",
+    "Name": "Pixie Dust",
+    "behavior": [
+      "passive"
+    ],
+    "breakable": true,
+    "tags": [
+      "buff",
+      "health_regen",
+      "self_health_regen",
+      "self_mana_regen"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:119:dark_willow_bramble_maze",
-      "heroId": "119",
-      "engineId": "dark_willow_bramble_maze",
-      "activationId": "activation:119:dark_willow_bramble_maze",
+      "id": "dark_willow_bramble_maze",
+      "Name": "Bramble Maze",
+      "behavior": [
+        "point-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_dark_willow",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        100,
+        120,
+        140,
+        160
+      ],
+      "tags": [
+        "aoe",
+        "damage_over_time",
+        "delayed_damage",
+        "disable",
+        "root"
+      ]
     },
     {
-      "id": "ability:119:dark_willow_shadow_realm",
-      "heroId": "119",
-      "engineId": "dark_willow_shadow_realm",
-      "activationId": "activation:119:dark_willow_shadow_realm",
+      "id": "dark_willow_shadow_realm",
+      "Name": "Shadow Realm",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_dark_willow",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "tags": [
+        "buff",
+        "disjoint",
+        "escape",
+        "self_attack_range",
+        "untargetable"
+      ]
     },
     {
-      "id": "ability:119:dark_willow_cursed_crown",
-      "heroId": "119",
-      "engineId": "dark_willow_cursed_crown",
-      "activationId": "activation:119:dark_willow_cursed_crown",
+      "id": "dark_willow_cursed_crown",
+      "Name": "Cursed Crown",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
       "order": 2,
-      "owner": "npc_dota_hero_dark_willow",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "tags": [
+        "disable",
+        "stun"
+      ]
     },
     {
-      "id": "ability:119:dark_willow_bedlam",
-      "heroId": "119",
-      "engineId": "dark_willow_bedlam",
-      "activationId": "activation:119:dark_willow_bedlam",
+      "id": "dark_willow_bedlam",
+      "Name": "Bedlam",
+      "behavior": [
+        "no-target"
+      ],
+      "affects": [
+        "allied-heroes"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 3,
-      "owner": "npc_dota_hero_dark_willow",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        100,
+        150,
+        200
+      ],
+      "cooldown": 30,
+      "tags": []
     },
     {
-      "id": "ability:119:dark_willow_pixie_dust",
-      "heroId": "119",
-      "engineId": "dark_willow_pixie_dust",
-      "activationId": "activation:119:dark_willow_pixie_dust",
-      "order": 4,
-      "owner": "npc_dota_hero_dark_willow",
-      "state": "known"
-    },
-    {
-      "id": "ability:119:dark_willow_terrorize",
-      "heroId": "119",
-      "engineId": "dark_willow_terrorize",
-      "activationId": "activation:119:dark_willow_terrorize",
+      "id": "dark_willow_terrorize",
+      "Name": "Terrorize",
+      "behavior": [
+        "point-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_dark_willow",
-      "state": "known"
-    },
-    {
-      "id": "ability:119:special_bonus_unique_dark_willow_6",
-      "heroId": "119",
-      "engineId": "special_bonus_unique_dark_willow_6",
-      "activationId": "activation:119:special_bonus_unique_dark_willow_6",
-      "order": 6,
-      "owner": "npc_dota_hero_dark_willow",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:119:special_bonus_intelligence_12",
-      "heroId": "119",
-      "engineId": "special_bonus_intelligence_12",
-      "activationId": "activation:119:special_bonus_intelligence_12",
-      "order": 7,
-      "owner": "npc_dota_hero_dark_willow",
-      "state": "known"
-    },
-    {
-      "id": "ability:119:special_bonus_unique_dark_willow_4",
-      "heroId": "119",
-      "engineId": "special_bonus_unique_dark_willow_4",
-      "activationId": "activation:119:special_bonus_unique_dark_willow_4",
-      "order": 8,
-      "owner": "npc_dota_hero_dark_willow",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:119:special_bonus_unique_dark_willow_7",
-      "heroId": "119",
-      "engineId": "special_bonus_unique_dark_willow_7",
-      "activationId": "activation:119:special_bonus_unique_dark_willow_7",
-      "order": 9,
-      "owner": "npc_dota_hero_dark_willow",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:119:special_bonus_unique_dark_willow_1",
-      "heroId": "119",
-      "engineId": "special_bonus_unique_dark_willow_1",
-      "activationId": "activation:119:special_bonus_unique_dark_willow_1",
-      "order": 10,
-      "owner": "npc_dota_hero_dark_willow",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:119:special_bonus_unique_dark_willow_3",
-      "heroId": "119",
-      "engineId": "special_bonus_unique_dark_willow_3",
-      "activationId": "activation:119:special_bonus_unique_dark_willow_3",
-      "order": 11,
-      "owner": "npc_dota_hero_dark_willow",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:119:special_bonus_unique_dark_willow_bedlam_targets",
-      "heroId": "119",
-      "engineId": "special_bonus_unique_dark_willow_bedlam_targets",
-      "activationId": "activation:119:special_bonus_unique_dark_willow_bedlam_targets",
-      "order": 12,
-      "owner": "npc_dota_hero_dark_willow",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:119:special_bonus_unique_dark_willow_2",
-      "heroId": "119",
-      "engineId": "special_bonus_unique_dark_willow_2",
-      "activationId": "activation:119:special_bonus_unique_dark_willow_2",
-      "order": 13,
-      "owner": "npc_dota_hero_dark_willow",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:119:special_bonus_attributes",
-      "heroId": "119",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:119:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_dark_willow",
-      "state": "known"
+      "type": "point",
+      "manaCost": 150,
+      "tags": [
+        "aoe",
+        "disable",
+        "fear",
+        "vision"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:119:dark_willow_bramble_maze",
-      "heroId": "119",
-      "abilityIds": [
-        "ability:119:dark_willow_bramble_maze"
+      "id": "special_bonus_unique_dark_willow_6",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_intelligence_12",
+      "Name": "+12 Intelligence",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:119:dark_willow_bramble_maze:manaCost",
-        "ownerId": "activation:119:dark_willow_bramble_maze",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          100,
-          120,
-          140,
-          160
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:119:dark_willow_bramble_maze:cooldown",
-        "ownerId": "activation:119:dark_willow_bramble_maze",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "22",
-          "special_bonus_unique_dark_willow_3": "-7"
-        }
-      },
-      "charges": {
-        "id": "value:activation:119:dark_willow_bramble_maze:charges",
-        "ownerId": "activation:119:dark_willow_bramble_maze",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:119:dark_willow_bramble_maze:manaCost",
-        "value:activation:119:dark_willow_bramble_maze:cooldown",
-        "value:activation:119:dark_willow_bramble_maze:charges"
+      "tags": [
+        "attribute_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:119:dark_willow_shadow_realm",
-      "heroId": "119",
-      "abilityIds": [
-        "ability:119:dark_willow_shadow_realm"
-      ],
-      "manaCost": {
-        "id": "value:activation:119:dark_willow_shadow_realm:manaCost",
-        "ownerId": "activation:119:dark_willow_shadow_realm",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          80,
-          90,
-          100,
-          110
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:119:dark_willow_shadow_realm:cooldown",
-        "ownerId": "activation:119:dark_willow_shadow_realm",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "21 19 17 15",
-          "special_bonus_unique_dark_willow_5": "-2"
-        }
-      },
-      "charges": {
-        "id": "value:activation:119:dark_willow_shadow_realm:charges",
-        "ownerId": "activation:119:dark_willow_shadow_realm",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:119:dark_willow_shadow_realm:manaCost",
-        "value:activation:119:dark_willow_shadow_realm:cooldown",
-        "value:activation:119:dark_willow_shadow_realm:charges"
+      "id": "special_bonus_unique_dark_willow_4",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:119:dark_willow_cursed_crown",
-      "heroId": "119",
-      "abilityIds": [
-        "ability:119:dark_willow_cursed_crown"
-      ],
-      "manaCost": {
-        "id": "value:activation:119:dark_willow_cursed_crown:manaCost",
-        "ownerId": "activation:119:dark_willow_cursed_crown",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          80,
-          90,
-          100,
-          110
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:119:dark_willow_cursed_crown:cooldown",
-        "ownerId": "activation:119:dark_willow_cursed_crown",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "17 15 13 11",
-          "special_bonus_shard": "-1.5"
-        }
-      },
-      "charges": {
-        "id": "value:activation:119:dark_willow_cursed_crown:charges",
-        "ownerId": "activation:119:dark_willow_cursed_crown",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:119:dark_willow_cursed_crown:manaCost",
-        "value:activation:119:dark_willow_cursed_crown:cooldown",
-        "value:activation:119:dark_willow_cursed_crown:charges"
+      "id": "special_bonus_unique_dark_willow_7",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:119:dark_willow_bedlam",
-      "heroId": "119",
-      "abilityIds": [
-        "ability:119:dark_willow_bedlam"
-      ],
-      "manaCost": {
-        "id": "value:activation:119:dark_willow_bedlam:manaCost",
-        "ownerId": "activation:119:dark_willow_bedlam",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          100,
-          150,
-          200
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:119:dark_willow_bedlam:cooldown",
-        "ownerId": "activation:119:dark_willow_bedlam",
-        "field": "cooldown",
-        "state": "known",
-        "value": 30
-      },
-      "charges": {
-        "id": "value:activation:119:dark_willow_bedlam:charges",
-        "ownerId": "activation:119:dark_willow_bedlam",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:119:dark_willow_bedlam:manaCost",
-        "value:activation:119:dark_willow_bedlam:cooldown",
-        "value:activation:119:dark_willow_bedlam:charges"
+      "id": "special_bonus_unique_dark_willow_1",
+      "tags": [
+        "duration_extension"
       ]
     },
     {
-      "id": "activation:119:dark_willow_pixie_dust",
-      "heroId": "119",
-      "abilityIds": [
-        "ability:119:dark_willow_pixie_dust"
-      ],
-      "manaCost": {
-        "id": "value:activation:119:dark_willow_pixie_dust:manaCost",
-        "ownerId": "activation:119:dark_willow_pixie_dust",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:119:dark_willow_pixie_dust:cooldown",
-        "ownerId": "activation:119:dark_willow_pixie_dust",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:119:dark_willow_pixie_dust:charges",
-        "ownerId": "activation:119:dark_willow_pixie_dust",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:119:dark_willow_pixie_dust:manaCost",
-        "value:activation:119:dark_willow_pixie_dust:cooldown",
-        "value:activation:119:dark_willow_pixie_dust:charges"
+      "id": "special_bonus_unique_dark_willow_3",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:119:dark_willow_terrorize",
-      "heroId": "119",
-      "abilityIds": [
-        "ability:119:dark_willow_terrorize"
-      ],
-      "manaCost": {
-        "id": "value:activation:119:dark_willow_terrorize:manaCost",
-        "ownerId": "activation:119:dark_willow_terrorize",
-        "field": "manaCost",
-        "state": "known",
-        "value": 150
-      },
-      "cooldown": {
-        "id": "value:activation:119:dark_willow_terrorize:cooldown",
-        "ownerId": "activation:119:dark_willow_terrorize",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "100 90 80",
-          "special_bonus_unique_dark_willow_7": "-20"
-        }
-      },
-      "charges": {
-        "id": "value:activation:119:dark_willow_terrorize:charges",
-        "ownerId": "activation:119:dark_willow_terrorize",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:119:dark_willow_terrorize:manaCost",
-        "value:activation:119:dark_willow_terrorize:cooldown",
-        "value:activation:119:dark_willow_terrorize:charges"
-      ]
+      "id": "special_bonus_unique_dark_willow_bedlam_targets",
+      "tags": []
     },
     {
-      "id": "activation:119:special_bonus_unique_dark_willow_6",
-      "heroId": "119",
-      "abilityIds": [
-        "ability:119:special_bonus_unique_dark_willow_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_6:manaCost",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_6:cooldown",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_6:charges",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:119:special_bonus_unique_dark_willow_6:manaCost",
-        "value:activation:119:special_bonus_unique_dark_willow_6:cooldown",
-        "value:activation:119:special_bonus_unique_dark_willow_6:charges"
-      ]
-    },
-    {
-      "id": "activation:119:special_bonus_intelligence_12",
-      "heroId": "119",
-      "abilityIds": [
-        "ability:119:special_bonus_intelligence_12"
-      ],
-      "manaCost": {
-        "id": "value:activation:119:special_bonus_intelligence_12:manaCost",
-        "ownerId": "activation:119:special_bonus_intelligence_12",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:119:special_bonus_intelligence_12:cooldown",
-        "ownerId": "activation:119:special_bonus_intelligence_12",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:119:special_bonus_intelligence_12:charges",
-        "ownerId": "activation:119:special_bonus_intelligence_12",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:119:special_bonus_intelligence_12:manaCost",
-        "value:activation:119:special_bonus_intelligence_12:cooldown",
-        "value:activation:119:special_bonus_intelligence_12:charges"
-      ]
-    },
-    {
-      "id": "activation:119:special_bonus_unique_dark_willow_4",
-      "heroId": "119",
-      "abilityIds": [
-        "ability:119:special_bonus_unique_dark_willow_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_4:manaCost",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_4:cooldown",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_4:charges",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:119:special_bonus_unique_dark_willow_4:manaCost",
-        "value:activation:119:special_bonus_unique_dark_willow_4:cooldown",
-        "value:activation:119:special_bonus_unique_dark_willow_4:charges"
-      ]
-    },
-    {
-      "id": "activation:119:special_bonus_unique_dark_willow_7",
-      "heroId": "119",
-      "abilityIds": [
-        "ability:119:special_bonus_unique_dark_willow_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_7:manaCost",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_7:cooldown",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_7:charges",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:119:special_bonus_unique_dark_willow_7:manaCost",
-        "value:activation:119:special_bonus_unique_dark_willow_7:cooldown",
-        "value:activation:119:special_bonus_unique_dark_willow_7:charges"
-      ]
-    },
-    {
-      "id": "activation:119:special_bonus_unique_dark_willow_1",
-      "heroId": "119",
-      "abilityIds": [
-        "ability:119:special_bonus_unique_dark_willow_1"
-      ],
-      "manaCost": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_1:manaCost",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_1",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_1:cooldown",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_1",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_1:charges",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_1",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:119:special_bonus_unique_dark_willow_1:manaCost",
-        "value:activation:119:special_bonus_unique_dark_willow_1:cooldown",
-        "value:activation:119:special_bonus_unique_dark_willow_1:charges"
-      ]
-    },
-    {
-      "id": "activation:119:special_bonus_unique_dark_willow_3",
-      "heroId": "119",
-      "abilityIds": [
-        "ability:119:special_bonus_unique_dark_willow_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_3:manaCost",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_3:cooldown",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_3:charges",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:119:special_bonus_unique_dark_willow_3:manaCost",
-        "value:activation:119:special_bonus_unique_dark_willow_3:cooldown",
-        "value:activation:119:special_bonus_unique_dark_willow_3:charges"
-      ]
-    },
-    {
-      "id": "activation:119:special_bonus_unique_dark_willow_bedlam_targets",
-      "heroId": "119",
-      "abilityIds": [
-        "ability:119:special_bonus_unique_dark_willow_bedlam_targets"
-      ],
-      "manaCost": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_bedlam_targets:manaCost",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_bedlam_targets",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_bedlam_targets:cooldown",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_bedlam_targets",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_bedlam_targets:charges",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_bedlam_targets",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:119:special_bonus_unique_dark_willow_bedlam_targets:manaCost",
-        "value:activation:119:special_bonus_unique_dark_willow_bedlam_targets:cooldown",
-        "value:activation:119:special_bonus_unique_dark_willow_bedlam_targets:charges"
-      ]
-    },
-    {
-      "id": "activation:119:special_bonus_unique_dark_willow_2",
-      "heroId": "119",
-      "abilityIds": [
-        "ability:119:special_bonus_unique_dark_willow_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_2:manaCost",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_2:cooldown",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:119:special_bonus_unique_dark_willow_2:charges",
-        "ownerId": "activation:119:special_bonus_unique_dark_willow_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:119:special_bonus_unique_dark_willow_2:manaCost",
-        "value:activation:119:special_bonus_unique_dark_willow_2:cooldown",
-        "value:activation:119:special_bonus_unique_dark_willow_2:charges"
-      ]
-    },
-    {
-      "id": "activation:119:special_bonus_attributes",
-      "heroId": "119",
-      "abilityIds": [
-        "ability:119:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:119:special_bonus_attributes:manaCost",
-        "ownerId": "activation:119:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:119:special_bonus_attributes:cooldown",
-        "ownerId": "activation:119:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:119:special_bonus_attributes:charges",
-        "ownerId": "activation:119:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:119:special_bonus_attributes:manaCost",
-        "value:activation:119:special_bonus_attributes:cooldown",
-        "value:activation:119:special_bonus_attributes:charges"
-      ]
+      "id": "special_bonus_unique_dark_willow_2",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

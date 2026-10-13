@@ -1,790 +1,242 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "treant_natures_guise",
+    "Name": "Nature's Guise",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "escape",
+      "invisibility",
+      "mobility"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:83:treant_natures_grasp",
-      "heroId": "83",
-      "engineId": "treant_natures_grasp",
-      "activationId": "activation:83:treant_natures_grasp",
+      "id": "treant_natures_grasp",
+      "Name": "Nature's Grasp",
+      "behavior": [
+        "point-target"
+      ],
+      "affects": [
+        "trees"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_treant",
-      "state": "known"
+      "type": "point",
+      "manaCost": 90,
+      "cooldown": [
+        23,
+        21,
+        19,
+        17
+      ],
+      "tags": [
+        "damage_over_time",
+        "slow",
+        "summons"
+      ]
     },
     {
-      "id": "ability:83:treant_leech_seed",
-      "heroId": "83",
-      "engineId": "treant_leech_seed",
-      "activationId": "activation:83:treant_leech_seed",
+      "id": "treant_leech_seed",
+      "Name": "Leech Seed",
+      "behavior": [
+        "auto-cast",
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
+      "breakable": true,
       "order": 1,
-      "owner": "npc_dota_hero_treant",
-      "state": "known"
+      "type": "toggle",
+      "manaCost": 35,
+      "tags": [
+        "ally_heal",
+        "disable",
+        "disarm",
+        "heal",
+        "root",
+        "self_heal"
+      ]
     },
     {
-      "id": "ability:83:treant_living_armor",
-      "heroId": "83",
-      "engineId": "treant_living_armor",
-      "activationId": "activation:83:treant_living_armor",
+      "id": "treant_living_armor",
+      "Name": "Living Armor",
+      "behavior": [
+        "point-target",
+        "unit-target"
+      ],
+      "affects": [
+        "allied-buildings",
+        "allied-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "allies-only",
       "order": 2,
-      "owner": "npc_dota_hero_treant",
-      "state": "known"
+      "type": "target-or-point",
+      "target": [
+        "self",
+        "ally_hero",
+        "ally_creep",
+        "ally_building"
+      ],
+      "manaCost": 80,
+      "cooldown": [
+        24,
+        21,
+        18,
+        15
+      ],
+      "tags": [
+        "ally_heal",
+        "buff",
+        "damage_block",
+        "heal",
+        "self_heal"
+      ]
     },
     {
-      "id": "ability:83:treant_eyes_in_the_forest",
-      "heroId": "83",
-      "engineId": "treant_eyes_in_the_forest",
-      "activationId": "activation:83:treant_eyes_in_the_forest",
+      "id": "treant_eyes_in_the_forest",
+      "Name": "Eyes In The Forest",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "trees"
+      ],
       "order": 3,
-      "owner": "npc_dota_hero_treant",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "tree"
+      ],
+      "manaCost": 30,
+      "tags": [
+        "aoe",
+        "vision"
+      ]
     },
     {
-      "id": "ability:83:treant_natures_guise",
-      "heroId": "83",
-      "engineId": "treant_natures_guise",
-      "activationId": "activation:83:treant_natures_guise",
-      "order": 4,
-      "owner": "npc_dota_hero_treant",
-      "state": "known"
-    },
-    {
-      "id": "ability:83:treant_overgrowth",
-      "heroId": "83",
-      "engineId": "treant_overgrowth",
-      "activationId": "activation:83:treant_overgrowth",
+      "id": "treant_overgrowth",
+      "Name": "Overgrowth",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "yes",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_treant",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": [
+        200,
+        250,
+        300
+      ],
+      "tags": [
+        "bkb_pierce",
+        "buff",
+        "cooldown_reduction"
+      ]
     },
     {
-      "id": "ability:83:special_bonus_unique_treant_8",
-      "heroId": "83",
-      "engineId": "special_bonus_unique_treant_8",
-      "activationId": "activation:83:special_bonus_unique_treant_8",
-      "order": 6,
-      "owner": "npc_dota_hero_treant",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:83:special_bonus_attack_base_damage_50",
-      "heroId": "83",
-      "engineId": "special_bonus_attack_base_damage_50",
-      "activationId": "activation:83:special_bonus_attack_base_damage_50",
-      "order": 7,
-      "owner": "npc_dota_hero_treant",
-      "state": "known"
-    },
-    {
-      "id": "ability:83:special_bonus_unique_treant_3",
-      "heroId": "83",
-      "engineId": "special_bonus_unique_treant_3",
-      "activationId": "activation:83:special_bonus_unique_treant_3",
-      "order": 8,
-      "owner": "npc_dota_hero_treant",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:83:special_bonus_unique_treant_9",
-      "heroId": "83",
-      "engineId": "special_bonus_unique_treant_9",
-      "activationId": "activation:83:special_bonus_unique_treant_9",
-      "order": 9,
-      "owner": "npc_dota_hero_treant",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:83:special_bonus_unique_treant_13",
-      "heroId": "83",
-      "engineId": "special_bonus_unique_treant_13",
-      "activationId": "activation:83:special_bonus_unique_treant_13",
-      "order": 10,
-      "owner": "npc_dota_hero_treant",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:83:special_bonus_unique_treant_2",
-      "heroId": "83",
-      "engineId": "special_bonus_unique_treant_2",
-      "activationId": "activation:83:special_bonus_unique_treant_2",
-      "order": 11,
-      "owner": "npc_dota_hero_treant",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:83:special_bonus_unique_treant_14",
-      "heroId": "83",
-      "engineId": "special_bonus_unique_treant_14",
-      "activationId": "activation:83:special_bonus_unique_treant_14",
-      "order": 12,
-      "owner": "npc_dota_hero_treant",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:83:special_bonus_unique_treant_7",
-      "heroId": "83",
-      "engineId": "special_bonus_unique_treant_7",
-      "activationId": "activation:83:special_bonus_unique_treant_7",
-      "order": 13,
-      "owner": "npc_dota_hero_treant",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:83:special_bonus_attributes",
-      "heroId": "83",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:83:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_treant",
-      "state": "known"
-    },
-    {
-      "id": "ability:83:treant_innate_attack_damage",
-      "heroId": "83",
-      "engineId": "treant_innate_attack_damage",
-      "activationId": "activation:83:treant_innate_attack_damage",
+      "id": "treant_innate_attack_damage",
+      "behavior": [
+        "passive"
+      ],
       "order": 15,
-      "owner": "npc_dota_hero_treant",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "buff",
+        "self_attack_damage"
+      ]
     },
     {
-      "id": "ability:83:treant_super_bloom",
-      "heroId": "83",
-      "engineId": "treant_super_bloom",
-      "activationId": "activation:83:treant_super_bloom",
+      "id": "treant_super_bloom",
+      "Name": "Super Bloom",
+      "behavior": [
+        "no-target"
+      ],
       "order": 16,
-      "owner": "npc_dota_hero_treant",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 150,
+      "cooldown": 60,
+      "tags": [
+        "attack_damage_scaling",
+        "attribute_bonus",
+        "buff"
+      ]
     },
     {
-      "id": "ability:83:treant_lifebomb_explode",
-      "heroId": "83",
-      "engineId": "treant_lifebomb_explode",
-      "activationId": "activation:83:treant_lifebomb_explode",
+      "id": "treant_lifebomb_explode",
+      "behavior": [
+        "passive"
+      ],
       "order": 17,
-      "owner": "npc_dota_hero_treant",
-      "state": "known"
+      "type": "passive",
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:83:treant_natures_grasp",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:treant_natures_grasp"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:treant_natures_grasp:manaCost",
-        "ownerId": "activation:83:treant_natures_grasp",
-        "field": "manaCost",
-        "state": "known",
-        "value": 90
-      },
-      "cooldown": {
-        "id": "value:activation:83:treant_natures_grasp:cooldown",
-        "ownerId": "activation:83:treant_natures_grasp",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          23,
-          21,
-          19,
-          17
-        ]
-      },
-      "charges": {
-        "id": "value:activation:83:treant_natures_grasp:charges",
-        "ownerId": "activation:83:treant_natures_grasp",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:treant_natures_grasp:manaCost",
-        "value:activation:83:treant_natures_grasp:cooldown",
-        "value:activation:83:treant_natures_grasp:charges"
+      "id": "special_bonus_unique_treant_8",
+      "tags": [
+        "duration_extension"
       ]
     },
     {
-      "id": "activation:83:treant_leech_seed",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:treant_leech_seed"
+      "id": "special_bonus_attack_base_damage_50",
+      "Name": "+50 Base Damage",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:83:treant_leech_seed:manaCost",
-        "ownerId": "activation:83:treant_leech_seed",
-        "field": "manaCost",
-        "state": "known",
-        "value": 35
-      },
-      "cooldown": {
-        "id": "value:activation:83:treant_leech_seed:cooldown",
-        "ownerId": "activation:83:treant_leech_seed",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "15 12 9 6",
-          "special_bonus_unique_treant_14": "-3"
-        }
-      },
-      "charges": {
-        "id": "value:activation:83:treant_leech_seed:charges",
-        "ownerId": "activation:83:treant_leech_seed",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:treant_leech_seed:manaCost",
-        "value:activation:83:treant_leech_seed:cooldown",
-        "value:activation:83:treant_leech_seed:charges"
+      "tags": [
+        "buff",
+        "self_attack_damage"
       ]
     },
     {
-      "id": "activation:83:treant_living_armor",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:treant_living_armor"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:treant_living_armor:manaCost",
-        "ownerId": "activation:83:treant_living_armor",
-        "field": "manaCost",
-        "state": "known",
-        "value": 80
-      },
-      "cooldown": {
-        "id": "value:activation:83:treant_living_armor:cooldown",
-        "ownerId": "activation:83:treant_living_armor",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          24,
-          21,
-          18,
-          15
-        ]
-      },
-      "charges": {
-        "id": "value:activation:83:treant_living_armor:charges",
-        "ownerId": "activation:83:treant_living_armor",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:treant_living_armor:manaCost",
-        "value:activation:83:treant_living_armor:cooldown",
-        "value:activation:83:treant_living_armor:charges"
+      "id": "special_bonus_unique_treant_3",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_treant_9",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:83:treant_eyes_in_the_forest",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:treant_eyes_in_the_forest"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:treant_eyes_in_the_forest:manaCost",
-        "ownerId": "activation:83:treant_eyes_in_the_forest",
-        "field": "manaCost",
-        "state": "known",
-        "value": 30
-      },
-      "cooldown": {
-        "id": "value:activation:83:treant_eyes_in_the_forest:cooldown",
-        "ownerId": "activation:83:treant_eyes_in_the_forest",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:83:treant_eyes_in_the_forest:charges",
-        "ownerId": "activation:83:treant_eyes_in_the_forest",
-        "field": "charges",
-        "state": "known",
-        "value": 2
-      },
-      "valueIds": [
-        "value:activation:83:treant_eyes_in_the_forest:manaCost",
-        "value:activation:83:treant_eyes_in_the_forest:cooldown",
-        "value:activation:83:treant_eyes_in_the_forest:charges"
+      "id": "special_bonus_unique_treant_13",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_treant_2",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_treant_14",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:83:treant_natures_guise",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:treant_natures_guise"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:treant_natures_guise:manaCost",
-        "ownerId": "activation:83:treant_natures_guise",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:83:treant_natures_guise:cooldown",
-        "ownerId": "activation:83:treant_natures_guise",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "36",
-          "hero_levelup": "-1",
-          "levelup_interval": "1"
-        }
-      },
-      "charges": {
-        "id": "value:activation:83:treant_natures_guise:charges",
-        "ownerId": "activation:83:treant_natures_guise",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:treant_natures_guise:manaCost",
-        "value:activation:83:treant_natures_guise:cooldown",
-        "value:activation:83:treant_natures_guise:charges"
-      ]
-    },
-    {
-      "id": "activation:83:treant_overgrowth",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:treant_overgrowth"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:treant_overgrowth:manaCost",
-        "ownerId": "activation:83:treant_overgrowth",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          200,
-          250,
-          300
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:83:treant_overgrowth:cooldown",
-        "ownerId": "activation:83:treant_overgrowth",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "110 100 90",
-          "special_bonus_scepter": "-25"
-        }
-      },
-      "charges": {
-        "id": "value:activation:83:treant_overgrowth:charges",
-        "ownerId": "activation:83:treant_overgrowth",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:treant_overgrowth:manaCost",
-        "value:activation:83:treant_overgrowth:cooldown",
-        "value:activation:83:treant_overgrowth:charges"
-      ]
-    },
-    {
-      "id": "activation:83:special_bonus_unique_treant_8",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:special_bonus_unique_treant_8"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:special_bonus_unique_treant_8:manaCost",
-        "ownerId": "activation:83:special_bonus_unique_treant_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:83:special_bonus_unique_treant_8:cooldown",
-        "ownerId": "activation:83:special_bonus_unique_treant_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:83:special_bonus_unique_treant_8:charges",
-        "ownerId": "activation:83:special_bonus_unique_treant_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:special_bonus_unique_treant_8:manaCost",
-        "value:activation:83:special_bonus_unique_treant_8:cooldown",
-        "value:activation:83:special_bonus_unique_treant_8:charges"
-      ]
-    },
-    {
-      "id": "activation:83:special_bonus_attack_base_damage_50",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:special_bonus_attack_base_damage_50"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:special_bonus_attack_base_damage_50:manaCost",
-        "ownerId": "activation:83:special_bonus_attack_base_damage_50",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:83:special_bonus_attack_base_damage_50:cooldown",
-        "ownerId": "activation:83:special_bonus_attack_base_damage_50",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:83:special_bonus_attack_base_damage_50:charges",
-        "ownerId": "activation:83:special_bonus_attack_base_damage_50",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:special_bonus_attack_base_damage_50:manaCost",
-        "value:activation:83:special_bonus_attack_base_damage_50:cooldown",
-        "value:activation:83:special_bonus_attack_base_damage_50:charges"
-      ]
-    },
-    {
-      "id": "activation:83:special_bonus_unique_treant_3",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:special_bonus_unique_treant_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:special_bonus_unique_treant_3:manaCost",
-        "ownerId": "activation:83:special_bonus_unique_treant_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:83:special_bonus_unique_treant_3:cooldown",
-        "ownerId": "activation:83:special_bonus_unique_treant_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:83:special_bonus_unique_treant_3:charges",
-        "ownerId": "activation:83:special_bonus_unique_treant_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:special_bonus_unique_treant_3:manaCost",
-        "value:activation:83:special_bonus_unique_treant_3:cooldown",
-        "value:activation:83:special_bonus_unique_treant_3:charges"
-      ]
-    },
-    {
-      "id": "activation:83:special_bonus_unique_treant_9",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:special_bonus_unique_treant_9"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:special_bonus_unique_treant_9:manaCost",
-        "ownerId": "activation:83:special_bonus_unique_treant_9",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:83:special_bonus_unique_treant_9:cooldown",
-        "ownerId": "activation:83:special_bonus_unique_treant_9",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:83:special_bonus_unique_treant_9:charges",
-        "ownerId": "activation:83:special_bonus_unique_treant_9",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:special_bonus_unique_treant_9:manaCost",
-        "value:activation:83:special_bonus_unique_treant_9:cooldown",
-        "value:activation:83:special_bonus_unique_treant_9:charges"
-      ]
-    },
-    {
-      "id": "activation:83:special_bonus_unique_treant_13",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:special_bonus_unique_treant_13"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:special_bonus_unique_treant_13:manaCost",
-        "ownerId": "activation:83:special_bonus_unique_treant_13",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:83:special_bonus_unique_treant_13:cooldown",
-        "ownerId": "activation:83:special_bonus_unique_treant_13",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:83:special_bonus_unique_treant_13:charges",
-        "ownerId": "activation:83:special_bonus_unique_treant_13",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:special_bonus_unique_treant_13:manaCost",
-        "value:activation:83:special_bonus_unique_treant_13:cooldown",
-        "value:activation:83:special_bonus_unique_treant_13:charges"
-      ]
-    },
-    {
-      "id": "activation:83:special_bonus_unique_treant_2",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:special_bonus_unique_treant_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:special_bonus_unique_treant_2:manaCost",
-        "ownerId": "activation:83:special_bonus_unique_treant_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:83:special_bonus_unique_treant_2:cooldown",
-        "ownerId": "activation:83:special_bonus_unique_treant_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:83:special_bonus_unique_treant_2:charges",
-        "ownerId": "activation:83:special_bonus_unique_treant_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:special_bonus_unique_treant_2:manaCost",
-        "value:activation:83:special_bonus_unique_treant_2:cooldown",
-        "value:activation:83:special_bonus_unique_treant_2:charges"
-      ]
-    },
-    {
-      "id": "activation:83:special_bonus_unique_treant_14",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:special_bonus_unique_treant_14"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:special_bonus_unique_treant_14:manaCost",
-        "ownerId": "activation:83:special_bonus_unique_treant_14",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:83:special_bonus_unique_treant_14:cooldown",
-        "ownerId": "activation:83:special_bonus_unique_treant_14",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:83:special_bonus_unique_treant_14:charges",
-        "ownerId": "activation:83:special_bonus_unique_treant_14",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:special_bonus_unique_treant_14:manaCost",
-        "value:activation:83:special_bonus_unique_treant_14:cooldown",
-        "value:activation:83:special_bonus_unique_treant_14:charges"
-      ]
-    },
-    {
-      "id": "activation:83:special_bonus_unique_treant_7",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:special_bonus_unique_treant_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:special_bonus_unique_treant_7:manaCost",
-        "ownerId": "activation:83:special_bonus_unique_treant_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:83:special_bonus_unique_treant_7:cooldown",
-        "ownerId": "activation:83:special_bonus_unique_treant_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:83:special_bonus_unique_treant_7:charges",
-        "ownerId": "activation:83:special_bonus_unique_treant_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:special_bonus_unique_treant_7:manaCost",
-        "value:activation:83:special_bonus_unique_treant_7:cooldown",
-        "value:activation:83:special_bonus_unique_treant_7:charges"
-      ]
-    },
-    {
-      "id": "activation:83:special_bonus_attributes",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:special_bonus_attributes:manaCost",
-        "ownerId": "activation:83:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:83:special_bonus_attributes:cooldown",
-        "ownerId": "activation:83:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:83:special_bonus_attributes:charges",
-        "ownerId": "activation:83:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:special_bonus_attributes:manaCost",
-        "value:activation:83:special_bonus_attributes:cooldown",
-        "value:activation:83:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:83:treant_innate_attack_damage",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:treant_innate_attack_damage"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:treant_innate_attack_damage:manaCost",
-        "ownerId": "activation:83:treant_innate_attack_damage",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:83:treant_innate_attack_damage:cooldown",
-        "ownerId": "activation:83:treant_innate_attack_damage",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:83:treant_innate_attack_damage:charges",
-        "ownerId": "activation:83:treant_innate_attack_damage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:treant_innate_attack_damage:manaCost",
-        "value:activation:83:treant_innate_attack_damage:cooldown",
-        "value:activation:83:treant_innate_attack_damage:charges"
-      ]
-    },
-    {
-      "id": "activation:83:treant_super_bloom",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:treant_super_bloom"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:treant_super_bloom:manaCost",
-        "ownerId": "activation:83:treant_super_bloom",
-        "field": "manaCost",
-        "state": "known",
-        "value": 150
-      },
-      "cooldown": {
-        "id": "value:activation:83:treant_super_bloom:cooldown",
-        "ownerId": "activation:83:treant_super_bloom",
-        "field": "cooldown",
-        "state": "known",
-        "value": 60
-      },
-      "charges": {
-        "id": "value:activation:83:treant_super_bloom:charges",
-        "ownerId": "activation:83:treant_super_bloom",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:treant_super_bloom:manaCost",
-        "value:activation:83:treant_super_bloom:cooldown",
-        "value:activation:83:treant_super_bloom:charges"
-      ]
-    },
-    {
-      "id": "activation:83:treant_lifebomb_explode",
-      "heroId": "83",
-      "abilityIds": [
-        "ability:83:treant_lifebomb_explode"
-      ],
-      "manaCost": {
-        "id": "value:activation:83:treant_lifebomb_explode:manaCost",
-        "ownerId": "activation:83:treant_lifebomb_explode",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:83:treant_lifebomb_explode:cooldown",
-        "ownerId": "activation:83:treant_lifebomb_explode",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:83:treant_lifebomb_explode:charges",
-        "ownerId": "activation:83:treant_lifebomb_explode",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:83:treant_lifebomb_explode:manaCost",
-        "value:activation:83:treant_lifebomb_explode:cooldown",
-        "value:activation:83:treant_lifebomb_explode:charges"
-      ]
+      "id": "special_bonus_unique_treant_7",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

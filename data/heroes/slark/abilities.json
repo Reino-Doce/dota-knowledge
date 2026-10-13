@@ -1,700 +1,201 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "slark_essence_shift",
+    "Name": "Essence Shift",
+    "behavior": [
+      "passive"
+    ],
+    "dispellable": "no",
+    "piercesDebuffImmunity": "yes",
+    "breakable": true,
+    "tags": [
+      "attribute_bonus",
+      "aura",
+      "buff",
+      "earned_permanent_growth"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:93:slark_dark_pact",
-      "heroId": "93",
-      "engineId": "slark_dark_pact",
-      "activationId": "activation:93:slark_dark_pact",
+      "id": "slark_dark_pact",
+      "Name": "Dark Pact",
+      "behavior": [
+        "no-target"
+      ],
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_slark",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 65,
+      "tags": [
+        "delayed_damage",
+        "dispel"
+      ]
     },
     {
-      "id": "ability:93:slark_pounce",
-      "heroId": "93",
-      "engineId": "slark_pounce",
-      "activationId": "activation:93:slark_pounce",
+      "id": "slark_pounce",
+      "Name": "Pounce",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 1,
-      "owner": "npc_dota_hero_slark",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 75,
+      "tags": [
+        "escape",
+        "mobility",
+        "self_reposition"
+      ]
     },
     {
-      "id": "ability:93:slark_saltwater_shiv",
-      "heroId": "93",
-      "engineId": "slark_saltwater_shiv",
-      "activationId": "activation:93:slark_saltwater_shiv",
+      "id": "slark_saltwater_shiv",
+      "Name": "Saltwater Shiv",
+      "behavior": [
+        "auto-cast",
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-heroes"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "physical",
       "order": 2,
-      "owner": "npc_dota_hero_slark",
-      "state": "known"
+      "type": "toggle",
+      "manaCost": [
+        25,
+        30,
+        35,
+        40
+      ],
+      "cooldown": [
+        12,
+        10.5,
+        9,
+        7.5
+      ],
+      "tags": [
+        "slow"
+      ]
     },
     {
-      "id": "ability:93:slark_depth_shroud",
-      "heroId": "93",
-      "engineId": "slark_depth_shroud",
-      "activationId": "activation:93:slark_depth_shroud",
+      "id": "slark_depth_shroud",
+      "Name": "Depth Shroud",
+      "behavior": [
+        "point-target"
+      ],
       "order": 3,
-      "owner": "npc_dota_hero_slark",
-      "state": "known"
+      "type": "point",
+      "manaCost": 75,
+      "cooldown": 75,
+      "tags": [
+        "aoe",
+        "concealment",
+        "escape"
+      ]
     },
     {
-      "id": "ability:93:slark_essence_shift",
-      "heroId": "93",
-      "engineId": "slark_essence_shift",
-      "activationId": "activation:93:slark_essence_shift",
-      "order": 4,
-      "owner": "npc_dota_hero_slark",
-      "state": "known"
-    },
-    {
-      "id": "ability:93:slark_shadow_dance",
-      "heroId": "93",
-      "engineId": "slark_shadow_dance",
-      "activationId": "activation:93:slark_shadow_dance",
+      "id": "slark_shadow_dance",
+      "Name": "Shadow Dance",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "no",
       "order": 5,
-      "owner": "npc_dota_hero_slark",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 100,
+      "cooldown": [
+        50,
+        40,
+        30
+      ],
+      "tags": [
+        "buff",
+        "concealment",
+        "escape",
+        "health_regen",
+        "mobility",
+        "self_health_regen",
+        "self_movement_speed"
+      ]
     },
     {
-      "id": "ability:93:special_bonus_unique_slark_6",
-      "heroId": "93",
-      "engineId": "special_bonus_unique_slark_6",
-      "activationId": "activation:93:special_bonus_unique_slark_6",
-      "order": 6,
-      "owner": "npc_dota_hero_slark",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:93:special_bonus_unique_slark",
-      "heroId": "93",
-      "engineId": "special_bonus_unique_slark",
-      "activationId": "activation:93:special_bonus_unique_slark",
-      "order": 7,
-      "owner": "npc_dota_hero_slark",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:93:special_bonus_unique_slark_2",
-      "heroId": "93",
-      "engineId": "special_bonus_unique_slark_2",
-      "activationId": "activation:93:special_bonus_unique_slark_2",
-      "order": 8,
-      "owner": "npc_dota_hero_slark",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:93:special_bonus_unique_slark_8",
-      "heroId": "93",
-      "engineId": "special_bonus_unique_slark_8",
-      "activationId": "activation:93:special_bonus_unique_slark_8",
-      "order": 9,
-      "owner": "npc_dota_hero_slark",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:93:special_bonus_unique_slark_4",
-      "heroId": "93",
-      "engineId": "special_bonus_unique_slark_4",
-      "activationId": "activation:93:special_bonus_unique_slark_4",
-      "order": 10,
-      "owner": "npc_dota_hero_slark",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:93:special_bonus_unique_slark_7",
-      "heroId": "93",
-      "engineId": "special_bonus_unique_slark_7",
-      "activationId": "activation:93:special_bonus_unique_slark_7",
-      "order": 11,
-      "owner": "npc_dota_hero_slark",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:93:special_bonus_unique_slark_3",
-      "heroId": "93",
-      "engineId": "special_bonus_unique_slark_3",
-      "activationId": "activation:93:special_bonus_unique_slark_3",
-      "order": 12,
-      "owner": "npc_dota_hero_slark",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:93:special_bonus_unique_slark_5",
-      "heroId": "93",
-      "engineId": "special_bonus_unique_slark_5",
-      "activationId": "activation:93:special_bonus_unique_slark_5",
-      "order": 13,
-      "owner": "npc_dota_hero_slark",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:93:special_bonus_attributes",
-      "heroId": "93",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:93:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_slark",
-      "state": "known"
-    },
-    {
-      "id": "ability:93:slark_fish_bait",
-      "heroId": "93",
-      "engineId": "slark_fish_bait",
-      "activationId": "activation:93:slark_fish_bait",
+      "id": "slark_fish_bait",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 15,
-      "owner": "npc_dota_hero_slark",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": 50,
+      "cooldown": 9,
+      "tags": []
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:93:slark_dark_pact",
-      "heroId": "93",
-      "abilityIds": [
-        "ability:93:slark_dark_pact"
-      ],
-      "manaCost": {
-        "id": "value:activation:93:slark_dark_pact:manaCost",
-        "ownerId": "activation:93:slark_dark_pact",
-        "field": "manaCost",
-        "state": "known",
-        "value": 65
-      },
-      "cooldown": {
-        "id": "value:activation:93:slark_dark_pact:cooldown",
-        "ownerId": "activation:93:slark_dark_pact",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "9.0 8.0 7.0 6.0",
-          "special_bonus_unique_slark_6": "-0.75"
-        }
-      },
-      "charges": {
-        "id": "value:activation:93:slark_dark_pact:charges",
-        "ownerId": "activation:93:slark_dark_pact",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:93:slark_dark_pact:manaCost",
-        "value:activation:93:slark_dark_pact:cooldown",
-        "value:activation:93:slark_dark_pact:charges"
+      "id": "special_bonus_unique_slark_6",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:93:slark_pounce",
-      "heroId": "93",
-      "abilityIds": [
-        "ability:93:slark_pounce"
-      ],
-      "manaCost": {
-        "id": "value:activation:93:slark_pounce:manaCost",
-        "ownerId": "activation:93:slark_pounce",
-        "field": "manaCost",
-        "state": "known",
-        "value": 75
-      },
-      "cooldown": {
-        "id": "value:activation:93:slark_pounce:cooldown",
-        "ownerId": "activation:93:slark_pounce",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "24 20 16 12"
-        }
-      },
-      "charges": {
-        "id": "value:activation:93:slark_pounce:charges",
-        "ownerId": "activation:93:slark_pounce",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:93:slark_pounce:manaCost",
-        "value:activation:93:slark_pounce:cooldown",
-        "value:activation:93:slark_pounce:charges"
+      "id": "special_bonus_unique_slark",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_slark_2",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:93:slark_saltwater_shiv",
-      "heroId": "93",
-      "abilityIds": [
-        "ability:93:slark_saltwater_shiv"
-      ],
-      "manaCost": {
-        "id": "value:activation:93:slark_saltwater_shiv:manaCost",
-        "ownerId": "activation:93:slark_saltwater_shiv",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          25,
-          30,
-          35,
-          40
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:93:slark_saltwater_shiv:cooldown",
-        "ownerId": "activation:93:slark_saltwater_shiv",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          12,
-          10.5,
-          9,
-          7.5
-        ]
-      },
-      "charges": {
-        "id": "value:activation:93:slark_saltwater_shiv:charges",
-        "ownerId": "activation:93:slark_saltwater_shiv",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:93:slark_saltwater_shiv:manaCost",
-        "value:activation:93:slark_saltwater_shiv:cooldown",
-        "value:activation:93:slark_saltwater_shiv:charges"
+      "id": "special_bonus_unique_slark_8",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_slark_4",
+      "tags": [
+        "duration_extension"
       ]
     },
     {
-      "id": "activation:93:slark_depth_shroud",
-      "heroId": "93",
-      "abilityIds": [
-        "ability:93:slark_depth_shroud"
-      ],
-      "manaCost": {
-        "id": "value:activation:93:slark_depth_shroud:manaCost",
-        "ownerId": "activation:93:slark_depth_shroud",
-        "field": "manaCost",
-        "state": "known",
-        "value": 75
-      },
-      "cooldown": {
-        "id": "value:activation:93:slark_depth_shroud:cooldown",
-        "ownerId": "activation:93:slark_depth_shroud",
-        "field": "cooldown",
-        "state": "known",
-        "value": 75
-      },
-      "charges": {
-        "id": "value:activation:93:slark_depth_shroud:charges",
-        "ownerId": "activation:93:slark_depth_shroud",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:93:slark_depth_shroud:manaCost",
-        "value:activation:93:slark_depth_shroud:cooldown",
-        "value:activation:93:slark_depth_shroud:charges"
+      "id": "special_bonus_unique_slark_7",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_slark_3",
+      "tags": [
+        "duration_extension"
       ]
     },
     {
-      "id": "activation:93:slark_essence_shift",
-      "heroId": "93",
-      "abilityIds": [
-        "ability:93:slark_essence_shift"
-      ],
-      "manaCost": {
-        "id": "value:activation:93:slark_essence_shift:manaCost",
-        "ownerId": "activation:93:slark_essence_shift",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:93:slark_essence_shift:cooldown",
-        "ownerId": "activation:93:slark_essence_shift",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:93:slark_essence_shift:charges",
-        "ownerId": "activation:93:slark_essence_shift",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:93:slark_essence_shift:manaCost",
-        "value:activation:93:slark_essence_shift:cooldown",
-        "value:activation:93:slark_essence_shift:charges"
-      ]
-    },
-    {
-      "id": "activation:93:slark_shadow_dance",
-      "heroId": "93",
-      "abilityIds": [
-        "ability:93:slark_shadow_dance"
-      ],
-      "manaCost": {
-        "id": "value:activation:93:slark_shadow_dance:manaCost",
-        "ownerId": "activation:93:slark_shadow_dance",
-        "field": "manaCost",
-        "state": "known",
-        "value": 100
-      },
-      "cooldown": {
-        "id": "value:activation:93:slark_shadow_dance:cooldown",
-        "ownerId": "activation:93:slark_shadow_dance",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          50,
-          40,
-          30
-        ]
-      },
-      "charges": {
-        "id": "value:activation:93:slark_shadow_dance:charges",
-        "ownerId": "activation:93:slark_shadow_dance",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:93:slark_shadow_dance:manaCost",
-        "value:activation:93:slark_shadow_dance:cooldown",
-        "value:activation:93:slark_shadow_dance:charges"
-      ]
-    },
-    {
-      "id": "activation:93:special_bonus_unique_slark_6",
-      "heroId": "93",
-      "abilityIds": [
-        "ability:93:special_bonus_unique_slark_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:93:special_bonus_unique_slark_6:manaCost",
-        "ownerId": "activation:93:special_bonus_unique_slark_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:93:special_bonus_unique_slark_6:cooldown",
-        "ownerId": "activation:93:special_bonus_unique_slark_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:93:special_bonus_unique_slark_6:charges",
-        "ownerId": "activation:93:special_bonus_unique_slark_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:93:special_bonus_unique_slark_6:manaCost",
-        "value:activation:93:special_bonus_unique_slark_6:cooldown",
-        "value:activation:93:special_bonus_unique_slark_6:charges"
-      ]
-    },
-    {
-      "id": "activation:93:special_bonus_unique_slark",
-      "heroId": "93",
-      "abilityIds": [
-        "ability:93:special_bonus_unique_slark"
-      ],
-      "manaCost": {
-        "id": "value:activation:93:special_bonus_unique_slark:manaCost",
-        "ownerId": "activation:93:special_bonus_unique_slark",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:93:special_bonus_unique_slark:cooldown",
-        "ownerId": "activation:93:special_bonus_unique_slark",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:93:special_bonus_unique_slark:charges",
-        "ownerId": "activation:93:special_bonus_unique_slark",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:93:special_bonus_unique_slark:manaCost",
-        "value:activation:93:special_bonus_unique_slark:cooldown",
-        "value:activation:93:special_bonus_unique_slark:charges"
-      ]
-    },
-    {
-      "id": "activation:93:special_bonus_unique_slark_2",
-      "heroId": "93",
-      "abilityIds": [
-        "ability:93:special_bonus_unique_slark_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:93:special_bonus_unique_slark_2:manaCost",
-        "ownerId": "activation:93:special_bonus_unique_slark_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:93:special_bonus_unique_slark_2:cooldown",
-        "ownerId": "activation:93:special_bonus_unique_slark_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:93:special_bonus_unique_slark_2:charges",
-        "ownerId": "activation:93:special_bonus_unique_slark_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:93:special_bonus_unique_slark_2:manaCost",
-        "value:activation:93:special_bonus_unique_slark_2:cooldown",
-        "value:activation:93:special_bonus_unique_slark_2:charges"
-      ]
-    },
-    {
-      "id": "activation:93:special_bonus_unique_slark_8",
-      "heroId": "93",
-      "abilityIds": [
-        "ability:93:special_bonus_unique_slark_8"
-      ],
-      "manaCost": {
-        "id": "value:activation:93:special_bonus_unique_slark_8:manaCost",
-        "ownerId": "activation:93:special_bonus_unique_slark_8",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:93:special_bonus_unique_slark_8:cooldown",
-        "ownerId": "activation:93:special_bonus_unique_slark_8",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:93:special_bonus_unique_slark_8:charges",
-        "ownerId": "activation:93:special_bonus_unique_slark_8",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:93:special_bonus_unique_slark_8:manaCost",
-        "value:activation:93:special_bonus_unique_slark_8:cooldown",
-        "value:activation:93:special_bonus_unique_slark_8:charges"
-      ]
-    },
-    {
-      "id": "activation:93:special_bonus_unique_slark_4",
-      "heroId": "93",
-      "abilityIds": [
-        "ability:93:special_bonus_unique_slark_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:93:special_bonus_unique_slark_4:manaCost",
-        "ownerId": "activation:93:special_bonus_unique_slark_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:93:special_bonus_unique_slark_4:cooldown",
-        "ownerId": "activation:93:special_bonus_unique_slark_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:93:special_bonus_unique_slark_4:charges",
-        "ownerId": "activation:93:special_bonus_unique_slark_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:93:special_bonus_unique_slark_4:manaCost",
-        "value:activation:93:special_bonus_unique_slark_4:cooldown",
-        "value:activation:93:special_bonus_unique_slark_4:charges"
-      ]
-    },
-    {
-      "id": "activation:93:special_bonus_unique_slark_7",
-      "heroId": "93",
-      "abilityIds": [
-        "ability:93:special_bonus_unique_slark_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:93:special_bonus_unique_slark_7:manaCost",
-        "ownerId": "activation:93:special_bonus_unique_slark_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:93:special_bonus_unique_slark_7:cooldown",
-        "ownerId": "activation:93:special_bonus_unique_slark_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:93:special_bonus_unique_slark_7:charges",
-        "ownerId": "activation:93:special_bonus_unique_slark_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:93:special_bonus_unique_slark_7:manaCost",
-        "value:activation:93:special_bonus_unique_slark_7:cooldown",
-        "value:activation:93:special_bonus_unique_slark_7:charges"
-      ]
-    },
-    {
-      "id": "activation:93:special_bonus_unique_slark_3",
-      "heroId": "93",
-      "abilityIds": [
-        "ability:93:special_bonus_unique_slark_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:93:special_bonus_unique_slark_3:manaCost",
-        "ownerId": "activation:93:special_bonus_unique_slark_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:93:special_bonus_unique_slark_3:cooldown",
-        "ownerId": "activation:93:special_bonus_unique_slark_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:93:special_bonus_unique_slark_3:charges",
-        "ownerId": "activation:93:special_bonus_unique_slark_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:93:special_bonus_unique_slark_3:manaCost",
-        "value:activation:93:special_bonus_unique_slark_3:cooldown",
-        "value:activation:93:special_bonus_unique_slark_3:charges"
-      ]
-    },
-    {
-      "id": "activation:93:special_bonus_unique_slark_5",
-      "heroId": "93",
-      "abilityIds": [
-        "ability:93:special_bonus_unique_slark_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:93:special_bonus_unique_slark_5:manaCost",
-        "ownerId": "activation:93:special_bonus_unique_slark_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:93:special_bonus_unique_slark_5:cooldown",
-        "ownerId": "activation:93:special_bonus_unique_slark_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:93:special_bonus_unique_slark_5:charges",
-        "ownerId": "activation:93:special_bonus_unique_slark_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:93:special_bonus_unique_slark_5:manaCost",
-        "value:activation:93:special_bonus_unique_slark_5:cooldown",
-        "value:activation:93:special_bonus_unique_slark_5:charges"
-      ]
-    },
-    {
-      "id": "activation:93:special_bonus_attributes",
-      "heroId": "93",
-      "abilityIds": [
-        "ability:93:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:93:special_bonus_attributes:manaCost",
-        "ownerId": "activation:93:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:93:special_bonus_attributes:cooldown",
-        "ownerId": "activation:93:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:93:special_bonus_attributes:charges",
-        "ownerId": "activation:93:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:93:special_bonus_attributes:manaCost",
-        "value:activation:93:special_bonus_attributes:cooldown",
-        "value:activation:93:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:93:slark_fish_bait",
-      "heroId": "93",
-      "abilityIds": [
-        "ability:93:slark_fish_bait"
-      ],
-      "manaCost": {
-        "id": "value:activation:93:slark_fish_bait:manaCost",
-        "ownerId": "activation:93:slark_fish_bait",
-        "field": "manaCost",
-        "state": "known",
-        "value": 50
-      },
-      "cooldown": {
-        "id": "value:activation:93:slark_fish_bait:cooldown",
-        "ownerId": "activation:93:slark_fish_bait",
-        "field": "cooldown",
-        "state": "known",
-        "value": 9
-      },
-      "charges": {
-        "id": "value:activation:93:slark_fish_bait:charges",
-        "ownerId": "activation:93:slark_fish_bait",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:93:slark_fish_bait:manaCost",
-        "value:activation:93:slark_fish_bait:cooldown",
-        "value:activation:93:slark_fish_bait:charges"
-      ]
+      "id": "special_bonus_unique_slark_5",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

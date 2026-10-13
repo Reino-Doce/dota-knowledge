@@ -3,26 +3,340 @@
   "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/abilities.schema.json",
   "type": "object",
   "required": [
-    "schemaVersion",
-    "abilities",
-    "activations"
+    "innate",
+    "skills",
+    "talents",
+    "bonus_attributes"
   ],
   "properties": {
-    "schemaVersion": {
-      "const": 2
+    "innate": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/entry"
+        },
+        {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/entry"
+          }
+        }
+      ]
     },
-    "abilities": {
+    "skills": {
       "type": "array",
       "items": {
-        "$ref": "core.schema.json#/$defs/ability"
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/$defs/entry"
+          }
+        ],
+        "required": [
+          "type"
+        ]
       }
     },
-    "activations": {
+    "talents": {
       "type": "array",
       "items": {
-        "$ref": "core.schema.json#/$defs/activation"
+        "$ref": "#/$defs/bonus"
       }
+    },
+    "bonus_attributes": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/bonus"
+        },
+        {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/bonus"
+          }
+        }
+      ]
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "$defs": {
+    "quantity": {
+      "oneOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      ]
+    },
+    "entry": {
+      "type": "object",
+      "required": [
+        "id",
+        "tags"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "enum": [
+            "passive",
+            "toggle",
+            "target",
+            "point",
+            "vector",
+            "target-or-point",
+            "self-target",
+            "unknown",
+            "placeholder"
+          ]
+        },
+        "behavior": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "unit-target",
+              "passive",
+              "point-target",
+              "no-target",
+              "auto-cast",
+              "channeled",
+              "point-vector-target",
+              "toggle",
+              "tree-vector-target"
+            ]
+          }
+        },
+        "affects": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "units",
+              "allies",
+              "allied-units",
+              "enemy-units",
+              "enemy-creeps",
+              "allied-heroes",
+              "enemy-heroes",
+              "trees",
+              "allied-buildings",
+              "enemy-buildings"
+            ]
+          }
+        },
+        "dispellable": {
+          "enum": [
+            "yes",
+            "no",
+            "strong-only"
+          ]
+        },
+        "dispelType": {
+          "enum": [
+            "basic",
+            "strong"
+          ]
+        },
+        "piercesDebuffImmunity": {
+          "enum": [
+            "no",
+            "allies-only",
+            "yes"
+          ]
+        },
+        "damageType": {
+          "enum": [
+            "physical",
+            "magical",
+            "pure"
+          ]
+        },
+        "breakable": {
+          "type": "boolean"
+        },
+        "target": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "self",
+              "ally_hero",
+              "enemy_hero",
+              "ally_creep",
+              "enemy_creep",
+              "neutral_creep",
+              "enemy_creep_hero",
+              "ally_building",
+              "enemy_building",
+              "tree",
+              "ally_courier",
+              "enemy_courier"
+            ]
+          }
+        },
+        "manaCost": {
+          "$ref": "#/$defs/quantity"
+        },
+        "cooldown": {
+          "$ref": "#/$defs/quantity"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]{0,63}$"
+          },
+          "uniqueItems": true
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "Name": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "bonus": {
+      "type": "object",
+      "required": [
+        "id",
+        "tags"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "behavior": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "unit-target",
+              "passive",
+              "point-target",
+              "no-target",
+              "auto-cast",
+              "channeled",
+              "point-vector-target",
+              "toggle",
+              "tree-vector-target"
+            ]
+          }
+        },
+        "affects": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "units",
+              "allies",
+              "allied-units",
+              "enemy-units",
+              "enemy-creeps",
+              "allied-heroes",
+              "enemy-heroes",
+              "trees",
+              "allied-buildings",
+              "enemy-buildings"
+            ]
+          }
+        },
+        "dispellable": {
+          "enum": [
+            "yes",
+            "no",
+            "strong-only"
+          ]
+        },
+        "dispelType": {
+          "enum": [
+            "basic",
+            "strong"
+          ]
+        },
+        "piercesDebuffImmunity": {
+          "enum": [
+            "no",
+            "allies-only",
+            "yes"
+          ]
+        },
+        "damageType": {
+          "enum": [
+            "physical",
+            "magical",
+            "pure"
+          ]
+        },
+        "breakable": {
+          "type": "boolean"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]{0,63}$"
+          },
+          "uniqueItems": true
+        },
+        "Name": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "legacy": {
+      "type": "object",
+      "required": [
+        "schemaVersion",
+        "abilities",
+        "activations"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 2
+        },
+        "abilities": {
+          "type": "array",
+          "items": {
+            "$ref": "core.schema.json#/$defs/ability"
+          }
+        },
+        "activations": {
+          "type": "array",
+          "items": {
+            "$ref": "core.schema.json#/$defs/activation"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
 }

@@ -6,7 +6,7 @@ import { publishDataset, recoverPublication } from '../src/node/publish-dataset.
 import { validateDataset } from './consolidation/validation.mjs';
 
 export async function compileCanonical({ dataset = fileURLToPath(new URL('../data', import.meta.url)), output = dataset, replace = true } = {}) {
-    const graph = await readCanonical(dataset);
+    const graph = await readCanonical(dataset, { validateAbilityView: false });
     return publishDataset({ target: output, replace,
         expectedFiles: path.resolve(output) === path.resolve(dataset) ? [graph.inputManifest, ...graph.metadata.sourceFiles] : undefined,
         ownedFiles: path.resolve(output) === path.resolve(dataset) ? ['manifest.json', ...graph.metadata.sourceFiles.map(row => row.name)] : undefined,

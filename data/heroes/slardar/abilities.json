@@ -1,686 +1,179 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "slardar_seaborn_sentinel",
+    "Name": "Seaborn Sentinel",
+    "behavior": [
+      "passive"
+    ],
+    "breakable": true,
+    "tags": [
+      "buff",
+      "escape",
+      "health_regen",
+      "mobility",
+      "self_armor",
+      "self_attack_damage",
+      "self_health_regen",
+      "self_movement_speed"
+    ]
+  },
+  "skills": [
     {
-      "id": "ability:28:slardar_sprint",
-      "heroId": "28",
-      "engineId": "slardar_sprint",
-      "activationId": "activation:28:slardar_sprint",
+      "id": "slardar_sprint",
+      "Name": "Guardian Sprint",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
       "order": 0,
-      "owner": "npc_dota_hero_slardar",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 25,
+      "tags": [
+        "buff",
+        "escape",
+        "mobility",
+        "self_movement_speed",
+        "slow_resistance"
+      ]
     },
     {
-      "id": "ability:28:slardar_slithereen_crush",
-      "heroId": "28",
-      "engineId": "slardar_slithereen_crush",
-      "activationId": "activation:28:slardar_slithereen_crush",
+      "id": "slardar_slithereen_crush",
+      "Name": "Slithereen Crush",
+      "behavior": [
+        "no-target"
+      ],
+      "dispellable": "strong-only",
+      "dispelType": "strong",
+      "piercesDebuffImmunity": "no",
+      "damageType": "physical",
       "order": 1,
-      "owner": "npc_dota_hero_slardar",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 100,
+      "tags": [
+        "disable",
+        "slow",
+        "stun"
+      ]
     },
     {
-      "id": "ability:28:slardar_bash",
-      "heroId": "28",
-      "engineId": "slardar_bash",
-      "activationId": "activation:28:slardar_bash",
+      "id": "slardar_bash",
+      "Name": "Bash of the Deep",
+      "behavior": [
+        "passive"
+      ],
+      "dispellable": "strong-only",
+      "dispelType": "strong",
+      "piercesDebuffImmunity": "yes",
+      "damageType": "physical",
+      "breakable": true,
       "order": 2,
-      "owner": "npc_dota_hero_slardar",
-      "state": "known"
+      "type": "passive",
+      "tags": [
+        "bkb_pierce"
+      ]
     },
     {
-      "id": "ability:28:slardar_seaborn_sentinel",
-      "heroId": "28",
-      "engineId": "slardar_seaborn_sentinel",
-      "activationId": "activation:28:slardar_seaborn_sentinel",
-      "order": 3,
-      "owner": "npc_dota_hero_slardar",
-      "state": "known"
-    },
-    {
-      "id": "ability:28:generic_hidden",
-      "heroId": "28",
-      "engineId": "generic_hidden",
-      "activationId": "activation:28:generic_hidden",
+      "id": "generic_hidden",
       "order": 4,
-      "owner": "npc_dota_hero_slardar",
-      "state": "known"
+      "type": "unknown",
+      "tags": []
     },
     {
-      "id": "ability:28:slardar_amplify_damage",
-      "heroId": "28",
-      "engineId": "slardar_amplify_damage",
-      "activationId": "activation:28:slardar_amplify_damage",
+      "id": "slardar_amplify_damage",
+      "Name": "Corrosive Haze",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "yes",
       "order": 5,
-      "owner": "npc_dota_hero_slardar",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "enemy_hero",
+        "enemy_creep",
+        "neutral_creep"
+      ],
+      "manaCost": 25,
+      "cooldown": 5,
+      "tags": [
+        "detection",
+        "vision"
+      ]
     },
     {
-      "id": "ability:28:special_bonus_unique_slardar_7",
-      "heroId": "28",
-      "engineId": "special_bonus_unique_slardar_7",
-      "activationId": "activation:28:special_bonus_unique_slardar_7",
-      "order": 6,
-      "owner": "npc_dota_hero_slardar",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:28:special_bonus_unique_slardar_2",
-      "heroId": "28",
-      "engineId": "special_bonus_unique_slardar_2",
-      "activationId": "activation:28:special_bonus_unique_slardar_2",
-      "order": 7,
-      "owner": "npc_dota_hero_slardar",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:28:special_bonus_hp_250",
-      "heroId": "28",
-      "engineId": "special_bonus_hp_250",
-      "activationId": "activation:28:special_bonus_hp_250",
-      "order": 8,
-      "owner": "npc_dota_hero_slardar",
-      "state": "known"
-    },
-    {
-      "id": "ability:28:special_bonus_unique_slardar_5",
-      "heroId": "28",
-      "engineId": "special_bonus_unique_slardar_5",
-      "activationId": "activation:28:special_bonus_unique_slardar_5",
-      "order": 9,
-      "owner": "npc_dota_hero_slardar",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:28:special_bonus_unique_slardar",
-      "heroId": "28",
-      "engineId": "special_bonus_unique_slardar",
-      "activationId": "activation:28:special_bonus_unique_slardar",
-      "order": 10,
-      "owner": "npc_dota_hero_slardar",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:28:special_bonus_unique_slardar_6",
-      "heroId": "28",
-      "engineId": "special_bonus_unique_slardar_6",
-      "activationId": "activation:28:special_bonus_unique_slardar_6",
-      "order": 11,
-      "owner": "npc_dota_hero_slardar",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:28:special_bonus_unique_slardar_4",
-      "heroId": "28",
-      "engineId": "special_bonus_unique_slardar_4",
-      "activationId": "activation:28:special_bonus_unique_slardar_4",
-      "order": 12,
-      "owner": "npc_dota_hero_slardar",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:28:special_bonus_unique_slardar_3",
-      "heroId": "28",
-      "engineId": "special_bonus_unique_slardar_3",
-      "activationId": "activation:28:special_bonus_unique_slardar_3",
-      "order": 13,
-      "owner": "npc_dota_hero_slardar",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:28:special_bonus_attributes",
-      "heroId": "28",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:28:special_bonus_attributes",
-      "order": 14,
-      "owner": "npc_dota_hero_slardar",
-      "state": "known"
-    },
-    {
-      "id": "ability:28:slardar_scepter",
-      "heroId": "28",
-      "engineId": "slardar_scepter",
-      "activationId": "activation:28:slardar_scepter",
+      "id": "slardar_scepter",
+      "behavior": [
+        "point-target"
+      ],
       "order": 15,
-      "owner": "npc_dota_hero_slardar",
-      "state": "known"
+      "type": "point",
+      "manaCost": 20,
+      "cooldown": 5,
+      "tags": [
+        "aoe"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:28:slardar_sprint",
-      "heroId": "28",
-      "abilityIds": [
-        "ability:28:slardar_sprint"
-      ],
-      "manaCost": {
-        "id": "value:activation:28:slardar_sprint:manaCost",
-        "ownerId": "activation:28:slardar_sprint",
-        "field": "manaCost",
-        "state": "known",
-        "value": 25
-      },
-      "cooldown": {
-        "id": "value:activation:28:slardar_sprint:cooldown",
-        "ownerId": "activation:28:slardar_sprint",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "33 28 23 18"
-        }
-      },
-      "charges": {
-        "id": "value:activation:28:slardar_sprint:charges",
-        "ownerId": "activation:28:slardar_sprint",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:28:slardar_sprint:manaCost",
-        "value:activation:28:slardar_sprint:cooldown",
-        "value:activation:28:slardar_sprint:charges"
+      "id": "special_bonus_unique_slardar_7",
+      "tags": [
+        "duration_extension"
       ]
     },
     {
-      "id": "activation:28:slardar_slithereen_crush",
-      "heroId": "28",
-      "abilityIds": [
-        "ability:28:slardar_slithereen_crush"
-      ],
-      "manaCost": {
-        "id": "value:activation:28:slardar_slithereen_crush:manaCost",
-        "ownerId": "activation:28:slardar_slithereen_crush",
-        "field": "manaCost",
-        "state": "known",
-        "value": 100
-      },
-      "cooldown": {
-        "id": "value:activation:28:slardar_slithereen_crush:cooldown",
-        "ownerId": "activation:28:slardar_slithereen_crush",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "8.5 8 7.5 7",
-          "special_bonus_unique_slardar_4": "-3"
-        }
-      },
-      "charges": {
-        "id": "value:activation:28:slardar_slithereen_crush:charges",
-        "ownerId": "activation:28:slardar_slithereen_crush",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:28:slardar_slithereen_crush:manaCost",
-        "value:activation:28:slardar_slithereen_crush:cooldown",
-        "value:activation:28:slardar_slithereen_crush:charges"
+      "id": "special_bonus_unique_slardar_2",
+      "tags": [
+        "ability_damage_bonus",
+        "buff"
       ]
     },
     {
-      "id": "activation:28:slardar_bash",
-      "heroId": "28",
-      "abilityIds": [
-        "ability:28:slardar_bash"
+      "id": "special_bonus_hp_250",
+      "Name": "+250 Health",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:28:slardar_bash:manaCost",
-        "ownerId": "activation:28:slardar_bash",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:28:slardar_bash:cooldown",
-        "ownerId": "activation:28:slardar_bash",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:28:slardar_bash:charges",
-        "ownerId": "activation:28:slardar_bash",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:28:slardar_bash:manaCost",
-        "value:activation:28:slardar_bash:cooldown",
-        "value:activation:28:slardar_bash:charges"
+      "tags": [
+        "buff",
+        "self_max_health"
       ]
     },
     {
-      "id": "activation:28:slardar_seaborn_sentinel",
-      "heroId": "28",
-      "abilityIds": [
-        "ability:28:slardar_seaborn_sentinel"
-      ],
-      "manaCost": {
-        "id": "value:activation:28:slardar_seaborn_sentinel:manaCost",
-        "ownerId": "activation:28:slardar_seaborn_sentinel",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:28:slardar_seaborn_sentinel:cooldown",
-        "ownerId": "activation:28:slardar_seaborn_sentinel",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:28:slardar_seaborn_sentinel:charges",
-        "ownerId": "activation:28:slardar_seaborn_sentinel",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:28:slardar_seaborn_sentinel:manaCost",
-        "value:activation:28:slardar_seaborn_sentinel:cooldown",
-        "value:activation:28:slardar_seaborn_sentinel:charges"
+      "id": "special_bonus_unique_slardar_5",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_slardar",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_slardar_6",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_slardar_4",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:28:generic_hidden",
-      "heroId": "28",
-      "abilityIds": [
-        "ability:28:generic_hidden"
-      ],
-      "manaCost": {
-        "id": "value:activation:28:generic_hidden:manaCost",
-        "ownerId": "activation:28:generic_hidden",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:28:generic_hidden:cooldown",
-        "ownerId": "activation:28:generic_hidden",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:28:generic_hidden:charges",
-        "ownerId": "activation:28:generic_hidden",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:28:generic_hidden:manaCost",
-        "value:activation:28:generic_hidden:cooldown",
-        "value:activation:28:generic_hidden:charges"
-      ]
-    },
-    {
-      "id": "activation:28:slardar_amplify_damage",
-      "heroId": "28",
-      "abilityIds": [
-        "ability:28:slardar_amplify_damage"
-      ],
-      "manaCost": {
-        "id": "value:activation:28:slardar_amplify_damage:manaCost",
-        "ownerId": "activation:28:slardar_amplify_damage",
-        "field": "manaCost",
-        "state": "known",
-        "value": 25
-      },
-      "cooldown": {
-        "id": "value:activation:28:slardar_amplify_damage:cooldown",
-        "ownerId": "activation:28:slardar_amplify_damage",
-        "field": "cooldown",
-        "state": "known",
-        "value": 5
-      },
-      "charges": {
-        "id": "value:activation:28:slardar_amplify_damage:charges",
-        "ownerId": "activation:28:slardar_amplify_damage",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:28:slardar_amplify_damage:manaCost",
-        "value:activation:28:slardar_amplify_damage:cooldown",
-        "value:activation:28:slardar_amplify_damage:charges"
-      ]
-    },
-    {
-      "id": "activation:28:special_bonus_unique_slardar_7",
-      "heroId": "28",
-      "abilityIds": [
-        "ability:28:special_bonus_unique_slardar_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:28:special_bonus_unique_slardar_7:manaCost",
-        "ownerId": "activation:28:special_bonus_unique_slardar_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:28:special_bonus_unique_slardar_7:cooldown",
-        "ownerId": "activation:28:special_bonus_unique_slardar_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:28:special_bonus_unique_slardar_7:charges",
-        "ownerId": "activation:28:special_bonus_unique_slardar_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:28:special_bonus_unique_slardar_7:manaCost",
-        "value:activation:28:special_bonus_unique_slardar_7:cooldown",
-        "value:activation:28:special_bonus_unique_slardar_7:charges"
-      ]
-    },
-    {
-      "id": "activation:28:special_bonus_unique_slardar_2",
-      "heroId": "28",
-      "abilityIds": [
-        "ability:28:special_bonus_unique_slardar_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:28:special_bonus_unique_slardar_2:manaCost",
-        "ownerId": "activation:28:special_bonus_unique_slardar_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:28:special_bonus_unique_slardar_2:cooldown",
-        "ownerId": "activation:28:special_bonus_unique_slardar_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:28:special_bonus_unique_slardar_2:charges",
-        "ownerId": "activation:28:special_bonus_unique_slardar_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:28:special_bonus_unique_slardar_2:manaCost",
-        "value:activation:28:special_bonus_unique_slardar_2:cooldown",
-        "value:activation:28:special_bonus_unique_slardar_2:charges"
-      ]
-    },
-    {
-      "id": "activation:28:special_bonus_hp_250",
-      "heroId": "28",
-      "abilityIds": [
-        "ability:28:special_bonus_hp_250"
-      ],
-      "manaCost": {
-        "id": "value:activation:28:special_bonus_hp_250:manaCost",
-        "ownerId": "activation:28:special_bonus_hp_250",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:28:special_bonus_hp_250:cooldown",
-        "ownerId": "activation:28:special_bonus_hp_250",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:28:special_bonus_hp_250:charges",
-        "ownerId": "activation:28:special_bonus_hp_250",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:28:special_bonus_hp_250:manaCost",
-        "value:activation:28:special_bonus_hp_250:cooldown",
-        "value:activation:28:special_bonus_hp_250:charges"
-      ]
-    },
-    {
-      "id": "activation:28:special_bonus_unique_slardar_5",
-      "heroId": "28",
-      "abilityIds": [
-        "ability:28:special_bonus_unique_slardar_5"
-      ],
-      "manaCost": {
-        "id": "value:activation:28:special_bonus_unique_slardar_5:manaCost",
-        "ownerId": "activation:28:special_bonus_unique_slardar_5",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:28:special_bonus_unique_slardar_5:cooldown",
-        "ownerId": "activation:28:special_bonus_unique_slardar_5",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:28:special_bonus_unique_slardar_5:charges",
-        "ownerId": "activation:28:special_bonus_unique_slardar_5",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:28:special_bonus_unique_slardar_5:manaCost",
-        "value:activation:28:special_bonus_unique_slardar_5:cooldown",
-        "value:activation:28:special_bonus_unique_slardar_5:charges"
-      ]
-    },
-    {
-      "id": "activation:28:special_bonus_unique_slardar",
-      "heroId": "28",
-      "abilityIds": [
-        "ability:28:special_bonus_unique_slardar"
-      ],
-      "manaCost": {
-        "id": "value:activation:28:special_bonus_unique_slardar:manaCost",
-        "ownerId": "activation:28:special_bonus_unique_slardar",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:28:special_bonus_unique_slardar:cooldown",
-        "ownerId": "activation:28:special_bonus_unique_slardar",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:28:special_bonus_unique_slardar:charges",
-        "ownerId": "activation:28:special_bonus_unique_slardar",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:28:special_bonus_unique_slardar:manaCost",
-        "value:activation:28:special_bonus_unique_slardar:cooldown",
-        "value:activation:28:special_bonus_unique_slardar:charges"
-      ]
-    },
-    {
-      "id": "activation:28:special_bonus_unique_slardar_6",
-      "heroId": "28",
-      "abilityIds": [
-        "ability:28:special_bonus_unique_slardar_6"
-      ],
-      "manaCost": {
-        "id": "value:activation:28:special_bonus_unique_slardar_6:manaCost",
-        "ownerId": "activation:28:special_bonus_unique_slardar_6",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:28:special_bonus_unique_slardar_6:cooldown",
-        "ownerId": "activation:28:special_bonus_unique_slardar_6",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:28:special_bonus_unique_slardar_6:charges",
-        "ownerId": "activation:28:special_bonus_unique_slardar_6",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:28:special_bonus_unique_slardar_6:manaCost",
-        "value:activation:28:special_bonus_unique_slardar_6:cooldown",
-        "value:activation:28:special_bonus_unique_slardar_6:charges"
-      ]
-    },
-    {
-      "id": "activation:28:special_bonus_unique_slardar_4",
-      "heroId": "28",
-      "abilityIds": [
-        "ability:28:special_bonus_unique_slardar_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:28:special_bonus_unique_slardar_4:manaCost",
-        "ownerId": "activation:28:special_bonus_unique_slardar_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:28:special_bonus_unique_slardar_4:cooldown",
-        "ownerId": "activation:28:special_bonus_unique_slardar_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:28:special_bonus_unique_slardar_4:charges",
-        "ownerId": "activation:28:special_bonus_unique_slardar_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:28:special_bonus_unique_slardar_4:manaCost",
-        "value:activation:28:special_bonus_unique_slardar_4:cooldown",
-        "value:activation:28:special_bonus_unique_slardar_4:charges"
-      ]
-    },
-    {
-      "id": "activation:28:special_bonus_unique_slardar_3",
-      "heroId": "28",
-      "abilityIds": [
-        "ability:28:special_bonus_unique_slardar_3"
-      ],
-      "manaCost": {
-        "id": "value:activation:28:special_bonus_unique_slardar_3:manaCost",
-        "ownerId": "activation:28:special_bonus_unique_slardar_3",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:28:special_bonus_unique_slardar_3:cooldown",
-        "ownerId": "activation:28:special_bonus_unique_slardar_3",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:28:special_bonus_unique_slardar_3:charges",
-        "ownerId": "activation:28:special_bonus_unique_slardar_3",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:28:special_bonus_unique_slardar_3:manaCost",
-        "value:activation:28:special_bonus_unique_slardar_3:cooldown",
-        "value:activation:28:special_bonus_unique_slardar_3:charges"
-      ]
-    },
-    {
-      "id": "activation:28:special_bonus_attributes",
-      "heroId": "28",
-      "abilityIds": [
-        "ability:28:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:28:special_bonus_attributes:manaCost",
-        "ownerId": "activation:28:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:28:special_bonus_attributes:cooldown",
-        "ownerId": "activation:28:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:28:special_bonus_attributes:charges",
-        "ownerId": "activation:28:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:28:special_bonus_attributes:manaCost",
-        "value:activation:28:special_bonus_attributes:cooldown",
-        "value:activation:28:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:28:slardar_scepter",
-      "heroId": "28",
-      "abilityIds": [
-        "ability:28:slardar_scepter"
-      ],
-      "manaCost": {
-        "id": "value:activation:28:slardar_scepter:manaCost",
-        "ownerId": "activation:28:slardar_scepter",
-        "field": "manaCost",
-        "state": "known",
-        "value": 20
-      },
-      "cooldown": {
-        "id": "value:activation:28:slardar_scepter:cooldown",
-        "ownerId": "activation:28:slardar_scepter",
-        "field": "cooldown",
-        "state": "known",
-        "value": 5
-      },
-      "charges": {
-        "id": "value:activation:28:slardar_scepter:charges",
-        "ownerId": "activation:28:slardar_scepter",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:28:slardar_scepter:manaCost",
-        "value:activation:28:slardar_scepter:cooldown",
-        "value:activation:28:slardar_scepter:charges"
-      ]
+      "id": "special_bonus_unique_slardar_3",
+      "Name": "Corrosive Haze Undispellable",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }

@@ -1,749 +1,218 @@
 {
-  "schemaVersion": 2,
-  "abilities": [
+  "innate": {
+    "id": "kunkka_admirals_rum",
+    "behavior": [
+      "passive"
+    ],
+    "breakable": true,
+    "tags": []
+  },
+  "skills": [
     {
-      "id": "ability:23:kunkka_torrent",
-      "heroId": "23",
-      "engineId": "kunkka_torrent",
-      "activationId": "activation:23:kunkka_torrent",
+      "id": "kunkka_torrent",
+      "Name": "Torrent",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 0,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "known"
+      "type": "point",
+      "manaCost": 90,
+      "tags": [
+        "aoe",
+        "damage_over_time",
+        "delayed_damage",
+        "disable",
+        "slow",
+        "stun",
+        "vision"
+      ]
     },
     {
-      "id": "ability:23:kunkka_tidebringer",
-      "heroId": "23",
-      "engineId": "kunkka_tidebringer",
-      "activationId": "activation:23:kunkka_tidebringer",
+      "id": "kunkka_tidebringer",
+      "Name": "Tidebringer",
+      "behavior": [
+        "auto-cast",
+        "unit-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "damageType": "physical",
+      "breakable": true,
       "order": 1,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "known"
+      "type": "toggle",
+      "tags": [
+        "attack_damage_scaling",
+        "cleave"
+      ]
     },
     {
-      "id": "ability:23:kunkka_x_marks_the_spot",
-      "heroId": "23",
-      "engineId": "kunkka_x_marks_the_spot",
-      "activationId": "activation:23:kunkka_x_marks_the_spot",
+      "id": "kunkka_x_marks_the_spot",
+      "Name": "X Marks the Spot",
+      "behavior": [
+        "unit-target"
+      ],
+      "affects": [
+        "allied-heroes",
+        "enemy-heroes"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
       "order": 2,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "known"
+      "type": "target",
+      "target": [
+        "self",
+        "ally_hero",
+        "enemy_hero"
+      ],
+      "manaCost": 50,
+      "cooldown": [
+        24,
+        20,
+        16,
+        12
+      ],
+      "tags": [
+        "ally_reposition",
+        "enemy_displacement",
+        "escape",
+        "mobility",
+        "self_reposition"
+      ]
     },
     {
-      "id": "ability:23:kunkka_admirals_rum",
-      "heroId": "23",
-      "engineId": "kunkka_admirals_rum",
-      "activationId": "activation:23:kunkka_admirals_rum",
-      "order": 3,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "known"
-    },
-    {
-      "id": "ability:23:kunkka_tidal_wave",
-      "heroId": "23",
-      "engineId": "kunkka_tidal_wave",
-      "activationId": "activation:23:kunkka_tidal_wave",
+      "id": "kunkka_tidal_wave",
+      "Name": "Tidal Wave",
+      "behavior": [
+        "point-target"
+      ],
+      "affects": [
+        "enemy-units"
+      ],
+      "dispellable": "yes",
+      "dispelType": "basic",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 4,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "known"
+      "type": "point",
+      "manaCost": 75,
+      "cooldown": 12,
+      "tags": [
+        "enemy_displacement"
+      ]
     },
     {
-      "id": "ability:23:kunkka_ghostship",
-      "heroId": "23",
-      "engineId": "kunkka_ghostship",
-      "activationId": "activation:23:kunkka_ghostship",
+      "id": "kunkka_ghostship",
+      "Name": "Ghostship",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 5,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "known"
+      "type": "point",
+      "manaCost": [
+        125,
+        175,
+        225
+      ],
+      "tags": [
+        "ally_movement_speed",
+        "buff",
+        "disable",
+        "self_movement_speed",
+        "stun"
+      ]
     },
     {
-      "id": "ability:23:kunkka_return",
-      "heroId": "23",
-      "engineId": "kunkka_return",
-      "activationId": "activation:23:kunkka_return",
+      "id": "kunkka_return",
+      "Name": "Return",
+      "behavior": [
+        "no-target"
+      ],
+      "piercesDebuffImmunity": "no",
       "order": 6,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "known"
+      "type": "self-target",
+      "manaCost": 0,
+      "cooldown": 1,
+      "tags": []
     },
     {
-      "id": "ability:23:special_bonus_unique_kunkka_rum_duration",
-      "heroId": "23",
-      "engineId": "special_bonus_unique_kunkka_rum_duration",
-      "activationId": "activation:23:special_bonus_unique_kunkka_rum_duration",
-      "order": 7,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:23:special_bonus_unique_kunkka_tidebringer_slow",
-      "heroId": "23",
-      "engineId": "special_bonus_unique_kunkka_tidebringer_slow",
-      "activationId": "activation:23:special_bonus_unique_kunkka_tidebringer_slow",
-      "order": 8,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:23:special_bonus_unique_kunkka_7",
-      "heroId": "23",
-      "engineId": "special_bonus_unique_kunkka_7",
-      "activationId": "activation:23:special_bonus_unique_kunkka_7",
-      "order": 9,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:23:special_bonus_unique_kunkka_2",
-      "heroId": "23",
-      "engineId": "special_bonus_unique_kunkka_2",
-      "activationId": "activation:23:special_bonus_unique_kunkka_2",
-      "order": 10,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:23:special_bonus_unique_kunkka_torrent_cooldown",
-      "heroId": "23",
-      "engineId": "special_bonus_unique_kunkka_torrent_cooldown",
-      "activationId": "activation:23:special_bonus_unique_kunkka_torrent_cooldown",
-      "order": 11,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:23:special_bonus_unique_kunkka_4",
-      "heroId": "23",
-      "engineId": "special_bonus_unique_kunkka_4",
-      "activationId": "activation:23:special_bonus_unique_kunkka_4",
-      "order": 12,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:23:special_bonus_spell_aoe_100",
-      "heroId": "23",
-      "engineId": "special_bonus_spell_aoe_100",
-      "activationId": "activation:23:special_bonus_spell_aoe_100",
-      "order": 13,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "known"
-    },
-    {
-      "id": "ability:23:special_bonus_unique_kunkka_tidebringer_armor_pierce",
-      "heroId": "23",
-      "engineId": "special_bonus_unique_kunkka_tidebringer_armor_pierce",
-      "activationId": "activation:23:special_bonus_unique_kunkka_tidebringer_armor_pierce",
-      "order": 14,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "unknown"
-    },
-    {
-      "id": "ability:23:special_bonus_attributes",
-      "heroId": "23",
-      "engineId": "special_bonus_attributes",
-      "activationId": "activation:23:special_bonus_attributes",
-      "order": 15,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "known"
-    },
-    {
-      "id": "ability:23:kunkka_torrent_storm",
-      "heroId": "23",
-      "engineId": "kunkka_torrent_storm",
-      "activationId": "activation:23:kunkka_torrent_storm",
+      "id": "kunkka_torrent_storm",
+      "behavior": [
+        "point-target"
+      ],
+      "dispellable": "no",
+      "piercesDebuffImmunity": "no",
+      "damageType": "magical",
       "order": 16,
-      "owner": "npc_dota_hero_kunkka",
-      "state": "known"
+      "type": "point",
+      "manaCost": 275,
+      "cooldown": 75,
+      "tags": [
+        "aoe"
+      ]
     }
   ],
-  "activations": [
+  "talents": [
     {
-      "id": "activation:23:kunkka_torrent",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:kunkka_torrent"
-      ],
-      "manaCost": {
-        "id": "value:activation:23:kunkka_torrent:manaCost",
-        "ownerId": "activation:23:kunkka_torrent",
-        "field": "manaCost",
-        "state": "known",
-        "value": 90
-      },
-      "cooldown": {
-        "id": "value:activation:23:kunkka_torrent:cooldown",
-        "ownerId": "activation:23:kunkka_torrent",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "16 14 12 10",
-          "special_bonus_unique_kunkka_torrent_cooldown": "-4"
-        }
-      },
-      "charges": {
-        "id": "value:activation:23:kunkka_torrent:charges",
-        "ownerId": "activation:23:kunkka_torrent",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:23:kunkka_torrent:manaCost",
-        "value:activation:23:kunkka_torrent:cooldown",
-        "value:activation:23:kunkka_torrent:charges"
+      "id": "special_bonus_unique_kunkka_rum_duration",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_kunkka_tidebringer_slow",
+      "tags": [
+        "duration_extension"
       ]
     },
     {
-      "id": "activation:23:kunkka_tidebringer",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:kunkka_tidebringer"
-      ],
-      "manaCost": {
-        "id": "value:activation:23:kunkka_tidebringer:manaCost",
-        "ownerId": "activation:23:kunkka_tidebringer",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:23:kunkka_tidebringer:cooldown",
-        "ownerId": "activation:23:kunkka_tidebringer",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "13.0 10.0 7.0 4.0",
-          "special_bonus_unique_kunkka_tidebringer_charges": "=0.1"
-        }
-      },
-      "charges": {
-        "id": "value:activation:23:kunkka_tidebringer:charges",
-        "ownerId": "activation:23:kunkka_tidebringer",
-        "field": "charges",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "0",
-          "special_bonus_unique_kunkka_tidebringer_charges": "+2"
-        }
-      },
-      "valueIds": [
-        "value:activation:23:kunkka_tidebringer:manaCost",
-        "value:activation:23:kunkka_tidebringer:cooldown",
-        "value:activation:23:kunkka_tidebringer:charges"
+      "id": "special_bonus_unique_kunkka_7",
+      "tags": [
+        "duration_extension",
+        "stun"
       ]
     },
     {
-      "id": "activation:23:kunkka_x_marks_the_spot",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:kunkka_x_marks_the_spot"
-      ],
-      "manaCost": {
-        "id": "value:activation:23:kunkka_x_marks_the_spot:manaCost",
-        "ownerId": "activation:23:kunkka_x_marks_the_spot",
-        "field": "manaCost",
-        "state": "known",
-        "value": 50
-      },
-      "cooldown": {
-        "id": "value:activation:23:kunkka_x_marks_the_spot:cooldown",
-        "ownerId": "activation:23:kunkka_x_marks_the_spot",
-        "field": "cooldown",
-        "state": "known",
-        "value": [
-          24,
-          20,
-          16,
-          12
-        ]
-      },
-      "charges": {
-        "id": "value:activation:23:kunkka_x_marks_the_spot:charges",
-        "ownerId": "activation:23:kunkka_x_marks_the_spot",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:23:kunkka_x_marks_the_spot:manaCost",
-        "value:activation:23:kunkka_x_marks_the_spot:cooldown",
-        "value:activation:23:kunkka_x_marks_the_spot:charges"
+      "id": "special_bonus_unique_kunkka_2",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_unique_kunkka_torrent_cooldown",
+      "tags": [
+        "buff",
+        "cooldown_reduction"
       ]
     },
     {
-      "id": "activation:23:kunkka_admirals_rum",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:kunkka_admirals_rum"
+      "id": "special_bonus_unique_kunkka_4",
+      "tags": []
+    },
+    {
+      "id": "special_bonus_spell_aoe_100",
+      "Name": "+100 Spell Area of Effect",
+      "behavior": [
+        "passive"
       ],
-      "manaCost": {
-        "id": "value:activation:23:kunkka_admirals_rum:manaCost",
-        "ownerId": "activation:23:kunkka_admirals_rum",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:23:kunkka_admirals_rum:cooldown",
-        "ownerId": "activation:23:kunkka_admirals_rum",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "50.5",
-          "hero_levelup": "-0.5"
-        }
-      },
-      "charges": {
-        "id": "value:activation:23:kunkka_admirals_rum:charges",
-        "ownerId": "activation:23:kunkka_admirals_rum",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:23:kunkka_admirals_rum:manaCost",
-        "value:activation:23:kunkka_admirals_rum:cooldown",
-        "value:activation:23:kunkka_admirals_rum:charges"
+      "tags": [
+        "area_increase",
+        "buff"
       ]
     },
     {
-      "id": "activation:23:kunkka_tidal_wave",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:kunkka_tidal_wave"
-      ],
-      "manaCost": {
-        "id": "value:activation:23:kunkka_tidal_wave:manaCost",
-        "ownerId": "activation:23:kunkka_tidal_wave",
-        "field": "manaCost",
-        "state": "known",
-        "value": 75
-      },
-      "cooldown": {
-        "id": "value:activation:23:kunkka_tidal_wave:cooldown",
-        "ownerId": "activation:23:kunkka_tidal_wave",
-        "field": "cooldown",
-        "state": "known",
-        "value": 12
-      },
-      "charges": {
-        "id": "value:activation:23:kunkka_tidal_wave:charges",
-        "ownerId": "activation:23:kunkka_tidal_wave",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:23:kunkka_tidal_wave:manaCost",
-        "value:activation:23:kunkka_tidal_wave:cooldown",
-        "value:activation:23:kunkka_tidal_wave:charges"
-      ]
-    },
-    {
-      "id": "activation:23:kunkka_ghostship",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:kunkka_ghostship"
-      ],
-      "manaCost": {
-        "id": "value:activation:23:kunkka_ghostship:manaCost",
-        "ownerId": "activation:23:kunkka_ghostship",
-        "field": "manaCost",
-        "state": "known",
-        "value": [
-          125,
-          175,
-          225
-        ]
-      },
-      "cooldown": {
-        "id": "value:activation:23:kunkka_ghostship:cooldown",
-        "ownerId": "activation:23:kunkka_ghostship",
-        "field": "cooldown",
-        "state": "unsupported",
-        "reason": "The native declaration is not a plain numeric literal or rank curve.",
-        "raw": {
-          "value": "90 80 70"
-        }
-      },
-      "charges": {
-        "id": "value:activation:23:kunkka_ghostship:charges",
-        "ownerId": "activation:23:kunkka_ghostship",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:23:kunkka_ghostship:manaCost",
-        "value:activation:23:kunkka_ghostship:cooldown",
-        "value:activation:23:kunkka_ghostship:charges"
-      ]
-    },
-    {
-      "id": "activation:23:kunkka_return",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:kunkka_return"
-      ],
-      "manaCost": {
-        "id": "value:activation:23:kunkka_return:manaCost",
-        "ownerId": "activation:23:kunkka_return",
-        "field": "manaCost",
-        "state": "known",
-        "value": 0
-      },
-      "cooldown": {
-        "id": "value:activation:23:kunkka_return:cooldown",
-        "ownerId": "activation:23:kunkka_return",
-        "field": "cooldown",
-        "state": "known",
-        "value": 1
-      },
-      "charges": {
-        "id": "value:activation:23:kunkka_return:charges",
-        "ownerId": "activation:23:kunkka_return",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:23:kunkka_return:manaCost",
-        "value:activation:23:kunkka_return:cooldown",
-        "value:activation:23:kunkka_return:charges"
-      ]
-    },
-    {
-      "id": "activation:23:special_bonus_unique_kunkka_rum_duration",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:special_bonus_unique_kunkka_rum_duration"
-      ],
-      "manaCost": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_rum_duration:manaCost",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_rum_duration",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_rum_duration:cooldown",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_rum_duration",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_rum_duration:charges",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_rum_duration",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:23:special_bonus_unique_kunkka_rum_duration:manaCost",
-        "value:activation:23:special_bonus_unique_kunkka_rum_duration:cooldown",
-        "value:activation:23:special_bonus_unique_kunkka_rum_duration:charges"
-      ]
-    },
-    {
-      "id": "activation:23:special_bonus_unique_kunkka_tidebringer_slow",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:special_bonus_unique_kunkka_tidebringer_slow"
-      ],
-      "manaCost": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_tidebringer_slow:manaCost",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_tidebringer_slow",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_tidebringer_slow:cooldown",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_tidebringer_slow",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_tidebringer_slow:charges",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_tidebringer_slow",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:23:special_bonus_unique_kunkka_tidebringer_slow:manaCost",
-        "value:activation:23:special_bonus_unique_kunkka_tidebringer_slow:cooldown",
-        "value:activation:23:special_bonus_unique_kunkka_tidebringer_slow:charges"
-      ]
-    },
-    {
-      "id": "activation:23:special_bonus_unique_kunkka_7",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:special_bonus_unique_kunkka_7"
-      ],
-      "manaCost": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_7:manaCost",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_7",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_7:cooldown",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_7",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_7:charges",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_7",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:23:special_bonus_unique_kunkka_7:manaCost",
-        "value:activation:23:special_bonus_unique_kunkka_7:cooldown",
-        "value:activation:23:special_bonus_unique_kunkka_7:charges"
-      ]
-    },
-    {
-      "id": "activation:23:special_bonus_unique_kunkka_2",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:special_bonus_unique_kunkka_2"
-      ],
-      "manaCost": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_2:manaCost",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_2",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_2:cooldown",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_2",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_2:charges",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_2",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:23:special_bonus_unique_kunkka_2:manaCost",
-        "value:activation:23:special_bonus_unique_kunkka_2:cooldown",
-        "value:activation:23:special_bonus_unique_kunkka_2:charges"
-      ]
-    },
-    {
-      "id": "activation:23:special_bonus_unique_kunkka_torrent_cooldown",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:special_bonus_unique_kunkka_torrent_cooldown"
-      ],
-      "manaCost": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_torrent_cooldown:manaCost",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_torrent_cooldown",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_torrent_cooldown:cooldown",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_torrent_cooldown",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_torrent_cooldown:charges",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_torrent_cooldown",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:23:special_bonus_unique_kunkka_torrent_cooldown:manaCost",
-        "value:activation:23:special_bonus_unique_kunkka_torrent_cooldown:cooldown",
-        "value:activation:23:special_bonus_unique_kunkka_torrent_cooldown:charges"
-      ]
-    },
-    {
-      "id": "activation:23:special_bonus_unique_kunkka_4",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:special_bonus_unique_kunkka_4"
-      ],
-      "manaCost": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_4:manaCost",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_4",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_4:cooldown",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_4",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_4:charges",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_4",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:23:special_bonus_unique_kunkka_4:manaCost",
-        "value:activation:23:special_bonus_unique_kunkka_4:cooldown",
-        "value:activation:23:special_bonus_unique_kunkka_4:charges"
-      ]
-    },
-    {
-      "id": "activation:23:special_bonus_spell_aoe_100",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:special_bonus_spell_aoe_100"
-      ],
-      "manaCost": {
-        "id": "value:activation:23:special_bonus_spell_aoe_100:manaCost",
-        "ownerId": "activation:23:special_bonus_spell_aoe_100",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:23:special_bonus_spell_aoe_100:cooldown",
-        "ownerId": "activation:23:special_bonus_spell_aoe_100",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:23:special_bonus_spell_aoe_100:charges",
-        "ownerId": "activation:23:special_bonus_spell_aoe_100",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:23:special_bonus_spell_aoe_100:manaCost",
-        "value:activation:23:special_bonus_spell_aoe_100:cooldown",
-        "value:activation:23:special_bonus_spell_aoe_100:charges"
-      ]
-    },
-    {
-      "id": "activation:23:special_bonus_unique_kunkka_tidebringer_armor_pierce",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:special_bonus_unique_kunkka_tidebringer_armor_pierce"
-      ],
-      "manaCost": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_tidebringer_armor_pierce:manaCost",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_tidebringer_armor_pierce",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_tidebringer_armor_pierce:cooldown",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_tidebringer_armor_pierce",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:23:special_bonus_unique_kunkka_tidebringer_armor_pierce:charges",
-        "ownerId": "activation:23:special_bonus_unique_kunkka_tidebringer_armor_pierce",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:23:special_bonus_unique_kunkka_tidebringer_armor_pierce:manaCost",
-        "value:activation:23:special_bonus_unique_kunkka_tidebringer_armor_pierce:cooldown",
-        "value:activation:23:special_bonus_unique_kunkka_tidebringer_armor_pierce:charges"
-      ]
-    },
-    {
-      "id": "activation:23:special_bonus_attributes",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:special_bonus_attributes"
-      ],
-      "manaCost": {
-        "id": "value:activation:23:special_bonus_attributes:manaCost",
-        "ownerId": "activation:23:special_bonus_attributes",
-        "field": "manaCost",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "cooldown": {
-        "id": "value:activation:23:special_bonus_attributes:cooldown",
-        "ownerId": "activation:23:special_bonus_attributes",
-        "field": "cooldown",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "charges": {
-        "id": "value:activation:23:special_bonus_attributes:charges",
-        "ownerId": "activation:23:special_bonus_attributes",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:23:special_bonus_attributes:manaCost",
-        "value:activation:23:special_bonus_attributes:cooldown",
-        "value:activation:23:special_bonus_attributes:charges"
-      ]
-    },
-    {
-      "id": "activation:23:kunkka_torrent_storm",
-      "heroId": "23",
-      "abilityIds": [
-        "ability:23:kunkka_torrent_storm"
-      ],
-      "manaCost": {
-        "id": "value:activation:23:kunkka_torrent_storm:manaCost",
-        "ownerId": "activation:23:kunkka_torrent_storm",
-        "field": "manaCost",
-        "state": "known",
-        "value": 275
-      },
-      "cooldown": {
-        "id": "value:activation:23:kunkka_torrent_storm:cooldown",
-        "ownerId": "activation:23:kunkka_torrent_storm",
-        "field": "cooldown",
-        "state": "known",
-        "value": 75
-      },
-      "charges": {
-        "id": "value:activation:23:kunkka_torrent_storm:charges",
-        "ownerId": "activation:23:kunkka_torrent_storm",
-        "field": "charges",
-        "state": "unknown",
-        "reason": "No native declaration is recorded."
-      },
-      "valueIds": [
-        "value:activation:23:kunkka_torrent_storm:manaCost",
-        "value:activation:23:kunkka_torrent_storm:cooldown",
-        "value:activation:23:kunkka_torrent_storm:charges"
-      ]
+      "id": "special_bonus_unique_kunkka_tidebringer_armor_pierce",
+      "tags": []
     }
-  ]
+  ],
+  "bonus_attributes": {
+    "id": "special_bonus_attributes",
+    "behavior": [
+      "passive"
+    ],
+    "tags": []
+  }
 }
