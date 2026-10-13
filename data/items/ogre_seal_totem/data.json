@@ -1,0 +1,45 @@
+{
+  "id": "949",
+  "key": "ogre_seal_totem",
+  "sourceKey": "item_ogre_seal_totem",
+  "name": null,
+  "aliases": [
+    "item_ogre_seal_totem",
+    "ogre_seal_totem"
+  ],
+  "description": "<h1>Active: Ogre Seal Flop</h1> Flop forward like an ogre seal %max_bounces% times, dealing %flop_damage% damage and slowing enemies in a %radius% radius by %slow%%% for %slow_duration% second on each bounce. %leap_distance% bounce distance. ",
+  "lore": null,
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_ogre_seal_totem",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "slow"
+    ],
+    "type": "self-target",
+    "manaCost": 25,
+    "cooldown": 40,
+    "castPoint": 0.3,
+    "values": {
+      "bonus_strength": 0,
+      "movement_turn_rate": 75,
+      "leap_distance": 400,
+      "leap_speed": 800,
+      "leap_acceleration": 1250,
+      "radius": {
+        "value": 275,
+        "affected_by_aoe_increase": 1
+      },
+      "flop_damage": 250,
+      "slow_duration": 1.5,
+      "slow": -100,
+      "max_bounces": 2
+    }
+  }
+}

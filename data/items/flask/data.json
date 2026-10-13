@@ -1,0 +1,52 @@
+{
+  "id": "39",
+  "key": "flask",
+  "sourceKey": "item_flask",
+  "name": "Healing Salve",
+  "aliases": [
+    "flask",
+    "healing salve",
+    "item_flask"
+  ],
+  "description": "<h1>Use: Salve</h1> Grants %health_regen% health regeneration to the target for %buff_duration% seconds.<br><br>If the unit is attacked by an enemy hero or Roshan, the effect is lost.<br><br>Heals for half the amount per second when cast on an ally.",
+  "lore": "A magical salve that can quickly mend even the deepest of wounds.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 100,
+  "shopTags": [
+    "consumable",
+    "laning"
+  ],
+  "quality": "consumable",
+  "permanent": false,
+  "stackable": true,
+  "initialCharges": 1,
+  "ability": {
+    "id": "item_flask",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-heroes"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [
+      "ally_health_regen",
+      "buff",
+      "self_health_regen"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero"
+    ],
+    "castRange": 250,
+    "castPoint": 0,
+    "values": {
+      "buff_duration": 13,
+      "health_regen": 30,
+      "break_on_hero_damage": 1
+    }
+  }
+}

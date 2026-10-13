@@ -1,0 +1,54 @@
+{
+  "id": "603",
+  "key": "swift_blink",
+  "sourceKey": "item_swift_blink",
+  "name": "Swift Blink",
+  "aliases": [
+    "blink dagger",
+    "item_swift_blink",
+    "swift blink",
+    "swift_blink"
+  ],
+  "description": "<h1>Active: Swift Blink</h1> Teleport to a target point up to %blink_range% units away.<br><br>After teleportation, you gain %bonus_movement%%% phased movement speed and +%bonus_agi_active% Agility for %duration% seconds. <br><br>Swift Blink cannot be used for %blink_damage_cooldown% seconds after taking damage from an enemy hero or Roshan.",
+  "lore": "A cunning blade able to anticipate and enable its bearer's movements.",
+  "notes": [
+    "Self-casting will cause you to teleport in the direction of your team's fountain."
+  ],
+  "neutralTiers": [],
+  "cost": 6800,
+  "shopTags": [
+    "teleport",
+    "mobility",
+    "escape"
+  ],
+  "quality": "component",
+  "ability": {
+    "id": "item_swift_blink",
+    "behavior": [
+      "point-target"
+    ],
+    "tags": [
+      "attribute_bonus",
+      "blink",
+      "buff",
+      "escape",
+      "mobility",
+      "self_reposition"
+    ],
+    "type": "point",
+    "manaCost": 0,
+    "cooldown": 15,
+    "castRange": 1200,
+    "castPoint": 0,
+    "sharedCooldown": "blink",
+    "values": {
+      "blink_range": 1200,
+      "blink_damage_cooldown": 3,
+      "blink_range_clamp": 960,
+      "bonus_agility": 25,
+      "bonus_movement": 40,
+      "bonus_agi_active": 35,
+      "duration": 6
+    }
+  }
+}

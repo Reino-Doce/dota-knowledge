@@ -1,0 +1,40 @@
+{
+  "id": "33",
+  "key": "cheese",
+  "sourceKey": "item_cheese",
+  "name": "Cheese",
+  "aliases": [
+    "cheese",
+    "item_cheese"
+  ],
+  "description": "<h1>Use: Fondue</h1> Instantly restores %health_restore% health and %mana_restore% mana.",
+  "lore": "Made from the milk of a long lost Furbolg vendor, it restores the vitality of those who taste it.",
+  "notes": [
+    "Cheese is shareable."
+  ],
+  "neutralTiers": [],
+  "cost": 1000,
+  "shopTags": [],
+  "quality": "consumable",
+  "purchasable": false,
+  "permanent": false,
+  "stackable": true,
+  "initialCharges": 1,
+  "shareability": "fully-shareable",
+  "ability": {
+    "id": "item_cheese",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "self_heal",
+      "self_mana_restore"
+    ],
+    "type": "self-target",
+    "cooldown": 40,
+    "values": {
+      "health_restore": 2500,
+      "mana_restore": 1500
+    }
+  }
+}

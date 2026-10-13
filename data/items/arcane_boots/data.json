@@ -1,0 +1,57 @@
+{
+  "id": "180",
+  "key": "arcane_boots",
+  "sourceKey": "item_arcane_boots",
+  "name": "Arcane Boots",
+  "aliases": [
+    "arcane boots",
+    "arcane_boots",
+    "item_arcane_boots",
+    "mana",
+    "mb"
+  ],
+  "description": "<h1>Active: Replenish</h1>Restores %replenish_amount% mana to all nearby allies.<br><br>Radius: %replenish_radius%\\n\\n<h1>Passive: Basilius Aura</h1>Grants %aura_mana_regen% mana regeneration to allies.  <br><br>Radius: %aura_radius%\\nMovement speed bonuses from multiple pairs of boots do not stack.",
+  "lore": "Magi equipped with these boots are valued in battle.",
+  "notes": [
+    "Does not work on Meepo clones."
+  ],
+  "neutralTiers": [],
+  "cost": 1500,
+  "shopTags": [
+    "move-speed",
+    "boost-mana",
+    "mana-pool",
+    "mana",
+    "regen-mana"
+  ],
+  "quality": "rare",
+  "ability": {
+    "id": "item_arcane_boots",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "ally_mana_regen",
+      "aura",
+      "buff"
+    ],
+    "type": "self-target",
+    "manaCost": 0,
+    "cooldown": 55,
+    "values": {
+      "bonus_movement": 45,
+      "mana_regen": 0.25,
+      "bonus_mana": 125,
+      "aura_mana_regen": 1,
+      "aura_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      },
+      "replenish_amount": 150,
+      "replenish_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "349",
+  "key": "arcane_ring",
+  "sourceKey": "item_arcane_ring",
+  "name": "Arcane Ring",
+  "aliases": [
+    "arcane ring",
+    "arcane_ring",
+    "item_arcane_ring"
+  ],
+  "description": "<h1>Active: Replenish Mana</h1> Restores mana equal to %mana_restore% + %mana_restore_pct%%% of the caster's maximum mana pool to all nearby allies. <br><br> Radius: %radius%",
+  "lore": "Once a prized heirloom of a minor lord's house.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_arcane_ring",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "ally_mana_restore"
+    ],
+    "type": "self-target",
+    "cooldown": 60,
+    "values": {
+      "bonus_intelligence": 0,
+      "bonus_armor": 0,
+      "mana_restore": 30,
+      "mana_restore_pct": 3,
+      "radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      }
+    }
+  }
+}

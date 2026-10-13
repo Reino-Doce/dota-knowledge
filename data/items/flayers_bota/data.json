@@ -1,0 +1,48 @@
+{
+  "id": "1721",
+  "key": "flayers_bota",
+  "sourceKey": "item_flayers_bota",
+  "name": null,
+  "aliases": [
+    "flayers_bota",
+    "item_flayers_bota"
+  ],
+  "description": "<h1>Active: Bloodthirst</h1> Gain %base_damage%%% base damage and %attack_speed% attack speed for %duration% seconds.\\n\\n<h1>Passive: Bloodrush</h1>Enemy heroes dying within %death_radius% units reset the cooldown of Bloodthirst.",
+  "lore": null,
+  "notes": [],
+  "neutralTiers": [
+    4
+  ],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_flayers_bota",
+    "behavior": [
+      "no-target"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [
+      "buff",
+      "self_attack_speed"
+    ],
+    "type": "self-target",
+    "cooldown": 65,
+    "values": {
+      "duration": 6,
+      "base_damage": {
+        "value": 15,
+        "apply_curio_bonus": 1
+      },
+      "attack_speed": {
+        "value": 30,
+        "apply_curious_bonus": 1
+      },
+      "death_radius": {
+        "value": 1500,
+        "affected_by_aoe_increase": 1
+      }
+    }
+  }
+}

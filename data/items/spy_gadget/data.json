@@ -1,0 +1,40 @@
+{
+  "id": "336",
+  "key": "spy_gadget",
+  "sourceKey": "item_spy_gadget",
+  "name": "Telescope",
+  "aliases": [
+    "item_spy_gadget",
+    "spy_gadget",
+    "telescope"
+  ],
+  "description": "<h1>Passive: Prescient Aura</h1> Lowers Scan cooldown by %scan_cooldown_reduction%%% . Increases attack range (Ranged only) and cast range of allies in a %aura_range% unit radius.",
+  "lore": "A handy tool that manages to make close what once was far.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_spy_gadget",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "ally_attack_range",
+      "buff",
+      "cast_range",
+      "cooldown_reduction"
+    ],
+    "type": "passive",
+    "values": {
+      "scan_cooldown_reduction": 50,
+      "attack_range": 75,
+      "cast_range": 100,
+      "aura_range": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      }
+    }
+  }
+}

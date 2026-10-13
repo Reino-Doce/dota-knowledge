@@ -139,7 +139,7 @@ function compactAffects(fields) {
     return [...result].sort();
 }
 
-function compactAbilityMetadata(fields) {
+export function compactAbilityMetadata(fields) {
     const result = {};
     const behavior = compactBehavior(fields);
     if (behavior.length) result.behavior = behavior;

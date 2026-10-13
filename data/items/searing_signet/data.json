@@ -1,0 +1,45 @@
+{
+  "id": "1604",
+  "key": "searing_signet",
+  "sourceKey": "item_searing_signet",
+  "name": null,
+  "aliases": [
+    "item_searing_signet",
+    "searing_signet"
+  ],
+  "description": "<h1>Passive: Burn Through</h1> Instances of magic damage from spells over %damage_threshold% ignites enemies, causing them to take %burn_damage% magic damage over %burn_duration% seconds. Burn damage against non-hero targets is decreased by %creep_penalty%%%.",
+  "lore": "To torture a magic user, one must devise means far beyond the mundane.",
+  "notes": [
+    "Will not ignite enemies that are more than %max_range% range away."
+  ],
+  "neutralTiers": [
+    2
+  ],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_searing_signet",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "damage_over_time"
+    ],
+    "type": "passive",
+    "values": {
+      "damage_threshold": 60,
+      "burn_damage": {
+        "value": 80,
+        "apply_curio_bonus": 1
+      },
+      "burn_duration": 6,
+      "burn_tickrate": 0.25,
+      "creep_penalty": 50,
+      "max_range": {
+        "value": 2000,
+        "affected_by_aoe_increase": 1
+      }
+    }
+  }
+}

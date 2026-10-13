@@ -1,0 +1,69 @@
+{
+  "id": "250",
+  "key": "bloodthorn",
+  "sourceKey": "item_bloodthorn",
+  "name": "Bloodthorn",
+  "aliases": [
+    "bloodthorn",
+    "item_bloodthorn",
+    "orchid malevolence"
+  ],
+  "description": "<h1>Active: Soul Rend</h1> Silences a target for %silence_duration% seconds. At the end of the silence, an additional %silence_damage_percent%%% of all damage taken during the silence will be dealt to the target as magical damage.<br><br>All attacks on the silenced target will deal additional damage equal to %proc_damage_heroes% if the attacker is a hero, and %proc_damage_creeps%, if the attacker is a creep. Provides True Strike for your attacks and attacks from your controlled units against the silenced target.\\n\\n<h1>Passive: Pierce</h1>Grants each attack a %proc_chance%%% chance to pierce through evasion and deal %passive_proc_damage% bonus magical damage.",
+  "lore": "A reviled blade that bites deeper with each wriggle of its victim's final throes.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 6400,
+  "shopTags": [
+    "int",
+    "attack-speed",
+    "damage",
+    "regen-mana",
+    "hard-to-tag",
+    "dps",
+    "disable"
+  ],
+  "quality": "epic",
+  "ability": {
+    "id": "item_bloodthorn",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "enemy-units"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "damageType": "magical",
+    "tags": [
+      "disable",
+      "silence",
+      "true_strike"
+    ],
+    "type": "target",
+    "target": [
+      "enemy_hero",
+      "enemy_creep",
+      "neutral_creep"
+    ],
+    "manaCost": 150,
+    "cooldown": 15,
+    "castRange": 900,
+    "castPoint": 0,
+    "sharedCooldown": "orchid",
+    "values": {
+      "bonus_intellect": 25,
+      "bonus_attack_speed": 70,
+      "bonus_mana_regen": 4,
+      "bonus_health_regen": 0,
+      "silence_duration": 5,
+      "silence_damage_percent": 60,
+      "bonus_damage": 20,
+      "duration": 6,
+      "spell_amp_debuff": 35,
+      "proc_damage_heroes": 50,
+      "proc_damage_creeps": 25,
+      "passive_proc_damage": 60,
+      "proc_chance": 40
+    }
+  }
+}

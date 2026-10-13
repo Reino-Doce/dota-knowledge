@@ -1,0 +1,78 @@
+{
+  "id": "1852",
+  "key": "essence_distiller",
+  "sourceKey": "item_essence_distiller",
+  "name": "Essence Distiller",
+  "aliases": [
+    "ed",
+    "essence distiller",
+    "essence_distiller",
+    "item_essence_distiller"
+  ],
+  "description": "<h1>Active: Soul Release</h1> Provides %soul_heal_amount% health regeneration when cast on allies.<br><br>Can be ground targeted to lie dormant for up to %ground_duration%s and attach to the first enemy that comes within %latch_range% radius. When on enemies, deals %soul_damage_amount% damage per second and provides True Sight over them and shares their vision with the wearer's team.<br><br>Lasts %duration% seconds.<br><br>Gains charges every time an enemy hero dies within %soul_radius% units.",
+  "lore": null,
+  "notes": [
+    "Empty distillers gain 2 charges.",
+    "Only the closest Essence Distiller to the dying hero will gain a charge.",
+    "If the allied unit is attacked by an enemy hero or Roshan, the effect is lost.",
+    "Does not trigger spell block or spell reflect.",
+    "While dormant, provides vision in %latch_vision% radius. Vision lingers for %linger_after_latch_duration%s after latching."
+  ],
+  "neutralTiers": [],
+  "cost": 1775,
+  "shopTags": [
+    "teamfight"
+  ],
+  "quality": "rare",
+  "permanent": true,
+  "stackable": false,
+  "requiresCharges": true,
+  "displayCharges": 1,
+  "ability": {
+    "id": "item_essence_distiller",
+    "behavior": [
+      "point-target",
+      "unit-target"
+    ],
+    "affects": [
+      "allied-heroes",
+      "enemy-heroes"
+    ],
+    "tags": [
+      "ally_health_regen",
+      "aoe",
+      "buff",
+      "damage_over_time",
+      "self_health_regen",
+      "vision"
+    ],
+    "type": "target-or-point",
+    "target": [
+      "self",
+      "ally_hero",
+      "enemy_hero"
+    ],
+    "cooldown": 10,
+    "castRange": 1000,
+    "sharedCooldown": "urn",
+    "values": {
+      "mana_regen": 1.5,
+      "bonus_all_stats": 3,
+      "bonus_armor": 6,
+      "bonus_mana": 150,
+      "soul_radius": {
+        "value": 1500,
+        "affected_by_aoe_increase": 1
+      },
+      "soul_initial_charge": 2,
+      "soul_additional_charges": 1,
+      "soul_heal_amount": 40,
+      "soul_damage_amount": 25,
+      "duration": 8,
+      "ground_duration": 15,
+      "latch_range": 450,
+      "latch_vision": 450,
+      "linger_after_latch_duration": 0.5
+    }
+  }
+}

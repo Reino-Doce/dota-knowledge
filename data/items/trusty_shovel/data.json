@@ -1,0 +1,42 @@
+{
+  "id": "356",
+  "key": "trusty_shovel",
+  "sourceKey": "item_trusty_shovel",
+  "name": null,
+  "aliases": [
+    "item_trusty_shovel",
+    "trusty_shovel"
+  ],
+  "description": "<h1>Active: Dig</h1> Channel for %abilitychanneltime% second. <br>Can find a Bounty Rune, a Healing Salve, an Enchanted Mango, or a Kobold. If digging in a river, always digs up a Water Rune.",
+  "lore": "Former plaything of a young deity, received as a gift from his uncle.",
+  "notes": [
+    "%chance_bounty_rune%%% chance for a Bounty Rune.",
+    "%chance_other_item%%% chance each for a Flask, an Enchanted Mango, or a kobold.",
+    "The same Trusty Shovel cannot find the same reward twice in a row."
+  ],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_trusty_shovel",
+    "behavior": [
+      "channeled",
+      "point-target"
+    ],
+    "tags": [
+      "channeled"
+    ],
+    "type": "point",
+    "cooldown": 70,
+    "castRange": 250,
+    "castPoint": 0.1,
+    "channelTime": 1,
+    "values": {
+      "bonus_health": 0,
+      "chance_bounty_rune": 16,
+      "chance_other_item": 28,
+      "kobold_duration": 60
+    }
+  }
+}

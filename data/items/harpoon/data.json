@@ -1,0 +1,58 @@
+{
+  "id": "939",
+  "key": "harpoon",
+  "sourceKey": "item_harpoon",
+  "name": "Harpoon",
+  "aliases": [
+    "harpoon",
+    "item_harpoon"
+  ],
+  "description": "<h1>Active: Draw Forth</h1> When targeting an enemy, fire a harpoon at them, that pulls you and the target closer together, up to %pull_distance_pct%%% of the distance between you and your target. If the caster is melee, the hero and target are always pulled to within melee distance of each other. Targeting a tree always pulls you all the way to that tree.\\n\\n<h1>Passive: Echo Strike</h1> Causes melee attacks to attack twice in quick succession. The double attacks apply a %movement_slow%%% movement slow for %slow_duration% seconds on the first strike. Echo Strike cooldown: %passive_cooldown%s",
+  "lore": "A perfect solution for the flight of foes.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 4700,
+  "purchasable": true,
+  "ability": {
+    "id": "item_harpoon",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "enemy-units",
+      "trees"
+    ],
+    "tags": [
+      "enemy_displacement",
+      "repeated_attacks"
+    ],
+    "type": "target",
+    "target": [
+      "enemy_hero",
+      "enemy_creep",
+      "neutral_creep",
+      "tree"
+    ],
+    "manaCost": 50,
+    "cooldown": 19,
+    "castRange": 700,
+    "castPoint": 0,
+    "values": {
+      "bonus_damage": 25,
+      "bonus_strength": 25,
+      "bonus_agility": 10,
+      "bonus_intellect": 10,
+      "bonus_mana_regen": 2,
+      "passive_cooldown": 5,
+      "movement_slow": 100,
+      "slow_duration": 1,
+      "pull_duration": 0.3,
+      "pull_distance_pct": 35,
+      "min_distance": 100,
+      "max_distance": 1000,
+      "cast_range_enemy": 700,
+      "push_length": 600,
+      "projectile_speed": 2000
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "1606",
+  "key": "polliwog_charm",
+  "sourceKey": "item_polliwog_charm",
+  "name": null,
+  "aliases": [
+    "item_polliwog_charm",
+    "polliwog_charm"
+  ],
+  "description": "<h1>Active: Ribbit</h1> Increases the health regeneration of a target ally by %regen_boost% for %duration% seconds. While standing in water, the blessed unit also moves %water_movespeed%%% faster.",
+  "lore": "A tiny trinket that wriggles when wet.",
+  "notes": [],
+  "neutralTiers": [
+    1
+  ],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_polliwog_charm",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-units"
+    ],
+    "tags": [],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero",
+      "ally_creep"
+    ],
+    "cooldown": 45,
+    "castRange": 1000,
+    "values": {
+      "regen_boost": 8,
+      "water_movespeed": 10,
+      "duration": 14
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "164",
+  "key": "helm_of_the_dominator",
+  "sourceKey": "item_helm_of_the_dominator",
+  "name": "Helm of the Dominator",
+  "aliases": [
+    "helm of the dominator",
+    "helm_of_the_dominator",
+    "hotd",
+    "item_helm_of_the_dominator"
+  ],
+  "description": "<h1>Active: Dominate</h1>Takes control of one neutral, non-ancient target unit and sets its movement speed to %speed_base% and max health to a minimum of %health_min%. Also provides the unit with +%creep_bonus_damage% base attack damage, +%creep_bonus_hp_regen% health regen, +%creep_bonus_mp_regen% mana regen and +%creep_bonus_armor% armor. <br><br>Dominated units with a max health of greater than %health_min% retain their original max health. Grants the caster %bounty_pct%%% of the gold and experience bounty of the dominated creep. Dominated unit's bounty is set to %bounty_gold% gold and it can no longer be killed by abilities that instantly kill creeps otherwise.<br><br>The Helm cannot be used for %creep_damage_taken_cooldown% seconds after the dominated creep takes damage from an enemy hero or Roshan.",
+  "lore": "The powerful headpiece of a dead necromancer.",
+  "notes": [
+    "Cannot dominate more than one unit at a time.  If a new unit is dominated, the old one will die.",
+    "Can also Dominate enemy lane creeps and summoned units.",
+    "Selling Helm of the Dominator will cause dominated units to die."
+  ],
+  "neutralTiers": [],
+  "cost": 2550,
+  "shopTags": [
+    "damage",
+    "armor",
+    "unique",
+    "hard-to-tag"
+  ],
+  "quality": "artifact",
+  "baseLevel": 1,
+  "maxUpgradeLevel": 2,
+  "ability": {
+    "id": "item_helm_of_the_dominator",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "enemy-creeps"
+    ],
+    "tags": [
+      "creep_conversion",
+      "economy_gain"
+    ],
+    "type": "target",
+    "manaCost": 50,
+    "cooldown": 45,
+    "castRange": 700,
+    "castPoint": 0,
+    "values": {
+      "bonus_stats": 6,
+      "bonus_armor": 6,
+      "bonus_regen": 6,
+      "health_min": 1000,
+      "speed_base": 370,
+      "bounty_gold": 100,
+      "creep_bonus_damage": 25,
+      "creep_bonus_hp_regen": 12,
+      "creep_bonus_mp_regen": 4,
+      "creep_bonus_armor": 4,
+      "model_scale": 0,
+      "count_limit": 1,
+      "creep_ability_level_increase": 0,
+      "creep_damage_taken_cooldown": 3,
+      "bounty_pct": 50
+    }
+  }
+}

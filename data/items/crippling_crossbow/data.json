@@ -1,0 +1,51 @@
+{
+  "id": "1601",
+  "key": "crippling_crossbow",
+  "sourceKey": "item_crippling_crossbow",
+  "name": null,
+  "aliases": [
+    "crippling_crossbow",
+    "item_crippling_crossbow"
+  ],
+  "description": "<h1>Active: Hobble</h1>Hits an enemy for %damage% damage, then slows them by %slow_pct%%% and reduces Health Restoration by %heal_reduce%%% for %duration% seconds. The slow gradually fades over the duration of the spell.",
+  "lore": "The ever-weeping woodgrain of this crossbow coats every bolt in a potent but short-lived narcotic sap.",
+  "notes": [],
+  "neutralTiers": [
+    2
+  ],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_crippling_crossbow",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "enemy-units"
+    ],
+    "damageType": "magical",
+    "tags": [
+      "anti_heal"
+    ],
+    "type": "target",
+    "target": [
+      "enemy_hero",
+      "enemy_creep",
+      "neutral_creep"
+    ],
+    "manaCost": 50,
+    "cooldown": 30,
+    "castRange": 650,
+    "values": {
+      "slow_pct": 50,
+      "heal_reduce": {
+        "value": 40,
+        "apply_curio_bonus": 1
+      },
+      "duration": 4,
+      "damage": 25,
+      "projectile_speed": 1400
+    }
+  }
+}

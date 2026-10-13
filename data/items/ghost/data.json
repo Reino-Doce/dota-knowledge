@@ -1,0 +1,47 @@
+{
+  "id": "37",
+  "key": "ghost",
+  "sourceKey": "item_ghost",
+  "name": "Ghost Scepter",
+  "aliases": [
+    "ghost",
+    "ghost scepter",
+    "item_ghost"
+  ],
+  "description": "<h1>Active: Ghost Form</h1> You enter ghost form for %duration% seconds, becoming immune to physical damage, but are unable to attack and %extra_spell_damage_percent%%% more vulnerable to magic damage.",
+  "lore": "Imbues the wielder with a ghostly presence, allowing them to evade physical damage.",
+  "notes": [
+    "Ends if you become Debuff Immune, and will have no effect if you are already Debuff Immune.",
+    "Shares cooldown with all Ghost Scepter upgrades."
+  ],
+  "neutralTiers": [],
+  "cost": 1500,
+  "shopTags": [
+    "int",
+    "agi",
+    "str",
+    "hard-to-tag",
+    "escape"
+  ],
+  "quality": "component",
+  "ability": {
+    "id": "item_ghost",
+    "behavior": [
+      "no-target"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [
+      "buff",
+      "physical_damage_immunity"
+    ],
+    "type": "self-target",
+    "cooldown": 22,
+    "sharedCooldown": "ethereal",
+    "values": {
+      "bonus_all_stats": 5,
+      "duration": 4,
+      "extra_spell_damage_percent": -30
+    }
+  }
+}

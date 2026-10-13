@@ -1,0 +1,66 @@
+{
+  "id": "269",
+  "key": "holy_locket",
+  "sourceKey": "item_holy_locket",
+  "name": "Holy Locket",
+  "aliases": [
+    "hl",
+    "holy locket",
+    "holy_locket",
+    "item_holy_locket"
+  ],
+  "description": "<h1>Active: Energy Charge</h1>Target an allied unit to increase their incoming Heal Amplification by %incoming_heal_increase_active%%% for %active_buff_duration%s and instantly restore %health_restore_per_charge% health and %mana_restore_per_charge% mana per charge stored. <br><br>Automatically gains a charge every %AbilityChargeRestoreTime% seconds and whenever a visible enemy within %charge_radius% range uses an ability.\\n\\n<h1>Passive: Holy Blessing</h1>Amplifies heals you provide by %heal_increase_passive%%%.",
+  "lore": "A prized relic long thought lost forever in a failed crusade.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 2250,
+  "shopTags": [
+    "teamfight",
+    "save"
+  ],
+  "quality": "rare",
+  "permanent": true,
+  "stackable": false,
+  "requiresCharges": true,
+  "displayCharges": 1,
+  "chargeRestoreTime": 10,
+  "initialCharges": 1,
+  "ability": {
+    "id": "item_holy_locket",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-heroes"
+    ],
+    "tags": [
+      "ally_mana_restore"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero"
+    ],
+    "cooldown": 0,
+    "castRange": 600,
+    "castPoint": 0,
+    "sharedCooldown": "magicwand",
+    "values": {
+      "bonus_health": 0,
+      "bonus_mana": 0,
+      "heal_increase_passive": 10,
+      "max_charges": 25,
+      "charge_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      },
+      "bonus_all_stats": 7,
+      "health_restore_per_charge": 17,
+      "mana_restore_per_charge": 15,
+      "incoming_heal_increase_active": 15,
+      "active_buff_duration": 4,
+      "charge_gain_timer": 10,
+      "use_cooldown": 13
+    }
+  }
+}

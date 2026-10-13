@@ -1,0 +1,67 @@
+{
+  "id": "174",
+  "key": "diffusal_blade",
+  "sourceKey": "item_diffusal_blade",
+  "name": "Diffusal Blade",
+  "aliases": [
+    "diffusal blade",
+    "diffusal blade 1",
+    "diffusal_blade",
+    "item_diffusal_blade"
+  ],
+  "description": "<h1>Active: Inhibit</h1> Targets an enemy, slowing it for %purge_slow_duration% seconds.\\n\\n<h1>Passive: Manabreak</h1>Each attack burns %feedback_mana_burn% mana from the target, and deals %damage_per_burn% physical damage per burned mana. <br><br>Illusions do not burn mana.",
+  "lore": "An enchanted blade that allows the user to cut straight into the enemy's soul.",
+  "notes": [
+    "Does not stack with other diffusal blades."
+  ],
+  "neutralTiers": [],
+  "cost": 2500,
+  "shopTags": [
+    "agi",
+    "int",
+    "unique",
+    "hard-to-tag"
+  ],
+  "quality": "artifact",
+  "permanent": true,
+  "upgradeRecipe": "item_recipe_diffusal_blade",
+  "upgradesItems": [
+    "item_diffusal_blade"
+  ],
+  "ability": {
+    "id": "item_diffusal_blade",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "enemy-units"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [
+      "mana_burn"
+    ],
+    "type": "target",
+    "target": [
+      "enemy_hero",
+      "enemy_creep",
+      "neutral_creep"
+    ],
+    "manaCost": 25,
+    "cooldown": 15,
+    "castRange": 600,
+    "castPoint": 0,
+    "sharedCooldown": "diffusal",
+    "values": {
+      "bonus_agility": 15,
+      "bonus_intellect": 10,
+      "feedback_mana_burn": 40,
+      "feedback_mana_burn_illusion_melee": 0,
+      "feedback_mana_burn_illusion_ranged": 0,
+      "purge_rate": 5,
+      "purge_root_duration": 3,
+      "purge_slow_duration": 4,
+      "damage_per_burn": 1
+    }
+  }
+}

@@ -158,7 +158,10 @@ export async function readCanonical(root, { verify = true, validateAbilityView =
     for (const [name, rows] of files) if (rows.some((_, offset) => !used.has(name + '#' + offset))) throw new Error('Unindexed observation: ' + name);
     const extras = new Map();
     for (const descriptor of metadata.sourceFiles ?? []) {
-        if (descriptor.name.startsWith('reviews/reconciliation/') || isImageFile(descriptor.name)) extras.set(descriptor.name, await regularBytes(root, descriptor.name));
+        if (descriptor.name.startsWith('reviews/reconciliation/')
+            || /^items\/(?:index\.json|[^/]+\/data\.json)$/.test(descriptor.name) || isImageFile(descriptor.name)) {
+            extras.set(descriptor.name, await regularBytes(root, descriptor.name));
+        }
     }
     const aliasIndex = buildHeroAliasIndex(entities.heroes);
     if (Array.isArray(aliasArtifact?.entries)) {

@@ -29,6 +29,8 @@
       "import": "./src/node/provider-acquisition.mjs"
     },
     "./runtime/manifest.json": "./data/runtime/manifest.json",
+    "./items/index.json": "./data/items/index.json",
+    "./items/*/data.json": "./data/items/*/data.json",
     "./package.json": "./package.json",
     "./node/population": {
       "types": "./src/node/population.d.ts",
@@ -49,6 +51,8 @@
     "schema",
     "docs",
     "data/runtime",
+    "data/items/index.json",
+    "data/items/*/data.json",
     "scripts",
     "README.md",
     "LICENSE",
@@ -76,6 +80,7 @@
     "images:refresh": "node scripts/images/cli.mjs refresh",
     "images:apply": "node scripts/images/cli.mjs apply",
     "images:recover": "node scripts/images/cli.mjs recover",
+    "items:generate": "node scripts/generate-item-data.mjs",
     "import:bundle": "node scripts/import-bundle.mjs",
     "liquipedia:read": "node scripts/read-liquipedia.mjs"
   },

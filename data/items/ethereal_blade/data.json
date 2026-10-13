@@ -1,0 +1,70 @@
+{
+  "id": "176",
+  "key": "ethereal_blade",
+  "sourceKey": "item_ethereal_blade",
+  "name": "Ethereal Blade",
+  "aliases": [
+    "eb",
+    "eblade",
+    "ethereal blade",
+    "ethereal_blade",
+    "item_ethereal_blade"
+  ],
+  "description": "<h1>Active: Ether Blast</h1>Converts the target unit to ethereal form, rendering them immune to physical damage, but unable to attack and %ethereal_damage_bonus%%% more vulnerable to magic damage.<br><br>  Enemy targets are also slowed by %blast_movement_slow%%%, and take %blast_stat_multiplier%x the sum of all your attributes + %blast_damage_base% as magical damage.<br>Duration: %duration% seconds",
+  "lore": "A flickering blade of a ghastly nature, it is capable of dealing damage in both magical and physical planes.",
+  "notes": [
+    "Shares cooldown with Ghost Scepter and its upgrades.",
+    "Ethereal units take %ethereal_damage_bonus%%% bonus magic damage."
+  ],
+  "neutralTiers": [],
+  "cost": 5200,
+  "shopTags": [
+    "agi",
+    "str",
+    "int",
+    "hard-to-tag",
+    "escape",
+    "save",
+    "magic-dmg"
+  ],
+  "quality": "epic",
+  "ability": {
+    "id": "item_ethereal_blade",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "units"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [
+      "buff",
+      "physical_damage_immunity",
+      "slow"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero",
+      "enemy_hero"
+    ],
+    "manaCost": 100,
+    "cooldown": 22,
+    "castRange": 800,
+    "castPoint": 0,
+    "sharedCooldown": "ethereal",
+    "values": {
+      "bonus_agility": 24,
+      "bonus_strength": 24,
+      "bonus_intellect": 24,
+      "blast_movement_slow": -80,
+      "duration": 4,
+      "blast_stat_multiplier": 1,
+      "blast_damage_base": 50,
+      "duration_ally": 4,
+      "ethereal_damage_bonus": -30,
+      "projectile_speed": 1400
+    }
+  }
+}

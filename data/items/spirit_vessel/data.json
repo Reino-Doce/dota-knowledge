@@ -1,0 +1,76 @@
+{
+  "id": "267",
+  "key": "spirit_vessel",
+  "sourceKey": "item_spirit_vessel",
+  "name": "Spirit Vessel",
+  "aliases": [
+    "item_spirit_vessel",
+    "spirit vessel",
+    "spirit_vessel",
+    "sv"
+  ],
+  "description": "<h1>Active: Soul Release</h1> When used against enemies, it reduces health by %enemy_hp_drain%%% of current health per second, and reduces Health Restoration by %restoration_reduction_enemy%%%. Deals %soul_damage_amount% damage per second. <br><br>When used on allies, it provides %soul_heal_amount% health regeneration per second. <br><br>Lasts %duration% seconds.<br><br>Gains charges every time an enemy hero dies within %soul_radius% units or the user dies.",
+  "lore": "Forged by a god to entrap the soul of another.",
+  "notes": [
+    "Empty vessels gain 2 charges.",
+    "Only the closest Spirit Vessel to the dying hero will gain a charge.",
+    "If the allied unit is attacked by an enemy hero or Roshan, the effect is lost.",
+    "Does not trigger spell block or spell reflect."
+  ],
+  "neutralTiers": [],
+  "cost": 2725,
+  "shopTags": [
+    "teamfight"
+  ],
+  "quality": "rare",
+  "permanent": true,
+  "stackable": false,
+  "requiresCharges": true,
+  "displayCharges": 1,
+  "ability": {
+    "id": "item_spirit_vessel",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-heroes",
+      "enemy-heroes"
+    ],
+    "tags": [
+      "ally_heal",
+      "ally_health_regen",
+      "anti_heal",
+      "buff",
+      "damage_over_time",
+      "self_heal",
+      "self_health_regen"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero",
+      "enemy_hero"
+    ],
+    "cooldown": 10,
+    "castRange": 750,
+    "sharedCooldown": "urn",
+    "values": {
+      "bonus_mana_regen": 1.75,
+      "bonus_all_stats": 10,
+      "bonus_armor": 2,
+      "bonus_health": 0,
+      "soul_radius": {
+        "value": 1500,
+        "affected_by_aoe_increase": 1
+      },
+      "soul_initial_charge": 2,
+      "soul_additional_charges": 1,
+      "soul_heal_amount": 40,
+      "soul_damage_amount": 25,
+      "duration": 8,
+      "restoration_reduction_enemy": 70,
+      "enemy_hp_drain": 4,
+      "enemy_slow_pct": 0
+    }
+  }
+}

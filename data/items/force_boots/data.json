@@ -1,0 +1,50 @@
+{
+  "id": "291",
+  "key": "force_boots",
+  "sourceKey": "item_force_boots",
+  "name": "Force Boots",
+  "aliases": [
+    "force boots",
+    "force_boots",
+    "item_force_boots"
+  ],
+  "description": "<h1>Active: Force</h1>Pushes the target %push_length% units in the direction they are facing. Dispels if cast on an ally.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>\\n\\n<h1>Passive: Speed Unlock</h1> Completely removes the speed limit for the wearer \\nMovement speed bonuses from multiple pairs of boots do not stack.",
+  "lore": "Elusive marvels never successfully studied for proper classification in the archives.",
+  "notes": [
+    "Does not trigger spell block or spell reflect."
+  ],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_force_boots",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "units"
+    ],
+    "tags": [
+      "enemy_displacement"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero",
+      "enemy_hero",
+      "ally_creep",
+      "enemy_creep",
+      "neutral_creep"
+    ],
+    "manaCost": 75,
+    "cooldown": 8,
+    "castRange": 750,
+    "values": {
+      "bonus_movement_speed": 115,
+      "push_length": 750,
+      "push_duration": 0.5,
+      "hp_regen": 30
+    }
+  }
+}

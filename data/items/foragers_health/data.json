@@ -1,0 +1,53 @@
+{
+  "id": "1869",
+  "key": "foragers_health",
+  "sourceKey": "item_foragers_health",
+  "name": "Vital Toadstool",
+  "aliases": [
+    "foragers_health",
+    "item_foragers_health",
+    "vital toadstool"
+  ],
+  "description": "<h1>Use: Munch</h1> Grants %health_regen_pct%%% max health regeneration to the target for %buff_duration% seconds.<br><br>If the unit is attacked by an enemy hero or Roshan, the effect is lost.",
+  "lore": null,
+  "notes": [
+    "Hold Control to use on a nearby allied hero."
+  ],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "permanent": false,
+  "stackable": true,
+  "maxStack": 5,
+  "initialCharges": 1,
+  "ability": {
+    "id": "item_foragers_health",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-heroes"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [
+      "ally_health_regen",
+      "buff",
+      "self_health_regen"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero"
+    ],
+    "castRange": 250,
+    "castPoint": 0,
+    "values": {
+      "buff_duration": 10,
+      "health_regen_pct": 1,
+      "break_on_hero_damage": 1,
+      "bonus_damage": 2
+    }
+  }
+}

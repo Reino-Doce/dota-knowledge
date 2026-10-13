@@ -1,0 +1,39 @@
+{
+  "id": "326",
+  "key": "spider_legs",
+  "sourceKey": "item_spider_legs",
+  "name": null,
+  "aliases": [
+    "item_spider_legs",
+    "spider_legs"
+  ],
+  "description": "<h1>Active: Skitter</h1> Grants you %bonus_movement_speed_active%%% bonus movement speed, %turn_rate%%% improved turn rate, and free pathing for %duration% seconds. Walking over trees causes them to be destroyed.",
+  "lore": "A horrifying yet useful mixture of necromancy and artificing.",
+  "notes": [],
+  "neutralTiers": [
+    5
+  ],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_spider_legs",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "buff",
+      "self_movement_speed"
+    ],
+    "type": "self-target",
+    "cooldown": 15,
+    "values": {
+      "turn_rate": 50,
+      "bonus_movement_speed_active": {
+        "value": 20,
+        "apply_curio_bonus": 1
+      },
+      "duration": 12
+    }
+  }
+}

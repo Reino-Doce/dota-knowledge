@@ -1,0 +1,51 @@
+{
+  "id": "680",
+  "key": "bullwhip",
+  "sourceKey": "item_bullwhip",
+  "name": "Bullwhip",
+  "aliases": [
+    "bullwhip",
+    "item_bullwhip"
+  ],
+  "description": "<h1>Active: Whip</h1>Grants %speed%%% movement speed when cast on allies, and slows by %speed%%% when cast on enemies. Lasts %duration% seconds.",
+  "lore": "Once the favored lash of an infamous broker of pit fighters and other live trade.",
+  "notes": [
+    "Does not trigger spell block or spell reflect."
+  ],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_bullwhip",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "units"
+    ],
+    "tags": [
+      "ally_movement_speed",
+      "buff",
+      "self_movement_speed"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero",
+      "enemy_hero",
+      "ally_creep",
+      "enemy_creep",
+      "neutral_creep"
+    ],
+    "cooldown": 11,
+    "castRange": 850,
+    "values": {
+      "bonus_health_regen": 0,
+      "bonus_mana_regen": 0,
+      "duration": 4,
+      "speed": 25,
+      "bullwhip_delay_time": 0.3
+    }
+  }
+}

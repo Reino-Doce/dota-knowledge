@@ -1,0 +1,57 @@
+{
+  "id": "121",
+  "key": "bloodstone",
+  "sourceKey": "item_bloodstone",
+  "name": "Bloodstone",
+  "aliases": [
+    "bloodstone",
+    "bs",
+    "item_bloodstone"
+  ],
+  "description": "<h1>Active: Bloodpact</h1> Increases Bloodstone's Spell Lifesteal to %spell_lifesteal_while_active%%%. Lasts %buff_duration% seconds. \\n\\n<h1>Passive: Spell Weakness Aura</h1> Enemy units take %aura_spell_vulnerability%%% increased damage from spells. <br><br>Radius: %aura_radius%",
+  "lore": "The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit.",
+  "notes": [
+    "Spell Weakness Aura does not stack with Veil of Discord's Spell Weakness."
+  ],
+  "neutralTiers": [],
+  "cost": 4700,
+  "shopTags": [
+    "int",
+    "regen-health",
+    "mana-pool",
+    "health-pool",
+    "tank"
+  ],
+  "quality": "epic",
+  "ability": {
+    "id": "item_bloodstone",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "aura",
+      "buff",
+      "spell_lifesteal"
+    ],
+    "type": "self-target",
+    "manaCost": 0,
+    "cooldown": 35,
+    "castPoint": 0,
+    "values": {
+      "bonus_health": 625,
+      "bonus_mana": 450,
+      "bonus_mp_regen": 0,
+      "bonus_hp_regen": 0,
+      "bonus_intellect": 15,
+      "spell_lifesteal": 20,
+      "buff_duration": 5,
+      "spell_lifesteal_while_active": 60,
+      "hp_cost": 0,
+      "aura_spell_vulnerability": 10,
+      "aura_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      }
+    }
+  }
+}

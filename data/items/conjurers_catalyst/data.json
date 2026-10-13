@@ -1,0 +1,47 @@
+{
+  "id": "1864",
+  "key": "conjurers_catalyst",
+  "sourceKey": "item_conjurers_catalyst",
+  "name": null,
+  "aliases": [
+    "conjurers_catalyst",
+    "item_conjurers_catalyst"
+  ],
+  "description": "<h1>Passive: Spellover</h1> Dealing %damage_threshold% spell damage to an enemy causes them to overheat and deal damage to their allies in a %damage_aoe% unit radius. Hero targets deal %damage% damage to their allies, other targets deal %damage_creep% damage.",
+  "lore": null,
+  "notes": [
+    "Spellover has a %cooldown%s cooldown between overheats.",
+    "Accumulated damage resets if no damage is dealt to the target for %duration%s."
+  ],
+  "neutralTiers": [
+    4
+  ],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_conjurers_catalyst",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [],
+    "type": "passive",
+    "values": {
+      "duration": 6,
+      "damage_threshold": 200,
+      "damage_aoe": {
+        "value": 300,
+        "affected_by_aoe_increase": 1
+      },
+      "damage": {
+        "value": 80,
+        "apply_curio_bonus": 1
+      },
+      "damage_creep": {
+        "value": 20,
+        "apply_curio_bonus": 1
+      },
+      "cooldown": 0.1
+    }
+  }
+}

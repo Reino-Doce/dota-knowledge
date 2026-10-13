@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/devilesk/dota-interactive-map/dota-knowledge/item-index.schema.json",
+  "title": "Native Dota item index",
+  "description": "Build identity, source hashes, and per-item record locations.",
+  "type": "object",
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "generatorVersion": { "type": "string", "pattern": "^item-data-generator-[0-9]+$" },
+    "build": { "$ref": "#/$defs/build" },
+    "sourceHash": { "$ref": "core.schema.json#/$defs/hash" },
+    "sources": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/source" }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 2048,
+      "items": { "$ref": "#/$defs/itemRef" }
+    },
+    "unmatchedIds": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/unmatchedId" }
+    }
+  },
+  "required": ["schemaVersion", "generatorVersion", "build", "sourceHash", "sources", "items", "unmatchedIds"],
+  "additionalProperties": false,
+  "$defs": {
+    "itemId": { "type": "string", "pattern": "^[1-9][0-9]*$" },
+    "build": {
+      "type": "object",
+      "properties": {
+        "clientVersion": { "type": "string", "pattern": "^[0-9]+$" },
+        "serverVersion": { "type": "string", "pattern": "^[0-9]+$" },
+        "sourceRevision": { "type": "string", "pattern": "^[0-9]+$" }
+      },
+      "required": ["clientVersion", "serverVersion", "sourceRevision"],
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "resource": {
+          "enum": [
+            "resource/localization/abilities_english.txt",
+            "scripts/npc/items.txt",
+            "scripts/npc/npc_ability_ids.txt",
+            "scripts/npc/neutral_items.txt"
+          ]
+        },
+        "bytes": { "type": "integer", "minimum": 1 },
+        "sha256": { "$ref": "core.schema.json#/$defs/hash" }
+      },
+      "required": ["resource", "bytes", "sha256"],
+      "additionalProperties": false
+    },
+    "itemRef": {
+      "type": "object",
+      "properties": {
+        "id": { "$ref": "#/$defs/itemId" },
+        "key": { "type": "string", "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$" },
+        "engineId": { "type": "string", "pattern": "^item_[a-z0-9_]+$" },
+        "path": { "type": "string", "pattern": "^items/[a-z0-9]+(?:[_-][a-z0-9]+)*/data\\.json$" }
+      },
+      "required": ["id", "key", "engineId", "path"],
+      "additionalProperties": false
+    },
+    "unmatchedId": {
+      "type": "object",
+      "properties": {
+        "id": { "$ref": "#/$defs/itemId" },
+        "engineId": { "type": "string", "pattern": "^item_[a-z0-9_]+$" }
+      },
+      "required": ["id", "engineId"],
+      "additionalProperties": false
+    }
+  }
+}

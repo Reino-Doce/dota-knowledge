@@ -1,0 +1,64 @@
+{
+  "id": "119",
+  "key": "shivas_guard",
+  "sourceKey": "item_shivas_guard",
+  "name": "Shiva's Guard",
+  "aliases": [
+    "item_shivas_guard",
+    "shiva's guard",
+    "shiva\\'s guard",
+    "shivas",
+    "shivas_guard"
+  ],
+  "description": "<h1>Active: Arctic Blast</h1> Emits a freezing wave that deals %blast_damage% magical damage to enemies and slows their movement by %blast_movement_speed%%% for %blast_debuff_duration% seconds.<br><br>Radius: %blast_radius%\\n\\n<h1>Passive: Freezing Aura</h1> Reduces the attack speed of all enemies by %aura_attack_speed%. <br><br>Radius: %aura_radius%",
+  "lore": "Said to have belonged to a goddess, today it retains much of its former power.",
+  "notes": [
+    "The wave extends at a speed of %blast_speed% to a max size of %blast_radius%.",
+    "The Arctic Blast follows its caster.",
+    "Multiple instances of Freezing Aura do not stack.",
+    "AoE bonuses from multiple Chasm Stones or its upgrades do not stack."
+  ],
+  "neutralTiers": [],
+  "cost": 4500,
+  "shopTags": [
+    "armor",
+    "hard-to-tag",
+    "teamfight",
+    "tank",
+    "magic-dmg"
+  ],
+  "quality": "epic",
+  "ability": {
+    "id": "item_shivas_guard",
+    "behavior": [
+      "no-target"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [
+      "enemy_attack_speed_reduction",
+      "slow"
+    ],
+    "type": "self-target",
+    "manaCost": 75,
+    "cooldown": 27,
+    "values": {
+      "bonus_hp_regen": 0,
+      "bonus_armor": 17,
+      "bonus_aoe": 75,
+      "aura_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      },
+      "aura_attack_speed": -40,
+      "blast_damage": 225,
+      "blast_movement_speed": -40,
+      "blast_debuff_duration": 4,
+      "blast_radius": {
+        "value": 825,
+        "affected_by_aoe_increase": 1
+      },
+      "blast_speed": 400
+    }
+  }
+}

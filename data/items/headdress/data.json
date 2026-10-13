@@ -1,0 +1,43 @@
+{
+  "id": "94",
+  "key": "headdress",
+  "sourceKey": "item_headdress",
+  "name": "Headdress",
+  "aliases": [
+    "headdress",
+    "item_headdress"
+  ],
+  "description": "<h1>Passive: Regeneration Aura</h1>Grants %aura_health_regen% health regeneration to allies.<br><br>Radius: %aura_radius%",
+  "lore": "Creates a soothing aura that restores allies in battle.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 425,
+  "shopTags": [
+    "str",
+    "int",
+    "agi",
+    "regen-health"
+  ],
+  "quality": "rare",
+  "ability": {
+    "id": "item_headdress",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "ally_health_regen",
+      "aura",
+      "buff"
+    ],
+    "type": "passive",
+    "castRange": 1200,
+    "values": {
+      "health_regen": 0.5,
+      "aura_health_regen": 2,
+      "aura_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      }
+    }
+  }
+}

@@ -12,6 +12,8 @@ Casting `type` retains its compact compatibility value: `passive`, `toggle`, `ta
 
 `data/tags/index.json` is the separate vocabulary index. It lists tag keys and labels under generic categories such as `buff`, `save`, `control`, and `damage`. Categories organize tags; they are not assigned as extra effects. For example, `death_prevention` belongs to the `save` category, so Dazzle's Shallow Grave uses the precise tag rather than a vague `save` tag.
 
+When a recipient-qualified tag fully refines a general tag, the published ability keeps the specific tag and omits the redundant general one. For example, `self_heal` and `ally_heal` replace `heal`; the same rule applies to health regeneration, dispels, lifesteal, healing amplification, and barriers.
+
 The compiler applies general rules to source-backed native fields, behavior flags, and gameplay descriptions and notes. It recognizes affirmative operations, their recipients, conditions, and polarity; modeled effect types and recipients can corroborate those operations. Classification does not depend on ability names, effect IDs, a list of known abilities, or exact tooltip hashes. Hero roles, lore, imported guide labels, and unverified modifier-name candidates do not create ability tags.
 
 Damage kinds use the dedicated `damageType` field and are not contribution tags. A declared damage type alone does not establish a damage operation, and a summoned creature's damage does not become the caster's damage. Statements about accepted targets or conditions also do not grant capabilities: “affects invulnerable units” does not grant invulnerability, and “while already untargetable” does not grant untargetability.

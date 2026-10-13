@@ -1,0 +1,41 @@
+{
+  "id": "1643",
+  "key": "giant_maul",
+  "sourceKey": "item_giant_maul",
+  "name": null,
+  "aliases": [
+    "giant_maul",
+    "item_giant_maul"
+  ],
+  "description": "<h1>Passive: Crushing Blow</h1> Empowers the next attack to be a critical hit dealing %crit_multiplier%%% damage. Hitting an enemy with an empowered attack temporarily decreases their movement speed by %movespeed_slow%%%, attack speed by %attack_slow%%%, and cast speed by %cast_slow%%% for %debuff_duration% seconds.",
+  "lore": "Crude but smashingly effective.",
+  "notes": [],
+  "neutralTiers": [
+    4
+  ],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_giant_maul",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "attack_damage_scaling",
+      "slow"
+    ],
+    "type": "passive",
+    "cooldown": 15,
+    "values": {
+      "crit_multiplier": {
+        "value": 150,
+        "apply_curio_bonus": 1
+      },
+      "movespeed_slow": 10,
+      "attack_slow": 15,
+      "cast_slow": 20,
+      "debuff_duration": 3
+    }
+  }
+}

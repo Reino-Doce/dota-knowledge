@@ -1,0 +1,47 @@
+{
+  "id": "212",
+  "key": "ring_of_aquila",
+  "sourceKey": "item_ring_of_aquila",
+  "name": "Ring of Aquila",
+  "aliases": [
+    "item_ring_of_aquila",
+    "ring of aquila",
+    "ring_of_aquila"
+  ],
+  "description": "<h1>Passive: Aquila Aura</h1>Grants %aura_mana_regen% mana regeneration and %aura_bonus_armor% armor to nearby allies.<br><br>Radius: %aura_radius%\\n<h1>Toggle: Aura</h1> Deactivate to stop affecting non-hero units.",
+  "lore": "The ring of the fallen Warlord Aquila continues to support armies in battle.",
+  "notes": [
+    "Multiple instances of Aquila Aura do not stack."
+  ],
+  "neutralTiers": [],
+  "shopTags": [],
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_ring_of_aquila",
+    "behavior": [
+      "no-target",
+      "toggle"
+    ],
+    "tags": [
+      "ally_armor",
+      "ally_mana_regen",
+      "aura",
+      "buff"
+    ],
+    "type": "toggle",
+    "castRange": 1200,
+    "values": {
+      "bonus_damage": 3,
+      "bonus_strength": 3,
+      "bonus_agility": 9,
+      "bonus_intellect": 3,
+      "aura_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      },
+      "aura_mana_regen": 1,
+      "aura_bonus_armor": 2
+    }
+  }
+}

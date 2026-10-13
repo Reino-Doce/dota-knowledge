@@ -1,0 +1,61 @@
+{
+  "id": "98",
+  "key": "orchid",
+  "sourceKey": "item_orchid",
+  "name": "Orchid Malevolence",
+  "aliases": [
+    "item_orchid",
+    "orchid",
+    "orchid malevolence",
+    "silence"
+  ],
+  "description": "<h1>Active: Soul Burn</h1>Silences the target unit for %silence_duration% seconds. At the end of the silence, %silence_damage_percent%%% of the damage received while silenced is inflicted as bonus magical damage.",
+  "lore": "A garnet rod constructed from the essence of a fire demon.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 3275,
+  "shopTags": [
+    "attack-speed",
+    "damage",
+    "regen-mana",
+    "hard-to-tag",
+    "dps",
+    "disable"
+  ],
+  "quality": "rare",
+  "ability": {
+    "id": "item_orchid",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "enemy-units"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [
+      "disable",
+      "silence"
+    ],
+    "type": "target",
+    "target": [
+      "enemy_hero",
+      "enemy_creep",
+      "neutral_creep"
+    ],
+    "manaCost": 125,
+    "cooldown": 18,
+    "castRange": 900,
+    "castPoint": 0,
+    "sharedCooldown": "orchid",
+    "values": {
+      "bonus_attack_speed": 35,
+      "bonus_damage": 20,
+      "bonus_mana_regen": 2.5,
+      "bonus_health_regen": 0,
+      "bonus_intellect": 12,
+      "silence_damage_percent": 30,
+      "silence_duration": 5
+    }
+  }
+}

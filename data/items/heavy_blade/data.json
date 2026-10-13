@@ -1,0 +1,49 @@
+{
+  "id": "837",
+  "key": "heavy_blade",
+  "sourceKey": "item_heavy_blade",
+  "name": "Witchbane",
+  "aliases": [
+    "heavy_blade",
+    "item_heavy_blade",
+    "witchbane"
+  ],
+  "description": "<h1>Active: Cleanse</h1>Dispel all enemies and allies in a %radius% unit radius.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>\\n\\n<h1>Passive: Subjugate</h1>Your attacks deal bonus magical damage equal to %damage%%% of your target's Max Mana.",
+  "lore": "With ready access to test subjects, untold cruelties have been dreamed up and loosed upon the world from within the walls of the Tyler Estate.",
+  "notes": [],
+  "neutralTiers": [
+    5
+  ],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_heavy_blade",
+    "behavior": [
+      "point-target"
+    ],
+    "affects": [
+      "units"
+    ],
+    "piercesDebuffImmunity": "no",
+    "tags": [
+      "aoe"
+    ],
+    "type": "point",
+    "manaCost": 50,
+    "cooldown": 30,
+    "castRange": 700,
+    "castPoint": 0,
+    "values": {
+      "radius": {
+        "value": 300,
+        "affected_by_aoe_increase": 1
+      },
+      "damage": {
+        "value": 4,
+        "apply_curio_bonus": 1
+      },
+      "attack_speed": 0
+    }
+  }
+}

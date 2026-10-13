@@ -1,0 +1,59 @@
+{
+  "id": "1123",
+  "key": "blood_grenade",
+  "sourceKey": "item_blood_grenade",
+  "name": "Blood Grenade",
+  "aliases": [
+    "blood grenade",
+    "blood_grenade",
+    "grenade",
+    "item_blood_grenade"
+  ],
+  "description": "<h1>Use: Throw Grenade</h1> Throw a grenade at the target area. Enemies in the area will take %impact_damage% damage on impact, and be slowed by %movespeed_slow%%% and take %damage_over_time% damage every %tick_rate%s for %debuff_duration% seconds. Radius %radius%. ",
+  "lore": "Both the hunter and the hunted must pay the blood price.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 50,
+  "shopTags": [
+    "consumable",
+    "laning"
+  ],
+  "quality": "consumable",
+  "permanent": false,
+  "stackable": true,
+  "maxStack": 2,
+  "initialCharges": 1,
+  "ability": {
+    "id": "item_blood_grenade",
+    "behavior": [
+      "point-target"
+    ],
+    "affects": [
+      "enemy-units"
+    ],
+    "tags": [
+      "aoe",
+      "damage_over_time",
+      "immediate_damage",
+      "slow"
+    ],
+    "type": "point",
+    "cooldown": 10,
+    "castRange": 900,
+    "castPoint": 0.2,
+    "healthCost": 75,
+    "values": {
+      "speed": 1100,
+      "radius": {
+        "value": 300,
+        "affected_by_aoe_increase": 1
+      },
+      "movespeed_slow": -15,
+      "bonus_health": 50,
+      "damage_over_time": 15,
+      "impact_damage": 50,
+      "tick_rate": 1,
+      "debuff_duration": 5
+    }
+  }
+}

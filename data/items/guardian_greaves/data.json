@@ -1,0 +1,66 @@
+{
+  "id": "231",
+  "key": "guardian_greaves",
+  "sourceKey": "item_guardian_greaves",
+  "name": "Guardian Greaves",
+  "aliases": [
+    "guardian greaves",
+    "guardian_greaves",
+    "item_guardian_greaves"
+  ],
+  "description": "<h1>Active: Mend</h1>Restores %replenish_health% health and %replenish_mana% mana to nearby allies, and removes most negative effects from the caster.<br><br>Radius: %replenish_radius%<br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>\\n\\n<h1>Passive: Guardian Aura</h1> Grants %aura_health_regen% health regeneration and %aura_mana_regen% mana regeneration to allied units. If the wearer's health falls below %aura_bonus_threshold%%%, their health regeneration is increased to %aura_health_regen_bonus%. <br><br>Radius: %aura_radius% \\nMovement speed bonuses from multiple pairs of boots do not stack.",
+  "lore": "One of many holy instruments constructed to honor the Omniscience.",
+  "notes": [
+    "Mend does not affect units that have been affected by Mend or Mekansm Restore within Guardian Greaves' cooldown."
+  ],
+  "neutralTiers": [],
+  "cost": 4450,
+  "shopTags": [
+    "int",
+    "armor",
+    "regen-health",
+    "hard-to-tag",
+    "teamfight",
+    "save",
+    "tank",
+    "regen-mana"
+  ],
+  "quality": "rare",
+  "ability": {
+    "id": "item_guardian_greaves",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "ally_health_regen",
+      "ally_mana_regen",
+      "aura",
+      "buff",
+      "dispel"
+    ],
+    "type": "self-target",
+    "manaCost": 0,
+    "cooldown": 45,
+    "values": {
+      "bonus_movement": 50,
+      "bonus_armor": 5,
+      "bonus_mana": 150,
+      "mana_regen": 1,
+      "aura_health_regen": 2.5,
+      "aura_mana_regen": 1.5,
+      "aura_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      },
+      "aura_health_regen_bonus": 14.5,
+      "aura_bonus_threshold": 25,
+      "replenish_health": 325,
+      "replenish_mana": 200,
+      "replenish_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      },
+      "max_health_pct_heal_amount": 0
+    }
+  }
+}

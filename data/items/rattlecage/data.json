@@ -1,0 +1,49 @@
+{
+  "id": "1168",
+  "key": "rattlecage",
+  "sourceKey": "item_rattlecage",
+  "name": null,
+  "aliases": [
+    "item_rattlecage",
+    "rattlecage"
+  ],
+  "description": "<h1>Passive: Reverberate</h1> After taking %damage_threshold% damage from any source, the wearer fires a projectile at up to %target_count% random enemies in a %radius% radius, prioritizing heroes, that deal %projectile_damage% physical damage and slow the targets movement and attack speed by %slow%%% for %slow_duration%s. ",
+  "lore": null,
+  "notes": [
+    "Damage done by this item is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected."
+  ],
+  "neutralTiers": [
+    4
+  ],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_rattlecage",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "enemy_attack_speed_reduction",
+      "slow"
+    ],
+    "type": "passive",
+    "values": {
+      "radius": {
+        "value": 600,
+        "affected_by_aoe_increase": 1
+      },
+      "slow_duration": 0.2,
+      "damage_reset_interval": 7,
+      "damage_threshold": 220,
+      "slow": 100,
+      "projectile_speed": 1000,
+      "projectile_damage": {
+        "value": 90,
+        "apply_curio_bonus": 1
+      },
+      "target_count": 2,
+      "bonus_armor": 0
+    }
+  }
+}

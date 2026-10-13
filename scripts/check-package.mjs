@@ -16,7 +16,10 @@ export async function checkPackage({ referencePolicy } = {}) {
         const [packed] = Array.isArray(packOutput) ? packOutput : Object.values(packOutput);
         if (!packed || !Array.isArray(packed.files)) throw new Error('npm pack did not return an artifact inventory.');
         if (packed.files.some(file => /^(evidence|\.3esmit|data\/hero-knowledge|tests|node_modules)\//.test(file.path)
-            || /^data\/(heroes|abilities|items)\//.test(file.path) && !/^data\/(heroes|abilities|items)\/[^/]+\/images\/(?:abilities\/)?[^/]+\.png$/.test(file.path))) throw new Error('Development data leaked into the runtime package.');
+            || /^data\/(heroes|abilities|items)\//.test(file.path)
+                && file.path !== 'data/items/index.json'
+                && !/^data\/items\/[^/]+\/data\.json$/.test(file.path)
+                && !/^data\/(heroes|abilities|items)\/[^/]+\/images\/(?:abilities\/)?[^/]+\.png$/.test(file.path))) throw new Error('Development data leaked into the runtime package.');
         execFileSync('tar', ['-xzf', path.join(temporary, packed.filename), '-C', temporary], { windowsHide: true, stdio: 'pipe' });
         const extracted = path.join(temporary, 'package');
         const references = referencePolicy ? await scanReferences({ root: extracted, policy: referencePolicy, roots: ['.'] }) : null;
@@ -40,12 +43,15 @@ export async function checkPackage({ referencePolicy } = {}) {
             { cwd: extracted, encoding: 'utf8', windowsHide: true, maxBuffer: 1024 * 1024 }));
         const nodeSmoke = `import { loadKnowledgePackage } from '@reino-doce/dota-knowledge/node';
 import manifest from '@reino-doce/dota-knowledge/runtime/manifest.json' with { type: 'json' };
+import itemIndex from '@reino-doce/dota-knowledge/items/index.json' with { type: 'json' };
+import blinkItem from '@reino-doce/dota-knowledge/items/blink/data.json' with { type: 'json' };
 import { loadImagePackage, validateImageDirectory } from '@reino-doce/dota-knowledge/node/images';
 const images = await loadImagePackage();
 if (images.image('hero', '1', 'profile').state !== 'available' || !(await images.loadBytes(images.image('hero', '1').id)).length) throw new Error('Extracted Node image failure.');
 await validateImageDirectory('data');
 const store = await loadKnowledgePackage();
-if (manifest.schemaVersion !== 2 || store.hero('1').key !== 'antimage') throw new Error('Extracted Node exports failed.');
+if (manifest.schemaVersion !== 2 || store.hero('1').key !== 'antimage' || itemIndex.schemaVersion !== 1 || !itemIndex.items.length
+    || blinkItem.key !== 'blink' || blinkItem.ability.id !== blinkItem.sourceKey || !Array.isArray(blinkItem.ability.tags)) throw new Error('Extracted Node exports failed.');
 store.retire();
 const { checkRuntime } = await import('./scripts/check-runtime.mjs');
 console.log(JSON.stringify(await checkRuntime()));`;

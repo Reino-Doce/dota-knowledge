@@ -1,0 +1,39 @@
+{
+  "id": "1641",
+  "key": "outworld_staff",
+  "sourceKey": "item_outworld_staff",
+  "name": null,
+  "aliases": [
+    "item_outworld_staff",
+    "outworld_staff"
+  ],
+  "description": "<h1>Active: Self-Exile</h1> Makes the caster completely invulnerable and disabled for %invuln_duration% seconds. When returning to the world, the caster takes %self_dmg_pct%%% of their maximum health as damage.",
+  "lore": "Proof that the lone sentinel was not always so.",
+  "notes": [
+    "Damage taken when returning is non-lethal and disables Blink Dagger and other items that are muted upon taking damage."
+  ],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_outworld_staff",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "damage_immunity",
+      "escape"
+    ],
+    "type": "self-target",
+    "manaCost": 65,
+    "cooldown": 30,
+    "values": {
+      "invuln_duration": {
+        "value": 0.7,
+        "apply_curio_bonus": 1
+      },
+      "self_dmg_pct": 5
+    }
+  }
+}

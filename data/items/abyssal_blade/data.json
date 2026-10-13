@@ -1,0 +1,65 @@
+{
+  "id": "208",
+  "key": "abyssal_blade",
+  "sourceKey": "item_abyssal_blade",
+  "name": "Abyssal Blade",
+  "aliases": [
+    "abyssal blade",
+    "abyssal_blade",
+    "item_abyssal_blade"
+  ],
+  "description": "<h1>Active: Overwhelm</h1> Stuns a target enemy unit for %stun_duration% seconds. <br><br>Pierces Debuff Immunity.\\n\\n<h1>Passive: Bash</h1> Grants melee heroes a %bash_chance_melee%%% chance on hit to stun the target for %bash_duration% seconds and deal %bonus_chance_damage% bonus physical damage.  Bash chance for ranged heroes is %bash_chance_ranged%%%.",
+  "lore": "The lost blade of the Commander of the Abyss, this edge cuts into an enemy's soul.",
+  "notes": [
+    "The stun is melee range.",
+    "Does not stack with other bashes, and does not grant bash to Clones and Tempest Doubles.",
+    "Multiple sources of damage block do not stack.",
+    "The following heroes cannot trigger Bash on this item: Spirit Breaker, Faceless Void, Slardar, and Kez while in Sai mode."
+  ],
+  "neutralTiers": [],
+  "cost": 6250,
+  "shopTags": [
+    "damage",
+    "str",
+    "hard-to-tag",
+    "disable"
+  ],
+  "quality": "epic",
+  "ability": {
+    "id": "item_abyssal_blade",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "enemy-units"
+    ],
+    "dispellable": "strong-only",
+    "dispelType": "strong",
+    "tags": [
+      "disable",
+      "stun"
+    ],
+    "type": "target",
+    "target": [
+      "enemy_hero",
+      "enemy_creep",
+      "neutral_creep"
+    ],
+    "manaCost": 75,
+    "cooldown": 35,
+    "castRange": 150,
+    "castPoint": 0,
+    "values": {
+      "bonus_damage": 35,
+      "bonus_strength": 30,
+      "slow_resistance": 30,
+      "hp_regen_amp": 16,
+      "bash_chance_melee": 25,
+      "bash_chance_ranged": 10,
+      "bash_duration": 1.2,
+      "bash_cooldown": 2.3,
+      "bonus_chance_damage": 120,
+      "stun_duration": 1.6
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "123",
+  "key": "sphere",
+  "sourceKey": "item_sphere",
+  "name": "Linken's Sphere",
+  "aliases": [
+    "item_sphere",
+    "linken's sphere",
+    "linken\\'s sphere",
+    "ls",
+    "sphere"
+  ],
+  "description": "<h1>Passive: Spellblock</h1>Blocks most targeted spells once every %block_cooldown% seconds.\\n\\n<h1>Active: Transfer Spellblock</h1>Temporarily removes Spellblock from the item's owner and transfers it to an allied unit for %block_cooldown% seconds.",
+  "lore": "This magical sphere once protected one of the most famous heroes in history.",
+  "notes": [
+    "Targeted abilities from neutral items do not trigger Spellblock."
+  ],
+  "neutralTiers": [],
+  "cost": 4800,
+  "shopTags": [
+    "regen-health",
+    "regen-mana",
+    "str",
+    "agi",
+    "int",
+    "hard-to-tag",
+    "teamfight",
+    "save"
+  ],
+  "quality": "epic",
+  "ability": {
+    "id": "item_sphere",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-heroes"
+    ],
+    "tags": [],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero"
+    ],
+    "cooldown": 14,
+    "castRange": 700,
+    "values": {
+      "bonus_all_stats": 16,
+      "bonus_health_regen": 6.5,
+      "bonus_mana_regen": 4.25,
+      "block_cooldown": 14,
+      "upgrade_absorb_duration": 10,
+      "damage_absorb": 300
+    }
+  }
+}

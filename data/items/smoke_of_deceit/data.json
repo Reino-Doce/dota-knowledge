@@ -1,0 +1,53 @@
+{
+  "id": "188",
+  "key": "smoke_of_deceit",
+  "sourceKey": "item_smoke_of_deceit",
+  "name": "Smoke of Deceit",
+  "aliases": [
+    "item_smoke_of_deceit",
+    "smoke of deceit",
+    "smoke_of_deceit"
+  ],
+  "description": "<h1>Use: Disguise</h1> Turns the caster and all allied player-controlled targets in a %application_radius% radius invisible, and grants %bonus_movement_speed%%% bonus movement speed for %duration% seconds. <br><br> While the caster is still disguised, any allies that come within %secondary_application_radius% range of them will also get the buff applied to them. Each smoke can only be applied once to allies. <br><br>Attacking or moving within %visibility_radius% range of an enemy hero or tower, will break the invisibility. <br><br>Disguise grants invisibility that is immune to True Sight. <br><br>Smoke of Deceit is usable from the backpack and has no cooldown when swapped into the main inventory.",
+  "lore": "The charlatan wizard Myrddin's only true contribution to the arcane arts.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 50,
+  "shopTags": [
+    "consumable",
+    "teamfight"
+  ],
+  "quality": "consumable",
+  "permanent": false,
+  "stackable": true,
+  "displayCharges": 1,
+  "initialCharges": 1,
+  "shareability": "fully-shareable",
+  "ability": {
+    "id": "item_smoke_of_deceit",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "ally_movement_speed",
+      "buff",
+      "cast_range",
+      "self_movement_speed",
+      "vision"
+    ],
+    "type": "self-target",
+    "cooldown": 1,
+    "castRange": 1200,
+    "values": {
+      "application_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      },
+      "visibility_radius": 1025,
+      "bonus_movement_speed": 15,
+      "duration": 45,
+      "second_cast_cooldown": 2,
+      "secondary_application_radius": 300
+    }
+  }
+}

@@ -3,6 +3,8 @@
 Image catalog queries and lazy byte access are documented in [the image API guide](images.md).
 Use `./images` in browsers and `./node/images` for filesystem loading and explicit acquisition.
 
+Static item records are available as JSON from `@reino-doce/dota-knowledge/items/index.json` and `@reino-doce/dota-knowledge/items/<item-slug>/data.json`. Item ability fields follow the compact hero ability view, with item values and shop fields stored as ordinary JSON values. See [item data generation](items.md) for source and build details.
+
 ## Main entry
 
 `loadKnowledgeStore({ manifest, readArtifact, guideCacheSize?, guideCacheMaxBytes? })` validates the supplied runtime manifest and core before returning a `KnowledgeStore`. `readArtifact` receives a descriptor tagged as `core`, `guide`, or `observations`; it returns the exact encoded artifact bytes. The store verifies byte bounds, SHA-256, schema version, references, source bindings, and core identity before exposing a record.

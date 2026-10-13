@@ -1,0 +1,51 @@
+{
+  "id": "945",
+  "key": "seeds_of_serenity",
+  "sourceKey": "item_seeds_of_serenity",
+  "name": "Seeds of Serenity",
+  "aliases": [
+    "item_seeds_of_serenity",
+    "seeds of serenity",
+    "seeds_of_serenity"
+  ],
+  "description": "<h1>Active: Verdurous Dale</h1>  Target the ground with a %radius% radius. Provides health regeneration to all allied units while they are in the area of effect equal to %aura_health_regen% + %aura_health_regen_pct%%% of the caster's health regeneration at the time of casting. Lasts %duration% seconds.",
+  "lore": "An evergreen sprout treasured by the woodkin and highly coveted by interlopers and their like.",
+  "notes": [],
+  "neutralTiers": [
+    2
+  ],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_seeds_of_serenity",
+    "behavior": [
+      "point-target"
+    ],
+    "tags": [
+      "ally_health_regen",
+      "aoe",
+      "buff"
+    ],
+    "type": "point",
+    "cooldown": 35,
+    "castRange": 350,
+    "values": {
+      "bonus_health": 0,
+      "bonus_health_regen": 0,
+      "aura_health_regen": {
+        "value": 8,
+        "apply_curio_bonus": 1
+      },
+      "aura_health_regen_pct": {
+        "value": 25,
+        "apply_curio_bonus": 1
+      },
+      "radius": {
+        "value": 400,
+        "affected_by_aoe_increase": 1
+      },
+      "duration": 8
+    }
+  }
+}

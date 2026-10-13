@@ -1,0 +1,66 @@
+{
+  "id": "102",
+  "key": "force_staff",
+  "sourceKey": "item_force_staff",
+  "name": "Force Staff",
+  "aliases": [
+    "force staff",
+    "force_staff",
+    "fs",
+    "item_force_staff"
+  ],
+  "description": "<h1>Active: Force</h1>Pushes any target unit %push_length% units in the direction it is facing.",
+  "lore": "Allows you to manipulate others, for good or evil.",
+  "notes": [
+    "Self-cast will cause you to use Force on yourself.",
+    "Force Staff doesn't interrupt the target's actions.",
+    "Will not work on a unit inside Chronosphere, Duel, or Black Hole.",
+    "Force Staff has %enemy_cast_range% cast range when cast on enemies."
+  ],
+  "neutralTiers": [],
+  "cost": 2200,
+  "shopTags": [
+    "int",
+    "damage",
+    "hard-to-tag",
+    "mobility",
+    "escape",
+    "save"
+  ],
+  "quality": "rare",
+  "ability": {
+    "id": "item_force_staff",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "units"
+    ],
+    "tags": [
+      "buff",
+      "cast_range",
+      "enemy_displacement"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero",
+      "enemy_hero",
+      "ally_creep",
+      "enemy_creep",
+      "neutral_creep"
+    ],
+    "manaCost": 150,
+    "cooldown": 19,
+    "castRange": 550,
+    "castPoint": 0,
+    "sharedCooldown": "force",
+    "values": {
+      "bonus_intellect": 10,
+      "bonus_health": 175,
+      "push_length": 600,
+      "enemy_cast_range": 850,
+      "push_time": 0.5
+    }
+  }
+}

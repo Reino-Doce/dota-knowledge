@@ -1,0 +1,47 @@
+{
+  "id": "215",
+  "key": "shadow_amulet",
+  "sourceKey": "item_shadow_amulet",
+  "name": "Shadow Amulet",
+  "aliases": [
+    "item_shadow_amulet",
+    "shadow amulet",
+    "shadow_amulet"
+  ],
+  "description": "<h1>Active: Fade</h1>Grants invisibility to you or a target allied hero for %fade_duration%s. Movement speed during the invisibility is reduced by %movement_speed_reduction%%%.",
+  "lore": "A small talisman that clouds the senses of one's enemies when held perfectly still.",
+  "notes": [
+    "Takes %fade_time%s of the %fade_duration%s for the hero to fully fade into invisibility."
+  ],
+  "neutralTiers": [],
+  "cost": 900,
+  "shopTags": [],
+  "ability": {
+    "id": "item_shadow_amulet",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-heroes"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [
+      "escape",
+      "invisibility"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero"
+    ],
+    "manaCost": 0,
+    "cooldown": 18,
+    "castRange": 600,
+    "values": {
+      "fade_time": 1.25,
+      "movement_speed_reduction": 35,
+      "fade_duration": 3.5
+    }
+  }
+}

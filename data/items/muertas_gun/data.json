@@ -1,0 +1,68 @@
+{
+  "id": "1090",
+  "key": "muertas_gun",
+  "sourceKey": "item_muertas_gun",
+  "name": "Mercy & Grace",
+  "aliases": [
+    "item_muertas_gun",
+    "mercy & grace",
+    "muertas_gun"
+  ],
+  "description": "<h1>Active: Dead Shot</h1>Fires a ghostly bullet at an enemy unit or tree. When the bullet strikes it will deal %damage% damage and slow the target by %impact_slow_percent%%% for %impact_slow_duration% seconds, then ricochet in the vector-targeted direction. The ricochet will damage all units that it passes through, stopping when it hits a hero. Heroes hit by the ricochet will be feared for %ricochet_fear_duration% seconds in the direction of the shot.",
+  "lore": "One to deliver the body, the other to claim the soul.",
+  "notes": [
+    "Feared enemies are phased and unslowable.",
+    "The ricochet will travel %ricochet_distance_multiplier%x Dead Shot's cast range."
+  ],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "killable": false,
+  "shareability": "fully-shareable",
+  "ability": {
+    "id": "item_muertas_gun",
+    "behavior": [
+      "tree-vector-target",
+      "unit-target"
+    ],
+    "affects": [
+      "enemy-units",
+      "trees"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "piercesDebuffImmunity": "no",
+    "damageType": "magical",
+    "tags": [
+      "disable",
+      "fear"
+    ],
+    "type": "vector",
+    "target": [
+      "enemy_hero",
+      "enemy_creep",
+      "neutral_creep",
+      "tree"
+    ],
+    "manaCost": 160,
+    "cooldown": 10,
+    "castPoint": 0.15,
+    "values": {
+      "AbilityCastRange": 1000,
+      "damage": 300,
+      "speed": 2000,
+      "radius": 100,
+      "ricochet_radius_start": 115,
+      "ricochet_radius_end": 115,
+      "ricochet_stun_duration": 2,
+      "ricochet_distance_multiplier": 1,
+      "ricochet_fear_duration": 2,
+      "impact_slow_percent": -100,
+      "impact_slow_duration": 0.5,
+      "bonus_cast_pct": 100,
+      "bonus_spell_amp": 100,
+      "health_pct_penalty": 70
+    }
+  }
+}

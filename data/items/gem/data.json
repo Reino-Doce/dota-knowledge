@@ -1,0 +1,52 @@
+{
+  "id": "30",
+  "key": "gem",
+  "sourceKey": "item_gem",
+  "name": "Gem of True Sight",
+  "aliases": [
+    "gem",
+    "gem of true sight",
+    "item_gem"
+  ],
+  "description": "<h1>Active: Reveal</h1> Gives True Sight over a %active_radius% radius revealing wards and units even in Fog of War.\\n<h1>Passive: True Sight</h1> Grants the ability to see invisible units and wards to any allied vision within %radius% range of its carrier. \\n\\n<h1>Passive: Everlasting</h1><font color='#e03e2e'>Dropped on death, and cannot be destroyed.</font>",
+  "lore": "Not one thrall creature of the depths,\\nNor spirit bound in drowning's keep,\\nNor Maelrawn the Tentacular,\\nShall rest till seas, gem comes to sleep.",
+  "notes": [
+    "Disabled while on a courier."
+  ],
+  "neutralTiers": [],
+  "cost": 900,
+  "shopTags": [
+    "see-invis"
+  ],
+  "quality": "component",
+  "sellable": false,
+  "killable": false,
+  "shareability": "fully-shareable",
+  "ability": {
+    "id": "item_gem",
+    "behavior": [
+      "point-target"
+    ],
+    "tags": [
+      "aoe",
+      "buff",
+      "cast_range",
+      "escape",
+      "invisibility"
+    ],
+    "type": "point",
+    "cooldown": 12,
+    "castRange": 300,
+    "values": {
+      "radius": {
+        "value": 900,
+        "affected_by_aoe_increase": 1
+      },
+      "active_radius": {
+        "value": 300,
+        "affected_by_aoe_increase": 1
+      },
+      "duration": 4
+    }
+  }
+}

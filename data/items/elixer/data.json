@@ -1,0 +1,44 @@
+{
+  "id": "302",
+  "key": "elixer",
+  "sourceKey": "item_elixer",
+  "name": "Elixir",
+  "aliases": [
+    "elixer",
+    "elixir",
+    "item_elixer"
+  ],
+  "description": "<h1>Use: Consume</h1> Restores %health% health and %mana% mana to the target over %duration% seconds.<br><br>If the unit is attacked by an enemy hero or Roshan, the effect is lost.",
+  "lore": null,
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "permanent": false,
+  "initialCharges": 3,
+  "ability": {
+    "id": "item_elixer",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-heroes"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero"
+    ],
+    "castRange": 250,
+    "castPoint": 0,
+    "values": {
+      "health": 500,
+      "mana": 250,
+      "duration": 6
+    }
+  }
+}

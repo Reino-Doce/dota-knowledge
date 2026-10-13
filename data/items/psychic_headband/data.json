@@ -1,0 +1,53 @@
+{
+  "id": "675",
+  "key": "psychic_headband",
+  "sourceKey": "item_psychic_headband",
+  "name": null,
+  "aliases": [
+    "item_psychic_headband",
+    "psychic_headband"
+  ],
+  "description": "<h1>Active: Psychic Push</h1>Pushes the target unit away from you %push_length% distance.",
+  "lore": "A failed experiment in finer telekinetic control, still fit for other ends.",
+  "notes": [
+    "Does not trigger spell block or spell reflect."
+  ],
+  "neutralTiers": [
+    3
+  ],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_psychic_headband",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "units"
+    ],
+    "tags": [
+      "enemy_displacement"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero",
+      "enemy_hero",
+      "ally_creep",
+      "enemy_creep",
+      "neutral_creep"
+    ],
+    "cooldown": 15,
+    "castRange": 600,
+    "values": {
+      "intelligence_pct": 0,
+      "cast_range": 0,
+      "push_length": {
+        "value": 400,
+        "apply_curio_bonus": 1
+      },
+      "push_duration": 0.3
+    }
+  }
+}

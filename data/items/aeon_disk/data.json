@@ -1,0 +1,58 @@
+{
+  "id": "256",
+  "key": "aeon_disk",
+  "sourceKey": "item_aeon_disk",
+  "name": "Aeon Disk",
+  "aliases": [
+    "ad",
+    "aeon disk",
+    "aeon_disk",
+    "item_aeon_disk"
+  ],
+  "description": "<h1>Passive: Combo Breaker</h1> When you take damage and your health falls below %health_threshold_pct%%%, a strong dispel is applied and you gain a %buff_duration% second buff that provides +%status_resistance%%% Status Resistance and causes all damage you deal and are dealt to be reduced to zero. Only triggers on player based damage. Cooldown increases every time it triggers.<br/><br/>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Strong Dispel</span>",
+  "lore": "A powerful artifact long ago smuggled out of the Ivory Incubarium. Or so many believe.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 3000,
+  "shopTags": [
+    "str",
+    "regen-health",
+    "health-pool",
+    "escape",
+    "tank"
+  ],
+  "quality": "epic",
+  "ability": {
+    "id": "item_aeon_disk",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "buff",
+      "dispel",
+      "status_resistance"
+    ],
+    "type": "passive",
+    "cooldown": [
+      105,
+      125,
+      145,
+      165
+    ],
+    "values": {
+      "bonus_health": 250,
+      "bonus_mana": 300,
+      "health_threshold_pct": 70,
+      "status_resistance": 75,
+      "buff_duration": 2.5,
+      "max_level": 4,
+      "cooldown_duration": [
+        105,
+        125,
+        145,
+        165
+      ],
+      "initial_cooldown": 6
+    }
+  }
+}

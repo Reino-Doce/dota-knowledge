@@ -1,0 +1,43 @@
+{
+  "id": "1599",
+  "key": "mana_draught",
+  "sourceKey": "item_mana_draught",
+  "name": null,
+  "aliases": [
+    "item_mana_draught",
+    "mana_draught"
+  ],
+  "description": "<h1>Active: Bottoms Up</h1>Restores %mana_restore% + %mana_restore_pct%%% of the caster's maximum mana over %heal_duration% seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.<br><br>Hold Control to use on an allied hero.\\n\\n<h1>Passive: Fill Up</h1>Cooldown Speed of Mana Draught is increased by %water_acceleration%%% while in water.",
+  "lore": "A refreshing drink best shared with friends.",
+  "notes": [],
+  "neutralTiers": [
+    2
+  ],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_mana_draught",
+    "behavior": [
+      "no-target"
+    ],
+    "affects": [
+      "allied-heroes"
+    ],
+    "tags": [
+      "self_mana_restore"
+    ],
+    "type": "self-target",
+    "cooldown": 60,
+    "castRange": 650,
+    "values": {
+      "mana_restore": 70,
+      "mana_restore_pct": {
+        "value": 3,
+        "apply_curio_bonus": 1
+      },
+      "heal_duration": 6,
+      "water_acceleration": 30
+    }
+  }
+}

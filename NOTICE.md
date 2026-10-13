@@ -5,6 +5,11 @@ under `data/` belong to Valve Corporation. Dota 2 is a Valve trademark. The code
 license does not grant rights to Valve artwork. This project is not affiliated
 with or endorsed by Valve.
 
+The generated item catalog contains native game declarations and localized item
+text from Dota resources. Those game data and text belong to Valve Corporation;
+the catalog records the source build and resource hashes for attribution and
+reproduction.
+
 Imported Picker portraits retain the source bytes and Valve attribution recorded
 in Picker's NOTICE.md at revision `1f890007a4112e3b5df453050565d0baad8772fa`.
 Native images are decoded from game resources; the acquisition manifests retain

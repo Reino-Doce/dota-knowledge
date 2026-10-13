@@ -1,0 +1,57 @@
+{
+  "id": "185",
+  "key": "ancient_janggo",
+  "sourceKey": "item_ancient_janggo",
+  "name": "Drum of Endurance",
+  "aliases": [
+    "ancient_janggo",
+    "drum of endurance",
+    "item_ancient_janggo"
+  ],
+  "description": "<h1>Active: Endurance</h1> Gives +%bonus_attack_speed_pct% attack speed and +%bonus_movement_speed_pct%%% movement speed to nearby allies for %duration% seconds.<br><br>Radius: %radius%  \\n\\n<h1>Passive: Swiftness Aura</h1>Grants %aura_movement_speed% movement speed and %aura_health_regen% health regeneration to allies.  <br><br>Radius: %radius%",
+  "lore": "A relic that enchants the bodies of those around it for swifter movement in times of crisis.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 1625,
+  "shopTags": [
+    "str",
+    "int",
+    "damage",
+    "move-speed",
+    "attack-speed",
+    "hard-to-tag",
+    "teamfight"
+  ],
+  "quality": "rare",
+  "permanent": true,
+  "ability": {
+    "id": "item_ancient_janggo",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "ally_attack_speed",
+      "ally_health_regen",
+      "ally_movement_speed",
+      "aura",
+      "buff"
+    ],
+    "type": "self-target",
+    "cooldown": 45,
+    "sharedCooldown": "janggo",
+    "values": {
+      "aura_movement_speed": 15,
+      "aura_health_regen": 2.5,
+      "bonus_str": 8,
+      "bonus_int": 0,
+      "bonus_attack_speed_pct": 35,
+      "bonus_movement_speed_pct": 13,
+      "duration": 6,
+      "radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      },
+      "charges_tooltip": 8
+    }
+  }
+}

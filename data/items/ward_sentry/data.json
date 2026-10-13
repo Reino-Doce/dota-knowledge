@@ -1,0 +1,51 @@
+{
+  "id": "43",
+  "key": "ward_sentry",
+  "sourceKey": "item_ward_sentry",
+  "name": "Sentry Ward",
+  "aliases": [
+    "item_ward_sentry",
+    "sentry ward",
+    "ward_sentry"
+  ],
+  "description": "<h1>Use: Plant</h1> Plants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within a %true_sight_range% radius.<br>Lasts %duration_minutes_tooltip% minutes.<br><br>Does not grant ground vision.<br>Hold Control to give one Sentry Ward to an allied hero.",
+  "lore": "A form of plant originally grown in the garden of a fearful king.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 50,
+  "shopTags": [
+    "consumable",
+    "see-invis",
+    "laning"
+  ],
+  "quality": "consumable",
+  "purchasable": true,
+  "permanent": false,
+  "stackable": true,
+  "initialCharges": 1,
+  "shareability": "fully-shareable",
+  "ability": {
+    "id": "item_ward_sentry",
+    "behavior": [
+      "point-target"
+    ],
+    "affects": [
+      "allied-heroes"
+    ],
+    "tags": [
+      "aoe",
+      "vision"
+    ],
+    "type": "point",
+    "cooldown": 1,
+    "castRange": 500,
+    "castPoint": 0,
+    "values": {
+      "lifetime": 420,
+      "vision_range": 0,
+      "true_sight_range": 1050,
+      "health": 200,
+      "duration_minutes_tooltip": 7
+    }
+  }
+}

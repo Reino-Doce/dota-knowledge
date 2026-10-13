@@ -1,0 +1,49 @@
+{
+  "id": "308",
+  "key": "repair_kit",
+  "sourceKey": "item_repair_kit",
+  "name": "Repair Kit",
+  "aliases": [
+    "item_repair_kit",
+    "repair kit",
+    "repair_kit"
+  ],
+  "description": "<h1>Use: Building Repair</h1> Targets a building, restoring %heal_percent%%% of it's health over %duration% seconds. Also grants +%armor_bonus% armor during this period.",
+  "lore": null,
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 0,
+  "quality": "consumable",
+  "purchasable": false,
+  "sellable": false,
+  "permanent": false,
+  "initialCharges": 3,
+  "ability": {
+    "id": "item_repair_kit",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-buildings"
+    ],
+    "tags": [
+      "ally_armor",
+      "ally_heal",
+      "buff",
+      "self_armor",
+      "self_heal"
+    ],
+    "type": "target",
+    "target": [
+      "ally_building"
+    ],
+    "cooldown": 60,
+    "castRange": 600,
+    "values": {
+      "duration": 30,
+      "heal_percent": 40,
+      "armor_bonus": 10,
+      "hp_regen": 25
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "1856",
+  "key": "crellas_crozier",
+  "sourceKey": "item_crellas_crozier",
+  "name": "Crella's Crozier",
+  "aliases": [
+    "crella's crozier",
+    "crellas_crozier",
+    "item_crellas_crozier"
+  ],
+  "description": "<h1>Active: Rite of Rumusque</h1> You enter ghost form for %duration% seconds, becoming immune to physical damage, but are unable to attack and %extra_spell_damage_percent%%% more vulnerable to magic damage.<br><br>Steal %movespeed_steal_pct%%% movement speed from enemy heroes in %active_radius% range every second. Movement speed steal lasts %stack_duration%s.<br><br>Putrefaction Aura's effect is increased to %active_health_steal%%%. All of the lost Health Restoration is redirected to you every second.\\n\\n<h1>Passive: Putrefaction Aura</h1>Reduces nearby enemy heroes' Health Restoration by %health_steal%%%.<br><br>Radius: %radius%",
+  "lore": null,
+  "notes": [
+    "Ghost form ends if you become Debuff Immune and will have no effect if you are already Debuff Immune.",
+    "Shares cooldown with Ghost Scepter and its upgrades.",
+    "Putrefaction Aura does not redirect Health Restoration from enemy heroes that are at full health."
+  ],
+  "neutralTiers": [],
+  "cost": 4800,
+  "shopTags": [
+    "int",
+    "agi",
+    "str",
+    "hard-to-tag",
+    "escape"
+  ],
+  "quality": "epic",
+  "purchasable": true,
+  "ability": {
+    "id": "item_crellas_crozier",
+    "behavior": [
+      "no-target"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [
+      "anti_heal",
+      "aura",
+      "buff",
+      "physical_damage_immunity",
+      "slow"
+    ],
+    "type": "self-target",
+    "cooldown": 20,
+    "sharedCooldown": "ethereal",
+    "values": {
+      "bonus_all_stats": 6,
+      "bonus_health": 450,
+      "bonus_mana": 450,
+      "duration": 4,
+      "extra_spell_damage_percent": -30,
+      "radius": {
+        "value": 900,
+        "affected_by_aoe_increase": 1
+      },
+      "health_steal": 30,
+      "interval": 1,
+      "active_radius": {
+        "value": 900,
+        "affected_by_aoe_increase": 1
+      },
+      "movespeed_steal_pct": 6,
+      "active_health_steal": 90,
+      "stack_duration": 2
+    }
+  }
+}

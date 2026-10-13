@@ -1,0 +1,45 @@
+{
+  "id": "364",
+  "key": "havoc_hammer",
+  "sourceKey": "item_havoc_hammer",
+  "name": "Havoc Hammer",
+  "aliases": [
+    "havoc hammer",
+    "havoc_hammer",
+    "item_havoc_hammer"
+  ],
+  "description": "<h1>Active: Havoc</h1> Pulls enemies in a %range% range around you, slowing them by %slow%%% for %slow_duration% seconds and dealing %nuke_base_dmg% + %nuke_str_dmg%x your str as magical damage.",
+  "lore": null,
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_havoc_hammer",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "enemy_displacement",
+      "slow"
+    ],
+    "type": "self-target",
+    "cooldown": 10,
+    "values": {
+      "bonus_damage": 16,
+      "bonus_strength": 14,
+      "range": {
+        "value": 400,
+        "affected_by_aoe_increase": 1
+      },
+      "slow": 50,
+      "slow_duration": 3,
+      "angle": 360,
+      "knockback_duration": 0.2,
+      "pull_distance": 100,
+      "nuke_base_dmg": 175,
+      "nuke_str_dmg": 1.5
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "92",
+  "key": "urn_of_shadows",
+  "sourceKey": "item_urn_of_shadows",
+  "name": "Urn of Shadows",
+  "aliases": [
+    "item_urn_of_shadows",
+    "urn of shadows",
+    "urn_of_shadows"
+  ],
+  "description": "<h1>Active: Soul Release</h1> Provides %soul_heal_amount% health regeneration when cast on allies, and deals %soul_damage_amount% damage per second when cast on enemies.<br><br>Lasts %duration% seconds.<br><br>Gains charges every time an enemy hero dies within %soul_radius% units.",
+  "lore": "Contains the ashes of powerful demons.",
+  "notes": [
+    "Empty urns gain 2 charges.",
+    "If the allied unit is attacked by an enemy hero or Roshan, the effect is lost.",
+    "Does not trigger spell block or spell reflect."
+  ],
+  "neutralTiers": [],
+  "cost": 825,
+  "shopTags": [
+    "regen-mana",
+    "str",
+    "boost-health",
+    "teamfight"
+  ],
+  "quality": "rare",
+  "permanent": true,
+  "stackable": false,
+  "requiresCharges": true,
+  "displayCharges": 1,
+  "ability": {
+    "id": "item_urn_of_shadows",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-heroes",
+      "enemy-heroes"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [
+      "ally_health_regen",
+      "buff",
+      "damage_over_time",
+      "self_health_regen"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero",
+      "enemy_hero"
+    ],
+    "cooldown": 10,
+    "castRange": 750,
+    "castPoint": 0,
+    "sharedCooldown": "urn",
+    "values": {
+      "mana_regen": 1,
+      "bonus_all_stats": 2,
+      "bonus_armor": 2,
+      "soul_radius": {
+        "value": 1500,
+        "affected_by_aoe_increase": 1
+      },
+      "soul_initial_charge": 2,
+      "soul_additional_charges": 1,
+      "soul_heal_amount": 30,
+      "soul_damage_amount": 25,
+      "duration": 8
+    }
+  }
+}

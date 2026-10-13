@@ -1,0 +1,62 @@
+{
+  "id": "242",
+  "key": "crimson_guard",
+  "sourceKey": "item_crimson_guard",
+  "name": "Crimson Guard",
+  "aliases": [
+    "crimson guard",
+    "crimson_guard",
+    "item_crimson_guard"
+  ],
+  "description": "<h1>Active: Guard</h1> For %duration% seconds, grant nearby allied heroes and buildings a %block_chance_active%%% chance to block damage equal to %block_damage_active% plus %max_hp_pct%%% of the caster's max health value from each incoming attack.<br><br>Radius: %bonus_aoe_radius%\\n\\n<h1>Passive: Damage Block</h1> Grants a %block_chance%%% chance to block %block_damage_melee% damage from incoming attacks on melee heroes, and %block_damage_ranged% damage on ranged.",
+  "lore": "A cuirass originally built to protect against the dreaded Year Beast.",
+  "notes": [
+    "Multiple sources of damage block do not stack.",
+    "When the Guard buff is applied to ranged heroes, Guard blocks %block_penalty_ranged% less damage.",
+    "Guard does not affect units that have been affected by Guard within Crimson Guard's cooldown."
+  ],
+  "neutralTiers": [],
+  "cost": 3725,
+  "shopTags": [
+    "armor",
+    "boost-armor",
+    "regen-health",
+    "block",
+    "health-pool",
+    "teamfight",
+    "tank"
+  ],
+  "quality": "epic",
+  "ability": {
+    "id": "item_crimson_guard",
+    "behavior": [
+      "no-target"
+    ],
+    "dispellable": "no",
+    "tags": [
+      "buff",
+      "damage_block"
+    ],
+    "type": "self-target",
+    "manaCost": 75,
+    "cooldown": 40,
+    "castRange": 1200,
+    "values": {
+      "bonus_health": 250,
+      "bonus_health_regen": 12,
+      "bonus_armor": 6,
+      "block_damage_melee": 75,
+      "block_damage_ranged": 50,
+      "block_chance": 60,
+      "duration": 7,
+      "bonus_aoe_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      },
+      "block_damage_active": 70,
+      "block_chance_active": 100,
+      "block_penalty_ranged": 25,
+      "max_hp_pct": 2
+    }
+  }
+}

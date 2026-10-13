@@ -1,0 +1,50 @@
+{
+  "id": "835",
+  "key": "paintball",
+  "sourceKey": "item_paintball",
+  "name": "Fae Grenade",
+  "aliases": [
+    "fae grenade",
+    "item_paintball",
+    "paintball"
+  ],
+  "description": "<h1>Active: Shadow Brand</h1>Throws a Mark towards an enemy within %abilitycastrange% range applying a debuff that deals %dps% damage every second and provides vision of the unit for %duration% seconds.",
+  "lore": "Those marked for death by the fae shine brightly to all manner of creatures in the shadow realm.",
+  "notes": [
+    "Does not trigger spell block or spell reflect."
+  ],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_paintball",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "enemy-units"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [
+      "damage_over_time",
+      "vision"
+    ],
+    "type": "target",
+    "target": [
+      "enemy_hero",
+      "enemy_creep",
+      "neutral_creep"
+    ],
+    "manaCost": 25,
+    "cooldown": 20,
+    "castRange": 900,
+    "castPoint": 0.2,
+    "values": {
+      "movespeed": 20,
+      "dps": 40,
+      "duration": 7
+    }
+  }
+}

@@ -12,6 +12,39 @@ const merge = (base, override) => base && override && typeof base === 'object' &
     && !Array.isArray(base) && !Array.isArray(override) ? Object.fromEntries([...new Set([...Object.keys(base), ...Object.keys(override)])].sort().map(key =>
         [key, Object.hasOwn(override, key) ? merge(base[key], override[key]) : base[key]])) : override === undefined ? base : override;
 
+const redundantWhenRefined = new Map([
+    ['heal', ['self_heal', 'ally_heal']],
+    ['health_regen', ['self_health_regen', 'ally_health_regen']],
+    ['dispel', ['ally_dispel']],
+    ['lifesteal', ['self_lifesteal']],
+    ['healing_amplification', ['ally_healing_amplification']],
+    ['barrier', ['ally_barrier']],
+]);
+
+function normalizeAbilityTags(tags) {
+    const normalized = new Set(tags);
+    for (const [general, specific] of redundantWhenRefined) {
+        if (specific.some(tag => normalized.has(tag))) normalized.delete(general);
+    }
+    return normalized;
+}
+
+/** Apply the shared ability tag vocabulary to source-backed item ability declarations. */
+export function deriveNativeItemAbilityTags({ fields = new Map(), snippets = [], fieldLabels = [], abilityLabel,
+    behavior = new Set(), nativeTeams = [], actorNames = [] } = {}) {
+    const tags = inferNativeTags({ fields, snippets, fieldLabels, abilityLabel, behavior, nativeTeams, actorNames });
+    for (const tag of inferUtilityTags({ fields, snippets, behavior, nativeTeams, actorNames })) tags.add(tag);
+    for (const tag of inferFieldLabelTags({ fields, fieldLabels, snippets, behavior, nativeTeams, actorNames })) tags.add(tag);
+    for (const tag of inferStatBonusTags({ fields, behavior, abilityLabel })) tags.add(tag);
+    if (behavior.has('DOTA_ABILITY_BEHAVIOR_CHANNELLED')) tags.add('channeled');
+    if (behavior.has('DOTA_ABILITY_BEHAVIOR_AOE')) tags.add('aoe');
+    if (behavior.has('DOTA_ABILITY_BEHAVIOR_AURA')) tags.add('aura');
+    const normalized = normalizeAbilityTags(tags);
+    const allowed = new Set(abilityTagCatalog.tags.map(row => row.key));
+    for (const tag of normalized) if (!allowed.has(tag)) throw new Error('Item ability tag is absent from data/tags/index.json: ' + tag);
+    return [...normalized].sort();
+}
+
 export function selectedResources(graph) {
     const resources = new Map();
     for (const source of graph.sources ?? []) {
@@ -277,8 +310,9 @@ export function deriveAbilityTags(graph) {
     });
     addLinkedTags(contexts, resources);
     const abilities = contexts.map(({ ability, tags }) => {
-        for (const tag of tags) if (!allowed.has(tag)) throw new Error('Ability tag is absent from data/tags/index.json: ' + tag);
-        return { ...Object.fromEntries(Object.entries(ability).filter(([key]) => !['tags', 'tagAssertions'].includes(key))), tags: [...tags].sort() };
+        const normalized = normalizeAbilityTags(tags);
+        for (const tag of normalized) if (!allowed.has(tag)) throw new Error('Ability tag is absent from data/tags/index.json: ' + tag);
+        return { ...Object.fromEntries(Object.entries(ability).filter(([key]) => !['tags', 'tagAssertions'].includes(key))), tags: [...normalized].sort() };
     });
     return { abilities, tagIndex: abilityTagCatalog };
 }

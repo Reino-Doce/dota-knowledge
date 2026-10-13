@@ -1,0 +1,43 @@
+{
+  "id": "178",
+  "key": "soul_ring",
+  "sourceKey": "item_soul_ring",
+  "name": "Soul Ring",
+  "aliases": [
+    "item_soul_ring",
+    "soul ring",
+    "soul_ring"
+  ],
+  "description": "<h1>Active: Sacrifice</h1> Consume %AbilityHealthCost% health to temporarily gain %mana_gain% mana.  Lasts %duration% seconds.<br><br>If the mana gained cannot fit in your mana pool, it creates a buffer of mana that will be used before your mana pool.",
+  "lore": "A ring that feeds on the souls of those who wear it.",
+  "notes": [
+    "If this mana is not used before the duration ends, the extra mana is lost."
+  ],
+  "neutralTiers": [],
+  "cost": 805,
+  "shopTags": [
+    "regen-health",
+    "boost-mana",
+    "mana",
+    "regen-mana"
+  ],
+  "quality": "common",
+  "ability": {
+    "id": "item_soul_ring",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "self_mana_restore"
+    ],
+    "type": "self-target",
+    "cooldown": 30,
+    "healthCost": 170,
+    "values": {
+      "bonus_strength": 6,
+      "bonus_armor": 2,
+      "mana_gain": 170,
+      "duration": 10
+    }
+  }
+}

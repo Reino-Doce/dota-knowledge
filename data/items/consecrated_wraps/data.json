@@ -1,0 +1,60 @@
+{
+  "id": "1854",
+  "key": "consecrated_wraps",
+  "sourceKey": "item_consecrated_wraps",
+  "name": "Consecrated Wraps",
+  "aliases": [
+    "consecrated wraps",
+    "consecrated_wraps",
+    "cw",
+    "item_consecrated_wraps"
+  ],
+  "description": "<h1>Passive: Hallowed</h1> Gain a charge every %AbilityChargeRestoreTime%s, up to a maximum of %AbilityCharges% charges. Upon gaining a charge, your movement speed is increased by %movement_speed_pct_on_stack_gain%%% for %duration%s.<br><br>Whenever you take damage from a player-controlled source or Roshan, consume all charges to gain an all damage barrier for %duration%s that absorbs %barrier_per_stack% damage per charge (%max_barrier_tooltip% max).",
+  "lore": null,
+  "notes": [
+    "Charges cannot be gained for %AbilityChargeRestoreTime%s after you take damage from a player-controlled source or Roshan.",
+    "Self-damage and HP Loss damage cannot remove charges.",
+    "Movement speed buff does not stack."
+  ],
+  "neutralTiers": [],
+  "cost": 2600,
+  "shopTags": [
+    "magic-resist",
+    "move-speed",
+    "health-pool"
+  ],
+  "quality": "epic",
+  "purchasable": true,
+  "permanent": true,
+  "requiresCharges": true,
+  "displayCharges": 1,
+  "chargeRestoreTime": 4,
+  "initialCharges": 3,
+  "disassembleRule": "never",
+  "ability": {
+    "id": "item_consecrated_wraps",
+    "behavior": [
+      "passive"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [
+      "barrier",
+      "buff",
+      "self_movement_speed"
+    ],
+    "type": "passive",
+    "cooldown": 0,
+    "values": {
+      "bonus_spell_resist": 12,
+      "bonus_all_stats": 5,
+      "bonus_health": 250,
+      "movement_speed_pct_on_stack_gain": 15,
+      "stack_threshold_damage": 0,
+      "duration": 5,
+      "barrier_per_stack": 120,
+      "max_barrier_tooltip": 360,
+      "damage_must_be_player_owned_or_roshan": 1
+    }
+  }
+}

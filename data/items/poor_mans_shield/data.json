@@ -1,0 +1,50 @@
+{
+  "id": "71",
+  "key": "poor_mans_shield",
+  "sourceKey": "item_poor_mans_shield",
+  "name": null,
+  "aliases": [
+    "item_poor_mans_shield",
+    "poor_mans_shield"
+  ],
+  "description": "<h1>Passive: Damage Block</h1>Gives a 100% chance to block %damage_block_melee% damage from incoming attacks on melee heroes, and %damage_block_ranged% damage on ranged.<br><br>Has a %block_chance%%% chance to block damage from creeps.",
+  "lore": "A busted old shield that seems to block more than it should.",
+  "notes": [
+    "Multiple sources of damage block do not stack."
+  ],
+  "neutralTiers": [
+    2
+  ],
+  "cost": 0,
+  "shopTags": [
+    "agi",
+    "block"
+  ],
+  "quality": "common",
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_poor_mans_shield",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "buff",
+      "damage_block"
+    ],
+    "type": "passive",
+    "values": {
+      "bonus_agility": 0,
+      "damage_block_melee": {
+        "value": 30,
+        "apply_curio_bonus": 1
+      },
+      "damage_block_ranged": {
+        "value": 20,
+        "apply_curio_bonus": 1
+      },
+      "block_chance": 50,
+      "block_chance_hero": 100
+    }
+  }
+}

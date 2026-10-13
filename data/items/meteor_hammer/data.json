@@ -1,0 +1,70 @@
+{
+  "id": "223",
+  "key": "meteor_hammer",
+  "sourceKey": "item_meteor_hammer",
+  "name": "Meteor Hammer",
+  "aliases": [
+    "item_meteor_hammer",
+    "meteor hammer",
+    "meteor_hammer",
+    "mh"
+  ],
+  "description": "<h1>Active: Meteor Hammer</h1> CHANNELED - After a successful channel, summons a meteor that strikes a %impact_radius% AoE, stunning enemies for %stun_duration% seconds and dealing impact damage. Continues to deal damage over time to enemies units and buildings for %burn_duration% seconds. Non-building units are also slowed for %burn_slow%%% for the duration of the burn. <BR><BR>Building Impact Damage: %impact_damage_buildings% <BR>Building Over Time Damage: %burn_dps_buildings% <BR><BR>Non-Building Impact Damage: %impact_damage_units% <BR>Non-Building Over Time Damage: %burn_dps_units% <BR><BR>Channel Duration: %max_duration% seconds.<BR>Landing Time: %land_time% seconds.",
+  "lore": "An enchanted hammer forged of metals discovered in the ruins of a village destroyed by a great star storm.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 2850,
+  "shopTags": [
+    "farming",
+    "magic-dmg",
+    "disable"
+  ],
+  "quality": "epic",
+  "purchasable": true,
+  "sellable": true,
+  "ability": {
+    "id": "item_meteor_hammer",
+    "behavior": [
+      "channeled",
+      "point-target"
+    ],
+    "piercesDebuffImmunity": "no",
+    "damageType": "magical",
+    "tags": [
+      "aoe",
+      "building_damage",
+      "channeled",
+      "damage_over_time",
+      "disable",
+      "immediate_damage",
+      "stun"
+    ],
+    "type": "point",
+    "manaCost": 75,
+    "cooldown": 24,
+    "castRange": 600,
+    "channelTime": 2,
+    "values": {
+      "bonus_strength": 6,
+      "bonus_agility": 6,
+      "bonus_intellect": 24,
+      "spell_amp": 10,
+      "mana_regen_multiplier": 25,
+      "burn_dps_buildings": 50,
+      "burn_dps_units": 50,
+      "burn_slow": 20,
+      "burn_duration": 6,
+      "stun_duration": 0.75,
+      "burn_interval": 1,
+      "land_time": 0.5,
+      "impact_radius": {
+        "value": 400,
+        "affected_by_aoe_increase": 1
+      },
+      "max_duration": 2,
+      "impact_damage_buildings": 90,
+      "impact_damage_units": 130,
+      "enemy_particles_visible": 0
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "34",
+  "key": "magic_stick",
+  "sourceKey": "item_magic_stick",
+  "name": "Magic Stick",
+  "aliases": [
+    "item_magic_stick",
+    "magic stick",
+    "magic_stick"
+  ],
+  "description": "<h1>Active: Energy Charge</h1> Instantly restores %restore_per_charge% health and mana per charge stored.<br><br> Max %max_charges% charges. Gains a charge whenever a visible enemy within %charge_radius% range uses an ability.",
+  "lore": "A simple wand used to channel magic energies, it is favored by apprentice wizards and great warlocks alike.",
+  "notes": [
+    "Gains charges for spells cast by visible enemies in 1200 range.",
+    "Certain abilities and item abilities will not add charges."
+  ],
+  "neutralTiers": [],
+  "cost": 200,
+  "shopTags": [
+    "regen-health",
+    "regen-mana",
+    "boost-health",
+    "boost-mana",
+    "laning"
+  ],
+  "quality": "component",
+  "requiresCharges": true,
+  "displayCharges": 1,
+  "ability": {
+    "id": "item_magic_stick",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [],
+    "type": "self-target",
+    "cooldown": 17,
+    "sharedCooldown": "magicwand",
+    "values": {
+      "max_charges": 10,
+      "charge_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      },
+      "restore_per_charge": 15
+    }
+  }
+}

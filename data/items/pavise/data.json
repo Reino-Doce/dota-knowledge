@@ -1,0 +1,57 @@
+{
+  "id": "1128",
+  "key": "pavise",
+  "sourceKey": "item_pavise",
+  "name": "Pavise",
+  "aliases": [
+    "item_pavise",
+    "pavise"
+  ],
+  "description": "<h1>Active: Protect</h1> When cast on an ally, grants them a physical damage barrier that absorbs %absorb_amount% damage. Duration: %duration%s.",
+  "lore": "Devised by a wizard who made one too many enemies.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 1350,
+  "shopTags": [
+    "armor",
+    "regen-mana",
+    "hard-to-tag",
+    "teamfight",
+    "save",
+    "tank"
+  ],
+  "quality": "rare",
+  "ability": {
+    "id": "item_pavise",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-units"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "piercesDebuffImmunity": "no",
+    "tags": [
+      "ally_barrier",
+      "buff"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero",
+      "ally_creep"
+    ],
+    "manaCost": 60,
+    "cooldown": 16,
+    "castRange": 1000,
+    "sharedCooldown": "pavise",
+    "values": {
+      "bonus_armor": 3,
+      "bonus_mana": 175,
+      "bonus_health": 175,
+      "duration": 7,
+      "absorb_amount": 250
+    }
+  }
+}

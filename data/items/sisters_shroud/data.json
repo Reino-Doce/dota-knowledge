@@ -1,0 +1,39 @@
+{
+  "id": "1639",
+  "key": "sisters_shroud",
+  "sourceKey": "item_sisters_shroud",
+  "name": null,
+  "aliases": [
+    "item_sisters_shroud",
+    "sisters_shroud"
+  ],
+  "description": "<h1>Passive: Veiled</h1>When falling below %hp_threshold%%% HP, gain %evasion_max%%% evasion for %max_duration% seconds. While active, dodging an attack decreases the evasion bonus by %evasion_loss%%% of its current value.\\n<h1>Passive: Last Caress</h1>Veiled cooldown is only reset if the wearer dies or kills an enemy hero.",
+  "lore": "A pall that draped the sarcophagus of the First Sister.",
+  "notes": [
+    "Does not trigger from damage by non-player controlled creeps"
+  ],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_sisters_shroud",
+    "behavior": [
+      "passive"
+    ],
+    "tags": [
+      "buff",
+      "evasion"
+    ],
+    "type": "passive",
+    "values": {
+      "hp_threshold": 50,
+      "evasion_max": {
+        "value": 150,
+        "apply_curio_bonus": 1
+      },
+      "evasion_loss": 75,
+      "max_duration": 5
+    }
+  }
+}

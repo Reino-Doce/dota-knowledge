@@ -1,0 +1,39 @@
+{
+  "id": "1602",
+  "key": "gale_guard",
+  "sourceKey": "item_gale_guard",
+  "name": null,
+  "aliases": [
+    "gale_guard",
+    "item_gale_guard"
+  ],
+  "description": "<h1>Active: Cyclonic Shield</h1> Envelops the caster in an all damage barrier that absorbs %barrier_pct%%% of incoming damage up to a max of %barrier_amount%. Lasts for up to %barrier_duration% seconds and while the barrier is active you have %slow_resist%%% Slow Resistance.",
+  "lore": "If one truly listens, they can always rely upon the wind to make its will known.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_gale_guard",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "barrier",
+      "buff",
+      "slow_resistance"
+    ],
+    "type": "self-target",
+    "cooldown": 30,
+    "values": {
+      "barrier_duration": 10,
+      "barrier_amount": {
+        "value": 225,
+        "apply_curio_bonus": 1
+      },
+      "barrier_pct": 75,
+      "slow_resist": 50
+    }
+  }
+}

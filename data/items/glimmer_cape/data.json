@@ -1,0 +1,59 @@
+{
+  "id": "254",
+  "key": "glimmer_cape",
+  "sourceKey": "item_glimmer_cape",
+  "name": "Glimmer Cape",
+  "aliases": [
+    "glimmer cape",
+    "glimmer_cape",
+    "item_glimmer_cape"
+  ],
+  "description": "<h1>Active: Glimmer</h1> After a %initial_fade_delay% second delay, grants invisibility, %active_movement_speed% movement speed and a magic damage barrier that absorbs up to %barrier_block% damage to you or a target allied unit for %duration% seconds.<br><br>Can be cast while channeling.",
+  "lore": "The stolen cape of a master illusionist.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 2150,
+  "shopTags": [
+    "teamfight",
+    "escape",
+    "save",
+    "magic-resist"
+  ],
+  "quality": "rare",
+  "ability": {
+    "id": "item_glimmer_cape",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-units"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [
+      "ally_barrier",
+      "ally_movement_speed",
+      "buff",
+      "escape",
+      "invisibility",
+      "self_movement_speed"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero",
+      "ally_creep"
+    ],
+    "manaCost": 125,
+    "cooldown": 15,
+    "castRange": 600,
+    "values": {
+      "initial_fade_delay": 0.5,
+      "secondary_fade_delay": 0.5,
+      "active_movement_speed": 20,
+      "duration": 5,
+      "bonus_magical_armor": 20,
+      "barrier_block": 375
+    }
+  }
+}

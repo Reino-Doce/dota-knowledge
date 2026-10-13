@@ -1,0 +1,59 @@
+{
+  "id": "79",
+  "key": "mekansm",
+  "sourceKey": "item_mekansm",
+  "name": "Mekansm",
+  "aliases": [
+    "item_mekansm",
+    "mechanism",
+    "mekansm"
+  ],
+  "description": "<h1>Active: Restore</h1>Restores %heal_amount% health to allied units in a %heal_radius% radius.\\n\\n<h1>Passive: Mekansm Aura</h1>Grants %aura_health_regen% health regeneration to allied units in a %aura_radius% radius.",
+  "lore": "A glowing jewel formed out of assorted parts that somehow fit together perfectly.",
+  "notes": [
+    "Restore does not affect units that have been affected by Restore or Guardian Greaves Mend within Mekansm's cooldown.",
+    "Multiple instances of Mekansm Aura do not stack."
+  ],
+  "neutralTiers": [],
+  "cost": 1775,
+  "shopTags": [
+    "agi",
+    "int",
+    "str",
+    "armor",
+    "boost-health",
+    "teamfight",
+    "save",
+    "tank"
+  ],
+  "quality": "rare",
+  "ability": {
+    "id": "item_mekansm",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "ally_heal",
+      "ally_health_regen",
+      "aura",
+      "buff"
+    ],
+    "type": "self-target",
+    "manaCost": 100,
+    "cooldown": 50,
+    "castRange": 1200,
+    "values": {
+      "bonus_armor": 5,
+      "aura_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      },
+      "aura_health_regen": 2.5,
+      "heal_amount": 250,
+      "heal_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      }
+    }
+  }
+}

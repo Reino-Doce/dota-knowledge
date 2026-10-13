@@ -1,0 +1,67 @@
+{
+  "id": "371",
+  "key": "fallen_sky",
+  "sourceKey": "item_fallen_sky",
+  "name": null,
+  "aliases": [
+    "fallen_sky",
+    "item_fallen_sky"
+  ],
+  "description": "<h1>Active: Fallen Sky</h1> Transform into a meteor that strikes down at the target area after %land_time% seconds in a %impact_radius% AoE, stunning enemies for %stun_duration% seconds and dealing impact damage. Continues to deal damage every %burn_interval% seconds to enemy units and buildings for %burn_duration% seconds.<BR><BR>Building Impact Damage: %impact_damage_buildings% <BR>Building Over Time Damage: %burn_dps_buildings% <BR><BR>Non-Building Impact Damage: %impact_damage_units% <BR>Non-Building Over Time Damage: %burn_dps_units%<br><br>Fallen Sky cannot be used for %blink_damage_cooldown% seconds after taking damage from an enemy hero or Roshan.",
+  "lore": "One of the few surviving creations of the acolytes of the Wyrmforge.",
+  "notes": [],
+  "neutralTiers": [
+    5
+  ],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_fallen_sky",
+    "behavior": [
+      "point-target"
+    ],
+    "tags": [
+      "building_damage",
+      "damage_over_time",
+      "disable",
+      "immediate_damage",
+      "stun"
+    ],
+    "type": "point",
+    "cooldown": 25,
+    "castRange": 1200,
+    "values": {
+      "bonus_strength": 0,
+      "bonus_intellect": 0,
+      "bonus_health_regen": 0,
+      "bonus_mana_regen": 0,
+      "burn_dps_buildings": {
+        "value": 60,
+        "apply_curio_bonus": 1
+      },
+      "burn_dps_units": {
+        "value": 60,
+        "apply_curio_bonus": 1
+      },
+      "burn_duration": 6,
+      "stun_duration": 1.6,
+      "burn_interval": 1,
+      "land_time": 1,
+      "impact_radius": {
+        "value": 315,
+        "affected_by_aoe_increase": 1
+      },
+      "max_duration": 2.5,
+      "impact_damage_buildings": {
+        "value": 110,
+        "apply_curio_bonus": 1
+      },
+      "impact_damage_units": {
+        "value": 150,
+        "apply_curio_bonus": 1
+      },
+      "blink_damage_cooldown": 3
+    }
+  }
+}

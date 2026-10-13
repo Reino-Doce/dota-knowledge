@@ -20,6 +20,10 @@ example](api.md#hero-keys-and-aliases).
 
 `reviews/claims.json`, `reviews/bindings.json` and `reviews/profiles.json` retain full decisions, explicit field attribution and native/historical profile comparisons. The plain current profile uses build-bound native values. Historical ranks, cohorts, counts, clocks and stored pair order remain observations. The separate [image workflow](images.md) collects and publishes artwork; canonical compilation and population publication preserve those image artifacts.
 
+## Generate native item data
+
+`npm run items:generate -- --game <game-directory>` reads item definitions, locked item IDs, neutral item tiers and English localization from the installed VPK. It writes compact `items/<item-slug>/data.json` profiles plus an `items/index.json` with build identity and source hashes through the guarded canonical writer, preserving them during later compilation and image or population publication. `--dataset <directory>` selects another canonical dataset. The generator makes no network requests; see the [item data guide](items.md) for the output fields and source boundaries.
+
 ## Import selected source bundles
 
 `npm run import:bundle -- --mechanics <directory> --evidence <directory> --output data --version <label> --replace` imports selected offline mechanics and external-evidence bundles. It checks manifest-listed bytes and stores exact inputs under ignored `evidence/bundle-inputs/<input-signature>/`. It uses the canonical serializer and guarded publisher, including schema and runtime validation. See the [executable offline fixture](examples/bundle-fixture.mjs).

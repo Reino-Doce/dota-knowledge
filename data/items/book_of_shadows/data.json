@@ -1,0 +1,53 @@
+{
+  "id": "677",
+  "key": "book_of_shadows",
+  "sourceKey": "item_book_of_shadows",
+  "name": "Book of Shadows",
+  "aliases": [
+    "book of shadows",
+    "book_of_shadows",
+    "item_book_of_shadows"
+  ],
+  "description": "<h1>Active: Shadows</h1>Target an enemy, ally or self. Causes the target to become untargetable from enemies to the caster, but also silenced, muted and disarmed for %duration% seconds. Applies a Basic Dispel.\\n\\nDispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>",
+  "lore": "An impossible tome filled with unreadable prose of unknowable thoughts.",
+  "notes": [
+    "Does not trigger spell block or spell reflect."
+  ],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_book_of_shadows",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "units"
+    ],
+    "tags": [
+      "disable",
+      "disarm",
+      "dispel",
+      "escape",
+      "mute",
+      "untargetable"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero",
+      "enemy_hero",
+      "ally_creep",
+      "enemy_creep",
+      "neutral_creep"
+    ],
+    "cooldown": 8,
+    "castRange": 700,
+    "values": {
+      "bonus_all_stats": 0,
+      "night_vision": 400,
+      "duration": 4
+    }
+  }
+}

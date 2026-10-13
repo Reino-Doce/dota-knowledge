@@ -1,0 +1,44 @@
+{
+  "id": "829",
+  "key": "force_field",
+  "sourceKey": "item_force_field",
+  "name": "Arcanist's Armor",
+  "aliases": [
+    "arcanist's armor",
+    "force_field",
+    "item_force_field"
+  ],
+  "description": "<h1>Active: Mega Shield</h1> Force Field Aura Grants %active_reflection_pct%%% Damage Reflection for 5 seconds.\\n\\n<h1>Passive: Shield</h1> Grants +%bonus_aoe_armor% armor and +%bonus_aoe_mres%%% Magic Resistance to all other allies within %bonus_aoe_radius% radius.",
+  "lore": "An exquisite piece commissioned by a paranoid monarch who choked on a piece of fruit long before the item saw its intended use.",
+  "notes": [
+    "Damage done by this item is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected."
+  ],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_force_field",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "ally_armor",
+      "buff",
+      "magic_resistance"
+    ],
+    "type": "self-target",
+    "cooldown": 35,
+    "values": {
+      "bonus_aoe_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      },
+      "bonus_aoe_armor": 4,
+      "self_armor": 0,
+      "self_mres": 0,
+      "bonus_aoe_mres": 8,
+      "active_reflection_pct": 25
+    }
+  }
+}

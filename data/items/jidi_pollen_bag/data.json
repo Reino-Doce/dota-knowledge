@@ -1,0 +1,43 @@
+{
+  "id": "1640",
+  "key": "jidi_pollen_bag",
+  "sourceKey": "item_jidi_pollen_bag",
+  "name": null,
+  "aliases": [
+    "item_jidi_pollen_bag",
+    "jidi_pollen_bag"
+  ],
+  "description": "<h1>Active: Pollinate</h1>Spreads pollen on all enemy units in a %debuff_radius% unit radius for %debuff_duration% seconds, decreasing their health restoration by %health_regen_loss%%% and dealing damage per second, the total equal to %hp_damage%%% of their maximum health.",
+  "lore": "Very dangerous. Very difficult to obtain more.",
+  "notes": [
+    "Damage is non-lethal and classified as HP Loss."
+  ],
+  "neutralTiers": [
+    3
+  ],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_jidi_pollen_bag",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "anti_heal",
+      "damage_over_time"
+    ],
+    "type": "self-target",
+    "cooldown": 25,
+    "values": {
+      "health_regen_loss": 50,
+      "hp_damage": {
+        "value": 9,
+        "apply_curio_bonus": 1
+      },
+      "debuff_radius": 900,
+      "debuff_duration": 9,
+      "damage_interval": 1
+    }
+  }
+}

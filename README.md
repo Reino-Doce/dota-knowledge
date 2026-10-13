@@ -56,6 +56,8 @@ Known, decoded, unknown, unsupported, not-applicable, and conflicted values have
 
 Profiles select current native attributes, attack range, complexity and ordered roles. Missing scalars are `null` with an explanation in `coverage.fields`. Historical profiles, official comparisons and acquisition bindings remain available in observations and review records. A separate image catalog supplies base hero portraits/icons, ability artwork and current playable item icons, with explicit reasons for unavailable artwork.
 
+Each `data/items/<item-slug>/data.json` record contains a compact item profile with the same ability fields used by hero ability views. The compact `data/items/index.json` records build identity, source hashes and paths; see [item data generation](docs/items.md).
+
 Runtime consumers load the indexed core and fetch hero-keyed guides and observation shards on request. The package ships `data/runtime/`; its existing `./runtime/manifest.json` export resolves to the new location. Runtime loaders accept v2 only. Original acquisitions and the verified v1 preservation archive remain in ignored `evidence/`.
 
 The manifest separates game build, verified patch label, extractor, decoder, review, acquisition, observation, and compiler identities. Recompiling identical selected inputs preserves generation metadata and artifact hashes. The public patch label remains unknown until its mapping is verified.
@@ -65,6 +67,8 @@ The manifest separates game build, verified patch label, extractor, decoder, rev
 Population acquisition has a typed, independent `./node/population` entry. `population:refresh` saves evidence and completed scopes; `population:apply` publishes selected scopes offline, then prunes superseded ordinary evidence. Clients, credentials and calibration features are caller supplied. See [population collection and publication](docs/population.md) for recipes, adapters, optional browser sessions, recovery and an executable fixture example.
 
 Images have browser-safe `./images` and Node `./node/images` entries. Catalog loading leaves pixels lazy; URLs and filesystem roots remain caller-controlled. `images:refresh` captures artwork and `images:apply` publishes it offline. See [image access, acquisition and coverage](docs/images.md).
+
+`items:generate` reads item definitions, IDs and English text from the installed game VPK, then updates the canonical per-item profiles and index. See [item data generation](docs/items.md) for the record shape and build boundary.
 
 Ordinary compilation reads canonical records offline without Picker or original acquisitions:
 

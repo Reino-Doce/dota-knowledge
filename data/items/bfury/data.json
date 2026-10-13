@@ -1,0 +1,69 @@
+{
+  "id": "145",
+  "key": "bfury",
+  "sourceKey": "item_bfury",
+  "name": "Battle Fury",
+  "aliases": [
+    "battle fury",
+    "bf",
+    "bfury",
+    "item_bfury"
+  ],
+  "description": "<h1>Active: Chop Tree</h1> Destroy a target tree. \\n\\n<h1>Passive: Quell</h1> Increases attack damage against non-hero units by %quelling_bonus% for melee heroes, and %quelling_bonus_ranged% for ranged. \\n\\n<h1>Passive: Cleave</h1> Deals %cleave_damage_percent%%% of attack damage as physical damage in a cone up to %cleave_distance% around the target. Deals %cleave_damage_percent_creep%%% against creeps. (Melee Only)",
+  "lore": "The bearer of this mighty axe gains the ability to cut down swaths of enemies at once.",
+  "notes": [
+    "Cleave damage goes through spell immunity.",
+    "If multiple sources of Cleave are present, each Cleave's damage is applied separately."
+  ],
+  "neutralTiers": [],
+  "cost": 3900,
+  "shopTags": [
+    "damage",
+    "health-regen",
+    "mana-regen",
+    "hard-to-tag",
+    "farming",
+    "dps"
+  ],
+  "quality": "epic",
+  "ability": {
+    "id": "item_bfury",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "trees"
+    ],
+    "tags": [
+      "attack_damage_scaling",
+      "cleave"
+    ],
+    "type": "target",
+    "target": [
+      "tree"
+    ],
+    "cooldown": 3,
+    "castRange": 350,
+    "castPoint": 0,
+    "values": {
+      "bonus_damage": 50,
+      "bonus_health_regen": 7.5,
+      "bonus_mana_regen": 2.75,
+      "cleave_damage_percent": 60,
+      "cleave_damage_percent_creep": 40,
+      "quelling_bonus": 10,
+      "quelling_bonus_ranged": 5,
+      "cleave_starting_width": {
+        "value": 150,
+        "affected_by_aoe_increase": 1
+      },
+      "cleave_ending_width": {
+        "value": 360,
+        "affected_by_aoe_increase": 1
+      },
+      "cleave_distance": 650,
+      "upgraded_cleave_bonus": 25,
+      "upgraded_damage_bonus": 15
+    }
+  }
+}

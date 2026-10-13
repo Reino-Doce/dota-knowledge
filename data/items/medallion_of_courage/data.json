@@ -1,0 +1,54 @@
+{
+  "id": "187",
+  "key": "medallion_of_courage",
+  "sourceKey": "item_medallion_of_courage",
+  "name": null,
+  "aliases": [
+    "item_medallion_of_courage",
+    "medallion_of_courage"
+  ],
+  "description": "<h1>Active: Valor</h1>Increases armor by %ally_armor% or decreases armor by %enemy_armor% for %duration%s depending on if cast on an ally or enemy. Cannot be cast on self.",
+  "lore": null,
+  "notes": [],
+  "neutralTiers": [
+    2
+  ],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_medallion_of_courage",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "units"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "piercesDebuffImmunity": "no",
+    "tags": [
+      "armor_reduction"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero",
+      "enemy_hero",
+      "ally_creep",
+      "enemy_creep",
+      "neutral_creep"
+    ],
+    "manaCost": 30,
+    "cooldown": 18,
+    "castRange": 1000,
+    "values": {
+      "ally_armor": 7,
+      "enemy_armor": -4,
+      "duration": {
+        "value": 8,
+        "apply_curio_bonus": 1
+      }
+    }
+  }
+}

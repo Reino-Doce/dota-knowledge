@@ -1,0 +1,44 @@
+{
+  "id": "1167",
+  "key": "light_collector",
+  "sourceKey": "item_light_collector",
+  "name": "Light Collector",
+  "aliases": [
+    "item_light_collector",
+    "light collector",
+    "light_collector"
+  ],
+  "description": "<h1>Active: Lightbreak</h1> Produce a brilliant flash of light that destroys trees in a %tree_destruction_radius% AoE. \\n\\n<h1>Passive: Unclouded</h1> Provides wearer with health regeneration during the day and mana regeneration during the night. When within a %radius% distance of any trees, health and mana regeneration are decreased by %penalty%%%.",
+  "lore": null,
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_light_collector",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "buff",
+      "self_health_regen",
+      "self_mana_regen"
+    ],
+    "type": "self-target",
+    "cooldown": 30,
+    "values": {
+      "health_regen": 10,
+      "mana_regen": 6,
+      "penalty": 75,
+      "movespeed_pct": 5,
+      "radius": 200,
+      "tree_destruction_radius": {
+        "value": 325,
+        "affected_by_aoe_increase": 1
+      },
+      "miss_rate": 30,
+      "duration": 2.5
+    }
+  }
+}

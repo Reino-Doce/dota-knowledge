@@ -1,0 +1,69 @@
+{
+  "id": "158",
+  "key": "mjollnir",
+  "sourceKey": "item_mjollnir",
+  "name": "Mjollnir",
+  "aliases": [
+    "item_mjollnir",
+    "mjollnir"
+  ],
+  "description": "<h1>Active: Static Charge</h1>Places a charged shield on a target unit for %static_duration% seconds which has a %static_chance%%% chance to release a %static_damage% magical damage shocking bolt at a nearby attacker and %static_strikes% additional enemies.\\n\\n<h1>Passive: Chain Lightning</h1>Grants a %chain_chance%%% chance on attack to release a bolt of electricity that leaps between %chain_strikes% targets within a %chain_radius% radius, dealing %chain_damage% magical damage to each. Lightning proc pierces evasion.",
+  "lore": "Thor's magical hammer, made for him by the dwarves Brok and Eitri.",
+  "notes": [
+    "Static Charge cannot trigger more than once per second.",
+    "Static Charge's shock deals magical damage centered on hero with the Static Charge. Static Charge's targets cannot be more than %static_seconary_radius% range away.",
+    "Static Charge procs will not bounce to heroes that are invisible or hidden by Fog of War."
+  ],
+  "neutralTiers": [],
+  "cost": 5500,
+  "shopTags": [
+    "damage",
+    "attack-speed",
+    "unique",
+    "farming",
+    "dps"
+  ],
+  "quality": "artifact",
+  "ability": {
+    "id": "item_mjollnir",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-units"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero",
+      "ally_creep"
+    ],
+    "manaCost": 50,
+    "cooldown": 35,
+    "castRange": 800,
+    "castPoint": 0,
+    "values": {
+      "bonus_damage": 25,
+      "bonus_attack_speed": 90,
+      "static_duration": 12,
+      "static_chance": 20,
+      "static_strikes": 4,
+      "static_damage": 225,
+      "static_primary_radius": 600,
+      "static_seconary_radius": 900,
+      "static_radius": 900,
+      "static_cooldown": 1,
+      "chain_chance": 25,
+      "chain_damage": 180,
+      "chain_strikes": 12,
+      "chain_radius": 650,
+      "chain_delay": 0.25,
+      "chain_cooldown": 0.2,
+      "max_charges": 0,
+      "illusion_multiplier_pct": 100
+    }
+  }
+}

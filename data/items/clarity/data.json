@@ -1,0 +1,50 @@
+{
+  "id": "38",
+  "key": "clarity",
+  "sourceKey": "item_clarity",
+  "name": "Clarity",
+  "aliases": [
+    "clarity",
+    "item_clarity"
+  ],
+  "description": "<h1>Use: Replenish</h1> Grants %mana_regen% mana regeneration to the target for %buff_duration% seconds.<br><br>If the unit is attacked by an enemy hero or Roshan, the effect is lost.",
+  "lore": "Clear water that enhances the ability to meditate.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 60,
+  "shopTags": [
+    "consumable",
+    "laning"
+  ],
+  "quality": "consumable",
+  "permanent": false,
+  "stackable": true,
+  "initialCharges": 1,
+  "ability": {
+    "id": "item_clarity",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-heroes"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [
+      "ally_mana_regen",
+      "buff",
+      "self_mana_regen"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero"
+    ],
+    "castRange": 250,
+    "castPoint": 0,
+    "values": {
+      "mana_regen": 6,
+      "buff_duration": 25
+    }
+  }
+}

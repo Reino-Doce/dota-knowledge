@@ -1,0 +1,53 @@
+{
+  "id": "40",
+  "key": "dust",
+  "sourceKey": "item_dust",
+  "name": "Dust of Appearance",
+  "aliases": [
+    "dust",
+    "dust of appearance",
+    "item_dust"
+  ],
+  "description": "<h1>Use: Reveal</h1>For %duration% seconds, creates an area that reveals and slows invisible heroes by %movespeed%%% in a %radius% radius where the caster was standing. Invisible units revealed by dust take %damage% damage.<br><br> The debuff effect on enemies lingers for %linger_duration%s after leaving the area of effect.",
+  "lore": "One may hide visage, but never volume.",
+  "notes": [
+    "Places a debuff on enemy units in the area that reveals them when they are invisible."
+  ],
+  "neutralTiers": [],
+  "cost": 80,
+  "shopTags": [
+    "consumable",
+    "see-invis",
+    "laning"
+  ],
+  "quality": "consumable",
+  "permanent": false,
+  "stackable": true,
+  "initialCharges": 1,
+  "shareability": "fully-shareable",
+  "ability": {
+    "id": "item_dust",
+    "behavior": [
+      "no-target"
+    ],
+    "dispellable": "yes",
+    "dispelType": "basic",
+    "tags": [
+      "detection"
+    ],
+    "type": "self-target",
+    "manaCost": 0,
+    "cooldown": 30,
+    "castRange": 1050,
+    "values": {
+      "duration": 12,
+      "radius": {
+        "value": 1050,
+        "affected_by_aoe_increase": 1
+      },
+      "movespeed": -20,
+      "damage": 25,
+      "linger_duration": 8
+    }
+  }
+}

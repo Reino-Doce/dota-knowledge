@@ -1,0 +1,63 @@
+{
+  "id": "635",
+  "key": "helm_of_the_overlord",
+  "sourceKey": "item_helm_of_the_overlord",
+  "name": "Helm of the Overlord",
+  "aliases": [
+    "helm of the overlord",
+    "helm_of_the_overlord",
+    "hoto",
+    "item_helm_of_the_overlord"
+  ],
+  "description": "<h1>Active: Dominate</h1>Takes control of one neutral target unit and sets its movement speed to %speed_base% and max health to a minimum of %health_min%. Also provides the unit with +%creep_bonus_damage% base attack damage, +%creep_bonus_hp_regen% health regen, +%creep_bonus_mp_regen% mana regen, +%creep_bonus_armor% armor, and levels up some abilities of the target by 1 level. <br><br>Dominated units with a max health of greater than %health_min% retain their original max health. Grants the caster the gold and experience bounty of the dominated creep. Dominated unit's bounty is set to %bounty_gold% gold and it can no longer be killed by abilities that instantly kill creeps otherwise.<br><br>The Helm cannot be used for %creep_damage_taken_cooldown% seconds after the dominated creep takes damage from an enemy hero or Roshan.",
+  "lore": "The powerful headpiece of an undead necromancer.",
+  "notes": [
+    "Can also Dominate enemy lane creeps and summoned units.",
+    "Selling will cause dominated units to die."
+  ],
+  "neutralTiers": [],
+  "cost": 5650,
+  "shopTags": [
+    "damage",
+    "armor",
+    "unique",
+    "hard-to-tag"
+  ],
+  "quality": "artifact",
+  "ability": {
+    "id": "item_helm_of_the_overlord",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "enemy-creeps"
+    ],
+    "tags": [
+      "creep_conversion",
+      "economy_gain"
+    ],
+    "type": "target",
+    "manaCost": 50,
+    "cooldown": 40,
+    "castRange": 700,
+    "castPoint": 0,
+    "values": {
+      "bonus_stats": 21,
+      "bonus_armor": 7,
+      "bonus_regen": 7,
+      "health_min": 1900,
+      "speed_base": 380,
+      "bounty_gold": 250,
+      "creep_bonus_damage": 70,
+      "creep_bonus_hp_regen": 12,
+      "creep_bonus_mp_regen": 4,
+      "creep_bonus_armor": 7,
+      "model_scale": 20,
+      "count_limit": 1,
+      "creep_ability_level_increase": 1,
+      "is_overlord": 1,
+      "creep_damage_taken_cooldown": 3,
+      "bounty_pct": 100
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "90",
+  "key": "pipe",
+  "sourceKey": "item_pipe",
+  "name": "Pipe of Insight",
+  "aliases": [
+    "item_pipe",
+    "pipe",
+    "pipe of insight"
+  ],
+  "description": "<h1>Active: Barrier</h1>Gives a magic damage barrier that absorbs %barrier_block% damage to all nearby allies. Lasts %barrier_duration% seconds.<br><br>Radius: %barrier_radius%\\n\\n<h1>Passive: Insight Aura</h1> Gives allied units %magic_resistance_aura%%% magic resistance.<br><br>Radius: %aura_radius%",
+  "lore": "A powerful artifact of mysterious origin, it creates barriers against magical forces.",
+  "notes": [
+    "Barrier does not affect units that have been affected by Barrier within Pipe of Insight's cooldown.",
+    "Stacks multiplicatively with other sources of magic resistance."
+  ],
+  "neutralTiers": [],
+  "cost": 3725,
+  "shopTags": [
+    "regen-health",
+    "boost-magic-resist",
+    "teamfight",
+    "tank",
+    "magic-resist"
+  ],
+  "quality": "rare",
+  "ability": {
+    "id": "item_pipe",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "ally_barrier",
+      "aura",
+      "buff",
+      "magic_resistance"
+    ],
+    "type": "self-target",
+    "manaCost": 150,
+    "cooldown": 60,
+    "castRange": 1200,
+    "values": {
+      "health_regen": 14,
+      "magic_resistance": 20,
+      "add_nostack_debuff": 1,
+      "aura_health_regen": 0,
+      "magic_resistance_aura": 8,
+      "aura_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      },
+      "barrier_block": 425,
+      "barrier_duration": 8,
+      "barrier_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      },
+      "bonus_all_stats": 0,
+      "barrier_block_creep": 425
+    }
+  }
+}

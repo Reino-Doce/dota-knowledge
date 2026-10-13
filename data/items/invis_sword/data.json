@@ -1,0 +1,52 @@
+{
+  "id": "152",
+  "key": "invis_sword",
+  "sourceKey": "item_invis_sword",
+  "name": "Shadow Blade",
+  "aliases": [
+    "invis",
+    "invis_sword",
+    "item_invis_sword",
+    "sb",
+    "shadow blade",
+    "silver edge"
+  ],
+  "description": "<h1>Active: Shadow Walk</h1>Makes you invisible for %windwalk_duration% seconds, or until you attack or cast a spell.  While Shadow Walk is active, you move %windwalk_movement_speed%%% faster and can move through units.  <br><br>If attacking to end the invisibility, you gain %windwalk_bonus_damage% bonus physical damage on that attack.",
+  "lore": "The blade of a fallen king, it allows you to move unseen and strike from the shadows.",
+  "notes": [
+    "Has a %windwalk_fade_time% second fade time.",
+    "If the invisibility ends without attacking, the bonus damage is lost."
+  ],
+  "neutralTiers": [],
+  "cost": 3250,
+  "shopTags": [
+    "damage",
+    "attack-speed",
+    "movespeed",
+    "hard-to-tag",
+    "dps"
+  ],
+  "quality": "epic",
+  "ability": {
+    "id": "item_invis_sword",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [
+      "escape",
+      "invisibility"
+    ],
+    "type": "self-target",
+    "manaCost": 75,
+    "cooldown": 25,
+    "sharedCooldown": "shadow_blade",
+    "values": {
+      "bonus_damage": 25,
+      "bonus_attack_speed": 35,
+      "windwalk_duration": 17,
+      "windwalk_movement_speed": 20,
+      "windwalk_fade_time": 0.3,
+      "windwalk_bonus_damage": 175
+    }
+  }
+}

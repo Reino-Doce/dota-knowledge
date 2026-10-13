@@ -1,0 +1,62 @@
+{
+  "id": "46",
+  "key": "tpscroll",
+  "sourceKey": "item_tpscroll",
+  "name": "Town Portal Scroll",
+  "aliases": [
+    "item_tpscroll",
+    "teleport",
+    "town portal scroll",
+    "tp",
+    "tpscroll"
+  ],
+  "description": "<h1>Use: Teleport</h1>After channeling for %tooltip_channel_time% seconds, teleports you to a target friendly building. <br><br>Double-click to teleport to your team's base fountain.",
+  "lore": "What a hero truly needs.",
+  "notes": [
+    "If multiple heroes teleport to the same location in succession, the channeling time will be increased for each successive hero.",
+    "Teleport can be prevented or canceled by Root abilities."
+  ],
+  "neutralTiers": [],
+  "cost": 100,
+  "shopTags": [
+    "consumable",
+    "laning",
+    "tutorial"
+  ],
+  "quality": "consumable",
+  "purchasable": true,
+  "permanent": false,
+  "stackable": true,
+  "initialCharges": 1,
+  "shareability": "fully-shareable",
+  "ability": {
+    "id": "item_tpscroll",
+    "behavior": [
+      "channeled",
+      "point-target"
+    ],
+    "affects": [
+      "allied-buildings"
+    ],
+    "tags": [
+      "blink",
+      "channeled",
+      "escape",
+      "mobility",
+      "self_reposition"
+    ],
+    "type": "point",
+    "manaCost": 75,
+    "cooldown": 80,
+    "castRange": 0,
+    "castPoint": 0,
+    "channelTime": 3,
+    "sharedCooldown": "teleport",
+    "values": {
+      "minimum_distance": 70,
+      "maximum_distance": 800,
+      "vision_radius": 200,
+      "tooltip_channel_time": 3
+    }
+  }
+}

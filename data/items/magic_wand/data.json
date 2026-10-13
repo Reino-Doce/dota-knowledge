@@ -1,0 +1,51 @@
+{
+  "id": "36",
+  "key": "magic_wand",
+  "sourceKey": "item_magic_wand",
+  "name": "Magic Wand",
+  "aliases": [
+    "item_magic_wand",
+    "magic wand",
+    "magic_wand"
+  ],
+  "description": "<h1>Active: Energy Charge</h1>Instantly restores %restore_per_charge% health and mana per charge stored. <br><br>Max %max_charges% charges. Gains a charge whenever a visible enemy within %charge_radius% range uses an ability.",
+  "lore": "A simple wand used to channel magic energies, it is favored by apprentice wizards and great warlocks alike.",
+  "notes": [
+    "Gains charges for spells cast by visible enemies in 1200 range.",
+    "Certain abilities and item abilities will not add charges."
+  ],
+  "neutralTiers": [],
+  "cost": 460,
+  "shopTags": [
+    "regen-health",
+    "regen-mana",
+    "boost-health",
+    "boost-mana",
+    "int",
+    "agi",
+    "str",
+    "laning"
+  ],
+  "quality": "common",
+  "requiresCharges": true,
+  "displayCharges": 1,
+  "ability": {
+    "id": "item_magic_wand",
+    "behavior": [
+      "no-target"
+    ],
+    "tags": [],
+    "type": "self-target",
+    "cooldown": 15,
+    "sharedCooldown": "magicwand",
+    "values": {
+      "max_charges": 20,
+      "charge_radius": {
+        "value": 1200,
+        "affected_by_aoe_increase": 1
+      },
+      "bonus_all_stats": 3,
+      "restore_per_charge": 15
+    }
+  }
+}

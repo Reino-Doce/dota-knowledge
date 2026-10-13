@@ -1,0 +1,55 @@
+{
+  "id": "305",
+  "key": "royal_jelly",
+  "sourceKey": "item_royal_jelly",
+  "name": "Royal Jelly",
+  "aliases": [
+    "item_royal_jelly",
+    "royal jelly",
+    "royal_jelly"
+  ],
+  "description": "<h1>Active: Consume</h1> Consumes all charges and grants a target allied unit a buff that provides +%health_regen% Health Regen and +%mana_regen% Mana Regen per charge for %regen_duration%s. <br><br>If the unit is attacked by an enemy hero or Roshan, the effect is lost.",
+  "lore": "To those who harvest olgru jelly, success serves more than mere profit--it's often the means to survival--for only the jelly itself can cure the ravages that follow a sting from the vigilant denizens of the giant hives.",
+  "notes": [],
+  "neutralTiers": [],
+  "cost": 0,
+  "quality": "consumable",
+  "purchasable": false,
+  "sellable": false,
+  "permanent": false,
+  "stackable": false,
+  "requiresCharges": true,
+  "displayCharges": 1,
+  "chargeRestoreTime": 8,
+  "initialCharges": 5,
+  "ability": {
+    "id": "item_royal_jelly",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "allied-heroes"
+    ],
+    "tags": [
+      "ally_health_regen",
+      "ally_mana_regen",
+      "buff"
+    ],
+    "type": "target",
+    "target": [
+      "self",
+      "ally_hero"
+    ],
+    "castRange": 300,
+    "castPoint": 0,
+    "values": {
+      "bonus_health": 50,
+      "bonus_mana": 50,
+      "max_charges": 10,
+      "use_cooldown": 12,
+      "health_regen": 2.5,
+      "mana_regen": 1.25,
+      "regen_duration": 8
+    }
+  }
+}

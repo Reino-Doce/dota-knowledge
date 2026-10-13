@@ -6,6 +6,7 @@ import { readCanonical, readJson, validateRuntime } from '../../src/node/canonic
 import { verifyReplacements } from '../population/reconciliation.mjs';
 import { validateImageDirectory } from '../../src/node/image-files.mjs';
 import { isImageFile } from '../../src/image-contracts.mjs';
+import { sha256Hex } from '../../src/sha256.mjs';
 import { rosterSignature, validateImageRoster } from '../images/inventory.mjs';
 import { verifyIdentityLedger } from './identity-reconciliation.mjs';
 
@@ -49,6 +50,37 @@ export async function validateDataset(root) {
     if (historical) validate('reconciliation-index', JSON.parse(historical), 'Reconciliation index');
     if (graph.extras.has('reviews/reconciliation/identities.json')) validate('identity-ledger',
         JSON.parse(graph.extras.get('reviews/reconciliation/identities.json')), 'Historical identity ledger');
+    if (graph.extras.has('items/index.json')) {
+        const index = JSON.parse(graph.extras.get('items/index.json'));
+        validate('item-index', index, 'Native item index');
+        if (index.sourceHash !== sha256Hex(Buffer.from(JSON.stringify({ build: index.build, sources: index.sources }), 'utf8'))) {
+            throw new Error('Native item index source identity does not match its build and input hashes.');
+        }
+        const itemIds = new Set();
+        const keys = new Set();
+        const engineIds = new Set();
+        const itemPaths = new Set();
+        for (const ref of index.items) {
+            const expectedPath = `items/${ref.key}/data.json`;
+            if (ref.path !== expectedPath || itemIds.has(ref.id) || keys.has(ref.key) || engineIds.has(ref.engineId)
+                || itemPaths.has(ref.path) || !graph.extras.has(ref.path)) throw new Error('Native item index has an inconsistent or duplicate item identity.');
+            itemIds.add(ref.id); keys.add(ref.key); engineIds.add(ref.engineId); itemPaths.add(ref.path);
+            const item = JSON.parse(graph.extras.get(ref.path));
+            validate('item-profile', item, ref.path);
+            if (item.id !== ref.id || item.key !== ref.key || item.sourceKey !== ref.engineId
+                || item.ability && item.ability.id !== ref.engineId) {
+                throw new Error('Native item profile disagrees with its indexed identity: ' + ref.path);
+            }
+        }
+        for (const item of index.unmatchedIds) {
+            if (itemIds.has(item.id) || engineIds.has(item.engineId)) throw new Error('Native item index has a duplicate unmatched identity.');
+            itemIds.add(item.id); engineIds.add(item.engineId);
+        }
+        const manifestedItemPaths = new Set(graph.metadata.sourceFiles.filter(row => /^items\/[^/]+\/data\.json$/.test(row.name)).map(row => row.name));
+        if (manifestedItemPaths.size !== itemPaths.size || [...itemPaths].some(name => !manifestedItemPaths.has(name))) {
+            throw new Error('Native item profiles differ from their canonical manifest paths.');
+        }
+    }
     if (graph.extras.has('images/manifest.json')) {
         validate('image-manifest', await readJson(root, 'images/manifest.json'), 'Image manifest');
         validate('image-catalog', await readJson(root, 'images/catalog.json'), 'Image catalog');
@@ -62,6 +94,8 @@ export async function validateDataset(root) {
     for (const row of graph.metadata.sourceFiles) {
         let schema;
         if (/^heroes\/[^/]+\/profile.json$/.test(row.name)) schema = 'hero';
+        else if (row.name === 'items/index.json') schema = 'item-index';
+        else if (/^items\/[^/]+\/data\.json$/.test(row.name)) schema = 'item-profile';
         else if (/^heroes\/[^/]+\/abilities.json$/.test(row.name)) schema = compactLayout ? 'abilities' : 'legacy-abilities';
         else if (row.name === 'mechanics/abilities.json') schema = 'ability-metadata';
         else if (/^heroes\/[^/]+\/mechanics.json$/.test(row.name)) schema = 'mechanics';

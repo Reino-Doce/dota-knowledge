@@ -1,0 +1,47 @@
+{
+  "id": "1608",
+  "key": "pyrrhic_cloak",
+  "sourceKey": "item_pyrrhic_cloak",
+  "name": null,
+  "aliases": [
+    "item_pyrrhic_cloak",
+    "pyrrhic_cloak"
+  ],
+  "description": "<h1>Active: Retribution</h1> For the next %damage_time% seconds, %damage_pct%%% of damage taken by the caster is reflected to the target unit as physical damage if they are within %max_distance% units away.",
+  "lore": "There are generals that care far less about the survival of their troops than the destruction of their enemies.",
+  "notes": [
+    "Damage done by this item is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected."
+  ],
+  "neutralTiers": [],
+  "cost": 0,
+  "purchasable": false,
+  "sellable": false,
+  "ability": {
+    "id": "item_pyrrhic_cloak",
+    "behavior": [
+      "unit-target"
+    ],
+    "affects": [
+      "enemy-units"
+    ],
+    "damageType": "physical",
+    "tags": [],
+    "type": "target",
+    "target": [
+      "enemy_hero",
+      "enemy_creep",
+      "neutral_creep"
+    ],
+    "manaCost": 0,
+    "cooldown": 40,
+    "castRange": 800,
+    "values": {
+      "damage_pct": {
+        "value": 75,
+        "apply_curio_bonus": 1
+      },
+      "max_distance": 1200,
+      "damage_time": 6
+    }
+  }
+}
